@@ -21,12 +21,13 @@
    <label><input type="radio" name="section" value="dilr">📊 DILR</label>
    <label><input type="radio" name="section" value="mixed">🎲 Mixed</label>
   </div>
-  <div class="grid g3" style="margin-top:18px">
-   <div class="form"><label>2. Number of questions<select id="count"><option value="5">5</option><option value="10" selected>10</option><option value="12">12 (all)</option><option value="36">36 (mixed, all)</option></select></label></div>
-   <div class="form"><label>3. Time per question<select id="per"><option value="60">60 s</option><option value="90" selected>90 s</option><option value="120">120 s</option></select></label></div>
-   <div class="form"><label>4. Marking<span style="display:flex;gap:8px;align-items:center;margin-top:.8em;font-weight:500"><input type="checkbox" id="neg" style="width:auto;margin:0"> CAT-style (+3 / −1)</span></label></div>
+  <div class="grid g4 setup-grid" style="margin-top:18px">
+   <div class="form"><label>2. Topic (optional)<select id="topic"><option value="">All topics</option></select></label></div>
+   <div class="form"><label>3. Number of questions<select id="count"><option value="5">5</option><option value="10" selected>10</option><option value="15">15</option><option value="20">20</option><option value="999">All available</option></select></label></div>
+   <div class="form"><label>4. Time per question<select id="per"><option value="60">60 s</option><option value="90" selected>90 s</option><option value="120">120 s</option></select></label></div>
+   <div class="form"><label>5. Marking<span style="display:flex;gap:8px;align-items:center;margin-top:.8em;font-weight:500"><input type="checkbox" id="neg" style="width:auto;margin:0"> CAT-style (+3 / −1)</span></label></div>
   </div>
-  <button id="start" class="btn" style="margin-top:20px">Start quiz →</button>
+  <p class="muted" id="avail" style="margin:14px 0 0;font-size:.9rem"></p><button id="start" class="btn" style="margin-top:14px">Start quiz →</button>
  </div>
 
  <div id="quiz" class="hidden">
@@ -58,6 +59,7 @@
 <footer id="site-footer"></footer>
 <script src="assets/js/config.js"></script>
 <script src="assets/js/layout.js"></script>
+<script src="assets/js/stats.js"></script>
 <script src="assets/js/quiz.js"></script>
 </body>
 </html>

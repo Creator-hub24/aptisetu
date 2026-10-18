@@ -6,26 +6,50 @@
 
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const fmt = s => `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+  const sec = () => document.querySelector("input[name=section]:checked").value;
+  const poolFor = (s, topic) => {
+    const p = s === "mixed" ? Object.values(bank).flatMap(x => x.questions) : bank[s].questions;
+    return topic ? p.filter(q => q.topic === topic) : p;
+  };
+
+  function fillTopics(keep) {
+    const s = sec(), sel = $("#topic");
+    const topics = [...new Set(poolFor(s).map(q => q.topic))];
+    sel.innerHTML = `<option value="">All topics (${poolFor(s).length})</option>` +
+      topics.map(t => `<option value="${t.replace(/"/g, "&quot;")}">${t} (${poolFor(s, t).length})</option>`).join("");
+    if (keep && topics.includes(keep)) sel.value = keep;
+    updAvail();
+  }
+  function updAvail() { const n = poolFor(sec(), $("#topic").value).length; $("#avail").textContent = `${n} question${n === 1 ? "" : "s"} available for this selection.`; }
 
   async function init() {
     try { bank = await (await fetch("data/questions.json")).json(); }
     catch (e) { $("#setup").innerHTML = "<div class='notice'>Could not load questions. Please open this site through a web server (e.g. <code>python3 -m http.server</code>).</div>"; return; }
-    const pre = new URLSearchParams(location.search).get("section");
+    const params = new URLSearchParams(location.search);
+    const pre = params.get("section");
     if (pre) { const r = document.querySelector(`input[name=section][value=${pre}]`); if (r) r.checked = true; }
+    document.querySelectorAll("input[name=section]").forEach(r => r.onchange = () => fillTopics());
+    $("#topic").onchange = updAvail;
+    fillTopics(params.get("topic"));
     $("#start").onclick = start;
   }
 
   function start() {
-    const sec = document.querySelector("input[name=section]:checked").value;
-    const n = +$("#count").value, per = +$("#per").value;
-    let pool = sec === "mixed" ? [...bank.quant.questions, ...bank.reasoning.questions, ...bank.dilr.questions] : bank[sec].questions;
-    qs = shuffle(pool).slice(0, Math.min(n, pool.length));
-    cfg = { sec, name: sec === "mixed" ? "Mixed" : bank[sec].name, neg: $("#neg").checked };
+    const s = sec(), topic = $("#topic").value, n = +$("#count").value, per = +$("#per").value;
+    const pool = poolFor(s, topic);
+    let pick = shuffle(pool).slice(0, Math.min(n, pool.length));
+    // keep questions from the same DILR set together, in their original order
+    const order = new Map(); pick.forEach((q, i) => { const k = q.set || q.id; if (!order.has(k)) order.set(k, i); });
+    pick.sort((a, b) => (order.get(a.set || a.id) - order.get(b.set || b.id)) || (pool.indexOf(a) - pool.indexOf(b)));
+    // shuffle option order unless the order is meaningful
+    qs = pick.map(q => { const idx = q.fixed ? [0, 1, 2, 3] : shuffle([0, 1, 2, 3]); return { ...q, options: idx.map(i => q.options[i]), answer: idx.indexOf(q.answer) }; });
+    cfg = { name: (s === "mixed" ? "Mixed" : bank[s].name) + (topic ? " · " + topic : ""), neg: $("#neg").checked };
     ans = Array(qs.length).fill(null); marked = Array(qs.length).fill(false); cur = 0;
     timeLeft = qs.length * per;
     $("#setup").classList.add("hidden"); $("#results").classList.add("hidden"); $("#quiz").classList.remove("hidden");
-    $("#quiz-title").textContent = cfg.name + " · Practice";
-    render(); tick(); timerId = setInterval(tick, 1000);
+    $("#quiz-title").textContent = cfg.name;
+    clearInterval(timerId); render(); tick(); timerId = setInterval(tick, 1000);
+    scrollTo(0, 0);
   }
 
   function tick() {
@@ -44,7 +68,7 @@
     $("#opts").querySelectorAll(".opt").forEach(b => b.onclick = () => { ans[cur] = +b.dataset.i; render(); });
     $("#prev").disabled = cur === 0;
     $("#next").textContent = cur === qs.length - 1 ? "Finish ✓" : "Save & Next →";
-    $("#mark").textContent = marked[cur] ? "★ Marked" : "☆ Mark for review";
+    $("#mark").textContent = marked[cur] ? "★ Marked" : "☆ Mark";
     $("#palette").innerHTML = qs.map((_, i) => `<button class="${ans[i] !== null ? "ans" : ""} ${marked[i] ? "mark" : ""} ${i === cur ? "cur" : ""}" data-i="${i}">${i + 1}</button>`).join("");
     $("#palette").querySelectorAll("button").forEach(b => b.onclick = () => { cur = +b.dataset.i; render(); });
     $("#answered").textContent = `${ans.filter(a => a !== null).length}/${qs.length} answered`;
@@ -62,14 +86,16 @@
       <div class="score-ring" style="--p:${pct}"><span>${pct}%</span></div>
       <h2 style="text-align:center">${auto ? "Time's up! " : ""}Score: ${score} / ${max}</h2>
       <p class="muted" style="text-align:center">✅ ${c} correct · ❌ ${w} wrong · ⏭ ${qs.length - c - w} skipped ${cfg.neg ? "· Marking: +3 / −1" : ""}</p>`;
-    $("#review").innerHTML = qs.map((q, i) => `
-      <div class="card review-item">
-        <div class="muted" style="font-size:.85rem">Q${i + 1} · ${q.topic} · ${ans[i] === null ? "Skipped" : ans[i] === q.answer ? "✅ Correct" : "❌ Wrong"}</div>
-        ${q.data ? `<div class="q-data">${q.data}</div>` : ""}
+    let lastSet = null;
+    $("#review").innerHTML = qs.map((q, i) => {
+      const showData = q.data && (!q.set || q.set !== lastSet); lastSet = q.set || null;
+      return `<div class="card review-item">
+        <div class="muted" style="font-size:.85rem">Q${i + 1} · ${q.topic} · ${q.difficulty} · ${ans[i] === null ? "Skipped" : ans[i] === q.answer ? "✅ Correct" : "❌ Wrong"}</div>
+        ${showData ? `<div class="q-data">${q.data}</div>` : (q.data ? `<div class="muted" style="font-size:.85rem;margin:.3em 0">Same data as the previous question.</div>` : "")}
         <div class="q-text">${q.question}</div>
         ${q.options.map((o, j) => `<div class="opt ${j === q.answer ? "correct" : ""} ${ans[i] === j && j !== q.answer ? "wrong" : ""}"><b>${L[j]}</b><span>${o}</span></div>`).join("")}
         <div class="sol"><b>Solution:</b> ${q.solution}</div>
-      </div>`).join("");
+      </div>`; }).join("");
     scrollTo(0, 0);
   }
 
@@ -79,8 +105,7 @@
     $("#clear").onclick = () => { ans[cur] = null; render(); };
     $("#mark").onclick = () => { marked[cur] = !marked[cur]; render(); };
     $("#submit").onclick = () => submit(false);
-    $("#retry").onclick = () => { $("#results").classList.add("hidden"); $("#setup").classList.remove("hidden"); };
+    $("#retry").onclick = () => { $("#results").classList.add("hidden"); $("#setup").classList.remove("hidden"); scrollTo(0, 0); };
     init();
   });
-  window.__quiz = { start }; // for testing
 })();

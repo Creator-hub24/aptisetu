@@ -6,7 +6,7 @@
     "id": "Q1",
     "topic": "Percentages",
     "difficulty": "Easy",
-    "question": "The price of a phone is increased by 20% and then the new price is decreased by 20%. What is the net change in price?",
+    "question": "The price of a phone is increased by 20% and the new price is then decreased by 20%. What is the net change in price?",
     "options": [
      "No change",
      "4% decrease",
@@ -14,10 +14,81 @@
      "2% decrease"
     ],
     "answer": 1,
-    "solution": "Net change = a + b + ab/100 = 20 − 20 − (20×20)/100 = −4%. So a 4% decrease."
+    "solution": "Net change = a + b + ab/100 = 20 − 20 − (20×20)/100 = −4%, i.e. a 4% decrease.",
+    "fixed": true
    },
    {
     "id": "Q2",
+    "topic": "Percentages",
+    "difficulty": "Easy",
+    "question": "A's salary is 25% more than B's. By what percentage is B's salary less than A's?",
+    "options": [
+     "25%",
+     "20%",
+     "15%",
+     "22.5%"
+    ],
+    "answer": 1,
+    "solution": "Let B = 100, so A = 125. B is less than A by 25/125 × 100 = 20%."
+   },
+   {
+    "id": "Q3",
+    "topic": "Percentages",
+    "difficulty": "Easy",
+    "question": "If 40% of a number is 96, what is 65% of the same number?",
+    "options": [
+     "144",
+     "156",
+     "160",
+     "152"
+    ],
+    "answer": 1,
+    "solution": "Number = 96/0.40 = 240. 65% of 240 = 156."
+   },
+   {
+    "id": "Q4",
+    "topic": "Percentages",
+    "difficulty": "Medium",
+    "question": "A town's population is 50,000. It grows by 10% in the first year and 20% in the second. What is the population after 2 years?",
+    "options": [
+     "65,000",
+     "66,000",
+     "64,500",
+     "67,200"
+    ],
+    "answer": 1,
+    "solution": "50,000 × 1.10 × 1.20 = 66,000."
+   },
+   {
+    "id": "Q5",
+    "topic": "Percentages",
+    "difficulty": "Medium",
+    "question": "A student scoring 30% fails by 30 marks. Another student scoring 45% gets 15 marks more than the pass mark. What are the maximum marks?",
+    "options": [
+     "250",
+     "300",
+     "350",
+     "400"
+    ],
+    "answer": 1,
+    "solution": "0.30M + 30 = 0.45M − 15 ⇒ 0.15M = 45 ⇒ M = 300."
+   },
+   {
+    "id": "Q6",
+    "topic": "Percentages",
+    "difficulty": "Hard",
+    "question": "The price of sugar rises by 25%. By what percentage must a family cut its consumption so that its spending on sugar stays the same?",
+    "options": [
+     "25%",
+     "20%",
+     "15%",
+     "22%"
+    ],
+    "answer": 1,
+    "solution": "Required cut = r/(100 + r) × 100 = 25/125 × 100 = 20%."
+   },
+   {
+    "id": "Q7",
     "topic": "Profit & Loss",
     "difficulty": "Easy",
     "question": "An article bought for ₹800 is sold for ₹1,000. What is the profit percentage?",
@@ -28,10 +99,361 @@
      "18%"
     ],
     "answer": 1,
-    "solution": "Profit = 1000 − 800 = ₹200. Profit % = 200/800 × 100 = 25%."
+    "solution": "Profit = ₹200. Profit % = 200/800 × 100 = 25%."
    },
    {
-    "id": "Q3",
+    "id": "Q8",
+    "topic": "Profit & Loss",
+    "difficulty": "Easy",
+    "question": "An item has a marked price of ₹1,200 and is sold at a 15% discount. What is the selling price?",
+    "options": [
+     "₹1,020",
+     "₹1,050",
+     "₹1,000",
+     "₹1,080"
+    ],
+    "answer": 0,
+    "solution": "SP = 1200 × (1 − 0.15) = ₹1,020."
+   },
+   {
+    "id": "Q9",
+    "topic": "Profit & Loss",
+    "difficulty": "Medium",
+    "question": "A shopkeeper marks goods 40% above cost price and gives a 10% discount. What is his profit percentage?",
+    "options": [
+     "30%",
+     "26%",
+     "28%",
+     "24%"
+    ],
+    "answer": 1,
+    "solution": "SP = CP × 1.40 × 0.90 = 1.26 × CP, so profit = 26%."
+   },
+   {
+    "id": "Q10",
+    "topic": "Profit & Loss",
+    "difficulty": "Medium",
+    "question": "Selling an item for ₹1,140 causes a loss of 5%. At what price should it be sold to make a 5% profit?",
+    "options": [
+     "₹1,200",
+     "₹1,260",
+     "₹1,250",
+     "₹1,197"
+    ],
+    "answer": 1,
+    "solution": "CP = 1140/0.95 = ₹1,200. For 5% profit, SP = 1200 × 1.05 = ₹1,260."
+   },
+   {
+    "id": "Q11",
+    "topic": "Profit & Loss",
+    "difficulty": "Hard",
+    "question": "Two items are each sold for ₹990, one at a 10% profit and the other at a 10% loss. What is the overall result?",
+    "options": [
+     "No profit, no loss",
+     "1% profit",
+     "1% loss",
+     "2% loss"
+    ],
+    "answer": 2,
+    "solution": "CPs: 990/1.1 = 900 and 990/0.9 = 1,100, total ₹2,000. SP total = ₹1,980. Loss = 20/2000 = 1%.",
+    "fixed": true
+   },
+   {
+    "id": "Q12",
+    "topic": "Profit & Loss",
+    "difficulty": "Hard",
+    "question": "A dishonest dealer sells at cost price but uses a 900 g weight in place of 1 kg. What is his profit percentage?",
+    "options": [
+     "10%",
+     "11 1/9%",
+     "9 1/11%",
+     "12%"
+    ],
+    "answer": 1,
+    "solution": "He gives 900 g but charges for 1000 g. Profit % = 100/900 × 100 = 11 1/9%."
+   },
+   {
+    "id": "Q13",
+    "topic": "Simple & Compound Interest",
+    "difficulty": "Easy",
+    "question": "What is the simple interest on ₹5,000 at 8% per annum for 3 years?",
+    "options": [
+     "₹1,000",
+     "₹1,200",
+     "₹1,260",
+     "₹1,500"
+    ],
+    "answer": 1,
+    "solution": "SI = P × R × T/100 = 5000 × 8 × 3/100 = ₹1,200."
+   },
+   {
+    "id": "Q14",
+    "topic": "Simple & Compound Interest",
+    "difficulty": "Easy",
+    "question": "What is the compound interest on ₹10,000 at 10% per annum for 2 years, compounded annually?",
+    "options": [
+     "₹2,000",
+     "₹2,100",
+     "₹2,200",
+     "₹2,110"
+    ],
+    "answer": 1,
+    "solution": "A = 10000 × 1.1² = ₹12,100. CI = 12,100 − 10,000 = ₹2,100."
+   },
+   {
+    "id": "Q15",
+    "topic": "Simple & Compound Interest",
+    "difficulty": "Medium",
+    "question": "What is the difference between compound and simple interest on ₹8,000 for 2 years at 5% per annum?",
+    "options": [
+     "₹10",
+     "₹20",
+     "₹40",
+     "₹25"
+    ],
+    "answer": 1,
+    "solution": "For 2 years, CI − SI = P(R/100)² = 8000 × 0.05² = ₹20."
+   },
+   {
+    "id": "Q16",
+    "topic": "Simple & Compound Interest",
+    "difficulty": "Medium",
+    "question": "A sum of money doubles in 8 years at simple interest. What is the rate of interest per annum?",
+    "options": [
+     "10%",
+     "12%",
+     "12.5%",
+     "15%"
+    ],
+    "answer": 2,
+    "solution": "Interest = P in 8 years, so R = 100/8 = 12.5%."
+   },
+   {
+    "id": "Q17",
+    "topic": "Simple & Compound Interest",
+    "difficulty": "Hard",
+    "question": "A sum becomes ₹8,820 in 2 years at 5% per annum compound interest. What is the principal?",
+    "options": [
+     "₹8,000",
+     "₹8,200",
+     "₹7,800",
+     "₹8,400"
+    ],
+    "answer": 0,
+    "solution": "P = 8820/1.05² = 8820/1.1025 = ₹8,000."
+   },
+   {
+    "id": "Q18",
+    "topic": "Ratio & Proportion",
+    "difficulty": "Easy",
+    "question": "₹1,800 is divided in the ratio 2 : 3 : 4. What is the largest share?",
+    "options": [
+     "₹600",
+     "₹800",
+     "₹900",
+     "₹720"
+    ],
+    "answer": 1,
+    "solution": "Total parts = 9, so one part = ₹200. Largest share = 4 × 200 = ₹800."
+   },
+   {
+    "id": "Q19",
+    "topic": "Ratio & Proportion",
+    "difficulty": "Easy",
+    "question": "If A : B = 2 : 3 and B : C = 4 : 5, what is A : B : C?",
+    "options": [
+     "8 : 12 : 15",
+     "2 : 3 : 5",
+     "8 : 12 : 13",
+     "6 : 9 : 10"
+    ],
+    "answer": 0,
+    "solution": "Make B equal: A:B = 8:12 and B:C = 12:15, so A:B:C = 8:12:15."
+   },
+   {
+    "id": "Q20",
+    "topic": "Ratio & Proportion",
+    "difficulty": "Medium",
+    "question": "A and B invest ₹30,000 and ₹45,000 respectively for one year. The profit is ₹15,000. What is A's share?",
+    "options": [
+     "₹5,000",
+     "₹6,000",
+     "₹7,500",
+     "₹9,000"
+    ],
+    "answer": 1,
+    "solution": "Ratio = 30000 : 45000 = 2 : 3. A's share = 2/5 × 15000 = ₹6,000."
+   },
+   {
+    "id": "Q21",
+    "topic": "Ratio & Proportion",
+    "difficulty": "Medium",
+    "question": "What is the mean proportional between 9 and 16?",
+    "options": [
+     "12",
+     "12.5",
+     "13",
+     "144"
+    ],
+    "answer": 0,
+    "solution": "Mean proportional = √(9 × 16) = √144 = 12."
+   },
+   {
+    "id": "Q22",
+    "topic": "Ratio & Proportion",
+    "difficulty": "Hard",
+    "question": "The ratio of boys to girls in a class is 7 : 5. When 12 more girls join, the ratio becomes 1 : 1. How many boys are there?",
+    "options": [
+     "35",
+     "42",
+     "49",
+     "28"
+    ],
+    "answer": 1,
+    "solution": "7k = 5k + 12 ⇒ k = 6. Boys = 7 × 6 = 42."
+   },
+   {
+    "id": "Q23",
+    "topic": "Averages & Alligation",
+    "difficulty": "Easy",
+    "question": "The average of 5 numbers is 20. When one number is removed, the average of the rest is 18. What number was removed?",
+    "options": [
+     "22",
+     "28",
+     "26",
+     "30"
+    ],
+    "answer": 1,
+    "solution": "Sum of 5 = 100. Sum of 4 = 72. Removed = 100 − 72 = 28."
+   },
+   {
+    "id": "Q24",
+    "topic": "Averages & Alligation",
+    "difficulty": "Easy",
+    "question": "What is the average of the first 10 natural numbers?",
+    "options": [
+     "5",
+     "5.5",
+     "6",
+     "10"
+    ],
+    "answer": 1,
+    "solution": "(1 + 2 + … + 10)/10 = 55/10 = 5.5."
+   },
+   {
+    "id": "Q25",
+    "topic": "Averages & Alligation",
+    "difficulty": "Medium",
+    "question": "The average age of 30 students is 14 years. When the teacher's age is included, the average becomes 15 years. What is the teacher's age?",
+    "options": [
+     "44 years",
+     "45 years",
+     "46 years",
+     "31 years"
+    ],
+    "answer": 1,
+    "solution": "Sum of 30 ages = 420. Sum of 31 ages = 31 × 15 = 465. Teacher = 465 − 420 = 45 years."
+   },
+   {
+    "id": "Q26",
+    "topic": "Averages & Alligation",
+    "difficulty": "Medium",
+    "question": "In what ratio must rice at ₹40/kg be mixed with rice at ₹55/kg to get a mixture worth ₹45/kg?",
+    "options": [
+     "1 : 2",
+     "2 : 1",
+     "3 : 2",
+     "2 : 3"
+    ],
+    "answer": 1,
+    "solution": "Alligation: (55 − 45) : (45 − 40) = 10 : 5 = 2 : 1 (cheaper : dearer)."
+   },
+   {
+    "id": "Q27",
+    "topic": "Averages & Alligation",
+    "difficulty": "Hard",
+    "question": "A 20-litre mixture has milk and water in the ratio 3 : 1. How much water must be added to make the ratio 3 : 2?",
+    "options": [
+     "4 L",
+     "5 L",
+     "6 L",
+     "10 L"
+    ],
+    "answer": 1,
+    "solution": "Milk = 15 L, water = 5 L. For 3 : 2, water must be 10 L, so add 5 L."
+   },
+   {
+    "id": "Q28",
+    "topic": "Time & Work",
+    "difficulty": "Easy",
+    "question": "A can finish a job in 12 days and B in 18 days. Working together, how long will they take?",
+    "options": [
+     "7.2 days",
+     "7.5 days",
+     "6 days",
+     "15 days"
+    ],
+    "answer": 0,
+    "solution": "Combined rate = 1/12 + 1/18 = 5/36 per day. Time = 36/5 = 7.2 days."
+   },
+   {
+    "id": "Q29",
+    "topic": "Time & Work",
+    "difficulty": "Easy",
+    "question": "6 men can finish a piece of work in 10 days. How many days will 15 men take?",
+    "options": [
+     "3 days",
+     "4 days",
+     "5 days",
+     "6 days"
+    ],
+    "answer": 1,
+    "solution": "Total work = 6 × 10 = 60 man-days. 60/15 = 4 days."
+   },
+   {
+    "id": "Q30",
+    "topic": "Time & Work",
+    "difficulty": "Medium",
+    "question": "A and B together can do a job in 10 days. A alone can do it in 15 days. How long will B take alone?",
+    "options": [
+     "25 days",
+     "30 days",
+     "20 days",
+     "35 days"
+    ],
+    "answer": 1,
+    "solution": "B's rate = 1/10 − 1/15 = 1/30, so B takes 30 days."
+   },
+   {
+    "id": "Q31",
+    "topic": "Time & Work",
+    "difficulty": "Medium",
+    "question": "Pipe A fills a tank in 6 hours and pipe B empties it in 9 hours. If both are opened together on an empty tank, how long will it take to fill?",
+    "options": [
+     "15 h",
+     "18 h",
+     "12 h",
+     "3.6 h"
+    ],
+    "answer": 1,
+    "solution": "Net rate = 1/6 − 1/9 = 1/18 per hour, so 18 hours."
+   },
+   {
+    "id": "Q32",
+    "topic": "Time & Work",
+    "difficulty": "Hard",
+    "question": "A can do a job in 20 days and B in 30 days. They work together for 6 days, then A leaves. In how many more days will B finish the job?",
+    "options": [
+     "12",
+     "15",
+     "18",
+     "10"
+    ],
+    "answer": 1,
+    "solution": "In 6 days they do 6 × (1/20 + 1/30) = 1/2 of the job. B does the other 1/2 in 30 × 1/2 = 15 days."
+   },
+   {
+    "id": "Q33",
     "topic": "Time, Speed & Distance",
     "difficulty": "Easy",
     "question": "A 150 m long train runs at 54 km/h. How long does it take to cross a pole?",
@@ -45,119 +467,7 @@
     "solution": "54 km/h = 54 × 5/18 = 15 m/s. Time = 150/15 = 10 s."
    },
    {
-    "id": "Q4",
-    "topic": "Number System",
-    "difficulty": "Medium",
-    "question": "How many trailing zeros does 50! have?",
-    "options": [
-     "10",
-     "11",
-     "12",
-     "13"
-    ],
-    "answer": 2,
-    "solution": "Count factors of 5: ⌊50/5⌋ + ⌊50/25⌋ = 10 + 2 = 12."
-   },
-   {
-    "id": "Q5",
-    "topic": "Algebra",
-    "difficulty": "Easy",
-    "question": "If x + 1/x = 5, what is x² + 1/x²?",
-    "options": [
-     "23",
-     "25",
-     "27",
-     "21"
-    ],
-    "answer": 0,
-    "solution": "(x + 1/x)² = x² + 1/x² + 2 ⇒ 25 = x² + 1/x² + 2 ⇒ x² + 1/x² = 23."
-   },
-   {
-    "id": "Q6",
-    "topic": "Permutations & Combinations",
-    "difficulty": "Medium",
-    "question": "In how many ways can the letters of the word LEVEL be arranged?",
-    "options": [
-     "60",
-     "30",
-     "120",
-     "20"
-    ],
-    "answer": 1,
-    "solution": "LEVEL has 5 letters with L twice and E twice. Arrangements = 5!/(2!·2!) = 120/4 = 30."
-   },
-   {
-    "id": "Q7",
-    "topic": "Probability",
-    "difficulty": "Easy",
-    "question": "Two fair dice are thrown. What is the probability that the sum is 7?",
-    "options": [
-     "1/6",
-     "5/36",
-     "7/36",
-     "1/9"
-    ],
-    "answer": 0,
-    "solution": "Favourable pairs: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6. Probability = 6/36 = 1/6."
-   },
-   {
-    "id": "Q8",
-    "topic": "Geometry",
-    "difficulty": "Medium",
-    "question": "A right triangle has legs 6 cm and 8 cm. What is the area of its circumcircle?",
-    "options": [
-     "16π cm²",
-     "25π cm²",
-     "36π cm²",
-     "100π cm²"
-    ],
-    "answer": 1,
-    "solution": "Hypotenuse = √(36+64) = 10 cm. In a right triangle the hypotenuse is the circumdiameter, so r = 5 cm and area = 25π cm²."
-   },
-   {
-    "id": "Q9",
-    "topic": "Simple & Compound Interest",
-    "difficulty": "Easy",
-    "question": "What is the simple interest on ₹5,000 at 8% per annum for 3 years?",
-    "options": [
-     "₹1,000",
-     "₹1,200",
-     "₹1,260",
-     "₹1,500"
-    ],
-    "answer": 1,
-    "solution": "SI = P×R×T/100 = 5000 × 8 × 3/100 = ₹1,200."
-   },
-   {
-    "id": "Q10",
-    "topic": "Time & Work",
-    "difficulty": "Easy",
-    "question": "A can finish a job in 12 days and B in 18 days. Working together, how long will they take?",
-    "options": [
-     "7.2 days",
-     "7.5 days",
-     "6 days",
-     "15 days"
-    ],
-    "answer": 0,
-    "solution": "Combined rate = 1/12 + 1/18 = 3/36 + 2/36 = 5/36 per day. Time = 36/5 = 7.2 days."
-   },
-   {
-    "id": "Q11",
-    "topic": "Number System",
-    "difficulty": "Medium",
-    "question": "What is the remainder when 2¹⁰ is divided by 7?",
-    "options": [
-     "1",
-     "2",
-     "4",
-     "3"
-    ],
-    "answer": 1,
-    "solution": "2³ = 8 ≡ 1 (mod 7). 2¹⁰ = (2³)³ × 2 ≡ 1 × 2 = 2. (Check: 1024 = 7×146 + 2.)"
-   },
-   {
-    "id": "Q12",
+    "id": "Q34",
     "topic": "Time, Speed & Distance",
     "difficulty": "Medium",
     "question": "A car goes from A to B at 60 km/h and returns at 40 km/h. What is its average speed for the round trip?",
@@ -168,7 +478,441 @@
      "52 km/h"
     ],
     "answer": 1,
-    "solution": "For equal distances, average speed = 2xy/(x+y) = 2×60×40/100 = 48 km/h."
+    "solution": "For equal distances, average speed = 2xy/(x + y) = 2 × 60 × 40/100 = 48 km/h."
+   },
+   {
+    "id": "Q35",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Medium",
+    "question": "A 200 m long train running at 72 km/h crosses a 300 m long platform. How long does it take?",
+    "options": [
+     "20 s",
+     "25 s",
+     "15 s",
+     "30 s"
+    ],
+    "answer": 1,
+    "solution": "72 km/h = 20 m/s. Distance = 200 + 300 = 500 m. Time = 500/20 = 25 s."
+   },
+   {
+    "id": "Q36",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Medium",
+    "question": "A boat's speed in still water is 15 km/h and the stream flows at 3 km/h. How long does the boat take to go 36 km downstream?",
+    "options": [
+     "2 h",
+     "2.5 h",
+     "3 h",
+     "1.5 h"
+    ],
+    "answer": 0,
+    "solution": "Downstream speed = 15 + 3 = 18 km/h. Time = 36/18 = 2 h."
+   },
+   {
+    "id": "Q37",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Hard",
+    "question": "Two trains, 120 m and 180 m long, run in opposite directions at 40 km/h and 50 km/h. How long do they take to cross each other completely?",
+    "options": [
+     "10 s",
+     "12 s",
+     "15 s",
+     "18 s"
+    ],
+    "answer": 1,
+    "solution": "Relative speed = 90 km/h = 25 m/s. Distance = 300 m. Time = 300/25 = 12 s."
+   },
+   {
+    "id": "Q38",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "How many trailing zeros does 50! have?",
+    "options": [
+     "10",
+     "11",
+     "12",
+     "13"
+    ],
+    "answer": 2,
+    "solution": "Count the factors of 5: ⌊50/5⌋ + ⌊50/25⌋ = 10 + 2 = 12."
+   },
+   {
+    "id": "Q39",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "What is the remainder when 2¹⁰ is divided by 7?",
+    "options": [
+     "1",
+     "2",
+     "4",
+     "3"
+    ],
+    "answer": 1,
+    "solution": "2³ = 8 ≡ 1 (mod 7), so 2¹⁰ = (2³)³ × 2 ≡ 2. Check: 1024 = 7 × 146 + 2."
+   },
+   {
+    "id": "Q40",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "What is the HCF of 36 and 84?",
+    "options": [
+     "6",
+     "12",
+     "18",
+     "24"
+    ],
+    "answer": 1,
+    "solution": "36 = 2² × 3², 84 = 2² × 3 × 7. HCF = 2² × 3 = 12."
+   },
+   {
+    "id": "Q41",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "What is the LCM of 12, 18 and 30?",
+    "options": [
+     "90",
+     "120",
+     "180",
+     "360"
+    ],
+    "answer": 2,
+    "solution": "12 = 2² × 3, 18 = 2 × 3², 30 = 2 × 3 × 5. LCM = 2² × 3² × 5 = 180."
+   },
+   {
+    "id": "Q42",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "How many positive factors does 360 have?",
+    "options": [
+     "18",
+     "20",
+     "24",
+     "36"
+    ],
+    "answer": 2,
+    "solution": "360 = 2³ × 3² × 5. Number of factors = (3+1)(2+1)(1+1) = 24."
+   },
+   {
+    "id": "Q43",
+    "topic": "Number System",
+    "difficulty": "Hard",
+    "question": "What is the unit digit of 7⁹⁵?",
+    "options": [
+     "1",
+     "3",
+     "7",
+     "9"
+    ],
+    "answer": 1,
+    "solution": "Unit digits of powers of 7 repeat 7, 9, 3, 1. 95 mod 4 = 3, so the unit digit is the 3rd in the cycle, which is 3."
+   },
+   {
+    "id": "Q44",
+    "topic": "Algebra",
+    "difficulty": "Easy",
+    "question": "If x + 1/x = 5, what is x² + 1/x²?",
+    "options": [
+     "23",
+     "25",
+     "27",
+     "21"
+    ],
+    "answer": 0,
+    "solution": "(x + 1/x)² = x² + 1/x² + 2 ⇒ x² + 1/x² = 25 − 2 = 23."
+   },
+   {
+    "id": "Q45",
+    "topic": "Algebra",
+    "difficulty": "Easy",
+    "question": "If 3x − 7 = 2x + 5, what is x?",
+    "options": [
+     "2",
+     "12",
+     "−2",
+     "10"
+    ],
+    "answer": 1,
+    "solution": "3x − 2x = 5 + 7 ⇒ x = 12."
+   },
+   {
+    "id": "Q46",
+    "topic": "Algebra",
+    "difficulty": "Medium",
+    "question": "If the roots of x² − 5x + 6 = 0 are a and b, what is a² + b²?",
+    "options": [
+     "13",
+     "25",
+     "11",
+     "37"
+    ],
+    "answer": 0,
+    "solution": "a + b = 5 and ab = 6. a² + b² = (a + b)² − 2ab = 25 − 12 = 13. (The roots are 2 and 3.)"
+   },
+   {
+    "id": "Q47",
+    "topic": "Algebra",
+    "difficulty": "Medium",
+    "question": "The sum of two numbers is 25 and their difference is 7. What is their product?",
+    "options": [
+     "144",
+     "136",
+     "150",
+     "126"
+    ],
+    "answer": 0,
+    "solution": "The numbers are (25 + 7)/2 = 16 and (25 − 7)/2 = 9. Product = 144."
+   },
+   {
+    "id": "Q48",
+    "topic": "Algebra",
+    "difficulty": "Hard",
+    "question": "If a + b = 7 and ab = 10, what is a³ + b³?",
+    "options": [
+     "133",
+     "343",
+     "210",
+     "153"
+    ],
+    "answer": 0,
+    "solution": "a³ + b³ = (a + b)³ − 3ab(a + b) = 343 − 210 = 133. (a, b are 2 and 5: 8 + 125 = 133.)"
+   },
+   {
+    "id": "Q49",
+    "topic": "Geometry & Mensuration",
+    "difficulty": "Medium",
+    "question": "A right triangle has legs of 6 cm and 8 cm. What is the area of its circumcircle?",
+    "options": [
+     "16π cm²",
+     "25π cm²",
+     "36π cm²",
+     "100π cm²"
+    ],
+    "answer": 1,
+    "solution": "Hypotenuse = √(36 + 64) = 10 cm. The hypotenuse is the circumdiameter, so r = 5 and area = 25π cm²."
+   },
+   {
+    "id": "Q50",
+    "topic": "Geometry & Mensuration",
+    "difficulty": "Easy",
+    "question": "What is the perimeter of a rectangle 12 cm long and 8 cm wide?",
+    "options": [
+     "20 cm",
+     "40 cm",
+     "96 cm",
+     "48 cm"
+    ],
+    "answer": 1,
+    "solution": "Perimeter = 2(l + b) = 2(12 + 8) = 40 cm."
+   },
+   {
+    "id": "Q51",
+    "topic": "Geometry & Mensuration",
+    "difficulty": "Easy",
+    "question": "What is each interior angle of a regular hexagon?",
+    "options": [
+     "108°",
+     "120°",
+     "135°",
+     "144°"
+    ],
+    "answer": 1,
+    "solution": "Each interior angle = (n − 2) × 180°/n = 4 × 180/6 = 120°."
+   },
+   {
+    "id": "Q52",
+    "topic": "Geometry & Mensuration",
+    "difficulty": "Medium",
+    "question": "A cube has a total surface area of 150 cm². What is its volume?",
+    "options": [
+     "125 cm³",
+     "216 cm³",
+     "100 cm³",
+     "150 cm³"
+    ],
+    "answer": 0,
+    "solution": "6a² = 150 ⇒ a = 5 cm. Volume = 5³ = 125 cm³."
+   },
+   {
+    "id": "Q53",
+    "topic": "Geometry & Mensuration",
+    "difficulty": "Medium",
+    "question": "What is the area of an equilateral triangle with side 6 cm?",
+    "options": [
+     "9√3 cm²",
+     "18√3 cm²",
+     "12√3 cm²",
+     "36 cm²"
+    ],
+    "answer": 0,
+    "solution": "Area = (√3/4) × a² = (√3/4) × 36 = 9√3 cm²."
+   },
+   {
+    "id": "Q54",
+    "topic": "Geometry & Mensuration",
+    "difficulty": "Hard",
+    "question": "If the radius of a circle increases by 10%, by what percentage does its area increase?",
+    "options": [
+     "10%",
+     "20%",
+     "21%",
+     "11%"
+    ],
+    "answer": 2,
+    "solution": "Area ∝ r². 1.1² = 1.21, so the area increases by 21%."
+   },
+   {
+    "id": "Q55",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can the letters of the word LEVEL be arranged?",
+    "options": [
+     "60",
+     "30",
+     "120",
+     "20"
+    ],
+    "answer": 1,
+    "solution": "5 letters with L twice and E twice: 5!/(2! × 2!) = 30."
+   },
+   {
+    "id": "Q56",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Easy",
+    "question": "In how many ways can 5 people sit in a row?",
+    "options": [
+     "25",
+     "60",
+     "120",
+     "720"
+    ],
+    "answer": 2,
+    "solution": "5! = 120."
+   },
+   {
+    "id": "Q57",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Easy",
+    "question": "In how many ways can a committee of 3 be chosen from 8 people?",
+    "options": [
+     "56",
+     "336",
+     "24",
+     "64"
+    ],
+    "answer": 0,
+    "solution": "8C3 = (8 × 7 × 6)/(3 × 2 × 1) = 56."
+   },
+   {
+    "id": "Q58",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Medium",
+    "question": "How many 3-digit numbers can be formed using the digits 1, 2, 3, 4, 5 without repetition?",
+    "options": [
+     "125",
+     "60",
+     "80",
+     "120"
+    ],
+    "answer": 1,
+    "solution": "5 × 4 × 3 = 60."
+   },
+   {
+    "id": "Q59",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Hard",
+    "question": "A committee of 3 is chosen from 5 men and 4 women. In how many ways can this be done if it must include at least one woman?",
+    "options": [
+     "74",
+     "84",
+     "80",
+     "70"
+    ],
+    "answer": 0,
+    "solution": "Total = 9C3 = 84. All-men = 5C3 = 10. At least one woman = 84 − 10 = 74."
+   },
+   {
+    "id": "Q60",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Hard",
+    "question": "How many diagonals does a regular decagon (10 sides) have?",
+    "options": [
+     "35",
+     "45",
+     "40",
+     "70"
+    ],
+    "answer": 0,
+    "solution": "Diagonals = n(n − 3)/2 = 10 × 7/2 = 35."
+   },
+   {
+    "id": "Q61",
+    "topic": "Probability",
+    "difficulty": "Easy",
+    "question": "Two fair dice are thrown. What is the probability that the sum is 7?",
+    "options": [
+     "1/6",
+     "5/36",
+     "7/36",
+     "1/9"
+    ],
+    "answer": 0,
+    "solution": "Favourable outcomes: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1), which is 6 of 36, so 1/6."
+   },
+   {
+    "id": "Q62",
+    "topic": "Probability",
+    "difficulty": "Easy",
+    "question": "A card is drawn at random from a standard 52-card deck. What is the probability that it is a king?",
+    "options": [
+     "1/13",
+     "1/4",
+     "1/52",
+     "4/13"
+    ],
+    "answer": 0,
+    "solution": "There are 4 kings: 4/52 = 1/13."
+   },
+   {
+    "id": "Q63",
+    "topic": "Probability",
+    "difficulty": "Medium",
+    "question": "Three fair coins are tossed. What is the probability of getting at least two heads?",
+    "options": [
+     "3/8",
+     "1/2",
+     "1/4",
+     "5/8"
+    ],
+    "answer": 1,
+    "solution": "Outcomes with 2 or 3 heads: HHT, HTH, THH, HHH, which is 4 of 8, so 1/2."
+   },
+   {
+    "id": "Q64",
+    "topic": "Probability",
+    "difficulty": "Medium",
+    "question": "A bag has 5 red and 3 blue balls. Two balls are drawn without replacement. What is the probability that both are red?",
+    "options": [
+     "5/14",
+     "25/64",
+     "5/16",
+     "3/14"
+    ],
+    "answer": 0,
+    "solution": "5C2/8C2 = 10/28 = 5/14."
+   },
+   {
+    "id": "Q65",
+    "topic": "Probability",
+    "difficulty": "Hard",
+    "question": "Two fair dice are thrown. What is the probability that the product of the numbers is even?",
+    "options": [
+     "1/2",
+     "3/4",
+     "1/4",
+     "2/3"
+    ],
+    "answer": 1,
+    "solution": "The product is odd only when both are odd: 3 × 3 = 9 outcomes. P(even) = 1 − 9/36 = 3/4."
    }
   ]
  },
@@ -187,7 +931,8 @@
      "Neither follows"
     ],
     "answer": 2,
-    "solution": "Cats ⊂ Dogs ⊂ Birds, so all cats are birds (I). Since all cats are birds, some birds are cats (II, conversion of I). Both follow."
+    "solution": "Cats ⊂ Dogs ⊂ Birds, so all cats are birds (I). Converting I gives some birds are cats (II). Both follow.",
+    "fixed": true
    },
    {
     "id": "R2",
@@ -197,42 +942,146 @@
     "options": [
      "Only I follows",
      "Only II follows",
-     "Both follow",
+     "Both I and II follow",
      "Neither follows"
     ],
     "answer": 0,
-    "solution": "The pens that are books cannot be pencils, so some pens are not pencils (I). Pens that aren't books may or may not be pencils, so II doesn't necessarily follow."
+    "solution": "The pens that are books cannot be pencils, so I follows. Pens that are not books may or may not be pencils, so II does not follow.",
+    "fixed": true
    },
    {
     "id": "R3",
-    "topic": "Coding-Decoding",
+    "topic": "Syllogisms",
     "difficulty": "Easy",
-    "question": "If CAT is coded as DBU, how is DOG coded?",
+    "question": "Statements: All roses are flowers. Some flowers are red.<br>Conclusions: I. Some roses are red. II. All flowers are roses.",
     "options": [
-     "EPH",
-     "CNF",
-     "EOH",
-     "DPH"
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
     ],
-    "answer": 0,
-    "solution": "Each letter is shifted +1: C→D, A→B, T→U. So D→E, O→P, G→H = EPH."
+    "answer": 3,
+    "solution": "The red flowers may lie entirely outside the roses, so I is not certain. 'All roses are flowers' does not make all flowers roses, so II fails too.",
+    "fixed": true
    },
    {
     "id": "R4",
-    "topic": "Coding-Decoding",
+    "topic": "Syllogisms",
     "difficulty": "Medium",
-    "question": "In a code, APPLE = 50 (sum of the alphabet positions of its letters). What is GRAPE?",
+    "question": "Statements: No apple is a mango. All mangoes are fruits.<br>Conclusions: I. Some fruits are not apples. II. No fruit is an apple.",
     "options": [
-     "45",
-     "47",
-     "49",
-     "52"
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
     ],
-    "answer": 1,
-    "solution": "APPLE = 1+16+16+12+5 = 50. GRAPE = 7+18+1+16+5 = 47."
+    "answer": 0,
+    "solution": "The mangoes are fruits and none of them is an apple, so some fruits are not apples (I). Apples could still be fruits, so II does not follow.",
+    "fixed": true
    },
    {
     "id": "R5",
+    "topic": "Syllogisms",
+    "difficulty": "Medium",
+    "question": "Statements: All books are pages. No page is a pen.<br>Conclusions: I. No book is a pen. II. Some pages are books.",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 2,
+    "solution": "Books ⊂ Pages and Pages ∩ Pens = ∅, so no book is a pen (I). Converting 'all books are pages' gives some pages are books (II).",
+    "fixed": true
+   },
+   {
+    "id": "R6",
+    "topic": "Syllogisms",
+    "difficulty": "Hard",
+    "question": "Statements: Some teachers are doctors. Some doctors are engineers.<br>Conclusions: I. Some teachers are engineers. II. No teacher is an engineer.",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Either I or II follows",
+     "Neither follows"
+    ],
+    "answer": 2,
+    "solution": "Neither conclusion is definite on its own. But I ('some') and II ('no') are about the same two groups and together cover every case, so exactly one must be true: Either I or II follows (the standard rule for complementary pairs).",
+    "fixed": true
+   },
+   {
+    "id": "R7",
+    "topic": "Seating Arrangement",
+    "difficulty": "Hard",
+    "question": "P, Q, R, S and T sit in a row facing north. S is in the middle. R is at one of the extreme ends. T is second from the left. Q is immediately to the right of P. Who sits at the extreme right?",
+    "options": [
+     "P",
+     "R",
+     "Q",
+     "T"
+    ],
+    "answer": 2,
+    "solution": "Positions 1–5 from the left: S = 3, T = 2. P and Q need two adjacent free seats, which is only 4–5, so P = 4 and Q = 5, leaving R = 1. Order: R T S P Q."
+   },
+   {
+    "id": "R8",
+    "topic": "Seating Arrangement",
+    "difficulty": "Medium",
+    "question": "P, Q, R, S and T sit in a row facing north. S is in the middle. R is at one of the extreme ends. T is second from the left. Q is immediately to the right of P. Who sits exactly between T and P?",
+    "options": [
+     "R",
+     "S",
+     "Q",
+     "No one"
+    ],
+    "answer": 1,
+    "solution": "The order is R T S P Q, so S sits between T (2nd) and P (4th).",
+    "fixed": true
+   },
+   {
+    "id": "R9",
+    "topic": "Seating Arrangement",
+    "difficulty": "Medium",
+    "question": "Six friends A–F sit around a circular table facing the centre. A sits opposite D. B is immediately to the left of A. E is immediately to the right of D. C is not a neighbour of A. Who sits opposite B?",
+    "options": [
+     "C",
+     "E",
+     "F",
+     "A"
+    ],
+    "answer": 0,
+    "solution": "Fix A. D is opposite A. B is A's left neighbour and E is D's right neighbour. C can't sit next to A, so C takes the seat opposite B, and F sits on A's right."
+   },
+   {
+    "id": "R10",
+    "topic": "Seating Arrangement",
+    "difficulty": "Medium",
+    "question": "Six friends A–F sit around a circular table facing the centre. A sits opposite D. B is immediately to the left of A. E is immediately to the right of D. C is not a neighbour of A. Who is immediately to the right of A?",
+    "options": [
+     "B",
+     "F",
+     "C",
+     "E"
+    ],
+    "answer": 1,
+    "solution": "Going clockwise from A (to each person's left): A, B, E, D, C, F. So F is on A's right."
+   },
+   {
+    "id": "R11",
+    "topic": "Seating Arrangement",
+    "difficulty": "Hard",
+    "question": "Six friends A–F sit around a circular table facing the centre. A sits opposite D. B is immediately to the left of A. E is immediately to the right of D. C is not a neighbour of A. Who sits between E and C?",
+    "options": [
+     "D",
+     "F",
+     "B",
+     "A"
+    ],
+    "answer": 0,
+    "solution": "Clockwise order: A, B, E, D, C, F. D sits between E and C."
+   },
+   {
+    "id": "R12",
     "topic": "Blood Relations",
     "difficulty": "Easy",
     "question": "Pointing to a man, Riya says, \"He is the son of my father's father's only son.\" How is the man related to Riya?",
@@ -243,10 +1092,10 @@
      "Nephew"
     ],
     "answer": 2,
-    "solution": "Father's father's only son = Riya's father. The son of Riya's father is her brother."
+    "solution": "Father's father's only son = Riya's father. Her father's son is her brother."
    },
    {
-    "id": "R6",
+    "id": "R13",
     "topic": "Blood Relations",
     "difficulty": "Easy",
     "question": "A is B's sister. C is B's mother. D is C's father. How is A related to D?",
@@ -257,38 +1106,193 @@
      "Grandmother"
     ],
     "answer": 1,
-    "solution": "A and B are C's children. D is C's father, so D is A's grandfather. A is female (sister), so A is D's granddaughter."
+    "solution": "A and B are C's children and D is C's father. A is female, so A is D's granddaughter."
    },
    {
-    "id": "R7",
-    "topic": "Number Series",
+    "id": "R14",
+    "topic": "Blood Relations",
     "difficulty": "Easy",
-    "question": "Find the next term: 2, 6, 12, 20, 30, ?",
+    "question": "X is the wife of Y. Y is the brother of Z. How is X related to Z?",
     "options": [
-     "40",
-     "42",
-     "44",
-     "36"
+     "Sister",
+     "Sister-in-law",
+     "Cousin",
+     "Aunt"
     ],
     "answer": 1,
-    "solution": "Terms are n(n+1): 1×2, 2×3, 3×4, 4×5, 5×6, so next = 6×7 = 42. (Differences 4, 6, 8, 10, 12.)"
+    "solution": "X is married to Z's brother, so X is Z's sister-in-law."
    },
    {
-    "id": "R8",
-    "topic": "Number Series",
-    "difficulty": "Easy",
-    "question": "Find the next term: 3, 5, 9, 17, 33, ?",
+    "id": "R15",
+    "topic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "P is the father of Q. Q is the mother of R. How is P related to R?",
     "options": [
-     "63",
-     "64",
-     "65",
-     "66"
+     "Father",
+     "Uncle",
+     "Grandfather",
+     "Brother"
     ],
     "answer": 2,
-    "solution": "Each term = previous × 2 − 1: 33 × 2 − 1 = 65. (Differences double: 2, 4, 8, 16, 32.)"
+    "solution": "P is the father of R's mother, so P is R's (maternal) grandfather."
    },
    {
-    "id": "R9",
+    "id": "R16",
+    "topic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Introducing a woman, Amit says, \"Her mother is the only daughter of my mother.\" How is Amit related to the woman?",
+    "options": [
+     "Father",
+     "Brother",
+     "Maternal uncle",
+     "Cousin"
+    ],
+    "answer": 2,
+    "solution": "The only daughter of Amit's mother is Amit's sister. The woman's mother is Amit's sister, so Amit is her maternal uncle."
+   },
+   {
+    "id": "R17",
+    "topic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If CAT is coded as DBU, how is DOG coded?",
+    "options": [
+     "EPH",
+     "CNF",
+     "EOH",
+     "DPH"
+    ],
+    "answer": 0,
+    "solution": "Each letter moves one place forward: C→D, A→B, T→U. So DOG → EPH."
+   },
+   {
+    "id": "R18",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a code, APPLE = 50 (the sum of the letters' alphabet positions). What is GRAPE?",
+    "options": [
+     "45",
+     "47",
+     "49",
+     "52"
+    ],
+    "answer": 1,
+    "solution": "GRAPE = 7 + 18 + 1 + 16 + 5 = 47."
+   },
+   {
+    "id": "R19",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If BOOK is coded as YLLP, how is DESK coded?",
+    "options": [
+     "WVHP",
+     "XVHP",
+     "WUHP",
+     "WVIP"
+    ],
+    "answer": 0,
+    "solution": "Each letter is swapped with its mirror letter in the alphabet (A↔Z, B↔Y, …): B→Y, O→L, K→P. So D→W, E→V, S→H, K→P gives WVHP."
+   },
+   {
+    "id": "R20",
+    "topic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "In a code, PEN is written as 16-5-14. How is INK written?",
+    "options": [
+     "9-14-11",
+     "9-13-11",
+     "8-14-11",
+     "9-14-12"
+    ],
+    "answer": 0,
+    "solution": "Each letter is replaced by its alphabet position: I = 9, N = 14, K = 11."
+   },
+   {
+    "id": "R21",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "In a language, 'sky is blue' is 'ta na pa', 'blue is nice' is 'na ri ta' and 'nice day' is 'ri lo'. What is the code for 'sky'?",
+    "options": [
+     "ta",
+     "na",
+     "pa",
+     "ri"
+    ],
+    "answer": 2,
+    "solution": "Sentences 1 and 2 share 'is blue' and 'ta na', so {is, blue} = {ta, na}. The word left in sentence 1, 'sky', must be 'pa'."
+   },
+   {
+    "id": "R22",
+    "topic": "Puzzles",
+    "difficulty": "Medium",
+    "question": "P, Q, R, S and T live on different floors of a 5-floor building (floor 1 is the lowest, floor 5 the top). R lives on an even-numbered floor. Q lives immediately above R. T lives on the top floor. S lives on a floor below P. Who lives on floor 4?",
+    "options": [
+     "P",
+     "Q",
+     "S",
+     "R"
+    ],
+    "answer": 0,
+    "solution": "T = 5. R is even: if R = 4 then Q = 5, which is taken, so R = 2 and Q = 3. P and S share floors 1 and 4 with S below P, so S = 1 and P = 4."
+   },
+   {
+    "id": "R23",
+    "topic": "Puzzles",
+    "difficulty": "Easy",
+    "question": "P, Q, R, S and T live on different floors of a 5-floor building (floor 1 is the lowest, floor 5 the top). R lives on an even-numbered floor. Q lives immediately above R. T lives on the top floor. S lives on a floor below P. Who lives on the lowest floor?",
+    "options": [
+     "R",
+     "S",
+     "P",
+     "Q"
+    ],
+    "answer": 1,
+    "solution": "From the solution (S1, R2, Q3, P4, T5), S lives on floor 1."
+   },
+   {
+    "id": "R24",
+    "topic": "Puzzles",
+    "difficulty": "Medium",
+    "question": "P, Q, R, S and T live on different floors of a 5-floor building (floor 1 is the lowest, floor 5 the top). R lives on an even-numbered floor. Q lives immediately above R. T lives on the top floor. S lives on a floor below P. How many people live between S and T?",
+    "options": [
+     "2",
+     "3",
+     "4",
+     "1"
+    ],
+    "answer": 1,
+    "solution": "S is on floor 1 and T on floor 5. R, Q and P live between them, so 3 people."
+   },
+   {
+    "id": "R25",
+    "topic": "Puzzles",
+    "difficulty": "Medium",
+    "question": "P, Q, R, S and T live on different floors of a 5-floor building (floor 1 is the lowest, floor 5 the top). R lives on an even-numbered floor. Q lives immediately above R. T lives on the top floor. S lives on a floor below P. Who lives immediately below T?",
+    "options": [
+     "Q",
+     "P",
+     "R",
+     "S"
+    ],
+    "answer": 1,
+    "solution": "T is on floor 5 and floor 4 belongs to P."
+   },
+   {
+    "id": "R26",
+    "topic": "Puzzles",
+    "difficulty": "Easy",
+    "question": "Ana, Ben and Cara each own a different pet: a cat, a dog or a fish. Ana does not own the dog. Ben owns the fish. Who owns the dog?",
+    "options": [
+     "Ana",
+     "Ben",
+     "Cara",
+     "Cannot be determined"
+    ],
+    "answer": 2,
+    "solution": "Ben has the fish, and Ana can't have the dog, so Ana has the cat and Cara has the dog.",
+    "fixed": true
+   },
+   {
+    "id": "R27",
     "topic": "Direction Sense",
     "difficulty": "Medium",
     "question": "Ravi walks 5 km north, turns right and walks 3 km, then turns right again and walks 9 km. How far is he from his starting point?",
@@ -299,24 +1303,150 @@
      "6 km"
     ],
     "answer": 0,
-    "solution": "Right of north is east: he ends 3 km east and 5 − 9 = 4 km south of the start. Distance = √(3² + 4²) = 5 km."
+    "solution": "Right of north is east. He ends 3 km east and 9 − 5 = 4 km south of the start. Distance = √(3² + 4²) = 5 km."
    },
    {
-    "id": "R10",
-    "topic": "Seating Arrangement",
-    "difficulty": "Hard",
-    "question": "P, Q, R, S and T sit in a row facing north. S is in the middle. R is at one of the extreme ends. T sits second from the left. Q sits immediately to the right of P. Who sits at the extreme right?",
+    "id": "R28",
+    "topic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "You face north, turn right, turn right again, and then turn left. Which direction are you facing now?",
     "options": [
-     "P",
-     "R",
-     "Q",
-     "T"
+     "North",
+     "East",
+     "South",
+     "West"
+    ],
+    "answer": 1,
+    "solution": "North → right → East → right → South → left → East."
+   },
+   {
+    "id": "R29",
+    "topic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Meena walks 10 m south, turns left and walks 6 m, then turns left again and walks 10 m. Where is she now with respect to her starting point?",
+    "options": [
+     "6 m east",
+     "6 m west",
+     "10 m north",
+     "16 m east"
+    ],
+    "answer": 0,
+    "solution": "Left of south is east, and left of east is north. She goes 10 S, then 6 E, then 10 N, so she ends 6 m east of the start."
+   },
+   {
+    "id": "R30",
+    "topic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Early in the morning, Rohan stands with his shadow falling exactly to his right. Which direction is he facing?",
+    "options": [
+     "North",
+     "South",
+     "East",
+     "West"
+    ],
+    "answer": 1,
+    "solution": "In the morning the sun is in the east, so shadows fall to the west. West is on your right when you face south."
+   },
+   {
+    "id": "R31",
+    "topic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A man walks 3 km east, then 4 km north, then 6 km west. How far is he from the start, and in which direction?",
+    "options": [
+     "5 km, North-West",
+     "5 km, North-East",
+     "7 km, North-West",
+     "13 km, West"
+    ],
+    "answer": 0,
+    "solution": "Net movement: 3 − 6 = 3 km west and 4 km north. Distance = √(9 + 16) = 5 km, towards the north-west."
+   },
+   {
+    "id": "R32",
+    "topic": "Number & Letter Series",
+    "difficulty": "Easy",
+    "question": "Find the next term: 2, 6, 12, 20, 30, ?",
+    "options": [
+     "40",
+     "42",
+     "44",
+     "36"
+    ],
+    "answer": 1,
+    "solution": "The terms are n(n + 1): 1×2, 2×3, …, 5×6, so next is 6×7 = 42."
+   },
+   {
+    "id": "R33",
+    "topic": "Number & Letter Series",
+    "difficulty": "Medium",
+    "question": "Find the next term: 3, 5, 9, 17, 33, ?",
+    "options": [
+     "63",
+     "64",
+     "65",
+     "66"
     ],
     "answer": 2,
-    "solution": "Positions 1–5 from left: S = 3, T = 2. P–Q need two adjacent free seats: only 4–5 (since 1–2 has T). So P = 4, Q = 5, R = 1. Order: R T S P Q. Q is at the extreme right."
+    "solution": "Each term = previous × 2 − 1, so 33 × 2 − 1 = 65."
    },
    {
-    "id": "R11",
+    "id": "R34",
+    "topic": "Number & Letter Series",
+    "difficulty": "Medium",
+    "question": "Find the next letter: A, C, F, J, O, ?",
+    "options": [
+     "T",
+     "U",
+     "V",
+     "S"
+    ],
+    "answer": 1,
+    "solution": "The gaps are +2, +3, +4, +5, +6. O (15) + 6 = 21 = U."
+   },
+   {
+    "id": "R35",
+    "topic": "Number & Letter Series",
+    "difficulty": "Easy",
+    "question": "Find the next term: 2, 3, 5, 7, 11, 13, ?",
+    "options": [
+     "15",
+     "17",
+     "19",
+     "16"
+    ],
+    "answer": 1,
+    "solution": "These are consecutive prime numbers. The next prime after 13 is 17."
+   },
+   {
+    "id": "R36",
+    "topic": "Number & Letter Series",
+    "difficulty": "Hard",
+    "question": "Find the next term: 4, 6, 12, 14, 28, 30, ?",
+    "options": [
+     "32",
+     "60",
+     "56",
+     "62"
+    ],
+    "answer": 1,
+    "solution": "The steps alternate +2 and ×2: 4+2 = 6, 6×2 = 12, 12+2 = 14, 14×2 = 28, 28+2 = 30, 30×2 = 60."
+   },
+   {
+    "id": "R37",
+    "topic": "Number & Letter Series",
+    "difficulty": "Medium",
+    "question": "Find the next pair: AZ, BY, CX, ?",
+    "options": [
+     "DW",
+     "DV",
+     "EW",
+     "CW"
+    ],
+    "answer": 0,
+    "solution": "The first letter moves forward (A, B, C, D) and the second moves backward (Z, Y, X, W)."
+   },
+   {
+    "id": "R38",
     "topic": "Odd One Out",
     "difficulty": "Easy",
     "question": "Find the odd one out: 8, 27, 64, 100, 125",
@@ -327,13 +1457,69 @@
      "125"
     ],
     "answer": 2,
-    "solution": "8, 27, 64, 125 are perfect cubes (2³, 3³, 4³, 5³). 100 is not a cube."
+    "solution": "8, 27, 64 and 125 are perfect cubes (2³, 3³, 4³, 5³). 100 is not a cube."
    },
    {
-    "id": "R12",
-    "topic": "Clocks",
+    "id": "R39",
+    "topic": "Odd One Out",
+    "difficulty": "Easy",
+    "question": "Find the odd one out: 17, 23, 29, 33, 37",
+    "options": [
+     "23",
+     "29",
+     "33",
+     "37"
+    ],
+    "answer": 2,
+    "solution": "All the others are prime. 33 = 3 × 11."
+   },
+   {
+    "id": "R40",
+    "topic": "Odd One Out",
+    "difficulty": "Easy",
+    "question": "Find the odd one out: Square, Rectangle, Triangle, Rhombus",
+    "options": [
+     "Square",
+     "Rectangle",
+     "Triangle",
+     "Rhombus"
+    ],
+    "answer": 2,
+    "solution": "Square, rectangle and rhombus have four sides. A triangle has three."
+   },
+   {
+    "id": "R41",
+    "topic": "Odd One Out",
     "difficulty": "Medium",
-    "question": "What is the angle between the hour and minute hands at 3:40?",
+    "question": "Find the odd one out: 121, 169, 289, 324, 361",
+    "options": [
+     "169",
+     "289",
+     "324",
+     "361"
+    ],
+    "answer": 2,
+    "solution": "121 = 11², 169 = 13², 289 = 17², 361 = 19² are squares of primes. 324 = 18², and 18 isn't prime."
+   },
+   {
+    "id": "R42",
+    "topic": "Odd One Out",
+    "difficulty": "Medium",
+    "question": "Find the odd one out: ACE, BDF, GIK, MOP",
+    "options": [
+     "ACE",
+     "BDF",
+     "GIK",
+     "MOP"
+    ],
+    "answer": 3,
+    "solution": "The others skip one letter each time (A_C_E). In MOP the last step, O→P, skips nothing."
+   },
+   {
+    "id": "R43",
+    "topic": "Clocks & Calendars",
+    "difficulty": "Medium",
+    "question": "What is the smaller angle between the hour and minute hands at 3:40?",
     "options": [
      "120°",
      "130°",
@@ -342,6 +1528,292 @@
     ],
     "answer": 1,
     "solution": "Angle = |30H − 5.5M| = |90 − 220| = 130°."
+   },
+   {
+    "id": "R44",
+    "topic": "Clocks & Calendars",
+    "difficulty": "Easy",
+    "question": "What is the smaller angle between the hands of a clock at exactly 9:00?",
+    "options": [
+     "90°",
+     "180°",
+     "270°",
+     "45°"
+    ],
+    "answer": 0,
+    "solution": "At 9:00 the hands are 3 hour-marks apart: 3 × 30° = 90° (the smaller angle)."
+   },
+   {
+    "id": "R45",
+    "topic": "Clocks & Calendars",
+    "difficulty": "Medium",
+    "question": "How many times do the hour and minute hands coincide in 12 hours?",
+    "options": [
+     "10",
+     "11",
+     "12",
+     "24"
+    ],
+    "answer": 1,
+    "solution": "The hands coincide every 12/11 hours, so 11 times in 12 hours. There's no separate meeting between 11 and 1, because that one happens at 12:00."
+   },
+   {
+    "id": "R46",
+    "topic": "Clocks & Calendars",
+    "difficulty": "Medium",
+    "question": "1 January 2025 was a Wednesday. What day of the week is 1 January 2026?",
+    "options": [
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Tuesday"
+    ],
+    "answer": 1,
+    "solution": "2025 is not a leap year: 365 days = 52 weeks + 1 odd day. Wednesday + 1 = Thursday."
+   },
+   {
+    "id": "R47",
+    "topic": "Clocks & Calendars",
+    "difficulty": "Hard",
+    "question": "On what day of the week did 15 August 1947 fall?",
+    "options": [
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Monday"
+    ],
+    "answer": 1,
+    "solution": "Odd days up to 1900 = 1. Years 1901–1946 = 46 + 11 leap years = 57 ≡ 1. 1 Jan–15 Aug 1947: 31+28+31+30+31+30+31+15 = 227 ≡ 3. Total = 1 + 1 + 3 = 5, which is Friday (Sunday = 0)."
+   },
+   {
+    "id": "R48",
+    "topic": "Clocks & Calendars",
+    "difficulty": "Hard",
+    "question": "At what time between 4 and 5 o'clock are the two hands of a clock together?",
+    "options": [
+     "4:20",
+     "4:21 9/11",
+     "4:22 2/11",
+     "4:21 3/11"
+    ],
+    "answer": 1,
+    "solution": "At 4:00 the minute hand is 20 minute-spaces behind and gains 11/12 of a space per minute. Time = 20 × 12/11 = 21 9/11 minutes past 4."
+   },
+   {
+    "id": "R49",
+    "topic": "Alphabet Test",
+    "difficulty": "Easy",
+    "question": "Which letter is 7th from the left in the English alphabet?",
+    "options": [
+     "F",
+     "G",
+     "H",
+     "E"
+    ],
+    "answer": 1,
+    "solution": "A B C D E F G: the 7th letter is G."
+   },
+   {
+    "id": "R50",
+    "topic": "Alphabet Test",
+    "difficulty": "Easy",
+    "question": "Which letter is 5th to the right of the 10th letter from the left of the English alphabet?",
+    "options": [
+     "N",
+     "O",
+     "P",
+     "E"
+    ],
+    "answer": 1,
+    "solution": "The 10th letter is J. Five to its right is the 15th letter, O."
+   },
+   {
+    "id": "R51",
+    "topic": "Alphabet Test",
+    "difficulty": "Medium",
+    "question": "Which letter is 8th from the right end of the English alphabet?",
+    "options": [
+     "R",
+     "S",
+     "T",
+     "H"
+    ],
+    "answer": 1,
+    "solution": "8th from the right = (27 − 8) = 19th from the left = S."
+   },
+   {
+    "id": "R52",
+    "topic": "Alphabet Test",
+    "difficulty": "Medium",
+    "question": "If the English alphabet is written in reverse order, which letter is 10th from the left?",
+    "options": [
+     "P",
+     "Q",
+     "J",
+     "R"
+    ],
+    "answer": 1,
+    "solution": "Reversed, the 10th from the left is the 10th from the right of the normal order: 27 − 10 = 17th letter = Q."
+   },
+   {
+    "id": "R53",
+    "topic": "Alphabet Test",
+    "difficulty": "Hard",
+    "question": "If the letters of the word EDUCATION are arranged in alphabetical order, how many letters stay in the same position?",
+    "options": [
+     "None",
+     "One",
+     "Two",
+     "Three"
+    ],
+    "answer": 0,
+    "solution": "In alphabetical order the letters are A C D E I N O T U. Position by position against E D U C A T I O N: E/A, D/C, U/D, C/E, A/I, T/N, I/O, O/T, N/U. No position matches, so the answer is None.",
+    "fixed": true
+   },
+   {
+    "id": "R54",
+    "topic": "Inequalities",
+    "difficulty": "Easy",
+    "question": "If A > B and B > C, which of these must be true?",
+    "options": [
+     "A &lt; C",
+     "A > C",
+     "A = C",
+     "Cannot be determined"
+    ],
+    "answer": 1,
+    "solution": "A > B > C, so A > C.",
+    "fixed": true
+   },
+   {
+    "id": "R55",
+    "topic": "Inequalities",
+    "difficulty": "Medium",
+    "question": "Statements: P ≥ Q, Q > R, R = S.<br>Conclusions: I. P > S II. Q > S",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 2,
+    "solution": "P ≥ Q > R = S gives P > S and Q > S. Both follow.",
+    "fixed": true
+   },
+   {
+    "id": "R56",
+    "topic": "Inequalities",
+    "difficulty": "Medium",
+    "question": "Statements: M &lt; N ≤ O, O > P.<br>Conclusions: I. M &lt; O II. N > P",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 0,
+    "solution": "M < N ≤ O gives M < O. N ≤ O and O > P don't fix how N and P compare, so II does not follow.",
+    "fixed": true
+   },
+   {
+    "id": "R57",
+    "topic": "Inequalities",
+    "difficulty": "Medium",
+    "question": "Statements: X = Y > Z ≥ W.<br>Conclusions: I. X > W II. Y > W",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 2,
+    "solution": "X = Y > Z ≥ W, so both X > W and Y > W.",
+    "fixed": true
+   },
+   {
+    "id": "R58",
+    "topic": "Inequalities",
+    "difficulty": "Hard",
+    "question": "Statements: A ≥ B, B ≤ C, C &lt; D.<br>Conclusions: I. A &lt; D II. B &lt; D",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 1,
+    "solution": "B ≤ C < D gives B < D (II). A ≥ B and B ≤ C point in opposite directions, so A and D can't be compared. I does not follow.",
+    "fixed": true
+   },
+   {
+    "id": "R59",
+    "topic": "Ranking & Order",
+    "difficulty": "Easy",
+    "question": "In a row of 30 students, Ram is 12th from the left. What is his position from the right?",
+    "options": [
+     "18th",
+     "19th",
+     "20th",
+     "17th"
+    ],
+    "answer": 1,
+    "solution": "Position from the right = 30 − 12 + 1 = 19."
+   },
+   {
+    "id": "R60",
+    "topic": "Ranking & Order",
+    "difficulty": "Medium",
+    "question": "Priya is 9th from the top and 16th from the bottom in her class ranking. How many students are in the class?",
+    "options": [
+     "25",
+     "24",
+     "23",
+     "26"
+    ],
+    "answer": 1,
+    "solution": "Total = 9 + 16 − 1 = 24."
+   },
+   {
+    "id": "R61",
+    "topic": "Ranking & Order",
+    "difficulty": "Easy",
+    "question": "A is taller than B. C is shorter than B. D is taller than A. Who is the shortest?",
+    "options": [
+     "A",
+     "B",
+     "C",
+     "D"
+    ],
+    "answer": 2,
+    "solution": "D > A > B > C, so C is the shortest."
+   },
+   {
+    "id": "R62",
+    "topic": "Ranking & Order",
+    "difficulty": "Hard",
+    "question": "In a row, A is 10th from the left and B is 15th from the right. When they swap places, A becomes 18th from the left. How many people are in the row?",
+    "options": [
+     "31",
+     "32",
+     "33",
+     "30"
+    ],
+    "answer": 1,
+    "solution": "After the swap A is in B's old seat, which is 18th from the left and 15th from the right. Total = 18 + 15 − 1 = 32."
+   },
+   {
+    "id": "R63",
+    "topic": "Ranking & Order",
+    "difficulty": "Hard",
+    "question": "Among P, Q, R, S and T: Q earns more than R but less than T. P earns less than R. S earns the most. Who earns the second highest?",
+    "options": [
+     "Q",
+     "T",
+     "R",
+     "P"
+    ],
+    "answer": 1,
+    "solution": "S > T > Q > R > P, so T is second."
    }
   ]
  },
@@ -352,7 +1824,7 @@
     "id": "D1",
     "topic": "Tables",
     "difficulty": "Easy",
-    "question": "What is the percentage increase in the total sales of Company X from 2023 to 2024?",
+    "question": "What is the percentage increase in Company X's total sales from 2023 to 2024?",
     "options": [
      "20%",
      "25%",
@@ -360,14 +1832,15 @@
      "24%"
     ],
     "answer": 1,
-    "solution": "Total: 400 → 500. Increase = 100/400 × 100 = 25%.",
-    "data": "<b>Sales of Company X (₹ lakh)</b><table class='data'><tr><th>Product</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr><tr><td>A</td><td>120</td><td>150</td><td>180</td><td>210</td></tr><tr><td>B</td><td>80</td><td>90</td><td>120</td><td>150</td></tr><tr><td>C</td><td>100</td><td>110</td><td>100</td><td>140</td></tr><tr><th>Total</th><th>300</th><th>350</th><th>400</th><th>500</th></tr></table>"
+    "solution": "Total: 400 → 500. Increase = 100/400 = 25%.",
+    "data": "<b>Sales of Company X (₹ lakh)</b><table class='data'><tr><th>Product</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr><tr><td>A</td><td>120</td><td>150</td><td>180</td><td>210</td></tr><tr><td>B</td><td>80</td><td>90</td><td>120</td><td>150</td></tr><tr><td>C</td><td>100</td><td>110</td><td>100</td><td>140</td></tr><tr><th>Total</th><th>300</th><th>350</th><th>400</th><th>500</th></tr></table>",
+    "set": "table-sales"
    },
    {
     "id": "D2",
     "topic": "Tables",
     "difficulty": "Easy",
-    "question": "What share of the total 2024 sales came from Product B?",
+    "question": "What share of total 2024 sales came from Product B?",
     "options": [
      "25%",
      "28%",
@@ -375,8 +1848,9 @@
      "35%"
     ],
     "answer": 2,
-    "solution": "150/500 × 100 = 30%.",
-    "data": "<b>Sales of Company X (₹ lakh)</b><table class='data'><tr><th>Product</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr><tr><td>A</td><td>120</td><td>150</td><td>180</td><td>210</td></tr><tr><td>B</td><td>80</td><td>90</td><td>120</td><td>150</td></tr><tr><td>C</td><td>100</td><td>110</td><td>100</td><td>140</td></tr><tr><th>Total</th><th>300</th><th>350</th><th>400</th><th>500</th></tr></table>"
+    "solution": "150/500 = 30%.",
+    "data": "<b>Sales of Company X (₹ lakh)</b><table class='data'><tr><th>Product</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr><tr><td>A</td><td>120</td><td>150</td><td>180</td><td>210</td></tr><tr><td>B</td><td>80</td><td>90</td><td>120</td><td>150</td></tr><tr><td>C</td><td>100</td><td>110</td><td>100</td><td>140</td></tr><tr><th>Total</th><th>300</th><th>350</th><th>400</th><th>500</th></tr></table>",
+    "set": "table-sales"
    },
    {
     "id": "D3",
@@ -391,13 +1865,14 @@
     ],
     "answer": 1,
     "solution": "A: 90/120 = 75%. B: 70/80 = 87.5%. C: 40/100 = 40%. B is highest.",
-    "data": "<b>Sales of Company X (₹ lakh)</b><table class='data'><tr><th>Product</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr><tr><td>A</td><td>120</td><td>150</td><td>180</td><td>210</td></tr><tr><td>B</td><td>80</td><td>90</td><td>120</td><td>150</td></tr><tr><td>C</td><td>100</td><td>110</td><td>100</td><td>140</td></tr><tr><th>Total</th><th>300</th><th>350</th><th>400</th><th>500</th></tr></table>"
+    "data": "<b>Sales of Company X (₹ lakh)</b><table class='data'><tr><th>Product</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr><tr><td>A</td><td>120</td><td>150</td><td>180</td><td>210</td></tr><tr><td>B</td><td>80</td><td>90</td><td>120</td><td>150</td></tr><tr><td>C</td><td>100</td><td>110</td><td>100</td><td>140</td></tr><tr><th>Total</th><th>300</th><th>350</th><th>400</th><th>500</th></tr></table>",
+    "set": "table-sales"
    },
    {
     "id": "D4",
     "topic": "Tables",
     "difficulty": "Easy",
-    "question": "What were the average annual sales of Product C over 2021–2024 (₹ lakh)?",
+    "question": "What were Product C's average annual sales over 2021–2024 (₹ lakh)?",
     "options": [
      "110",
      "112.5",
@@ -406,10 +1881,28 @@
     ],
     "answer": 1,
     "solution": "(100 + 110 + 100 + 140)/4 = 450/4 = 112.5.",
-    "data": "<b>Sales of Company X (₹ lakh)</b><table class='data'><tr><th>Product</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr><tr><td>A</td><td>120</td><td>150</td><td>180</td><td>210</td></tr><tr><td>B</td><td>80</td><td>90</td><td>120</td><td>150</td></tr><tr><td>C</td><td>100</td><td>110</td><td>100</td><td>140</td></tr><tr><th>Total</th><th>300</th><th>350</th><th>400</th><th>500</th></tr></table>"
+    "data": "<b>Sales of Company X (₹ lakh)</b><table class='data'><tr><th>Product</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr><tr><td>A</td><td>120</td><td>150</td><td>180</td><td>210</td></tr><tr><td>B</td><td>80</td><td>90</td><td>120</td><td>150</td></tr><tr><td>C</td><td>100</td><td>110</td><td>100</td><td>140</td></tr><tr><th>Total</th><th>300</th><th>350</th><th>400</th><th>500</th></tr></table>",
+    "set": "table-sales"
    },
    {
     "id": "D5",
+    "topic": "Tables",
+    "difficulty": "Medium",
+    "question": "In which year did any product's sales fall compared with the previous year?",
+    "options": [
+     "2022",
+     "2023",
+     "2024",
+     "No product's sales ever fell"
+    ],
+    "answer": 1,
+    "solution": "Only Product C fell, from 110 (2022) to 100 (2023). Every other year-on-year change is an increase.",
+    "data": "<b>Sales of Company X (₹ lakh)</b><table class='data'><tr><th>Product</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr><tr><td>A</td><td>120</td><td>150</td><td>180</td><td>210</td></tr><tr><td>B</td><td>80</td><td>90</td><td>120</td><td>150</td></tr><tr><td>C</td><td>100</td><td>110</td><td>100</td><td>140</td></tr><tr><th>Total</th><th>300</th><th>350</th><th>400</th><th>500</th></tr></table>",
+    "fixed": true,
+    "set": "table-sales"
+   },
+   {
+    "id": "D6",
     "topic": "Bar Charts",
     "difficulty": "Easy",
     "question": "Mumbai's count is what percentage of the total across all five cities?",
@@ -420,26 +1913,28 @@
      "32%"
     ],
     "answer": 2,
-    "solution": "Total = 240 + 300 + 180 + 120 + 160 = 1000. Mumbai = 300/1000 = 30%.",
-    "data": "<b>Students scoring above 90 percentile in a mock test, by city</b><div class='bars'><div class='bar-row'><span>Delhi</span><i style='width:80.0%'></i><span>240</span></div><div class='bar-row'><span>Mumbai</span><i style='width:100.0%'></i><span>300</span></div><div class='bar-row'><span>Pune</span><i style='width:60.0%'></i><span>180</span></div><div class='bar-row'><span>Jaipur</span><i style='width:40.0%'></i><span>120</span></div><div class='bar-row'><span>Kolkata</span><i style='width:53.3%'></i><span>160</span></div></div>"
+    "solution": "Total = 1000. Mumbai = 300/1000 = 30%.",
+    "data": "<b>Students scoring above the 90th percentile in a mock test, by city</b><div class='bars'><div class='bar-row'><span>Delhi</span><i style='width:80.0%'></i><span>240</span></div><div class='bar-row'><span>Mumbai</span><i style='width:100.0%'></i><span>300</span></div><div class='bar-row'><span>Pune</span><i style='width:60.0%'></i><span>180</span></div><div class='bar-row'><span>Jaipur</span><i style='width:40.0%'></i><span>120</span></div><div class='bar-row'><span>Kolkata</span><i style='width:53.3%'></i><span>160</span></div></div>",
+    "set": "bar-cities"
    },
    {
-    "id": "D6",
+    "id": "D7",
     "topic": "Bar Charts",
     "difficulty": "Easy",
     "question": "What is the ratio of Delhi's count to Pune's count?",
     "options": [
-     "3:4",
-     "4:3",
-     "6:5",
-     "5:3"
+     "3 : 4",
+     "4 : 3",
+     "6 : 5",
+     "5 : 3"
     ],
     "answer": 1,
     "solution": "240 : 180 = 4 : 3.",
-    "data": "<b>Students scoring above 90 percentile in a mock test, by city</b><div class='bars'><div class='bar-row'><span>Delhi</span><i style='width:80.0%'></i><span>240</span></div><div class='bar-row'><span>Mumbai</span><i style='width:100.0%'></i><span>300</span></div><div class='bar-row'><span>Pune</span><i style='width:60.0%'></i><span>180</span></div><div class='bar-row'><span>Jaipur</span><i style='width:40.0%'></i><span>120</span></div><div class='bar-row'><span>Kolkata</span><i style='width:53.3%'></i><span>160</span></div></div>"
+    "data": "<b>Students scoring above the 90th percentile in a mock test, by city</b><div class='bars'><div class='bar-row'><span>Delhi</span><i style='width:80.0%'></i><span>240</span></div><div class='bar-row'><span>Mumbai</span><i style='width:100.0%'></i><span>300</span></div><div class='bar-row'><span>Pune</span><i style='width:60.0%'></i><span>180</span></div><div class='bar-row'><span>Jaipur</span><i style='width:40.0%'></i><span>120</span></div><div class='bar-row'><span>Kolkata</span><i style='width:53.3%'></i><span>160</span></div></div>",
+    "set": "bar-cities"
    },
    {
-    "id": "D7",
+    "id": "D8",
     "topic": "Bar Charts",
     "difficulty": "Medium",
     "question": "How many cities have a count above the five-city average?",
@@ -450,11 +1945,44 @@
      "4"
     ],
     "answer": 1,
-    "solution": "Average = 1000/5 = 200. Above 200: Delhi (240) and Mumbai (300), so 2 cities.",
-    "data": "<b>Students scoring above 90 percentile in a mock test, by city</b><div class='bars'><div class='bar-row'><span>Delhi</span><i style='width:80.0%'></i><span>240</span></div><div class='bar-row'><span>Mumbai</span><i style='width:100.0%'></i><span>300</span></div><div class='bar-row'><span>Pune</span><i style='width:60.0%'></i><span>180</span></div><div class='bar-row'><span>Jaipur</span><i style='width:40.0%'></i><span>120</span></div><div class='bar-row'><span>Kolkata</span><i style='width:53.3%'></i><span>160</span></div></div>"
+    "solution": "Average = 1000/5 = 200. Delhi (240) and Mumbai (300) are above it, so 2.",
+    "data": "<b>Students scoring above the 90th percentile in a mock test, by city</b><div class='bars'><div class='bar-row'><span>Delhi</span><i style='width:80.0%'></i><span>240</span></div><div class='bar-row'><span>Mumbai</span><i style='width:100.0%'></i><span>300</span></div><div class='bar-row'><span>Pune</span><i style='width:60.0%'></i><span>180</span></div><div class='bar-row'><span>Jaipur</span><i style='width:40.0%'></i><span>120</span></div><div class='bar-row'><span>Kolkata</span><i style='width:53.3%'></i><span>160</span></div></div>",
+    "set": "bar-cities"
    },
    {
-    "id": "D8",
+    "id": "D9",
+    "topic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "What is the difference between the highest and lowest city counts?",
+    "options": [
+     "160",
+     "180",
+     "200",
+     "140"
+    ],
+    "answer": 1,
+    "solution": "Highest = Mumbai 300, lowest = Jaipur 120. Difference = 180.",
+    "data": "<b>Students scoring above the 90th percentile in a mock test, by city</b><div class='bars'><div class='bar-row'><span>Delhi</span><i style='width:80.0%'></i><span>240</span></div><div class='bar-row'><span>Mumbai</span><i style='width:100.0%'></i><span>300</span></div><div class='bar-row'><span>Pune</span><i style='width:60.0%'></i><span>180</span></div><div class='bar-row'><span>Jaipur</span><i style='width:40.0%'></i><span>120</span></div><div class='bar-row'><span>Kolkata</span><i style='width:53.3%'></i><span>160</span></div></div>",
+    "set": "bar-cities"
+   },
+   {
+    "id": "D10",
+    "topic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "By what percentage is Mumbai's count more than Pune's?",
+    "options": [
+     "40%",
+     "50%",
+     "66.67%",
+     "60%"
+    ],
+    "answer": 2,
+    "solution": "(300 − 180)/180 × 100 = 66.67%.",
+    "data": "<b>Students scoring above the 90th percentile in a mock test, by city</b><div class='bars'><div class='bar-row'><span>Delhi</span><i style='width:80.0%'></i><span>240</span></div><div class='bar-row'><span>Mumbai</span><i style='width:100.0%'></i><span>300</span></div><div class='bar-row'><span>Pune</span><i style='width:60.0%'></i><span>180</span></div><div class='bar-row'><span>Jaipur</span><i style='width:40.0%'></i><span>120</span></div><div class='bar-row'><span>Kolkata</span><i style='width:53.3%'></i><span>160</span></div></div>",
+    "set": "bar-cities"
+   },
+   {
+    "id": "D11",
     "topic": "Pie Charts",
     "difficulty": "Easy",
     "question": "How much does the family spend on education each month?",
@@ -466,13 +1994,14 @@
     ],
     "answer": 1,
     "solution": "15% of ₹60,000 = ₹9,000.",
-    "data": "<b>Monthly budget of a family (total income ₹60,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0 30%,#0891b2 30% 55%,#db2777 55% 70%,#f59e0b 70% 80%,#16a34a 80% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Rent 30%</div><div><i style='background:#0891b2'></i>Food 25%</div><div><i style='background:#db2777'></i>Education 15%</div><div><i style='background:#f59e0b'></i>Transport 10%</div><div><i style='background:#16a34a'></i>Savings 20%</div></div></div>"
+    "data": "<b>Monthly budget of a family (total income ₹60,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0 30%,#0891b2 30% 55%,#db2777 55% 70%,#f59e0b 70% 80%,#16a34a 80% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Rent 30%</div><div><i style='background:#0891b2'></i>Food 25%</div><div><i style='background:#db2777'></i>Education 15%</div><div><i style='background:#f59e0b'></i>Transport 10%</div><div><i style='background:#16a34a'></i>Savings 20%</div></div></div>",
+    "set": "pie-budget"
    },
    {
-    "id": "D9",
+    "id": "D12",
     "topic": "Pie Charts",
     "difficulty": "Easy",
-    "question": "What is the central angle of the Food sector in the pie chart?",
+    "question": "What is the central angle of the Food sector?",
     "options": [
      "75°",
      "80°",
@@ -481,10 +2010,11 @@
     ],
     "answer": 2,
     "solution": "25% of 360° = 90°.",
-    "data": "<b>Monthly budget of a family (total income ₹60,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0 30%,#0891b2 30% 55%,#db2777 55% 70%,#f59e0b 70% 80%,#16a34a 80% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Rent 30%</div><div><i style='background:#0891b2'></i>Food 25%</div><div><i style='background:#db2777'></i>Education 15%</div><div><i style='background:#f59e0b'></i>Transport 10%</div><div><i style='background:#16a34a'></i>Savings 20%</div></div></div>"
+    "data": "<b>Monthly budget of a family (total income ₹60,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0 30%,#0891b2 30% 55%,#db2777 55% 70%,#f59e0b 70% 80%,#16a34a 80% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Rent 30%</div><div><i style='background:#0891b2'></i>Food 25%</div><div><i style='background:#db2777'></i>Education 15%</div><div><i style='background:#f59e0b'></i>Transport 10%</div><div><i style='background:#16a34a'></i>Savings 20%</div></div></div>",
+    "set": "pie-budget"
    },
    {
-    "id": "D10",
+    "id": "D13",
     "topic": "Pie Charts",
     "difficulty": "Hard",
     "question": "Rent goes up by 20%. Income stays the same and the extra rent comes out of savings. What are the new monthly savings?",
@@ -495,12 +2025,345 @@
      "₹7,200"
     ],
     "answer": 1,
-    "solution": "Rent = 30% × 60,000 = 18,000; 20% more = 3,600 extra. Savings = 12,000 − 3,600 = ₹8,400.",
-    "data": "<b>Monthly budget of a family (total income ₹60,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0 30%,#0891b2 30% 55%,#db2777 55% 70%,#f59e0b 70% 80%,#16a34a 80% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Rent 30%</div><div><i style='background:#0891b2'></i>Food 25%</div><div><i style='background:#db2777'></i>Education 15%</div><div><i style='background:#f59e0b'></i>Transport 10%</div><div><i style='background:#16a34a'></i>Savings 20%</div></div></div>"
+    "solution": "Rent = ₹18,000. 20% more = ₹3,600 extra. Savings = 12,000 − 3,600 = ₹8,400.",
+    "data": "<b>Monthly budget of a family (total income ₹60,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0 30%,#0891b2 30% 55%,#db2777 55% 70%,#f59e0b 70% 80%,#16a34a 80% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Rent 30%</div><div><i style='background:#0891b2'></i>Food 25%</div><div><i style='background:#db2777'></i>Education 15%</div><div><i style='background:#f59e0b'></i>Transport 10%</div><div><i style='background:#16a34a'></i>Savings 20%</div></div></div>",
+    "set": "pie-budget"
    },
    {
-    "id": "D11",
+    "id": "D14",
+    "topic": "Pie Charts",
+    "difficulty": "Easy",
+    "question": "What is the combined monthly spend on rent and transport?",
+    "options": [
+     "₹21,000",
+     "₹24,000",
+     "₹18,000",
+     "₹27,000"
+    ],
+    "answer": 1,
+    "solution": "(30% + 10%) × 60,000 = ₹24,000.",
+    "data": "<b>Monthly budget of a family (total income ₹60,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0 30%,#0891b2 30% 55%,#db2777 55% 70%,#f59e0b 70% 80%,#16a34a 80% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Rent 30%</div><div><i style='background:#0891b2'></i>Food 25%</div><div><i style='background:#db2777'></i>Education 15%</div><div><i style='background:#f59e0b'></i>Transport 10%</div><div><i style='background:#16a34a'></i>Savings 20%</div></div></div>",
+    "set": "pie-budget"
+   },
+   {
+    "id": "D15",
+    "topic": "Pie Charts",
+    "difficulty": "Medium",
+    "question": "By how much does food spending exceed transport spending each month?",
+    "options": [
+     "₹6,000",
+     "₹9,000",
+     "₹12,000",
+     "₹15,000"
+    ],
+    "answer": 1,
+    "solution": "(25% − 10%) × 60,000 = 15% × 60,000 = ₹9,000.",
+    "data": "<b>Monthly budget of a family (total income ₹60,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0 30%,#0891b2 30% 55%,#db2777 55% 70%,#f59e0b 70% 80%,#16a34a 80% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Rent 30%</div><div><i style='background:#0891b2'></i>Food 25%</div><div><i style='background:#db2777'></i>Education 15%</div><div><i style='background:#f59e0b'></i>Transport 10%</div><div><i style='background:#16a34a'></i>Savings 20%</div></div></div>",
+    "set": "pie-budget"
+   },
+   {
+    "id": "D16",
+    "topic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "Which month saw the highest percentage growth in downloads over the previous month?",
+    "options": [
+     "Feb",
+     "Mar",
+     "May",
+     "Jun"
+    ],
+    "answer": 2,
+    "solution": "Feb +25%, Mar +20%, Apr −10%, May +33.3% (27→36), Jun +16.7%. May is highest.",
+    "data": "<b>Monthly downloads of a study app (thousands), 2026</b><svg viewBox='0 0 360 170' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='150.0' y2='150.0' stroke='#e2e8f0'/><text x='30' y='154.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='124.0' y2='124.0' stroke='#e2e8f0'/><text x='30' y='128.0' font-size='10' text-anchor='end' fill='#64748b'>10</text><line x1='36' x2='350' y1='98.0' y2='98.0' stroke='#e2e8f0'/><text x='30' y='102.0' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='72.0' y2='72.0' stroke='#e2e8f0'/><text x='30' y='76.0' font-size='10' text-anchor='end' fill='#64748b'>30</text><line x1='36' x2='350' y1='46.0' y2='46.0' stroke='#e2e8f0'/><text x='30' y='50.0' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='20.0' y2='20.0' stroke='#e2e8f0'/><text x='30' y='24.0' font-size='10' text-anchor='end' fill='#64748b'>50</text><polyline points='36.0,98.0 98.0,85.0 160.0,72.0 222.0,79.8 284.0,56.4 346.0,40.8' fill='none' stroke='#db2777' stroke-width='2.5'/><circle cx='36.0' cy='98.0' r='3.5' fill='#db2777'/><text x='36.0' y='90.0' font-size='10' text-anchor='middle' fill='#0f172a'>20</text><circle cx='98.0' cy='85.0' r='3.5' fill='#db2777'/><text x='98.0' y='77.0' font-size='10' text-anchor='middle' fill='#0f172a'>25</text><circle cx='160.0' cy='72.0' r='3.5' fill='#db2777'/><text x='160.0' y='64.0' font-size='10' text-anchor='middle' fill='#0f172a'>30</text><circle cx='222.0' cy='79.8' r='3.5' fill='#db2777'/><text x='222.0' y='71.8' font-size='10' text-anchor='middle' fill='#0f172a'>27</text><circle cx='284.0' cy='56.4' r='3.5' fill='#db2777'/><text x='284.0' y='48.4' font-size='10' text-anchor='middle' fill='#0f172a'>36</text><circle cx='346.0' cy='40.8' r='3.5' fill='#db2777'/><text x='346.0' y='32.8' font-size='10' text-anchor='middle' fill='#0f172a'>42</text><text x='36.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jan</text><text x='98.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Feb</text><text x='160.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Mar</text><text x='222.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Apr</text><text x='284.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>May</text><text x='346.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jun</text></svg>",
+    "set": "line-downloads"
+   },
+   {
+    "id": "D17",
+    "topic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "What were the average monthly downloads from January to June (thousands)?",
+    "options": [
+     "28",
+     "30",
+     "32",
+     "29"
+    ],
+    "answer": 1,
+    "solution": "(20 + 25 + 30 + 27 + 36 + 42)/6 = 180/6 = 30.",
+    "data": "<b>Monthly downloads of a study app (thousands), 2026</b><svg viewBox='0 0 360 170' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='150.0' y2='150.0' stroke='#e2e8f0'/><text x='30' y='154.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='124.0' y2='124.0' stroke='#e2e8f0'/><text x='30' y='128.0' font-size='10' text-anchor='end' fill='#64748b'>10</text><line x1='36' x2='350' y1='98.0' y2='98.0' stroke='#e2e8f0'/><text x='30' y='102.0' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='72.0' y2='72.0' stroke='#e2e8f0'/><text x='30' y='76.0' font-size='10' text-anchor='end' fill='#64748b'>30</text><line x1='36' x2='350' y1='46.0' y2='46.0' stroke='#e2e8f0'/><text x='30' y='50.0' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='20.0' y2='20.0' stroke='#e2e8f0'/><text x='30' y='24.0' font-size='10' text-anchor='end' fill='#64748b'>50</text><polyline points='36.0,98.0 98.0,85.0 160.0,72.0 222.0,79.8 284.0,56.4 346.0,40.8' fill='none' stroke='#db2777' stroke-width='2.5'/><circle cx='36.0' cy='98.0' r='3.5' fill='#db2777'/><text x='36.0' y='90.0' font-size='10' text-anchor='middle' fill='#0f172a'>20</text><circle cx='98.0' cy='85.0' r='3.5' fill='#db2777'/><text x='98.0' y='77.0' font-size='10' text-anchor='middle' fill='#0f172a'>25</text><circle cx='160.0' cy='72.0' r='3.5' fill='#db2777'/><text x='160.0' y='64.0' font-size='10' text-anchor='middle' fill='#0f172a'>30</text><circle cx='222.0' cy='79.8' r='3.5' fill='#db2777'/><text x='222.0' y='71.8' font-size='10' text-anchor='middle' fill='#0f172a'>27</text><circle cx='284.0' cy='56.4' r='3.5' fill='#db2777'/><text x='284.0' y='48.4' font-size='10' text-anchor='middle' fill='#0f172a'>36</text><circle cx='346.0' cy='40.8' r='3.5' fill='#db2777'/><text x='346.0' y='32.8' font-size='10' text-anchor='middle' fill='#0f172a'>42</text><text x='36.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jan</text><text x='98.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Feb</text><text x='160.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Mar</text><text x='222.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Apr</text><text x='284.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>May</text><text x='346.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jun</text></svg>",
+    "set": "line-downloads"
+   },
+   {
+    "id": "D18",
+    "topic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "In how many months did downloads fall compared with the previous month?",
+    "options": [
+     "0",
+     "1",
+     "2",
+     "3"
+    ],
+    "answer": 1,
+    "solution": "Only April fell (30 → 27).",
+    "data": "<b>Monthly downloads of a study app (thousands), 2026</b><svg viewBox='0 0 360 170' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='150.0' y2='150.0' stroke='#e2e8f0'/><text x='30' y='154.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='124.0' y2='124.0' stroke='#e2e8f0'/><text x='30' y='128.0' font-size='10' text-anchor='end' fill='#64748b'>10</text><line x1='36' x2='350' y1='98.0' y2='98.0' stroke='#e2e8f0'/><text x='30' y='102.0' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='72.0' y2='72.0' stroke='#e2e8f0'/><text x='30' y='76.0' font-size='10' text-anchor='end' fill='#64748b'>30</text><line x1='36' x2='350' y1='46.0' y2='46.0' stroke='#e2e8f0'/><text x='30' y='50.0' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='20.0' y2='20.0' stroke='#e2e8f0'/><text x='30' y='24.0' font-size='10' text-anchor='end' fill='#64748b'>50</text><polyline points='36.0,98.0 98.0,85.0 160.0,72.0 222.0,79.8 284.0,56.4 346.0,40.8' fill='none' stroke='#db2777' stroke-width='2.5'/><circle cx='36.0' cy='98.0' r='3.5' fill='#db2777'/><text x='36.0' y='90.0' font-size='10' text-anchor='middle' fill='#0f172a'>20</text><circle cx='98.0' cy='85.0' r='3.5' fill='#db2777'/><text x='98.0' y='77.0' font-size='10' text-anchor='middle' fill='#0f172a'>25</text><circle cx='160.0' cy='72.0' r='3.5' fill='#db2777'/><text x='160.0' y='64.0' font-size='10' text-anchor='middle' fill='#0f172a'>30</text><circle cx='222.0' cy='79.8' r='3.5' fill='#db2777'/><text x='222.0' y='71.8' font-size='10' text-anchor='middle' fill='#0f172a'>27</text><circle cx='284.0' cy='56.4' r='3.5' fill='#db2777'/><text x='284.0' y='48.4' font-size='10' text-anchor='middle' fill='#0f172a'>36</text><circle cx='346.0' cy='40.8' r='3.5' fill='#db2777'/><text x='346.0' y='32.8' font-size='10' text-anchor='middle' fill='#0f172a'>42</text><text x='36.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jan</text><text x='98.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Feb</text><text x='160.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Mar</text><text x='222.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Apr</text><text x='284.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>May</text><text x='346.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jun</text></svg>",
+    "set": "line-downloads"
+   },
+   {
+    "id": "D19",
+    "topic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "What is the percentage increase in downloads from January to June?",
+    "options": [
+     "100%",
+     "110%",
+     "120%",
+     "210%"
+    ],
+    "answer": 1,
+    "solution": "(42 − 20)/20 × 100 = 110%.",
+    "data": "<b>Monthly downloads of a study app (thousands), 2026</b><svg viewBox='0 0 360 170' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='150.0' y2='150.0' stroke='#e2e8f0'/><text x='30' y='154.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='124.0' y2='124.0' stroke='#e2e8f0'/><text x='30' y='128.0' font-size='10' text-anchor='end' fill='#64748b'>10</text><line x1='36' x2='350' y1='98.0' y2='98.0' stroke='#e2e8f0'/><text x='30' y='102.0' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='72.0' y2='72.0' stroke='#e2e8f0'/><text x='30' y='76.0' font-size='10' text-anchor='end' fill='#64748b'>30</text><line x1='36' x2='350' y1='46.0' y2='46.0' stroke='#e2e8f0'/><text x='30' y='50.0' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='20.0' y2='20.0' stroke='#e2e8f0'/><text x='30' y='24.0' font-size='10' text-anchor='end' fill='#64748b'>50</text><polyline points='36.0,98.0 98.0,85.0 160.0,72.0 222.0,79.8 284.0,56.4 346.0,40.8' fill='none' stroke='#db2777' stroke-width='2.5'/><circle cx='36.0' cy='98.0' r='3.5' fill='#db2777'/><text x='36.0' y='90.0' font-size='10' text-anchor='middle' fill='#0f172a'>20</text><circle cx='98.0' cy='85.0' r='3.5' fill='#db2777'/><text x='98.0' y='77.0' font-size='10' text-anchor='middle' fill='#0f172a'>25</text><circle cx='160.0' cy='72.0' r='3.5' fill='#db2777'/><text x='160.0' y='64.0' font-size='10' text-anchor='middle' fill='#0f172a'>30</text><circle cx='222.0' cy='79.8' r='3.5' fill='#db2777'/><text x='222.0' y='71.8' font-size='10' text-anchor='middle' fill='#0f172a'>27</text><circle cx='284.0' cy='56.4' r='3.5' fill='#db2777'/><text x='284.0' y='48.4' font-size='10' text-anchor='middle' fill='#0f172a'>36</text><circle cx='346.0' cy='40.8' r='3.5' fill='#db2777'/><text x='346.0' y='32.8' font-size='10' text-anchor='middle' fill='#0f172a'>42</text><text x='36.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jan</text><text x='98.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Feb</text><text x='160.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Mar</text><text x='222.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Apr</text><text x='284.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>May</text><text x='346.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jun</text></svg>",
+    "set": "line-downloads"
+   },
+   {
+    "id": "D20",
+    "topic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "What is the ratio of March downloads to June downloads?",
+    "options": [
+     "5 : 7",
+     "3 : 4",
+     "4 : 7",
+     "5 : 6"
+    ],
+    "answer": 0,
+    "solution": "30 : 42 = 5 : 7.",
+    "data": "<b>Monthly downloads of a study app (thousands), 2026</b><svg viewBox='0 0 360 170' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='150.0' y2='150.0' stroke='#e2e8f0'/><text x='30' y='154.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='124.0' y2='124.0' stroke='#e2e8f0'/><text x='30' y='128.0' font-size='10' text-anchor='end' fill='#64748b'>10</text><line x1='36' x2='350' y1='98.0' y2='98.0' stroke='#e2e8f0'/><text x='30' y='102.0' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='72.0' y2='72.0' stroke='#e2e8f0'/><text x='30' y='76.0' font-size='10' text-anchor='end' fill='#64748b'>30</text><line x1='36' x2='350' y1='46.0' y2='46.0' stroke='#e2e8f0'/><text x='30' y='50.0' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='20.0' y2='20.0' stroke='#e2e8f0'/><text x='30' y='24.0' font-size='10' text-anchor='end' fill='#64748b'>50</text><polyline points='36.0,98.0 98.0,85.0 160.0,72.0 222.0,79.8 284.0,56.4 346.0,40.8' fill='none' stroke='#db2777' stroke-width='2.5'/><circle cx='36.0' cy='98.0' r='3.5' fill='#db2777'/><text x='36.0' y='90.0' font-size='10' text-anchor='middle' fill='#0f172a'>20</text><circle cx='98.0' cy='85.0' r='3.5' fill='#db2777'/><text x='98.0' y='77.0' font-size='10' text-anchor='middle' fill='#0f172a'>25</text><circle cx='160.0' cy='72.0' r='3.5' fill='#db2777'/><text x='160.0' y='64.0' font-size='10' text-anchor='middle' fill='#0f172a'>30</text><circle cx='222.0' cy='79.8' r='3.5' fill='#db2777'/><text x='222.0' y='71.8' font-size='10' text-anchor='middle' fill='#0f172a'>27</text><circle cx='284.0' cy='56.4' r='3.5' fill='#db2777'/><text x='284.0' y='48.4' font-size='10' text-anchor='middle' fill='#0f172a'>36</text><circle cx='346.0' cy='40.8' r='3.5' fill='#db2777'/><text x='346.0' y='32.8' font-size='10' text-anchor='middle' fill='#0f172a'>42</text><text x='36.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jan</text><text x='98.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Feb</text><text x='160.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Mar</text><text x='222.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Apr</text><text x='284.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>May</text><text x='346.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jun</text></svg>",
+    "set": "line-downloads"
+   },
+   {
+    "id": "D21",
     "topic": "Caselets",
+    "difficulty": "Easy",
+    "question": "How many employees work in Ops?",
+    "options": [
+     "25",
+     "30",
+     "35",
+     "45"
+    ],
+    "answer": 1,
+    "solution": "Tech + Ops = 75, split 3 : 2, so Tech = 45 and Ops = 30.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A company has 120 employees in three departments. 45 work in Sales, and the rest are split between Tech and Ops in the ratio 3 : 2. 40% of Tech employees are women, and Ops has the same number of women as Tech.</p>",
+    "set": "caselet-staff"
+   },
+   {
+    "id": "D22",
+    "topic": "Caselets",
+    "difficulty": "Medium",
+    "question": "How many men work in Tech?",
+    "options": [
+     "18",
+     "27",
+     "30",
+     "25"
+    ],
+    "answer": 1,
+    "solution": "Women in Tech = 40% of 45 = 18. Men = 45 − 18 = 27.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A company has 120 employees in three departments. 45 work in Sales, and the rest are split between Tech and Ops in the ratio 3 : 2. 40% of Tech employees are women, and Ops has the same number of women as Tech.</p>",
+    "set": "caselet-staff"
+   },
+   {
+    "id": "D23",
+    "topic": "Caselets",
+    "difficulty": "Medium",
+    "question": "What percentage of Ops employees are women?",
+    "options": [
+     "40%",
+     "50%",
+     "60%",
+     "36%"
+    ],
+    "answer": 2,
+    "solution": "Women in Ops = 18 (same as Tech). 18/30 = 60%.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A company has 120 employees in three departments. 45 work in Sales, and the rest are split between Tech and Ops in the ratio 3 : 2. 40% of Tech employees are women, and Ops has the same number of women as Tech.</p>",
+    "set": "caselet-staff"
+   },
+   {
+    "id": "D24",
+    "topic": "Caselets",
+    "difficulty": "Hard",
+    "question": "If Sales has 20 women, how many women does the company have in total?",
+    "options": [
+     "38",
+     "56",
+     "54",
+     "60"
+    ],
+    "answer": 1,
+    "solution": "20 (Sales) + 18 (Tech) + 18 (Ops) = 56.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A company has 120 employees in three departments. 45 work in Sales, and the rest are split between Tech and Ops in the ratio 3 : 2. 40% of Tech employees are women, and Ops has the same number of women as Tech.</p>",
+    "set": "caselet-staff"
+   },
+   {
+    "id": "D25",
+    "topic": "Arrangements",
+    "difficulty": "Medium",
+    "question": "A, B, C and D sit around a square table, one on each side, facing the centre. A sits opposite C, and B is on A's immediate left. Who is on A's immediate right?",
+    "options": [
+     "B",
+     "C",
+     "D",
+     "Cannot be determined"
+    ],
+    "answer": 2,
+    "solution": "With A opposite C, A's two neighbours are B and D. B is on A's left, so D is on A's right.",
+    "fixed": true
+   },
+   {
+    "id": "D26",
+    "topic": "Arrangements",
+    "difficulty": "Easy",
+    "question": "Who likes Delhi?",
+    "options": [
+     "Amit",
+     "Bina",
+     "Chetan",
+     "Divya"
+    ],
+    "answer": 3,
+    "solution": "Amit = Goa and Chetan = Jaipur. Bina isn't Delhi, so Bina = Pune and Divya = Delhi.",
+    "data": "<b>Matching set</b><p style='margin:.3em 0 0'>Amit, Bina, Chetan and Divya each like a different city (Delhi, Goa, Jaipur, Pune) and each drive a different coloured car (red, blue, green, white).<br>• Amit likes Goa. • Chetan likes Jaipur. • Bina drives the red car and doesn't like Delhi.<br>• The person who likes Pune drives red. • The person who likes Jaipur drives green. • Divya doesn't drive the white car.</p>",
+    "set": "match-cities"
+   },
+   {
+    "id": "D27",
+    "topic": "Arrangements",
+    "difficulty": "Medium",
+    "question": "What is the colour of Amit's car?",
+    "options": [
+     "Red",
+     "Blue",
+     "Green",
+     "White"
+    ],
+    "answer": 3,
+    "solution": "Bina = red and Chetan (Jaipur) = green. Divya isn't white, so Divya = blue and Amit = white.",
+    "data": "<b>Matching set</b><p style='margin:.3em 0 0'>Amit, Bina, Chetan and Divya each like a different city (Delhi, Goa, Jaipur, Pune) and each drive a different coloured car (red, blue, green, white).<br>• Amit likes Goa. • Chetan likes Jaipur. • Bina drives the red car and doesn't like Delhi.<br>• The person who likes Pune drives red. • The person who likes Jaipur drives green. • Divya doesn't drive the white car.</p>",
+    "set": "match-cities"
+   },
+   {
+    "id": "D28",
+    "topic": "Arrangements",
+    "difficulty": "Medium",
+    "question": "Who drives the blue car?",
+    "options": [
+     "Amit",
+     "Bina",
+     "Chetan",
+     "Divya"
+    ],
+    "answer": 3,
+    "solution": "From the solution: Amit white, Bina red, Chetan green, Divya blue.",
+    "data": "<b>Matching set</b><p style='margin:.3em 0 0'>Amit, Bina, Chetan and Divya each like a different city (Delhi, Goa, Jaipur, Pune) and each drive a different coloured car (red, blue, green, white).<br>• Amit likes Goa. • Chetan likes Jaipur. • Bina drives the red car and doesn't like Delhi.<br>• The person who likes Pune drives red. • The person who likes Jaipur drives green. • Divya doesn't drive the white car.</p>",
+    "set": "match-cities"
+   },
+   {
+    "id": "D29",
+    "topic": "Arrangements",
+    "difficulty": "Easy",
+    "question": "Which city does the owner of the red car like?",
+    "options": [
+     "Delhi",
+     "Goa",
+     "Jaipur",
+     "Pune"
+    ],
+    "answer": 3,
+    "solution": "Bina drives red and likes Pune, which matches the clue that the Pune fan drives red.",
+    "data": "<b>Matching set</b><p style='margin:.3em 0 0'>Amit, Bina, Chetan and Divya each like a different city (Delhi, Goa, Jaipur, Pune) and each drive a different coloured car (red, blue, green, white).<br>• Amit likes Goa. • Chetan likes Jaipur. • Bina drives the red car and doesn't like Delhi.<br>• The person who likes Pune drives red. • The person who likes Jaipur drives green. • Divya doesn't drive the white car.</p>",
+    "set": "match-cities"
+   },
+   {
+    "id": "D30",
+    "topic": "Games & Tournaments",
+    "difficulty": "Easy",
+    "question": "In a knock-out tournament of 8 teams (no byes, no draws), how many matches are played in total?",
+    "options": [
+     "7",
+     "8",
+     "15",
+     "16"
+    ],
+    "answer": 0,
+    "solution": "Every match knocks out exactly one team and 7 teams must be knocked out, so 7 matches."
+   },
+   {
+    "id": "D31",
+    "topic": "Games & Tournaments",
+    "difficulty": "Easy",
+    "question": "In a round-robin tournament of 6 teams (every team plays every other team once), how many matches are played?",
+    "options": [
+     "12",
+     "15",
+     "30",
+     "36"
+    ],
+    "answer": 1,
+    "solution": "6C2 = 15."
+   },
+   {
+    "id": "D32",
+    "topic": "Games & Tournaments",
+    "difficulty": "Easy",
+    "question": "How many matches did B lose?",
+    "options": [
+     "0",
+     "1",
+     "2",
+     "3"
+    ],
+    "answer": 1,
+    "solution": "A won all 3 games (6 points), including against B. B has 4 points, so B won its other 2 games. B lost 1.",
+    "data": "<b>Round robin</b><p style='margin:.3em 0 0'>Four teams A, B, C and D each play every other team once. A win earns 2 points, a loss 0, and there are no draws. Final points: A = 6, B = 4, C = 2, D = 0.</p>",
+    "set": "rr-4"
+   },
+   {
+    "id": "D33",
+    "topic": "Games & Tournaments",
+    "difficulty": "Medium",
+    "question": "Which team did C beat?",
+    "options": [
+     "A",
+     "B",
+     "D",
+     "No one"
+    ],
+    "answer": 2,
+    "solution": "C has 2 points, so 1 win. C lost to A (A won all) and to B (B beat C and D). So C beat D.",
+    "data": "<b>Round robin</b><p style='margin:.3em 0 0'>Four teams A, B, C and D each play every other team once. A win earns 2 points, a loss 0, and there are no draws. Final points: A = 6, B = 4, C = 2, D = 0.</p>",
+    "fixed": true,
+    "set": "rr-4"
+   },
+   {
+    "id": "D34",
+    "topic": "Games & Tournaments",
+    "difficulty": "Easy",
+    "question": "How many points were awarded in total across the tournament?",
+    "options": [
+     "10",
+     "12",
+     "14",
+     "16"
+    ],
+    "answer": 1,
+    "solution": "6 matches × 2 points = 12 (check: 6 + 4 + 2 + 0 = 12).",
+    "data": "<b>Round robin</b><p style='margin:.3em 0 0'>Four teams A, B, C and D each play every other team once. A win earns 2 points, a loss 0, and there are no draws. Final points: A = 6, B = 4, C = 2, D = 0.</p>",
+    "set": "rr-4"
+   },
+   {
+    "id": "D35",
+    "topic": "Venn Diagrams",
     "difficulty": "Medium",
     "question": "In a class of 60 students, 35 like tea, 30 like coffee and 10 like neither. How many like both?",
     "options": [
@@ -513,18 +2376,132 @@
     "solution": "At least one = 60 − 10 = 50. Both = 35 + 30 − 50 = 15."
    },
    {
-    "id": "D12",
-    "topic": "Arrangements",
+    "id": "D36",
+    "topic": "Venn Diagrams",
     "difficulty": "Medium",
-    "question": "A, B, C and D sit around a square table, one on each side, all facing the centre. A sits opposite C, and B is on A's immediate left. Who is on A's immediate right?",
+    "question": "How many students play at least one sport?",
     "options": [
-     "B",
-     "C",
-     "D",
-     "Cannot be determined"
+     "83",
+     "88",
+     "93",
+     "78"
     ],
-    "answer": 2,
-    "solution": "With A opposite C, A's two neighbours are B and D. B is on A's left, so D is on A's right."
+    "answer": 1,
+    "solution": "n(C∪F∪H) = 50 + 40 + 30 − 15 − 10 − 12 + 5 = 88.",
+    "data": "<b>Sports survey of 100 students</b><table class='data'><tr><th>Cricket</th><th>Football</th><th>Hockey</th><th>C &amp; F</th><th>F &amp; H</th><th>C &amp; H</th><th>All three</th></tr><tr><td>50</td><td>40</td><td>30</td><td>15</td><td>10</td><td>12</td><td>5</td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>Pair figures include those who play all three.</p>",
+    "set": "venn-sports"
+   },
+   {
+    "id": "D37",
+    "topic": "Venn Diagrams",
+    "difficulty": "Medium",
+    "question": "How many students play only cricket?",
+    "options": [
+     "23",
+     "28",
+     "33",
+     "35"
+    ],
+    "answer": 1,
+    "solution": "Only cricket = 50 − 15 − 12 + 5 = 28.",
+    "data": "<b>Sports survey of 100 students</b><table class='data'><tr><th>Cricket</th><th>Football</th><th>Hockey</th><th>C &amp; F</th><th>F &amp; H</th><th>C &amp; H</th><th>All three</th></tr><tr><td>50</td><td>40</td><td>30</td><td>15</td><td>10</td><td>12</td><td>5</td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>Pair figures include those who play all three.</p>",
+    "set": "venn-sports"
+   },
+   {
+    "id": "D38",
+    "topic": "Venn Diagrams",
+    "difficulty": "Easy",
+    "question": "How many students play none of the three sports?",
+    "options": [
+     "7",
+     "12",
+     "17",
+     "10"
+    ],
+    "answer": 1,
+    "solution": "100 − 88 = 12.",
+    "data": "<b>Sports survey of 100 students</b><table class='data'><tr><th>Cricket</th><th>Football</th><th>Hockey</th><th>C &amp; F</th><th>F &amp; H</th><th>C &amp; H</th><th>All three</th></tr><tr><td>50</td><td>40</td><td>30</td><td>15</td><td>10</td><td>12</td><td>5</td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>Pair figures include those who play all three.</p>",
+    "set": "venn-sports"
+   },
+   {
+    "id": "D39",
+    "topic": "Venn Diagrams",
+    "difficulty": "Hard",
+    "question": "How many students play exactly two sports?",
+    "options": [
+     "22",
+     "27",
+     "37",
+     "32"
+    ],
+    "answer": 0,
+    "solution": "Exactly two = (15 − 5) + (10 − 5) + (12 − 5) = 10 + 5 + 7 = 22.",
+    "data": "<b>Sports survey of 100 students</b><table class='data'><tr><th>Cricket</th><th>Football</th><th>Hockey</th><th>C &amp; F</th><th>F &amp; H</th><th>C &amp; H</th><th>All three</th></tr><tr><td>50</td><td>40</td><td>30</td><td>15</td><td>10</td><td>12</td><td>5</td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>Pair figures include those who play all three.</p>",
+    "set": "venn-sports"
+   },
+   {
+    "id": "D40",
+    "topic": "Network & Routes",
+    "difficulty": "Medium",
+    "question": "What is the shortest road distance from P to S?",
+    "options": [
+     "9 km",
+     "10 km",
+     "11 km",
+     "12 km"
+    ],
+    "answer": 0,
+    "solution": "P–Q–R–S = 4 + 2 + 3 = 9. The alternatives, P–R–S and P–Q–S, are both 10.",
+    "data": "<b>Two-way roads between towns (km)</b><table class='data'><tr><th>Road</th><th>P–Q</th><th>P–R</th><th>Q–R</th><th>Q–S</th><th>R–S</th><th>S–T</th><th>R–T</th></tr><tr><td>Length</td><td>4</td><td>7</td><td>2</td><td>6</td><td>3</td><td>5</td><td>9</td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-towns"
+   },
+   {
+    "id": "D41",
+    "topic": "Network & Routes",
+    "difficulty": "Medium",
+    "question": "What is the shortest road distance from P to T?",
+    "options": [
+     "13 km",
+     "14 km",
+     "15 km",
+     "16 km"
+    ],
+    "answer": 1,
+    "solution": "P–Q–R–S–T = 4 + 2 + 3 + 5 = 14. P–Q–R–T = 15.",
+    "data": "<b>Two-way roads between towns (km)</b><table class='data'><tr><th>Road</th><th>P–Q</th><th>P–R</th><th>Q–R</th><th>Q–S</th><th>R–S</th><th>S–T</th><th>R–T</th></tr><tr><td>Length</td><td>4</td><td>7</td><td>2</td><td>6</td><td>3</td><td>5</td><td>9</td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-towns"
+   },
+   {
+    "id": "D42",
+    "topic": "Network & Routes",
+    "difficulty": "Medium",
+    "question": "What is the shortest road distance from Q to T?",
+    "options": [
+     "10 km",
+     "11 km",
+     "12 km",
+     "9 km"
+    ],
+    "answer": 0,
+    "solution": "Q–R–S–T = 2 + 3 + 5 = 10. Q–R–T and Q–S–T are both 11.",
+    "data": "<b>Two-way roads between towns (km)</b><table class='data'><tr><th>Road</th><th>P–Q</th><th>P–R</th><th>Q–R</th><th>Q–S</th><th>R–S</th><th>S–T</th><th>R–T</th></tr><tr><td>Length</td><td>4</td><td>7</td><td>2</td><td>6</td><td>3</td><td>5</td><td>9</td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-towns"
+   },
+   {
+    "id": "D43",
+    "topic": "Network & Routes",
+    "difficulty": "Hard",
+    "question": "If road Q–R is closed, what is the shortest distance from P to S?",
+    "options": [
+     "9 km",
+     "10 km",
+     "11 km",
+     "13 km"
+    ],
+    "answer": 1,
+    "solution": "Without Q–R: P–R–S = 10 and P–Q–S = 10, so 10 km.",
+    "data": "<b>Two-way roads between towns (km)</b><table class='data'><tr><th>Road</th><th>P–Q</th><th>P–R</th><th>Q–R</th><th>Q–S</th><th>R–S</th><th>S–T</th><th>R–T</th></tr><tr><td>Length</td><td>4</td><td>7</td><td>2</td><td>6</td><td>3</td><td>5</td><td>9</td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-towns"
    }
   ]
  }
