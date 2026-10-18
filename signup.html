@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign up | {BRAND}</title>
+<meta name="description" content="Quantitative Aptitude, Logical Reasoning and DILR prep for CAT, Bank, SSC, GMAT and campus placements.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+
+<section><div class="container" style="max-width:480px"><div class="card">
+ <h2>Create your free account</h2><p class="muted">Save your progress, get daily practice and hear first when mock tests launch.</p>
+ <div id="ok" class="notice hidden">✅ Thanks! This is a demo. Accounts aren't connected to a backend yet, so no data was saved.</div>
+ <form class="form" id="signup" onsubmit="event.preventDefault();document.getElementById('ok').classList.remove('hidden');this.reset();">
+  <label>Full name<input required placeholder="e.g. Priya Sharma"></label>
+  <label>Email<input type="email" required placeholder="you@example.com"></label>
+  <label>Mobile (optional)<input type="tel" placeholder="+91 98xxxxxxxx"></label>
+  <label>Preparing for<select><option>CAT / MBA entrance</option><option>Bank exams</option><option>SSC exams</option><option>Campus placements</option><option>GMAT</option><option>Other</option></select></label>
+  <label>Password<input type="password" required minlength="6" placeholder="At least 6 characters"></label>
+  <button class="btn" type="submit">Sign up free</button>
+  <p class="muted" style="font-size:.85rem;margin:0">Already have an account? <a href="#">Log in</a> (demo)</p>
+ </form></div></div></section>
+
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/layout.js"></script>
+
+</body>
+</html>

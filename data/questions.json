@@ -1,0 +1,531 @@
+{
+ "quant": {
+  "name": "Quantitative Aptitude",
+  "questions": [
+   {
+    "id": "Q1",
+    "topic": "Percentages",
+    "difficulty": "Easy",
+    "question": "The price of a phone is increased by 20% and then the new price is decreased by 20%. What is the net change in price?",
+    "options": [
+     "No change",
+     "4% decrease",
+     "4% increase",
+     "2% decrease"
+    ],
+    "answer": 1,
+    "solution": "Net change = a + b + ab/100 = 20 − 20 − (20×20)/100 = −4%. So a 4% decrease."
+   },
+   {
+    "id": "Q2",
+    "topic": "Profit & Loss",
+    "difficulty": "Easy",
+    "question": "An article bought for ₹800 is sold for ₹1,000. What is the profit percentage?",
+    "options": [
+     "20%",
+     "25%",
+     "22.5%",
+     "18%"
+    ],
+    "answer": 1,
+    "solution": "Profit = 1000 − 800 = ₹200. Profit % = 200/800 × 100 = 25%."
+   },
+   {
+    "id": "Q3",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Easy",
+    "question": "A 150 m long train runs at 54 km/h. How long does it take to cross a pole?",
+    "options": [
+     "8 s",
+     "9 s",
+     "10 s",
+     "12 s"
+    ],
+    "answer": 2,
+    "solution": "54 km/h = 54 × 5/18 = 15 m/s. Time = 150/15 = 10 s."
+   },
+   {
+    "id": "Q4",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "How many trailing zeros does 50! have?",
+    "options": [
+     "10",
+     "11",
+     "12",
+     "13"
+    ],
+    "answer": 2,
+    "solution": "Count factors of 5: ⌊50/5⌋ + ⌊50/25⌋ = 10 + 2 = 12."
+   },
+   {
+    "id": "Q5",
+    "topic": "Algebra",
+    "difficulty": "Easy",
+    "question": "If x + 1/x = 5, what is x² + 1/x²?",
+    "options": [
+     "23",
+     "25",
+     "27",
+     "21"
+    ],
+    "answer": 0,
+    "solution": "(x + 1/x)² = x² + 1/x² + 2 ⇒ 25 = x² + 1/x² + 2 ⇒ x² + 1/x² = 23."
+   },
+   {
+    "id": "Q6",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can the letters of the word LEVEL be arranged?",
+    "options": [
+     "60",
+     "30",
+     "120",
+     "20"
+    ],
+    "answer": 1,
+    "solution": "LEVEL has 5 letters with L twice and E twice. Arrangements = 5!/(2!·2!) = 120/4 = 30."
+   },
+   {
+    "id": "Q7",
+    "topic": "Probability",
+    "difficulty": "Easy",
+    "question": "Two fair dice are thrown. What is the probability that the sum is 7?",
+    "options": [
+     "1/6",
+     "5/36",
+     "7/36",
+     "1/9"
+    ],
+    "answer": 0,
+    "solution": "Favourable pairs: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6. Probability = 6/36 = 1/6."
+   },
+   {
+    "id": "Q8",
+    "topic": "Geometry",
+    "difficulty": "Medium",
+    "question": "A right triangle has legs 6 cm and 8 cm. What is the area of its circumcircle?",
+    "options": [
+     "16π cm²",
+     "25π cm²",
+     "36π cm²",
+     "100π cm²"
+    ],
+    "answer": 1,
+    "solution": "Hypotenuse = √(36+64) = 10 cm. In a right triangle the hypotenuse is the circumdiameter, so r = 5 cm and area = 25π cm²."
+   },
+   {
+    "id": "Q9",
+    "topic": "Simple & Compound Interest",
+    "difficulty": "Easy",
+    "question": "What is the simple interest on ₹5,000 at 8% per annum for 3 years?",
+    "options": [
+     "₹1,000",
+     "₹1,200",
+     "₹1,260",
+     "₹1,500"
+    ],
+    "answer": 1,
+    "solution": "SI = P×R×T/100 = 5000 × 8 × 3/100 = ₹1,200."
+   },
+   {
+    "id": "Q10",
+    "topic": "Time & Work",
+    "difficulty": "Easy",
+    "question": "A can finish a job in 12 days and B in 18 days. Working together, how long will they take?",
+    "options": [
+     "7.2 days",
+     "7.5 days",
+     "6 days",
+     "15 days"
+    ],
+    "answer": 0,
+    "solution": "Combined rate = 1/12 + 1/18 = 3/36 + 2/36 = 5/36 per day. Time = 36/5 = 7.2 days."
+   },
+   {
+    "id": "Q11",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "What is the remainder when 2¹⁰ is divided by 7?",
+    "options": [
+     "1",
+     "2",
+     "4",
+     "3"
+    ],
+    "answer": 1,
+    "solution": "2³ = 8 ≡ 1 (mod 7). 2¹⁰ = (2³)³ × 2 ≡ 1 × 2 = 2. (Check: 1024 = 7×146 + 2.)"
+   },
+   {
+    "id": "Q12",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Medium",
+    "question": "A car goes from A to B at 60 km/h and returns at 40 km/h. What is its average speed for the round trip?",
+    "options": [
+     "50 km/h",
+     "48 km/h",
+     "45 km/h",
+     "52 km/h"
+    ],
+    "answer": 1,
+    "solution": "For equal distances, average speed = 2xy/(x+y) = 2×60×40/100 = 48 km/h."
+   }
+  ]
+ },
+ "reasoning": {
+  "name": "Logical Reasoning",
+  "questions": [
+   {
+    "id": "R1",
+    "topic": "Syllogisms",
+    "difficulty": "Easy",
+    "question": "Statements: All cats are dogs. All dogs are birds.<br>Conclusions: I. All cats are birds. II. Some birds are cats.",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 2,
+    "solution": "Cats ⊂ Dogs ⊂ Birds, so all cats are birds (I). Since all cats are birds, some birds are cats (II, conversion of I). Both follow."
+   },
+   {
+    "id": "R2",
+    "topic": "Syllogisms",
+    "difficulty": "Medium",
+    "question": "Statements: Some pens are books. No book is a pencil.<br>Conclusions: I. Some pens are not pencils. II. No pen is a pencil.",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both follow",
+     "Neither follows"
+    ],
+    "answer": 0,
+    "solution": "The pens that are books cannot be pencils, so some pens are not pencils (I). Pens that aren't books may or may not be pencils, so II doesn't necessarily follow."
+   },
+   {
+    "id": "R3",
+    "topic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If CAT is coded as DBU, how is DOG coded?",
+    "options": [
+     "EPH",
+     "CNF",
+     "EOH",
+     "DPH"
+    ],
+    "answer": 0,
+    "solution": "Each letter is shifted +1: C→D, A→B, T→U. So D→E, O→P, G→H = EPH."
+   },
+   {
+    "id": "R4",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a code, APPLE = 50 (sum of the alphabet positions of its letters). What is GRAPE?",
+    "options": [
+     "45",
+     "47",
+     "49",
+     "52"
+    ],
+    "answer": 1,
+    "solution": "APPLE = 1+16+16+12+5 = 50. GRAPE = 7+18+1+16+5 = 47."
+   },
+   {
+    "id": "R5",
+    "topic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "Pointing to a man, Riya says, \"He is the son of my father's father's only son.\" How is the man related to Riya?",
+    "options": [
+     "Cousin",
+     "Uncle",
+     "Brother",
+     "Nephew"
+    ],
+    "answer": 2,
+    "solution": "Father's father's only son = Riya's father. The son of Riya's father is her brother."
+   },
+   {
+    "id": "R6",
+    "topic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "A is B's sister. C is B's mother. D is C's father. How is A related to D?",
+    "options": [
+     "Daughter",
+     "Granddaughter",
+     "Niece",
+     "Grandmother"
+    ],
+    "answer": 1,
+    "solution": "A and B are C's children. D is C's father, so D is A's grandfather. A is female (sister), so A is D's granddaughter."
+   },
+   {
+    "id": "R7",
+    "topic": "Number Series",
+    "difficulty": "Easy",
+    "question": "Find the next term: 2, 6, 12, 20, 30, ?",
+    "options": [
+     "40",
+     "42",
+     "44",
+     "36"
+    ],
+    "answer": 1,
+    "solution": "Terms are n(n+1): 1×2, 2×3, 3×4, 4×5, 5×6, so next = 6×7 = 42. (Differences 4, 6, 8, 10, 12.)"
+   },
+   {
+    "id": "R8",
+    "topic": "Number Series",
+    "difficulty": "Easy",
+    "question": "Find the next term: 3, 5, 9, 17, 33, ?",
+    "options": [
+     "63",
+     "64",
+     "65",
+     "66"
+    ],
+    "answer": 2,
+    "solution": "Each term = previous × 2 − 1: 33 × 2 − 1 = 65. (Differences double: 2, 4, 8, 16, 32.)"
+   },
+   {
+    "id": "R9",
+    "topic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Ravi walks 5 km north, turns right and walks 3 km, then turns right again and walks 9 km. How far is he from his starting point?",
+    "options": [
+     "5 km",
+     "7 km",
+     "4 km",
+     "6 km"
+    ],
+    "answer": 0,
+    "solution": "Right of north is east: he ends 3 km east and 5 − 9 = 4 km south of the start. Distance = √(3² + 4²) = 5 km."
+   },
+   {
+    "id": "R10",
+    "topic": "Seating Arrangement",
+    "difficulty": "Hard",
+    "question": "P, Q, R, S and T sit in a row facing north. S is in the middle. R is at one of the extreme ends. T sits second from the left. Q sits immediately to the right of P. Who sits at the extreme right?",
+    "options": [
+     "P",
+     "R",
+     "Q",
+     "T"
+    ],
+    "answer": 2,
+    "solution": "Positions 1–5 from left: S = 3, T = 2. P–Q need two adjacent free seats: only 4–5 (since 1–2 has T). So P = 4, Q = 5, R = 1. Order: R T S P Q. Q is at the extreme right."
+   },
+   {
+    "id": "R11",
+    "topic": "Odd One Out",
+    "difficulty": "Easy",
+    "question": "Find the odd one out: 8, 27, 64, 100, 125",
+    "options": [
+     "27",
+     "64",
+     "100",
+     "125"
+    ],
+    "answer": 2,
+    "solution": "8, 27, 64, 125 are perfect cubes (2³, 3³, 4³, 5³). 100 is not a cube."
+   },
+   {
+    "id": "R12",
+    "topic": "Clocks",
+    "difficulty": "Medium",
+    "question": "What is the angle between the hour and minute hands at 3:40?",
+    "options": [
+     "120°",
+     "130°",
+     "140°",
+     "150°"
+    ],
+    "answer": 1,
+    "solution": "Angle = |30H − 5.5M| = |90 − 220| = 130°."
+   }
+  ]
+ },
+ "dilr": {
+  "name": "DILR",
+  "questions": [
+   {
+    "id": "D1",
+    "topic": "Tables",
+    "difficulty": "Easy",
+    "question": "What is the percentage increase in the total sales of Company X from 2023 to 2024?",
+    "options": [
+     "20%",
+     "25%",
+     "30%",
+     "24%"
+    ],
+    "answer": 1,
+    "solution": "Total: 400 → 500. Increase = 100/400 × 100 = 25%.",
+    "data": "<b>Sales of Company X (₹ lakh)</b><table class='data'><tr><th>Product</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr><tr><td>A</td><td>120</td><td>150</td><td>180</td><td>210</td></tr><tr><td>B</td><td>80</td><td>90</td><td>120</td><td>150</td></tr><tr><td>C</td><td>100</td><td>110</td><td>100</td><td>140</td></tr><tr><th>Total</th><th>300</th><th>350</th><th>400</th><th>500</th></tr></table>"
+   },
+   {
+    "id": "D2",
+    "topic": "Tables",
+    "difficulty": "Easy",
+    "question": "What share of the total 2024 sales came from Product B?",
+    "options": [
+     "25%",
+     "28%",
+     "30%",
+     "35%"
+    ],
+    "answer": 2,
+    "solution": "150/500 × 100 = 30%.",
+    "data": "<b>Sales of Company X (₹ lakh)</b><table class='data'><tr><th>Product</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr><tr><td>A</td><td>120</td><td>150</td><td>180</td><td>210</td></tr><tr><td>B</td><td>80</td><td>90</td><td>120</td><td>150</td></tr><tr><td>C</td><td>100</td><td>110</td><td>100</td><td>140</td></tr><tr><th>Total</th><th>300</th><th>350</th><th>400</th><th>500</th></tr></table>"
+   },
+   {
+    "id": "D3",
+    "topic": "Tables",
+    "difficulty": "Medium",
+    "question": "Which product had the highest percentage growth in sales from 2021 to 2024?",
+    "options": [
+     "A",
+     "B",
+     "C",
+     "A and B equally"
+    ],
+    "answer": 1,
+    "solution": "A: 90/120 = 75%. B: 70/80 = 87.5%. C: 40/100 = 40%. B is highest.",
+    "data": "<b>Sales of Company X (₹ lakh)</b><table class='data'><tr><th>Product</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr><tr><td>A</td><td>120</td><td>150</td><td>180</td><td>210</td></tr><tr><td>B</td><td>80</td><td>90</td><td>120</td><td>150</td></tr><tr><td>C</td><td>100</td><td>110</td><td>100</td><td>140</td></tr><tr><th>Total</th><th>300</th><th>350</th><th>400</th><th>500</th></tr></table>"
+   },
+   {
+    "id": "D4",
+    "topic": "Tables",
+    "difficulty": "Easy",
+    "question": "What were the average annual sales of Product C over 2021–2024 (₹ lakh)?",
+    "options": [
+     "110",
+     "112.5",
+     "115",
+     "105"
+    ],
+    "answer": 1,
+    "solution": "(100 + 110 + 100 + 140)/4 = 450/4 = 112.5.",
+    "data": "<b>Sales of Company X (₹ lakh)</b><table class='data'><tr><th>Product</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr><tr><td>A</td><td>120</td><td>150</td><td>180</td><td>210</td></tr><tr><td>B</td><td>80</td><td>90</td><td>120</td><td>150</td></tr><tr><td>C</td><td>100</td><td>110</td><td>100</td><td>140</td></tr><tr><th>Total</th><th>300</th><th>350</th><th>400</th><th>500</th></tr></table>"
+   },
+   {
+    "id": "D5",
+    "topic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Mumbai's count is what percentage of the total across all five cities?",
+    "options": [
+     "25%",
+     "28%",
+     "30%",
+     "32%"
+    ],
+    "answer": 2,
+    "solution": "Total = 240 + 300 + 180 + 120 + 160 = 1000. Mumbai = 300/1000 = 30%.",
+    "data": "<b>Students scoring above 90 percentile in a mock test, by city</b><div class='bars'><div class='bar-row'><span>Delhi</span><i style='width:80.0%'></i><span>240</span></div><div class='bar-row'><span>Mumbai</span><i style='width:100.0%'></i><span>300</span></div><div class='bar-row'><span>Pune</span><i style='width:60.0%'></i><span>180</span></div><div class='bar-row'><span>Jaipur</span><i style='width:40.0%'></i><span>120</span></div><div class='bar-row'><span>Kolkata</span><i style='width:53.3%'></i><span>160</span></div></div>"
+   },
+   {
+    "id": "D6",
+    "topic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "What is the ratio of Delhi's count to Pune's count?",
+    "options": [
+     "3:4",
+     "4:3",
+     "6:5",
+     "5:3"
+    ],
+    "answer": 1,
+    "solution": "240 : 180 = 4 : 3.",
+    "data": "<b>Students scoring above 90 percentile in a mock test, by city</b><div class='bars'><div class='bar-row'><span>Delhi</span><i style='width:80.0%'></i><span>240</span></div><div class='bar-row'><span>Mumbai</span><i style='width:100.0%'></i><span>300</span></div><div class='bar-row'><span>Pune</span><i style='width:60.0%'></i><span>180</span></div><div class='bar-row'><span>Jaipur</span><i style='width:40.0%'></i><span>120</span></div><div class='bar-row'><span>Kolkata</span><i style='width:53.3%'></i><span>160</span></div></div>"
+   },
+   {
+    "id": "D7",
+    "topic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "How many cities have a count above the five-city average?",
+    "options": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "answer": 1,
+    "solution": "Average = 1000/5 = 200. Above 200: Delhi (240) and Mumbai (300), so 2 cities.",
+    "data": "<b>Students scoring above 90 percentile in a mock test, by city</b><div class='bars'><div class='bar-row'><span>Delhi</span><i style='width:80.0%'></i><span>240</span></div><div class='bar-row'><span>Mumbai</span><i style='width:100.0%'></i><span>300</span></div><div class='bar-row'><span>Pune</span><i style='width:60.0%'></i><span>180</span></div><div class='bar-row'><span>Jaipur</span><i style='width:40.0%'></i><span>120</span></div><div class='bar-row'><span>Kolkata</span><i style='width:53.3%'></i><span>160</span></div></div>"
+   },
+   {
+    "id": "D8",
+    "topic": "Pie Charts",
+    "difficulty": "Easy",
+    "question": "How much does the family spend on education each month?",
+    "options": [
+     "₹6,000",
+     "₹9,000",
+     "₹12,000",
+     "₹15,000"
+    ],
+    "answer": 1,
+    "solution": "15% of ₹60,000 = ₹9,000.",
+    "data": "<b>Monthly budget of a family (total income ₹60,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0 30%,#0891b2 30% 55%,#db2777 55% 70%,#f59e0b 70% 80%,#16a34a 80% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Rent 30%</div><div><i style='background:#0891b2'></i>Food 25%</div><div><i style='background:#db2777'></i>Education 15%</div><div><i style='background:#f59e0b'></i>Transport 10%</div><div><i style='background:#16a34a'></i>Savings 20%</div></div></div>"
+   },
+   {
+    "id": "D9",
+    "topic": "Pie Charts",
+    "difficulty": "Easy",
+    "question": "What is the central angle of the Food sector in the pie chart?",
+    "options": [
+     "75°",
+     "80°",
+     "90°",
+     "100°"
+    ],
+    "answer": 2,
+    "solution": "25% of 360° = 90°.",
+    "data": "<b>Monthly budget of a family (total income ₹60,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0 30%,#0891b2 30% 55%,#db2777 55% 70%,#f59e0b 70% 80%,#16a34a 80% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Rent 30%</div><div><i style='background:#0891b2'></i>Food 25%</div><div><i style='background:#db2777'></i>Education 15%</div><div><i style='background:#f59e0b'></i>Transport 10%</div><div><i style='background:#16a34a'></i>Savings 20%</div></div></div>"
+   },
+   {
+    "id": "D10",
+    "topic": "Pie Charts",
+    "difficulty": "Hard",
+    "question": "Rent goes up by 20%. Income stays the same and the extra rent comes out of savings. What are the new monthly savings?",
+    "options": [
+     "₹9,600",
+     "₹8,400",
+     "₹10,800",
+     "₹7,200"
+    ],
+    "answer": 1,
+    "solution": "Rent = 30% × 60,000 = 18,000; 20% more = 3,600 extra. Savings = 12,000 − 3,600 = ₹8,400.",
+    "data": "<b>Monthly budget of a family (total income ₹60,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0 30%,#0891b2 30% 55%,#db2777 55% 70%,#f59e0b 70% 80%,#16a34a 80% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Rent 30%</div><div><i style='background:#0891b2'></i>Food 25%</div><div><i style='background:#db2777'></i>Education 15%</div><div><i style='background:#f59e0b'></i>Transport 10%</div><div><i style='background:#16a34a'></i>Savings 20%</div></div></div>"
+   },
+   {
+    "id": "D11",
+    "topic": "Caselets",
+    "difficulty": "Medium",
+    "question": "In a class of 60 students, 35 like tea, 30 like coffee and 10 like neither. How many like both?",
+    "options": [
+     "5",
+     "10",
+     "15",
+     "20"
+    ],
+    "answer": 2,
+    "solution": "At least one = 60 − 10 = 50. Both = 35 + 30 − 50 = 15."
+   },
+   {
+    "id": "D12",
+    "topic": "Arrangements",
+    "difficulty": "Medium",
+    "question": "A, B, C and D sit around a square table, one on each side, all facing the centre. A sits opposite C, and B is on A's immediate left. Who is on A's immediate right?",
+    "options": [
+     "B",
+     "C",
+     "D",
+     "Cannot be determined"
+    ],
+    "answer": 2,
+    "solution": "With A opposite C, A's two neighbours are B and D. B is on A's left, so D is on A's right."
+   }
+  ]
+ }
+}
