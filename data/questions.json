@@ -4,6 +4,7 @@
   "questions": [
    {
     "id": "Q1",
+    "exam": "general",
     "topic": "Percentages",
     "difficulty": "Easy",
     "question": "The price of a phone is increased by 20% and the new price is then decreased by 20%. What is the net change in price?",
@@ -19,6 +20,7 @@
    },
    {
     "id": "Q2",
+    "exam": "general",
     "topic": "Percentages",
     "difficulty": "Easy",
     "question": "A's salary is 25% more than B's. By what percentage is B's salary less than A's?",
@@ -33,6 +35,7 @@
    },
    {
     "id": "Q3",
+    "exam": "general",
     "topic": "Percentages",
     "difficulty": "Easy",
     "question": "If 40% of a number is 96, what is 65% of the same number?",
@@ -47,6 +50,7 @@
    },
    {
     "id": "Q4",
+    "exam": "general",
     "topic": "Percentages",
     "difficulty": "Medium",
     "question": "A town's population is 50,000. It grows by 10% in the first year and 20% in the second. What is the population after 2 years?",
@@ -61,6 +65,7 @@
    },
    {
     "id": "Q5",
+    "exam": "general",
     "topic": "Percentages",
     "difficulty": "Medium",
     "question": "A student scoring 30% fails by 30 marks. Another student scoring 45% gets 15 marks more than the pass mark. What are the maximum marks?",
@@ -75,6 +80,7 @@
    },
    {
     "id": "Q6",
+    "exam": "general",
     "topic": "Percentages",
     "difficulty": "Hard",
     "question": "The price of sugar rises by 25%. By what percentage must a family cut its consumption so that its spending on sugar stays the same?",
@@ -89,6 +95,7 @@
    },
    {
     "id": "Q7",
+    "exam": "general",
     "topic": "Profit & Loss",
     "difficulty": "Easy",
     "question": "An article bought for ₹800 is sold for ₹1,000. What is the profit percentage?",
@@ -103,6 +110,7 @@
    },
    {
     "id": "Q8",
+    "exam": "general",
     "topic": "Profit & Loss",
     "difficulty": "Easy",
     "question": "An item has a marked price of ₹1,200 and is sold at a 15% discount. What is the selling price?",
@@ -117,6 +125,7 @@
    },
    {
     "id": "Q9",
+    "exam": "general",
     "topic": "Profit & Loss",
     "difficulty": "Medium",
     "question": "A shopkeeper marks goods 40% above cost price and gives a 10% discount. What is his profit percentage?",
@@ -131,6 +140,7 @@
    },
    {
     "id": "Q10",
+    "exam": "general",
     "topic": "Profit & Loss",
     "difficulty": "Medium",
     "question": "Selling an item for ₹1,140 causes a loss of 5%. At what price should it be sold to make a 5% profit?",
@@ -145,6 +155,7 @@
    },
    {
     "id": "Q11",
+    "exam": "general",
     "topic": "Profit & Loss",
     "difficulty": "Hard",
     "question": "Two items are each sold for ₹990, one at a 10% profit and the other at a 10% loss. What is the overall result?",
@@ -160,6 +171,7 @@
    },
    {
     "id": "Q12",
+    "exam": "general",
     "topic": "Profit & Loss",
     "difficulty": "Hard",
     "question": "A dishonest dealer sells at cost price but uses a 900 g weight in place of 1 kg. What is his profit percentage?",
@@ -174,6 +186,7 @@
    },
    {
     "id": "Q13",
+    "exam": "general",
     "topic": "Simple & Compound Interest",
     "difficulty": "Easy",
     "question": "What is the simple interest on ₹5,000 at 8% per annum for 3 years?",
@@ -188,6 +201,7 @@
    },
    {
     "id": "Q14",
+    "exam": "general",
     "topic": "Simple & Compound Interest",
     "difficulty": "Easy",
     "question": "What is the compound interest on ₹10,000 at 10% per annum for 2 years, compounded annually?",
@@ -202,6 +216,7 @@
    },
    {
     "id": "Q15",
+    "exam": "general",
     "topic": "Simple & Compound Interest",
     "difficulty": "Medium",
     "question": "What is the difference between compound and simple interest on ₹8,000 for 2 years at 5% per annum?",
@@ -216,6 +231,7 @@
    },
    {
     "id": "Q16",
+    "exam": "general",
     "topic": "Simple & Compound Interest",
     "difficulty": "Medium",
     "question": "A sum of money doubles in 8 years at simple interest. What is the rate of interest per annum?",
@@ -230,6 +246,7 @@
    },
    {
     "id": "Q17",
+    "exam": "general",
     "topic": "Simple & Compound Interest",
     "difficulty": "Hard",
     "question": "A sum becomes ₹8,820 in 2 years at 5% per annum compound interest. What is the principal?",
@@ -244,6 +261,7 @@
    },
    {
     "id": "Q18",
+    "exam": "general",
     "topic": "Ratio & Proportion",
     "difficulty": "Easy",
     "question": "₹1,800 is divided in the ratio 2 : 3 : 4. What is the largest share?",
@@ -258,6 +276,7 @@
    },
    {
     "id": "Q19",
+    "exam": "general",
     "topic": "Ratio & Proportion",
     "difficulty": "Easy",
     "question": "If A : B = 2 : 3 and B : C = 4 : 5, what is A : B : C?",
@@ -272,6 +291,7 @@
    },
    {
     "id": "Q20",
+    "exam": "general",
     "topic": "Ratio & Proportion",
     "difficulty": "Medium",
     "question": "A and B invest ₹30,000 and ₹45,000 respectively for one year. The profit is ₹15,000. What is A's share?",
@@ -286,6 +306,7 @@
    },
    {
     "id": "Q21",
+    "exam": "general",
     "topic": "Ratio & Proportion",
     "difficulty": "Medium",
     "question": "What is the mean proportional between 9 and 16?",
@@ -300,6 +321,7 @@
    },
    {
     "id": "Q22",
+    "exam": "general",
     "topic": "Ratio & Proportion",
     "difficulty": "Hard",
     "question": "The ratio of boys to girls in a class is 7 : 5. When 12 more girls join, the ratio becomes 1 : 1. How many boys are there?",
@@ -314,6 +336,7 @@
    },
    {
     "id": "Q23",
+    "exam": "general",
     "topic": "Averages & Alligation",
     "difficulty": "Easy",
     "question": "The average of 5 numbers is 20. When one number is removed, the average of the rest is 18. What number was removed?",
@@ -328,6 +351,7 @@
    },
    {
     "id": "Q24",
+    "exam": "general",
     "topic": "Averages & Alligation",
     "difficulty": "Easy",
     "question": "What is the average of the first 10 natural numbers?",
@@ -342,6 +366,7 @@
    },
    {
     "id": "Q25",
+    "exam": "general",
     "topic": "Averages & Alligation",
     "difficulty": "Medium",
     "question": "The average age of 30 students is 14 years. When the teacher's age is included, the average becomes 15 years. What is the teacher's age?",
@@ -356,6 +381,7 @@
    },
    {
     "id": "Q26",
+    "exam": "general",
     "topic": "Averages & Alligation",
     "difficulty": "Medium",
     "question": "In what ratio must rice at ₹40/kg be mixed with rice at ₹55/kg to get a mixture worth ₹45/kg?",
@@ -370,6 +396,7 @@
    },
    {
     "id": "Q27",
+    "exam": "general",
     "topic": "Averages & Alligation",
     "difficulty": "Hard",
     "question": "A 20-litre mixture has milk and water in the ratio 3 : 1. How much water must be added to make the ratio 3 : 2?",
@@ -384,6 +411,7 @@
    },
    {
     "id": "Q28",
+    "exam": "general",
     "topic": "Time & Work",
     "difficulty": "Easy",
     "question": "A can finish a job in 12 days and B in 18 days. Working together, how long will they take?",
@@ -398,6 +426,7 @@
    },
    {
     "id": "Q29",
+    "exam": "general",
     "topic": "Time & Work",
     "difficulty": "Easy",
     "question": "6 men can finish a piece of work in 10 days. How many days will 15 men take?",
@@ -412,6 +441,7 @@
    },
    {
     "id": "Q30",
+    "exam": "general",
     "topic": "Time & Work",
     "difficulty": "Medium",
     "question": "A and B together can do a job in 10 days. A alone can do it in 15 days. How long will B take alone?",
@@ -426,6 +456,7 @@
    },
    {
     "id": "Q31",
+    "exam": "general",
     "topic": "Time & Work",
     "difficulty": "Medium",
     "question": "Pipe A fills a tank in 6 hours and pipe B empties it in 9 hours. If both are opened together on an empty tank, how long will it take to fill?",
@@ -440,6 +471,7 @@
    },
    {
     "id": "Q32",
+    "exam": "general",
     "topic": "Time & Work",
     "difficulty": "Hard",
     "question": "A can do a job in 20 days and B in 30 days. They work together for 6 days, then A leaves. In how many more days will B finish the job?",
@@ -454,6 +486,7 @@
    },
    {
     "id": "Q33",
+    "exam": "general",
     "topic": "Time, Speed & Distance",
     "difficulty": "Easy",
     "question": "A 150 m long train runs at 54 km/h. How long does it take to cross a pole?",
@@ -468,6 +501,7 @@
    },
    {
     "id": "Q34",
+    "exam": "general",
     "topic": "Time, Speed & Distance",
     "difficulty": "Medium",
     "question": "A car goes from A to B at 60 km/h and returns at 40 km/h. What is its average speed for the round trip?",
@@ -482,6 +516,7 @@
    },
    {
     "id": "Q35",
+    "exam": "general",
     "topic": "Time, Speed & Distance",
     "difficulty": "Medium",
     "question": "A 200 m long train running at 72 km/h crosses a 300 m long platform. How long does it take?",
@@ -496,6 +531,7 @@
    },
    {
     "id": "Q36",
+    "exam": "general",
     "topic": "Time, Speed & Distance",
     "difficulty": "Medium",
     "question": "A boat's speed in still water is 15 km/h and the stream flows at 3 km/h. How long does the boat take to go 36 km downstream?",
@@ -510,6 +546,7 @@
    },
    {
     "id": "Q37",
+    "exam": "general",
     "topic": "Time, Speed & Distance",
     "difficulty": "Hard",
     "question": "Two trains, 120 m and 180 m long, run in opposite directions at 40 km/h and 50 km/h. How long do they take to cross each other completely?",
@@ -524,6 +561,7 @@
    },
    {
     "id": "Q38",
+    "exam": "general",
     "topic": "Number System",
     "difficulty": "Medium",
     "question": "How many trailing zeros does 50! have?",
@@ -538,6 +576,7 @@
    },
    {
     "id": "Q39",
+    "exam": "general",
     "topic": "Number System",
     "difficulty": "Medium",
     "question": "What is the remainder when 2¹⁰ is divided by 7?",
@@ -552,6 +591,7 @@
    },
    {
     "id": "Q40",
+    "exam": "general",
     "topic": "Number System",
     "difficulty": "Easy",
     "question": "What is the HCF of 36 and 84?",
@@ -566,6 +606,7 @@
    },
    {
     "id": "Q41",
+    "exam": "general",
     "topic": "Number System",
     "difficulty": "Easy",
     "question": "What is the LCM of 12, 18 and 30?",
@@ -580,6 +621,7 @@
    },
    {
     "id": "Q42",
+    "exam": "general",
     "topic": "Number System",
     "difficulty": "Medium",
     "question": "How many positive factors does 360 have?",
@@ -594,6 +636,7 @@
    },
    {
     "id": "Q43",
+    "exam": "general",
     "topic": "Number System",
     "difficulty": "Hard",
     "question": "What is the unit digit of 7⁹⁵?",
@@ -608,6 +651,7 @@
    },
    {
     "id": "Q44",
+    "exam": "general",
     "topic": "Algebra",
     "difficulty": "Easy",
     "question": "If x + 1/x = 5, what is x² + 1/x²?",
@@ -622,6 +666,7 @@
    },
    {
     "id": "Q45",
+    "exam": "general",
     "topic": "Algebra",
     "difficulty": "Easy",
     "question": "If 3x − 7 = 2x + 5, what is x?",
@@ -636,6 +681,7 @@
    },
    {
     "id": "Q46",
+    "exam": "general",
     "topic": "Algebra",
     "difficulty": "Medium",
     "question": "If the roots of x² − 5x + 6 = 0 are a and b, what is a² + b²?",
@@ -650,6 +696,7 @@
    },
    {
     "id": "Q47",
+    "exam": "general",
     "topic": "Algebra",
     "difficulty": "Medium",
     "question": "The sum of two numbers is 25 and their difference is 7. What is their product?",
@@ -664,6 +711,7 @@
    },
    {
     "id": "Q48",
+    "exam": "general",
     "topic": "Algebra",
     "difficulty": "Hard",
     "question": "If a + b = 7 and ab = 10, what is a³ + b³?",
@@ -678,6 +726,7 @@
    },
    {
     "id": "Q49",
+    "exam": "general",
     "topic": "Geometry & Mensuration",
     "difficulty": "Medium",
     "question": "A right triangle has legs of 6 cm and 8 cm. What is the area of its circumcircle?",
@@ -692,6 +741,7 @@
    },
    {
     "id": "Q50",
+    "exam": "general",
     "topic": "Geometry & Mensuration",
     "difficulty": "Easy",
     "question": "What is the perimeter of a rectangle 12 cm long and 8 cm wide?",
@@ -706,6 +756,7 @@
    },
    {
     "id": "Q51",
+    "exam": "general",
     "topic": "Geometry & Mensuration",
     "difficulty": "Easy",
     "question": "What is each interior angle of a regular hexagon?",
@@ -720,6 +771,7 @@
    },
    {
     "id": "Q52",
+    "exam": "general",
     "topic": "Geometry & Mensuration",
     "difficulty": "Medium",
     "question": "A cube has a total surface area of 150 cm². What is its volume?",
@@ -734,6 +786,7 @@
    },
    {
     "id": "Q53",
+    "exam": "general",
     "topic": "Geometry & Mensuration",
     "difficulty": "Medium",
     "question": "What is the area of an equilateral triangle with side 6 cm?",
@@ -748,6 +801,7 @@
    },
    {
     "id": "Q54",
+    "exam": "general",
     "topic": "Geometry & Mensuration",
     "difficulty": "Hard",
     "question": "If the radius of a circle increases by 10%, by what percentage does its area increase?",
@@ -762,6 +816,7 @@
    },
    {
     "id": "Q55",
+    "exam": "general",
     "topic": "Permutations & Combinations",
     "difficulty": "Medium",
     "question": "In how many ways can the letters of the word LEVEL be arranged?",
@@ -776,6 +831,7 @@
    },
    {
     "id": "Q56",
+    "exam": "general",
     "topic": "Permutations & Combinations",
     "difficulty": "Easy",
     "question": "In how many ways can 5 people sit in a row?",
@@ -790,6 +846,7 @@
    },
    {
     "id": "Q57",
+    "exam": "general",
     "topic": "Permutations & Combinations",
     "difficulty": "Easy",
     "question": "In how many ways can a committee of 3 be chosen from 8 people?",
@@ -804,6 +861,7 @@
    },
    {
     "id": "Q58",
+    "exam": "general",
     "topic": "Permutations & Combinations",
     "difficulty": "Medium",
     "question": "How many 3-digit numbers can be formed using the digits 1, 2, 3, 4, 5 without repetition?",
@@ -818,6 +876,7 @@
    },
    {
     "id": "Q59",
+    "exam": "general",
     "topic": "Permutations & Combinations",
     "difficulty": "Hard",
     "question": "A committee of 3 is chosen from 5 men and 4 women. In how many ways can this be done if it must include at least one woman?",
@@ -832,6 +891,7 @@
    },
    {
     "id": "Q60",
+    "exam": "general",
     "topic": "Permutations & Combinations",
     "difficulty": "Hard",
     "question": "How many diagonals does a regular decagon (10 sides) have?",
@@ -846,6 +906,7 @@
    },
    {
     "id": "Q61",
+    "exam": "general",
     "topic": "Probability",
     "difficulty": "Easy",
     "question": "Two fair dice are thrown. What is the probability that the sum is 7?",
@@ -860,6 +921,7 @@
    },
    {
     "id": "Q62",
+    "exam": "general",
     "topic": "Probability",
     "difficulty": "Easy",
     "question": "A card is drawn at random from a standard 52-card deck. What is the probability that it is a king?",
@@ -874,6 +936,7 @@
    },
    {
     "id": "Q63",
+    "exam": "general",
     "topic": "Probability",
     "difficulty": "Medium",
     "question": "Three fair coins are tossed. What is the probability of getting at least two heads?",
@@ -888,6 +951,7 @@
    },
    {
     "id": "Q64",
+    "exam": "general",
     "topic": "Probability",
     "difficulty": "Medium",
     "question": "A bag has 5 red and 3 blue balls. Two balls are drawn without replacement. What is the probability that both are red?",
@@ -902,6 +966,7 @@
    },
    {
     "id": "Q65",
+    "exam": "general",
     "topic": "Probability",
     "difficulty": "Hard",
     "question": "Two fair dice are thrown. What is the probability that the product of the numbers is even?",
@@ -921,6 +986,7 @@
   "questions": [
    {
     "id": "R1",
+    "exam": "general",
     "topic": "Syllogisms",
     "difficulty": "Easy",
     "question": "Statements: All cats are dogs. All dogs are birds.<br>Conclusions: I. All cats are birds. II. Some birds are cats.",
@@ -936,6 +1002,7 @@
    },
    {
     "id": "R2",
+    "exam": "general",
     "topic": "Syllogisms",
     "difficulty": "Medium",
     "question": "Statements: Some pens are books. No book is a pencil.<br>Conclusions: I. Some pens are not pencils. II. No pen is a pencil.",
@@ -951,6 +1018,7 @@
    },
    {
     "id": "R3",
+    "exam": "general",
     "topic": "Syllogisms",
     "difficulty": "Easy",
     "question": "Statements: All roses are flowers. Some flowers are red.<br>Conclusions: I. Some roses are red. II. All flowers are roses.",
@@ -966,6 +1034,7 @@
    },
    {
     "id": "R4",
+    "exam": "general",
     "topic": "Syllogisms",
     "difficulty": "Medium",
     "question": "Statements: No apple is a mango. All mangoes are fruits.<br>Conclusions: I. Some fruits are not apples. II. No fruit is an apple.",
@@ -981,6 +1050,7 @@
    },
    {
     "id": "R5",
+    "exam": "general",
     "topic": "Syllogisms",
     "difficulty": "Medium",
     "question": "Statements: All books are pages. No page is a pen.<br>Conclusions: I. No book is a pen. II. Some pages are books.",
@@ -996,6 +1066,7 @@
    },
    {
     "id": "R6",
+    "exam": "general",
     "topic": "Syllogisms",
     "difficulty": "Hard",
     "question": "Statements: Some teachers are doctors. Some doctors are engineers.<br>Conclusions: I. Some teachers are engineers. II. No teacher is an engineer.",
@@ -1011,6 +1082,7 @@
    },
    {
     "id": "R7",
+    "exam": "general",
     "topic": "Seating Arrangement",
     "difficulty": "Hard",
     "question": "P, Q, R, S and T sit in a row facing north. S is in the middle. R is at one of the extreme ends. T is second from the left. Q is immediately to the right of P. Who sits at the extreme right?",
@@ -1025,6 +1097,7 @@
    },
    {
     "id": "R8",
+    "exam": "general",
     "topic": "Seating Arrangement",
     "difficulty": "Medium",
     "question": "P, Q, R, S and T sit in a row facing north. S is in the middle. R is at one of the extreme ends. T is second from the left. Q is immediately to the right of P. Who sits exactly between T and P?",
@@ -1040,6 +1113,7 @@
    },
    {
     "id": "R9",
+    "exam": "general",
     "topic": "Seating Arrangement",
     "difficulty": "Medium",
     "question": "Six friends A–F sit around a circular table facing the centre. A sits opposite D. B is immediately to the left of A. E is immediately to the right of D. C is not a neighbour of A. Who sits opposite B?",
@@ -1054,6 +1128,7 @@
    },
    {
     "id": "R10",
+    "exam": "general",
     "topic": "Seating Arrangement",
     "difficulty": "Medium",
     "question": "Six friends A–F sit around a circular table facing the centre. A sits opposite D. B is immediately to the left of A. E is immediately to the right of D. C is not a neighbour of A. Who is immediately to the right of A?",
@@ -1068,6 +1143,7 @@
    },
    {
     "id": "R11",
+    "exam": "general",
     "topic": "Seating Arrangement",
     "difficulty": "Hard",
     "question": "Six friends A–F sit around a circular table facing the centre. A sits opposite D. B is immediately to the left of A. E is immediately to the right of D. C is not a neighbour of A. Who sits between E and C?",
@@ -1082,6 +1158,7 @@
    },
    {
     "id": "R12",
+    "exam": "general",
     "topic": "Blood Relations",
     "difficulty": "Easy",
     "question": "Pointing to a man, Riya says, \"He is the son of my father's father's only son.\" How is the man related to Riya?",
@@ -1096,6 +1173,7 @@
    },
    {
     "id": "R13",
+    "exam": "general",
     "topic": "Blood Relations",
     "difficulty": "Easy",
     "question": "A is B's sister. C is B's mother. D is C's father. How is A related to D?",
@@ -1110,6 +1188,7 @@
    },
    {
     "id": "R14",
+    "exam": "general",
     "topic": "Blood Relations",
     "difficulty": "Easy",
     "question": "X is the wife of Y. Y is the brother of Z. How is X related to Z?",
@@ -1124,6 +1203,7 @@
    },
    {
     "id": "R15",
+    "exam": "general",
     "topic": "Blood Relations",
     "difficulty": "Medium",
     "question": "P is the father of Q. Q is the mother of R. How is P related to R?",
@@ -1138,6 +1218,7 @@
    },
    {
     "id": "R16",
+    "exam": "general",
     "topic": "Blood Relations",
     "difficulty": "Hard",
     "question": "Introducing a woman, Amit says, \"Her mother is the only daughter of my mother.\" How is Amit related to the woman?",
@@ -1152,6 +1233,7 @@
    },
    {
     "id": "R17",
+    "exam": "general",
     "topic": "Coding-Decoding",
     "difficulty": "Easy",
     "question": "If CAT is coded as DBU, how is DOG coded?",
@@ -1166,6 +1248,7 @@
    },
    {
     "id": "R18",
+    "exam": "general",
     "topic": "Coding-Decoding",
     "difficulty": "Medium",
     "question": "In a code, APPLE = 50 (the sum of the letters' alphabet positions). What is GRAPE?",
@@ -1180,6 +1263,7 @@
    },
    {
     "id": "R19",
+    "exam": "general",
     "topic": "Coding-Decoding",
     "difficulty": "Medium",
     "question": "If BOOK is coded as YLLP, how is DESK coded?",
@@ -1194,6 +1278,7 @@
    },
    {
     "id": "R20",
+    "exam": "general",
     "topic": "Coding-Decoding",
     "difficulty": "Easy",
     "question": "In a code, PEN is written as 16-5-14. How is INK written?",
@@ -1208,6 +1293,7 @@
    },
    {
     "id": "R21",
+    "exam": "general",
     "topic": "Coding-Decoding",
     "difficulty": "Hard",
     "question": "In a language, 'sky is blue' is 'ta na pa', 'blue is nice' is 'na ri ta' and 'nice day' is 'ri lo'. What is the code for 'sky'?",
@@ -1222,6 +1308,7 @@
    },
    {
     "id": "R22",
+    "exam": "general",
     "topic": "Puzzles",
     "difficulty": "Medium",
     "question": "P, Q, R, S and T live on different floors of a 5-floor building (floor 1 is the lowest, floor 5 the top). R lives on an even-numbered floor. Q lives immediately above R. T lives on the top floor. S lives on a floor below P. Who lives on floor 4?",
@@ -1236,6 +1323,7 @@
    },
    {
     "id": "R23",
+    "exam": "general",
     "topic": "Puzzles",
     "difficulty": "Easy",
     "question": "P, Q, R, S and T live on different floors of a 5-floor building (floor 1 is the lowest, floor 5 the top). R lives on an even-numbered floor. Q lives immediately above R. T lives on the top floor. S lives on a floor below P. Who lives on the lowest floor?",
@@ -1250,6 +1338,7 @@
    },
    {
     "id": "R24",
+    "exam": "general",
     "topic": "Puzzles",
     "difficulty": "Medium",
     "question": "P, Q, R, S and T live on different floors of a 5-floor building (floor 1 is the lowest, floor 5 the top). R lives on an even-numbered floor. Q lives immediately above R. T lives on the top floor. S lives on a floor below P. How many people live between S and T?",
@@ -1264,6 +1353,7 @@
    },
    {
     "id": "R25",
+    "exam": "general",
     "topic": "Puzzles",
     "difficulty": "Medium",
     "question": "P, Q, R, S and T live on different floors of a 5-floor building (floor 1 is the lowest, floor 5 the top). R lives on an even-numbered floor. Q lives immediately above R. T lives on the top floor. S lives on a floor below P. Who lives immediately below T?",
@@ -1278,6 +1368,7 @@
    },
    {
     "id": "R26",
+    "exam": "general",
     "topic": "Puzzles",
     "difficulty": "Easy",
     "question": "Ana, Ben and Cara each own a different pet: a cat, a dog or a fish. Ana does not own the dog. Ben owns the fish. Who owns the dog?",
@@ -1293,6 +1384,7 @@
    },
    {
     "id": "R27",
+    "exam": "general",
     "topic": "Direction Sense",
     "difficulty": "Medium",
     "question": "Ravi walks 5 km north, turns right and walks 3 km, then turns right again and walks 9 km. How far is he from his starting point?",
@@ -1307,6 +1399,7 @@
    },
    {
     "id": "R28",
+    "exam": "general",
     "topic": "Direction Sense",
     "difficulty": "Easy",
     "question": "You face north, turn right, turn right again, and then turn left. Which direction are you facing now?",
@@ -1321,6 +1414,7 @@
    },
    {
     "id": "R29",
+    "exam": "general",
     "topic": "Direction Sense",
     "difficulty": "Medium",
     "question": "Meena walks 10 m south, turns left and walks 6 m, then turns left again and walks 10 m. Where is she now with respect to her starting point?",
@@ -1335,6 +1429,7 @@
    },
    {
     "id": "R30",
+    "exam": "general",
     "topic": "Direction Sense",
     "difficulty": "Medium",
     "question": "Early in the morning, Rohan stands with his shadow falling exactly to his right. Which direction is he facing?",
@@ -1349,6 +1444,7 @@
    },
    {
     "id": "R31",
+    "exam": "general",
     "topic": "Direction Sense",
     "difficulty": "Hard",
     "question": "A man walks 3 km east, then 4 km north, then 6 km west. How far is he from the start, and in which direction?",
@@ -1363,6 +1459,7 @@
    },
    {
     "id": "R32",
+    "exam": "general",
     "topic": "Number & Letter Series",
     "difficulty": "Easy",
     "question": "Find the next term: 2, 6, 12, 20, 30, ?",
@@ -1377,6 +1474,7 @@
    },
    {
     "id": "R33",
+    "exam": "general",
     "topic": "Number & Letter Series",
     "difficulty": "Medium",
     "question": "Find the next term: 3, 5, 9, 17, 33, ?",
@@ -1391,6 +1489,7 @@
    },
    {
     "id": "R34",
+    "exam": "general",
     "topic": "Number & Letter Series",
     "difficulty": "Medium",
     "question": "Find the next letter: A, C, F, J, O, ?",
@@ -1405,6 +1504,7 @@
    },
    {
     "id": "R35",
+    "exam": "general",
     "topic": "Number & Letter Series",
     "difficulty": "Easy",
     "question": "Find the next term: 2, 3, 5, 7, 11, 13, ?",
@@ -1419,6 +1519,7 @@
    },
    {
     "id": "R36",
+    "exam": "general",
     "topic": "Number & Letter Series",
     "difficulty": "Hard",
     "question": "Find the next term: 4, 6, 12, 14, 28, 30, ?",
@@ -1433,6 +1534,7 @@
    },
    {
     "id": "R37",
+    "exam": "general",
     "topic": "Number & Letter Series",
     "difficulty": "Medium",
     "question": "Find the next pair: AZ, BY, CX, ?",
@@ -1447,6 +1549,7 @@
    },
    {
     "id": "R38",
+    "exam": "general",
     "topic": "Odd One Out",
     "difficulty": "Easy",
     "question": "Find the odd one out: 8, 27, 64, 100, 125",
@@ -1461,6 +1564,7 @@
    },
    {
     "id": "R39",
+    "exam": "general",
     "topic": "Odd One Out",
     "difficulty": "Easy",
     "question": "Find the odd one out: 17, 23, 29, 33, 37",
@@ -1475,6 +1579,7 @@
    },
    {
     "id": "R40",
+    "exam": "general",
     "topic": "Odd One Out",
     "difficulty": "Easy",
     "question": "Find the odd one out: Square, Rectangle, Triangle, Rhombus",
@@ -1489,6 +1594,7 @@
    },
    {
     "id": "R41",
+    "exam": "general",
     "topic": "Odd One Out",
     "difficulty": "Medium",
     "question": "Find the odd one out: 121, 169, 289, 324, 361",
@@ -1503,6 +1609,7 @@
    },
    {
     "id": "R42",
+    "exam": "general",
     "topic": "Odd One Out",
     "difficulty": "Medium",
     "question": "Find the odd one out: ACE, BDF, GIK, MOP",
@@ -1517,6 +1624,7 @@
    },
    {
     "id": "R43",
+    "exam": "general",
     "topic": "Clocks & Calendars",
     "difficulty": "Medium",
     "question": "What is the smaller angle between the hour and minute hands at 3:40?",
@@ -1531,6 +1639,7 @@
    },
    {
     "id": "R44",
+    "exam": "general",
     "topic": "Clocks & Calendars",
     "difficulty": "Easy",
     "question": "What is the smaller angle between the hands of a clock at exactly 9:00?",
@@ -1545,6 +1654,7 @@
    },
    {
     "id": "R45",
+    "exam": "general",
     "topic": "Clocks & Calendars",
     "difficulty": "Medium",
     "question": "How many times do the hour and minute hands coincide in 12 hours?",
@@ -1559,6 +1669,7 @@
    },
    {
     "id": "R46",
+    "exam": "general",
     "topic": "Clocks & Calendars",
     "difficulty": "Medium",
     "question": "1 January 2025 was a Wednesday. What day of the week is 1 January 2026?",
@@ -1573,6 +1684,7 @@
    },
    {
     "id": "R47",
+    "exam": "general",
     "topic": "Clocks & Calendars",
     "difficulty": "Hard",
     "question": "On what day of the week did 15 August 1947 fall?",
@@ -1587,6 +1699,7 @@
    },
    {
     "id": "R48",
+    "exam": "general",
     "topic": "Clocks & Calendars",
     "difficulty": "Hard",
     "question": "At what time between 4 and 5 o'clock are the two hands of a clock together?",
@@ -1601,6 +1714,7 @@
    },
    {
     "id": "R49",
+    "exam": "general",
     "topic": "Alphabet Test",
     "difficulty": "Easy",
     "question": "Which letter is 7th from the left in the English alphabet?",
@@ -1615,6 +1729,7 @@
    },
    {
     "id": "R50",
+    "exam": "general",
     "topic": "Alphabet Test",
     "difficulty": "Easy",
     "question": "Which letter is 5th to the right of the 10th letter from the left of the English alphabet?",
@@ -1629,6 +1744,7 @@
    },
    {
     "id": "R51",
+    "exam": "general",
     "topic": "Alphabet Test",
     "difficulty": "Medium",
     "question": "Which letter is 8th from the right end of the English alphabet?",
@@ -1643,6 +1759,7 @@
    },
    {
     "id": "R52",
+    "exam": "general",
     "topic": "Alphabet Test",
     "difficulty": "Medium",
     "question": "If the English alphabet is written in reverse order, which letter is 10th from the left?",
@@ -1657,6 +1774,7 @@
    },
    {
     "id": "R53",
+    "exam": "general",
     "topic": "Alphabet Test",
     "difficulty": "Hard",
     "question": "If the letters of the word EDUCATION are arranged in alphabetical order, how many letters stay in the same position?",
@@ -1672,6 +1790,7 @@
    },
    {
     "id": "R54",
+    "exam": "general",
     "topic": "Inequalities",
     "difficulty": "Easy",
     "question": "If A > B and B > C, which of these must be true?",
@@ -1687,6 +1806,7 @@
    },
    {
     "id": "R55",
+    "exam": "general",
     "topic": "Inequalities",
     "difficulty": "Medium",
     "question": "Statements: P ≥ Q, Q > R, R = S.<br>Conclusions: I. P > S II. Q > S",
@@ -1702,6 +1822,7 @@
    },
    {
     "id": "R56",
+    "exam": "general",
     "topic": "Inequalities",
     "difficulty": "Medium",
     "question": "Statements: M &lt; N ≤ O, O > P.<br>Conclusions: I. M &lt; O II. N > P",
@@ -1717,6 +1838,7 @@
    },
    {
     "id": "R57",
+    "exam": "general",
     "topic": "Inequalities",
     "difficulty": "Medium",
     "question": "Statements: X = Y > Z ≥ W.<br>Conclusions: I. X > W II. Y > W",
@@ -1732,6 +1854,7 @@
    },
    {
     "id": "R58",
+    "exam": "general",
     "topic": "Inequalities",
     "difficulty": "Hard",
     "question": "Statements: A ≥ B, B ≤ C, C &lt; D.<br>Conclusions: I. A &lt; D II. B &lt; D",
@@ -1747,6 +1870,7 @@
    },
    {
     "id": "R59",
+    "exam": "general",
     "topic": "Ranking & Order",
     "difficulty": "Easy",
     "question": "In a row of 30 students, Ram is 12th from the left. What is his position from the right?",
@@ -1761,6 +1885,7 @@
    },
    {
     "id": "R60",
+    "exam": "general",
     "topic": "Ranking & Order",
     "difficulty": "Medium",
     "question": "Priya is 9th from the top and 16th from the bottom in her class ranking. How many students are in the class?",
@@ -1775,6 +1900,7 @@
    },
    {
     "id": "R61",
+    "exam": "general",
     "topic": "Ranking & Order",
     "difficulty": "Easy",
     "question": "A is taller than B. C is shorter than B. D is taller than A. Who is the shortest?",
@@ -1789,6 +1915,7 @@
    },
    {
     "id": "R62",
+    "exam": "general",
     "topic": "Ranking & Order",
     "difficulty": "Hard",
     "question": "In a row, A is 10th from the left and B is 15th from the right. When they swap places, A becomes 18th from the left. How many people are in the row?",
@@ -1803,6 +1930,7 @@
    },
    {
     "id": "R63",
+    "exam": "general",
     "topic": "Ranking & Order",
     "difficulty": "Hard",
     "question": "Among P, Q, R, S and T: Q earns more than R but less than T. P earns less than R. S earns the most. Who earns the second highest?",
@@ -1822,6 +1950,7 @@
   "questions": [
    {
     "id": "D1",
+    "exam": "general",
     "topic": "Tables",
     "difficulty": "Easy",
     "question": "What is the percentage increase in Company X's total sales from 2023 to 2024?",
@@ -1838,6 +1967,7 @@
    },
    {
     "id": "D2",
+    "exam": "general",
     "topic": "Tables",
     "difficulty": "Easy",
     "question": "What share of total 2024 sales came from Product B?",
@@ -1854,6 +1984,7 @@
    },
    {
     "id": "D3",
+    "exam": "general",
     "topic": "Tables",
     "difficulty": "Medium",
     "question": "Which product had the highest percentage growth in sales from 2021 to 2024?",
@@ -1870,6 +2001,7 @@
    },
    {
     "id": "D4",
+    "exam": "general",
     "topic": "Tables",
     "difficulty": "Easy",
     "question": "What were Product C's average annual sales over 2021–2024 (₹ lakh)?",
@@ -1886,6 +2018,7 @@
    },
    {
     "id": "D5",
+    "exam": "general",
     "topic": "Tables",
     "difficulty": "Medium",
     "question": "In which year did any product's sales fall compared with the previous year?",
@@ -1903,6 +2036,7 @@
    },
    {
     "id": "D6",
+    "exam": "general",
     "topic": "Bar Charts",
     "difficulty": "Easy",
     "question": "Mumbai's count is what percentage of the total across all five cities?",
@@ -1919,6 +2053,7 @@
    },
    {
     "id": "D7",
+    "exam": "general",
     "topic": "Bar Charts",
     "difficulty": "Easy",
     "question": "What is the ratio of Delhi's count to Pune's count?",
@@ -1935,6 +2070,7 @@
    },
    {
     "id": "D8",
+    "exam": "general",
     "topic": "Bar Charts",
     "difficulty": "Medium",
     "question": "How many cities have a count above the five-city average?",
@@ -1951,6 +2087,7 @@
    },
    {
     "id": "D9",
+    "exam": "general",
     "topic": "Bar Charts",
     "difficulty": "Easy",
     "question": "What is the difference between the highest and lowest city counts?",
@@ -1967,6 +2104,7 @@
    },
    {
     "id": "D10",
+    "exam": "general",
     "topic": "Bar Charts",
     "difficulty": "Medium",
     "question": "By what percentage is Mumbai's count more than Pune's?",
@@ -1983,6 +2121,7 @@
    },
    {
     "id": "D11",
+    "exam": "general",
     "topic": "Pie Charts",
     "difficulty": "Easy",
     "question": "How much does the family spend on education each month?",
@@ -1999,6 +2138,7 @@
    },
    {
     "id": "D12",
+    "exam": "general",
     "topic": "Pie Charts",
     "difficulty": "Easy",
     "question": "What is the central angle of the Food sector?",
@@ -2015,6 +2155,7 @@
    },
    {
     "id": "D13",
+    "exam": "general",
     "topic": "Pie Charts",
     "difficulty": "Hard",
     "question": "Rent goes up by 20%. Income stays the same and the extra rent comes out of savings. What are the new monthly savings?",
@@ -2031,6 +2172,7 @@
    },
    {
     "id": "D14",
+    "exam": "general",
     "topic": "Pie Charts",
     "difficulty": "Easy",
     "question": "What is the combined monthly spend on rent and transport?",
@@ -2047,6 +2189,7 @@
    },
    {
     "id": "D15",
+    "exam": "general",
     "topic": "Pie Charts",
     "difficulty": "Medium",
     "question": "By how much does food spending exceed transport spending each month?",
@@ -2063,6 +2206,7 @@
    },
    {
     "id": "D16",
+    "exam": "general",
     "topic": "Line Graphs",
     "difficulty": "Medium",
     "question": "Which month saw the highest percentage growth in downloads over the previous month?",
@@ -2079,6 +2223,7 @@
    },
    {
     "id": "D17",
+    "exam": "general",
     "topic": "Line Graphs",
     "difficulty": "Easy",
     "question": "What were the average monthly downloads from January to June (thousands)?",
@@ -2095,6 +2240,7 @@
    },
    {
     "id": "D18",
+    "exam": "general",
     "topic": "Line Graphs",
     "difficulty": "Easy",
     "question": "In how many months did downloads fall compared with the previous month?",
@@ -2111,6 +2257,7 @@
    },
    {
     "id": "D19",
+    "exam": "general",
     "topic": "Line Graphs",
     "difficulty": "Medium",
     "question": "What is the percentage increase in downloads from January to June?",
@@ -2127,6 +2274,7 @@
    },
    {
     "id": "D20",
+    "exam": "general",
     "topic": "Line Graphs",
     "difficulty": "Medium",
     "question": "What is the ratio of March downloads to June downloads?",
@@ -2143,6 +2291,7 @@
    },
    {
     "id": "D21",
+    "exam": "general",
     "topic": "Caselets",
     "difficulty": "Easy",
     "question": "How many employees work in Ops?",
@@ -2159,6 +2308,7 @@
    },
    {
     "id": "D22",
+    "exam": "general",
     "topic": "Caselets",
     "difficulty": "Medium",
     "question": "How many men work in Tech?",
@@ -2175,6 +2325,7 @@
    },
    {
     "id": "D23",
+    "exam": "general",
     "topic": "Caselets",
     "difficulty": "Medium",
     "question": "What percentage of Ops employees are women?",
@@ -2191,6 +2342,7 @@
    },
    {
     "id": "D24",
+    "exam": "general",
     "topic": "Caselets",
     "difficulty": "Hard",
     "question": "If Sales has 20 women, how many women does the company have in total?",
@@ -2207,6 +2359,7 @@
    },
    {
     "id": "D25",
+    "exam": "general",
     "topic": "Arrangements",
     "difficulty": "Medium",
     "question": "A, B, C and D sit around a square table, one on each side, facing the centre. A sits opposite C, and B is on A's immediate left. Who is on A's immediate right?",
@@ -2222,6 +2375,7 @@
    },
    {
     "id": "D26",
+    "exam": "general",
     "topic": "Arrangements",
     "difficulty": "Easy",
     "question": "Who likes Delhi?",
@@ -2238,6 +2392,7 @@
    },
    {
     "id": "D27",
+    "exam": "general",
     "topic": "Arrangements",
     "difficulty": "Medium",
     "question": "What is the colour of Amit's car?",
@@ -2254,6 +2409,7 @@
    },
    {
     "id": "D28",
+    "exam": "general",
     "topic": "Arrangements",
     "difficulty": "Medium",
     "question": "Who drives the blue car?",
@@ -2270,6 +2426,7 @@
    },
    {
     "id": "D29",
+    "exam": "general",
     "topic": "Arrangements",
     "difficulty": "Easy",
     "question": "Which city does the owner of the red car like?",
@@ -2286,6 +2443,7 @@
    },
    {
     "id": "D30",
+    "exam": "general",
     "topic": "Games & Tournaments",
     "difficulty": "Easy",
     "question": "In a knock-out tournament of 8 teams (no byes, no draws), how many matches are played in total?",
@@ -2300,6 +2458,7 @@
    },
    {
     "id": "D31",
+    "exam": "general",
     "topic": "Games & Tournaments",
     "difficulty": "Easy",
     "question": "In a round-robin tournament of 6 teams (every team plays every other team once), how many matches are played?",
@@ -2314,6 +2473,7 @@
    },
    {
     "id": "D32",
+    "exam": "general",
     "topic": "Games & Tournaments",
     "difficulty": "Easy",
     "question": "How many matches did B lose?",
@@ -2330,6 +2490,7 @@
    },
    {
     "id": "D33",
+    "exam": "general",
     "topic": "Games & Tournaments",
     "difficulty": "Medium",
     "question": "Which team did C beat?",
@@ -2347,6 +2508,7 @@
    },
    {
     "id": "D34",
+    "exam": "general",
     "topic": "Games & Tournaments",
     "difficulty": "Easy",
     "question": "How many points were awarded in total across the tournament?",
@@ -2363,6 +2525,7 @@
    },
    {
     "id": "D35",
+    "exam": "general",
     "topic": "Venn Diagrams",
     "difficulty": "Medium",
     "question": "In a class of 60 students, 35 like tea, 30 like coffee and 10 like neither. How many like both?",
@@ -2377,6 +2540,7 @@
    },
    {
     "id": "D36",
+    "exam": "general",
     "topic": "Venn Diagrams",
     "difficulty": "Medium",
     "question": "How many students play at least one sport?",
@@ -2393,6 +2557,7 @@
    },
    {
     "id": "D37",
+    "exam": "general",
     "topic": "Venn Diagrams",
     "difficulty": "Medium",
     "question": "How many students play only cricket?",
@@ -2409,6 +2574,7 @@
    },
    {
     "id": "D38",
+    "exam": "general",
     "topic": "Venn Diagrams",
     "difficulty": "Easy",
     "question": "How many students play none of the three sports?",
@@ -2425,6 +2591,7 @@
    },
    {
     "id": "D39",
+    "exam": "general",
     "topic": "Venn Diagrams",
     "difficulty": "Hard",
     "question": "How many students play exactly two sports?",
@@ -2441,6 +2608,7 @@
    },
    {
     "id": "D40",
+    "exam": "general",
     "topic": "Network & Routes",
     "difficulty": "Medium",
     "question": "What is the shortest road distance from P to S?",
@@ -2457,6 +2625,7 @@
    },
    {
     "id": "D41",
+    "exam": "general",
     "topic": "Network & Routes",
     "difficulty": "Medium",
     "question": "What is the shortest road distance from P to T?",
@@ -2473,6 +2642,7 @@
    },
    {
     "id": "D42",
+    "exam": "general",
     "topic": "Network & Routes",
     "difficulty": "Medium",
     "question": "What is the shortest road distance from Q to T?",
@@ -2489,6 +2659,7 @@
    },
    {
     "id": "D43",
+    "exam": "general",
     "topic": "Network & Routes",
     "difficulty": "Hard",
     "question": "If road Q–R is closed, what is the shortest distance from P to S?",

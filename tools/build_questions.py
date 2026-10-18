@@ -19,7 +19,7 @@ def Q(sec, topic, diff, text, options, correct, solution, data=None, set_id=None
         assert abs(float(a) - float(b)) < 1e-6, (text, a, b)
     esc = lambda x: x.replace(" < ", " &lt; ")
     text = esc(text); answer_idx = options.index(correct); options = [esc(o) for o in options]; correct = options[answer_idx]
-    q = dict(id=f"{sec[0].upper()}{len(OUT[sec])+1}", topic=topic, difficulty=diff, question=text,
+    q = dict(id=f"{sec[0].upper()}{len(OUT[sec])+1}", exam="general", topic=topic, difficulty=diff, question=text,
              options=options, answer=options.index(correct), solution=solution)
     if data: q["data"] = data
     # keep option order when it is meaningful (standard answer sets / 'cannot be determined' style)
@@ -385,3 +385,28 @@ for k,v in OUT.items():
     print(k,len(v),dict(d)); print("  ",dict(c)); assert min(c.values())>=4
     print("   answer positions:",collections.Counter(q["answer"] for q in v))
 print("TOTAL",sum(len(v) for v in OUT.values()))
+
+
+# ======================= CAT TRACK =======================
+import sys as _sys
+_sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "cat"))
+from common import Bank
+import qa as _qa, dilr as _dilr, varc as _varc
+CB = Bank(); _qa.build(CB); _dilr.build(CB); _varc.build(CB)
+# global checks: unique ids, every set used, every set question references a real set, DILR sets have 4-5 questions
+ids = [q["id"] for v in CB.qs.values() for q in v]; assert len(ids) == len(set(ids))
+used = collections.Counter(q.get("set") for v in CB.qs.values() for q in v if q.get("set"))
+assert set(used) == set(CB.sets), set(CB.sets) ^ set(used)
+for sid, n in used.items(): assert 4 <= n <= 5, (sid, n)
+for v in CB.qs.values():
+    for q in v:
+        if q["type"] == "mcq": assert 0 <= q["answer"] < 4
+        else: assert q["answer"].lstrip("-").replace(".", "").isdigit()
+CAT_NAMES = {"varc": "Verbal Ability & Reading Comprehension", "dilr": "Data Interpretation & Logical Reasoning", "qa": "Quantitative Ability"}
+cat_out = {"sections": {k: {"name": CAT_NAMES[k], "questions": CB.qs[k]} for k in ("varc", "dilr", "qa")}, "sets": CB.sets}
+json.dump(cat_out, open(os.path.join(os.path.dirname(__file__), "..", "data", "cat.json"), "w"), ensure_ascii=False, indent=1)
+for k in ("varc", "dilr", "qa"):
+    v = CB.qs[k]
+    print("CAT", k, len(v), dict(collections.Counter(q["type"] for q in v)), dict(collections.Counter(q["difficulty"] for q in v)))
+    print("   ", dict(collections.Counter(q["topic"] for q in v)))
+print("CAT TOTAL", len(ids), "sets:", len(CB.sets))

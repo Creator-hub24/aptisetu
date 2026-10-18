@@ -1,4 +1,4 @@
-# edumaths360 – Quant, Reasoning & DILR prep portal
+# edumaths360: Quant, Reasoning, DILR & VARC prep portal (CAT + Bank/SSC/Placements tracks)
 
 Static site (plain HTML/CSS/JS, no build step needed to serve). Works as-is on GitHub Pages.
 
@@ -8,8 +8,27 @@ Static site (plain HTML/CSS/JS, no build step needed to serve). Works as-is on G
   tournaments brute-forced. Edit the script and re-run it; don't hand-edit the JSON.
   Fields: `topic`, `difficulty`, `answer` (0-based), optional `data` (HTML table/chart), `set` (shared DILR data),
   `fixed` (keep the option order; otherwise options are shuffled at runtime).
+- **CAT track:** `data/cat.json` is also written by `build_questions.py`, from `tools/cat/qa.py`, `dilr.py` and
+  `varc.py` (helpers in `tools/cat/common.py`). Format: `{sections:{varc,dilr,qa:{name,questions}}, sets:{id:{kind,title,html}}}`.
+  Questions have `type` `mcq` (0-based `answer`) or `tita` (`answer` string; `kind` `number` or `sequence`).
+  Build checks:
+  - MCQ options are distinct, with exactly one correct.
+  - TITA values are recomputed.
+  - Para-jumble answers are valid permutations, computed from the display order.
+  - Each DILR set is brute-forced to a unique solution.
+  - RC passages are 400–550 words.
+  - Ids are unique, every set is used, and each set has 4–5 questions.
+
+  In solutions, refer to options as "Option 1"…"Option 4" (bank order); `assets/js/cat.js` rewrites them to the
+  shuffled letters at runtime.
+- **CAT engine:** `assets/js/cat.js` (page `cat-practice.html`, URL params `mode=sectional|practice`, `section`,
+  `topic`).
+  - Sectional mode: 40 min, auto-submits when time runs out; +3, −1 for a wrong MCQ, 0 for a wrong TITA.
+    Picks VARC 24, DILR 22 (whole sets), QA 22.
+  - Practice mode: no countdown, and the solution is shown after each answer.
+- **VARC rules sheet:** `FORMULAS["varc"]` in `tools/formulas.py`.
 - **Pages:** `python3 tools/build_pages.py` regenerates the HTML pages. It refuses to build if any listed topic
-  has fewer than 4 questions. Counts on the site (hero stats, topic badges) are read live from questions.json.
+  has fewer than 4 questions. Counts on the site (hero stats, topic badges) are read live from questions.json and cat.json (`assets/js/stats.js`).
 - **Run locally:** `python3 -m http.server 8765` → http://localhost:8765 (the quiz fetches JSON, so file:// won't work).
 - `mock-tests.html` and `placements.html` are placeholders and aren't linked from the nav or footer.
   `signup.html` and `contact.html` are UI only, with no backend.

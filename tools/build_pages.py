@@ -2,8 +2,17 @@ import os, json
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 QB = json.load(open("data/questions.json"))
 import sys; sys.path.insert(0, "tools"); from formulas import FORMULAS
-NQ = sum(len(s["questions"]) for s in QB.values())
-NT = len({(k, q["topic"]) for k, s in QB.items() for q in s["questions"]})
+CB = json.load(open("data/cat.json"))
+NQ_GEN = sum(len(s["questions"]) for s in QB.values())
+NQ_CAT = sum(len(s["questions"]) for s in CB["sections"].values())
+NQ = NQ_GEN + NQ_CAT
+NT_CAT = len({(k, q["topic"]) for k, s in CB["sections"].items() for q in s["questions"]})
+CATN = {k: len(s["questions"]) for k, s in CB["sections"].items()}
+CAT_TITA = sum(1 for s in CB["sections"].values() for q in s["questions"] if q["type"] == "tita")
+# exam relevance tags for general topic cards (default: CAT + Bank-SSC)
+BANK_ONLY = {"Syllogisms","Blood Relations","Coding-Decoding","Direction Sense","Number & Letter Series","Odd One Out","Clocks & Calendars","Alphabet Test","Inequalities","Ranking & Order"}
+def exam_tag(topic): return ("Bank-SSC","tag-bank") if topic in BANK_ONLY else ("CAT + Bank-SSC","tag-both")
+NT = len({(k, q["topic"]) for k, s in QB.items() for q in s["questions"]}) + NT_CAT
 def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DILR prep for CAT, Bank, SSC, GMAT and campus placements.", extra=""):
     html=f"""<!DOCTYPE html>
 <html lang="en-IN">
@@ -30,14 +39,14 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
     open(fn,"w").write(html)
 
 # ---------- LANDING ----------
-page("index.html","Aptitude, Reasoning & DILR Prep", f"""
+page("index.html","CAT, Bank, SSC & Placement Aptitude Prep", f"""
 <section class="hero"><div class="container hero-grid">
  <div>
   <span class="pill">🇮🇳 CAT · Bank · SSC · Placements</span>
-  <h1>Master <span class="grad">Quant, Reasoning &amp; DILR</span> the smart way</h1>
-  <p class="lead">Short concept notes, formula sheets and timed practice with worked solutions, for competitive exams and campus placement tests.</p>
+  <h1>Master <span class="grad">Quant, Reasoning, DILR &amp; VARC</span> the smart way</h1>
+  <p class="lead">Short concept notes, formula sheets and timed practice with worked solutions, for bank, SSC and placement tests, plus a separate CAT track with VARC, DILR and QA sectionals.</p>
   <div class="cta-row hero-cta"><a href="practice.html" class="btn">Start a free quiz →</a><a href="#sections" class="btn btn-ghost">Explore topics</a></div>
-  <div class="stats"><div><b>3</b><span>Sections</span></div><div><b data-stat="topics">{NT}</b><span>Topics</span></div><div><b data-stat="questions">{NQ}</b><span>Practice questions</span></div></div>
+  <div class="stats"><div><b>2</b><span>Exam tracks</span></div><div><b data-stat="topics">{NT}</b><span>Topics</span></div><div><b data-stat="questions">{NQ}</b><span>Practice questions</span></div></div>
  </div>
  <div class="hero-card" aria-hidden="true">
   <div class="q-meta"><span>Quant · Time &amp; Work</span><span class="timer-chip">⏱ 01:24</span></div>
@@ -58,7 +67,7 @@ page("index.html","Aptitude, Reasoning & DILR Prep", f"""
 </div></section>
 
 <section id="sections" class="alt"><div class="container">
- <div class="section-head"><h2>Three sections. The topics that matter.</h2><p class="muted">Start with the concepts, revise with the formula sheet, then test yourself against the clock.</p></div>
+ <div class="section-head"><h2>Bank, SSC &amp; placements: three sections</h2><p class="muted">Start with the concepts, revise with the formula sheet, then test yourself against the clock.</p></div>
  <div class="grid g3">
   <div class="card sec-card" style="--c:var(--quant)"><div class="icon">➗</div><h3>Quantitative Aptitude</h3>
    <div class="tags"><span class="tag">Percentages</span><span class="tag">Profit &amp; Loss</span><span class="tag">TSD</span><span class="tag">Number System</span><span class="tag">Algebra</span><span class="tag">Geometry</span><span class="tag">P&amp;C</span><span class="tag">Probability</span></div>
@@ -72,19 +81,33 @@ page("index.html","Aptitude, Reasoning & DILR Prep", f"""
  </div>
 </div></section>
 
+<section class="cat-band"><div class="container">
+ <div class="cat-band-grid">
+  <div><span class="pill">🎯 CAT track</span><h2>CAT-style practice, including VARC</h2>
+   <p class="muted">CAT-style questions we wrote ourselves (not taken from past papers): reading comprehension, para-jumbles, DILR puzzle sets and QA, with MCQ and TITA types. Take a 40-minute sectional with CAT marking, or practise one topic at a time with solutions straight after each answer.</p>
+   <div class="cta-row" style="margin-bottom:0"><a class="btn" href="cat.html">Explore the CAT track →</a><a class="btn btn-ghost" href="cat-practice.html">Start a sectional</a></div></div>
+  <div class="cat-mini">
+   <a class="card" href="cat-practice.html?section=varc"><b>VARC</b><span><b data-stat="cat-varc">{CATN['varc']}</b> questions</span></a>
+   <a class="card" href="cat-practice.html?section=dilr"><b>DILR</b><span><b data-stat="cat-dilr">{CATN['dilr']}</b> questions in sets</span></a>
+   <a class="card" href="cat-practice.html?section=qa"><b>QA</b><span><b data-stat="cat-qa">{CATN['qa']}</b> questions</span></a>
+   <div class="card"><b>TITA</b><span><b data-stat="cat-tita">{CAT_TITA}</b> type-in-the-answer</span></div>
+  </div>
+ </div>
+</div></section>
+
 <section><div class="container">
  <div class="section-head"><h2>What you get today</h2></div>
  <div class="grid g4 m2 compact">
-  <div class="card"><div class="icon">⏱️</div><h3>Timed quizzes</h3><p class="muted">Timer, question palette, mark-for-review and optional +3/−1 marking.</p></div>
+  <div class="card"><div class="icon">⏱️</div><h3>Timed quizzes</h3><p class="muted">Palette and mark-for-review, plus CAT-style 40-minute sectionals with TITA questions and +3/−1 marking.</p></div>
   <div class="card"><div class="icon">💡</div><h3>Worked solutions</h3><p class="muted">Every question has a step-by-step solution, shown after you submit.</p></div>
-  <div class="card"><div class="icon">📝</div><h3>Notes &amp; formula sheets</h3><p class="muted">A concept note and a formula sheet for each of the three sections.</p></div>
-  <div class="card soon-card"><div class="icon">🚧</div><h3>Coming soon</h3><ul class="soon-list"><li>Full-length mock tests</li><li>Company-wise placement sets</li><li>Progress analytics</li></ul></div>
+  <div class="card"><div class="icon">📝</div><h3>Notes &amp; formula sheets</h3><p class="muted">Concept notes and topic-wise formula or rules sheets for Quant, Reasoning, DILR and VARC.</p></div>
+  <div class="card soon-card"><div class="icon">🚧</div><h3>Coming soon</h3><ul class="soon-list"><li>Full-length CAT mocks (all 3 sections)</li><li>Company-wise placement sets</li><li>Progress analytics</li></ul></div>
  </div>
 </div></section>
 
 <section class="alt about"><div class="container" style="max-width:760px;text-align:center">
  <h2>About <span data-brand></span></h2>
- <p class="muted"><span data-brand></span> is a new, free practice site for Indian students preparing for aptitude tests: MBA entrance exams, bank and SSC exams, and campus placements. Every question here is written by us and comes with a worked solution. We're starting small and adding more questions and topics over time.</p>
+ <p class="muted"><span data-brand></span> is a new, free practice site for Indian students preparing for aptitude tests: CAT and other MBA entrance exams, bank and SSC exams, and campus placements. Every question here is written by us and comes with a worked solution. We're starting small and adding more questions and topics over time.</p>
  <p class="muted" style="margin:0">No login is needed to practise.</p>
 </div></section>
 
@@ -95,6 +118,22 @@ page("index.html","Aptitude, Reasoning & DILR Prep", f"""
 """)
 
 # ---------- SECTION PAGES ----------
+def fs_section(formulas, color, heading="Formula &amp; rules sheet", unit="formulas and rules", prose=False):
+    import html as _h
+    esc=lambda s: _h.escape(s, quote=False)
+    nf=sum(len(items) for _,_,items in formulas)
+    fl="".join(f"""<details class="fs-card" open><summary><span class="fs-ic" aria-hidden="true">{ic}</span><span class="fs-t">{name}</span><span class="fs-n">{len(items)}</span></summary><ul class="fs-list">"""
+       + "".join(f"<li><code class='fx'>{esc(fx)}</code>" + (f"<span class='fx-note'>{esc(nt)}</span>" if nt else "") + "</li>" for fx,nt in items)
+       + "</ul></details>" for ic,name,items in formulas)
+    return f"""<section id="formulas" class="fs{' fs-prose' if prose else ''}" style="--c:{color}"><div class="container">
+<div class="fs-head"><div><h2>{heading}</h2><p class="muted">{len(formulas)} topics · {nf} {unit}. Tap a topic to open or close it.</p></div><button type="button" class="btn btn-ghost btn-sm" id="fs-toggle">Collapse all</button></div>
+<div class="fs-grid">{fl}</div>
+<p class="muted" style="margin-top:1.2em">Tip: bookmark this page and revise it for 5 minutes before each practice session.</p></div></section>
+<script>(function(){{var c=[].slice.call(document.querySelectorAll('.fs-card')),b=document.getElementById('fs-toggle');
+function upd(){{b.textContent=c.every(function(d){{return d.open}})?'Collapse all':'Expand all'}}
+if(matchMedia('(max-width:600px)').matches)c.forEach(function(d,i){{if(i>1)d.open=false}});
+c.forEach(function(d){{d.addEventListener('toggle',upd)}});b.onclick=function(){{var o=!c.every(function(d){{return d.open}});c.forEach(function(d){{d.open=o}});upd()}};upd()}})();</script>"""
+
 def section_page(fn, key, title, color, intro, topics, note, formulas):
     import html as _h
     cnt={}
@@ -102,26 +141,15 @@ def section_page(fn, key, title, color, intro, topics, note, formulas):
     names=[_h.unescape(t) for t,d,p in topics]
     missing=[n for n in names if cnt.get(n,0)<4]; extra=set(cnt)-set(names)
     assert not missing and not extra, (key, missing, extra)
-    tl="".join(f"<a class='topic' href='practice.html?section={key}&amp;topic={_h.escape(_h.unescape(t)).replace(' ','%20').replace('&amp;','%26')}' data-topic=\"{_h.escape(_h.unescape(t))}\"><h4>{t} <span class='badge' data-topic-count>{cnt[_h.unescape(t)]} Qs</span></h4><p>{d}</p></a>" for t,d,p in topics)
-    esc=lambda s: _h.escape(s, quote=False)
-    nf=sum(len(items) for _,_,items in formulas)
-    fl="".join(f"""<details class="fs-card" open><summary><span class="fs-ic" aria-hidden="true">{ic}</span><span class="fs-t">{name}</span><span class="fs-n">{len(items)}</span></summary><ul class="fs-list">"""
-       + "".join(f"<li><code class='fx'>{esc(fx)}</code>" + (f"<span class='fx-note'>{esc(nt)}</span>" if nt else "") + "</li>" for fx,nt in items)
-       + "</ul></details>" for ic,name,items in formulas)
+    tl="".join(f"<a class='topic' href='practice.html?section={key}&amp;topic={_h.escape(_h.unescape(t)).replace(' ','%20').replace('&amp;','%26')}' data-topic=\"{_h.escape(_h.unescape(t))}\"><h4>{t} <span class='badge' data-topic-count>{cnt[_h.unescape(t)]} Qs</span></h4><p>{d}</p><span class='exam-tag {exam_tag(_h.unescape(t))[1]}'>{exam_tag(_h.unescape(t))[0]}</span></a>" for t,d,p in topics)
+    fs=fs_section(formulas, color)
     page(fn,title,f"""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / {title}</div>
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">{title}</h1><p class="muted" style="max-width:700px">{intro}</p>
 <div class="cta-row"><a class="btn" href="practice.html?section={key}">Practise {title} →</a><a class="btn btn-ghost" href="#formulas">Formula sheet</a></div></div></div>
-<section style="padding-top:20px"><div class="container"><h2>Topics</h2><p class='muted' style='margin-top:-.4em'>Tap a topic to practise just that topic.</p><div class="topic-list">{tl}</div></div></section>
+<section style="padding-top:20px"><div class="container"><h2>Topics</h2><p class='muted' style='margin-top:-.4em'>Tap a topic to practise just that topic. Tags show which exams it suits best. For CAT-style sets, see the <a href="cat.html">CAT track</a>.</p><div class="topic-list">{tl}</div></div></section>
 <section class="alt"><div class="container note" style="max-width:860px"><h2>Concept note</h2>{note}</div></section>
-<section id="formulas" class="fs" style="--c:{color}"><div class="container">
-<div class="fs-head"><div><h2>Formula &amp; rules sheet</h2><p class="muted">{len(formulas)} topics · {nf} formulas and rules. Tap a topic to open or close it.</p></div><button type="button" class="btn btn-ghost btn-sm" id="fs-toggle">Collapse all</button></div>
-<div class="fs-grid">{fl}</div>
-<p class="muted" style="margin-top:1.2em">Tip: bookmark this page and revise it for 5 minutes before each practice session.</p></div></section>
-<script>(function(){{var c=[].slice.call(document.querySelectorAll('.fs-card')),b=document.getElementById('fs-toggle');
-function upd(){{b.textContent=c.every(function(d){{return d.open}})?'Collapse all':'Expand all'}}
-if(matchMedia('(max-width:600px)').matches)c.forEach(function(d,i){{if(i>1)d.open=false}});
-c.forEach(function(d){{d.addEventListener('toggle',upd)}});b.onclick=function(){{var o=!c.every(function(d){{return d.open}});c.forEach(function(d){{d.open=o}});upd()}};upd()}})();</script>
+{fs}
 """)
 
 section_page("quant.html","quant","Quantitative Aptitude","var(--quant)",
@@ -154,10 +182,15 @@ section_page("dilr.html","dilr","Data Interpretation &amp; Logical Reasoning (DI
 FORMULAS["dilr"])
 
 # ---------- PRACTICE ----------
-page("practice.html","Timed Practice Quiz","""
-<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Practice</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Timed practice quiz</h1><p class="muted">Choose a section, set the timer and start. Solutions are shown at the end.</p></div></div>
+page("practice.html","Practice","""
+<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Practice</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Practice</h1><p class="muted">Choose your exam track to begin.</p></div></div>
 <section style="padding-top:16px"><div class="container">
- <div id="setup" class="card quiz-setup">
+ <div id="exam-pick" class="exam-pick">
+  <a class="exam-card" href="cat-practice.html" style="--c:var(--brand)"><span class="exam-ic">🎯</span><span class="exam-b"><b>CAT</b><small>VARC · DILR · QA · 40-min sectionals · MCQ + TITA · CAT marking</small><small class="exam-n"><span data-stat="cat">%NQ_CAT%</span> CAT-style questions</small></span><span class="exam-go">→</span></a>
+  <button type="button" class="exam-card" id="pick-general" style="--c:var(--reason)"><span class="exam-ic">🏦</span><span class="exam-b"><b>Bank / SSC / Placements</b><small>Quant · Reasoning · DILR · timed quizzes · topic filter</small><small class="exam-n"><span data-stat="general">%NQ_GEN%</span> questions</small></span><span class="exam-go">→</span></button>
+ </div>
+ <div id="setup" class="card quiz-setup hidden">
+  <p class="muted" style="margin:0 0 .8em;font-size:.9rem"><b>Track:</b> Bank / SSC / Placements · <a href="#" id="change-track">Change track</a></p>
   <h3>1. Choose a section</h3>
   <div class="sec-pick">
    <label><input type="radio" name="section" value="quant" checked>➗ Quant</label>
@@ -198,19 +231,170 @@ page("practice.html","Timed Practice Quiz","""
   <h2>Review &amp; solutions</h2><div id="review"></div>
  </div>
 </div></section>
-""", extra='<script src="assets/js/quiz.js"></script>')
+""".replace("%NQ_CAT%",str(NQ_CAT)).replace("%NQ_GEN%",str(NQ_GEN)), extra='''<script src="assets/js/quiz.js"></script>
+<script>(function(){var p=new URLSearchParams(location.search),pick=document.getElementById('exam-pick'),setup=document.getElementById('setup');
+function gen(){pick.classList.add('hidden');setup.classList.remove('hidden');}
+document.getElementById('pick-general').onclick=gen;
+document.getElementById('change-track').onclick=function(e){e.preventDefault();setup.classList.add('hidden');pick.classList.remove('hidden');};
+if(p.get('exam')==='general'||p.get('section'))gen();})();</script>''')
+
+# ---------- CAT TRACK ----------
+import html as _hh
+CAT_DESC = {
+ "varc": {"Reading Comprehension":"400–550 word passages on economics, philosophy, science and literature, with 4 questions each.",
+          "Para-jumbles":"Put 4 jumbled sentences in order. TITA: type the sequence.",
+          "Para-summary":"Choose the option that best captures the paragraph's main point.",
+          "Odd sentence out":"Find the sentence that doesn't belong. TITA: type its number."},
+ "dilr": {"Scheduling":"Who does what on which day, from a list of conditions.",
+          "Tournaments":"Round-robin results worked back from the points table.",
+          "Tables with missing data":"Fill a partly blank table using the totals and clues given.",
+          "Games with rules":"Winning and losing positions in take-away games.",
+          "Distribution":"Share items among people under constraints.",
+          "Logic puzzles":"Deduce a secret code from feedback on guesses.",
+          "Arrangements":"Match people, pets and colours to houses.",
+          "Rankings & scoring":"Rebuild rankings from points and conditions."},
+ "qa": {"Percentages & Profit":"Successive changes, markups, discounts and profit.",
+        "Time, Speed & Distance":"Relative speed, trains, boats and races.",
+        "Time & Work":"Efficiency, pipes and work-wage problems.",
+        "Mixtures & Alligation":"Replacement and mixing ratios.",
+        "Simple & Compound Interest":"Instalments and CI versus SI.",
+        "Ratio & Proportion":"Partnerships, variation and ratio chains.",
+        "Equations & Quadratics":"Roots, integer solutions and systems of equations.",
+        "Inequalities":"Ranges, AM-GM and modulus.",
+        "Functions":"Composite, recursive and functional equations.",
+        "Logarithms":"Log rules, equations and bases.",
+        "Number System":"Remainders, factors, HCF/LCM and digits.",
+        "Geometry":"Triangles, circles and coordinate geometry.",
+        "Mensuration":"Areas and volumes of 2D and 3D shapes.",
+        "Permutations & Combinations":"Counting with restrictions.",
+        "Probability":"Conditional probability and counting-based questions.",
+        "Progressions":"AP, GP and sums of series."}}
+def cat_topic_cards(sec):
+    cnt={}
+    for q in CB["sections"][sec]["questions"]: cnt[q["topic"]]=cnt.get(q["topic"],0)+1
+    assert set(cnt)==set(CAT_DESC[sec]), (sec, set(cnt)^set(CAT_DESC[sec]))
+    from urllib.parse import quote
+    return "".join(f"<a class='topic' href='cat-practice.html?mode=practice&amp;section={sec}&amp;topic={quote(t)}' data-cat-topic=\"{_hh.escape(sec+'|'+t)}\"><h4>{_hh.escape(t)} <span class='badge' data-topic-count>{cnt[t]} Qs</span></h4><p>{CAT_DESC[sec][t]}</p><span class='exam-tag tag-cat'>CAT</span></a>" for t in CAT_DESC[sec])
+def cat_type_counts(sec):
+    qq=CB["sections"][sec]["questions"]; return sum(q["type"]=="mcq" for q in qq), sum(q["type"]=="tita" for q in qq)
+NSETS=sum(1 for s in CB["sets"].values() if s["kind"]=="dilr"); NPASS=sum(1 for s in CB["sets"].values() if s["kind"]=="passage")
+secblk=""
+for sec,ic,col,blurb in [("varc","📖","var(--varc)",f"<span data-stat='cat-passages'>{NPASS}</span> reading passages plus para-jumbles, para-summaries and odd-sentence-out."),
+                         ("dilr","📊","var(--dilr)",f"<span data-stat='cat-sets'>{NSETS}</span> puzzle sets of 4–5 questions each, every one checked by computer to have a single solution."),
+                         ("qa","➗","var(--quant)","Arithmetic, algebra, number system, geometry and modern maths, from moderate to hard.")]:
+    m,ti=cat_type_counts(sec)
+    secblk+=f"""<div class="card sec-card" style="--c:{col}"><div class="icon">{ic}</div><h3>{CB['sections'][sec]['name']} ({sec.upper()})</h3>
+<p class="muted" style="flex:1"><b data-stat="cat-{sec}">{CATN[sec]}</b> questions · {m} MCQ / {ti} TITA. {blurb}</p>
+<div class="cta-row" style="margin:0"><a class="btn btn-sm" href="cat-practice.html?mode=sectional&amp;section={sec}">40-min sectional →</a><a class="btn btn-sm btn-ghost" href="cat-practice.html?mode=practice&amp;section={sec}">Practise</a></div></div>"""
+page("cat.html","CAT Track: VARC, DILR & QA",f"""
+<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / CAT track</div>
+<h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CAT track <span class="exam-tag tag-cat" style="vertical-align:middle">CAT</span></h1>
+<p class="muted" style="max-width:720px">A separate track for CAT aspirants: VARC, DILR and QA questions at moderate to hard level, in CAT's question formats (MCQ and TITA) with CAT marking. All <b data-stat="cat">{NQ_CAT}</b> questions and passages were written by us for practice. They are not taken from CAT papers or coaching material, and each has a worked solution.</p>
+<div class="cta-row"><a class="btn" href="cat-practice.html">Start a CAT sectional →</a><a class="btn btn-ghost" href="varc.html">VARC strategy &amp; rules</a></div></div></div>
+<section style="padding-top:20px"><div class="container"><div class="grid g3">{secblk}</div></div></section>
+<section class="alt"><div class="container"><div class="grid g2">
+ <div class="card"><h3>⏱ Sectional mode</h3><ul class="clean">
+  <li>One section, <b>40 minutes</b>, submits automatically when time runs out.</li>
+  <li>About 24 VARC, 22 DILR or 22 QA questions, picked from the bank (DILR and RC sets stay together).</li>
+  <li>A CAT-style palette: not visited, not answered, answered, marked, and answered &amp; marked.</li>
+  <li>RC passages and DILR sets open in a side panel on desktop and above the question on mobile.</li>
+  <li>Results: score, attempts, accuracy, time per question and a topic-wise strong/weak breakdown.</li></ul></div>
+ <div class="card"><h3>🧠 Practice mode</h3><ul class="clean">
+  <li>Pick a section and a topic; no countdown (just an elapsed clock).</li>
+  <li>Check each answer and see the full solution straight away.</li>
+  <li>Useful for learning one question type at a time before taking sectionals.</li></ul>
+  <h3 style="margin-top:1em">📏 Marking used</h3>
+  <table class="data"><tr><th style="text-align:left">Type</th><th>Correct</th><th>Wrong</th><th>Unanswered</th></tr>
+  <tr><td style="text-align:left">MCQ</td><td>+3</td><td>−1</td><td>0</td></tr><tr><td style="text-align:left">TITA (type in the answer)</td><td>+3</td><td>0</td><td>0</td></tr></table></div>
+</div></div></section>
+<section><div class="container"><h2>CAT topics</h2><p class="muted" style="margin-top:-.4em">Tap a topic to practise it with instant solutions.</p>
+<h3 class="cat-sub">VARC</h3><div class="topic-list">{cat_topic_cards('varc')}</div>
+<h3 class="cat-sub">DILR</h3><div class="topic-list">{cat_topic_cards('dilr')}</div>
+<h3 class="cat-sub">QA</h3><div class="topic-list">{cat_topic_cards('qa')}</div>
+<div class="notice" style="margin-top:22px">The question bank is still small. Sectionals pick from the questions above, so you'll see repeats if you take several. Full-length 3-section mocks are not available yet. For more basic practice on Quant and DILR, see the <a href="practice.html?exam=general">Bank / SSC / Placements track</a>.</div>
+</div></section>
+""", desc="CAT-style VARC, DILR and QA practice with 40-minute sectionals, TITA questions, CAT marking and worked solutions. Original questions.")
+
+page("varc.html","VARC: Reading Strategy & Rules",f"""
+<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="cat.html">CAT</a> / VARC</div>
+<h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Verbal Ability &amp; Reading Comprehension (VARC)</h1>
+<p class="muted" style="max-width:720px">CAT's first section. Reading comprehension carries most of the marks; para-jumbles and odd-sentence-out are TITA, so a wrong answer costs nothing. All passages here were written by us for practice.</p>
+<div class="cta-row"><a class="btn" href="cat-practice.html?mode=sectional&amp;section=varc">VARC sectional (40 min) →</a><a class="btn btn-ghost" href="#formulas">Rules sheet</a></div></div></div>
+<section style="padding-top:20px"><div class="container"><h2>Topics</h2><p class='muted' style='margin-top:-.4em'>Tap a topic to practise it with instant solutions.</p><div class="topic-list">{cat_topic_cards('varc')}</div></div></section>
+<section class="alt"><div class="container note" style="max-width:860px"><h2>Reading strategy</h2>
+<h3>1. Read for the argument, not the facts</h3><p>CAT passages are usually arguments: the author takes a position, considers objections and qualifies the claim. As you read, keep one line in your head: <i>what is the author saying, and how sure are they?</i> Details can be looked up again; the structure cannot.</p>
+<h3>2. Map each paragraph in a few words</h3><p>After each paragraph, name its job: "problem", "example", "objection", "author's answer". Most questions ask about one of these jobs. A rough map saves you from rereading the whole passage.</p>
+<h3>3. Watch the signal words</h3><p><b>However, yet, but</b> mark a turn; <b>therefore, thus</b> mark a conclusion; <b>admittedly, of course</b> often mark a concession the author will then push back on. Questions on the author's view usually depend on what comes after the turn.</p>
+<h3>4. Eliminate, don't hunt</h3><p>Wrong options tend to fall into a few types: <b>too extreme</b> ("always", "only"), <b>out of scope</b> (true in real life but not in the passage), <b>half right</b> (the first half fits, the second distorts), and <b>reversed</b> (cause and effect swapped). Strike out options until one survives.</p>
+<h3>5. Plan the 40 minutes</h3><p>A reasonable plan is about 7–8 minutes per passage and 1–2 minutes per verbal ability question. Since TITA questions carry no negative marks, attempt every para-jumble and odd-sentence item you have time for. With MCQs, guess only if you can eliminate at least two options.</p>
+</div></section>
+{fs_section(FORMULAS['varc'], 'var(--varc)', heading='VARC rules sheet', unit='rules and checks', prose=True)}
+""", desc="CAT VARC reading strategy, rules sheet for RC, para-jumbles, para-summary and odd-sentence-out, with original practice questions.")
+
+page("cat-practice.html","CAT Practice: Sectionals & Topic Practice","""
+<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="cat.html">CAT</a> / Practice</div>
+<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">CAT practice</h1></div></div>
+<section style="padding-top:12px"><div class="container">
+ <div id="c-setup" class="card quiz-setup">
+  <p class="muted" style="margin:0 0 .8em;font-size:.9rem"><b>Track:</b> CAT · <a href="practice.html">Change track</a></p>
+  <h3>1. Choose a mode</h3>
+  <div class="sec-pick two">
+   <label><input type="radio" name="cmode" value="sectional" checked><span><b>⏱ Sectional</b><small>40 min · CAT marking · results at the end</small></span></label>
+   <label><input type="radio" name="cmode" value="practice"><span><b>🧠 Practice</b><small>No countdown · solution after each answer</small></span></label>
+  </div>
+  <h3 style="margin-top:18px">2. Choose a section</h3>
+  <div class="sec-pick three">
+   <label><input type="radio" name="csec" value="varc" checked><span><b>📖 VARC</b><small data-csec-count="varc"></small></span></label>
+   <label><input type="radio" name="csec" value="dilr"><span><b>📊 DILR</b><small data-csec-count="dilr"></small></span></label>
+   <label><input type="radio" name="csec" value="qa"><span><b>➗ QA</b><small data-csec-count="qa"></small></span></label>
+  </div>
+  <div id="c-topic-wrap" class="form hidden" style="margin-top:18px;max-width:460px"><label>3. Topic<select id="c-topic"></select></label></div>
+  <p class="muted" id="c-info" style="margin:16px 0 0;font-size:.92rem"></p>
+  <button id="c-start" class="btn" style="margin-top:14px">Start →</button>
+ </div>
+
+ <div id="c-quiz" class="hidden">
+  <div class="quiz-bar"><h3 id="c-title" style="margin:0;font-size:1.05rem"></h3><span id="c-timer" class="timer">⏱ 00:00</span></div>
+  <div id="c-layout" class="c-layout">
+   <aside id="c-pane" class="card c-pane hidden" data-set=""><div class="c-pane-head"><b id="c-pane-label">Passage</b><span id="c-pane-meta" class="muted"></span></div><div id="c-pane-body" class="c-pane-body q-data"></div></aside>
+   <div class="card c-main">
+    <div class="c-qhead"><b id="c-qnum"></b><span id="c-qtype" class="qtype"></span><span class="muted" id="c-qmeta"></span><span class="c-marks">Marks <b id="c-marks"></b></span></div>
+    <div id="c-qtext" class="q-text"></div>
+    <div id="c-answer"></div>
+    <div id="c-feedback"></div>
+    <div class="q-actions c-actions">
+     <div style="display:flex;gap:8px;flex-wrap:wrap"><button id="c-prev" class="btn btn-ghost btn-sm">← Prev</button><button id="c-clear" class="btn btn-ghost btn-sm">Clear response</button><button id="c-mark" class="btn btn-ghost btn-sm">Mark for Review &amp; Next</button></div>
+     <div style="display:flex;gap:8px;flex-wrap:wrap"><button id="c-check" class="btn btn-sm btn-check hidden">Check answer</button><button id="c-next" class="btn btn-sm">Save &amp; Next →</button></div>
+    </div>
+   </div>
+   <aside class="card c-side"><b>Question palette</b>
+    <div id="c-palette" class="palette c-palette"></div>
+    <div class="c-legend">
+     <span><i class="lg a"></i>Answered <b data-cnt="a">0</b></span><span><i class="lg na"></i>Not answered <b data-cnt="na">0</b></span>
+     <span><i class="lg nv"></i>Not visited <b data-cnt="nv">0</b></span><span><i class="lg m"></i>Marked <b data-cnt="m">0</b></span>
+     <span><i class="lg am"></i>Answered &amp; marked <b data-cnt="am">0</b></span></div>
+    <button id="c-submit" class="btn" style="width:100%;margin-top:14px">Submit section</button></aside>
+  </div>
+ </div>
+
+ <div id="c-results" class="hidden">
+  <div class="card" id="c-res-head"></div>
+  <div class="card" id="c-topics" style="margin-top:16px"></div>
+  <div style="text-align:center;margin:18px 0"><button id="c-retry" class="btn">Take another section</button> <a class="btn btn-ghost" href="cat.html">CAT track</a></div>
+  <h2>Review &amp; solutions</h2><div id="c-review"></div>
+ </div>
+</div></section>
+""", desc="CAT-style 40-minute sectionals for VARC, DILR and QA with TITA questions and CAT marking, plus topic practice with instant solutions.", extra='<script src="assets/js/cat.js"></script>')
 
 # ---------- PLACEHOLDERS ----------
 page("mock-tests.html","Mock Tests","""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Mock Tests</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Mock tests <span class="badge soon">Coming soon</span></h1><p class="muted">We're planning full-length and sectional mocks with an exam-style interface and detailed analysis.</p></div></div>
 <section style="padding-top:16px"><div class="container"><div class="grid g3">
  <div class="card"><h3>CAT Full Mock</h3><p class="muted">VARC · DILR · QA · 120 min · 66 Qs</p><button class="btn btn-sm" disabled>Coming soon</button></div>
- <div class="card"><h3>DILR Sectional</h3><p class="muted">4 sets · 40 min</p><button class="btn btn-sm" disabled>Coming soon</button></div>
- <div class="card"><h3>Quant Sectional</h3><p class="muted">22 Qs · 40 min</p><button class="btn btn-sm" disabled>Coming soon</button></div>
  <div class="card"><h3>Bank PO Prelims</h3><p class="muted">Quant · Reasoning · 60 min</p><button class="btn btn-sm" disabled>Coming soon</button></div>
  <div class="card"><h3>SSC CGL Tier 1</h3><p class="muted">Quant · Reasoning · 60 min</p><button class="btn btn-sm" disabled>Coming soon</button></div>
  <div class="card"><h3>GMAT-style Quant</h3><p class="muted">21 Qs · 45 min</p><button class="btn btn-sm" disabled>Coming soon</button></div>
-</div><div class="notice" style="margin-top:20px">Until then, try the <a href="practice.html">timed practice quizzes</a>.</div></div></section>
+</div><div class="notice" style="margin-top:20px">CAT sectionals (VARC, DILR, QA) are already available on the <a href="cat-practice.html">CAT practice page</a>. Meanwhile, try the <a href="practice.html">timed practice quizzes</a>.</div></div></section>
 """)
 
 page("placements.html","Placement Prep","""

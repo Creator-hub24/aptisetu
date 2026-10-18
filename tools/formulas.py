@@ -151,6 +151,37 @@ FORMULAS = {
   ("If a road closes, re-check only paths that used it",""),
  ]),
 ],
+"varc": [
+ ("📖","Reading Comprehension",[
+  ("Main idea = the point every paragraph serves","Test each option against the whole passage, not just one paragraph."),
+  ("Answer from the text, not from outside knowledge","A true-in-real-life option is still wrong if the passage doesn't support it."),
+  ("Inference = must be true, given the passage","'Could be true' is not enough."),
+  ("Beware extreme words: always, never, only, all","They're usually wrong unless the passage itself is that strong."),
+  ("Weaken / strengthen → target the link from evidence to conclusion",""),
+ ]),
+ ("🔀","Para-jumbles",[
+  ("Opener = a sentence that needs no earlier context","Sentences starting with this/these/it, yet or however rarely open."),
+  ("Lock mandatory pairs first","A noun introduced, then 'these inventions' / 'that work' straight after."),
+  ("Signposts: Yet · Instead · Meanwhile · In other words · Together","They tell you what must come just before."),
+  ("Closer = conclusion, consequence or summary",""),
+ ]),
+ ("📝","Para-summary",[
+  ("Summary = main point + its key qualification",""),
+  ("Reject options that add new claims or opinions",""),
+  ("Reject options that cover only one detail",""),
+  ("Match scope: 'some' ≠ 'all', 'can' ≠ 'will'",""),
+ ]),
+ ("🧩","Odd sentence out",[
+  ("First find the theme shared by most sentences",""),
+  ("The odd one often shares a keyword, not the topic","E.g. a 'railway' sentence in a paragraph about street vendors."),
+  ("Check that the other four form a flow","Cause → effect, general → specific, problem → response."),
+ ]),
+ ("🎯","CAT marking &amp; strategy",[
+  ("MCQ: +3 correct, −1 wrong · TITA: +3 correct, 0 wrong","Para-jumbles and odd-sentence-out are TITA, so it's worth attempting them."),
+  ("Pick passages you can read comfortably first","There's no need to attempt them in the order shown."),
+  ("Read once, carefully; then go to the questions","Rereading the whole passage costs more time than reading it well once."),
+ ]),
+],
 }
 
 if __name__ == "__main__":

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAT Practice: Sectionals & Topic Practice | {BRAND}</title>
+<meta name="description" content="CAT-style 40-minute sectionals for VARC, DILR and QA with TITA questions and CAT marking, plus topic practice with instant solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+
+<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="cat.html">CAT</a> / Practice</div>
+<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">CAT practice</h1></div></div>
+<section style="padding-top:12px"><div class="container">
+ <div id="c-setup" class="card quiz-setup">
+  <p class="muted" style="margin:0 0 .8em;font-size:.9rem"><b>Track:</b> CAT · <a href="practice.html">Change track</a></p>
+  <h3>1. Choose a mode</h3>
+  <div class="sec-pick two">
+   <label><input type="radio" name="cmode" value="sectional" checked><span><b>⏱ Sectional</b><small>40 min · CAT marking · results at the end</small></span></label>
+   <label><input type="radio" name="cmode" value="practice"><span><b>🧠 Practice</b><small>No countdown · solution after each answer</small></span></label>
+  </div>
+  <h3 style="margin-top:18px">2. Choose a section</h3>
+  <div class="sec-pick three">
+   <label><input type="radio" name="csec" value="varc" checked><span><b>📖 VARC</b><small data-csec-count="varc"></small></span></label>
+   <label><input type="radio" name="csec" value="dilr"><span><b>📊 DILR</b><small data-csec-count="dilr"></small></span></label>
+   <label><input type="radio" name="csec" value="qa"><span><b>➗ QA</b><small data-csec-count="qa"></small></span></label>
+  </div>
+  <div id="c-topic-wrap" class="form hidden" style="margin-top:18px;max-width:460px"><label>3. Topic<select id="c-topic"></select></label></div>
+  <p class="muted" id="c-info" style="margin:16px 0 0;font-size:.92rem"></p>
+  <button id="c-start" class="btn" style="margin-top:14px">Start →</button>
+ </div>
+
+ <div id="c-quiz" class="hidden">
+  <div class="quiz-bar"><h3 id="c-title" style="margin:0;font-size:1.05rem"></h3><span id="c-timer" class="timer">⏱ 00:00</span></div>
+  <div id="c-layout" class="c-layout">
+   <aside id="c-pane" class="card c-pane hidden" data-set=""><div class="c-pane-head"><b id="c-pane-label">Passage</b><span id="c-pane-meta" class="muted"></span></div><div id="c-pane-body" class="c-pane-body q-data"></div></aside>
+   <div class="card c-main">
+    <div class="c-qhead"><b id="c-qnum"></b><span id="c-qtype" class="qtype"></span><span class="muted" id="c-qmeta"></span><span class="c-marks">Marks <b id="c-marks"></b></span></div>
+    <div id="c-qtext" class="q-text"></div>
+    <div id="c-answer"></div>
+    <div id="c-feedback"></div>
+    <div class="q-actions c-actions">
+     <div style="display:flex;gap:8px;flex-wrap:wrap"><button id="c-prev" class="btn btn-ghost btn-sm">← Prev</button><button id="c-clear" class="btn btn-ghost btn-sm">Clear response</button><button id="c-mark" class="btn btn-ghost btn-sm">Mark for Review &amp; Next</button></div>
+     <div style="display:flex;gap:8px;flex-wrap:wrap"><button id="c-check" class="btn btn-sm btn-check hidden">Check answer</button><button id="c-next" class="btn btn-sm">Save &amp; Next →</button></div>
+    </div>
+   </div>
+   <aside class="card c-side"><b>Question palette</b>
+    <div id="c-palette" class="palette c-palette"></div>
+    <div class="c-legend">
+     <span><i class="lg a"></i>Answered <b data-cnt="a">0</b></span><span><i class="lg na"></i>Not answered <b data-cnt="na">0</b></span>
+     <span><i class="lg nv"></i>Not visited <b data-cnt="nv">0</b></span><span><i class="lg m"></i>Marked <b data-cnt="m">0</b></span>
+     <span><i class="lg am"></i>Answered &amp; marked <b data-cnt="am">0</b></span></div>
+    <button id="c-submit" class="btn" style="width:100%;margin-top:14px">Submit section</button></aside>
+  </div>
+ </div>
+
+ <div id="c-results" class="hidden">
+  <div class="card" id="c-res-head"></div>
+  <div class="card" id="c-topics" style="margin-top:16px"></div>
+  <div style="text-align:center;margin:18px 0"><button id="c-retry" class="btn">Take another section</button> <a class="btn btn-ghost" href="cat.html">CAT track</a></div>
+  <h2>Review &amp; solutions</h2><div id="c-review"></div>
+ </div>
+</div></section>
+
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/stats.js"></script>
+<script src="assets/js/cat.js"></script>
+</body>
+</html>

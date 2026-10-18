@@ -2,7 +2,7 @@
 <html lang="en-IN">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Timed Practice Quiz | {BRAND}</title>
+<title>Practice | {BRAND}</title>
 <meta name="description" content="Quantitative Aptitude, Logical Reasoning and DILR prep for CAT, Bank, SSC, GMAT and campus placements.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
@@ -11,9 +11,14 @@
 <header id="site-header"></header>
 <main>
 
-<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Practice</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Timed practice quiz</h1><p class="muted">Choose a section, set the timer and start. Solutions are shown at the end.</p></div></div>
+<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Practice</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Practice</h1><p class="muted">Choose your exam track to begin.</p></div></div>
 <section style="padding-top:16px"><div class="container">
- <div id="setup" class="card quiz-setup">
+ <div id="exam-pick" class="exam-pick">
+  <a class="exam-card" href="cat-practice.html" style="--c:var(--brand)"><span class="exam-ic">🎯</span><span class="exam-b"><b>CAT</b><small>VARC · DILR · QA · 40-min sectionals · MCQ + TITA · CAT marking</small><small class="exam-n"><span data-stat="cat">129</span> CAT-style questions</small></span><span class="exam-go">→</span></a>
+  <button type="button" class="exam-card" id="pick-general" style="--c:var(--reason)"><span class="exam-ic">🏦</span><span class="exam-b"><b>Bank / SSC / Placements</b><small>Quant · Reasoning · DILR · timed quizzes · topic filter</small><small class="exam-n"><span data-stat="general">171</span> questions</small></span><span class="exam-go">→</span></button>
+ </div>
+ <div id="setup" class="card quiz-setup hidden">
+  <p class="muted" style="margin:0 0 .8em;font-size:.9rem"><b>Track:</b> Bank / SSC / Placements · <a href="#" id="change-track">Change track</a></p>
   <h3>1. Choose a section</h3>
   <div class="sec-pick">
    <label><input type="radio" name="section" value="quant" checked>➗ Quant</label>
@@ -61,5 +66,10 @@
 <script src="assets/js/layout.js"></script>
 <script src="assets/js/stats.js"></script>
 <script src="assets/js/quiz.js"></script>
+<script>(function(){var p=new URLSearchParams(location.search),pick=document.getElementById('exam-pick'),setup=document.getElementById('setup');
+function gen(){pick.classList.add('hidden');setup.classList.remove('hidden');}
+document.getElementById('pick-general').onclick=gen;
+document.getElementById('change-track').onclick=function(e){e.preventDefault();setup.classList.add('hidden');pick.classList.remove('hidden');};
+if(p.get('exam')==='general'||p.get('section'))gen();})();</script>
 </body>
 </html>
