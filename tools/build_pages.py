@@ -1,6 +1,7 @@
 import os, json
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 QB = json.load(open("data/questions.json"))
+import sys; sys.path.insert(0, "tools"); from formulas import FORMULAS
 NQ = sum(len(s["questions"]) for s in QB.values())
 NT = len({(k, q["topic"]) for k, s in QB.items() for q in s["questions"]})
 def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DILR prep for CAT, Bank, SSC, GMAT and campus placements.", extra=""):
@@ -102,15 +103,25 @@ def section_page(fn, key, title, color, intro, topics, note, formulas):
     missing=[n for n in names if cnt.get(n,0)<4]; extra=set(cnt)-set(names)
     assert not missing and not extra, (key, missing, extra)
     tl="".join(f"<a class='topic' href='practice.html?section={key}&amp;topic={_h.escape(_h.unescape(t)).replace(' ','%20').replace('&amp;','%26')}' data-topic=\"{_h.escape(_h.unescape(t))}\"><h4>{t} <span class='badge' data-topic-count>{cnt[_h.unescape(t)]} Qs</span></h4><p>{d}</p></a>" for t,d,p in topics)
-    fl="".join(f"<div>{f}</div>" for f in formulas)
+    esc=lambda s: _h.escape(s, quote=False)
+    nf=sum(len(items) for _,_,items in formulas)
+    fl="".join(f"""<details class="fs-card" open><summary><span class="fs-ic" aria-hidden="true">{ic}</span><span class="fs-t">{name}</span><span class="fs-n">{len(items)}</span></summary><ul class="fs-list">"""
+       + "".join(f"<li><code class='fx'>{esc(fx)}</code>" + (f"<span class='fx-note'>{esc(nt)}</span>" if nt else "") + "</li>" for fx,nt in items)
+       + "</ul></details>" for ic,name,items in formulas)
     page(fn,title,f"""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / {title}</div>
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">{title}</h1><p class="muted" style="max-width:700px">{intro}</p>
 <div class="cta-row"><a class="btn" href="practice.html?section={key}">Practise {title} →</a><a class="btn btn-ghost" href="#formulas">Formula sheet</a></div></div></div>
 <section style="padding-top:20px"><div class="container"><h2>Topics</h2><p class='muted' style='margin-top:-.4em'>Tap a topic to practise just that topic.</p><div class="topic-list">{tl}</div></div></section>
 <section class="alt"><div class="container note" style="max-width:860px"><h2>Concept note</h2>{note}</div></section>
-<section id="formulas"><div class="container" style="max-width:860px"><h2>Formula &amp; rules sheet</h2><div class="formula">{fl}</div>
-<p class="muted" style="margin-top:1em">Tip: bookmark this page and revise it for 5 minutes before each practice session.</p></div></section>
+<section id="formulas" class="fs" style="--c:{color}"><div class="container">
+<div class="fs-head"><div><h2>Formula &amp; rules sheet</h2><p class="muted">{len(formulas)} topics · {nf} formulas and rules. Tap a topic to open or close it.</p></div><button type="button" class="btn btn-ghost btn-sm" id="fs-toggle">Collapse all</button></div>
+<div class="fs-grid">{fl}</div>
+<p class="muted" style="margin-top:1.2em">Tip: bookmark this page and revise it for 5 minutes before each practice session.</p></div></section>
+<script>(function(){{var c=[].slice.call(document.querySelectorAll('.fs-card')),b=document.getElementById('fs-toggle');
+function upd(){{b.textContent=c.every(function(d){{return d.open}})?'Collapse all':'Expand all'}}
+if(matchMedia('(max-width:600px)').matches)c.forEach(function(d,i){{if(i>1)d.open=false}});
+c.forEach(function(d){{d.addEventListener('toggle',upd)}});b.onclick=function(){{var o=!c.every(function(d){{return d.open}});c.forEach(function(d){{d.open=o}});upd()}};upd()}})();</script>
 """)
 
 section_page("quant.html","quant","Quantitative Aptitude","var(--quant)",
@@ -121,7 +132,7 @@ section_page("quant.html","quant","Quantitative Aptitude","var(--quant)",
 <div class="tip">💡 <b>Shortcut:</b> after a fall of x%, the rise needed to get back to the original value is x/(100 − x) × 100%. After a 20% fall you need a 25% rise.</div>
 <h3>Profit &amp; Loss</h3><p>Profit % and loss % are always calculated on <b>cost price</b>. Discount is always calculated on <b>marked price</b>. Selling at a loss of x% means SP = CP × (100 − x)/100.</p>
 <h3>Time, Speed &amp; Distance</h3><p>To convert km/h to m/s, multiply by 5/18. A train crossing a pole covers its own length. A train crossing a platform covers its own length plus the platform's. For equal distances at speeds x and y, the average speed is the <b>harmonic mean</b> 2xy/(x + y), not the simple average.</p>""",
-["Successive % change = a + b + ab/100","Profit % = (SP − CP)/CP × 100","SP = MP × (1 − d/100)","SI = P × R × T / 100","CI: A = P(1 + R/100)ⁿ","Speed = Distance / Time ; 1 km/h = 5/18 m/s","Avg speed (equal distances) = 2xy/(x + y)","Work: if A takes a days and B takes b days, together = ab/(a + b)","Trailing zeros of n! = ⌊n/5⌋ + ⌊n/25⌋ + ⌊n/125⌋ + …","(a + b)² = a² + 2ab + b² ; a² − b² = (a + b)(a − b)","x² + 1/x² = (x + 1/x)² − 2","nPr = n!/(n − r)! ; nCr = n!/(r!(n − r)!)","Arrangements with repeats = n!/(p! q! …)","P(E) = favourable / total outcomes","Circle: area πr², circumference 2πr ; right triangle circumradius = hypotenuse/2"])
+FORMULAS["quant"])
 
 section_page("reasoning.html","reasoning","Logical Reasoning","var(--reason)",
 "Verbal and analytical reasoning for Bank/SSC, CAT LR and placement tests, with methods for the most common question types.",
@@ -131,7 +142,7 @@ section_page("reasoning.html","reasoning","Logical Reasoning","var(--reason)",
 <div class="tip">💡 "Some A are not B" never follows from "Some A are B" on its own. Look for a statement that rules it out.</div>
 <h3>Seating arrangement</h3><p>Fix the most definite clue first, such as "X is in the middle" or "Y is at an end". In a row facing north, the person's <b>right</b> is your right. In a circle facing the centre, <b>left is clockwise</b>.</p>
 <h3>Blood relations</h3><p>Draw a family tree. Use + for male and − for female, horizontal lines for siblings and spouses, and vertical lines for generations. Break long chains like "my father's father's only son" from the end backwards.</p>""",
-["Syllogism: All A→B ⇒ Some B→A (conversion)","Some A→B ⇒ Some B→A ; No A→B ⇒ No B→A","Coding: A=1 … Z=26 ; reverse position = 27 − n","EJOTY → 5, 10, 15, 20, 25 (position anchors)","Clock angle = |30H − 5.5M|°","Hands overlap every 65 5/11 minutes","Odd days: normal year = 1, leap year = 2","Direction: right turn from N → E → S → W","Distance after turns: use Pythagoras √(x² + y²)","Series checks: differences, ratios, squares/cubes, n(n+1), ×2±1"])
+FORMULAS["reasoning"])
 
 section_page("dilr.html","dilr","Data Interpretation &amp; Logical Reasoning (DILR)","var(--dilr)",
 "Read data fast and reason carefully: tables, charts, caselets, arrangements, tournaments, Venn diagrams and routes.",
@@ -140,7 +151,7 @@ section_page("dilr.html","dilr","Data Interpretation &amp; Logical Reasoning (DI
 <h3>Growth and share</h3><p><b>Growth %</b> = (New − Old)/Old × 100. <b>Share %</b> = Part/Total × 100. Don't mix these up. A product can have the highest absolute increase but not the highest percentage growth.</p>
 <div class="tip">💡 <b>Pie charts:</b> 1% = 3.6°, so 25% = 90° and 10% = 36°.</div>
 <h3>Choosing LR sets (CAT)</h3><p>In CAT, set selection matters as much as solving. Spend the first 3–4 minutes scanning every set, then start with the ones that have the most definite clues and the fewest variables.</p>""",
-["Growth % = (New − Old)/Old × 100","Share % = Part / Total × 100","CAGR = (End/Start)^(1/n) − 1","Pie: angle = % × 3.6° ; value = % × Total","Average = Sum / Count","Two sets: n(A∪B) = n(A) + n(B) − n(A∩B)","Three sets: n(A∪B∪C) = ΣA − Σ(pairs) + n(A∩B∩C)","Ratio A:B → compare A/B with common factors removed","Round-robin among n teams: nC2 matches","Knock-out among n teams: n − 1 matches"])
+FORMULAS["dilr"])
 
 # ---------- PRACTICE ----------
 page("practice.html","Timed Practice Quiz","""

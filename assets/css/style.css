@@ -101,3 +101,22 @@ a.topic{display:block;color:inherit;transition:border-color .15s,transform .15s}
   .setup-grid{grid-template-columns:1fr}
 }
 #site-footer a.logo{display:flex}
+/* ===== v3: formula sheets ===== */
+.fs-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:18px}.fs-head h2{margin-bottom:.2em}.fs-head p{margin:0}
+.fs-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.fs-card{background:#fff;border:1px solid var(--line);border-left:5px solid var(--c);border-radius:14px;box-shadow:var(--sh);overflow:hidden}
+.fs-card summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:12px 16px;background:color-mix(in srgb,var(--c) 9%,#fff);user-select:none}
+.fs-card summary::-webkit-details-marker{display:none}
+.fs-card summary::after{content:"▾";margin-left:6px;color:var(--c);font-size:1rem;transition:transform .2s}
+.fs-card:not([open]) summary::after{transform:rotate(-90deg)}
+.fs-ic{width:34px;height:34px;flex:none;border-radius:9px;display:grid;place-items:center;background:#fff;box-shadow:0 1px 3px rgba(15,23,42,.08);font-size:1.05rem}
+.fs-t{font-weight:700;font-size:1.02rem;color:var(--ink);flex:1}
+.fs-n{font-size:.75rem;font-weight:700;color:var(--c);background:#fff;border:1px solid color-mix(in srgb,var(--c) 30%,#fff);border-radius:99px;padding:.1em .6em}
+.fs-list{margin:0;padding:12px 16px 14px 34px;display:grid;gap:10px}
+.fs-list li{padding-left:2px}.fs-list li::marker{color:var(--c)}
+code.fx{display:inline-block;font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88rem;line-height:1.5;color:color-mix(in srgb,var(--c) 75%,#0f172a);background:color-mix(in srgb,var(--c) 8%,#fff);border:1px solid color-mix(in srgb,var(--c) 22%,#fff);border-radius:7px;padding:.18em .55em;white-space:pre-wrap;word-break:break-word}
+.fx-note{display:block;color:var(--muted);font-size:.86rem;line-height:1.45;margin-top:4px}
+@media(max-width:860px){.fs-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.fs-list{padding:10px 12px 12px 28px}.fs-card summary{padding:10px 12px}code.fx{font-size:.84rem}}
+.fs-grid{display:block;columns:2;column-gap:16px}.fs-card{break-inside:avoid;margin-bottom:16px;display:block}
+@media(max-width:860px){.fs-grid{columns:1}}
