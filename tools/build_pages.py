@@ -3,16 +3,21 @@ os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 QB = json.load(open("data/questions.json"))
 import sys; sys.path.insert(0, "tools"); from formulas import FORMULAS
 CB = json.load(open("data/cat.json"))
+UB = json.load(open("data/cuet.json"))
+UQ = {k: s["questions"] for k, s in UB["sections"].items()}
+NQ_CUET_ORIG = sum(1 for v in UQ.values() for q in v if q.get("source") != "general")
+NQ_CUET_SHARED = sum(1 for v in UQ.values() for q in v if q.get("source") == "general")
+CUETN = {k: len(v) for k, v in UQ.items()}
 NQ_GEN = sum(len(s["questions"]) for s in QB.values())
 NQ_CAT = sum(len(s["questions"]) for s in CB["sections"].values())
-NQ = NQ_GEN + NQ_CAT
+NQ = NQ_GEN + NQ_CAT + NQ_CUET_ORIG   # unique questions: shared CUET items are counted once, in the general bank
 NT_CAT = len({(k, q["topic"]) for k, s in CB["sections"].items() for q in s["questions"]})
 CATN = {k: len(s["questions"]) for k, s in CB["sections"].items()}
 CAT_TITA = sum(1 for s in CB["sections"].values() for q in s["questions"] if q["type"] == "tita")
 # exam relevance tags for general topic cards (default: CAT + Bank-SSC)
 BANK_ONLY = {"Syllogisms","Blood Relations","Coding-Decoding","Direction Sense","Number & Letter Series","Odd One Out","Clocks & Calendars","Alphabet Test","Inequalities","Ranking & Order"}
 def exam_tag(topic): return ("Bank-SSC","tag-bank") if topic in BANK_ONLY else ("CAT + Bank-SSC","tag-both")
-NT = len({(k, q["topic"]) for k, s in QB.items() for q in s["questions"]}) + NT_CAT
+NT = len({(k, q["topic"]) for k, s in QB.items() for q in s["questions"]}) + NT_CAT + len({(k, q["part"], q["topic"]) for k, v in UQ.items() for q in v})
 def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DILR prep for CAT, Bank, SSC, GMAT and campus placements.", extra=""):
     html=f"""<!DOCTYPE html>
 <html lang="en-IN">
@@ -42,11 +47,11 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 page("index.html","CAT, Bank, SSC & Placement Aptitude Prep", f"""
 <section class="hero"><div class="container hero-grid">
  <div>
-  <span class="pill">🇮🇳 CAT · Bank · SSC · Placements</span>
+  <span class="pill">🇮🇳 CAT · CUET · Bank · SSC · Placements</span>
   <h1>Master <span class="grad">Quant, Reasoning, DILR &amp; VARC</span> the smart way</h1>
   <p class="lead">Short concept notes, formula sheets and timed practice with worked solutions, for bank, SSC and placement tests, plus a separate CAT track with VARC, DILR and QA sectionals.</p>
   <div class="cta-row hero-cta"><a href="practice.html" class="btn">Start a free quiz →</a><a href="#sections" class="btn btn-ghost">Explore topics</a></div>
-  <div class="stats"><div><b>2</b><span>Exam tracks</span></div><div><b data-stat="topics">{NT}</b><span>Topics</span></div><div><b data-stat="questions">{NQ}</b><span>Practice questions</span></div></div>
+  <div class="stats"><div><b>3</b><span>Exam tracks</span></div><div><b data-stat="topics">{NT}</b><span>Topics</span></div><div><b data-stat="questions">{NQ}</b><span>Practice questions</span></div></div>
  </div>
  <div class="hero-card" aria-hidden="true">
   <div class="q-meta"><span>Quant · Time &amp; Work</span><span class="timer-chip">⏱ 01:24</span></div>
@@ -62,7 +67,7 @@ page("index.html","CAT, Bank, SSC & Placement Aptitude Prep", f"""
   <div class="card"><div class="icon">🎯</div><h3>MBA aspirants</h3><p class="muted">CAT, XAT, SNAP, NMAT and GMAT-style Quant &amp; DILR.</p></div>
   <div class="card"><div class="icon">🏦</div><h3>Bank &amp; SSC</h3><p class="muted">IBPS, SBI, SSC CGL/CHSL arithmetic and reasoning.</p></div>
   <div class="card"><div class="icon">💼</div><h3>Campus placements</h3><p class="muted">Aptitude rounds like TCS NQT, Infosys and Accenture.</p></div>
-  <div class="card"><div class="icon">📚</div><h3>College students</h3><p class="muted">Build strong fundamentals early with short practice.</p></div>
+  <div class="card"><div class="icon">🎓</div><h3>CUET (UG)</h3><p class="muted">General Aptitude Test, English and Maths for central university admissions.</p></div>
  </div>
 </div></section>
 
@@ -91,6 +96,20 @@ page("index.html","CAT, Bank, SSC & Placement Aptitude Prep", f"""
    <a class="card" href="cat-practice.html?section=dilr"><b>DILR</b><span><b data-stat="cat-dilr">{CATN['dilr']}</b> questions in sets</span></a>
    <a class="card" href="cat-practice.html?section=qa"><b>QA</b><span><b data-stat="cat-qa">{CATN['qa']}</b> questions</span></a>
    <div class="card"><b>TITA</b><span><b data-stat="cat-tita">{CAT_TITA}</b> type-in-the-answer</span></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="cat-band cuet-band"><div class="container">
+ <div class="cat-band-grid">
+  <div><span class="pill">🎓 CUET (UG) track</span><h2>CUET (UG): aptitude, English and Maths</h2>
+   <p class="muted">Practice in NTA's CUET (UG) format: MCQs with +5 for a correct answer and −1 for a wrong one, sectionals at the real pace (50 questions in 60 minutes), and topic practice with worked solutions. All questions are written by us. GK covers static facts only, with no current affairs.</p>
+   <div class="cta-row" style="margin-bottom:0"><a class="btn" href="cuet.html">Explore the CUET track →</a><a class="btn btn-ghost" href="cuet-practice.html">Start a sectional</a></div></div>
+  <div class="cat-mini">
+   <a class="card" href="cuet-practice.html?section=gat"><b>General Aptitude</b><span><b data-stat="cuet-gat">{CUETN['gat']}</b> questions</span></a>
+   <a class="card" href="cuet-practice.html?section=english"><b>English</b><span><b data-stat="cuet-english">{CUETN['english']}</b> questions</span></a>
+   <a class="card" href="cuet-practice.html?section=maths"><b>Mathematics</b><span><b data-stat="cuet-maths">{CUETN['maths']}</b> questions</span></a>
+   <div class="card"><b>Marking</b><span><b>+5 / −1</b> per question</span></div>
   </div>
  </div>
 </div></section>
@@ -187,6 +206,7 @@ page("practice.html","Practice","""
 <section style="padding-top:16px"><div class="container">
  <div id="exam-pick" class="exam-pick">
   <a class="exam-card" href="cat-practice.html" style="--c:var(--brand)"><span class="exam-ic">🎯</span><span class="exam-b"><b>CAT</b><small>VARC · DILR · QA · 40-min sectionals · MCQ + TITA · CAT marking</small><small class="exam-n"><span data-stat="cat">%NQ_CAT%</span> CAT-style questions</small></span><span class="exam-go">→</span></a>
+  <a class="exam-card" href="cuet-practice.html" style="--c:var(--cuet)"><span class="exam-ic">🎓</span><span class="exam-b"><b>CUET (UG)</b><small>General Aptitude · English · Maths · +5 / −1 · real pace</small><small class="exam-n"><span data-stat="cuet">%NQ_CUET%</span> CUET questions</small></span><span class="exam-go">→</span></a>
   <button type="button" class="exam-card" id="pick-general" style="--c:var(--reason)"><span class="exam-ic">🏦</span><span class="exam-b"><b>Bank / SSC / Placements</b><small>Quant · Reasoning · DILR · timed quizzes · topic filter</small><small class="exam-n"><span data-stat="general">%NQ_GEN%</span> questions</small></span><span class="exam-go">→</span></button>
  </div>
  <div id="setup" class="card quiz-setup hidden">
@@ -231,7 +251,7 @@ page("practice.html","Practice","""
   <h2>Review &amp; solutions</h2><div id="review"></div>
  </div>
 </div></section>
-""".replace("%NQ_CAT%",str(NQ_CAT)).replace("%NQ_GEN%",str(NQ_GEN)), extra='''<script src="assets/js/quiz.js"></script>
+""".replace("%NQ_CAT%",str(NQ_CAT)).replace("%NQ_CUET%",str(sum(CUETN.values()))).replace("%NQ_GEN%",str(NQ_GEN)), extra='''<script src="assets/js/quiz.js"></script>
 <script>(function(){var p=new URLSearchParams(location.search),pick=document.getElementById('exam-pick'),setup=document.getElementById('setup');
 function gen(){pick.classList.add('hidden');setup.classList.remove('hidden');}
 document.getElementById('pick-general').onclick=gen;
@@ -331,22 +351,22 @@ page("varc.html","VARC: Reading Strategy & Rules",f"""
 {fs_section(FORMULAS['varc'], 'var(--varc)', heading='VARC rules sheet', unit='rules and checks', prose=True)}
 """, desc="CAT VARC reading strategy, rules sheet for RC, para-jumbles, para-summary and odd-sentence-out, with original practice questions.")
 
-page("cat-practice.html","CAT Practice: Sectionals & Topic Practice","""
-<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="cat.html">CAT</a> / Practice</div>
-<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">CAT practice</h1></div></div>
+def practice_page(fn, exam, label, home, track, sect_note, secs, title, desc):
+    radios = "\n".join(f'   <label><input type="radio" name="csec" value="{k}"{" checked" if i == 0 else ""}><span><b>{name}</b><small data-csec-count="{k}"></small></span></label>' for i, (k, name) in enumerate(secs))
+    page(fn, title, f"""
+<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="{home}">{label}</a> / Practice</div>
+<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">{label} practice</h1></div></div>
 <section style="padding-top:12px"><div class="container">
  <div id="c-setup" class="card quiz-setup">
-  <p class="muted" style="margin:0 0 .8em;font-size:.9rem"><b>Track:</b> CAT · <a href="practice.html">Change track</a></p>
+  <p class="muted" style="margin:0 0 .8em;font-size:.9rem"><b>Track:</b> {track} · <a href="practice.html">Change track</a></p>
   <h3>1. Choose a mode</h3>
   <div class="sec-pick two">
-   <label><input type="radio" name="cmode" value="sectional" checked><span><b>⏱ Sectional</b><small>40 min · CAT marking · results at the end</small></span></label>
+   <label><input type="radio" name="cmode" value="sectional" checked><span><b>⏱ Sectional</b><small>{sect_note}</small></span></label>
    <label><input type="radio" name="cmode" value="practice"><span><b>🧠 Practice</b><small>No countdown · solution after each answer</small></span></label>
   </div>
   <h3 style="margin-top:18px">2. Choose a section</h3>
   <div class="sec-pick three">
-   <label><input type="radio" name="csec" value="varc" checked><span><b>📖 VARC</b><small data-csec-count="varc"></small></span></label>
-   <label><input type="radio" name="csec" value="dilr"><span><b>📊 DILR</b><small data-csec-count="dilr"></small></span></label>
-   <label><input type="radio" name="csec" value="qa"><span><b>➗ QA</b><small data-csec-count="qa"></small></span></label>
+{radios}
   </div>
   <div id="c-topic-wrap" class="form hidden" style="margin-top:18px;max-width:460px"><label>3. Topic<select id="c-topic"></select></label></div>
   <p class="muted" id="c-info" style="margin:16px 0 0;font-size:.92rem"></p>
@@ -380,11 +400,76 @@ page("cat-practice.html","CAT Practice: Sectionals & Topic Practice","""
  <div id="c-results" class="hidden">
   <div class="card" id="c-res-head"></div>
   <div class="card" id="c-topics" style="margin-top:16px"></div>
-  <div style="text-align:center;margin:18px 0"><button id="c-retry" class="btn">Take another section</button> <a class="btn btn-ghost" href="cat.html">CAT track</a></div>
+  <div style="text-align:center;margin:18px 0"><button id="c-retry" class="btn">Take another section</button> <a class="btn btn-ghost" href="{home}">{label} track</a></div>
   <h2>Review &amp; solutions</h2><div id="c-review"></div>
  </div>
 </div></section>
-""", desc="CAT-style 40-minute sectionals for VARC, DILR and QA with TITA questions and CAT marking, plus topic practice with instant solutions.", extra='<script src="assets/js/cat.js"></script>')
+""", desc=desc, extra=f'<script>window.EXAM="{exam}";</script><script src="assets/js/exam.js"></script>')
+
+practice_page("cat-practice.html", "cat", "CAT", "cat.html", "CAT", "40 min · CAT marking · results at the end",
+    [("varc", "📖 VARC"), ("dilr", "📊 DILR"), ("qa", "➗ QA")], "CAT Practice: Sectionals & Topic Practice",
+    "CAT-style 40-minute sectionals for VARC, DILR and QA with TITA questions and CAT marking, plus topic practice with instant solutions.")
+
+# ---------- CUET (UG) TRACK ----------
+from urllib.parse import quote as _q
+OFFICIAL_IB = "https://cuet.nta.nic.in/information-bulletin/"
+OFFICIAL_SYL = "https://cuet.nta.nic.in/cuetug-2026-syllabus/"
+def cuet_cards(sec):
+    qq = UQ[sec]; out = ""
+    for part in dict.fromkeys(q["part"] for q in qq):
+        pq = [q for q in qq if q["part"] == part]; tops = list(dict.fromkeys(q["topic"] for q in pq))
+        cards = ""
+        for tp in tops:
+            tq = [q for q in pq if q["topic"] == tp]; sh = sum(1 for q in tq if q.get("source") == "general")
+            diffs = " · ".join(f"{d} {n}" for d in ("Easy", "Medium", "Hard") if (n := sum(1 for q in tq if q["difficulty"] == d)))
+            cards += (f"<a class='topic' href='cuet-practice.html?mode=practice&amp;section={sec}&amp;topic={_q(tp)}' data-cuet-topic=\"{_hh.escape(sec + '|' + part + '|' + tp)}\">"
+                      f"<h4>{_hh.escape(tp)} <span class='badge' data-topic-count>{len(tq)} Qs</span></h4><p>{diffs}" + (f" · {sh} shared with Bank/SSC" if sh else "") + "</p><span class='exam-tag tag-cuet'>CUET</span></a>")
+        out += f"<h3 class='cat-sub'>{_hh.escape(part)} <span class='muted' style='text-transform:none;letter-spacing:0'>· <span data-cuet-part=\"{_hh.escape(sec + '|' + part)}\">{len(pq)}</span> Qs</span></h3><div class='topic-list'>{cards}</div>"
+    return out
+gat_parts = {p: sum(1 for q in UQ["gat"] if q["part"] == p) for p in dict.fromkeys(q["part"] for q in UQ["gat"])}
+csec = ""
+for sec, ic, col, blurb in [
+    ("gat", "🧠", "var(--cuet)", "Quantitative reasoning, logical &amp; analytical reasoning, general mental ability and static GK (science, environment, polity, geography, history)."),
+    ("english", "📖", "var(--varc)", "Three short passages (factual, narrative, literary) plus synonyms and antonyms, correct-word, error spotting, rearranging parts and matching."),
+    ("maths", "➗", "var(--quant)", "Section A (common) and Section B1 (Mathematics): matrices, determinants, calculus, differential equations, vectors, 3D, LPP and probability.")]:
+    n = CUETN[sec]; T = min(50, n) * 72
+    csec += f"""<div class="card sec-card" style="--c:{col}"><div class="icon">{ic}</div><h3>{UB['sections'][sec]['name']}</h3>
+<p class="muted" style="flex:1"><b data-stat="cuet-{sec}">{n}</b> questions. {blurb}<br><small>Sectional: {min(50, n)} questions in {T // 60}:{T % 60:02d}{'' if n >= 50 else ' (same pace as the real paper: 72 s per question)'}.</small></p>
+<div class="cta-row" style="margin:0"><a class="btn btn-sm" href="cuet-practice.html?mode=sectional&amp;section={sec}">Sectional →</a><a class="btn btn-sm btn-ghost" href="cuet-practice.html?mode=practice&amp;section={sec}">Practise</a></div></div>"""
+page("cuet.html", "CUET (UG) Track: General Aptitude Test, English & Maths", f"""
+<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / CUET (UG)</div>
+<h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CUET (UG) track <span class="exam-tag tag-cuet" style="vertical-align:middle">CUET</span></h1>
+<p class="muted" style="max-width:740px">Practice for the Common University Entrance Test (UG), run by the National Testing Agency (NTA) for admission to central and other participating universities. We cover three of its papers: the <b>General Aptitude Test</b>, <b>English</b> and <b>Mathematics</b>. All questions were written by us for practice; none are taken from NTA papers. <span data-stat="cuet-shared">{NQ_CUET_SHARED}</span> General Aptitude questions are shared with our Bank / SSC track and are marked as such.</p>
+<div class="cta-row"><a class="btn" href="cuet-practice.html">Start a CUET sectional →</a><a class="btn btn-ghost" href="#pattern">Exam pattern</a></div></div></div>
+<section style="padding-top:20px"><div class="container"><div class="grid g3">{csec}</div></div></section>
+<section id="pattern" class="alt"><div class="container"><h2>CUET (UG) exam pattern</h2>
+<p class="muted" style="margin-top:-.4em">As given in NTA's CUET (UG) 2026 Information Bulletin, the latest cycle (exam held in May–June 2026). Always check <a href="https://cuet.nta.nic.in/" rel="noopener" target="_blank">cuet.nta.nic.in</a> for the current year.</p>
+<div class="grid g2">
+ <div class="card"><div class="table-wrap"><table class="data"><tr><th style="text-align:left">Item</th><th style="text-align:left">CUET (UG) 2026</th></tr>
+  <tr><td style="text-align:left">Subjects offered</td><td style="text-align:left">37: 13 languages, 23 domain subjects, 1 General Aptitude Test</td></tr>
+  <tr><td style="text-align:left">Choice</td><td style="text-align:left">Up to 5 subjects, including languages and the General Aptitude Test</td></tr>
+  <tr><td style="text-align:left">Questions per paper</td><td style="text-align:left">50 MCQs, all compulsory</td></tr>
+  <tr><td style="text-align:left">Time per paper</td><td style="text-align:left">60 minutes (PwBD candidates get 20 minutes extra per hour)</td></tr>
+  <tr><td style="text-align:left">Marking</td><td style="text-align:left">+5 correct, −1 wrong, 0 unanswered</td></tr>
+  <tr><td style="text-align:left">Mode</td><td style="text-align:left">Computer-based test (CBT), in 13 languages</td></tr></table></div>
+  <p class="muted" style="font-size:.85rem;margin:.6em 0 0">Sources: <a href="{OFFICIAL_IB}" rel="noopener" target="_blank">NTA Information Bulletin</a> and <a href="{OFFICIAL_SYL}" rel="noopener" target="_blank">CUET (UG) 2026 syllabus</a>.</p></div>
+ <div class="card"><h3>What each paper covers (official syllabus)</h3><ul class="clean">
+  <li><b>General Aptitude Test (501):</b> general knowledge, current affairs, general mental ability, numerical ability, quantitative reasoning (simple arithmetic, algebra, geometry, mensuration, statistics), logical and analytical reasoning, and general science and environment literacy.</li>
+  <li><b>English (101):</b> reading comprehension with factual, narrative and literary passages of up to 300 words, plus verbal ability: rearranging parts, matching, choosing the correct word, synonyms and antonyms.</li>
+  <li><b>Mathematics / Applied Mathematics (319):</b> Section A (common to both), then Section B1 (Mathematics) or B2 (Applied Mathematics). Coaching sites commonly describe this as 15 questions from A plus 35 from B1 or B2. NTA's bulletin itself says only that each paper has 50 compulsory questions.</li></ul>
+  <div class="notice" style="margin-top:12px">We do not include current affairs, because such questions go out of date quickly. Our GK questions are static facts that we checked against official or standard references. For current affairs, follow a reliable news source.</div></div>
+</div></div></section>
+<section><div class="container"><h2>CUET topics</h2><p class="muted" style="margin-top:-.4em">Tap a topic to practise it with instant solutions.</p>
+<h2 style="font-size:1.25rem;margin-top:1.2em">General Aptitude Test</h2>{cuet_cards('gat')}
+<h2 style="font-size:1.25rem;margin-top:1.6em">English</h2>{cuet_cards('english')}
+<h2 style="font-size:1.25rem;margin-top:1.6em">Mathematics</h2>{cuet_cards('maths')}
+<div class="notice" style="margin-top:22px">Still to come: Section B2 (Applied Mathematics) questions, other languages and domain subjects, and full-length 50-question English and Maths papers (our bank is smaller than 50 for these, so their sectionals are shorter but keep the real pace of 72 seconds per question).</div>
+</div></section>
+""", desc="CUET (UG) practice: General Aptitude Test, English and Mathematics with CUET marking (+5/−1), timed sectionals and topic practice. Original questions with worked solutions.")
+
+practice_page("cuet-practice.html", "cuet", "CUET", "cuet.html", "CUET (UG)", "Real pace · +5 / −1 marking · results at the end",
+    [("gat", "🧠 General Aptitude"), ("english", "📖 English"), ("maths", "➗ Maths")], "CUET (UG) Practice: Sectionals & Topic Practice",
+    "CUET (UG) sectionals for the General Aptitude Test, English and Mathematics with +5/−1 marking, plus topic practice with instant solutions.")
 
 # ---------- PLACEHOLDERS ----------
 page("mock-tests.html","Mock Tests","""

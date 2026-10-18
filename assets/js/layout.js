@@ -12,11 +12,11 @@
     <text x="20" y="25.6" text-anchor="middle" font-size="16.5" font-weight="800" fill="#fff" font-family="Inter,system-ui,sans-serif">e</text></svg>`; };
   const nav = [
     ["index.html", "Home"], ["quant.html", "Quant"], ["reasoning.html", "Reasoning"],
-    ["dilr.html", "DILR"], ["cat.html", "CAT"], ["varc.html", "VARC"],
+    ["dilr.html", "DILR"], ["cat.html", "CAT"], ["cuet.html", "CUET"], ["varc.html", "VARC"],
     ["practice.html", "Practice"], ["contact.html", "Contact"]
   ];
   const here = location.pathname.split("/").pop() || "index.html";
-  const alias = { "cat-practice.html": "cat.html" };
+  const alias = { "cat-practice.html": "cat.html", "cuet-practice.html": "cuet.html" };
   const active = alias[here] || here;
   const links = nav.map(([h, t]) => `<a href="${h}" class="${h === active ? "active" : ""}">${t}</a>`).join("");
   const header = document.getElementById("site-header");
@@ -31,8 +31,8 @@
     <div class="container footer-grid">
       <div><a href="index.html" class="logo">${logo()}<span data-brand></span></a>
         <p class="muted">Free Quant, Reasoning, DILR and VARC practice for CAT, Bank, SSC and campus placements.</p></div>
-      <div><h4>Learn</h4><a href="quant.html">Quantitative Aptitude</a><a href="reasoning.html">Logical Reasoning</a><a href="dilr.html">DILR</a><a href="cat.html">CAT track</a><a href="varc.html">VARC</a></div>
-      <div><h4>Practice</h4><a href="cat-practice.html">CAT sectionals</a><a href="practice.html?exam=general">Bank / SSC quizzes</a><a href="practice.html?section=mixed">Mixed practice</a></div>
+      <div><h4>Learn</h4><a href="quant.html">Quantitative Aptitude</a><a href="reasoning.html">Logical Reasoning</a><a href="dilr.html">DILR</a><a href="cat.html">CAT track</a><a href="cuet.html">CUET (UG) track</a><a href="varc.html">VARC</a></div>
+      <div><h4>Practice</h4><a href="cat-practice.html">CAT sectionals</a><a href="cuet-practice.html">CUET sectionals</a><a href="practice.html?exam=general">Bank / SSC quizzes</a><a href="practice.html?section=mixed">Mixed practice</a></div>
       <div><h4>Contact</h4><a href="contact.html">Contact us</a><a href="signup.html">Sign up</a></div>
     </div>
     <div class="container copyright">© ${S.YEAR} <span data-brand></span>. All rights reserved.</div>`;

@@ -1,8 +1,21 @@
-// edumaths360 CAT engine: sectional tests (40 min, CAT marking) and untimed topic practice.
+// edumaths360 exam engine (CAT and CUET UG): timed sectional tests with exam marking, and untimed topic practice.
+// The page sets window.EXAM ("cat" | "cuet") before loading this file; default is "cat".
 (function () {
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
-  const L = "ABCD", SECTION_TIME = 40 * 60;
-  const TARGET = { varc: 24, dilr: 22, qa: 22 };
+  const L = "ABCD";
+  const EXAMS = {
+    cat: { label: "CAT", json: "data/cat.json", secs: ["varc", "dilr", "qa"], marks: { mcq: [3, -1], tita: [3, 0] },
+           target: { varc: 24, dilr: 22, qa: 22 }, time: () => 40 * 60 },
+    // CUET (UG) 2026: 50 compulsory MCQs in 60 minutes per paper, +5 / −1 (NTA Information Bulletin). When the bank holds
+    // fewer than 50 questions for a paper we keep the official pace of 72 seconds per question.
+    cuet: { label: "CUET", json: "data/cuet.json", secs: ["gat", "english", "maths"], marks: { mcq: [5, -1] },
+            target: { gat: 50, english: 50, maths: 50 }, time: n => Math.min(50, n) * 72,
+            gatMix: { "Quantitative Reasoning": 15, "Logical & Analytical Reasoning": 15, "General Mental Ability": 10, "General Knowledge": 10 } }
+  };
+  const EX = EXAMS[window.EXAM] || EXAMS.cat, TARGET = EX.target;
+  const mk = q => EX.marks[q.type] || EX.marks.mcq, sgn = v => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v);
+  const marksTxt = q => `${sgn(mk(q)[0])} / ${mk(q)[1] ? sgn(mk(q)[1]) : "0"}`;
+  let sectionTime = 0;
   let bank, mode, sec, qs = [], cur = 0, resp = [], marked = [], visited = [], tspent = [], checked = [], timeLeft = 0, timerId = null, shownAt = 0, elapsed = 0;
 
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
@@ -16,6 +29,7 @@
   }
   function pickSectional(s) {
     const all = bank.sections[s].questions, tgt = TARGET[s];
+    if (window.EXAM === "cuet") return pickCUET(s, all, tgt);
     if (s === "qa") {
       const t = shuffle(all.filter(q => q.type === "tita")).slice(0, 7), m = shuffle(all.filter(q => q.type === "mcq")).slice(0, tgt - 7);
       return shuffle([...t, ...m]);
@@ -41,10 +55,26 @@
     gs.forEach((g, i) => { if (mask & (1 << i)) out.push(...g); });
     return out;
   }
+  // fill `quota` questions from `list`, taking whole sets (shuffled) and topping up with single questions
+  function fill(list, quota) {
+    const gs = shuffle(groups(list)), out = [];
+    for (const g of gs) if (out.length + g.length <= quota) out.push(...g);
+    return out;
+  }
+  function pickCUET(s, all, tgt) {
+    if (s === "gat") { // our mix across the four areas (NTA does not publish a fixed split), kept in area order
+      const out = []; Object.entries(EX.gatMix).forEach(([p, n]) => out.push(...fill(all.filter(q => q.part === p), n)));
+      return out;
+    }
+    const parts = [...new Set(all.map(q => q.part))], out = [];   // English: RC then verbal ability; Maths: Section A then B1
+    parts.forEach(p => out.push(...fill(all.filter(q => q.part === p), tgt - out.length)));
+    return out;
+  }
   function pickPractice(s, topic) {
-    const all = bank.sections[s].questions.filter(q => !topic || q.topic === topic);
+    const all = bank.sections[s].questions.filter(q => !topic || (topic.startsWith("p:") ? q.part === topic.slice(2) : q.topic === topic));
     return groups(all).flat();
   }
+  const topicLabel = v => v.startsWith("p:") ? "All " + v.slice(2) : v;
 
   // ---------- setup ----------
   function topicsFor(s) { const c = {}; bank.sections[s].questions.forEach(q => c[q.topic] = (c[q.topic] || 0) + 1); return c; }
@@ -52,15 +82,25 @@
     mode = val("cmode"); sec = val("csec");
     $("#c-topic-wrap").classList.toggle("hidden", mode !== "practice");
     const tc = topicsFor(sec), sel = $("#c-topic"), keep = sel.dataset.want || sel.value; sel.dataset.want = "";
-    sel.innerHTML = `<option value="">All ${sec.toUpperCase()} topics (${bank.sections[sec].questions.length})</option>` + Object.entries(tc).map(([t, n]) => `<option value="${esc(t)}">${esc(t)} (${n})</option>`).join("");
-    if (keep && tc[keep]) sel.value = keep;
-    const n = mode === "sectional" ? (sec === "qa" ? TARGET.qa : null) : pickPractice(sec, sel.value).length;
-    $("#c-info").innerHTML = mode === "sectional"
-      ? `<b>Sectional:</b> about ${TARGET[sec]} questions · 40-minute timer · +3 for correct, −1 for a wrong MCQ, 0 for a wrong TITA. Submits automatically when time runs out.`
-      : `<b>Practice:</b> ${n} question${n === 1 ? "" : "s"} · no countdown · the solution appears right after you check each answer.`;
+    const qq = bank.sections[sec].questions, parts = [...new Set(qq.map(q => q.part).filter(Boolean))];
+    const opt = (v, label, n) => `<option value="${esc(v)}">${esc(label)} (${n})</option>`;
+    sel.innerHTML = `<option value="">All ${esc(bank.sections[sec].name)} topics (${qq.length})</option>` + (parts.length > 1
+      ? parts.map(p => { const pq = qq.filter(q => q.part === p), pt = {}; pq.forEach(q => pt[q.topic] = (pt[q.topic] || 0) + 1);
+          return `<optgroup label="${esc(p)}">${opt("p:" + p, "All " + p, pq.length)}${Object.entries(pt).map(([t, n]) => opt(t, t, n)).join("")}</optgroup>`; }).join("")
+      : Object.entries(tc).map(([t, n]) => opt(t, t, n)).join(""));
+    if (keep && (tc[keep] || [...sel.options].some(o => o.value === keep))) sel.value = keep;
+    let info;
+    if (mode === "practice") { const n = pickPractice(sec, sel.value).length; info = `<b>Practice:</b> ${n} question${n === 1 ? "" : "s"} · no countdown · the solution appears right after you check each answer.`; }
+    else if (window.EXAM === "cuet") {
+      const n = Math.min(TARGET[sec], qq.length), T = EX.time(n);
+      info = `<b>Sectional:</b> ${n} questions · ${fmt(T)} timer · +5 for a correct answer, −1 for a wrong one, 0 if unanswered. ` +
+        (n >= 50 ? "Same size and time as the real paper (50 questions, 60 minutes)." : `The real paper has 50 questions in 60 minutes; our bank has ${qq.length} for this subject, so the timer keeps the same pace (72 s per question).`) +
+        (sec === "gat" ? " Mix: 15 quantitative, 15 logical &amp; analytical, 10 mental ability, 10 GK (our choice; NTA does not publish a fixed split)." : "") + " Submits automatically when time runs out.";
+    } else info = `<b>Sectional:</b> about ${TARGET[sec]} questions · 40-minute timer · +3 for correct, −1 for a wrong MCQ, 0 for a wrong TITA. Submits automatically when time runs out.`;
+    $("#c-info").innerHTML = info;
   }
   function counts() {
-    ["varc", "dilr", "qa"].forEach(s => { const el = $(`[data-csec-count="${s}"]`); if (el) el.textContent = bank.sections[s].questions.length + " Qs"; });
+    EX.secs.forEach(s => { const el = $(`[data-csec-count="${s}"]`); if (el) el.textContent = bank.sections[s].questions.length + " Qs"; });
   }
 
   // ---------- run ----------
@@ -79,9 +119,9 @@
       return { ...q, options: idx.map(i => q.options[i]), answer: idx.indexOf(q.answer), solution };
     });
     const n = qs.length; resp = Array(n).fill(null); marked = Array(n).fill(false); visited = Array(n).fill(false); tspent = Array(n).fill(0); checked = Array(n).fill(false);
-    cur = 0; elapsed = 0; timeLeft = SECTION_TIME;
+    sectionTime = EX.time(qs.length); cur = 0; elapsed = 0; timeLeft = sectionTime;
     $("#c-setup").classList.add("hidden"); $("#c-results").classList.add("hidden"); $("#c-quiz").classList.remove("hidden");
-    $("#c-title").textContent = `CAT ${bank.sections[sec].name} · ${mode === "sectional" ? "Sectional" : "Practice" + ($("#c-topic").value ? " · " + $("#c-topic").value : "")}`;
+    $("#c-title").textContent = `${EX.label} ${bank.sections[sec].name} · ${mode === "sectional" ? "Sectional" : "Practice" + ($("#c-topic").value ? " · " + topicLabel($("#c-topic").value) : "")}`;
     $("#c-submit").textContent = mode === "sectional" ? "Submit section" : "Finish practice";
     $("#c-mark").classList.toggle("hidden", mode !== "sectional");
     $("#c-check").classList.toggle("hidden", mode !== "practice");
@@ -121,7 +161,7 @@
     $("#c-qtype").textContent = q.type === "mcq" ? "MCQ" : "TITA";
     $("#c-qtype").className = "qtype " + q.type;
     $("#c-qmeta").textContent = `${q.topic} · ${q.difficulty}`;
-    $("#c-marks").textContent = q.type === "mcq" ? "+3 / −1" : "+3 / 0";
+    $("#c-marks").textContent = marksTxt(q);
     $("#c-qtext").innerHTML = q.question;
     const done = mode === "practice" && checked[cur];
     if (q.type === "mcq") {
@@ -141,7 +181,7 @@
         else if (k === "−") set_(inp.value.startsWith("-") ? inp.value.slice(1) : "-" + inp.value); else set_(inp.value + k);
       });
     }
-    $("#c-feedback").innerHTML = done ? `<div class="fb ${isCorrect(q, resp[cur]) ? "ok" : "bad"}">${!answered(cur) ? "⏭ Skipped." : isCorrect(q, resp[cur]) ? "✅ Correct! +3" : "❌ Not quite." + (q.type === "mcq" ? " −1 in a real test." : " (No negative mark for TITA.)")} Correct answer: <b>${esc(showAns(q))}</b></div><div class="sol"><b>Solution:</b> ${q.solution}</div>` : "";
+    $("#c-feedback").innerHTML = done ? `<div class="fb ${isCorrect(q, resp[cur]) ? "ok" : "bad"}">${!answered(cur) ? "⏭ Skipped." : isCorrect(q, resp[cur]) ? `✅ Correct! ${sgn(mk(q)[0])}` : "❌ Not quite." + (mk(q)[1] ? ` ${sgn(mk(q)[1])} in a real test.` : " (No negative mark for TITA.)")} Correct answer: <b>${q.type === "mcq" ? showAns(q) : esc(showAns(q))}</b></div><div class="sol"><b>Solution:</b> ${q.solution}</div>` : "";
     $("#c-check").disabled = done; $("#c-check").textContent = done ? "Checked" : (answered(cur) ? "Check answer" : "Show solution");
     $("#c-prev").disabled = cur === 0;
     $("#c-next").textContent = cur === qs.length - 1 ? (mode === "sectional" ? "Save" : "Next") : "Save & Next →";
@@ -164,32 +204,34 @@
     leave(); clearInterval(timerId);
     const rows = qs.map((q, i) => ({ q, i, att: answered(i), ok: isCorrect(q, resp[i]), t: tspent[i] }));
     const att = rows.filter(r => r.att), ok = att.filter(r => r.ok), wrong = att.filter(r => !r.ok);
-    const score = ok.length * 3 - wrong.filter(r => r.q.type === "mcq").length;
+    const score = ok.reduce((a, r) => a + mk(r.q)[0], 0) + wrong.reduce((a, r) => a + mk(r.q)[1], 0);
+    const lost = -wrong.reduce((a, r) => a + mk(r.q)[1], 0), maxScore = qs.reduce((a, q) => a + mk(q)[0], 0);
     const acc = att.length ? Math.round(ok.length / att.length * 100) : 0;
-    const used = mode === "sectional" ? SECTION_TIME - Math.max(timeLeft, 0) : elapsed;
+    const used = mode === "sectional" ? sectionTime - Math.max(timeLeft, 0) : elapsed;
     const tSum = rows.reduce((a, r) => a + r.t, 0);
-    const topics = {}; rows.forEach(r => { const t = topics[r.q.topic] = topics[r.q.topic] || { n: 0, att: 0, ok: 0, time: 0 }; t.n++; t.time += r.t; if (r.att) t.att++; if (r.ok) t.ok++; });
+    const topics = {}; rows.forEach(r => { const t = topics[r.q.topic] = topics[r.q.topic] || { n: 0, att: 0, ok: 0, time: 0, part: r.q.part || "" }; t.n++; t.time += r.t; if (r.att) t.att++; if (r.ok) t.ok++; });
     const label = t => !t.att ? `<span class="tag-na">Not attempted</span>` : (t.ok / t.att >= 0.7 ? `<span class="tag-strong">Strong</span>` : t.ok / t.att < 0.5 ? `<span class="tag-weak">Weak</span>` : `<span class="tag-mid">Average</span>`);
     $("#c-quiz").classList.add("hidden"); $("#c-results").classList.remove("hidden");
     $("#c-res-head").innerHTML = `<h2>${auto ? "Time's up! " : ""}${esc($("#c-title").textContent)}: results</h2>
       <div class="kpis">
-        <div class="kpi main"><b>${score}</b><span>Score (out of ${qs.length * 3})</span></div>
+        <div class="kpi main"><b>${score}</b><span>Score (out of ${maxScore})</span></div>
         <div class="kpi"><b>${att.length}/${qs.length}</b><span>Attempted</span></div>
         <div class="kpi"><b>${ok.length} ✅ · ${wrong.length} ❌</b><span>Correct · wrong</span></div>
         <div class="kpi"><b>${acc}%</b><span>Accuracy (of attempts)</span></div>
-        <div class="kpi"><b>${fmt(used)}</b><span>Time used${mode === "sectional" ? " of 40:00" : ""}</span></div>
+        <div class="kpi"><b>${fmt(used)}</b><span>Time used${mode === "sectional" ? " of " + fmt(sectionTime) : ""}</span></div>
         <div class="kpi"><b>${Math.round(tSum / qs.length)} s</b><span>Avg time per question</span></div>
       </div>
-      <p class="muted" style="font-size:.88rem;margin:.6em 0 0">Marking: +3 correct, −1 wrong MCQ, 0 wrong TITA, 0 unanswered.${wrong.filter(r => r.q.type === "mcq").length ? ` You lost ${wrong.filter(r => r.q.type === "mcq").length} mark(s) to negative marking.` : ""}</p>`;
-    const tr = Object.entries(topics).sort((a, b) => (b[1].att ? b[1].ok / b[1].att : -1) - (a[1].att ? a[1].ok / a[1].att : -1));
-    $("#c-topics").innerHTML = `<h3>Topic-wise breakdown</h3><div class="table-wrap"><table class="data topic-table"><tr><th style="text-align:left">Topic</th><th>Qs</th><th>Attempted</th><th>Correct</th><th>Accuracy</th><th>Avg time</th><th>Verdict</th></tr>` +
-      tr.map(([t, v]) => `<tr><td style="text-align:left">${esc(t)}</td><td>${v.n}</td><td>${v.att}</td><td>${v.ok}</td><td>${v.att ? Math.round(v.ok / v.att * 100) + "%" : "–"}</td><td>${Math.round(v.time / v.n)} s</td><td>${label(v)}</td></tr>`).join("") + `</table></div>
+      <p class="muted" style="font-size:.88rem;margin:.6em 0 0">Marking: ${window.EXAM === "cuet" ? "+5 correct, −1 wrong, 0 unanswered (CUET UG)" : "+3 correct, −1 wrong MCQ, 0 wrong TITA, 0 unanswered"}.${lost ? ` You lost ${lost} mark(s) to negative marking.` : ""}</p>`;
+    const showPart = new Set(rows.map(r => r.q.part).filter(Boolean)).size > 1;
+    const tr = Object.entries(topics).sort((a, b) => (showPart ? a[1].part.localeCompare(b[1].part) : 0) || (b[1].att ? b[1].ok / b[1].att : -1) - (a[1].att ? a[1].ok / a[1].att : -1));
+    $("#c-topics").innerHTML = `<h3>Topic-wise breakdown</h3><div class="table-wrap"><table class="data topic-table"><tr>${showPart ? '<th style="text-align:left">Part</th>' : ""}<th style="text-align:left">Topic</th><th>Qs</th><th>Attempted</th><th>Correct</th><th>Accuracy</th><th>Avg time</th><th>Verdict</th></tr>` +
+      tr.map(([t, v]) => `<tr>${showPart ? `<td style="text-align:left" class="muted">${esc(v.part)}</td>` : ""}<td style="text-align:left">${esc(t)}</td><td>${v.n}</td><td>${v.att}</td><td>${v.ok}</td><td>${v.att ? Math.round(v.ok / v.att * 100) + "%" : "–"}</td><td>${Math.round(v.time / v.n)} s</td><td>${label(v)}</td></tr>`).join("") + `</table></div>
       <p class="muted" style="font-size:.85rem">Strong = 70%+ accuracy on attempts · Weak = below 50% · based on this session only.</p>`;
     let last = null;
     $("#c-review").innerHTML = rows.map(({ q, i, att: a, ok: o, t }) => {
       let pane = ""; if (q.set && q.set !== last) { const s = bank.sets[q.set]; pane = `<details class="rv-pane"><summary>Show ${s.kind === "passage" ? "passage" : "data set"}: ${esc(s.title)}</summary><div class="q-data">${s.html}</div></details>`; } last = q.set || null;
       const yours = !a ? "Not answered" : q.type === "mcq" ? `${L[resp[i]]}. ${q.options[resp[i]]}` : esc(resp[i]);
-      return `${pane}<div class="card review-item"><div class="muted" style="font-size:.85rem">Q${i + 1} · ${q.type.toUpperCase()} · ${esc(q.topic)} · ${q.difficulty} · ⏱ ${Math.round(t)} s · ${!a ? "⏭ Skipped (0)" : o ? "✅ Correct (+3)" : q.type === "mcq" ? "❌ Wrong (−1)" : "❌ Wrong (0)"}</div>
+      return `${pane}<div class="card review-item"><div class="muted" style="font-size:.85rem">Q${i + 1} · ${q.type.toUpperCase()} · ${esc(q.topic)} · ${q.difficulty} · ⏱ ${Math.round(t)} s · ${!a ? "⏭ Skipped (0)" : o ? `✅ Correct (${sgn(mk(q)[0])})` : `❌ Wrong (${mk(q)[1] ? sgn(mk(q)[1]) : "0"})`}</div>
         <div class="q-text">${q.question}</div>
         ${q.type === "mcq" ? q.options.map((op, j) => `<div class="opt ${j === q.answer ? "correct" : ""} ${resp[i] === j && j !== q.answer ? "wrong" : ""}"><b>${L[j]}</b><span>${op}</span></div>`).join("") : `<p>Your answer: <b>${yours}</b> · Correct answer: <b>${esc(q.answer)}</b></p>`}
         <div class="sol"><b>Solution:</b> ${q.solution}</div></div>`;
@@ -198,8 +240,8 @@
   }
 
   async function init() {
-    try { bank = await (await fetch("data/cat.json")).json(); }
-    catch (e) { $("#c-setup").innerHTML = "<div class='notice'>Could not load CAT questions. Please open the site through a web server.</div>"; return; }
+    try { bank = await (await fetch(EX.json)).json(); }
+    catch (e) { $("#c-setup").innerHTML = "<div class='notice'>Could not load " + EX.label + " questions. Please open the site through a web server.</div>"; return; }
     const p = new URLSearchParams(location.search);
     if (p.get("mode")) { const r = $(`input[name=cmode][value=${p.get("mode")}]`); if (r) r.checked = true; }
     if (p.get("section")) { const r = $(`input[name=csec][value=${p.get("section")}]`); if (r) r.checked = true; }

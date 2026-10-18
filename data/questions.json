@@ -16,7 +16,8 @@
     ],
     "answer": 1,
     "solution": "Net change = a + b + ab/100 = 20 − 20 − (20×20)/100 = −4%, i.e. a 4% decrease.",
-    "fixed": true
+    "fixed": true,
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q2",
@@ -31,7 +32,8 @@
      "22.5%"
     ],
     "answer": 1,
-    "solution": "Let B = 100, so A = 125. B is less than A by 25/125 × 100 = 20%."
+    "solution": "Let B = 100, so A = 125. B is less than A by 25/125 × 100 = 20%.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q3",
@@ -46,7 +48,8 @@
      "152"
     ],
     "answer": 1,
-    "solution": "Number = 96/0.40 = 240. 65% of 240 = 156."
+    "solution": "Number = 96/0.40 = 240. 65% of 240 = 156.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q4",
@@ -61,7 +64,8 @@
      "67,200"
     ],
     "answer": 1,
-    "solution": "50,000 × 1.10 × 1.20 = 66,000."
+    "solution": "50,000 × 1.10 × 1.20 = 66,000.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q5",
@@ -76,7 +80,8 @@
      "400"
     ],
     "answer": 1,
-    "solution": "0.30M + 30 = 0.45M − 15 ⇒ 0.15M = 45 ⇒ M = 300."
+    "solution": "0.30M + 30 = 0.45M − 15 ⇒ 0.15M = 45 ⇒ M = 300.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q6",
@@ -106,7 +111,8 @@
      "18%"
     ],
     "answer": 1,
-    "solution": "Profit = ₹200. Profit % = 200/800 × 100 = 25%."
+    "solution": "Profit = ₹200. Profit % = 200/800 × 100 = 25%.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q8",
@@ -121,7 +127,8 @@
      "₹1,080"
     ],
     "answer": 0,
-    "solution": "SP = 1200 × (1 − 0.15) = ₹1,020."
+    "solution": "SP = 1200 × (1 − 0.15) = ₹1,020.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q9",
@@ -136,7 +143,8 @@
      "24%"
     ],
     "answer": 1,
-    "solution": "SP = CP × 1.40 × 0.90 = 1.26 × CP, so profit = 26%."
+    "solution": "SP = CP × 1.40 × 0.90 = 1.26 × CP, so profit = 26%.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q10",
@@ -151,7 +159,8 @@
      "₹1,197"
     ],
     "answer": 1,
-    "solution": "CP = 1140/0.95 = ₹1,200. For 5% profit, SP = 1200 × 1.05 = ₹1,260."
+    "solution": "CP = 1140/0.95 = ₹1,200. For 5% profit, SP = 1200 × 1.05 = ₹1,260.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q11",
@@ -197,7 +206,8 @@
      "₹1,500"
     ],
     "answer": 1,
-    "solution": "SI = P × R × T/100 = 5000 × 8 × 3/100 = ₹1,200."
+    "solution": "SI = P × R × T/100 = 5000 × 8 × 3/100 = ₹1,200.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q14",
@@ -212,7 +222,8 @@
      "₹2,110"
     ],
     "answer": 1,
-    "solution": "A = 10000 × 1.1² = ₹12,100. CI = 12,100 − 10,000 = ₹2,100."
+    "solution": "A = 10000 × 1.1² = ₹12,100. CI = 12,100 − 10,000 = ₹2,100.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q15",
@@ -227,7 +238,8 @@
      "₹25"
     ],
     "answer": 1,
-    "solution": "For 2 years, CI − SI = P(R/100)² = 8000 × 0.05² = ₹20."
+    "solution": "For 2 years, CI − SI = P(R/100)² = 8000 × 0.05² = ₹20.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q16",
@@ -242,7 +254,8 @@
      "15%"
     ],
     "answer": 2,
-    "solution": "Interest = P in 8 years, so R = 100/8 = 12.5%."
+    "solution": "Interest = P in 8 years, so R = 100/8 = 12.5%.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q17",
@@ -272,7 +285,8 @@
      "₹720"
     ],
     "answer": 1,
-    "solution": "Total parts = 9, so one part = ₹200. Largest share = 4 × 200 = ₹800."
+    "solution": "Total parts = 9, so one part = ₹200. Largest share = 4 × 200 = ₹800.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q19",
@@ -287,7 +301,8 @@
      "6 : 9 : 10"
     ],
     "answer": 0,
-    "solution": "Make B equal: A:B = 8:12 and B:C = 12:15, so A:B:C = 8:12:15."
+    "solution": "Make B equal: A:B = 8:12 and B:C = 12:15, so A:B:C = 8:12:15.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q20",
@@ -302,7 +317,8 @@
      "₹9,000"
     ],
     "answer": 1,
-    "solution": "Ratio = 30000 : 45000 = 2 : 3. A's share = 2/5 × 15000 = ₹6,000."
+    "solution": "Ratio = 30000 : 45000 = 2 : 3. A's share = 2/5 × 15000 = ₹6,000.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q21",
@@ -317,7 +333,8 @@
      "144"
     ],
     "answer": 0,
-    "solution": "Mean proportional = √(9 × 16) = √144 = 12."
+    "solution": "Mean proportional = √(9 × 16) = √144 = 12.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q22",
@@ -347,7 +364,8 @@
      "30"
     ],
     "answer": 1,
-    "solution": "Sum of 5 = 100. Sum of 4 = 72. Removed = 100 − 72 = 28."
+    "solution": "Sum of 5 = 100. Sum of 4 = 72. Removed = 100 − 72 = 28.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q24",
@@ -362,7 +380,8 @@
      "10"
     ],
     "answer": 1,
-    "solution": "(1 + 2 + … + 10)/10 = 55/10 = 5.5."
+    "solution": "(1 + 2 + … + 10)/10 = 55/10 = 5.5.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q25",
@@ -377,7 +396,8 @@
      "31 years"
     ],
     "answer": 1,
-    "solution": "Sum of 30 ages = 420. Sum of 31 ages = 31 × 15 = 465. Teacher = 465 − 420 = 45 years."
+    "solution": "Sum of 30 ages = 420. Sum of 31 ages = 31 × 15 = 465. Teacher = 465 − 420 = 45 years.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q26",
@@ -392,7 +412,8 @@
      "2 : 3"
     ],
     "answer": 1,
-    "solution": "Alligation: (55 − 45) : (45 − 40) = 10 : 5 = 2 : 1 (cheaper : dearer)."
+    "solution": "Alligation: (55 − 45) : (45 − 40) = 10 : 5 = 2 : 1 (cheaper : dearer).",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q27",
@@ -422,7 +443,8 @@
      "15 days"
     ],
     "answer": 0,
-    "solution": "Combined rate = 1/12 + 1/18 = 5/36 per day. Time = 36/5 = 7.2 days."
+    "solution": "Combined rate = 1/12 + 1/18 = 5/36 per day. Time = 36/5 = 7.2 days.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q29",
@@ -437,7 +459,8 @@
      "6 days"
     ],
     "answer": 1,
-    "solution": "Total work = 6 × 10 = 60 man-days. 60/15 = 4 days."
+    "solution": "Total work = 6 × 10 = 60 man-days. 60/15 = 4 days.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q30",
@@ -452,7 +475,8 @@
      "35 days"
     ],
     "answer": 1,
-    "solution": "B's rate = 1/10 − 1/15 = 1/30, so B takes 30 days."
+    "solution": "B's rate = 1/10 − 1/15 = 1/30, so B takes 30 days.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q31",
@@ -467,7 +491,8 @@
      "3.6 h"
     ],
     "answer": 1,
-    "solution": "Net rate = 1/6 − 1/9 = 1/18 per hour, so 18 hours."
+    "solution": "Net rate = 1/6 − 1/9 = 1/18 per hour, so 18 hours.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q32",
@@ -497,7 +522,8 @@
      "12 s"
     ],
     "answer": 2,
-    "solution": "54 km/h = 54 × 5/18 = 15 m/s. Time = 150/15 = 10 s."
+    "solution": "54 km/h = 54 × 5/18 = 15 m/s. Time = 150/15 = 10 s.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q34",
@@ -512,7 +538,8 @@
      "52 km/h"
     ],
     "answer": 1,
-    "solution": "For equal distances, average speed = 2xy/(x + y) = 2 × 60 × 40/100 = 48 km/h."
+    "solution": "For equal distances, average speed = 2xy/(x + y) = 2 × 60 × 40/100 = 48 km/h.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q35",
@@ -527,7 +554,8 @@
      "30 s"
     ],
     "answer": 1,
-    "solution": "72 km/h = 20 m/s. Distance = 200 + 300 = 500 m. Time = 500/20 = 25 s."
+    "solution": "72 km/h = 20 m/s. Distance = 200 + 300 = 500 m. Time = 500/20 = 25 s.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q36",
@@ -542,7 +570,8 @@
      "1.5 h"
     ],
     "answer": 0,
-    "solution": "Downstream speed = 15 + 3 = 18 km/h. Time = 36/18 = 2 h."
+    "solution": "Downstream speed = 15 + 3 = 18 km/h. Time = 36/18 = 2 h.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q37",
@@ -572,7 +601,8 @@
      "13"
     ],
     "answer": 2,
-    "solution": "Count the factors of 5: ⌊50/5⌋ + ⌊50/25⌋ = 10 + 2 = 12."
+    "solution": "Count the factors of 5: ⌊50/5⌋ + ⌊50/25⌋ = 10 + 2 = 12.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q39",
@@ -587,7 +617,8 @@
      "3"
     ],
     "answer": 1,
-    "solution": "2³ = 8 ≡ 1 (mod 7), so 2¹⁰ = (2³)³ × 2 ≡ 2. Check: 1024 = 7 × 146 + 2."
+    "solution": "2³ = 8 ≡ 1 (mod 7), so 2¹⁰ = (2³)³ × 2 ≡ 2. Check: 1024 = 7 × 146 + 2.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q40",
@@ -602,7 +633,8 @@
      "24"
     ],
     "answer": 1,
-    "solution": "36 = 2² × 3², 84 = 2² × 3 × 7. HCF = 2² × 3 = 12."
+    "solution": "36 = 2² × 3², 84 = 2² × 3 × 7. HCF = 2² × 3 = 12.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q41",
@@ -617,7 +649,8 @@
      "360"
     ],
     "answer": 2,
-    "solution": "12 = 2² × 3, 18 = 2 × 3², 30 = 2 × 3 × 5. LCM = 2² × 3² × 5 = 180."
+    "solution": "12 = 2² × 3, 18 = 2 × 3², 30 = 2 × 3 × 5. LCM = 2² × 3² × 5 = 180.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q42",
@@ -632,7 +665,8 @@
      "36"
     ],
     "answer": 2,
-    "solution": "360 = 2³ × 3² × 5. Number of factors = (3+1)(2+1)(1+1) = 24."
+    "solution": "360 = 2³ × 3² × 5. Number of factors = (3+1)(2+1)(1+1) = 24.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q43",
@@ -662,7 +696,8 @@
      "21"
     ],
     "answer": 0,
-    "solution": "(x + 1/x)² = x² + 1/x² + 2 ⇒ x² + 1/x² = 25 − 2 = 23."
+    "solution": "(x + 1/x)² = x² + 1/x² + 2 ⇒ x² + 1/x² = 25 − 2 = 23.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q45",
@@ -677,7 +712,8 @@
      "10"
     ],
     "answer": 1,
-    "solution": "3x − 2x = 5 + 7 ⇒ x = 12."
+    "solution": "3x − 2x = 5 + 7 ⇒ x = 12.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q46",
@@ -692,7 +728,8 @@
      "37"
     ],
     "answer": 0,
-    "solution": "a + b = 5 and ab = 6. a² + b² = (a + b)² − 2ab = 25 − 12 = 13. (The roots are 2 and 3.)"
+    "solution": "a + b = 5 and ab = 6. a² + b² = (a + b)² − 2ab = 25 − 12 = 13. (The roots are 2 and 3.)",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q47",
@@ -707,7 +744,8 @@
      "126"
     ],
     "answer": 0,
-    "solution": "The numbers are (25 + 7)/2 = 16 and (25 − 7)/2 = 9. Product = 144."
+    "solution": "The numbers are (25 + 7)/2 = 16 and (25 − 7)/2 = 9. Product = 144.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q48",
@@ -737,7 +775,8 @@
      "100π cm²"
     ],
     "answer": 1,
-    "solution": "Hypotenuse = √(36 + 64) = 10 cm. The hypotenuse is the circumdiameter, so r = 5 and area = 25π cm²."
+    "solution": "Hypotenuse = √(36 + 64) = 10 cm. The hypotenuse is the circumdiameter, so r = 5 and area = 25π cm².",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q50",
@@ -752,7 +791,8 @@
      "48 cm"
     ],
     "answer": 1,
-    "solution": "Perimeter = 2(l + b) = 2(12 + 8) = 40 cm."
+    "solution": "Perimeter = 2(l + b) = 2(12 + 8) = 40 cm.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q51",
@@ -767,7 +807,8 @@
      "144°"
     ],
     "answer": 1,
-    "solution": "Each interior angle = (n − 2) × 180°/n = 4 × 180/6 = 120°."
+    "solution": "Each interior angle = (n − 2) × 180°/n = 4 × 180/6 = 120°.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q52",
@@ -782,7 +823,8 @@
      "150 cm³"
     ],
     "answer": 0,
-    "solution": "6a² = 150 ⇒ a = 5 cm. Volume = 5³ = 125 cm³."
+    "solution": "6a² = 150 ⇒ a = 5 cm. Volume = 5³ = 125 cm³.",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q53",
@@ -797,7 +839,8 @@
      "36 cm²"
     ],
     "answer": 0,
-    "solution": "Area = (√3/4) × a² = (√3/4) × 36 = 9√3 cm²."
+    "solution": "Area = (√3/4) × a² = (√3/4) × 36 = 9√3 cm².",
+    "cuet_part": "Quantitative Reasoning"
    },
    {
     "id": "Q54",
@@ -998,7 +1041,8 @@
     ],
     "answer": 2,
     "solution": "Cats ⊂ Dogs ⊂ Birds, so all cats are birds (I). Converting I gives some birds are cats (II). Both follow.",
-    "fixed": true
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R2",
@@ -1014,7 +1058,8 @@
     ],
     "answer": 0,
     "solution": "The pens that are books cannot be pencils, so I follows. Pens that are not books may or may not be pencils, so II does not follow.",
-    "fixed": true
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R3",
@@ -1030,7 +1075,8 @@
     ],
     "answer": 3,
     "solution": "The red flowers may lie entirely outside the roses, so I is not certain. 'All roses are flowers' does not make all flowers roses, so II fails too.",
-    "fixed": true
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R4",
@@ -1046,7 +1092,8 @@
     ],
     "answer": 0,
     "solution": "The mangoes are fruits and none of them is an apple, so some fruits are not apples (I). Apples could still be fruits, so II does not follow.",
-    "fixed": true
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R5",
@@ -1062,7 +1109,8 @@
     ],
     "answer": 2,
     "solution": "Books ⊂ Pages and Pages ∩ Pens = ∅, so no book is a pen (I). Converting 'all books are pages' gives some pages are books (II).",
-    "fixed": true
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R6",
@@ -1109,7 +1157,8 @@
     ],
     "answer": 1,
     "solution": "The order is R T S P Q, so S sits between T (2nd) and P (4th).",
-    "fixed": true
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R9",
@@ -1124,7 +1173,8 @@
      "A"
     ],
     "answer": 0,
-    "solution": "Fix A. D is opposite A. B is A's left neighbour and E is D's right neighbour. C can't sit next to A, so C takes the seat opposite B, and F sits on A's right."
+    "solution": "Fix A. D is opposite A. B is A's left neighbour and E is D's right neighbour. C can't sit next to A, so C takes the seat opposite B, and F sits on A's right.",
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R10",
@@ -1139,7 +1189,8 @@
      "E"
     ],
     "answer": 1,
-    "solution": "Going clockwise from A (to each person's left): A, B, E, D, C, F. So F is on A's right."
+    "solution": "Going clockwise from A (to each person's left): A, B, E, D, C, F. So F is on A's right.",
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R11",
@@ -1169,7 +1220,8 @@
      "Nephew"
     ],
     "answer": 2,
-    "solution": "Father's father's only son = Riya's father. Her father's son is her brother."
+    "solution": "Father's father's only son = Riya's father. Her father's son is her brother.",
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R13",
@@ -1184,7 +1236,8 @@
      "Grandmother"
     ],
     "answer": 1,
-    "solution": "A and B are C's children and D is C's father. A is female, so A is D's granddaughter."
+    "solution": "A and B are C's children and D is C's father. A is female, so A is D's granddaughter.",
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R14",
@@ -1199,7 +1252,8 @@
      "Aunt"
     ],
     "answer": 1,
-    "solution": "X is married to Z's brother, so X is Z's sister-in-law."
+    "solution": "X is married to Z's brother, so X is Z's sister-in-law.",
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R15",
@@ -1214,7 +1268,8 @@
      "Brother"
     ],
     "answer": 2,
-    "solution": "P is the father of R's mother, so P is R's (maternal) grandfather."
+    "solution": "P is the father of R's mother, so P is R's (maternal) grandfather.",
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R16",
@@ -1244,7 +1299,8 @@
      "DPH"
     ],
     "answer": 0,
-    "solution": "Each letter moves one place forward: C→D, A→B, T→U. So DOG → EPH."
+    "solution": "Each letter moves one place forward: C→D, A→B, T→U. So DOG → EPH.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R18",
@@ -1259,7 +1315,8 @@
      "52"
     ],
     "answer": 1,
-    "solution": "GRAPE = 7 + 18 + 1 + 16 + 5 = 47."
+    "solution": "GRAPE = 7 + 18 + 1 + 16 + 5 = 47.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R19",
@@ -1274,7 +1331,8 @@
      "WVIP"
     ],
     "answer": 0,
-    "solution": "Each letter is swapped with its mirror letter in the alphabet (A↔Z, B↔Y, …): B→Y, O→L, K→P. So D→W, E→V, S→H, K→P gives WVHP."
+    "solution": "Each letter is swapped with its mirror letter in the alphabet (A↔Z, B↔Y, …): B→Y, O→L, K→P. So D→W, E→V, S→H, K→P gives WVHP.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R20",
@@ -1289,7 +1347,8 @@
      "9-14-12"
     ],
     "answer": 0,
-    "solution": "Each letter is replaced by its alphabet position: I = 9, N = 14, K = 11."
+    "solution": "Each letter is replaced by its alphabet position: I = 9, N = 14, K = 11.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R21",
@@ -1319,7 +1378,8 @@
      "R"
     ],
     "answer": 0,
-    "solution": "T = 5. R is even: if R = 4 then Q = 5, which is taken, so R = 2 and Q = 3. P and S share floors 1 and 4 with S below P, so S = 1 and P = 4."
+    "solution": "T = 5. R is even: if R = 4 then Q = 5, which is taken, so R = 2 and Q = 3. P and S share floors 1 and 4 with S below P, so S = 1 and P = 4.",
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R23",
@@ -1334,7 +1394,8 @@
      "Q"
     ],
     "answer": 1,
-    "solution": "From the solution (S1, R2, Q3, P4, T5), S lives on floor 1."
+    "solution": "From the solution (S1, R2, Q3, P4, T5), S lives on floor 1.",
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R24",
@@ -1349,7 +1410,8 @@
      "1"
     ],
     "answer": 1,
-    "solution": "S is on floor 1 and T on floor 5. R, Q and P live between them, so 3 people."
+    "solution": "S is on floor 1 and T on floor 5. R, Q and P live between them, so 3 people.",
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R25",
@@ -1364,7 +1426,8 @@
      "S"
     ],
     "answer": 1,
-    "solution": "T is on floor 5 and floor 4 belongs to P."
+    "solution": "T is on floor 5 and floor 4 belongs to P.",
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R26",
@@ -1380,7 +1443,8 @@
     ],
     "answer": 2,
     "solution": "Ben has the fish, and Ana can't have the dog, so Ana has the cat and Cara has the dog.",
-    "fixed": true
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R27",
@@ -1395,7 +1459,8 @@
      "6 km"
     ],
     "answer": 0,
-    "solution": "Right of north is east. He ends 3 km east and 9 − 5 = 4 km south of the start. Distance = √(3² + 4²) = 5 km."
+    "solution": "Right of north is east. He ends 3 km east and 9 − 5 = 4 km south of the start. Distance = √(3² + 4²) = 5 km.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R28",
@@ -1410,7 +1475,8 @@
      "West"
     ],
     "answer": 1,
-    "solution": "North → right → East → right → South → left → East."
+    "solution": "North → right → East → right → South → left → East.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R29",
@@ -1425,7 +1491,8 @@
      "16 m east"
     ],
     "answer": 0,
-    "solution": "Left of south is east, and left of east is north. She goes 10 S, then 6 E, then 10 N, so she ends 6 m east of the start."
+    "solution": "Left of south is east, and left of east is north. She goes 10 S, then 6 E, then 10 N, so she ends 6 m east of the start.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R30",
@@ -1440,7 +1507,8 @@
      "West"
     ],
     "answer": 1,
-    "solution": "In the morning the sun is in the east, so shadows fall to the west. West is on your right when you face south."
+    "solution": "In the morning the sun is in the east, so shadows fall to the west. West is on your right when you face south.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R31",
@@ -1470,7 +1538,8 @@
      "36"
     ],
     "answer": 1,
-    "solution": "The terms are n(n + 1): 1×2, 2×3, …, 5×6, so next is 6×7 = 42."
+    "solution": "The terms are n(n + 1): 1×2, 2×3, …, 5×6, so next is 6×7 = 42.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R33",
@@ -1485,7 +1554,8 @@
      "66"
     ],
     "answer": 2,
-    "solution": "Each term = previous × 2 − 1, so 33 × 2 − 1 = 65."
+    "solution": "Each term = previous × 2 − 1, so 33 × 2 − 1 = 65.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R34",
@@ -1500,7 +1570,8 @@
      "S"
     ],
     "answer": 1,
-    "solution": "The gaps are +2, +3, +4, +5, +6. O (15) + 6 = 21 = U."
+    "solution": "The gaps are +2, +3, +4, +5, +6. O (15) + 6 = 21 = U.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R35",
@@ -1515,7 +1586,8 @@
      "16"
     ],
     "answer": 1,
-    "solution": "These are consecutive prime numbers. The next prime after 13 is 17."
+    "solution": "These are consecutive prime numbers. The next prime after 13 is 17.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R36",
@@ -1545,7 +1617,8 @@
      "CW"
     ],
     "answer": 0,
-    "solution": "The first letter moves forward (A, B, C, D) and the second moves backward (Z, Y, X, W)."
+    "solution": "The first letter moves forward (A, B, C, D) and the second moves backward (Z, Y, X, W).",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R38",
@@ -1560,7 +1633,8 @@
      "125"
     ],
     "answer": 2,
-    "solution": "8, 27, 64 and 125 are perfect cubes (2³, 3³, 4³, 5³). 100 is not a cube."
+    "solution": "8, 27, 64 and 125 are perfect cubes (2³, 3³, 4³, 5³). 100 is not a cube.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R39",
@@ -1575,7 +1649,8 @@
      "37"
     ],
     "answer": 2,
-    "solution": "All the others are prime. 33 = 3 × 11."
+    "solution": "All the others are prime. 33 = 3 × 11.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R40",
@@ -1590,7 +1665,8 @@
      "Rhombus"
     ],
     "answer": 2,
-    "solution": "Square, rectangle and rhombus have four sides. A triangle has three."
+    "solution": "Square, rectangle and rhombus have four sides. A triangle has three.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R41",
@@ -1605,7 +1681,8 @@
      "361"
     ],
     "answer": 2,
-    "solution": "121 = 11², 169 = 13², 289 = 17², 361 = 19² are squares of primes. 324 = 18², and 18 isn't prime."
+    "solution": "121 = 11², 169 = 13², 289 = 17², 361 = 19² are squares of primes. 324 = 18², and 18 isn't prime.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R42",
@@ -1620,7 +1697,8 @@
      "MOP"
     ],
     "answer": 3,
-    "solution": "The others skip one letter each time (A_C_E). In MOP the last step, O→P, skips nothing."
+    "solution": "The others skip one letter each time (A_C_E). In MOP the last step, O→P, skips nothing.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R43",
@@ -1635,7 +1713,8 @@
      "150°"
     ],
     "answer": 1,
-    "solution": "Angle = |30H − 5.5M| = |90 − 220| = 130°."
+    "solution": "Angle = |30H − 5.5M| = |90 − 220| = 130°.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R44",
@@ -1650,7 +1729,8 @@
      "45°"
     ],
     "answer": 0,
-    "solution": "At 9:00 the hands are 3 hour-marks apart: 3 × 30° = 90° (the smaller angle)."
+    "solution": "At 9:00 the hands are 3 hour-marks apart: 3 × 30° = 90° (the smaller angle).",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R45",
@@ -1665,7 +1745,8 @@
      "24"
     ],
     "answer": 1,
-    "solution": "The hands coincide every 12/11 hours, so 11 times in 12 hours. There's no separate meeting between 11 and 1, because that one happens at 12:00."
+    "solution": "The hands coincide every 12/11 hours, so 11 times in 12 hours. There's no separate meeting between 11 and 1, because that one happens at 12:00.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R46",
@@ -1680,7 +1761,8 @@
      "Tuesday"
     ],
     "answer": 1,
-    "solution": "2025 is not a leap year: 365 days = 52 weeks + 1 odd day. Wednesday + 1 = Thursday."
+    "solution": "2025 is not a leap year: 365 days = 52 weeks + 1 odd day. Wednesday + 1 = Thursday.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R47",
@@ -1725,7 +1807,8 @@
      "E"
     ],
     "answer": 1,
-    "solution": "A B C D E F G: the 7th letter is G."
+    "solution": "A B C D E F G: the 7th letter is G.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R50",
@@ -1740,7 +1823,8 @@
      "E"
     ],
     "answer": 1,
-    "solution": "The 10th letter is J. Five to its right is the 15th letter, O."
+    "solution": "The 10th letter is J. Five to its right is the 15th letter, O.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R51",
@@ -1755,7 +1839,8 @@
      "H"
     ],
     "answer": 1,
-    "solution": "8th from the right = (27 − 8) = 19th from the left = S."
+    "solution": "8th from the right = (27 − 8) = 19th from the left = S.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R52",
@@ -1770,7 +1855,8 @@
      "R"
     ],
     "answer": 1,
-    "solution": "Reversed, the 10th from the left is the 10th from the right of the normal order: 27 − 10 = 17th letter = Q."
+    "solution": "Reversed, the 10th from the left is the 10th from the right of the normal order: 27 − 10 = 17th letter = Q.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R53",
@@ -1802,7 +1888,8 @@
     ],
     "answer": 1,
     "solution": "A > B > C, so A > C.",
-    "fixed": true
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R55",
@@ -1818,7 +1905,8 @@
     ],
     "answer": 2,
     "solution": "P ≥ Q > R = S gives P > S and Q > S. Both follow.",
-    "fixed": true
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R56",
@@ -1834,7 +1922,8 @@
     ],
     "answer": 0,
     "solution": "M < N ≤ O gives M < O. N ≤ O and O > P don't fix how N and P compare, so II does not follow.",
-    "fixed": true
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R57",
@@ -1850,7 +1939,8 @@
     ],
     "answer": 2,
     "solution": "X = Y > Z ≥ W, so both X > W and Y > W.",
-    "fixed": true
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
    },
    {
     "id": "R58",
@@ -1881,7 +1971,8 @@
      "17th"
     ],
     "answer": 1,
-    "solution": "Position from the right = 30 − 12 + 1 = 19."
+    "solution": "Position from the right = 30 − 12 + 1 = 19.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R60",
@@ -1896,7 +1987,8 @@
      "26"
     ],
     "answer": 1,
-    "solution": "Total = 9 + 16 − 1 = 24."
+    "solution": "Total = 9 + 16 − 1 = 24.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R61",
@@ -1911,7 +2003,8 @@
      "D"
     ],
     "answer": 2,
-    "solution": "D > A > B > C, so C is the shortest."
+    "solution": "D > A > B > C, so C is the shortest.",
+    "cuet_part": "General Mental Ability"
    },
    {
     "id": "R62",

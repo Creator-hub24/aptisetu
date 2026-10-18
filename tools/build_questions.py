@@ -378,6 +378,18 @@ Q(s,T,"Hard","If road Q–R is closed, what is the shortest distance from P to S
 
 NAMES={"quant":"Quantitative Aptitude","reasoning":"Logical Reasoning","dilr":"DILR"}
 import os, collections
+# ---- CUET reuse tags: Easy/Medium general items that sit within the CUET General Aptitude Test syllabus ----
+CUET_QR_SKIP = {"Permutations & Combinations", "Probability"}   # not in the GAT syllabus list (arithmetic, algebra, geometry, mensuration, statistics)
+CUET_LR = {"Syllogisms", "Seating Arrangement", "Puzzles", "Blood Relations", "Inequalities"}
+CUET_GMA = {"Alphabet Test", "Clocks & Calendars", "Coding-Decoding", "Direction Sense", "Number & Letter Series", "Odd One Out", "Ranking & Order"}
+assert CUET_LR | CUET_GMA == {q["topic"] for q in OUT["reasoning"]}
+for q in OUT["quant"] + OUT["reasoning"]:
+    if q["difficulty"] == "Hard": continue
+    if q in OUT["quant"]:
+        if q["topic"] in CUET_QR_SKIP: continue
+        q["cuet_part"] = "Quantitative Reasoning"
+    else:
+        q["cuet_part"] = "Logical & Analytical Reasoning" if q["topic"] in CUET_LR else "General Mental Ability"
 out={k:{"name":NAMES[k],"questions":v} for k,v in OUT.items()}
 json.dump(out,open(os.path.join(os.path.dirname(__file__),"..","data","questions.json"),"w"),ensure_ascii=False,indent=1)
 for k,v in OUT.items():
@@ -410,3 +422,42 @@ for k in ("varc", "dilr", "qa"):
     print("CAT", k, len(v), dict(collections.Counter(q["type"] for q in v)), dict(collections.Counter(q["difficulty"] for q in v)))
     print("   ", dict(collections.Counter(q["topic"] for q in v)))
 print("CAT TOTAL", len(ids), "sets:", len(CB.sets))
+
+
+# ======================= CUET (UG) TRACK =======================
+_sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "cuet"))
+try:
+    import sympy  # noqa: F401  (needed to verify the Maths answers)
+except ImportError:
+    raise SystemExit("CUET maths checks need sympy: run with a Python that has it, e.g. /workspace/.venv-edu/bin/python tools/build_questions.py")
+from ucommon import UBank
+import gat as _gat, english as _eng, maths as _maths
+UB = UBank(); _gat.build(UB); _eng.build(UB); _maths.build(UB)
+# reuse: tagged general items join the GAT pool (copied, with their original id kept for traceability)
+reused = []
+for q in OUT["quant"] + OUT["reasoning"]:
+    if "cuet_part" in q:
+        r = {k: v for k, v in q.items() if k != "cuet_part"}
+        r.update(id="G-" + q["id"], exam="cuet", section="gat", part=q["cuet_part"], type="mcq", source="general", orig_id=q["id"])
+        reused.append(r)
+uq = {"gat": UB.qs["gat"] + reused, "english": UB.qs["english"], "maths": UB.qs["maths"]}
+# global checks
+uids = [q["id"] for v in uq.values() for q in v]; assert len(uids) == len(set(uids))
+uused = collections.Counter(q.get("set") for v in uq.values() for q in v if q.get("set"))
+assert set(uused) == set(UB.sets), set(UB.sets) ^ set(uused)
+for sid, n in uused.items(): assert 4 <= n <= 5, (sid, n)
+for v in uq.values():
+    for q in v:
+        assert q["type"] == "mcq" and len(q["options"]) == 4 and len(set(q["options"])) == 4 and 0 <= q["answer"] < 4, q["id"]
+        assert q["difficulty"] in ("Easy", "Medium", "Hard") and q["topic"] and q["part"] and len(q["solution"]) > 15, q["id"]
+        assert "Option " not in q["solution"], q["id"]          # solutions name options by content, never by position
+CUET_NAMES = {"gat": "General Aptitude Test", "english": "English", "maths": "Mathematics / Applied Mathematics"}
+cuet_out = {"sections": {k: {"name": CUET_NAMES[k], "questions": uq[k]} for k in ("gat", "english", "maths")}, "sets": UB.sets}
+json.dump(cuet_out, open(os.path.join(os.path.dirname(__file__), "..", "data", "cuet.json"), "w"), ensure_ascii=False, indent=1)
+for k in ("gat", "english", "maths"):
+    v = uq[k]; orig = [q for q in v if q.get("source") != "general"]
+    print("CUET", k, len(v), "(original", len(orig), "+ reused", len(v) - len(orig), ")", dict(collections.Counter(q["difficulty"] for q in v)))
+    for part in dict.fromkeys(q["part"] for q in v):
+        pv = [q for q in v if q["part"] == part]
+        print("    ", part, len(pv), "(reused", sum(1 for q in pv if q.get("source") == "general"), ")", dict(collections.Counter(q["topic"] for q in pv)))
+print("CUET TOTAL", len(uids), "original", sum(1 for v in uq.values() for q in v if q.get("source") != "general"), "sets:", len(UB.sets))
