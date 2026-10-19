@@ -223,3 +223,5 @@ code.fx,.fs-prose code.fx{font-family:"JetBrains Mono",ui-monospace,SFMono-Regul
 /* ===== v6: stop grid cards with tables from overflowing on phones ===== */
 .grid>*{min-width:0}
 @media(max-width:600px){.card>table.data{display:block;max-width:100%;overflow-x:auto}.card>table.data th,.card>table.data td{padding-left:.5em;padding-right:.5em}}
+.footer-grid>div{min-width:0}#site-footer a{overflow-wrap:anywhere}#site-footer img.logo-mark{border-radius:9px}
+#site-footer .logo span{white-space:nowrap}

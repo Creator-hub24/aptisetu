@@ -18,13 +18,50 @@ CAT_TITA = sum(1 for s in CB["sections"].values() for q in s["questions"] if q["
 BANK_ONLY = {"Syllogisms","Blood Relations","Coding-Decoding","Direction Sense","Number & Letter Series","Odd One Out","Clocks & Calendars","Alphabet Test","Inequalities","Ranking & Order"}
 def exam_tag(topic): return ("Bank-SSC","tag-bank") if topic in BANK_ONLY else ("CAT + Bank-SSC","tag-both")
 NT = len({(k, q["topic"]) for k, s in QB.items() for q in s["questions"]}) + NT_CAT + len({(k, q["part"], q["topic"]) for k, v in UQ.items() for q in v})
-def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DILR prep for CAT, Bank, SSC, GMAT and campus placements.", extra=""):
+import re as _re, html as _esc, datetime as _dt
+def _cfg():
+    t=open("assets/js/config.js").read()
+    return {k:v for k,v in _re.findall(r'^\s*([A-Z_]+):\s*"((?:[^"\\]|\\.)*)"', t, _re.M)}
+CFG=_cfg()
+BRAND=CFG["BRAND"]; TAGLINE=CFG.get("TAGLINE",""); EMAIL=CFG.get("EMAIL",""); FORM=CFG.get("GOOGLE_FORM_URL","")
+SITE_URL=CFG["SITE_URL"].rstrip("/")+"/"
+from urllib.parse import urlparse as _up
+BASE_PATH=_up(SITE_URL).path or "/"
+YEAR=_dt.date.today().year
+A=lambda s: _esc.escape(s, quote=True)
+PAGES=[]   # (fn, indexed)
+TITLES={}
+def footer_html():
+    contact=f'<a href="contact.html">Contact us</a>'+(f'<a href="mailto:{A(EMAIL)}">{_esc.escape(EMAIL)}</a>' if EMAIL else '')
+    return f"""<div class="container footer-grid">
+      <div><a href="index.html" class="logo"><img src="assets/img/favicon.svg" alt="" width="34" height="34" class="logo-mark"><span data-brand>{_esc.escape(BRAND)}</span></a>
+        <p class="muted">Free Quant, Reasoning, DILR and VARC practice for CAT, CUET, Bank, SSC and campus placements. Not affiliated with NTA, the IIMs or any exam body.</p></div>
+      <div><h4>Learn</h4><a href="quant.html">Quantitative Aptitude</a><a href="reasoning.html">Logical Reasoning</a><a href="dilr.html">DILR</a><a href="cat.html">CAT track</a><a href="cuet.html">CUET (UG) track</a><a href="varc.html">VARC</a></div>
+      <div><h4>Practice</h4><a href="cat-practice.html">CAT sectionals</a><a href="cuet-practice.html">CUET sectionals</a><a href="practice.html?exam=general">Bank / SSC quizzes</a><a href="practice.html?section=mixed">Mixed practice</a></div>
+      <div><h4>About</h4><a href="about.html">About</a><a href="faq.html">FAQ</a>{contact}<a href="privacy.html">Privacy</a><a href="terms.html">Terms &amp; disclaimer</a></div>
+    </div>
+    <div class="container copyright">© {YEAR} <span data-brand>{_esc.escape(BRAND)}</span>. All rights reserved.</div>"""
+def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DILR prep for CAT, Bank, SSC, GMAT and campus placements.", extra="", noindex=False, base=False):
+    title=_esc.unescape(title)
+    full=f"{title} | {BRAND}" if title else f"{BRAND}: {TAGLINE}"
+    assert full not in TITLES.values(), ("duplicate title", fn)
+    TITLES[fn]=full; DESCS.setdefault(desc,[]).append(fn)
+    url=SITE_URL+("" if fn=="index.html" else fn)
+    img=SITE_URL+"assets/img/og-image.png"
+    body=body.replace("<span data-brand></span>", f"<span data-brand>{_esc.escape(BRAND)}</span>")
+    robots='<meta name="robots" content="noindex">\n' if noindex else ''
+    basetag=f'<base href="{BASE_PATH}">\n' if base else ''
+    canon='' if fn=="404.html" else f'<link rel="canonical" href="{url}">\n'
     html=f"""<!DOCTYPE html>
 <html lang="en-IN">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{title} | {{BRAND}}</title>
-<meta name="description" content="{desc}">
+{basetag}<title>{A(full)}</title>
+<meta name="description" content="{A(desc)}">
+{robots}{canon}<meta name="theme-color" content="#0B1F3A">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="{A(BRAND)}"><meta property="og:title" content="{A(full)}"><meta property="og:description" content="{A(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{img}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{A(full)}"><meta name="twitter:description" content="{A(desc)}"><meta name="twitter:image" content="{img}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -33,7 +70,7 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 <main>
 {body}
 </main>
-<footer id="site-footer"></footer>
+<footer id="site-footer">{footer_html()}</footer>
 <script src="assets/js/config.js"></script>
 <script src="assets/js/layout.js"></script>
 <script src="assets/js/stats.js"></script>
@@ -42,9 +79,11 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 </html>
 """
     open(fn,"w").write(html)
+    if fn!="404.html": PAGES.append((fn, not noindex))
+DESCS={}
 
 # ---------- LANDING ----------
-page("index.html","CAT, Bank, SSC & Placement Aptitude Prep", f"""
+page("index.html","", f"""
 <section class="hero"><div class="container hero-grid">
  <div>
   <span class="pill">🇮🇳 CAT · CUET · Bank · SSC · Placements</span>
@@ -134,7 +173,7 @@ page("index.html","CAT, Bank, SSC & Placement Aptitude Prep", f"""
  <h2>Start practising in under 10 seconds</h2><p style="opacity:.9">No signup needed. Pick a section and beat the clock.</p>
  <div class="cta-row" style="justify-content:center;margin-bottom:0"><a href="practice.html" class="btn">Start a free quiz →</a></div>
 </div></div></section>
-""")
+""", desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and placements: Quant, Reasoning, DILR and VARC with timed quizzes, worked solutions and formula sheets. No login.")
 
 # ---------- SECTION PAGES ----------
 def fs_section(formulas, color, heading="Formula &amp; rules sheet", unit="formulas and rules", prose=False):
@@ -153,7 +192,7 @@ function upd(){{b.textContent=c.every(function(d){{return d.open}})?'Collapse al
 if(matchMedia('(max-width:600px)').matches)c.forEach(function(d,i){{if(i>1)d.open=false}});
 c.forEach(function(d){{d.addEventListener('toggle',upd)}});b.onclick=function(){{var o=!c.every(function(d){{return d.open}});c.forEach(function(d){{d.open=o}});upd()}};upd()}})();</script>"""
 
-def section_page(fn, key, title, color, intro, topics, note, formulas):
+def section_page(fn, key, title, color, intro, topics, note, formulas, desc):
     import html as _h
     cnt={}
     for q in QB[key]["questions"]: cnt[q["topic"]]=cnt.get(q["topic"],0)+1
@@ -169,7 +208,7 @@ def section_page(fn, key, title, color, intro, topics, note, formulas):
 <section style="padding-top:20px"><div class="container"><h2>Topics</h2><p class='muted' style='margin-top:-.4em'>Tap a topic to practise just that topic. Tags show which exams it suits best. For CAT-style sets, see the <a href="cat.html">CAT track</a>.</p><div class="topic-list">{tl}</div></div></section>
 <section class="alt"><div class="container note" style="max-width:860px"><h2>Concept note</h2>{note}</div></section>
 {fs}
-""")
+""", desc=desc)
 
 section_page("quant.html","quant","Quantitative Aptitude","var(--quant)",
 "Arithmetic, algebra, geometry and modern maths for CAT, Bank/SSC, GMAT and placement tests.",
@@ -179,7 +218,7 @@ section_page("quant.html","quant","Quantitative Aptitude","var(--quant)",
 <div class="tip">💡 <b>Shortcut:</b> after a fall of x%, the rise needed to get back to the original value is x/(100 − x) × 100%. After a 20% fall you need a 25% rise.</div>
 <h3>Profit &amp; Loss</h3><p>Profit % and loss % are always calculated on <b>cost price</b>. Discount is always calculated on <b>marked price</b>. Selling at a loss of x% means SP = CP × (100 − x)/100.</p>
 <h3>Time, Speed &amp; Distance</h3><p>To convert km/h to m/s, multiply by 5/18. A train crossing a pole covers its own length. A train crossing a platform covers its own length plus the platform's. For equal distances at speeds x and y, the average speed is the <b>harmonic mean</b> 2xy/(x + y), not the simple average.</p>""",
-FORMULAS["quant"])
+FORMULAS["quant"], "Quantitative Aptitude for Bank, SSC, CAT and placements: topic-wise practice, a concept note and a formula sheet for percentages, TSD, number system, algebra, geometry and more.")
 
 section_page("reasoning.html","reasoning","Logical Reasoning","var(--reason)",
 "Verbal and analytical reasoning for Bank/SSC, CAT LR and placement tests, with methods for the most common question types.",
@@ -189,7 +228,7 @@ section_page("reasoning.html","reasoning","Logical Reasoning","var(--reason)",
 <div class="tip">💡 "Some A are not B" never follows from "Some A are B" on its own. Look for a statement that rules it out.</div>
 <h3>Seating arrangement</h3><p>Fix the most definite clue first, such as "X is in the middle" or "Y is at an end". In a row facing north, the person's <b>right</b> is your right. In a circle facing the centre, <b>left is clockwise</b>.</p>
 <h3>Blood relations</h3><p>Draw a family tree. Use + for male and − for female, horizontal lines for siblings and spouses, and vertical lines for generations. Break long chains like "my father's father's only son" from the end backwards.</p>""",
-FORMULAS["reasoning"])
+FORMULAS["reasoning"], "Logical Reasoning practice for Bank, SSC and placements: syllogisms, seating, blood relations, coding-decoding and puzzles, with methods and a rules sheet.")
 
 section_page("dilr.html","dilr","Data Interpretation &amp; Logical Reasoning (DILR)","var(--dilr)",
 "Read data fast and reason carefully: tables, charts, caselets, arrangements, tournaments, Venn diagrams and routes.",
@@ -198,7 +237,7 @@ section_page("dilr.html","dilr","Data Interpretation &amp; Logical Reasoning (DI
 <h3>Growth and share</h3><p><b>Growth %</b> = (New − Old)/Old × 100. <b>Share %</b> = Part/Total × 100. Don't mix these up. A product can have the highest absolute increase but not the highest percentage growth.</p>
 <div class="tip">💡 <b>Pie charts:</b> 1% = 3.6°, so 25% = 90° and 10% = 36°.</div>
 <h3>Choosing LR sets (CAT)</h3><p>In CAT, set selection matters as much as solving. Spend the first 3–4 minutes scanning every set, then start with the ones that have the most definite clues and the fewest variables.</p>""",
-FORMULAS["dilr"])
+FORMULAS["dilr"], "Data Interpretation and Logical Reasoning (DILR) practice: tables, bar, pie and line charts, caselets, arrangements, tournaments and routes, with a formula sheet.")
 
 # ---------- PRACTICE ----------
 page("practice.html","Practice","""
@@ -256,7 +295,7 @@ page("practice.html","Practice","""
 function gen(){pick.classList.add('hidden');setup.classList.remove('hidden');}
 document.getElementById('pick-general').onclick=gen;
 document.getElementById('change-track').onclick=function(e){e.preventDefault();setup.classList.add('hidden');pick.classList.remove('hidden');};
-if(p.get('exam')==='general'||p.get('section'))gen();})();</script>''')
+if(p.get('exam')==='general'||p.get('section'))gen();})();</script>''', desc="Start a free timed aptitude quiz: pick the CAT, CUET (UG) or Bank / SSC / Placements track, choose a section and topic, and get worked solutions after you submit.")
 
 # ---------- CAT TRACK ----------
 import html as _hh
@@ -480,7 +519,7 @@ page("mock-tests.html","Mock Tests","""
  <div class="card"><h3>SSC CGL Tier 1</h3><p class="muted">Quant · Reasoning · 60 min</p><button class="btn btn-sm" disabled>Coming soon</button></div>
  <div class="card"><h3>GMAT-style Quant</h3><p class="muted">21 Qs · 45 min</p><button class="btn btn-sm" disabled>Coming soon</button></div>
 </div><div class="notice" style="margin-top:20px">CAT sectionals (VARC, DILR, QA) are already available on the <a href="cat-practice.html">CAT practice page</a>. Meanwhile, try the <a href="practice.html">timed practice quizzes</a>.</div></div></section>
-""")
+""", desc="Full-length mock tests are coming soon. CAT sectionals and timed practice quizzes are available now.", noindex=True)
 
 page("placements.html","Placement Prep","""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Placement Prep</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Campus placement prep <span class="badge soon">Coming soon</span></h1><p class="muted">Company-wise aptitude practice for service and product companies.</p></div></div>
@@ -492,31 +531,6 @@ page("placements.html","Placement Prep","""
 </div>
 <div class="card" style="margin-top:20px"><h3>Most-asked placement topics</h3><div class="tags"><span class="tag">Percentages</span><span class="tag">Profit &amp; Loss</span><span class="tag">Time &amp; Work</span><span class="tag">TSD</span><span class="tag">Number Series</span><span class="tag">Coding-Decoding</span><span class="tag">Blood Relations</span><span class="tag">Seating</span><span class="tag">Data Interpretation</span></div>
 <a class="btn btn-sm" href="practice.html?section=mixed">Practise mixed aptitude now →</a></div></div></section>
-""")
+""", desc="Company-wise campus placement aptitude prep is coming soon. Practise mixed aptitude questions now.", noindex=True)
 
-page("signup.html","Sign up","""
-<section><div class="container" style="max-width:480px"><div class="card">
- <h2>Create your free account</h2><p class="muted">Accounts aren't live yet. This form is a preview of signup and doesn't save anything.</p>
- <div id="ok" class="notice hidden">✅ Thanks! This is a preview only. Accounts aren't live yet, so nothing was saved.</div>
- <form class="form" id="signup" onsubmit="event.preventDefault();document.getElementById('ok').classList.remove('hidden');this.reset();">
-  <label>Full name<input required placeholder="e.g. Priya Sharma"></label>
-  <label>Email<input type="email" required placeholder="you@example.com"></label>
-  <label>Mobile (optional)<input type="tel" placeholder="+91 98xxxxxxxx"></label>
-  <label>Preparing for<select><option>CAT / MBA entrance</option><option>Bank exams</option><option>SSC exams</option><option>Campus placements</option><option>GMAT</option><option>Other</option></select></label>
-  <label>Password<input type="password" required minlength="6" placeholder="At least 6 characters"></label>
-  <button class="btn" type="submit">Sign up free</button>
-  <p class="muted" style="font-size:.85rem;margin:0">Login will be available when accounts launch.</p>
- </form></div></div></section>
-""")
-
-page("contact.html","Contact","""
-<div class="page-head"><div class="container"><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Contact us</h1><p class="muted">Questions, feedback or partnership ideas? We'd love to hear from you.</p></div></div>
-<section style="padding-top:16px"><div class="container grid g2">
- <div class="card"><div id="sent" class="notice hidden">✅ Message captured (demo only, nothing was sent).</div>
- <form class="form" onsubmit="event.preventDefault();document.getElementById('sent').classList.remove('hidden');this.reset();">
-  <label>Name<input required></label><label>Email<input type="email" required></label>
-  <label>Message<textarea rows="5" required></textarea></label><button class="btn" type="submit">Send message</button></form></div>
- <div class="card"><h3>Reach us</h3><p>📧 <a data-email></a></p><p>📍 India (online)</p><p class="muted">Placeholder contact details. Replace them in <code>assets/js/config.js</code>.</p></div>
-</div></section>
-""")
-print("ok")
+exec(open("tools/pages_info.py").read())
