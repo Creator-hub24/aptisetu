@@ -220,3 +220,6 @@ code.fx,.fs-prose code.fx{font-family:"JetBrains Mono",ui-monospace,SFMono-Regul
 .fx-note{font-weight:400}
 .fs-t{font-weight:800;font-size:1.1rem}
 @media(max-width:600px){.fs-t{font-size:1.05rem}}
+/* ===== v6: stop grid cards with tables from overflowing on phones ===== */
+.grid>*{min-width:0}
+@media(max-width:600px){.card>table.data{display:block;max-width:100%;overflow-x:auto}.card>table.data th,.card>table.data td{padding-left:.5em;padding-right:.5em}}
