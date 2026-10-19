@@ -214,3 +214,8 @@ details.rv-pane summary{cursor:pointer;font-weight:600;color:var(--brand)}detail
 .fs-prose code.fx{font-family:inherit;font-weight:600;white-space:normal}
 @media(max-width:1060px){.menu-btn{display:block}.nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:12px 20px 20px;border-bottom:1px solid var(--line);gap:.2em}.nav-links a{padding:.6em 0}.nav-open .nav-links{display:flex}}
 @media(min-width:861px){.c-legend{grid-template-columns:1fr}}
+/* ===== v5: bold formulas on formula/rules sheets ===== */
+code.fx,.fs-prose code.fx{font-weight:700;letter-spacing:.005em}
+.fx-note{font-weight:400}
+.fs-t{font-weight:800;font-size:1.1rem}
+@media(max-width:600px){.fs-t{font-size:1.05rem}}
