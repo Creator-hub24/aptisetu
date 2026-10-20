@@ -7,7 +7,7 @@
   const nav = [
     ["index.html", "Home"], ["quant.html", "Quant"], ["reasoning.html", "Reasoning"],
     ["dilr.html", "DILR"], ["cat.html", "CAT"], ["cuet.html", "CUET"], ["varc.html", "VARC"],
-    ["practice.html", "Practice"], ["about.html", "About"], ["contact.html", "Contact"]
+    ["practice.html", "Practice"], ["after12.html", "After 12"], ["about.html", "About"], ["contact.html", "Contact"]
   ];
   const here = location.pathname.split("/").pop() || "index.html";
   const alias = { "cat-practice.html": "cat.html", "cuet-practice.html": "cuet.html" };

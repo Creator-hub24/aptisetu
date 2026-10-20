@@ -1,0 +1,45 @@
+/* ===== v7: After 12 page ===== */
+.a12-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.a12-panel{display:grid;gap:18px;padding:18px}
+.a12-lbl{display:block;margin:0 0 .45rem;font-size:.74rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.a12-chips{display:flex;flex-wrap:wrap;gap:8px}
+.a12-chip{font:inherit;font-size:.92rem;font-weight:500;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:99px;padding:.5em 1em;cursor:pointer;display:inline-flex;align-items:center;gap:.5em}
+.a12-chip:hover{border-color:var(--brand)}
+.a12-chip[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:#fff}
+.a12-chip .n{font-size:.8rem;opacity:.75;font-variant-numeric:tabular-nums}
+.a12-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.a12-controls>div{min-width:0}
+.a12-controls select,.a12-controls input{width:100%;padding:.55em .8em;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff;color:var(--ink)}
+.a12-controls select:focus,.a12-controls input:focus{outline:2px solid #c7d2fe;border-color:var(--brand)}
+.a12-status{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 14px;border-top:1px solid var(--line);padding-top:12px}
+.a12-status p{margin:0;font-variant-numeric:tabular-nums}.a12-status strong{color:var(--ink)}
+.a12-reset{background:none;border:0;min-height:0;padding:.4em 0;font:inherit;font-size:.9rem;font-weight:600;color:var(--brand);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.a12-results{margin-top:20px;scroll-margin-top:12px}
+.a12-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh)}
+.a12-table{width:100%;border-collapse:separate;border-spacing:0;font-size:.92rem}
+.a12-table th{text-align:left;padding:.8em .9em;font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--brand);white-space:nowrap}
+.a12-table td{padding:.9em;border-bottom:1px solid var(--line);vertical-align:top;min-width:0}
+.a12-table tbody tr:last-child td{border-bottom:0}
+.a12-table tbody tr:hover td{background:#f8f9fe}
+.a12-course b{display:block;font-size:1rem;line-height:1.3}
+.a12-cat{display:block;margin-top:.25em;font-size:.8rem;color:var(--muted)}
+.a12-pill{display:inline-block;margin:0 .3em .3em 0;padding:.1em .55em;border:1px solid var(--line);border-radius:6px;font-size:.78rem;font-weight:600;background:#f1f5f9;color:#334155}
+.a12-pill.any{background:#eef2ff;border-color:#c7d2fe;color:#3730a3}
+.a12-note{display:block;margin-top:.2em;font-size:.8rem;color:var(--muted)}
+.a12-dur{font-variant-numeric:tabular-nums}
+.a12-link{display:block;margin-top:.45em;font-size:.84rem;font-weight:600;color:var(--brand)}
+.a12-empty td{color:var(--muted);padding:1.6em .9em}
+@media(min-width:761px){.a12-table{min-width:880px}.a12-dur{white-space:nowrap}
+ .a12-table th:nth-child(1),.a12-table td:nth-child(1){width:22%}.a12-table th:nth-child(2),.a12-table td:nth-child(2){width:15%}.a12-table th:nth-child(3),.a12-table td:nth-child(3){width:11%}.a12-table th:nth-child(4),.a12-table td:nth-child(4){width:27%}}
+@media(max-width:760px){
+ .a12-wrap{overflow:visible;background:transparent;border:0;box-shadow:none}
+ .a12-table,.a12-table thead,.a12-table tbody,.a12-table tr,.a12-table td{display:block;min-width:0}
+ .a12-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+ .a12-table tbody tr{background:#fff;border:1px solid var(--line);border-radius:var(--r);margin-bottom:12px;padding-bottom:6px;box-shadow:var(--sh)}
+ .a12-table tbody tr:hover td{background:transparent}
+ .a12-table td{border:0;padding:.5em .9em;display:grid;grid-template-columns:6.2rem minmax(0,1fr);gap:.6em}
+ .a12-table td::before{content:attr(data-label);padding-top:.15em;font-size:.7rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+ .a12-table td.a12-course{display:block;padding:.85em .9em;margin-bottom:6px;border-bottom:1px solid var(--line)}
+ .a12-table td.a12-course::before{content:none}
+ .a12-table .a12-empty td{display:block}.a12-table .a12-empty td::before{content:none}
+}

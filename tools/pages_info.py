@@ -82,6 +82,40 @@ page("404.html","Page not found",f"""<section><div class="container" style="max-
 <div class="cta-row" style="justify-content:center"><a class="btn" href="index.html">Go to home</a><a class="btn btn-ghost" href="practice.html">Start practising</a></div></div></section>""",
  desc=f"Page not found on {BRAND}.", noindex=True, base=True)
 
+# ---------- AFTER 12 ----------
+page("after12.html","After 12: Courses &amp; Careers","""
+<link rel="stylesheet" href="assets/css/after12.css">
+<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / After 12</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">After 12: every path in one table</h1><p class="muted">Pick your Class 12 stream, narrow by field, and compare who can apply, how long each path takes, how you get in and where it leads.</p></div></div>
+<section style="padding-top:16px"><div class="container">
+ <div class="card a12-panel">
+  <div>
+   <span class="a12-lbl" id="a12-stream-lbl">Your Class 12 stream</span>
+   <div class="a12-chips" role="group" aria-labelledby="a12-stream-lbl" id="a12-streams">
+    <button type="button" class="a12-chip" data-stream="ALL" aria-pressed="true">All streams <span class="n"></span></button>
+    <button type="button" class="a12-chip" data-stream="M" aria-pressed="false">Science (PCM) <span class="n"></span></button>
+    <button type="button" class="a12-chip" data-stream="B" aria-pressed="false">Science (PCB) <span class="n"></span></button>
+    <button type="button" class="a12-chip" data-stream="C" aria-pressed="false">Commerce <span class="n"></span></button>
+    <button type="button" class="a12-chip" data-stream="A" aria-pressed="false">Arts <span class="n"></span></button>
+   </div>
+  </div>
+  <div class="a12-controls">
+   <div><label class="a12-lbl" for="a12-field">Field</label><select id="a12-field"><option value="">All fields</option></select></div>
+   <div><label class="a12-lbl" for="a12-q">Search</label><input id="a12-q" type="search" placeholder="Try NEET, CLAT, pilot, design" autocomplete="off"></div>
+   <div><label class="a12-lbl" for="a12-sort">Sort by</label><select id="a12-sort"><option value="field">Field</option><option value="az">Course name A to Z</option><option value="short">Shortest first</option><option value="long">Longest first</option></select></div>
+  </div>
+  <div class="a12-status"><p id="a12-count" aria-live="polite" class="muted"></p><button type="button" class="a12-reset" id="a12-reset">Clear all filters</button></div>
+ </div>
+ <div class="a12-results" id="a12-results">
+  <div class="table-wrap a12-wrap"><table class="a12-table"><caption class="a12-sr">Courses and career paths open to students after Class 12</caption>
+   <thead><tr><th scope="col">Course or path</th><th scope="col">Open to</th><th scope="col">Duration</th><th scope="col">How you get in</th><th scope="col">Where it leads</th></tr></thead>
+   <tbody id="a12-rows"></tbody></table></div>
+ </div>
+ <div class="notice" style="margin-top:20px">Exam names, eligibility rules and seat numbers change every year, and durations here are typical, not fixed. Confirm on the official website of the exam or college before you apply. Last reviewed 20 October 2026.</div>
+ <p class="muted" style="margin-top:12px;max-width:70ch">UPSC and state civil services start after graduation, so choose any degree you can do well in and begin preparing early.</p>
+</div></section>
+""", desc="Every path after Class 12 in one table: engineering, medical, commerce, law, arts, design, defence and more. Filter by your stream and compare entry exams and careers.",
+ extra='<script src="assets/js/after12.js"></script>')
+
 # ---------- cleanup, sitemap, robots ----------
 for old in ("signup.html",):
     if os.path.exists(old): os.remove(old)
