@@ -94,11 +94,11 @@ page("index.html","", f"""
   <div class="cta-row hero-cta"><a href="practice.html" class="btn">Start a free quiz →</a><a href="#sections" class="btn btn-ghost">Explore topics</a></div>
   <div class="stats"><div><b>3</b><span>Exam tracks</span></div><div><b data-stat="topics">{NT}</b><span>Topics</span></div><div><b data-stat="questions">{NQ}</b><span>Practice questions</span></div></div>
  </div>
- <div class="hero-card" aria-hidden="true">
-  <div class="q-meta"><span>Quant · Time &amp; Work</span><span class="timer-chip">⏱ 01:24</span></div>
-  <p style="font-weight:600;margin:.2em 0 .6em">A finishes a job in 12 days, B in 18 days. Together they need?</p>
-  <div class="mini-opt">A. 6 days</div><div class="mini-opt sel">B. 7.2 days ✓</div><div class="mini-opt">C. 7.5 days</div><div class="mini-opt">D. 15 days</div>
-  <div class="progress" style="margin:14px 0 0"><i style="width:60%"></i></div>
+ <div class="hero-card" id="sample">
+  <div class="q-meta"><span>Try one · Quant · Time &amp; Work</span><span class="timer-chip">Sample</span></div>
+  <p style="font-weight:600;margin:.2em 0 .6em">A finishes a job in 12 days, B in 18 days. Working together, how many days do they need?</p>
+  <div class="sample-opts"><button type="button" class="mini-opt" data-ok="0">A. 6 days</button><button type="button" class="mini-opt" data-ok="1">B. 7.2 days</button><button type="button" class="mini-opt" data-ok="0">C. 7.5 days</button><button type="button" class="mini-opt" data-ok="0">D. 15 days</button></div>
+  <div id="sample-fb" class="sample-fb hidden" aria-live="polite"></div>
  </div>
 </div></section>
 
@@ -175,6 +175,11 @@ page("index.html","", f"""
  <h2>Start practising in under 10 seconds</h2><p style="opacity:.9">No signup needed. Pick a section and beat the clock.</p>
  <div class="cta-row" style="justify-content:center;margin-bottom:0"><a href="practice.html" class="btn">Start a free quiz →</a></div>
 </div></div></section>
+<script>(function(){{var box=document.getElementById('sample'),fb=document.getElementById('sample-fb'),bs=[].slice.call(box.querySelectorAll('.mini-opt'));
+bs.forEach(function(b){{b.onclick=function(){{var ok=b.dataset.ok==='1';bs.forEach(function(x){{x.disabled=true;if(x.dataset.ok==='1')x.classList.add('right')}});if(!ok)b.classList.add('wrong');
+fb.innerHTML=(ok?'<b>✅ Correct!</b> ':'<b>❌ Not quite.</b> The answer is B. ')+'Together they finish 1/12 + 1/18 = 5/36 of the job a day, so they need 36/5 = 7.2 days.'+
+'<div class="cta-row" style="margin:.8em 0 0"><a class="btn btn-sm" href="practice.html?quick=5">Try 5 more →</a><button type="button" class="btn btn-ghost btn-sm" id="sample-again">Try again</button></div>';
+fb.classList.remove('hidden');document.getElementById('sample-again').onclick=function(){{bs.forEach(function(x){{x.disabled=false;x.classList.remove('right','wrong')}});fb.classList.add('hidden')}};}}}});}})();</script>
 """, desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and placements: Quant, Reasoning, DILR and VARC with timed quizzes, worked solutions and formula sheets. No login.")
 
 # ---------- SECTION PAGES ----------
@@ -245,13 +250,14 @@ FORMULAS["dilr"], "Data Interpretation and Logical Reasoning (DILR) practice: ta
 page("practice.html","Practice","""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Practice</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Practice</h1><p class="muted">Choose your exam track to begin.</p></div></div>
 <section style="padding-top:16px"><div class="container">
+ <div class="quick-card card"><div><b>⚡ Quick start</b><span class="muted">10 mixed Quant, Reasoning &amp; DILR questions · 60 s each · one tap</span></div><button type="button" class="btn" data-quick="10">Start 10 questions →</button></div>
  <div id="exam-pick" class="exam-pick">
   <a class="exam-card" href="cat-practice.html" style="--c:var(--brand)"><span class="exam-ic">🎯</span><span class="exam-b"><b>CAT</b><small>VARC · DILR · QA · 40-min sectionals · MCQ + TITA · CAT marking</small><small class="exam-n"><span data-stat="cat">%NQ_CAT%</span> CAT-style questions</small></span><span class="exam-go">→</span></a>
   <a class="exam-card" href="cuet-practice.html" style="--c:var(--cuet)"><span class="exam-ic">🎓</span><span class="exam-b"><b>CUET (UG)</b><small>General Aptitude · English · Maths · +5 / −1 · real pace</small><small class="exam-n"><span data-stat="cuet">%NQ_CUET%</span> CUET questions</small></span><span class="exam-go">→</span></a>
   <button type="button" class="exam-card" id="pick-general" style="--c:var(--reason)"><span class="exam-ic">🏦</span><span class="exam-b"><b>Bank / SSC / Placements</b><small>Quant · Reasoning · DILR · timed quizzes · topic filter</small><small class="exam-n"><span data-stat="general">%NQ_GEN%</span> questions</small></span><span class="exam-go">→</span></button>
  </div>
  <div id="setup" class="card quiz-setup hidden">
-  <p class="muted" style="margin:0 0 .8em;font-size:.9rem"><b>Track:</b> Bank / SSC / Placements · <a href="#" id="change-track">Change track</a></p>
+  <p class="muted" style="margin:0 0 .8em;font-size:.9rem"><b>Track:</b> Bank / SSC / Placements · <a href="practice.html" id="change-track">Change track</a></p>
   <h3>1. Choose a section</h3>
   <div class="sec-pick">
    <label><input type="radio" name="section" value="quant" checked>➗ Quant</label>
@@ -277,6 +283,7 @@ page("practice.html","Practice","""
     <div id="q-data" class="q-data hidden"></div>
     <div id="q-text" class="q-text"></div>
     <div id="opts"></div>
+    <div id="q-report" class="q-report"></div>
     <div class="q-actions"><div style="display:flex;gap:8px"><button id="prev" class="btn btn-ghost btn-sm">← Prev</button><button id="clear" class="btn btn-ghost btn-sm">Clear</button></div>
     <div style="display:flex;gap:8px"><button id="mark" class="btn btn-ghost btn-sm">☆ Mark</button><button id="next" class="btn btn-sm">Save &amp; Next →</button></div></div>
    </div>
@@ -289,15 +296,17 @@ page("practice.html","Practice","""
  <div id="results" class="hidden">
   <div class="card" id="res-summary"></div>
   <div style="text-align:center;margin:18px 0"><button id="retry" class="btn">Try another quiz</button></div>
+  <div class="card prog-card" data-progress="general"></div>
   <h2>Review &amp; solutions</h2><div id="review"></div>
  </div>
+ <div id="progress-wrap" class="card prog-card" data-progress="" style="margin-top:20px"></div>
 </div></section>
-""".replace("%NQ_CAT%",str(NQ_CAT)).replace("%NQ_CUET%",str(sum(CUETN.values()))).replace("%NQ_GEN%",str(NQ_GEN)), extra='''<script src="assets/js/quiz.js"></script>
+""".replace("%NQ_CAT%",str(NQ_CAT)).replace("%NQ_CUET%",str(sum(CUETN.values()))).replace("%NQ_GEN%",str(NQ_GEN)), extra='''<script src="assets/js/progress.js"></script><script src="assets/js/quiz.js"></script>
 <script>(function(){var p=new URLSearchParams(location.search),pick=document.getElementById('exam-pick'),setup=document.getElementById('setup');
-function gen(){pick.classList.add('hidden');setup.classList.remove('hidden');}
+function gen(){pick.classList.add('hidden');setup.classList.remove('hidden');if(window.__quizSetupHook)window.__quizSetupHook(p.get('topic'));}
 document.getElementById('pick-general').onclick=gen;
 document.getElementById('change-track').onclick=function(e){e.preventDefault();setup.classList.add('hidden');pick.classList.remove('hidden');};
-if(p.get('exam')==='general'||p.get('section'))gen();})();</script>''', desc="Start a free timed aptitude quiz: pick the CAT, CUET (UG) or Bank / SSC / Placements track, choose a section and topic, and get worked solutions after you submit.")
+if(p.get('exam')==='general'||p.get('section')){pick.classList.add('hidden');setup.classList.remove('hidden');}})();</script>''', desc="Start a free timed aptitude quiz: pick the CAT, CUET (UG) or Bank / SSC / Placements track, choose a section and topic, and get worked solutions after you submit.")
 
 # ---------- CAT TRACK ----------
 import html as _hh
@@ -423,6 +432,7 @@ def practice_page(fn, exam, label, home, track, sect_note, secs, title, desc):
     <div id="c-qtext" class="q-text"></div>
     <div id="c-answer"></div>
     <div id="c-feedback"></div>
+    <div id="c-report" class="q-report"></div>
     <div class="q-actions c-actions">
      <div style="display:flex;gap:8px;flex-wrap:wrap"><button id="c-prev" class="btn btn-ghost btn-sm">← Prev</button><button id="c-clear" class="btn btn-ghost btn-sm">Clear response</button><button id="c-mark" class="btn btn-ghost btn-sm">Mark for Review &amp; Next</button></div>
      <div style="display:flex;gap:8px;flex-wrap:wrap"><button id="c-check" class="btn btn-sm btn-check hidden">Check answer</button><button id="c-next" class="btn btn-sm">Save &amp; Next →</button></div>
@@ -441,11 +451,13 @@ def practice_page(fn, exam, label, home, track, sect_note, secs, title, desc):
  <div id="c-results" class="hidden">
   <div class="card" id="c-res-head"></div>
   <div class="card" id="c-topics" style="margin-top:16px"></div>
+  <div class="card prog-card" data-progress="{exam}" style="margin-top:16px"></div>
   <div style="text-align:center;margin:18px 0"><button id="c-retry" class="btn">Take another section</button> <a class="btn btn-ghost" href="{home}">{label} track</a></div>
   <h2>Review &amp; solutions</h2><div id="c-review"></div>
  </div>
+ <div id="c-progress" class="card prog-card" data-progress="{exam}" style="margin-top:20px"></div>
 </div></section>
-""", desc=desc, extra=f'<script>window.EXAM="{exam}";</script><script src="assets/js/exam.js"></script>')
+""", desc=desc, extra=f'<script>window.EXAM="{exam}";</script><script src="assets/js/progress.js"></script><script src="assets/js/exam.js"></script>')
 
 practice_page("cat-practice.html", "cat", "CAT", "cat.html", "CAT", "40 min · CAT marking · results at the end",
     [("varc", "📖 VARC"), ("dilr", "📊 DILR"), ("qa", "➗ QA")], "CAT Practice: Sectionals & Topic Practice",

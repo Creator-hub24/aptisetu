@@ -225,3 +225,44 @@ code.fx,.fs-prose code.fx{font-family:"JetBrains Mono",ui-monospace,SFMono-Regul
 @media(max-width:600px){.card>table.data{display:block;max-width:100%;overflow-x:auto}.card>table.data th,.card>table.data td{padding-left:.5em;padding-right:.5em}}
 .footer-grid>div{min-width:0}#site-footer a{overflow-wrap:anywhere}#site-footer img.logo-mark{border-radius:9px}
 #site-footer .logo span{white-space:nowrap}
+/* ===== Phase 3: usability ===== */
+body{font-size:16px}
+.quick-card{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:18px;border-left:4px solid var(--brand)}
+.quick-card>div{display:flex;flex-direction:column;gap:2px}.quick-card b{font-size:1.1rem}
+.prog-card h3{margin:0}.prog-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.prog-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}
+.prog-kpis div{background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center;display:flex;flex-direction:column}
+.prog-kpis b{font-size:1.3rem}.prog-kpis span{font-size:.85rem;color:var(--muted)}
+.prog-table td small{display:block;font-size:.78rem}
+.q-report{margin-top:6px}
+.report-link{display:inline-flex;align-items:center;min-height:44px;padding:0 4px;font-size:.9rem;color:var(--muted)}
+.report-link:hover{color:#b91c1c}
+.resume-bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:16px}.resume-actions{display:flex;gap:8px}
+.btn-share{background:#25D366!important;color:#fff!important;box-shadow:none}
+button.mini-opt{display:block;width:100%;text-align:left;background:#fff;font:inherit;color:inherit;cursor:pointer;min-height:44px}
+button.mini-opt:hover:not(:disabled){border-color:var(--brand);background:#eef2ff}
+button.mini-opt:disabled{cursor:default}
+.mini-opt.right{border-color:var(--ok);background:#f0fdf4;font-weight:600}.mini-opt.wrong{border-color:#ef4444;background:#fef2f2}
+.sample-fb{margin-top:10px;font-size:.95rem;line-height:1.5}
+.btn-sm{min-height:44px}
+.btn,button,select,input[type=text],input:not([type]){min-height:44px}
+.palette button{min-height:44px;min-width:44px}
+.keypad .wide{height:44px}
+.q-data,.sol{overflow-x:auto;max-width:100%}
+.q-data table{min-width:max-content}
+#site-footer a{min-height:32px}
+@media(max-width:700px){
+ .q-data,.sol,.mini-opt,.opt{font-size:1rem}
+ #site-footer a{padding:.55em 0}
+ .breadcrumb a{display:inline-block;padding:.6em 0}
+ .prog-kpis b{font-size:1.1rem}
+}
+.quiz-wrap>*,.c-layout>*,.grid>*{min-width:0}
+.nav-links a{min-height:44px;display:flex;align-items:center}
+@media(min-width:1061px){.nav-links a:not(.btn){min-height:44px;display:inline-flex}}
+.logo{min-height:44px}
+.menu-btn{min-width:46px;min-height:46px}
+#site-footer a{min-height:44px;display:flex;align-items:center;padding:0}
+#change-track,.quiz-setup .muted a{display:inline-flex;align-items:center;min-height:44px}
+.breadcrumb a{display:inline-flex;align-items:center;min-height:44px}
+@media(max-width:700px){.footer-grid>div:first-child{grid-column:1/-1}.prog-table th,.prog-table td{padding-left:6px;padding-right:6px}}

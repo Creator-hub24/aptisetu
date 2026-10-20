@@ -46,6 +46,7 @@
     <div id="c-qtext" class="q-text"></div>
     <div id="c-answer"></div>
     <div id="c-feedback"></div>
+    <div id="c-report" class="q-report"></div>
     <div class="q-actions c-actions">
      <div style="display:flex;gap:8px;flex-wrap:wrap"><button id="c-prev" class="btn btn-ghost btn-sm">← Prev</button><button id="c-clear" class="btn btn-ghost btn-sm">Clear response</button><button id="c-mark" class="btn btn-ghost btn-sm">Mark for Review &amp; Next</button></div>
      <div style="display:flex;gap:8px;flex-wrap:wrap"><button id="c-check" class="btn btn-sm btn-check hidden">Check answer</button><button id="c-next" class="btn btn-sm">Save &amp; Next →</button></div>
@@ -64,9 +65,11 @@
  <div id="c-results" class="hidden">
   <div class="card" id="c-res-head"></div>
   <div class="card" id="c-topics" style="margin-top:16px"></div>
+  <div class="card prog-card" data-progress="cat" style="margin-top:16px"></div>
   <div style="text-align:center;margin:18px 0"><button id="c-retry" class="btn">Take another section</button> <a class="btn btn-ghost" href="cat.html">CAT track</a></div>
   <h2>Review &amp; solutions</h2><div id="c-review"></div>
  </div>
+ <div id="c-progress" class="card prog-card" data-progress="cat" style="margin-top:20px"></div>
 </div></section>
 
 </main>
@@ -81,6 +84,6 @@
 <script src="assets/js/config.js"></script>
 <script src="assets/js/layout.js"></script>
 <script src="assets/js/stats.js"></script>
-<script>window.EXAM="cat";</script><script src="assets/js/exam.js"></script>
+<script>window.EXAM="cat";</script><script src="assets/js/progress.js"></script><script src="assets/js/exam.js"></script>
 </body>
 </html>

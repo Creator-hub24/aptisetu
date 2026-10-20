@@ -4,11 +4,11 @@
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
   const L = "ABCD";
   const EXAMS = {
-    cat: { label: "CAT", json: "data/cat.json", secs: ["varc", "dilr", "qa"], marks: { mcq: [3, -1], tita: [3, 0] },
+    cat: { label: "CAT", dir: "data/cat/", secs: ["varc", "dilr", "qa"], marks: { mcq: [3, -1], tita: [3, 0] },
            target: { varc: 24, dilr: 22, qa: 22 }, time: () => 40 * 60 },
     // CUET (UG) 2026: 50 compulsory MCQs in 60 minutes per paper, +5 / −1 (NTA Information Bulletin). When the bank holds
     // fewer than 50 questions for a paper we keep the official pace of 72 seconds per question.
-    cuet: { label: "CUET", json: "data/cuet.json", secs: ["gat", "english", "maths"], marks: { mcq: [5, -1] },
+    cuet: { label: "CUET", dir: "data/cuet/", secs: ["gat", "english", "maths"], marks: { mcq: [5, -1] },
             target: { gat: 50, english: 50, maths: 50 }, time: n => Math.min(50, n) * 72,
             gatMix: { "Quantitative Reasoning": 15, "Logical & Analytical Reasoning": 15, "General Mental Ability": 10, "General Knowledge": 10 } }
   };
@@ -16,12 +16,23 @@
   const mk = q => EX.marks[q.type] || EX.marks.mcq, sgn = v => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v);
   const marksTxt = q => `${sgn(mk(q)[0])} / ${mk(q)[1] ? sgn(mk(q)[1]) : "0"}`;
   let sectionTime = 0;
-  let bank, mode, sec, qs = [], cur = 0, resp = [], marked = [], visited = [], tspent = [], checked = [], timeLeft = 0, timerId = null, shownAt = 0, elapsed = 0;
+  const P = window.Progress, ENG = window.EXAM || "cat", saveKey = "exam-" + ENG;
+  let saveTick = 0;
+  let bank = { sections: {}, sets: {} }, mode, sec, qs = [], cur = 0, resp = [], marked = [], visited = [], tspent = [], checked = [], timeLeft = 0, timerId = null, shownAt = 0, elapsed = 0;
 
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const fmt = s => `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const val = (name) => (document.querySelector(`input[name=${name}]:checked`) || {}).value;
+
+  // ---------- data: one JSON file per section, loaded on demand ----------
+  const loading = {};
+  function ensure(s) {
+    if (bank.sections[s]) return Promise.resolve();
+    return loading[s] = loading[s] || fetch(EX.dir + s + ".json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(d => { bank.sections[s] = { name: d.name, questions: d.questions }; Object.assign(bank.sets, d.sets || {}); });
+  }
+  const fail = () => { $("#c-setup").innerHTML = "<div class='notice'>Could not load " + EX.label + " questions. Please check your connection, or open the site through a web server.</div>"; };
 
   // ---------- question selection ----------
   function groups(list) { // keep set questions together, in bank order
@@ -78,8 +89,11 @@
 
   // ---------- setup ----------
   function topicsFor(s) { const c = {}; bank.sections[s].questions.forEach(q => c[q.topic] = (c[q.topic] || 0) + 1); return c; }
-  function refreshSetup() {
+  async function refreshSetup() {
     mode = val("cmode"); sec = val("csec");
+    $("#c-start").disabled = true;
+    if (!bank.sections[sec]) { $("#c-info").textContent = "Loading questions…"; try { await ensure(sec); } catch (e) { fail(); return; } if (sec !== val("csec")) return; }
+    $("#c-start").disabled = false;
     $("#c-topic-wrap").classList.toggle("hidden", mode !== "practice");
     const tc = topicsFor(sec), sel = $("#c-topic"), keep = sel.dataset.want || sel.value; sel.dataset.want = "";
     const qq = bank.sections[sec].questions, parts = [...new Set(qq.map(q => q.part).filter(Boolean))];
@@ -100,7 +114,7 @@
     $("#c-info").innerHTML = info;
   }
   function counts() {
-    EX.secs.forEach(s => { const el = $(`[data-csec-count="${s}"]`); if (el) el.textContent = bank.sections[s].questions.length + " Qs"; });
+    fetch("data/stats.json").then(r => r.json()).then(st => EX.secs.forEach(s => { const el = $(`[data-csec-count="${s}"]`), n = st.stat[ENG + "-" + s]; if (el && n != null) el.textContent = n + " Qs"; })).catch(() => {});
   }
 
   // ---------- run ----------
@@ -120,13 +134,20 @@
     });
     const n = qs.length; resp = Array(n).fill(null); marked = Array(n).fill(false); visited = Array(n).fill(false); tspent = Array(n).fill(0); checked = Array(n).fill(false);
     sectionTime = EX.time(qs.length); cur = 0; elapsed = 0; timeLeft = sectionTime;
+    title = `${EX.label} ${bank.sections[sec].name} · ${mode === "sectional" ? "Sectional" : "Practice" + ($("#c-topic").value ? " · " + topicLabel($("#c-topic").value) : "")}`;
+    if (window.track) window.track(`${mode}-start-${ENG}-${sec}`);
+    begin();
+  }
+  let title = "";
+  function save() { if (P && qs.length) P.saveRun(saveKey, { mode, sec, qs, cur, resp, marked, visited, tspent, checked, timeLeft, elapsed, sectionTime, title }); }
+  function begin() {
+    document.querySelectorAll(".resume-bar").forEach(x => x.remove()); $("#c-progress").classList.add("hidden");
     $("#c-setup").classList.add("hidden"); $("#c-results").classList.add("hidden"); $("#c-quiz").classList.remove("hidden");
-    $("#c-title").textContent = `${EX.label} ${bank.sections[sec].name} · ${mode === "sectional" ? "Sectional" : "Practice" + ($("#c-topic").value ? " · " + topicLabel($("#c-topic").value) : "")}`;
+    $("#c-title").textContent = title;
     $("#c-submit").textContent = mode === "sectional" ? "Submit section" : "Finish practice";
     $("#c-mark").classList.toggle("hidden", mode !== "sectional");
     $("#c-check").classList.toggle("hidden", mode !== "practice");
-    clearInterval(timerId); shownAt = Date.now(); go(0); tick(); timerId = setInterval(tick, 1000);
-    if (window.track) window.track(`${mode}-start-${window.EXAM || "cat"}-${sec}`);
+    clearInterval(timerId); shownAt = Date.now(); $("#c-pane").dataset.set = ""; go(cur); tick(); timerId = setInterval(tick, 1000);
     scrollTo({ top: 0, behavior: "instant" });
   }
   function tick() {
@@ -135,6 +156,7 @@
       t.textContent = "⏱ " + fmt(timeLeft) + " left"; t.classList.toggle("low", timeLeft <= 300);
       if (timeLeft <= 0) { submit(true); return; } timeLeft--;
     } else { t.textContent = "⏱ " + fmt(elapsed) + " elapsed"; elapsed++; }
+    if (++saveTick % 5 === 0) save();
   }
   function leave() { if (qs.length) tspent[cur] += (Date.now() - shownAt) / 1000; shownAt = Date.now(); }
   function go(i) { leave(); cur = i; visited[i] = true; render(); }
@@ -187,8 +209,10 @@
     $("#c-prev").disabled = cur === 0;
     $("#c-next").textContent = cur === qs.length - 1 ? (mode === "sectional" ? "Save" : "Next") : "Save & Next →";
     $("#c-mark").textContent = "Mark for Review & Next";
-    paletteOnly();
+    $("#c-report").innerHTML = report(q);
+    paletteOnly(); save();
   }
+  const report = q => P ? P.reportLink({ id: q.id, exam: EX.label, section: bank.sections[sec].name + " · " + q.topic }) : "";
   function stat(i) { return !visited[i] ? "nv" : marked[i] ? (answered(i) ? "am" : "m") : answered(i) ? "a" : "na"; }
   function paletteOnly() {
     $("#c-palette").innerHTML = qs.map((_, i) => `<button class="${stat(i)} ${i === cur ? "cur" : ""} ${mode === "practice" && checked[i] ? (isCorrect(qs[i], resp[i]) ? "ok" : "bad") : ""}" data-i="${i}" title="Question ${i + 1}">${i + 1}</button>`).join("");
@@ -203,6 +227,7 @@
       if (!confirm(mode === "sectional" ? `Submit this section?${un ? ` ${un} question(s) unanswered.` : ""}` : "Finish this practice session?")) return;
     }
     leave(); clearInterval(timerId);
+    if (P) { P.clearRun(saveKey); P.record(ENG, qs.map((q, i) => ({ topic: q.topic, section: sec, attempted: answered(i), correct: isCorrect(q, resp[i]) }))); }
     if (window.track) { const ev = `${window.EXAM || "cat"}-${sec}`; window.track(`${mode}-finish-${ev}`); if (auto) window.track(`${mode}-autosubmit-${ev}`); }
     const rows = qs.map((q, i) => ({ q, i, att: answered(i), ok: isCorrect(q, resp[i]), t: tspent[i] }));
     const att = rows.filter(r => r.att), ok = att.filter(r => r.ok), wrong = att.filter(r => !r.ok);
@@ -223,6 +248,8 @@
         <div class="kpi"><b>${fmt(used)}</b><span>Time used${mode === "sectional" ? " of " + fmt(sectionTime) : ""}</span></div>
         <div class="kpi"><b>${Math.round(tSum / qs.length)} s</b><span>Avg time per question</span></div>
       </div>
+      ${P ? (st => `<p style="margin:.8em 0 0">🔥 <b>${st.count}-day streak</b> · ${st.quizzes} quiz${st.quizzes === 1 ? "" : "zes"} finished</p>`)(P.streak()) : ""}
+      ${P ? `<div class="cta-row share-row" style="margin:12px 0 0">${P.shareButton(`I scored ${score}/${maxScore} in a ${title} on ${(window.SITE || {}).BRAND || ""} (${acc}% accuracy)! Can you beat it?`, ENG + "-practice.html")}</div>` : ""}
       <p class="muted" style="font-size:.88rem;margin:.6em 0 0">Marking: ${window.EXAM === "cuet" ? "+5 correct, −1 wrong, 0 unanswered (CUET UG)" : "+3 correct, −1 wrong MCQ, 0 wrong TITA, 0 unanswered"}.${lost ? ` You lost ${lost} mark(s) to negative marking.` : ""}</p>`;
     const showPart = new Set(rows.map(r => r.q.part).filter(Boolean)).size > 1;
     const tr = Object.entries(topics).sort((a, b) => (showPart ? a[1].part.localeCompare(b[1].part) : 0) || (b[1].att ? b[1].ok / b[1].att : -1) - (a[1].att ? a[1].ok / a[1].att : -1));
@@ -236,14 +263,28 @@
       return `${pane}<div class="card review-item"><div class="muted" style="font-size:.85rem">Q${i + 1} · ${q.type.toUpperCase()} · ${esc(q.topic)} · ${q.difficulty} · ⏱ ${Math.round(t)} s · ${!a ? "⏭ Skipped (0)" : o ? `✅ Correct (${sgn(mk(q)[0])})` : `❌ Wrong (${mk(q)[1] ? sgn(mk(q)[1]) : "0"})`}</div>
         <div class="q-text">${q.question}</div>
         ${q.type === "mcq" ? q.options.map((op, j) => `<div class="opt ${j === q.answer ? "correct" : ""} ${resp[i] === j && j !== q.answer ? "wrong" : ""}"><b>${L[j]}</b><span>${op}</span></div>`).join("") : `<p>Your answer: <b>${yours}</b> · Correct answer: <b>${esc(q.answer)}</b></p>`}
-        <div class="sol"><b>Solution:</b> ${q.solution}</div></div>`;
+        <div class="sol"><b>Solution:</b> ${q.solution}</div>${report(q)}</div>`;
     }).join("");
+    $$("[data-progress]").forEach(x => P && P.panel(x, x.dataset.progress));
     scrollTo({ top: 0, behavior: "instant" });
   }
 
+  function offerResume() {
+    const r = P && P.loadRun(saveKey); if (!r || !r.qs || !r.qs.length) return;
+    const n = r.qs.filter((_, i) => r.resp[i] !== null && r.resp[i] !== "").length;
+    const bar = document.createElement("div"); bar.className = "notice resume-bar";
+    bar.innerHTML = `<b>Unfinished:</b> ${esc(r.title)} · ${n}/${r.qs.length} answered${r.mode === "sectional" ? ` · ${fmt(r.timeLeft)} left` : ""}. <span class="resume-actions"><button type="button" class="btn btn-sm" id="resume-go">Resume</button><button type="button" class="btn btn-ghost btn-sm" id="resume-drop">Discard</button></span>`;
+    $("#c-setup").parentNode.insertBefore(bar, $("#c-setup"));
+    $("#resume-go").onclick = async () => {
+      try { await ensure(r.sec); } catch (e) { fail(); return; }
+      ({ mode, sec, qs, cur, resp, marked, visited, tspent, checked, timeLeft, elapsed, sectionTime, title } = r); begin();
+    };
+    $("#resume-drop").onclick = () => { P.clearRun(saveKey); bar.remove(); };
+  }
+
   async function init() {
-    try { bank = await (await fetch(EX.json)).json(); }
-    catch (e) { $("#c-setup").innerHTML = "<div class='notice'>Could not load " + EX.label + " questions. Please open the site through a web server.</div>"; return; }
+    $$("[data-progress]").forEach(x => P && P.panel(x, x.dataset.progress));
+    offerResume();
     const p = new URLSearchParams(location.search);
     if (p.get("mode")) { const r = $(`input[name=cmode][value=${p.get("mode")}]`); if (r) r.checked = true; }
     if (p.get("section")) { const r = $(`input[name=csec][value=${p.get("section")}]`); if (r) r.checked = true; }
@@ -251,7 +292,7 @@
     $$("input[name=cmode],input[name=csec]").forEach(r => r.onchange = refreshSetup);
     $("#c-topic").onchange = refreshSetup;
     counts(); refreshSetup();
-    $("#c-start").onclick = start;
+    $("#c-start").onclick = async () => { try { await ensure(val("csec")); } catch (e) { fail(); return; } start(); };
   }
   document.addEventListener("DOMContentLoaded", () => {
     $("#c-prev").onclick = () => { if (cur > 0) go(cur - 1); };
@@ -260,7 +301,7 @@
     $("#c-clear").onclick = () => { if (mode === "practice" && checked[cur]) return; resp[cur] = null; render(); };
     $("#c-check").onclick = () => { checked[cur] = true; render(); };
     $("#c-submit").onclick = () => submit(false);
-    $("#c-retry").onclick = () => { $("#c-results").classList.add("hidden"); $("#c-setup").classList.remove("hidden"); refreshSetup(); scrollTo({ top: 0, behavior: "instant" }); };
+    $("#c-retry").onclick = () => { $("#c-results").classList.add("hidden"); $("#c-setup").classList.remove("hidden"); $("#c-progress").classList.remove("hidden"); refreshSetup(); scrollTo({ top: 0, behavior: "instant" }); };
     init();
   });
 })();

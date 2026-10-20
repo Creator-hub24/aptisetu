@@ -39,7 +39,8 @@ faqs=[("Is it free?","Yes. All notes, formula sheets and practice questions are 
 ("How do CUET sectionals work?","Up to 50 questions at the real pace of 72 seconds per question, with +5 for a correct answer and −1 for a wrong one. Where our bank has fewer than 50 questions, the sectional is shorter but keeps the same pace."),
 ("What is practice mode?","On the CAT and CUET tracks, practice mode has no countdown. You pick a topic, check each answer and see the full solution straight away."),
 ("Are these real exam questions?","No. All questions were written by us for practice, in the style of each exam. They are not taken from past papers."),
-("Is my progress saved?","Not at the moment. Results are shown at the end of each quiz but are not stored."),
+("Is my progress saved?","Yes, but only in your own browser. The site remembers an unfinished quiz so you can resume it, your daily practice streak, and your accuracy for each topic. This is stored in your browser's local storage on this device; it is never sent to us, and it won't follow you to another phone or browser. To delete it, use <b>Reset my progress</b> on the <a href=\"practice.html\">Practice page</a>, or clear this site's data in your browser settings."),
+("What is Quick start?","On the <a href=\"practice.html\">Practice page</a>, Quick start gives you 10 mixed Quant, Reasoning and DILR questions with 60 seconds each, in one tap."),
 ("Are you linked to NTA or the IIMs?","No. This is an independent site, not affiliated with NTA, the IIMs or any exam body. Always check official exam websites for dates and rules."),
 ("I found a mistake. What should I do?","Please <a href=\"contact.html\">contact us</a> with the page and the question text.")]
 page("faq.html","FAQ",info_head("FAQ","Frequently asked questions","Quick answers about how the site works.")+prose("".join(f"<h3>{q}</h3><p>{a}</p>" for q,a in faqs)),
@@ -52,12 +53,13 @@ else: ANALYTICS = "<h3>Analytics</h3><p>We don't use analytics today. If we add 
 page("privacy.html","Privacy Policy",info_head("Privacy","Privacy policy",f"Last updated: {_dt.date.today().strftime('%d %B %Y')}")+prose(f"""
 <p>This page explains what happens to your information when you use <span data-brand>{B}</span>. In short: we don't collect personal information.</p>
 <h3>No accounts, no forms</h3><p>There are no sign-ups or logins, and the site has no forms that send information to us. You don't need to give us your name, email or phone number to use it.</p>
-<h3>Your quiz answers</h3><p>Quizzes run entirely in your browser. Your answers and scores are not sent to us or stored by us.</p>
-<h3>Cookies</h3><p>The site does not set cookies.</p>
+<h3>Your quiz answers and progress</h3><p>Quizzes run entirely in your browser. Your answers and scores are not sent to us or stored by us.</p>
+<p>To let you resume an unfinished quiz and see your daily streak and topic-wise accuracy, the site saves this information in your browser's <b>local storage</b> on your device. It contains only quiz data (questions in progress, your answers, dates you practised and accuracy counts), never your name or contact details, and it is not sent to us or anyone else. You can delete it at any time with the <b>Reset my progress</b> button on the <a href="practice.html">Practice page</a>, or by clearing this site's data (cookies and site data) in your browser settings.</p>
+<h3>Cookies</h3><p>The site does not set cookies. Local storage (above) is kept only on your device.</p>
 <h3>Third-party services</h3><ul>
 <li><b>Hosting:</b> the site is hosted on GitHub Pages. GitHub may log technical information such as your IP address when your browser requests a page. See GitHub's privacy statement for details.</li>
 <li><b>Fonts:</b> fonts are loaded from Google Fonts, so your browser connects to Google's servers to download them. See Google's privacy policy for details.</li>
-<li><b>Email:</b> if you email us, we receive your email address and message and use them only to reply.</li></ul>
+<li><b>Email:</b> if you email us (including through a "Report an error" link, which opens your own email app with the question ID filled in), we receive your email address and message and use them only to reply.</li></ul>
 {ANALYTICS}
 <h3>Children</h3><p>The site is meant for students, including school students preparing for CUET (UG). Because we don't collect personal information, no information about children is collected.</p>
 <h3>Changes and contact</h3><p>We'll update this page if anything changes. Questions? <a href="contact.html">Contact us</a>.</p>

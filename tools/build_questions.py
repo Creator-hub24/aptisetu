@@ -461,3 +461,7 @@ for k in ("gat", "english", "maths"):
         pv = [q for q in v if q["part"] == part]
         print("    ", part, len(pv), "(reused", sum(1 for q in pv if q.get("source") == "general"), ")", dict(collections.Counter(q["topic"] for q in pv)))
 print("CUET TOTAL", len(uids), "original", sum(1 for v in uq.values() for q in v if q.get("source") != "general"), "sets:", len(UB.sets))
+
+# per-section files + data/stats.json for the site
+import importlib.util as _iu, os as _os
+_sp = _iu.spec_from_file_location("split_data", _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "split_data.py")); _m = _iu.module_from_spec(_sp); _sp.loader.exec_module(_m); _m.main()
