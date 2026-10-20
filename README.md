@@ -1,4 +1,4 @@
-# edumaths360: Quant, Reasoning, DILR & VARC prep portal (CAT + CUET (UG) + Bank/SSC/Placements tracks)
+# AptiSetu: Quant, Reasoning, DILR & VARC prep portal (CAT + CUET (UG) + Bank/SSC/Placements tracks)
 
 Static site (plain HTML/CSS/JS, no build step needed to serve). Works as-is on GitHub Pages.
 

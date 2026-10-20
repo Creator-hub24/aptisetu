@@ -24,7 +24,7 @@ def _cfg():
     return {k:v for k,v in _re.findall(r'^\s*([A-Z_]+):\s*"((?:[^"\\]|\\.)*)"', t, _re.M)}
 CFG=_cfg()
 BRAND=CFG["BRAND"]; TAGLINE=CFG.get("TAGLINE",""); EMAIL=CFG.get("EMAIL",""); FORM=CFG.get("GOOGLE_FORM_URL",""); GC=CFG.get("GOATCOUNTER","").strip().lower()
-assert not GC or _re.fullmatch(r"[a-z0-9][a-z0-9-]*", GC), "GOATCOUNTER must be just the code, e.g. edumaths360"
+assert not GC or _re.fullmatch(r"[a-z0-9][a-z0-9-]*", GC), "GOATCOUNTER must be just the code, e.g. aptisetu"
 SITE_URL=CFG["SITE_URL"].rstrip("/")+"/"
 from urllib.parse import urlparse as _up
 BASE_PATH=_up(SITE_URL).path or "/"

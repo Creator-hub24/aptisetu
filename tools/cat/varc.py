@@ -1,4 +1,4 @@
-"""CAT VARC: original passages and verbal-ability items, written for edumaths360."""
+"""CAT VARC: original passages and verbal-ability items, written for AptiSetu."""
 import re
 
 P1 = """For most of the twentieth century, a broken household object presented its owner with a simple calculation. A toaster, a radio or a pair of shoes was expensive relative to wages, while the labour needed to mend it was cheap. Repair shops lined the streets of every town, and the decision to fix rather than replace was so obvious that it hardly felt like a decision at all. Over the past few decades that arithmetic has quietly inverted. Manufacturing has become so efficient, and global supply chains so long, that a new appliance can cost less than an hour of a skilled technician's time. The repair shop has not been defeated by consumer laziness; it has been priced out.

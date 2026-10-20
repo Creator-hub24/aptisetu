@@ -1,4 +1,4 @@
-// edumaths360 exam engine (CAT and CUET UG): timed sectional tests with exam marking, and untimed topic practice.
+// AptiSetu exam engine (CAT and CUET UG): timed sectional tests with exam marking, and untimed topic practice.
 // The page sets window.EXAM ("cat" | "cuet") before loading this file; default is "cat".
 (function () {
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];

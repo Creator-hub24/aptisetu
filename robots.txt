@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://creator-hub24.github.io/edumaths360/sitemap.xml
+Sitemap: https://aptisetu.com/sitemap.xml

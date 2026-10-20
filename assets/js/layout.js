@@ -2,14 +2,8 @@
 (function () {
   const S = window.SITE;
   let n = 0;
-  // "e" inside a 360° ring: clean SVG mark for edumaths360
-  const logo = () => { const id = "lg" + (n++); return `<svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
-    <defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs>
-    <rect width="40" height="40" rx="11" fill="url(#${id})"/>
-    <circle cx="20" cy="20" r="13" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2.4"/>
-    <path d="M20 7 A13 13 0 1 1 7.4 16.8" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
-    <circle cx="20" cy="7" r="2.2" fill="#fff"/>
-    <text x="20" y="25.6" text-anchor="middle" font-size="16.5" font-weight="800" fill="#fff" font-family="Inter,system-ui,sans-serif">e</text></svg>`; };
+  // Header mark: same navy #0B1F3A / gold #C9A227 icon as the favicon (drawn by tools/make_images.py)
+  const logo = () => `<img src="assets/img/favicon.svg" alt="" width="36" height="36" class="logo-mark">`;
   const nav = [
     ["index.html", "Home"], ["quant.html", "Quant"], ["reasoning.html", "Reasoning"],
     ["dilr.html", "DILR"], ["cat.html", "CAT"], ["cuet.html", "CUET"], ["varc.html", "VARC"],
