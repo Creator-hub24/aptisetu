@@ -15,13 +15,13 @@ page("contact.html","Contact",info_head("Contact","Contact us","Questions, feedb
 <section style="padding-top:16px"><div class="container" style="max-width:820px"><div class="card">
 <h3>Reach us</h3>{reach}<p>📍 India (online)</p>
 {f'<div class="cta-row" style="margin-bottom:0">{btns}</div>' if btns else ''}
-<p class="muted" style="font-size:.9rem;margin-top:1em">If you are reporting an error in a question, please mention the page, the section and the question text so we can find it quickly. We don't have accounts or a contact form on this site, so nothing you type here is stored by us.</p>
+<p class="muted" style="font-size:.9rem;margin-top:1em">If you are reporting an error in a question, please mention the page, the section and the question text so we can find it quickly. There is no contact form on this site, so nothing you type here is stored by us. (Login is used only to save practice-set progress.)</p>
 </div></div></section>
 """, desc=f"Contact {BRAND}: send feedback, report a wrong answer or suggest a topic.")
 
 # ---------- ABOUT ----------
 page("about.html","About",info_head("About",f"About {B}","A free practice site for Indian students preparing for aptitude tests.")+prose(f"""
-<p><span data-brand>{B}</span> helps students practise Quantitative Aptitude, Logical Reasoning, DILR and VARC for competitive exams and campus placements. It is free to use and needs no login.</p>
+<p><span data-brand>{B}</span> helps students practise Quantitative Aptitude, Logical Reasoning, DILR and VARC for competitive exams and campus placements. It is free to use. Login only to save progress and unlock levels.</p>
 <h3>What's on the site</h3><ul>
 <li><b>Bank / SSC / Placements track:</b> <a href="quant.html">Quant</a>, <a href="reasoning.html">Reasoning</a> and <a href="dilr.html">DILR</a> pages with concept notes, formula sheets and <a href="practice.html?exam=general">timed quizzes</a>.</li>
 <li><b>CAT track:</b> <a href="cat.html">VARC, DILR and QA</a> with 40-minute sectionals, MCQ and TITA questions and CAT marking.</li>
@@ -32,7 +32,8 @@ page("about.html","About",info_head("About",f"About {B}","A free practice site f
 
 # ---------- FAQ ----------
 faqs=[("Is it free?","Yes. All notes, formula sheets and practice questions are free."),
-("Do I need to sign up or log in?","No. There are no accounts. Open a page and start practising."),
+("Do I need to sign up or log in?","Login only to save progress and unlock levels. Notes, quizzes, sectionals and Easy Quant set 1 of the CAT practice sets work without an account. Login uses a one-time link sent to your email; there is no password."),
+("How do the CAT practice sets work?","Each CAT section has 15 sets of 10 questions: Easy (1–5), Medium (6–10) and Hard (11–15), with a 20-minute timer (25 for DILR). A level unlocks when you have finished every ready set in the level before it. Sets we are still writing show <i>Coming soon</i>."),
 ("Which exams does it cover?","Three tracks: CAT (VARC, DILR, QA), CUET (UG) (General Aptitude Test, English, Mathematics), and Bank / SSC / Placements (Quant, Reasoning, DILR)."),
 ("How does timed mode work in the Bank / SSC quizzes?","Choose a section, an optional topic, the number of questions and the time per question (60, 90 or 120 seconds). The total time is shown as a countdown. You can move between questions, mark them for review, and see the score and worked solutions after you submit. CAT-style +3 / −1 marking is optional."),
 ("How do CAT sectionals work?","A CAT sectional is one section with a 40-minute countdown that submits automatically when time runs out. Marking is +3 for a correct answer, −1 for a wrong MCQ, and 0 for a wrong TITA or a blank. RC passages and DILR sets stay together."),
@@ -44,26 +45,27 @@ faqs=[("Is it free?","Yes. All notes, formula sheets and practice questions are 
 ("Are you linked to NTA or the IIMs?","No. This is an independent site, not affiliated with NTA, the IIMs or any exam body. Always check official exam websites for dates and rules."),
 ("I found a mistake. What should I do?","Please <a href=\"contact.html\">contact us</a> with the page and the question text.")]
 page("faq.html","FAQ",info_head("FAQ","Frequently asked questions","Quick answers about how the site works.")+prose("".join(f"<h3>{q}</h3><p>{a}</p>" for q,a in faqs)),
- desc=f"FAQ: how {BRAND} works. Free, no login, CAT, CUET (UG) and Bank / SSC tracks, timed sectionals, marking and practice mode.")
+ desc=f"FAQ: how {BRAND} works. Free; login only to save progress and unlock levels. CAT, CUET (UG) and Bank / SSC tracks, timed sectionals, marking and practice mode.")
 
 # ---------- PRIVACY ----------
 if GC: ANALYTICS = """<h3>Analytics</h3><p>We use <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a>, a privacy-friendly, open-source analytics service, to count visits. It does not set cookies and does not collect personal information. We see only aggregate numbers: which pages are viewed, the referring website, campaign tags in links (utm_ parameters), and general browser, screen-size and country statistics.</p>
 <p>We also count a few named events, such as a quiz or sectional being started, finished, or submitted automatically when time runs out (for example <code>sectional-start-cat-qa</code>). These events record only the event name, not your answers, scores or anything about you. See GoatCounter's privacy policy for how it handles data.</p>"""
 else: ANALYTICS = "<h3>Analytics</h3><p>We don't use analytics today. If we add visitor counts in future, we will use a privacy-friendly tool that does not use cookies or collect personal data, and we will update this page first.</p>"
 page("privacy.html","Privacy Policy",info_head("Privacy","Privacy policy",f"Last updated: {_dt.date.today().strftime('%d %B %Y')}")+prose(f"""
-<p>This page explains what happens to your information when you use <span data-brand>{B}</span>. In short: we don't collect personal information.</p>
-<h3>No accounts, no forms</h3><p>There are no sign-ups or logins, and the site has no forms that send information to us. You don't need to give us your name, email or phone number to use it.</p>
-<h3>Your quiz answers and progress</h3><p>Quizzes run entirely in your browser. Your answers and scores are not sent to us or stored by us.</p>
+<p>This page explains what happens to your information when you use <span data-brand>{B}</span>. In short: you can use most of the site without giving us anything. If you log in, we store your email address and your CAT practice-set results, and nothing else.</p>
+<h3>Login (optional)</h3><p>Login is only needed to save progress and unlock levels in the CAT practice sets. When you log in, we use <b>Supabase</b> (our login and database provider) to send you a one-time login link and to store:</p><ul><li>your <b>email address</b> (to log you in), and</li><li>your <b>set results</b>: the section, set number, score, total and the time you finished.</li></ul><p>We use this only to show your progress and unlock levels. We don't sell it or use it for marketing. To have your account and results deleted, email <a href="mailto:{EMAIL}">{EMAIL}</a> from the address you log in with. Supabase keeps a login session in your browser's local storage while you are logged in; logging out removes it.</p>
+<h3>Your quiz answers and progress</h3><p>Quizzes run in your browser. Your answers are never sent to us. The only thing sent is the final score of a CAT practice set, and only when you are logged in (see above).</p>
 <p>To let you resume an unfinished quiz and see your daily streak and topic-wise accuracy, the site saves this information in your browser's <b>local storage</b> on your device. It contains only quiz data (questions in progress, your answers, dates you practised and accuracy counts), never your name or contact details, and it is not sent to us or anyone else. You can delete it at any time with the <b>Reset my progress</b> button on the <a href="practice.html">Practice page</a>, or by clearing this site's data (cookies and site data) in your browser settings.</p>
 <h3>Cookies</h3><p>The site does not set cookies. Local storage (above) is kept only on your device.</p>
 <h3>Third-party services</h3><ul>
+<li><b>Login and saved results:</b> handled by Supabase (supabase.com) when you log in. See Supabase's privacy policy for details.</li>
 <li><b>Hosting:</b> the site is hosted on GitHub Pages. GitHub may log technical information such as your IP address when your browser requests a page. See GitHub's privacy statement for details.</li>
 <li><b>Fonts:</b> fonts are loaded from Google Fonts, so your browser connects to Google's servers to download them. See Google's privacy policy for details.</li>
 <li><b>Email:</b> if you email us (including through a "Report an error" link, which opens your own email app with the question ID filled in), we receive your email address and message and use them only to reply.</li></ul>
 {ANALYTICS}
 <h3>Children</h3><p>The site is meant for students, including school students preparing for CUET (UG). Because we don't collect personal information, no information about children is collected.</p>
 <h3>Changes and contact</h3><p>We'll update this page if anything changes. Questions? <a href="contact.html">Contact us</a>.</p>
-"""), desc=f"Privacy policy for {BRAND}: no accounts, no cookies and no personal data collected. Hosted on GitHub Pages; fonts from Google Fonts.")
+"""), desc=f"Privacy policy for {BRAND}: login is optional and only stores your email and CAT practice-set results (via Supabase); no cookies. Hosted on GitHub Pages; fonts from Google Fonts.")
 
 # ---------- TERMS ----------
 page("terms.html","Terms & Disclaimer",info_head("Terms","Terms of use &amp; disclaimer","Please read these before using the site.")+prose(f"""
