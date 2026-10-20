@@ -46,6 +46,7 @@
     cfg = { name: (s === "mixed" ? "Mixed" : bank[s].name) + (topic ? " · " + topic : ""), neg: $("#neg").checked };
     ans = Array(qs.length).fill(null); marked = Array(qs.length).fill(false); cur = 0;
     timeLeft = qs.length * per;
+    cfg.ev = "general-" + s; window.track && window.track("quiz-start-" + cfg.ev);
     $("#setup").classList.add("hidden"); $("#results").classList.add("hidden"); $("#quiz").classList.remove("hidden");
     $("#quiz-title").textContent = cfg.name;
     clearInterval(timerId); render(); tick(); timerId = setInterval(tick, 1000);
@@ -77,6 +78,7 @@
   function submit(auto) {
     if (!auto) { const un = ans.filter(a => a === null).length; if (un && !confirm(`${un} question(s) unanswered. Submit anyway?`)) return; }
     clearInterval(timerId);
+    if (window.track) { window.track("quiz-finish-" + cfg.ev); if (auto) window.track("quiz-autosubmit-" + cfg.ev); }
     let c = 0, w = 0;
     qs.forEach((q, i) => { if (ans[i] === null) return; ans[i] === q.answer ? c++ : w++; });
     const score = cfg.neg ? c * 3 - w : c, max = cfg.neg ? qs.length * 3 : qs.length;

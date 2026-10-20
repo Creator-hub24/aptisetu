@@ -23,7 +23,8 @@ def _cfg():
     t=open("assets/js/config.js").read()
     return {k:v for k,v in _re.findall(r'^\s*([A-Z_]+):\s*"((?:[^"\\]|\\.)*)"', t, _re.M)}
 CFG=_cfg()
-BRAND=CFG["BRAND"]; TAGLINE=CFG.get("TAGLINE",""); EMAIL=CFG.get("EMAIL",""); FORM=CFG.get("GOOGLE_FORM_URL","")
+BRAND=CFG["BRAND"]; TAGLINE=CFG.get("TAGLINE",""); EMAIL=CFG.get("EMAIL",""); FORM=CFG.get("GOOGLE_FORM_URL",""); GC=CFG.get("GOATCOUNTER","").strip().lower()
+assert not GC or _re.fullmatch(r"[a-z0-9][a-z0-9-]*", GC), "GOATCOUNTER must be just the code, e.g. edumaths360"
 SITE_URL=CFG["SITE_URL"].rstrip("/")+"/"
 from urllib.parse import urlparse as _up
 BASE_PATH=_up(SITE_URL).path or "/"
@@ -31,6 +32,7 @@ YEAR=_dt.date.today().year
 A=lambda s: _esc.escape(s, quote=True)
 PAGES=[]   # (fn, indexed)
 TITLES={}
+GC_TAG=(f'<script data-goatcounter="https://{GC}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n    ' if GC else "")
 def footer_html():
     contact=f'<a href="contact.html">Contact us</a>'+(f'<a href="mailto:{A(EMAIL)}">{_esc.escape(EMAIL)}</a>' if EMAIL else '')
     return f"""<div class="container footer-grid">
@@ -40,7 +42,7 @@ def footer_html():
       <div><h4>Practice</h4><a href="cat-practice.html">CAT sectionals</a><a href="cuet-practice.html">CUET sectionals</a><a href="practice.html?exam=general">Bank / SSC quizzes</a><a href="practice.html?section=mixed">Mixed practice</a></div>
       <div><h4>About</h4><a href="about.html">About</a><a href="faq.html">FAQ</a>{contact}<a href="privacy.html">Privacy</a><a href="terms.html">Terms &amp; disclaimer</a></div>
     </div>
-    <div class="container copyright">© {YEAR} <span data-brand>{_esc.escape(BRAND)}</span>. All rights reserved.</div>"""
+    {GC_TAG}<div class="container copyright">© {YEAR} <span data-brand>{_esc.escape(BRAND)}</span>. All rights reserved.</div>"""
 def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DILR prep for CAT, Bank, SSC, GMAT and campus placements.", extra="", noindex=False, base=False):
     title=_esc.unescape(title)
     full=f"{title} | {BRAND}" if title else f"{BRAND}: {TAGLINE}"

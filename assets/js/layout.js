@@ -27,6 +27,28 @@
       <nav class="nav-links">${links}<a href="practice.html" class="btn btn-sm">Start practising</a></nav>
     </div>`;
   // footer is written into each page by tools/build_pages.py
+
+  // Analytics events: no-op unless GoatCounter loaded (GOATCOUNTER in config.js). No personal data is sent.
+  window.track = function (name) {
+    try { if (window.goatcounter && typeof window.goatcounter.count === "function") window.goatcounter.count({ path: name, title: name, event: true }); } catch (e) {}
+  };
+
+  // Keep utm_* parameters on same-site links so a campaign visit is attributed across pages.
+  try {
+    const utm = [...new URLSearchParams(location.search)].filter(([k]) => /^utm_/i.test(k));
+    if (utm.length) document.addEventListener("click", function (ev) {
+      const a = ev.target.closest && ev.target.closest("a[href]");
+      if (!a || a.target === "_blank" || a.hasAttribute("download")) return;
+      const raw = a.getAttribute("href");
+      if (!raw || raw.charAt(0) === "#" || /^(mailto|tel|javascript):/i.test(raw)) return;
+      const u = new URL(a.href, location.href);
+      if (u.origin !== location.origin) return;
+      if (u.pathname === location.pathname && u.search === location.search && u.hash) return; // in-page anchor
+      let changed = false;
+      utm.forEach(([k, v]) => { if (!u.searchParams.has(k)) { u.searchParams.set(k, v); changed = true; } });
+      if (changed) a.href = u.href;   // updated before the browser follows the link
+    }, true);
+  } catch (e) {}
   document.querySelectorAll("[data-brand]").forEach(e => e.textContent = S.BRAND);
   document.querySelectorAll("[data-tagline]").forEach(e => e.textContent = S.TAGLINE);
 })();

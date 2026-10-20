@@ -46,6 +46,9 @@ page("faq.html","FAQ",info_head("FAQ","Frequently asked questions","Quick answer
  desc=f"FAQ: how {BRAND} works. Free, no login, CAT, CUET (UG) and Bank / SSC tracks, timed sectionals, marking and practice mode.")
 
 # ---------- PRIVACY ----------
+if GC: ANALYTICS = """<h3>Analytics</h3><p>We use <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a>, a privacy-friendly, open-source analytics service, to count visits. It does not set cookies and does not collect personal information. We see only aggregate numbers: which pages are viewed, the referring website, campaign tags in links (utm_ parameters), and general browser, screen-size and country statistics.</p>
+<p>We also count a few named events, such as a quiz or sectional being started, finished, or submitted automatically when time runs out (for example <code>sectional-start-cat-qa</code>). These events record only the event name, not your answers, scores or anything about you. See GoatCounter's privacy policy for how it handles data.</p>"""
+else: ANALYTICS = "<h3>Analytics</h3><p>We don't use analytics today. If we add visitor counts in future, we will use a privacy-friendly tool that does not use cookies or collect personal data, and we will update this page first.</p>"
 page("privacy.html","Privacy Policy",info_head("Privacy","Privacy policy",f"Last updated: {_dt.date.today().strftime('%d %B %Y')}")+prose(f"""
 <p>This page explains what happens to your information when you use <span data-brand>{B}</span>. In short: we don't collect personal information.</p>
 <h3>No accounts, no forms</h3><p>There are no sign-ups or logins, and the site has no forms that send information to us. You don't need to give us your name, email or phone number to use it.</p>
@@ -55,7 +58,7 @@ page("privacy.html","Privacy Policy",info_head("Privacy","Privacy policy",f"Last
 <li><b>Hosting:</b> the site is hosted on GitHub Pages. GitHub may log technical information such as your IP address when your browser requests a page. See GitHub's privacy statement for details.</li>
 <li><b>Fonts:</b> fonts are loaded from Google Fonts, so your browser connects to Google's servers to download them. See Google's privacy policy for details.</li>
 <li><b>Email:</b> if you email us, we receive your email address and message and use them only to reply.</li></ul>
-<h3>Analytics</h3><p>We don't use analytics today. If we add visitor counts in future, we will use a privacy-friendly tool that does not use cookies or collect personal data, and we will update this page first.</p>
+{ANALYTICS}
 <h3>Children</h3><p>The site is meant for students, including school students preparing for CUET (UG). Because we don't collect personal information, no information about children is collected.</p>
 <h3>Changes and contact</h3><p>We'll update this page if anything changes. Questions? <a href="contact.html">Contact us</a>.</p>
 """), desc=f"Privacy policy for {BRAND}: no accounts, no cookies and no personal data collected. Hosted on GitHub Pages; fonts from Google Fonts.")

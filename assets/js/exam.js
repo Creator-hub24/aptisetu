@@ -126,6 +126,7 @@
     $("#c-mark").classList.toggle("hidden", mode !== "sectional");
     $("#c-check").classList.toggle("hidden", mode !== "practice");
     clearInterval(timerId); shownAt = Date.now(); go(0); tick(); timerId = setInterval(tick, 1000);
+    if (window.track) window.track(`${mode}-start-${window.EXAM || "cat"}-${sec}`);
     scrollTo({ top: 0, behavior: "instant" });
   }
   function tick() {
@@ -202,6 +203,7 @@
       if (!confirm(mode === "sectional" ? `Submit this section?${un ? ` ${un} question(s) unanswered.` : ""}` : "Finish this practice session?")) return;
     }
     leave(); clearInterval(timerId);
+    if (window.track) { const ev = `${window.EXAM || "cat"}-${sec}`; window.track(`${mode}-finish-${ev}`); if (auto) window.track(`${mode}-autosubmit-${ev}`); }
     const rows = qs.map((q, i) => ({ q, i, att: answered(i), ok: isCorrect(q, resp[i]), t: tspent[i] }));
     const att = rows.filter(r => r.att), ok = att.filter(r => r.ok), wrong = att.filter(r => !r.ok);
     const score = ok.reduce((a, r) => a + mk(r.q)[0], 0) + wrong.reduce((a, r) => a + mk(r.q)[1], 0);
