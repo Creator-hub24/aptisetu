@@ -246,3 +246,186 @@ def build(B):
       tri, "The terms are triangular numbers k(k + 1)/2. Their sum up to n is n(n + 1)(n + 2)/6 = 20 × 21 × 22/6 = 1,540.", chk=(tri,1540))
 
 def close_(a,b): return abs(a-b) < 1e-9
+
+
+# ======================= EASY LEVEL (appended so existing IDs never shift) =======================
+def fmt(x): return str(int(x)) if F(x).denominator == 1 else str(float(x))
+def build_easy(B):
+    s = "qa"
+    M = lambda *a, **k: B.mcq(s, *a, **k)
+    T = lambda *a, **k: B.tita(s, *a, **k)
+
+    # ----- 25 questions from the user's reference set "CAT Quant: 25 Easy-level Questions" (AptiSetu Set E1),
+    # transcribed with their solutions; every answer is recomputed here.
+    x = 100 * (1 - F(110, 125)); assert x == 12
+    M("Percentages & Profit", "Easy", "The price of a gadget is first raised by 25% and then reduced by x%, so that the final price is 10% above the original price. What is x?",
+      ["10%", "12%", "12.5%", "15%"], "12%", "1.25 × (1 − x/100) = 1.10, so 1 − x/100 = 0.88 and x = 12.")
+    mp = F(108, 100) / (F(8, 10) * F(9, 10)); assert (mp - 1) * 100 == 50
+    M("Percentages & Profit", "Easy", "A shopkeeper allows successive discounts of 20% and 10% on the marked price and still earns a profit of 8% on cost price. By what percentage is the marked price above the cost price?",
+      ["40%", "45%", "50%", "55%"], "50%", "Selling price = 0.8 × 0.9 × MP = 0.72 MP = 1.08 CP. So MP = 1.5 CP, i.e. 50% above cost.")
+    v = next(v for v in range(1, 200) if F(2, F(1, 20) + F(1, v)) == 24)
+    T("Time, Speed & Distance", "Easy", "A cyclist covers the first half of a journey at 20 km/h. At what speed (in km/h) must he cover the second half so that his average speed for the whole journey is 24 km/h?",
+      v, "Average speed is the harmonic mean for equal distances: 2/(1/20 + 1/v) = 24, so 1/20 + 1/v = 1/12 and 1/v = 1/30. Hence v = 30.", chk=(v, 30))
+    d = 4 + (1 - 4 * (F(1, 12) + F(1, 18))) / F(1, 18); assert d == 12
+    M("Time & Work", "Easy", "A can finish a job in 12 days and B in 18 days. They work together for 4 days, after which A leaves. In how many days in all is the job completed?",
+      ["10", "11", "12", "14"], "12", "In 4 days together: 4 × (1/12 + 1/18) = 4 × 5/36 = 5/9 of the work. The remaining 4/9 is done by B at 1/18 per day, which takes 8 days. Total = 4 + 8 = 12 days.")
+    x = next(x for x in range(1, 120) if 72 - F(3, 5) * x == 48 - F(2, 5) * x + x)
+    T("Mixtures & Alligation", "Easy", "A vessel holds 120 litres of milk and water in the ratio 3 : 2. How many litres of the mixture must be drawn out and replaced by water so that milk and water become equal in quantity?",
+      x, "Milk = 72 L. Removing x litres of mixture removes 0.6x litres of milk. We need 72 − 0.6x = 60, so x = 20.", chk=(x, 20))
+    T("Averages", "Easy", "The average of 11 numbers is 30. The average of the first six is 28 and the average of the last six is 33. What is the sixth number?",
+      6 * 28 + 6 * 33 - 330, "Sum of all = 330. The sixth number is counted in both groups: 6×28 + 6×33 = 168 + 198 = 366. So the sixth number = 366 − 330 = 36.", chk=(6 * 28 + 6 * 33 - 330, 36))
+    M("Number System", "Easy", "What is the remainder when 2<sup>100</sup> is divided by 7?",
+      ["1", "2", "4", "6"], str(pow(2, 100, 7)), "2³ = 8 ≡ 1 (mod 7). 100 = 3 × 33 + 1, so 2¹⁰⁰ ≡ 2¹ = 2.")
+    z = len(str(math.factorial(75))) - len(str(math.factorial(75)).rstrip("0"))
+    T("Number System", "Easy", "How many zeroes does 75! end with?",
+      z, "Count the factors of 5: ⌊75/5⌋ + ⌊75/25⌋ = 15 + 3 = 18.", chk=(z, 18))
+    xr = (5 + sqrt(21)) / 2; assert close_(xr ** 3 + 1 / xr ** 3, 110)
+    T("Equations & Quadratics", "Easy", "If x + 1/x = 5, find the value of x³ + 1/x³.",
+      110, "x³ + 1/x³ = (x + 1/x)³ − 3(x + 1/x) = 125 − 15 = 110.", chk=(xr ** 3 + 1 / xr ** 3, 110))
+    k = next(k for k in range(-50, 50) if 49 - 4 * k == 9)
+    M("Equations & Quadratics", "Easy", "The roots of x² − 7x + k = 0 differ by 3. What is the value of k?",
+      ["8", "10", "12", "14"], str(k), "Let the roots be a and a + 3. Sum = 2a + 3 = 7, so a = 2. The roots are 2 and 5, so k = product = 10.")
+    s_ = 21; ar = sqrt(s_ * 8 * 7 * 6); assert ar == 84 and ar / s_ == 4
+    M("Geometry", "Easy", "The sides of a triangle are 13 cm, 14 cm and 15 cm. What is the radius of its incircle?",
+      ["3 cm", "3.5 cm", "4 cm", "4.5 cm"], "4 cm", "s = 21; area = √(21×8×7×6) = 84. Inradius = area / s = 84/21 = 4 cm.")
+    assert sqrt(12 ** 2 + 5 ** 2) == 13
+    M("Geometry", "Easy", "A chord of length 24 cm is at a distance of 5 cm from the centre of a circle. What is the radius of the circle?",
+      ["12 cm", "13 cm", "14 cm", "15 cm"], "13 cm", "Half-chord = 12. Radius² = 12² + 5² = 169, so r = 13 cm.")
+    inc = (F(6, 5) ** 3 - 1) * 100
+    T("Mensuration", "Easy", "Each edge of a cube is increased by 20%. By what percentage (to one decimal place) does its volume increase?",
+      inc, "New volume = 1.2³ = 1.728 times the old one, so the increase is 72.8%.", chk=(inc, F(728, 10)))
+    dd = 10000 * (F(11, 10) ** 3 - 1) - 3000
+    T("Simple & Compound Interest", "Easy", "A sum of ₹10,000 is invested for 3 years at 10% per annum. Find (in ₹) the difference between the compound interest (annual compounding) and the simple interest.",
+      dd, "CI = 10000 × (1.1³ − 1) = 3310. SI = 3000. Difference = ₹310.", chk=(dd, 310))
+    ban = sum(1 for p in set(itertools.permutations("BANANA")) if "AA" not in "".join(p))
+    M("Permutations & Combinations", "Easy", "In how many ways can the letters of the word BANANA be arranged so that no two A's are adjacent?",
+      ["6", "10", "12", "20"], str(ban), "Arrange B, N, N first: 3!/2! = 3 ways. This creates 4 gaps; choose 3 of them for the A's: C(4,3) = 4. Total = 3 × 4 = 12.")
+    pp = F(sum(1 for a in range(1, 7) for b in range(1, 7) if a + b in (2, 3, 5, 7, 11)), 36)
+    M("Probability", "Easy", "Two fair dice are thrown. What is the probability that the sum of the numbers is a prime number?",
+      ["1/3", "5/12", "7/18", "1/2"], f"{pp.numerator}/{pp.denominator}", "Prime sums: 2 (1 way), 3 (2), 5 (4), 7 (6), 11 (2) = 15 favourable outcomes out of 36. Probability = 15/36 = 5/12.")
+    S_ = lambda n: 3 * n * n + 2 * n
+    T("Progressions", "Easy", "The sum of the first n terms of a sequence is 3n² + 2n. Find its 10th term.",
+      S_(10) - S_(9), "T₁₀ = S₁₀ − S₉ = (300 + 20) − (243 + 18) = 320 − 261 = 59.", chk=(S_(10) - S_(9), 59))
+    gp = [t for t in itertools.combinations_with_replacement(range(1, 22), 3) if sum(t) == 21 and t[0] * t[1] * t[2] == 216 and t[1] * t[1] == t[0] * t[2]]
+    assert gp == [(3, 6, 12)], gp
+    T("Progressions", "Easy", "Three numbers in geometric progression have a sum of 21 and a product of 216. What is the largest of them?",
+      12, "Let them be 6/r, 6, 6r (the middle term is the cube root of 216). Then 6/r + 6 + 6r = 21, so r + 1/r = 5/2, giving r = 2 or 1/2. The numbers are 3, 6, 12, so the largest is 12.", chk=(max(gp[0]), 12))
+    xl = next(x for x in range(1, 1000) if close_(math.log2(x) + math.log(x, 4), 6))
+    M("Logarithms", "Easy", "If log₂ x + log₄ x = 6, what is x?",
+      ["8", "12", "16", "32"], str(xl), "log₄ x = (1/2) log₂ x, so (3/2) log₂ x = 6, giving log₂ x = 4 and x = 16.")
+    ni = sum(1 for x in range(-50, 50) if abs(x - 3) < 5 and x * x <= 16)
+    T("Inequalities", "Easy", "How many integers x satisfy both |x − 3| &lt; 5 and x² ≤ 16?",
+      ni, "|x − 3| &lt; 5 gives −2 &lt; x &lt; 8. x² ≤ 16 gives −4 ≤ x ≤ 4. Common integers: −1, 0, 1, 2, 3, 4, which is 6.", chk=(ni, 6))
+    c_ = F(54) / F(6, 5); r_ = (55 - c_) / (c_ - 40); assert r_ == 2
+    M("Mixtures & Alligation", "Easy", "Two varieties of rice costing ₹40/kg and ₹55/kg are mixed and the mixture is sold at ₹54/kg at a profit of 20%. In what ratio were the cheaper and dearer varieties mixed?",
+      ["1 : 2", "2 : 1", "3 : 2", "3 : 1"], "2 : 1", "Cost price of the mixture = 54/1.2 = ₹45. By alligation, cheaper : dearer = (55 − 45) : (45 − 40) = 10 : 5 = 2 : 1.")
+    st = (F(36, 3) - F(36, F(9, 2))) / 2
+    T("Time, Speed & Distance", "Easy", "A boat travels 36 km downstream in 3 hours and returns the same 36 km upstream in 4.5 hours. What is the speed of the stream in km/h?",
+      st, "Downstream = 12 km/h, upstream = 8 km/h. Stream = (12 − 8)/2 = 2 km/h.", chk=(st, 2))
+    tm = 1 / (F(1, 20) + F(1, 30) - F(1, 60))
+    M("Time & Work", "Easy", "Pipe A fills a tank in 20 minutes, pipe B in 30 minutes, and pipe C empties it in 60 minutes. If all three are opened together, in how many minutes is the empty tank filled?",
+      ["12", "15", "18", "24"], str(tm), "Net rate = 1/20 + 1/30 − 1/60 = (3 + 2 − 1)/60 = 4/60 = 1/15. Time = 15 minutes.")
+    son = next(s for s in range(13, 100) if 3 * s - 12 == 7 * (s - 12))
+    T("Equations & Quadratics", "Easy", "A father is three times as old as his son. Twelve years ago he was seven times as old as the son was then. What is the father's present age (in years)?",
+      3 * son, "F = 3S and F − 12 = 7(S − 12). So 3S − 12 = 7S − 84, giving S = 18 and F = 54.", chk=(3 * son, 54))
+    M("Sets", "Easy", "In a class of 60 students, 35 play cricket, 30 play football and 10 play neither. How many students play both games?",
+      ["10", "15", "20", "25"], str(35 + 30 - (60 - 10)), "Students playing at least one game = 60 − 10 = 50. Both = 35 + 30 − 50 = 15.")
+
+    # ----- 25 AptiSetu-written Easy questions (drafts E1-E25, verified by easy_qa_check.py and again below)
+    assert (fmt((1 - F(4, 5)) * 100) + "%") == "20%", "E1"
+    M("Percentages & Profit", "Easy", "The price of sugar rises by 25%. By what percentage must a family cut its sugar consumption so that its spending on sugar stays the same?",
+      ["20%", "25%", "22.5%", "16.67%"], "20%",
+      "New price = 1.25 × old. To keep spending equal, consumption must become 1/1.25 = 0.8 of the old, a cut of 20%.")
+    assert ("Loss of ₹100" if 2400 - (F(1200) / F(6, 5) + F(1200) / F(4, 5)) == -100 else "?") == "Loss of ₹100", "E2"
+    M("Percentages & Profit", "Easy", "A shopkeeper sells two phones for ₹1,200 each, making a 20% profit on one and a 20% loss on the other. What is his overall result?",
+      ["No profit, no loss", "Loss of ₹100", "Loss of ₹48", "Profit of ₹100"], "Loss of ₹100",
+      "Cost prices are 1200/1.2 = ₹1,000 and 1200/0.8 = ₹1,500. Total cost ₹2,500, total revenue ₹2,400, so a loss of ₹100.")
+    assert (str(next(w for w in range(100) if F(30, 10 + w) == F(3, 2)))) == "10", "E3"
+    T("Mixtures & Alligation", "Easy", "A 40-litre mixture contains milk and water in the ratio 3 : 1. How many litres of water must be added to make the ratio 3 : 2?",
+      10, "Milk = 30 L and water = 10 L. Milk stays 30 L, so for 3 : 2 water must be 20 L. Add 20 − 10 = 10 litres.")
+    assert (str(next(t for t in range(1, 100) if 1 + t * F(1, 5) == 4))) == "15", "E4"
+    T("Simple & Compound Interest", "Easy", "A sum of money doubles itself in 5 years at simple interest. In how many years will it become four times itself at the same rate?",
+      15, "Doubling means the interest equals the principal in 5 years, so the rate is 20% a year. Four times needs interest of 300%, which takes 300/20 = 15 years (not 10: simple interest does not compound).")
+    assert (str(next(d for d in range(1, 50) if F(d, 5) - F(d, 6) == F(1, 6))) + " km") == "5 km", "E5"
+    M("Time, Speed & Distance", "Easy", "Walking at 5 km/h, Meena reaches her office 6 minutes late. Walking at 6 km/h, she reaches 4 minutes early. How far is her office?",
+      ["6 km", "4 km", "5 km", "7.5 km"], "5 km",
+      "The two times differ by 6 + 4 = 10 minutes = 1/6 h. So d/5 − d/6 = d/30 = 1/6, giving d = 5 km.")
+    assert (fmt(F(250) / ((54 + 36) * F(5, 18))) + " seconds") == "10 seconds", "E6"
+    M("Time, Speed & Distance", "Easy", "Two trains, 150 m and 100 m long, run on parallel tracks in opposite directions at 54 km/h and 36 km/h. How long do they take to cross each other completely?",
+      ["12.5 seconds", "25 seconds", "50 seconds", "10 seconds"], "10 seconds",
+      "Relative speed = 90 km/h = 25 m/s. Distance to cover = 150 + 100 = 250 m. Time = 250/25 = 10 s.")
+    assert (fmt(F(108) / (4 * F(3, 2) + 6))) == "9", "E7"
+    M("Time & Work", "Easy", "6 men or 9 women can finish a job in 12 days. In how many days will 4 men and 6 women together finish it?",
+      ["9", "8", "10", "12"], "9",
+      "6 men = 9 women, so 1 man = 1.5 women. The job is 9 × 12 = 108 woman-days. 4 men + 6 women = 6 + 6 = 12 women, so 108/12 = 9 days.")
+    assert (str(31 * 16 - 30 * 15)) == "46", "E8"
+    T("Averages", "Easy", "The average age of 30 students in a class is 15 years. When the teacher's age is included, the average rises by 1 year. What is the teacher's age in years?",
+      46, "Students' total = 450. With the teacher, 31 people average 16, total 496. Teacher = 496 − 450 = 46 (the trap is 16: the teacher must also lift everyone else's average by 1).")
+    assert ("₹" + str(2100 * 15 // 35)) == "₹900", "E9"
+    M("Ratio & Proportion", "Easy", "₹2,100 is divided among A, B and C such that A : B = 2 : 3 and B : C = 4 : 5. What is C's share?",
+      ["₹750", "₹900", "₹600", "₹840"], "₹900",
+      "Make B common: A : B = 8 : 12 and B : C = 12 : 15, so A : B : C = 8 : 12 : 15 (35 parts). C = 2100 × 15/35 = ₹900.")
+    assert (fmt((120 - 75 * F(11, 10) - 25) / 25 * 100) + "%") == "50%", "E10"
+    M("Percentages & Profit", "Easy", "Ravi spends 75% of his income. His income rises by 20% and his spending rises by 10%. By what percentage do his savings increase?",
+      ["30%", "40%", "50%", "10%"], "50%",
+      "Take income 100: spending 75, savings 25. New income 120, new spending 82.5, new savings 37.5. Increase = 12.5/25 = 50%.")
+    assert (str(round(sum(((5 + s * sqrt(13)) / 2) ** 2 for s in (1, -1))))) == "19", "E11"
+    T("Equations & Quadratics", "Easy", "If α and β are the roots of x² − 5x + 3 = 0, find the value of α² + β².",
+      19, "α + β = 5 and αβ = 3, so α² + β² = (α + β)² − 2αβ = 25 − 6 = 19. No need to find the roots.")
+    assert (str(sum(1 for x in range(-100, 101) if abs(x - 3) + abs(x + 2) <= 9))) == "10", "E12"
+    T("Inequalities", "Easy", "How many integers x satisfy |x − 3| + |x + 2| ≤ 9?",
+      10, "Between −2 and 3 the sum is always 5. For x > 3 it is 2x − 1 ≤ 9, so x ≤ 5; for x < −2 it is 1 − 2x ≤ 9, so x ≥ −4. So x runs from −4 to 5: 10 integers.")
+    assert (fmt((6 * 1 - 2 * F(3, 2)) / (1 * 1 - 2 * 2)).replace("-", "−")) == "−1", "E13"
+    M("Functions", "Easy", "A function satisfies f(x) + 2f(1/x) = 3x for every x ≠ 0. What is f(2)?",
+      ["1", "2", "−2", "−1"], "−1",
+      "Put x = 2: f(2) + 2f(1/2) = 6. Put x = 1/2: f(1/2) + 2f(2) = 3/2. From the second, f(1/2) = 3/2 − 2f(2); substitute: f(2) + 3 − 4f(2) = 6, so f(2) = −1.")
+    assert (str(len(str(2 ** 50)))) == "16", "E14"
+    M("Logarithms", "Easy", "Given log₁₀2 = 0.301, how many digits does 2<sup>50</sup> have?",
+      ["16", "15", "17", "50"], "16",
+      "log₁₀(2<sup>50</sup>) = 50 × 0.301 = 15.05. A number whose log lies between 15 and 16 has 15 + 1 = 16 digits.")
+    assert (str(int(10 * (2 * 2 + 19 * 4)))) == "800", "E15"
+    T("Progressions", "Easy", "In an arithmetic progression the 4th term is 14 and the 9th term is 34. What is the sum of its first 20 terms?",
+      800, "5d = 34 − 14 = 20, so d = 4 and the first term is 14 − 12 = 2. The 20th term is 2 + 76 = 78, so S₂₀ = 20 × (2 + 78)/2 = 800.")
+    assert (str(sum(3 * 2 ** i for i in range(5)))) == "93", "E16"
+    M("Progressions", "Easy", "In a geometric progression with real terms, the 3rd term is 12 and the 6th term is 96. What is the sum of the first 5 terms?",
+      ["96", "93", "186", "90"], "93",
+      "r³ = 96/12 = 8, so r = 2 and the first term is 12/4 = 3. Sum = 3(2⁵ − 1)/(2 − 1) = 93.")
+    assert (str(sum(1 for x in range(1, 100) for y in range(1, 100) if 3 * x + 5 * y == 100))) == "6", "E17"
+    M("Equations & Quadratics", "Easy", "How many ordered pairs of positive integers (x, y) satisfy 3x + 5y = 100?",
+      ["7", "5", "6", "20"], "6",
+      "100 − 5y must be a positive multiple of 3. 5y ≡ 1 (mod 3) means y ≡ 2 (mod 3): y = 2, 5, 8, 11, 14, 17 (y = 20 gives x = 0). That is 6 pairs.")
+    assert (fmt(F(48, 10)) + " cm") == "4.8 cm", "E18"
+    M("Geometry", "Easy", "A right triangle has legs 6 cm and 8 cm. What is the length of the altitude drawn to the hypotenuse?",
+      ["5 cm", "4.5 cm", "5.2 cm", "4.8 cm"], "4.8 cm",
+      "Hypotenuse = 10. Twice the area = 6 × 8 = 10 × h, so h = 4.8 cm.")
+    assert (str(int(sqrt(100 - 36))) + " cm") == "8 cm", "E19"
+    M("Geometry", "Easy", "Two circles of radii 7 cm and 1 cm have their centres 10 cm apart. What is the length of a direct (outer) common tangent?",
+      ["8 cm", "6 cm", "4√6 cm", "10 cm"], "8 cm",
+      "Direct common tangent = √(d² − (r₁ − r₂)²) = √(100 − 36) = 8 cm. (The trap is 6 cm, which uses r₁ + r₂: that is the transverse common tangent, √(100 − 64) = 6.)")
+    assert (str(27 * 24)) == "648", "E20"
+    T("Mensuration", "Easy", "A solid cube of side 6 cm is cut into identical cubes of side 2 cm. What is the total surface area, in cm², of all the small cubes together?",
+      648, "There are (6/2)³ = 27 small cubes, each with surface area 6 × 2² = 24 cm². Total = 27 × 24 = 648 cm² (three times the original 216 cm²).")
+    assert (str(next(k for k in range(3, 50) if F(180 * (k - 2), k) == 150) * 9 // 2)) == "54", "E21"
+    M("Geometry", "Easy", "Each interior angle of a regular polygon is 150°. How many diagonals does it have?",
+      ["66", "54", "48", "60"], "54",
+      "Each exterior angle is 30°, so there are 360/30 = 12 sides. Diagonals = 12 × 9/2 = 54.")
+    assert (f"{pow(7, 42, 100):02d}") == "49", "E22"
+    M("Number System", "Easy", "What are the last two digits of 7<sup>42</sup>?",
+      ["43", "07", "49", "01"], "49",
+      "7⁴ = 2401 ends in 01, so 7⁴⁰ = (7⁴)¹⁰ also ends in 01. Then 7⁴² ends like 01 × 49 = 49.")
+    assert (str(sum(1 for d in range(1, 721) if 720 % d == 0 and math.isqrt(d) ** 2 == d))) == "6", "E23"
+    T("Number System", "Easy", "How many divisors of 720 are perfect squares?",
+      6, "720 = 2⁴ × 3² × 5. A square divisor uses even exponents: 2 in {0, 2, 4} (3 ways), 3 in {0, 2} (2 ways), 5 in {0} (1 way). 3 × 2 × 1 = 6.")
+    assert (str(sum(1 for c in itertools.combinations("MMMMMWWWW", 4) if c.count("W") >= 2))) == "81", "E24"
+    M("Permutations & Combinations", "Easy", "A committee of 4 is to be chosen from 5 men and 4 women so that it has at least 2 women. In how many ways can this be done?",
+      ["91", "60", "126", "81"], "81",
+      "2 women: C(4,2) × C(5,2) = 60. 3 women: C(4,3) × 5 = 20. 4 women: 1. Total = 81. (126 is all committees, with no condition.)")
+    assert ((lambda f: f"{f.numerator}/{f.denominator}")(F(sum(1 for k in range(1, 51) if k % 3 == 0 or k % 5 == 0), 50))) == "23/50", "E25"
+    M("Probability", "Easy", "A number is picked at random from 1 to 50. What is the probability that it is divisible by 3 or by 5?",
+      ["23/50", "13/25", "1/2", "2/5"], "23/50",
+      "Multiples of 3: 16, of 5: 10, of both (15): 3. By inclusion–exclusion, 16 + 10 − 3 = 23, so 23/50.")
+
+_build_main = build
+def build(B):
+    _build_main(B)
+    build_easy(B)

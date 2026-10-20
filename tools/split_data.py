@@ -17,7 +17,7 @@ def main():
     S["general"] = sum(len(s["questions"]) for s in gen.values())
     for name, bank in (("cat", cat), ("cuet", cuet)):
         for k, s in bank["sections"].items():
-            used = {q["set"] for q in s["questions"] if q.get("set")}
+            used = sorted({q["set"] for q in s["questions"] if q.get("set")})   # sorted: stable output
             dump({"name": s["name"], "questions": s["questions"], "sets": {i: bank["sets"][i] for i in used}}, name, k + ".json")
             S[f"{name}-{k}"] = len(s["questions"])
     cq = [(k, q) for k, s in cat["sections"].items() for q in s["questions"]]
