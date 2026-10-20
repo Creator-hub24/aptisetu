@@ -43,6 +43,21 @@ def footer_html():
       <div><h4>About</h4><a href="about.html">About</a><a href="faq.html">FAQ</a>{contact}<a href="privacy.html">Privacy</a><a href="terms.html">Terms &amp; disclaimer</a></div>
     </div>
     {GC_TAG}<div class="container copyright">© {YEAR} <span data-brand>{_esc.escape(BRAND)}</span>. All rights reserved.</div>"""
+import hashlib as _hl, base64 as _b64
+def csp_meta(html):
+    """Content Security Policy: only this site's own scripts, plus the exact inline snippets the build writes (by SHA-256)."""
+    inline=_re.findall(r'<script(?![^>]*\bsrc=)[^>]*>(.*?)</script>', html, _re.S)
+    hashes=" ".join(sorted({"'sha256-"+_b64.b64encode(_hl.sha256(b.encode()).digest()).decode()+"'" for b in inline}))
+    gc_script=" https://gc.zgo.at" if GC else ""
+    gc_conn=f" https://{GC}.goatcounter.com" if GC else ""
+    pol=("default-src 'self'; "
+         f"script-src 'self'{gc_script}{(' '+hashes) if hashes else ''}; "
+         "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
+         "font-src 'self' https://fonts.gstatic.com; "
+         f"img-src 'self' data:{gc_conn}; "
+         f"connect-src 'self'{gc_conn}; "
+         "object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests")
+    return f'<meta http-equiv="Content-Security-Policy" content="{pol}">'
 def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DILR prep for CAT, Bank, SSC, GMAT and campus placements.", extra="", noindex=False, base=False):
     title=_esc.unescape(title)
     full=f"{title} | {BRAND}" if title else f"{BRAND}: {TAGLINE}"
@@ -58,6 +73,8 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 <html lang="en-IN">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--CSP-->
+<meta name="referrer" content="strict-origin-when-cross-origin">
 {basetag}<title>{A(full)}</title>
 <meta name="description" content="{A(desc)}">
 {robots}{canon}<meta name="theme-color" content="#0B1F3A">
@@ -80,6 +97,7 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 </body>
 </html>
 """
+    html=html.replace("<!--CSP-->", csp_meta(html), 1)
     open(fn,"w").write(html)
     if fn!="404.html": PAGES.append((fn, not noindex))
 DESCS={}

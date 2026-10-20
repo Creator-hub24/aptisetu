@@ -17,9 +17,14 @@
   if (header) header.innerHTML = `
     <div class="container nav">
       <a href="index.html" class="logo">${logo()}<span data-brand></span></a>
-      <button class="menu-btn" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')">☰</button>
+      <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false">☰</button>
       <nav class="nav-links">${links}<a href="practice.html" class="btn btn-sm">Start practising</a></nav>
     </div>`;
+  const menuBtn = header && header.querySelector(".menu-btn");
+  if (menuBtn) menuBtn.addEventListener("click", () => {
+    const open = document.body.classList.toggle("nav-open");
+    menuBtn.setAttribute("aria-expanded", String(open));
+  });
   // footer is written into each page by tools/build_pages.py
 
   // Analytics events: no-op unless GoatCounter loaded (GOATCOUNTER in config.js). No personal data is sent.

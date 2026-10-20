@@ -286,8 +286,10 @@
     $$("[data-progress]").forEach(x => P && P.panel(x, x.dataset.progress));
     offerResume();
     const p = new URLSearchParams(location.search);
-    if (p.get("mode")) { const r = $(`input[name=cmode][value=${p.get("mode")}]`); if (r) r.checked = true; }
-    if (p.get("section")) { const r = $(`input[name=csec][value=${p.get("section")}]`); if (r) r.checked = true; }
+    // match URL values against the real inputs (never build a selector from the URL)
+    const tick = (name, v) => { if (!v) return; const r = $$(`input[name=${name}]`).find(x => x.value === v); if (r) r.checked = true; };
+    tick("cmode", p.get("mode"));
+    tick("csec", p.get("section"));
     if (p.get("topic")) $("#c-topic").dataset.want = p.get("topic");
     $$("input[name=cmode],input[name=csec]").forEach(r => r.onchange = refreshSetup);
     $("#c-topic").onchange = refreshSetup;

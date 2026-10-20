@@ -49,7 +49,7 @@
   async function init() {
     const params = new URLSearchParams(location.search);
     const pre = params.get("section");
-    if (pre) { const r = document.querySelector(`input[name=section][value=${pre}]`); if (r) r.checked = true; }
+    if (pre) { const r = [...document.querySelectorAll("input[name=section]")].find(x => x.value === pre); if (r) r.checked = true; }
     document.querySelectorAll("input[name=section]").forEach(r => r.onchange = () => fillTopics());
     $("#topic").onchange = updAvail;
     $("#start").onclick = () => start();
