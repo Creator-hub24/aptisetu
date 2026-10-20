@@ -7,12 +7,18 @@
   const nav = [
     ["index.html", "Home"], ["quant.html", "Quant"], ["reasoning.html", "Reasoning"],
     ["dilr.html", "DILR"], ["cat.html", "CAT"], ["cuet.html", "CUET"], ["varc.html", "VARC"],
-    ["practice.html", "Practice"], ["after12.html", "After 12"], ["about.html", "About"], ["contact.html", "Contact"]
+    ["practice.html", "Practice"],
+    { label: "Careers", items: [["after12.html", "After 12"], ["after-graduation.html", "After Graduation"]] },
+    ["about.html", "About"], ["contact.html", "Contact"]
   ];
   const here = location.pathname.split("/").pop() || "index.html";
   const alias = { "cat-practice.html": "cat.html", "cuet-practice.html": "cuet.html" };
   const active = alias[here] || here;
-  const links = nav.map(([h, t]) => `<a href="${h}" class="${h === active ? "active" : ""}">${t}</a>`).join("");
+  const a = ([h, t]) => `<a href="${h}" class="${h === active ? "active" : ""}">${t}</a>`;
+  // an entry with items is a small dropdown on desktop; on phones its links show inline in the menu
+  const links = nav.map(n => !n.items ? a(n) :
+    `<div class="nav-drop"><button type="button" class="nav-drop-btn${n.items.some(([h]) => h === active) ? " active" : ""}" aria-expanded="false" aria-haspopup="true">${n.label} <span aria-hidden="true">▾</span></button>` +
+    `<div class="nav-drop-menu">${n.items.map(a).join("")}</div></div>`).join("");
   const header = document.getElementById("site-header");
   if (header) header.innerHTML = `
     <div class="container nav">
@@ -24,6 +30,13 @@
   if (menuBtn) menuBtn.addEventListener("click", () => {
     const open = document.body.classList.toggle("nav-open");
     menuBtn.setAttribute("aria-expanded", String(open));
+  });
+  if (header) header.querySelectorAll(".nav-drop").forEach(d => {
+    const btn = d.querySelector(".nav-drop-btn");
+    const set = open => { d.classList.toggle("open", open); btn.setAttribute("aria-expanded", String(open)); };
+    btn.addEventListener("click", e => { e.stopPropagation(); set(!d.classList.contains("open")); });
+    document.addEventListener("click", e => { if (!d.contains(e.target)) set(false); });
+    d.addEventListener("keydown", e => { if (e.key === "Escape") { set(false); btn.focus(); } });
   });
   // footer is written into each page by tools/build_pages.py
 

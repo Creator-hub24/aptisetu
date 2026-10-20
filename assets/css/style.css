@@ -266,3 +266,20 @@ button.mini-opt:disabled{cursor:default}
 #change-track,.quiz-setup .muted a{display:inline-flex;align-items:center;min-height:44px}
 .breadcrumb a{display:inline-flex;align-items:center;min-height:44px}
 @media(max-width:700px){.footer-grid>div:first-child{grid-column:1/-1}.prog-table th,.prog-table td{padding-left:6px;padding-right:6px}}
+
+/* ===== v8: Careers dropdown in the header ===== */
+.nav-drop{position:relative}
+.nav-drop-btn{background:none;border:0;padding:0;margin:0;font:inherit;font-size:.95rem;font-weight:500;color:var(--muted);cursor:pointer;min-height:44px;display:inline-flex;align-items:center;gap:.3em}
+.nav-drop-btn:hover,.nav-drop-btn.active,.nav-drop.open .nav-drop-btn{color:var(--ink)}
+.nav-drop-btn span{font-size:.75em;transition:transform .15s}.nav-drop.open .nav-drop-btn span{transform:rotate(180deg)}
+.nav-drop-menu{display:none;position:absolute;top:100%;left:-14px;min-width:200px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh);padding:6px;z-index:60}
+.nav-drop.open .nav-drop-menu{display:block}
+.nav-links .nav-drop-menu a{display:flex;padding:0 .8em;border-radius:8px;white-space:nowrap}
+.nav-drop-menu a:hover,.nav-drop-menu a.active{background:#f1f5f9;color:var(--ink)}
+@media(hover:hover) and (min-width:1061px){.nav-drop:hover .nav-drop-menu{display:block}.nav-drop:hover .nav-drop-btn{color:var(--ink)}}
+@media(max-width:1060px){
+ .nav-drop-btn{display:none}
+ .nav-drop-menu{display:block;position:static;min-width:0;border:0;border-radius:0;box-shadow:none;padding:0;background:transparent}
+ .nav-links .nav-drop-menu a{padding:.6em 0;border-radius:0;white-space:normal}
+ .nav-drop-menu a:hover,.nav-drop-menu a.active{background:transparent}
+}

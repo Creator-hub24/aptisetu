@@ -82,39 +82,50 @@ page("404.html","Page not found",f"""<section><div class="container" style="max-
 <div class="cta-row" style="justify-content:center"><a class="btn" href="index.html">Go to home</a><a class="btn btn-ghost" href="practice.html">Start practising</a></div></div></section>""",
  desc=f"Page not found on {BRAND}.", noindex=True, base=True)
 
-# ---------- AFTER 12 ----------
-page("after12.html","After 12: Courses &amp; Careers","""
+# ---------- AFTER 12 / AFTER GRADUATION (shared table engine: assets/js/paths.js) ----------
+def paths_page(fn, title, crumb, h1, lead, chip_label, chips, search_hint, reviewed, footnote, desc, data_js):
+    chip_html="".join(f'<button type="button" class="a12-chip" data-stream="{c}" aria-pressed="{"true" if c=="ALL" else "false"}">{lbl} <span class="n"></span></button>' for c,lbl in chips)
+    page(fn, title, f"""
 <link rel="stylesheet" href="assets/css/after12.css">
-<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / After 12</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">After 12: every path in one table</h1><p class="muted">Pick your Class 12 stream, narrow by field, and compare who can apply, how long each path takes, how you get in and where it leads.</p></div></div>
+<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / {crumb}</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">{h1}</h1><p class="muted">{lead}</p></div></div>
 <section style="padding-top:16px"><div class="container">
  <div class="card a12-panel">
   <div>
-   <span class="a12-lbl" id="a12-stream-lbl">Your Class 12 stream</span>
-   <div class="a12-chips" role="group" aria-labelledby="a12-stream-lbl" id="a12-streams">
-    <button type="button" class="a12-chip" data-stream="ALL" aria-pressed="true">All streams <span class="n"></span></button>
-    <button type="button" class="a12-chip" data-stream="M" aria-pressed="false">Science (PCM) <span class="n"></span></button>
-    <button type="button" class="a12-chip" data-stream="B" aria-pressed="false">Science (PCB) <span class="n"></span></button>
-    <button type="button" class="a12-chip" data-stream="C" aria-pressed="false">Commerce <span class="n"></span></button>
-    <button type="button" class="a12-chip" data-stream="A" aria-pressed="false">Arts <span class="n"></span></button>
-   </div>
+   <span class="a12-lbl" id="a12-stream-lbl">{chip_label}</span>
+   <div class="a12-chips" role="group" aria-labelledby="a12-stream-lbl" id="a12-streams">{chip_html}</div>
   </div>
   <div class="a12-controls">
    <div><label class="a12-lbl" for="a12-field">Field</label><select id="a12-field"><option value="">All fields</option></select></div>
-   <div><label class="a12-lbl" for="a12-q">Search</label><input id="a12-q" type="search" placeholder="Try NEET, CLAT, pilot, design" autocomplete="off"></div>
+   <div><label class="a12-lbl" for="a12-q">Search</label><input id="a12-q" type="search" placeholder="{search_hint}" autocomplete="off"></div>
    <div><label class="a12-lbl" for="a12-sort">Sort by</label><select id="a12-sort"><option value="field">Field</option><option value="az">Course name A to Z</option><option value="short">Shortest first</option><option value="long">Longest first</option></select></div>
   </div>
   <div class="a12-status"><p id="a12-count" aria-live="polite" class="muted"></p><button type="button" class="a12-reset" id="a12-reset">Clear all filters</button></div>
  </div>
  <div class="a12-results" id="a12-results">
-  <div class="table-wrap a12-wrap"><table class="a12-table"><caption class="a12-sr">Courses and career paths open to students after Class 12</caption>
+  <div class="table-wrap a12-wrap"><table class="a12-table"><caption class="a12-sr">{h1}</caption>
    <thead><tr><th scope="col">Course or path</th><th scope="col">Open to</th><th scope="col">Duration</th><th scope="col">How you get in</th><th scope="col">Where it leads</th></tr></thead>
    <tbody id="a12-rows"></tbody></table></div>
  </div>
- <div class="notice" style="margin-top:20px">Exam names, eligibility rules and seat numbers change every year, and durations here are typical, not fixed. Confirm on the official website of the exam or college before you apply. Last reviewed 20 October 2026.</div>
- <p class="muted" style="margin-top:12px;max-width:70ch">UPSC and state civil services start after graduation, so choose any degree you can do well in and begin preparing early.</p>
+ <div class="notice" style="margin-top:20px">Exam names, eligibility rules and seat numbers change every year, and durations here are typical, not fixed. Confirm on the official website of the exam or college before you apply. Last reviewed {reviewed}.</div>
+ <p class="muted" style="margin-top:12px;max-width:70ch">{footnote}</p>
 </div></section>
-""", desc="Every path after Class 12 in one table: engineering, medical, commerce, law, arts, design, defence and more. Filter by your stream and compare entry exams and careers.",
- extra='<script src="assets/js/after12.js"></script>')
+""", desc=desc, extra=f'<script src="assets/js/{data_js}"></script><script src="assets/js/paths.js"></script>')
+
+paths_page("after12.html", "After 12: Courses &amp; Careers", "After 12", "After 12: every path in one table",
+ 'Pick your Class 12 stream, narrow by field, and compare who can apply, how long each path takes, how you get in and where it leads. Already in college? See <a href="after-graduation.html">After Graduation</a>.',
+ "Your Class 12 stream", [("ALL","All streams"),("M","Science (PCM)"),("B","Science (PCB)"),("C","Commerce"),("A","Arts")],
+ "Try NEET, CLAT, pilot, design", "20 October 2026",
+ "UPSC and state civil services start after graduation, so choose any degree you can do well in and begin preparing early.",
+ "Every path after Class 12 in one table: engineering, medical, commerce, law, arts, design, defence and more. Filter by your stream and compare entry exams and careers.",
+ "after12-data.js")
+
+paths_page("after-graduation.html", "After Graduation: Courses, Exams &amp; Jobs", "After Graduation", "After graduation: every path in one table",
+ 'Pick your degree, narrow by field, and compare master\'s courses, government exams and jobs: who can apply, how long it takes, how you get in and where it leads. Still in school? See <a href="after12.html">After 12</a>.',
+ "Your degree", [("ALL","All degrees"),("E","Engineering"),("S","Science"),("C","Commerce / BBA"),("A","Arts"),("M","Medical &amp; health"),("L","Law")],
+ "Try GATE, UPSC, MBA, NET", "21 October 2026",
+ "Most government exams have age limits and a fixed number of attempts, and many accept final-year students. Check the official notification early so you don't miss a window.",
+ "Every path after graduation in one table: MBA, M.Tech, M.Sc, UPSC, SSC, bank exams, law, medicine, teaching, defence and jobs. Filter by your degree and compare entry exams and careers.",
+ "aftergrad-data.js")
 
 # ---------- cleanup, sitemap, robots ----------
 for old in ("signup.html",):
