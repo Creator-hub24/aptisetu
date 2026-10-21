@@ -23,6 +23,8 @@
 <section style="padding-top:12px"><div class="container">
  <div id="c-setup" class="card quiz-setup">
   <p class="muted" style="margin:0 0 .8em;font-size:.9rem"><b>Track:</b> CUET (UG) · <a href="practice.html">Change track</a></p>
+  <div id="c-summary" class="c-summary hidden" aria-live="polite"><span id="c-summary-text"></span> <button type="button" id="c-change" class="link-btn">Change</button></div>
+  <div id="c-choose">
   <h3>1. Choose a mode</h3>
   <div class="sec-pick two">
    <label><input type="radio" name="cmode" value="sectional" checked><span><b>⏱ Sectional</b><small>Real pace · +5 / −1 marking · results at the end</small></span></label>
@@ -34,7 +36,8 @@
    <label><input type="radio" name="csec" value="english"><span><b>📖 English</b><small data-csec-count="english"></small></span></label>
    <label><input type="radio" name="csec" value="maths"><span><b>➗ Maths</b><small data-csec-count="maths"></small></span></label>
   </div>
-  <div id="c-topic-wrap" class="form hidden" style="margin-top:18px;max-width:460px"><label>3. Topic<select id="c-topic"></select></label></div>
+  </div>
+  <div id="c-topic-wrap" class="form hidden" style="margin-top:18px;max-width:460px"><label><span class="c-stepno">3. </span>Topic<select id="c-topic"></select></label></div>
   <p class="muted" id="c-info" style="margin:16px 0 0;font-size:.92rem"></p>
   <button id="c-start" class="btn" style="margin-top:14px">Start →</button>
  </div>

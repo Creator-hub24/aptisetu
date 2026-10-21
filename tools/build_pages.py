@@ -393,13 +393,14 @@ def cat_type_counts(sec):
     qq=CB["sections"][sec]["questions"]; return sum(q["type"]=="mcq" for q in qq), sum(q["type"]=="tita" for q in qq)
 NSETS=sum(1 for s in CB["sets"].values() if s["kind"]=="dilr"); NPASS=sum(1 for s in CB["sets"].values() if s["kind"]=="passage")
 secblk=""
+SETS_HUB={"varc":"cat-varc-sets.html","dilr":"cat-dilr-sets.html","qa":"cat-quant-sets.html"}
 for sec,ic,col,blurb in [("varc","📖","var(--varc)",f"<span data-stat='cat-passages'>{NPASS}</span> reading passages plus para-jumbles, para-summaries and odd-sentence-out."),
                          ("dilr","📊","var(--dilr)",f"<span data-stat='cat-sets'>{NSETS}</span> puzzle sets of 4–5 questions each, every one checked by computer to have a single solution."),
                          ("qa","➗","var(--quant)","Arithmetic, algebra, number system, geometry and modern maths, from moderate to hard.")]:
     m,ti=cat_type_counts(sec)
     secblk+=f"""<div class="card sec-card" style="--c:{col}"><div class="icon">{ic}</div><h3>{CB['sections'][sec]['name']} ({sec.upper()})</h3>
 <p class="muted" style="flex:1"><b data-stat="cat-{sec}">{CATN[sec]}</b> questions · {m} MCQ / {ti} TITA. {blurb}</p>
-<div class="cta-row" style="margin:0"><a class="btn btn-sm" href="cat-practice.html?mode=sectional&amp;section={sec}">40-min sectional →</a><a class="btn btn-sm btn-ghost" href="cat-practice.html?mode=practice&amp;section={sec}">Practise</a></div></div>"""
+<div class="cta-row" style="margin:0"><a class="btn btn-sm" href="{SETS_HUB[sec]}">Sets</a><a class="btn btn-sm btn-ghost" href="cat-practice.html?mode=sectional&amp;section={sec}">40-min sectional →</a><a class="btn btn-sm btn-ghost" href="cat-practice.html?mode=practice&amp;section={sec}">Practise</a></div></div>"""
 page("cat.html","CAT Track: VARC, DILR & QA",f"""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / CAT track</div>
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CAT track <span class="exam-tag tag-cat" style="vertical-align:middle">CAT</span></h1>
@@ -490,6 +491,8 @@ def practice_page(fn, exam, label, home, track, sect_note, secs, title, desc):
 <section style="padding-top:12px"><div class="container">
  <div id="c-setup" class="card quiz-setup">
   <p class="muted" style="margin:0 0 .8em;font-size:.9rem"><b>Track:</b> {track} · <a href="practice.html">Change track</a></p>
+  <div id="c-summary" class="c-summary hidden" aria-live="polite"><span id="c-summary-text"></span> <button type="button" id="c-change" class="link-btn">Change</button></div>
+  <div id="c-choose">
   <h3>1. Choose a mode</h3>
   <div class="sec-pick two">
    <label><input type="radio" name="cmode" value="sectional" checked><span><b>⏱ Sectional</b><small>{sect_note}</small></span></label>
@@ -499,7 +502,8 @@ def practice_page(fn, exam, label, home, track, sect_note, secs, title, desc):
   <div class="sec-pick three">
 {radios}
   </div>
-  <div id="c-topic-wrap" class="form hidden" style="margin-top:18px;max-width:460px"><label>3. Topic<select id="c-topic"></select></label></div>
+  </div>
+  <div id="c-topic-wrap" class="form hidden" style="margin-top:18px;max-width:460px"><label><span class="c-stepno">3. </span>Topic<select id="c-topic"></select></label></div>
   <p class="muted" id="c-info" style="margin:16px 0 0;font-size:.92rem"></p>
   <button id="c-start" class="btn" style="margin-top:14px">Start →</button>
  </div>

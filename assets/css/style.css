@@ -284,3 +284,10 @@ a.set-card:hover{border-color:#0B1F3A;box-shadow:var(--sh)}
 .sbadge.open{background:#eef2ff;color:#3730a3}.sbadge.done{background:#dcfce7;color:#166534}.sbadge.lock{background:#0B1F3A;color:#fff}.sbadge.soon{background:#fdf6dc;color:#7a5d00;border:1px solid #C9A227}
 .level-head{display:flex;align-items:baseline;gap:.6em;flex-wrap:wrap;margin:26px 0 10px}.level-head h2{margin:0;font-size:1.3rem}
 .login-box{max-width:460px}
+
+/* practice page opened from a section card: compact summary instead of steps 1-2 */
+.c-summary{display:flex;align-items:center;gap:.6em;flex-wrap:wrap;padding:12px 14px;border:1px solid var(--line);border-left:4px solid #C9A227;border-radius:10px;background:#f8fafc;margin-bottom:4px}
+.c-summary.hidden{display:none}
+.link-btn{background:none;border:0;padding:0;min-height:44px;color:var(--brand);font:inherit;font-weight:600;cursor:pointer;text-decoration:underline}
+.quiz-setup.collapsed .c-stepno{display:none}
+.quiz-setup.collapsed #c-topic-wrap{margin-top:12px!important}

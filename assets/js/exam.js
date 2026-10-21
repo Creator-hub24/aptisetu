@@ -336,6 +336,18 @@
     $("#resume-drop").onclick = () => { P.clearRun(saveKey); bar.remove(); };
   }
 
+  // Opened from a card with ?mode=&section= (both valid): skip steps 1-2, show "CAT · QA · Practice" + Change.
+  function collapseChooser(p) {
+    const box = $("#c-choose"), sum = $("#c-summary");
+    if (!box || !sum) return;
+    const m = $$("input[name=cmode]").find(x => x.value === p.get("mode")), s = $$("input[name=csec]").find(x => x.value === p.get("section"));
+    if (!m || !s) return;
+    const name = el => el.closest("label").querySelector("b").textContent.replace(/^[^A-Za-z]+/, "").trim();
+    $("#c-summary-text").innerHTML = `<b>${esc(EX.label)} · ${esc(name(s))} · ${esc(name(m))}</b>`;
+    box.classList.add("hidden"); sum.classList.remove("hidden"); $("#c-setup").classList.add("collapsed");
+    $("#c-change").onclick = () => { box.classList.remove("hidden"); sum.classList.add("hidden"); $("#c-setup").classList.remove("collapsed"); box.querySelector("input:checked").focus(); };
+  }
+
   async function init() {
     if (SET) { $$("[data-progress]").forEach(x => P && P.panel(x, x.dataset.progress)); return initSet(); }
     $$("[data-progress]").forEach(x => P && P.panel(x, x.dataset.progress));
@@ -348,6 +360,7 @@
     if (p.get("topic")) $("#c-topic").dataset.want = p.get("topic");
     $$("input[name=cmode],input[name=csec]").forEach(r => r.onchange = refreshSetup);
     $("#c-topic").onchange = refreshSetup;
+    collapseChooser(p);
     counts(); refreshSetup();
     $("#c-start").onclick = async () => { try { await ensure(val("csec")); } catch (e) { fail(); return; } start(); };
   }
