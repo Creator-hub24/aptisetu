@@ -25,7 +25,7 @@ d.text((x, 150), BRAND, font=bf, fill="#FFFFFF")
 d.rectangle([x, 290, x + 120, 298], fill=GOLD)
 d.text((x, 330), "Quant · Reasoning · DILR · VARC", font=font(44, 700), fill=GOLD)
 d.text((x, 395), "Free practice for CAT, CUET (UG), Bank, SSC & placements", font=font(30, 500), fill="#D6DEEA")
-d.text((x, 445), "Original questions · worked solutions · no login", font=font(30, 500), fill="#D6DEEA")
+d.text((x, 445), "Login only to save progress and unlock levels", font=font(30, 500), fill="#D6DEEA")
 im.save("assets/img/og-image.png", optimize=True)
 def icon(n):
     s = Image.new("RGBA", (n, n), (0, 0, 0, 0)); g = ImageDraw.Draw(s)

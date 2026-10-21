@@ -416,6 +416,10 @@ for v in CB.qs.values():
         else: assert q["answer"].lstrip("-").replace(".", "").isdigit()
 CAT_NAMES = {"varc": "Verbal Ability & Reading Comprehension", "dilr": "Data Interpretation & Logical Reasoning", "qa": "Quantitative Ability"}
 cat_out = {"sections": {k: {"name": CAT_NAMES[k], "questions": CB.qs[k]} for k in ("varc", "dilr", "qa")}, "sets": CB.sets}
+_sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import assign_levels as _al   # deterministic CAT practice sets (level + practiceSet), writes data/cat/sets.json
+_sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+_al.assign(cat_out, os.path.join(os.path.dirname(__file__), "..", "data", "cat", "sets.json"))
 json.dump(cat_out, open(os.path.join(os.path.dirname(__file__), "..", "data", "cat.json"), "w"), ensure_ascii=False, indent=1)
 for k in ("varc", "dilr", "qa"):
     v = CB.qs[k]

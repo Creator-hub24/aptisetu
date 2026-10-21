@@ -16,7 +16,10 @@
   const mk = q => EX.marks[q.type] || EX.marks.mcq, sgn = v => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v);
   const marksTxt = q => `${sgn(mk(q)[0])} / ${mk(q)[1] ? sgn(mk(q)[1]) : "0"}`;
   let sectionTime = 0;
-  const P = window.Progress, ENG = window.EXAM || "cat", saveKey = "exam-" + ENG;
+  const P = window.Progress, ENG = window.EXAM || "cat";
+  let saveKey = "exam-" + ENG;
+  // set page (set.html?sec=&set=): one fixed CAT practice set of 10, own save key, result saved to the account
+  const SET = document.getElementById("set-info") ? (() => { const p = new URLSearchParams(location.search); return { sec: p.get("sec"), n: parseInt(p.get("set"), 10) }; })() : null;
   let saveTick = 0;
   let bank = { sections: {}, sets: {} }, mode, sec, qs = [], cur = 0, resp = [], marked = [], visited = [], tspent = [], checked = [], timeLeft = 0, timerId = null, shownAt = 0, elapsed = 0;
 
@@ -121,7 +124,15 @@
   function start() {
     mode = val("cmode"); sec = val("csec");
     const picked = mode === "sectional" ? pickSectional(sec) : pickPractice(sec, $("#c-topic").value);
-    qs = picked.map(q => {
+    qs = prep(picked);
+    const n = qs.length; resp = Array(n).fill(null); marked = Array(n).fill(false); visited = Array(n).fill(false); tspent = Array(n).fill(0); checked = Array(n).fill(false);
+    sectionTime = EX.time(qs.length); cur = 0; elapsed = 0; timeLeft = sectionTime;
+    title = `${EX.label} ${bank.sections[sec].name} · ${mode === "sectional" ? "Sectional" : "Practice" + ($("#c-topic").value ? " · " + topicLabel($("#c-topic").value) : "")}`;
+    if (window.track) window.track(`${mode}-start-${ENG}-${sec}`);
+    begin();
+  }
+  function prep(picked) {
+    return picked.map(q => {
       if (q.type !== "mcq") return { ...q };
       const idx = q.fixed ? [0, 1, 2, 3] : shuffle([0, 1, 2, 3]);
       // solutions refer to options as "Option 1" … "Option 4" (bank order); rewrite them as the letters actually shown
@@ -132,11 +143,6 @@
       });
       return { ...q, options: idx.map(i => q.options[i]), answer: idx.indexOf(q.answer), solution };
     });
-    const n = qs.length; resp = Array(n).fill(null); marked = Array(n).fill(false); visited = Array(n).fill(false); tspent = Array(n).fill(0); checked = Array(n).fill(false);
-    sectionTime = EX.time(qs.length); cur = 0; elapsed = 0; timeLeft = sectionTime;
-    title = `${EX.label} ${bank.sections[sec].name} · ${mode === "sectional" ? "Sectional" : "Practice" + ($("#c-topic").value ? " · " + topicLabel($("#c-topic").value) : "")}`;
-    if (window.track) window.track(`${mode}-start-${ENG}-${sec}`);
-    begin();
   }
   let title = "";
   function save() { if (P && qs.length) P.saveRun(saveKey, { mode, sec, qs, cur, resp, marked, visited, tspent, checked, timeLeft, elapsed, sectionTime, title }); }
@@ -266,7 +272,55 @@
         <div class="sol"><b>Solution:</b> ${q.solution}</div>${report(q)}</div>`;
     }).join("");
     $$("[data-progress]").forEach(x => P && P.panel(x, x.dataset.progress));
+    if (SET) setSaved(score, maxScore);
     scrollTo({ top: 0, behavior: "instant" });
+  }
+  async function setSaved(score, total) {
+    const el = $("#set-save"); if (!el) return;
+    const A = window.Auth, u = A && await A.ready;
+    if (!u) { el.innerHTML = `Not saved: you're not logged in. <a href="login.html?next=${encodeURIComponent("cat-" + { qa: "quant", varc: "varc", dilr: "dilr" }[SET.sec] + "-sets.html")}">Login</a> to save results and unlock levels.`; return; }
+    try { await A.saveResult(SET.sec, SET.n, score, total); el.innerHTML = `✓ Saved to your account: Set ${SET.n} completed with ${score}/${total}.`; if (window.track) window.track(`set-finish-${SET.sec}-${SET.n}`); }
+    catch (e) { el.textContent = "Could not save your result (" + (e.message || e) + "). Please try again later."; }
+  }
+
+  // ---------- set page ----------
+  async function initSet() {
+    const info = $("#set-info"), NAME = { qa: "Quant", varc: "VARC", dilr: "DILR" };
+    if (!NAME[SET.sec] || !(SET.n >= 1)) { info.innerHTML = `<div class="notice">This set doesn't exist. <a href="cat.html">Back to CAT</a></div>`; return; }
+    const hubUrl = `cat-${{ qa: "quant", varc: "varc", dilr: "dilr" }[SET.sec]}-sets.html`;
+    $$("[data-hub]").forEach(a => a.href = hubUrl);
+    let st;
+    try { st = await window.CatSets.status(SET.sec); } catch (e) { info.innerHTML = `<div class="notice">Could not load this set. Please check your connection.</div>`; return; }
+    const s = st.sets[SET.n - 1];
+    if (!s) { info.innerHTML = `<div class="notice">This set doesn't exist. <a href="${hubUrl}">See all ${NAME[SET.sec]} sets</a></div>`; return; }
+    const L = s.level;
+    document.title = `CAT ${NAME[SET.sec]} · Set ${SET.n} (${L}) | ${(window.SITE || {}).BRAND || ""}`;
+    $("#set-h1").textContent = `${NAME[SET.sec]} · Set ${SET.n}`;
+    const msg = {
+      soon: `This set is <b>coming soon</b>. We're still writing the questions for it.`,
+      login: `🔒 Please <a href="login.html?next=${encodeURIComponent(location.pathname.split("/").pop() + location.search)}">login</a> to open this set. Guests can try Easy set 1.`,
+      locked: `🔒 This set is locked. Finish all ${["Easy", "Medium", "Hard"][["Easy", "Medium", "Hard"].indexOf(L) - 1]} sets first.`
+    }[s.state];
+    if (msg) { info.innerHTML = `<div class="notice">${msg} <a href="${hubUrl}">See all ${NAME[SET.sec]} sets</a></div>`; return; }
+    try { await ensure(SET.sec); } catch (e) { fail(); return; }
+    const picked = groups(bank.sections[SET.sec].questions.filter(q => q.practiceSet === SET.n)).flat();
+    if (!picked.length) { info.innerHTML = `<div class="notice">This set is empty.</div>`; return; }
+    const mins = st.timer;
+    info.innerHTML = `<span class="sbadge ${s.state === "done" ? "done" : "open"}">${s.state === "done" ? "✓ Done · best saved " + s.row.score + "/" + s.row.total : L}</span>
+      <p style="margin:.6em 0 0"><b>${picked.length} questions · ${mins}-minute timer.</b> Marking: +3 correct, −1 wrong MCQ, 0 wrong TITA, 0 blank. Submits automatically when time runs out; solutions after you submit.</p>`;
+    saveKey = `exam-cat-set-${SET.sec}-${SET.n}`;
+    $("#c-start").classList.remove("hidden");
+    $("#c-start").onclick = () => startSet(picked, mins, L);
+    offerResume();
+  }
+  function startSet(picked, mins, L) {
+    mode = "sectional"; sec = SET.sec;
+    qs = prep(picked);
+    const n = qs.length; resp = Array(n).fill(null); marked = Array(n).fill(false); visited = Array(n).fill(false); tspent = Array(n).fill(0); checked = Array(n).fill(false);
+    sectionTime = mins * 60; cur = 0; elapsed = 0; timeLeft = sectionTime;
+    title = `CAT ${{ qa: "Quant", varc: "VARC", dilr: "DILR" }[sec]} · Set ${SET.n} (${L})`;
+    if (window.track) window.track(`set-start-${sec}-${SET.n}`);
+    begin();
   }
 
   function offerResume() {
@@ -283,6 +337,7 @@
   }
 
   async function init() {
+    if (SET) { $$("[data-progress]").forEach(x => P && P.panel(x, x.dataset.progress)); return initSet(); }
     $$("[data-progress]").forEach(x => P && P.panel(x, x.dataset.progress));
     offerResume();
     const p = new URLSearchParams(location.search);
@@ -303,7 +358,7 @@
     $("#c-clear").onclick = () => { if (mode === "practice" && checked[cur]) return; resp[cur] = null; render(); };
     $("#c-check").onclick = () => { checked[cur] = true; render(); };
     $("#c-submit").onclick = () => submit(false);
-    $("#c-retry").onclick = () => { $("#c-results").classList.add("hidden"); $("#c-setup").classList.remove("hidden"); $("#c-progress").classList.remove("hidden"); refreshSetup(); scrollTo({ top: 0, behavior: "instant" }); };
+    $("#c-retry").onclick = SET ? () => location.reload() : () => { $("#c-results").classList.add("hidden"); $("#c-setup").classList.remove("hidden"); $("#c-progress").classList.remove("hidden"); refreshSetup(); scrollTo({ top: 0, behavior: "instant" }); };
     init();
   });
 })();

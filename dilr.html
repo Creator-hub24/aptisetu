@@ -2,7 +2,7 @@
 <html lang="en-IN">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-6uBhvPG1uTvMVm1SJ3n55yDdMod8K7oBzz36h7CcIY8='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Data Interpretation &amp; Logical Reasoning (DILR) | AptiSetu</title>
 <meta name="description" content="Data Interpretation and Logical Reasoning (DILR) practice: tables, bar, pie and line charts, caselets, arrangements, tournaments and routes, with a formula sheet.">
@@ -30,10 +30,7 @@
 <div class="fs-head"><div><h2>Formula &amp; rules sheet</h2><p class="muted">6 topics · 18 formulas and rules. Tap a topic to open or close it.</p></div><button type="button" class="btn btn-ghost btn-sm" id="fs-toggle">Collapse all</button></div>
 <div class="fs-grid"><details class="fs-card" open><summary><span class="fs-ic" aria-hidden="true">📈</span><span class="fs-t">Growth &amp; Share</span><span class="fs-n">4</span></summary><ul class="fs-list"><li><code class='fx'>Growth % = (New − Old) / Old × 100</code></li><li><code class='fx'>Share % = Part / Total × 100</code></li><li><code class='fx'>% more (A over B) = (A − B) / B × 100</code><span class='fx-note'>Divide by the value you are comparing against.</span></li><li><code class='fx'>CAGR = (End / Start)^(1/n) − 1</code><span class='fx-note'>Average yearly growth over n years.</span></li></ul></details><details class="fs-card" open><summary><span class="fs-ic" aria-hidden="true">🥧</span><span class="fs-t">Pie Charts</span><span class="fs-n">2</span></summary><ul class="fs-list"><li><code class='fx'>Central angle = % × 3.6°</code><span class='fx-note'>1% = 3.6°, 25% = 90°, 10% = 36°.</span></li><li><code class='fx'>Value = % × Total / 100</code></li></ul></details><details class="fs-card" open><summary><span class="fs-ic" aria-hidden="true">➗</span><span class="fs-t">Averages &amp; Ratios</span><span class="fs-n">2</span></summary><ul class="fs-list"><li><code class='fx'>Average = Sum / Count</code></li><li><code class='fx'>A : B in lowest terms = (A ÷ HCF) : (B ÷ HCF)</code><span class='fx-note'>E.g. 240 : 180 = 4 : 3.</span></li></ul></details><details class="fs-card" open><summary><span class="fs-ic" aria-hidden="true">⭕</span><span class="fs-t">Venn Diagrams</span><span class="fs-n">5</span></summary><ul class="fs-list"><li><code class='fx'>n(A ∪ B) = n(A) + n(B) − n(A ∩ B)</code></li><li><code class='fx'>n(A ∪ B ∪ C) = ΣA − Σ(pairs) + n(A ∩ B ∩ C)</code><span class='fx-note'>Here 'pairs' includes those in all three.</span></li><li><code class='fx'>Only A = A − (A∩B) − (A∩C) + (A∩B∩C)</code></li><li><code class='fx'>Exactly two = Σ(pairs) − 3 × n(A ∩ B ∩ C)</code></li><li><code class='fx'>None = Total − n(at least one)</code></li></ul></details><details class="fs-card" open><summary><span class="fs-ic" aria-hidden="true">🏅</span><span class="fs-t">Games &amp; Tournaments</span><span class="fs-n">3</span></summary><ul class="fs-list"><li><code class='fx'>Round robin (n teams) = nC2 = n(n − 1) / 2 matches</code><span class='fx-note'>Each pair of teams plays once.</span></li><li><code class='fx'>Knock-out (n teams) = n − 1 matches</code><span class='fx-note'>Each match eliminates one team.</span></li><li><code class='fx'>Total points = points per match × matches</code><span class='fx-note'>E.g. 2 per win with no draws: 2 × matches.</span></li></ul></details><details class="fs-card" open><summary><span class="fs-ic" aria-hidden="true">🗺️</span><span class="fs-t">Network &amp; Routes</span><span class="fs-n">2</span></summary><ul class="fs-list"><li><code class='fx'>Shortest route = min(sum of road lengths over all paths)</code><span class='fx-note'>List the candidate paths and add up each one.</span></li><li><code class='fx'>If a road closes, re-check only paths that used it</code></li></ul></details></div>
 <p class="muted" style="margin-top:1.2em">Tip: bookmark this page and revise it for 5 minutes before each practice session.</p></div></section>
-<script>(function(){var c=[].slice.call(document.querySelectorAll('.fs-card')),b=document.getElementById('fs-toggle');
-function upd(){b.textContent=c.every(function(d){return d.open})?'Collapse all':'Expand all'}
-if(matchMedia('(max-width:600px)').matches)c.forEach(function(d,i){if(i>1)d.open=false});
-c.forEach(function(d){d.addEventListener('toggle',upd)});b.onclick=function(){var o=!c.every(function(d){return d.open});c.forEach(function(d){d.open=o});upd()};upd()})();</script>
+<script src="assets/js/page/dilr-1.js"></script>
 
 </main>
 <footer id="site-footer"><div class="container footer-grid">
@@ -46,6 +43,7 @@ c.forEach(function(d){d.addEventListener('toggle',upd)});b.onclick=function(){va
     <div class="container copyright">© 2026 <span data-brand>AptiSetu</span>. All rights reserved.</div></footer>
 <script src="assets/js/config.js"></script>
 <script src="assets/js/layout.js"></script>
+<script src="assets/js/auth.js"></script>
 <script src="assets/js/stats.js"></script>
 
 </body>

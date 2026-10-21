@@ -9,7 +9,7 @@ class Bank:
         self.qs = {"qa": [], "dilr": [], "varc": []}
         self.sets = {}      # id -> {kind, title, html}
     def _base(self, sec, topic, diff, text, solution, set_id):
-        assert diff in ("Medium", "Hard"), diff
+        assert diff in ("Easy", "Medium", "Hard"), diff
         assert solution and len(solution) > 20, text
         if set_id: assert set_id in self.sets, set_id
         q = dict(id=f"C{sec[0].upper()}{len(self.qs[sec])+1}", exam="cat", section=sec, topic=topic,
@@ -32,7 +32,10 @@ class Bank:
         if kind == "number":
             assert isinstance(answer, (int, F)) or float(answer).is_integer(), answer
             if chk is not None: assert close(*chk) and close(answer, chk[1]), (text, answer, chk)
-            ans = str(int(answer)) if float(answer).is_integer() else str(answer)
+            if float(answer).is_integer(): ans = str(int(answer))
+            else:   # terminating decimal only (e.g. 72.8), typed as a plain number
+                f = F(answer); assert f.limit_denominator(10**6) == f and close(float(f), round(float(f), 4)), answer
+                ans = repr(round(float(f), 4))
         elif kind == "sequence":
             assert re.fullmatch(r"\d+", answer) and sorted(answer) == [str(i) for i in range(1, len(answer)+1)], answer
             ans = answer

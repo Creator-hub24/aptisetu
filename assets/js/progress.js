@@ -33,7 +33,7 @@
         .filter(r => !exam || r.x === exam).sort((a, b) => a.acc - b.acc || b.att - a.att);
       const empty = !st.quizzes && !rows.length;
       el.innerHTML = `<div class="prog-head"><h3>📈 Your progress</h3>${empty ? "" : '<button type="button" class="btn btn-ghost btn-sm prog-reset">Reset my progress</button>'}</div>` +
-        (empty ? `<p class="muted" style="margin:0">Finish a quiz to start your daily streak and topic-wise accuracy. Saved only in this browser, no login needed.</p>` :
+        (empty ? `<p class="muted" style="margin:0">Finish a quiz to start your daily streak and topic-wise accuracy. Saved only in this browser. Login only to save progress and unlock levels.</p>` :
         `<div class="prog-kpis"><div><b>🔥 ${st.count}</b><span>day streak${st.today ? "" : st.count ? " (practise today to keep it)" : ""}</span></div><div><b>${st.best}</b><span>best streak</span></div><div><b>${st.quizzes}</b><span>quizzes finished</span></div></div>` +
         (rows.length ? `<div class="table-wrap"><table class="data prog-table"><tr><th style="text-align:left">Topic</th><th>Attempted</th><th>Accuracy</th></tr>${rows.slice(0, 8).map(r =>
           `<tr><td style="text-align:left">${esc(r.t)} <small class="muted">${LABEL[r.x] || ""} ${esc(r.s.toUpperCase())}</small></td><td>${r.att}</td><td><span class="${r.acc >= .7 ? "tag-strong" : r.acc < .5 ? "tag-weak" : "tag-mid"}">${Math.round(r.acc * 100)}%</span></td></tr>`).join("")}</table></div>

@@ -29,6 +29,30 @@ SITE_URL=CFG["SITE_URL"].rstrip("/")+"/"
 from urllib.parse import urlparse as _up
 BASE_PATH=_up(SITE_URL).path or "/"
 YEAR=_dt.date.today().year
+# ---------- Content-Security-Policy (meta tag on every page) ----------
+_ph=lambda v: (not v) or v.startswith("YOUR_")
+SB_URL=CFG.get("SUPABASE_URL",""); SB_ORIGIN="" if _ph(SB_URL) else "{0.scheme}://{0.netloc}".format(_up(SB_URL))
+assert not SB_ORIGIN or _re.fullmatch(r"https://[a-z0-9.-]+", SB_ORIGIN), "SUPABASE_URL must be https://<project>.supabase.co"
+CSP="; ".join([
+    "default-src 'self'",
+    "script-src 'self'" + (" https://gc.zgo.at" if GC else ""),
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+    "font-src 'self' https://fonts.gstatic.com",
+    "img-src 'self' data:" + (f" https://{GC}.goatcounter.com" if GC else ""),
+    "connect-src 'self'" + (f" {SB_ORIGIN}" if SB_ORIGIN else "") + (f" https://{GC}.goatcounter.com" if GC else ""),
+    "base-uri 'self'", "form-action 'self'", "object-src 'none'", "upgrade-insecure-requests"])
+import shutil as _sh
+_sh.rmtree("assets/js/page", ignore_errors=True); os.makedirs("assets/js/page")
+def externalize(fn, html):
+    """CSP: script-src 'self' forbids inline scripts, so every inline <script> becomes assets/js/page/<page>-<n>.js."""
+    n=[0]
+    def rep(m):
+        n[0]+=1; name=f"assets/js/page/{fn[:-5]}-{n[0]}.js"
+        open(name,"w").write(m.group(1).strip()+"\n"); return f'<script src="{name}"></script>'
+    html=_re.sub(r"<script>(.*?)</script>", rep, html, flags=_re.S)
+    assert not _re.search(r"<script(?![^>]*\bsrc=)[^>]*>", html), ("inline script left", fn)
+    m=_re.search(r"<[a-zA-Z][^<>]*\son[a-z]+\s*=\s*[\"']", html); assert not m, ("inline event handler", fn, m and m.group(0)[:80])
+    return html
 A=lambda s: _esc.escape(s, quote=True)
 PAGES=[]   # (fn, indexed)
 TITLES={}
@@ -44,7 +68,7 @@ def footer_html():
     </div>
     {GC_TAG}<div class="container copyright">© {YEAR} <span data-brand>{_esc.escape(BRAND)}</span>. All rights reserved.</div>"""
 import hashlib as _hl, base64 as _b64
-def csp_meta(html):
+def csp_meta(html):   # unused since the cat-sets merge: inline scripts are moved to files (see CSP / externalize)
     """Content Security Policy: only this site's own scripts, plus the exact inline snippets the build writes (by SHA-256)."""
     inline=_re.findall(r'<script(?![^>]*\bsrc=)[^>]*>(.*?)</script>', html, _re.S)
     hashes=" ".join(sorted({"'sha256-"+_b64.b64encode(_hl.sha256(b.encode()).digest()).decode()+"'" for b in inline}))
@@ -73,7 +97,7 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 <html lang="en-IN">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--CSP-->
+<meta http-equiv="Content-Security-Policy" content="{CSP}">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 {basetag}<title>{A(full)}</title>
 <meta name="description" content="{A(desc)}">
@@ -92,13 +116,13 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 <footer id="site-footer">{footer_html()}</footer>
 <script src="assets/js/config.js"></script>
 <script src="assets/js/layout.js"></script>
+<script src="assets/js/auth.js"></script>
 <script src="assets/js/stats.js"></script>
 {extra}
 </body>
 </html>
 """
-    html=html.replace("<!--CSP-->", csp_meta(html), 1)
-    open(fn,"w").write(html)
+    open(fn,"w").write(externalize(fn, html))
     if fn!="404.html": PAGES.append((fn, not noindex))
 DESCS={}
 
@@ -153,7 +177,7 @@ page("index.html","", f"""
   <div class="cat-mini">
    <a class="card" href="cat-practice.html?section=varc"><b>VARC</b><span><b data-stat="cat-varc">{CATN['varc']}</b> questions</span></a>
    <a class="card" href="cat-practice.html?section=dilr"><b>DILR</b><span><b data-stat="cat-dilr">{CATN['dilr']}</b> questions in sets</span></a>
-   <a class="card" href="cat-practice.html?section=qa"><b>QA</b><span><b data-stat="cat-qa">{CATN['qa']}</b> questions</span></a>
+   <a class="card" href="cat-quant-sets.html"><b>Quant</b><span><b data-stat="cat-qa">{CATN['qa']}</b> questions</span></a>
    <div class="card"><b>TITA</b><span><b data-stat="cat-tita">{CAT_TITA}</b> type-in-the-answer</span></div>
   </div>
  </div>
@@ -186,11 +210,11 @@ page("index.html","", f"""
 <section class="alt about"><div class="container" style="max-width:760px;text-align:center">
  <h2>About <span data-brand></span></h2>
  <p class="muted"><span data-brand></span> is a new, free practice site for Indian students preparing for aptitude tests: CAT and other MBA entrance exams, bank and SSC exams, and campus placements. Every question here is written by us and comes with a worked solution. We're starting small and adding more questions and topics over time.</p>
- <p class="muted" style="margin:0">No login is needed to practise.</p>
+ <p class="muted" style="margin:0">Login only to save progress and unlock levels.</p>
 </div></section>
 
 <section><div class="container"><div class="cta-band">
- <h2>Start practising in under 10 seconds</h2><p style="opacity:.9">No signup needed. Pick a section and beat the clock.</p>
+ <h2>Start practising in under 10 seconds</h2><p style="opacity:.9">Login only to save progress and unlock levels. Pick a section and beat the clock.</p>
  <div class="cta-row" style="justify-content:center;margin-bottom:0"><a href="practice.html" class="btn">Start a free quiz →</a></div>
 </div></div></section>
 <script>(function(){{var box=document.getElementById('sample'),fb=document.getElementById('sample-fb'),bs=[].slice.call(box.querySelectorAll('.mini-opt'));
@@ -198,7 +222,7 @@ bs.forEach(function(b){{b.onclick=function(){{var ok=b.dataset.ok==='1';bs.forEa
 fb.innerHTML=(ok?'<b>✅ Correct!</b> ':'<b>❌ Not quite.</b> The answer is B. ')+'Together they finish 1/12 + 1/18 = 5/36 of the job a day, so they need 36/5 = 7.2 days.'+
 '<div class="cta-row" style="margin:.8em 0 0"><a class="btn btn-sm" href="practice.html?quick=5">Try 5 more →</a><button type="button" class="btn btn-ghost btn-sm" id="sample-again">Try again</button></div>';
 fb.classList.remove('hidden');document.getElementById('sample-again').onclick=function(){{bs.forEach(function(x){{x.disabled=false;x.classList.remove('right','wrong')}});fb.classList.add('hidden')}};}}}});}})();</script>
-""", desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and placements: Quant, Reasoning, DILR and VARC with timed quizzes, worked solutions and formula sheets. No login.")
+""", desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and placements: Quant, Reasoning, DILR and VARC with timed quizzes, worked solutions and formula sheets. Login only to save progress and unlock levels.")
 
 # ---------- SECTION PAGES ----------
 def fs_section(formulas, color, heading="Formula &amp; rules sheet", unit="formulas and rules", prose=False):
@@ -356,6 +380,8 @@ CAT_DESC = {
         "Mensuration":"Areas and volumes of 2D and 3D shapes.",
         "Permutations & Combinations":"Counting with restrictions.",
         "Probability":"Conditional probability and counting-based questions.",
+        "Averages":"Averages, weighted averages and what changes when an item is added or replaced.",
+        "Sets":"Venn diagrams and inclusion–exclusion counting.",
         "Progressions":"AP, GP and sums of series."}}
 def cat_topic_cards(sec):
     cnt={}
@@ -378,7 +404,7 @@ page("cat.html","CAT Track: VARC, DILR & QA",f"""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / CAT track</div>
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CAT track <span class="exam-tag tag-cat" style="vertical-align:middle">CAT</span></h1>
 <p class="muted" style="max-width:720px">A separate track for CAT aspirants: VARC, DILR and QA questions at moderate to hard level, in CAT's question formats (MCQ and TITA) with CAT marking. All <b data-stat="cat">{NQ_CAT}</b> questions and passages were written by us for practice. They are not taken from CAT papers or coaching material, and each has a worked solution.</p>
-<div class="cta-row"><a class="btn" href="cat-practice.html">Start a CAT sectional →</a><a class="btn btn-ghost" href="varc.html">VARC strategy &amp; rules</a></div></div></div>
+<div class="cta-row"><a class="btn" href="cat-quant-sets.html">Practice sets: Quant →</a><a class="btn btn-ghost" href="cat-varc-sets.html">VARC sets</a><a class="btn btn-ghost" href="cat-dilr-sets.html">DILR sets</a><a class="btn btn-ghost" href="cat-practice.html">40-min sectional</a><a class="btn btn-ghost" href="varc.html">VARC strategy &amp; rules</a></div></div></div>
 <section style="padding-top:20px"><div class="container"><div class="grid g3">{secblk}</div></div></section>
 <section class="alt"><div class="container"><div class="grid g2">
  <div class="card"><h3>⏱ Sectional mode</h3><ul class="clean">
@@ -419,29 +445,9 @@ page("varc.html","VARC: Reading Strategy & Rules",f"""
 {fs_section(FORMULAS['varc'], 'var(--varc)', heading='VARC rules sheet', unit='rules and checks', prose=True)}
 """, desc="CAT VARC reading strategy, rules sheet for RC, para-jumbles, para-summary and odd-sentence-out, with original practice questions.")
 
-def practice_page(fn, exam, label, home, track, sect_note, secs, title, desc):
-    radios = "\n".join(f'   <label><input type="radio" name="csec" value="{k}"{" checked" if i == 0 else ""}><span><b>{name}</b><small data-csec-count="{k}"></small></span></label>' for i, (k, name) in enumerate(secs))
-    page(fn, title, f"""
-<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="{home}">{label}</a> / Practice</div>
-<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">{label} practice</h1></div></div>
-<section style="padding-top:12px"><div class="container">
- <div id="c-setup" class="card quiz-setup">
-  <p class="muted" style="margin:0 0 .8em;font-size:.9rem"><b>Track:</b> {track} · <a href="practice.html">Change track</a></p>
-  <h3>1. Choose a mode</h3>
-  <div class="sec-pick two">
-   <label><input type="radio" name="cmode" value="sectional" checked><span><b>⏱ Sectional</b><small>{sect_note}</small></span></label>
-   <label><input type="radio" name="cmode" value="practice"><span><b>🧠 Practice</b><small>No countdown · solution after each answer</small></span></label>
-  </div>
-  <h3 style="margin-top:18px">2. Choose a section</h3>
-  <div class="sec-pick three">
-{radios}
-  </div>
-  <div id="c-topic-wrap" class="form hidden" style="margin-top:18px;max-width:460px"><label>3. Topic<select id="c-topic"></select></label></div>
-  <p class="muted" id="c-info" style="margin:16px 0 0;font-size:.92rem"></p>
-  <button id="c-start" class="btn" style="margin-top:14px">Start →</button>
- </div>
-
- <div id="c-quiz" class="hidden">
+def quiz_html(exam, home, label, retry, back=None):
+    back = back or f"{label} track"
+    return f""" <div id="c-quiz" class="hidden">
   <div class="quiz-bar"><h3 id="c-title" style="margin:0;font-size:1.05rem"></h3><span id="c-timer" class="timer">⏱ 00:00</span></div>
   <div id="c-layout" class="c-layout">
    <aside id="c-pane" class="card c-pane hidden" data-set=""><div class="c-pane-head"><b id="c-pane-label">Passage</b><span id="c-pane-meta" class="muted"></span></div><div id="c-pane-body" class="c-pane-body q-data"></div></aside>
@@ -470,16 +476,87 @@ def practice_page(fn, exam, label, home, track, sect_note, secs, title, desc):
   <div class="card" id="c-res-head"></div>
   <div class="card" id="c-topics" style="margin-top:16px"></div>
   <div class="card prog-card" data-progress="{exam}" style="margin-top:16px"></div>
-  <div style="text-align:center;margin:18px 0"><button id="c-retry" class="btn">Take another section</button> <a class="btn btn-ghost" href="{home}">{label} track</a></div>
+  <div style="text-align:center;margin:18px 0"><button id="c-retry" class="btn">{retry}</button> <a class="btn btn-ghost" href="{home}" data-hub>{back}</a></div>
+  <p id="set-save" class="muted" style="text-align:center;margin:0 0 18px"></p>
   <h2>Review &amp; solutions</h2><div id="c-review"></div>
  </div>
- <div id="c-progress" class="card prog-card" data-progress="{exam}" style="margin-top:20px"></div>
+"""
+
+def practice_page(fn, exam, label, home, track, sect_note, secs, title, desc):
+    radios = "\n".join(f'   <label><input type="radio" name="csec" value="{k}"{" checked" if i == 0 else ""}><span><b>{name}</b><small data-csec-count="{k}"></small></span></label>' for i, (k, name) in enumerate(secs))
+    page(fn, title, f"""
+<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="{home}">{label}</a> / Practice</div>
+<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">{label} practice</h1></div></div>
+<section style="padding-top:12px"><div class="container">
+ <div id="c-setup" class="card quiz-setup">
+  <p class="muted" style="margin:0 0 .8em;font-size:.9rem"><b>Track:</b> {track} · <a href="practice.html">Change track</a></p>
+  <h3>1. Choose a mode</h3>
+  <div class="sec-pick two">
+   <label><input type="radio" name="cmode" value="sectional" checked><span><b>⏱ Sectional</b><small>{sect_note}</small></span></label>
+   <label><input type="radio" name="cmode" value="practice"><span><b>🧠 Practice</b><small>No countdown · solution after each answer</small></span></label>
+  </div>
+  <h3 style="margin-top:18px">2. Choose a section</h3>
+  <div class="sec-pick three">
+{radios}
+  </div>
+  <div id="c-topic-wrap" class="form hidden" style="margin-top:18px;max-width:460px"><label>3. Topic<select id="c-topic"></select></label></div>
+  <p class="muted" id="c-info" style="margin:16px 0 0;font-size:.92rem"></p>
+  <button id="c-start" class="btn" style="margin-top:14px">Start →</button>
+ </div>
+
+{quiz_html(exam, home, label, "Take another section")} <div id="c-progress" class="card prog-card" data-progress="{exam}" style="margin-top:20px"></div>
 </div></section>
 """, desc=desc, extra=f'<script>window.EXAM="{exam}";</script><script src="assets/js/progress.js"></script><script src="assets/js/exam.js"></script>')
 
 practice_page("cat-practice.html", "cat", "CAT", "cat.html", "CAT", "40 min · CAT marking · results at the end",
     [("varc", "📖 VARC"), ("dilr", "📊 DILR"), ("qa", "➗ QA")], "CAT Practice: Sectionals & Topic Practice",
     "CAT-style 40-minute sectionals for VARC, DILR and QA with TITA questions and CAT marking, plus topic practice with instant solutions.")
+
+# ---------- CAT PRACTICE SETS (hubs, set page, login) ----------
+SETS_META=json.load(open("data/cat/sets.json"))
+GATE_NOTE=('<p class="muted" style="font-size:.85rem;margin-top:22px">How locks work: Easy is open (guests can try Easy set 1). A level unlocks when you have '
+  'completed every set that is ready in the level before it; if that level has no ready sets yet, the next level is already open. '
+  'Locks are only a convenience to guide your practice, not a security feature: all questions on this site are public.</p>')
+rng=lambda rep: ", ".join(f"{L} (sets {rep[L]['range'][0]}–{rep[L]['range'][1]})" for L in ("Easy","Medium","Hard"))
+for sec,slug,name,color in (("qa","quant","Quant","var(--quant)"),("varc","varc","VARC","var(--varc)"),("dilr","dilr","DILR","var(--dilr)")):
+    rep=SETS_META["sections"][sec]; nready=sum(len(rep[L]["ready"]) for L in ("Easy","Medium","Hard"))
+    fmt_note={"qa":"10 single questions per set, MCQ and TITA.","varc":"10 questions per set: reading-comprehension passages stay whole, topped up with verbal-ability items.",
+              "dilr":"Each set is 2 data sets of 5 questions."}[sec]
+    page(f"cat-{slug}-sets.html", f"CAT {name} Practice Sets", f"""
+<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="cat.html">CAT</a> / {name} sets</div>
+<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">CAT {name}: {rep["count"]} practice sets</h1>
+<p class="muted" style="max-width:760px">{rng(rep)}. {fmt_note} {SETS_META["timers"][sec]}-minute timer, CAT marking (+3, −1 for a wrong MCQ, 0 for a wrong TITA), solutions after you submit. <b>{nready}</b> of {rep["count"]} sets are ready; the rest are coming soon.</p></div></div>
+<section style="padding-top:12px"><div class="container">
+<div id="set-hub" data-sec="{sec}"><p class="muted">Loading sets…</p></div>
+<noscript><div class="notice">The practice sets need JavaScript.</div></noscript>
+{GATE_NOTE}
+</div></section>
+""", desc=f"CAT {name} practice in {rep["count"]} sets of 10 questions at Easy, Medium and Hard level, with a timer, CAT marking and worked solutions.",
+         extra='<script src="assets/js/sets.js"></script>')
+
+page("set.html", "CAT Practice Set", f"""
+<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="cat.html">CAT</a> / <a href="cat-quant-sets.html" data-hub>Sets</a></div>
+<h1 id="set-h1" style="font-size:clamp(1.6rem,3.6vw,2.3rem)">CAT practice set</h1></div></div>
+<section style="padding-top:12px"><div class="container">
+ <div id="c-setup" class="card quiz-setup"><div id="set-info"><p class="muted">Loading…</p></div>
+  <button id="c-start" class="btn hidden" style="margin-top:14px">Start set →</button></div>
+{quiz_html("cat", "cat-quant-sets.html", "CAT", "Retry this set", "All sets")}
+ <div id="c-progress" class="hidden"></div>
+</div></section>
+""", desc="A CAT practice set of 10 questions with a timer, CAT marking and worked solutions.", noindex=True,
+     extra='<script src="assets/js/progress.js"></script><script src="assets/js/sets.js"></script><script src="assets/js/exam.js"></script>')
+
+page("login.html", "Login", f"""
+<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Login</div>
+<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">Login</h1>
+<p class="muted" style="max-width:640px">Login only to save progress and unlock levels. We email you a one-time login link: no password.</p></div></div>
+<section style="padding-top:12px"><div class="container"><div id="login-box" class="card login-box">
+ <form id="login-form" class="form" novalidate><label>Email<input id="login-email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+ <button id="login-send" class="btn" type="submit" style="margin-top:12px">Email me a login link</button></form>
+ <p id="login-msg" class="muted" aria-live="polite" style="margin-top:12px"></p>
+ <p class="muted" style="font-size:.85rem">We store your email address and your practice-set results to save your progress. See the <a href="privacy.html">privacy policy</a>.</p>
+</div></div></section>
+""", desc="Log in with an email link to save your CAT practice-set progress and unlock levels.", noindex=True, extra='<script src="assets/js/login.js"></script>')
 
 # ---------- CUET (UG) TRACK ----------
 from urllib.parse import quote as _q
