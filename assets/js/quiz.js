@@ -25,13 +25,13 @@
     try { await ensure(s); } catch (e) { fail(); return; }
     if (s !== sec()) return;
     const topics = [...new Set(poolFor(s).map(q => q.topic))];
-    sel.innerHTML = `<option value="">All topics (${poolFor(s).length})</option>` +
-      topics.map(t => `<option value="${t.replace(/"/g, "&quot;")}">${t} (${poolFor(s, t).length})</option>`).join("");
+    sel.innerHTML = `<option value="">All topics</option>` +
+      topics.map(t => `<option value="${t.replace(/"/g, "&quot;")}">${t}</option>`).join("");
     if (keep && topics.includes(keep)) sel.value = keep;
     sel.disabled = false; $("#start").disabled = false;
     updAvail();
   }
-  function updAvail() { const n = poolFor(sec(), $("#topic").value).length; $("#avail").textContent = `${n} question${n === 1 ? "" : "s"} available for this selection.`; }
+  function updAvail() { const n = poolFor(sec(), $("#topic").value).length; $("#avail").textContent = n ? "" : "No questions for this selection yet."; }
 
   function showProgress() { document.querySelectorAll("[data-progress]").forEach(x => P && P.panel(x, x.dataset.progress)); }
 

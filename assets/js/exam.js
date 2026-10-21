@@ -5,7 +5,7 @@
   const L = "ABCD";
   const EXAMS = {
     cat: { label: "CAT", dir: "data/cat/", secs: ["varc", "dilr", "qa"], marks: { mcq: [3, -1], tita: [3, 0] },
-           target: { varc: 24, dilr: 22, qa: 22 }, time: () => 40 * 60 },
+           target: { varc: 24, dilr: 22, qa: 22 }, time: () => 25 * 60 },
     // CUET (UG) 2026: 50 compulsory MCQs in 60 minutes per paper, +5 / −1 (NTA Information Bulletin). When the bank holds
     // fewer than 50 questions for a paper we keep the official pace of 72 seconds per question.
     cuet: { label: "CUET", dir: "data/cuet/", secs: ["gat", "english", "maths"], marks: { mcq: [5, -1] },
@@ -100,24 +100,24 @@
     $("#c-topic-wrap").classList.toggle("hidden", mode !== "practice");
     const tc = topicsFor(sec), sel = $("#c-topic"), keep = sel.dataset.want || sel.value; sel.dataset.want = "";
     const qq = bank.sections[sec].questions, parts = [...new Set(qq.map(q => q.part).filter(Boolean))];
-    const opt = (v, label, n) => `<option value="${esc(v)}">${esc(label)} (${n})</option>`;
-    sel.innerHTML = `<option value="">All ${esc(bank.sections[sec].name)} topics (${qq.length})</option>` + (parts.length > 1
+    const opt = (v, label) => `<option value="${esc(v)}">${esc(label)}</option>`;
+    sel.innerHTML = `<option value="">All ${esc(bank.sections[sec].name)} topics</option>` + (parts.length > 1
       ? parts.map(p => { const pq = qq.filter(q => q.part === p), pt = {}; pq.forEach(q => pt[q.topic] = (pt[q.topic] || 0) + 1);
           return `<optgroup label="${esc(p)}">${opt("p:" + p, "All " + p, pq.length)}${Object.entries(pt).map(([t, n]) => opt(t, t, n)).join("")}</optgroup>`; }).join("")
       : Object.entries(tc).map(([t, n]) => opt(t, t, n)).join(""));
     if (keep && (tc[keep] || [...sel.options].some(o => o.value === keep))) sel.value = keep;
     let info;
-    if (mode === "practice") { const n = pickPractice(sec, sel.value).length; info = `<b>Practice:</b> ${n} question${n === 1 ? "" : "s"} · no countdown · the solution appears right after you check each answer.`; }
+    if (mode === "practice") { info = `<b>Practice:</b> no countdown · the solution appears right after you check each answer.`; }
     else if (window.EXAM === "cuet") {
       const n = Math.min(TARGET[sec], qq.length), T = EX.time(n);
-      info = `<b>Sectional:</b> ${n} questions · ${fmt(T)} timer · +5 for a correct answer, −1 for a wrong one, 0 if unanswered. ` +
-        (n >= 50 ? "Same size and time as the real paper (50 questions, 60 minutes)." : `The real paper has 50 questions in 60 minutes; our bank has ${qq.length} for this subject, so the timer keeps the same pace (72 s per question).`) +
+      info = `<b>Sectional:</b> ${fmt(T)} timer · +5 for a correct answer, −1 for a wrong one, 0 if unanswered. ` +
+        (n >= 50 ? "Same size and time as the real paper (50 questions, 60 minutes)." : `The real paper has 50 questions in 60 minutes; our sectional for this subject is shorter, so the timer keeps the same pace (72 s per question).`) +
         (sec === "gat" ? " Mix: 15 quantitative, 15 logical &amp; analytical, 10 mental ability, 10 GK (our choice; NTA does not publish a fixed split)." : "") + " Submits automatically when time runs out.";
-    } else info = `<b>Sectional:</b> about ${TARGET[sec]} questions · 40-minute timer · +3 for correct, −1 for a wrong MCQ, 0 for a wrong TITA. Submits automatically when time runs out.`;
+    } else info = `<b>Sectional:</b> 25-minute timer · +3 for correct, −1 for a wrong MCQ, 0 for a wrong TITA. Submits automatically when time runs out.`;
     $("#c-info").innerHTML = info;
   }
   function counts() {
-    fetch("data/stats.json").then(r => r.json()).then(st => EX.secs.forEach(s => { const el = $(`[data-csec-count="${s}"]`), n = st.stat[ENG + "-" + s]; if (el && n != null) el.textContent = n + " Qs"; })).catch(() => {});
+    fetch("data/stats.json").then(r => r.json()).then(st => EX.secs.forEach(s => { const el = $(`[data-csec-count="${s}"]`), n = st.stat[ENG + "-" + s]; if (el && n === 0) el.textContent = "Soon"; })).catch(() => {});
   }
 
   // ---------- run ----------
