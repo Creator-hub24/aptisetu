@@ -26,7 +26,7 @@ page("about.html","About",info_head("About",f"About {B}","A free practice site f
 <li><b>Bank / SSC / Placements track:</b> <a href="quant.html">Quant</a>, <a href="reasoning.html">Reasoning</a> and <a href="dilr.html">DILR</a> pages with concept notes, formula sheets and <a href="practice.html?exam=general">timed quizzes</a>.</li>
 <li><b>CAT track:</b> <a href="cat.html">VARC, DILR and QA</a> with 40-minute sectionals, MCQ and TITA questions and CAT marking.</li>
 <li><b>CUET (UG) track:</b> <a href="cuet.html">General Aptitude Test, English and Mathematics</a> with +5 / −1 marking at the real pace.</li></ul>
-<h3>Our questions</h3><p>Every question and passage on the site was written by us for practice. None are copied from past papers or coaching material. Each comes with a worked solution, and our build process checks the answers automatically before anything is published. If you still spot a mistake, please <a href="contact.html">tell us</a>.</p>
+<h3>Our questions</h3><p>Every question and passage on the site was written by our team. None are taken from past papers or any coaching material. Each comes with a worked solution, and our build process checks the answers automatically before anything is published. If you still spot a mistake, please <a href="contact.html">tell us</a>.</p>
 <h3>Independent</h3><p><span data-brand>{B}</span> is an independent site. It is not affiliated with, endorsed by or connected to the National Testing Agency (NTA), the IIMs, IBPS, SBI, SSC or any other exam body or company. Exam names are used only to describe what the practice is for.</p>
 """), desc=f"About {BRAND}: a free, independent aptitude practice site with original questions for CAT, CUET (UG), Bank, SSC and placements.")
 
@@ -39,7 +39,7 @@ faqs=[("Is it free?","Yes. All notes, formula sheets and practice questions are 
 ("How do CAT sectionals work?","A CAT sectional is one section with a 40-minute countdown that submits automatically when time runs out. Marking is +3 for a correct answer, −1 for a wrong MCQ, and 0 for a wrong TITA or a blank. RC passages and DILR sets stay together."),
 ("How do CUET sectionals work?","Up to 50 questions at the real pace of 72 seconds per question, with +5 for a correct answer and −1 for a wrong one. Where our bank has fewer than 50 questions, the sectional is shorter but keeps the same pace."),
 ("What is practice mode?","On the CAT and CUET tracks, practice mode has no countdown. You pick a topic, check each answer and see the full solution straight away."),
-("Are these real exam questions?","No. All questions were written by us for practice, in the style of each exam. They are not taken from past papers."),
+("Are these real exam questions?","No. All questions were written by our team, in the style of each exam. They are not taken from past papers or any coaching material."),
 ("Is my progress saved?","Yes, but only in your own browser. The site remembers an unfinished quiz so you can resume it, your daily practice streak, and your accuracy for each topic. This is stored in your browser's local storage on this device; it is never sent to us, and it won't follow you to another phone or browser. To delete it, use <b>Reset my progress</b> on the <a href=\"practice.html\">Practice page</a>, or clear this site's data in your browser settings."),
 ("What is Quick start?","On the <a href=\"practice.html\">Practice page</a>, Quick start gives you 10 mixed Quant, Reasoning and DILR questions with 60 seconds each, in one tap."),
 ("Are you linked to NTA or the IIMs?","No. This is an independent site, not affiliated with NTA, the IIMs or any exam body. Always check official exam websites for dates and rules."),
@@ -70,7 +70,7 @@ page("privacy.html","Privacy Policy",info_head("Privacy","Privacy policy",f"Last
 # ---------- TERMS ----------
 page("terms.html","Terms & Disclaimer",info_head("Terms","Terms of use &amp; disclaimer","Please read these before using the site.")+prose(f"""
 <h3>Educational use</h3><p><span data-brand>{B}</span> provides practice material for personal, educational use. You may use it freely to prepare for exams. Please don't copy or republish the questions, notes or solutions as your own.</p>
-<h3>Original questions</h3><p>All questions, passages and solutions were written by us for practice. They are not past exam papers and are not copied from coaching material.</p>
+<h3>Original questions</h3><p>All questions, passages and solutions were written by our team. They are not past exam papers and are not taken from any coaching material.</p>
 <h3>No guarantee of results</h3><p>Practising here does not guarantee any score, rank, admission or job. The difficulty and format of our questions may differ from the real exams.</p>
 <h3>Accuracy</h3><p>We check answers carefully, including automatic checks when the site is built, but mistakes can still happen. The material is provided "as is". Exam patterns, syllabi and marking schemes change, so always confirm details on the official exam website.</p>
 <h3>Not affiliated</h3><p><span data-brand>{B}</span> is independent. It is not affiliated with, endorsed by or connected to the National Testing Agency (NTA), the IIMs, IBPS, SBI, SSC, or any other exam body, university or company. All exam and company names belong to their owners and are used only to describe what the practice is for.</p>

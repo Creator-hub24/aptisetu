@@ -172,7 +172,7 @@ page("index.html","", f"""
 <section class="cat-band"><div class="container">
  <div class="cat-band-grid">
   <div><span class="pill">🎯 CAT track</span><h2>CAT-style practice, including VARC</h2>
-   <p class="muted">CAT-style questions we wrote ourselves (not taken from past papers): reading comprehension, para-jumbles, DILR puzzle sets and QA, with MCQ and TITA types. Take a 40-minute sectional with CAT marking, or practise one topic at a time with solutions straight after each answer.</p>
+   <p class="muted">CAT-style questions written by our team (not taken from CAT papers or any coaching material): reading comprehension, para-jumbles, DILR puzzle sets and QA, with MCQ and TITA types. Take a 40-minute sectional with CAT marking, or practise one topic at a time with solutions straight after each answer.</p>
    <div class="cta-row" style="margin-bottom:0"><a class="btn" href="cat.html">Explore the CAT track →</a><a class="btn btn-ghost" href="cat-practice.html">Start a sectional</a></div></div>
   <div class="cat-mini">
    <a class="card" href="cat-practice.html?section=varc"><b>VARC</b><span><b data-stat="cat-varc">{CATN['varc']}</b> questions</span></a>
@@ -186,7 +186,7 @@ page("index.html","", f"""
 <section class="cat-band cuet-band"><div class="container">
  <div class="cat-band-grid">
   <div><span class="pill">🎓 CUET (UG) track</span><h2>CUET (UG): aptitude, English and Maths</h2>
-   <p class="muted">Practice in NTA's CUET (UG) format: MCQs with +5 for a correct answer and −1 for a wrong one, sectionals at the real pace (50 questions in 60 minutes), and topic practice with worked solutions. All questions are written by us. GK covers static facts only, with no current affairs.</p>
+   <p class="muted">Practice in NTA's CUET (UG) format: MCQs with +5 for a correct answer and −1 for a wrong one, sectionals at the real pace (50 questions in 60 minutes), and topic practice with worked solutions. All questions were written by our team. GK covers static facts only, with no current affairs.</p>
    <div class="cta-row" style="margin-bottom:0"><a class="btn" href="cuet.html">Explore the CUET track →</a><a class="btn btn-ghost" href="cuet-practice.html">Start a sectional</a></div></div>
   <div class="cat-mini">
    <a class="card" href="cuet-practice.html?section=gat"><b>General Aptitude</b><span><b data-stat="cuet-gat">{CUETN['gat']}</b> questions</span></a>
@@ -209,7 +209,7 @@ page("index.html","", f"""
 
 <section class="alt about"><div class="container" style="max-width:760px;text-align:center">
  <h2>About <span data-brand></span></h2>
- <p class="muted"><span data-brand></span> is a new, free practice site for Indian students preparing for aptitude tests: CAT and other MBA entrance exams, bank and SSC exams, and campus placements. Every question here is written by us and comes with a worked solution. We're starting small and adding more questions and topics over time.</p>
+ <p class="muted"><span data-brand></span> is a new, free practice site for Indian students preparing for aptitude tests: CAT and other MBA entrance exams, bank and SSC exams, and campus placements. Every question here was written by our team and comes with a worked solution. We're starting small and adding more questions and topics over time.</p>
  <p class="muted" style="margin:0">Login only to save progress and unlock levels.</p>
 </div></section>
 
@@ -396,7 +396,7 @@ secblk=""
 SETS_HUB={"varc":"cat-varc-sets.html","dilr":"cat-dilr-sets.html","qa":"cat-quant-sets.html"}
 for sec,ic,col,blurb in [("varc","📖","var(--varc)",f"<span data-stat='cat-passages'>{NPASS}</span> reading passages plus para-jumbles, para-summaries and odd-sentence-out."),
                          ("dilr","📊","var(--dilr)",f"<span data-stat='cat-sets'>{NSETS}</span> puzzle sets of 4–5 questions each, every one checked by computer to have a single solution."),
-                         ("qa","➗","var(--quant)","Arithmetic, algebra, number system, geometry and modern maths, from moderate to hard.")]:
+                         ("qa","➗","var(--quant)","Arithmetic, algebra, number system, geometry and modern maths, from easy to hard.")]:
     m,ti=cat_type_counts(sec)
     secblk+=f"""<div class="card sec-card" style="--c:{col}"><div class="icon">{ic}</div><h3>{CB['sections'][sec]['name']} ({sec.upper()})</h3>
 <p class="muted" style="flex:1"><b data-stat="cat-{sec}">{CATN[sec]}</b> questions · {m} MCQ / {ti} TITA. {blurb}</p>
@@ -404,7 +404,7 @@ for sec,ic,col,blurb in [("varc","📖","var(--varc)",f"<span data-stat='cat-pas
 page("cat.html","CAT Track: VARC, DILR & QA",f"""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / CAT track</div>
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CAT track <span class="exam-tag tag-cat" style="vertical-align:middle">CAT</span></h1>
-<p class="muted" style="max-width:720px">A separate track for CAT aspirants: VARC, DILR and QA questions at moderate to hard level, in CAT's question formats (MCQ and TITA) with CAT marking. All <b data-stat="cat">{NQ_CAT}</b> questions and passages were written by us for practice. They are not taken from CAT papers or coaching material, and each has a worked solution.</p>
+<p class="muted" style="max-width:720px">A separate track for CAT aspirants: VARC, DILR and QA questions from easy to hard level, in CAT's question formats (MCQ and TITA) with CAT marking. All <b data-stat="cat">{NQ_CAT}</b> questions and passages were written by our team. They are not taken from CAT papers or any coaching material, and each has a worked solution.</p>
 <div class="cta-row"><a class="btn" href="cat-quant-sets.html">Practice sets: Quant →</a><a class="btn btn-ghost" href="cat-varc-sets.html">VARC sets</a><a class="btn btn-ghost" href="cat-dilr-sets.html">DILR sets</a><a class="btn btn-ghost" href="cat-practice.html">40-min sectional</a><a class="btn btn-ghost" href="varc.html">VARC strategy &amp; rules</a></div></div></div>
 <section style="padding-top:20px"><div class="container"><div class="grid g3">{secblk}</div></div></section>
 <section class="alt"><div class="container"><div class="grid g2">
@@ -433,7 +433,7 @@ page("cat.html","CAT Track: VARC, DILR & QA",f"""
 page("varc.html","VARC: Reading Strategy & Rules",f"""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="cat.html">CAT</a> / VARC</div>
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Verbal Ability &amp; Reading Comprehension (VARC)</h1>
-<p class="muted" style="max-width:720px">CAT's first section. Reading comprehension carries most of the marks; para-jumbles and odd-sentence-out are TITA, so a wrong answer costs nothing. All passages here were written by us for practice.</p>
+<p class="muted" style="max-width:720px">CAT's first section. Reading comprehension carries most of the marks; para-jumbles and odd-sentence-out are TITA, so a wrong answer costs nothing. All passages here were written by our team.</p>
 <div class="cta-row"><a class="btn" href="cat-practice.html?mode=sectional&amp;section=varc">VARC sectional (40 min) →</a><a class="btn btn-ghost" href="#formulas">Rules sheet</a></div></div></div>
 <section style="padding-top:20px"><div class="container"><h2>Topics</h2><p class='muted' style='margin-top:-.4em'>Tap a topic to practise it with instant solutions.</p><div class="topic-list">{cat_topic_cards('varc')}</div></div></section>
 <section class="alt"><div class="container note" style="max-width:860px"><h2>Reading strategy</h2>
@@ -591,7 +591,7 @@ for sec, ic, col, blurb in [
 page("cuet.html", "CUET (UG) Track: General Aptitude Test, English & Maths", f"""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / CUET (UG)</div>
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CUET (UG) track <span class="exam-tag tag-cuet" style="vertical-align:middle">CUET</span></h1>
-<p class="muted" style="max-width:740px">Practice for the Common University Entrance Test (UG), run by the National Testing Agency (NTA) for admission to central and other participating universities. We cover three of its papers: the <b>General Aptitude Test</b>, <b>English</b> and <b>Mathematics</b>. All questions were written by us for practice; none are taken from NTA papers. <span data-stat="cuet-shared">{NQ_CUET_SHARED}</span> General Aptitude questions are shared with our Bank / SSC track and are marked as such.</p>
+<p class="muted" style="max-width:740px">Practice for the Common University Entrance Test (UG), run by the National Testing Agency (NTA) for admission to central and other participating universities. We cover three of its papers: the <b>General Aptitude Test</b>, <b>English</b> and <b>Mathematics</b>. All questions were written by our team; none are taken from NTA papers or any coaching material. <span data-stat="cuet-shared">{NQ_CUET_SHARED}</span> General Aptitude questions are shared with our Bank / SSC track and are marked as such.</p>
 <div class="cta-row"><a class="btn" href="cuet-practice.html">Start a CUET sectional →</a><a class="btn btn-ghost" href="#pattern">Exam pattern</a></div></div></div>
 <section style="padding-top:20px"><div class="container"><div class="grid g3">{csec}</div></div></section>
 <section id="pattern" class="alt"><div class="container"><h2>CUET (UG) exam pattern</h2>
