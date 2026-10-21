@@ -1,19 +1,10 @@
 {
  "size": 10,
- "levels": {
-  "Easy": [
-   1,
-   5
-  ],
-  "Medium": [
-   6,
-   10
-  ],
-  "Hard": [
-   11,
-   15
-  ]
- },
+ "levels": [
+  "Easy",
+  "Medium",
+  "Hard"
+ ],
  "timers": {
   "qa": 20,
   "varc": 20,
@@ -22,10 +13,19 @@
  "sections": {
   "varc": {
    "Easy": {
+    "range": [
+     1,
+     5
+    ],
     "ready": [],
-    "leftoverQuestions": 0
+    "leftoverQuestions": 0,
+    "leftoverIds": []
    },
    "Medium": {
+    "range": [
+     6,
+     10
+    ],
     "ready": [
      {
       "set": 6,
@@ -47,9 +47,22 @@
       ]
      }
     ],
-    "leftoverQuestions": 7
+    "leftoverQuestions": 7,
+    "leftoverIds": [
+     "CV21",
+     "CV24",
+     "CV26",
+     "CV28",
+     "CV29",
+     "CV30",
+     "CV31"
+    ]
    },
    "Hard": {
+    "range": [
+     11,
+     15
+    ],
     "ready": [
      {
       "set": 11,
@@ -71,15 +84,31 @@
       ]
      }
     ],
-    "leftoverQuestions": 4
-   }
+    "leftoverQuestions": 4,
+    "leftoverIds": [
+     "CV22",
+     "CV23",
+     "CV25",
+     "CV27"
+    ]
+   },
+   "count": 15
   },
   "dilr": {
    "Easy": {
+    "range": [
+     1,
+     5
+    ],
     "ready": [],
-    "leftoverQuestions": 0
+    "leftoverQuestions": 0,
+    "leftoverIds": []
    },
    "Medium": {
+    "range": [
+     6,
+     10
+    ],
     "ready": [
      {
       "set": 6,
@@ -101,12 +130,31 @@
       ]
      }
     ],
-    "leftoverQuestions": 5
+    "leftoverQuestions": 5,
+    "leftoverIds": [
+     "CD11",
+     "CD12",
+     "CD13",
+     "CD14",
+     "CD15"
+    ]
    },
    "Hard": {
+    "range": [
+     11,
+     15
+    ],
     "ready": [],
-    "leftoverQuestions": 5
+    "leftoverQuestions": 5,
+    "leftoverIds": [
+     "CD16",
+     "CD17",
+     "CD18",
+     "CD19",
+     "CD20"
+    ]
    },
+   "count": 15,
    "excludedDataSets": [
     "cd-choc",
     "cd-code",
@@ -116,6 +164,10 @@
   },
   "qa": {
    "Easy": {
+    "range": [
+     1,
+     5
+    ],
     "ready": [
      {
       "set": 1,
@@ -198,9 +250,14 @@
       "groups": []
      }
     ],
-    "leftoverQuestions": 0
+    "leftoverQuestions": 0,
+    "leftoverIds": []
    },
    "Medium": {
+    "range": [
+     6,
+     13
+    ],
     "ready": [
      {
       "set": 6,
@@ -281,14 +338,77 @@
        "CQ120"
       ],
       "groups": []
-     }
-    ],
-    "leftoverQuestions": 39
-   },
-   "Hard": {
-    "ready": [
+     },
      {
       "set": 11,
+      "ids": [
+       "CQ121",
+       "CQ122",
+       "CQ123",
+       "CQ125",
+       "CQ128",
+       "CQ131",
+       "CQ132",
+       "CQ133",
+       "CQ134",
+       "CQ136"
+      ],
+      "groups": []
+     },
+     {
+      "set": 12,
+      "ids": [
+       "CQ137",
+       "CQ139",
+       "CQ140",
+       "CQ144",
+       "CQ146",
+       "CQ145",
+       "CQ143",
+       "CQ147",
+       "CQ126",
+       "CQ130"
+      ],
+      "groups": []
+     },
+     {
+      "set": 13,
+      "ids": [
+       "CQ156",
+       "CQ158",
+       "CQ138",
+       "CQ148",
+       "CQ127",
+       "CQ153",
+       "CQ157",
+       "CQ159",
+       "CQ141",
+       "CQ149"
+      ],
+      "groups": []
+     }
+    ],
+    "leftoverQuestions": 9,
+    "leftoverIds": [
+     "CQ154",
+     "CQ150",
+     "CQ151",
+     "CQ152",
+     "CQ124",
+     "CQ129",
+     "CQ135",
+     "CQ142",
+     "CQ155"
+    ]
+   },
+   "Hard": {
+    "range": [
+     14,
+     18
+    ],
+    "ready": [
+     {
+      "set": 14,
       "ids": [
        "CQ4",
        "CQ5",
@@ -304,7 +424,7 @@
       "groups": []
      },
      {
-      "set": 12,
+      "set": 15,
       "ids": [
        "CQ41",
        "CQ42",
@@ -320,8 +440,10 @@
       "groups": []
      }
     ],
-    "leftoverQuestions": 0
-   }
+    "leftoverQuestions": 0,
+    "leftoverIds": []
+   },
+   "count": 18
   }
  }
 }

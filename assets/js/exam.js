@@ -286,12 +286,14 @@
   // ---------- set page ----------
   async function initSet() {
     const info = $("#set-info"), NAME = { qa: "Quant", varc: "VARC", dilr: "DILR" };
-    if (!NAME[SET.sec] || !(SET.n >= 1 && SET.n <= 15)) { info.innerHTML = `<div class="notice">This set doesn't exist. <a href="cat.html">Back to CAT</a></div>`; return; }
+    if (!NAME[SET.sec] || !(SET.n >= 1)) { info.innerHTML = `<div class="notice">This set doesn't exist. <a href="cat.html">Back to CAT</a></div>`; return; }
     const hubUrl = `cat-${{ qa: "quant", varc: "varc", dilr: "dilr" }[SET.sec]}-sets.html`;
     $$("[data-hub]").forEach(a => a.href = hubUrl);
     let st;
     try { st = await window.CatSets.status(SET.sec); } catch (e) { info.innerHTML = `<div class="notice">Could not load this set. Please check your connection.</div>`; return; }
-    const s = st.sets[SET.n - 1], L = s.level;
+    const s = st.sets[SET.n - 1];
+    if (!s) { info.innerHTML = `<div class="notice">This set doesn't exist. <a href="${hubUrl}">See all ${NAME[SET.sec]} sets</a></div>`; return; }
+    const L = s.level;
     document.title = `CAT ${NAME[SET.sec]} · Set ${SET.n} (${L}) | ${(window.SITE || {}).BRAND || ""}`;
     $("#set-h1").textContent = `${NAME[SET.sec]} · Set ${SET.n}`;
     const msg = {

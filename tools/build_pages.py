@@ -501,20 +501,21 @@ SETS_META=json.load(open("data/cat/sets.json"))
 GATE_NOTE=('<p class="muted" style="font-size:.85rem;margin-top:22px">How locks work: Easy is open (guests can try Easy set 1). A level unlocks when you have '
   'completed every set that is ready in the level before it; if that level has no ready sets yet, the next level is already open. '
   'Locks are only a convenience to guide your practice, not a security feature: all questions on this site are public.</p>')
+rng=lambda rep: ", ".join(f"{L} (sets {rep[L]['range'][0]}–{rep[L]['range'][1]})" for L in ("Easy","Medium","Hard"))
 for sec,slug,name,color in (("qa","quant","Quant","var(--quant)"),("varc","varc","VARC","var(--varc)"),("dilr","dilr","DILR","var(--dilr)")):
     rep=SETS_META["sections"][sec]; nready=sum(len(rep[L]["ready"]) for L in ("Easy","Medium","Hard"))
     fmt_note={"qa":"10 single questions per set, MCQ and TITA.","varc":"10 questions per set: reading-comprehension passages stay whole, topped up with verbal-ability items.",
               "dilr":"Each set is 2 data sets of 5 questions."}[sec]
     page(f"cat-{slug}-sets.html", f"CAT {name} Practice Sets", f"""
 <div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="cat.html">CAT</a> / {name} sets</div>
-<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">CAT {name}: 15 practice sets</h1>
-<p class="muted" style="max-width:760px">Easy (sets 1–5), Medium (6–10) and Hard (11–15). {fmt_note} {SETS_META["timers"][sec]}-minute timer, CAT marking (+3, −1 for a wrong MCQ, 0 for a wrong TITA), solutions after you submit. <b>{nready}</b> of 15 sets are ready; the rest are coming soon.</p></div></div>
+<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">CAT {name}: {rep["count"]} practice sets</h1>
+<p class="muted" style="max-width:760px">{rng(rep)}. {fmt_note} {SETS_META["timers"][sec]}-minute timer, CAT marking (+3, −1 for a wrong MCQ, 0 for a wrong TITA), solutions after you submit. <b>{nready}</b> of {rep["count"]} sets are ready; the rest are coming soon.</p></div></div>
 <section style="padding-top:12px"><div class="container">
 <div id="set-hub" data-sec="{sec}"><p class="muted">Loading sets…</p></div>
 <noscript><div class="notice">The practice sets need JavaScript.</div></noscript>
 {GATE_NOTE}
 </div></section>
-""", desc=f"CAT {name} practice in 15 sets of 10 questions at Easy, Medium and Hard level, with a timer, CAT marking and worked solutions.",
+""", desc=f"CAT {name} practice in {rep["count"]} sets of 10 questions at Easy, Medium and Hard level, with a timer, CAT marking and worked solutions.",
          extra='<script src="assets/js/sets.js"></script>')
 
 page("set.html", "CAT Practice Set", f"""
