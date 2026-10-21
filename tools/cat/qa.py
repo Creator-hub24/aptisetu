@@ -429,3 +429,177 @@ _build_main = build
 def build(B):
     _build_main(B)
     build_easy(B)
+
+
+# ======================= MEDIUM: user's sets M1 and M2 (appended; IDs continue after CQ112) =======================
+# Transcribed from "CAT Quant: 25 Medium-level Questions" (AptiSetu Set M1) and "CAT Quant: Medium Set 2" (Set M2),
+# with their solutions. Every answer is recomputed below. Left out as exact duplicates of questions already in
+# the bank: M1 Q5 (80 L, 8 L replaced 3 times), M1 Q8 (f(x) + 2f(1/x) = 3x) and M1 Q22 (4-digit increasing numbers).
+def build_medium_m(B):
+    s = "qa"
+    M = lambda *a, **k: B.mcq(s, *a, **k)
+    T = lambda *a, **k: B.tita(s, *a, **k)
+    md = "Medium"
+    # ----- Set M1 -----
+    assert (F(110) - 80) / 80 * 100 == F(75, 2)
+    M("Percentages & Profit", md, "A trader claims to sell rice at 10% above cost price, but his weighing scale shows 1 kg when only 800 g is on it. What is his actual profit percentage?",
+      ["25%", "30%", "40%", "37.5%"], "37.5%", "Take the cost of 1 kg as ₹100. The customer pays ₹110 but receives 800 g, which cost the trader ₹80. Profit = 30/80 = 37.5%.")
+    assert 1000 - 900 * 900 // 1000 == 190
+    M("Time, Speed & Distance", md, "In a 1 km race, A beats B by 100 m, and B beats C by 100 m. By how many metres does A beat C in a 1 km race?",
+      ["180 m", "200 m", "190 m", "210 m"], "190 m", "When A runs 1000 m, B runs 900 m. When B runs 1000 m, C runs 900 m, so when B runs 900 m, C runs 810 m. A beats C by 1000 − 810 = 190 m. (Adding 100 + 100 is the trap.)")
+    a_, b_ = 80, 60; t_ = F(16 * b_, a_); assert F(a_, b_) ** 2 == F(16, 9) and b_ * t_ == 9 * a_; pq = (a_ + b_) * t_
+    T("Time, Speed & Distance", md, "Two trains start at the same time from stations P and Q and travel towards each other. After they meet, the train from P takes 9 hours to reach Q and the train from Q takes 16 hours to reach P. The faster train runs at 80 km/h. What is the distance PQ in km?",
+      pq, "If they meet after t hours with speeds a (from P) and b (from Q): a·t = 16b and b·t = 9a. Dividing, (a/b)² = 16/9, so a : b = 4 : 3. The faster train (from P) is 80 km/h, so b = 60 km/h. Then t = 16 × 60 / 80 = 12 hours, and PQ = (80 + 60) × 12 = 1680 km.", chk=(pq, 1680))
+    a_ = F(1, 30); assert 6 * a_ + 16 * (F(1, 12) - a_) == 1
+    M("Time & Work", md, "A and B together can finish a job in 12 days. A works alone for 6 days, and then B alone finishes the remaining work in 16 days. In how many days can A alone finish the whole job?",
+      ["24", "30", "36", "20"], "30", "Let A's daily rate be a. Then B's rate is 1/12 − a, and 6a + 16(1/12 − a) = 1. So 4/3 − 10a = 1, giving a = 1/30. A alone needs 30 days.")
+    r_ = F(9261, 8820); P_ = F(8820) / r_ ** 2; assert r_ == F(21, 20) and P_ == 8000
+    M("Simple & Compound Interest", md, "A sum of money at compound interest (compounded annually) amounts to ₹8,820 in 2 years and ₹9,261 in 3 years. What is the sum?",
+      ["₹8,000", "₹7,840", "₹8,400", "₹7,500"], "₹8,000", "One year's growth: 9261 / 8820 = 1.05, so the rate is 5%. Principal = 8820 / 1.05² = 8820 / 1.1025 = ₹8,000.")
+    def _okk(k):
+        D = (k + 1) ** 2 - 4 * (k + 4)
+        if D < 0: return False
+        r1, r2 = ((k + 1) + sqrt(D)) / 2, ((k + 1) - sqrt(D)) / 2
+        return r1 > 0 and r2 > 0
+    k_ = next(k for k in range(-100, 100) if _okk(k))
+    T("Equations & Quadratics", md, "Find the smallest integer k for which both roots of x² − (k + 1)x + (k + 4) = 0 are real and positive.",
+      k_, "Real roots: (k + 1)² − 4(k + 4) ≥ 0, i.e. k² − 2k − 15 ≥ 0, i.e. (k − 5)(k + 3) ≥ 0, so k ≥ 5 or k ≤ −3. Positive roots need sum k + 1 &gt; 0 and product k + 4 &gt; 0, i.e. k &gt; −1. Together: k ≥ 5, so the smallest is 5 (roots 3 and 3).", chk=(k_, 5))
+    n_ = sum(1 for x in range(-100, 101) if abs(x - 2) + abs(x + 3) <= 9)
+    T("Inequalities", md, "How many integers x satisfy |x − 2| + |x + 3| ≤ 9?",
+      n_, "For −3 ≤ x ≤ 2 the sum is always 5, which is fine. For x &gt; 2: 2x + 1 ≤ 9, so x ≤ 4. For x &lt; −3: −2x − 1 ≤ 9, so x ≥ −5. So x runs from −5 to 4: 10 integers.", chk=(n_, 10))
+    mn = min(abs(F(x, 10) - 1) + abs(F(x, 10) - 4) + abs(F(x, 10) - 9) for x in range(-200, 300)); assert mn == 8
+    M("Inequalities", md, "What is the minimum value of |x − 1| + |x − 4| + |x − 9| over all real x?",
+      ["5", "8", "10", "13"], "8", "A sum of distances from points is smallest at the median point, x = 4: 3 + 0 + 5 = 8.")
+    A_ = 3.0; B_ = A_ ** 2; C_ = B_ ** 3; assert close_(math.log(B_) / math.log(A_ * C_), 2 / 7)
+    M("Logarithms", md, "If log<sub>a</sub> b = 2 and log<sub>b</sub> c = 3, what is log<sub>ac</sub> b?",
+      ["2/7", "3/7", "2/5", "7/2"], "2/7", "b = a² and c = b³ = a⁶, so ac = a⁷. Then log<sub>ac</sub> b = log(a²)/log(a⁷) = 2/7.")
+    best = max(F(x, 300) ** 2 * (10 - F(x, 300)) for x in range(1, 3000)); assert best == F(4000, 27)
+    M("Inequalities", md, "x and y are positive real numbers with x + y = 10. What is the maximum value of x²y?",
+      ["1000/27", "2000/9", "4000/27", "500/3"], "4000/27", "Write 10 = x/2 + x/2 + y. By AM ≥ GM, (x/2)(x/2)(y) ≤ (10/3)³, so x²y ≤ 4 × 1000/27 = 4000/27, reached at x = 20/3, y = 10/3. (2000/9 is larger, but it cannot be reached.)")
+    r_ = F(3, 5); a_ = 20 * (1 - r_); assert a_ / (1 - r_) == 20 and a_ ** 2 / (1 - r_ ** 2) == 100
+    T("Progressions", md, "The sum of an infinite geometric progression is 20, and the sum of the squares of its terms is 100. What is its first term?",
+      a_, "a/(1 − r) = 20 and a²/(1 − r²) = 100. Dividing the second by the square of the first: (1 − r)/(1 + r) = 100/400 = 1/4, so r = 3/5. Then a = 20 × (2/5) = 8.", chk=(a_, 8))
+    sq = sum(1 for d in range(1, 7201) if 7200 % d == 0 and math.isqrt(d) ** 2 == d)
+    T("Number System", md, "How many divisors of 7200 are perfect squares?",
+      sq, "7200 = 2⁵ × 3² × 5². A square divisor needs even powers: 2 can have power 0, 2 or 4 (3 ways), 3 can have 0 or 2 (2 ways), 5 can have 0 or 2 (2 ways). Total = 3 × 2 × 2 = 12.", chk=(sq, 12))
+    ld = pow(3, 2026, 100)
+    T("Number System", md, "What are the last two digits of 3<sup>2026</sup>?",
+      ld, "3¹⁰ = 59049 ≡ 49 (mod 100), so 3²⁰ ≡ 49² = 2401 ≡ 1. Since 2026 = 20 × 101 + 6, 3²⁰²⁶ ≡ 3⁶ = 729 ≡ 29 (mod 100).", chk=(ld, 29))
+    pr = sum(1 for x in range(1, 721) for y in range(x, 721) if math.gcd(x, y) == 12 and x * y // 12 == 720)
+    M("Number System", md, "The HCF of two numbers is 12 and their LCM is 720. How many such pairs of numbers exist? (Treat (a, b) and (b, a) as the same pair.)",
+      ["4", "3", "8", "2"], str(pr), "Write the numbers as 12m and 12n with m, n co-prime and mn = 720/12 = 60 = 2² × 3 × 5. Each of the three prime powers goes wholly to m or to n: 2³ = 8 ordered ways, so 4 unordered pairs: (12, 720), (36, 240), (48, 180), (60, 144).")
+    op = sum(1 for x in range(1, 100) for y in range(1, 100) if F(1, x) + F(1, y) == F(1, 6))
+    T("Number System", md, "How many ordered pairs of positive integers (x, y) satisfy 1/x + 1/y = 1/6?",
+      op, "Clearing fractions: xy − 6x − 6y = 0, i.e. (x − 6)(y − 6) = 36. Both factors must be positive (if both were negative, each would be at least −5 and their product at most 25). 36 has 9 divisors, so there are 9 ordered pairs.", chk=(op, 9))
+    bc = 12; m_, n_ = 5, 7; ad2 = (10 ** 2 * n_ + 14 ** 2 * m_) / bc - m_ * n_; assert close_(ad2, 105)   # Stewart's theorem
+    M("Geometry", md, "In triangle ABC, AB = 10 cm and AC = 14 cm. The bisector of angle A meets BC at D, and BD = 5 cm. What is the length of AD?",
+      ["√91 cm", "√105 cm", "11 cm", "√115 cm"], "√105 cm", "Angle bisector theorem: BD/DC = AB/AC = 10/14, so DC = 7. Bisector length: AD² = AB × AC − BD × DC = 140 − 35 = 105, so AD = √105 cm.")
+    tg = sqrt(13 ** 2 - 5 ** 2)
+    T("Geometry", md, "Two circles of radii 9 cm and 4 cm touch each other externally. What is the length (in cm) of their direct common tangent?",
+      int(tg), "The distance between centres is 9 + 4 = 13. Direct common tangent = √(13² − (9 − 4)²) = √(169 − 25) = 12 cm.", chk=(tg, 12))
+    N_ = 600; ar = sum(1 for i in range(N_) for j in range(N_) if abs(-6 + 12 * (i + .5) / N_) + abs(2 * (-3 + 6 * (j + .5) / N_)) <= 6) * 72 / N_ ** 2
+    assert abs(ar - 36) < 0.2
+    T("Geometry", md, "What is the area (in square units) of the region defined by |x| + |2y| ≤ 6?",
+      36, "The boundary is a rhombus with vertices (±6, 0) and (0, ±3). Its diagonals are 12 and 6, so area = (12 × 6)/2 = 36.", chk=(F(12 * 6, 2), 36))
+    small = F(2, 3) ** 3; assert small / (1 - small) == F(8, 19)
+    M("Mensuration", md, "A right circular cone of height 30 cm is cut by a plane parallel to its base, at a height of 10 cm above the base. What is the ratio of the volume of the small cone (on top) to the volume of the frustum?",
+      ["1 : 2", "8 : 19", "8 : 27", "1 : 3"], "8 : 19", "The small cone has height 20, so it is similar to the full cone with ratio 2/3. Volumes scale as the cube: small = 8/27 of the whole, so the frustum = 19/27. Ratio = 8 : 19. (8 : 27 compares with the whole cone, not the frustum.)")
+    ch = sum(1 for a in range(1, 6) for b in range(1, 6) if 1 <= 10 - a - b <= 5)
+    T("Permutations & Combinations", md, "In how many ways can 10 identical chocolates be distributed among 3 children so that each child gets at least 1 and at most 5?",
+      ch, "Give each child 1 first: now a + b + c = 7 with each between 0 and 4. Without the upper limit: C(9, 2) = 36. Subtract the cases where one child gets 5 or more: set that child's share to 5 + a', leaving 2 to share: C(4, 2) = 6 ways, for each of 3 children = 18. Two children cannot both exceed. Answer = 36 − 18 = 18.", chk=(ch, 18))
+    bl = "RRRRRBBBB"; pb = F(sum(1 for c in itertools.combinations(range(9), 3) if len({bl[i] for i in c}) == 2), comb(9, 3)); assert pb == F(5, 6)
+    M("Probability", md, "A bag has 5 red and 4 blue balls. Three balls are drawn together at random. What is the probability that the three balls include both colours?",
+      ["5/6", "4/5", "3/4", "13/14"], "5/6", "Total ways = C(9, 3) = 84. All red: C(5, 3) = 10; all blue: C(4, 3) = 4. Probability = 1 − 14/84 = 70/84 = 5/6.")
+    # minimum of |T∩C∩J| over all distributions: by the complement bound, attained when the "missers" are disjoint
+    assert 100 - ((100 - 80) + (100 - 75) + (100 - 70)) == 25 and (100 - 80) + (100 - 75) + (100 - 70) <= 100
+    M("Sets", md, "In a survey of 100 people, 80 like tea, 75 like coffee and 70 like juice. What is the minimum number of people who like all three?",
+      ["15", "20", "30", "25"], "25", "People who do not like tea, coffee and juice number 20, 25 and 30. Even if these groups do not overlap, at most 75 people miss at least one drink. So at least 100 − 75 = 25 like all three.")
+    # ----- Set M2 -----
+    N_ = next(n for n in range(100, 10 ** 6, 100) if F(n) * F(4, 5) * F(19, 20) * F(1, 10) == 1520)
+    T("Percentages & Profit", md, "In an election between two candidates, 20% of the registered voters did not vote, and 5% of the votes cast were invalid. The winner got 55% of the valid votes and won by 1,520 votes. How many voters were registered?",
+      N_, "Let N be the number of registered voters. Valid votes = 0.8 × 0.95 × N = 0.76N. The margin is 55% − 45% = 10% of the valid votes: 0.076N = 1520, so N = 20,000.", chk=(N_, 20000))
+    mp = F(12, 10) * 400 / 3; assert (mp - 100) == 60
+    M("Percentages & Profit", md, "A shop runs a \"buy 3, get 1 free\" offer and still makes a profit of 20%. By what percentage is the marked price above the cost price?",
+      ["33.3%", "50%", "60%", "80%"], "60%", "Take the cost of one item as 100. The customer pays for 3 and takes 4, so 3 × MP = 1.2 × 400 = 480, giving MP = 160. The marked price is 60% above cost.")
+    u_ = F(36, 10); d_ = 2 * u_; assert F(24) / d_ + F(24) / u_ == 10; st = (d_ - u_) / 2
+    T("Time, Speed & Distance", md, "A man rows to a place 24 km away and comes back, taking 10 hours in all. He finds that he can row 4 km downstream in the same time as 2 km upstream. What is the speed of the stream in km/h?",
+      st, "Downstream speed is twice the upstream speed: d = 2u. Then 24/(2u) + 24/u = 36/u = 10, so u = 3.6 and d = 7.2 km/h. Stream = (7.2 − 3.6)/2 = 1.8 km/h.", chk=(st, F(18, 10)))
+    pts = {(15 * 15 * k) % 600 for k in range(1, 1000)}   # they meet every 600/40 = 15 s; A's position then
+    M("Time, Speed & Distance", md, "A and B start together from the same point on a circular track of length 600 m and run in opposite directions at 15 m/s and 25 m/s. If they keep running, at how many distinct points on the track will they meet?",
+      ["2", "5", "8", "15"], str(len(pts)), "Their speeds are in the ratio 3 : 5. Running in opposite directions, they meet at (3 + 5) = 8 distinct points. Check: relative speed 40 m/s, so they meet every 15 s; A covers 225 m between meetings, and 225 × 8 = 1800 = 3 laps, so the pattern repeats after 8 meetings.")
+    ca, cb = 40000 * 4 + 60000 * 8, 60000 * 4 + 50000 * 8; sa = F(55000 * ca, ca + cb)
+    M("Ratio & Proportion", md, "A and B start a business with ₹40,000 and ₹60,000. After 4 months, A adds ₹20,000 and B withdraws ₹10,000. The profit at the end of the year is ₹55,000. What is A's share?",
+      ["₹22,000", "₹25,000", "₹33,000", "₹27,500"], "₹27,500" if sa == 27500 else "?", "A: 40,000 × 4 + 60,000 × 8 = 6,40,000 rupee-months. B: 60,000 × 4 + 50,000 × 8 = 6,40,000. The shares are equal, so A gets ₹27,500. (Using only the starting amounts gives ₹22,000, the trap.)")
+    x_ = F(21000) / (F(10, 11) + F(100, 121))
+    T("Simple & Compound Interest", md, "A loan of ₹21,000 at 10% per annum compound interest is repaid in two equal annual instalments, the first one year after the loan. What is each instalment (in ₹)?",
+      x_, "The present values of the two instalments add up to the loan: x/1.1 + x/1.21 = 21000. Multiply by 1.21: 1.1x + x = 25410, so x = ₹12,100.", chk=(x_, 12100))
+    # count instants in [0, 24h) when the angle is 90°: relative angle 5.5°/min; solve 5.5t ≡ 90 or 270 (mod 360)
+    rt = len([t for k in range(200) for base in (90, 270) for t in [F(base + 360 * k) / F(11, 2)] if t < 1440])
+    M("Time, Speed & Distance", md, "How many times in a day (24 hours) are the hour hand and the minute hand of a clock at right angles?",
+      ["22", "44", "48", "24"], str(rt), "The minute hand gains 330° on the hour hand every hour, so in 12 hours it gains 11 full rounds and passes each right-angle position (90° and 270°) 11 times: 22 times in 12 hours, 44 in a day. (48 assumes two right angles in every hour, but the ones at exactly 3:00 and 9:00 each serve two neighbouring hours, so 2 are lost in every 12 hours.)")
+    r1, r2 = 2 + sqrt(3), 2 - sqrt(3); a4 = r1 ** 4 + r2 ** 4
+    T("Equations & Quadratics", md, "If α and β are the roots of x² − 4x + 1 = 0, what is the value of α⁴ + β⁴?",
+      round(a4), "α + β = 4 and αβ = 1. α² + β² = 16 − 2 = 14. α⁴ + β⁴ = (α² + β²)² − 2(αβ)² = 196 − 2 = 194.", chk=(a4, 194))
+    ni = sum(1 for x in range(-10, 11) if x != 3 and F((x - 1) * (x - 5), x - 3) <= 0)
+    T("Inequalities", md, "How many integers x with −10 ≤ x ≤ 10 satisfy (x − 1)(x − 5)/(x − 3) ≤ 0?",
+      ni, "Mark the critical points 1, 3, 5. The expression is ≤ 0 for x ≤ 1 and for 3 &lt; x ≤ 5 (x = 3 is not allowed). In range: −10 to 1 gives 12 integers, and 4, 5 give 2 more. Total = 14.", chk=(ni, 14))
+    f_ = lambda x: (x - 1) / (x + 1); v_ = F(3)
+    for _ in range(5): v_ = f_(v_)
+    M("Functions", md, "If f(x) = (x − 1)/(x + 1), what is f(f(f(f(f(3)))))?",
+      ["3", "1/2", "−1/3", "−2"], f"{v_.numerator}/{v_.denominator}", "f(3) = 1/2, f(1/2) = −1/3, f(−1/3) = −2, f(−2) = 3. The values repeat every 4 steps, so the fifth application gives f(3) = 1/2.")
+    k_ = 7.0; x_, y_, z_ = math.log(k_, 2), math.log(k_, 3), math.log(k_, 6); assert close_(z_, x_ * y_ / (x_ + y_)) and not close_(z_, (x_ + y_) / (x_ * y_)) and not close_(z_, x_ + y_) and not close_(z_, sqrt(x_ * y_))
+    M("Logarithms", md, "If 2<sup>x</sup> = 3<sup>y</sup> = 6<sup>z</sup> (with x, y, z non-zero), which of these is true?",
+      ["z = xy/(x + y)", "z = (x + y)/xy", "z = x + y", "z = √(xy)"], "z = xy/(x + y)", "Let the common value be k. Then x = log k / log 2, y = log k / log 3, z = log k / log 6. So 1/x + 1/y = (log 2 + log 3)/log k = log 6/log k = 1/z, which gives z = xy/(x + y).")
+    a_, b_ = 5 - 3, 3 - (5 - 3); assert a_ + b_ == 3 and 2 * a_ + b_ == 5 and (a_, b_) == (2, 1)
+    M("Equations & Quadratics", md, "When a polynomial p(x) is divided by (x − 1) the remainder is 3, and when divided by (x − 2) the remainder is 5. What is the remainder when p(x) is divided by (x − 1)(x − 2)?",
+      ["x + 2", "2x − 1", "3x", "2x + 1"], "2x + 1", "The remainder has the form ax + b. From the remainder theorem: a + b = 3 and 2a + b = 5, so a = 2, b = 1. Remainder = 2x + 1.")
+    sol = [(a, d) for a in range(-50, 51) for d in range(-50, 51) if a + 3 * d == 3 * a and a + 6 * d == 2 * (a + 2 * d) + 1]; assert sol == [(3, 2)]
+    s10 = 5 * (2 * 3 + 9 * 2)
+    T("Progressions", md, "In an arithmetic progression, the 4th term is three times the 1st term, and the 7th term is 1 more than twice the 3rd term. What is the sum of the first 10 terms?",
+      s10, "a + 3d = 3a gives 3d = 2a. a + 6d = 2(a + 2d) + 1 gives 2d = a + 1. So d = 2a/3 and 4a/3 = a + 1, giving a = 3, d = 2. S₁₀ = 10/2 × (2×3 + 9×2) = 5 × 24 = 120.", chk=(s10, 120))
+    mx = max(3 * 5 * math.cos(t / 10000 * 2 * pi) + 4 * 5 * math.sin(t / 10000 * 2 * pi) for t in range(10000)); assert abs(mx - 25) < 1e-3
+    M("Inequalities", md, "Real numbers x and y satisfy x² + y² = 25. What is the maximum value of 3x + 4y?",
+      ["25", "35", "20", "7"], "25", "By the Cauchy–Schwarz inequality, (3x + 4y)² ≤ (3² + 4²)(x² + y²) = 25 × 25, so 3x + 4y ≤ 25, reached at x = 3, y = 4. (35 would need x = y = 5, which is not on the circle.)")
+    f50 = math.factorial(50); hp = max(k for k in range(60) if f50 % 12 ** k == 0)
+    T("Number System", md, "What is the highest power of 12 that divides 50! exactly?",
+      hp, "12 = 2² × 3. Powers of 2 in 50!: 25 + 12 + 6 + 3 + 1 = 47, which gives 23 factors of 4. Powers of 3: 16 + 5 + 1 = 22. The smaller count decides: 22.", chk=(hp, 22))
+    rm = pow(7, 99, 2400)
+    T("Number System", md, "What is the remainder when 7<sup>99</sup> is divided by 2400?",
+      rm, "7⁴ = 2401 = 2400 + 1, so 7⁴ ≡ 1 (mod 2400). Since 99 = 4 × 24 + 3, 7⁹⁹ ≡ 7³ = 343.", chk=(rm, 343))
+    nn = sum(1 for k in range(1, 1001) if k % 2 and k % 3 and k % 5)
+    T("Number System", md, "How many integers from 1 to 1000 are divisible by none of 2, 3 and 5?",
+      nn, "Inclusion–exclusion. Divisible by 2, 3, 5: 500, 333, 200. By 6, 10, 15: 166, 100, 66. By 30: 33. Divisible by at least one = 1033 − 332 + 33 = 734. None = 1000 − 734 = 266.", chk=(nn, 266))
+    od = sum(d for d in range(1, 361, 2) if 360 % d == 0)
+    T("Number System", md, "What is the sum of all the odd divisors of 360?",
+      od, "360 = 2³ × 3² × 5. Odd divisors come from 3² × 5 = 45. Their sum = (1 + 3 + 9)(1 + 5) = 13 × 6 = 78.", chk=(od, 78))
+    # trapezium with CD = 1, AB = 2, height h: area(COD) = (1/2)·CD·(h/3); scale so that it is 12
+    h_ = F(72); cod = F(1, 2) * 1 * h_ / 3; trap = F(1, 2) * (1 + 2) * h_; assert cod == 12
+    T("Geometry", md, "In trapezium ABCD, AB is parallel to CD and AB = 2 × CD. The diagonals meet at O. If the area of triangle COD is 12 sq cm, what is the area of the trapezium (in sq cm)?",
+      trap, "Triangles AOB and COD are similar with ratio 2 : 1, so area AOB = 4 × 12 = 48. Since AO : OC = 2 : 1, triangle AOD = 2 × COD = 24, and likewise BOC = 24. Total = 12 + 48 + 24 + 24 = 108.", chk=(trap, 108))
+    out_ = 36 * pi - sqrt(3) / 4 * (6 * sqrt(3)) ** 2; assert close_(out_, 36 * pi - 27 * sqrt(3))
+    M("Geometry", md, "An equilateral triangle is inscribed in a circle of radius 6 cm. What is the area of the part of the circle that lies outside the triangle?",
+      ["36π − 27√3", "36π − 18√3", "36π − 36√3", "27π − 27√3"], "36π − 27√3", "Side of the triangle = R√3 = 6√3. Area of triangle = (√3/4)(6√3)² = 27√3. Circle = 36π. Required area = 36π − 27√3 sq cm.")
+    A_, B_, C_ = (0, 0), (8, 0), (0, 6); la, lb, lc = 10, 6, 8
+    ix = (la * A_[0] + lb * B_[0] + lc * C_[0]) / 24; iy = (la * A_[1] + lb * B_[1] + lc * C_[1]) / 24; assert (ix, iy) == (2, 2) and close_(math.hypot(ix, iy), 2 * sqrt(2))
+    M("Geometry", md, "The line 3x + 4y = 24 forms a triangle with the coordinate axes. What is the distance of the incentre of this triangle from the origin?",
+      ["2", "2√2", "3", "2√3"], "2√2", "The triangle has legs 8 and 6 and hypotenuse 10. For a right triangle, inradius = (6 + 8 − 10)/2 = 2, and the incentre is (2, 2). Distance from origin = 2√2.")
+    ppl = ["M"] + ["m"] * 5 + ["W"] + ["w"] * 4
+    cm = sum(1 for c in itertools.combinations(range(11), 5) if sum(ppl[i] in "Ww" for i in c) >= 2 and not (0 in c and 6 in c))
+    T("Permutations & Combinations", md, "A committee of 5 is to be formed from 6 men and 5 women. It must have at least 2 women, and a particular man M and a particular woman W refuse to serve together. In how many ways can the committee be formed?",
+      cm, "With at least 2 women: C(5,2)C(6,3) + C(5,3)C(6,2) + C(5,4)C(6,1) + C(5,5) = 200 + 150 + 30 + 1 = 381. Committees with both M and W: choose 3 more from 5 men and 4 women with at least 1 more woman: C(9,3) − C(5,3) = 84 − 10 = 74. Answer = 381 − 74 = 307.", chk=(cm, 307))
+    # brute force: seat 10 distinct people round a table (fix girl 0 in seat 0), count with no two boys adjacent
+    rest = list(range(1, 10)); kids = ["g"] * 5 + ["b"] * 5
+    ca = sum(1 for p in itertools.permutations(rest) if all(not (kids[x] == "b" and kids[y] == "b") for x, y in zip((0,) + p, p + (0,))))
+    M("Permutations & Combinations", md, "In how many ways can 5 boys and 5 girls sit around a round table so that no two boys sit next to each other?",
+      ["2880", "14400", "1440", "5760"], str(ca), "Seat the girls first around the table: (5 − 1)! = 24 ways. This leaves 5 gaps, one between each pair of girls, for the 5 boys: 5! = 120 ways. Total = 24 × 120 = 2880.")
+    fam = list(itertools.product("BG", repeat=2)); cond = [f for f in fam if "B" in f]; pbb = F(sum(1 for f in cond if f == ("B", "B")), len(cond))
+    M("Probability", md, "A family has two children. You are told that at least one of them is a boy. What is the probability that both are boys? (Assume each child is equally likely to be a boy or a girl.)",
+      ["1/2", "1/4", "1/3", "2/3"], f"{pbb.numerator}/{pbb.denominator}", "The equally likely cases are BB, BG, GB, GG. \"At least one boy\" leaves BB, BG, GB. Only BB has two boys, so the probability is 1/3. (1/2 is the common trap.)")
+    pe = F(sum(1 for a, b in itertools.combinations(range(1, 21), 2) if (a + b) % 2 == 0), comb(20, 2))
+    M("Probability", md, "Two different numbers are chosen at random from 1 to 20. What is the probability that their sum is even?",
+      ["1/2", "9/19", "10/19", "9/20"], f"{pe.numerator}/{pe.denominator}", "The sum is even when both are even or both are odd: C(10,2) + C(10,2) = 45 + 45 = 90. Total = C(20,2) = 190. Probability = 90/190 = 9/19. (It is not 1/2 because the two numbers must be different.)")
+
+_build_with_easy = build
+def build(B):
+    _build_with_easy(B)
+    build_medium_m(B)

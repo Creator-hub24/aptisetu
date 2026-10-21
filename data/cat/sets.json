@@ -265,9 +265,25 @@
        "CQ57"
       ],
       "groups": []
+     },
+     {
+      "set": 10,
+      "ids": [
+       "CQ59",
+       "CQ60",
+       "CQ113",
+       "CQ114",
+       "CQ115",
+       "CQ116",
+       "CQ117",
+       "CQ118",
+       "CQ119",
+       "CQ120"
+      ],
+      "groups": []
      }
     ],
-    "leftoverQuestions": 2
+    "leftoverQuestions": 39
    },
    "Hard": {
     "ready": [

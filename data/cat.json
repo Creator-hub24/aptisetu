@@ -2205,7 +2205,8 @@
      "type": "tita",
      "kind": "number",
      "answer": "981",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 10
     },
     {
      "id": "CQ60",
@@ -2223,7 +2224,8 @@
       "68"
      ],
      "answer": 1,
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 10
     },
     {
      "id": "CQ61",
@@ -3107,6 +3109,750 @@
      "answer": 0,
      "level": "Easy",
      "practiceSet": 5
+    },
+    {
+     "id": "CQ113",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Percentages & Profit",
+     "difficulty": "Medium",
+     "question": "A trader claims to sell rice at 10% above cost price, but his weighing scale shows 1 kg when only 800 g is on it. What is his actual profit percentage?",
+     "solution": "Take the cost of 1 kg as ₹100. The customer pays ₹110 but receives 800 g, which cost the trader ₹80. Profit = 30/80 = 37.5%.",
+     "type": "mcq",
+     "options": [
+      "25%",
+      "30%",
+      "40%",
+      "37.5%"
+     ],
+     "answer": 3,
+     "level": "Medium",
+     "practiceSet": 10
+    },
+    {
+     "id": "CQ114",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "In a 1 km race, A beats B by 100 m, and B beats C by 100 m. By how many metres does A beat C in a 1 km race?",
+     "solution": "When A runs 1000 m, B runs 900 m. When B runs 1000 m, C runs 900 m, so when B runs 900 m, C runs 810 m. A beats C by 1000 − 810 = 190 m. (Adding 100 + 100 is the trap.)",
+     "type": "mcq",
+     "options": [
+      "180 m",
+      "200 m",
+      "190 m",
+      "210 m"
+     ],
+     "answer": 2,
+     "level": "Medium",
+     "practiceSet": 10
+    },
+    {
+     "id": "CQ115",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "Two trains start at the same time from stations P and Q and travel towards each other. After they meet, the train from P takes 9 hours to reach Q and the train from Q takes 16 hours to reach P. The faster train runs at 80 km/h. What is the distance PQ in km?",
+     "solution": "If they meet after t hours with speeds a (from P) and b (from Q): a·t = 16b and b·t = 9a. Dividing, (a/b)² = 16/9, so a : b = 4 : 3. The faster train (from P) is 80 km/h, so b = 60 km/h. Then t = 16 × 60 / 80 = 12 hours, and PQ = (80 + 60) × 12 = 1680 km.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "1680",
+     "level": "Medium",
+     "practiceSet": 10
+    },
+    {
+     "id": "CQ116",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Time & Work",
+     "difficulty": "Medium",
+     "question": "A and B together can finish a job in 12 days. A works alone for 6 days, and then B alone finishes the remaining work in 16 days. In how many days can A alone finish the whole job?",
+     "solution": "Let A's daily rate be a. Then B's rate is 1/12 − a, and 6a + 16(1/12 − a) = 1. So 4/3 − 10a = 1, giving a = 1/30. A alone needs 30 days.",
+     "type": "mcq",
+     "options": [
+      "24",
+      "30",
+      "36",
+      "20"
+     ],
+     "answer": 1,
+     "level": "Medium",
+     "practiceSet": 10
+    },
+    {
+     "id": "CQ117",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Medium",
+     "question": "A sum of money at compound interest (compounded annually) amounts to ₹8,820 in 2 years and ₹9,261 in 3 years. What is the sum?",
+     "solution": "One year's growth: 9261 / 8820 = 1.05, so the rate is 5%. Principal = 8820 / 1.05² = 8820 / 1.1025 = ₹8,000.",
+     "type": "mcq",
+     "options": [
+      "₹8,000",
+      "₹7,840",
+      "₹8,400",
+      "₹7,500"
+     ],
+     "answer": 0,
+     "level": "Medium",
+     "practiceSet": 10
+    },
+    {
+     "id": "CQ118",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Equations & Quadratics",
+     "difficulty": "Medium",
+     "question": "Find the smallest integer k for which both roots of x² − (k + 1)x + (k + 4) = 0 are real and positive.",
+     "solution": "Real roots: (k + 1)² − 4(k + 4) ≥ 0, i.e. k² − 2k − 15 ≥ 0, i.e. (k − 5)(k + 3) ≥ 0, so k ≥ 5 or k ≤ −3. Positive roots need sum k + 1 &gt; 0 and product k + 4 &gt; 0, i.e. k &gt; −1. Together: k ≥ 5, so the smallest is 5 (roots 3 and 3).",
+     "type": "tita",
+     "kind": "number",
+     "answer": "5",
+     "level": "Medium",
+     "practiceSet": 10
+    },
+    {
+     "id": "CQ119",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Inequalities",
+     "difficulty": "Medium",
+     "question": "How many integers x satisfy |x − 2| + |x + 3| ≤ 9?",
+     "solution": "For −3 ≤ x ≤ 2 the sum is always 5, which is fine. For x &gt; 2: 2x + 1 ≤ 9, so x ≤ 4. For x &lt; −3: −2x − 1 ≤ 9, so x ≥ −5. So x runs from −5 to 4: 10 integers.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "10",
+     "level": "Medium",
+     "practiceSet": 10
+    },
+    {
+     "id": "CQ120",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Inequalities",
+     "difficulty": "Medium",
+     "question": "What is the minimum value of |x − 1| + |x − 4| + |x − 9| over all real x?",
+     "solution": "A sum of distances from points is smallest at the median point, x = 4: 3 + 0 + 5 = 8.",
+     "type": "mcq",
+     "options": [
+      "5",
+      "8",
+      "10",
+      "13"
+     ],
+     "answer": 1,
+     "level": "Medium",
+     "practiceSet": 10
+    },
+    {
+     "id": "CQ121",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Logarithms",
+     "difficulty": "Medium",
+     "question": "If log<sub>a</sub> b = 2 and log<sub>b</sub> c = 3, what is log<sub>ac</sub> b?",
+     "solution": "b = a² and c = b³ = a⁶, so ac = a⁷. Then log<sub>ac</sub> b = log(a²)/log(a⁷) = 2/7.",
+     "type": "mcq",
+     "options": [
+      "2/7",
+      "3/7",
+      "2/5",
+      "7/2"
+     ],
+     "answer": 0,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ122",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Inequalities",
+     "difficulty": "Medium",
+     "question": "x and y are positive real numbers with x + y = 10. What is the maximum value of x²y?",
+     "solution": "Write 10 = x/2 + x/2 + y. By AM ≥ GM, (x/2)(x/2)(y) ≤ (10/3)³, so x²y ≤ 4 × 1000/27 = 4000/27, reached at x = 20/3, y = 10/3. (2000/9 is larger, but it cannot be reached.)",
+     "type": "mcq",
+     "options": [
+      "1000/27",
+      "2000/9",
+      "4000/27",
+      "500/3"
+     ],
+     "answer": 2,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ123",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Progressions",
+     "difficulty": "Medium",
+     "question": "The sum of an infinite geometric progression is 20, and the sum of the squares of its terms is 100. What is its first term?",
+     "solution": "a/(1 − r) = 20 and a²/(1 − r²) = 100. Dividing the second by the square of the first: (1 − r)/(1 + r) = 100/400 = 1/4, so r = 3/5. Then a = 20 × (2/5) = 8.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "8",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ124",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "How many divisors of 7200 are perfect squares?",
+     "solution": "7200 = 2⁵ × 3² × 5². A square divisor needs even powers: 2 can have power 0, 2 or 4 (3 ways), 3 can have 0 or 2 (2 ways), 5 can have 0 or 2 (2 ways). Total = 3 × 2 × 2 = 12.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "12",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ125",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "What are the last two digits of 3<sup>2026</sup>?",
+     "solution": "3¹⁰ = 59049 ≡ 49 (mod 100), so 3²⁰ ≡ 49² = 2401 ≡ 1. Since 2026 = 20 × 101 + 6, 3²⁰²⁶ ≡ 3⁶ = 729 ≡ 29 (mod 100).",
+     "type": "tita",
+     "kind": "number",
+     "answer": "29",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ126",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "The HCF of two numbers is 12 and their LCM is 720. How many such pairs of numbers exist? (Treat (a, b) and (b, a) as the same pair.)",
+     "solution": "Write the numbers as 12m and 12n with m, n co-prime and mn = 720/12 = 60 = 2² × 3 × 5. Each of the three prime powers goes wholly to m or to n: 2³ = 8 ordered ways, so 4 unordered pairs: (12, 720), (36, 240), (48, 180), (60, 144).",
+     "type": "mcq",
+     "options": [
+      "4",
+      "3",
+      "8",
+      "2"
+     ],
+     "answer": 0,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ127",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "How many ordered pairs of positive integers (x, y) satisfy 1/x + 1/y = 1/6?",
+     "solution": "Clearing fractions: xy − 6x − 6y = 0, i.e. (x − 6)(y − 6) = 36. Both factors must be positive (if both were negative, each would be at least −5 and their product at most 25). 36 has 9 divisors, so there are 9 ordered pairs.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "9",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ128",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Geometry",
+     "difficulty": "Medium",
+     "question": "In triangle ABC, AB = 10 cm and AC = 14 cm. The bisector of angle A meets BC at D, and BD = 5 cm. What is the length of AD?",
+     "solution": "Angle bisector theorem: BD/DC = AB/AC = 10/14, so DC = 7. Bisector length: AD² = AB × AC − BD × DC = 140 − 35 = 105, so AD = √105 cm.",
+     "type": "mcq",
+     "options": [
+      "√91 cm",
+      "√105 cm",
+      "11 cm",
+      "√115 cm"
+     ],
+     "answer": 1,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ129",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Geometry",
+     "difficulty": "Medium",
+     "question": "Two circles of radii 9 cm and 4 cm touch each other externally. What is the length (in cm) of their direct common tangent?",
+     "solution": "The distance between centres is 9 + 4 = 13. Direct common tangent = √(13² − (9 − 4)²) = √(169 − 25) = 12 cm.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "12",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ130",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Geometry",
+     "difficulty": "Medium",
+     "question": "What is the area (in square units) of the region defined by |x| + |2y| ≤ 6?",
+     "solution": "The boundary is a rhombus with vertices (±6, 0) and (0, ±3). Its diagonals are 12 and 6, so area = (12 × 6)/2 = 36.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "36",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ131",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Mensuration",
+     "difficulty": "Medium",
+     "question": "A right circular cone of height 30 cm is cut by a plane parallel to its base, at a height of 10 cm above the base. What is the ratio of the volume of the small cone (on top) to the volume of the frustum?",
+     "solution": "The small cone has height 20, so it is similar to the full cone with ratio 2/3. Volumes scale as the cube: small = 8/27 of the whole, so the frustum = 19/27. Ratio = 8 : 19. (8 : 27 compares with the whole cone, not the frustum.)",
+     "type": "mcq",
+     "options": [
+      "1 : 2",
+      "8 : 19",
+      "8 : 27",
+      "1 : 3"
+     ],
+     "answer": 1,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ132",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Permutations & Combinations",
+     "difficulty": "Medium",
+     "question": "In how many ways can 10 identical chocolates be distributed among 3 children so that each child gets at least 1 and at most 5?",
+     "solution": "Give each child 1 first: now a + b + c = 7 with each between 0 and 4. Without the upper limit: C(9, 2) = 36. Subtract the cases where one child gets 5 or more: set that child's share to 5 + a', leaving 2 to share: C(4, 2) = 6 ways, for each of 3 children = 18. Two children cannot both exceed. Answer = 36 − 18 = 18.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "18",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ133",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Probability",
+     "difficulty": "Medium",
+     "question": "A bag has 5 red and 4 blue balls. Three balls are drawn together at random. What is the probability that the three balls include both colours?",
+     "solution": "Total ways = C(9, 3) = 84. All red: C(5, 3) = 10; all blue: C(4, 3) = 4. Probability = 1 − 14/84 = 70/84 = 5/6.",
+     "type": "mcq",
+     "options": [
+      "5/6",
+      "4/5",
+      "3/4",
+      "13/14"
+     ],
+     "answer": 0,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ134",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Sets",
+     "difficulty": "Medium",
+     "question": "In a survey of 100 people, 80 like tea, 75 like coffee and 70 like juice. What is the minimum number of people who like all three?",
+     "solution": "People who do not like tea, coffee and juice number 20, 25 and 30. Even if these groups do not overlap, at most 75 people miss at least one drink. So at least 100 − 75 = 25 like all three.",
+     "type": "mcq",
+     "options": [
+      "15",
+      "20",
+      "30",
+      "25"
+     ],
+     "answer": 3,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ135",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Percentages & Profit",
+     "difficulty": "Medium",
+     "question": "In an election between two candidates, 20% of the registered voters did not vote, and 5% of the votes cast were invalid. The winner got 55% of the valid votes and won by 1,520 votes. How many voters were registered?",
+     "solution": "Let N be the number of registered voters. Valid votes = 0.8 × 0.95 × N = 0.76N. The margin is 55% − 45% = 10% of the valid votes: 0.076N = 1520, so N = 20,000.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "20000",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ136",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Percentages & Profit",
+     "difficulty": "Medium",
+     "question": "A shop runs a \"buy 3, get 1 free\" offer and still makes a profit of 20%. By what percentage is the marked price above the cost price?",
+     "solution": "Take the cost of one item as 100. The customer pays for 3 and takes 4, so 3 × MP = 1.2 × 400 = 480, giving MP = 160. The marked price is 60% above cost.",
+     "type": "mcq",
+     "options": [
+      "33.3%",
+      "50%",
+      "60%",
+      "80%"
+     ],
+     "answer": 2,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ137",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "A man rows to a place 24 km away and comes back, taking 10 hours in all. He finds that he can row 4 km downstream in the same time as 2 km upstream. What is the speed of the stream in km/h?",
+     "solution": "Downstream speed is twice the upstream speed: d = 2u. Then 24/(2u) + 24/u = 36/u = 10, so u = 3.6 and d = 7.2 km/h. Stream = (7.2 − 3.6)/2 = 1.8 km/h.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "1.8",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ138",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "A and B start together from the same point on a circular track of length 600 m and run in opposite directions at 15 m/s and 25 m/s. If they keep running, at how many distinct points on the track will they meet?",
+     "solution": "Their speeds are in the ratio 3 : 5. Running in opposite directions, they meet at (3 + 5) = 8 distinct points. Check: relative speed 40 m/s, so they meet every 15 s; A covers 225 m between meetings, and 225 × 8 = 1800 = 3 laps, so the pattern repeats after 8 meetings.",
+     "type": "mcq",
+     "options": [
+      "2",
+      "5",
+      "8",
+      "15"
+     ],
+     "answer": 2,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ139",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "A and B start a business with ₹40,000 and ₹60,000. After 4 months, A adds ₹20,000 and B withdraws ₹10,000. The profit at the end of the year is ₹55,000. What is A's share?",
+     "solution": "A: 40,000 × 4 + 60,000 × 8 = 6,40,000 rupee-months. B: 60,000 × 4 + 50,000 × 8 = 6,40,000. The shares are equal, so A gets ₹27,500. (Using only the starting amounts gives ₹22,000, the trap.)",
+     "type": "mcq",
+     "options": [
+      "₹22,000",
+      "₹25,000",
+      "₹33,000",
+      "₹27,500"
+     ],
+     "answer": 3,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ140",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Medium",
+     "question": "A loan of ₹21,000 at 10% per annum compound interest is repaid in two equal annual instalments, the first one year after the loan. What is each instalment (in ₹)?",
+     "solution": "The present values of the two instalments add up to the loan: x/1.1 + x/1.21 = 21000. Multiply by 1.21: 1.1x + x = 25410, so x = ₹12,100.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "12100",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ141",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "How many times in a day (24 hours) are the hour hand and the minute hand of a clock at right angles?",
+     "solution": "The minute hand gains 330° on the hour hand every hour, so in 12 hours it gains 11 full rounds and passes each right-angle position (90° and 270°) 11 times: 22 times in 12 hours, 44 in a day. (48 assumes two right angles in every hour, but the ones at exactly 3:00 and 9:00 each serve two neighbouring hours, so 2 are lost in every 12 hours.)",
+     "type": "mcq",
+     "options": [
+      "22",
+      "44",
+      "48",
+      "24"
+     ],
+     "answer": 1,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ142",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Equations & Quadratics",
+     "difficulty": "Medium",
+     "question": "If α and β are the roots of x² − 4x + 1 = 0, what is the value of α⁴ + β⁴?",
+     "solution": "α + β = 4 and αβ = 1. α² + β² = 16 − 2 = 14. α⁴ + β⁴ = (α² + β²)² − 2(αβ)² = 196 − 2 = 194.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "194",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ143",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Inequalities",
+     "difficulty": "Medium",
+     "question": "How many integers x with −10 ≤ x ≤ 10 satisfy (x − 1)(x − 5)/(x − 3) ≤ 0?",
+     "solution": "Mark the critical points 1, 3, 5. The expression is ≤ 0 for x ≤ 1 and for 3 &lt; x ≤ 5 (x = 3 is not allowed). In range: −10 to 1 gives 12 integers, and 4, 5 give 2 more. Total = 14.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "14",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ144",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Functions",
+     "difficulty": "Medium",
+     "question": "If f(x) = (x − 1)/(x + 1), what is f(f(f(f(f(3)))))?",
+     "solution": "f(3) = 1/2, f(1/2) = −1/3, f(−1/3) = −2, f(−2) = 3. The values repeat every 4 steps, so the fifth application gives f(3) = 1/2.",
+     "type": "mcq",
+     "options": [
+      "3",
+      "1/2",
+      "−1/3",
+      "−2"
+     ],
+     "answer": 1,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ145",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Logarithms",
+     "difficulty": "Medium",
+     "question": "If 2<sup>x</sup> = 3<sup>y</sup> = 6<sup>z</sup> (with x, y, z non-zero), which of these is true?",
+     "solution": "Let the common value be k. Then x = log k / log 2, y = log k / log 3, z = log k / log 6. So 1/x + 1/y = (log 2 + log 3)/log k = log 6/log k = 1/z, which gives z = xy/(x + y).",
+     "type": "mcq",
+     "options": [
+      "z = xy/(x + y)",
+      "z = (x + y)/xy",
+      "z = x + y",
+      "z = √(xy)"
+     ],
+     "answer": 0,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ146",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Equations & Quadratics",
+     "difficulty": "Medium",
+     "question": "When a polynomial p(x) is divided by (x − 1) the remainder is 3, and when divided by (x − 2) the remainder is 5. What is the remainder when p(x) is divided by (x − 1)(x − 2)?",
+     "solution": "The remainder has the form ax + b. From the remainder theorem: a + b = 3 and 2a + b = 5, so a = 2, b = 1. Remainder = 2x + 1.",
+     "type": "mcq",
+     "options": [
+      "x + 2",
+      "2x − 1",
+      "3x",
+      "2x + 1"
+     ],
+     "answer": 3,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ147",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Progressions",
+     "difficulty": "Medium",
+     "question": "In an arithmetic progression, the 4th term is three times the 1st term, and the 7th term is 1 more than twice the 3rd term. What is the sum of the first 10 terms?",
+     "solution": "a + 3d = 3a gives 3d = 2a. a + 6d = 2(a + 2d) + 1 gives 2d = a + 1. So d = 2a/3 and 4a/3 = a + 1, giving a = 3, d = 2. S₁₀ = 10/2 × (2×3 + 9×2) = 5 × 24 = 120.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "120",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ148",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Inequalities",
+     "difficulty": "Medium",
+     "question": "Real numbers x and y satisfy x² + y² = 25. What is the maximum value of 3x + 4y?",
+     "solution": "By the Cauchy–Schwarz inequality, (3x + 4y)² ≤ (3² + 4²)(x² + y²) = 25 × 25, so 3x + 4y ≤ 25, reached at x = 3, y = 4. (35 would need x = y = 5, which is not on the circle.)",
+     "type": "mcq",
+     "options": [
+      "25",
+      "35",
+      "20",
+      "7"
+     ],
+     "answer": 0,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ149",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "What is the highest power of 12 that divides 50! exactly?",
+     "solution": "12 = 2² × 3. Powers of 2 in 50!: 25 + 12 + 6 + 3 + 1 = 47, which gives 23 factors of 4. Powers of 3: 16 + 5 + 1 = 22. The smaller count decides: 22.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "22",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ150",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "What is the remainder when 7<sup>99</sup> is divided by 2400?",
+     "solution": "7⁴ = 2401 = 2400 + 1, so 7⁴ ≡ 1 (mod 2400). Since 99 = 4 × 24 + 3, 7⁹⁹ ≡ 7³ = 343.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "343",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ151",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "How many integers from 1 to 1000 are divisible by none of 2, 3 and 5?",
+     "solution": "Inclusion–exclusion. Divisible by 2, 3, 5: 500, 333, 200. By 6, 10, 15: 166, 100, 66. By 30: 33. Divisible by at least one = 1033 − 332 + 33 = 734. None = 1000 − 734 = 266.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "266",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ152",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "What is the sum of all the odd divisors of 360?",
+     "solution": "360 = 2³ × 3² × 5. Odd divisors come from 3² × 5 = 45. Their sum = (1 + 3 + 9)(1 + 5) = 13 × 6 = 78.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "78",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ153",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Geometry",
+     "difficulty": "Medium",
+     "question": "In trapezium ABCD, AB is parallel to CD and AB = 2 × CD. The diagonals meet at O. If the area of triangle COD is 12 sq cm, what is the area of the trapezium (in sq cm)?",
+     "solution": "Triangles AOB and COD are similar with ratio 2 : 1, so area AOB = 4 × 12 = 48. Since AO : OC = 2 : 1, triangle AOD = 2 × COD = 24, and likewise BOC = 24. Total = 12 + 48 + 24 + 24 = 108.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "108",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ154",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Geometry",
+     "difficulty": "Medium",
+     "question": "An equilateral triangle is inscribed in a circle of radius 6 cm. What is the area of the part of the circle that lies outside the triangle?",
+     "solution": "Side of the triangle = R√3 = 6√3. Area of triangle = (√3/4)(6√3)² = 27√3. Circle = 36π. Required area = 36π − 27√3 sq cm.",
+     "type": "mcq",
+     "options": [
+      "36π − 27√3",
+      "36π − 18√3",
+      "36π − 36√3",
+      "27π − 27√3"
+     ],
+     "answer": 0,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ155",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Geometry",
+     "difficulty": "Medium",
+     "question": "The line 3x + 4y = 24 forms a triangle with the coordinate axes. What is the distance of the incentre of this triangle from the origin?",
+     "solution": "The triangle has legs 8 and 6 and hypotenuse 10. For a right triangle, inradius = (6 + 8 − 10)/2 = 2, and the incentre is (2, 2). Distance from origin = 2√2.",
+     "type": "mcq",
+     "options": [
+      "2",
+      "2√2",
+      "3",
+      "2√3"
+     ],
+     "answer": 1,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ156",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Permutations & Combinations",
+     "difficulty": "Medium",
+     "question": "A committee of 5 is to be formed from 6 men and 5 women. It must have at least 2 women, and a particular man M and a particular woman W refuse to serve together. In how many ways can the committee be formed?",
+     "solution": "With at least 2 women: C(5,2)C(6,3) + C(5,3)C(6,2) + C(5,4)C(6,1) + C(5,5) = 200 + 150 + 30 + 1 = 381. Committees with both M and W: choose 3 more from 5 men and 4 women with at least 1 more woman: C(9,3) − C(5,3) = 84 − 10 = 74. Answer = 381 − 74 = 307.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "307",
+     "level": "Medium"
+    },
+    {
+     "id": "CQ157",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Permutations & Combinations",
+     "difficulty": "Medium",
+     "question": "In how many ways can 5 boys and 5 girls sit around a round table so that no two boys sit next to each other?",
+     "solution": "Seat the girls first around the table: (5 − 1)! = 24 ways. This leaves 5 gaps, one between each pair of girls, for the 5 boys: 5! = 120 ways. Total = 24 × 120 = 2880.",
+     "type": "mcq",
+     "options": [
+      "2880",
+      "14400",
+      "1440",
+      "5760"
+     ],
+     "answer": 0,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ158",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Probability",
+     "difficulty": "Medium",
+     "question": "A family has two children. You are told that at least one of them is a boy. What is the probability that both are boys? (Assume each child is equally likely to be a boy or a girl.)",
+     "solution": "The equally likely cases are BB, BG, GB, GG. \"At least one boy\" leaves BB, BG, GB. Only BB has two boys, so the probability is 1/3. (1/2 is the common trap.)",
+     "type": "mcq",
+     "options": [
+      "1/2",
+      "1/4",
+      "1/3",
+      "2/3"
+     ],
+     "answer": 2,
+     "level": "Medium"
+    },
+    {
+     "id": "CQ159",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Probability",
+     "difficulty": "Medium",
+     "question": "Two different numbers are chosen at random from 1 to 20. What is the probability that their sum is even?",
+     "solution": "The sum is even when both are even or both are odd: C(10,2) + C(10,2) = 45 + 45 = 90. Total = C(20,2) = 190. Probability = 90/190 = 9/19. (It is not 1/2 because the two numbers must be different.)",
+     "type": "mcq",
+     "options": [
+      "1/2",
+      "9/19",
+      "10/19",
+      "9/20"
+     ],
+     "answer": 1,
+     "level": "Medium"
     }
    ]
   }
