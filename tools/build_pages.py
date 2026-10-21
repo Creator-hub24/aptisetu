@@ -172,7 +172,7 @@ page("index.html","", f"""
 <section class="cat-band"><div class="container">
  <div class="cat-band-grid">
   <div><span class="pill">🎯 CAT track</span><h2>CAT-style practice, including VARC</h2>
-   <p class="muted">CAT-style questions written by our team (not taken from CAT papers or any coaching material): reading comprehension, para-jumbles, DILR puzzle sets and QA, with MCQ and TITA types. Take a 25-minute sectional with CAT marking, or practise one topic at a time with solutions straight after each answer.</p>
+   <p class="muted">CAT-style questions written by our team (not taken from CAT papers or any coaching material): reading comprehension, para-jumbles, DILR puzzle sets and QA, with MCQ and TITA types. Take a 40-minute sectional with CAT marking, or practise one topic at a time with solutions straight after each answer.</p>
    <div class="cta-row" style="margin-bottom:0"><a class="btn" href="cat.html">Explore the CAT track →</a><a class="btn btn-ghost" href="cat-practice.html">Start a sectional</a></div></div>
   <div class="cat-mini">
    <a class="card" href="cat-practice.html?section=varc"><b>VARC</b><span>Reading comprehension &amp; verbal ability</span></a>
@@ -200,7 +200,7 @@ page("index.html","", f"""
 <section><div class="container">
  <div class="section-head"><h2>What you get today</h2></div>
  <div class="grid g4 m2 compact">
-  <div class="card"><div class="icon">⏱️</div><h3>Timed quizzes</h3><p class="muted">Palette and mark-for-review, plus CAT-style 25-minute sectionals with TITA questions and +3/−1 marking.</p></div>
+  <div class="card"><div class="icon">⏱️</div><h3>Timed quizzes</h3><p class="muted">Palette and mark-for-review, plus CAT-style 40-minute sectionals with TITA questions and +3/−1 marking.</p></div>
   <div class="card"><div class="icon">💡</div><h3>Worked solutions</h3><p class="muted">Every question has a step-by-step solution, shown after you submit.</p></div>
   <div class="card"><div class="icon">📝</div><h3>Notes &amp; formula sheets</h3><p class="muted">Concept notes and topic-wise formula or rules sheets for Quant, Reasoning, DILR and VARC.</p></div>
   <div class="card soon-card"><div class="icon">🚧</div><h3>Coming soon</h3><ul class="soon-list"><li>Full-length CAT mocks (all 3 sections)</li><li>Company-wise placement sets</li><li>Progress analytics</li></ul></div>
@@ -294,7 +294,7 @@ page("practice.html","Practice","""
 <section style="padding-top:16px"><div class="container">
  <div class="quick-card card"><div><b>⚡ Quick start</b><span class="muted">10 mixed Quant, Reasoning &amp; DILR questions · 60 s each · one tap</span></div><button type="button" class="btn" data-quick="10">Start 10 questions →</button></div>
  <div id="exam-pick" class="exam-pick">
-  <a class="exam-card" href="cat-practice.html" style="--c:var(--brand)"><span class="exam-ic">🎯</span><span class="exam-b"><b>CAT</b><small>VARC · DILR · QA · 25-min sectionals · MCQ + TITA · CAT marking</small><small class="exam-n">CAT-style questions with worked solutions</small></span><span class="exam-go">→</span></a>
+  <a class="exam-card" href="cat-practice.html" style="--c:var(--brand)"><span class="exam-ic">🎯</span><span class="exam-b"><b>CAT</b><small>VARC · DILR · QA · 40-min sectionals · MCQ + TITA · CAT marking</small><small class="exam-n">CAT-style questions with worked solutions</small></span><span class="exam-go">→</span></a>
   <a class="exam-card" href="cuet-practice.html" style="--c:var(--cuet)"><span class="exam-ic">🎓</span><span class="exam-b"><b>CUET (UG)</b><small>General Aptitude · English · Maths · +5 / −1 · real pace</small><small class="exam-n">CUET-style questions with worked solutions</small></span><span class="exam-go">→</span></a>
   <button type="button" class="exam-card" id="pick-general" style="--c:var(--reason)"><span class="exam-ic">🏦</span><span class="exam-b"><b>Bank / SSC / Placements</b><small>Quant · Reasoning · DILR · timed quizzes · topic filter</small><small class="exam-n">Aptitude questions with worked solutions</small></span><span class="exam-go">→</span></button>
  </div>
@@ -400,16 +400,16 @@ for sec,ic,col,blurb in [("varc","📖","var(--varc)","Reading-comprehension pas
     m,ti=cat_type_counts(sec)
     secblk+=f"""<div class="card sec-card" style="--c:{col}"><div class="icon">{ic}</div><h3>{CB['sections'][sec]['name']} ({sec.upper()})</h3>
 <p class="muted" style="flex:1">MCQ and TITA questions. {blurb}</p>
-<div class="cta-row" style="margin:0"><a class="btn btn-sm" href="{SETS_HUB[sec]}">Sets</a><a class="btn btn-sm btn-ghost" href="cat-practice.html?mode=sectional&amp;section={sec}">25-min sectional →</a><a class="btn btn-sm btn-ghost" href="cat-practice.html?mode=practice&amp;section={sec}">Practise</a></div></div>"""
+<div class="cta-row" style="margin:0"><a class="btn btn-sm" href="{SETS_HUB[sec]}">Sets</a><a class="btn btn-sm btn-ghost" href="cat-practice.html?mode=sectional&amp;section={sec}">40-min sectional →</a><a class="btn btn-sm btn-ghost" href="cat-practice.html?mode=practice&amp;section={sec}">Practise</a></div></div>"""
 page("cat.html","CAT Track: VARC, DILR & QA",f"""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / CAT track</div>
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CAT track <span class="exam-tag tag-cat" style="vertical-align:middle">CAT</span></h1>
 <p class="muted" style="max-width:720px">A separate track for CAT aspirants: VARC, DILR and QA questions from easy to hard level, in CAT's question formats (MCQ and TITA) with CAT marking. All questions and passages were written by our team. They are not taken from CAT papers or any coaching material, and each has a worked solution.</p>
-<div class="cta-row"><a class="btn" href="cat-quant-sets.html">Practice sets: Quant →</a><a class="btn btn-ghost" href="cat-varc-sets.html">VARC sets</a><a class="btn btn-ghost" href="cat-dilr-sets.html">DILR sets</a><a class="btn btn-ghost" href="cat-practice.html">25-min sectional</a><a class="btn btn-ghost" href="varc.html">VARC strategy &amp; rules</a></div></div></div>
+<div class="cta-row"><a class="btn" href="cat-quant-sets.html">Practice sets: Quant →</a><a class="btn btn-ghost" href="cat-varc-sets.html">VARC sets</a><a class="btn btn-ghost" href="cat-dilr-sets.html">DILR sets</a><a class="btn btn-ghost" href="cat-practice.html">40-min sectional</a><a class="btn btn-ghost" href="varc.html">VARC strategy &amp; rules</a></div></div></div>
 <section style="padding-top:20px"><div class="container"><div class="grid g3">{secblk}</div></div></section>
 <section class="alt"><div class="container"><div class="grid g2">
  <div class="card"><h3>⏱ Sectional mode</h3><ul class="clean">
-  <li>One section, <b>25 minutes</b>, submits automatically when time runs out.</li>
+  <li>One section, <b>40 minutes</b>, submits automatically when time runs out.</li>
   <li>About 24 VARC, 22 DILR or 22 QA questions, picked from the bank (DILR and RC sets stay together).</li>
   <li>A CAT-style palette: not visited, not answered, answered, marked, and answered &amp; marked.</li>
   <li>RC passages and DILR sets open in a side panel on desktop and above the question on mobile.</li>
@@ -428,20 +428,20 @@ page("cat.html","CAT Track: VARC, DILR & QA",f"""
 <h3 class="cat-sub">QA</h3><div class="topic-list">{cat_topic_cards('qa')}</div>
 <div class="notice" style="margin-top:22px">The question bank is still small. Sectionals pick from the questions above, so you'll see repeats if you take several. Full-length 3-section mocks are not available yet. For more basic practice on Quant and DILR, see the <a href="practice.html?exam=general">Bank / SSC / Placements track</a>.</div>
 </div></section>
-""", desc="CAT-style VARC, DILR and QA practice with 25-minute sectionals, TITA questions, CAT marking and worked solutions. Original questions.")
+""", desc="CAT-style VARC, DILR and QA practice with 40-minute sectionals, TITA questions, CAT marking and worked solutions. Original questions.")
 
 page("varc.html","VARC: Reading Strategy & Rules",f"""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="cat.html">CAT</a> / VARC</div>
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Verbal Ability &amp; Reading Comprehension (VARC)</h1>
 <p class="muted" style="max-width:720px">CAT's first section. Reading comprehension carries most of the marks; para-jumbles and odd-sentence-out are TITA, so a wrong answer costs nothing. All passages here were written by our team.</p>
-<div class="cta-row"><a class="btn" href="cat-practice.html?mode=sectional&amp;section=varc">VARC sectional (25 min) →</a><a class="btn btn-ghost" href="#formulas">Rules sheet</a></div></div></div>
+<div class="cta-row"><a class="btn" href="cat-practice.html?mode=sectional&amp;section=varc">VARC sectional (40 min) →</a><a class="btn btn-ghost" href="#formulas">Rules sheet</a></div></div></div>
 <section style="padding-top:20px"><div class="container"><h2>Topics</h2><p class='muted' style='margin-top:-.4em'>Tap a topic to practise it with instant solutions.</p><div class="topic-list">{cat_topic_cards('varc')}</div></div></section>
 <section class="alt"><div class="container note" style="max-width:860px"><h2>Reading strategy</h2>
 <h3>1. Read for the argument, not the facts</h3><p>CAT passages are usually arguments: the author takes a position, considers objections and qualifies the claim. As you read, keep one line in your head: <i>what is the author saying, and how sure are they?</i> Details can be looked up again; the structure cannot.</p>
 <h3>2. Map each paragraph in a few words</h3><p>After each paragraph, name its job: "problem", "example", "objection", "author's answer". Most questions ask about one of these jobs. A rough map saves you from rereading the whole passage.</p>
 <h3>3. Watch the signal words</h3><p><b>However, yet, but</b> mark a turn; <b>therefore, thus</b> mark a conclusion; <b>admittedly, of course</b> often mark a concession the author will then push back on. Questions on the author's view usually depend on what comes after the turn.</p>
 <h3>4. Eliminate, don't hunt</h3><p>Wrong options tend to fall into a few types: <b>too extreme</b> ("always", "only"), <b>out of scope</b> (true in real life but not in the passage), <b>half right</b> (the first half fits, the second distorts), and <b>reversed</b> (cause and effect swapped). Strike out options until one survives.</p>
-<h3>5. Plan the 25 minutes</h3><p>A reasonable plan is about 4–5 minutes per passage and about a minute per verbal ability question. Since TITA questions carry no negative marks, attempt every para-jumble and odd-sentence item you have time for. With MCQs, guess only if you can eliminate at least two options.</p>
+<h3>5. Plan the 40 minutes</h3><p>A reasonable plan is about 7–8 minutes per passage and 1–2 minutes per verbal ability question. Since TITA questions carry no negative marks, attempt every para-jumble and odd-sentence item you have time for. With MCQs, guess only if you can eliminate at least two options.</p>
 </div></section>
 {fs_section(FORMULAS['varc'], 'var(--varc)', heading='VARC rules sheet', unit='rules and checks', prose=True)}
 """, desc="CAT VARC reading strategy, rules sheet for RC, para-jumbles, para-summary and odd-sentence-out, with original practice questions.")
@@ -512,9 +512,9 @@ def practice_page(fn, exam, label, home, track, sect_note, secs, title, desc):
 </div></section>
 """, desc=desc, extra=f'<script>window.EXAM="{exam}";</script><script src="assets/js/progress.js"></script><script src="assets/js/exam.js"></script>')
 
-practice_page("cat-practice.html", "cat", "CAT", "cat.html", "CAT", "25 min · CAT marking · results at the end",
+practice_page("cat-practice.html", "cat", "CAT", "cat.html", "CAT", "40 min · CAT marking · results at the end",
     [("varc", "📖 VARC"), ("dilr", "📊 DILR"), ("qa", "➗ QA")], "CAT Practice: Sectionals & Topic Practice",
-    "CAT-style 25-minute sectionals for VARC, DILR and QA with TITA questions and CAT marking, plus topic practice with instant solutions.")
+    "CAT-style 40-minute sectionals for VARC, DILR and QA with TITA questions and CAT marking, plus topic practice with instant solutions.")
 
 # ---------- CAT PRACTICE SETS (hubs, set page, login) ----------
 SETS_META=json.load(open("data/cat/sets.json"))

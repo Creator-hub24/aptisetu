@@ -15,10 +15,10 @@ for(const W of [1280,390]){const p=await b.newPage({viewport:{width:W,height:W>5
  await p.click('#c-start');await p.waitForTimeout(500);ok(`${W} QA practice starts`,/QA|Quant/.test(await p.textContent('#c-quiz'))&&await vis('#c-quiz'));
  // DILR sectional
  errs=[];await p.goto(B+'cat.html');await p.locator('.sec-card',{hasText:'DILR'}).locator('a',{hasText:'sectional'}).click();await p.waitForURL(/cat-practice/);await p.waitForTimeout(700);
- ok(`${W} DILR sectional info says 25-minute timer`,/25-minute timer/.test(await p.textContent('#c-info')));
+ ok(`${W} DILR sectional info says 40-minute timer`,/40-minute timer/.test(await p.textContent('#c-info')));
  ok(`${W} DILR sectional → summary, no topic step`,(await p.textContent('#c-summary-text')).trim()=='CAT · DILR · Sectional'&&!(await vis('#c-choose'))&&!(await vis('#c-topic-wrap')));
  await p.screenshot({path:S+`practice-from-dilr-sectional-${W}.png`});
- await p.click('#c-start');await p.waitForTimeout(600);{const tm=await p.textContent('#c-quiz');ok(`${W} DILR sectional clock starts at 25:00`,/(25:00|24:5\d)/.test(tm),(tm.match(/\d\d:\d\d/)||[''])[0]);}
+ await p.click('#c-start');await p.waitForTimeout(600);{const tm=await p.textContent('#c-quiz');ok(`${W} DILR sectional clock starts at 40:00`,/(40:00|39:5\d)/.test(tm),(tm.match(/\d\d:\d\d/)||[''])[0]);}
  await p.goBack().catch(()=>{});await p.goto(B+'cat-practice.html?mode=sectional&section=dilr');await p.waitForTimeout(600);
  await p.click('#c-change');ok(`${W} Change reveals full chooser with selections kept`,await vis('#c-choose')&&!(await vis('#c-summary'))&&await p.$eval('input[name=csec]:checked',e=>e.value)=='dilr'&&await p.$eval('input[name=cmode]:checked',e=>e.value)=='sectional');
  // plain page
@@ -36,6 +36,12 @@ for(const W of [1280,390]){const p=await b.newPage({viewport:{width:W,height:W>5
  if(W==390)await p.screenshot({path:S+`cuet-practice-from-card-${W}.png`});
  ok(`${W} no console/CSP errors`,!errs.length,errs.join('|'));await p.close()}
 {const c=await b.newPage({viewport:{width:1280,height:900}});await c.clock.install();await c.goto(B+'cat-practice.html?mode=sectional&section=qa',{waitUntil:'networkidle'});await c.click('#c-start');
- await c.clock.runFor(24*60*1000);const before=await c.$eval('#c-results',e=>e.classList.contains('hidden'));await c.clock.runFor(61*1000);
- ok('CAT sectional still running at 24 min, auto-submits at 25 min',before&&await c.$eval('#c-results',e=>!e.classList.contains('hidden')));await c.close()}
+ await c.clock.runFor(39*60*1000);const before=await c.$eval('#c-results',e=>e.classList.contains('hidden'));await c.clock.runFor(61*1000);
+ ok('CAT sectional still running at 39 min, auto-submits at 40 min',before&&await c.$eval('#c-results',e=>!e.classList.contains('hidden')));await c.close()}
+{const c=await b.newPage({viewport:{width:390,height:844}});await c.goto(B+'login.html?mock=1');await c.evaluate(()=>sessionStorage.setItem('aptisetu.mock.user',JSON.stringify({id:'mock-t@x.in',email:'t@x.in'})));
+ for(const [sec,n,m] of [['qa',1,20],['varc',6,20],['dilr',6,25]]){await c.goto(B+`set.html?sec=${sec}&set=${n}`,{waitUntil:'networkidle'});await c.waitForSelector('#c-start:not(.hidden)');
+  const info=await c.textContent('#set-info');if(sec!='dilr')await c.screenshot({path:S+`timers-set-${sec}-start-390.png`});await c.click('#c-start');await c.waitForTimeout(400);const tm=(await c.textContent('#c-timer')).trim();
+  if(sec=='qa')await c.screenshot({path:S+'timers-set-qa-clock-390.png'});
+  ok(`${sec} set ${n}: ${m}-minute timer, clock ${m}:00`,info.includes(m+'-minute timer')&&new RegExp('\\b('+m+':00|'+(m-1)+':5\\d)').test(tm),tm);}
+ await c.close()}
 console.log(`${fails} failed of ${n}`);await b.close()})()

@@ -5,7 +5,7 @@
   const L = "ABCD";
   const EXAMS = {
     cat: { label: "CAT", dir: "data/cat/", secs: ["varc", "dilr", "qa"], marks: { mcq: [3, -1], tita: [3, 0] },
-           target: { varc: 24, dilr: 22, qa: 22 }, time: () => 25 * 60 },
+           target: { varc: 24, dilr: 22, qa: 22 }, time: () => 40 * 60 },
     // CUET (UG) 2026: 50 compulsory MCQs in 60 minutes per paper, +5 / −1 (NTA Information Bulletin). When the bank holds
     // fewer than 50 questions for a paper we keep the official pace of 72 seconds per question.
     cuet: { label: "CUET", dir: "data/cuet/", secs: ["gat", "english", "maths"], marks: { mcq: [5, -1] },
@@ -113,7 +113,7 @@
       info = `<b>Sectional:</b> ${fmt(T)} timer · +5 for a correct answer, −1 for a wrong one, 0 if unanswered. ` +
         (n >= 50 ? "Same size and time as the real paper (50 questions, 60 minutes)." : `The real paper has 50 questions in 60 minutes; our sectional for this subject is shorter, so the timer keeps the same pace (72 s per question).`) +
         (sec === "gat" ? " Mix: 15 quantitative, 15 logical &amp; analytical, 10 mental ability, 10 GK (our choice; NTA does not publish a fixed split)." : "") + " Submits automatically when time runs out.";
-    } else info = `<b>Sectional:</b> 25-minute timer · +3 for correct, −1 for a wrong MCQ, 0 for a wrong TITA. Submits automatically when time runs out.`;
+    } else info = `<b>Sectional:</b> 40-minute timer · +3 for correct, −1 for a wrong MCQ, 0 for a wrong TITA. Submits automatically when time runs out.`;
     $("#c-info").innerHTML = info;
   }
   function counts() {
