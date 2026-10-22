@@ -1,0 +1,463 @@
+{
+ "name": "Mock 4 — VARC",
+ "questions": [
+  {
+   "id": "M4-01",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "The passage mainly argues that:",
+   "solution": "Paras 1–3 present boredom as a signal and warn that silencing it costs the reflection it should prompt; para 4 keeps the \"information\" view. Option 3 is the view challenged. Option 2 is the stronger claim the author doubts. Option 4 is unsupported.",
+   "set": "m4-rc1",
+   "type": "mcq",
+   "options": [
+    "boredom is a useful signal whose value is lost when it is immediately silenced",
+    "boredom is the main source of human creativity",
+    "boredom should be eliminated through better entertainment",
+    "psychologists disagree about whether boredom exists"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M4-02",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, boredom is compared to hunger because both:",
+   "solution": "Para 2: \"Like hunger, the signal is unpleasant precisely so that it will be acted upon.\"",
+   "set": "m4-rc1",
+   "type": "mcq",
+   "options": [
+    "disappear when one uses a phone",
+    "are caused by lack of food",
+    "are more common in the young",
+    "are unpleasant in order to prompt action"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M4-03",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's attitude to the claim that boredom is \"the mother of creativity\" is best described as:",
+   "solution": "The author says the evidence \"is thinner than its popularity suggests\" and that effects may reflect \"merely the relief of being given something to do\", i.e. a confound. Option 2 is too strong and wrongly grounded. Options 1 and 4 contradict the critical tone.",
+   "set": "m4-rc1",
+   "type": "mcq",
+   "options": [
+    "complete acceptance",
+    "outright rejection on moral grounds",
+    "sceptical, regarding the evidence as weak and possibly confounded",
+    "indifference"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M4-04",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following best illustrates the \"hidden cost\" described in the third paragraph?",
+   "solution": "The hidden cost is relieving the signal \"by the nearest available stimulus rather than by a change in what one is doing\". Option 4 matches. Option 3 is the signal working as intended. Option 2 is the creativity claim. Option 1 is irrelevant.",
+   "set": "m4-rc1",
+   "type": "mcq",
+   "options": [
+    "A researcher studies boredom in laboratory conditions.",
+    "A child who is bored on a long journey invents a game.",
+    "A student bored in a lecture decides to switch to a course that suits her better.",
+    "An employee who finds his job unrewarding fills every idle moment with videos, and so never considers whether to seek a different role."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M4-05",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The central point of the passage is that:",
+   "solution": "The passage explains inventiveness without law through norms, notes the limits of those norms, and concludes that the link between law and creativity is \"less direct than the simple economic model assumes\". Option 1 is one view reported, not endorsed. Option 3 is an example. Option 2 contradicts the conclusion.",
+   "set": "m4-rc2",
+   "type": "mcq",
+   "options": [
+    "recipes should be protected by copyright",
+    "economic theory accurately predicts behaviour in professional kitchens",
+    "chain restaurants are the main threat to culinary creativity",
+    "creativity in cuisine persists without legal protection, sustained partly by informal norms whose reach is limited"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M4-06",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The passage states that informal norms among chefs are least effective when:",
+   "solution": "Para 3: norms \"work less well across distances, in large chains, or where the copier has no wish to belong to the community\". The other options are not identified as weak points.",
+   "set": "m4-rc2",
+   "type": "mcq",
+   "options": [
+    "critics review new dishes",
+    "chefs share techniques with trusted peers",
+    "the copier is a distant or large operation with no interest in the community's opinion",
+    "the dish is newly invented"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M4-07",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following, if true, would most strengthen the argument that the absence of protection itself fosters inventiveness?",
+   "solution": "The argument holds that chefs \"who cannot rest on a single creation must keep producing new ones\". Evidence that protection led chefs to rest on protected dishes and innovate less supports it. Option 2 suggests protection makes no difference, which weakens the claim. Options 1 and 4 are irrelevant.",
+   "set": "m4-rc2",
+   "type": "mcq",
+   "options": [
+    "Most diners cannot tell whether a dish has been copied.",
+    "Chefs in countries that protect recipes produce new dishes as often as chefs elsewhere.",
+    "In a region that briefly granted legal protection to recipes, the rate of new dishes fell as leading chefs relied on their protected signature dishes.",
+    "Large chains copy dishes more often than small restaurants."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M4-08",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The comparison of recipes to \"the directions for assembling a bookcase\" serves to:",
+   "solution": "The analogy illustrates why most legal systems treat recipes as \"functional instructions\" and so leave them unprotected. Options 4, 3 and 2 add judgements the passage does not make.",
+   "set": "m4-rc2",
+   "type": "mcq",
+   "options": [
+    "explain the legal reasoning by which recipes are treated as functional rather than expressive",
+    "show that cookbooks are poorly written",
+    "criticise the law for undervaluing chefs",
+    "suggest that recipes are less creative than furniture"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M4-09",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "According to the passage, the wide range of estimates of species numbers arises mainly because:",
+   "solution": "Para 1: \"the great majority of species have never been described, and the methods ... depend heavily on assumptions\". Option 2 is explicitly denied. Options 1 and 3 are not given.",
+   "set": "m4-rc3",
+   "type": "mcq",
+   "options": [
+    "genetic sequencing is too expensive to use widely",
+    "biologists have been careless in their counting",
+    "species become extinct faster than they are described",
+    "most species have not been described, and estimating them requires assumptions"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M4-10",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's criticism of the method based on rates of description is that it:",
+   "solution": "Para 2: this method \"assumes that taxonomists' efforts have been spread evenly, when in practice they have concentrated on\" particular organisms. Option 2 is the flaw in the ratio method.",
+   "set": "m4-rc3",
+   "type": "mcq",
+   "options": [
+    "relies on genetic data",
+    "uses ratios from temperate forests",
+    "assumes taxonomic effort has been spread evenly, which is not the case",
+    "ignores plants entirely"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M4-11",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "It can be inferred that the very large estimates of species numbers are especially sensitive to:",
+   "solution": "Para 3: thresholds \"can change totals by orders of magnitude\", and \"the trillion-species estimates depend largely on such counts of microbial diversity\". The other options do not drive the very large estimates.",
+   "set": "m4-rc3",
+   "type": "mcq",
+   "options": [
+    "the ratio of insects to plants in tropical forests",
+    "the number of taxonomists working on large animals",
+    "the threshold of genetic difference chosen to separate microbial species",
+    "the rate of extinction in deep-sea sediments"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M4-12",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's concluding view is best summarised as:",
+   "solution": "Para 6: the question \"is several questions at once\"; animal and plant estimates converge while microbial ones depend on definitions; \"A single headline number conceals these differences\". Option 2 contradicts \"not that the question is meaningless\". Option 3 goes beyond the text. Option 4 contradicts the convergence claim.",
+   "set": "m4-rc3",
+   "type": "mcq",
+   "options": [
+    "the question of species numbers divides into sub-questions with different degrees of uncertainty, which a single figure obscures",
+    "the number of species can never be estimated",
+    "microbial species should not be counted at all",
+    "estimates for animals and plants are as uncertain as those for microbes"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M4-13",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The passage argues primarily that:",
+   "solution": "The passage argues that waiting rooms shape satisfaction and communicate status, and concludes that improving them is not merely cosmetic. Option 3 contradicts the uncertainty finding. Options 1 and 2 are unsupported.",
+   "set": "m4-rc4",
+   "type": "mcq",
+   "options": [
+    "waiting rooms should be abolished",
+    "clinics are the worst-designed public buildings",
+    "shorter waits are always more important than better information",
+    "the design of waiting rooms significantly affects how people experience a service and deserves more attention"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M4-14",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "According to the passage, which factor matters more to people's irritation than the length of the wait?",
+   "solution": "Para 2: \"Uncertainty seems to matter more than duration\".",
+   "set": "m4-rc4",
+   "type": "mcq",
+   "options": [
+    "The quality of the consultation",
+    "The number of seats available",
+    "The friendliness of the staff",
+    "Uncertainty about how long the wait will be"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M4-15",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's comment about staff confrontations in hostile waiting areas indicates that the author:",
+   "solution": "The author notes that it is \"difficult to establish\" whether design causes hostility or merely reflects an already poor institution, which is a caution about causation. Options 2 and 1 are opposite extremes. Option 3 is not suggested.",
+   "set": "m4-rc4",
+   "type": "mcq",
+   "options": [
+    "thinks waiting areas have no effect on behaviour",
+    "is certain that bad design causes hostility",
+    "believes staff exaggerate such reports",
+    "recognises that the observed association may not reflect a causal effect of design"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M4-16",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The final paragraph serves to:",
+   "solution": "It raises the temptation \"to dismiss such improvements as cosmetic\" and answers that \"a service is experienced as a whole\". Option 1 states the dismissed objection. Options 3 and 2 are inaccurate.",
+   "set": "m4-rc4",
+   "type": "mcq",
+   "options": [
+    "concede that waiting-room improvements are merely cosmetic",
+    "summarise the research on clinic satisfaction",
+    "recommend that institutions spend less on services",
+    "anticipate the objection that such improvements are trivial and respond that they form part of the service itself"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M4-17",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Night trains, once in decline, are returning in several regions. Travellers concerned about the emissions of short flights find that a sleeper train, leaving in the evening and arriving in the morning, costs them no working hours. The revival depends, however, on rolling stock that was scrapped when demand fell, and new carriages take years to build.</p>",
+   "solution": "Option 2 captures both the reason for revival and the constraint. Option 4 is unsupported, option 3 is not claimed, and option 1 contradicts \"take years to build\".",
+   "type": "mcq",
+   "options": [
+    "New railway carriages are cheap and quick to build.",
+    "Night trains are reviving because they suit low-emission travel without costing working time, but a shortage of carriages constrains them.",
+    "Sleeper trains are more comfortable than aeroplanes.",
+    "Short flights will soon be banned in most regions."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M4-18",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>A rule that is never enforced still teaches something: that rules of this kind need not be taken seriously. Authorities sometimes keep unenforced rules on the books in the belief that they cost nothing and might prove useful one day. But each one weakens the credibility of the rules that are enforced, because people cannot easily tell in advance which category a given rule belongs to.</p>",
+   "solution": "The passage refutes the belief that unenforced rules \"cost nothing\": they erode the credibility of enforced rules. Option 2 is a remedy not proposed. Option 3 is unsupported. Option 1 contradicts \"cannot easily tell\".",
+   "type": "mcq",
+   "options": [
+    "People generally know which rules will be enforced.",
+    "Unenforced rules should be enforced more strictly.",
+    "Authorities should never make new rules.",
+    "Keeping unenforced rules is not costless, since it undermines the credibility of rules in general."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M4-19",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Early photographs required exposures of many seconds, and subjects had to hold still or blur. ____ The stiff, solemn faces we associate with nineteenth-century portraits may therefore tell us more about the technology than about the temperament of the age.</p>",
+   "solution": "The blank must connect long exposures with solemn faces explained by technology. Option 3 does so. Option 2 contradicts the conclusion. Options 4 and 1 are irrelevant.",
+   "type": "mcq",
+   "options": [
+    "Colour photography was invented much later.",
+    "People in the nineteenth century rarely smiled in daily life.",
+    "Holding a smile for that long is difficult, so sitters adopted neutral expressions they could sustain.",
+    "Most photographers of the period were trained as painters."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M4-20",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>A firm that rewards its sales staff only for revenue will find that they discount heavily to close deals. One that rewards them only for margin will find that they chase a few profitable clients and neglect the rest. ____ The art of incentive design lies less in choosing the right measure than in balancing several imperfect ones.</p>",
+   "solution": "The two examples show distortion under single measures; the blank should generalise, leading to \"balancing several imperfect ones\". Option 1 does this. Option 2 moralises. Option 4 contradicts the parallel criticism. Option 3 is irrelevant.",
+   "type": "mcq",
+   "options": [
+    "Each single measure, pursued alone, distorts behaviour in its own direction.",
+    "Sales staff are generally dishonest.",
+    "Most firms do not pay sales staff incentives.",
+    "Revenue is a better measure than margin."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M4-21",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Glaciers store a record of past climates in their layers of ice.</li><li>Air bubbles trapped as the snow compacted preserve samples of the ancient atmosphere.</li><li>Mountain glaciers are now retreating rapidly as the climate warms.</li><li>By drilling cores and analysing these bubbles, scientists reconstruct past levels of carbon dioxide.</li><li>The deepest cores reach back hundreds of thousands of years.</li></ol>",
+   "solution": "1, 2, 4 and 5 describe ice cores as climate records. Sentence 3 is about glacier retreat today, which concerns glaciers but not ice as an archive of past climate.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3"
+  },
+  {
+   "id": "M4-22",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Standard time zones were introduced largely for the convenience of railways.</li><li>Before them, each town kept its own local time based on the sun.</li><li>Trains running between towns made such variety impractical for timetables.</li><li>Some countries now debate whether to abolish daylight saving time.</li><li>Uniform zones thus replaced solar time with a time agreed for coordination.</li></ol>",
+   "solution": "2 → 3 → 1 → 5 explains why railways led to standard zones. Sentence 4 shares the theme of time-keeping but concerns a separate, modern debate.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4"
+  },
+  {
+   "id": "M4-23",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>As a result, the drug's apparent benefit may owe something to the selection of patients.</li><li>Patients who volunteer for clinical trials tend to be healthier than average.</li><li>They are also more likely to follow instructions about dosage.</li><li>Both traits improve outcomes regardless of the treatment received.</li></ol>",
+   "solution": "2 introduces volunteers' health; 3 (\"also\") adds compliance; 4 (\"Both traits\") generalises; 1 (\"As a result\") concludes.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2341"
+  },
+  {
+   "id": "M4-24",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The five sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the five numbers (e.g. 21435).</p><ol class='pj'><li>The second is to admit uncertainty, which audiences tend to read as incompetence.</li><li>A spokesperson facing a question she cannot answer has two bad options.</li><li>The first is to guess, and risk being contradicted by events.</li><li>Organisations that punish the second option will hear a great deal of the first.</li><li>Faced with this choice, most choose to guess, because the cost comes later.</li></ol>",
+   "solution": "2 sets up \"two bad options\"; 3 gives \"The first\"; 1 gives \"The second\"; 5 (\"this choice\") states the usual choice; 4 draws the organisational lesson.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "23154"
+  }
+ ],
+ "sets": {
+  "m4-rc1": {
+   "kind": "passage",
+   "title": "Passage: The value of boredom",
+   "theme": "psychology",
+   "words": 515,
+   "html": "<b>Passage: The value of boredom</b><p>Boredom has a poor reputation. It is treated as a problem to be solved, by entertainment for the young and by productivity tools for adults, and the devices most of us carry are designed to ensure that we need never experience it. Yet psychologists who study boredom increasingly describe it not as an absence of feeling but as a signal, comparable to hunger or pain, that tells us something about our situation.</p><p>What boredom signals, on this account, is a mismatch between the attention we have available and the demands our circumstances make on it. When a task is too easy, too repetitive or too disconnected from anything we value, attention has nowhere useful to go, and the resulting discomfort pushes us to look for something else. Like hunger, the signal is unpleasant precisely so that it will be acted upon. A person who never felt bored would have no reason to leave an unrewarding activity.</p><p>If this is right, the habit of silencing boredom the moment it appears has a hidden cost. The signal is answered, but by the nearest available stimulus rather than by a change in what one is doing. A worker who checks her phone whenever a meeting drags has relieved the discomfort without asking whether the meeting, or her role in it, should change. Repeated often enough, such relief may weaken the link between the signal and the reflection it is supposed to prompt.</p><p>Psychologists who study boredom have found that people do not experience it uniformly. Some report it rarely even in dull circumstances, while others find it oppressive in situations that their companions consider pleasant enough. The difference does not seem to lie in how much stimulation each person requires so much as in how well each can direct attention: those who struggle to concentrate find it harder to engage with a task that offers little, and so experience its emptiness more acutely. On this view boredom is less a property of situations than a relation between a situation and a mind&#x27;s capacity to take hold of it.</p><p>This helps explain why boredom is unpleasant rather than merely neutral. An empty hour is not in itself painful; what hurts is the sense that one&#x27;s attention is idling while something else ought to be happening. Boredom thus contains a kind of judgement, however vague, that the present activity is not worth the attention it demands, and its discomfort is the pressure of that judgement towards a change.</p><p>Some writers go further and claim that boredom is the mother of creativity: that the mind, left without stimulation, turns inward and produces new ideas. The evidence for this stronger claim is thinner than its popularity suggests. Studies that induce boredom before a creative task have found modest effects at best, and it is unclear whether they reflect boredom itself or merely the relief of being given something to do. The more defensible position is that boredom is useful as information, not as a source of inspiration — and information is valuable only to those who pause long enough to read it.</p>"
+  },
+  "m4-rc2": {
+   "kind": "passage",
+   "title": "Passage: Who owns a recipe",
+   "theme": "law",
+   "words": 520,
+   "html": "<b>Passage: Who owns a recipe</b><p>Recipes occupy an odd place in the law of creative work. A novel, a song or a photograph is protected from copying as soon as it is made, but in most legal systems a list of ingredients and a set of cooking steps are treated as functional instructions, like the directions for assembling a bookcase, and may be copied freely. A chef who invents a celebrated dish can watch competitors reproduce it the following week without any legal remedy.</p><p>Economic theory suggests that this should discourage invention. If creators cannot exclude imitators, why would they invest in creating? Yet restaurant cuisine is notably inventive, and new dishes appear constantly. Researchers who have studied professional kitchens find that chefs rely on informal norms in place of law. Copying a dish exactly without acknowledgement is widely regarded as disreputable, and chefs who do it may find that suppliers, critics and colleagues treat them coolly. Sharing techniques with trusted peers is expected, but passing them on to outsiders without permission is frowned upon.</p><p>These norms are effective in a small, interconnected community where reputation travels quickly. They work less well across distances, in large chains, or where the copier has no wish to belong to the community whose disapproval would otherwise restrain him. A chain that reproduces a famous chef&#x27;s dish across hundreds of outlets may never meet the chef&#x27;s peers and has little to fear from their opinion.</p><p>The fashion industry offers an instructive comparison. Clothing designs, like recipes, receive limited protection in many legal systems, and copying is rapid and widespread. Here too the field is inventive, and some scholars have argued that copying actually accelerates the cycle of fashion: once a style is widely imitated it loses its distinction, and those who wish to stand out must move on to something new. Whether the same mechanism operates in cooking is unclear. A dish does not lose its pleasure merely because others serve it, and diners who return to a favourite restaurant often want the same meal rather than a novelty. The analogy shows that the absence of protection need not stifle creation, but it does not show that the reasons are the same in every field.</p><p>Chefs themselves are divided. Some regard imitation as a tribute and a sign that their influence is spreading; others, particularly those whose reputation rests on a small number of signature dishes, see it as a threat to their livelihood. The division often tracks the chef&#x27;s position in the profession: established figures can afford generosity, while newcomers who have staked everything on one idea have the most to lose from its free circulation.</p><p>Some observers conclude that the law should be extended to cover recipes. Others argue that the absence of protection is itself a cause of the field&#x27;s inventiveness: chefs who cannot rest on a single creation must keep producing new ones, and the free circulation of ideas allows each innovation to be built upon quickly. The evidence does not settle the question, but it does show that the relationship between legal protection and creativity is less direct than the simple economic model assumes.</p>"
+  },
+  "m4-rc3": {
+   "kind": "passage",
+   "title": "Passage: Counting the uncounted species",
+   "theme": "ecology",
+   "words": 513,
+   "html": "<b>Passage: Counting the uncounted species</b><p>Estimates of the number of species on Earth range from a few million to more than a trillion, a spread that would be embarrassing in almost any other science. The disagreement does not arise because biologists are careless. It arises because the great majority of species have never been described, and the methods for estimating what has not been seen depend heavily on assumptions about it.</p><p>One method extrapolates from well-studied groups. If, in a thoroughly surveyed region, there are a certain number of insect species for every species of plant, and if this ratio holds elsewhere, the global count of plants can be multiplied to give a global count of insects. The approach is transparent, but its results are only as good as the ratio, and ratios measured in temperate forests may not hold in tropical canopies or deep-sea sediments. Another method looks at the rate at which new species are described over time and projects when the curve will level off. This method assumes that taxonomists&#x27; efforts have been spread evenly, when in practice they have concentrated on large, attractive or economically important organisms.</p><p>The arrival of genetic sequencing has changed the problem rather than solved it. Sampling soil or seawater for DNA reveals vast numbers of distinct genetic sequences, many belonging to microbes that have never been grown in a laboratory. But deciding how different two sequences must be to count as separate species is partly a matter of convention, and different thresholds can change totals by orders of magnitude. The trillion-species estimates depend largely on such counts of microbial diversity.</p><p>The difficulty is not only practical. Even among well-studied animals, biologists disagree about what a species is. One definition counts as a species any group whose members can interbreed with one another but not with outsiders; another counts any population with a distinct evolutionary history, which can be detected in its genes even when it looks identical to its neighbours. The second definition typically yields more species than the first, and the choice between them is guided as much by the purposes of the classifier as by anything in the organisms. Conservation agencies, for instance, have an interest in recognising distinct populations that would otherwise be grouped with abundant relatives and so denied protection.</p><p>For organisms that reproduce without sex, as most microbes do, the interbreeding definition does not apply at all, and the genetic threshold is the only practical criterion. Changing that threshold by a small amount can merge thousands of supposed species into one or split one into thousands, which is why the largest estimates are so sensitive to choices that seem, at first sight, merely technical.</p><p>What these difficulties show is not that the question is meaningless but that &quot;how many species are there?&quot; is several questions at once. For animals and plants, estimates are converging on figures in the low millions. For microbes, the answer depends on definitions that have been designed for other purposes and may not suit the organisms in question. A single headline number conceals these differences more than it reveals them.</p>"
+  },
+  "m4-rc4": {
+   "kind": "passage",
+   "title": "Passage: The architecture of waiting rooms",
+   "theme": "design",
+   "words": 523,
+   "html": "<b>Passage: The architecture of waiting rooms</b><p>Waiting rooms are among the most widely experienced and least considered spaces in modern life. Clinics, government offices and railway stations all require people to spend time in rooms whose design rarely receives the attention given to the spaces where the main business happens. The assumption seems to be that waiting is dead time, and that a room for dead time needs only seats and perhaps a clock.</p><p>Yet a waiting room shapes how people experience the service that follows. Studies in clinics have found that patients who wait in crowded, windowless rooms with no indication of how long they will wait rate their consultations less favourably, even when the consultation itself is identical. Uncertainty seems to matter more than duration: a predictable twenty-minute wait is often reported as less irritating than an unpredictable ten-minute one. Information about queue length, and a sense that the order of service is fair, can do more to improve satisfaction than shortening the wait itself.</p><p>Design also communicates status. Rows of fixed seating facing a counter suggest that those waiting are to be processed; movable chairs, natural light and somewhere to put one&#x27;s belongings suggest that they are guests. People read these signals quickly and adjust their expectations and behaviour accordingly. Staff in offices with hostile waiting areas report more confrontations, though whether the design causes the hostility or merely reflects an institution that already treats visitors poorly is difficult to establish.</p><p>Many of the improvements that matter cost little. A screen that shows the number of people ahead in line, or an announcement that the clinic is running thirty minutes late, gives people the means to plan: to make a phone call, fetch a coffee or simply stop watching the door. Seating arranged in small clusters rather than long rows allows families to sit together and strangers to keep their distance. Even the placement of the reception desk matters; a counter behind glass, raised above the level of a seated visitor, tells people something different from a desk at which they can sit down and speak face to face.</p><p>Some institutions have gone further and abolished the waiting room altogether, sending visitors a message when their turn approaches so that they can wait wherever they please. Such systems are welcome where they work, but they assume that visitors have phones, can read the messages and have somewhere else to go. For many people who use public services, the waiting room remains the only place available, and its design continues to shape what the visit feels like.</p><p>Architects who have worked on such spaces note that the brief they receive rarely mentions waiting at all. Budgets and attention are allocated to the consulting room, the counter or the platform, and the waiting area is whatever space is left over once those have been placed.</p><p>Improving waiting rooms is cheap compared with improving the services they precede, which makes it tempting to dismiss such improvements as cosmetic. But a service is experienced as a whole, and an institution that respects people&#x27;s time before they reach the counter has already begun to deliver part of what they came for.</p>"
+  }
+ }
+}

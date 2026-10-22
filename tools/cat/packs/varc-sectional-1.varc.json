@@ -1,0 +1,463 @@
+{
+ "name": "VARC Sectional 1",
+ "questions": [
+  {
+   "id": "S1-01",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The central concern of the passage is that:",
+   "solution": "The passage moves from problems of testimony to the \"prior question\" of why documents exist, arguing that the archive's composition distorts conclusions even under careful reading (para 3). Option 4 concerns testimony, which the author says is already handled. Option 3 overstates; alternative sources \"have their own biases\". Option 1 is exactly the false inference the author warns against.",
+   "set": "s1-rc1",
+   "type": "mcq",
+   "options": [
+    "marginal groups were more often involved in legal disputes than other groups",
+    "the selective way archives were created can distort historical conclusions even when individual documents are read critically",
+    "historians should abandon official records in favour of oral and archaeological sources",
+    "historical documents frequently contain deliberate falsehoods that historians fail to detect"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "S1-02",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following would the author most likely regard as an example of the \"distortion\" discussed in the third paragraph?",
+   "solution": "The distortion arises from the composition of the collection: a group appearing \"mainly through court cases will seem more ... disorderly\". Option 3 matches this. Options 4, 2 and 1 are problems of testimony or accuracy within documents, which the first paragraph distinguishes from the archive's composition.",
+   "set": "s1-rc1",
+   "type": "mcq",
+   "options": [
+    "A historian finds that a memoir and a set of letters give conflicting accounts of a meeting.",
+    "A historian discovers that a chronicle misdates a battle by several years.",
+    "A historian concludes that a fishing village was unusually violent because almost every surviving mention of it comes from criminal court proceedings.",
+    "A historian concludes that a guild's records exaggerate its members' wealth because the guild wished to impress the authorities."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "S1-03",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The comparison with an ecologist estimating a population is used to illustrate:",
+   "solution": "The ecologist analogy follows \"estimating what the archive omits from what it includes\", that is, inferring the unobserved from the observed sample. Option 3 introduces a ranking the author never makes. Option 1 concerns the other response. Option 2 is explained earlier and is not the point of the analogy.",
+   "set": "s1-rc1",
+   "type": "mcq",
+   "options": [
+    "the difficulty of dating oral traditions and archaeological finds",
+    "the reason that marginal groups were rarely recorded by institutions",
+    "the superiority of scientific methods over traditional historical ones",
+    "an approach that infers the scale of what is missing from the pattern of what has been preserved"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S1-04",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's attitude towards the two responses described in the fourth paragraph is best described as:",
+   "solution": "The author notes both \"accept that silence is itself a kind of evidence\" (appreciation), but also their biases and that \"neither can recover what was never written down\" (qualification). Option 3 contradicts that clause. Option 2 is harsher than the text, and option 1 ignores the evaluation.",
+   "set": "s1-rc1",
+   "type": "mcq",
+   "options": [
+    "neutral, since the author does not evaluate them",
+    "dismissive, because both introduce worse biases than official archives",
+    "enthusiastic, because together they solve the problem of the archive's silences",
+    "qualified appreciation, recognising their value while noting that neither can fully overcome the archive's limitations"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S1-05",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, removing a height limit in a neighbourhood may produce little new construction because:",
+   "solution": "Para 2: where \"prices sit just below such a threshold ... additional floors would cost more than they could be sold for\". Options 1, 2 and 3 are not given as reasons in the passage.",
+   "set": "s1-rc2",
+   "type": "mcq",
+   "options": [
+    "developers prefer to build in the suburbs",
+    "residents of such neighbourhoods oppose new buildings",
+    "the approval process remains lengthy even after the limit is removed",
+    "prices there may be too low to cover the higher per-square-metre cost of building beyond a certain height"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S1-06",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author would most likely agree that critics who cite luxury towers as evidence against deregulation:",
+   "solution": "Para 3: such critics \"are mistaken about the long-run effects, but they are describing accurately what deregulation first produces\". Option 1 contradicts that. Option 3 is not attributed to them. Option 2 misuses the mid-rise example.",
+   "set": "s1-rc2",
+   "type": "mcq",
+   "options": [
+    "are right that deregulation never benefits those on lower incomes",
+    "have been proved wrong by the expansion of mid-rise housing",
+    "misunderstand the costs of building tall structures",
+    "correctly observe deregulation's initial effects but draw the wrong conclusion about its eventual consequences"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S1-07",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following, if true, would most strengthen the author's explanation of the \"low buildings punctuated by isolated towers\" pattern?",
+   "solution": "The author attributes the missing middle to mid-rise construction being costly relative to its value, citing code changes that cut its cost. Option 3 shows that lowering exactly that cost raised mid-rise building alone, which strengthens the mechanism. Option 4 offers a rival, demand-side explanation. Option 1 is irrelevant to cost thresholds. Option 2 points back to regulation.",
+   "set": "s1-rc2",
+   "type": "mcq",
+   "options": [
+    "Towers in such cities are mostly occupied by offices rather than housing.",
+    "Height limits in such cities are set separately for each neighbourhood.",
+    "After a country permitted single-staircase designs for six-to-eight-storey buildings, applications for buildings of that height rose sharply while applications for towers were unchanged.",
+    "In a city with such a pattern, survey data show that most residents prefer to live in detached houses."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "S1-08",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "Which of the following best captures the author's overall position?",
+   "solution": "The author accepts the regulatory evidence (para 1) and the final paragraph calls regulation \"one constraint among several\". Option 2 contradicts that. Option 4 is denied: \"None of this is an argument for keeping restrictive rules\". Option 1 overstates; mid-rise is called costly.",
+   "set": "s1-rc2",
+   "type": "mcq",
+   "options": [
+    "Mid-rise housing is always the most efficient form of urban development.",
+    "Building regulations are the only significant obstacle to housing supply.",
+    "Regulation does restrict housing supply, but the cost structure of construction shapes where and how supply responds once rules are relaxed.",
+    "Deregulation benefits only the wealthy and should be resisted."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "S1-09",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The passage is primarily concerned with:",
+   "solution": "The extreme cases are set aside in para 2, and the rest of the passage tests tact against the strict view and alternatives. Option 4 is not the author's stance; para 3 challenges the strict view's defence. Option 1 is a side example. Option 3 contradicts \"conventions are not always shared\".",
+   "set": "s1-rc3",
+   "type": "mcq",
+   "options": [
+    "arguing that lying to a murderer is morally required",
+    "examining whether everyday tact can be reconciled with views about the wrongness of lying",
+    "showing that politeness conventions are universally shared",
+    "defending the strict view that lying is always wrong"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "S1-10",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's objection to the defence that tact is permissible because it avoids literal falsehood rests on the claim that:",
+   "solution": "Para 3: \"a carefully chosen truth that is designed to produce a false belief manipulates no less than a lie does.\" Options 3 and 1 are unsupported. Option 2 overstates; the author presents a dilemma rather than declaring the view baseless.",
+   "set": "s1-rc3",
+   "type": "mcq",
+   "options": [
+    "tactful speakers always intend to cause harm",
+    "the strict view has no principled basis",
+    "literal truth is impossible to achieve in ordinary conversation",
+    "if deception is wrong because it manipulates beliefs, then a truth selected to produce a false belief is open to the same objection"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S1-11",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following, if true, would most weaken the \"third possibility\" described in the fourth paragraph?",
+   "solution": "The third possibility holds that tact does not deceive because listeners understand the convention and form no false belief. Option 2 shows that listeners did form false beliefs, which undercuts the view's core claim. Option 4 bears on whether conventions are shared, but differences between cultures need not affect exchanges within one culture, so it is weaker. Options 1 and 3 do not address whether tact deceives.",
+   "set": "s1-rc3",
+   "type": "mcq",
+   "options": [
+    "Most people say they prefer honest friends to tactful ones.",
+    "In a study, people who received polite praise for their work frequently believed the work had been genuinely well received and were surprised by later criticism.",
+    "Tactful answers are more common among close friends than among strangers.",
+    "Polite conventions differ between cultures."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "S1-12",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The examples of the dinner, the presentation and the photograph in the second paragraph serve to:",
+   "solution": "They introduce \"the territory of tact\", far from the extreme cases on which the debate \"is usually conducted\". Option 1 contradicts \"few people tell a flat lie\". Option 3 overstates; the author poses a dilemma. Option 2 introduces cultures, which these examples do not involve.",
+   "set": "s1-rc3",
+   "type": "mcq",
+   "options": [
+    "show that people frequently tell flat lies to spare others' feelings",
+    "illustrate the conventions of polite conversation in different cultures",
+    "prove that the strict view is mistaken",
+    "establish a common class of situations that the debate over extreme cases tends to overlook"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S1-13",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "According to the passage, why do many credit schemes rely on models rather than direct measurement?",
+   "solution": "Para 2 explains that detecting the change \"requires many samples ... Such sampling is expensive, and many credit schemes rely instead on models\". The other options are not stated.",
+   "set": "s1-rc4",
+   "type": "mcq",
+   "options": [
+    "Farmers refuse to allow sampling on their land.",
+    "Models are required by law.",
+    "Detecting small changes against large natural variation requires extensive and costly sampling.",
+    "Soil samples cannot be taken below the surface."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "S1-14",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The finding about reduced tillage described in the third paragraph implies that:",
+   "solution": "Gains near the surface were \"offset by losses lower down\"; stopping ploughing concentrated carbon \"without necessarily increasing the total\". Option 4 overstates (\"always lowers\"). Option 3 is not claimed. Option 1 contradicts \"losses lower down\".",
+   "set": "s1-rc4",
+   "type": "mcq",
+   "options": [
+    "deeper soil layers contain no carbon",
+    "a measured increase in surface carbon need not mean that the soil as a whole holds more carbon",
+    "ploughing increases the total carbon stored in soil",
+    "reduced tillage always lowers the total carbon in soil"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "S1-15",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's contrast between avoided fuel emissions and stored soil carbon in the fourth paragraph assumes that:",
+   "solution": "The contrast relies on the offset emission continuing \"to warm the planet\" over a century while soil carbon may be lost meanwhile. Option 3 states that assumption. Option 4 reverses the passage (\"speeds\"). Options 2 and 1 are not relied upon.",
+   "set": "s1-rc4",
+   "type": "mcq",
+   "options": [
+    "farmers are generally dishonest about their practices",
+    "soil carbon credits are cheaper than other offsets",
+    "the warming effect of an emission that a credit offsets continues over a period long enough for stored soil carbon to be released",
+    "warmer climates slow the decomposition of organic matter"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "S1-16",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "Which of the following best summarises the author's conclusion?",
+   "solution": "The final paragraph defends the practices but warns against treating stored carbon \"as equivalent to a tonne of emissions avoided\". Option 2 contradicts that, option 3 is stronger than the author, and option 4 is never claimed.",
+   "set": "s1-rc4",
+   "type": "mcq",
+   "options": [
+    "Soil carbon practices have real benefits, but their carbon gains are too uncertain to be treated as equivalent to avoided emissions.",
+    "Practices that increase soil carbon should be abandoned.",
+    "Soil carbon credits are fraudulent and should be banned.",
+    "Better models will soon make soil carbon credits fully reliable."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "S1-17",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>When a word acquires a new meaning, dictionaries record the change only after it has spread, and usage guides condemn it for a generation before conceding defeat. The lag is often treated as a failure of the guardians of language, who are accused of resisting the inevitable. But the lag performs a function. A meaning that survives a generation of disapproval has shown that it fills a need the old vocabulary did not; one that fades was perhaps a fashion. Resistance, in other words, is the test through which new usage earns its place.</p>",
+   "solution": "The paragraph reframes the lag as functional: survival through disapproval shows a real need. Option 2 captures this. Option 4 adopts the criticism the passage rejects. Option 3 ignores the meanings that fade. Option 1 is unsupported as a generalisation.",
+   "type": "mcq",
+   "options": [
+    "New meanings usually fade within a generation.",
+    "Resistance to new meanings, though often derided, acts as a filter that separates lasting changes from passing fashions.",
+    "Usage guides are always eventually proved wrong about new meanings.",
+    "Dictionaries are too slow to record new meanings and should be updated more often."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "S1-18",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Forecasts of technological change are usually wrong in a characteristic way. In the short term they overestimate how quickly a new technology will be adopted, because they assume that a working prototype is close to a working product and ignore the slow work of building supply chains, training users and rewriting rules. Over the long term they underestimate its effects, because they imagine the technology slotting into existing practices rather than reshaping them. The same forecaster can therefore be disappointed in year five and astonished in year twenty.</p>",
+   "solution": "Option 1 captures the two-directional error and its two causes. Option 4 misses the long-term underestimate. Option 2 turns an illustration into a rule. Option 3 confuses delay with failure.",
+   "type": "mcq",
+   "options": [
+    "Technological forecasts tend to err in opposite directions over different horizons: too fast on adoption, too narrow on eventual impact.",
+    "New technologies take about twenty years to be adopted.",
+    "Prototypes are rarely close to finished products, which is why technologies fail.",
+    "Forecasters are consistently too optimistic about new technologies."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "S1-19",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Biographers of scientists are drawn to the moment of discovery: the sudden insight, the decisive experiment. The archive rarely supports such scenes. Notebooks show ideas returned to over years, abandoned and revived, often half-formulated long before their author recognised what they meant. ____ The drama that readers expect is therefore usually supplied in retrospect, by the scientist's later memory or the biographer's art.</p>",
+   "solution": "The blank must link the notebooks' gradualness to \"drama ... supplied in retrospect\". Option 3 does so by recasting the moment as gradual. Option 1 is background. Option 4 supports sudden discovery and cuts against the paragraph. Option 2 contradicts the reliance on archives.",
+   "type": "mcq",
+   "options": [
+    "Most scientists keep careful notebooks throughout their careers.",
+    "Biographers rarely consult the archives of the scientists they write about.",
+    "What looks in hindsight like a single moment was typically a gradual recognition with no clear point of arrival.",
+    "Some discoveries are made by accident in the laboratory."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "S1-20",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Small shops in old market streets often survive competition from supermarkets not by matching their prices but by offering what a large store cannot: credit to known customers, goods in tiny quantities and advice from someone who knows the household. ____ When such shops close, the loss is felt most by those who depended on these services rather than by the average shopper.</p>",
+   "solution": "The last sentence speaks of those who \"depended on these services\", so the blank should identify who that is. Option 1 does. Option 3 restates background. Options 2 and 4 do not bridge to the final sentence.",
+   "type": "mcq",
+   "options": [
+    "These advantages matter most to customers with irregular incomes or limited storage space.",
+    "Many market streets have recently been pedestrianised.",
+    "Supermarkets usually offer lower prices because they buy in bulk.",
+    "Shopkeepers in such streets often belong to the same families for generations."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "S1-21",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>A rumour spreads not because people believe it but because it is useful to pass on.</li><li>Sharing it signals that one is well informed and offers the listener a token of trust.</li><li>Its accuracy is therefore a secondary matter for those who repeat it.</li><li>Corrections, which offer no such social reward, travel more slowly and reach fewer people.</li><li>Studies have found that false news stories online are more often novel than true ones.</li></ol>",
+   "solution": "1-2-3-4 develops a social-function account: rumours are passed on for what sharing signals, and corrections lack that reward. Sentence 5 introduces novelty as an explanation, which is related to the topic of false stories but does not belong to this social-reward argument.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5"
+  },
+  {
+   "id": "S1-22",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Nineteenth-century galleries hung paintings frame to frame, from floor to ceiling.</li><li>Visitors faced with hundreds of works gave each only a few seconds.</li><li>Curators gradually reduced the number of works on show, leaving bare wall around each.</li><li>The storerooms of large museums hold far more objects than are ever displayed.</li><li>The empty wall became, in effect, an instruction to look for longer.</li></ol>",
+   "solution": "1 → 2 → 3 → 5 traces how sparse hanging was meant to lengthen attention. Sentence 4, on museum storage, is on-topic and might seem to follow 3, but it shifts from viewers' attention to collection size and plays no part in the argument.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4"
+  },
+  {
+   "id": "S1-23",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>That expectation, however, assumed that the cost of keeping a record would remain the main constraint on memory.</li><li>Early theorists of the information age predicted that cheap storage would make societies better at remembering.</li><li>Once storage became almost free, the constraint shifted from keeping to finding.</li><li>The result is an abundance of preserved material that is, in practice, as inaccessible as if it had been discarded.</li></ol>",
+   "solution": "2 states the prediction; 1 (\"That expectation\") identifies its hidden premise; 3 shows the premise failing (\"the constraint shifted\"); 4 (\"The result\") states the consequence. 3 cannot precede 1, because \"the constraint\" needs 1 to introduce it.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2134"
+  },
+  {
+   "id": "S1-24",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>This made the gardens a record of the empire's commercial ambitions as much as a scientific collection.</li><li>Botanical gardens in the colonial era were rarely founded only for the study of plants.</li><li>Many were charged with acclimatising crops that could be grown profitably in other territories.</li><li>That record has outlasted the empires themselves: some of today's plantation economies trace their origins to seedlings raised in such gardens.</li></ol>",
+   "solution": "2 opens; 3 (\"Many were charged\") specifies the non-scientific role; 1 (\"This\") interprets it; 4 (\"That record\") must follow 1, which introduces the gardens as a record; so 2341 is ruled out.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2314"
+  }
+ ],
+ "sets": {
+  "s1-rc1": {
+   "kind": "passage",
+   "title": "Passage: The archive and its silences",
+   "theme": "history",
+   "words": 519,
+   "html": "<b>Passage: The archive and its silences</b><p>Historians are trained to distrust their sources, but the distrust is usually directed at what the sources say. A chronicle may flatter its patron; a court record may reflect the assumptions of the clerk who wrote it down; a memoir may rearrange events to suit its author. These are problems of testimony, and the discipline has developed elaborate methods for dealing with them: comparison with other sources, attention to the circumstances of composition, the reading of documents against the grain of their authors&#x27; intentions. Less attention has traditionally been paid to a prior question, which is why a given document exists at all.</p><p>Archives are not random samples of the past. They are the residue of decisions taken by institutions about what was worth recording and what was worth keeping, and those decisions followed the interests of the institutions rather than the curiosity of later scholars. A tax authority recorded those who owned taxable property; a church recorded baptisms, marriages and burials among its own members; a colonial administration recorded the activities it wished to regulate. People who owned nothing, belonged to no recognised congregation or lived beyond the reach of administration appear in such records only when they came into conflict with the institutions that kept them, as defendants, debtors or petitioners. The archive therefore does not merely underrepresent certain lives. It represents them, when it represents them at all, at the moments when they were most constrained.</p><p>The consequence is subtle. A historian who reads the surviving records of a marginal group carefully and sympathetically may still reproduce the archive&#x27;s distortion, because the records available to her are disproportionately records of trouble. A community that appears in the documents mainly through court cases will seem more litigious, more disorderly or more desperate than it was, not because the documents are false but because peaceful lives generated no paperwork. No amount of critical reading of individual documents can correct this, since the problem lies in the composition of the collection rather than in the content of any item within it.</p><p>Some historians have responded by turning to sources that were not produced for administrative purposes: songs, oral traditions, the archaeology of households, the marginal notes in account books. These sources have their own biases, and they are often harder to date and interpret than official records. Others have tried to reason explicitly about the gaps, estimating what the archive omits from what it includes, in the way an ecologist estimates the size of a population from the animals that happen to be caught. Both responses accept that silence is itself a kind of evidence, but neither can recover what was never written down.</p><p>What the debate has changed is less the methods of research than the confidence with which conclusions are stated. A historian who knows that her sources were shaped by the interests of those who kept them is less likely to mistake the absence of evidence for the absence of a phenomenon, and more likely to ask, of any confident generalisation about the past, whose records it rests on and whose it could not have consulted.</p>"
+  },
+  "s1-rc2": {
+   "kind": "passage",
+   "title": "Passage: Why cities grow upward unevenly",
+   "theme": "urban",
+   "words": 486,
+   "html": "<b>Passage: Why cities grow upward unevenly</b><p>It is a common complaint that cities do not build enough housing where people most wish to live, and the usual culprit is regulation. Height limits, zoning rules and lengthy approval processes are said to prevent developers from supplying what the market demands, so that prices in desirable neighbourhoods rise far above the cost of construction. There is good evidence for this view. In many cities the price of an apartment exceeds the cost of building it by a margin that is hard to explain except by restrictions on supply, and places that have loosened their rules have usually seen more construction.</p><p>Yet the regulatory account explains less than its advocates sometimes suggest, because the economics of height are not linear. A building of four or five storeys can be built with relatively simple methods. Beyond a certain height, construction requires steel or reinforced concrete frames, deeper foundations, lifts, more elaborate fire protection and more space given over to structure and circulation. The cost per square metre rises in steps, and a developer will build taller only where prices are high enough to cover the next step. In neighbourhoods where prices sit just below such a threshold, removing a height limit may produce little new construction, because the additional floors would cost more than they could be sold for.</p><p>This has a counter-intuitive consequence. Relaxing restrictions in a city will tend to produce tall buildings in the most expensive districts, where prices already justify the cost, and comparatively little in the moderately priced areas that many reformers hope to see densified. The new supply may slow the rise of prices at the top of the market, and through a chain of moves it may eventually ease pressure elsewhere, but the visible change will be concentrated where housing was already least affordable. Critics who point to luxury towers as evidence that deregulation helps only the rich are mistaken about the long-run effects, but they are describing accurately what deregulation first produces.</p><p>The step-like cost of height also helps explain a pattern that puzzles visitors to many cities: a landscape of low buildings punctuated by isolated towers, with little in between. Mid-rise construction, often regarded by planners as the ideal form for a walkable neighbourhood, falls in the range where building is most expensive relative to the value it creates. In some countries, changes to building codes that allow timber frames or single staircases in buildings of moderate height have made such construction cheaper, and mid-rise housing has expanded accordingly.</p><p>None of this is an argument for keeping restrictive rules. It is an argument that regulation is one constraint among several, and that a reform which removes it may disappoint those who expected supply to respond evenly. Where the aim is more housing in particular kinds of neighbourhood, attention to the technical and financial thresholds of construction may matter as much as attention to what the rules permit.</p>"
+  },
+  "s1-rc3": {
+   "kind": "passage",
+   "title": "Passage: Tact and truthfulness",
+   "theme": "philosophy",
+   "words": 546,
+   "html": "<b>Passage: Tact and truthfulness</b><p>Moral philosophers have long been divided over whether it is ever permissible to lie. A strict tradition holds that a deliberate falsehood wrongs the person deceived, whatever its motive, because it treats that person&#x27;s reason as an obstacle to be managed rather than a faculty to be respected. Its critics reply with examples in which the refusal to lie seems monstrous, such as the murderer at the door asking where his intended victim is hiding. The debate is usually conducted at these extremes, with the strict view defended by appeal to principle and attacked by appeal to catastrophe.</p><p>Much of ordinary moral life, however, takes place far from such cases, in the territory of tact. A friend asks whether we enjoyed the dinner she cooked; a colleague asks what we thought of a presentation that went badly; a relative shows us a photograph of a newborn who is not, in truth, beautiful. In such cases few people tell a flat lie, and few tell the unvarnished truth. They choose what to emphasise, praise the effort rather than the result, answer a slightly different question from the one that was asked. These manoeuvres are so common that we rarely notice them, yet they are not obviously compatible with the strict view, since they aim, quite deliberately, at leaving the other person with an impression that is kinder than the truth.</p><p>Defenders of strictness sometimes argue that tact is permissible precisely because it avoids literal falsehood. The speaker who says &quot;you must have worked so hard on this&quot; has said nothing untrue, and the listener remains free to draw her own conclusions. But this defence makes the morality of an utterance depend on a technicality. If what is wrong with lying is that it manipulates another person&#x27;s beliefs, then a carefully chosen truth that is designed to produce a false belief manipulates no less than a lie does. Either tact is often wrong, or the strict view has misidentified what makes lying wrong.</p><p>There is a third possibility, which is that tact works within a shared understanding. Both parties to a polite exchange usually know its conventions. The cook who asks about her dinner does not expect a restaurant review, and the answer she receives is understood by both as an expression of goodwill rather than a report. On this view tact does not deceive, because the listener is not led to believe anything false about the dinner; she is reminded of something true about the relationship. The view has the merit of explaining why tact feels different from lying. Its weakness is that conventions are not always shared. A person who genuinely wants an honest assessment, and is given a polite one, has been misled, whatever the speaker intended, and the speaker who cannot tell which kind of question is being asked has no rule to fall back on.</p><p>The lesson may be that truthfulness is less a matter of individual sentences than of the relationship within which they are spoken. A friend who is always tactful may become someone whose praise means nothing; one who is never tactful may become someone whose honesty is unbearable. The difficult skill lies not in following a rule about falsehood but in knowing what the other person is really asking.</p>"
+  },
+  "s1-rc4": {
+   "kind": "passage",
+   "title": "Passage: The slow science of soil carbon",
+   "theme": "climate",
+   "words": 495,
+   "html": "<b>Passage: The slow science of soil carbon</b><p>Soils hold more carbon than the atmosphere and all living plants combined, and small changes in the amount they store could matter a great deal for the climate. This simple fact has made soil carbon an attractive target for policy. Farmers who adopt practices said to increase it, such as reduced tillage, cover crops or the spreading of compost, can in some places sell credits to companies seeking to offset their emissions. The idea is appealing: agriculture, usually counted among the sources of greenhouse gases, could become part of the solution, and farmers would be paid for improving their land.</p><p>The difficulty lies in measurement. The carbon content of soil varies enormously from one metre to the next, depending on texture, moisture, past use and the activity of roots and microbes. A change of the size that a new practice might produce in a few years is small compared with this variation, so detecting it requires many samples, taken to a consistent depth, before and after the change. Such sampling is expensive, and many credit schemes rely instead on models that predict the gain from the practice adopted. The models are calibrated on field trials, but the trials were conducted on particular soils in particular climates, and their results do not always transfer.</p><p>Depth adds a further complication. Some early studies of reduced tillage found that carbon increased near the surface, where most samples were taken, but later work that sampled more deeply found that much of this gain was offset by losses lower down. Ploughing had mixed carbon through the soil; stopping it concentrated carbon near the top without necessarily increasing the total. A scheme that pays for surface gains may thus pay for a redistribution rather than an addition.</p><p>There is also the question of permanence. Carbon stored in soil can be released again if practices change, if the land is sold to a farmer with different methods, or if a warmer climate speeds the decomposition of organic matter. An emission avoided by not burning fuel stays avoided; carbon added to soil remains there only as long as the conditions that put it there persist. Credit schemes address this by requiring commitments over many years or by holding back a share of credits as insurance, but neither device can guarantee what will happen to a field over the century or more during which the offset emission continues to warm the planet.</p><p>None of this means that practices which build soil carbon are worthless. Many of them improve fertility, reduce erosion and help soils retain water, benefits that justify them regardless of their effect on the climate. The problem lies in treating the carbon they store as equivalent to a tonne of emissions avoided, so that a company may continue to emit in exchange for gains that are uncertain in size and duration. Soil carbon may be best regarded as a valuable addition to efforts to cut emissions rather than a substitute for them.</p>"
+  }
+ }
+}

@@ -1,0 +1,362 @@
+{
+ "name": "mock-2 — QA",
+ "questions": [
+  {
+   "id": "M2-QA-01",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Percentages & Profit",
+   "difficulty": "Medium",
+   "question": "A trader buys 60 kg of rice. He sells one-third of it at a 20% profit and half of the remainder at a 10% loss. At what profit percentage must he sell the rest to make an overall profit of 12%?",
+   "solution": "Take CP = 1 per kg (total 60). 20 kg earn 24, 20 kg earn 18, so the last 20 kg must earn 67.2 − 42 = 25.2, a profit of 5.2/20 = 26%.",
+   "type": "mcq",
+   "answer": 1,
+   "level": "Medium",
+   "options": [
+    "52",
+    "26",
+    "28",
+    "22"
+   ]
+  },
+  {
+   "id": "M2-QA-02",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time, Speed & Distance",
+   "difficulty": "Hard",
+   "question": "Cars A and B start at the same moment from towns P and Q respectively and drive towards each other. After they meet, A takes 4 more hours to reach Q and B takes 9 more hours to reach P. P and Q are 180 km apart, and on reaching the far town each car immediately turns back and keeps shuttling at its constant speed. How many hours after the start do the two cars meet for the second time?",
+   "solution": "Step 1: if they meet after t hours, A covers in 4 h what B covered in t h and vice versa, so t² = 4 × 9 and t = 6 h; speeds are in the ratio √(9/4) = 3 : 2. Step 2: 6(vA + vB) = 180 with vA : vB = 3 : 2 gives vA = 18, vB = 12 km/h. Step 3: A reaches Q at 10 h and B reaches P at 15 h; in between both head towards P, A from Q and B ahead of it, and A would catch B only at t = 30, so no overtaking occurs. Step 4: a second head-on meeting needs combined distance 3 × 180 = 540 km, i.e. t = 540/30 = 18 h. Check: A has gone 324 km (36 km from P on the way back), B 216 km (36 km from P on the way back to Q).",
+   "type": "tita",
+   "kind": "number",
+   "answer": "18",
+   "level": "Hard"
+  },
+  {
+   "id": "M2-QA-03",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time & Work",
+   "difficulty": "Medium",
+   "question": "Pipe A fills a tank in 12 hours and pipe B in 18 hours, while outlet C empties a full tank in 9 hours. All three are opened together on an empty tank and C is closed after 3 hours. How many hours in all does it take to fill the tank?",
+   "solution": "Rates: A + B − C = 1/12 + 1/18 − 1/9 = 1/36 per hour, so after 3 h the tank is 1/12 full. The remaining 11/12 at 1/12 + 1/18 = 5/36 per hour takes (11/12)(36/5) = 6.6 h. Total 3 + 6.6 = 9.6 hours.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Medium",
+   "options": [
+    "9.8",
+    "19.2",
+    "9.6",
+    "10"
+   ]
+  },
+  {
+   "id": "M2-QA-04",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mixtures & Alligation",
+   "difficulty": "Medium",
+   "question": "Alloy X contains copper and zinc in the ratio 3 : 5 and alloy Y in the ratio 5 : 3. How many kg of Y must be melted with 24 kg of X to obtain an alloy with copper and zinc in the ratio 7 : 9?",
+   "solution": "Copper fractions: X 3/8, Y 5/8, target 7/16. By alligation, X : Y = (5/8 − 7/16) : (7/16 − 3/8) = 3/16 : 1/16 = 3 : 1. So Y = 24/3 = 8 kg.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "8",
+   "level": "Medium"
+  },
+  {
+   "id": "M2-QA-05",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Simple & Compound Interest",
+   "difficulty": "Easy",
+   "question": "A sum doubles in 5 years at a certain rate of compound interest (compounded annually). In how many years will it become 16 times itself at the same rate?",
+   "solution": "Doubling every 5 years: 2 → 4 → 8 → 16 takes four doublings, 4 × 5 = 20 years.",
+   "type": "mcq",
+   "answer": 1,
+   "level": "Easy",
+   "options": [
+    "24",
+    "20",
+    "40",
+    "22"
+   ]
+  },
+  {
+   "id": "M2-QA-06",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Ratio & Proportion",
+   "difficulty": "Medium",
+   "question": "₹7,800 is divided among P, Q and R so that 2 × (P's share) = 3 × (Q's share) = 4 × (R's share). What is Q's share, in ₹?",
+   "solution": "P : Q : R = 1/2 : 1/3 : 1/4 = 6 : 4 : 3. Q gets 4/13 × 7800 = ₹2,400.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Medium",
+   "options": [
+    "2640",
+    "2160",
+    "1920",
+    "2400"
+   ]
+  },
+  {
+   "id": "M2-QA-07",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Averages",
+   "difficulty": "Medium",
+   "question": "Four years ago, the average age of a family of 6 was 22 years. A child has been born since then, and today the average age of the 7 members is 22.5 years. How old is the child, in years?",
+   "solution": "Four years ago the six totalled 132; today they total 132 + 24 = 156. The seven total 7 × 22.5 = 157.5, so the child is 1.5 years old.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Medium",
+   "options": [
+    "2.5",
+    "2",
+    "3",
+    "1.5"
+   ]
+  },
+  {
+   "id": "M2-QA-08",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Medium",
+   "question": "If α and β are the roots of x² − 6x + 4 = 0, what is the value of α⁴ + β⁴?",
+   "solution": "α + β = 6, αβ = 4. α² + β² = 36 − 8 = 28. α⁴ + β⁴ = 28² − 2 × 16 = 752.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "752",
+   "level": "Medium"
+  },
+  {
+   "id": "M2-QA-09",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Inequalities",
+   "difficulty": "Hard",
+   "question": "How many integers n satisfy (n − 1)(n − 4)(n − 9)(n − 16) < 0 and 1 ≤ n ≤ 25?",
+   "solution": "The sign is negative between consecutive roots of alternating sign: 1 < n < 4 (n = 2, 3) and 9 < n < 16 (n = 10, …, 15). That gives 2 + 6 = 8 integers.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Hard",
+   "options": [
+    "9",
+    "10",
+    "16",
+    "8"
+   ]
+  },
+  {
+   "id": "M2-QA-10",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Logarithms",
+   "difficulty": "Hard",
+   "question": "Real numbers x, y > 1 satisfy (log₂x)(log₄y) = 3 and log_x 2 + log_y 2 = 5/6. What is the value of x + y?",
+   "solution": "Let a = log₂x and b = log₂y (both positive). Then log₄y = b/2, so ab/2 = 3 and ab = 6. Also 1/a + 1/b = (a + b)/ab = 5/6, so a + b = 5. Hence {a, b} = {2, 3}, so {x, y} = {4, 8} and x + y = 12 in either order.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "12",
+   "level": "Hard"
+  },
+  {
+   "id": "M2-QA-11",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Functions",
+   "difficulty": "Medium",
+   "question": "For f(x) = (2x + 3)/(x − 1), x ≠ 1, what is f(f(f(2)))?",
+   "solution": "f(2) = 7/1 = 7. f(7) = 17/6. f(17/6) = (17/3 + 3)/(11/6) = (26/3) × (6/11) = 52/11.",
+   "type": "mcq",
+   "options": [
+    "7/2",
+    "52/11",
+    "41/11",
+    "17/6"
+   ],
+   "answer": 1,
+   "level": "Medium"
+  },
+  {
+   "id": "M2-QA-12",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Progressions",
+   "difficulty": "Medium",
+   "question": "The 3rd and 6th terms of a geometric progression are 18 and 486. What is the sum of the first 6 terms?",
+   "solution": "r³ = 486/18 = 27, so r = 3 and the first term is 18/9 = 2. Sum = 2(3⁶ − 1)/(3 − 1) = 728.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "728",
+   "level": "Medium"
+  },
+  {
+   "id": "M2-QA-13",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Hard",
+   "question": "Positive integers a, b satisfy 1/a + 1/b = 1/12. How many ordered pairs (a, b) are there?",
+   "solution": "(a − 12)(b − 12) = 144, and both factors must be positive (negative factors would make a or b ≤ 0). 144 = 2⁴ × 3² has 5 × 3 = 15 divisors, so 15 ordered pairs.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "15",
+   "level": "Hard"
+  },
+  {
+   "id": "M2-QA-14",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Inequalities",
+   "difficulty": "Medium",
+   "question": "For real x, what is the minimum value of |x − 2| + |x − 5| + |x − 11|?",
+   "solution": "The sum of distances is minimised at the median, x = 5: 3 + 0 + 6 = 9.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Medium",
+   "options": [
+    "9",
+    "11",
+    "10",
+    "18"
+   ]
+  },
+  {
+   "id": "M2-QA-15",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Medium",
+   "question": "In triangle ABC, AB = 13, BC = 14 and CA = 15. What is the length of the altitude from A to BC?",
+   "solution": "By Heron: s = 21, area = √(21 × 8 × 7 × 6) = 84. Altitude from A = 2 × 84/14 = 12.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Medium",
+   "options": [
+    "12",
+    "15",
+    "10",
+    "13"
+   ]
+  },
+  {
+   "id": "M2-QA-16",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Medium",
+   "question": "A square is inscribed in a semicircle of radius 5√5, with one side of the square on the diameter. What is the area of the square?",
+   "solution": "With side s, the top corners are at (±s/2, s), so s²/4 + s² = 125, s² = 100.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Medium",
+   "options": [
+    "80",
+    "120",
+    "100",
+    "90"
+   ]
+  },
+  {
+   "id": "M2-QA-17",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mensuration",
+   "difficulty": "Medium",
+   "question": "A solid metal cylinder of radius 6 cm and height 32 cm is melted and recast into spheres of radius 2 cm. How many spheres are obtained?",
+   "solution": "Cylinder volume = π × 36 × 32 = 1152π. Each sphere = (4/3)π × 8 = (32/3)π. Number = 1152 × 3/32 = 108.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "108",
+   "level": "Medium"
+  },
+  {
+   "id": "M2-QA-18",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Hard",
+   "question": "How many positive divisors of 10800 are perfect squares?",
+   "solution": "10800 = 2⁴ × 3³ × 5². A square divisor uses even exponents: 2: {0, 2, 4} (3), 3: {0, 2} (2), 5: {0, 2} (2). Total 12.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Hard",
+   "options": [
+    "11",
+    "24",
+    "12",
+    "10"
+   ]
+  },
+  {
+   "id": "M2-QA-19",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Medium",
+   "question": "What is the largest power of 6 that divides 50! ? (Enter the exponent.)",
+   "solution": "Power of 3 in 50! = 16 + 5 + 1 = 22; power of 2 = 47. The limiting factor is 3, so the exponent is 22.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "22",
+   "level": "Medium"
+  },
+  {
+   "id": "M2-QA-20",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Permutations & Combinations",
+   "difficulty": "Medium",
+   "question": "A committee of 5 is chosen from 6 men and 5 women so that it contains at least 2 women and at least 2 men. In how many ways can this be done?",
+   "solution": "Either 3 men + 2 women: 20 × 10 = 200, or 2 men + 3 women: 15 × 10 = 150. Total 350.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Medium",
+   "options": [
+    "350",
+    "455",
+    "280",
+    "700"
+   ]
+  },
+  {
+   "id": "M2-QA-21",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Probability",
+   "difficulty": "Hard",
+   "question": "Two numbers are chosen at random, without replacement, from {1, 2, …, 20}. What is the probability that their product is a multiple of 4?",
+   "solution": "Not a multiple of 4: both odd (C(10,2) = 45) or one odd and one ≡ 2 mod 4 (10 × 5 = 50). So 95 of 190 pairs fail, and the probability is 95/190 = 1/2.",
+   "type": "mcq",
+   "options": [
+    "9/19",
+    "10/19",
+    "7/19",
+    "1/2"
+   ],
+   "answer": 3,
+   "level": "Hard"
+  },
+  {
+   "id": "M2-QA-22",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time, Speed & Distance",
+   "difficulty": "Medium",
+   "question": "On a circular track of 1200 m, A and B start together from the same point in the same direction at 8 m/s and 5 m/s. After how many seconds do they meet for the first time at the starting point?",
+   "solution": "A takes 150 s per lap and B 240 s, so both are at the start together after LCM(150, 240) = 1200 s.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Medium",
+   "options": [
+    "1440",
+    "1560",
+    "1320",
+    "1200"
+   ]
+  }
+ ],
+ "sets": {}
+}

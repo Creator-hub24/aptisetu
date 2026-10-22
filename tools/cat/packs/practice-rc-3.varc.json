@@ -1,0 +1,339 @@
+{
+ "name": "VARC RC Practice Sets 3",
+ "questions": [
+  {
+   "id": "PR3-01",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The passage is mainly concerned with:",
+   "solution": "The passage defines the shifting baseline, shows its effect on science and policy targets, and calls for explicitness. Option 2 overstates. Option 4 contradicts \"must be interpreted with care\". Option 3 is not proposed.",
+   "set": "pr3-rc1",
+   "type": "mcq",
+   "options": [
+    "explaining how reference points for ecological health drift across generations and why this matters for setting recovery targets",
+    "proving that industrial fishing has destroyed all fish populations",
+    "recommending a return to pre-industrial fishing methods",
+    "arguing that historical sources are more reliable than scientific data"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PR3-02",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author cautions about historical market records because:",
+   "solution": "Para 3: a decline in recorded size \"may reflect changes in taste, regulation or the gear used\". Options 3, 2 and 1 are unsupported.",
+   "set": "pr3-rc1",
+   "type": "mcq",
+   "options": [
+    "restaurants exaggerated the size of the fish they served",
+    "they are always contradicted by scientific data",
+    "they were deliberately falsified by merchants",
+    "changes in recorded fish sizes could reflect factors other than changes in fish populations"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PR3-03",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following situations best illustrates the \"shifting baseline\" phenomenon?",
+   "solution": "Each generation treats the conditions it first knew as the norm, so the reference point drifts, as in option 3. The other options involve measurement improvement, error correction or borrowing a policy, not generational reference drift.",
+   "set": "pr3-rc1",
+   "type": "mcq",
+   "options": [
+    "A government sets a target based on a neighbouring country's policies.",
+    "A forest agency measures tree growth with improved instruments.",
+    "Residents of a city that has grown steadily noisier for decades each describe the level of traffic noise in their own childhood as \"normal quiet\".",
+    "A scientist revises an estimate after discovering a calculation error."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "PR3-04",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author would most likely agree that a policy aiming to restore fish stocks to their 1970s levels should:",
+   "solution": "The final paragraph: a modest target \"should not be presented as a return to nature\", and one should be explicit \"about which past one is trying to restore\". Option 3 contradicts this. Options 2 and 4 ignore the two-sided risk described in para 4.",
+   "set": "pr3-rc1",
+   "type": "mcq",
+   "options": [
+    "be stated openly as a choice of one historical reference point among others, with its limitations acknowledged",
+    "be abandoned as hopelessly unambitious",
+    "be presented as a full return to natural conditions",
+    "be replaced by a target of pre-industrial abundance in every case"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PR3-05",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's main argument is that video review:",
+   "solution": "Paras 2–4 explain why review eroded authority, and the last paragraph rejects abandonment. Option 2 contradicts \"reduce error without eliminating judgement\". Options 3 and 1 are unsupported.",
+   "set": "pr3-rc2",
+   "type": "mcq",
+   "options": [
+    "is resented mainly because it is expensive",
+    "has eliminated errors in refereeing",
+    "should be abandoned in all sports",
+    "has in some sports increased disputes by changing the standard of correctness and applying rules designed for real-time judgement with excessive precision"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PR3-06",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "According to the passage, the existence of a replay leads dissatisfied observers to conclude that a decision was wrong because:",
+   "solution": "Para 2: \"the existence of the replay implies that a right answer exists, and those who dislike the outcome conclude that it has been missed.\" Option 3 contradicts \"Many incidents remain ambiguous even on replay\". Options 4 and 2 are unsupported.",
+   "set": "pr3-rc2",
+   "type": "mcq",
+   "options": [
+    "it implies that a determinate right answer exists, so an unwelcome outcome looks like a missed one",
+    "commentators deliberately mislead viewers",
+    "replays always show the correct answer",
+    "referees refuse to watch replays"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PR3-07",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The examples of the defender's arm and the attacker found offside \"by a few centimetres\" are used to show that:",
+   "solution": "They follow \"Examined frame by frame, these concepts become harder rather than easier to apply\" and end with decisions that \"may strike fans as absurd\". Option 4 is not claimed; the issue is precision, not inaccuracy. Options 1 and 2 are unsupported.",
+   "set": "pr3-rc2",
+   "type": "mcq",
+   "options": [
+    "players frequently cheat",
+    "the offside rule should be abolished",
+    "frame-by-frame scrutiny can make rules designed for the naked eye produce decisions that seem absurd",
+    "software for drawing lines is inaccurate"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "PR3-08",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's claim that the old tolerance for error \"helped sustain the authority of the referee\" assumes that:",
+   "solution": "The tolerance mattered \"since everyone understood that he was doing a difficult job under the same conditions\". Option 1 makes that link explicit. Option 4 is not required, and option 2 contradicts para 1's description of arguing players. Option 3 is unsupported.",
+   "set": "pr3-rc2",
+   "type": "mcq",
+   "options": [
+    "spectators' acceptance of decisions depended partly on recognising that the referee shared the players' limited view",
+    "players never disagreed with referees before video review",
+    "remote officials are less competent than on-field referees",
+    "referees made fewer errors before video review"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PR3-09",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The passage is primarily concerned with:",
+   "solution": "The passage presents reputation, norms with punishment, and group competition, then argues they \"need not be\" rivals. Option 1 contradicts the critics noted and the final paragraph. Option 3 is a detail, and option 4 is unsupported.",
+   "set": "pr3-rc3",
+   "type": "mcq",
+   "options": [
+    "arguing that group selection is the only valid explanation",
+    "surveying explanations for cooperation among unrelated strangers and suggesting that they may be complementary",
+    "describing experiments on the effect of images of eyes",
+    "proving that humans are naturally selfish"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PR3-10",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The statement that \"the puzzle then shifts from cooperation to punishment\" means that:",
+   "solution": "Since \"the punisher bears a cost for a benefit shared by all\", the original free-rider puzzle reappears at the level of punishment. Option 2 is not claimed. Options 3 and 4 contradict the paragraph.",
+   "set": "pr3-rc3",
+   "type": "mcq",
+   "options": [
+    "explaining cooperation through costly punishment raises the question of why individuals bear the cost of punishing for a shared benefit",
+    "punishment is always more costly than cooperation",
+    "punishment has been shown not to exist",
+    "norms cannot be enforced"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PR3-11",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following, if true, would most weaken the reputation-based explanation described in the second paragraph?",
+   "solution": "The reputation account predicts that generosity depends on being observed. If generosity persists when observation is certainly impossible, the account is weakened. Option 4 supports it. Options 1 and 3 relate to the other accounts.",
+   "set": "pr3-rc3",
+   "type": "mcq",
+   "options": [
+    "Many societies have elaborate rules about fairness.",
+    "In carefully designed experiments where participants are certain that no one can ever learn of their choices, levels of generosity towards strangers remain almost unchanged.",
+    "Groups with cooperative norms tend to grow faster.",
+    "People are more generous when they know their actions are recorded."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PR3-12",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The reference to language in the last sentence serves to:",
+   "solution": "Language \"allowed reputations to travel far beyond the people who witnessed an act\", which extends reputation's reach. Options 2 and 4 are unsupported, and option 3 overstates.",
+   "set": "pr3-rc3",
+   "type": "mcq",
+   "options": [
+    "suggest a feature of humans that would allow reputational mechanisms to operate on a much larger scale",
+    "argue that language evolved for punishment",
+    "explain why animals cannot cooperate",
+    "prove that group selection occurred"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PR3-13",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The passage argues mainly that:",
+   "solution": "The passage opens by rejecting the \"neutral tool\" view and ends by saying a script's survival depends on \"institutions\" and its users' commitment. Option 2 is qualified in para 3. Option 3 contradicts \"it can also revive one\". Option 4 is not prescribed.",
+   "set": "pr3-rc4",
+   "type": "mcq",
+   "options": [
+    "scripts are not neutral tools but carry identities and consequences, and their fortunes depend on social, political and technological factors",
+    "alphabetic scripts are superior to other kinds of script",
+    "digital technology will inevitably destroy minority scripts",
+    "governments should never change official scripts"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PR3-14",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author suggests that a script that represents meaning directly may be more efficient in some respects because:",
+   "solution": "Para 3 states this advantage directly. Options 1 and 2 describe the alphabetic script's advantages. Option 4 is unsupported.",
+   "set": "pr3-rc4",
+   "type": "mcq",
+   "options": [
+    "it is quicker to learn",
+    "it requires fewer characters",
+    "it may allow speakers of mutually unintelligible varieties to read the same texts",
+    "it is better supported by computers"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "PR3-15",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "According to the passage, a change of official script can cut citizens off from their past because:",
+   "solution": "Para 2 says this directly. Option 2 and option 4 are not claimed, and option 1 is unsupported.",
+   "set": "pr3-rc4",
+   "type": "mcq",
+   "options": [
+    "new scripts cannot represent old words",
+    "old texts are destroyed when a script changes",
+    "within a generation, older writings become legible mainly to specialists who decide what to transcribe",
+    "governments ban the reading of older books"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "PR3-16",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The fourth paragraph primarily serves to:",
+   "solution": "It opens \"Digital technology has added a new layer\" and notes that interim habits \"have proved durable\". Option 2 contradicts the disadvantage it describes. Options 1 and 3 are unsupported.",
+   "set": "pr3-rc4",
+   "type": "mcq",
+   "options": [
+    "argue that Latin letters should replace all other scripts",
+    "show that technology has had only beneficial effects on scripts",
+    "explain the history of encoding standards in detail",
+    "introduce digital support as an additional factor affecting how scripts are used, with lasting effects from earlier gaps"
+   ],
+   "answer": 3
+  }
+ ],
+ "sets": {
+  "pr3-rc1": {
+   "kind": "passage",
+   "title": "Passage: Shifting baselines in fisheries",
+   "theme": "ecology",
+   "words": 453,
+   "html": "<b>Passage: Shifting baselines in fisheries</b><p>A fisherman who began work forty years ago will often say that the sea was richer when he was young. His son, who began twenty years later, says the same of his own youth, though the catches he remembers as abundant were already smaller than his father&#x27;s. Each generation takes as normal the state of the ecosystem it first encountered and measures decline from there. Over several generations the reference point drifts downwards, and a depleted sea comes to look natural to those who have never known anything else.</p><p>Ecologists call this the shifting baseline, and it affects scientists as much as fishermen. Systematic records of fish populations in many regions began only after industrial fishing had already reduced them substantially. A stock assessed as healthy because it has returned to its level of the 1970s may be a fraction of what it was a century earlier. Targets for recovery are set by reference to the data available, and the data available begin, inconveniently, at a point when much of the damage had already been done.</p><p>Historical sources can sometimes push the baseline back. Market records, tax ledgers, ships&#x27; logs and even restaurant menus have been used to estimate catches and the sizes of fish landed in earlier centuries. Such sources are fragmentary and were not collected for scientific purposes, so their numbers must be interpreted with care. A decline in the average size of fish recorded in market sales may reflect changes in taste, regulation or the gear used, rather than changes in the population. Yet when many independent sources point in the same direction, as they often do, the cumulative picture can be persuasive: many seas once held far larger and more numerous fish than any living person has seen.</p><p>The implications are not only scientific. Policies that aim to restore fish stocks must choose a target, and the choice of baseline determines how ambitious the target is. A recovery to the levels of a few decades ago may be achievable within a generation; a recovery to pre-industrial levels may be impossible, since the ecosystem may have changed in ways that cannot be reversed. Choosing the more modest target risks accepting a degraded state as success. Choosing the more ambitious one risks setting goals that no policy can meet, which may discredit the effort altogether.</p><p>There is no formula for resolving this choice, but the concept of the shifting baseline at least makes it visible. A target that would have been called modest by an earlier generation of fishermen should not be presented as a return to nature. Being explicit about which past one is trying to restore, and why, is a precondition for honest debate about what restoration can mean.</p>"
+  },
+  "pr3-rc2": {
+   "kind": "passage",
+   "title": "Passage: Why referees are disliked",
+   "theme": "sport",
+   "words": 466,
+   "html": "<b>Passage: Why referees are disliked</b><p>Few figures in public life are as reliably unpopular as the sports referee. Players argue with him, spectators abuse him, and commentators analyse his errors in slow motion. Introducing video review was meant to reduce this hostility by correcting the most glaring mistakes. In several sports it has done the opposite: arguments over decisions have multiplied, and the referee&#x27;s authority, far from being restored, has been further eroded.</p><p>Part of the explanation is that video review changes the question being asked. Before it, a referee&#x27;s decision was final because nothing better was available; spectators might disagree, but they accepted that a judgement had to be made in real time by someone who saw the play once. Once a slower, more detailed view is possible, every decision becomes provisional, and the standard of correctness shifts from what a competent official could see to what a camera can reveal. Many incidents remain ambiguous even on replay, but the existence of the replay implies that a right answer exists, and those who dislike the outcome conclude that it has been missed.</p><p>There is also the matter of rules written for the naked eye. Many rules depend on concepts such as intent, control or clear advantage that were designed to be applied quickly by a person watching the play. Examined frame by frame, these concepts become harder rather than easier to apply. A defender&#x27;s arm that seemed natural at full speed may look deliberate when frozen, and an attacker who was level with the last defender to any human observer may be found offside by a few centimetres on a line drawn by software. The technology provides precision that the rules were never meant to bear, and decisions that are precise in this sense may strike fans as absurd.</p><p>Defenders of review reply that the errors it corrects are real and that fairness requires correcting them. This is true, but fairness in sport has always included a tolerance for a certain kind of error, the kind made in good faith by an official in a position no better than the players&#x27;. That tolerance helped sustain the authority of the referee, since everyone understood that he was doing a difficult job under the same conditions as everyone else. Review replaces this shared limitation with an asymmetry: the officials in a remote room see what no one on the pitch could, and they are judged by a standard that the players themselves never met.</p><p>None of this means that video review should be abandoned. It means that its effects depend on how it is used: on whether it is confined to clear and consequential errors, whether the rules it applies are revised for the precision it offers, and whether those who watch understand that a replay can reduce error without eliminating judgement.</p>"
+  },
+  "pr3-rc3": {
+   "kind": "passage",
+   "title": "Passage: The puzzle of cooperation among strangers",
+   "theme": "evolution",
+   "words": 470,
+   "html": "<b>Passage: The puzzle of cooperation among strangers</b><p>Human beings cooperate with unrelated strangers on a scale unknown in other animals. We pay taxes that support people we will never meet, follow rules when no one is watching, and contribute to causes whose benefits we will not share. For evolutionary biologists this is a puzzle, because natural selection is usually expected to favour individuals who take the benefits of cooperation without paying its costs. Explanations for cooperation among relatives, or among individuals who interact repeatedly and can return favours, are well established. Cooperation among strangers who will not meet again is harder to explain.</p><p>One family of explanations emphasises reputation. Even if I will never meet a particular stranger again, others may observe how I treat him, and my reputation for fairness may bring me partners and benefits in the future. Experiments show that people behave more generously when they believe they are being watched, and even an image of eyes on a wall can increase contributions to an honesty box. On this view cooperation among strangers is an extension of reciprocity: the return comes not from the person helped but from the wider community that observed the help.</p><p>A second family emphasises norms and their enforcement. Human groups develop rules about fair behaviour and punish those who violate them, sometimes at a cost to the punisher. Experiments in which participants can pay to reduce the earnings of those who behave unfairly find that many are willing to do so, even when they gain nothing. If enough people punish violators, cooperation becomes the safer strategy, and the norms become self-sustaining. The puzzle then shifts from cooperation to punishment, since the punisher bears a cost for a benefit shared by all.</p><p>A third account appeals to competition between groups. Groups whose members cooperate may outcompete groups whose members do not, and if the differences between groups persist, through culture rather than genes, cooperative practices may spread even if they are costly to individuals within each group. Critics argue that the conditions required for such group-level selection are restrictive and that the evidence for them is disputed. Groups must differ consistently in their practices, those differences must outlast migration and intermarriage, and competition between groups must be intense enough to outweigh the advantage that free riders enjoy within each one.</p><p>The three accounts are often presented as rivals, but they need not be. Reputation makes punishment cheaper, since a person known to punish cheats may be cheated less often; norms specify what counts as a good reputation; and competition between groups may favour those whose norms and reputational systems work best. The more interesting question may be not which mechanism explains human cooperation, but how they came to reinforce one another in a species whose capacity for language allowed reputations to travel far beyond the people who witnessed an act.</p>"
+  },
+  "pr3-rc4": {
+   "kind": "passage",
+   "title": "Passage: The life of scripts",
+   "theme": "language",
+   "words": 473,
+   "html": "<b>Passage: The life of scripts</b><p>A script is often thought of as a neutral tool for recording a language, chosen for its convenience and replaceable by any other that does the job. History suggests otherwise. Scripts carry religious, political and cultural associations, and changes of script have frequently been occasions of intense conflict. A single language may be written in different scripts by communities that wish to mark themselves as distinct, and two closely related languages may be kept apart, in their speakers&#x27; minds, largely by the fact that they are written differently.</p><p>The connection between script and identity has practical consequences. A government that changes the official script of a language cuts its citizens off, within a generation, from much of what was written before. Older books, documents and inscriptions become legible only to specialists, and the past is mediated by those who choose what to transcribe. Reformers who have made such changes have sometimes intended exactly this effect, presenting a new script as a break with a past they wished to leave behind. Others have pursued efficiency or literacy and discovered the cultural costs only later.</p><p>Arguments about efficiency are themselves less straightforward than they appear. An alphabetic script with a small number of letters is often said to be easier to learn than a script with thousands of characters. In a narrow sense this is true, since a learner can begin reading sooner. But a script that represents meaning more directly may allow speakers of mutually unintelligible varieties to read the same texts, and a script that fits the sound structure of one dialect may serve others poorly. What counts as efficient depends on what the script is expected to do and for whom.</p><p>Digital technology has added a new layer to these questions. A script that is not supported by the standard encoding systems, or for which fonts and keyboards are scarce, is at a disadvantage in a world where much writing happens on screens. Communities whose scripts were poorly supported in the early decades of computing often adopted another script for digital use, or wrote their language in Latin letters in ways that varied from person to person. Support has since improved for many scripts, but habits formed in the interim have proved durable. A generation that learned to send messages in improvised spellings does not easily return to a script it seldom used on a screen.</p><p>These pressures do not all point in the same direction. Technology can marginalise a script, but it can also revive one, by making it cheap to produce printed materials, fonts and learning tools for communities that could never have supported a traditional publishing industry. Whether a script flourishes may depend less on its intrinsic merits than on the institutions willing to sustain it, and on whether its users regard it as worth the effort of keeping.</p>"
+  }
+ }
+}

@@ -24,7 +24,9 @@ def main():
     S["cat"] = len(cq); S["cat-tita"] = sum(q["type"] == "tita" for _, q in cq); S["cat-mcq"] = sum(q["type"] == "mcq" for _, q in cq)
     S["cat-topics"] = len({(k, q["topic"]) for k, q in cq})
     S["cat-sets"] = sum(1 for s in cat["sets"].values() if s["kind"] == "dilr"); S["cat-passages"] = sum(1 for s in cat["sets"].values() if s["kind"] == "passage")
-    for k, q in cq: key = k + "|" + q["topic"]; st["catTopic"][key] = st["catTopic"].get(key, 0) + 1
+    for k, q in cq:   # topic badges count what topic practice shows: the bank plus practice packs (mocks/sectionals excluded)
+        if q.get("pack") and not q["pack"].startswith("practice-"): continue
+        key = k + "|" + q["topic"]; st["catTopic"][key] = st["catTopic"].get(key, 0) + 1
     uq = [(k, q) for k, s in cuet["sections"].items() for q in s["questions"]]
     shared = [1 for _, q in uq if q.get("source") == "general"]
     S["cuet"] = len(uq); S["cuet-shared"] = len(shared); S["cuet-original"] = len(uq) - len(shared)

@@ -20,6 +20,9 @@
   let saveKey = "exam-" + ENG;
   // set page (set.html?sec=&set=): one fixed CAT practice set of 10, own save key, result saved to the account
   const SET = document.getElementById("set-info") ? (() => { const p = new URLSearchParams(location.search); return { sec: p.get("sec"), n: parseInt(p.get("set"), 10) }; })() : null;
+  // fixed pack (cat-practice.html?pack=mock-1&section=qa&mode=sectional): mocks, sectionals and practice packs from tools/cat/packs
+  const PACK = (new URLSearchParams(location.search).get("pack") || "").replace(/[^a-z0-9-]/g, "");
+  const inPool = q => !q.pack || (!PACK && q.pack.startsWith("practice-"));   // random sectionals: original bank; topic practice adds practice packs
   let saveTick = 0;
   let bank = { sections: {}, sets: {} }, mode, sec, qs = [], cur = 0, resp = [], marked = [], visited = [], tspent = [], checked = [], timeLeft = 0, timerId = null, shownAt = 0, elapsed = 0;
 
@@ -42,7 +45,7 @@
     const g = new Map(); list.forEach(q => { const k = q.set || q.id; if (!g.has(k)) g.set(k, []); g.get(k).push(q); }); return [...g.values()];
   }
   function pickSectional(s) {
-    const all = bank.sections[s].questions, tgt = TARGET[s];
+    const all = bank.sections[s].questions.filter(q => !q.pack), tgt = TARGET[s];
     if (window.EXAM === "cuet") return pickCUET(s, all, tgt);
     if (s === "qa") {
       const t = shuffle(all.filter(q => q.type === "tita")).slice(0, 7), m = shuffle(all.filter(q => q.type === "mcq")).slice(0, tgt - 7);
@@ -85,13 +88,13 @@
     return out;
   }
   function pickPractice(s, topic) {
-    const all = bank.sections[s].questions.filter(q => !topic || (topic.startsWith("p:") ? q.part === topic.slice(2) : q.topic === topic));
+    const all = bank.sections[s].questions.filter(inPool).filter(q => !topic || (topic.startsWith("p:") ? q.part === topic.slice(2) : q.topic === topic));
     return groups(all).flat();
   }
   const topicLabel = v => v.startsWith("p:") ? "All " + v.slice(2) : v;
 
   // ---------- setup ----------
-  function topicsFor(s) { const c = {}; bank.sections[s].questions.forEach(q => c[q.topic] = (c[q.topic] || 0) + 1); return c; }
+  function topicsFor(s) { const c = {}; bank.sections[s].questions.filter(inPool).forEach(q => c[q.topic] = (c[q.topic] || 0) + 1); return c; }
   async function refreshSetup() {
     mode = val("cmode"); sec = val("csec");
     $("#c-start").disabled = true;
@@ -99,7 +102,7 @@
     $("#c-start").disabled = false;
     $("#c-topic-wrap").classList.toggle("hidden", mode !== "practice");
     const tc = topicsFor(sec), sel = $("#c-topic"), keep = sel.dataset.want || sel.value; sel.dataset.want = "";
-    const qq = bank.sections[sec].questions, parts = [...new Set(qq.map(q => q.part).filter(Boolean))];
+    const qq = bank.sections[sec].questions.filter(inPool), parts = [...new Set(qq.map(q => q.part).filter(Boolean))];
     const opt = (v, label) => `<option value="${esc(v)}">${esc(label)}</option>`;
     sel.innerHTML = `<option value="">All ${esc(bank.sections[sec].name)} topics</option>` + (parts.length > 1
       ? parts.map(p => { const pq = qq.filter(q => q.part === p), pt = {}; pq.forEach(q => pt[q.topic] = (pt[q.topic] || 0) + 1);
@@ -107,7 +110,10 @@
       : Object.entries(tc).map(([t, n]) => opt(t, t, n)).join(""));
     if (keep && (tc[keep] || [...sel.options].some(o => o.value === keep))) sel.value = keep;
     let info;
-    if (mode === "practice") { info = `<b>Practice:</b> no countdown · the solution appears right after you check each answer.`; }
+    const np = PACK ? bank.sections[sec].questions.filter(q => q.pack === PACK).length : 0;
+    if (np) { $("#c-topic-wrap").classList.add("hidden"); info = `<b>${esc(PACK)}:</b> ${np} fixed questions · ` + (mode === "sectional" ? "40-minute timer · +3 / −1 for a wrong MCQ / 0 for a wrong TITA." : "practice: no countdown, solution after each answer."); }
+    else if (PACK) info = `<b>${esc(PACK)}</b> has no ${esc(bank.sections[sec].name)} questions; this will start a normal session.`;
+    else if (mode === "practice") { info = `<b>Practice:</b> no countdown · the solution appears right after you check each answer.`; }
     else if (window.EXAM === "cuet") {
       const n = Math.min(TARGET[sec], qq.length), T = EX.time(n);
       info = `<b>Sectional:</b> ${fmt(T)} timer · +5 for a correct answer, −1 for a wrong one, 0 if unanswered. ` +
@@ -123,11 +129,12 @@
   // ---------- run ----------
   function start() {
     mode = val("cmode"); sec = val("csec");
-    const picked = mode === "sectional" ? pickSectional(sec) : pickPractice(sec, $("#c-topic").value);
+    const pq = PACK ? bank.sections[sec].questions.filter(q => q.pack === PACK) : [];
+    const picked = pq.length ? groups(pq).flat() : mode === "sectional" ? pickSectional(sec) : pickPractice(sec, $("#c-topic").value);
     qs = prep(picked);
     const n = qs.length; resp = Array(n).fill(null); marked = Array(n).fill(false); visited = Array(n).fill(false); tspent = Array(n).fill(0); checked = Array(n).fill(false);
     sectionTime = EX.time(qs.length); cur = 0; elapsed = 0; timeLeft = sectionTime;
-    title = `${EX.label} ${bank.sections[sec].name} · ${mode === "sectional" ? "Sectional" : "Practice" + ($("#c-topic").value ? " · " + topicLabel($("#c-topic").value) : "")}`;
+    title = `${EX.label} ${bank.sections[sec].name} · ${pq.length ? PACK.replace(/-/g, " ").replace(/^./, c => c.toUpperCase()) + " · " : ""}${mode === "sectional" ? "Sectional" : "Practice" + (!pq.length && $("#c-topic").value ? " · " + topicLabel($("#c-topic").value) : "")}`;
     if (window.track) window.track(`${mode}-start-${ENG}-${sec}`);
     begin();
   }

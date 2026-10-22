@@ -1,0 +1,463 @@
+{
+ "name": "Mock 3 — VARC",
+ "questions": [
+  {
+   "id": "M3-01",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "The author's main point is that:",
+   "solution": "The author lists three conditions and concludes that choice without them yields \"the appearance of competition without its substance\". Option 4 overstates; \"None of this shows that choice is a mistake\". Option 1 is not endorsed. Option 2 is one example, not the main point.",
+   "set": "m3-rc1",
+   "type": "mcq",
+   "options": [
+    "public services should be run exactly like markets",
+    "parents are unable to judge the quality of schools",
+    "the benefits of choice depend on conditions that reforms often fail to secure",
+    "choice in public services always harms the poor"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M3-02",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, when a popular provider cannot expand, the arrival of new users results in:",
+   "solution": "Para 3: \"the arrival of new users brings congestion rather than reward\". The other options are not stated.",
+   "set": "m3-rc1",
+   "type": "mcq",
+   "options": [
+    "congestion rather than reward",
+    "lower published scores",
+    "higher funding for the provider",
+    "the departure of existing users to other providers"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M3-03",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author would most likely agree that a school-choice scheme in which funding follows pupils but only families with cars can reach the better schools would:",
+   "solution": "The scheme meets the third condition (funding follows users) but not the second (cost of acting falls unevenly), which the author says \"may sort users by circumstance\". Option 2 is false. Option 1 ignores the stated access problem. Option 4 is a sweeping judgement the author never makes.",
+   "set": "m3-rc1",
+   "type": "mcq",
+   "options": [
+    "fail only because parents cannot judge school quality",
+    "satisfy all three conditions for choice to work",
+    "risk sorting pupils by circumstance even if providers are rewarded for attracting them",
+    "be preferable to having no choice at all in every case"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M3-04",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The final clause, \"may leave those least able to choose with providers that others have abandoned\", primarily serves to:",
+   "solution": "The clause concludes the warning about reforms that lack the conditions, echoing the uneven-cost point in para 3. Option 3 is wrong because the idea was introduced earlier. Options 1 and 2 are unsupported.",
+   "set": "m3-rc1",
+   "type": "mcq",
+   "options": [
+    "show that abandoned providers always improve",
+    "suggest that choice should be limited to wealthy families",
+    "introduce an entirely new argument against choice",
+    "point out a distributional cost that can arise when choice is introduced without its supporting conditions"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M3-05",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, the role of the moon in coral spawning is to:",
+   "solution": "Para 2: \"The moon appears to narrow the window to a few nights.\" Temperature sets the season, darkness sets the hour, and corals cannot see one another.",
+   "set": "m3-rc2",
+   "type": "mcq",
+   "options": [
+    "determine the season in which gametes mature",
+    "narrow the spawning window to a few nights within the season",
+    "allow colonies to see one another",
+    "set the hour of release after sunset"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M3-06",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The statement that spawning on the wrong night \"amounts to the same thing\" as failing completely implies that:",
+   "solution": "The colony releases gametes \"where few others are present\", which for a species depending \"on cross-fertilisation\" means near-zero success. Option 3 is not stated. Option 2 contradicts the reliance on cross-fertilisation. Option 4 misreads the light point.",
+   "set": "m3-rc2",
+   "type": "mcq",
+   "options": [
+    "fertilisation success depends on the presence of gametes from other colonies at the same time",
+    "corals can self-fertilise if necessary",
+    "the eggs released on the wrong night are biologically defective",
+    "artificial light destroys coral gametes"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M3-07",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's concern about warming oceans relies on the assumption that:",
+   "solution": "Warming \"may advance the maturation of gametes\" out of step with \"the usual lunar window\". The worry requires that the lunar cue does not move with temperature. Option 3 is the opposite. Options 1 and 2 are not required.",
+   "set": "m3-rc2",
+   "type": "mcq",
+   "options": [
+    "corals will stop responding to darkness",
+    "all coral species spawn on the same night",
+    "the lunar cycle will itself change as oceans warm",
+    "maturation timing and the lunar cue may shift relative to each other because only one responds to temperature"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M3-08",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "The main purpose of the final paragraph is to:",
+   "solution": "The paragraph notes that the data are \"patchy\" and then says \"if the trend is real, it illustrates a general point\". Option 4 overstates. Option 2 is too dismissive. Option 3 contradicts \"coordinates without communication\".",
+   "set": "m3-rc2",
+   "type": "mcq",
+   "options": [
+    "draw a general lesson from tentative evidence of declining synchrony",
+    "dismiss reports of changes in spawning as unreliable",
+    "explain how corals communicate",
+    "prove that coral spawning has become unsynchronised everywhere"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M3-09",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The passage argues primarily that legal devices for forgetting:",
+   "solution": "Paras 2–3 argue that limitation and discharge protect people's ability to plan, which is \"a deliberate design for the future\". Option 2 is the view the author says \"misses much of their purpose\". Option 1 is not proposed. Option 3 is unsupported.",
+   "set": "m3-rc3",
+   "type": "mcq",
+   "options": [
+    "should be abolished in the digital age",
+    "exist mainly because evidence becomes unreliable over time",
+    "are unique to modern legal systems",
+    "serve a forward-looking purpose of allowing people to rely on settled matters and rebuild their lives"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M3-10",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author uses the observation that limitation rules apply \"even where the evidence is perfectly preserved\" to:",
+   "solution": "If decay were the only reason, the rules would vary by kind of evidence. Their uniformity points to another interest. Option 1 is too strong; the author says decay is not the \"only\" rationale. Options 2 and 4 are not argued.",
+   "set": "m3-rc3",
+   "type": "mcq",
+   "options": [
+    "prove that evidence decay is irrelevant to the law",
+    "argue that limitation periods should be lengthened",
+    "show that evidence decay cannot be the whole rationale for limitation periods",
+    "criticise legal systems for inconsistency"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M3-11",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, discharging a debtor's remaining debt can benefit the wider economy because:",
+   "solution": "Para 3: forgiveness \"gives the debtor a reason to return to productive life\". Option 1 overstates \"may cost those creditors little\". Options 3 and 4 are not stated.",
+   "set": "m3-rc3",
+   "type": "mcq",
+   "options": [
+    "creditors receive more money than they otherwise would",
+    "the debtor regains an incentive to earn and return to productive life",
+    "it removes debts from the official record permanently",
+    "it reduces the number of bankruptcy cases"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M3-12",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following situations most closely reflects the problem described in the final paragraph?",
+   "solution": "The final paragraph concerns legal forgetting that wider society undoes through permanent digital records. Option 3 is exactly that. Options 4 and 1 show legal forgetting working. Option 2 is unrelated.",
+   "set": "m3-rc3",
+   "type": "mcq",
+   "options": [
+    "A debtor is discharged from bankruptcy and starts a new business.",
+    "A company destroys its old financial records after ten years.",
+    "A man whose minor conviction was legally expunged keeps losing job offers because employers find old news reports about it online.",
+    "A court refuses to hear a claim filed after the limitation period expired."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M3-13",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "According to the passage, settlements absent from official maps are hard to provide with services because:",
+   "solution": "Para 2: services \"are planned by reference to mapped streets and registered addresses\". The other options are not stated.",
+   "set": "m3-rc4",
+   "type": "mcq",
+   "options": [
+    "such services are planned by reference to mapped streets and registered addresses",
+    "authorities lack the funds to provide services anywhere",
+    "residents refuse to cooperate with authorities",
+    "informal settlements are always located on dangerous land"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M3-14",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's attitude towards community mapping projects is best described as:",
+   "solution": "The author agrees that advocates celebrate them \"with reason\", then warns that \"becoming visible carries risks\". Options 2 and 3 each ignore one side of that balance. Option 1 contradicts the engaged discussion.",
+   "set": "m3-rc4",
+   "type": "mcq",
+   "options": [
+    "indifferent to their outcomes",
+    "unreservedly enthusiastic",
+    "hostile, because mapping enables eviction",
+    "appreciative but alert to the risks of visibility"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M3-15",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The sentence \"A precise map of an informal settlement is also a precise map for anyone who wishes to clear it\" serves to:",
+   "solution": "It illustrates \"mapping is not neutral\", since information gathered for services can serve eviction. Options 2 and 1 overstate. Option 3 contradicts the sentence, which says \"precise\".",
+   "set": "m3-rc4",
+   "type": "mcq",
+   "options": [
+    "prove that authorities always intend to evict residents",
+    "argue that mapping projects should stop",
+    "show that maps are usually inaccurate",
+    "illustrate how the same information can be used against the people it describes"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M3-16",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following best captures the conclusion of the passage?",
+   "solution": "The final paragraph says the value \"depends less on the map itself than on who controls its use\" and ends on \"on whose terms\". Option 2 contradicts \"not whether\". Option 3 ignores the control issue. Option 1 contradicts the eviction cases.",
+   "set": "m3-rc4",
+   "type": "mcq",
+   "options": [
+    "Community mapping always leads to better services.",
+    "Poor communities should avoid being mapped.",
+    "Official maps should include all informal settlements immediately.",
+    "The benefits of being mapped depend largely on who controls how the data are used."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M3-17",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Second-hand bookshops survive in towns where new bookshops have closed, partly because their stock costs little and partly because browsing among unpredictable titles offers something online catalogues do not. A buyer who finds a book she was not looking for has had an experience that no recommendation engine can quite reproduce, since such engines suggest what resembles past choices.</p>",
+   "solution": "The passage gives two reasons for survival: cheap stock and serendipity that engines cannot reproduce. Option 2 overstates, and options 1 and 4 are not claimed.",
+   "type": "mcq",
+   "options": [
+    "New bookshops close because of second-hand competition.",
+    "Recommendation engines are useless for book buyers.",
+    "Second-hand bookshops survive through low costs and the value of unplanned discoveries that algorithms do not replicate.",
+    "Online catalogues contain fewer titles than second-hand shops."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M3-18",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Disasters are often followed by calls to learn their lessons, and inquiries duly produce long lists of recommendations. Yet the organisations that receive them are usually busy with the work that the disaster interrupted, and recommendations compete with daily demands for attention. Lessons are learned on paper long before they are learned in practice, and sometimes they never are.</p>",
+   "solution": "The essence is the gap between recommendations on paper and practice, explained by competing daily demands. Option 2 is a side note. Option 4 imputes deliberate intent. Option 1 is unsupported.",
+   "type": "mcq",
+   "options": [
+    "Disasters are usually caused by poor record-keeping.",
+    "Inquiries into disasters produce too many recommendations.",
+    "Recommendations after disasters are often not put into practice because they compete with organisations' routine demands.",
+    "Organisations deliberately ignore inquiry findings."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M3-19",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>A city's skyline is usually read as a record of its ambitions, each tower a statement by a developer or a company. But skylines also record what was forbidden. Height limits around airports, protected views of old buildings and rules about shadows on public parks all leave gaps that are as deliberate as the towers. ____</p>",
+   "solution": "The paragraph moves from ambition to deliberate gaps; option 4 concludes by joining both. Options 1, 2 and 3 introduce claims the paragraph does not support.",
+   "type": "mcq",
+   "options": [
+    "Skyscrapers are the most efficient use of urban land.",
+    "Airports should be moved further from city centres.",
+    "Most cities have abandoned height limits.",
+    "To read a skyline fully, one must notice its absences as well as its peaks."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M3-20",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Surveys that ask people how much they read tend to overstate reading, because respondents know that reading is admired. ____ Researchers who want accurate figures therefore ask about yesterday rather than about a typical week, and about specific titles rather than about reading in general.</p>",
+   "solution": "The blank must explain why specific, recent questions help: general, flattering questions invite aspirational answers. Option 1 does this. Option 4 contradicts \"overstate\". Option 2 is off-point. Option 3 contradicts the method described.",
+   "type": "mcq",
+   "options": [
+    "The more general and flattering the question, the more room it leaves for answers that reflect aspiration rather than habit.",
+    "Reading has declined steadily for decades.",
+    "Surveys should never ask about cultural activities.",
+    "Many people read more than they admit."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M3-21",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Bees visiting a flower collect nectar and, incidentally, carry pollen to the next flower.</li><li>Some flowers have evolved shapes that only a single species of bee can enter.</li><li>The plant gains fertilisation; the bee gains food.</li><li>Neither intends to help the other, yet each depends on the exchange.</li><li>Such mutualism without intention is common throughout nature.</li></ol>",
+   "solution": "1, 3, 4 and 5 describe pollination as unintended mutual benefit and generalise. Sentence 2 concerns specialised flower shapes (co-evolved exclusivity), which is about bees and flowers but not about benefit as an unintended by-product.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "2"
+  },
+  {
+   "id": "M3-22",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>A footnote can seem a minor feature of scholarly writing.</li><li>Yet it allows a reader to check every claim against its source.</li><li>Without it, scholarship would rest on trust in the author alone.</li><li>Footnotes also give authors a place for digressions that would interrupt the main argument.</li><li>The humble footnote is thus one of the foundations of verifiable knowledge.</li></ol>",
+   "solution": "1 → 2 → 3 → 5 argues that footnotes enable verification. Sentence 4, on footnotes as a place for digressions, mentions notes but plays no part in the argument.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4"
+  },
+  {
+   "id": "M3-23",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>The result is that scarce supplies reach the people who can travel, not those who most need them.</li><li>During shortages, governments often cap the price of essential goods.</li><li>Shops then run out quickly, and buyers must queue or travel between them.</li><li>The cap is meant to protect poorer households from rising costs.</li></ol>",
+   "solution": "2 introduces the cap; 4 gives its aim; 3 (\"then\") gives the consequence; 1 (\"The result\") concludes, ironically reversing the aim.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2431"
+  },
+  {
+   "id": "M3-24",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The five sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the five numbers (e.g. 21435).</p><ol class='pj'><li>This makes the leaf both a solar panel and a cooling system.</li><li>A leaf must open its pores to take in carbon dioxide.</li><li>But open pores also let water escape, and in hot weather the loss can be severe.</li><li>Plants have evolved to treat this loss as a resource: evaporation cools the leaf.</li><li>Whether it can afford to play both roles depends on how much water reaches its roots.</li></ol>",
+   "solution": "2 states the need; 3 (\"But\") gives the cost; 4 recasts the cost as a resource; 1 (\"This\") names the dual role; 5 (\"both roles\") adds the constraint.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "23415"
+  }
+ ],
+ "sets": {
+  "m3-rc1": {
+   "kind": "passage",
+   "title": "Passage: The paradox of choice in public services",
+   "theme": "policy",
+   "words": 537,
+   "html": "<b>Passage: The paradox of choice in public services</b><p>Reformers who wish to improve public services often propose giving citizens more choice: of school, of hospital, of pension provider. The reasoning is familiar from markets. Providers who must attract users will try harder to please them, and users who can leave a poor provider will push quality upward simply by leaving. In some services the mechanism works roughly as promised. In others it produces results that surprise its advocates.</p><p>The mechanism depends on three conditions that are easy to assume and hard to secure. Users must be able to judge quality, at least roughly; they must be able to act on their judgement at a tolerable cost; and providers must gain something when users arrive and lose something when they depart. Where any condition fails, choice may still be offered, but it will not discipline anyone.</p><p>Consider each in turn. Many public services are bought rarely and judged only in retrospect. A parent chooses a school once for each child and learns its quality years later, by which time switching is costly and the evidence is mixed with everything else that happened in the child&#x27;s life. Where users cannot judge, providers compete on what can be seen — buildings, brochures, published scores — rather than on what matters. Second, the cost of acting may fall unevenly. Families with cars and flexible jobs can travel to a better school; others cannot, so choice may sort users by circumstance rather than lifting standards for all. Third, if funding does not follow users, or if a popular provider cannot expand, the arrival of new users brings congestion rather than reward, and the departure of others brings relief rather than pressure.</p><p>Even where all three conditions hold, choice can shift costs in ways its advocates rarely discuss. Providers that compete for users have an incentive to attract the users who are cheapest to serve: the healthy patient, the able pupil, the pension saver with a large and stable balance. Unless funding is adjusted for the needs of each user, competition may improve the service offered to the easy cases while the difficult ones are passed from provider to provider. Regulators can try to prevent such selection, but the rules required to do so are complex, and providers usually understand their own users far better than the regulators who supervise them.</p><p>Choice also has a cost for the users themselves, which is the effort of choosing. Comparing schools or pension funds takes time, information and a certain confidence in dealing with institutions, and these are distributed as unevenly as income. A reform that relies on users to discipline providers will be most effective for those best equipped to choose, and the gap between them and everyone else may widen even as average quality improves.</p><p>None of this shows that choice is a mistake. It shows that &quot;choice&quot; names not a single policy but a family of arrangements whose effects depend on details that are usually settled after the slogan has been adopted. A reform that announces choice without securing the conditions under which it works is likely to deliver the appearance of competition without its substance — and may leave those least able to choose with providers that others have abandoned.</p>"
+  },
+  "m3-rc2": {
+   "kind": "passage",
+   "title": "Passage: Coral spawning and the moon",
+   "theme": "science",
+   "words": 514,
+   "html": "<b>Passage: Coral spawning and the moon</b><p>On a handful of nights each year, many corals on a reef release their eggs and sperm into the water within the same hour or two. The synchrony is remarkable because corals have no nervous system in the usual sense and no means of seeing one another. Each colony must read the same environmental cues and respond to them in the same way. For decades researchers have tried to work out which cues matter.</p><p>Temperature sets the season. As water warms in spring, colonies mature their gametes, so that by early summer they are ready to spawn. But a season is too broad a window: if colonies released their gametes on any warm night, the chance that eggs and sperm from different colonies would meet would be small. The moon appears to narrow the window to a few nights. Experiments in which corals were kept under artificial moonlight showed that shifting the lunar cycle shifted spawning. Finally, the hour is set by the onset of darkness after sunset, which corals detect through light-sensitive proteins in their tissues.</p><p>This layered system has an elegance that invites admiration, but it also has a vulnerability. Each cue is reliable only because its relationship to the others has been stable over long periods. Warming oceans may advance the maturation of gametes so that they are ready before the usual lunar window, or are past their best by the time it arrives. Artificial light near coasts may blur the darkness cue. A colony that spawns on the wrong night does not fail completely; it simply releases gametes into water where few others are present, which for a species that depends on cross-fertilisation amounts to the same thing.</p><p>The cues are not equally well understood. The role of temperature has been studied for longest, and the role of darkness has been traced to particular light-sensitive proteins, but the means by which a colony registers the phase of the moon remains partly obscure. Moonlight differs from the dark of a cloudy night by a very small quantity of light, and a colony must distinguish the gradual waxing of that light over several nights from the random variation caused by weather and turbidity. Some researchers suspect that the colonies integrate the cue over many nights rather than responding to any single one, which would make the system robust to an overcast evening but slow to adjust if the relationship between the cues were disturbed.</p><p>That slowness matters because the cues are no longer changing together. The moon keeps its schedule regardless of what happens on Earth, and sunset arrives at the same time it always has; it is the temperature cue, and with it the ripening of gametes, that is moving.</p><p>Some observers have reported that spawning on certain reefs has become less tightly synchronised in recent years, with different colonies of the same species releasing on different nights. The data are patchy and the causes debated. But if the trend is real, it illustrates a general point: a system that coordinates without communication can lose its coordination without anything visibly breaking.</p>"
+  },
+  "m3-rc3": {
+   "kind": "passage",
+   "title": "Passage: The craft of forgetting in law",
+   "theme": "law",
+   "words": 514,
+   "html": "<b>Passage: The craft of forgetting in law</b><p>Legal systems are built to remember. Statutes, judgments and contracts are recorded so that later disputes can be settled by reference to what was decided before. Yet every mature legal system also contains devices for forgetting: limitation periods after which a claim cannot be brought, the expunging of certain criminal records, the discharge of debts in bankruptcy. These devices are sometimes described as concessions to practicality — evidence decays and witnesses die — but that description misses much of their purpose.</p><p>Consider the limitation period. If its only rationale were the decay of evidence, one would expect its length to vary with the kind of evidence involved: short where claims rest on memory, long where they rest on documents. Some systems do make such distinctions, but most limitation rules are surprisingly uniform, and many apply even where the evidence is perfectly preserved. The better explanation is that limitation also protects a different interest: the ability of people to organise their lives on the assumption that old matters are settled. A business that has not been sued for a decade invests, hires and borrows as if it will not be. Allowing ancient claims would make that assumption unsafe for everyone, including those who will never face such a claim.</p><p>The discharge of debt rests on a similar logic. A debtor who could never escape her obligations would have little reason to earn more, since every gain would pass to her creditors. Forgiving the remainder may cost those creditors little in practice and gives the debtor a reason to return to productive life. Here forgetting is not a reluctant tolerance of imperfect records but a deliberate design for the future.</p><p>The device of expungement shows the same purpose from another angle. A criminal record that follows a person indefinitely makes it hard for her to find work or housing, and those difficulties are themselves associated with reoffending. A rule that clears certain records after a period without further offences therefore serves the public as well as the offender: it removes an obstacle to the very behaviour the criminal law hopes to encourage. The rule does not pretend that the offence did not happen. It declares that, for most purposes, the offence should no longer count.</p><p>Each of these devices thus involves a judgement about when the value of remembering is outweighed by the value of allowing people to act as if a matter were closed. The judgement varies by society and by period, and it is often contested, but the existence of such devices in almost every legal tradition suggests that law has always treated forgetting as one of its tools rather than as a defect in its memory.</p><p>The rise of permanent digital records has made such forgetting harder to achieve. A conviction expunged from the official register may survive indefinitely in a newspaper archive or a search index. The law can still forget; the wider society increasingly cannot. Whether legal forgetting can retain its purpose when its effects are confined to the courtroom is one of the more interesting questions facing legal systems today.</p>"
+  },
+  "m3-rc4": {
+   "kind": "passage",
+   "title": "Passage: Why maps of the poor are rare",
+   "theme": "development",
+   "words": 503,
+   "html": "<b>Passage: Why maps of the poor are rare</b><p>Most countries produce detailed maps of where their wealthiest citizens live. Property registers, tax records and commercial surveys locate expensive housing and valuable land with precision, because someone has an interest in knowing. The places where the poorest people live are often mapped far less carefully, if at all. Informal settlements may appear on official maps as blank spaces or as land designated for some purpose it has never served.</p><p>This neglect is not merely a technical gap. A settlement that does not appear on the map is hard to provide with water, drainage or schools, because those services are planned by reference to mapped streets and registered addresses. Residents without an address may struggle to open bank accounts, receive post or prove where they live when applying for help. Invisibility on paper becomes exclusion in practice.</p><p>In recent decades, residents of some settlements have begun mapping their own neighbourhoods, counting households, tracing paths and recording which homes lack toilets or water. The results have sometimes persuaded authorities to extend services that had been denied for years. Advocates celebrate these projects as a form of empowerment, and with reason. Yet mapping is not neutral, and becoming visible carries risks as well as benefits. A precise map of an informal settlement is also a precise map for anyone who wishes to clear it. Residents who count themselves may be counted by others for purposes they did not intend.</p><p>Self-mapping has a further complication: maps fix what is fluid. An informal settlement changes constantly as families arrive, extend their homes, rent rooms to newcomers or leave. A survey that records the settlement as it stood on a particular day can quickly become an instrument for deciding who belongs and who does not. Households that arrived after the count may find themselves excluded from any services or compensation that follow, and some communities have responded by insisting that their maps be updated regularly or treated as a starting point for negotiation rather than as a final register.</p><p>There is also the question of what the map is allowed to show. Residents may wish to record flooding, the absence of toilets or the distance to the nearest clinic, because these are the facts that support their claims. They may be less eager to record the informal businesses, unregistered rentals and improvised electricity connections on which many households depend, and which authorities could treat as grounds for penalties. The content of a community map is thus itself negotiated, and its makers must decide what visibility is worth the risk.</p><p>The experience of such projects suggests that the value of being mapped depends less on the map itself than on who controls its use. Where communities retain a say in how their data are shared and acted upon, visibility has tended to bring services. Where data pass straight into the hands of authorities with other priorities, the same information has occasionally hastened eviction. The question is not whether the poor should be on the map, but on whose terms.</p>"
+  }
+ }
+}

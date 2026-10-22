@@ -1,0 +1,463 @@
+{
+ "name": "Mock 1 — VARC",
+ "questions": [
+  {
+   "id": "M1-01",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "The author's central claim about queues is that they:",
+   "solution": "Para 7 states the conclusion: queues plainly waste time, but where a community values \"a visible and equal rule\" more than the time, they should be shortened, not abolished. Option 1 contradicts \"None of this makes queues efficient\". Option 4 is the economists' view the author qualifies. Option 3 reverses para 3, where hiring stand-ins makes the fairness claim \"collapse\".",
+   "set": "m1-rc1",
+   "type": "mcq",
+   "options": [
+    "are an efficient way of allocating goods that markets cannot price",
+    "waste time but can be justified where a visible, equal rule of allocation is valued",
+    "are fair only when people are allowed to hire others to wait for them",
+    "should be replaced by fees wherever a community can agree on a fair price"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M1-02",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "According to the passage, why do queues persist for goods such as emergency care?",
+   "solution": "Para 2: a queue charges \"in a currency that is distributed with rough equality\", which is why it persists for goods treated as \"matters of fairness\". Option 2 is never said. Option 1 misrepresents the economists, who think prices are too low. Option 4 contradicts para 3.",
+   "set": "m1-rc1",
+   "type": "mcq",
+   "options": [
+    "Because economists have shown that prices would be set too high",
+    "Because such goods cannot be produced in larger quantities",
+    "Because waiting charges everyone in a currency that is distributed roughly equally",
+    "Because people who need such goods most have the most free time"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M1-03",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author would most likely regard a system in which wealthy patients pay agents to hold their place in a hospital queue as:",
+   "solution": "Para 3: when people hire stand-ins, the queue \"rations by the wages of the stand-ins, and its claim to fairness collapses\", i.e. money has re-entered. Option 2 is not endorsed; the author says fairness collapses. Option 1 does not follow; the case, if anything, strengthens the role of money. Option 3 is unsupported: nothing suggests paid place-holding is more legible.",
+   "set": "m1-rc1",
+   "type": "mcq",
+   "options": [
+    "proof that the economists' original criticism of queues was mistaken",
+    "a reasonable compromise between efficiency and fairness",
+    "a more legible system than an ordinary queue",
+    "evidence that the queue has become a disguised form of price rationing"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M1-04",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The contrast between \"the surgeon\" and \"the retired clerk\" in paragraph 2 serves mainly to:",
+   "solution": "The example follows \"it assumes that money and time are interchangeable for everyone at the same rate. They are not.\" It illustrates unequal money-value of time against equal stocks of time. Options 3, 2 and 4 draw conclusions the passage never makes.",
+   "set": "m1-rc1",
+   "type": "mcq",
+   "options": [
+    "illustrate that time and money are not exchanged at the same rate by everyone",
+    "argue that surgeons should be given priority in public queues",
+    "show that professionals are less patient than retired people",
+    "suggest that queues discriminate against older people"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M1-05",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, proponents consider planting locally collected seed risky because:",
+   "solution": "Para 2: local seed \"is adapted to a past that will not return\", while a tree must suit the climates \"it will meet over its life\". Option 3 inverts the critics' concern about moved seed. Option 2 is not stated. Option 4 is the critics' objection to assisted migration, not the proponents' reason.",
+   "set": "m1-rc2",
+   "type": "mcq",
+   "options": [
+    "such seed is adapted to climatic conditions that will not persist over the tree's life",
+    "local populations grow more slowly than southern ones",
+    "local seed is often contaminated with fungi and insects",
+    "climate models are unreliable about local conditions"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M1-06",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's comment that the proponents' reply \"quietly changes the goal\" implies that:",
+   "solution": "Para 4: a mixed planting is \"a hedge against not knowing which tree is right\", so the reply implicitly accepts uncertainty about the right match. Option 4 over-reads \"quietly\"; no deception is alleged. Option 2 contradicts \"That may well be wise\". Option 1 contradicts \"a lower expected growth\".",
+   "set": "m1-rc2",
+   "type": "mcq",
+   "options": [
+    "diversity in plantings increases expected growth",
+    "the reply is unsound and should be rejected",
+    "the reply concedes that the precise best match of tree to site cannot be known in advance",
+    "mixed plantings are a form of deception by foresters"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M1-07",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "Which best describes the organisation of the passage?",
+   "solution": "Paras 1–2 give the problem and proposal, para 3 two objections, para 4 a reply and its cost, para 5 says the second objection is \"harder to answer\". Option 3 overstates: no experiment refutes anything. Option 2 mentions only para 1's background. Option 4 ignores the objections.",
+   "set": "m1-rc2",
+   "type": "mcq",
+   "options": [
+    "A problem is stated, a solution proposed, objections raised, a reply assessed, and one objection judged more serious",
+    "Two historical periods are compared to predict a future trend",
+    "A theory is introduced and then refuted by experimental evidence",
+    "A policy is described and its benefits are listed in order of importance"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M1-08",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's final paragraph relies on which of the following assumptions?",
+   "solution": "The claim that costs \"are not confined to the plantation\" only holds if what travels with the seed can spread beyond the stand. Option 3 attributes a motive the author never suggests; the point is about authority to choose, not indifference. Option 2 is wrong: para 4 says mixing lowers, not eliminates, risk, and it concerns the first objection. Option 4 contradicts the passage's premise that conditions are shifting.",
+   "set": "m1-rc2",
+   "type": "mcq",
+   "options": [
+    "Organisms introduced with moved seed may spread beyond the planted stand",
+    "Mixed plantings eliminate the risks posed by climate forecasting errors",
+    "Foresters are generally indifferent to the health of neighbouring woodland",
+    "Local woodland is already adapted to the climate projected for this century"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M1-09",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "The passage is primarily concerned with arguing that:",
+   "solution": "The passage moves from \"more like editing\" (para 1) through the limits of both rules to \"turns the unveiling from a claim of truth into an argument\" (para 4). Option 1 is never argued. Option 3 misreads para 2, which says instruments reveal composition, not intention, not that they are unreliable. Option 2 is one view the author criticises in para 3.",
+   "set": "m1-rc3",
+   "type": "mcq",
+   "options": [
+    "restorers should never clean old paintings",
+    "patina should always be preserved because it is historically truthful",
+    "the instruments used in restoration are unreliable",
+    "restoration involves interpretive choices and should be presented as argument rather than revelation"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M1-10",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's point about the \"thin brown layer\" is that:",
+   "solution": "Para 2: \"the instruments can tell us its composition, not its intention.\" Options 4 and 1 each assert one interpretation the author says is open. Option 2 is not stated.",
+   "set": "m1-rc3",
+   "type": "mcq",
+   "options": [
+    "it proves the artist added glazes late",
+    "restorers usually ignore such layers",
+    "technical analysis can identify what it is made of but not why it was applied",
+    "it is always a later varnish and can safely be removed"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M1-11",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's objection to the patina position is that:",
+   "solution": "Para 3: patina \"is not neutral either\": it can obscure intended details and create effects wrongly attributed to the painter. Option 2 trivialises the point. Option 3 is not raised. Option 4 contradicts the author's acknowledgement that patina records the work's life.",
+   "set": "m1-rc3",
+   "type": "mcq",
+   "options": [
+    "patina may itself distort the work, so preserving it is also a choice with consequences",
+    "patina makes ceilings too dark for modern visitors",
+    "patina is impossible to measure",
+    "patina has no historical value"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M1-12",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which practice would the author most likely endorse?",
+   "solution": "Para 6 recommends publishing \"what was removed, why, and on what evidence\" so the result becomes \"an argument that others can examine\". Option 2 is the \"revelation\" framing rejected. Option 3 goes beyond the author, who criticises presentation, not cleaning itself. Option 4 replaces evidence with a vote; the passage asks for examinable reasons, not popularity.",
+   "set": "m1-rc3",
+   "type": "mcq",
+   "options": [
+    "Publishing a report listing which layers were removed, the evidence for each decision, and the uncertainties that remain",
+    "Unveiling a cleaned fresco with the claim that visitors now see it exactly as the artist intended",
+    "Leaving a darkened fresco untouched because any cleaning is dishonest",
+    "Asking the public to vote on which layers should be removed"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M1-13",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's main purpose is to:",
+   "solution": "Para 1 redefines regret as a judgement \"by the lights of values one still holds\"; para 2 concludes it is \"not irrational but answerable to reasons\". Option 3 is the practical advice the author partly grants but does not argue for. Option 2 overstates an analogy. Option 4 contradicts para 5.",
+   "set": "m1-rc4",
+   "type": "mcq",
+   "options": [
+    "argue that regret is a value-relative judgement and can therefore be rational",
+    "show that historians and individuals judge the past in identical ways",
+    "advise readers to stop dwelling on past mistakes",
+    "prove that values never change"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M1-14",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which case would the author regard as an instance of irrational regret?",
+   "solution": "The last sentence: irrational regret is regret that tracks \"a value one has openly abandoned\". Option 3 fits exactly. Option 4 is the passage's model of rational regret. Option 2 is the author's own example of legitimate change (para 5). Option 1 is a trap: it involves outcomes, but nothing establishes that the regret tracks no value; it is underspecified rather than clearly irrational.",
+   "set": "m1-rc4",
+   "type": "mcq",
+   "options": [
+    "A person regrets missing a train though the missed journey turned out badly for others",
+    "A person's regret over a career choice fades as her priorities change",
+    "A person who has openly given up caring about social status still regrets not attending a prestigious party",
+    "A person regrets a cruel remark because she still values kindness"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M1-15",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following, if true, would most weaken the author's reply in the final paragraph?",
+   "solution": "The reply depends on \"values are not moods\" but \"relatively stable commitments\". If values shifted within days with feelings, the worry that the past becomes \"hostage to our moods\" would return. Option 3 is about new facts, consistent with the author. Option 4 concerns individuals, not the argument's premise. Option 2 is irrelevant to whether regret is reason-answerable.",
+   "set": "m1-rc4",
+   "type": "mcq",
+   "options": [
+    "People's reported values frequently shift within days in response to passing feelings",
+    "Regret is often accompanied by physical symptoms of distress",
+    "Historians sometimes revise their judgements when new documents are found",
+    "Some people feel little regret about anything"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M1-16",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The analogy with the historian in the last paragraph is used to suggest that:",
+   "solution": "The historian's judgement changes \"when she comes to care about questions her predecessors ignored\", which is \"no more scandalous\" than value-driven reassessment of one's own past. Option 2 is literal misreading. Option 3 reverses the point: the analogy defends such shifts as reasoned. Option 4 contradicts \"The past act is unchanged\".",
+   "set": "m1-rc4",
+   "type": "mcq",
+   "options": [
+    "reassessing the past because one's questions or commitments have changed is a normal feature of reasoned judgement",
+    "personal histories should be written by professional historians",
+    "historians are as unreliable as individuals in judging the past",
+    "the facts of the past are constantly changing"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M1-17",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Libraries that lend tools, seeds or musical instruments are sometimes treated as charming novelties. Yet they rest on the same logic as the book library: many objects are used rarely, owning them individually ties up money and space, and a shared stock allows more people to use more things. The obstacles are practical rather than conceptual: objects break, need cleaning and are harder to catalogue than books.</p>",
+   "solution": "The passage claims shared logic and practical, not conceptual, obstacles. Option 3 contradicts it, option 2 is not proposed, option 4 is not stated.",
+   "type": "mcq",
+   "options": [
+    "Libraries of things apply the same rationale as book libraries; their difficulties lie in handling the objects, not in the idea.",
+    "Book libraries should stop lending books and lend tools instead.",
+    "Lending libraries for tools and seeds are a passing trend that will fade.",
+    "Most people prefer to own tools rather than borrow them."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M1-18",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>When a city publishes the average commute time, it invites residents to compare their own journeys with a number that may describe almost no one. A city where half the workers live next to their offices and half travel ninety minutes has an average of forty-five minutes, yet nobody commutes for forty-five minutes. Averages are useful for budgets, which add up, but misleading for experiences, which do not.</p>",
+   "solution": "The example shows an average describing no one; the last sentence contrasts budgets with experiences. Option 2 alleges miscalculation, but the arithmetic is fine. Option 4 is an unstated recommendation. Option 1 is a detail of a hypothetical.",
+   "type": "mcq",
+   "options": [
+    "Most workers in large cities live close to their offices.",
+    "Average commute figures are calculated incorrectly by most cities.",
+    "An average may suit aggregate purposes such as budgeting while misrepresenting individual experience, especially when the distribution is split.",
+    "Cities should stop publishing statistics on commuting."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M1-19",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Early mapmakers in many traditions placed their own city at the centre of the world. It is easy to smile at this, but modern digital maps do something similar more subtly: they centre the map on the user's location and enlarge the streets nearest to her. ____ The difference is that the older maps announced their bias, while ours present it as a neutral service.</p>",
+   "solution": "The blank must generalise the user-centred map before the \"difference\" sentence contrasts old and new bias. Option 4 does this. Option 1 changes the subject to accuracy. Option 3 conflicts with \"It is easy to smile at this, but\". Option 2 contradicts the claim that digital maps do centre.",
+   "type": "mcq",
+   "options": [
+    "Digital maps are therefore far more accurate than older maps.",
+    "Satellite imaging has made such centring unnecessary.",
+    "Older mapmakers were simply ignorant of geography.",
+    "Every user, in effect, now lives at the centre of her own world."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M1-20",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Committees are often blamed for producing cautious decisions, as if caution were a defect of character spread across several people. A more structural explanation is available. Each member can be blamed for a bold proposal that fails, but no one is singled out when a modest proposal merely disappoints. ____ The remedy, if one is wanted, lies less in recruiting braver members than in changing who is held responsible for what.</p>",
+   "solution": "The blank must sum up the structural explanation and set up the \"remedy\" about responsibility. Option 1 does so. Option 2 is a remedy the final sentence does not support. Option 4 reverts to the character explanation the paragraph rejects. Option 3 is an absolute claim the paragraph never makes; it concerns blame, not failure rates.",
+   "type": "mcq",
+   "options": [
+    "Caution, in other words, is what an arrangement of individual blame and shared credit rationally produces.",
+    "Committees should therefore be abolished in favour of single decision-makers.",
+    "Bold proposals always fail more often than modest ones.",
+    "Most committee members are naturally timid people."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M1-21",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>A bridge's designers must allow for loads it may meet only once in a century.</li><li>Such rare loads, a record flood or an unusual crowd, matter more to its safety than daily traffic.</li><li>Engineers therefore design for extremes rather than averages.</li><li>Daily traffic, by contrast, determines how quickly a bridge's deck wears and must be resurfaced.</li><li>The result can look wasteful in ordinary years, which is precisely when it is doing its job.</li></ol>",
+   "solution": "Sentences 1, 2, 3 and 5 form a chain about designing for rare extremes. Sentence 4 is about routine wear and maintenance, a bridge topic but a different concern from designing for rare extremes.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4"
+  },
+  {
+   "id": "M1-22",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Translators of legal texts face a problem that literary translators rarely do: a mistranslated term can change who owns what.</li><li>A word for \"property\" in one system may include rights that another system treats separately.</li><li>For this reason, legal translators often keep the original term and add a gloss rather than choose a near equivalent.</li><li>Literary translators, by contrast, are prized for finding equivalents that feel natural to readers.</li><li>Legal language has grown steadily more complex over the past century.</li></ol>",
+   "solution": "1 sets the problem, 2 explains it, 3 gives the legal translator's response, and 4 contrasts literary practice, picking up 1's comparison. Sentence 5 makes a general claim about complexity over time that nothing else develops. Sentence 4 may look like a digression, but it completes the contrast opened in 1.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5"
+  },
+  {
+   "id": "M1-23",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>This silence was not an accident of record-keeping.</li><li>Household accounts from the period list the price of candles, flour and cloth, but almost never the hours of labour that turned them into meals and clothing.</li><li>Labour done inside the home was simply not thought of as work that could be counted.</li><li>Historians who want to measure domestic work must therefore reconstruct it from diaries and court testimony.</li></ol>",
+   "solution": "2 introduces the evidence (accounts omit labour). 1 refers back to it as \"This silence\". 3 explains why. 4 draws the consequence with \"therefore\". 1 cannot open, since \"This silence\" needs an antecedent.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2134"
+  },
+  {
+   "id": "M1-24",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The five sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the five numbers (e.g. 21435).</p><ol class='pj'><li>That expectation, however, assumes that people read labels when they choose.</li><li>Food labels were introduced on the expectation that informed shoppers would choose healthier products.</li><li>Studies of supermarket behaviour suggest that most choices take a few seconds and rely on habit.</li><li>If labels work at all, then, they may do so less by informing shoppers than by prompting manufacturers to reformulate products they would rather not advertise.</li><li>In such conditions, a label is less a source of information than background noise.</li></ol>",
+   "solution": "2 states the original expectation. 1 (\"That expectation, however\") questions its assumption. 3 supplies the evidence. 5 (\"In such conditions\") draws the implication. 4 (\"then\") concludes with the alternative mechanism.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "21354"
+  }
+ ],
+ "sets": {
+  "m1-rc1": {
+   "kind": "passage",
+   "title": "Passage: The economics of the queue",
+   "theme": "economics",
+   "words": 578,
+   "html": "<b>Passage: The economics of the queue</b><p>A queue is usually described as a failure: a sign that a price was set too low or that a supplier could not keep up. Economists in particular tend to see the line outside a bakery or a passport office as wasted hours that a better price would have abolished. If people are willing to stand for forty minutes, the argument runs, they would surely have paid something instead, and that payment could have funded more counters or more ovens.</p><p>The argument is tidy, but it assumes that money and time are interchangeable for everyone at the same rate. They are not. An hour is worth very different amounts to a surgeon and to a retired clerk, yet each owns exactly twenty-four of them a day. A queue, unlike a price, charges every participant in a currency that is distributed with rough equality. That is why queues persist for goods that communities regard as matters of fairness rather than of commerce: emergency care, public housing, seats at a free concert in the park.</p><p>None of this makes queues efficient. The person who most needs a service is not always the one with the most time to spare, and the hours spent waiting produce nothing for anyone. Some queues also quietly reintroduce money, as when people hire others to stand in line for them. Once that happens, the queue no longer rations by time; it rations by the wages of the stand-ins, and its claim to fairness collapses.</p><p>What the queue offers, then, is not efficiency but legibility. Everyone can see the line, judge its length and understand why the person at the front is served first. A price that clears the market silently may allocate goods more productively, but it does so out of view, and those who are excluded are rarely told why. Public institutions that replace queues with fees often discover that the resentment they provoke is less about the money than about the loss of a rule anyone could follow.</p><p>Consider what happens when a queue is replaced. A city that auctions its scarce housing permits, or sells priority access to a public clinic, does not abolish rationing; it changes the currency in which the rationing is paid. Those who lose under the new rule are rarely persuaded by the observation that total waiting time has fallen. They notice instead that a good once available to anyone willing to stand in line is now available to anyone willing to pay, and they suspect, often correctly, that the people who were willing to pay were not the people who were standing. Economists can answer that the revenue might be used to compensate the losers. The answer is sound on paper and almost never realised in practice, because the compensation is diffuse, delayed and invisible, while the exclusion is immediate and personal.</p><p>The queue also disciplines those who manage it in a way a price does not. A line that grows longer every week is a public accusation, visible to journalists and to the officials who must walk past it; a price that rises quietly to match demand produces no such scene.</p><p>The more useful question, therefore, is not whether a queue wastes time, which it plainly does, but whether the good being rationed is one for which a community values a visible and equal rule more than the time it costs. Where the answer is yes, shortening the queue is a better reform than abolishing it.</p>"
+  },
+  "m1-rc2": {
+   "kind": "passage",
+   "title": "Passage: Assisted migration of trees",
+   "theme": "ecology",
+   "words": 494,
+   "html": "<b>Passage: Assisted migration of trees</b><p>Forests move, but slowly. After the last glaciation, many tree species in the northern temperate zone expanded their ranges by a few hundred metres a year, carried by birds, rodents and wind. The climate now projected for this century is expected to shift suitable conditions far faster than that, and a growing number of foresters argue that trees will need help. Their proposal, usually called assisted migration, is to plant seed from warmer, lower or more southerly populations in places where the climate is expected to resemble those origins within a few decades.</p><p>The case in favour is straightforward. A tree planted today may live for a century or more, so it must be suited not to the present climate of its site but to the climates it will meet over its life. Seed collected locally is adapted to a past that will not return. Planting it is, on this view, the riskier choice, though it looks like caution.</p><p>Critics raise two kinds of objection. The first concerns forecasting. Climate models agree on broad trends but differ on regional rainfall, the frequency of late frosts and the timing of droughts, and it is precisely these details that decide whether a seedling survives. A population moved to match a forecast average may be killed by an extreme the forecast smoothed away. The second objection concerns what travels with the seed. Fungi, insects and microbial partners do not always come along, and those that do may meet local relatives with which they have never coexisted.</p><p>Proponents reply that the first objection argues for diversity rather than inaction: plant a mixture of origins, so that whatever climate arrives, some fraction is suited to it. This answer is attractive but it quietly changes the goal. A mixed planting is no longer an attempt to put the right tree in the right place; it is a hedge against not knowing which tree is right. That may well be wise, but it means accepting a lower expected growth in exchange for a lower risk of total loss, and it makes the forest an insurance portfolio as much as an ecosystem.</p><p>The forecasting objection also has a practical edge that is rarely spelled out. Seed moved several hundred kilometres to suit a warmer future must survive the present climate first, including the hard winters that a warming trend does not abolish. A sapling chosen for the conditions of 2080 may be killed by a frost in 2030, long before the climate it was selected for arrives. Foresters thus face a choice between material suited to the start of a tree&#x27;s life and material suited to its end, and no single origin is likely to be well suited to both.</p><p>The second objection is harder to answer, because its costs, if they arrive, are not confined to the plantation. A forester can choose to accept risk for her own stand; she cannot easily make that choice on behalf of the surrounding woodland.</p>"
+  },
+  "m1-rc3": {
+   "kind": "passage",
+   "title": "Passage: Patina and the restorer",
+   "theme": "art",
+   "words": 524,
+   "html": "<b>Passage: Patina and the restorer</b><p>When a restorer cleans a painted ceiling, the public usually expects to be shown something lost: colours brighter than anyone living has seen, figures sharper than the photographs in guidebooks. The unveiling is staged as a recovery. But the restorer&#x27;s actual decisions are less like recovery and more like editing, because the layer removed is not simply dirt. It contains soot and varnish, certainly, but also the retouchings of earlier restorers, glazes the artist may have added late, and the slow chemical changes of the paint itself.</p><p>Some restorers adopt the rule of removing everything that was not applied by the original hand. The rule sounds objective, yet it requires a judgement about what the original hand applied, and that judgement often rests on the very technical analysis whose interpretation is in dispute. A thin brown layer may be a later varnish or a finishing glaze; the instruments can tell us its composition, not its intention.</p><p>Others argue for preserving patina, the accumulated surface of age, on the grounds that the work we inherit is a historical object and not merely an artist&#x27;s plan. On this view a ceiling darkened by three centuries of candles tells the truth about its life, and a cleaned ceiling tells a pleasing story about its birth. This position has its own difficulty. Patina is not neutral either; it can obscure details the artist plainly meant to be seen and can create effects of mood that viewers then attribute to the painter.</p><p>The difficulty is sharpened by the fact that restorers&#x27; own materials age. Retouchings made in one generation to fill losses were often chosen to match the painting as it then appeared, darkened and yellowed; when a later team removes the grime, those retouchings stand out as dull patches and must themselves be removed or redone. Several celebrated campaigns of the last century are now being partly reversed by restorers who regard them as heavy-handed, and it would be naive to suppose that present work will escape the same fate. A cleaning is therefore not a final act but an episode in a sequence, and each episode removes material that later restorers can no longer consult.</p><p>This has led some institutions to adopt a principle of reversibility: nothing should be added that cannot later be taken away. The principle is sensible for additions but says nothing about removal, which is the more consequential part of any cleaning. Varnish once dissolved, or a glaze mistaken for dirt, cannot be put back. The decisive question in restoration is therefore rarely what to apply, and almost always what to take away, and on that question the available rules give less guidance than their confident language suggests.</p><p>What neither rule escapes is that every cleaning produces a new object that has never existed before: not the painting as first seen, which cannot be recovered, nor the painting as last seen, which has been altered. The honest course may be to stop presenting restorations as revelations. A restorer who publishes what was removed, why, and on what evidence turns the unveiling from a claim of truth into an argument that others can examine.</p>"
+  },
+  "m1-rc4": {
+   "kind": "passage",
+   "title": "Passage: Regret as evidence",
+   "theme": "philosophy",
+   "words": 533,
+   "html": "<b>Passage: Regret as evidence</b><p>It is often said that regret is irrational: the past cannot be changed, so suffering over it wastes energy that could be spent on the future. The advice has the appeal of good sense, and in its practical form, do not dwell, it is often sound. As a claim about what regret is, however, it misdescribes the emotion. Regret is not primarily an attempt to change the past. It is a judgement, felt rather than stated, that one&#x27;s past choice was worse than an available alternative, by the lights of values one still holds.</p><p>Read this way, regret carries information. If I regret a harsh word to a friend, my regret tells me, and can tell others, that I still value the friendship and accept that I fell short of a standard I endorse. The absence of regret in such a case would be the more troubling sign. A person who felt nothing would either not hold the value or not see that he had violated it. The emotion is thus not irrational but answerable to reasons: it can be appropriate or inappropriate, proportionate or excessive, as a belief can be true or false.</p><p>It helps to distinguish regret from two states it is often confused with. Disappointment concerns outcomes that were not in our control: I can be disappointed by the weather or by a friend&#x27;s decision, but I cannot strictly regret either. Remorse, at the other extreme, concerns wrongs done to others and carries a demand for repair. Regret occupies the ground between them. It concerns choices that were ours, measured against standards we hold, whether or not anyone else was harmed. A person may regret wasting a talent without having wronged anyone, and that regret is no less a judgement for being private.</p><p>Seen in this light, the practical advice not to dwell is advice about the management of a judgement, not a refutation of it. One may decide that a regret has done its work, that its lesson has been absorbed and that further attention to it would be self-indulgent, without concluding that the regret was mistaken in the first place.</p><p>This has an awkward consequence. If regret is a judgement relative to values, then a change of values can change what it is rational to regret, without any new facts about the past. Someone who once regretted leaving a secure job for an uncertain art may, years later and with different priorities, find the regret dissolving, not because she has learned anything new about the job, but because she now weighs security differently. The past act is unchanged; its standing in her life is not.</p><p>Some find this troubling, as though it made the meaning of our histories hostage to our moods. But values are not moods. They are relatively stable commitments that we revise slowly and, when we are careful, for reasons. That our assessment of the past should shift when such commitments shift is no more scandalous than that a historian&#x27;s judgement of an era should change when she comes to care about questions her predecessors ignored. What would be irrational is regret that tracked no value at all, or a value one has openly abandoned.</p>"
+  }
+ }
+}

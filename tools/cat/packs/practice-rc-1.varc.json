@@ -1,0 +1,339 @@
+{
+ "name": "VARC RC Practice Sets 1",
+ "questions": [
+  {
+   "id": "PR1-01",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "Which of the following best expresses the main idea of the passage?",
+   "solution": "The passage covers the failures and their causes, the ambiguity of a single failed replication, the reforms, and the incentive lesson. Option 2 overstates. Option 4 contradicts the author's acceptance of the scandal \"in part\". Option 1 contradicts \"These reforms do not guarantee truth\".",
+   "set": "pr1-rc1",
+   "type": "mcq",
+   "options": [
+    "Pre-registration guarantees that research findings are true.",
+    "Most published psychology experiments are false.",
+    "Failed replications exposed weaknesses in research practice, and while they do not settle every case, they prompted reforms and showed that self-correction depends on incentives.",
+    "Replications are usually flawed and should not be trusted."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "PR1-02",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "According to the author, an appeal to \"hidden conditions\" becomes suspect when:",
+   "solution": "Para 3: what distinguishes genuine from protective claims is \"whether the circumstances were stated in advance and whether they generate new predictions\". Option 2 mistakes an example for the criterion. Options 4 and 3 are not criteria in the passage.",
+   "set": "pr1-rc1",
+   "type": "mcq",
+   "options": [
+    "the conditions are specified only after a failure and yield no new testable predictions",
+    "the conditions concern the mood of participants",
+    "the replication was conducted in a different country",
+    "the original experiment used a large sample"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PR1-03",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The final paragraph's argument relies on which of the following assumptions?",
+   "solution": "The paragraph moves from \"little reward for checking\" to slow correction, so it assumes that rewards drive checking. Option 2 is unsupported. Option 3 contradicts the paragraph. Option 1 is false by the passage's own account.",
+   "set": "pr1-rc1",
+   "type": "mcq",
+   "options": [
+    "Students are taught only replicated findings.",
+    "Scientists are generally dishonest.",
+    "Respected journals never publish false results.",
+    "The rate at which errors are corrected depends substantially on whether checking existing results is rewarded."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PR1-04",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The second paragraph primarily serves to:",
+   "solution": "It opens \"a failure to replicate is not, by itself, proof\", explains why, and then notes that some appeals were evasive. Option 2 overstates, since the paragraph also criticises some defences. Option 1 contradicts it.",
+   "set": "pr1-rc1",
+   "type": "mcq",
+   "options": [
+    "argue that procedural details are irrelevant to experimental results",
+    "defend all original findings against their critics",
+    "explain how the replication collaboration was organised",
+    "caution against treating a failed replication as conclusive proof that the original finding was false"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PR1-05",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, an insurer that prices according to forward-looking models may suffer because:",
+   "solution": "Para 2: such insurers \"may find themselves charging more than competitors\", and \"the firm that is right too early can lose its customers\". Option 2 overstates. Options 3 and 1 are not stated.",
+   "set": "pr1-rc2",
+   "type": "mcq",
+   "options": [
+    "reinsurance is unavailable to such firms",
+    "the models are always less accurate than historical data",
+    "regulators prohibit the use of such models",
+    "it may charge more than competitors who rely on past records and so lose customers"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PR1-06",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Why, according to the passage, does pooling offer less protection against very large disasters?",
+   "solution": "Para 3: such events produce \"correlated rather than independent\" losses, \"because the many policies in the pool suffer together\". Option 3 is not the reason given. Option 1 contradicts the passage, and option 4 is unsupported.",
+   "set": "pr1-rc2",
+   "type": "mcq",
+   "options": [
+    "Reinsurance does not cover large disasters.",
+    "Losses from such events strike many policies in the pool at once, rather than independently.",
+    "Large disasters are unpredictable.",
+    "Homeowners in disaster areas do not buy insurance."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PR1-07",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following policies would the author's final paragraph most directly support?",
+   "solution": "The author accepts affordability as an aim but warns against achieving it \"by holding prices down\", since that suppresses the risk signal. Option 3 pursues affordability without distorting the price signal. Option 4 is the criticised approach. Option 1 is an extreme the passage does not propose. Option 2 ignores the pricing problem.",
+   "set": "pr1-rc2",
+   "type": "mcq",
+   "options": [
+    "Prohibiting all construction near coasts.",
+    "Requiring private insurers to remain in every market.",
+    "Providing targeted financial help to low-income households while allowing premiums to reflect actual risk.",
+    "Subsidising premiums in high-risk areas to keep them low for all residents."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "PR1-08",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The statement \"A premium is not merely a cost; it is a signal\" serves to:",
+   "solution": "The sentence opens the argument that a suppressed signal \"blunt[s] the incentive\". Options 4 and 3 are unsupported, and option 1 is not the paragraph's subject.",
+   "set": "pr1-rc2",
+   "type": "mcq",
+   "options": [
+    "explain how insurers calculate premiums",
+    "introduce the idea that suppressing premiums can weaken incentives to reduce exposure to risk",
+    "show that homeowners ignore the price of insurance",
+    "argue that premiums should always be as high as possible"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PR1-09",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The central claim of the passage is that:",
+   "solution": "Paras 2–3 argue that precursor status is retrospective, and para 5 says reading backwards \"can be done well or badly\". Option 4 contradicts \"In one obvious sense this must be true\". Option 3 is one position the author qualifies, and option 1 is unsupported.",
+   "set": "pr1-rc3",
+   "type": "mcq",
+   "options": [
+    "later writers are always better than earlier ones",
+    "the reputation and reading of earlier writers are shaped retrospectively by later writers, which can be done well or badly",
+    "critics should read only in historical context",
+    "influence never flows forward in time"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PR1-10",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following best illustrates the claim that \"the category of the precursor is retrospective\"?",
+   "solution": "The diarist acquires precursor status only through a later school, and the features that school valued come forward while others recede, as in para 2. Option 1 is self-declared, which contradicts \"No writer sets out to be a precursor\". Options 3 and 2 do not involve retrospective status.",
+   "set": "pr1-rc3",
+   "type": "mcq",
+   "options": [
+    "A novelist writes a manifesto declaring herself the forerunner of a future movement.",
+    "Two contemporaries influence each other through correspondence.",
+    "A poet's early work is less accomplished than her later work.",
+    "A little-read eighteenth-century diarist is hailed as a forerunner after a twentieth-century school adopts a similar fragmented style, and her other qualities are subsequently overlooked."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PR1-11",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author describes the two critical reactions in the fourth paragraph primarily in order to:",
+   "solution": "Each reaction is given a risk (\"accurate but inert\"; \"a mirror\"), and the final paragraph proposes a \"more balanced position\". Option 3 ignores the criticism of historical reading. Options 1 and 2 are unsupported.",
+   "set": "pr1-rc3",
+   "type": "mcq",
+   "options": [
+    "show that literary criticism has made no progress",
+    "argue that the canon should be abolished",
+    "endorse historical reading over present-minded reading",
+    "set out opposing risks that the balanced position in the final paragraph tries to avoid"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PR1-12",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The phrase \"an early draft of his successors\" describes a reading that:",
+   "solution": "The phrase describes careless backward reading that \"reduces him\" to anticipations of later work. Option 4 describes careful reading. Options 2 and 1 describe historical reading.",
+   "set": "pr1-rc3",
+   "type": "mcq",
+   "options": [
+    "places an earlier writer in his historical context",
+    "recovers the original intentions of an earlier writer",
+    "values an earlier writer only for what later writers developed from him",
+    "discovers abandoned possibilities in an earlier work"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "PR1-13",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, the waste-clearance proposal attracted attention partly because:",
+   "solution": "Para 3 gives both reasons. Option 4 contradicts \"Experiments in mice\". Option 1 is not stated. Option 2 contradicts \"some found the opposite\".",
+   "set": "pr1-rc4",
+   "type": "mcq",
+   "options": [
+    "it disproved the memory consolidation theory",
+    "it was confirmed by every later study",
+    "it offered a simple physical explanation and seemed to connect poor sleep with feared diseases",
+    "it was based on studies in humans"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "PR1-14",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's distinction between a function \"served by\" a behaviour and the reason it \"evolved\" implies that:",
+   "solution": "Para 4: \"Even if clearance does increase during sleep, it would not follow that this is why sleep exists.\" Option 3 contradicts the final paragraph. Options 2 and 1 are unsupported.",
+   "set": "pr1-rc4",
+   "type": "mcq",
+   "options": [
+    "waste clearance occurs only in sleeping animals",
+    "sleep has no function",
+    "behaviours always evolve for a single reason",
+    "showing that sleep aids waste clearance would not by itself show that clearance explains why sleep exists"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PR1-15",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following findings would most weaken the waste-clearance hypothesis as an explanation of why sleep exists?",
+   "solution": "If sleep exists to clear metabolic waste, need for sleep should track waste production. Species with little brain metabolism sleeping as much (option 2) cuts against that. Option 1 supports the hypothesis. Options 4 and 3 concern measurement, not the explanatory claim.",
+   "set": "pr1-rc4",
+   "type": "mcq",
+   "options": [
+    "Mice that are deprived of sleep show accumulation of certain proteins.",
+    "Some species with very low metabolic rates in the brain nonetheless sleep as much as species with high rates.",
+    "Anaesthetics alter many brain processes.",
+    "Fluid flow in the brain varies with body position."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PR1-16",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's final paragraph suggests that:",
+   "solution": "The final paragraph says \"the search for the function of sleep may have been misconceived\" and proposes asking what sleep does in each species. Option 2 overstates. Options 1 and 4 are unsupported.",
+   "set": "pr1-rc4",
+   "type": "mcq",
+   "options": [
+    "sleep research should be abandoned",
+    "the waste hypothesis has been definitively disproved",
+    "asking for the single function of sleep may be the wrong approach, since sleep may serve several purposes acquired over time",
+    "memory consolidation is the true function of sleep"
+   ],
+   "answer": 2
+  }
+ ],
+ "sets": {
+  "pr1-rc1": {
+   "kind": "passage",
+   "title": "Passage: The replication problem and its uses",
+   "theme": "science",
+   "words": 484,
+   "html": "<b>Passage: The replication problem and its uses</b><p>When a large collaboration of psychologists attempted to repeat a hundred published experiments, fewer than half produced results resembling the originals. The finding was widely reported as a scandal, and in part it was one. Some of the original studies had relied on small samples, flexible analyses and the selective reporting of outcomes that happened to reach statistical significance. Practices that had seemed harmless individually, such as trying several ways of measuring an effect and reporting the one that worked, combined to fill the literature with results that were unlikely to be true.</p><p>Yet a failure to replicate is not, by itself, proof that the original result was false. An experiment is never repeated exactly. The participants differ, the setting differs, and small changes in procedure that seemed irrelevant to the replicating team may turn out to matter. Defenders of some original findings argued that their effects depended on conditions that the replications had not reproduced, and in a few cases later work supported them. In others the appeal to hidden conditions looked more like a refusal to accept bad news, since the conditions were specified only after the replication had failed.</p><p>The difficulty is that both kinds of response sound alike. A researcher who says that an effect appears only under certain circumstances may be describing a genuine feature of the phenomenon or protecting a cherished result, and there is no way to tell from the claim alone. What distinguishes the two is whether the circumstances were stated in advance and whether they generate new predictions that can be tested. An effect that is said to depend on the time of day, the mood of participants and the wording of instructions, with each condition named only after a failure, has become too flexible to be refuted, and a claim that cannot be refuted has ceased to tell us much about the world.</p><p>The episode has led to reforms. Many journals now encourage researchers to register their hypotheses and analysis plans before collecting data, so that the distinction between predictions and post hoc explanations is visible. Large collaborative studies, run across many laboratories at once, test whether an effect survives the variation that any single laboratory would miss. These reforms do not guarantee truth, but they make it harder for a field to deceive itself, which is perhaps the most that method can achieve.</p><p>There is a further lesson, less often drawn. The original findings that failed to replicate were not hidden; they were published in respected journals, cited widely and taught to students. The problem was not that the field lacked a mechanism for correction but that the mechanism worked slowly, because there was little reward for checking what had already been accepted. A science corrects itself only when some of its members are paid, promoted or praised for doing the correcting, and for much of the period in question they were not.</p>"
+  },
+  "pr1-rc2": {
+   "kind": "passage",
+   "title": "Passage: The insurer's dilemma in a warming world",
+   "theme": "economics",
+   "words": 460,
+   "html": "<b>Passage: The insurer&#x27;s dilemma in a warming world</b><p>Insurance works by pooling risks that are individually unpredictable but collectively stable. No one knows whether a particular house will burn down this year, but an insurer covering a million houses can estimate with some confidence how many will, and set premiums accordingly. The arrangement depends on two conditions: that the past is a reasonable guide to the near future, and that losses in one place are not too closely linked to losses in another. A changing climate threatens both.</p><p>The first condition is weakened when the frequency of floods, fires and storms shifts faster than the records used to price them. An insurer relying on fifty years of claims data will underestimate risks that have grown in the last ten, and the error will be largest precisely where change is fastest. Models that project future hazards can correct for this in principle, but they carry uncertainty of their own, and insurers who price according to them may find themselves charging more than competitors who rely on the past. In a competitive market, the firm that is right too early can lose its customers to firms that are wrong.</p><p>The second condition is threatened when disasters grow larger. A wildfire that destroys an entire town, or a hurricane that floods a region, produces losses that are correlated rather than independent. Pooling offers less protection against such events, because the many policies in the pool suffer together. Insurers manage correlated risk by buying reinsurance and by holding capital in reserve, but both become more expensive as the scale of possible losses rises, and the cost is passed on to policyholders.</p><p>In the most exposed areas, the result has been a familiar sequence. Premiums rise, coverage narrows, and eventually some insurers withdraw. Homeowners who cannot obtain private insurance turn to state-backed schemes, which were usually designed as a last resort for a small number of hard cases and now find themselves covering a growing share of the market. Such schemes often charge less than the risk would justify, because raising prices sharply is politically difficult, and the shortfall is borne by taxpayers or by surcharges on policies elsewhere.</p><p>This has a consequence that is easy to overlook. A premium is not merely a cost; it is a signal. A rising premium tells a homeowner, a buyer and a local government that a place has become more dangerous, and it creates an incentive to build differently, to move or to invest in protection. When public schemes suppress that signal, they also blunt the incentive, and development may continue in places where the risk has outgrown it. Keeping insurance affordable is a reasonable aim, but pursued by holding prices down, it can encourage the very exposure that makes insurance unaffordable in the first place.</p>"
+  },
+  "pr1-rc3": {
+   "kind": "passage",
+   "title": "Passage: Literary influence and the anxiety of priority",
+   "theme": "literature",
+   "words": 490,
+   "html": "<b>Passage: Literary influence and the anxiety of priority</b><p>Literary history is often written as a sequence of influences. A poet reads an older poet, absorbs his manner and then transforms it; the younger writer&#x27;s achievement is measured by the distance travelled from the model. The scheme is useful, but it carries an assumption that deserves examination: that influence flows only forward in time, from the earlier writer to the later.</p><p>In one obvious sense this must be true. A writer cannot be shaped by a book that has not yet been written. But the reputation of earlier writers, and the way they are read, is shaped constantly by their successors. A poet who was regarded in his lifetime as a minor follower of fashion may be rediscovered by a later generation that finds in him an anticipation of its own concerns, and thereafter he is read, taught and anthologised as a precursor. The features of his work that the later writers valued are brought forward; those that did not interest them recede. In this sense the later writer creates the earlier one, not by changing his words but by changing what readers notice in them.</p><p>The point is not merely that taste changes. It is that the very category of the precursor is retrospective. No writer sets out to be a precursor; the status is conferred by those who come after, and it depends on their achievement. Had the later movement not occurred, or occurred differently, the earlier writer would have remained what his contemporaries thought him. This creates a peculiar dependence in the canon: the standing of a writer may rest less on his own work than on the success of writers he never met.</p><p>Critics have reacted to this in different ways. Some regard it as a distortion, to be corrected by reading earlier writers in the context of their own time, with attention to the conventions they worked within and the audiences they addressed. Others accept it as inevitable and even desirable, on the grounds that a literary work lives only in being read, and reading is always done from a present with its own concerns. The first group risks producing scholarship that is accurate but inert, recovering what a work meant without showing why anyone should now care. The second risks making every work a mirror in which the present sees only itself.</p><p>A more balanced position would acknowledge that reading backwards is unavoidable but that it can be done well or badly. To read an earlier poet in the light of later ones is to ask what possibilities in his work were developed and which were not; done carefully, this can reveal paths that were abandoned and that might still be taken. Done carelessly, it reduces him to an early draft of his successors. The difference lies in whether the reader remains curious about what the earlier writer was doing on his own terms, even while noticing what others later made of it.</p>"
+  },
+  "pr1-rc4": {
+   "kind": "passage",
+   "title": "Passage: Sleep and the cleaning of the brain",
+   "theme": "neuroscience",
+   "words": 480,
+   "html": "<b>Passage: Sleep and the cleaning of the brain</b><p>Why animals sleep has long been one of biology&#x27;s more embarrassing open questions. Sleep is costly: a sleeping animal cannot feed, mate or watch for predators, and yet almost every animal studied sleeps in some form, from fruit flies to whales. A behaviour so widespread and so risky must serve some important function, but the candidates proposed over the past century, from conserving energy to consolidating memory, have each explained part of the evidence and left much of it unexplained.</p><p>One of the more recent proposals concerns waste. The brain is metabolically active and produces by-products that must be removed, including proteins that, when they accumulate, are associated with degenerative disease. Experiments in mice suggested that the flow of fluid through the brain, which carries such waste away, increases markedly during sleep, as the spaces between brain cells widen. On this view, sleep is in part a period of maintenance, when the brain does work that is difficult to combine with the demands of waking activity.</p><p>The proposal attracted wide attention, partly because it offered a simple, physical answer to a question that had resisted simple answers, and partly because it seemed to link poor sleep with conditions that are feared and poorly understood. It also prompted careful scrutiny. Later studies using different methods questioned whether clearance actually increases during sleep, and some found the opposite. The disagreement turns partly on technique: measuring fluid flow in a living brain is difficult, and the anaesthetics used in some experiments may themselves alter the processes being measured.</p><p>Even if clearance does increase during sleep, it would not follow that this is why sleep exists. A function can be served by a behaviour without being the reason the behaviour evolved; a process that takes advantage of an existing period of inactivity is different from one that required it. The waste hypothesis would be stronger if it could explain features of sleep that other theories cannot, such as why sleep deprivation is eventually fatal, or why the need for sleep varies between species in the way it does. It would also need to explain why clearance could not simply proceed more slowly during waking hours, as many other forms of bodily maintenance do. The kidneys and liver clean the blood continuously without requiring the animal to lie still for a third of its life, and a theory that makes the brain an exception owes an account of what is special about it.</p><p>The history of the question suggests caution about any single answer. Sleep may have originated for one reason and acquired other functions over time, so that it now serves several purposes, none of which alone explains it. If so, the search for the function of sleep may have been misconceived from the start, and the more productive question is what sleep does in a particular species and how those uses fit together.</p>"
+  }
+ }
+}

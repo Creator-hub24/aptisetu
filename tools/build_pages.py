@@ -368,10 +368,11 @@ if(p.get('exam')==='general'||p.get('section')){pick.classList.add('hidden');set
 # ---------- CAT TRACK ----------
 import html as _hh
 CAT_DESC = {
- "varc": {"Reading Comprehension":"400–550 word passages on economics, philosophy, science and literature, with 4 questions each.",
+ "varc": {"Reading Comprehension":"400–600 word passages on economics, philosophy, science and literature, with 4 questions each.",
           "Para-jumbles":"Put 4 jumbled sentences in order. TITA: type the sequence.",
           "Para-summary":"Choose the option that best captures the paragraph's main point.",
-          "Odd sentence out":"Find the sentence that doesn't belong. TITA: type its number."},
+          "Odd sentence out":"Find the sentence that doesn't belong. TITA: type its number.",
+          "Para-completion":"Pick the sentence that best fills the gap in a paragraph."},
  "dilr": {"Scheduling":"Who does what on which day, from a list of conditions.",
           "Tournaments":"Round-robin results worked back from the points table.",
           "Tables with missing data":"Fill a partly blank table using the totals and clues given.",
@@ -379,7 +380,8 @@ CAT_DESC = {
           "Distribution":"Share items among people under constraints.",
           "Logic puzzles":"Deduce a secret code from feedback on guesses.",
           "Arrangements":"Match people, pets and colours to houses.",
-          "Rankings & scoring":"Rebuild rankings from points and conditions."},
+          "Rankings & scoring":"Rebuild rankings from points and conditions.",
+          "Networks & routes":"Flows, routes and connections worked out from a network diagram."},
  "qa": {"Percentages & Profit":"Successive changes, markups, discounts and profit.",
         "Time, Speed & Distance":"Relative speed, trains, boats and races.",
         "Time & Work":"Efficiency, pipes and work-wage problems.",
@@ -779,15 +781,29 @@ ql_page("quant-lab-practice.html","Quant Lab Practice: Timed CAT Quant Drills","
  "Timed CAT Quant practice by topic or section, with MCQ and TITA questions, instant feedback and scores saved only in your browser.")
 
 # ---------- PLACEHOLDERS ----------
+def _pack_cards():
+    import glob as _g, json as _j, os as _o
+    PD=_o.path.join(_o.path.dirname(_o.path.abspath(__file__)),"cat","packs"); P={}
+    for f in sorted(_g.glob(_o.path.join(PD,"*.json"))):
+        pk,sec=_o.path.basename(f)[:-5].rsplit(".",1); P.setdefault(pk,{})[sec]=len(_j.load(open(f))["questions"])
+    NM={"varc":"VARC","dilr":"DILR","qa":"QA"}
+    def card(pk,title,mode):
+        secs=[s for s in ("varc","dilr","qa") if s in P[pk]]
+        links="".join(f"<a class='btn btn-sm' style='margin:4px 4px 0 0' href='cat-practice.html?mode={mode}&amp;section={s}&amp;pack={pk}'>{NM[s]} · {P[pk][s]} Qs</a>" for s in secs)
+        return f"<div class='card'><h3>{title}</h3><p class='muted'>{'Each section: 40 min, CAT marking' if mode=='sectional' else 'Untimed, solution after each answer'}</p>{links}</div>"
+    mocks="".join(card(pk,"CAT Mock "+pk.split("-")[1],"sectional") for pk in sorted(P) if pk.startswith("mock-"))
+    secs="".join(card(pk,pk.split("-")[0].upper()+" Sectional "+pk.split("-")[-1],"sectional") for pk in sorted(P) if "-sectional-" in pk)
+    prac="".join(card(pk,{"practice-dilr":"DILR practice sets","practice-va":"Verbal ability practice"}.get(pk,"RC practice "+pk.split("-")[-1]),"practice") for pk in sorted(P) if pk.startswith("practice-"))
+    return mocks,secs,prac
+_M,_S,_PR=_pack_cards()
 page("mock-tests.html","Mock Tests","""
-<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Mock Tests</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Mock tests <span class="badge soon">Coming soon</span></h1><p class="muted">We're planning full-length and sectional mocks with an exam-style interface and detailed analysis.</p></div></div>
-<section style="padding-top:16px"><div class="container"><div class="grid g3">
- <div class="card"><h3>CAT Full Mock</h3><p class="muted">VARC · DILR · QA · 120 min · 66 Qs</p><button class="btn btn-sm" disabled>Coming soon</button></div>
- <div class="card"><h3>Bank PO Prelims</h3><p class="muted">Quant · Reasoning · 60 min</p><button class="btn btn-sm" disabled>Coming soon</button></div>
- <div class="card"><h3>SSC CGL Tier 1</h3><p class="muted">Quant · Reasoning · 60 min</p><button class="btn btn-sm" disabled>Coming soon</button></div>
- <div class="card"><h3>GMAT-style Quant</h3><p class="muted">21 Qs · 45 min</p><button class="btn btn-sm" disabled>Coming soon</button></div>
-</div><div class="notice" style="margin-top:20px">CAT sectionals (VARC, DILR, QA) are already available on the <a href="cat-practice.html">CAT practice page</a>. Meanwhile, try the <a href="practice.html">timed practice quizzes</a>.</div></div></section>
-""", desc="Full-length mock tests are coming soon. CAT sectionals and timed practice quizzes are available now.", noindex=True)
+<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Mock Tests</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CAT mock tests</h1><p class="muted">Full CAT-pattern mocks: VARC 24, DILR 22 and QA 22 questions, 40 minutes per section, +3 / −1 for a wrong MCQ and 0 for a wrong TITA. Take the sections in order (VARC, DILR, QA) for the real exam experience.</p></div></div>
+<section style="padding-top:16px"><div class="container">
+<h2>Full mocks</h2><div class="grid g3">%M%</div>
+<h2 style="margin-top:24px">Sectional tests</h2><div class="grid g3">%S%</div>
+<h2 style="margin-top:24px">Practice packs</h2><div class="grid g3">%P%</div>
+<div class="notice" style="margin-top:20px">Random CAT sectionals and topic practice are on the <a href="cat-practice.html">CAT practice page</a>. Bank, SSC and GMAT mocks are coming soon.</div></div></section>
+""".replace("%M%",_M).replace("%S%",_S).replace("%P%",_PR), desc="Free full-length CAT mocks, VARC and DILR sectionals and practice packs, with CAT marking and worked solutions.", noindex=True)
 
 page("placements.html","Placement Prep","""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Placement Prep</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Campus placement prep <span class="badge soon">Coming soon</span></h1><p class="muted">Company-wise aptitude practice for service and product companies.</p></div></div>

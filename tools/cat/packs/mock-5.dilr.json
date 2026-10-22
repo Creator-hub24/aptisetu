@@ -1,0 +1,385 @@
+{
+ "name": "mock-5 — DILR",
+ "questions": [
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "Who is in slot 3?",
+   "solution": "Step 1: use \"Exactly four positions lie strictly between Charu's and Nisha's.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Gargi is in a lower-numbered position than Charu.\" — this fixes: Charu is in slot 6; Nisha is in slot 1. Step 3: use \"Lokesh and Dev have the same type.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Rhea and Gargi are not in adjacent positions.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Nisha's type is not street.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Nisha's type is not landscape.\" — this fixes: Nisha's type is portrait. Step 7: use \"Lokesh's type is not street.\" — this fixes: Lokesh's type is landscape; Dev's type is landscape. Step 8: use \"Charu's type is not street.\" — this fixes: Rhea's type is street; Gargi's type is street; Charu's type is portrait. Step 9: use \"The photograph in slot 3 is not landscape.\" — nothing is fixed outright yet, but it removes options needed later. Step 10: use \"Rhea and Charu are not in adjacent positions.\" — this fixes: Rhea is in slot 3; Gargi is in slot 5. Step 11: use \"Nisha and Dev are not in adjacent positions.\" — this fixes: Lokesh is in slot 2; Dev is in slot 4. Final arrangement: slot 1: Nisha (portrait); slot 2: Lokesh (landscape); slot 3: Rhea (street); slot 4: Dev (landscape); slot 5: Gargi (street); slot 6: Charu (portrait). Reading off: Rhea.",
+   "set": "m5-linear1",
+   "type": "mcq",
+   "options": [
+    "Lokesh",
+    "Rhea",
+    "Charu",
+    "Gargi"
+   ],
+   "answer": 1,
+   "level": "Hard",
+   "id": "M5-LINEAR1-01"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "How many positions lie strictly between Gargi's and Charu's?",
+   "solution": "Step 1: use \"Exactly four positions lie strictly between Charu's and Nisha's.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Gargi is in a lower-numbered position than Charu.\" — this fixes: Charu is in slot 6; Nisha is in slot 1. Step 3: use \"Lokesh and Dev have the same type.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Rhea and Gargi are not in adjacent positions.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Nisha's type is not street.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Nisha's type is not landscape.\" — this fixes: Nisha's type is portrait. Step 7: use \"Lokesh's type is not street.\" — this fixes: Lokesh's type is landscape; Dev's type is landscape. Step 8: use \"Charu's type is not street.\" — this fixes: Rhea's type is street; Gargi's type is street; Charu's type is portrait. Step 9: use \"The photograph in slot 3 is not landscape.\" — nothing is fixed outright yet, but it removes options needed later. Step 10: use \"Rhea and Charu are not in adjacent positions.\" — this fixes: Rhea is in slot 3; Gargi is in slot 5. Step 11: use \"Nisha and Dev are not in adjacent positions.\" — this fixes: Lokesh is in slot 2; Dev is in slot 4. Final arrangement: slot 1: Nisha (portrait); slot 2: Lokesh (landscape); slot 3: Rhea (street); slot 4: Dev (landscape); slot 5: Gargi (street); slot 6: Charu (portrait). Reading off: 0.",
+   "set": "m5-linear1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "0",
+   "level": "Hard",
+   "id": "M5-LINEAR1-02"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "Who are the two people whose type is landscape?",
+   "solution": "Step 1: use \"Exactly four positions lie strictly between Charu's and Nisha's.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Gargi is in a lower-numbered position than Charu.\" — this fixes: Charu is in slot 6; Nisha is in slot 1. Step 3: use \"Lokesh and Dev have the same type.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Rhea and Gargi are not in adjacent positions.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Nisha's type is not street.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Nisha's type is not landscape.\" — this fixes: Nisha's type is portrait. Step 7: use \"Lokesh's type is not street.\" — this fixes: Lokesh's type is landscape; Dev's type is landscape. Step 8: use \"Charu's type is not street.\" — this fixes: Rhea's type is street; Gargi's type is street; Charu's type is portrait. Step 9: use \"The photograph in slot 3 is not landscape.\" — nothing is fixed outright yet, but it removes options needed later. Step 10: use \"Rhea and Charu are not in adjacent positions.\" — this fixes: Rhea is in slot 3; Gargi is in slot 5. Step 11: use \"Nisha and Dev are not in adjacent positions.\" — this fixes: Lokesh is in slot 2; Dev is in slot 4. Final arrangement: slot 1: Nisha (portrait); slot 2: Lokesh (landscape); slot 3: Rhea (street); slot 4: Dev (landscape); slot 5: Gargi (street); slot 6: Charu (portrait). Reading off: Dev and Lokesh.",
+   "set": "m5-linear1",
+   "type": "mcq",
+   "options": [
+    "Nisha and Rhea",
+    "Gargi and Rhea",
+    "Dev and Lokesh",
+    "Charu and Nisha"
+   ],
+   "answer": 2,
+   "level": "Hard",
+   "id": "M5-LINEAR1-03"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "How many street photographs are in slot 1, slot 2 or slot 3?",
+   "solution": "Step 1: use \"Exactly four positions lie strictly between Charu's and Nisha's.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Gargi is in a lower-numbered position than Charu.\" — this fixes: Charu is in slot 6; Nisha is in slot 1. Step 3: use \"Lokesh and Dev have the same type.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Rhea and Gargi are not in adjacent positions.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Nisha's type is not street.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Nisha's type is not landscape.\" — this fixes: Nisha's type is portrait. Step 7: use \"Lokesh's type is not street.\" — this fixes: Lokesh's type is landscape; Dev's type is landscape. Step 8: use \"Charu's type is not street.\" — this fixes: Rhea's type is street; Gargi's type is street; Charu's type is portrait. Step 9: use \"The photograph in slot 3 is not landscape.\" — nothing is fixed outright yet, but it removes options needed later. Step 10: use \"Rhea and Charu are not in adjacent positions.\" — this fixes: Rhea is in slot 3; Gargi is in slot 5. Step 11: use \"Nisha and Dev are not in adjacent positions.\" — this fixes: Lokesh is in slot 2; Dev is in slot 4. Final arrangement: slot 1: Nisha (portrait); slot 2: Lokesh (landscape); slot 3: Rhea (street); slot 4: Dev (landscape); slot 5: Gargi (street); slot 6: Charu (portrait). Reading off: 1.",
+   "set": "m5-linear1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1",
+   "level": "Medium",
+   "id": "M5-LINEAR1-04"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "How many landscape photographs are in slot 1, slot 2 or slot 3?",
+   "solution": "Step 1: use \"Exactly four positions lie strictly between Charu's and Nisha's.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Gargi is in a lower-numbered position than Charu.\" — this fixes: Charu is in slot 6; Nisha is in slot 1. Step 3: use \"Lokesh and Dev have the same type.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Rhea and Gargi are not in adjacent positions.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Nisha's type is not street.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Nisha's type is not landscape.\" — this fixes: Nisha's type is portrait. Step 7: use \"Lokesh's type is not street.\" — this fixes: Lokesh's type is landscape; Dev's type is landscape. Step 8: use \"Charu's type is not street.\" — this fixes: Rhea's type is street; Gargi's type is street; Charu's type is portrait. Step 9: use \"The photograph in slot 3 is not landscape.\" — nothing is fixed outright yet, but it removes options needed later. Step 10: use \"Rhea and Charu are not in adjacent positions.\" — this fixes: Rhea is in slot 3; Gargi is in slot 5. Step 11: use \"Nisha and Dev are not in adjacent positions.\" — this fixes: Lokesh is in slot 2; Dev is in slot 4. Final arrangement: slot 1: Nisha (portrait); slot 2: Lokesh (landscape); slot 3: Rhea (street); slot 4: Dev (landscape); slot 5: Gargi (street); slot 6: Charu (portrait). Reading off: 1.",
+   "set": "m5-linear1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1",
+   "level": "Medium",
+   "id": "M5-LINEAR1-05"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "What was the result of the match between Volt and Pixel?",
+   "solution": "Step 1: use \"Torque finished with 2 points.\" — this fixes: Torque has 2 points. Step 2: use \"Volt finished with 6 points.\" — this fixes: Volt has 6 points. Step 3: use \"Pixel did not draw any match.\" — this fixes: Pixel beat Torque. Step 4: use \"Volt won exactly one match.\" — this fixes: Volt drew with Gear; Volt drew with Servo; Volt beat Pixel; Volt drew with Torque. Step 5: use \"Servo finished with 4 points.\" — this fixes: Gear beat Servo; Gear drew with Torque; Pixel beat Servo; Servo beat Torque; Servo has 4 points. Step 6: use \"Pixel won exactly two matches.\" — this fixes: Gear beat Pixel; Gear has 8 points; Pixel has 6 points. Final arrangement: Volt v Gear: draw; Volt v Servo: draw; Volt v Pixel: Volt; Volt v Torque: draw; Gear v Servo: Gear; Gear v Pixel: Gear; Gear v Torque: draw; Servo v Pixel: Pixel; Servo v Torque: Servo; Pixel v Torque: Pixel; points Volt 6, Gear 8, Servo 4, Pixel 6, Torque 2. Reading off: Volt won.",
+   "set": "m5-tourn2",
+   "type": "mcq",
+   "options": [
+    "Pixel won",
+    "Cannot be determined",
+    "It was a draw",
+    "Volt won"
+   ],
+   "answer": 3,
+   "level": "Hard",
+   "id": "M5-TOURN2-06"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "How many matches did Servo lose?",
+   "solution": "Step 1: use \"Torque finished with 2 points.\" — this fixes: Torque has 2 points. Step 2: use \"Volt finished with 6 points.\" — this fixes: Volt has 6 points. Step 3: use \"Pixel did not draw any match.\" — this fixes: Pixel beat Torque. Step 4: use \"Volt won exactly one match.\" — this fixes: Volt drew with Gear; Volt drew with Servo; Volt beat Pixel; Volt drew with Torque. Step 5: use \"Servo finished with 4 points.\" — this fixes: Gear beat Servo; Gear drew with Torque; Pixel beat Servo; Servo beat Torque; Servo has 4 points. Step 6: use \"Pixel won exactly two matches.\" — this fixes: Gear beat Pixel; Gear has 8 points; Pixel has 6 points. Final arrangement: Volt v Gear: draw; Volt v Servo: draw; Volt v Pixel: Volt; Volt v Torque: draw; Gear v Servo: Gear; Gear v Pixel: Gear; Gear v Torque: draw; Servo v Pixel: Pixel; Servo v Torque: Servo; Pixel v Torque: Pixel; points Volt 6, Gear 8, Servo 4, Pixel 6, Torque 2. Reading off: 2.",
+   "set": "m5-tourn2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "2",
+   "level": "Hard",
+   "id": "M5-TOURN2-07"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "How many points did Pixel finish with?",
+   "solution": "Step 1: use \"Torque finished with 2 points.\" — this fixes: Torque has 2 points. Step 2: use \"Volt finished with 6 points.\" — this fixes: Volt has 6 points. Step 3: use \"Pixel did not draw any match.\" — this fixes: Pixel beat Torque. Step 4: use \"Volt won exactly one match.\" — this fixes: Volt drew with Gear; Volt drew with Servo; Volt beat Pixel; Volt drew with Torque. Step 5: use \"Servo finished with 4 points.\" — this fixes: Gear beat Servo; Gear drew with Torque; Pixel beat Servo; Servo beat Torque; Servo has 4 points. Step 6: use \"Pixel won exactly two matches.\" — this fixes: Gear beat Pixel; Gear has 8 points; Pixel has 6 points. Final arrangement: Volt v Gear: draw; Volt v Servo: draw; Volt v Pixel: Volt; Volt v Torque: draw; Gear v Servo: Gear; Gear v Pixel: Gear; Gear v Torque: draw; Servo v Pixel: Pixel; Servo v Torque: Servo; Pixel v Torque: Pixel; points Volt 6, Gear 8, Servo 4, Pixel 6, Torque 2. Reading off: 6.",
+   "set": "m5-tourn2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "6",
+   "level": "Hard",
+   "id": "M5-TOURN2-08"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "What was the total number of points scored by all five teams together?",
+   "solution": "Step 1: use \"Torque finished with 2 points.\" — this fixes: Torque has 2 points. Step 2: use \"Volt finished with 6 points.\" — this fixes: Volt has 6 points. Step 3: use \"Pixel did not draw any match.\" — this fixes: Pixel beat Torque. Step 4: use \"Volt won exactly one match.\" — this fixes: Volt drew with Gear; Volt drew with Servo; Volt beat Pixel; Volt drew with Torque. Step 5: use \"Servo finished with 4 points.\" — this fixes: Gear beat Servo; Gear drew with Torque; Pixel beat Servo; Servo beat Torque; Servo has 4 points. Step 6: use \"Pixel won exactly two matches.\" — this fixes: Gear beat Pixel; Gear has 8 points; Pixel has 6 points. Final arrangement: Volt v Gear: draw; Volt v Servo: draw; Volt v Pixel: Volt; Volt v Torque: draw; Gear v Servo: Gear; Gear v Pixel: Gear; Gear v Torque: draw; Servo v Pixel: Pixel; Servo v Torque: Servo; Pixel v Torque: Pixel; points Volt 6, Gear 8, Servo 4, Pixel 6, Torque 2. Reading off: 26.",
+   "set": "m5-tourn2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "26",
+   "level": "Hard",
+   "id": "M5-TOURN2-09"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "How many teams finished with more points than the team that had the fewest wins? (If several teams share the fewest wins, take the one with the most points among them.)",
+   "solution": "Step 1: use \"Torque finished with 2 points.\" — this fixes: Torque has 2 points. Step 2: use \"Volt finished with 6 points.\" — this fixes: Volt has 6 points. Step 3: use \"Pixel did not draw any match.\" — this fixes: Pixel beat Torque. Step 4: use \"Volt won exactly one match.\" — this fixes: Volt drew with Gear; Volt drew with Servo; Volt beat Pixel; Volt drew with Torque. Step 5: use \"Servo finished with 4 points.\" — this fixes: Gear beat Servo; Gear drew with Torque; Pixel beat Servo; Servo beat Torque; Servo has 4 points. Step 6: use \"Pixel won exactly two matches.\" — this fixes: Gear beat Pixel; Gear has 8 points; Pixel has 6 points. Final arrangement: Volt v Gear: draw; Volt v Servo: draw; Volt v Pixel: Volt; Volt v Torque: draw; Gear v Servo: Gear; Gear v Pixel: Gear; Gear v Torque: draw; Servo v Pixel: Pixel; Servo v Torque: Servo; Pixel v Torque: Pixel; points Volt 6, Gear 8, Servo 4, Pixel 6, Torque 2. Reading off: 4.",
+   "set": "m5-tourn2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4",
+   "level": "Hard",
+   "id": "M5-TOURN2-10"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "Counting along the shorter way round, how many people sit between Arjun and Vani?",
+   "solution": "Step 1: use \"Rohan sits immediately to the left of Meera.\" — this fixes: Rohan sits immediately to the left of Meera. Step 2: use \"Meera sits immediately to the left of Aditi.\" — this fixes: Meera sits immediately to the left of Aditi. Step 3: use \"Uday and Aditi sit next to each other.\" — this fixes: Aditi sits immediately to the left of Uday. Step 4: use \"Along the shorter way round, exactly two people sit between Uday and Vani.\" — this fixes: Vani sits immediately to the left of Rohan. Step 5: use \"Along the shorter way round, exactly two people sit between Ishaan and Aditi.\" — this fixes: Uday sits immediately to the left of Arjun; Arjun sits immediately to the left of Ishaan; Ishaan sits immediately to the left of Vani. Step 6: use \"Vani and Aditi have the same drink.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Arjun and Aditi have the same drink.\" — this fixes: Arjun's drink is buttermilk; Vani's drink is buttermilk; Aditi's drink is buttermilk. Step 8: use \"Rohan's drink is not cold coffee.\" — this fixes: Rohan's drink is lemon soda. Step 9: use \"Rohan and Uday have the same drink.\" — this fixes: Ishaan's drink is cold coffee; Meera's drink is cold coffee; Uday's drink is lemon soda. Final arrangement: going round to each person's left starting from Rohan: Rohan (lemon soda), Vani (buttermilk), Ishaan (cold coffee), Arjun (buttermilk), Uday (lemon soda), Aditi (buttermilk), Meera (cold coffee). Reading off: 1.",
+   "set": "m5-circular3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1",
+   "level": "Medium",
+   "id": "M5-CIRCULAR3-11"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "Who sits immediately to the left of Arjun?",
+   "solution": "Step 1: use \"Rohan sits immediately to the left of Meera.\" — this fixes: Rohan sits immediately to the left of Meera. Step 2: use \"Meera sits immediately to the left of Aditi.\" — this fixes: Meera sits immediately to the left of Aditi. Step 3: use \"Uday and Aditi sit next to each other.\" — this fixes: Aditi sits immediately to the left of Uday. Step 4: use \"Along the shorter way round, exactly two people sit between Uday and Vani.\" — this fixes: Vani sits immediately to the left of Rohan. Step 5: use \"Along the shorter way round, exactly two people sit between Ishaan and Aditi.\" — this fixes: Uday sits immediately to the left of Arjun; Arjun sits immediately to the left of Ishaan; Ishaan sits immediately to the left of Vani. Step 6: use \"Vani and Aditi have the same drink.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Arjun and Aditi have the same drink.\" — this fixes: Arjun's drink is buttermilk; Vani's drink is buttermilk; Aditi's drink is buttermilk. Step 8: use \"Rohan's drink is not cold coffee.\" — this fixes: Rohan's drink is lemon soda. Step 9: use \"Rohan and Uday have the same drink.\" — this fixes: Ishaan's drink is cold coffee; Meera's drink is cold coffee; Uday's drink is lemon soda. Final arrangement: going round to each person's left starting from Rohan: Rohan (lemon soda), Vani (buttermilk), Ishaan (cold coffee), Arjun (buttermilk), Uday (lemon soda), Aditi (buttermilk), Meera (cold coffee). Reading off: Uday.",
+   "set": "m5-circular3",
+   "type": "mcq",
+   "options": [
+    "Ishaan",
+    "Vani",
+    "Uday",
+    "Meera"
+   ],
+   "answer": 2,
+   "level": "Medium",
+   "id": "M5-CIRCULAR3-12"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "What is Aditi's drink?",
+   "solution": "Step 1: use \"Rohan sits immediately to the left of Meera.\" — this fixes: Rohan sits immediately to the left of Meera. Step 2: use \"Meera sits immediately to the left of Aditi.\" — this fixes: Meera sits immediately to the left of Aditi. Step 3: use \"Uday and Aditi sit next to each other.\" — this fixes: Aditi sits immediately to the left of Uday. Step 4: use \"Along the shorter way round, exactly two people sit between Uday and Vani.\" — this fixes: Vani sits immediately to the left of Rohan. Step 5: use \"Along the shorter way round, exactly two people sit between Ishaan and Aditi.\" — this fixes: Uday sits immediately to the left of Arjun; Arjun sits immediately to the left of Ishaan; Ishaan sits immediately to the left of Vani. Step 6: use \"Vani and Aditi have the same drink.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Arjun and Aditi have the same drink.\" — this fixes: Arjun's drink is buttermilk; Vani's drink is buttermilk; Aditi's drink is buttermilk. Step 8: use \"Rohan's drink is not cold coffee.\" — this fixes: Rohan's drink is lemon soda. Step 9: use \"Rohan and Uday have the same drink.\" — this fixes: Ishaan's drink is cold coffee; Meera's drink is cold coffee; Uday's drink is lemon soda. Final arrangement: going round to each person's left starting from Rohan: Rohan (lemon soda), Vani (buttermilk), Ishaan (cold coffee), Arjun (buttermilk), Uday (lemon soda), Aditi (buttermilk), Meera (cold coffee). Reading off: buttermilk.",
+   "set": "m5-circular3",
+   "type": "mcq",
+   "options": [
+    "buttermilk",
+    "lemon soda",
+    "cold coffee",
+    "Cannot be determined"
+   ],
+   "answer": 0,
+   "level": "Medium",
+   "id": "M5-CIRCULAR3-13"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "How many of Vani's two neighbours have drink buttermilk?",
+   "solution": "Step 1: use \"Rohan sits immediately to the left of Meera.\" — this fixes: Rohan sits immediately to the left of Meera. Step 2: use \"Meera sits immediately to the left of Aditi.\" — this fixes: Meera sits immediately to the left of Aditi. Step 3: use \"Uday and Aditi sit next to each other.\" — this fixes: Aditi sits immediately to the left of Uday. Step 4: use \"Along the shorter way round, exactly two people sit between Uday and Vani.\" — this fixes: Vani sits immediately to the left of Rohan. Step 5: use \"Along the shorter way round, exactly two people sit between Ishaan and Aditi.\" — this fixes: Uday sits immediately to the left of Arjun; Arjun sits immediately to the left of Ishaan; Ishaan sits immediately to the left of Vani. Step 6: use \"Vani and Aditi have the same drink.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Arjun and Aditi have the same drink.\" — this fixes: Arjun's drink is buttermilk; Vani's drink is buttermilk; Aditi's drink is buttermilk. Step 8: use \"Rohan's drink is not cold coffee.\" — this fixes: Rohan's drink is lemon soda. Step 9: use \"Rohan and Uday have the same drink.\" — this fixes: Ishaan's drink is cold coffee; Meera's drink is cold coffee; Uday's drink is lemon soda. Final arrangement: going round to each person's left starting from Rohan: Rohan (lemon soda), Vani (buttermilk), Ishaan (cold coffee), Arjun (buttermilk), Uday (lemon soda), Aditi (buttermilk), Meera (cold coffee). Reading off: 0.",
+   "set": "m5-circular3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "0",
+   "level": "Hard",
+   "id": "M5-CIRCULAR3-14"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What was the figure for Dealer P in Gwalior?",
+   "solution": "Step 1: use \"Dealer Q's total across the three columns was 75 vehicles.\" — this fixes: Dealer Q–Gwalior = 30. Step 2: use \"The figure for Dealer P in Bhopal exceeded that for Dealer Q in Gwalior by 10.\" — this fixes: Dealer P–Bhopal = 40. Step 3: use \"Dealer P's total across the three columns was 135 vehicles.\" — this fixes: Dealer P–Gwalior = 40. Step 4: use \"Dealer R's figures rose strictly from Indore to Bhopal to Gwalior.\" — this fixes: Dealer R–Gwalior = 80. Step 5: use \"Dealer R's total across the three columns was 180 vehicles.\" — this fixes: Dealer R–Indore = 25; Dealer S–Gwalior = 75. Final arrangement: Dealer Q–Gwalior = 30; Dealer P–Gwalior = 40; Dealer R–Indore = 25; Dealer P–Bhopal = 40; Dealer S–Gwalior = 75; Dealer R–Gwalior = 80. Reading off: 40.",
+   "set": "m5-table4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "40",
+   "level": "Hard",
+   "id": "M5-TABLE4-15"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What percentage of Dealer Q's total came in Gwalior? (Answer to the nearest integer.)",
+   "solution": "Step 1: use \"Dealer Q's total across the three columns was 75 vehicles.\" — this fixes: Dealer Q–Gwalior = 30. Step 2: use \"The figure for Dealer P in Bhopal exceeded that for Dealer Q in Gwalior by 10.\" — this fixes: Dealer P–Bhopal = 40. Step 3: use \"Dealer P's total across the three columns was 135 vehicles.\" — this fixes: Dealer P–Gwalior = 40. Step 4: use \"Dealer R's figures rose strictly from Indore to Bhopal to Gwalior.\" — this fixes: Dealer R–Gwalior = 80. Step 5: use \"Dealer R's total across the three columns was 180 vehicles.\" — this fixes: Dealer R–Indore = 25; Dealer S–Gwalior = 75. Final arrangement: Dealer Q–Gwalior = 30; Dealer P–Gwalior = 40; Dealer R–Indore = 25; Dealer P–Bhopal = 40; Dealer S–Gwalior = 75; Dealer R–Gwalior = 80. Reading off: 40.",
+   "set": "m5-table4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "40",
+   "level": "Hard",
+   "id": "M5-TABLE4-16"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "In how many of the twelve (row, column) cells was the figure strictly greater than 50?",
+   "solution": "Step 1: use \"Dealer Q's total across the three columns was 75 vehicles.\" — this fixes: Dealer Q–Gwalior = 30. Step 2: use \"The figure for Dealer P in Bhopal exceeded that for Dealer Q in Gwalior by 10.\" — this fixes: Dealer P–Bhopal = 40. Step 3: use \"Dealer P's total across the three columns was 135 vehicles.\" — this fixes: Dealer P–Gwalior = 40. Step 4: use \"Dealer R's figures rose strictly from Indore to Bhopal to Gwalior.\" — this fixes: Dealer R–Gwalior = 80. Step 5: use \"Dealer R's total across the three columns was 180 vehicles.\" — this fixes: Dealer R–Indore = 25; Dealer S–Gwalior = 75. Final arrangement: Dealer Q–Gwalior = 30; Dealer P–Gwalior = 40; Dealer R–Indore = 25; Dealer P–Bhopal = 40; Dealer S–Gwalior = 75; Dealer R–Gwalior = 80. Reading off: 5.",
+   "set": "m5-table4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5",
+   "level": "Hard",
+   "id": "M5-TABLE4-17"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Medium",
+   "question": "Which of the four had the highest figure in Indore?",
+   "solution": "Step 1: use \"Dealer Q's total across the three columns was 75 vehicles.\" — this fixes: Dealer Q–Gwalior = 30. Step 2: use \"The figure for Dealer P in Bhopal exceeded that for Dealer Q in Gwalior by 10.\" — this fixes: Dealer P–Bhopal = 40. Step 3: use \"Dealer P's total across the three columns was 135 vehicles.\" — this fixes: Dealer P–Gwalior = 40. Step 4: use \"Dealer R's figures rose strictly from Indore to Bhopal to Gwalior.\" — this fixes: Dealer R–Gwalior = 80. Step 5: use \"Dealer R's total across the three columns was 180 vehicles.\" — this fixes: Dealer R–Indore = 25; Dealer S–Gwalior = 75. Final arrangement: Dealer Q–Gwalior = 30; Dealer P–Gwalior = 40; Dealer R–Indore = 25; Dealer P–Bhopal = 40; Dealer S–Gwalior = 75; Dealer R–Gwalior = 80. Reading off: Dealer P.",
+   "set": "m5-table4",
+   "type": "mcq",
+   "options": [
+    "There was a tie",
+    "Dealer S",
+    "Dealer Q",
+    "Dealer P"
+   ],
+   "answer": 3,
+   "level": "Medium",
+   "id": "M5-TABLE4-18"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Rankings & scoring",
+   "difficulty": "Hard",
+   "question": "If Rohan was ranked 4 in Round 2, who was ranked 4 in Round 2?",
+   "solution": "Step 1: use \"Lavanya dropped by exactly one place.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Prisha's Round 2 rank equals Faiz's Round 1 rank.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Rohan was ahead of Prisha in Round 1 but behind Prisha in Round 2.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Omkar was ahead of Rohan in Round 1 but behind Rohan in Round 2.\" — this fixes: Prisha was 5 in Round 1. Step 5: use \"Faiz was ahead of Prisha in Round 2.\" — this fixes: Faiz was 1 in Round 2. Step 6: use \"Exactly two finalists improved.\" — nothing is fixed outright yet, but it removes options needed later. After all clues, 2 arrangements remain: Round 1: Lavanya, Omkar, Faiz, Rohan, Prisha; Round 2: Faiz, Lavanya, Prisha, Rohan, Omkar | Round 1: Omkar, Faiz, Rohan, Lavanya, Prisha; Round 2: Faiz, Prisha, Rohan, Omkar, Lavanya. The condition \"Rohan was ranked 4 in Round 2\" keeps only: Round 1: Lavanya, Omkar, Faiz, Rohan, Prisha; Round 2: Faiz, Lavanya, Prisha, Rohan, Omkar. Reading off: Rohan.",
+   "set": "m5-rank5",
+   "type": "mcq",
+   "options": [
+    "Rohan",
+    "Prisha",
+    "Omkar",
+    "Faiz"
+   ],
+   "answer": 0,
+   "level": "Hard",
+   "id": "M5-RANK5-19"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Rankings & scoring",
+   "difficulty": "Hard",
+   "question": "If Lavanya was ranked 2 in Round 2, who was ranked 4 in Round 1?",
+   "solution": "Step 1: use \"Lavanya dropped by exactly one place.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Prisha's Round 2 rank equals Faiz's Round 1 rank.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Rohan was ahead of Prisha in Round 1 but behind Prisha in Round 2.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Omkar was ahead of Rohan in Round 1 but behind Rohan in Round 2.\" — this fixes: Prisha was 5 in Round 1. Step 5: use \"Faiz was ahead of Prisha in Round 2.\" — this fixes: Faiz was 1 in Round 2. Step 6: use \"Exactly two finalists improved.\" — nothing is fixed outright yet, but it removes options needed later. After all clues, 2 arrangements remain: Round 1: Lavanya, Omkar, Faiz, Rohan, Prisha; Round 2: Faiz, Lavanya, Prisha, Rohan, Omkar | Round 1: Omkar, Faiz, Rohan, Lavanya, Prisha; Round 2: Faiz, Prisha, Rohan, Omkar, Lavanya. The condition \"Lavanya was ranked 2 in Round 2\" keeps only: Round 1: Lavanya, Omkar, Faiz, Rohan, Prisha; Round 2: Faiz, Lavanya, Prisha, Rohan, Omkar. Reading off: Rohan.",
+   "set": "m5-rank5",
+   "type": "mcq",
+   "options": [
+    "Rohan",
+    "Prisha",
+    "Omkar",
+    "Faiz"
+   ],
+   "answer": 0,
+   "level": "Hard",
+   "id": "M5-RANK5-20"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Rankings & scoring",
+   "difficulty": "Hard",
+   "question": "By how many places did Lavanya's rank change between the two rounds?",
+   "solution": "Step 1: use \"Lavanya dropped by exactly one place.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Prisha's Round 2 rank equals Faiz's Round 1 rank.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Rohan was ahead of Prisha in Round 1 but behind Prisha in Round 2.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Omkar was ahead of Rohan in Round 1 but behind Rohan in Round 2.\" — this fixes: Prisha was 5 in Round 1. Step 5: use \"Faiz was ahead of Prisha in Round 2.\" — this fixes: Faiz was 1 in Round 2. Step 6: use \"Exactly two finalists improved.\" — nothing is fixed outright yet, but it removes options needed later. After all clues, 2 arrangements remain: Round 1: Lavanya, Omkar, Faiz, Rohan, Prisha; Round 2: Faiz, Lavanya, Prisha, Rohan, Omkar | Round 1: Omkar, Faiz, Rohan, Lavanya, Prisha; Round 2: Faiz, Prisha, Rohan, Omkar, Lavanya. The quantity asked has the same value in each, so it is determined. Reading off: 1.",
+   "set": "m5-rank5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1",
+   "level": "Hard",
+   "id": "M5-RANK5-21"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Rankings & scoring",
+   "difficulty": "Medium",
+   "question": "Who was ranked 5 in Round 1?",
+   "solution": "Step 1: use \"Lavanya dropped by exactly one place.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Prisha's Round 2 rank equals Faiz's Round 1 rank.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Rohan was ahead of Prisha in Round 1 but behind Prisha in Round 2.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Omkar was ahead of Rohan in Round 1 but behind Rohan in Round 2.\" — this fixes: Prisha was 5 in Round 1. Step 5: use \"Faiz was ahead of Prisha in Round 2.\" — this fixes: Faiz was 1 in Round 2. Step 6: use \"Exactly two finalists improved.\" — nothing is fixed outright yet, but it removes options needed later. After all clues, 2 arrangements remain: Round 1: Lavanya, Omkar, Faiz, Rohan, Prisha; Round 2: Faiz, Lavanya, Prisha, Rohan, Omkar | Round 1: Omkar, Faiz, Rohan, Lavanya, Prisha; Round 2: Faiz, Prisha, Rohan, Omkar, Lavanya. The quantity asked has the same value in each, so it is determined. Reading off: Prisha.",
+   "set": "m5-rank5",
+   "type": "mcq",
+   "options": [
+    "Faiz",
+    "Rohan",
+    "Prisha",
+    "Omkar"
+   ],
+   "answer": 2,
+   "level": "Medium",
+   "id": "M5-RANK5-22"
+  }
+ ],
+ "sets": {
+  "m5-linear1": {
+   "kind": "dilr",
+   "title": "Arrangement (Hard)",
+   "html": "<b>Arrangement</b><p>Six photographs are hung in a single row on a gallery wall, in slots 1 to 6 from left to right, one by each of six photographers. Each photograph is one of three types — portrait, landscape, street — with exactly two of each type.</p><p>The following is known:</p><ul class='clues'><li>Nisha's type is not street.</li><li>Exactly four positions lie strictly between Charu's and Nisha's.</li><li>Gargi is in a lower-numbered position than Charu.</li><li>Rhea and Charu are not in adjacent positions.</li><li>Lokesh's type is not street.</li><li>Charu's type is not street.</li><li>Nisha's type is not landscape.</li><li>The photograph in slot 3 is not landscape.</li><li>Lokesh and Dev have the same type.</li><li>Rhea and Gargi are not in adjacent positions.</li><li>Nisha and Dev are not in adjacent positions.</li></ul>"
+  },
+  "m5-tourn2": {
+   "kind": "dilr",
+   "title": "Tournament (Hard)",
+   "html": "<b>Tournament</b><p>Five robotics clubs — Volt, Gear, Servo, Pixel, Torque — fought a round-robin sumo-bot contest, each pair of clubs meeting exactly once. A win gave 3 points, a stalemate 1 point, and a loss 0.</p><p>The following is known:</p><ul class='clues'><li>Torque finished with 2 points.</li><li>Volt finished with 6 points.</li><li>Volt won exactly one match.</li><li>Servo finished with 4 points.</li><li>Pixel did not draw any match.</li><li>Pixel won exactly two matches.</li></ul>"
+  },
+  "m5-circular3": {
+   "kind": "dilr",
+   "title": "Circular arrangement (Medium)",
+   "html": "<b>Circular arrangement</b><p>Seven colleagues sit around a circular table at a team lunch, equally spaced and facing the centre. Each orders one of three drinks — buttermilk, lemon soda, cold coffee — with three people choosing buttermilk and two each choosing the others. \"Immediately to the left\" is from the seated person's own point of view.</p><p>The following is known:</p><ul class='clues'><li>Rohan sits immediately to the left of Meera.</li><li>Meera sits immediately to the left of Aditi.</li><li>Uday and Aditi sit next to each other.</li><li>Rohan's drink is not cold coffee.</li><li>Along the shorter way round, exactly two people sit between Ishaan and Aditi.</li><li>Vani and Aditi have the same drink.</li><li>Arjun and Aditi have the same drink.</li><li>Rohan and Uday have the same drink.</li><li>Along the shorter way round, exactly two people sit between Uday and Vani.</li></ul>"
+  },
+  "m5-table4": {
+   "kind": "dilr",
+   "title": "Data tables (missing data) (Hard)",
+   "html": "<b>Data tables (missing data)</b><p>The table shows the number of e-rickshaws sold by four dealers in three cities. Some entries are hidden. Every figure (hidden or shown) is a multiple of 5 between 10 and 80, and the grand total of all twelve figures is 570.<table class='data'><tr><th></th><th>Indore</th><th>Bhopal</th><th>Gwalior</th></tr><tr><td>Dealer P</td><td>55</td><td class='miss'>?</td><td class='miss'>?</td></tr><tr><td>Dealer Q</td><td>30</td><td>15</td><td class='miss'>?</td></tr><tr><td>Dealer R</td><td class='miss'>?</td><td>75</td><td class='miss'>?</td></tr><tr><td>Dealer S</td><td>25</td><td>80</td><td class='miss'>?</td></tr></table></p><p>The following is known:</p><ul class='clues'><li>Dealer Q's total across the three columns was 75 vehicles.</li><li>The figure for Dealer P in Bhopal exceeded that for Dealer Q in Gwalior by 10.</li><li>Dealer P's total across the three columns was 135 vehicles.</li><li>Dealer R's figures rose strictly from Indore to Bhopal to Gwalior.</li><li>Dealer R's total across the three columns was 180 vehicles.</li></ul>"
+  },
+  "m5-rank5": {
+   "kind": "dilr",
+   "title": "Rank changes (Hard)",
+   "html": "<b>Rank changes</b><p>Five startups were ranked 1 (best) to 5 by a jury and re-ranked after live demos; call these Round 1 and Round 2. No ties occurred in either round. \"Improved\" means a better (numerically smaller) rank in Round 2 than in Round 1. The five are Lavanya, Prisha, Omkar, Faiz, Rohan.</p><p>The following is known:</p><ul class='clues'><li>Exactly two finalists improved.</li><li>Rohan was ahead of Prisha in Round 1 but behind Prisha in Round 2.</li><li>Lavanya dropped by exactly one place.</li><li>Faiz was ahead of Prisha in Round 2.</li><li>Omkar was ahead of Rohan in Round 1 but behind Rohan in Round 2.</li><li>Prisha's Round 2 rank equals Faiz's Round 1 rank.</li></ul>"
+  }
+ }
+}

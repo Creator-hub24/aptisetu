@@ -1,0 +1,362 @@
+{
+ "name": "mock-4 — QA",
+ "questions": [
+  {
+   "id": "M4-QA-01",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Percentages & Profit",
+   "difficulty": "Easy",
+   "question": "A shopkeeper marks an item 40% above cost and then offers two successive discounts of 10% and x%. If he still makes a profit of 13.4%, what is x?",
+   "solution": "1.4 × 0.9 × (1 − x/100) = 1.134, so 1 − x/100 = 0.9 and x = 10.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "10",
+   "level": "Easy"
+  },
+  {
+   "id": "M4-QA-02",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Percentages & Profit",
+   "difficulty": "Hard",
+   "question": "A trader uses a faulty balance. When buying, he receives 1100 g for every 1 kg he pays for; when selling, he gives only 900 g for every 1 kg he charges for. If he sells at his cost price per kg, what is his profit percentage?",
+   "solution": "For ₹C he receives 1100 g. He sells it as 1100/900 = 11/9 'kg' at ₹C each, so revenue is 11C/9. Profit = 2/9 = 22 2/9 %.",
+   "type": "mcq",
+   "options": [
+    "199/9",
+    "200/9",
+    "20",
+    "21"
+   ],
+   "answer": 1,
+   "level": "Hard"
+  },
+  {
+   "id": "M4-QA-03",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Averages",
+   "difficulty": "Hard",
+   "question": "The average score of 5 boys and 3 girls in a test is 30. All boys scored the same, all girls scored the same, and each girl's score is at least the boys' score but at most 1.5 times it. Scores need not be integers. How many distinct integer values can the total score of 3 boys and 5 girls take?",
+   "solution": "Step 1: 5b + 3g = 240, so g = (240 − 5b)/3. Step 2: g ≥ b gives b ≤ 30; g ≤ 1.5b gives 240 − 5b ≤ 4.5b, so b ≥ 240/9.5 ≈ 25.26. Step 3: the required total is 3b + 5g = 400 − (16/3)b, which decreases continuously from about 265.26 (at b ≈ 25.26) to 240 (at b = 30). Step 4: integers 240, 241, …, 265, which is 26 values.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "26",
+   "level": "Hard"
+  },
+  {
+   "id": "M4-QA-04",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time & Work",
+   "difficulty": "Medium",
+   "question": "A can do a job in 20 days and B in 30 days. They work on alternate days, A starting. On which day is the job completed?",
+   "solution": "In 2 days they do 1/20 + 1/30 = 1/12. After 22 days, 11/12 is done. On day 23 A does 1/20, making 11/12 + 1/20 = 58/60, still short. On day 24 B does 1/30, making 60/60. So the job is completed on day 24.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Medium",
+   "options": [
+    "22",
+    "30",
+    "24",
+    "48"
+   ]
+  },
+  {
+   "id": "M4-QA-05",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mixtures & Alligation",
+   "difficulty": "Hard",
+   "question": "A vessel holds 80 litres of pure milk. 8 litres are removed and replaced with water, and this is done three times in all. A further 20 litres of the mixture is then removed and replaced with water. What is the quantity of milk, in litres, now in the vessel?",
+   "solution": "After three replacements, milk = 80 × (0.9)³ = 58.32 L. Removing 20 of 80 litres keeps 3/4: 58.32 × 0.75 = 43.74 L.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "43.74",
+   "level": "Hard"
+  },
+  {
+   "id": "M4-QA-06",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Simple & Compound Interest",
+   "difficulty": "Easy",
+   "question": "A sum amounts to ₹13,310 in 3 years and to ₹14,641 in 4 years at compound interest (annual compounding). What is the sum, in ₹?",
+   "solution": "The rate is 14641/13310 − 1 = 10%. Sum = 13310 / 1.1³ = 10,000.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Easy",
+   "options": [
+    "10000",
+    "8000",
+    "11000",
+    "13000"
+   ]
+  },
+  {
+   "id": "M4-QA-07",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Ratio & Proportion",
+   "difficulty": "Medium",
+   "question": "The cost of a diamond varies as the square of its weight. A diamond worth ₹1,60,000 breaks into three pieces whose weights are in the ratio 1 : 2 : 5. What is the loss, in ₹, due to the breakage?",
+   "solution": "Total 'square units': 8² = 64 before, 1 + 4 + 25 = 30 after. Loss = 160000 × 34/64 = ₹85,000.",
+   "type": "mcq",
+   "answer": 1,
+   "level": "Medium",
+   "options": [
+    "110500",
+    "85000",
+    "68000",
+    "93500"
+   ]
+  },
+  {
+   "id": "M4-QA-08",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Hard",
+   "question": "For how many integer values of a does the equation x² − ax + 2a = 0 have both roots integers?",
+   "solution": "r + s = a and rs = 2a give rs − 2r − 2s = 0, i.e. (r − 2)(s − 2) = 4. Factor pairs (1,4), (2,2), (4,1), (−1,−4), (−2,−2), (−4,−1) give a = r + s ∈ {9, 8, −1, 0}. So 4 values.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4",
+   "level": "Hard"
+  },
+  {
+   "id": "M4-QA-09",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Medium",
+   "question": "If x + 1/x = 3, what is the value of x⁵ + 1/x⁵?",
+   "solution": "Let tₙ = xⁿ + x⁻ⁿ, so tₙ₊₁ = 3tₙ − tₙ₋₁. t₀ = 2, t₁ = 3, t₂ = 7, t₃ = 18, t₄ = 47, t₅ = 123.",
+   "type": "mcq",
+   "answer": 1,
+   "level": "Medium",
+   "options": [
+    "99",
+    "123",
+    "135",
+    "147"
+   ]
+  },
+  {
+   "id": "M4-QA-10",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Inequalities",
+   "difficulty": "Hard",
+   "question": "How many ordered pairs of positive integers (x, y) satisfy 3x + 5y ≤ 60?",
+   "solution": "For y = 1 to 11, x ranges from 1 to ⌊(60 − 5y)/3⌋: 18 + 16 + 15 + 13 + 11 + 10 + 8 + 6 + 5 + 3 + 1 = 106.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Hard",
+   "options": [
+    "126",
+    "86",
+    "116",
+    "106"
+   ]
+  },
+  {
+   "id": "M4-QA-11",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Logarithms",
+   "difficulty": "Medium",
+   "question": "If log₂(log₃(log₄ x)) = 0, and y = log_x 2, what is 1/y?",
+   "solution": "log₃(log₄ x) = 1, so log₄ x = 3 and x = 64. Then y = log₆₄ 2 = 1/6, so 1/y = 6.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Medium",
+   "options": [
+    "6",
+    "12",
+    "7",
+    "4"
+   ]
+  },
+  {
+   "id": "M4-QA-12",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Functions",
+   "difficulty": "Medium",
+   "question": "A function satisfies f(x) + 2f(1/x) = 3x for all x ≠ 0. What is f(2)?",
+   "solution": "Substitute x → 1/x: f(1/x) + 2f(x) = 3/x. Solving the pair gives f(x) = (2/x) − x. Then f(2) = 1 − 2 = −1.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "-1",
+   "level": "Medium"
+  },
+  {
+   "id": "M4-QA-13",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Progressions",
+   "difficulty": "Medium",
+   "question": "The sum of the first n terms of a sequence is 3n² + 5n. What is the sum of its 10th, 20th and 30th terms?",
+   "solution": "aₙ = Sₙ − Sₙ₋₁ = 6n + 2. So a₁₀ + a₂₀ + a₃₀ = 62 + 122 + 182 = 366.",
+   "type": "mcq",
+   "answer": 1,
+   "level": "Medium",
+   "options": [
+    "474",
+    "366",
+    "330",
+    "732"
+   ]
+  },
+  {
+   "id": "M4-QA-14",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Progressions",
+   "difficulty": "Medium",
+   "question": "Three numbers in a geometric progression have sum 26 and product 216. What is the largest of them?",
+   "solution": "Let the terms be a/r, a, ar. Then a³ = 216, so a = 6, and 6/r + 6 + 6r = 26 gives 3r² − 10r + 3 = 0, so r = 3 or 1/3. The terms are 2, 6, 18.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Medium",
+   "options": [
+    "19",
+    "20",
+    "21",
+    "18"
+   ]
+  },
+  {
+   "id": "M4-QA-15",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Medium",
+   "question": "ABCD is a square of side 12. E is the midpoint of BC and F lies on CD with CF = 3. What is the area of triangle AEF?",
+   "solution": "Area = square − ΔABE − ΔECF − ΔFDA = 144 − 36 − 9 − 54 = 45.",
+   "type": "mcq",
+   "answer": 1,
+   "level": "Medium",
+   "options": [
+    "37",
+    "45",
+    "90",
+    "41"
+   ]
+  },
+  {
+   "id": "M4-QA-16",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Medium",
+   "question": "A circle is inscribed in a right triangle whose legs are 20 and 21. What is the radius of the circle?",
+   "solution": "Hypotenuse = √(400 + 441) = 29. r = (a + b − c)/2 = (20 + 21 − 29)/2 = 6.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "6",
+   "level": "Medium"
+  },
+  {
+   "id": "M4-QA-17",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Hard",
+   "question": "C is the circle x² + y² − 6x + 8y = 0. A point P moves so that the two tangents from P to C always make an angle of 60° with each other. What is the largest possible x-coordinate of P?",
+   "solution": "Step 1: C has centre (3, −4) and radius √(9 + 16) = 5. Step 2: if the tangents from P meet at 60°, each makes 30° with the line to the centre, so the distance from P to the centre is r / sin 30° = 10. Step 3: P lies on the circle of radius 10 about (3, −4), whose largest x-coordinate is 3 + 10 = 13.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "13",
+   "level": "Hard"
+  },
+  {
+   "id": "M4-QA-18",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Hard",
+   "question": "What is the remainder when 7^99 is divided by 2400?",
+   "solution": "7⁴ = 2401 ≡ 1 (mod 2400). 99 = 4 × 24 + 3, so 7⁹⁹ ≡ 7³ = 343.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Hard",
+   "options": [
+    "377",
+    "686",
+    "445",
+    "343"
+   ]
+  },
+  {
+   "id": "M4-QA-19",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Hard",
+   "question": "How many integers from 1 to 2000 are divisible by 6 or by 10, but not by 15?",
+   "solution": "Multiples of 6: 333; of 10: 200; of both (30): 66. Union = 467. A number in the union is divisible by 15 exactly when it is a multiple of 30 (6 and 15 give 30; 10 and 15 give 30): 66 of them. 467 − 66 = 401.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Hard",
+   "options": [
+    "802",
+    "361",
+    "481",
+    "401"
+   ]
+  },
+  {
+   "id": "M4-QA-20",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Permutations & Combinations",
+   "difficulty": "Medium",
+   "question": "In how many ways can the letters of the word BALLOON be arranged so that the two L's are not together?",
+   "solution": "Total = 7!/(2! 2!) = 1260. With the L's together (treat LL as one letter): 6!/2! = 360. So 1260 − 360 = 900.",
+   "type": "mcq",
+   "answer": 1,
+   "level": "Medium",
+   "options": [
+    "720",
+    "900",
+    "1080",
+    "810"
+   ]
+  },
+  {
+   "id": "M4-QA-21",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Probability",
+   "difficulty": "Medium",
+   "question": "Two dice are rolled. Given that the sum is at least 9, what is the probability that at least one die shows 6?",
+   "solution": "Outcomes with sum ≥ 9: 4 + 3 + 2 + 1 = 10. Those with a 6: (3,6), (6,3), (4,6), (6,4), (5,6), (6,5), (6,6) = 7. So 7/10.",
+   "type": "mcq",
+   "options": [
+    "4/5",
+    "3/5",
+    "7/10",
+    "1/2"
+   ],
+   "answer": 2,
+   "level": "Medium"
+  },
+  {
+   "id": "M4-QA-22",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Averages",
+   "difficulty": "Medium",
+   "question": "The average weight of a group of 20 is 50 kg. When two people weighing 62 kg and 70 kg leave and two new people join, the average falls by 1.5 kg. What is the average weight, in kg, of the two newcomers?",
+   "solution": "New total = 20 × 48.5 = 970. The remaining 18 weigh 1000 − 132 = 868. The newcomers weigh 102 kg together, an average of 51 kg.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "51",
+   "level": "Medium"
+  }
+ ],
+ "sets": {}
+}

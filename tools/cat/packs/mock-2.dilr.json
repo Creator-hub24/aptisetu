@@ -1,0 +1,370 @@
+{
+ "name": "mock-2 — DILR",
+ "questions": [
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "Who sits immediately to the left of Manav?",
+   "solution": "Step 1: use \"Divya sits immediately to the left of Ela.\" — this fixes: Divya sits immediately to the left of Ela. Step 2: use \"Divya and Meera sit next to each other.\" — this fixes: Meera sits immediately to the left of Divya. Step 3: use \"Ela and Divya have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Divya and Gargi have the same instrument type.\" — this fixes: Ela's instrument type is strings; Divya's instrument type is strings; Gargi's instrument type is strings. Step 5: use \"Kabir's instrument type is not percussion.\" — this fixes: Kabir's instrument type is wind. Step 6: use \"Rhea's instrument type is not percussion.\" — this fixes: Manav's instrument type is percussion; Rhea's instrument type is wind; Meera's instrument type is percussion. Step 7: use \"Along the shorter way round, exactly one person sits between Meera and Gargi.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"Rhea and Gargi do not sit next to each other.\" — this fixes: Ela sits immediately to the left of Rhea. Step 9: use \"Along the shorter way round, exactly two people sit between Manav and Meera.\" — this fixes: Rhea sits immediately to the left of Manav; Gargi sits immediately to the left of Kabir; Kabir sits immediately to the left of Meera; Manav sits immediately to the left of Gargi. Final arrangement: going round to each person's left starting from Manav: Manav (percussion), Rhea (wind), Ela (strings), Divya (strings), Meera (percussion), Kabir (wind), Gargi (strings). Reading off: Rhea.",
+   "set": "m2-circular1",
+   "type": "mcq",
+   "options": [
+    "Rhea",
+    "Divya",
+    "Ela",
+    "Gargi"
+   ],
+   "answer": 0,
+   "level": "Medium",
+   "id": "M2-CIRCULAR1-01"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "Counting along the shorter way round, how many people sit between Manav and Gargi?",
+   "solution": "Step 1: use \"Divya sits immediately to the left of Ela.\" — this fixes: Divya sits immediately to the left of Ela. Step 2: use \"Divya and Meera sit next to each other.\" — this fixes: Meera sits immediately to the left of Divya. Step 3: use \"Ela and Divya have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Divya and Gargi have the same instrument type.\" — this fixes: Ela's instrument type is strings; Divya's instrument type is strings; Gargi's instrument type is strings. Step 5: use \"Kabir's instrument type is not percussion.\" — this fixes: Kabir's instrument type is wind. Step 6: use \"Rhea's instrument type is not percussion.\" — this fixes: Manav's instrument type is percussion; Rhea's instrument type is wind; Meera's instrument type is percussion. Step 7: use \"Along the shorter way round, exactly one person sits between Meera and Gargi.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"Rhea and Gargi do not sit next to each other.\" — this fixes: Ela sits immediately to the left of Rhea. Step 9: use \"Along the shorter way round, exactly two people sit between Manav and Meera.\" — this fixes: Rhea sits immediately to the left of Manav; Gargi sits immediately to the left of Kabir; Kabir sits immediately to the left of Meera; Manav sits immediately to the left of Gargi. Final arrangement: going round to each person's left starting from Manav: Manav (percussion), Rhea (wind), Ela (strings), Divya (strings), Meera (percussion), Kabir (wind), Gargi (strings). Reading off: 0.",
+   "set": "m2-circular1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "0",
+   "level": "Medium",
+   "id": "M2-CIRCULAR1-02"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "How many of Ela's two neighbours have instrument type strings?",
+   "solution": "Step 1: use \"Divya sits immediately to the left of Ela.\" — this fixes: Divya sits immediately to the left of Ela. Step 2: use \"Divya and Meera sit next to each other.\" — this fixes: Meera sits immediately to the left of Divya. Step 3: use \"Ela and Divya have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Divya and Gargi have the same instrument type.\" — this fixes: Ela's instrument type is strings; Divya's instrument type is strings; Gargi's instrument type is strings. Step 5: use \"Kabir's instrument type is not percussion.\" — this fixes: Kabir's instrument type is wind. Step 6: use \"Rhea's instrument type is not percussion.\" — this fixes: Manav's instrument type is percussion; Rhea's instrument type is wind; Meera's instrument type is percussion. Step 7: use \"Along the shorter way round, exactly one person sits between Meera and Gargi.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"Rhea and Gargi do not sit next to each other.\" — this fixes: Ela sits immediately to the left of Rhea. Step 9: use \"Along the shorter way round, exactly two people sit between Manav and Meera.\" — this fixes: Rhea sits immediately to the left of Manav; Gargi sits immediately to the left of Kabir; Kabir sits immediately to the left of Meera; Manav sits immediately to the left of Gargi. Final arrangement: going round to each person's left starting from Manav: Manav (percussion), Rhea (wind), Ela (strings), Divya (strings), Meera (percussion), Kabir (wind), Gargi (strings). Reading off: 1.",
+   "set": "m2-circular1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1",
+   "level": "Hard",
+   "id": "M2-CIRCULAR1-03"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "What is Kabir's instrument type?",
+   "solution": "Step 1: use \"Divya sits immediately to the left of Ela.\" — this fixes: Divya sits immediately to the left of Ela. Step 2: use \"Divya and Meera sit next to each other.\" — this fixes: Meera sits immediately to the left of Divya. Step 3: use \"Ela and Divya have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Divya and Gargi have the same instrument type.\" — this fixes: Ela's instrument type is strings; Divya's instrument type is strings; Gargi's instrument type is strings. Step 5: use \"Kabir's instrument type is not percussion.\" — this fixes: Kabir's instrument type is wind. Step 6: use \"Rhea's instrument type is not percussion.\" — this fixes: Manav's instrument type is percussion; Rhea's instrument type is wind; Meera's instrument type is percussion. Step 7: use \"Along the shorter way round, exactly one person sits between Meera and Gargi.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"Rhea and Gargi do not sit next to each other.\" — this fixes: Ela sits immediately to the left of Rhea. Step 9: use \"Along the shorter way round, exactly two people sit between Manav and Meera.\" — this fixes: Rhea sits immediately to the left of Manav; Gargi sits immediately to the left of Kabir; Kabir sits immediately to the left of Meera; Manav sits immediately to the left of Gargi. Final arrangement: going round to each person's left starting from Manav: Manav (percussion), Rhea (wind), Ela (strings), Divya (strings), Meera (percussion), Kabir (wind), Gargi (strings). Reading off: wind.",
+   "set": "m2-circular1",
+   "type": "mcq",
+   "options": [
+    "wind",
+    "percussion",
+    "strings",
+    "Cannot be determined"
+   ],
+   "answer": 0,
+   "level": "Medium",
+   "id": "M2-CIRCULAR1-04"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "How many of Meera's two neighbours have instrument type strings?",
+   "solution": "Step 1: use \"Divya sits immediately to the left of Ela.\" — this fixes: Divya sits immediately to the left of Ela. Step 2: use \"Divya and Meera sit next to each other.\" — this fixes: Meera sits immediately to the left of Divya. Step 3: use \"Ela and Divya have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Divya and Gargi have the same instrument type.\" — this fixes: Ela's instrument type is strings; Divya's instrument type is strings; Gargi's instrument type is strings. Step 5: use \"Kabir's instrument type is not percussion.\" — this fixes: Kabir's instrument type is wind. Step 6: use \"Rhea's instrument type is not percussion.\" — this fixes: Manav's instrument type is percussion; Rhea's instrument type is wind; Meera's instrument type is percussion. Step 7: use \"Along the shorter way round, exactly one person sits between Meera and Gargi.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"Rhea and Gargi do not sit next to each other.\" — this fixes: Ela sits immediately to the left of Rhea. Step 9: use \"Along the shorter way round, exactly two people sit between Manav and Meera.\" — this fixes: Rhea sits immediately to the left of Manav; Gargi sits immediately to the left of Kabir; Kabir sits immediately to the left of Meera; Manav sits immediately to the left of Gargi. Final arrangement: going round to each person's left starting from Manav: Manav (percussion), Rhea (wind), Ela (strings), Divya (strings), Meera (percussion), Kabir (wind), Gargi (strings). Reading off: 1.",
+   "set": "m2-circular1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1",
+   "level": "Hard",
+   "id": "M2-CIRCULAR1-05"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What percentage of Old Fort's total came in Over 40? (Answer to the nearest integer.)",
+   "solution": "Step 1: use \"Old Fort's total across the three columns was 165 memberships.\" — this fixes: Old Fort–Over 40 = 75. Step 2: use \"The figure for Old Fort in Over 40 exceeded that for Lakeview in Over 40 by 20.\" — this fixes: Lakeview–Over 40 = 55. Step 3: use \"Lakeview's total across the three columns was 165 memberships.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"The figure for Central in 18–40 was twice that for Station Rd in Over 40.\" — this fixes: Central–18–40 = 20; Station Rd–Over 40 = 10. Step 5: use \"The four together recorded 180 memberships in 18–40.\" — this fixes: Lakeview–18–40 = 55; Lakeview–Under 18 = 55. Final arrangement: Lakeview–18–40 = 55; Lakeview–Under 18 = 55; Lakeview–Over 40 = 55; Central–18–40 = 20; Station Rd–Over 40 = 10; Old Fort–Over 40 = 75. Reading off: 45.",
+   "set": "m2-table2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "45",
+   "level": "Hard",
+   "id": "M2-TABLE2-06"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What was the figure for Old Fort in Over 40?",
+   "solution": "Step 1: use \"Old Fort's total across the three columns was 165 memberships.\" — this fixes: Old Fort–Over 40 = 75. Step 2: use \"The figure for Old Fort in Over 40 exceeded that for Lakeview in Over 40 by 20.\" — this fixes: Lakeview–Over 40 = 55. Step 3: use \"Lakeview's total across the three columns was 165 memberships.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"The figure for Central in 18–40 was twice that for Station Rd in Over 40.\" — this fixes: Central–18–40 = 20; Station Rd–Over 40 = 10. Step 5: use \"The four together recorded 180 memberships in 18–40.\" — this fixes: Lakeview–18–40 = 55; Lakeview–Under 18 = 55. Final arrangement: Lakeview–18–40 = 55; Lakeview–Under 18 = 55; Lakeview–Over 40 = 55; Central–18–40 = 20; Station Rd–Over 40 = 10; Old Fort–Over 40 = 75. Reading off: 75.",
+   "set": "m2-table2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "75",
+   "level": "Hard",
+   "id": "M2-TABLE2-07"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "In how many of the twelve (row, column) cells was the figure strictly greater than 50?",
+   "solution": "Step 1: use \"Old Fort's total across the three columns was 165 memberships.\" — this fixes: Old Fort–Over 40 = 75. Step 2: use \"The figure for Old Fort in Over 40 exceeded that for Lakeview in Over 40 by 20.\" — this fixes: Lakeview–Over 40 = 55. Step 3: use \"Lakeview's total across the three columns was 165 memberships.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"The figure for Central in 18–40 was twice that for Station Rd in Over 40.\" — this fixes: Central–18–40 = 20; Station Rd–Over 40 = 10. Step 5: use \"The four together recorded 180 memberships in 18–40.\" — this fixes: Lakeview–18–40 = 55; Lakeview–Under 18 = 55. Final arrangement: Lakeview–18–40 = 55; Lakeview–Under 18 = 55; Lakeview–Over 40 = 55; Central–18–40 = 20; Station Rd–Over 40 = 10; Old Fort–Over 40 = 75. Reading off: 7.",
+   "set": "m2-table2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "7",
+   "level": "Hard",
+   "id": "M2-TABLE2-08"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What was the difference between the highest and the lowest row total?",
+   "solution": "Step 1: use \"Old Fort's total across the three columns was 165 memberships.\" — this fixes: Old Fort–Over 40 = 75. Step 2: use \"The figure for Old Fort in Over 40 exceeded that for Lakeview in Over 40 by 20.\" — this fixes: Lakeview–Over 40 = 55. Step 3: use \"Lakeview's total across the three columns was 165 memberships.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"The figure for Central in 18–40 was twice that for Station Rd in Over 40.\" — this fixes: Central–18–40 = 20; Station Rd–Over 40 = 10. Step 5: use \"The four together recorded 180 memberships in 18–40.\" — this fixes: Lakeview–18–40 = 55; Lakeview–Under 18 = 55. Final arrangement: Lakeview–18–40 = 55; Lakeview–Under 18 = 55; Lakeview–Over 40 = 55; Central–18–40 = 20; Station Rd–Over 40 = 10; Old Fort–Over 40 = 75. Reading off: 20.",
+   "set": "m2-table2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "20",
+   "level": "Hard",
+   "id": "M2-TABLE2-09"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What percentage of Station Rd's total came in Over 40? (Answer to the nearest integer.)",
+   "solution": "Step 1: use \"Old Fort's total across the three columns was 165 memberships.\" — this fixes: Old Fort–Over 40 = 75. Step 2: use \"The figure for Old Fort in Over 40 exceeded that for Lakeview in Over 40 by 20.\" — this fixes: Lakeview–Over 40 = 55. Step 3: use \"Lakeview's total across the three columns was 165 memberships.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"The figure for Central in 18–40 was twice that for Station Rd in Over 40.\" — this fixes: Central–18–40 = 20; Station Rd–Over 40 = 10. Step 5: use \"The four together recorded 180 memberships in 18–40.\" — this fixes: Lakeview–18–40 = 55; Lakeview–Under 18 = 55. Final arrangement: Lakeview–18–40 = 55; Lakeview–Under 18 = 55; Lakeview–Over 40 = 55; Central–18–40 = 20; Station Rd–Over 40 = 10; Old Fort–Over 40 = 75. Reading off: 6.",
+   "set": "m2-table2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "6",
+   "level": "Hard",
+   "id": "M2-TABLE2-10"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "Who is in position 5?",
+   "solution": "Step 1: use \"Exactly three positions lie strictly between Bhavin's and Sana's.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Bhavin and Rohan have the same bike colour.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Exactly two positions lie strictly between Bhavin's and Hina's.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Jaya and Sana have the same bike colour.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Sana is in a lower-numbered position than Bhavin.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Rhea is in a lower-numbered position than Hina.\" — this fixes: Bhavin is in position 6; Rhea is in position 1; Hina is in position 3; Sana is in position 2. Step 7: use \"Hina and Rohan are not in adjacent positions.\" — this fixes: Jaya is in position 4; Rohan is in position 5. Step 8: use \"The bike in position 2 is not maroon.\" — nothing is fixed outright yet, but it removes options needed later. Step 9: use \"Hina's bike colour is not maroon.\" — this fixes: Bhavin's bike colour is maroon; Rohan's bike colour is maroon. Step 10: use \"The bike in position 1 is not teal.\" — this fixes: Jaya's bike colour is teal; Rhea's bike colour is ivory; Hina's bike colour is ivory; Sana's bike colour is teal. Final arrangement: position 1: Rhea (ivory); position 2: Sana (teal); position 3: Hina (ivory); position 4: Jaya (teal); position 5: Rohan (maroon); position 6: Bhavin (maroon). Reading off: Rohan.",
+   "set": "m2-linear3",
+   "type": "mcq",
+   "options": [
+    "Hina",
+    "Sana",
+    "Rohan",
+    "Bhavin"
+   ],
+   "answer": 2,
+   "level": "Hard",
+   "id": "M2-LINEAR3-11"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "How many positions lie strictly between Jaya's and Rhea's?",
+   "solution": "Step 1: use \"Exactly three positions lie strictly between Bhavin's and Sana's.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Bhavin and Rohan have the same bike colour.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Exactly two positions lie strictly between Bhavin's and Hina's.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Jaya and Sana have the same bike colour.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Sana is in a lower-numbered position than Bhavin.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Rhea is in a lower-numbered position than Hina.\" — this fixes: Bhavin is in position 6; Rhea is in position 1; Hina is in position 3; Sana is in position 2. Step 7: use \"Hina and Rohan are not in adjacent positions.\" — this fixes: Jaya is in position 4; Rohan is in position 5. Step 8: use \"The bike in position 2 is not maroon.\" — nothing is fixed outright yet, but it removes options needed later. Step 9: use \"Hina's bike colour is not maroon.\" — this fixes: Bhavin's bike colour is maroon; Rohan's bike colour is maroon. Step 10: use \"The bike in position 1 is not teal.\" — this fixes: Jaya's bike colour is teal; Rhea's bike colour is ivory; Hina's bike colour is ivory; Sana's bike colour is teal. Final arrangement: position 1: Rhea (ivory); position 2: Sana (teal); position 3: Hina (ivory); position 4: Jaya (teal); position 5: Rohan (maroon); position 6: Bhavin (maroon). Reading off: 2.",
+   "set": "m2-linear3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "2",
+   "level": "Hard",
+   "id": "M2-LINEAR3-12"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "What is Hina's bike colour?",
+   "solution": "Step 1: use \"Exactly three positions lie strictly between Bhavin's and Sana's.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Bhavin and Rohan have the same bike colour.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Exactly two positions lie strictly between Bhavin's and Hina's.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Jaya and Sana have the same bike colour.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Sana is in a lower-numbered position than Bhavin.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Rhea is in a lower-numbered position than Hina.\" — this fixes: Bhavin is in position 6; Rhea is in position 1; Hina is in position 3; Sana is in position 2. Step 7: use \"Hina and Rohan are not in adjacent positions.\" — this fixes: Jaya is in position 4; Rohan is in position 5. Step 8: use \"The bike in position 2 is not maroon.\" — nothing is fixed outright yet, but it removes options needed later. Step 9: use \"Hina's bike colour is not maroon.\" — this fixes: Bhavin's bike colour is maroon; Rohan's bike colour is maroon. Step 10: use \"The bike in position 1 is not teal.\" — this fixes: Jaya's bike colour is teal; Rhea's bike colour is ivory; Hina's bike colour is ivory; Sana's bike colour is teal. Final arrangement: position 1: Rhea (ivory); position 2: Sana (teal); position 3: Hina (ivory); position 4: Jaya (teal); position 5: Rohan (maroon); position 6: Bhavin (maroon). Reading off: ivory.",
+   "set": "m2-linear3",
+   "type": "mcq",
+   "options": [
+    "ivory",
+    "maroon",
+    "teal",
+    "Cannot be determined"
+   ],
+   "answer": 0,
+   "level": "Hard",
+   "id": "M2-LINEAR3-13"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "Who are the two people whose bike colour is teal?",
+   "solution": "Step 1: use \"Exactly three positions lie strictly between Bhavin's and Sana's.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Bhavin and Rohan have the same bike colour.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Exactly two positions lie strictly between Bhavin's and Hina's.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Jaya and Sana have the same bike colour.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Sana is in a lower-numbered position than Bhavin.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Rhea is in a lower-numbered position than Hina.\" — this fixes: Bhavin is in position 6; Rhea is in position 1; Hina is in position 3; Sana is in position 2. Step 7: use \"Hina and Rohan are not in adjacent positions.\" — this fixes: Jaya is in position 4; Rohan is in position 5. Step 8: use \"The bike in position 2 is not maroon.\" — nothing is fixed outright yet, but it removes options needed later. Step 9: use \"Hina's bike colour is not maroon.\" — this fixes: Bhavin's bike colour is maroon; Rohan's bike colour is maroon. Step 10: use \"The bike in position 1 is not teal.\" — this fixes: Jaya's bike colour is teal; Rhea's bike colour is ivory; Hina's bike colour is ivory; Sana's bike colour is teal. Final arrangement: position 1: Rhea (ivory); position 2: Sana (teal); position 3: Hina (ivory); position 4: Jaya (teal); position 5: Rohan (maroon); position 6: Bhavin (maroon). Reading off: Jaya and Sana.",
+   "set": "m2-linear3",
+   "type": "mcq",
+   "options": [
+    "Bhavin and Rhea",
+    "Jaya and Rhea",
+    "Bhavin and Sana",
+    "Jaya and Sana"
+   ],
+   "answer": 3,
+   "level": "Hard",
+   "id": "M2-LINEAR3-14"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "How many teams finished with more points than the team that had the fewest wins? (If several teams share the fewest wins, take the one with the most points among them.)",
+   "solution": "Step 1: use \"Titans finished with 16 points.\" — this fixes: Titans beat Rovers; Titans beat Strikers; Titans beat Comets; Titans beat Wanderers; Titans has 16 points. Step 2: use \"Wanderers won exactly three matches.\" — this fixes: Wanderers beat Rovers; Wanderers beat Strikers; Wanderers beat Comets; Wanderers has 12 points. Step 3: use \"Exactly two matches in the league ended in a draw.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Rovers won exactly one match.\" — this fixes: Strikers drew with Comets; Rovers has 5 points. Step 5: use \"Comets drew exactly one match.\" — this fixes: Rovers drew with Strikers; Rovers beat Comets; Strikers has 2 points; Comets has 1 points. Final arrangement: Rovers v Strikers: draw; Rovers v Comets: Rovers; Rovers v Titans: Titans; Rovers v Wanderers: Wanderers; Strikers v Comets: draw; Strikers v Titans: Titans; Strikers v Wanderers: Wanderers; Comets v Titans: Titans; Comets v Wanderers: Wanderers; Titans v Wanderers: Titans; points Rovers 5, Strikers 2, Comets 1, Titans 16, Wanderers 12. Reading off: 3.",
+   "set": "m2-tourn4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3",
+   "level": "Hard",
+   "id": "M2-TOURN4-15"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "How many points did Rovers finish with?",
+   "solution": "Step 1: use \"Titans finished with 16 points.\" — this fixes: Titans beat Rovers; Titans beat Strikers; Titans beat Comets; Titans beat Wanderers; Titans has 16 points. Step 2: use \"Wanderers won exactly three matches.\" — this fixes: Wanderers beat Rovers; Wanderers beat Strikers; Wanderers beat Comets; Wanderers has 12 points. Step 3: use \"Exactly two matches in the league ended in a draw.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Rovers won exactly one match.\" — this fixes: Strikers drew with Comets; Rovers has 5 points. Step 5: use \"Comets drew exactly one match.\" — this fixes: Rovers drew with Strikers; Rovers beat Comets; Strikers has 2 points; Comets has 1 points. Final arrangement: Rovers v Strikers: draw; Rovers v Comets: Rovers; Rovers v Titans: Titans; Rovers v Wanderers: Wanderers; Strikers v Comets: draw; Strikers v Titans: Titans; Strikers v Wanderers: Wanderers; Comets v Titans: Titans; Comets v Wanderers: Wanderers; Titans v Wanderers: Titans; points Rovers 5, Strikers 2, Comets 1, Titans 16, Wanderers 12. Reading off: 5.",
+   "set": "m2-tourn4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5",
+   "level": "Hard",
+   "id": "M2-TOURN4-16"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "What was the total number of points scored by all five teams together?",
+   "solution": "Step 1: use \"Titans finished with 16 points.\" — this fixes: Titans beat Rovers; Titans beat Strikers; Titans beat Comets; Titans beat Wanderers; Titans has 16 points. Step 2: use \"Wanderers won exactly three matches.\" — this fixes: Wanderers beat Rovers; Wanderers beat Strikers; Wanderers beat Comets; Wanderers has 12 points. Step 3: use \"Exactly two matches in the league ended in a draw.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Rovers won exactly one match.\" — this fixes: Strikers drew with Comets; Rovers has 5 points. Step 5: use \"Comets drew exactly one match.\" — this fixes: Rovers drew with Strikers; Rovers beat Comets; Strikers has 2 points; Comets has 1 points. Final arrangement: Rovers v Strikers: draw; Rovers v Comets: Rovers; Rovers v Titans: Titans; Rovers v Wanderers: Wanderers; Strikers v Comets: draw; Strikers v Titans: Titans; Strikers v Wanderers: Wanderers; Comets v Titans: Titans; Comets v Wanderers: Wanderers; Titans v Wanderers: Titans; points Rovers 5, Strikers 2, Comets 1, Titans 16, Wanderers 12. Reading off: 36.",
+   "set": "m2-tourn4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "36",
+   "level": "Hard",
+   "id": "M2-TOURN4-17"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Medium",
+   "question": "What was the result of the match between Rovers and Comets?",
+   "solution": "Step 1: use \"Titans finished with 16 points.\" — this fixes: Titans beat Rovers; Titans beat Strikers; Titans beat Comets; Titans beat Wanderers; Titans has 16 points. Step 2: use \"Wanderers won exactly three matches.\" — this fixes: Wanderers beat Rovers; Wanderers beat Strikers; Wanderers beat Comets; Wanderers has 12 points. Step 3: use \"Exactly two matches in the league ended in a draw.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Rovers won exactly one match.\" — this fixes: Strikers drew with Comets; Rovers has 5 points. Step 5: use \"Comets drew exactly one match.\" — this fixes: Rovers drew with Strikers; Rovers beat Comets; Strikers has 2 points; Comets has 1 points. Final arrangement: Rovers v Strikers: draw; Rovers v Comets: Rovers; Rovers v Titans: Titans; Rovers v Wanderers: Wanderers; Strikers v Comets: draw; Strikers v Titans: Titans; Strikers v Wanderers: Wanderers; Comets v Titans: Titans; Comets v Wanderers: Wanderers; Titans v Wanderers: Titans; points Rovers 5, Strikers 2, Comets 1, Titans 16, Wanderers 12. Reading off: Rovers won.",
+   "set": "m2-tourn4",
+   "type": "mcq",
+   "options": [
+    "Comets won",
+    "It was a draw",
+    "Cannot be determined",
+    "Rovers won"
+   ],
+   "answer": 3,
+   "level": "Medium",
+   "id": "M2-TOURN4-18"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Networks & routes",
+   "difficulty": "Hard",
+   "question": "How many different routes (not revisiting any point) take the minimum time from Barnala to Fatehabad?",
+   "solution": "Step 1: the minimum time from Barnala to Fatehabad is 19. Step 2: enumerate routes and keep those totalling exactly 19: Barnala → Ellenabad → Fatehabad. Step 3: count them: 1. Answer: 1.",
+   "set": "m2-network5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1",
+   "level": "Hard",
+   "id": "M2-NETWORK5-19"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Networks & routes",
+   "difficulty": "Medium",
+   "question": "What is the minimum time, in minutes, to travel from Charkhi to Fatehabad?",
+   "solution": "Step 1: list the candidate routes from Charkhi to Fatehabad and add link times. Step 2: the cheapest is Charkhi → Ellenabad → Fatehabad (20); next-best routes: Charkhi → Barnala → Ellenabad → Fatehabad (34), Charkhi → Dabwali → Gohana → Fatehabad (37). Step 3: check no other route undercuts it (a full enumeration of all simple paths confirms the minimum is 20). Answer: 20.",
+   "set": "m2-network5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "20",
+   "level": "Medium",
+   "id": "M2-NETWORK5-20"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Networks & routes",
+   "difficulty": "Hard",
+   "question": "How many different routes (not revisiting any point) take the minimum time from Barnala to Charkhi?",
+   "solution": "Step 1: the minimum time from Barnala to Charkhi is 15. Step 2: enumerate routes and keep those totalling exactly 15: Barnala → Charkhi; Barnala → Ellenabad → Charkhi. Step 3: count them: 2. Answer: 2.",
+   "set": "m2-network5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "2",
+   "level": "Hard",
+   "id": "M2-NETWORK5-21"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Networks & routes",
+   "difficulty": "Medium",
+   "question": "What is the minimum time, in minutes, to travel from Ambala to Gohana?",
+   "solution": "Step 1: list the candidate routes from Ambala to Gohana and add link times. Step 2: the cheapest is Ambala → Fatehabad → Gohana (29); next-best routes: Ambala → Barnala → Gohana (31), Ambala → Fatehabad → Ellenabad → Barnala → Gohana (48). Step 3: check no other route undercuts it (a full enumeration of all simple paths confirms the minimum is 29). Answer: 29.",
+   "set": "m2-network5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "29",
+   "level": "Medium",
+   "id": "M2-NETWORK5-22"
+  }
+ ],
+ "sets": {
+  "m2-circular1": {
+   "kind": "dilr",
+   "title": "Circular arrangement (Medium)",
+   "html": "<b>Circular arrangement</b><p>Seven musicians sit in a circle for a jam session, equally spaced and facing the centre. Each plays one instrument type — strings, percussion, wind — with three on strings and two each on the others. \"Immediately to the left\" is from the seated person's own point of view.</p><p>The following is known:</p><ul class='clues'><li>Ela and Divya have the same instrument type.</li><li>Divya sits immediately to the left of Ela.</li><li>Kabir's instrument type is not percussion.</li><li>Along the shorter way round, exactly one person sits between Meera and Gargi.</li><li>Divya and Gargi have the same instrument type.</li><li>Divya and Meera sit next to each other.</li><li>Rhea and Gargi do not sit next to each other.</li><li>Along the shorter way round, exactly two people sit between Manav and Meera.</li><li>Rhea's instrument type is not percussion.</li></ul>"
+  },
+  "m2-table2": {
+   "kind": "dilr",
+   "title": "Data tables (missing data) (Hard)",
+   "html": "<b>Data tables (missing data)</b><p>The table shows the number of library memberships issued by four branches in three age groups. Some entries are hidden. Every figure (hidden or shown) is a multiple of 5 between 10 and 80, and the grand total of all twelve figures is 630.<table class='data'><tr><th></th><th>Under 18</th><th>18–40</th><th>Over 40</th></tr><tr><td>Central</td><td>80</td><td class='miss'>?</td><td>45</td></tr><tr><td>Lakeview</td><td class='miss'>?</td><td class='miss'>?</td><td class='miss'>?</td></tr><tr><td>Station Rd</td><td>80</td><td>65</td><td class='miss'>?</td></tr><tr><td>Old Fort</td><td>50</td><td>40</td><td class='miss'>?</td></tr></table></p><p>The following is known:</p><ul class='clues'><li>The figure for Central in 18–40 was twice that for Station Rd in Over 40.</li><li>Old Fort's total across the three columns was 165 memberships.</li><li>The figure for Old Fort in Over 40 exceeded that for Lakeview in Over 40 by 20.</li><li>The four together recorded 180 memberships in 18–40.</li><li>Lakeview's total across the three columns was 165 memberships.</li></ul>"
+  },
+  "m2-linear3": {
+   "kind": "dilr",
+   "title": "Arrangement (Hard)",
+   "html": "<b>Arrangement</b><p>Six cyclists finish a hill-climb race in positions 1 to 6 with no ties (position 1 is first). Each rides a bike of one of three colours — teal, maroon, ivory — with exactly two bikes of each colour.</p><p>The following is known:</p><ul class='clues'><li>The bike in position 2 is not maroon.</li><li>Sana is in a lower-numbered position than Bhavin.</li><li>Exactly two positions lie strictly between Bhavin's and Hina's.</li><li>Rhea is in a lower-numbered position than Hina.</li><li>Hina and Rohan are not in adjacent positions.</li><li>Exactly three positions lie strictly between Bhavin's and Sana's.</li><li>Bhavin and Rohan have the same bike colour.</li><li>Jaya and Sana have the same bike colour.</li><li>Hina's bike colour is not maroon.</li><li>The bike in position 1 is not teal.</li></ul>"
+  },
+  "m2-tourn4": {
+   "kind": "dilr",
+   "title": "Tournament (Hard)",
+   "html": "<b>Tournament</b><p>Five neighbourhood futsal sides — Rovers, Strikers, Comets, Titans, Wanderers — played a single round-robin: each pair met exactly once. A win was worth 4 points, a draw 1 point, and a loss 0.</p><p>The following is known:</p><ul class='clues'><li>Wanderers won exactly three matches.</li><li>Exactly two matches in the league ended in a draw.</li><li>Rovers won exactly one match.</li><li>Comets drew exactly one match.</li><li>Titans finished with 16 points.</li></ul>"
+  },
+  "m2-network5": {
+   "kind": "dilr",
+   "title": "Networks & routes (Medium)",
+   "html": "<b>Networks & routes</b><p>A courier company runs vans between seven hubs. The table lists every direct road link and the driving time in minutes; links can be used in either direction, and no other direct links exist.<table class='data'><tr><th>Link</th><th>Time</th></tr><tr><td>Ambala – Barnala</td><td>18</td></tr><tr><td>Ambala – Fatehabad</td><td>16</td></tr><tr><td>Barnala – Charkhi</td><td>15</td></tr><tr><td>Barnala – Ellenabad</td><td>7</td></tr><tr><td>Barnala – Gohana</td><td>13</td></tr><tr><td>Charkhi – Dabwali</td><td>8</td></tr><tr><td>Charkhi – Ellenabad</td><td>8</td></tr><tr><td>Dabwali – Gohana</td><td>16</td></tr><tr><td>Ellenabad – Fatehabad</td><td>12</td></tr><tr><td>Fatehabad – Gohana</td><td>13</td></tr></table></p>"
+  }
+ }
+}

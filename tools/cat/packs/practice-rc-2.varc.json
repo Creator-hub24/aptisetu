@@ -1,0 +1,339 @@
+{
+ "name": "VARC RC Practice Sets 2",
+ "questions": [
+  {
+   "id": "PR2-01",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's main point is that:",
+   "solution": "The passage challenges the assumption that trades are \"destined to shrink\", explains their persistence, and concludes that forecasts are drawn \"from too narrow a sample\". Option 4 is the view challenged. Option 2 overstates the policy point. Option 1 is cautioned against in para 4.",
+   "set": "pr2-rc1",
+   "type": "mcq",
+   "options": [
+    "manual work is more satisfying than office work",
+    "all young people should be trained as tradespeople",
+    "common forecasts about work overlook skilled trades that resist mechanisation and offshoring, which remain in demand",
+    "skilled manual trades are disappearing because of automation"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "PR2-02",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author implies that demand for repair services has grown in richer cities mainly because:",
+   "solution": "Para 2: demand grows \"because wealthy households own more things and have less time to maintain them\". The other options are not given as reasons.",
+   "set": "pr2-rc1",
+   "type": "mcq",
+   "options": [
+    "rich households prefer handmade goods",
+    "tradespeople have raised their prices",
+    "machines in rich cities break down more often",
+    "wealthier households own more possessions while having less time to maintain them"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PR2-03",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The fourth paragraph serves mainly to:",
+   "solution": "The paragraph opens \"It would be a mistake to romanticise this\" and lists physical demands and financial risks. Option 3 overstates the remark about writers. Options 2 and 4 are unsupported.",
+   "set": "pr2-rc1",
+   "type": "mcq",
+   "options": [
+    "qualify the author's case by acknowledging the real hardships of manual and self-employed work",
+    "argue that the trades should be abolished",
+    "show that writers about the trades are dishonest",
+    "prove that office work is safer than manual work"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PR2-04",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following, if true, would most strengthen the author's claim about \"too narrow a sample\"?",
+   "solution": "If the studies informing forecasts mostly cover standardisable work, then forecasts generalise from an unrepresentative sample, as the author claims. Option 4 slightly weakens the claim. Options 1 and 3 are irrelevant to sampling.",
+   "set": "pr2-rc1",
+   "type": "mcq",
+   "options": [
+    "Many tradespeople have university degrees.",
+    "Studies of automation's effects mostly analyse occupations in manufacturing and offices, with little data on local repair and maintenance work.",
+    "Office workers report higher job satisfaction than tradespeople.",
+    "Some repair tasks have been successfully automated."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PR2-05",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "According to the passage, a forecast of near-normal seasonal rainfall may be of limited use to a farmer because:",
+   "solution": "Para 2: the forecast \"is compatible with a long dry spell at precisely the wrong moment\". Option 4 contradicts \"accurate by its own standards\". Options 3 and 1 are not stated.",
+   "set": "pr2-rc2",
+   "type": "mcq",
+   "options": [
+    "it is issued too late in the season",
+    "it does not tell her whether rain will fall on her fields at the critical time after sowing",
+    "farmers do not have access to forecasts",
+    "it is usually inaccurate"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PR2-06",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's discussion of a \"seventy per cent chance\" forecast implies that:",
+   "solution": "The less likely outcome occurring three times in ten is \"exactly as a probability should\" perform. Option 2 is the approach shown to fail eventually. Options 1 and 4 are unsupported.",
+   "set": "pr2-rc2",
+   "type": "mcq",
+   "options": [
+    "forecasts with stated probabilities are always misleading",
+    "forecasters should express their predictions with certainty",
+    "a probabilistic forecast that turns out \"wrong\" in a given year may still have been well calibrated",
+    "farmers should ignore forecasts entirely"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "PR2-07",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's reservation about advice-based programmes assumes that:",
+   "solution": "The reservation is that advice \"embeds judgements about what risks a farmer should accept\", while farmers differ in what they can bear. Option 2 states the needed premise. Option 4 is not needed. Options 3 and 1 are unsupported.",
+   "set": "pr2-rc2",
+   "type": "mcq",
+   "options": [
+    "advice is never followed by farmers",
+    "the appropriate decision under a given forecast depends on the farmer's own capacity to bear risk",
+    "farmers cannot understand probabilities",
+    "early-maturing varieties always yield less"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PR2-08",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "Which of the following best summarises the passage?",
+   "solution": "The final paragraph: information's value \"depends on its fit with the decisions of those who receive it\". Option 2 contradicts para 1. Options 4 and 3 overstate.",
+   "set": "pr2-rc2",
+   "type": "mcq",
+   "options": [
+    "Better forecasts help farmers only to the extent that they match the scale, timing and risk tolerance of farmers' decisions.",
+    "Monsoon forecasts have not improved in recent decades.",
+    "Farmers should rely on advice rather than forecasts.",
+    "Probabilistic forecasting should be abandoned."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PR2-09",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The passage is primarily concerned with:",
+   "solution": "The passage moves from the dead-hand problem through defences of entrenchment to interpretation and the final comparison of methods of adaptation. Option 4 is a proposal mentioned but never endorsed. Option 3 is contradicted by the \"living hand\" criticism. Option 1 is unsupported.",
+   "set": "pr2-rc3",
+   "type": "mcq",
+   "options": [
+    "describing the history of a particular constitution",
+    "examining how constitutions reconcile binding future generations with democratic legitimacy, and the trade-offs among ways of adapting them",
+    "defending judicial interpretation as the best form of constitutional change",
+    "arguing that constitutions should be rewritten by each generation"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PR2-10",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "According to the author, the first argument for entrenchment is \"defensible\" but not democratic in a simple sense because:",
+   "solution": "Para 3: \"it is defensible, but its defence is that some things matter more than majority rule.\" The other options are not given as reasons.",
+   "set": "pr2-rc3",
+   "type": "mcq",
+   "options": [
+    "it makes planning impossible",
+    "it was proposed by unelected founders",
+    "it is rarely invoked by courts",
+    "its justification rests on the claim that some values outweigh majority rule"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PR2-11",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The phrase \"the living hand of an unelected court\" suggests that:",
+   "solution": "Para 4: interpretation \"shifts the question of democratic legitimacy from the dead authors to the living judges\". Options 3 and 2 are unsupported, and option 4 is an extreme the author does not take.",
+   "set": "pr2-rc3",
+   "type": "mcq",
+   "options": [
+    "interpretation transfers the problem of democratic legitimacy to the judiciary rather than resolving it",
+    "constitutions written long ago are always misunderstood",
+    "judges are generally more competent than legislators",
+    "courts should never interpret constitutions"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PR2-12",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The final sentence of the passage serves to:",
+   "solution": "The sentence dismisses a constitution that \"does not change at all\", since circumstances change anyway, which supports the paragraph's framing. Options 4 and 3 select one method, and the author endorses none. Option 2 is unsupported.",
+   "set": "pr2-rc3",
+   "type": "mcq",
+   "options": [
+    "rule out an unchanging constitution as a realistic option, reinforcing that the real choice is how change is distributed",
+    "argue for abolishing written constitutions",
+    "show that legislatures should keep the text current",
+    "endorse periodic conventions"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PR2-13",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The main point of the passage is that:",
+   "solution": "The passage shows that the camera \"does not lie\" was never quite true and that authority rested on the cost of fabrication, which digital tools have changed. Option 4 is the view challenged. Option 3 overstates the safeguards, and option 1 is not argued.",
+   "set": "pr2-rc4",
+   "type": "mcq",
+   "options": [
+    "photography should no longer be used as evidence",
+    "the evidential authority of photographs has always depended on conditions, such as framing and the cost of manipulation, that digital tools have now altered",
+    "digital signatures will restore complete trust in images",
+    "photographs have always been perfectly reliable evidence"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PR2-14",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's statement that faithfulness \"lends authority to choices made outside it\" implies that:",
+   "solution": "Para 2: each image is faithful, yet the choice of angle shapes the impression, and faithfulness makes that choice seem authoritative. Option 1 imputes intent. Options 2 and 3 overstate.",
+   "set": "pr2-rc4",
+   "type": "mcq",
+   "options": [
+    "photographers deliberately deceive their viewers",
+    "the frame of a photograph is always misleading",
+    "photographs taken from different angles are equally false",
+    "the accuracy of what is recorded can make the photographer's selective decisions appear neutral"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PR2-15",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "According to the passage, the authority of early photographs rested mainly on:",
+   "solution": "Para 3: \"The authority ... rested less on the impossibility of manipulation than on its cost\". Option 3 is explicitly rejected. Options 4 and 2 are not the stated basis.",
+   "set": "pr2-rc4",
+   "type": "mcq",
+   "options": [
+    "the fact that convincing fabrication was more costly than simply photographing a scene",
+    "the absence of skilled manipulators",
+    "the impossibility of altering negatives",
+    "the endorsement of courts"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PR2-16",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's attitude to the weakening presumption that photographs are truthful is best described as:",
+   "solution": "The final paragraph calls the old presumption \"too generous\" and says a questioning culture \"may be better equipped\", though it has lost \"comfort\". Option 3 is the fear of \"some observers\". Option 1 is undercut by the author's view of the old presumption.",
+   "set": "pr2-rc4",
+   "type": "mcq",
+   "options": [
+    "nostalgic for an era of reliable evidence",
+    "indifferent",
+    "alarmed, because no image can now be believed",
+    "cautiously positive, since habitual questioning of images may be healthier than a trust that was always too generous"
+   ],
+   "answer": 3
+  }
+ ],
+ "sets": {
+  "pr2-rc1": {
+   "kind": "passage",
+   "title": "Passage: The craft economy of the city",
+   "theme": "sociology",
+   "words": 474,
+   "html": "<b>Passage: The craft economy of the city</b><p>Writers on modern work often describe a choice between two futures. In one, automation and global trade hollow out manual occupations, leaving a divided economy of highly paid professionals and poorly paid service workers. In the other, technology frees people for more creative work. Both pictures share an assumption: that the skilled manual trades are a remnant of an older economy, destined to shrink as machines improve. A visit to almost any large city suggests that the assumption is at least incomplete.</p><p>Cities are full of work that resists both mechanisation and offshoring. The plumber, the electrician, the furniture restorer, the tailor who alters suits and the mechanic who repairs bicycles all perform tasks that require judgement applied to particular, irregular objects in particular places. A machine can make a thousand identical chairs; it cannot easily diagnose why a hundred-year-old chair wobbles, or repair it without destroying what makes it worth keeping. Nor can such work be shipped abroad, since the leaking pipe and the wobbling chair are here. The demand for these services has, if anything, grown as cities have become richer, because wealthy households own more things and have less time to maintain them.</p><p>What has changed is the status of the work rather than its existence. In many countries the trades were for a generation presented to young people as a fallback for those who could not succeed at school, and training systems were allowed to decline. The result in some places is a shortage of skilled tradespeople alongside a surplus of graduates whose qualifications the market values less than they were promised. Wages in some trades have risen accordingly, and it is no longer unusual for an experienced electrician to earn more than a junior professional in an office.</p><p>It would be a mistake to romanticise this. Much manual work is physically demanding and can be hard to sustain over a long career, and the self-employed tradesperson bears risks that the salaried employee does not: irregular income, no paid leave, the need to find customers continuously. The pleasures of craft are real but unevenly distributed, and they are more often described by those who write about the trades than by those who practise them under pressure.</p><p>Still, the persistence of the trades suggests that the usual accounts of the future of work are drawn from too narrow a sample. They describe what happens to tasks that can be standardised, and they extrapolate from these to work in general. A great deal of economic activity consists of dealing with things that are old, broken, unique or inconvenient, and such activity is likely to remain stubbornly local and human. A policy that prepares young people only for the work that machines are expected to leave behind in offices may neglect a large body of work that machines were never likely to take.</p>"
+  },
+  "pr2-rc2": {
+   "kind": "passage",
+   "title": "Passage: Monsoon forecasting and its users",
+   "theme": "environment",
+   "words": 475,
+   "html": "<b>Passage: Monsoon forecasting and its users</b><p>Forecasts of the monsoon are among the most consequential predictions issued anywhere. Hundreds of millions of farmers depend on its rains, and decisions about what to sow, when to sow and how much to borrow are made in its shadow. Over the past few decades, forecasters have improved their seasonal predictions considerably, drawing on better observations of ocean temperatures and more powerful models. Yet the benefits of better forecasts have reached farmers unevenly, and the reasons have less to do with meteorology than with how forecasts are expressed and used.</p><p>A seasonal forecast is a statement about probabilities over a large region. It may say that rainfall over a zone covering many districts is likely to be near normal, with a stated chance of being above or below. To a farmer deciding whether to plant a crop that needs steady rain in July, such a statement is of limited use. What matters to her is whether rain will fall on her fields in the weeks after sowing, and a forecast of near-normal seasonal totals is compatible with a long dry spell at precisely the wrong moment. The forecast can be accurate by its own standards and useless for her purposes.</p><p>The language of probability creates further problems. A forecast that gives a seventy per cent chance of normal rainfall will be wrong, in the sense that the less likely outcome occurs, about three times in ten. Farmers who acted on the forecast and suffered may conclude that forecasts are unreliable, when in fact the forecast performed exactly as a probability should. Communicating uncertainty honestly can thus erode trust, while communicating false certainty builds trust until the first conspicuous failure destroys it.</p><p>Some programmes have tried to close the gap by translating forecasts into advice. Rather than reporting probabilities, they tell farmers in a district that, given the outlook, an early-maturing variety is a safer choice, or that it would be prudent to delay sowing until a certain amount of rain has fallen. Advice of this kind can be acted upon, and studies suggest that farmers who receive it make better decisions on average. But advice embeds judgements about what risks a farmer should accept, and a farmer who could afford to gamble on a high-yielding crop might reasonably make a different choice from one who could not survive a failed harvest.</p><p>The broader lesson is that information is not useful merely by being accurate. Its value depends on its fit with the decisions of those who receive it: the scale at which they act, the time at which they must commit, and the risks they can bear. A forecasting service judged only by its skill scores may improve steadily while its users remain no better off. Measuring its success by what users do differently, and with what results, is harder but closer to the point.</p>"
+  },
+  "pr2-rc3": {
+   "kind": "passage",
+   "title": "Passage: Constitutions and the dead hand",
+   "theme": "law",
+   "words": 483,
+   "html": "<b>Passage: Constitutions and the dead hand</b><p>A written constitution binds future generations to choices made by people who are no longer alive. This feature has troubled democratic theorists since constitutions were first written down. If the people are sovereign, why should the living be governed by rules they did not make and can change only with great difficulty? One famous answer was that each generation should rewrite its constitution afresh. The proposal has never been adopted, but the objection behind it has never been fully answered.</p><p>Defenders of entrenchment usually make two arguments. The first is that constitutions protect the people from themselves: majorities, in moments of passion or fear, may wish to suppress rights or concentrate power, and rules that are hard to change slow them down. The second is that stable rules allow citizens and governments to plan. A political order in which basic arrangements could be overturned by any passing majority would leave everyone uncertain about what the next election might bring. Investors, minorities and opposition parties alike have reason to value rules that will still be in force after a change of government, and a constitution that offered no such assurance would encourage each faction to seize what it could while it held power.</p><p>Both arguments have force, but neither shows that entrenchment is democratic in any simple sense. The first frankly limits majorities; it is defensible, but its defence is that some things matter more than majority rule. The second shows that stability is valuable, but not that it should be secured by the decisions of a particular generation rather than by some other means. A constitution could, in principle, be stable without being difficult to amend, if its rules were widely accepted.</p><p>In practice, the tension is managed less by formal amendment than by interpretation. Courts reading an old text apply its general phrases to circumstances its authors could not have imagined, and in doing so they adjust the constitution to the present without changing a word. This makes the document more flexible than its amendment rules suggest, but it shifts the question of democratic legitimacy from the dead authors to the living judges. Critics who object to the dead hand of the founders may find they have exchanged it for the living hand of an unelected court.</p><p>The choice is therefore not between a constitution that binds and one that does not, but between different ways of distributing the power to adapt fundamental law. Some systems make amendment relatively easy and expect legislatures to keep the text current; others make it hard and rely on courts; still others hold periodic conventions. Each places the power to change basic rules in different hands, and each carries its own risks: instability, judicial overreach or the capture of conventions by organised minorities. A constitution that does not change at all is not among the realistic options, since circumstances change whether or not the text does.</p>"
+  },
+  "pr2-rc4": {
+   "kind": "passage",
+   "title": "Passage: Photography and the evidence of the eye",
+   "theme": "art",
+   "words": 485,
+   "html": "<b>Passage: Photography and the evidence of the eye</b><p>When photography was invented, many commentators greeted it as the end of a long human difficulty: the unreliability of testimony. A painter could flatter, a witness could lie or misremember, but the camera, it seemed, simply recorded what was in front of it. Courts, newspapers and scientists adopted photographs as evidence, and the phrase &quot;the camera does not lie&quot; became a commonplace. It was never quite true, and the ways in which it was false are instructive.</p><p>The photographer chooses where to stand, when to press the shutter and what to leave outside the frame. A photograph of a crowded square taken from one angle may suggest a mass demonstration; another, taken a few metres away, may show a thin gathering against empty streets. Neither image is false in the sense of depicting something that did not exist, yet each conveys an impression that the other contradicts. The camera records faithfully what falls within its frame, and this faithfulness lends authority to choices made outside it.</p><p>Manipulation of the image itself is almost as old as the medium. Early photographers painted out unwanted details, combined negatives to produce scenes that never occurred and posed subjects to create the appearance of spontaneity. Such interventions required skill and time, and their products could often be detected by experts. Some fabrications nonetheless circulated for decades: pictures of spirits hovering behind sitters, of fairies at the bottom of a garden, of officials who had fallen from favour quietly removed from group portraits. That such images were believed says as much about the readiness of viewers to trust the medium as about the skill of those who exploited it. The authority of photography rested less on the impossibility of manipulation than on its cost: it was easier to photograph a scene than to fabricate one convincingly.</p><p>Digital tools have changed this balance. Images can now be altered or generated with little effort, and the result may be indistinguishable from a recording to any viewer who lacks the original files. The predictable response has been a call for technical safeguards: signatures embedded in images at the moment of capture, records of every subsequent edit. Such measures can help, but they shift trust from the image to the system that certifies it, and they work only if those systems are themselves trusted and widely used.</p><p>The deeper change may be in how images are read. For more than a century, viewers granted photographs a presumption of truth and required reasons to doubt them. That presumption is weakening, and some observers fear a world in which no image can be believed. Yet the older presumption was always too generous, as the history of framing and staging shows. A culture that asks of every image who made it, from where, and for what purpose may be better equipped than one that trusted the camera, even if it has lost the comfort of that trust.</p>"
+  }
+ }
+}

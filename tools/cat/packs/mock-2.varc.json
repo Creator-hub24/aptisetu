@@ -1,0 +1,463 @@
+{
+ "name": "Mock 2 — VARC",
+ "questions": [
+  {
+   "id": "M2-01",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "The passage is primarily concerned with:",
+   "solution": "The author lists documentary, legal and claimant obstacles and closes that a debate treating repatriation \"as a test of moral courage alone\" misdirects pressure. Option 3 overstates; the author never says acquisitions were lawful. Option 2 is not advocated. Option 1 is one supporting detail.",
+   "set": "m2-rc1",
+   "type": "mcq",
+   "options": [
+    "describing the history of record-keeping in national museums",
+    "arguing that all disputed museum objects should be returned to their countries of origin",
+    "defending museums against the charge that they acquired objects unlawfully",
+    "explaining why the return of museum objects is slower than a moral framing of the debate suggests"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M2-02",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, a curator who believes an object should be returned may be unable to return it because:",
+   "solution": "Para 3: objects \"belong to the state and may be removed ... only by an act of the legislature\", so curators \"may be forbidden from sending it\". Options 4 and 3 are separate obstacles, not why a persuaded curator is blocked. Option 1 misuses the insurance detail from para 2.",
+   "set": "m2-rc1",
+   "type": "mcq",
+   "options": [
+    "the museum would lose insurance coverage on its collection",
+    "the object legally belongs to the state and its removal requires legislative action",
+    "more than one community claims the object",
+    "the object's ownership records are incomplete"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M2-03",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following, if true, would most weaken the author's claim about where critics direct their pressure?",
+   "solution": "The author says critics misread delays because the people addressed \"often lack the power to say yes\". If directors do have that power and decline, pressure on them is well aimed. Options 3, 1 and 2 restate obstacles the author already accepts, which would strengthen rather than weaken the argument.",
+   "set": "m2-rc1",
+   "type": "mcq",
+   "options": [
+    "Many claims are made by more than one community.",
+    "Research into an object's provenance often takes several years.",
+    "Most national museums keep acquisition records only for insurance purposes.",
+    "In several countries, museum directors can deaccession objects on their own authority but routinely decline to."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M2-04",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's attitude towards the critics of museums is best described as:",
+   "solution": "The final paragraph refuses to let museums \"proceed at their own pace\" (sympathy with the goal) but faults a debate that \"directs its pressure at the wrong people\". Option 3 ignores that sympathy, option 1 ignores the criticism, and option 2 contradicts the engaged conclusion.",
+   "set": "m2-rc1",
+   "type": "mcq",
+   "options": [
+    "wholly supportive of their methods",
+    "indifferent to the outcome of the debate",
+    "dismissive, regarding their demands as unjustified",
+    "sympathetic to their goal but critical of how they frame and target the issue"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M2-05",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "According to the passage, the water table in a newly pumped region may remain stable for years because:",
+   "solution": "Para 2: the level \"may barely move for years, because the aquifer is drawing on stored water\". Options 3, 2 and 1 are not given as reasons.",
+   "set": "m2-rc2",
+   "type": "mcq",
+   "options": [
+    "recharge schemes replace the water being withdrawn",
+    "officials restrict pumping during the first years",
+    "rainfall typically increases when pumping begins",
+    "the aquifer is initially drawing on water stored over a long period"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M2-06",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "It can be inferred that the author regards the \"share of the aquifer's estimated safe yield\" approach as valuable mainly because it:",
+   "solution": "The approach makes restraint \"a protection of one's own entitlement\" and \"aligns the time horizon of the individual with that of the resource\". Option 1 overstates; \"the results are mixed\". Option 3 is wrong because shares depend on \"estimated safe yield\". Option 4 is not discussed.",
+   "set": "m2-rc2",
+   "type": "mcq",
+   "options": [
+    "guarantees that aquifers will not be depleted",
+    "gives individual users a reason to conserve that serves their own long-term interest",
+    "removes the need for hydrologists' estimates",
+    "allows elected officials to avoid unpopular decisions"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M2-07",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The third paragraph serves to:",
+   "solution": "Para 3 opens \"The same delay works in the other direction\" and shows that cuts and recharge show results too late to sustain political will. Option 3 confuses delayed benefits with no benefits. Options 4 and 1 are unsupported.",
+   "set": "m2-rc2",
+   "type": "mcq",
+   "options": [
+    "recommend that elected officials be replaced by hydrologists",
+    "show that the time lag also undermines efforts at recovery, not only the detection of overuse",
+    "argue that recharge schemes are ineffective",
+    "introduce a new cause of well failure"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M2-08",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following best captures the author's view of uncertainty in hydrological projections?",
+   "solution": "Para 5: uncertainty \"tends to be resolved in favour of present use\", and \"What is lacking is less information than an institution\". Option 1 contradicts \"less information\". Options 4 and 3 go further than the author, who proposes an institutional response.",
+   "set": "m2-rc2",
+   "type": "mcq",
+   "options": [
+    "It is the main reason aquifers are overused, and better data would solve the problem.",
+    "In practice it is used to justify continued extraction, so the deeper deficit is institutional rather than informational.",
+    "It is unavoidable and therefore no policy response is possible.",
+    "It makes projections worthless and they should be abandoned."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M2-09",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's main argument is that:",
+   "solution": "Para 2 argues that concepts can be explained; para 3 locates \"the more serious difficulty\" in associations; para 4 sums up that the lists exaggerate the conceptual gulf and understate the gulf in texture. Option 4 is the view rejected. Option 2 is not advised. Option 3 imputes intent; the lists \"mislead\" but are not called deliberate.",
+   "set": "m2-rc3",
+   "type": "mcq",
+   "options": [
+    "the real challenge of translation lies in conveying associations and texture, not in finding equivalents for supposedly untranslatable concepts",
+    "translators should avoid words with strong associations",
+    "lists of untranslatable words are deliberately misleading",
+    "untranslatable words prove that speakers of different languages think differently"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M2-10",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the author, what a second language lacks when it has no single word for a concept is:",
+   "solution": "Para 2: \"What is missing in the second language is not the concept but its compression: a ready-made unit\". Option 1 is denied. Option 4 belongs to the discussion in para 3. Option 3 is never mentioned.",
+   "set": "m2-rc3",
+   "type": "mcq",
+   "options": [
+    "the ability to express the concept at all",
+    "a compressed, ready-made unit for the concept",
+    "speakers who are interested in the concept",
+    "the associations the concept carries in poetry"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M2-11",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The example of the word for \"home\" is used to show that:",
+   "solution": "It follows \"it arises with ordinary vocabulary as much as with exotic terms\": a common word differs in tone across languages. Option 3 is false; both languages have the word. Options 1 and 4 generalise beyond the example.",
+   "set": "m2-rc3",
+   "type": "mcq",
+   "options": [
+    "bureaucratic language is harder to translate than poetry",
+    "problems of tone and association affect even common words, not only exotic ones",
+    "some languages have no word for home",
+    "tender words cannot be translated accurately"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M2-12",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following situations best illustrates what the author calls the gulf at \"the level of texture\"?",
+   "solution": "Para 6: at the level of texture \"a translation can be accurate in every sentence and still feel like a different work\". Option 4 matches this exactly. Option 2 is the conceptual gap the author says explanation bridges. Options 3 and 1 are irrelevant.",
+   "set": "m2-rc3",
+   "type": "mcq",
+   "options": [
+    "Two dictionaries give different definitions for the same word.",
+    "A reader cannot understand a foreign term until it is explained in a footnote.",
+    "A language invents a new word for a newly discovered substance.",
+    "A novel's translation conveys every event and statement correctly, yet readers of the original find its humour and formality strangely altered."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M2-13",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "Which of the following best states the central point of the passage?",
+   "solution": "The passage credits benchmarks' virtues, explains their decay, recommends corroboration, and concludes with \"measures whose limits are acknowledged\". Option 2 contradicts \"It would be wrong to conclude that benchmarks are a mistake\" and \"No one need cheat\". Option 3 contradicts para 4. Option 1 contradicts \"No one need cheat\".",
+   "set": "m2-rc4",
+   "type": "mcq",
+   "options": [
+    "Researchers deliberately exploit flaws in public test sets.",
+    "Benchmarks should be abolished because they encourage cheating.",
+    "Fields without benchmarks make faster progress.",
+    "Benchmarks are useful but tend to become targets in themselves, so gains on them need independent corroboration."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M2-14",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, a benchmark's scores can rise without a matching rise in general capability because:",
+   "solution": "Para 2: the collective search \"finds whatever regularities the test happens to contain, including ones unrelated to the general ability\". Option 3 contradicts \"No one need cheat\". Option 2 describes a response, not the cause. Option 4 is not claimed.",
+   "set": "m2-rc4",
+   "type": "mcq",
+   "options": [
+    "the collective search adapts methods to regularities specific to the fixed test",
+    "benchmarks are replaced too often to be reliable",
+    "researchers falsify their results",
+    "newer benchmarks are always easier than older ones"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M2-15",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author mentions that new benchmarks are built by people \"whose sense of what is difficult has itself been shaped by the old one\" in order to suggest that:",
+   "solution": "The remark is a second limitation of frequent replacement: the old benchmark's influence persists through its designers' intuitions. Option 1 is too absolute. Options 2 and 4 are not suggested.",
+   "set": "m2-rc4",
+   "type": "mcq",
+   "options": [
+    "new benchmarks are always biased in favour of older methods",
+    "the people who build benchmarks are poorly qualified",
+    "replacing benchmarks does not fully escape the influence of the benchmarks replaced",
+    "benchmarks should be designed by outsiders to the field"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M2-16",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's recommendation that improvements be \"corroborated elsewhere\" assumes that:",
+   "solution": "Corroboration only helps if other settings do not share the original test's idiosyncrasies. Option 1 is stronger than needed: different quirks suffice, not none. Option 3 is contradicted; the method \"fits poorly with the incentives\". Option 2 is too absolute; the author says it is \"harder to tell\".",
+   "set": "m2-rc4",
+   "type": "mcq",
+   "options": [
+    "data gathered later and by other people is free of all quirks",
+    "benchmarks always overstate progress",
+    "publication incentives will soon change",
+    "the quirks of different evaluation settings are unlikely to coincide with those of the original benchmark"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M2-17",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Cities that plant trees to cool their streets often count trees rather than shade. A sapling and a mature oak count equally in a planting target, yet one shades a parking space and the other a square. Because targets are met in the year of planting and shade arrives decades later, programmes favour quantity and neglect the care that lets trees survive to maturity.</p>",
+   "solution": "The passage criticises counting trees instead of shade, which skews programmes toward planting rather than care. Option 1 misreads the oak example, option 2 overgeneralises, and option 4 reverses the point.",
+   "type": "mcq",
+   "options": [
+    "Cities plant too many oak trees and too few saplings.",
+    "Urban trees rarely survive to maturity anywhere.",
+    "Tree-planting targets that count trees rather than mature shade encourage planting over long-term care.",
+    "Shade is less important than tree numbers for cooling streets."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M2-18",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>We praise experts for predicting well, but in many fields the best experts are distinguished less by their forecasts than by how quickly they abandon them. A forecaster who revises in the light of new evidence will often look inconsistent to an audience that remembers her earlier view. The public's preference for consistency thus rewards precisely the stubbornness that makes forecasts worse.</p>",
+   "solution": "The passage has two linked claims: good experts revise quickly, and a public that prizes consistency rewards stubbornness. Only option 3 captures both. Option 1 is not claimed. Options 2 and 4 are unsupported.",
+   "type": "mcq",
+   "options": [
+    "Experts are generally poor at predicting the future.",
+    "Forecasters should never publish their predictions.",
+    "Expertise often lies in revising forecasts promptly, but audiences that value consistency penalise this and so reward worse forecasting.",
+    "The public remembers forecasts more accurately than experts do."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M2-19",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>A recipe looks like a set of instructions, but it relies heavily on what the cook already knows. \"Fry until golden\" assumes that the reader can recognise the right shade, smell the moment before burning and adjust the heat without being told. ____ This is why the same recipe can produce very different dishes in different kitchens.</p>",
+   "solution": "The blank should generalise from the \"fry until golden\" example and lead to \"This is why ... different dishes\". Option 1 does this. Option 2 overstates. Options 3 and 4 are off-topic.",
+   "type": "mcq",
+   "options": [
+    "The written text, in other words, is only the visible part of a much larger body of practical skill.",
+    "Recipes are therefore useless to beginners.",
+    "Most cooks prefer to work without recipes.",
+    "Frying is the most difficult technique in cooking."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M2-20",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Archives are often imagined as neutral storehouses of the past. Yet every archive is the result of decisions about what to keep, and those decisions are made by people with their own priorities and constraints of space. ____ The historian who reads an archive is therefore reading not only the past but also the judgements of those who curated it.</p>",
+   "solution": "The blank must link \"decisions about what to keep\" to \"reading ... the judgements of those who curated it\". Option 1 bridges exactly. Option 4 introduces accidental loss, not selection. Option 3 is a recommendation the paragraph does not make. Option 2 is irrelevant.",
+   "type": "mcq",
+   "options": [
+    "What survives tells us as much about the keepers as about the events recorded.",
+    "Archivists are usually trained historians themselves.",
+    "Historians should rely on oral testimony instead.",
+    "Many archives have been destroyed by fire and flood."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M2-21",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Most spoken conversations contain long stretches in which nothing new is said.</li><li>These stretches, full of greetings, repetitions and agreement, are not wasted.</li><li>They signal attention and keep the social connection alive while the speakers think.</li><li>Written messages, which strip them away, can therefore feel abrupt even when their content is polite.</li><li>Text messages, unlike speech, can be reread and revised several times before they are sent.</li></ol>",
+   "solution": "Sentences 1–4 form a chain about the social function of redundant talk and its absence in writing. Sentence 5 notes that text can be revised, which is a property of writing but not part of the argument about the social signal lost when redundancy is removed.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5"
+  },
+  {
+   "id": "M2-22",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Insurers price risk by grouping people whose chances of loss are thought to be similar.</li><li>Finer data allows ever smaller groups, down in principle to single individuals.</li><li>Regulators in some countries forbid insurers from using the results of genetic tests.</li><li>At that limit, insurance stops pooling risk and becomes a prediction of each person's own losses.</li><li>Those predicted to suffer most would then pay the most, which is the opposite of what pooling was meant to do.</li></ol>",
+   "solution": "1 describes grouping, 2 narrows the groups, 4 takes this \"to the limit\", and 5 draws the consequence. Sentence 3, on regulatory limits on genetic data, is a distractor with the same subject but no role in the argument.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3"
+  },
+  {
+   "id": "M2-23",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>Yet the instruments that would let them do so are themselves expensive to maintain.</li><li>Small weather stations run by volunteers once supplied much of the data on local rainfall.</li><li>As volunteers have aged and not been replaced, many of those stations have closed.</li><li>Agencies now hope to fill the gaps with automated sensors.</li></ol>",
+   "solution": "2 introduces volunteer stations; 3 says they have closed; 4 gives the hoped-for replacement; 1 (\"Yet ... let them do so\") qualifies that hope. 1 needs 4's \"Agencies ... hope\" for \"them\".",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2341"
+  },
+  {
+   "id": "M2-24",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The five sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the five numbers (e.g. 21435).</p><ol class='pj'><li>The difficulty is that a subsidy, once granted, creates a constituency that defends it.</li><li>Governments often introduce subsidies as temporary measures to help a new industry find its feet.</li><li>The firms that benefit, and the workers they employ, argue that withdrawal would cause hardship.</li><li>That is how a temporary measure becomes permanent: not through anyone's design but through the politics of withdrawal.</li><li>Officials who planned to end the subsidy then find themselves arguing against the very people they meant to help, and they usually lose.</li></ol>",
+   "solution": "2 states the intention; 1 (\"The difficulty is\") introduces the problem; 3 specifies the constituency; 5 (\"then\") shows the officials confronting it and losing; 4 (\"That is how ...\") names the mechanism just described and must close the paragraph. Ending on 5 would leave \"That is how\" pointing at an argument that is not yet complete.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "21354"
+  }
+ ],
+ "sets": {
+  "m2-rc1": {
+   "kind": "passage",
+   "title": "Passage: Why museums repatriate slowly",
+   "theme": "culture",
+   "words": 509,
+   "html": "<b>Passage: Why museums repatriate slowly</b><p>Requests to return objects held in museums are often presented as a contest between two simple positions. On one side stand the claimants, who say the objects were taken under conditions that no one would now accept; on the other stand the museums, which are said to cling to their collections out of pride or commercial interest. The real obstacles are usually less dramatic and more stubborn.</p><p>The first is documentary. A museum may hold an object for a century without knowing exactly how it was acquired. Records were kept for insurance and display, not for the questions now being asked of them, and a single line in a ledger — &quot;purchased from a dealer, 1911&quot; — can hide anything from an honest sale to the resale of looted goods. Establishing what happened requires research that is slow, expensive and frequently inconclusive.</p><p>The second obstacle is legal. In many countries, objects in national museums belong to the state and may be removed from the collection only by an act of the legislature. Curators who are personally persuaded that an object should go home may be forbidden from sending it. Critics who treat every delay as evidence of bad faith misread this situation; the people they are addressing often lack the power to say yes.</p><p>The third obstacle is the most awkward to state openly. A claim implies a claimant, and it is not always clear who that is. A carving made by a community that later split, moved or was absorbed into a modern state may be sought by more than one party, each with a plausible connection to it. A museum that returns the object to one of them may find that it has taken sides in a dispute it barely understands.</p><p>Each obstacle also interacts with the others. Uncertain records make legislators reluctant to act, since a law authorising a return must name what is being returned and why; and the existence of several plausible claimants gives legislators a respectable reason to wait until the claimants agree among themselves, which they may never do. A museum that wishes to move quickly may therefore find itself waiting on a parliament that is waiting on a dispute it has no power to resolve.</p><p>Some institutions have tried to escape this circle by separating the question of ownership from the question of custody. An object may be legally transferred while remaining on loan to the museum that held it, or physically returned while title remains unresolved. Such arrangements are untidy and satisfy neither side completely, but they allow something to happen while the slower questions are worked out.</p><p>None of this means that museums should be left to proceed at their own pace. Documentary uncertainty can be used as an excuse for indefinite delay, and legal restrictions are themselves choices that legislatures can revisit. But a debate that treats repatriation as a test of moral courage alone will keep producing frustration, because it directs its pressure at the wrong people and ignores the questions that actually take time to answer.</p>"
+  },
+  "m2-rc2": {
+   "kind": "passage",
+   "title": "Passage: The memory of water tables",
+   "theme": "environment",
+   "words": 507,
+   "html": "<b>Passage: The memory of water tables</b><p>A well that has served a village for generations can fail within a few dry years, and the usual explanation is that the rains stopped. Often the rains have merely become less regular, and the failure has more to do with what happened decades earlier. Groundwater responds to change slowly. Water that falls on a hillside today may take years or centuries to reach the aquifer that a distant pump draws upon, so the level in a well is a kind of delayed record of past rainfall and past use.</p><p>This delay creates a peculiar problem for those who manage water. When pumping begins in a region, the water table may barely move for years, because the aquifer is drawing on stored water that took a long time to accumulate. Officials who watch the level conclude, reasonably enough, that extraction is sustainable. By the time the decline becomes visible, the volume being withdrawn has usually grown, more wells have been sunk, and livelihoods depend on them. Reducing extraction then means imposing a loss on people who were never warned.</p><p>The same delay works in the other direction. A region that cuts its pumping may see no recovery for years, and the patience required to persist with an unpopular policy that shows no results is rarely available to elected officials. Recharge schemes that slow runoff and let water seep into the ground face the same handicap: their benefits arrive after the people who paid for them have stopped paying attention.</p><p>The difficulty is compounded by the way groundwater is commonly held. In many places the water beneath a farm is treated as belonging to whoever sinks a well on it, so that each farmer&#x27;s pumping lowers the water available to every neighbour without any record of who took what. Deeper and more powerful pumps allow the better-capitalised farmers to follow the falling water down, while their neighbours&#x27; shallow wells run dry first. The early signs of depletion therefore appear as the misfortune of particular households, attributed to bad luck or poor equipment, rather than as a regional fact that calls for a regional response. By the time the pattern is recognised, the farmers who could afford to dig deeper have every reason to resist limits that would fall on the water only they can still reach.</p><p>Hydrologists have tools to estimate these lags, but the estimates are uncertain, and uncertainty tends to be resolved in favour of present use. A projection that the aquifer might fail in twenty years or might last for sixty is read as permission to continue. What is lacking is less information than an institution capable of acting on information whose consequences will fall on a later generation of users. Some regions have experimented with assigning each user a share of the aquifer&#x27;s estimated safe yield, so that restraint is not a gift to one&#x27;s neighbours but a protection of one&#x27;s own entitlement. The results are mixed, but the approach at least aligns the time horizon of the individual with that of the resource.</p>"
+  },
+  "m2-rc3": {
+   "kind": "passage",
+   "title": "Passage: Translation and the untranslatable",
+   "theme": "language",
+   "words": 528,
+   "html": "<b>Passage: Translation and the untranslatable</b><p>It has become a commonplace that some words cannot be translated. Lists circulate of terms from various languages — a word for the particular light of late afternoon, another for the sadness of a place one has left — offered as proof that each language carves the world in its own way. The lists are charming, but the conclusion drawn from them is weaker than it looks.</p><p>That a language has a single word for something does not show that speakers of other languages cannot think it. The very lists that celebrate untranslatable words translate them, usually in a phrase or a sentence, and readers understand the explanation well enough to enjoy it. What is missing in the second language is not the concept but its compression: a ready-made unit that can be used without explanation. That difference is real. A compressed concept can be invoked quickly, combined with others, and passed on without effort, and over time it may come to seem more natural to those who have it. But a difference in convenience is not a difference in what can be thought.</p><p>The more serious difficulty for translators lies elsewhere. A word in a living language carries associations from its uses — the poems it has appeared in, the jokes it has served, the registers in which it is polite or rude. A translator can render the meaning of a sentence and lose all of these, or preserve some of them at the cost of the plain sense. This is not a problem of single words but of whole texts, and it arises with ordinary vocabulary as much as with exotic terms. The word for &quot;home&quot; in one language may be bureaucratic in tone; its nearest equivalent in another may be tender.</p><p>Register makes the point clearly. Many languages distinguish between forms of address for intimates and for strangers, and the choice between them can carry a story of its own: a shift from the formal to the familiar in the middle of a conversation may mark a seduction, an insult or a reconciliation. A language that lacks the distinction cannot reproduce the shift with a single word. The translator must either signal it some other way, by a change in tone or an added gesture, or let it pass, accepting that a reader of the translation will miss a moment that any reader of the original would notice at once. Neither choice is a failure of understanding; both are decisions about which losses a particular text can bear.</p><p>The same is true of words that have been used by a famous writer. Once a poet has made a word her own, every later use of it carries a faint echo of hers for readers who know the poem, and that echo cannot travel into another language unless the poem has travelled with it.</p><p>Seen this way, the popular lists mislead in two directions. They exaggerate the gulf between languages at the level of concepts, where explanation can bridge most gaps, and they understate it at the level of texture, where a translation can be accurate in every sentence and still feel like a different work.</p>"
+  },
+  "m2-rc4": {
+   "kind": "passage",
+   "title": "Passage: Benchmarks and what they reward",
+   "theme": "technology",
+   "words": 482,
+   "html": "<b>Passage: Benchmarks and what they reward</b><p>Every field that measures progress by a shared benchmark eventually learns the same lesson: the benchmark begins as a proxy for what people care about and ends as the thing they care about. A test set of images, a standard corpus of questions, a reference chip design — each is adopted because it is convenient, public and stable, which allows results from different laboratories to be compared. These virtues are real. Before benchmarks, claims of improvement were often impossible to check.</p><p>The difficulty is that stability, the benchmark&#x27;s chief virtue, is also the source of its decay. Once a test stays fixed, the community&#x27;s methods gradually adapt to its quirks. No one need cheat. Thousands of researchers each try many variations, publish those that score best, and build on the published work of others. The collective search finds whatever regularities the test happens to contain, including ones unrelated to the general ability it was meant to measure. Scores rise steadily; whether the underlying capability has risen as much is harder to tell.</p><p>The obvious response is to replace benchmarks often, and some communities do. But frequent replacement sacrifices comparability, which was the point of the exercise, and each new benchmark tends to be built by people whose sense of what is difficult has itself been shaped by the old one. A subtler response is to treat improvement on a fixed benchmark as evidence that must be corroborated elsewhere — on data gathered later, in other settings, by other people — before it is believed. This is slower and less glamorous than announcing a new record, and it fits poorly with the incentives of publication.</p><p>The effect is magnified by the way results are published. A method that improves the benchmark score by a fraction of a point is publishable; one that performs no better on the benchmark but is cheaper, more robust or easier to understand often is not. Over time the field&#x27;s collective attention narrows to the dimension the benchmark measures, and properties that matter in practice but are not scored, such as the cost of running a system or its behaviour on unfamiliar inputs, receive less effort than they deserve. Reviewers are not to blame for this; a shared number is the easiest thing to agree on when time is short and submissions are many. But the ease is itself part of the problem, because it allows a community to substitute agreement about a score for agreement about what the score was meant to indicate.</p><p>It would be wrong to conclude that benchmarks are a mistake. Fields without them tend to drift into a different failure, in which each group evaluates its own methods on its own data and progress becomes a matter of persuasion. The choice is not between measuring and not measuring but between measures whose limits are acknowledged and measures that are treated as the goal itself.</p>"
+  }
+ }
+}

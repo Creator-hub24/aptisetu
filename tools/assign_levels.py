@@ -66,7 +66,9 @@ def pack(gs, limit):
 def assign(cat_out, path):
     report = {}
     for sec, s in cat_out["sections"].items():
-        gs = groups(s["questions"]); rep = report[sec] = {}
+        for q in s["questions"]:
+            if q.get("pack"): q["level"] = q["difficulty"]   # fixed packs: own level, never in levelled sets
+        gs = groups([q for q in s["questions"] if not q.get("pack")]); rep = report[sec] = {}
         slots = SLOTS[sec]; start, n0 = {}, 1
         for lv in LEVELS: start[lv] = n0; n0 += slots[lv]
         for g in gs:

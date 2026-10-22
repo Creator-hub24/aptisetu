@@ -1,0 +1,466 @@
+{
+ "name": "VARC Verbal Ability Practice",
+ "questions": [
+  {
+   "id": "PV-01",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Bilingual signs are often installed to honour a minority language, and their symbolic value is real. But a language survives through use in homes, schools and workplaces, not through its visibility on street corners. Where signs replace rather than accompany investment in teaching, they may give the comforting impression of vitality to a language whose speakers are steadily declining.</p>",
+   "solution": "Option 4 captures the contrast between symbol and use, and the masking effect. Option 2 ignores the acknowledged symbolic value. Option 3 reverses the claim. Option 1 overstates.",
+   "type": "mcq",
+   "options": [
+    "Schools are the only place where languages are learned.",
+    "Bilingual signs are a waste of public money.",
+    "Minority languages survive mainly through public signage.",
+    "Visible symbols of a language can mask its decline when they substitute for support of its actual use."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PV-02",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>The productivity of a research laboratory is often measured by its publications, but the most valuable thing a laboratory produces may be the people it trains. Students who leave carry methods, habits of mind and networks of contacts to other institutions, where they shape work that will never be credited to the laboratory that formed them. Metrics that count only what is published within a laboratory's walls systematically undervalue this contribution, and so may discourage the slow work of training.</p>",
+   "solution": "Option 1 states the undervaluation and its consequence. Option 4 is an extreme prescription. Option 3 contradicts the passage. Option 2 takes one item from the list and inflates it.",
+   "type": "mcq",
+   "options": [
+    "Publication-based measures miss a laboratory's dispersed contribution through the people it trains and may therefore discourage training.",
+    "Networks of contacts are the most important outcome of research.",
+    "Students trained in laboratories rarely succeed elsewhere.",
+    "Laboratories should stop publishing and focus on training."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PV-03",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Rules that require companies to disclose risks were meant to protect investors, and in a narrow sense they do: everything material is now written down. But disclosure documents have grown so long that few investors read them, and companies have learned that listing every conceivable risk protects them from later complaints. The result is a body of information that is complete, accurate and largely useless to the people it was meant to inform.</p>",
+   "solution": "Option 3 captures the irony of complete but useless information. Option 4 ignores the critique. Option 2 contradicts \"everything material is now written down\". Option 1 is not suggested.",
+   "type": "mcq",
+   "options": [
+    "Investors should be required to read disclosure documents.",
+    "Companies routinely hide material risks from investors.",
+    "Disclosure requirements, by producing exhaustive and defensive documents, have achieved formal completeness at the cost of practical usefulness.",
+    "Disclosure rules have succeeded fully in protecting investors."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "PV-04",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Early maps of the world often placed the mapmaker's own country at the centre and drew it larger than its true proportion. Modern projections avoid such crude distortions, yet every projection of a sphere onto a flat surface must distort something, whether area, shape or distance. Choosing a projection therefore remains a choice about which distortions to accept, and the choice still tends to reflect the purposes and perspectives of those who make the map.</p>",
+   "solution": "Option 2 links unavoidable distortion to the persistence of perspective. Option 3 contradicts the passage. Option 1 imputes intent. Option 4 is not argued.",
+   "type": "mcq",
+   "options": [
+    "Early mapmakers were deliberately dishonest.",
+    "Because every flat map must distort, projection choices remain value-laden even after obvious ethnocentric distortions have been removed.",
+    "Modern maps are entirely free from bias.",
+    "Area is the most important property for a map to preserve."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PV-05",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Historians once explained the decline of empires by the moral decay of their rulers: luxury bred weakness, and weakness invited conquest. Such explanations have fallen out of favour, replaced by accounts of fiscal strain, environmental change and shifting trade. Yet the newer accounts sometimes reproduce the older one's structure, describing a long period of accumulating weakness that culminates in collapse, when many empires in fact ended abruptly after periods of apparent strength.</p>",
+   "solution": "Option 2 identifies the persistent structure and the counter-evidence. Option 1 revives the abandoned view. Option 3 overstates. Option 4 is the assumption the passage questions.",
+   "type": "mcq",
+   "options": [
+    "Moral decay is the true cause of imperial decline.",
+    "Newer explanations of imperial decline, while changing the causes, often retain an assumption of gradual decay that the abrupt ends of many empires do not support.",
+    "Fiscal and environmental factors are irrelevant to the fall of empires.",
+    "Empires always collapse after long periods of weakness."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PV-06",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>A popular tourist site faces a familiar dilemma. Its fame depends on its character, but the visitors drawn by that fame crowd its streets, raise its rents and push out the residents whose daily life gave it character in the first place. Limits on visitors can protect the place, but they also reduce the income on which many residents now depend.</p>",
+   "solution": "Option 4 states both horns of the dilemma. Option 2 is extreme. Option 3 overstates. Option 1 contradicts the passage.",
+   "type": "mcq",
+   "options": [
+    "Rising rents are caused mainly by local residents.",
+    "Tourism should be banned at historic sites.",
+    "Residents of tourist sites benefit only from tourism.",
+    "Tourism attracted by a place's character can erode that character, yet restricting it carries economic costs for residents."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PV-07",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Experts asked to predict political events often perform little better than chance, and those with the most confident, unified worldviews tend to perform worst. Forecasters who draw on many perspectives, adjust their views readily and express predictions as probabilities do better. The difference lies less in what forecasters know than in how they hold what they know.</p>",
+   "solution": "Option 1 captures the contrast between how knowledge is held and how much there is. Option 3 overstates; some forecasters do better. Option 2 is unsupported. Option 4 is an unsupported prescription.",
+   "type": "mcq",
+   "options": [
+    "Forecasting accuracy depends more on flexible, probabilistic habits of thought than on the amount of knowledge a forecaster possesses.",
+    "Experts know less than non-experts about politics.",
+    "Political events are inherently unpredictable.",
+    "Confident forecasters should be ignored entirely."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PV-08",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Antibiotics added to animal feed in small doses make livestock grow faster, which is why the practice spread. But every dose gives bacteria an opportunity to evolve resistance, and resistant bacteria do not stay on farms. The farmer gains the benefit of faster growth, while the cost of lost effectiveness is shared by everyone who may one day need an antibiotic that no longer works.</p>",
+   "solution": "Option 4 captures the private-benefit, shared-cost structure. Option 3 contradicts \"do not stay on farms\", and option 1 contradicts the first sentence. Option 2 is unsupported.",
+   "type": "mcq",
+   "options": [
+    "Antibiotics do not make livestock grow faster.",
+    "Antibiotics in feed should be used only in larger doses.",
+    "Resistant bacteria remain confined to farms.",
+    "Routine antibiotic use in livestock yields private gains for farmers while spreading the cost of resistance across society."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "PV-09",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Ancient city walls were built for defence, but their most lasting effect was often economic. Gates were points at which goods could be counted and taxed, and markets clustered around them. ____ Long after the walls ceased to matter militarily, the street patterns they had created continued to shape where commerce happened.</p>",
+   "solution": "The blank should generalise the economic role before \"Long after ... continued to shape\" commerce. Option 2 does. Option 3 could fit only loosely and does not bridge to the continuing effect. Options 4 and 1 are tangential.",
+   "type": "mcq",
+   "options": [
+    "Some cities had more than one ring of walls.",
+    "The walls thus organised the city's trade as much as they protected its inhabitants.",
+    "Many walls were demolished in the nineteenth century to make way for roads.",
+    "Siege warfare changed dramatically with the introduction of artillery."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PV-10",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Volunteers who count birds in their gardens every winter have produced one of the largest datasets in ecology. The counts are imperfect: volunteers differ in skill and attention, and gardens are not a random sample of the landscape. ____ What is lost in precision for any one count is regained in the scale and duration of the whole.</p>",
+   "solution": "The final sentence weighs precision against scale, so the blank must introduce scale as a compensation. Option 2 does. Option 1 stays with the imperfection. Options 3 and 4 are irrelevant.",
+   "type": "mcq",
+   "options": [
+    "Professional ecologists are generally more accurate than volunteers.",
+    "But the sheer number of participants and the decades over which they have counted allow many such errors to average out.",
+    "Birds visit gardens more often in winter than in summer.",
+    "Some volunteers also count butterflies in summer."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PV-11",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Economists sometimes treat preferences as fixed, so that policies can be judged by how well they satisfy what people already want. ____ A policy that makes cycling safe may produce cyclists who now prefer cycling, and judging it by the preferences that existed before it was introduced misses what it has done.</p>",
+   "solution": "The example shows a policy creating a preference, so the blank must state that policies change preferences. Option 1 does. Option 3 is a different objection. Options 2 and 4 are irrelevant.",
+   "type": "mcq",
+   "options": [
+    "Yet many policies change preferences as well as satisfying them.",
+    "Cycling is cheaper than driving in most cities.",
+    "Preferences are difficult to measure precisely.",
+    "Some economists have studied transport policy in detail."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PV-12",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Handwritten letters from past centuries are prized by historians for their candour. Writers who expected only one reader said things they would never have published. ____ A letter that seems spontaneous may have been drafted with an eye to the collection in which it now sits.</p>",
+   "solution": "The last sentence warns that letters may have been written for posterity, so the blank must introduce that awareness. Option 2 does. The others are tangential.",
+   "type": "mcq",
+   "options": [
+    "Postal services became cheaper during the nineteenth century.",
+    "Yet some letter-writers, especially the famous, wrote knowing that their correspondence would be kept and eventually read by others.",
+    "Historians also use diaries as sources.",
+    "Many letters were lost in fires or floods."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PV-13",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>A medicine that relieves symptoms quickly may sell better than one that cures more slowly, even if the second is better for the patient. Patients judge treatments by how they feel in the following days, and physicians, under pressure to satisfy them, may prescribe accordingly. ____ The market for treatments thus rewards what is perceptible rather than what is effective, unless something intervenes to make the slower benefits visible.</p>",
+   "solution": "The conclusion contrasts the perceptible with the effective, so the blank must explain why slow benefits go unrewarded. Option 2 does. Option 3 is plausible background but does not explain the asymmetry. Options 4 and 1 are irrelevant.",
+   "type": "mcq",
+   "options": [
+    "Many patients prefer tablets to injections.",
+    "Long-term outcomes, by contrast, are noticed late and are rarely traced back to the treatment that produced them.",
+    "Pharmaceutical companies spend heavily on marketing.",
+    "Physicians are generally well informed about new treatments."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "PV-14",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Instruction manuals are often blamed when people misuse a device. ____ A design that requires a manual to prevent dangerous errors has, in a sense, already failed, since most users will never read it.</p>",
+   "solution": "The next sentence shifts blame to design, so the blank must make that shift. Option 1 does. The others do not lead to it.",
+   "type": "mcq",
+   "options": [
+    "But the deeper fault frequently lies in a design that invites the error in the first place.",
+    "Some devices come with manuals in several languages.",
+    "People who read manuals tend to be more careful in general.",
+    "Manuals are now usually provided online rather than in print."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "PV-15",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Before the printing press, a book's text could change every time it was copied.</li><li>Scribes corrected what they took to be errors and sometimes introduced new ones.</li><li>Printing fixed a text in hundreds of identical copies, making it possible to cite a page with confidence.</li><li>Paper was cheaper than parchment, which reduced the cost of making books.</li><li>Scholarly argument came to depend on the assumption that everyone was reading the same words.</li></ol>",
+   "solution": "1-2-3-5 concerns textual stability and its effect on scholarship. Sentence 4, about the cost of materials, is a related fact about book production but does not belong to the argument about fixed texts.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4"
+  },
+  {
+   "id": "PV-16",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>A city's trees cool the streets beneath them by several degrees on hot days.</li><li>The benefit is unevenly distributed, because poorer neighbourhoods tend to have fewer trees.</li><li>Residents of those neighbourhoods therefore bear more of the burden of extreme heat.</li><li>Planting programmes that target the least shaded districts can narrow this gap.</li><li>Some species of tree release pollen that aggravates allergies.</li></ol>",
+   "solution": "1-2-3-4 runs from benefit to inequality to remedy. Sentence 5 introduces a cost of trees unconnected to the distributional argument.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5"
+  },
+  {
+   "id": "PV-17",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Chess engines now play far better than any human.</li><li>Yet chess remains popular, and top human players attract large audiences.</li><li>Spectators are interested in human struggle, error and recovery, not merely in perfect moves.</li><li>Engines have also changed how professionals prepare, since every opening can now be tested by machine.</li><li>A contest between machines, however brilliant, offers little of this drama.</li></ol>",
+   "solution": "1-2-3-5 explains why human chess survives machine superiority. Sentence 4 concerns how engines changed preparation, which is on-topic but not about why spectators still watch humans.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4"
+  },
+  {
+   "id": "PV-18",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Minimum wage laws are often debated as if their only effect were on employment.</li><li>Employers facing higher wage costs may respond in other ways: by cutting hours, reducing training or raising prices.</li><li>Which response predominates depends on the industry and the local labour market.</li><li>A study that measures only job numbers may therefore miss most of what the law changed.</li><li>In some countries minimum wages are set by government; in others they are negotiated between unions and employers.</li></ol>",
+   "solution": "1-2-3-4 argues that effects extend beyond employment counts. Sentence 5 is about how minimum wages are set, which does not contribute to that argument.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5"
+  },
+  {
+   "id": "PV-19",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>The habit of taking notes by hand is sometimes defended as better for learning than typing.</li><li>Writing by hand is slower, which forces the student to summarise rather than transcribe.</li><li>Summarising requires processing the material, which aids later recall.</li><li>Some students find handwritten notes harder to search and reorganise afterwards.</li><li>Typing, by allowing near-verbatim transcription, can let the material pass through without being understood.</li></ol>",
+   "solution": "1-2-3-5 is a causal argument about note-taking and learning. Sentence 4 raises a practical drawback of handwritten notes, not part of the causal argument about processing and learning.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4"
+  },
+  {
+   "id": "PV-20",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>A river that floods regularly deposits fertile silt on the surrounding plain.</li><li>Embankments built to prevent flooding also prevent this deposit.</li><li>Farmland protected from floods may therefore slowly lose its fertility.</li><li>Meanwhile, silt that would have spread across the plain accumulates in the riverbed, raising it and making catastrophic breaches more likely.</li><li>Some of the world's oldest civilisations arose on river plains.</li></ol>",
+   "solution": "1-2-3-4 analyses the unintended consequences of embankments. Sentence 5 is a general historical remark, tempting because of its topic, but outside the causal chain.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5"
+  },
+  {
+   "id": "PV-21",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Open-source software is written by volunteers and companies who give it away.</li><li>Much of the world's commercial infrastructure now depends on it.</li><li>Some critical components are maintained by a handful of unpaid people.</li><li>When such a component fails, the damage can spread to thousands of firms that never contributed to it.</li><li>Software licences can be difficult for non-lawyers to understand.</li></ol>",
+   "solution": "1-2-3-4 traces dependence on under-maintained open-source components. Sentence 5 on licences is a different issue.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5"
+  },
+  {
+   "id": "PV-22",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>A word's etymology is often cited as evidence of its \"true\" meaning.</li><li>But meanings drift, and a word's origin may tell us little about how it is used now.</li><li>Many English words of Latin origin entered the language through French.</li><li>To insist on the original sense is to confuse the history of a word with its present function.</li><li>Such insistence is usually a rhetorical move rather than a linguistic argument.</li></ol>",
+   "solution": "1-2-4-5 argues against the etymological fallacy. Sentence 3 is an etymological fact that does not contribute to the argument, though its subject makes it tempting.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3"
+  },
+  {
+   "id": "PV-23",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>They were, in effect, being paid to create the problem they were paid to solve.</li><li>A colonial administration once offered a reward for every dead cobra brought to its offices.</li><li>Residents soon began breeding cobras in order to collect the reward.</li><li>Worse still, when the scheme was cancelled, the breeders released their now-worthless snakes.</li></ol>",
+   "solution": "2 sets up the reward; 3 gives the response; 1 (\"They ... in effect\") interprets it; 4 (\"Worse still\") gives the ending, which needs a prior negative judgement. 4 could not precede 1, since 1 comments on the breeding, not the release.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2314"
+  },
+  {
+   "id": "PV-24",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The five sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the five numbers (e.g. 21435).</p><ol class='pj'><li>Such plans assumed that the future could be read from the trend of the recent past.</li><li>In the decades after the war, many cities drew up master plans projecting traffic growth for thirty years ahead.</li><li>Acting on that assumption, authorities widened roads and drove highways through neighbourhoods to meet the projected demand.</li><li>The new capacity was soon filled, and the projections appeared to have been vindicated.</li><li>In fact the projections had helped to produce the traffic they predicted.</li></ol>",
+   "solution": "2 introduces the plans; 1 (\"Such plans\") states their assumption; 3 (\"Acting on that assumption\") describes their implementation; 4 gives the apparent vindication; 5 (\"In fact\") reverses it. 3 cannot precede 1, because \"Such plans\" must follow 2 directly.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "21345"
+  },
+  {
+   "id": "PV-25",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>As a result, the same disease could be described in incompatible ways by different hospitals.</li><li>Before international classifications existed, each country recorded causes of death in its own terms.</li><li>Comparing mortality across hospitals, let alone across borders, was therefore nearly impossible.</li><li>Often, even within a country, practices varied from one institution to another.</li></ol>",
+   "solution": "2 introduces national terms; 4 (\"even within a country\") extends the variation to institutions; 1 (\"As a result ... different hospitals\") follows from 4; 3 (\"across hospitals, let alone across borders\") concludes and must follow 1.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2413"
+  },
+  {
+   "id": "PV-26",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The five sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the five numbers (e.g. 21435).</p><ol class='pj'><li>The answer, surprisingly, was that the most productive lands were often the most heavily taxed into poverty.</li><li>A historian studying old revenue records asked why certain fertile districts had remained poor for centuries.</li><li>Assessments had been fixed when yields were highest and were never revised downward.</li><li>When soils became exhausted, peasants owed the same tax on smaller harvests.</li><li>Fertility, in other words, had become a liability inscribed in the ledger.</li></ol>",
+   "solution": "2 poses the question; 1 (\"The answer\") answers it; 3 explains the mechanism; 4 continues it (\"the same tax\"); 5 (\"in other words\") sums up.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "21345"
+  },
+  {
+   "id": "PV-27",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>Yet the mutineers, in the logbook, appear only as a list of names and punishments.</li><li>The captain's logbook records weather, positions and provisions in meticulous detail.</li><li>Their reasons, the conditions they endured and the arguments among them went unrecorded.</li><li>Historians must reconstruct the mutiny from what such silence implies.</li></ol>",
+   "solution": "2 introduces the log's detail; 1 (\"Yet\") contrasts it with the treatment of the mutineers; 3 (\"Their\") elaborates the omission; 4 (\"such silence\") concludes.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2134"
+  },
+  {
+   "id": "PV-28",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The five sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the five numbers (e.g. 21435).</p><ol class='pj'><li>This lowered costs but also made every buyer dependent on a single supplier's continued willingness to sell.</li><li>For centuries, villages produced most of their own tools, cloth and food.</li><li>Industrial production replaced many of these local crafts with cheaper goods from distant factories.</li><li>When trade was interrupted by war, the absence of local skills turned a disruption into a crisis.</li><li>Efficiency in normal times had been purchased with fragility in abnormal ones.</li></ol>",
+   "solution": "2 sets the baseline; 3 describes the replacement; 1 (\"This\") gives its double effect; 4 tests it under disruption; 5 draws the lesson.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "23145"
+  },
+  {
+   "id": "PV-29",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>The figure is cited so often that few think to check it.</li><li>A widely quoted statistic claims that people use only a tenth of their brains.</li><li>Those who do check find that brain imaging shows virtually all regions are active over the course of a day.</li><li>Its persistence owes more to its appeal than to any evidence.</li></ol>",
+   "solution": "2 introduces the claim; 1 (\"The figure ... few think to check\") sets up 3 (\"Those who do check\"), which refutes it with evidence; 4 (\"Its persistence\") explains its survival despite that. 4 before 3 would explain persistence before showing it is false.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2134"
+  },
+  {
+   "id": "PV-30",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The five sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the five numbers (e.g. 21435).</p><ol class='pj'><li>Each new layer was added to solve a problem created by the previous one.</li><li>The tax code of many countries has grown to thousands of pages.</li><li>Exemptions, for instance, created loopholes, which required rules to close them, which created further exemptions.</li><li>No one designed this complexity; it accumulated.</li><li>Simplification is therefore harder than it looks, since every rule is someone's protection.</li></ol>",
+   "solution": "2 states the size; 1 explains the layering; 3 (\"for instance\") illustrates the layering; 4 (\"this complexity\") sums up the process; 5 (\"therefore\") draws the implication.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "21345"
+  }
+ ],
+ "sets": {}
+}

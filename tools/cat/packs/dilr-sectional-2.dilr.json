@@ -1,0 +1,385 @@
+{
+ "name": "sectional-2 — DILR",
+ "questions": [
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "What was the result of the match between Panthers and Mavericks?",
+   "solution": "Step 1: use \"Lynx finished with 6 points.\" — this fixes: Lynx has 6 points. Step 2: use \"Falcons drew exactly three matches.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Lynx won exactly two matches.\" — this fixes: Falcons drew with Cobras; Falcons drew with Panthers; Falcons drew with Mavericks. Step 4: use \"Falcons won exactly one match.\" — this fixes: Falcons beat Lynx; Falcons has 9 points. Step 5: use \"Cobras did not lose any match.\" — this fixes: Cobras beat Lynx; Lynx beat Panthers; Lynx beat Mavericks. Step 6: use \"Cobras won exactly one match.\" — this fixes: Cobras drew with Panthers; Cobras drew with Mavericks; Cobras has 9 points. Step 7: use \"Mavericks won exactly one match.\" — this fixes: Mavericks beat Panthers; Panthers has 4 points; Mavericks has 7 points. Final arrangement: Falcons v Cobras: draw; Falcons v Lynx: Falcons; Falcons v Panthers: draw; Falcons v Mavericks: draw; Cobras v Lynx: Cobras; Cobras v Panthers: draw; Cobras v Mavericks: draw; Lynx v Panthers: Lynx; Lynx v Mavericks: Lynx; Panthers v Mavericks: Mavericks; points Falcons 9, Cobras 9, Lynx 6, Panthers 4, Mavericks 7. Reading off: Mavericks won.",
+   "set": "ds2-tourn1",
+   "type": "mcq",
+   "options": [
+    "Cannot be determined",
+    "It was a draw",
+    "Panthers won",
+    "Mavericks won"
+   ],
+   "answer": 3,
+   "level": "Hard",
+   "id": "DS2-TOURN1-01"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "How many points did Mavericks finish with?",
+   "solution": "Step 1: use \"Lynx finished with 6 points.\" — this fixes: Lynx has 6 points. Step 2: use \"Falcons drew exactly three matches.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Lynx won exactly two matches.\" — this fixes: Falcons drew with Cobras; Falcons drew with Panthers; Falcons drew with Mavericks. Step 4: use \"Falcons won exactly one match.\" — this fixes: Falcons beat Lynx; Falcons has 9 points. Step 5: use \"Cobras did not lose any match.\" — this fixes: Cobras beat Lynx; Lynx beat Panthers; Lynx beat Mavericks. Step 6: use \"Cobras won exactly one match.\" — this fixes: Cobras drew with Panthers; Cobras drew with Mavericks; Cobras has 9 points. Step 7: use \"Mavericks won exactly one match.\" — this fixes: Mavericks beat Panthers; Panthers has 4 points; Mavericks has 7 points. Final arrangement: Falcons v Cobras: draw; Falcons v Lynx: Falcons; Falcons v Panthers: draw; Falcons v Mavericks: draw; Cobras v Lynx: Cobras; Cobras v Panthers: draw; Cobras v Mavericks: draw; Lynx v Panthers: Lynx; Lynx v Mavericks: Lynx; Panthers v Mavericks: Mavericks; points Falcons 9, Cobras 9, Lynx 6, Panthers 4, Mavericks 7. Reading off: 7.",
+   "set": "ds2-tourn1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "7",
+   "level": "Hard",
+   "id": "DS2-TOURN1-02"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "How many matches did Falcons lose?",
+   "solution": "Step 1: use \"Lynx finished with 6 points.\" — this fixes: Lynx has 6 points. Step 2: use \"Falcons drew exactly three matches.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Lynx won exactly two matches.\" — this fixes: Falcons drew with Cobras; Falcons drew with Panthers; Falcons drew with Mavericks. Step 4: use \"Falcons won exactly one match.\" — this fixes: Falcons beat Lynx; Falcons has 9 points. Step 5: use \"Cobras did not lose any match.\" — this fixes: Cobras beat Lynx; Lynx beat Panthers; Lynx beat Mavericks. Step 6: use \"Cobras won exactly one match.\" — this fixes: Cobras drew with Panthers; Cobras drew with Mavericks; Cobras has 9 points. Step 7: use \"Mavericks won exactly one match.\" — this fixes: Mavericks beat Panthers; Panthers has 4 points; Mavericks has 7 points. Final arrangement: Falcons v Cobras: draw; Falcons v Lynx: Falcons; Falcons v Panthers: draw; Falcons v Mavericks: draw; Cobras v Lynx: Cobras; Cobras v Panthers: draw; Cobras v Mavericks: draw; Lynx v Panthers: Lynx; Lynx v Mavericks: Lynx; Panthers v Mavericks: Mavericks; points Falcons 9, Cobras 9, Lynx 6, Panthers 4, Mavericks 7. Reading off: 0.",
+   "set": "ds2-tourn1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "0",
+   "level": "Hard",
+   "id": "DS2-TOURN1-03"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Medium",
+   "question": "Which team finished with the most points?",
+   "solution": "Step 1: use \"Lynx finished with 6 points.\" — this fixes: Lynx has 6 points. Step 2: use \"Falcons drew exactly three matches.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Lynx won exactly two matches.\" — this fixes: Falcons drew with Cobras; Falcons drew with Panthers; Falcons drew with Mavericks. Step 4: use \"Falcons won exactly one match.\" — this fixes: Falcons beat Lynx; Falcons has 9 points. Step 5: use \"Cobras did not lose any match.\" — this fixes: Cobras beat Lynx; Lynx beat Panthers; Lynx beat Mavericks. Step 6: use \"Cobras won exactly one match.\" — this fixes: Cobras drew with Panthers; Cobras drew with Mavericks; Cobras has 9 points. Step 7: use \"Mavericks won exactly one match.\" — this fixes: Mavericks beat Panthers; Panthers has 4 points; Mavericks has 7 points. Final arrangement: Falcons v Cobras: draw; Falcons v Lynx: Falcons; Falcons v Panthers: draw; Falcons v Mavericks: draw; Cobras v Lynx: Cobras; Cobras v Panthers: draw; Cobras v Mavericks: draw; Lynx v Panthers: Lynx; Lynx v Mavericks: Lynx; Panthers v Mavericks: Mavericks; points Falcons 9, Cobras 9, Lynx 6, Panthers 4, Mavericks 7. Reading off: Two or more teams tied.",
+   "set": "ds2-tourn1",
+   "type": "mcq",
+   "options": [
+    "Mavericks",
+    "Two or more teams tied",
+    "Panthers",
+    "Lynx"
+   ],
+   "answer": 1,
+   "level": "Medium",
+   "id": "DS2-TOURN1-04"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "What was the total number of points scored by all five teams together?",
+   "solution": "Step 1: use \"Lynx finished with 6 points.\" — this fixes: Lynx has 6 points. Step 2: use \"Falcons drew exactly three matches.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Lynx won exactly two matches.\" — this fixes: Falcons drew with Cobras; Falcons drew with Panthers; Falcons drew with Mavericks. Step 4: use \"Falcons won exactly one match.\" — this fixes: Falcons beat Lynx; Falcons has 9 points. Step 5: use \"Cobras did not lose any match.\" — this fixes: Cobras beat Lynx; Lynx beat Panthers; Lynx beat Mavericks. Step 6: use \"Cobras won exactly one match.\" — this fixes: Cobras drew with Panthers; Cobras drew with Mavericks; Cobras has 9 points. Step 7: use \"Mavericks won exactly one match.\" — this fixes: Mavericks beat Panthers; Panthers has 4 points; Mavericks has 7 points. Final arrangement: Falcons v Cobras: draw; Falcons v Lynx: Falcons; Falcons v Panthers: draw; Falcons v Mavericks: draw; Cobras v Lynx: Cobras; Cobras v Panthers: draw; Cobras v Mavericks: draw; Lynx v Panthers: Lynx; Lynx v Mavericks: Lynx; Panthers v Mavericks: Mavericks; points Falcons 9, Cobras 9, Lynx 6, Panthers 4, Mavericks 7. Reading off: 35.",
+   "set": "ds2-tourn1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "35",
+   "level": "Hard",
+   "id": "DS2-TOURN1-05"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Medium",
+   "question": "What was the figure for Krishna in September?",
+   "solution": "Step 1: use \"The four together recorded 190 tonnes in August.\" — this fixes: Tapi–August = 40. Step 2: use \"The figure for Krishna in September exceeded that for Tapi in August by 10.\" — this fixes: Krishna–September = 50. Step 3: use \"The figure for Sahyadri in July exceeded that for Krishna in September by 25.\" — this fixes: Sahyadri–July = 75. Step 4: use \"The figure for Sahyadri in July exceeded that for Tapi in July by 25.\" — this fixes: Krishna–July = 70; Tapi–July = 50. Final arrangement: Krishna–July = 70; Tapi–August = 40; Krishna–September = 50; Sahyadri–July = 75; Tapi–July = 50. Reading off: 50.",
+   "set": "ds2-table2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "50",
+   "level": "Medium",
+   "id": "DS2-TABLE2-06"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What percentage of Tapi's total came in September? (Answer to the nearest integer.)",
+   "solution": "Step 1: use \"The four together recorded 190 tonnes in August.\" — this fixes: Tapi–August = 40. Step 2: use \"The figure for Krishna in September exceeded that for Tapi in August by 10.\" — this fixes: Krishna–September = 50. Step 3: use \"The figure for Sahyadri in July exceeded that for Krishna in September by 25.\" — this fixes: Sahyadri–July = 75. Step 4: use \"The figure for Sahyadri in July exceeded that for Tapi in July by 25.\" — this fixes: Krishna–July = 70; Tapi–July = 50. Final arrangement: Krishna–July = 70; Tapi–August = 40; Krishna–September = 50; Sahyadri–July = 75; Tapi–July = 50. Reading off: 31.",
+   "set": "ds2-table2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "31",
+   "level": "Hard",
+   "id": "DS2-TABLE2-07"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What was the difference between the highest and the lowest row total?",
+   "solution": "Step 1: use \"The four together recorded 190 tonnes in August.\" — this fixes: Tapi–August = 40. Step 2: use \"The figure for Krishna in September exceeded that for Tapi in August by 10.\" — this fixes: Krishna–September = 50. Step 3: use \"The figure for Sahyadri in July exceeded that for Krishna in September by 25.\" — this fixes: Sahyadri–July = 75. Step 4: use \"The figure for Sahyadri in July exceeded that for Tapi in July by 25.\" — this fixes: Krishna–July = 70; Tapi–July = 50. Final arrangement: Krishna–July = 70; Tapi–August = 40; Krishna–September = 50; Sahyadri–July = 75; Tapi–July = 50. Reading off: 65.",
+   "set": "ds2-table2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "65",
+   "level": "Hard",
+   "id": "DS2-TABLE2-08"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What percentage of Sahyadri's total came in September? (Answer to the nearest integer.)",
+   "solution": "Step 1: use \"The four together recorded 190 tonnes in August.\" — this fixes: Tapi–August = 40. Step 2: use \"The figure for Krishna in September exceeded that for Tapi in August by 10.\" — this fixes: Krishna–September = 50. Step 3: use \"The figure for Sahyadri in July exceeded that for Krishna in September by 25.\" — this fixes: Sahyadri–July = 75. Step 4: use \"The figure for Sahyadri in July exceeded that for Tapi in July by 25.\" — this fixes: Krishna–July = 70; Tapi–July = 50. Final arrangement: Krishna–July = 70; Tapi–August = 40; Krishna–September = 50; Sahyadri–July = 75; Tapi–July = 50. Reading off: 33.",
+   "set": "ds2-table2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "33",
+   "level": "Hard",
+   "id": "DS2-TABLE2-09"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Medium",
+   "question": "Which of the four had the highest figure in August?",
+   "solution": "Step 1: use \"The four together recorded 190 tonnes in August.\" — this fixes: Tapi–August = 40. Step 2: use \"The figure for Krishna in September exceeded that for Tapi in August by 10.\" — this fixes: Krishna–September = 50. Step 3: use \"The figure for Sahyadri in July exceeded that for Krishna in September by 25.\" — this fixes: Sahyadri–July = 75. Step 4: use \"The figure for Sahyadri in July exceeded that for Tapi in July by 25.\" — this fixes: Krishna–July = 70; Tapi–July = 50. Final arrangement: Krishna–July = 70; Tapi–August = 40; Krishna–September = 50; Sahyadri–July = 75; Tapi–July = 50. Reading off: Krishna.",
+   "set": "ds2-table2",
+   "type": "mcq",
+   "options": [
+    "Godavari",
+    "Sahyadri",
+    "Krishna",
+    "Tapi"
+   ],
+   "answer": 2,
+   "level": "Medium",
+   "id": "DS2-TABLE2-10"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "How many positions lie strictly between Faiz's and Meera's?",
+   "solution": "Step 1: use \"Exactly three positions lie strictly between Faiz's and Meera's.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Tara and Sahil have the same type.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"The two landscape photographs are on adjacent positions.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Faiz and Ela are in adjacent positions.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Meera is in a lower-numbered position than Divya.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Meera's type is not portrait.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Sahil is not in slot 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"Tara is not in slot 3.\" — this fixes: Divya is in slot 3. Step 9: use \"Divya's type is not street.\" — this fixes: Divya's type is landscape. Step 10: use \"Faiz's type is not street.\" — this fixes: Faiz is in slot 6; Ela is in slot 5; Meera is in slot 2; Tara's type is street; Sahil's type is street; Faiz's type is portrait; Ela's type is portrait; Meera's type is landscape. Step 11: use \"Sahil and Ela are not in adjacent positions.\" — this fixes: Tara is in slot 4; Sahil is in slot 1. Final arrangement: slot 1: Sahil (street); slot 2: Meera (landscape); slot 3: Divya (landscape); slot 4: Tara (street); slot 5: Ela (portrait); slot 6: Faiz (portrait). Reading off: 3.",
+   "set": "ds2-linear3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3",
+   "level": "Hard",
+   "id": "DS2-LINEAR3-11"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "Who is in slot 1?",
+   "solution": "Step 1: use \"Exactly three positions lie strictly between Faiz's and Meera's.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Tara and Sahil have the same type.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"The two landscape photographs are on adjacent positions.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Faiz and Ela are in adjacent positions.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Meera is in a lower-numbered position than Divya.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Meera's type is not portrait.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Sahil is not in slot 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"Tara is not in slot 3.\" — this fixes: Divya is in slot 3. Step 9: use \"Divya's type is not street.\" — this fixes: Divya's type is landscape. Step 10: use \"Faiz's type is not street.\" — this fixes: Faiz is in slot 6; Ela is in slot 5; Meera is in slot 2; Tara's type is street; Sahil's type is street; Faiz's type is portrait; Ela's type is portrait; Meera's type is landscape. Step 11: use \"Sahil and Ela are not in adjacent positions.\" — this fixes: Tara is in slot 4; Sahil is in slot 1. Final arrangement: slot 1: Sahil (street); slot 2: Meera (landscape); slot 3: Divya (landscape); slot 4: Tara (street); slot 5: Ela (portrait); slot 6: Faiz (portrait). Reading off: Sahil.",
+   "set": "ds2-linear3",
+   "type": "mcq",
+   "options": [
+    "Tara",
+    "Sahil",
+    "Divya",
+    "Faiz"
+   ],
+   "answer": 1,
+   "level": "Hard",
+   "id": "DS2-LINEAR3-12"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "Who are the two people whose type is street?",
+   "solution": "Step 1: use \"Exactly three positions lie strictly between Faiz's and Meera's.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Tara and Sahil have the same type.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"The two landscape photographs are on adjacent positions.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Faiz and Ela are in adjacent positions.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Meera is in a lower-numbered position than Divya.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Meera's type is not portrait.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Sahil is not in slot 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"Tara is not in slot 3.\" — this fixes: Divya is in slot 3. Step 9: use \"Divya's type is not street.\" — this fixes: Divya's type is landscape. Step 10: use \"Faiz's type is not street.\" — this fixes: Faiz is in slot 6; Ela is in slot 5; Meera is in slot 2; Tara's type is street; Sahil's type is street; Faiz's type is portrait; Ela's type is portrait; Meera's type is landscape. Step 11: use \"Sahil and Ela are not in adjacent positions.\" — this fixes: Tara is in slot 4; Sahil is in slot 1. Final arrangement: slot 1: Sahil (street); slot 2: Meera (landscape); slot 3: Divya (landscape); slot 4: Tara (street); slot 5: Ela (portrait); slot 6: Faiz (portrait). Reading off: Sahil and Tara.",
+   "set": "ds2-linear3",
+   "type": "mcq",
+   "options": [
+    "Sahil and Tara",
+    "Faiz and Sahil",
+    "Meera and Tara",
+    "Divya and Ela"
+   ],
+   "answer": 0,
+   "level": "Hard",
+   "id": "DS2-LINEAR3-13"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "How many street photographs are in slot 1, slot 2 or slot 3?",
+   "solution": "Step 1: use \"Exactly three positions lie strictly between Faiz's and Meera's.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Tara and Sahil have the same type.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"The two landscape photographs are on adjacent positions.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Faiz and Ela are in adjacent positions.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Meera is in a lower-numbered position than Divya.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Meera's type is not portrait.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Sahil is not in slot 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"Tara is not in slot 3.\" — this fixes: Divya is in slot 3. Step 9: use \"Divya's type is not street.\" — this fixes: Divya's type is landscape. Step 10: use \"Faiz's type is not street.\" — this fixes: Faiz is in slot 6; Ela is in slot 5; Meera is in slot 2; Tara's type is street; Sahil's type is street; Faiz's type is portrait; Ela's type is portrait; Meera's type is landscape. Step 11: use \"Sahil and Ela are not in adjacent positions.\" — this fixes: Tara is in slot 4; Sahil is in slot 1. Final arrangement: slot 1: Sahil (street); slot 2: Meera (landscape); slot 3: Divya (landscape); slot 4: Tara (street); slot 5: Ela (portrait); slot 6: Faiz (portrait). Reading off: 1.",
+   "set": "ds2-linear3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1",
+   "level": "Medium",
+   "id": "DS2-LINEAR3-14"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "Who sits immediately to the left of Meera?",
+   "solution": "Step 1: use \"Vani sits immediately to the left of Omkar.\" — this fixes: Vani sits immediately to the left of Omkar. Step 2: use \"Farah and Vani have the same drink.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Chirag and Omkar have the same drink.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Along the shorter way round, exactly one person sits between Chirag and Meera.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Along the shorter way round, exactly two people sit between Farah and Vani.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Along the shorter way round, exactly one person sits between Omkar and Lavanya.\" — this fixes: Lavanya sits immediately to the left of Vani. Step 7: use \"Meera and Lavanya sit next to each other.\" — this fixes: Tanmay sits immediately to the left of Chirag; Omkar sits immediately to the left of Tanmay; Chirag sits immediately to the left of Farah; Farah sits immediately to the left of Meera; Meera sits immediately to the left of Lavanya. Step 8: use \"Tanmay and Lavanya have different drinks.\" — nothing is fixed outright yet, but it removes options needed later. Step 9: use \"Chirag's drink is not buttermilk.\" — this fixes: Farah's drink is buttermilk; Vani's drink is buttermilk. Step 10: use \"Meera's drink is not cold coffee.\" — this fixes: Chirag's drink is cold coffee; Meera's drink is lemon soda; Omkar's drink is cold coffee. Step 11: use \"Lavanya's drink is not buttermilk.\" — this fixes: Tanmay's drink is buttermilk; Lavanya's drink is lemon soda. Final arrangement: going round to each person's left starting from Chirag: Chirag (cold coffee), Tanmay (buttermilk), Omkar (cold coffee), Vani (buttermilk), Lavanya (lemon soda), Meera (lemon soda), Farah (buttermilk). Reading off: Farah.",
+   "set": "ds2-circular4",
+   "type": "mcq",
+   "options": [
+    "Omkar",
+    "Farah",
+    "Tanmay",
+    "Chirag"
+   ],
+   "answer": 1,
+   "level": "Hard",
+   "id": "DS2-CIRCULAR4-15"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "How many people with drink lemon soda have at least one neighbour with the same drink?",
+   "solution": "Step 1: use \"Vani sits immediately to the left of Omkar.\" — this fixes: Vani sits immediately to the left of Omkar. Step 2: use \"Farah and Vani have the same drink.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Chirag and Omkar have the same drink.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Along the shorter way round, exactly one person sits between Chirag and Meera.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Along the shorter way round, exactly two people sit between Farah and Vani.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Along the shorter way round, exactly one person sits between Omkar and Lavanya.\" — this fixes: Lavanya sits immediately to the left of Vani. Step 7: use \"Meera and Lavanya sit next to each other.\" — this fixes: Tanmay sits immediately to the left of Chirag; Omkar sits immediately to the left of Tanmay; Chirag sits immediately to the left of Farah; Farah sits immediately to the left of Meera; Meera sits immediately to the left of Lavanya. Step 8: use \"Tanmay and Lavanya have different drinks.\" — nothing is fixed outright yet, but it removes options needed later. Step 9: use \"Chirag's drink is not buttermilk.\" — this fixes: Farah's drink is buttermilk; Vani's drink is buttermilk. Step 10: use \"Meera's drink is not cold coffee.\" — this fixes: Chirag's drink is cold coffee; Meera's drink is lemon soda; Omkar's drink is cold coffee. Step 11: use \"Lavanya's drink is not buttermilk.\" — this fixes: Tanmay's drink is buttermilk; Lavanya's drink is lemon soda. Final arrangement: going round to each person's left starting from Chirag: Chirag (cold coffee), Tanmay (buttermilk), Omkar (cold coffee), Vani (buttermilk), Lavanya (lemon soda), Meera (lemon soda), Farah (buttermilk). Reading off: 2.",
+   "set": "ds2-circular4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "2",
+   "level": "Hard",
+   "id": "DS2-CIRCULAR4-16"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "Counting along the shorter way round, how many people sit between Chirag and Tanmay?",
+   "solution": "Step 1: use \"Vani sits immediately to the left of Omkar.\" — this fixes: Vani sits immediately to the left of Omkar. Step 2: use \"Farah and Vani have the same drink.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Chirag and Omkar have the same drink.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Along the shorter way round, exactly one person sits between Chirag and Meera.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Along the shorter way round, exactly two people sit between Farah and Vani.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Along the shorter way round, exactly one person sits between Omkar and Lavanya.\" — this fixes: Lavanya sits immediately to the left of Vani. Step 7: use \"Meera and Lavanya sit next to each other.\" — this fixes: Tanmay sits immediately to the left of Chirag; Omkar sits immediately to the left of Tanmay; Chirag sits immediately to the left of Farah; Farah sits immediately to the left of Meera; Meera sits immediately to the left of Lavanya. Step 8: use \"Tanmay and Lavanya have different drinks.\" — nothing is fixed outright yet, but it removes options needed later. Step 9: use \"Chirag's drink is not buttermilk.\" — this fixes: Farah's drink is buttermilk; Vani's drink is buttermilk. Step 10: use \"Meera's drink is not cold coffee.\" — this fixes: Chirag's drink is cold coffee; Meera's drink is lemon soda; Omkar's drink is cold coffee. Step 11: use \"Lavanya's drink is not buttermilk.\" — this fixes: Tanmay's drink is buttermilk; Lavanya's drink is lemon soda. Final arrangement: going round to each person's left starting from Chirag: Chirag (cold coffee), Tanmay (buttermilk), Omkar (cold coffee), Vani (buttermilk), Lavanya (lemon soda), Meera (lemon soda), Farah (buttermilk). Reading off: 0.",
+   "set": "ds2-circular4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "0",
+   "level": "Hard",
+   "id": "DS2-CIRCULAR4-17"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "How many of Tanmay's two neighbours have drink buttermilk?",
+   "solution": "Step 1: use \"Vani sits immediately to the left of Omkar.\" — this fixes: Vani sits immediately to the left of Omkar. Step 2: use \"Farah and Vani have the same drink.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Chirag and Omkar have the same drink.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Along the shorter way round, exactly one person sits between Chirag and Meera.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Along the shorter way round, exactly two people sit between Farah and Vani.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Along the shorter way round, exactly one person sits between Omkar and Lavanya.\" — this fixes: Lavanya sits immediately to the left of Vani. Step 7: use \"Meera and Lavanya sit next to each other.\" — this fixes: Tanmay sits immediately to the left of Chirag; Omkar sits immediately to the left of Tanmay; Chirag sits immediately to the left of Farah; Farah sits immediately to the left of Meera; Meera sits immediately to the left of Lavanya. Step 8: use \"Tanmay and Lavanya have different drinks.\" — nothing is fixed outright yet, but it removes options needed later. Step 9: use \"Chirag's drink is not buttermilk.\" — this fixes: Farah's drink is buttermilk; Vani's drink is buttermilk. Step 10: use \"Meera's drink is not cold coffee.\" — this fixes: Chirag's drink is cold coffee; Meera's drink is lemon soda; Omkar's drink is cold coffee. Step 11: use \"Lavanya's drink is not buttermilk.\" — this fixes: Tanmay's drink is buttermilk; Lavanya's drink is lemon soda. Final arrangement: going round to each person's left starting from Chirag: Chirag (cold coffee), Tanmay (buttermilk), Omkar (cold coffee), Vani (buttermilk), Lavanya (lemon soda), Meera (lemon soda), Farah (buttermilk). Reading off: 0.",
+   "set": "ds2-circular4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "0",
+   "level": "Hard",
+   "id": "DS2-CIRCULAR4-18"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Distribution",
+   "difficulty": "Hard",
+   "question": "Which team is Wamiq in?",
+   "solution": "Step 1: use \"Camp Hill has exactly two senior members.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Pallavi and Sana are in the same team.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Dev and Sana are in the same team.\" — this fixes: Pallavi is in Camp North; Dev is in Camp North; Sana is in Camp North. Step 4: use \"Every teammate of Sana is junior.\" — this fixes: Pallavi is junior; Dev is junior. Step 5: use \"Camp North has exactly one senior member.\" — this fixes: Sana is senior. Step 6: use \"Tara is not in Camp Hill.\" — this fixes: Tara is in Camp River; Tara is junior. Step 7: use \"Wamiq and Tara are in different teams.\" — this fixes: Wamiq is in Camp Hill; Wamiq is senior. Step 8: use \"Ishaan and Tara are in different teams.\" — this fixes: Prisha is in Camp River; Ishaan is in Camp Hill; Prisha is junior; Ishaan is senior. Final arrangement: Camp North: Pallavi, Dev, Sana (S); Camp River: Prisha, Tara; Camp Hill: Wamiq (S), Ishaan (S). Reading off: Camp Hill.",
+   "set": "ds2-group5",
+   "type": "mcq",
+   "options": [
+    "Camp River",
+    "Camp North",
+    "Cannot be determined",
+    "Camp Hill"
+   ],
+   "answer": 3,
+   "level": "Hard",
+   "id": "DS2-GROUP5-19"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Distribution",
+   "difficulty": "Hard",
+   "question": "Which team is Sana in?",
+   "solution": "Step 1: use \"Camp Hill has exactly two senior members.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Pallavi and Sana are in the same team.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Dev and Sana are in the same team.\" — this fixes: Pallavi is in Camp North; Dev is in Camp North; Sana is in Camp North. Step 4: use \"Every teammate of Sana is junior.\" — this fixes: Pallavi is junior; Dev is junior. Step 5: use \"Camp North has exactly one senior member.\" — this fixes: Sana is senior. Step 6: use \"Tara is not in Camp Hill.\" — this fixes: Tara is in Camp River; Tara is junior. Step 7: use \"Wamiq and Tara are in different teams.\" — this fixes: Wamiq is in Camp Hill; Wamiq is senior. Step 8: use \"Ishaan and Tara are in different teams.\" — this fixes: Prisha is in Camp River; Ishaan is in Camp Hill; Prisha is junior; Ishaan is senior. Final arrangement: Camp North: Pallavi, Dev, Sana (S); Camp River: Prisha, Tara; Camp Hill: Wamiq (S), Ishaan (S). Reading off: Camp North.",
+   "set": "ds2-group5",
+   "type": "mcq",
+   "options": [
+    "Cannot be determined",
+    "Camp River",
+    "Camp North",
+    "Camp Hill"
+   ],
+   "answer": 2,
+   "level": "Hard",
+   "id": "DS2-GROUP5-20"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Distribution",
+   "difficulty": "Hard",
+   "question": "Who is (or are) Wamiq's teammate(s)?",
+   "solution": "Step 1: use \"Camp Hill has exactly two senior members.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Pallavi and Sana are in the same team.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Dev and Sana are in the same team.\" — this fixes: Pallavi is in Camp North; Dev is in Camp North; Sana is in Camp North. Step 4: use \"Every teammate of Sana is junior.\" — this fixes: Pallavi is junior; Dev is junior. Step 5: use \"Camp North has exactly one senior member.\" — this fixes: Sana is senior. Step 6: use \"Tara is not in Camp Hill.\" — this fixes: Tara is in Camp River; Tara is junior. Step 7: use \"Wamiq and Tara are in different teams.\" — this fixes: Wamiq is in Camp Hill; Wamiq is senior. Step 8: use \"Ishaan and Tara are in different teams.\" — this fixes: Prisha is in Camp River; Ishaan is in Camp Hill; Prisha is junior; Ishaan is senior. Final arrangement: Camp North: Pallavi, Dev, Sana (S); Camp River: Prisha, Tara; Camp Hill: Wamiq (S), Ishaan (S). Reading off: Ishaan.",
+   "set": "ds2-group5",
+   "type": "mcq",
+   "options": [
+    "Sana",
+    "Ishaan",
+    "Pallavi and Prisha",
+    "Dev"
+   ],
+   "answer": 1,
+   "level": "Hard",
+   "id": "DS2-GROUP5-21"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Distribution",
+   "difficulty": "Medium",
+   "question": "How many senior members does Camp Hill have?",
+   "solution": "Step 1: use \"Camp Hill has exactly two senior members.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"Pallavi and Sana are in the same team.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Dev and Sana are in the same team.\" — this fixes: Pallavi is in Camp North; Dev is in Camp North; Sana is in Camp North. Step 4: use \"Every teammate of Sana is junior.\" — this fixes: Pallavi is junior; Dev is junior. Step 5: use \"Camp North has exactly one senior member.\" — this fixes: Sana is senior. Step 6: use \"Tara is not in Camp Hill.\" — this fixes: Tara is in Camp River; Tara is junior. Step 7: use \"Wamiq and Tara are in different teams.\" — this fixes: Wamiq is in Camp Hill; Wamiq is senior. Step 8: use \"Ishaan and Tara are in different teams.\" — this fixes: Prisha is in Camp River; Ishaan is in Camp Hill; Prisha is junior; Ishaan is senior. Final arrangement: Camp North: Pallavi, Dev, Sana (S); Camp River: Prisha, Tara; Camp Hill: Wamiq (S), Ishaan (S). Reading off: 2.",
+   "set": "ds2-group5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "2",
+   "level": "Medium",
+   "id": "DS2-GROUP5-22"
+  }
+ ],
+ "sets": {
+  "ds2-tourn1": {
+   "kind": "dilr",
+   "title": "Tournament (Hard)",
+   "html": "<b>Tournament</b><p>Five school teams — Falcons, Cobras, Lynx, Panthers, Mavericks — played a single round-robin kabaddi league: every team played every other team exactly once. A win earned 3 points, a draw 2 points and a loss 0.</p><p>The following is known:</p><ul class='clues'><li>Lynx finished with 6 points.</li><li>Lynx won exactly two matches.</li><li>Cobras won exactly one match.</li><li>Falcons drew exactly three matches.</li><li>Falcons won exactly one match.</li><li>Mavericks won exactly one match.</li><li>Cobras did not lose any match.</li></ul>"
+  },
+  "ds2-table2": {
+   "kind": "dilr",
+   "title": "Data tables (missing data) (Medium)",
+   "html": "<b>Data tables (missing data)</b><p>The table shows tonnes of compost sold by four co-operatives over three months. Some entries are hidden. Every figure (hidden or shown) is a multiple of 5 between 10 and 80, and the grand total of all twelve figures is 650.<table class='data'><tr><th></th><th>July</th><th>August</th><th>September</th></tr><tr><td>Sahyadri</td><td class='miss'>?</td><td>35</td><td>55</td></tr><tr><td>Krishna</td><td class='miss'>?</td><td>75</td><td class='miss'>?</td></tr><tr><td>Godavari</td><td>70</td><td>40</td><td>50</td></tr><tr><td>Tapi</td><td class='miss'>?</td><td class='miss'>?</td><td>40</td></tr></table></p><p>The following is known:</p><ul class='clues'><li>The figure for Sahyadri in July exceeded that for Krishna in September by 25.</li><li>The figure for Krishna in September exceeded that for Tapi in August by 10.</li><li>The four together recorded 190 tonnes in August.</li><li>The figure for Sahyadri in July exceeded that for Tapi in July by 25.</li></ul>"
+  },
+  "ds2-linear3": {
+   "kind": "dilr",
+   "title": "Arrangement (Hard)",
+   "html": "<b>Arrangement</b><p>Six photographs are hung in a single row on a gallery wall, in slots 1 to 6 from left to right, one by each of six photographers. Each photograph is one of three types — portrait, landscape, street — with exactly two of each type.</p><p>The following is known:</p><ul class='clues'><li>Exactly three positions lie strictly between Faiz's and Meera's.</li><li>Meera is in a lower-numbered position than Divya.</li><li>Faiz and Ela are in adjacent positions.</li><li>Sahil and Ela are not in adjacent positions.</li><li>The two landscape photographs are on adjacent positions.</li><li>Sahil is not in slot 3.</li><li>Faiz's type is not street.</li><li>Meera's type is not portrait.</li><li>Tara is not in slot 3.</li><li>Tara and Sahil have the same type.</li><li>Divya's type is not street.</li></ul>"
+  },
+  "ds2-circular4": {
+   "kind": "dilr",
+   "title": "Circular arrangement (Hard)",
+   "html": "<b>Circular arrangement</b><p>Seven colleagues sit around a circular table at a team lunch, equally spaced and facing the centre. Each orders one of three drinks — buttermilk, lemon soda, cold coffee — with three people choosing buttermilk and two each choosing the others. \"Immediately to the left\" is from the seated person's own point of view.</p><p>The following is known:</p><ul class='clues'><li>Along the shorter way round, exactly one person sits between Chirag and Meera.</li><li>Tanmay and Lavanya have different drinks.</li><li>Farah and Vani have the same drink.</li><li>Along the shorter way round, exactly one person sits between Omkar and Lavanya.</li><li>Chirag's drink is not buttermilk.</li><li>Meera's drink is not cold coffee.</li><li>Vani sits immediately to the left of Omkar.</li><li>Along the shorter way round, exactly two people sit between Farah and Vani.</li><li>Meera and Lavanya sit next to each other.</li><li>Chirag and Omkar have the same drink.</li><li>Lavanya's drink is not buttermilk.</li></ul>"
+  },
+  "ds2-group5": {
+   "kind": "dilr",
+   "title": "Grouping & selection (Hard)",
+   "html": "<b>Grouping & selection</b><p>Seven volunteers are posted to three relief camps: Camp North gets three volunteers, Camp River and Camp Hill get two each. Exactly three of the seven are trained medics; the rest are not (call them senior and junior respectively). The seven are Pallavi, Prisha, Wamiq, Ishaan, Dev, Tara, Sana.</p><p>The following is known:</p><ul class='clues'><li>Camp North has exactly one senior member.</li><li>Pallavi and Sana are in the same team.</li><li>Tara is not in Camp Hill.</li><li>Wamiq and Tara are in different teams.</li><li>Dev and Sana are in the same team.</li><li>Every teammate of Sana is junior.</li><li>Ishaan and Tara are in different teams.</li><li>Camp Hill has exactly two senior members.</li></ul>"
+  }
+ }
+}

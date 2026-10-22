@@ -1,0 +1,362 @@
+{
+ "name": "mock-3 — QA",
+ "questions": [
+  {
+   "id": "M3-QA-01",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Percentages & Profit",
+   "difficulty": "Hard",
+   "question": "A shopkeeper marks every item 40% above cost. Cash buyers get a discount of d% on the marked price and card buyers get 2d%. In a month, the cost value of goods bought by card buyers was twice that bought by cash buyers, and his overall profit on cost was 12%. What is d?",
+   "solution": "Take cost 1 for cash sales and 2 for card sales (total 3). Revenue = 1.4(1 − d/100) + 2 × 1.4(1 − 2d/100) = 1.4(3 − 5d/100). Setting this equal to 3 × 1.12 = 3.36 gives 3 − 5d/100 = 2.4, so d = 12.",
+   "type": "mcq",
+   "answer": 1,
+   "level": "Hard",
+   "options": [
+    "14",
+    "12",
+    "13",
+    "10"
+   ]
+  },
+  {
+   "id": "M3-QA-02",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time & Work",
+   "difficulty": "Hard",
+   "question": "P, Q and R can each finish a job alone in 20, 30 and 12 days respectively. They charge ₹1,500, ₹1,200 and ₹2,400 per day; a part-day is paid as a full day. Any of them may be hired on any day, and the job must be finished within 8 days. What is the minimum possible total wage bill, in ₹?",
+   "solution": "Step 1: cost of a whole job by each worker: P 20 × 1500 = 30,000, Q 30 × 1200 = 36,000, R 12 × 2400 = 28,800, so R is cheapest per unit of work, then P, then Q. Step 2: no one may work more than 8 days, so R does at most 8/12 = 2/3. Step 3: the remaining 1/3 is cheapest with P: 1/3 × 20 = 6.67, i.e. 7 paid days. But paying 7 full days wastes part of a day; compare R 8 + P 7 = 19,200 + 10,500 = 29,700 with R 7 + P 8 (7/12 + 8/20 = 0.983, not enough) and with R 8 + P 6 + Q 1 (2/3 + 0.3 + 1/30 = 1, cost 19,200 + 9,000 + 1,200 = 29,400). Step 4: checking all combinations, the minimum is ₹29,400.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Hard",
+   "options": [
+    "29400",
+    "38220",
+    "26460",
+    "23520"
+   ]
+  },
+  {
+   "id": "M3-QA-03",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time & Work",
+   "difficulty": "Hard",
+   "question": "12 men can finish a project in 18 days and 18 women can finish it in 24 days. 8 men and 12 women start the project together; after 6 days, 4 more women join them. How many days in all does the project take?",
+   "solution": "One man does 1/216 of the work per day and one woman 1/432. 8 men + 12 women do 16/432 + 12/432 = 28/432 per day; in 6 days, 168/432. The remaining 264/432 at (16 + 16)/432 = 32/432 per day takes 8.25 days. Total 14.25 days.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "14.25",
+   "level": "Hard"
+  },
+  {
+   "id": "M3-QA-04",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mixtures & Alligation",
+   "difficulty": "Easy",
+   "question": "Solution A is 30% acid and solution B is 75% acid. In what ratio must A and B be mixed to get a 48% acid solution? Enter the ratio A : B as a single number A/B.",
+   "solution": "By alligation: (75 − 48) : (48 − 30) = 27 : 18 = 3 : 2, so A/B = 1.5.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Easy",
+   "options": [
+    "0.5",
+    "2",
+    "1.5",
+    "3"
+   ]
+  },
+  {
+   "id": "M3-QA-05",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Simple & Compound Interest",
+   "difficulty": "Medium",
+   "question": "A sum of ₹12,000 is invested at 10% per annum compounded half-yearly. What is the interest earned in the first 1.5 years, in ₹?",
+   "solution": "Half-yearly rate 5%, three periods: 12000 × (1.05³ − 1) = 12000 × 0.157625 = ₹1,891.50.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1891.5",
+   "level": "Medium"
+  },
+  {
+   "id": "M3-QA-06",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Ratio & Proportion",
+   "difficulty": "Easy",
+   "question": "The ratio of boys to girls in a class is 7 : 5. After 8 boys leave and 4 girls join, the ratio becomes 1 : 1. How many students were originally in the class?",
+   "solution": "7k − 8 = 5k + 4 gives k = 6, so the class had 12k = 72 students.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Easy",
+   "options": [
+    "144",
+    "93",
+    "72",
+    "86"
+   ]
+  },
+  {
+   "id": "M3-QA-07",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Averages",
+   "difficulty": "Medium",
+   "question": "The average of 11 consecutive odd numbers is 47. What is the product of the smallest and the largest of them?",
+   "solution": "The middle (6th) number is 47; the smallest is 47 − 10 = 37 and the largest 47 + 10 = 57. Product = 2109.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Medium",
+   "options": [
+    "4218",
+    "2319",
+    "2529",
+    "2109"
+   ]
+  },
+  {
+   "id": "M3-QA-08",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Hard",
+   "question": "For how many integers k with 1 ≤ k ≤ 30 does the equation x² + kx + 36 = 0 have two distinct real roots, both negative?",
+   "solution": "Both roots negative requires the sum −k < 0 (true for k ≥ 1) and product 36 > 0 (true). Distinct real roots need k² > 144, i.e. k ≥ 13. So k = 13, …, 30: 18 values.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Hard",
+   "options": [
+    "19",
+    "17",
+    "16",
+    "18"
+   ]
+  },
+  {
+   "id": "M3-QA-09",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Inequalities",
+   "difficulty": "Medium",
+   "question": "How many integers x satisfy |x − 3| + |x + 5| < 14?",
+   "solution": "For −5 ≤ x ≤ 3 the sum is 8 < 14 (9 integers). For x > 3: 2x + 2 < 14 gives x < 6, i.e. 4, 5. For x < −5: −2x − 2 < 14 gives x > −8, i.e. −7, −6. Total 9 + 2 + 2 = 13.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Medium",
+   "options": [
+    "13",
+    "11",
+    "14",
+    "12"
+   ]
+  },
+  {
+   "id": "M3-QA-10",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Logarithms",
+   "difficulty": "Medium",
+   "question": "If log 2 = 0.3010 and log 3 = 0.4771, how many digits does 6^20 have?",
+   "solution": "log(6²⁰) = 20 × (0.3010 + 0.4771) = 15.562, so 6²⁰ has 15 + 1 = 16 digits.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "16",
+   "level": "Medium"
+  },
+  {
+   "id": "M3-QA-11",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Functions",
+   "difficulty": "Medium",
+   "question": "f is a function on the positive integers with f(1) = 2 and f(n + 1) = f(n) + 2n + 1 for all n ≥ 1. What is f(30)?",
+   "solution": "f(n + 1) − f(n) = 2n + 1, so f(n) = f(1) + Σ_{k=1}^{n−1}(2k + 1) = 2 + (n² − 1) = n² + 1. f(30) = 901.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "901",
+   "level": "Medium"
+  },
+  {
+   "id": "M3-QA-12",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Progressions",
+   "difficulty": "Medium",
+   "question": "How many terms of the arithmetic progression 3, 7, 11, … are needed for the sum to exceed 2000 for the first time?",
+   "solution": "Sₙ = n(2n + 1) > 2000. n = 31 gives 31 × 63 = 1953; n = 32 gives 32 × 65 = 2080. So 32 terms.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Medium",
+   "options": [
+    "64",
+    "41",
+    "32",
+    "35"
+   ]
+  },
+  {
+   "id": "M3-QA-13",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Medium",
+   "question": "Real numbers x, y satisfy x + y = 7 and x³ + y³ = 133. What is x² + y²?",
+   "solution": "x³ + y³ = (x + y)³ − 3xy(x + y): 133 = 343 − 21xy, so xy = 10. Then x² + y² = 49 − 20 = 29.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Medium",
+   "options": [
+    "58",
+    "31",
+    "29",
+    "33"
+   ]
+  },
+  {
+   "id": "M3-QA-14",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Inequalities",
+   "difficulty": "Hard",
+   "question": "What is the maximum value of 8 − |x − 3| − |2x − 10| over real x?",
+   "solution": "g(x) = |x − 3| + |2x − 10| is piecewise linear with corners at 3 and 5: g(3) = 4, g(5) = 2. Its minimum is 2 at x = 5, so the maximum of 8 − g is 6.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "6",
+   "level": "Hard"
+  },
+  {
+   "id": "M3-QA-15",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Easy",
+   "question": "In triangle PQR, the bisector of angle P meets QR at S. PQ = 12, PR = 18 and QR = 20. What is QS?",
+   "solution": "By the angle bisector theorem, QS/SR = 12/18 = 2/3, so QS = 20 × 2/5 = 8.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Easy",
+   "options": [
+    "8",
+    "7",
+    "9",
+    "11"
+   ]
+  },
+  {
+   "id": "M3-QA-16",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Medium",
+   "question": "Two circles have radii 5 cm and 3 cm, and their centres are 17 cm apart. What is the length, in cm, of a transverse (internal) common tangent between the points of contact?",
+   "solution": "Transverse tangent length = √(d² − (r₁ + r₂)²) = √(289 − 64) = √225 = 15.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Medium",
+   "options": [
+    "13",
+    "30",
+    "15",
+    "17"
+   ]
+  },
+  {
+   "id": "M3-QA-17",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Medium",
+   "question": "A regular hexagon has side 6 cm. What is the area, in cm², of the triangle formed by joining three alternate vertices of the hexagon? Enter your answer as a multiple of √3 (e.g. 27 if the area is 27√3).",
+   "solution": "Alternate vertices form an equilateral triangle of side 6√3, with area (√3/4) × 108 = 27√3.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Medium",
+   "options": [
+    "54",
+    "31",
+    "23",
+    "27"
+   ]
+  },
+  {
+   "id": "M3-QA-18",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mensuration",
+   "difficulty": "Medium",
+   "question": "A right circular cone is cut by a plane parallel to its base at one-third of its height from the apex. The volume of the frustum is what multiple of the volume of the small cone?",
+   "solution": "The small cone has linear ratio 1/3, so its volume is 1/27 of the full cone. The frustum is 26/27, i.e. 26 times the small cone.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "26",
+   "level": "Medium"
+  },
+  {
+   "id": "M3-QA-19",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Medium",
+   "question": "What is the sum of all positive divisors of 360 that are odd?",
+   "solution": "360 = 2³ × 3² × 5. Odd divisors are divisors of 45: their sum is (1 + 3 + 9)(1 + 5) = 78.",
+   "type": "mcq",
+   "answer": 1,
+   "level": "Medium",
+   "options": [
+    "92",
+    "78",
+    "85",
+    "71"
+   ]
+  },
+  {
+   "id": "M3-QA-20",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Medium",
+   "question": "N is the smallest positive integer that leaves remainders 2, 3 and 4 when divided by 3, 4 and 5 respectively, and is also a multiple of 7. What is N?",
+   "solution": "Remainders are each one less than the divisor, so N + 1 is a multiple of 60: N = 59, 119, 179, … The first multiple of 7 is 119.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "119",
+   "level": "Medium"
+  },
+  {
+   "id": "M3-QA-21",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Permutations & Combinations",
+   "difficulty": "Medium",
+   "question": "How many 4-digit numbers have digits in strictly increasing order from left to right?",
+   "solution": "Choose any 4 distinct digits from 1–9 (0 cannot appear, as it would have to lead); each choice gives exactly one increasing number: C(9, 4) = 126.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "126",
+   "level": "Medium"
+  },
+  {
+   "id": "M3-QA-22",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Probability",
+   "difficulty": "Medium",
+   "question": "A bag has 5 red and 7 blue balls. Three balls are drawn at random without replacement. What is the probability that exactly two are red?",
+   "solution": "C(5,2) × C(7,1) / C(12,3) = 70/220 = 7/22.",
+   "type": "mcq",
+   "options": [
+    "35/132",
+    "7/22",
+    "5/22",
+    "7/44"
+   ],
+   "answer": 1,
+   "level": "Medium"
+  }
+ ],
+ "sets": {}
+}

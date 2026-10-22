@@ -1,0 +1,362 @@
+{
+ "name": "mock-1 — QA",
+ "questions": [
+  {
+   "id": "M1-QA-01",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time, Speed & Distance",
+   "difficulty": "Medium",
+   "question": "Two cyclists start at the same moment from towns P and Q, 252 km apart, riding towards each other at constant speeds. After they cross, the first takes 4 hours to reach Q and the second takes 9 hours to reach P. What is the speed of the first cyclist, in km/h?",
+   "solution": "If they meet after t hours, t² = 4 × 9, so t = 6. The speed ratio is √(9/4) = 3 : 2, and the combined speed is 252/6 = 42 km/h. The first cyclist's speed is 42 × 3/5 = 25.2 km/h.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "25.2",
+   "level": "Medium"
+  },
+  {
+   "id": "M1-QA-02",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time & Work",
+   "difficulty": "Hard",
+   "question": "A and B together can finish a job in 12 days. They work together for 4 days, after which A leaves and B finishes the rest in 20 more days. Had C, who is twice as efficient as B, joined A and B from the start, how many days would the whole job have taken?",
+   "solution": "A + B do 1/12 per day, so in 4 days they finish 1/3. B does the remaining 2/3 in 20 days, so B alone takes 30 days and C does 1/15 per day. Then A + B + C do 1/12 + 1/15 = 9/60 = 3/20 per day, and the job takes 20/3 days ≈ 6.67 days.",
+   "type": "mcq",
+   "options": [
+    "20/3",
+    "6",
+    "15/2",
+    "60/11"
+   ],
+   "answer": 0,
+   "level": "Hard"
+  },
+  {
+   "id": "M1-QA-03",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mixtures & Alligation",
+   "difficulty": "Medium",
+   "question": "A vessel holds 80 litres of pure milk. Some milk is drawn off and replaced with water, and the same volume of the mixture is then drawn off again and replaced with water. The vessel now contains 45 litres of milk. How many litres were drawn off each time?",
+   "solution": "Milk left = 80(1 − x/80)² = 45, so (1 − x/80)² = 9/16, giving 1 − x/80 = 3/4 and x = 20.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "20",
+   "level": "Medium"
+  },
+  {
+   "id": "M1-QA-04",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Percentages & Profit",
+   "difficulty": "Easy",
+   "question": "A shopkeeper marks an article 40% above its cost price. What discount percentage must he offer on the marked price so that his profit is 12%?",
+   "solution": "With CP = 100, MP = 140 and the required SP is 112. The discount is 28 on 140, which is 20%.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "20",
+   "level": "Easy"
+  },
+  {
+   "id": "M1-QA-05",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Simple & Compound Interest",
+   "difficulty": "Medium",
+   "question": "The difference between the compound interest (compounded annually) and the simple interest on a sum for 3 years at 10% per annum is ₹930. What is the sum, in ₹?",
+   "solution": "For 3 years, CI − SI = P(r² × (3 + r)) with r = 0.1, i.e. P × 0.01 × 3.1 = 0.031P. So 0.031P = 930 and P = ₹30,000.",
+   "type": "mcq",
+   "answer": 1,
+   "level": "Medium",
+   "options": [
+    "24000",
+    "30000",
+    "60000",
+    "33000"
+   ]
+  },
+  {
+   "id": "M1-QA-06",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Ratio & Proportion",
+   "difficulty": "Easy",
+   "question": "The monthly salaries of Asha and Bilal are in the ratio 5 : 7. If each gets a raise of ₹4,000, the ratio becomes 3 : 4. What is Asha's original salary, in ₹?",
+   "solution": "Let the salaries be 5k and 7k. Then 4(5k + 4000) = 3(7k + 4000), so 20k + 16000 = 21k + 12000 and k = 4000. Asha earns 5k = ₹20,000.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "20000",
+   "level": "Easy"
+  },
+  {
+   "id": "M1-QA-07",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Averages",
+   "difficulty": "Medium",
+   "question": "The average of a list of numbers is 36. When one number, 60, is removed, the average of the remaining numbers becomes 34.5. How many numbers were in the original list?",
+   "solution": "36n − 60 = 34.5(n − 1), so 1.5n = 25.5 and n = 17.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Medium",
+   "options": [
+    "16",
+    "19",
+    "17",
+    "15"
+   ]
+  },
+  {
+   "id": "M1-QA-08",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time, Speed & Distance",
+   "difficulty": "Medium",
+   "question": "A boat makes a round trip of 84 km upstream and 84 km back downstream in 10 hours. The upstream leg takes 4 hours more than the downstream leg. What is the speed of the boat in still water, in km/h?",
+   "solution": "Downstream takes 3 h and upstream 7 h. So b + s = 28 and b − s = 12, giving b = 20 km/h.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Medium",
+   "options": [
+    "20",
+    "24",
+    "16",
+    "26"
+   ]
+  },
+  {
+   "id": "M1-QA-09",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Hard",
+   "question": "For how many integer values of k does the equation x² − kx + k + 8 = 0 have two distinct integer roots?",
+   "solution": "If the roots are r and s, then r + s = k and rs = k + 8, so rs − r − s = 8, i.e. (r − 1)(s − 1) = 9. Factor pairs of 9 with r ≠ s: (1, 9), (9, 1), (−1, −9), (−9, −1) give root pairs {2, 10} and {0, −8}, so k = 12 or −8. The pair (3, 3) or (−3, −3) gives equal roots and is excluded. Answer: 2.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "2",
+   "level": "Hard"
+  },
+  {
+   "id": "M1-QA-10",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Inequalities",
+   "difficulty": "Medium",
+   "question": "How many integers x with |x| ≤ 20 satisfy (x² − 5x − 14)(x − 3) < 0?",
+   "solution": "(x² − 5x − 14)(x − 3) = (x + 2)(x − 3)(x − 7). The product is negative for x < −2 or 3 < x < 7. With |x| ≤ 20 this gives x = −20, …, −3 (18 integers) and x = 4, 5, 6 (3 integers), 21 in all.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "21",
+   "level": "Medium"
+  },
+  {
+   "id": "M1-QA-11",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Logarithms",
+   "difficulty": "Medium",
+   "question": "If log₂x + log₄x + log₁₆x = 7, what is the value of x?",
+   "solution": "Writing everything in base 2: log₂x (1 + 1/2 + 1/4) = 7, so (7/4) log₂x = 7, giving log₂x = 4 and x = 16.",
+   "type": "mcq",
+   "options": [
+    "32",
+    "64",
+    "8",
+    "16"
+   ],
+   "answer": 3,
+   "level": "Medium"
+  },
+  {
+   "id": "M1-QA-12",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Functions",
+   "difficulty": "Medium",
+   "question": "A function f satisfies f(x) + 2f(1 − x) = x² for every real x. What is f(3)?",
+   "solution": "Put x = 3: f(3) + 2f(−2) = 9. Put x = −2: f(−2) + 2f(3) = 4. Doubling the second and subtracting the first: 3f(3) = 8 − 9 = −1, so f(3) = −1/3.",
+   "type": "mcq",
+   "options": [
+    "1/3",
+    "-5/3",
+    "7/3",
+    "-1/3"
+   ],
+   "answer": 3,
+   "level": "Medium"
+  },
+  {
+   "id": "M1-QA-13",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Progressions",
+   "difficulty": "Medium",
+   "question": "The sum of the first 10 terms of an arithmetic progression is 155 and the sum of the first 20 terms is 610. What is the sum of the 21st to the 30th terms?",
+   "solution": "S10 = 5(2a + 9d) = 155 and S20 = 10(2a + 19d) = 610 give 2a + 9d = 31 and 2a + 19d = 61, so d = 3 and a = 2. Blocks of 10 terms increase by 10 × 10d = 300 each: 155, 455, 755, S30 = 15(2a + 29d) = 15 × 91 = 1365, so terms 21–30 sum to 1365 − 610 = 755.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "755",
+   "level": "Medium"
+  },
+  {
+   "id": "M1-QA-14",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Inequalities",
+   "difficulty": "Hard",
+   "question": "How many ordered pairs of integers (x, y) satisfy |x| + 2|y| ≤ 6?",
+   "solution": "For each y with |y| ≤ 3, x ranges over |x| ≤ 6 − 2|y|, giving 2(6 − 2|y|) + 1 values: y = 0 gives 13; |y| = 1 gives 9 (twice); |y| = 2 gives 5 (twice); |y| = 3 gives 1 (twice). Total 13 + 18 + 10 + 2 = 43.",
+   "type": "mcq",
+   "answer": 1,
+   "level": "Hard",
+   "options": [
+    "39",
+    "43",
+    "51",
+    "55"
+   ]
+  },
+  {
+   "id": "M1-QA-15",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Hard",
+   "question": "x and y are non-negative real numbers with x + y = 10. What is the maximum possible value of x²y? (Give the answer as a fraction or decimal if needed.)",
+   "solution": "By AM–GM on x/2, x/2, y: (x/2 + x/2 + y)/3 = 10/3 ≥ ∛(x²y/4), so x²y ≤ 4 × (10/3)³ = 4000/27, with equality at x = 20/3, y = 10/3.",
+   "type": "mcq",
+   "options": [
+    "500/3",
+    "4000/27",
+    "1000/9",
+    "1000/7"
+   ],
+   "answer": 1,
+   "level": "Hard"
+  },
+  {
+   "id": "M1-QA-16",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Medium",
+   "question": "A right triangle has legs of length 20 and 21. What is the product of its inradius and circumradius?",
+   "solution": "The hypotenuse is √(400 + 441) = 29. Inradius = (20 + 21 − 29)/2 = 6, circumradius = 29/2. Product = 87.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Medium",
+   "options": [
+    "87",
+    "103",
+    "111",
+    "71"
+   ]
+  },
+  {
+   "id": "M1-QA-17",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Medium",
+   "question": "Two parallel chords of a circle of radius 13 cm lie on the same side of the centre. One chord is 24 cm long and the distance between the chords is 7 cm. What is the length of the other chord, in cm?",
+   "solution": "The 24 cm chord is √(169 − 144) = 5 cm from the centre. The other is 12 cm from the centre (same side, 7 cm further), so its half-length is √(169 − 144) = 5 and its length 10 cm.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Medium",
+   "options": [
+    "20",
+    "13",
+    "10",
+    "9"
+   ]
+  },
+  {
+   "id": "M1-QA-18",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Easy",
+   "question": "What is the area of the quadrilateral with vertices (0, 0), (8, 0), (8, 6) and (2, 9), taken in that order?",
+   "solution": "Shoelace: (0·0 − 8·0) + (8·6 − 8·0) + (8·9 − 2·6) + (2·0 − 0·9) = 0 + 48 + 60 + 0 = 108; area = 108/2 = 54.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Easy",
+   "options": [
+    "49",
+    "108",
+    "69",
+    "54"
+   ]
+  },
+  {
+   "id": "M1-QA-19",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Medium",
+   "question": "How many integers from 1 to 1000 are divisible by exactly one of 3, 5 and 7?",
+   "solution": "Singles: 333 + 200 + 142 = 675. Pairs: 66 (by 15) + 47 (by 21) + 28 (by 35) = 141. All three: 9 (by 105). Exactly one = 675 − 2 × 141 + 3 × 9 = 420.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Medium",
+   "options": [
+    "840",
+    "378",
+    "420",
+    "336"
+   ]
+  },
+  {
+   "id": "M1-QA-20",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Medium",
+   "question": "What is the remainder when 7^2026 is divided by 100?",
+   "solution": "7⁴ = 2401 ≡ 1 (mod 100). 2026 = 4 × 506 + 2, so 7^2026 ≡ 7² = 49 (mod 100).",
+   "type": "tita",
+   "kind": "number",
+   "answer": "49",
+   "level": "Medium"
+  },
+  {
+   "id": "M1-QA-21",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Permutations & Combinations",
+   "difficulty": "Hard",
+   "question": "In how many distinct ways can the letters A, A, B, B, C, D be arranged in a row so that no two identical letters are next to each other?",
+   "solution": "Total arrangements = 6!/(2!2!) = 180. Arrangements with the two A's together: treat AA as one block: 5!/2! = 60; similarly 60 for BB. Both together: 4! = 24. Required = 180 − 60 − 60 + 24 = 84.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Hard",
+   "options": [
+    "76",
+    "92",
+    "108",
+    "84"
+   ]
+  },
+  {
+   "id": "M1-QA-22",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Probability",
+   "difficulty": "Hard",
+   "question": "Three fair dice are rolled. What is the probability that the sum is even and at least one die shows a 6?",
+   "solution": "Even-sum outcomes: 108 of 216. Even-sum outcomes with no 6 use faces 1–5 (three odd, two even): all even = 2³ = 8, exactly two odd = 3 × 3² × 2 = 54, so 62 even-sum outcomes have no 6. Hence 108 − 62 = 46 favourable outcomes; probability 46/216 = 23/108.",
+   "type": "mcq",
+   "options": [
+    "23/108",
+    "5/24",
+    "1/4",
+    "17/72"
+   ],
+   "answer": 0,
+   "level": "Hard"
+  }
+ ],
+ "sets": {}
+}

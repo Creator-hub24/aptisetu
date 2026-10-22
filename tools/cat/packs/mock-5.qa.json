@@ -1,0 +1,362 @@
+{
+ "name": "mock-5 — QA",
+ "questions": [
+  {
+   "id": "M5-QA-01",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Percentages & Profit",
+   "difficulty": "Medium",
+   "question": "The population of a town rises by 20% in the first year, falls by 25% in the second, and rises by 10% in the third. If it is 59,400 at the end of three years, what was the initial population?",
+   "solution": "Overall factor 1.2 × 0.75 × 1.1 = 0.99. Initial = 59400/0.99 = 60,000.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Medium",
+   "options": [
+    "120000",
+    "54000",
+    "60000",
+    "78000"
+   ]
+  },
+  {
+   "id": "M5-QA-02",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Percentages & Profit",
+   "difficulty": "Easy",
+   "question": "A sells an article to B at a 20% profit; B sells it to C at a 10% loss; C sells it to D for ₹2,646, making a 22.5% profit. What did A pay for the article, in ₹?",
+   "solution": "2646 = P × 1.2 × 0.9 × 1.225 = 1.323P, so P = 2000.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Easy",
+   "options": [
+    "4000",
+    "2400",
+    "1600",
+    "2000"
+   ]
+  },
+  {
+   "id": "M5-QA-03",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time, Speed & Distance",
+   "difficulty": "Medium",
+   "question": "Two runners start together from the same point on a 400 m circular track, running in the same direction at 5 m/s and 3 m/s. After how many seconds do they meet at the starting point for the first time?",
+   "solution": "The faster runner returns to the start every 80 s, the slower every 400/3 s. LCM(80, 400/3) = LCM(240, 400)/3 = 1200/3 = 400 s.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "400",
+   "level": "Medium"
+  },
+  {
+   "id": "M5-QA-04",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time, Speed & Distance",
+   "difficulty": "Medium",
+   "question": "A car covers the first third of a journey at 30 km/h, the second third at 45 km/h and the last third at 90 km/h. What is its average speed for the whole journey, in km/h?",
+   "solution": "Harmonic mean: 3/(1/30 + 1/45 + 1/90) = 3/(6/90) = 45.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Medium",
+   "options": [
+    "45",
+    "57",
+    "53",
+    "41"
+   ]
+  },
+  {
+   "id": "M5-QA-05",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time & Work",
+   "difficulty": "Hard",
+   "question": "Pipes A and B fill a tank in 12 and 15 hours; pipe C empties it in 20 hours. All three are opened together at 6 a.m., and C is closed at 10 a.m. At what hour of the day (in 24-hour format, e.g. 15 for 3 p.m.) is the tank full?",
+   "solution": "Net rate with C = 5/60 + 4/60 − 3/60 = 6/60 = 1/10, so 4 hours fill 2/5. The remaining 3/5 at 9/60 per hour takes 4 hours. The tank is full at 6 + 4 + 4 = 14, i.e. 2 p.m.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Hard",
+   "options": [
+    "12",
+    "28",
+    "14",
+    "13"
+   ]
+  },
+  {
+   "id": "M5-QA-06",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mixtures & Alligation",
+   "difficulty": "Medium",
+   "question": "Two alloys contain gold and copper in the ratios 2 : 3 and 5 : 3. How many kg of the second must be mixed with 10 kg of the first to obtain an alloy with gold and copper in equal amounts?",
+   "solution": "Gold: 4 + 5x/8; copper: 6 + 3x/8. Setting them equal gives 2x/8 = 2, so x = 8 kg.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "8",
+   "level": "Medium"
+  },
+  {
+   "id": "M5-QA-07",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Simple & Compound Interest",
+   "difficulty": "Medium",
+   "question": "The difference between compound interest and simple interest on a sum for 3 years at 10% per annum is ₹1,550. What is the sum, in ₹?",
+   "solution": "CI − SI over 3 years = P(r² (3 + r)) = P × 0.01 × 3.1 = 0.031P. So P = 1550/0.031 = 50,000.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Medium",
+   "options": [
+    "50000",
+    "45000",
+    "55000",
+    "60000"
+   ]
+  },
+  {
+   "id": "M5-QA-08",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Hard",
+   "question": "Let n be the least positive integer such that 180 divides 150ⁿ. If m is the least positive integer such that 150ⁿ divides 180ᵐ, what is m + n?",
+   "solution": "180 = 2² × 3² × 5 and 150 = 2 × 3 × 5². Step 1: 150ⁿ = 2ⁿ3ⁿ5²ⁿ needs n ≥ 2 for both 2² and 3², so n = 2. Step 2: 150² = 2² × 3² × 5⁴ must divide 180ᵐ = 2²ᵐ3²ᵐ5ᵐ; the 5s force m ≥ 4, so m = 4. Step 3: m + n = 6.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Hard",
+   "options": [
+    "5",
+    "12",
+    "6",
+    "8"
+   ]
+  },
+  {
+   "id": "M5-QA-09",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Averages",
+   "difficulty": "Hard",
+   "question": "The average of five distinct positive integers is 20 and their median is 22. What is the largest possible value of the largest of them?",
+   "solution": "The sum is 100. To maximise the largest, minimise the others: 1, 2, 22, 23 total 48, leaving 52.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "52",
+   "level": "Hard"
+  },
+  {
+   "id": "M5-QA-10",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Medium",
+   "question": "The roots of x² − 6x + k = 0 are α and β, with α² − β² = 24 and α > β. What is k?",
+   "solution": "α + β = 6 and α² − β² = 24, so α − β = 4. Then α = 5, β = 1 and k = αβ = 5.",
+   "type": "mcq",
+   "answer": 1,
+   "level": "Medium",
+   "options": [
+    "4",
+    "5",
+    "10",
+    "3"
+   ]
+  },
+  {
+   "id": "M5-QA-11",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Hard",
+   "question": "How many ordered pairs of positive integers (x, y) satisfy x² − y² = 2025?",
+   "solution": "(x − y)(x + y) = 2025 = 3⁴ × 5². Both factors must be odd (they are, since 2025 is odd) with x − y < x + y. 2025 has 15 divisors; excluding 45 × 45 (which gives y = 0), there are 7 pairs with d < 2025/d.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "7",
+   "level": "Hard"
+  },
+  {
+   "id": "M5-QA-12",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Inequalities",
+   "difficulty": "Hard",
+   "question": "x and y are positive reals with x + 2y = 12. What is the maximum possible value of x²y?",
+   "solution": "Write x + 2y = x/2 + x/2 + 2y. By AM–GM, (x/2)(x/2)(2y) ≤ 4³ = 64, so x²y/2 ≤ 64 and x²y ≤ 128, with equality at x = 8, y = 2.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "128",
+   "level": "Hard"
+  },
+  {
+   "id": "M5-QA-13",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Logarithms",
+   "difficulty": "Medium",
+   "question": "If log₃ x + log₉ x + log₂₇ x = 11/2, what is x?",
+   "solution": "log₃ x × (1 + 1/2 + 1/3) = 11/2, so log₃ x × 11/6 = 11/2 and log₃ x = 3. x = 27.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Medium",
+   "options": [
+    "23",
+    "54",
+    "31",
+    "27"
+   ]
+  },
+  {
+   "id": "M5-QA-14",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Functions",
+   "difficulty": "Medium",
+   "question": "f(x) = (3x + 2)/(x − 3) for x ≠ 3. What is f(f(f(f(5))))?",
+   "solution": "f(f(x)) = x for this function: (3f + 2)/(f − 3) = (3(3x+2) + 2(x−3))/((3x+2) − 3(x−3)) = 11x/11 = x. So applying f four times returns 5.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Medium",
+   "options": [
+    "5",
+    "10",
+    "6",
+    "4"
+   ]
+  },
+  {
+   "id": "M5-QA-15",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Progressions",
+   "difficulty": "Medium",
+   "question": "How many terms are common to the arithmetic progressions 4, 9, 14, …, 499 and 3, 10, 17, …, 500?",
+   "solution": "Common terms form an AP with difference 35. The first common term is 24 (24 = 4 + 20 = 3 + 21). The terms 24, 59, …, up to 499 number ⌊(499 − 24)/35⌋ + 1 = 13 + 1 = 14.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "14",
+   "level": "Medium"
+  },
+  {
+   "id": "M5-QA-16",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Medium",
+   "question": "In triangle ABC, AB = 13, BC = 14 and CA = 15. If m is the length of the median from A to BC, what is m²?",
+   "solution": "By Apollonius' theorem, m² = (2b² + 2c² − a²)/4 = (450 + 338 − 196)/4 = 148.",
+   "type": "mcq",
+   "answer": 1,
+   "level": "Medium",
+   "options": [
+    "134",
+    "148",
+    "296",
+    "162"
+   ]
+  },
+  {
+   "id": "M5-QA-17",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Easy",
+   "question": "A ladder 25 m long leans against a vertical wall with its foot 7 m from the wall. If the top slides down 4 m, how far, in m, does the foot slide outward?",
+   "solution": "The original height is 24 m; the new height is 20 m. The new distance is √(625 − 400) = 15, so the foot slides 15 − 7 = 8 m.",
+   "type": "mcq",
+   "answer": 3,
+   "level": "Easy",
+   "options": [
+    "11",
+    "9",
+    "16",
+    "8"
+   ]
+  },
+  {
+   "id": "M5-QA-18",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mensuration",
+   "difficulty": "Medium",
+   "question": "A rectangular sheet 44 cm × 18 cm is rolled along its longer side to form a hollow cylinder of height 18 cm. What is the volume of the cylinder, in cm³? (Take π = 22/7.)",
+   "solution": "Circumference 44 = 2πr gives r = 7. Volume = (22/7) × 49 × 18 = 2772.",
+   "type": "mcq",
+   "answer": 2,
+   "level": "Medium",
+   "options": [
+    "2495",
+    "5544",
+    "2772",
+    "3603"
+   ]
+  },
+  {
+   "id": "M5-QA-19",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Hard",
+   "question": "What are the last two digits of 3^2026?",
+   "solution": "3²⁰ ≡ 1 (mod 100) (since 3¹⁰ = 59049 ≡ 49 and 49² ≡ 1). 2026 = 20 × 101 + 6, so 3²⁰²⁶ ≡ 3⁶ = 729 ≡ 29.",
+   "type": "mcq",
+   "answer": 0,
+   "level": "Hard",
+   "options": [
+    "29",
+    "33",
+    "31",
+    "27"
+   ]
+  },
+  {
+   "id": "M5-QA-20",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Medium",
+   "question": "How many positive integers less than 500 have exactly three positive divisors?",
+   "solution": "Exactly three divisors means n = p² for a prime p. p² < 500 needs p ≤ 22: p = 2, 3, 5, 7, 11, 13, 17, 19. That is 8 numbers.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "8",
+   "level": "Medium"
+  },
+  {
+   "id": "M5-QA-21",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Permutations & Combinations",
+   "difficulty": "Hard",
+   "question": "In how many ways can 12 identical chocolates be distributed among 4 children so that each child gets at least 2 and no child gets more than 5?",
+   "solution": "With yᵢ = xᵢ − 2, we need y₁ + … + y₄ = 4 with each yᵢ ≤ 3. Unrestricted: C(7,3) = 35. Subtract the 4 cases where one yᵢ = 4: 35 − 4 = 31.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "31",
+   "level": "Hard"
+  },
+  {
+   "id": "M5-QA-22",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Probability",
+   "difficulty": "Hard",
+   "question": "A bag holds 4 red and 6 blue balls. Balls are drawn one at a time, without replacement, until both colours have appeared. What is the expected number of draws?",
+   "solution": "Let D be the number of draws. D > k exactly when the first k balls are all one colour. Step 1: E[D] = Σₖ≥0 P(D > k) = 1 + Σₖ≥1 [P(first k all red) + P(first k all blue)]. Step 2: P(first k red) = C(4,k)/C(10,k) and P(first k blue) = C(6,k)/C(10,k). Step 3: red terms 4/10 + 6/45 + 4/120 + 1/210 = 0.5714…; blue terms 6/10 + 15/45 + 20/120 + 15/210 + 6/252 + 1/210 = 1.2. Step 4: E[D] = 1 + 0.5714… + 1.2 = 2.7714… = 97/35.",
+   "type": "mcq",
+   "options": [
+    "97/35",
+    "3",
+    "5/2",
+    "18/7"
+   ],
+   "answer": 0,
+   "level": "Hard"
+  }
+ ],
+ "sets": {}
+}

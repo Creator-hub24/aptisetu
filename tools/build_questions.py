@@ -403,8 +403,8 @@ print("TOTAL",sum(len(v) for v in OUT.values()))
 import sys as _sys
 _sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "cat"))
 from common import Bank
-import qa as _qa, dilr as _dilr, varc as _varc
-CB = Bank(); _qa.build(CB); _dilr.build(CB); _varc.build(CB)
+import qa as _qa, dilr as _dilr, varc as _varc, packs as _packs
+CB = Bank(); _qa.build(CB); _dilr.build(CB); _varc.build(CB); _packs.build(CB)   # packs: mocks, sectionals, practice packs
 # global checks: unique ids, every set used, every set question references a real set, DILR sets have 4-5 questions
 ids = [q["id"] for v in CB.qs.values() for q in v]; assert len(ids) == len(set(ids))
 used = collections.Counter(q.get("set") for v in CB.qs.values() for q in v if q.get("set"))

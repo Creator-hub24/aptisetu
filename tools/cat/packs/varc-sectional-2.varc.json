@@ -1,0 +1,463 @@
+{
+ "name": "VARC Sectional 2",
+ "questions": [
+  {
+   "id": "S2-01",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The main argument of the passage is that:",
+   "solution": "The passage traces the cross-subsidy (para 1), its loss (para 2), the case of local reporting (para 3) and the resulting scarcity \"whose value lay in its use by the few\" (para 5). Option 4 is a view the author sets aside as too easy. Option 2 overstates; subscriptions fail for most local outlets. Option 1 is unsupported.",
+   "set": "s2-rc1",
+   "type": "mcq",
+   "options": [
+    "advertisers are responsible for the decline of foreign reporting",
+    "subscriptions are the best solution to the problems of local journalism",
+    "the unbundling of news has removed a hidden cross-subsidy, leaving reporting valuable to small, concerned audiences without a means of support",
+    "digital media have made all news coverage more trivial"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "S2-02",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's statement that metrics \"are silent on why it mattered\" implies that:",
+   "solution": "The sentence follows the point that a few hundred affected readers may make a report valuable \"measured by its consequences\". Option 1 contradicts \"The metrics are not wrong about how many people read\". Options 3 and 4 are unsupported.",
+   "set": "s2-rc1",
+   "type": "mcq",
+   "options": [
+    "click counts are frequently inaccurate",
+    "the value of some reporting lies in its effects through a small readership rather than in the size of that readership",
+    "local readers do not use the internet",
+    "editors should ignore audience data entirely"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "S2-03",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following situations most closely parallels the \"mechanism\" whose loss is described in the final paragraph?",
+   "solution": "The mechanism is a bundle in which many pay unknowingly for material used by few. A library fee that funds rarely used reference works matches it. Options 2 and 4 are unbundled, item-by-item payments. Option 3 is about advertising support, not cross-subsidy.",
+   "set": "s2-rc1",
+   "type": "mcq",
+   "options": [
+    "A single membership fee at a public library pays for the whole collection, including specialised reference works that few members ever consult.",
+    "A streaming service charges extra for each film watched.",
+    "A software firm offers a free version supported by advertising.",
+    "A charity asks donors to fund a specific project of their choosing."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "S2-04",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, subscriptions are a difficult model for most local outlets because:",
+   "solution": "Para 4: a town \"may contain enough readers to support a newspaper through advertising but not enough willing subscribers ... especially when much of what the paper reports can be found ... for free\". Option 1 overstates (\"any news\"). Options 4 and 3 are not stated.",
+   "set": "s2-rc1",
+   "type": "mcq",
+   "options": [
+    "local readers are unwilling to pay for any news",
+    "a small population may not provide enough paying subscribers, particularly when summaries are available for free",
+    "national titles prevent local outlets from offering subscriptions",
+    "advertisers refuse to support subscription papers"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "S2-05",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "Which of the following best states the main point of the passage?",
+   "solution": "The passage argues for a two-way view and ends with \"a partnership whose terms neither party chose\". Option 2 is the view qualified at the outset. Option 1 is explicitly rejected (\"should not be taken literally\"). Option 4 contradicts the skeletal evidence.",
+   "set": "s2-rc2",
+   "type": "mcq",
+   "options": [
+    "Wheat, in a literal sense, domesticated human beings.",
+    "Domestication was a deliberate human project that succeeded completely.",
+    "Domestication was a reciprocal process in which humans were reshaped by the species they cultivated, largely without intending the outcome.",
+    "Early farmers were healthier than foragers."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "S2-06",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's comment that \"the trap, if it was one, was built from the accumulated consequences of reasonable choices\" suggests that:",
+   "solution": "The sentence follows the list of consequences (growing populations, cleared land, lost knowledge) that made abandonment hard. Option 2 captures this. Option 3 contradicts \"reasonable choices\". Options 1 and 4 are unsupported.",
+   "set": "s2-rc2",
+   "type": "mcq",
+   "options": [
+    "foraging was always more productive than farming",
+    "the difficulty of returning to foraging arose from cumulative effects rather than from any single mistaken decision",
+    "early farmers were foolish to adopt agriculture",
+    "agriculture was imposed on early communities by outsiders"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "S2-07",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The discussion of dogs in the fourth paragraph serves primarily to:",
+   "solution": "It opens \"The two-way view also changes how we think about animals\" and describes selection in both directions. Options 4 and 3 make claims about chronology and importance that the passage does not make. Option 1 contradicts the account of less fearful wolves.",
+   "set": "s2-rc2",
+   "type": "mcq",
+   "options": [
+    "explain why wolves avoid human settlements",
+    "extend the reciprocal account of domestication from crops to animals",
+    "argue that dogs were more important than wheat to early humans",
+    "show that animals were domesticated before plants"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "S2-08",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's use of skeletal evidence in the second paragraph to suggest that domestication was not \"obviously advantageous\" to early farmers assumes that:",
+   "solution": "Drawing a conclusion about farming from skeletal comparisons requires that the differences be due to farming and not to unrepresentative samples. Option 2 states that. Option 3 is an extreme the argument does not need. Option 1 is narrower than what is required, and option 4 is irrelevant.",
+   "set": "s2-rc2",
+   "type": "mcq",
+   "options": [
+    "shorter stature is always caused by heavier labour",
+    "the skeletal differences reflect the farmers' way of life rather than differences in the populations that happened to be sampled",
+    "foragers never suffered from poor health",
+    "early farmers kept careful records of their health"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "S2-09",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's main purpose is to:",
+   "solution": "The last paragraph distinguishes explanation that replaces experience (rightly resisted) from explanation that directs attention and transmits skill (useful). Option 3 is contradicted by paras 3–4. Option 2 is denied in para 1. Option 1 contradicts para 2.",
+   "set": "s2-rc3",
+   "type": "mcq",
+   "options": [
+    "prove that scores fully determine musical experience",
+    "show that performers are generally anti-intellectual",
+    "argue that musical analysis should be abandoned",
+    "clarify the conditions under which explanation of music is valuable and those under which musicians rightly resist it"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S2-10",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "According to the passage, why is analysis less successful at accounting for a phrase held \"a fraction longer than expected\"?",
+   "solution": "Para 2: the effect depends on expectation, timing and attention, and \"the score does not contain it\". Option 2 overstates; para 2 says analysis favours recurring features but does not claim such moments never recur. Options 4 and 3 are unsupported.",
+   "set": "s2-rc3",
+   "type": "mcq",
+   "options": [
+    "The effect depends on features of performance and listening that the score does not record.",
+    "Such moments never recur in other pieces.",
+    "Listeners cannot perceive differences in timing.",
+    "Analysts dislike discussing individual performances."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "S2-11",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The example of a theme returning \"after a long departure\" is used to show that:",
+   "solution": "The example supports the claim that analysis \"does not explain the emotion so much as prepare the ground for it\". Option 2 overstates what the author says analysis does. Options 3 and 4 are unsupported.",
+   "set": "s2-rc3",
+   "type": "mcq",
+   "options": [
+    "structural understanding can enrich emotional response rather than replace it",
+    "analysis fully explains why music moves listeners",
+    "repetition is the most important feature of musical form",
+    "untrained listeners enjoy music more than trained ones"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "S2-12",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author would most likely agree that a teacher's explanation that \"stops at a point where the teacher says that it simply sounds better\":",
+   "solution": "Para 4: \"a partial explanation that guides practice is not worthless merely because it does not reach all the way down\", and reasoning lets the student apply it to other music. Option 2 is denied. Options 1 and 3 run against the paragraph's preference for explanation.",
+   "set": "s2-rc3",
+   "type": "mcq",
+   "options": [
+    "shows that the teacher does not understand the music",
+    "is worthless because it is incomplete",
+    "should be replaced by demonstration alone",
+    "can still be valuable if it helps the student apply the reasoning elsewhere"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S2-13",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, governments rely on numbers mainly because:",
+   "solution": "Para 1 offers the explanation that numbers are used \"where trust in judgement is weak\"; para 2 calls the number \"less accurate but more defensible\". Option 4 contradicts that. Options 2 and 3 are not the author's explanation.",
+   "set": "s2-rc4",
+   "type": "mcq",
+   "options": [
+    "quantification offers a defensible basis for decisions where trust in personal judgement is weak",
+    "officials lack the experience to make decisions",
+    "the public prefers numbers to words",
+    "numbers are always more accurate than human judgement"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "S2-14",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's claim that quantification \"can thus be read as a sign of weakness rather than strength\" implies that:",
+   "solution": "The claim follows the observation that contested professions \"adopted numbers more readily\", so adopting them signals contested standing. Option 1 confuses weak authority with incompetence. Options 2 and 3 overstate.",
+   "set": "s2-rc4",
+   "type": "mcq",
+   "options": [
+    "professions that adopt numbers are incompetent",
+    "medicine has never used numbers",
+    "strong professions always produce better outcomes",
+    "the adoption of measurement may indicate that a profession's personal authority is contested"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S2-15",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following best exemplifies the problem described in the fourth paragraph?",
+   "solution": "The fourth paragraph describes people improving the number \"at the expense of what it was meant to indicate\". Option 4 is a direct example of that. Option 3 is just a statistic. Options 1 and 2 do not involve gaming a measure.",
+   "set": "s2-rc4",
+   "type": "mcq",
+   "options": [
+    "A government replaces a committee with an independent auditor.",
+    "A school is praised for its examination results by parents.",
+    "A city publishes crime statistics that show a decline in burglary.",
+    "Police officers, assessed by the number of cases closed, begin recording minor incidents as resolved without investigating them."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S2-16",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The final paragraph serves primarily to:",
+   "solution": "It opens \"it would be wrong to wish simply for a return to discretion\", notes that numbers opened decisions to scrutiny, and ends with the warning about defensible versus correct decisions. Options 3 and 2 contradict it. Option 1 is not discussed there.",
+   "set": "s2-rc4",
+   "type": "mcq",
+   "options": [
+    "summarise the history of measurement in medicine",
+    "argue for a return to discretionary decision-making",
+    "reject quantification as harmful",
+    "balance the preceding criticism by noting the benefits of numbers and warning against confusing defensibility with correctness"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S2-17",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Collectors often justify their acquisitions as acts of preservation: an object bought is an object saved from neglect. Yet the market that collectors create also gives value to objects that were never in danger, and the prospect of a sale can encourage their removal from the places where they had survived for centuries. Preservation by purchase may thus increase the very risk it claims to reduce.</p>",
+   "solution": "Option 4 captures both the justification and the self-defeating effect. Option 3 imputes motives the passage does not discuss. Option 2 is a broader claim than the passage makes. Option 1 contradicts \"never in danger\".",
+   "type": "mcq",
+   "options": [
+    "Most collected objects were in danger of being neglected.",
+    "Objects are safest when left in their original locations.",
+    "Collectors are mainly motivated by profit rather than preservation.",
+    "Collecting, justified as preservation, can create a market that encourages the removal and endangerment of objects."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S2-18",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Diet studies frequently report that people who eat a particular food live longer. Such findings are hard to interpret, because people who choose that food tend to differ in other ways: they may be wealthier, exercise more or smoke less. Statistical adjustments can account for differences that were measured, but not for those that were not. The healthiest-looking foods may therefore owe part of their reputation to the habits of those who eat them.</p>",
+   "solution": "Option 4 states the confounding problem. Option 1 asserts a causal claim the passage questions. Option 3 contradicts \"but not for those that were not\". Option 2 is an unsupported prescription.",
+   "type": "mcq",
+   "options": [
+    "Wealthy people live longer because they eat healthier food.",
+    "People should not change their diets on the basis of research.",
+    "Statistical adjustment removes all bias from diet studies.",
+    "Observational links between foods and longevity may reflect the other characteristics of those who eat them."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S2-19",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>A cartographer drawing a coastline must decide how much detail to include. A map at a large scale can show every inlet; at a small scale, the same coast becomes a smooth curve. ____ Mapmakers have therefore learned to state the scale at which a length was measured, since without it the figure has no fixed meaning.</p>",
+   "solution": "The final sentence's \"the scale at which a length was measured\" requires a prior sentence linking length to the level of detail. Option 2 provides this. The other options do not lead to that conclusion.",
+   "type": "mcq",
+   "options": [
+    "Small-scale maps are more useful for navigation.",
+    "The measured length of the coast depends on that choice, growing as finer features are included.",
+    "Modern satellites have made coastal maps more accurate.",
+    "Coastlines change over time because of erosion."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "S2-20",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Hospitals that publish their surgeons' success rates hope to inform patients and motivate improvement. ____ A surgeon who declines a risky operation improves her figures while a patient who needed the operation goes without it. Publication, intended to raise standards, can thus reward caution at the patient's expense.</p>",
+   "solution": "The next sentence describes risk-avoidance, so the blank must introduce that incentive. Option 4 does. Options 2, 1 and 3 do not connect to \"declines a risky operation\".",
+   "type": "mcq",
+   "options": [
+    "Success rates vary widely between hospitals.",
+    "Most patients never read published success rates.",
+    "Surgeons generally welcome greater transparency.",
+    "But surgeons judged on outcomes may be tempted to avoid the patients most likely to fare badly."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "S2-21",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Translations of sacred texts have often been resisted as threats to the authority of those who could read the original.</li><li>When a text can be read only in a learned language, its interpretation remains with a trained few.</li><li>A translation into the common tongue allows ordinary readers to judge for themselves.</li><li>The disputes over such translations were therefore as much about power as about accuracy.</li><li>Some ancient languages survive today only in religious use.</li></ol>",
+   "solution": "1-2-3-4 argues that translation threatened interpretive authority, so disputes were about power. Sentence 5 notes the survival of liturgical languages, which is topically related but does not belong to the argument.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5"
+  },
+  {
+   "id": "S2-22",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Wetlands were long regarded as wasteland, fit only to be drained.</li><li>They are now valued for absorbing floodwater and filtering pollutants.</li><li>Draining them for agriculture was once subsidised by many governments.</li><li>Some of those same governments now pay to restore what they paid to destroy.</li><li>Drained peat soils can sink by several metres over a century as the organic matter decays.</li></ol>",
+   "solution": "1-3-2-4 traces the reversal in attitudes and policy towards wetlands. Sentence 5 describes a physical effect of drainage, on-topic but not part of the reversal in attitudes and policy.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5"
+  },
+  {
+   "id": "S2-23",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>Each time such a summary was itself summarised, the more surprising details were sharpened and the qualifications dropped.</li><li>A study published with careful caveats can become, within a few years, a widely cited fact.</li><li>By the time it reached textbooks, the finding had acquired a certainty its authors never claimed.</li><li>The process typically begins in summaries written for readers who lack the time to consult the original.</li></ol>",
+   "solution": "2 states the phenomenon; 4 (\"The process\") identifies its start; 1 (\"Each time such a summary\") continues the process begun in 4 and describes the progression; 3 (\"By the time it reached textbooks\") concludes it.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2413"
+  },
+  {
+   "id": "S2-24",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The five sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the five numbers (e.g. 21435).</p><ol class='pj'><li>Its success, however, depended on a supply of cheap labour that has since disappeared.</li><li>For decades the factory town was held up as a model of planned industrial community.</li><li>Housing, schools and shops were all provided by the employer, close to the works.</li><li>When the labour became expensive, the factory closed and the town lost its reason to exist.</li><li>What had looked like a design for living turned out to be a design for a particular economy.</li></ol>",
+   "solution": "2 introduces the model; 3 describes it; 1 (\"however\") introduces the dependency; 4 (\"When the labour became expensive\") gives the outcome; 5 draws the lesson. 1 needs 3's description before \"Its success\", and 4 needs 1's \"cheap labour\".",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "23145"
+  }
+ ],
+ "sets": {
+  "s2-rc1": {
+   "kind": "passage",
+   "title": "Passage: The economics of attention in news",
+   "theme": "media",
+   "words": 486,
+   "html": "<b>Passage: The economics of attention in news</b><p>For most of the twentieth century, a newspaper sold two products at once. It sold news to readers and it sold readers to advertisers, and the second sale paid for most of the first. The arrangement had a curious consequence: the paper&#x27;s revenue depended on how many people bought it, but not much on which articles they read. A reader who bought the paper for the sports results subsidised the foreign correspondent whose dispatches she never opened. Editors could therefore publish reporting that few people wanted, on the reasonable assumption that the bundle as a whole would sell.</p><p>Digital distribution unbundled the product. Each article now travels separately, through search engines and social feeds, and each can be measured: how many people clicked, how long they stayed, whether they shared it. Advertising, too, is sold against individual pages rather than the publication as a whole. The subsidy that once flowed invisibly from popular sections to unpopular ones has become visible, and an article that attracts few readers is now recognisable as a cost rather than as part of a package.</p><p>It would be easy to conclude that measurement has simply made news more trivial, and there is some evidence of this. But the more interesting effect is on what counts as an audience. A local council meeting, reported in print, reached every subscriber who glanced at the page; reported online, it reaches the few hundred people who search for it. Those few hundred may be precisely the people who care most: residents affected by a planning decision, officials whose conduct is under scrutiny. Measured by clicks the report is a failure; measured by its consequences it may be among the most valuable things the publication does. The metrics are not wrong about how many people read the article. They are silent on why it mattered.</p><p>Some publications have responded by moving towards subscriptions, on the theory that readers who pay directly will value the reporting that advertising cannot support. The model has succeeded for a small number of national titles with large and affluent audiences. For most local outlets the numbers are harder. A town of fifty thousand people may contain enough readers to support a newspaper through advertising but not enough willing subscribers to sustain a newsroom, especially when much of what the paper reports can be found, in summary, for free elsewhere.</p><p>The result is a peculiar pattern of abundance and scarcity. National and international news, which is reported by many outlets and can be monetised at scale, is more plentiful than ever. Reporting on institutions that affect small populations, such as school boards, district courts and municipal budgets, has thinned in many places to almost nothing. This is not a failure of demand in the usual sense. It reflects the loss of a mechanism that once allowed the many to pay, unknowingly, for information whose value lay in its use by the few.</p>"
+  },
+  "s2-rc2": {
+   "kind": "passage",
+   "title": "Passage: Domestication as a two-way process",
+   "theme": "anthropology",
+   "words": 475,
+   "html": "<b>Passage: Domestication as a two-way process</b><p>The domestication of plants and animals is usually told as a story of human mastery. People selected the wild grasses whose seeds stayed on the stalk, the wolves that tolerated their presence, the goats that could be penned, and over many generations they turned these species into crops and livestock suited to human purposes. The story is not false, but it describes only one direction of a relationship in which influence ran both ways.</p><p>Consider the cereals. Harvesting a wild grass whose seeds stay attached to the stalk until cut favours plants with that trait, because those are the seeds that end up in the next year&#x27;s planting. The early farmers who did this were not necessarily aiming at the result; they were simply harvesting what was easiest to gather, and the plants that suited the method multiplied. At the same time, the crops reshaped the people who grew them. Settled cultivation required fixed dwellings, storage, the defence of fields and a calendar organised around sowing and harvest. Skeletal remains from early farming communities often show signs of heavier labour, poorer dental health and shorter stature than those of the foragers who preceded them. If domestication was a bargain, the human side of it was not obviously advantageous in the short term.</p><p>This has led some writers to describe domestication as something done to humans as much as by them, and to note with some irony that wheat now covers vast areas of the earth, cared for by a species that devotes enormous effort to its propagation. The image is provocative, but it should not be taken literally. Plants have no intentions, and talk of wheat domesticating people is a metaphor for the fact that a practice, once adopted, created conditions that made it hard to abandon. Growing populations depended on the harvest; land cleared for fields could no longer support the game and wild plants that foragers had used; knowledge of foraging faded within a few generations. The trap, if it was one, was built from the accumulated consequences of reasonable choices.</p><p>The two-way view also changes how we think about animals. Dogs, it now seems likely, were not simply captured and tamed. Wolves that were less fearful of people could scavenge around their camps, and over time such populations diverged from their wilder relatives. Humans selected dogs, but dogs also selected humans: the groups that tolerated them gained protection and help in hunting, and these benefits may have shaped which communities flourished.</p><p>None of this denies that humans, unlike their crops and animals, could reflect on what they were doing. But reflection came late in a process that had begun without anyone intending it. The history of domestication may be better understood as the gradual formation of a partnership whose terms neither party chose than as the triumph of human design over nature.</p>"
+  },
+  "s2-rc3": {
+   "kind": "passage",
+   "title": "Passage: The limits of explanation in music",
+   "theme": "art",
+   "words": 477,
+   "html": "<b>Passage: The limits of explanation in music</b><p>Musicians have long been wary of explanations of music, and their wariness is often mistaken for anti-intellectualism. It is not. Few performers object to analysis that describes how a piece is built: the key relationships that organise a sonata, the rhythmic patterns that give a dance its character. What they resist is the suggestion that such description accounts for why the music moves us, as though one could understand a joke by diagramming its grammar.</p><p>The suspicion has some basis. Analysis is good at identifying features that recur, because recurrence is what makes a feature visible. It is less good at the particular moment in a performance where a phrase is held a fraction longer than expected and a listener&#x27;s breath catches. That effect depends on the expectation the music has built up, on the performer&#x27;s timing and on the listener&#x27;s attention at that instant, and a description of the score cannot capture it, because the score does not contain it. Two performances of the same notes can produce entirely different experiences, and the difference lies largely in features that notation leaves undetermined. A composer can mark a pause or a slowing, but not its exact length, and the same marking is realised differently by every performer who has ever played it.</p><p>Yet the resistance can be overstated. Listeners who learn to hear the structure of a piece often report that their experience deepens rather than diminishes. Knowing that a theme will return, transformed, after a long departure allows a listener to feel the return as a homecoming rather than as a repetition. Analysis, in such cases, does not explain the emotion so much as prepare the ground for it. It trains the listener to perceive relationships that the untrained ear passes over, and the perception is itself part of what is felt.</p><p>There is also a more modest role for explanation, which is to make articulate what performers already know. Teachers who can say why a passage should be shaped one way rather than another pass on more than those who can only demonstrate, because the student can carry the reasoning to music the teacher never played. Such reasoning is rarely complete; it typically stops at a point where the teacher says that it simply sounds better. But a partial explanation that guides practice is not worthless merely because it does not reach all the way down.</p><p>The dispute may thus rest on a confusion about what explanation is for. If it is meant to replace the experience of music with an account that could be understood without listening, it will fail, and musicians are right to resist it. If it is meant to direct attention, refine perception and transmit skill, it has a long and useful history, and the musicians who distrust it most often rely on it, without naming it, every time they teach.</p>"
+  },
+  "s2-rc4": {
+   "kind": "passage",
+   "title": "Passage: Trust in numbers",
+   "theme": "society",
+   "words": 459,
+   "html": "<b>Passage: Trust in numbers</b><p>Modern governments rely heavily on numbers. Unemployment rates, inflation figures, school rankings and hospital waiting times are published, debated and used to allocate resources and judge performance. The reliance is often attributed to a faith in objectivity, as though officials believed that numbers simply describe reality while words distort it. A more interesting explanation is that numbers are used precisely where trust in judgement is weak.</p><p>Where officials share a common background, know one another and are trusted by the public, decisions can rest on discretion. A senior civil servant may decide which schools need more funding on the basis of her experience, and her decision will be accepted because she is believed to know what she is doing. Where such trust is absent, because the public suspects favouritism or because decisions must be defended to outsiders, discretion becomes a liability. A rule that allocates funds according to a published formula protects the official from accusations of bias, even if the formula captures less than her judgement would have. The number is less accurate but more defensible.</p><p>This explains a pattern that might otherwise seem puzzling: quantification tends to advance not where expertise is strongest but where it is most exposed to challenge. Professions secure in their authority, such as medicine for much of the twentieth century, could resist external measurement; those whose standing was contested, or who answered to a sceptical public, adopted numbers more readily. The move to quantify can thus be read as a sign of weakness rather than strength, a way of borrowing the authority of impersonal method when personal authority is insufficient.</p><p>The trade has costs. A formula can only use what can be counted, and the things that are easiest to count are not always the things that matter most. Once a number determines rewards, those subject to it learn to improve the number, sometimes at the expense of what it was meant to indicate. Hospitals judged by waiting times may find ways to start the clock later; schools judged by examination results may teach to the test. The original judgement that the formula replaced would have noticed such manoeuvres; the formula cannot.</p><p>Yet it would be wrong to wish simply for a return to discretion. The trust that made discretion workable was often the trust of a narrow group in its own members, and the decisions it produced could be partial in ways that its beneficiaries did not notice. Numbers opened decisions to scrutiny by people who had previously been excluded from them. The task is not to choose between numbers and judgement but to recognise what each can and cannot do, and to resist the temptation, common to both, of treating a defensible decision as if it were a correct one.</p>"
+  }
+ }
+}

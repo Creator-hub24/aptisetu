@@ -1,0 +1,463 @@
+{
+ "name": "Mock 5 — VARC",
+ "questions": [
+  {
+   "id": "M5-01",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "The passage is mainly concerned with:",
+   "solution": "Paras 2–4 show the evidence was weak and explain why the story spread anyway. Option 2 contradicts \"None of this shows that lock-in never happens\". Option 3 is background only. Option 4 is the claim the author disputes.",
+   "set": "m5-rc1",
+   "type": "mcq",
+   "options": [
+    "showing how a famous example of lock-in rested on weak evidence and spread because it suited a theory",
+    "proving that markets never lock in inferior technologies",
+    "explaining the mechanical history of the typewriter",
+    "arguing that the rival keyboard layout was superior"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M5-02",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, later comparisons of the two keyboard layouts found that:",
+   "solution": "Para 2: \"later comparisons found little difference\". Option 1 contradicts \"Typing speed depends much more on training\".",
+   "set": "m5-rc1",
+   "type": "mcq",
+   "options": [
+    "training had no effect on speed",
+    "the standard layout was much faster",
+    "there was little difference in speed between them",
+    "the rival layout was much faster"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M5-03",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author suggests that the original story spread widely mainly because:",
+   "solution": "Para 3: \"it illustrated a theoretical possibility that economists wanted to discuss\" and \"a concrete case made them easier to teach\". Option 4 contradicts \"so little evidence\". Option 2 misplaces the inventor, who ran studies. Option 3 is unsupported.",
+   "set": "m5-rc1",
+   "type": "mcq",
+   "options": [
+    "it gave a teachable concrete case for a theoretical possibility economists wanted to discuss",
+    "the inventor of the rival layout promoted it in textbooks",
+    "employers insisted that it be taught",
+    "its evidence was unusually strong"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M5-04",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following situations best fits the general lesson stated in the last paragraph?",
+   "solution": "The lesson is that \"a good illustration can outrun its evidence\" and that fame is not a guide to accuracy. Option 4 mirrors it exactly. Options 1 and 3 concern switching standards. Option 2 is the opposite pattern.",
+   "set": "m5-rc1",
+   "type": "mcq",
+   "options": [
+    "A company changes its software standard at great cost.",
+    "A theory is abandoned after a single experiment contradicts it.",
+    "A new keyboard layout is adopted by a large employer.",
+    "A widely cited study of a medical treatment is later found to rest on a small, flawed sample, but it had been repeated in textbooks because it neatly illustrated a popular hypothesis."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M5-05",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The author's main argument is that:",
+   "solution": "The author grants that the admiration \"is deserved\", lists aviation-specific advantages, and recommends borrowing \"less a procedure than a principle\". Option 2 contradicts \"deserved\". Option 3 is what the author warns against. Option 4 is never claimed.",
+   "set": "m5-rc2",
+   "type": "mcq",
+   "options": [
+    "aviation's success depends on features other fields often lack, so they should borrow its principle rather than its procedures",
+    "aviation's approach to failure is overrated",
+    "hospitals should adopt aviation's reporting systems unchanged",
+    "pilots are more careful than doctors"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M5-06",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "Which of the following is NOT mentioned as an advantage that aviation enjoys?",
+   "solution": "Para 2 lists public failures, standardisation and pilots being \"at risk\". Pay is never mentioned.",
+   "set": "m5-rc2",
+   "type": "mcq",
+   "options": [
+    "Its failures are dramatic and public.",
+    "Its investigators are better paid than those in other fields.",
+    "Its systems are highly standardised.",
+    "Those whose errors are reported share in the risk."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M5-07",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "It can be inferred that the author believes a reporting system in a field without standardised work would:",
+   "solution": "Para 3: since cases differ, \"a lesson from one case may not apply to the next\", so the system may collect reports \"without producing the cumulative improvement\". Option 4 contradicts \"collect many reports\". Options 2 and 1 are unsupported.",
+   "set": "m5-rc2",
+   "type": "mcq",
+   "options": [
+    "make professionals bear more risk",
+    "be more effective than aviation's system",
+    "struggle to turn individual lessons into improvements that apply broadly",
+    "produce no reports at all"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M5-08",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The phrase \"rarely mentioned in the exhortations\" suggests that the author regards those who urge other fields to copy aviation as:",
+   "solution": "The author implies that advocates omit aviation's special advantages. Option 1 imputes dishonesty, which the text does not. Options 3 and 4 are unsupported.",
+   "set": "m5-rc2",
+   "type": "mcq",
+   "options": [
+    "dishonest",
+    "inclined to overlook the conditions that make aviation's approach work",
+    "uninterested in safety",
+    "experts in aviation history"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M5-09",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "According to the passage, the masking explanation holds that urban birds sing at higher pitch because:",
+   "solution": "Para 1: \"the low-frequency rumble of traffic drowns out lower notes\". Option 2 is contradicted in para 2. Option 4 reverses the preference. Option 3 is unsupported.",
+   "set": "m5-rc3",
+   "type": "mcq",
+   "options": [
+    "traffic noise drowns out lower notes",
+    "higher notes travel farther than lower ones",
+    "urban birds are smaller than rural birds",
+    "females prefer higher songs"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M5-10",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The finding that some birds raise their pitch within minutes of hearing traffic recordings suggests that:",
+   "solution": "Para 2: the change \"can be a flexible response rather than an inherited trait\". Option 1 is contradicted. Options 4 and 3 are unsupported.",
+   "set": "m5-rc3",
+   "type": "mcq",
+   "options": [
+    "the change in song is always genetic",
+    "at least some of the change reflects flexible behaviour rather than inherited traits",
+    "females cannot hear low songs in cities",
+    "traffic noise damages birds' hearing"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M5-11",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The author's claim that singing higher may reduce a male's attractiveness assumes that:",
+   "solution": "The cost arises only if listeners still prefer lower songs. If urban females' preferences had shifted, there would be no penalty. Options 3, 2 and 1 are not required.",
+   "set": "m5-rc3",
+   "type": "mcq",
+   "options": [
+    "higher songs are never heard by females",
+    "traffic noise affects females more than males",
+    "all urban males sing at the same pitch",
+    "females in cities retain a preference for lower songs"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M5-12",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "Which of the following best expresses the author's central point?",
+   "solution": "Para 3 calls urban song \"a compromise\", and para 4 warns how \"misleading a single explanation can be\". Option 2 ignores the costs. Option 4 overstates; masking is partly supported. Option 1 is a value judgement the text does not make.",
+   "set": "m5-rc3",
+   "type": "mcq",
+   "options": [
+    "Rural birds sing better than urban birds.",
+    "Urban birds have successfully adapted to noise with no cost.",
+    "Changes in urban birdsong reflect a compromise among competing pressures, which a single explanation can obscure.",
+    "The masking explanation is completely wrong."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M5-13",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "The passage is mainly about:",
+   "solution": "The passage explains the cautionary function, notes its loss online and discusses restoring friction. Options 1 and 3 are incidental. Option 2 is not argued.",
+   "set": "m5-rc4",
+   "type": "mcq",
+   "options": [
+    "the history of forgery",
+    "why handwritten signatures are legally superior",
+    "the design of online advertisements",
+    "the cautionary function of signing and whether digital agreements can recover it"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M5-14",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "According to the passage, the \"cautionary function of formalities\" refers to:",
+   "solution": "Para 2 defines it as \"requirements that slow people down so that they notice what they are doing\".",
+   "set": "m5-rc4",
+   "type": "mcq",
+   "options": [
+    "requirements that slow people down so that they notice they are committing to something",
+    "the practice of reading documents aloud",
+    "the storage of signed documents",
+    "the legal penalty for forging a signature"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M5-15",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "If the cautionary effect comes mainly from rarity, the author suggests that adding friction should be:",
+   "solution": "The last sentence: friction \"would work only if reserved for the agreements that genuinely deserve it\". Option 2 would \"defeat the purpose\". Options 1 and 4 are not suggested.",
+   "set": "m5-rc4",
+   "type": "mcq",
+   "options": [
+    "abandoned in favour of handwritten signatures",
+    "applied to every digital agreement",
+    "reserved for agreements that genuinely deserve it",
+    "replaced by longer terms of service"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M5-16",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "The observation that \"the click that binds her is identical to the click that dismisses an advertisement\" is used to:",
+   "solution": "The point is the absence of the \"transition from considering to committing\" marker. Option 3 contradicts \"The law generally treats such clicks as valid\". Option 2 overstates. Option 1 is unrelated.",
+   "set": "m5-rc4",
+   "type": "mcq",
+   "options": [
+    "argue that advertisements should be banned",
+    "show that users never read terms of service",
+    "prove that digital agreements are legally invalid",
+    "illustrate how digital consent lacks any marker distinguishing a consequential act from a trivial one"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "M5-17",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Easy",
+   "level": "Easy",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Repair cafés, where volunteers help people fix broken household items, have spread in many cities. Their organisers say the main obstacle is not skill but design: many products are glued shut, use unusual screws or lack available spare parts. Fixing them requires ingenuity that a better-designed product would make unnecessary.</p>",
+   "solution": "Option 1 states the main claim that design, not skill, is the obstacle. Option 2 contradicts it. Option 3 is not stated. Option 4 contradicts \"lack available spare parts\".",
+   "type": "mcq",
+   "options": [
+    "Repair cafés struggle mainly because products are designed in ways that make repair difficult.",
+    "Volunteers at repair cafés lack the skills to fix most items.",
+    "Repair cafés are found only in large cities.",
+    "Spare parts are easily available for most products."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "M5-18",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>We often judge a decision by its outcome, calling it wise if things turned out well and foolish if they did not. But good decisions can lead to bad outcomes through bad luck, and reckless ones can be rescued by good fortune. An organisation that rewards outcomes alone will gradually promote the lucky over the careful, and will learn the wrong lessons from both.</p>",
+   "solution": "Option 3 captures both the general point and the organisational consequence. Option 4 overstates; the passage criticises judging \"by outcome alone\". Options 1 and 2 are unsupported extremes.",
+   "type": "mcq",
+   "options": [
+    "Careful people are usually unlucky.",
+    "Organisations should never reward success.",
+    "Judging decisions purely by results confuses luck with judgement and, in organisations, rewards and teaches the wrong things.",
+    "Outcomes are irrelevant to judging decisions."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M5-19",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>A dictionary that records how words are actually used will include meanings that purists dislike. Editors are regularly accused of lowering standards when they add such meanings. ____ To refuse them would be to describe a language that nobody speaks.</p>",
+   "solution": "The blank must defend the editors and lead to \"To refuse them\". Option 3 does. Option 2 reverses the stance. Options 4 and 1 are irrelevant.",
+   "type": "mcq",
+   "options": [
+    "Some words have no clear meaning.",
+    "Purists are usually right about grammar.",
+    "Yet a dictionary's task is to report usage, not to prescribe it.",
+    "Most dictionaries are now published online."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "M5-20",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>A city that builds a new road to relieve congestion often finds that traffic soon returns to its former level. Drivers who had avoided the route, travelled at other times or used other modes now take advantage of the extra space. ____ Planners who understand this treat road capacity less as a solution to congestion than as a decision about how much driving to accommodate.</p>",
+   "solution": "The blank should generalise the induced-demand mechanism before the planners' conclusion. Option 2 does this. Option 4 is an absolute the paragraph avoids. Options 1 and 3 are off-point.",
+   "type": "mcq",
+   "options": [
+    "Public transport is usually slower than driving.",
+    "The new capacity, in effect, creates the demand that fills it.",
+    "Most drivers prefer to travel early in the morning.",
+    "New roads are therefore always a waste of money."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "M5-21",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Salt was once valuable enough to be used as payment.</li><li>Its value came from its role in preserving food before refrigeration.</li><li>Control of salt supplies therefore conferred economic and political power.</li><li>Salt was obtained either by evaporating sea water or by mining ancient deposits.</li><li>Several historical taxes on salt provoked serious unrest.</li></ol>",
+   "solution": "1, 2, 3 and 5 trace salt's value and its political consequences. Sentence 4 describes how salt was produced, which is on-topic but does not advance the chain from value to taxation and politics.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4"
+  },
+  {
+   "id": "M5-22",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Open-plan offices were promoted as a way to encourage collaboration.</li><li>Studies of such offices have found that face-to-face interaction often falls after walls are removed.</li><li>Open-plan layouts also allowed firms to fit more desks into the same floor space.</li><li>Workers seeking privacy put on headphones and communicate by message instead.</li><li>The design thus produced the opposite of the behaviour it was meant to foster.</li></ol>",
+   "solution": "1 → 2 → 4 → 5 is a chain about open plans reducing interaction. Sentence 3 offers a cost motive for open plans, which is plausible but not part of the argument.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3"
+  },
+  {
+   "id": "M5-23",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Medium",
+   "level": "Medium",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>When the season fails, the whole year's income is at risk.</li><li>Many farmers in dry regions grow a single crop timed to the monsoon.</li><li>Crop insurance is meant to cushion this risk.</li><li>But payouts often arrive months late, after debts have already been taken on.</li></ol>",
+   "solution": "2 introduces monsoon dependence; 1 gives the risk; 3 (\"this risk\") gives the remedy; 4 (\"But\") qualifies it.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2134"
+  },
+  {
+   "id": "M5-24",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Hard",
+   "level": "Hard",
+   "question": "<p>The five sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the five numbers (e.g. 21435).</p><ol class='pj'><li>The resulting figures look precise but rest on judgements that are rarely disclosed.</li><li>Measuring the size of an economy requires valuing things that are never sold.</li><li>Housework, the services of owner-occupied homes and public goods all fall into this category.</li><li>Statisticians must therefore impute values for them using assumptions.</li><li>Comparisons between countries that make different assumptions can thus mislead.</li></ol>",
+   "solution": "2 states the requirement; 3 (\"this category\") gives examples; 4 (\"therefore\") gives the method; 1 (\"The resulting figures\") comments; 5 (\"thus\") concludes.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "23415"
+  }
+ ],
+ "sets": {
+  "m5-rc1": {
+   "kind": "passage",
+   "title": "Passage: The persistence of the QWERTY argument",
+   "theme": "economics",
+   "words": 530,
+   "html": "<b>Passage: The persistence of the QWERTY argument</b><p>For several decades the arrangement of keys on the standard typewriter keyboard served economists as the leading example of a market locking in an inferior technology. The story ran as follows. The layout was designed for mechanical reasons that soon ceased to matter; a rival layout allowed faster typing; but because typists trained on the standard and employers bought machines for trained typists, no one could switch alone, and the worse design survived. The example was vivid and widely taught.</p><p>Later historians questioned almost every part of it. The evidence that the rival layout was faster turned out to rest on a few small studies, some conducted by its own inventor, and later comparisons found little difference. Typing speed depends much more on training than on the arrangement of keys. If the rival was not clearly better, then the market had not locked in an inferior product; it had simply kept a perfectly adequate one.</p><p>The interesting question is why the original story spread so far on so little evidence. Part of the answer is that it illustrated a theoretical possibility that economists wanted to discuss. Models showing that markets could become stuck with worse standards were elegant and plausible, and a concrete case made them easier to teach. Once the example was in textbooks, it was repeated rather than checked, each citation lending authority to the next.</p><p>The revision did not go unchallenged. Defenders of the original account replied that the absence of clear evidence for the rival layout&#x27;s superiority did not prove that the two were equal; small studies are weak in both directions, and a layout that had never been widely adopted could not be tested on the large population of experienced typists who would reveal its advantages, if it had any. The point has some force, but it cuts against the original story as much as for it. An example offered as a demonstration of market failure needs evidence that the rejected alternative was better, and a demonstration that rests on the impossibility of testing its central claim is not much of a demonstration.</p><p>Other candidate examples of lock-in have fared similarly when examined closely. Rival formats in recording, competing gauges on early railways and alternative designs for nuclear reactors have each been offered as cases in which an inferior option prevailed through historical accident. In each, historians have found reasons, sometimes technical and sometimes commercial, why the winner was a reasonable choice at the time, and the evidence that the loser was clearly better has usually been thinner than the story required. None of these findings disproves the theory. They suggest only that clean real-world cases are rarer than the theory&#x27;s popularity would lead one to expect.</p><p>None of this shows that lock-in never happens. Standards do become entrenched, and switching costs are real. What the episode shows is that a good illustration can outrun its evidence, and that the more neatly an example fits a theory, the less likely it is to be examined. The lesson applies well beyond economics. Disciplines tend to keep a small stock of famous cases, and the fame of a case is not a reliable guide to its accuracy.</p>"
+  },
+  "m5-rc2": {
+   "kind": "passage",
+   "title": "Passage: Learning from failure in aviation",
+   "theme": "safety",
+   "words": 514,
+   "html": "<b>Passage: Learning from failure in aviation</b><p>Commercial aviation is often held up as a model of learning from failure. Accidents are investigated by independent bodies whose findings are published, and pilots are encouraged to report their own errors and near misses without fear of punishment. The result, admirers say, is that every crash makes the next one less likely. Hospitals, courts and other institutions are urged to copy the approach.</p><p>The admiration is deserved, but the lessons are harder to transfer than they appear. Aviation enjoys several advantages that are rarely mentioned in the exhortations. Its failures are dramatic and public, so there is strong pressure to explain them. Its systems are highly standardised: aircraft of the same type are nearly identical, and procedures are written in detail, so a lesson drawn from one incident applies directly to thousands of flights. And the people whose errors are reported — pilots — are themselves at risk when things go wrong, which aligns their interests with safety.</p><p>Many other fields lack these features. A medical error may harm a single patient privately and be noticed, if at all, much later. Patients differ from one another far more than aircraft do, so a lesson from one case may not apply to the next. And the professional who errs is rarely the one who suffers the consequences. Under such conditions, a reporting system modelled on aviation may collect many reports without producing the cumulative improvement it promises.</p><p>The contrast is visible within medicine itself. Anaesthesia, which resembles aviation more than most specialties do, with standardised equipment, a sequence of well-defined steps and constant monitoring by instruments, adopted checklists and incident reporting early and saw marked improvements in safety. Areas of medicine where each case presents differently, and where judgement rather than procedure governs much of the work, have found the same tools harder to apply. The difference is not that one group of doctors cares more about safety than another. It is that the conditions under which reporting produces learning are present in one setting and largely absent in the other.</p><p>Reporting systems also depend on trust, and trust is easier to promise than to secure. A professional who reports an error must believe that the report will be used to improve the system rather than to assign blame, and that belief is fragile. A single case in which a report is used against the person who filed it can undo years of encouragement, and in fields where litigation is common, the fear of such use may never be overcome. Those who praise aviation&#x27;s openness sometimes forget how much institutional work went into making it safe to be open.</p><p>This does not mean other fields should ignore aviation&#x27;s example. It means that what they should borrow is less a procedure than a principle: that errors are signs of weaknesses in systems rather than simply failures of individuals. How to act on that principle will depend on features of each field — how visible its failures are, how standardised its work, how aligned the interests of those involved — that no imported procedure can supply.</p>"
+  },
+  "m5-rc3": {
+   "kind": "passage",
+   "title": "Passage: Urban noise and birdsong",
+   "theme": "ecology",
+   "words": 518,
+   "html": "<b>Passage: Urban noise and birdsong</b><p>Birds that live in cities sing differently from their rural relatives. In several species, urban males sing at higher pitch, louder, or at different times of day, often starting before dawn traffic begins. The most widely accepted explanation is masking: the low-frequency rumble of traffic drowns out lower notes, so birds that shift upward are heard more easily by mates and rivals.</p><p>The explanation is plausible, and experiments support part of it. When researchers play recordings of traffic noise near singing birds, some individuals raise their pitch within minutes, which shows that the change can be a flexible response rather than an inherited trait. But other findings complicate the picture. Higher notes do not carry as far as lower ones, so a bird that escapes masking may still be heard over a smaller area. And in some species, females prefer lower songs, which are associated with larger, healthier males. A male that sings higher to be heard may become less attractive to those who hear him.</p><p>These trade-offs suggest that urban song is not simply an improvement forced by noise but a compromise, whose terms vary with the density of the population, the structure of the habitat and the preferences of the listeners. Where birds live close together, a short-range signal may be enough; where they are sparse, the loss of range may matter more than the gain in clarity.</p><p>Timing offers a different escape from noise. Some urban birds have shifted their singing earlier in the morning, before traffic builds, or later into the evening, and a few have been recorded singing at night near brightly lit roads. Here too the adjustment has costs. Singing in the dark exposes a bird to predators that hunt by sound and may cut into the time it needs to rest and feed, and it may not coincide with the hours when females are most attentive. A shift that solves the problem of masking can thus create problems of its own, just as a shift in pitch does.</p><p>There is also the question of whether urban populations are diverging from rural ones in ways that go beyond flexible adjustment. Young birds of many species learn their songs by listening to adults, so a population that sings higher may pass the higher song to the next generation through learning alone, without any change in its genes. Over many generations, a learned difference of this kind could make urban and rural birds less responsive to one another&#x27;s songs, and some researchers have suggested that this may be a first step towards the separation of populations. The evidence for such divergence is still preliminary, and other researchers caution that birds moving between city and countryside would tend to blur any difference that began to form.</p><p>The study of urban song has broader interest because it shows how quickly behaviour can respond to environments transformed by people. It also shows how misleading a single explanation can be. A change that looks like a straightforward adaptation may involve costs that are hidden unless one asks who is listening, from how far away, and with what preferences.</p>"
+  },
+  "m5-rc4": {
+   "kind": "passage",
+   "title": "Passage: The meaning of a signature",
+   "theme": "society",
+   "words": 497,
+   "html": "<b>Passage: The meaning of a signature</b><p>Signatures were once the chief way of binding a person to a document. A name written by hand was hard to forge convincingly, and its presence on a page signalled that the signer had seen and accepted what was written there. Today most agreements are made with a click, a typed name or a box ticked on a screen, and the handwritten signature survives mainly for occasions that people regard as solemn: marriages, property sales, wills.</p><p>It is tempting to see this survival as nostalgia, but it serves a purpose. The effort of signing, small as it is, marks a transition from considering to committing. People sign fewer things than they click, and the act draws attention to the fact that something consequential is happening. Legal scholars call this the cautionary function of formalities: requirements that slow people down so that they notice what they are doing.</p><p>Digital agreements have largely abandoned this function in pursuit of convenience. A user who accepts the terms of a service may do so dozens of times a week, and the click that binds her is identical to the click that dismisses an advertisement. The law generally treats such clicks as valid consent, but few people believe they represent the considered acceptance that the older form was meant to secure.</p><p>The history of formalities suggests that they have always been a compromise between caution and convenience. Wax seals, witnesses and notaries each slowed the making of agreements and each was relaxed when commerce demanded speed. Legal systems responded by distinguishing between transactions: ordinary sales could be made by word of mouth, while gifts of land or promises without payment required writing, witnesses or both. The distinction rested on the observation that people are most likely to act rashly when they give something away or bind their future selves, and that these were the cases in which a moment of ceremony was most valuable.</p><p>Digital systems have largely collapsed this distinction. The same interface is used to accept a trivial licence and to consent to the sharing of medical records, and the user is given no signal that one matters more than the other. Some of the difficulty is commercial: firms that profit from frictionless consent have little reason to introduce ceremony. But some of it reflects a genuine uncertainty about which online agreements deserve a pause, since their consequences are often hidden in terms that few users read and fewer understand.</p><p>Some designers propose restoring friction to important digital agreements: requiring users to type a phrase, wait a few seconds or confirm twice. Critics reply that friction will soon become habitual and that people will learn to perform it as absent-mindedly as they now click. The disagreement turns on whether the cautionary effect of formalities comes from the effort itself or from its rarity. If rarity is what matters, adding friction to every agreement would defeat the purpose; it would work only if reserved for the agreements that genuinely deserve it.</p>"
+  }
+ }
+}

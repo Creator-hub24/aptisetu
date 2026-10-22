@@ -1,0 +1,370 @@
+{
+ "name": "mock-1 — DILR",
+ "questions": [
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "How many floors lie strictly between Charu's and Rohan's?",
+   "solution": "Step 1: use \"Dev's pet is rabbit.\" — this fixes: Dev's pet is rabbit. Step 2: use \"Ira and Pallavi have the same pet.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Exactly two floors lie strictly between Ira's and Gautam's.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Charu and Pallavi are on adjacent floors.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Exactly one floor lies strictly between Charu's and Ira's.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Dev is on a lower floor than Gautam.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Pallavi is on a lower floor than Dev.\" — this fixes: Charu is on floor 1; Ira is on floor 3; Gautam is on floor 6; Pallavi is on floor 2. Step 8: use \"The pet on floor 2 is not parrot.\" — this fixes: Ira's pet is tortoise; Pallavi's pet is tortoise. Step 9: use \"Dev and Ira are not on adjacent floors.\" — this fixes: Dev is on floor 5; Rohan is on floor 4. Step 10: use \"Charu and Gautam have different pets.\" — this fixes: Rohan's pet is parrot. Step 11: use \"Rohan and Gautam have different pets.\" — this fixes: Charu's pet is parrot; Gautam's pet is rabbit. Final arrangement: floor 1: Charu (parrot); floor 2: Pallavi (tortoise); floor 3: Ira (tortoise); floor 4: Rohan (parrot); floor 5: Dev (rabbit); floor 6: Gautam (rabbit). Reading off: 2.",
+   "set": "m1-linear1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "2",
+   "level": "Medium",
+   "id": "M1-LINEAR1-01"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "What is Pallavi's pet?",
+   "solution": "Step 1: use \"Dev's pet is rabbit.\" — this fixes: Dev's pet is rabbit. Step 2: use \"Ira and Pallavi have the same pet.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Exactly two floors lie strictly between Ira's and Gautam's.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Charu and Pallavi are on adjacent floors.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Exactly one floor lies strictly between Charu's and Ira's.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Dev is on a lower floor than Gautam.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Pallavi is on a lower floor than Dev.\" — this fixes: Charu is on floor 1; Ira is on floor 3; Gautam is on floor 6; Pallavi is on floor 2. Step 8: use \"The pet on floor 2 is not parrot.\" — this fixes: Ira's pet is tortoise; Pallavi's pet is tortoise. Step 9: use \"Dev and Ira are not on adjacent floors.\" — this fixes: Dev is on floor 5; Rohan is on floor 4. Step 10: use \"Charu and Gautam have different pets.\" — this fixes: Rohan's pet is parrot. Step 11: use \"Rohan and Gautam have different pets.\" — this fixes: Charu's pet is parrot; Gautam's pet is rabbit. Final arrangement: floor 1: Charu (parrot); floor 2: Pallavi (tortoise); floor 3: Ira (tortoise); floor 4: Rohan (parrot); floor 5: Dev (rabbit); floor 6: Gautam (rabbit). Reading off: tortoise.",
+   "set": "m1-linear1",
+   "type": "mcq",
+   "options": [
+    "rabbit",
+    "Cannot be determined",
+    "tortoise",
+    "parrot"
+   ],
+   "answer": 2,
+   "level": "Medium",
+   "id": "M1-LINEAR1-02"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "How many tortoise pets are on floor 1, floor 2 or floor 3?",
+   "solution": "Step 1: use \"Dev's pet is rabbit.\" — this fixes: Dev's pet is rabbit. Step 2: use \"Ira and Pallavi have the same pet.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Exactly two floors lie strictly between Ira's and Gautam's.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Charu and Pallavi are on adjacent floors.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Exactly one floor lies strictly between Charu's and Ira's.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Dev is on a lower floor than Gautam.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Pallavi is on a lower floor than Dev.\" — this fixes: Charu is on floor 1; Ira is on floor 3; Gautam is on floor 6; Pallavi is on floor 2. Step 8: use \"The pet on floor 2 is not parrot.\" — this fixes: Ira's pet is tortoise; Pallavi's pet is tortoise. Step 9: use \"Dev and Ira are not on adjacent floors.\" — this fixes: Dev is on floor 5; Rohan is on floor 4. Step 10: use \"Charu and Gautam have different pets.\" — this fixes: Rohan's pet is parrot. Step 11: use \"Rohan and Gautam have different pets.\" — this fixes: Charu's pet is parrot; Gautam's pet is rabbit. Final arrangement: floor 1: Charu (parrot); floor 2: Pallavi (tortoise); floor 3: Ira (tortoise); floor 4: Rohan (parrot); floor 5: Dev (rabbit); floor 6: Gautam (rabbit). Reading off: 2.",
+   "set": "m1-linear1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "2",
+   "level": "Medium",
+   "id": "M1-LINEAR1-03"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "How many rabbit pets are on floor 1, floor 2 or floor 3?",
+   "solution": "Step 1: use \"Dev's pet is rabbit.\" — this fixes: Dev's pet is rabbit. Step 2: use \"Ira and Pallavi have the same pet.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Exactly two floors lie strictly between Ira's and Gautam's.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Charu and Pallavi are on adjacent floors.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Exactly one floor lies strictly between Charu's and Ira's.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Dev is on a lower floor than Gautam.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Pallavi is on a lower floor than Dev.\" — this fixes: Charu is on floor 1; Ira is on floor 3; Gautam is on floor 6; Pallavi is on floor 2. Step 8: use \"The pet on floor 2 is not parrot.\" — this fixes: Ira's pet is tortoise; Pallavi's pet is tortoise. Step 9: use \"Dev and Ira are not on adjacent floors.\" — this fixes: Dev is on floor 5; Rohan is on floor 4. Step 10: use \"Charu and Gautam have different pets.\" — this fixes: Rohan's pet is parrot. Step 11: use \"Rohan and Gautam have different pets.\" — this fixes: Charu's pet is parrot; Gautam's pet is rabbit. Final arrangement: floor 1: Charu (parrot); floor 2: Pallavi (tortoise); floor 3: Ira (tortoise); floor 4: Rohan (parrot); floor 5: Dev (rabbit); floor 6: Gautam (rabbit). Reading off: 0.",
+   "set": "m1-linear1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "0",
+   "level": "Medium",
+   "id": "M1-LINEAR1-04"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "What is Ira's pet?",
+   "solution": "Step 1: use \"Dev's pet is rabbit.\" — this fixes: Dev's pet is rabbit. Step 2: use \"Ira and Pallavi have the same pet.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Exactly two floors lie strictly between Ira's and Gautam's.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Charu and Pallavi are on adjacent floors.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Exactly one floor lies strictly between Charu's and Ira's.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Dev is on a lower floor than Gautam.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Pallavi is on a lower floor than Dev.\" — this fixes: Charu is on floor 1; Ira is on floor 3; Gautam is on floor 6; Pallavi is on floor 2. Step 8: use \"The pet on floor 2 is not parrot.\" — this fixes: Ira's pet is tortoise; Pallavi's pet is tortoise. Step 9: use \"Dev and Ira are not on adjacent floors.\" — this fixes: Dev is on floor 5; Rohan is on floor 4. Step 10: use \"Charu and Gautam have different pets.\" — this fixes: Rohan's pet is parrot. Step 11: use \"Rohan and Gautam have different pets.\" — this fixes: Charu's pet is parrot; Gautam's pet is rabbit. Final arrangement: floor 1: Charu (parrot); floor 2: Pallavi (tortoise); floor 3: Ira (tortoise); floor 4: Rohan (parrot); floor 5: Dev (rabbit); floor 6: Gautam (rabbit). Reading off: tortoise.",
+   "set": "m1-linear1",
+   "type": "mcq",
+   "options": [
+    "Cannot be determined",
+    "rabbit",
+    "tortoise",
+    "parrot"
+   ],
+   "answer": 2,
+   "level": "Medium",
+   "id": "M1-LINEAR1-05"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "How many points did Jade finish with?",
+   "solution": "Step 1: use \"Ochre finished with 13 points.\" — this fixes: Ochre has 13 points. Step 2: use \"Slate did not lose any match.\" — this fixes: Ochre beat Amber; Ochre beat Indigo; Ochre beat Jade; Ochre drew with Slate. Step 3: use \"Amber finished with 5 points.\" — this fixes: Amber has 5 points. Step 4: use \"Indigo did not draw any match.\" — this fixes: Slate beat Indigo. Step 5: use \"Jade drew exactly two matches.\" — this fixes: Amber beat Indigo; Amber drew with Jade; Slate beat Amber; Jade drew with Slate; Slate has 10 points. Step 6: use \"Indigo did not win any match.\" — this fixes: Jade beat Indigo; Indigo has 0 points; Jade has 6 points. Final arrangement: Amber v Indigo: Amber; Amber v Jade: draw; Amber v Ochre: Ochre; Amber v Slate: Slate; Indigo v Jade: Jade; Indigo v Ochre: Ochre; Indigo v Slate: Slate; Jade v Ochre: Ochre; Jade v Slate: draw; Ochre v Slate: draw; points Amber 5, Indigo 0, Jade 6, Ochre 13, Slate 10. Reading off: 6.",
+   "set": "m1-tourn2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "6",
+   "level": "Hard",
+   "id": "M1-TOURN2-06"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "What was the result of the match between Indigo and Jade?",
+   "solution": "Step 1: use \"Ochre finished with 13 points.\" — this fixes: Ochre has 13 points. Step 2: use \"Slate did not lose any match.\" — this fixes: Ochre beat Amber; Ochre beat Indigo; Ochre beat Jade; Ochre drew with Slate. Step 3: use \"Amber finished with 5 points.\" — this fixes: Amber has 5 points. Step 4: use \"Indigo did not draw any match.\" — this fixes: Slate beat Indigo. Step 5: use \"Jade drew exactly two matches.\" — this fixes: Amber beat Indigo; Amber drew with Jade; Slate beat Amber; Jade drew with Slate; Slate has 10 points. Step 6: use \"Indigo did not win any match.\" — this fixes: Jade beat Indigo; Indigo has 0 points; Jade has 6 points. Final arrangement: Amber v Indigo: Amber; Amber v Jade: draw; Amber v Ochre: Ochre; Amber v Slate: Slate; Indigo v Jade: Jade; Indigo v Ochre: Ochre; Indigo v Slate: Slate; Jade v Ochre: Ochre; Jade v Slate: draw; Ochre v Slate: draw; points Amber 5, Indigo 0, Jade 6, Ochre 13, Slate 10. Reading off: Jade won.",
+   "set": "m1-tourn2",
+   "type": "mcq",
+   "options": [
+    "Jade won",
+    "It was a draw",
+    "Cannot be determined",
+    "Indigo won"
+   ],
+   "answer": 0,
+   "level": "Hard",
+   "id": "M1-TOURN2-07"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "Which team finished with the most points?",
+   "solution": "Step 1: use \"Ochre finished with 13 points.\" — this fixes: Ochre has 13 points. Step 2: use \"Slate did not lose any match.\" — this fixes: Ochre beat Amber; Ochre beat Indigo; Ochre beat Jade; Ochre drew with Slate. Step 3: use \"Amber finished with 5 points.\" — this fixes: Amber has 5 points. Step 4: use \"Indigo did not draw any match.\" — this fixes: Slate beat Indigo. Step 5: use \"Jade drew exactly two matches.\" — this fixes: Amber beat Indigo; Amber drew with Jade; Slate beat Amber; Jade drew with Slate; Slate has 10 points. Step 6: use \"Indigo did not win any match.\" — this fixes: Jade beat Indigo; Indigo has 0 points; Jade has 6 points. Final arrangement: Amber v Indigo: Amber; Amber v Jade: draw; Amber v Ochre: Ochre; Amber v Slate: Slate; Indigo v Jade: Jade; Indigo v Ochre: Ochre; Indigo v Slate: Slate; Jade v Ochre: Ochre; Jade v Slate: draw; Ochre v Slate: draw; points Amber 5, Indigo 0, Jade 6, Ochre 13, Slate 10. Reading off: Ochre.",
+   "set": "m1-tourn2",
+   "type": "mcq",
+   "options": [
+    "Ochre",
+    "Slate",
+    "Amber",
+    "Jade"
+   ],
+   "answer": 0,
+   "level": "Hard",
+   "id": "M1-TOURN2-08"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Medium",
+   "question": "How many matches did Indigo lose?",
+   "solution": "Step 1: use \"Ochre finished with 13 points.\" — this fixes: Ochre has 13 points. Step 2: use \"Slate did not lose any match.\" — this fixes: Ochre beat Amber; Ochre beat Indigo; Ochre beat Jade; Ochre drew with Slate. Step 3: use \"Amber finished with 5 points.\" — this fixes: Amber has 5 points. Step 4: use \"Indigo did not draw any match.\" — this fixes: Slate beat Indigo. Step 5: use \"Jade drew exactly two matches.\" — this fixes: Amber beat Indigo; Amber drew with Jade; Slate beat Amber; Jade drew with Slate; Slate has 10 points. Step 6: use \"Indigo did not win any match.\" — this fixes: Jade beat Indigo; Indigo has 0 points; Jade has 6 points. Final arrangement: Amber v Indigo: Amber; Amber v Jade: draw; Amber v Ochre: Ochre; Amber v Slate: Slate; Indigo v Jade: Jade; Indigo v Ochre: Ochre; Indigo v Slate: Slate; Jade v Ochre: Ochre; Jade v Slate: draw; Ochre v Slate: draw; points Amber 5, Indigo 0, Jade 6, Ochre 13, Slate 10. Reading off: 4.",
+   "set": "m1-tourn2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4",
+   "level": "Medium",
+   "id": "M1-TOURN2-09"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "How many teams finished with more points than the team that had the fewest wins? (If several teams share the fewest wins, take the one with the most points among them.)",
+   "solution": "Step 1: use \"Ochre finished with 13 points.\" — this fixes: Ochre has 13 points. Step 2: use \"Slate did not lose any match.\" — this fixes: Ochre beat Amber; Ochre beat Indigo; Ochre beat Jade; Ochre drew with Slate. Step 3: use \"Amber finished with 5 points.\" — this fixes: Amber has 5 points. Step 4: use \"Indigo did not draw any match.\" — this fixes: Slate beat Indigo. Step 5: use \"Jade drew exactly two matches.\" — this fixes: Amber beat Indigo; Amber drew with Jade; Slate beat Amber; Jade drew with Slate; Slate has 10 points. Step 6: use \"Indigo did not win any match.\" — this fixes: Jade beat Indigo; Indigo has 0 points; Jade has 6 points. Final arrangement: Amber v Indigo: Amber; Amber v Jade: draw; Amber v Ochre: Ochre; Amber v Slate: Slate; Indigo v Jade: Jade; Indigo v Ochre: Ochre; Indigo v Slate: Slate; Jade v Ochre: Ochre; Jade v Slate: draw; Ochre v Slate: draw; points Amber 5, Indigo 0, Jade 6, Ochre 13, Slate 10. Reading off: 4.",
+   "set": "m1-tourn2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4",
+   "level": "Hard",
+   "id": "M1-TOURN2-10"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "How many of Kabir's two neighbours have instrument type strings?",
+   "solution": "Step 1: use \"Bhavin sits immediately to the left of Vani.\" — this fixes: Bhavin sits immediately to the left of Vani. Step 2: use \"Ojas and Meera have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Along the shorter way round, exactly one person sits between Uday and Ojas.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Along the shorter way round, exactly two people sit between Bhavin and Eshan.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Along the shorter way round, exactly two people sit between Uday and Vani.\" — this fixes: Eshan sits immediately to the left of Uday. Step 6: use \"Uday and Meera sit next to each other.\" — this fixes: Uday sits immediately to the left of Meera. Step 7: use \"Meera's instrument type is not strings.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"Ojas's instrument type is not wind.\" — this fixes: Ojas's instrument type is percussion; Meera's instrument type is percussion. Step 9: use \"Vani's instrument type is not strings.\" — this fixes: Vani's instrument type is wind. Step 10: use \"Kabir and Bhavin have different instrument types.\" — this fixes: Uday's instrument type is strings; Eshan's instrument type is strings. Step 11: use \"No two people with instrument type wind sit next to each other.\" — this fixes: Vani sits immediately to the left of Ojas; Meera sits immediately to the left of Kabir; Kabir sits immediately to the left of Bhavin; Ojas sits immediately to the left of Eshan; Kabir's instrument type is wind; Bhavin's instrument type is strings. Final arrangement: going round to each person's left starting from Uday: Uday (strings), Eshan (strings), Ojas (percussion), Vani (wind), Bhavin (strings), Kabir (wind), Meera (percussion). Reading off: 1.",
+   "set": "m1-circular3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1",
+   "level": "Hard",
+   "id": "M1-CIRCULAR3-11"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "Counting along the shorter way round, how many people sit between Ojas and Eshan?",
+   "solution": "Step 1: use \"Bhavin sits immediately to the left of Vani.\" — this fixes: Bhavin sits immediately to the left of Vani. Step 2: use \"Ojas and Meera have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Along the shorter way round, exactly one person sits between Uday and Ojas.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Along the shorter way round, exactly two people sit between Bhavin and Eshan.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Along the shorter way round, exactly two people sit between Uday and Vani.\" — this fixes: Eshan sits immediately to the left of Uday. Step 6: use \"Uday and Meera sit next to each other.\" — this fixes: Uday sits immediately to the left of Meera. Step 7: use \"Meera's instrument type is not strings.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"Ojas's instrument type is not wind.\" — this fixes: Ojas's instrument type is percussion; Meera's instrument type is percussion. Step 9: use \"Vani's instrument type is not strings.\" — this fixes: Vani's instrument type is wind. Step 10: use \"Kabir and Bhavin have different instrument types.\" — this fixes: Uday's instrument type is strings; Eshan's instrument type is strings. Step 11: use \"No two people with instrument type wind sit next to each other.\" — this fixes: Vani sits immediately to the left of Ojas; Meera sits immediately to the left of Kabir; Kabir sits immediately to the left of Bhavin; Ojas sits immediately to the left of Eshan; Kabir's instrument type is wind; Bhavin's instrument type is strings. Final arrangement: going round to each person's left starting from Uday: Uday (strings), Eshan (strings), Ojas (percussion), Vani (wind), Bhavin (strings), Kabir (wind), Meera (percussion). Reading off: 0.",
+   "set": "m1-circular3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "0",
+   "level": "Hard",
+   "id": "M1-CIRCULAR3-12"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "How many people with instrument type strings have at least one neighbour with the same instrument type?",
+   "solution": "Step 1: use \"Bhavin sits immediately to the left of Vani.\" — this fixes: Bhavin sits immediately to the left of Vani. Step 2: use \"Ojas and Meera have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Along the shorter way round, exactly one person sits between Uday and Ojas.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Along the shorter way round, exactly two people sit between Bhavin and Eshan.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Along the shorter way round, exactly two people sit between Uday and Vani.\" — this fixes: Eshan sits immediately to the left of Uday. Step 6: use \"Uday and Meera sit next to each other.\" — this fixes: Uday sits immediately to the left of Meera. Step 7: use \"Meera's instrument type is not strings.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"Ojas's instrument type is not wind.\" — this fixes: Ojas's instrument type is percussion; Meera's instrument type is percussion. Step 9: use \"Vani's instrument type is not strings.\" — this fixes: Vani's instrument type is wind. Step 10: use \"Kabir and Bhavin have different instrument types.\" — this fixes: Uday's instrument type is strings; Eshan's instrument type is strings. Step 11: use \"No two people with instrument type wind sit next to each other.\" — this fixes: Vani sits immediately to the left of Ojas; Meera sits immediately to the left of Kabir; Kabir sits immediately to the left of Bhavin; Ojas sits immediately to the left of Eshan; Kabir's instrument type is wind; Bhavin's instrument type is strings. Final arrangement: going round to each person's left starting from Uday: Uday (strings), Eshan (strings), Ojas (percussion), Vani (wind), Bhavin (strings), Kabir (wind), Meera (percussion). Reading off: 2.",
+   "set": "m1-circular3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "2",
+   "level": "Hard",
+   "id": "M1-CIRCULAR3-13"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "What is Ojas's instrument type?",
+   "solution": "Step 1: use \"Bhavin sits immediately to the left of Vani.\" — this fixes: Bhavin sits immediately to the left of Vani. Step 2: use \"Ojas and Meera have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"Along the shorter way round, exactly one person sits between Uday and Ojas.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Along the shorter way round, exactly two people sit between Bhavin and Eshan.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Along the shorter way round, exactly two people sit between Uday and Vani.\" — this fixes: Eshan sits immediately to the left of Uday. Step 6: use \"Uday and Meera sit next to each other.\" — this fixes: Uday sits immediately to the left of Meera. Step 7: use \"Meera's instrument type is not strings.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"Ojas's instrument type is not wind.\" — this fixes: Ojas's instrument type is percussion; Meera's instrument type is percussion. Step 9: use \"Vani's instrument type is not strings.\" — this fixes: Vani's instrument type is wind. Step 10: use \"Kabir and Bhavin have different instrument types.\" — this fixes: Uday's instrument type is strings; Eshan's instrument type is strings. Step 11: use \"No two people with instrument type wind sit next to each other.\" — this fixes: Vani sits immediately to the left of Ojas; Meera sits immediately to the left of Kabir; Kabir sits immediately to the left of Bhavin; Ojas sits immediately to the left of Eshan; Kabir's instrument type is wind; Bhavin's instrument type is strings. Final arrangement: going round to each person's left starting from Uday: Uday (strings), Eshan (strings), Ojas (percussion), Vani (wind), Bhavin (strings), Kabir (wind), Meera (percussion). Reading off: percussion.",
+   "set": "m1-circular3",
+   "type": "mcq",
+   "options": [
+    "Cannot be determined",
+    "wind",
+    "percussion",
+    "strings"
+   ],
+   "answer": 2,
+   "level": "Medium",
+   "id": "M1-CIRCULAR3-14"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What percentage of Dealer S's total came in Gwalior? (Answer to the nearest integer.)",
+   "solution": "Step 1: use \"Dealer S's total across the three columns was 110 vehicles.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"The figure for Dealer S in Gwalior exceeded that for Dealer Q in Gwalior by 15.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"The figure for Dealer Q in Gwalior was twice that for Dealer Q in Indore.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"The figure for Dealer R in Bhopal exceeded that for Dealer Q in Indore by 5.\" — this fixes: Dealer Q–Indore = 10; Dealer R–Bhopal = 15; Dealer R–Gwalior = 25; Dealer S–Gwalior = 35; Dealer S–Bhopal = 65; Dealer Q–Gwalior = 20. Final arrangement: Dealer Q–Indore = 10; Dealer R–Bhopal = 15; Dealer R–Gwalior = 25; Dealer S–Gwalior = 35; Dealer S–Bhopal = 65; Dealer Q–Gwalior = 20. Reading off: 32.",
+   "set": "m1-table4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "32",
+   "level": "Hard",
+   "id": "M1-TABLE4-15"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What was the figure for Dealer S in Gwalior?",
+   "solution": "Step 1: use \"Dealer S's total across the three columns was 110 vehicles.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"The figure for Dealer S in Gwalior exceeded that for Dealer Q in Gwalior by 15.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"The figure for Dealer Q in Gwalior was twice that for Dealer Q in Indore.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"The figure for Dealer R in Bhopal exceeded that for Dealer Q in Indore by 5.\" — this fixes: Dealer Q–Indore = 10; Dealer R–Bhopal = 15; Dealer R–Gwalior = 25; Dealer S–Gwalior = 35; Dealer S–Bhopal = 65; Dealer Q–Gwalior = 20. Final arrangement: Dealer Q–Indore = 10; Dealer R–Bhopal = 15; Dealer R–Gwalior = 25; Dealer S–Gwalior = 35; Dealer S–Bhopal = 65; Dealer Q–Gwalior = 20. Reading off: 35.",
+   "set": "m1-table4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "35",
+   "level": "Hard",
+   "id": "M1-TABLE4-16"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "Which of the four had the highest figure in Indore?",
+   "solution": "Step 1: use \"Dealer S's total across the three columns was 110 vehicles.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"The figure for Dealer S in Gwalior exceeded that for Dealer Q in Gwalior by 15.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"The figure for Dealer Q in Gwalior was twice that for Dealer Q in Indore.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"The figure for Dealer R in Bhopal exceeded that for Dealer Q in Indore by 5.\" — this fixes: Dealer Q–Indore = 10; Dealer R–Bhopal = 15; Dealer R–Gwalior = 25; Dealer S–Gwalior = 35; Dealer S–Bhopal = 65; Dealer Q–Gwalior = 20. Final arrangement: Dealer Q–Indore = 10; Dealer R–Bhopal = 15; Dealer R–Gwalior = 25; Dealer S–Gwalior = 35; Dealer S–Bhopal = 65; Dealer Q–Gwalior = 20. Reading off: Dealer P.",
+   "set": "m1-table4",
+   "type": "mcq",
+   "options": [
+    "Dealer Q",
+    "Dealer R",
+    "There was a tie",
+    "Dealer P"
+   ],
+   "answer": 3,
+   "level": "Hard",
+   "id": "M1-TABLE4-17"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "In how many of the twelve (row, column) cells was the figure strictly greater than 50?",
+   "solution": "Step 1: use \"Dealer S's total across the three columns was 110 vehicles.\" — nothing is fixed outright yet, but it removes options needed later. Step 2: use \"The figure for Dealer S in Gwalior exceeded that for Dealer Q in Gwalior by 15.\" — nothing is fixed outright yet, but it removes options needed later. Step 3: use \"The figure for Dealer Q in Gwalior was twice that for Dealer Q in Indore.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"The figure for Dealer R in Bhopal exceeded that for Dealer Q in Indore by 5.\" — this fixes: Dealer Q–Indore = 10; Dealer R–Bhopal = 15; Dealer R–Gwalior = 25; Dealer S–Gwalior = 35; Dealer S–Bhopal = 65; Dealer Q–Gwalior = 20. Final arrangement: Dealer Q–Indore = 10; Dealer R–Bhopal = 15; Dealer R–Gwalior = 25; Dealer S–Gwalior = 35; Dealer S–Bhopal = 65; Dealer Q–Gwalior = 20. Reading off: 3.",
+   "set": "m1-table4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3",
+   "level": "Hard",
+   "id": "M1-TABLE4-18"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Networks & routes",
+   "difficulty": "Medium",
+   "question": "What is the smallest number of intermediate points on any route from Cedar to Ginkgo?",
+   "solution": "Step 1: check for a direct link. There is none. Step 2: look for a route with fewest hops: Cedar → Birch → Ginkgo, which passes through 1 intermediate point(s). Step 3: no route with fewer hops exists, since no hub is linked to both endpoints. Answer: 1.",
+   "set": "m1-network5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1",
+   "level": "Medium",
+   "id": "M1-NETWORK5-19"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Networks & routes",
+   "difficulty": "Hard",
+   "question": "How many different routes (not revisiting any point) take the minimum time from Alder to Deodar?",
+   "solution": "Step 1: the minimum time from Alder to Deodar is 13. Step 2: enumerate routes and keep those totalling exactly 13: Alder → Deodar. Step 3: count them: 1. Answer: 1.",
+   "set": "m1-network5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1",
+   "level": "Hard",
+   "id": "M1-NETWORK5-20"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Networks & routes",
+   "difficulty": "Medium",
+   "question": "What is the minimum time, in minutes, to travel from Elm to Ginkgo?",
+   "solution": "Step 1: list the candidate routes from Elm to Ginkgo and add link times. Step 2: the cheapest is Elm → Cedar → Birch → Ginkgo (30); next-best routes: Elm → Deodar → Alder → Ginkgo (44), Elm → Cedar → Birch → Alder → Ginkgo (46). Step 3: check no other route undercuts it (a full enumeration of all simple paths confirms the minimum is 30). Answer: 30.",
+   "set": "m1-network5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "30",
+   "level": "Medium",
+   "id": "M1-NETWORK5-21"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Networks & routes",
+   "difficulty": "Medium",
+   "question": "What is the minimum time, in minutes, to travel from Birch to Deodar?",
+   "solution": "Step 1: list the candidate routes from Birch to Deodar and add link times. Step 2: the cheapest is Birch → Alder → Deodar (27); next-best routes: Birch → Cedar → Elm → Deodar (37), Birch → Ginkgo → Alder → Deodar (37). Step 3: check no other route undercuts it (a full enumeration of all simple paths confirms the minimum is 27). Answer: 27.",
+   "set": "m1-network5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "27",
+   "level": "Medium",
+   "id": "M1-NETWORK5-22"
+  }
+ ],
+ "sets": {
+  "m1-linear1": {
+   "kind": "dilr",
+   "title": "Arrangement (Medium)",
+   "html": "<b>Arrangement</b><p>Six tenants live in a six-storey building, one on each floor, with floor 1 at the bottom and floor 6 at the top. Each tenant keeps one kind of pet — parrot, tortoise, rabbit — and exactly two tenants keep each kind.</p><p>The following is known:</p><ul class='clues'><li>Charu and Gautam have different pets.</li><li>The pet on floor 2 is not parrot.</li><li>Rohan and Gautam have different pets.</li><li>Dev is on a lower floor than Gautam.</li><li>Dev and Ira are not on adjacent floors.</li><li>Exactly one floor lies strictly between Charu's and Ira's.</li><li>Ira and Pallavi have the same pet.</li><li>Exactly two floors lie strictly between Ira's and Gautam's.</li><li>Charu and Pallavi are on adjacent floors.</li><li>Pallavi is on a lower floor than Dev.</li><li>Dev's pet is rabbit.</li></ul>"
+  },
+  "m1-tourn2": {
+   "kind": "dilr",
+   "title": "Tournament (Hard)",
+   "html": "<b>Tournament</b><p>Five college quiz houses — Amber, Indigo, Jade, Ochre, Slate — met each other exactly once in a round-robin buzzer league. A win earned 4 points, a tie 1 point and a loss 0.</p><p>The following is known:</p><ul class='clues'><li>Slate did not lose any match.</li><li>Jade drew exactly two matches.</li><li>Amber finished with 5 points.</li><li>Indigo did not win any match.</li><li>Indigo did not draw any match.</li><li>Ochre finished with 13 points.</li></ul>"
+  },
+  "m1-circular3": {
+   "kind": "dilr",
+   "title": "Circular arrangement (Hard)",
+   "html": "<b>Circular arrangement</b><p>Seven musicians sit in a circle for a jam session, equally spaced and facing the centre. Each plays one instrument type — strings, percussion, wind — with three on strings and two each on the others. \"Immediately to the left\" is from the seated person's own point of view.</p><p>The following is known:</p><ul class='clues'><li>Bhavin sits immediately to the left of Vani.</li><li>No two people with instrument type wind sit next to each other.</li><li>Along the shorter way round, exactly one person sits between Uday and Ojas.</li><li>Along the shorter way round, exactly two people sit between Bhavin and Eshan.</li><li>Along the shorter way round, exactly two people sit between Uday and Vani.</li><li>Kabir and Bhavin have different instrument types.</li><li>Meera's instrument type is not strings.</li><li>Ojas's instrument type is not wind.</li><li>Uday and Meera sit next to each other.</li><li>Vani's instrument type is not strings.</li><li>Ojas and Meera have the same instrument type.</li></ul>"
+  },
+  "m1-table4": {
+   "kind": "dilr",
+   "title": "Data tables (missing data) (Hard)",
+   "html": "<b>Data tables (missing data)</b><p>The table shows the number of e-rickshaws sold by four dealers in three cities. Some entries are hidden. Every figure (hidden or shown) is a multiple of 5 between 10 and 80, and the grand total of all twelve figures is 450.<table class='data'><tr><th></th><th>Indore</th><th>Bhopal</th><th>Gwalior</th></tr><tr><td>Dealer P</td><td>50</td><td>45</td><td>70</td></tr><tr><td>Dealer Q</td><td class='miss'>?</td><td>75</td><td class='miss'>?</td></tr><tr><td>Dealer R</td><td>30</td><td class='miss'>?</td><td class='miss'>?</td></tr><tr><td>Dealer S</td><td>10</td><td class='miss'>?</td><td class='miss'>?</td></tr></table></p><p>The following is known:</p><ul class='clues'><li>The figure for Dealer R in Bhopal exceeded that for Dealer Q in Indore by 5.</li><li>The figure for Dealer Q in Gwalior was twice that for Dealer Q in Indore.</li><li>The figure for Dealer S in Gwalior exceeded that for Dealer Q in Gwalior by 15.</li><li>Dealer S's total across the three columns was 110 vehicles.</li></ul>"
+  },
+  "m1-network5": {
+   "kind": "dilr",
+   "title": "Networks & routes (Medium)",
+   "html": "<b>Networks & routes</b><p>A trekking park has seven camps connected by trails. The table lists every trail and its walking time in minutes; trails can be walked either way, and there are no other trails.<table class='data'><tr><th>Link</th><th>Time</th></tr><tr><td>Alder – Birch</td><td>14</td></tr><tr><td>Alder – Deodar</td><td>13</td></tr><tr><td>Alder – Fir</td><td>10</td></tr><tr><td>Alder – Ginkgo</td><td>13</td></tr><tr><td>Birch – Cedar</td><td>11</td></tr><tr><td>Birch – Fir</td><td>17</td></tr><tr><td>Birch – Ginkgo</td><td>11</td></tr><tr><td>Cedar – Elm</td><td>8</td></tr><tr><td>Cedar – Fir</td><td>16</td></tr><tr><td>Deodar – Elm</td><td>18</td></tr></table></p>"
+  }
+ }
+}

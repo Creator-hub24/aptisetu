@@ -1,0 +1,385 @@
+{
+ "name": "sectional-1 — DILR",
+ "questions": [
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "Counting along the shorter way round, how many people sit between Divya and Jatin?",
+   "solution": "Step 1: use \"Divya sits immediately to the left of Vikram.\" — this fixes: Divya sits immediately to the left of Vikram. Step 2: use \"Divya and Vani sit next to each other.\" — this fixes: Vani sits immediately to the left of Divya. Step 3: use \"Along the shorter way round, exactly two people sit between Yash and Bhavin.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Divya and Hina have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Divya and Jatin have the same instrument type.\" — this fixes: Divya's instrument type is strings; Hina's instrument type is strings; Jatin's instrument type is strings. Step 6: use \"Vikram's instrument type is not wind.\" — this fixes: Vikram's instrument type is percussion. Step 7: use \"Yash and Vani have the same instrument type.\" — this fixes: Yash's instrument type is wind; Bhavin's instrument type is percussion; Vani's instrument type is wind. Step 8: use \"No two people with instrument type wind sit next to each other.\" — this fixes: Vikram sits immediately to the left of Yash; Bhavin sits immediately to the left of Vani. Step 9: use \"Yash and Hina do not sit next to each other.\" — this fixes: Hina sits immediately to the left of Bhavin; Jatin sits immediately to the left of Hina; Yash sits immediately to the left of Jatin. Final arrangement: going round to each person's left starting from Vikram: Vikram (percussion), Divya (strings), Vani (wind), Bhavin (percussion), Hina (strings), Jatin (strings), Yash (wind). Reading off: 2.",
+   "set": "ds1-circular1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "2",
+   "level": "Hard",
+   "id": "DS1-CIRCULAR1-01"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "What is Divya's instrument type?",
+   "solution": "Step 1: use \"Divya sits immediately to the left of Vikram.\" — this fixes: Divya sits immediately to the left of Vikram. Step 2: use \"Divya and Vani sit next to each other.\" — this fixes: Vani sits immediately to the left of Divya. Step 3: use \"Along the shorter way round, exactly two people sit between Yash and Bhavin.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Divya and Hina have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Divya and Jatin have the same instrument type.\" — this fixes: Divya's instrument type is strings; Hina's instrument type is strings; Jatin's instrument type is strings. Step 6: use \"Vikram's instrument type is not wind.\" — this fixes: Vikram's instrument type is percussion. Step 7: use \"Yash and Vani have the same instrument type.\" — this fixes: Yash's instrument type is wind; Bhavin's instrument type is percussion; Vani's instrument type is wind. Step 8: use \"No two people with instrument type wind sit next to each other.\" — this fixes: Vikram sits immediately to the left of Yash; Bhavin sits immediately to the left of Vani. Step 9: use \"Yash and Hina do not sit next to each other.\" — this fixes: Hina sits immediately to the left of Bhavin; Jatin sits immediately to the left of Hina; Yash sits immediately to the left of Jatin. Final arrangement: going round to each person's left starting from Vikram: Vikram (percussion), Divya (strings), Vani (wind), Bhavin (percussion), Hina (strings), Jatin (strings), Yash (wind). Reading off: strings.",
+   "set": "ds1-circular1",
+   "type": "mcq",
+   "options": [
+    "wind",
+    "percussion",
+    "Cannot be determined",
+    "strings"
+   ],
+   "answer": 3,
+   "level": "Hard",
+   "id": "DS1-CIRCULAR1-02"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "What is Jatin's instrument type?",
+   "solution": "Step 1: use \"Divya sits immediately to the left of Vikram.\" — this fixes: Divya sits immediately to the left of Vikram. Step 2: use \"Divya and Vani sit next to each other.\" — this fixes: Vani sits immediately to the left of Divya. Step 3: use \"Along the shorter way round, exactly two people sit between Yash and Bhavin.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Divya and Hina have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Divya and Jatin have the same instrument type.\" — this fixes: Divya's instrument type is strings; Hina's instrument type is strings; Jatin's instrument type is strings. Step 6: use \"Vikram's instrument type is not wind.\" — this fixes: Vikram's instrument type is percussion. Step 7: use \"Yash and Vani have the same instrument type.\" — this fixes: Yash's instrument type is wind; Bhavin's instrument type is percussion; Vani's instrument type is wind. Step 8: use \"No two people with instrument type wind sit next to each other.\" — this fixes: Vikram sits immediately to the left of Yash; Bhavin sits immediately to the left of Vani. Step 9: use \"Yash and Hina do not sit next to each other.\" — this fixes: Hina sits immediately to the left of Bhavin; Jatin sits immediately to the left of Hina; Yash sits immediately to the left of Jatin. Final arrangement: going round to each person's left starting from Vikram: Vikram (percussion), Divya (strings), Vani (wind), Bhavin (percussion), Hina (strings), Jatin (strings), Yash (wind). Reading off: strings.",
+   "set": "ds1-circular1",
+   "type": "mcq",
+   "options": [
+    "wind",
+    "strings",
+    "percussion",
+    "Cannot be determined"
+   ],
+   "answer": 1,
+   "level": "Hard",
+   "id": "DS1-CIRCULAR1-03"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "Who sits immediately to the left of Hina?",
+   "solution": "Step 1: use \"Divya sits immediately to the left of Vikram.\" — this fixes: Divya sits immediately to the left of Vikram. Step 2: use \"Divya and Vani sit next to each other.\" — this fixes: Vani sits immediately to the left of Divya. Step 3: use \"Along the shorter way round, exactly two people sit between Yash and Bhavin.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Divya and Hina have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Divya and Jatin have the same instrument type.\" — this fixes: Divya's instrument type is strings; Hina's instrument type is strings; Jatin's instrument type is strings. Step 6: use \"Vikram's instrument type is not wind.\" — this fixes: Vikram's instrument type is percussion. Step 7: use \"Yash and Vani have the same instrument type.\" — this fixes: Yash's instrument type is wind; Bhavin's instrument type is percussion; Vani's instrument type is wind. Step 8: use \"No two people with instrument type wind sit next to each other.\" — this fixes: Vikram sits immediately to the left of Yash; Bhavin sits immediately to the left of Vani. Step 9: use \"Yash and Hina do not sit next to each other.\" — this fixes: Hina sits immediately to the left of Bhavin; Jatin sits immediately to the left of Hina; Yash sits immediately to the left of Jatin. Final arrangement: going round to each person's left starting from Vikram: Vikram (percussion), Divya (strings), Vani (wind), Bhavin (percussion), Hina (strings), Jatin (strings), Yash (wind). Reading off: Jatin.",
+   "set": "ds1-circular1",
+   "type": "mcq",
+   "options": [
+    "Jatin",
+    "Vikram",
+    "Hina",
+    "Vani"
+   ],
+   "answer": 0,
+   "level": "Medium",
+   "id": "DS1-CIRCULAR1-04"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "How many people with instrument type percussion have at least one neighbour with the same instrument type?",
+   "solution": "Step 1: use \"Divya sits immediately to the left of Vikram.\" — this fixes: Divya sits immediately to the left of Vikram. Step 2: use \"Divya and Vani sit next to each other.\" — this fixes: Vani sits immediately to the left of Divya. Step 3: use \"Along the shorter way round, exactly two people sit between Yash and Bhavin.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Divya and Hina have the same instrument type.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Divya and Jatin have the same instrument type.\" — this fixes: Divya's instrument type is strings; Hina's instrument type is strings; Jatin's instrument type is strings. Step 6: use \"Vikram's instrument type is not wind.\" — this fixes: Vikram's instrument type is percussion. Step 7: use \"Yash and Vani have the same instrument type.\" — this fixes: Yash's instrument type is wind; Bhavin's instrument type is percussion; Vani's instrument type is wind. Step 8: use \"No two people with instrument type wind sit next to each other.\" — this fixes: Vikram sits immediately to the left of Yash; Bhavin sits immediately to the left of Vani. Step 9: use \"Yash and Hina do not sit next to each other.\" — this fixes: Hina sits immediately to the left of Bhavin; Jatin sits immediately to the left of Hina; Yash sits immediately to the left of Jatin. Final arrangement: going round to each person's left starting from Vikram: Vikram (percussion), Divya (strings), Vani (wind), Bhavin (percussion), Hina (strings), Jatin (strings), Yash (wind). Reading off: 0.",
+   "set": "ds1-circular1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "0",
+   "level": "Hard",
+   "id": "DS1-CIRCULAR1-05"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "How many positions lie strictly between Vikram's and Chirag's?",
+   "solution": "Step 1: use \"Ira is in position 1.\" — this fixes: Ira is in position 1. Step 2: use \"Exactly four positions lie strictly between Vikram's and Ira's.\" — this fixes: Vikram is in position 6. Step 3: use \"Vikram's bike colour is maroon.\" — this fixes: Vikram's bike colour is maroon. Step 4: use \"Exactly two positions lie strictly between Chirag's and Manav's.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Ira and Chirag are not in adjacent positions.\" — this fixes: Chirag is in position 5; Manav is in position 2. Step 6: use \"Tara is not in position 3.\" — this fixes: Tara is in position 4; Faiz is in position 3. Step 7: use \"The bike in position 5 is not ivory.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"The bike in position 1 is not ivory.\" — nothing is fixed outright yet, but it removes options needed later. Step 9: use \"Manav's bike colour is not ivory.\" — this fixes: Tara's bike colour is ivory; Faiz's bike colour is ivory. Step 10: use \"The bike in position 2 is not teal.\" — this fixes: Ira's bike colour is teal; Chirag's bike colour is teal; Manav's bike colour is maroon. Final arrangement: position 1: Ira (teal); position 2: Manav (maroon); position 3: Faiz (ivory); position 4: Tara (ivory); position 5: Chirag (teal); position 6: Vikram (maroon). Reading off: 0.",
+   "set": "ds1-linear2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "0",
+   "level": "Medium",
+   "id": "DS1-LINEAR2-06"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "Who is in position 1?",
+   "solution": "Step 1: use \"Ira is in position 1.\" — this fixes: Ira is in position 1. Step 2: use \"Exactly four positions lie strictly between Vikram's and Ira's.\" — this fixes: Vikram is in position 6. Step 3: use \"Vikram's bike colour is maroon.\" — this fixes: Vikram's bike colour is maroon. Step 4: use \"Exactly two positions lie strictly between Chirag's and Manav's.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Ira and Chirag are not in adjacent positions.\" — this fixes: Chirag is in position 5; Manav is in position 2. Step 6: use \"Tara is not in position 3.\" — this fixes: Tara is in position 4; Faiz is in position 3. Step 7: use \"The bike in position 5 is not ivory.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"The bike in position 1 is not ivory.\" — nothing is fixed outright yet, but it removes options needed later. Step 9: use \"Manav's bike colour is not ivory.\" — this fixes: Tara's bike colour is ivory; Faiz's bike colour is ivory. Step 10: use \"The bike in position 2 is not teal.\" — this fixes: Ira's bike colour is teal; Chirag's bike colour is teal; Manav's bike colour is maroon. Final arrangement: position 1: Ira (teal); position 2: Manav (maroon); position 3: Faiz (ivory); position 4: Tara (ivory); position 5: Chirag (teal); position 6: Vikram (maroon). Reading off: Ira.",
+   "set": "ds1-linear2",
+   "type": "mcq",
+   "options": [
+    "Vikram",
+    "Faiz",
+    "Ira",
+    "Chirag"
+   ],
+   "answer": 2,
+   "level": "Medium",
+   "id": "DS1-LINEAR2-07"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Hard",
+   "question": "Who are the two people whose bike colour is ivory?",
+   "solution": "Step 1: use \"Ira is in position 1.\" — this fixes: Ira is in position 1. Step 2: use \"Exactly four positions lie strictly between Vikram's and Ira's.\" — this fixes: Vikram is in position 6. Step 3: use \"Vikram's bike colour is maroon.\" — this fixes: Vikram's bike colour is maroon. Step 4: use \"Exactly two positions lie strictly between Chirag's and Manav's.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Ira and Chirag are not in adjacent positions.\" — this fixes: Chirag is in position 5; Manav is in position 2. Step 6: use \"Tara is not in position 3.\" — this fixes: Tara is in position 4; Faiz is in position 3. Step 7: use \"The bike in position 5 is not ivory.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"The bike in position 1 is not ivory.\" — nothing is fixed outright yet, but it removes options needed later. Step 9: use \"Manav's bike colour is not ivory.\" — this fixes: Tara's bike colour is ivory; Faiz's bike colour is ivory. Step 10: use \"The bike in position 2 is not teal.\" — this fixes: Ira's bike colour is teal; Chirag's bike colour is teal; Manav's bike colour is maroon. Final arrangement: position 1: Ira (teal); position 2: Manav (maroon); position 3: Faiz (ivory); position 4: Tara (ivory); position 5: Chirag (teal); position 6: Vikram (maroon). Reading off: Faiz and Tara.",
+   "set": "ds1-linear2",
+   "type": "mcq",
+   "options": [
+    "Manav and Tara",
+    "Chirag and Faiz",
+    "Faiz and Tara",
+    "Manav and Vikram"
+   ],
+   "answer": 2,
+   "level": "Hard",
+   "id": "DS1-LINEAR2-08"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "How many ivory bikes are in position 1, position 2 or position 3?",
+   "solution": "Step 1: use \"Ira is in position 1.\" — this fixes: Ira is in position 1. Step 2: use \"Exactly four positions lie strictly between Vikram's and Ira's.\" — this fixes: Vikram is in position 6. Step 3: use \"Vikram's bike colour is maroon.\" — this fixes: Vikram's bike colour is maroon. Step 4: use \"Exactly two positions lie strictly between Chirag's and Manav's.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Ira and Chirag are not in adjacent positions.\" — this fixes: Chirag is in position 5; Manav is in position 2. Step 6: use \"Tara is not in position 3.\" — this fixes: Tara is in position 4; Faiz is in position 3. Step 7: use \"The bike in position 5 is not ivory.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"The bike in position 1 is not ivory.\" — nothing is fixed outright yet, but it removes options needed later. Step 9: use \"Manav's bike colour is not ivory.\" — this fixes: Tara's bike colour is ivory; Faiz's bike colour is ivory. Step 10: use \"The bike in position 2 is not teal.\" — this fixes: Ira's bike colour is teal; Chirag's bike colour is teal; Manav's bike colour is maroon. Final arrangement: position 1: Ira (teal); position 2: Manav (maroon); position 3: Faiz (ivory); position 4: Tara (ivory); position 5: Chirag (teal); position 6: Vikram (maroon). Reading off: 1.",
+   "set": "ds1-linear2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1",
+   "level": "Medium",
+   "id": "DS1-LINEAR2-09"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Medium",
+   "question": "How many teal bikes are in position 1, position 2 or position 3?",
+   "solution": "Step 1: use \"Ira is in position 1.\" — this fixes: Ira is in position 1. Step 2: use \"Exactly four positions lie strictly between Vikram's and Ira's.\" — this fixes: Vikram is in position 6. Step 3: use \"Vikram's bike colour is maroon.\" — this fixes: Vikram's bike colour is maroon. Step 4: use \"Exactly two positions lie strictly between Chirag's and Manav's.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Ira and Chirag are not in adjacent positions.\" — this fixes: Chirag is in position 5; Manav is in position 2. Step 6: use \"Tara is not in position 3.\" — this fixes: Tara is in position 4; Faiz is in position 3. Step 7: use \"The bike in position 5 is not ivory.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"The bike in position 1 is not ivory.\" — nothing is fixed outright yet, but it removes options needed later. Step 9: use \"Manav's bike colour is not ivory.\" — this fixes: Tara's bike colour is ivory; Faiz's bike colour is ivory. Step 10: use \"The bike in position 2 is not teal.\" — this fixes: Ira's bike colour is teal; Chirag's bike colour is teal; Manav's bike colour is maroon. Final arrangement: position 1: Ira (teal); position 2: Manav (maroon); position 3: Faiz (ivory); position 4: Tara (ivory); position 5: Chirag (teal); position 6: Vikram (maroon). Reading off: 1.",
+   "set": "ds1-linear2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1",
+   "level": "Medium",
+   "id": "DS1-LINEAR2-10"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "What was the total number of points scored by all five teams together?",
+   "solution": "Step 1: use \"Gear finished with 7 points.\" — this fixes: Gear has 7 points. Step 2: use \"Servo did not lose any match.\" — this fixes: Gear beat Volt; Gear drew with Servo; Gear beat Pixel; Gear beat Torque. Step 3: use \"Volt did not draw any match.\" — this fixes: Servo beat Volt. Step 4: use \"Pixel drew exactly two matches.\" — this fixes: Servo drew with Pixel; Pixel drew with Torque. Step 5: use \"No two teams finished on the same number of points.\" — this fixes: Servo beat Torque; Servo has 6 points. Step 6: use \"Torque won exactly one match.\" — this fixes: Pixel beat Volt; Torque beat Volt; Volt has 0 points; Pixel has 4 points; Torque has 3 points. Final arrangement: Volt v Gear: Gear; Volt v Servo: Servo; Volt v Pixel: Pixel; Volt v Torque: Torque; Gear v Servo: draw; Gear v Pixel: Gear; Gear v Torque: Gear; Servo v Pixel: draw; Servo v Torque: Servo; Pixel v Torque: draw; points Volt 0, Gear 7, Servo 6, Pixel 4, Torque 3. Reading off: 20.",
+   "set": "ds1-tourn3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "20",
+   "level": "Hard",
+   "id": "DS1-TOURN3-11"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "What was the result of the match between Gear and Pixel?",
+   "solution": "Step 1: use \"Gear finished with 7 points.\" — this fixes: Gear has 7 points. Step 2: use \"Servo did not lose any match.\" — this fixes: Gear beat Volt; Gear drew with Servo; Gear beat Pixel; Gear beat Torque. Step 3: use \"Volt did not draw any match.\" — this fixes: Servo beat Volt. Step 4: use \"Pixel drew exactly two matches.\" — this fixes: Servo drew with Pixel; Pixel drew with Torque. Step 5: use \"No two teams finished on the same number of points.\" — this fixes: Servo beat Torque; Servo has 6 points. Step 6: use \"Torque won exactly one match.\" — this fixes: Pixel beat Volt; Torque beat Volt; Volt has 0 points; Pixel has 4 points; Torque has 3 points. Final arrangement: Volt v Gear: Gear; Volt v Servo: Servo; Volt v Pixel: Pixel; Volt v Torque: Torque; Gear v Servo: draw; Gear v Pixel: Gear; Gear v Torque: Gear; Servo v Pixel: draw; Servo v Torque: Servo; Pixel v Torque: draw; points Volt 0, Gear 7, Servo 6, Pixel 4, Torque 3. Reading off: Gear won.",
+   "set": "ds1-tourn3",
+   "type": "mcq",
+   "options": [
+    "Cannot be determined",
+    "Gear won",
+    "Pixel won",
+    "It was a draw"
+   ],
+   "answer": 1,
+   "level": "Hard",
+   "id": "DS1-TOURN3-12"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "How many matches did Volt lose?",
+   "solution": "Step 1: use \"Gear finished with 7 points.\" — this fixes: Gear has 7 points. Step 2: use \"Servo did not lose any match.\" — this fixes: Gear beat Volt; Gear drew with Servo; Gear beat Pixel; Gear beat Torque. Step 3: use \"Volt did not draw any match.\" — this fixes: Servo beat Volt. Step 4: use \"Pixel drew exactly two matches.\" — this fixes: Servo drew with Pixel; Pixel drew with Torque. Step 5: use \"No two teams finished on the same number of points.\" — this fixes: Servo beat Torque; Servo has 6 points. Step 6: use \"Torque won exactly one match.\" — this fixes: Pixel beat Volt; Torque beat Volt; Volt has 0 points; Pixel has 4 points; Torque has 3 points. Final arrangement: Volt v Gear: Gear; Volt v Servo: Servo; Volt v Pixel: Pixel; Volt v Torque: Torque; Gear v Servo: draw; Gear v Pixel: Gear; Gear v Torque: Gear; Servo v Pixel: draw; Servo v Torque: Servo; Pixel v Torque: draw; points Volt 0, Gear 7, Servo 6, Pixel 4, Torque 3. Reading off: 4.",
+   "set": "ds1-tourn3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4",
+   "level": "Hard",
+   "id": "DS1-TOURN3-13"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Medium",
+   "question": "How many points did Gear finish with?",
+   "solution": "Step 1: use \"Gear finished with 7 points.\" — this fixes: Gear has 7 points. Step 2: use \"Servo did not lose any match.\" — this fixes: Gear beat Volt; Gear drew with Servo; Gear beat Pixel; Gear beat Torque. Step 3: use \"Volt did not draw any match.\" — this fixes: Servo beat Volt. Step 4: use \"Pixel drew exactly two matches.\" — this fixes: Servo drew with Pixel; Pixel drew with Torque. Step 5: use \"No two teams finished on the same number of points.\" — this fixes: Servo beat Torque; Servo has 6 points. Step 6: use \"Torque won exactly one match.\" — this fixes: Pixel beat Volt; Torque beat Volt; Volt has 0 points; Pixel has 4 points; Torque has 3 points. Final arrangement: Volt v Gear: Gear; Volt v Servo: Servo; Volt v Pixel: Pixel; Volt v Torque: Torque; Gear v Servo: draw; Gear v Pixel: Gear; Gear v Torque: Gear; Servo v Pixel: draw; Servo v Torque: Servo; Pixel v Torque: draw; points Volt 0, Gear 7, Servo 6, Pixel 4, Torque 3. Reading off: 7.",
+   "set": "ds1-tourn3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "7",
+   "level": "Medium",
+   "id": "DS1-TOURN3-14"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What was the figure for Dealer S in Bhopal?",
+   "solution": "Step 1: use \"Dealer P's total across the three columns was 170 vehicles.\" — this fixes: Dealer P–Gwalior = 50. Step 2: use \"The figure for Dealer P in Gwalior exceeded that for Dealer Q in Gwalior by 20.\" — this fixes: Dealer Q–Gwalior = 30. Step 3: use \"The figure for Dealer P in Gwalior exceeded that for Dealer Q in Bhopal by 15.\" — this fixes: Dealer Q–Bhopal = 35. Step 4: use \"The figure for Dealer Q in Bhopal exceeded that for Dealer S in Gwalior by 15.\" — this fixes: Dealer S–Gwalior = 20. Step 5: use \"The four together recorded 220 vehicles in Bhopal.\" — this fixes: Dealer S–Bhopal = 65; Dealer S–Indore = 65. Final arrangement: Dealer S–Bhopal = 65; Dealer Q–Gwalior = 30; Dealer S–Gwalior = 20; Dealer P–Gwalior = 50; Dealer Q–Bhopal = 35; Dealer S–Indore = 65. Reading off: 65.",
+   "set": "ds1-table4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "65",
+   "level": "Hard",
+   "id": "DS1-TABLE4-15"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "In how many of the twelve (row, column) cells was the figure strictly greater than 50?",
+   "solution": "Step 1: use \"Dealer P's total across the three columns was 170 vehicles.\" — this fixes: Dealer P–Gwalior = 50. Step 2: use \"The figure for Dealer P in Gwalior exceeded that for Dealer Q in Gwalior by 20.\" — this fixes: Dealer Q–Gwalior = 30. Step 3: use \"The figure for Dealer P in Gwalior exceeded that for Dealer Q in Bhopal by 15.\" — this fixes: Dealer Q–Bhopal = 35. Step 4: use \"The figure for Dealer Q in Bhopal exceeded that for Dealer S in Gwalior by 15.\" — this fixes: Dealer S–Gwalior = 20. Step 5: use \"The four together recorded 220 vehicles in Bhopal.\" — this fixes: Dealer S–Bhopal = 65; Dealer S–Indore = 65. Final arrangement: Dealer S–Bhopal = 65; Dealer Q–Gwalior = 30; Dealer S–Gwalior = 20; Dealer P–Gwalior = 50; Dealer Q–Bhopal = 35; Dealer S–Indore = 65. Reading off: 4.",
+   "set": "ds1-table4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4",
+   "level": "Hard",
+   "id": "DS1-TABLE4-16"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "Which of the four had the highest figure in Bhopal?",
+   "solution": "Step 1: use \"Dealer P's total across the three columns was 170 vehicles.\" — this fixes: Dealer P–Gwalior = 50. Step 2: use \"The figure for Dealer P in Gwalior exceeded that for Dealer Q in Gwalior by 20.\" — this fixes: Dealer Q–Gwalior = 30. Step 3: use \"The figure for Dealer P in Gwalior exceeded that for Dealer Q in Bhopal by 15.\" — this fixes: Dealer Q–Bhopal = 35. Step 4: use \"The figure for Dealer Q in Bhopal exceeded that for Dealer S in Gwalior by 15.\" — this fixes: Dealer S–Gwalior = 20. Step 5: use \"The four together recorded 220 vehicles in Bhopal.\" — this fixes: Dealer S–Bhopal = 65; Dealer S–Indore = 65. Final arrangement: Dealer S–Bhopal = 65; Dealer Q–Gwalior = 30; Dealer S–Gwalior = 20; Dealer P–Gwalior = 50; Dealer Q–Bhopal = 35; Dealer S–Indore = 65. Reading off: Dealer R.",
+   "set": "ds1-table4",
+   "type": "mcq",
+   "options": [
+    "Dealer P",
+    "Dealer S",
+    "Dealer R",
+    "Dealer Q"
+   ],
+   "answer": 2,
+   "level": "Hard",
+   "id": "DS1-TABLE4-17"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What percentage of Dealer S's total came in Gwalior? (Answer to the nearest integer.)",
+   "solution": "Step 1: use \"Dealer P's total across the three columns was 170 vehicles.\" — this fixes: Dealer P–Gwalior = 50. Step 2: use \"The figure for Dealer P in Gwalior exceeded that for Dealer Q in Gwalior by 20.\" — this fixes: Dealer Q–Gwalior = 30. Step 3: use \"The figure for Dealer P in Gwalior exceeded that for Dealer Q in Bhopal by 15.\" — this fixes: Dealer Q–Bhopal = 35. Step 4: use \"The figure for Dealer Q in Bhopal exceeded that for Dealer S in Gwalior by 15.\" — this fixes: Dealer S–Gwalior = 20. Step 5: use \"The four together recorded 220 vehicles in Bhopal.\" — this fixes: Dealer S–Bhopal = 65; Dealer S–Indore = 65. Final arrangement: Dealer S–Bhopal = 65; Dealer Q–Gwalior = 30; Dealer S–Gwalior = 20; Dealer P–Gwalior = 50; Dealer Q–Bhopal = 35; Dealer S–Indore = 65. Reading off: 13.",
+   "set": "ds1-table4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "13",
+   "level": "Hard",
+   "id": "DS1-TABLE4-18"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Rankings & scoring",
+   "difficulty": "Medium",
+   "question": "Who was ranked 2 in Round 2?",
+   "solution": "Step 1: use \"Kabir was ranked 5 in Round 1.\" — this fixes: Kabir was 5 in Round 1. Step 2: use \"Divya was ranked 3 in Round 1.\" — this fixes: Divya was 3 in Round 1. Step 3: use \"Faiz's Round 2 rank equals Divya's Round 1 rank.\" — this fixes: Faiz was 3 in Round 2. Step 4: use \"Kriti was ahead of Dev in Round 1 but behind Dev in Round 2.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Divya's Round 2 rank equals Faiz's Round 1 rank.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Kabir was ahead of Dev in Round 2.\" — this fixes: Kriti was 5 in Round 2. Step 7: use \"Dev was ahead of Divya in Round 2.\" — this fixes: Kriti was 1 in Round 1; Faiz was 4 in Round 1; Dev was 2 in Round 1; Kabir was 1 in Round 2; Divya was 4 in Round 2; Dev was 2 in Round 2. Final arrangement: Round 1: Kriti, Dev, Divya, Faiz, Kabir; Round 2: Kabir, Dev, Faiz, Divya, Kriti. Reading off: Dev.",
+   "set": "ds1-rank5",
+   "type": "mcq",
+   "options": [
+    "Faiz",
+    "Kriti",
+    "Kabir",
+    "Dev"
+   ],
+   "answer": 3,
+   "level": "Medium",
+   "id": "DS1-RANK5-19"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Rankings & scoring",
+   "difficulty": "Hard",
+   "question": "How many ordered pairs (X, Y) are there such that X was ahead of Y in Round 1 but behind Y in Round 2?",
+   "solution": "Step 1: use \"Kabir was ranked 5 in Round 1.\" — this fixes: Kabir was 5 in Round 1. Step 2: use \"Divya was ranked 3 in Round 1.\" — this fixes: Divya was 3 in Round 1. Step 3: use \"Faiz's Round 2 rank equals Divya's Round 1 rank.\" — this fixes: Faiz was 3 in Round 2. Step 4: use \"Kriti was ahead of Dev in Round 1 but behind Dev in Round 2.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Divya's Round 2 rank equals Faiz's Round 1 rank.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Kabir was ahead of Dev in Round 2.\" — this fixes: Kriti was 5 in Round 2. Step 7: use \"Dev was ahead of Divya in Round 2.\" — this fixes: Kriti was 1 in Round 1; Faiz was 4 in Round 1; Dev was 2 in Round 1; Kabir was 1 in Round 2; Divya was 4 in Round 2; Dev was 2 in Round 2. Final arrangement: Round 1: Kriti, Dev, Divya, Faiz, Kabir; Round 2: Kabir, Dev, Faiz, Divya, Kriti. Reading off: 8.",
+   "set": "ds1-rank5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "8",
+   "level": "Hard",
+   "id": "DS1-RANK5-20"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Rankings & scoring",
+   "difficulty": "Medium",
+   "question": "Who was ranked 1 in Round 1?",
+   "solution": "Step 1: use \"Kabir was ranked 5 in Round 1.\" — this fixes: Kabir was 5 in Round 1. Step 2: use \"Divya was ranked 3 in Round 1.\" — this fixes: Divya was 3 in Round 1. Step 3: use \"Faiz's Round 2 rank equals Divya's Round 1 rank.\" — this fixes: Faiz was 3 in Round 2. Step 4: use \"Kriti was ahead of Dev in Round 1 but behind Dev in Round 2.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Divya's Round 2 rank equals Faiz's Round 1 rank.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Kabir was ahead of Dev in Round 2.\" — this fixes: Kriti was 5 in Round 2. Step 7: use \"Dev was ahead of Divya in Round 2.\" — this fixes: Kriti was 1 in Round 1; Faiz was 4 in Round 1; Dev was 2 in Round 1; Kabir was 1 in Round 2; Divya was 4 in Round 2; Dev was 2 in Round 2. Final arrangement: Round 1: Kriti, Dev, Divya, Faiz, Kabir; Round 2: Kabir, Dev, Faiz, Divya, Kriti. Reading off: Kriti.",
+   "set": "ds1-rank5",
+   "type": "mcq",
+   "options": [
+    "Kabir",
+    "Divya",
+    "Dev",
+    "Kriti"
+   ],
+   "answer": 3,
+   "level": "Medium",
+   "id": "DS1-RANK5-21"
+  },
+  {
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Rankings & scoring",
+   "difficulty": "Medium",
+   "question": "By how many places did Dev's rank change between the two rounds?",
+   "solution": "Step 1: use \"Kabir was ranked 5 in Round 1.\" — this fixes: Kabir was 5 in Round 1. Step 2: use \"Divya was ranked 3 in Round 1.\" — this fixes: Divya was 3 in Round 1. Step 3: use \"Faiz's Round 2 rank equals Divya's Round 1 rank.\" — this fixes: Faiz was 3 in Round 2. Step 4: use \"Kriti was ahead of Dev in Round 1 but behind Dev in Round 2.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Divya's Round 2 rank equals Faiz's Round 1 rank.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Kabir was ahead of Dev in Round 2.\" — this fixes: Kriti was 5 in Round 2. Step 7: use \"Dev was ahead of Divya in Round 2.\" — this fixes: Kriti was 1 in Round 1; Faiz was 4 in Round 1; Dev was 2 in Round 1; Kabir was 1 in Round 2; Divya was 4 in Round 2; Dev was 2 in Round 2. Final arrangement: Round 1: Kriti, Dev, Divya, Faiz, Kabir; Round 2: Kabir, Dev, Faiz, Divya, Kriti. Reading off: 0.",
+   "set": "ds1-rank5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "0",
+   "level": "Medium",
+   "id": "DS1-RANK5-22"
+  }
+ ],
+ "sets": {
+  "ds1-circular1": {
+   "kind": "dilr",
+   "title": "Circular arrangement (Hard)",
+   "html": "<b>Circular arrangement</b><p>Seven musicians sit in a circle for a jam session, equally spaced and facing the centre. Each plays one instrument type — strings, percussion, wind — with three on strings and two each on the others. \"Immediately to the left\" is from the seated person's own point of view.</p><p>The following is known:</p><ul class='clues'><li>Yash and Hina do not sit next to each other.</li><li>Divya and Vani sit next to each other.</li><li>Along the shorter way round, exactly two people sit between Yash and Bhavin.</li><li>No two people with instrument type wind sit next to each other.</li><li>Divya and Hina have the same instrument type.</li><li>Vikram's instrument type is not wind.</li><li>Divya and Jatin have the same instrument type.</li><li>Yash and Vani have the same instrument type.</li><li>Divya sits immediately to the left of Vikram.</li></ul>"
+  },
+  "ds1-linear2": {
+   "kind": "dilr",
+   "title": "Arrangement (Medium)",
+   "html": "<b>Arrangement</b><p>Six cyclists finish a hill-climb race in positions 1 to 6 with no ties (position 1 is first). Each rides a bike of one of three colours — teal, maroon, ivory — with exactly two bikes of each colour.</p><p>The following is known:</p><ul class='clues'><li>Ira and Chirag are not in adjacent positions.</li><li>Exactly four positions lie strictly between Vikram's and Ira's.</li><li>The bike in position 5 is not ivory.</li><li>Ira is in position 1.</li><li>Exactly two positions lie strictly between Chirag's and Manav's.</li><li>The bike in position 2 is not teal.</li><li>The bike in position 1 is not ivory.</li><li>Tara is not in position 3.</li><li>Vikram's bike colour is maroon.</li><li>Manav's bike colour is not ivory.</li></ul>"
+  },
+  "ds1-tourn3": {
+   "kind": "dilr",
+   "title": "Tournament (Hard)",
+   "html": "<b>Tournament</b><p>Five robotics clubs — Volt, Gear, Servo, Pixel, Torque — fought a round-robin sumo-bot contest, each pair of clubs meeting exactly once. A win gave 2 points, a stalemate 1 point, and a loss 0.</p><p>The following is known:</p><ul class='clues'><li>Servo did not lose any match.</li><li>Torque won exactly one match.</li><li>Gear finished with 7 points.</li><li>Pixel drew exactly two matches.</li><li>Volt did not draw any match.</li><li>No two teams finished on the same number of points.</li></ul>"
+  },
+  "ds1-table4": {
+   "kind": "dilr",
+   "title": "Data tables (missing data) (Hard)",
+   "html": "<b>Data tables (missing data)</b><p>The table shows the number of e-rickshaws sold by four dealers in three cities. Some entries are hidden. Every figure (hidden or shown) is a multiple of 5 between 10 and 80, and the grand total of all twelve figures is 550.<table class='data'><tr><th></th><th>Indore</th><th>Bhopal</th><th>Gwalior</th></tr><tr><td>Dealer P</td><td>70</td><td>50</td><td class='miss'>?</td></tr><tr><td>Dealer Q</td><td>30</td><td class='miss'>?</td><td class='miss'>?</td></tr><tr><td>Dealer R</td><td>25</td><td>70</td><td>40</td></tr><tr><td>Dealer S</td><td class='miss'>?</td><td class='miss'>?</td><td class='miss'>?</td></tr></table></p><p>The following is known:</p><ul class='clues'><li>The figure for Dealer P in Gwalior exceeded that for Dealer Q in Gwalior by 20.</li><li>The four together recorded 220 vehicles in Bhopal.</li><li>Dealer P's total across the three columns was 170 vehicles.</li><li>The figure for Dealer Q in Bhopal exceeded that for Dealer S in Gwalior by 15.</li><li>The figure for Dealer P in Gwalior exceeded that for Dealer Q in Bhopal by 15.</li></ul>"
+  },
+  "ds1-rank5": {
+   "kind": "dilr",
+   "title": "Rank changes (Medium)",
+   "html": "<b>Rank changes</b><p>Five finalists of a quiz contest were ranked 1 (best) to 5 in Round 1 and again, independently, in Round 2. No ties occurred in either round. \"Improved\" means a better (numerically smaller) rank in Round 2 than in Round 1. The five are Kabir, Kriti, Faiz, Divya, Dev.</p><p>The following is known:</p><ul class='clues'><li>Kabir was ahead of Dev in Round 2.</li><li>Kabir was ranked 5 in Round 1.</li><li>Kriti was ahead of Dev in Round 1 but behind Dev in Round 2.</li><li>Dev was ahead of Divya in Round 2.</li><li>Faiz's Round 2 rank equals Divya's Round 1 rank.</li><li>Divya was ranked 3 in Round 1.</li><li>Divya's Round 2 rank equals Faiz's Round 1 rank.</li></ul>"
+  }
+ }
+}
