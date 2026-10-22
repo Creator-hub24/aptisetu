@@ -26,7 +26,7 @@ page("about.html","About",info_head("About",f"About {B}","A free practice site f
 <li><b>Bank / SSC / Placements track:</b> <a href="quant.html">Quant</a>, <a href="reasoning.html">Reasoning</a> and <a href="dilr.html">DILR</a> pages with concept notes, formula sheets and <a href="practice.html?exam=general">timed quizzes</a>.</li>
 <li><b>CAT track:</b> <a href="cat.html">VARC, DILR and QA</a> with 40-minute sectionals, MCQ and TITA questions and CAT marking.</li>
 <li><b>CUET (UG) track:</b> <a href="cuet.html">General Aptitude Test, English and Mathematics</a> with +5 / −1 marking at the real pace.</li></ul>
-<h3>Our questions</h3><p>Every question and passage on the site was written by our team. None are taken from past papers or any coaching material. Each comes with a worked solution, and our build process checks the answers automatically before anything is published. If you still spot a mistake, please <a href="contact.html">tell us</a>.</p>
+<h3>Our questions</h3><p>Every question and passage on the site was written by our team. None are taken from past papers or any coaching material. Each comes with a worked solution, and our build process checks the answers automatically before anything is published. If you still spot a mistake, please <a href="contact.html">tell us</a>; see our <a href="corrections.html">corrections &amp; editorial policy</a>.</p>
 <h3>Independent</h3><p><span data-brand>{B}</span> is an independent site. It is not affiliated with, endorsed by or connected to the National Testing Agency (NTA), the IIMs, IBPS, SBI, SSC or any other exam body or company. Exam names are used only to describe what the practice is for.</p>
 """), desc=f"About {BRAND}: a free, independent aptitude practice site with original questions for CAT, CUET (UG), Bank, SSC and placements.")
 
@@ -43,9 +43,24 @@ faqs=[("Is it free?","Yes. All notes, formula sheets and practice questions are 
 ("Is my progress saved?","Yes, but only in your own browser. The site remembers an unfinished quiz so you can resume it, your daily practice streak, and your accuracy for each topic. This is stored in your browser's local storage on this device; it is never sent to us, and it won't follow you to another phone or browser. To delete it, use <b>Reset my progress</b> on the <a href=\"practice.html\">Practice page</a>, or clear this site's data in your browser settings."),
 ("What is Quick start?","On the <a href=\"practice.html\">Practice page</a>, Quick start gives you 10 mixed Quant, Reasoning and DILR questions with 60 seconds each, in one tap."),
 ("Are you linked to NTA or the IIMs?","No. This is an independent site, not affiliated with NTA, the IIMs or any exam body. Always check official exam websites for dates and rules."),
-("I found a mistake. What should I do?","Please <a href=\"contact.html\">contact us</a> with the page and the question text.")]
+("I found a mistake. What should I do?","Use the <b>⚑ Report an error</b> link under any question, or <a href=\"contact.html\">contact us</a> with the page and the question text. Fixes are listed on our <a href=\"corrections.html\">corrections page</a>.")]
 page("faq.html","FAQ",info_head("FAQ","Frequently asked questions","Quick answers about how the site works.")+prose("".join(f"<h3>{q}</h3><p>{a}</p>" for q,a in faqs)),
  desc=f"FAQ: how {BRAND} works. Free; login only to save progress and unlock levels. CAT, CUET (UG) and Bank / SSC tracks, timed sectionals, marking and practice mode.")
+
+# ---------- CORRECTIONS & EDITORIAL POLICY ----------
+page("corrections.html","Corrections & Editorial Policy",info_head("Corrections","Corrections &amp; editorial policy","How our questions are made, how to report a mistake, and a public record of what we fixed.")+prose(f"""
+<h3>How our questions are made</h3>
+<p>Every question, passage and data set on <span data-brand>{B}</span> was written by our team. None are copied from past papers, coaching material or other websites. Each question has a worked solution, and our build process checks the stored answers automatically before anything is published. We are an independent site, not affiliated with NTA, the IIMs, IBPS, SBI, SSC or any exam body.</p>
+<h3>Found a mistake?</h3>
+<p>Every question on a quiz page, a sectional or a practice set has a <b>⚑ Report an error</b> link. It opens an email with the question ID and page already filled in, so you only need to say what looks wrong. You can also write to us from the <a href="contact.html">Contact page</a>. A wrong answer key, an unclear question, a typo or a broken chart are all worth reporting.</p>
+<h3>What we do with a report</h3>
+<ul><li>We check the question and its solution again.</li>
+<li>If it is wrong, we fix it and add an entry to the log below, with the date and what changed.</li>
+<li>If it is correct, we will explain why where we can, and improve the solution if it was unclear.</li></ul>
+<p>Practice questions are written by people and can contain mistakes. If you are preparing for an exam, please treat our solutions as a study aid and cross-check anything that surprises you.</p>
+<h3>Corrections log</h3>
+<p class="muted">No corrections have been published yet. When we fix a reported mistake, it will be listed here with the date, the page, and what changed.</p>
+"""), desc=f"How {BRAND} writes and checks its practice questions, how to report an error, and the public corrections log.")
 
 # ---------- PRIVACY ----------
 if GC: ANALYTICS = """<h3>Analytics</h3><p>We use <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a>, a privacy-friendly, open-source analytics service, to count visits. It does not set cookies and does not collect personal information. We see only aggregate numbers: which pages are viewed, the referring website, campaign tags in links (utm_ parameters), and general browser, screen-size and country statistics.</p>
