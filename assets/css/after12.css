@@ -7,6 +7,7 @@
 .a12-chip:hover{border-color:var(--brand)}
 .a12-chip[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:#fff}
 .a12-chip .n{font-size:.8rem;opacity:.75;font-variant-numeric:tabular-nums}
+.a12-chip[aria-pressed="true"] .n{opacity:.92}
 .a12-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
 .a12-controls>div{min-width:0}
 .a12-controls select,.a12-controls input{width:100%;padding:.55em .8em;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff;color:var(--ink)}
@@ -42,4 +43,14 @@
  .a12-table td.a12-course{display:block;padding:.85em .9em;margin-bottom:6px;border-bottom:1px solid var(--line)}
  .a12-table td.a12-course::before{content:none}
  .a12-table .a12-empty td{display:block}.a12-table .a12-empty td::before{content:none}
+}
+/* dark theme (see style.css v9 for the shared tokens) */
+@media (prefers-color-scheme: dark){
+ .a12-chip,.a12-controls select,.a12-controls input,.a12-wrap{background:var(--card);color:var(--ink)}
+ .a12-chip[aria-pressed="true"]{background:var(--btn1);border-color:var(--btn1);color:#fff}
+ .a12-controls select:focus,.a12-controls input:focus{outline-color:#3b43a8}
+ .a12-table tbody tr:hover td{background:var(--surface2)}
+ .a12-pill{background:var(--surface2);color:#cbd5e1}
+ .a12-pill.any{background:var(--tint);border-color:#3b43a8;color:#c7d2fe}
+ @media(max-width:760px){.a12-wrap{background:transparent}.a12-table tbody tr{background:var(--card)}.a12-table tbody tr:hover td{background:transparent}}
 }

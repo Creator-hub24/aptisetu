@@ -97,6 +97,7 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 <html lang="en-IN">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 {basetag}<title>{A(full)}</title>
@@ -330,7 +331,7 @@ page("practice.html","Practice","""
     <div style="display:flex;gap:8px"><button id="mark" class="btn btn-ghost btn-sm">☆ Mark</button><button id="next" class="btn btn-sm">Save &amp; Next →</button></div></div>
    </div>
    <aside class="card"><b>Question palette</b><div class="muted" id="answered" style="font-size:.85rem"></div><div id="palette" class="palette"></div>
-    <div class="legend"><span><i style="background:#dcfce7"></i>Answered</span><span><i style="background:#fef3c7"></i>Marked</span><span><i style="background:#fff;border:1px solid #ccc"></i>Not answered</span></div>
+    <div class="legend"><span><i class="lg-ans"></i>Answered</span><span><i class="lg-mark"></i>Marked</span><span><i class="lg-none"></i>Not answered</span></div>
     <button id="submit" class="btn" style="width:100%;margin-top:16px">Submit test</button></aside>
   </div>
  </div>
