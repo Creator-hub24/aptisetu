@@ -1,0 +1,78 @@
+/* Quant Lab: interactive explainers, generator, Concept Lab and practice.
+   Uses only the site's colour tokens (light and dark via prefers-color-scheme in style.css). */
+.ql-subnav{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.ql-subnav a{padding:.45em .9em;border:1px solid var(--line);border-radius:99px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.92rem;background:var(--card);min-height:44px;display:inline-flex;align-items:center}
+.ql-subnav a[aria-current=page]{background:var(--brand);border-color:var(--brand);color:var(--card)}
+.ql-credit{font-size:.88rem;color:var(--muted);margin:.6em 0 0}
+.ql-section{margin:0 0 30px}
+.ql-section-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;font-size:1.2rem;border-bottom:1px solid var(--line);padding-bottom:6px;margin:0 0 14px}
+.ql-section-h small{color:var(--muted);font-weight:400;font-size:.85rem}
+.ql-tcard{display:flex;flex-direction:column;padding:18px}.ql-tcard h4{margin:.3em 0 .2em;font-size:1.02rem}.ql-tcard p{margin:0 0 .6em;font-size:.9rem}
+.ql-ic{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:var(--bg);border:1px solid var(--line);color:var(--brand);font-weight:700}
+.ql-tlinks{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:auto;font-size:.9rem}.ql-tlinks a{color:var(--brand);font-weight:600;min-height:44px;display:inline-flex;align-items:center}
+/* explainers */
+.ql-tabs{display:flex;flex-direction:column;gap:8px;margin:0 0 18px}
+.ql-tabgroup{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.ql-tg-name{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);min-width:170px;font-weight:700}
+.ql-tabgroup button,.ql-seg button{font:inherit;font-size:.88rem;padding:.45em .85em;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;min-height:40px}
+.ql-tabgroup button.on,.ql-seg button.on{background:var(--brand);border-color:var(--brand);color:var(--card)}
+.ql-tabgroup button:focus-visible,.ql-seg button:focus-visible,.ql-opt:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.ql-explainer{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:24px;align-items:start}
+.ql-ex-title{font-size:1.35rem;margin:.4em 0 .3em}
+.ql-pill{display:inline-block;font-size:.75rem;font-weight:700;padding:.2em .7em;border-radius:99px;border:1px solid var(--line);color:var(--ink);background:var(--bg)}
+.ql-formula{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:.92rem;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:.6em 0 1em;color:var(--ink);overflow-x:auto}
+.ql-ctl{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:center;margin:.5em 0;font-size:.92rem}
+.ql-ctl input,.ql-sliders input[type=range]{grid-column:1/-1;width:100%;accent-color:var(--brand)}
+.ql-ctl output,.ql-sliders output{font-variant-numeric:tabular-nums;font-weight:600;color:var(--ink)}
+.ql-viz svg,#plSvg,#raSvg,#ciSvg{width:100%;height:auto;display:block;background:var(--bg);border:1px solid var(--line);border-radius:12px}
+/* generator */
+.ql-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end}
+.ql-controls label{display:flex;flex-direction:column;gap:4px;font-size:.88rem;color:var(--muted);font-weight:600}
+.ql-controls select,.ql-ps select,.ql-sliders select{font:inherit;font-size:.95rem;padding:.5em .7em;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);min-height:44px;max-width:100%}
+.ql-seg{display:inline-flex;gap:4px;flex-wrap:wrap}
+.ql-meta{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}
+.ql-fmt{display:inline-block;margin-left:6px;padding:.05em .6em;border-radius:99px;font-size:.72rem;border:1.5px solid var(--line);color:var(--ink);background:var(--bg)}
+.ql-fmt.mcq{border-color:var(--accent)}.ql-fmt.tita{border-color:var(--ok)}
+.ql-q{font-size:1.12rem;margin:.5em 0 0;color:var(--ink)}
+.ql-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.ql-opt{font:inherit;text-align:left;background:var(--card);border:1.5px solid var(--line);color:var(--ink);padding:10px 14px;border-radius:12px;cursor:pointer;min-height:44px}
+.ql-opt b{color:var(--brand);margin-right:8px}.ql-opt .ql-u{color:var(--muted);font-size:.85em}
+.ql-opt.picked{border-color:var(--accent)}.ql-opt.right{border-color:var(--ok);box-shadow:inset 4px 0 0 var(--ok)}
+.ql-answer-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.ql-answer-row input{font:inherit;flex:1 1 200px;padding:.6em .8em;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);min-height:44px}
+.ql-btn-ghost{background:var(--card);color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.ql-hint{font-size:.88rem;color:var(--muted);margin:.5em 0 0}
+.ql-feedback{margin-top:10px;font-weight:600;color:var(--ink)}.ql-feedback:empty{display:none}
+.ql-feedback.ok,.ql-feedback.no{padding:8px 12px;border-radius:10px;background:var(--bg)}.ql-feedback.ok{border-left:4px solid var(--ok)}.ql-feedback.no{border-left:4px solid var(--bad)}
+.ql-solution{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;margin-top:20px}
+.ql-solution h2{font-size:1.15rem;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+.ql-answer-chip{font-size:.9rem;padding:.2em .8em;border-radius:99px;background:var(--brand);color:var(--card)}
+.ql-steps{padding-left:1.3em;margin:0}.ql-steps li{margin:.35em 0}
+.ql-traps-h{font-size:1rem;margin:1.2em 0 .3em}.ql-traps{margin:0;padding-left:1.2em}.ql-traps li{margin:.3em 0}
+/* concept lab */
+.ql-lab-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.ql-lab-grid .wide{grid-column:1/-1}
+.ql-lab-grid h2{font-size:1.15rem}
+.ql-lab-grid canvas{width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line)}
+.ql-sliders{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px 18px;margin:12px 0}
+.ql-sliders label{display:grid;grid-template-columns:1fr auto;gap:2px 8px;font-size:.88rem;color:var(--ink)}
+.ql-sliders label.ql-chk{display:flex;gap:8px;align-items:center}
+.ql-readout{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:.85rem;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 12px;color:var(--ink)}
+/* practice */
+.ql-practice{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:20px;align-items:start}
+.ql-ps{display:flex;flex-direction:column;gap:12px}.ql-ps label{display:flex;flex-direction:column;gap:4px;font-size:.88rem;font-weight:600;color:var(--muted)}
+.ql-phead{display:flex;justify-content:space-between;gap:10px;font-weight:700;font-variant-numeric:tabular-nums}
+.ql-timer.low{color:var(--bad)}
+.ql-timebar{height:6px;background:var(--line);border-radius:99px;margin:8px 0 14px;overflow:hidden}.ql-timebar i{display:block;height:100%;background:var(--brand);transition:width 1s linear}
+.ql-stat-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:12px}
+.ql-stat-row div{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center}.ql-stat-row b{display:block;font-size:1.25rem}.ql-stat-row span{font-size:.8rem;color:var(--muted)}
+.ql-hist div{display:flex;justify-content:space-between;gap:10px;font-size:.88rem;padding:6px 0;border-bottom:1px solid var(--line)}.ql-hist span{color:var(--muted)}
+/* SVG text and motion */
+.s-txt{fill:var(--ink);font:600 13px Inter,system-ui,sans-serif}.s-mute{fill:var(--muted);font:12px Inter,system-ui,sans-serif}.s-big{fill:var(--ink);font:700 18px Inter,system-ui,sans-serif}
+#ql .grow{transform-box:fill-box;transform-origin:bottom;animation:ql-grow .9s cubic-bezier(.2,.8,.2,1) both}@keyframes ql-grow{from{transform:scaleY(0)}}
+#ql .growx{transform-box:fill-box;transform-origin:left;animation:ql-growx .9s cubic-bezier(.2,.8,.2,1) both}@keyframes ql-growx{from{transform:scaleX(0)}}
+#ql .draw{stroke-dasharray:1000;stroke-dashoffset:1000;animation:ql-draw 1.4s ease forwards}@keyframes ql-draw{to{stroke-dashoffset:0}}
+#ql .pop{transform-box:fill-box;transform-origin:center;animation:ql-pop .5s cubic-bezier(.3,1.6,.5,1) both}@keyframes ql-pop{from{transform:scale(0);opacity:0}}
+@media (prefers-reduced-motion:reduce){#ql *{animation:none!important;transition:none!important}#ql .draw{stroke-dashoffset:0}}
+@media(max-width:900px){.ql-explainer,.ql-solution,.ql-lab-grid,.ql-practice{grid-template-columns:minmax(0,1fr)}.ql-stat-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.ql-options{grid-template-columns:minmax(0,1fr)}.ql-tg-name{min-width:100%}}
