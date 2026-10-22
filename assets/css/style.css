@@ -396,3 +396,5 @@ a.set-card:hover{border-color:#0B1F3A;box-shadow:var(--sh)}
 /* v10: shorter menu (7 items); tighter rows on phones */
 @media(max-width:1060px){.nav-links{padding:6px 20px 16px;gap:0}.nav-links a:not(.btn),.nav-dd-btn{padding:0;min-height:46px}.nav-links .btn{margin-top:10px}.nav-dd.open .nav-dd-menu a{min-height:42px}.nav-dd.open .nav-dd-menu{margin:0 0 6px}.nav-links>a,.nav-dd{border-bottom:1px solid var(--line)}.nav-links>a.btn{border-bottom:0}.auth-slot:empty{display:none}}
 .nav-links .nav-dd-menu a{display:flex;width:100%;box-sizing:border-box;white-space:nowrap}
+.ql-band{background:linear-gradient(135deg,#ecfdf5,#eff6ff)}
+@media (prefers-color-scheme: dark){.ql-band{background:linear-gradient(135deg,rgba(16,185,129,.16),rgba(59,130,246,.1))}}
