@@ -5,11 +5,13 @@
   // Header mark: same navy #0B1F3A / gold #C9A227 icon as the favicon (drawn by tools/make_images.py)
   const logo = () => `<img src="assets/img/favicon.svg" alt="" width="36" height="36" class="logo-mark">`;
   const nav = [
-    ["index.html", "Home"], ["quant.html", "Quant"], ["quant-lab.html", "Quant Lab"], ["reasoning.html", "Reasoning"], ["dilr.html", "DILR"],
+    ["index.html", "Home"],
+    ["learn", "Learn", [["quant.html", "Quant"], ["reasoning.html", "Reasoning"], ["dilr.html", "DILR"], ["practice.html", "Practice quizzes"]]],
+    ["quant-lab.html", "Quant Lab"],
     ["cat", "CAT", [["cat.html", "CAT Overview"], ["cat-quant-sets.html", "Quant sets"], ["cat-varc-sets.html", "VARC sets"], ["cat-dilr-sets.html", "DILR sets"]]],
-    ["cuet.html", "CUET"], ["practice.html", "Practice"],
+    ["cuet.html", "CUET"],
     ["careers", "Careers", [["after12.html", "After 12"], ["after-graduation.html", "After Graduation"]]],
-    ["about.html", "About"], ["contact.html", "Contact"]
+    ["more", "More", [["about.html", "About"], ["faq.html", "FAQ"], ["corrections.html", "Corrections"], ["contact.html", "Contact"]]]
   ];
   const here = location.pathname.split("/").pop() || "index.html";
   const alias = { "quant-lab-explainers.html": "quant-lab.html", "quant-lab-generator.html": "quant-lab.html", "quant-lab-concept-lab.html": "quant-lab.html", "quant-lab-practice.html": "quant-lab.html", "cat-practice.html": "cat.html", "cuet-practice.html": "cuet.html", "varc.html": "cat.html",
