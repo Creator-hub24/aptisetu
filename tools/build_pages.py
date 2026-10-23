@@ -147,11 +147,11 @@ def fix_headings(html):
 page("index.html","", f"""
 <section class="hero"><div class="container hero-grid">
  <div>
-  <span class="pill">🇮🇳 CAT · CUET · Bank · SSC · Placements</span>
-  <h1>Master <span class="grad">Quant, Reasoning, DILR &amp; VARC</span> the smart way</h1>
-  <p class="lead">Short concept notes, formula sheets and timed practice with worked solutions, for bank, SSC and placement tests, plus a separate CAT track with VARC, DILR and QA sectionals.</p>
-  <div class="cta-row hero-cta"><a href="practice.html" class="btn">Start a Free Quiz →</a><a href="#sections" class="btn btn-ghost">Explore Topics</a></div>
-  <div class="stats"><div><b>3</b><span>Exam tracks</span></div><div><b>Free</b><span>No paywall</span></div><div><b>Worked</b><span>solutions</span></div></div>
+  <span class="pill">Free practice · CAT · CUET · Bank · SSC · Placements</span>
+  <h1>Master <span class="hl">Quant, Reasoning, DILR &amp; VARC</span> the smart way</h1>
+  <p class="lead">Timed practice with worked solutions, a visual Quant Lab for concepts, and clear guidance on your options after 12th and graduation. Built for CAT, CUET, bank, SSC and placement aspirants.</p>
+  <div class="cta-row hero-cta"><a href="practice.html" class="btn">Start a free quiz →</a><a href="#pillars" class="btn btn-ghost">Choose your path</a></div>
+  <p class="trust">Free practice · Timed quizzes · Worked solutions</p>
  </div>
  <div class="hero-card" id="sample" role="group" aria-labelledby="sample-q">
   <div class="q-meta"><span class="eyebrow">Sample question</span><span class="q-topic">Quant · Time &amp; Work</span></div>
@@ -161,87 +161,54 @@ page("index.html","", f"""
  </div>
 </div></section>
 
-<section><div class="container">
- <div class="section-head"><h2>Who is <span data-brand></span> for?</h2><p class="muted">One place to practise for the aptitude tests you'll face.</p></div>
- <div class="grid g4 m2 compact">
-  <div class="card"><div class="icon">🎯</div><h3>MBA aspirants</h3><p class="muted">CAT, XAT, SNAP, NMAT and GMAT-style Quant &amp; DILR.</p></div>
-  <div class="card"><div class="icon">🏦</div><h3>Bank &amp; SSC</h3><p class="muted">IBPS, SBI, SSC CGL/CHSL arithmetic and reasoning.</p></div>
-  <div class="card"><div class="icon">💼</div><h3>Campus placements</h3><p class="muted">Aptitude rounds like TCS NQT, Infosys and Accenture.</p></div>
-  <div class="card"><div class="icon">🎓</div><h3>CUET (UG)</h3><p class="muted">General Aptitude Test, English and Maths for central university admissions.</p></div>
+<section id="pillars"><div class="container">
+ <div class="section-head"><span class="eyebrow-gold">One platform · three ways to prepare</span><h2>Practise. Understand. Choose well.</h2><svg class="bridge" viewBox="0 0 120 26" aria-hidden="true" focusable="false"><path d="M3 22h114M12 22V9M108 22V9M12 9C45-5 75-5 108 9M36 22v-9M60 22V6M84 22v-9"/></svg><p class="muted">Practice builds speed, concepts build confidence, and the right information helps you choose your path.</p></div>
+ <div class="pillars">
+  <article class="pillar">
+   <div class="p-top"><span class="p-num">01 · Practice</span><svg class="p-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 9.5v4l2.8 1.8M9.5 2.5h5"/></svg></div>
+   <h3>Timed practice that feels like the exam</h3>
+   <p class="muted">Sets, sectionals and full mocks with proper marking, and a worked solution for every question.</p>
+   <ul class="p-links"><li><a href="practice.html">Bank &amp; SSC quizzes</a></li><li><a href="cat-practice.html">CAT sets and sectionals</a></li><li><a href="mock-tests.html">CAT mock tests</a></li><li><a href="cuet-practice.html">CUET (UG) sectionals</a></li></ul>
+   <a class="p-cta" href="practice.html">Start practising →</a>
+  </article>
+  <article class="pillar">
+   <div class="p-top"><span class="p-num">02 · Concepts</span><svg class="p-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 3v17h17M7.5 15.5c2.5-8 5 1 7.5-3.5s3-4 4.5-5.5"/></svg></div>
+   <h3>See the maths before you solve it</h3>
+   <p class="muted">Quant Lab: animated explainers, a question generator with worked visual solutions, and live sliders that show how the answer changes.</p>
+   <ul class="p-links"><li><a href="quant-lab-explainers.html">Explainers</a></li><li><a href="quant-lab-generator.html">Question generator</a></li><li><a href="quant-lab-concept-lab.html">Concept Lab</a></li></ul>
+   <a class="p-cta" href="quant-lab.html">Open Quant Lab →</a>
+  </article>
+  <article class="pillar">
+   <div class="p-top"><span class="p-num">03 · Awareness</span><svg class="p-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4l-2.1 5.1-5.1 2.1 2.1-5.1z"/></svg></div>
+   <h3>Know your options before you choose</h3>
+   <p class="muted">Courses, entrance routes and where they lead, for students after 12th and after graduation.</p>
+   <ul class="p-links"><li><a href="after12.html">After 12</a></li><li><a href="after-graduation.html">After Graduation</a></li></ul>
+   <a class="p-cta" href="after12.html">Explore your options →</a>
+  </article>
  </div>
 </div></section>
 
-<section id="sections" class="alt"><div class="container">
- <div class="section-head"><h2>Bank, SSC &amp; placements: three sections</h2><p class="muted">Start with the concepts, revise with the formula sheet, then test yourself against the clock.</p></div>
- <div class="grid g3">
-  <div class="card sec-card" style="--c:var(--quant)"><div class="icon">➗</div><h3>Quantitative Aptitude</h3>
-   <div class="tags"><span class="tag">Percentages</span><span class="tag">Profit &amp; Loss</span><span class="tag">TSD</span><span class="tag">Number System</span><span class="tag">Algebra</span><span class="tag">Geometry</span><span class="tag">P&amp;C</span><span class="tag">Probability</span></div>
-   <p class="muted" style="flex:1">Questions covering arithmetic, algebra, geometry and modern maths.</p><a class="btn btn-sm" href="quant.html">Explore Quant →</a></div>
-  <div class="card sec-card" style="--c:var(--reason)"><div class="icon" style="background:#ecfeff">🧩</div><h3>Logical Reasoning</h3>
-   <div class="tags"><span class="tag">Syllogisms</span><span class="tag">Seating</span><span class="tag">Blood Relations</span><span class="tag">Coding-Decoding</span><span class="tag">Puzzles</span><span class="tag">Series</span></div>
-   <p class="muted" style="flex:1">Questions covering verbal and analytical reasoning.</p><a class="btn btn-sm" href="reasoning.html">Explore Reasoning →</a></div>
-  <div class="card sec-card" style="--c:var(--dilr)"><div class="icon" style="background:#fdf2f8">📊</div><h3>DILR</h3>
-   <div class="tags"><span class="tag">Tables</span><span class="tag">Bar Charts</span><span class="tag">Pie Charts</span><span class="tag">Line Graphs</span><span class="tag">Caselets</span><span class="tag">Arrangements</span></div>
-   <p class="muted" style="flex:1">Questions mostly in data sets, with several questions on each.</p><a class="btn btn-sm" href="dilr.html">Explore DILR →</a></div>
- </div>
-</div></section>
-
-<section class="cat-band ql-band"><div class="container">
- <div class="cat-band-grid">
-  <div><span class="pill">🧪 Quant Lab</span><h2>See the maths before you solve it</h2>
-   <p class="muted">Animated explainers, a question generator with worked visual solutions, live Concept Lab sliders and timed practice across the CAT Quant syllabus. Useful for students, and for teachers who want a visual way to explain a topic in class.</p>
-   <div class="cta-row" style="margin-bottom:0"><a class="btn" href="quant-lab.html">Open Quant Lab →</a><a class="btn btn-ghost" href="quant-lab-generator.html">Try the generator</a></div></div>
-  <div class="cat-mini">
-   <a class="card" href="quant-lab-explainers.html"><b>Explainers</b><span>Animated, step-by-step concepts</span></a>
-   <a class="card" href="quant-lab-generator.html"><b>Generator</b><span>A fresh question every click, with the solution</span></a>
-   <a class="card" href="quant-lab-concept-lab.html"><b>Concept Lab</b><span>Drag sliders and watch the answer change</span></a>
-   <a class="card" href="quant-lab-practice.html"><b>Practice</b><span>Timed sessions with saved stats</span></a>
-  </div>
- </div>
-</div></section>
-
-<section class="cat-band"><div class="container">
- <div class="cat-band-grid">
-  <div><span class="pill">🎯 CAT track</span><h2>CAT-style practice, including VARC</h2>
-   <p class="muted">CAT-style questions written by our team (not taken from CAT papers or any coaching material): reading comprehension, para-jumbles, DILR puzzle sets and QA, with MCQ and TITA types. Take a 40-minute sectional with CAT marking, or practise one topic at a time with solutions straight after each answer.</p>
-   <div class="cta-row" style="margin-bottom:0"><a class="btn" href="cat.html">Explore the CAT track →</a><a class="btn btn-ghost" href="cat-practice.html">Start a sectional</a></div></div>
-  <div class="cat-mini">
-   <a class="card" href="cat-practice.html?section=varc"><b>VARC</b><span>Reading comprehension &amp; verbal ability</span></a>
-   <a class="card" href="cat-practice.html?section=dilr"><b>DILR</b><span>Puzzle and data sets</span></a>
-   <a class="card" href="cat-quant-sets.html"><b>Quant</b><span>Practice sets, Easy to Hard</span></a>
-   <div class="card"><b>TITA</b><span>Type-in-the-answer questions, no negative marking</span></div>
-  </div>
- </div>
-</div></section>
-
-<section class="cat-band cuet-band"><div class="container">
- <div class="cat-band-grid">
-  <div><span class="pill">🎓 CUET (UG) track</span><h2>CUET (UG): aptitude, English and Maths</h2>
-   <p class="muted">Practice in NTA's CUET (UG) format: MCQs with +5 for a correct answer and −1 for a wrong one, sectionals at the real pace (50 questions in 60 minutes), and topic practice with worked solutions. All questions were written by our team. GK covers static facts only, with no current affairs.</p>
-   <div class="cta-row" style="margin-bottom:0"><a class="btn" href="cuet.html">Explore the CUET track →</a><a class="btn btn-ghost" href="cuet-practice.html">Start a sectional</a></div></div>
-  <div class="cat-mini">
-   <a class="card" href="cuet-practice.html?section=gat"><b>General Aptitude</b><span>Reasoning, mental ability &amp; GK</span></a>
-   <a class="card" href="cuet-practice.html?section=english"><b>English</b><span>Passages &amp; verbal ability</span></a>
-   <a class="card" href="cuet-practice.html?section=maths"><b>Mathematics</b><span>Section A &amp; B1</span></a>
-   <div class="card"><b>Marking</b><span><b>+5 / −1</b> per question</span></div>
-  </div>
+<section class="alt" id="exams"><div class="container">
+ <div class="section-head"><h2>Choose your exam</h2><p class="muted">Pick a track and go straight to practice, notes and formula sheets.</p></div>
+ <div class="exams">
+  <div class="card xcard"><span class="eyebrow">MBA entrance</span><h3>CAT</h3><p class="muted">Quant, VARC and DILR sets and sectionals with CAT marking (+3 / −1, TITA).</p>
+   <div class="tags"><span class="tag">VARC</span><span class="tag">DILR</span><span class="tag">QA</span></div><a class="p-cta" href="cat.html">Explore CAT →</a></div>
+  <div class="card xcard"><span class="eyebrow">Central universities</span><h3>CUET (UG)</h3><p class="muted">General Aptitude Test, English and Mathematics at the real exam pace (+5 / −1).</p>
+   <div class="tags"><span class="tag">General Aptitude</span><span class="tag">English</span><span class="tag">Maths</span></div><a class="p-cta" href="cuet.html">Explore CUET →</a></div>
+  <div class="card xcard"><span class="eyebrow">Bank · SSC · Placements</span><h3>Aptitude sections</h3><p class="muted">Concept notes, formula sheets and timed quizzes for the sections these exams share.</p>
+   <div class="chip-links"><a href="quant.html">Quant</a><a href="reasoning.html">Reasoning</a><a href="dilr.html">DILR</a></div>
+   <p class="muted soon-note">Campus placement sets: <a href="placements.html">coming soon</a></p></div>
  </div>
 </div></section>
 
 <section><div class="container">
  <div class="section-head"><h2>What you get today</h2></div>
- <div class="grid g4 m2 compact">
-  <div class="card"><div class="icon">⏱️</div><h3>Timed quizzes</h3><p class="muted">Palette and mark-for-review, plus CAT-style 40-minute sectionals with TITA questions and +3/−1 marking.</p></div>
-  <div class="card"><div class="icon">💡</div><h3>Worked solutions</h3><p class="muted">Every question has a step-by-step solution, shown after you submit.</p></div>
-  <div class="card"><div class="icon">📝</div><h3>Notes &amp; formula sheets</h3><p class="muted">Concept notes and topic-wise formula or rules sheets for Quant, Reasoning, DILR and VARC.</p></div>
-  <div class="card soon-card"><div class="icon">🚧</div><h3>Coming soon</h3><ul class="soon-list"><li>Full-length CAT mocks (all 3 sections)</li><li>Company-wise placement sets</li><li>Progress analytics</li></ul></div>
+ <div class="feats">
+  <div class="feat"><h3>Timed quizzes</h3><p class="muted">Palette, mark-for-review and CAT-style sectionals with TITA questions and +3 / −1 marking.</p></div>
+  <div class="feat"><h3>Worked solutions</h3><p class="muted">Every question has a step-by-step solution, shown after you submit.</p></div>
+  <div class="feat"><h3>Notes &amp; formula sheets</h3><p class="muted">Concept notes and topic-wise sheets for Quant, Reasoning, DILR and VARC.</p></div>
  </div>
-</div></section>
-
-<section class="alt about"><div class="container" style="max-width:760px;text-align:center">
- <h2>About <span data-brand></span></h2>
- <p class="muted"><span data-brand></span> is a new, free practice site for Indian students preparing for aptitude tests: CAT and other MBA entrance exams, bank and SSC exams, and campus placements. Every question here was written by our team and comes with a worked solution. We're starting small and adding more questions and topics over time.</p>
- <p class="muted" style="margin:0">Login only to save progress and unlock levels.</p>
+ <p class="soon-line">Coming soon: Bank, SSC and GMAT mocks · company-wise placement sets · progress analytics</p>
 </div></section>
 
 <section><div class="container"><div class="cta-band">
