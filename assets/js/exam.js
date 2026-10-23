@@ -292,7 +292,9 @@
 
   // ---------- set page ----------
   async function initSet() {
-    const info = $("#set-info"), NAME = { qa: "Quant", varc: "VARC", dilr: "DILR" };
+    const info0 = $("#set-info"), NAME = { qa: "Quant", varc: "VARC", dilr: "DILR" };
+    // the Start button is in the page (disabled) to keep the layout still; hide it when the set can't be started
+    const info = { set innerHTML(h) { info0.innerHTML = h; if (/class="notice"/.test(h)) $("#c-start").classList.add("hidden"); } };
     if (!NAME[SET.sec] || !(SET.n >= 1)) { info.innerHTML = `<div class="notice">This set doesn't exist. <a href="cat.html">Back to CAT</a></div>`; return; }
     const hubUrl = `cat-${{ qa: "quant", varc: "varc", dilr: "dilr" }[SET.sec]}-sets.html`;
     $$("[data-hub]").forEach(a => a.href = hubUrl);
@@ -314,9 +316,9 @@
     if (!picked.length) { info.innerHTML = `<div class="notice">This set is empty.</div>`; return; }
     const mins = st.timer;
     info.innerHTML = `<span class="sbadge ${s.state === "done" ? "done" : "open"}">${s.state === "done" ? "✓ Done · best saved " + s.row.score + "/" + s.row.total : L}</span>
-      <p style="margin:.6em 0 0"><b>${picked.length} questions · ${mins}-minute timer.</b> Marking: +3 correct, −1 wrong MCQ, 0 wrong TITA, 0 blank. Submits automatically when time runs out; solutions after you submit.</p>`;
+      <p class="set-info-p"><b>${picked.length} questions · ${mins}-minute timer.</b> Marking: +3 correct, −1 wrong MCQ, 0 wrong TITA, 0 blank. Submits automatically when time runs out; solutions after you submit.</p>`;
     saveKey = `exam-cat-set-${SET.sec}-${SET.n}`;
-    $("#c-start").classList.remove("hidden");
+    $("#c-start").classList.remove("hidden"); $("#c-start").disabled = false;
     $("#c-start").onclick = () => startSet(picked, mins, L);
     offerResume();
   }

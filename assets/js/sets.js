@@ -35,28 +35,33 @@
       else st = done[n] ? "done" : "open";
       sets.push({ n, level: L, state: st, row: done[n] || null, size: ready ? (lv[L].ready.find(x => x.set === n).ids.length) : m.size });
     }
-    return { sec, user, sets, unlocked, readyBy, range, count: lv.count, timer: m.timers[sec] };
+    return { sec, user, sets, unlocked, readyBy, range, count: lv.count, timer: m.timers[sec], size: m.size };
   }
 
+  // Card markup is mirrored in tools/build_pages.py (hub_html), which writes the guest view into the page so nothing shifts on load.
   function card(sec, s, info) {
-    const L = s.level, prev = LEVELS[LEVELS.indexOf(L) - 1];
     const href = `set.html?sec=${sec}&set=${s.n}`, here = encodeURIComponent(location.pathname.split("/").pop());
-    const head = `<b>Set ${s.n}</b><span class="muted" style="font-size:.85rem">${L} · ${s.size} questions · ${info.timer} min</span>`;
+    const head = `<b>Set ${s.n}</b>`;
     if (s.state === "soon") return `<div class="set-card soon">${head}<span class="sbadge soon">Coming soon</span></div>`;
-    if (s.state === "login") return `<a class="set-card locked" href="login.html?next=${here}">${head}<span class="sbadge lock">🔒 Login to unlock</span></a>`;
-    if (s.state === "locked") return `<div class="set-card locked">${head}<span class="sbadge lock">🔒 Locked</span><span class="muted" style="font-size:.8rem">Finish all ${prev} sets to unlock</span></div>`;
+    if (s.state === "login") return `<a class="set-card locked" href="login.html?next=${here}" aria-label="Set ${s.n}: login to unlock">${head}<span class="sbadge lock">🔒 Login to unlock</span></a>`;
+    if (s.state === "locked") return `<div class="set-card locked">${head}<span class="sbadge lock">🔒 Locked</span></div>`;
     if (s.state === "done") return `<a class="set-card" href="${href}">${head}<span class="sbadge done">✓ Done · ${s.row ? s.row.score + "/" + s.row.total : ""}</span></a>`;
     return `<a class="set-card" href="${href}">${head}<span class="sbadge open">Start →</span></a>`;
   }
+  const sizeText = (info, L) => {
+    const z = [...new Set(info.sets.filter(s => s.level === L && s.state !== "soon").map(s => s.size))].sort((a, b) => a - b);
+    return (z.length ? (z.length > 1 ? z[0] + "–" + z[z.length - 1] : z[0]) : info.size) + " questions each · " + info.timer + " min";
+  };
 
   async function hub(el) {
     const sec = el.dataset.sec;
     try {
       const info = await status(sec);
-      el.innerHTML = (info.user ? "" : `<div class="notice">You're browsing as a guest: set ${info.sets.find(s => s.state === "open" || s.state === "done")?.n ?? 1} is open. <a href="login.html?next=${encodeURIComponent(location.pathname.split("/").pop())}">Login</a> to save progress and unlock levels.</div>`) +
-        LEVELS.map(L => {
+      const here = encodeURIComponent(location.pathname.split("/").pop());
+      el.innerHTML = (info.user ? "" : `<div class="notice guest-note">You're browsing as a guest: set ${info.sets.find(s => s.state === "open" || s.state === "done")?.n ?? 1} is open. <a href="login.html?next=${here}">Log in</a> to save progress and unlock levels.</div>`) +
+        LEVELS.map((L, i) => {
           const n = info.readyBy[L].length, lock = info.user && !info.unlocked[L];
-          return `<div class="level-head"><h2>${L}</h2><span class="muted">Sets ${info.range[L][0]}–${info.range[L][1]} · ${n ? n + " ready" : "coming soon"}${lock ? " · 🔒 locked" : ""}</span></div>
+          return `<div class="level-head"><h2>${L}</h2><span class="muted">Sets ${info.range[L][0]}–${info.range[L][1]} · ${n ? sizeText(info, L) : "coming soon"}${lock ? ` · 🔒 finish all ${LEVELS[i - 1]} sets to unlock` : ""}</span></div>
             <div class="set-grid">${info.sets.filter(s => s.level === L).map(s => card(sec, s, info)).join("")}</div>`;
         }).join("");
     } catch (e) { el.innerHTML = `<div class="notice">Could not load the sets. Please check your connection and reload.</div>`; }

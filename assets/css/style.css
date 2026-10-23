@@ -403,3 +403,72 @@ html[data-theme="dark"]{color-scheme:dark;
 /* dark (html[data-theme=dark], set by assets/js/theme.js) */
 html[data-theme="dark"] .ql-band{background:linear-gradient(135deg,rgba(16,185,129,.16),rgba(59,130,246,.1))}
 
+/* ===== v11: UI/UX refine. Type scale, accessibility, header/theme toggle, unified cards (light + dark) ===== */
+:root{--fs-body:1rem;--fs-sm:.875rem;--fs-xs:.8125rem;--r:14px;--r-sm:10px;--pad:20px;--focus:#6d28d9}
+html[data-theme="dark"]{--focus:#c4b5fd}
+body{font-size:var(--fs-body)}
+/* readable small text: secondary >= 14px, chips >= 13px semibold */
+.muted small,small{font-size:var(--fs-sm)}
+.compact p,.compact .soon-list{font-size:var(--fs-sm);line-height:1.5}
+.tag{font-size:var(--fs-xs);font-weight:600;padding:.25em .75em}
+.pill{font-size:var(--fs-xs);font-weight:600}
+.stats span{font-size:var(--fs-sm);white-space:nowrap}
+.exam-tag{font-size:var(--fs-xs);font-weight:700}
+.sbadge{font-size:var(--fs-xs);font-weight:700;padding:.3em .8em}
+.copyright,.hero-card .q-meta,.breadcrumb,.topic p,.topic-table td:last-child span{font-size:var(--fs-sm)}
+.gate-note{font-size:var(--fs-sm);margin-top:22px}
+/* headings renamed for a correct outline keep their old look */
+.h3{font-size:1.17rem;letter-spacing:0}.card .h3{font-size:1.15rem}.compact .h3{font-size:.98rem;margin-bottom:.3em}
+.h4{font-size:1rem;letter-spacing:0;line-height:1.3}.topic .h4{margin:0 0 .3em}.ql-tcard .h4{margin:.3em 0 .2em;font-size:1.02rem}
+#site-footer .fh{font-size:1rem;color:#fff;margin:.2em 0 .6em;letter-spacing:0}
+/* focus, skip link, reduced motion */
+:focus{outline:none}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.btn:focus-visible,.mini-opt:focus-visible,.opt:focus-visible,.set-card:focus-visible{outline-offset:3px}
+#site-footer :focus-visible{outline-color:#c4b5fd}
+main:focus{outline:none}
+.skip-link{position:absolute;left:12px;top:-60px;z-index:100;background:var(--card);color:var(--ink);border:2px solid var(--focus);border-radius:10px;padding:.7em 1.1em;font-weight:700;min-height:44px}
+.skip-link:focus{top:10px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.btn:hover,.topic:hover,.exam-card:hover{transform:none}}
+/* links inside text are underlined */
+main p a:not(.btn),main li a:not(.btn),.notice a:not(.btn),.sample-fb p a,#site-footer p a{text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+/* header: reserve its height so the page does not jump when layout.js fills it */
+#site-header{min-height:65px}
+.nav{gap:8px}.logo{margin-right:auto}
+.nav .nav-links{order:1}.nav .theme-btn{order:2}.nav .menu-btn{order:3}
+.theme-btn{display:inline-grid;place-items:center;width:44px;height:44px;flex:0 0 44px;border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--ink);font-size:1.15rem;line-height:1;cursor:pointer;padding:0}
+.theme-btn:hover{border-color:var(--brand)}
+.theme-btn .ti-sun{display:none}html[data-theme="dark"] .theme-btn .ti-sun{display:inline}html[data-theme="dark"] .theme-btn .ti-moon{display:none}
+.menu-btn{min-width:44px;min-height:44px;color:var(--ink)}
+@media(min-width:1061px){.nav-links>a:not(.btn),.nav-dd-btn,.auth-slot a{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center}}
+.breadcrumb a{min-width:44px;justify-content:center}
+/* unified cards */
+.card{padding:var(--pad);border-radius:var(--r)}
+.compact .card{padding:18px}
+.icon,.compact .icon{width:40px;height:40px;border-radius:12px;font-size:1.2rem;margin-bottom:10px}
+.sec-card>.cta-row:last-child,.sec-card>.btn:last-child,.sec-card>a.btn-sm:last-child{margin-top:auto}
+.topic,.set-card{border-radius:var(--r)}
+.notice{border-radius:var(--r);padding:14px 16px;font-size:.95rem}
+.guest-note{margin-bottom:6px}
+/* sets hub: details once per level, compact cards that do not change size */
+.set-card{padding:16px;min-height:88px;justify-content:space-between;gap:.5em}
+.level-head{display:flex;align-items:baseline;gap:.6em;flex-wrap:wrap;margin:22px 0 10px}
+.level-head h2{margin:0;font-size:1.3rem}
+.level-head .muted{font-size:var(--fs-sm)}
+.set-info-p{margin:.6em 0 0;min-height:3.4em}
+@media(max-width:600px){.set-info-p{min-height:6.6em}}
+.set-start{margin-top:14px}
+/* hero */
+.hero-card .q-meta{align-items:center;gap:8px;flex-wrap:wrap}
+.eyebrow{font-size:var(--fs-xs);font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--brand)}
+.q-topic{font-size:var(--fs-sm);color:var(--muted)}
+.sample-q{font-size:1.05rem;font-weight:600;line-height:1.45;letter-spacing:0;margin:.3em 0 .6em}
+.stats{gap:12px}
+@media(max-width:400px){.stats b{font-size:1.15rem}}
+/* light-mode contrast fixes */
+.sbadge.soon{color:#6b4f00}
+/* dark: header toggle, footer headings, notice links, hero eyebrow */
+html[data-theme="dark"] .eyebrow{color:#c4b5fd}
+html[data-theme="dark"] .skip-link{background:var(--card)}
+html[data-theme="dark"] .notice a{color:#dbeafe}
+.prog-card .h3{margin:0}
