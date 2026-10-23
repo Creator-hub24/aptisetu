@@ -1,6 +1,8 @@
+/* Metric-matched fallback so the Inter swap does not reflow text (CLS) */
+@font-face{font-family:"Inter Fallback";src:local("Arial"),local("Liberation Sans"),local("Helvetica");size-adjust:107.12%;ascent-override:90.44%;descent-override:22.52%;line-gap-override:0%}
 :root{--bg:#f7f8fc;--card:#fff;--ink:#0f172a;--muted:#5b6478;--line:#e4e7f0;--brand:#4f46e5;--brand2:#7c3aed;--accent:#f59e0b;--ok:#16a34a;--bad:#dc2626;--quant:#4f46e5;--reason:#0891b2;--dilr:#db2777;--varc:#059669;--cuet:#ea580c;--r:14px;--sh:0 6px 24px rgba(15,23,42,.07)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+body{margin:0;font-family:Inter,"Inter Fallback",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
 a{color:var(--brand);text-decoration:none}img{max-width:100%}
 .container{max-width:1160px;margin:0 auto;padding:0 20px}
 .muted{color:var(--muted)}
