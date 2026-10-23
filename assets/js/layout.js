@@ -8,7 +8,7 @@
     ["index.html", "Home"],
     ["learn", "Learn", [["quant.html", "Quant"], ["reasoning.html", "Reasoning"], ["dilr.html", "DILR"], ["practice.html", "Practice quizzes"]]],
     ["quant-lab.html", "Quant Lab"],
-    ["cat", "CAT", [["cat.html", "CAT Overview"], ["cat-quant-sets.html", "Quant sets"], ["cat-varc-sets.html", "VARC sets"], ["cat-dilr-sets.html", "DILR sets"]]],
+    ["cat", "CAT", [["cat.html", "CAT Overview"], ["cat-quant-sets.html", "Quant sets"], ["cat-varc-sets.html", "VARC sets"], ["cat-dilr-sets.html", "DILR sets"], ["mock-tests.html", "Mock tests"]]],
     ["cuet.html", "CUET"],
     ["careers", "Careers", [["after12.html", "After 12"], ["after-graduation.html", "After Graduation"]]],
     ["more", "More", [["about.html", "About"], ["faq.html", "FAQ"], ["corrections.html", "Corrections"], ["contact.html", "Contact"]]]

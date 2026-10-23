@@ -803,7 +803,7 @@ page("mock-tests.html","Mock Tests","""
 <h2 style="margin-top:24px">Sectional tests</h2><div class="grid g3">%S%</div>
 <h2 style="margin-top:24px">Practice packs</h2><div class="grid g3">%P%</div>
 <div class="notice" style="margin-top:20px">Random CAT sectionals and topic practice are on the <a href="cat-practice.html">CAT practice page</a>. Bank, SSC and GMAT mocks are coming soon.</div></div></section>
-""".replace("%M%",_M).replace("%S%",_S).replace("%P%",_PR), desc="Free full-length CAT mocks, VARC and DILR sectionals and practice packs, with CAT marking and worked solutions.", noindex=True)
+""".replace("%M%",_M).replace("%S%",_S).replace("%P%",_PR), desc="Free full-length CAT mocks, VARC and DILR sectionals and practice packs, with CAT marking and worked solutions.")
 
 page("placements.html","Placement Prep","""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Placement Prep</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Campus placement prep <span class="badge soon">Coming soon</span></h1><p class="muted">Company-wise aptitude practice for service and product companies.</p></div></div>
