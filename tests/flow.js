@@ -1,4 +1,4 @@
-const {chromium}=require('playwright');const B='http://localhost:8765/';const S='/workspace/edu-portal/screenshots/flow/';
+const {chromium}=require('playwright');const B=process.env.BASE||'http://localhost:8765/';const S='/workspace/edu-portal/screenshots/flow/';
 (async()=>{const b=await chromium.launch();let fails=0,n=0;const ok=(t,c,x='')=>{n++;if(!c)fails++;console.log((c?'PASS ':'FAIL ')+t+(x?' — '+x:''))};
 for(const W of [1280,390]){const p=await b.newPage({viewport:{width:W,height:W>500?900:844}});let errs=[];p.on('console',m=>{if(m.type()==='error')errs.push(m.text())});p.on('pageerror',e=>errs.push(e.message));
  const vis=s=>p.locator(s).isVisible();

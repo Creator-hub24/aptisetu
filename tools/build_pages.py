@@ -62,9 +62,9 @@ def footer_html():
     return f"""<div class="container footer-grid">
       <div><a href="index.html" class="logo"><img src="assets/img/favicon.svg" alt="" width="34" height="34" class="logo-mark"><span data-brand>{_esc.escape(BRAND)}</span></a>
         <p class="muted">Free Quant, Reasoning, DILR and VARC practice for CAT, CUET, Bank, SSC and campus placements. Not affiliated with NTA, the IIMs or any exam body.</p></div>
-      <div><h4>Learn</h4><a href="quant.html">Quantitative Aptitude</a><a href="quant-lab.html">Quant Lab</a><a href="reasoning.html">Logical Reasoning</a><a href="dilr.html">DILR</a><a href="cat.html">CAT track</a><a href="cuet.html">CUET (UG) track</a><a href="varc.html">VARC</a><a href="after12.html">After 12</a><a href="after-graduation.html">After Graduation</a></div>
-      <div><h4>Practice</h4><a href="cat-practice.html">CAT sectionals</a><a href="cuet-practice.html">CUET sectionals</a><a href="practice.html?exam=general">Bank / SSC quizzes</a><a href="practice.html?section=mixed">Mixed practice</a></div>
-      <div><h4>About</h4><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="corrections.html">Corrections</a>{contact}<a href="privacy.html">Privacy</a><a href="terms.html">Terms &amp; disclaimer</a></div>
+      <div><h2 class="fh">Learn</h2><a href="quant.html">Quantitative Aptitude</a><a href="quant-lab.html">Quant Lab</a><a href="reasoning.html">Logical Reasoning</a><a href="dilr.html">DILR</a><a href="cat.html">CAT track</a><a href="cuet.html">CUET (UG) track</a><a href="varc.html">VARC</a><a href="after12.html">After 12</a><a href="after-graduation.html">After Graduation</a></div>
+      <div><h2 class="fh">Practice</h2><a href="cat-practice.html">CAT sectionals</a><a href="cuet-practice.html">CUET sectionals</a><a href="practice.html?exam=general">Bank / SSC quizzes</a><a href="practice.html?section=mixed">Mixed practice</a></div>
+      <div><h2 class="fh">About</h2><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="corrections.html">Corrections</a>{contact}<a href="privacy.html">Privacy</a><a href="terms.html">Terms &amp; disclaimer</a></div>
     </div>
     {GC_TAG}<div class="container copyright">© {YEAR} <span data-brand>{_esc.escape(BRAND)}</span>. All rights reserved.</div>"""
 import hashlib as _hl, base64 as _b64
@@ -102,16 +102,18 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 <meta name="referrer" content="strict-origin-when-cross-origin">
 {basetag}<title>{A(full)}</title>
 <meta name="description" content="{A(desc)}">
-{robots}{canon}<meta name="theme-color" content="#0B1F3A">
+{robots}{canon}<meta name="theme-color" content="#ffffff"><meta name="color-scheme" content="light dark">
+<script src="assets/js/theme.js"></script>
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <meta property="og:type" content="website"><meta property="og:site_name" content="{A(BRAND)}"><meta property="og:title" content="{A(full)}"><meta property="og:description" content="{A(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{img}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{A(full)}"><meta name="twitter:description" content="{A(desc)}"><meta name="twitter:image" content="{img}">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800{{MONO}}&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 {head_extra}</head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header id="site-header"></header>
-<main>
+<main id="main" tabindex="-1">
 {body}
 </main>
 <footer id="site-footer">{footer_html()}</footer>
@@ -123,9 +125,23 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 </body>
 </html>
 """
+    html=html.replace("{MONO}", "&family=JetBrains+Mono:wght@400;700" if _re.search(r"""class=["'][^"']*\bfx\b|quant-lab\.css""", html) else "")
+    html=fix_headings(html)
     open(fn,"w").write(externalize(fn, html))
     if fn!="404.html": PAGES.append((fn, not noindex))
 DESCS={}
+def fix_headings(html):
+    """Heading order: a heading may go at most one level deeper than the one before it. A skipped level is renamed
+    (e.g. h3 -> h2) and keeps its look through a class (h2.h3 is styled like an h3)."""
+    prev=[0]
+    def rep(m):
+        lvl, attrs, inner = int(m.group(1)), m.group(2), m.group(3)
+        if prev[0] and lvl>prev[0]+1:
+            new=prev[0]+1
+            attrs=attrs.replace('class="', f'class="h{lvl} ', 1) if 'class="' in attrs else f' class="h{lvl}"'+attrs
+            prev[0]=new; return f"<h{new}{attrs}>{inner}</h{new}>"
+        prev[0]=lvl; return m.group(0)
+    return _re.sub(r"<h([1-6])(\s[^>]*)?>(.*?)</h\1>", lambda m: rep(type("M",(),{"group":lambda self,i: (m.group(i) or "") if i==2 else m.group(i)})()), html, flags=_re.S)
 
 # ---------- LANDING ----------
 page("index.html","", f"""
@@ -134,13 +150,13 @@ page("index.html","", f"""
   <span class="pill">🇮🇳 CAT · CUET · Bank · SSC · Placements</span>
   <h1>Master <span class="grad">Quant, Reasoning, DILR &amp; VARC</span> the smart way</h1>
   <p class="lead">Short concept notes, formula sheets and timed practice with worked solutions, for bank, SSC and placement tests, plus a separate CAT track with VARC, DILR and QA sectionals.</p>
-  <div class="cta-row hero-cta"><a href="practice.html" class="btn">Start a free quiz →</a><a href="#sections" class="btn btn-ghost">Explore topics</a></div>
-  <div class="stats"><div><b>3</b><span>Exam tracks</span></div><div><b>Free</b><span>No paywall</span></div><div><b>Worked</b><span>solution for every question</span></div></div>
+  <div class="cta-row hero-cta"><a href="practice.html" class="btn">Start a Free Quiz →</a><a href="#sections" class="btn btn-ghost">Explore Topics</a></div>
+  <div class="stats"><div><b>3</b><span>Exam tracks</span></div><div><b>Free</b><span>No paywall</span></div><div><b>Worked</b><span>solutions</span></div></div>
  </div>
- <div class="hero-card" id="sample">
-  <div class="q-meta"><span>Try one · Quant · Time &amp; Work</span><span class="timer-chip">Sample</span></div>
-  <p style="font-weight:600;margin:.2em 0 .6em">A finishes a job in 12 days, B in 18 days. Working together, how many days do they need?</p>
-  <div class="sample-opts"><button type="button" class="mini-opt" data-ok="0">A. 6 days</button><button type="button" class="mini-opt" data-ok="1">B. 7.2 days</button><button type="button" class="mini-opt" data-ok="0">C. 7.5 days</button><button type="button" class="mini-opt" data-ok="0">D. 15 days</button></div>
+ <div class="hero-card" id="sample" role="group" aria-labelledby="sample-q">
+  <div class="q-meta"><span class="eyebrow">Sample question</span><span class="q-topic">Quant · Time &amp; Work</span></div>
+  <h2 id="sample-q" class="sample-q">A finishes a job in 12 days, B in 18 days. Working together, how many days do they need?</h2>
+  <div class="sample-opts" role="group" aria-label="Answer options"><button type="button" class="mini-opt" data-ok="0">A. 6 days</button><button type="button" class="mini-opt" data-ok="1">B. 7.2 days</button><button type="button" class="mini-opt" data-ok="0">C. 7.5 days</button><button type="button" class="mini-opt" data-ok="0">D. 15 days</button></div>
   <div id="sample-fb" class="sample-fb hidden" aria-live="polite"></div>
  </div>
 </div></section>
@@ -235,9 +251,9 @@ page("index.html","", f"""
 <script>(function(){{var box=document.getElementById('sample'),fb=document.getElementById('sample-fb'),bs=[].slice.call(box.querySelectorAll('.mini-opt'));
 bs.forEach(function(b){{b.onclick=function(){{var ok=b.dataset.ok==='1';bs.forEach(function(x){{x.disabled=true;if(x.dataset.ok==='1')x.classList.add('right')}});if(!ok)b.classList.add('wrong');
 fb.innerHTML=(ok?'<b>✅ Correct!</b> ':'<b>❌ Not quite.</b> The answer is B. ')+'Together they finish 1/12 + 1/18 = 5/36 of the job a day, so they need 36/5 = 7.2 days.'+
-'<div class="cta-row" style="margin:.8em 0 0"><a class="btn btn-sm" href="practice.html?quick=5">Try 5 more →</a><button type="button" class="btn btn-ghost btn-sm" id="sample-again">Try again</button></div>';
+'<div class="cta-row" style="margin:.8em 0 0"><a class="btn btn-sm" href="practice.html?quick=10">Try a 10-question quick quiz →</a><button type="button" class="btn btn-ghost btn-sm" id="sample-again">Try again</button></div>';
 fb.classList.remove('hidden');document.getElementById('sample-again').onclick=function(){{bs.forEach(function(x){{x.disabled=false;x.classList.remove('right','wrong')}});fb.classList.add('hidden')}};}}}});}})();</script>
-""", desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and placements: Quant, Reasoning, DILR and VARC with timed quizzes, worked solutions and formula sheets. Login only to save progress and unlock levels.")
+""", desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and placements: Quant, Reasoning, DILR and VARC timed quizzes with worked solutions and formula sheets.")
 
 # ---------- SECTION PAGES ----------
 def fs_section(formulas, color, heading="Formula &amp; rules sheet", unit="formulas and rules", prose=False):
@@ -304,7 +320,7 @@ section_page("dilr.html","dilr","Data Interpretation &amp; Logical Reasoning (DI
 FORMULAS["dilr"], "Data Interpretation and Logical Reasoning (DILR) practice: tables, bar, pie and line charts, caselets, arrangements, tournaments and routes, with a formula sheet.")
 
 # ---------- PRACTICE ----------
-page("practice.html","Practice","""
+page("practice.html","Free Aptitude Practice Quizzes: CAT, CUET, Bank &amp; SSC","""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Practice</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Practice</h1><p class="muted">Choose your exam track to begin.</p></div></div>
 <section style="padding-top:16px"><div class="container">
  <div class="quick-card card"><div><b>⚡ Quick start</b><span class="muted">10 mixed Quant, Reasoning &amp; DILR questions · 60 s each · one tap</span></div><button type="button" class="btn" data-quick="10">Start 10 questions →</button></div>
@@ -535,9 +551,27 @@ practice_page("cat-practice.html", "cat", "CAT", "cat.html", "CAT", "40 min · C
 
 # ---------- CAT PRACTICE SETS (hubs, set page, login) ----------
 SETS_META=json.load(open("data/cat/sets.json"))
-GATE_NOTE=('<p class="muted" style="font-size:.85rem;margin-top:22px">How locks work: Easy is open (guests can try the first set of each section). A level unlocks when you have '
+GATE_NOTE=('<p class="muted gate-note">How locks work: Easy is open (guests can try the first set of each section). A level unlocks when you have '
   'completed every set that is ready in the level before it; if that level has no ready sets yet, the next level is already open. '
   'Locks are only a convenience to guide your practice, not a security feature: all questions on this site are public.</p>')
+def hub_html(sec, slug):
+    """Guest view of a sets hub, written into the page so the grid does not shift when sets.js fills it in (mirror of card() in sets.js)."""
+    m=SETS_META; rep=m["sections"][sec]; L3=("Easy","Medium","Hard")
+    ready={L:{x["set"]:len(x["ids"]) for x in rep[L]["ready"]} for L in L3}
+    allready=[n for L in L3 for n in ready[L]]; guest=min(allready) if allready else 1
+    here=f"cat-{slug}-sets.html"
+    out=f'<div class="notice guest-note">You\'re browsing as a guest: set {guest} is open. <a href="login.html?next={here}">Log in</a> to save progress and unlock levels.</div>'
+    for L in L3:
+        a,b=rep[L]["range"]; z=sorted(set(ready[L].values()))
+        size=(f"{z[0]}–{z[-1]}" if len(z)>1 else f"{z[0]}") if z else f"{m['size']}"
+        note=f"{size} questions each · {m['timers'][sec]} min" if z else "coming soon"
+        cards=""
+        for n in range(a,b+1):
+            if n not in ready[L]: cards+=f'<div class="set-card soon"><b>Set {n}</b><span class="sbadge soon">Coming soon</span></div>'
+            elif n==guest: cards+=f'<a class="set-card" href="set.html?sec={sec}&amp;set={n}"><b>Set {n}</b><span class="sbadge open">Start →</span></a>'
+            else: cards+=f'<a class="set-card locked" href="login.html?next={here}" aria-label="Set {n}: login to unlock"><b>Set {n}</b><span class="sbadge lock">🔒 Login to unlock</span></a>'
+        out+=f'<div class="level-head"><h2>{L}</h2><span class="muted">Sets {a}–{b} · {note}</span></div>\n<div class="set-grid">{cards}</div>\n'
+    return out
 rng=lambda rep: ", ".join(f"{L} (sets {rep[L]['range'][0]}–{rep[L]['range'][1]})" for L in ("Easy","Medium","Hard"))
 for sec,slug,name,color in (("qa","quant","Quant","var(--quant)"),("varc","varc","VARC","var(--varc)"),("dilr","dilr","DILR","var(--dilr)")):
     rep=SETS_META["sections"][sec]; nready=sum(len(rep[L]["ready"]) for L in ("Easy","Medium","Hard"))
@@ -548,7 +582,7 @@ for sec,slug,name,color in (("qa","quant","Quant","var(--quant)"),("varc","varc"
 <h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">CAT {name}: {rep["count"]} practice sets</h1>
 <p class="muted" style="max-width:760px">{rng(rep)}. {fmt_note} {SETS_META["timers"][sec]}-minute timer, CAT marking (+3, −1 for a wrong MCQ, 0 for a wrong TITA), solutions after you submit. <b>{nready}</b> of {rep["count"]} sets are ready; the rest are coming soon.</p></div></div>
 <section style="padding-top:12px"><div class="container">
-<div id="set-hub" data-sec="{sec}"><p class="muted">Loading sets…</p></div>
+<div id="set-hub" data-sec="{sec}">{hub_html(sec, slug)}</div>
 <noscript><div class="notice">The practice sets need JavaScript.</div></noscript>
 {GATE_NOTE}
 </div></section>
@@ -559,8 +593,8 @@ page("set.html", "CAT Practice Set", f"""
 <div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="cat.html">CAT</a> / <a href="cat-quant-sets.html" data-hub>Sets</a></div>
 <h1 id="set-h1" style="font-size:clamp(1.6rem,3.6vw,2.3rem)">CAT practice set</h1></div></div>
 <section style="padding-top:12px"><div class="container">
- <div id="c-setup" class="card quiz-setup"><div id="set-info"><p class="muted">Loading…</p></div>
-  <button id="c-start" class="btn hidden" style="margin-top:14px">Start set →</button></div>
+ <div id="c-setup" class="card quiz-setup"><div id="set-info"><span class="sbadge open">Loading</span><p class="set-info-p muted">Loading the set details…</p></div>
+  <button id="c-start" class="btn set-start" disabled>Start set →</button></div>
 {quiz_html("cat", "cat-quant-sets.html", "CAT", "Retry this set", "All sets")}
  <div id="c-progress" class="hidden"></div>
 </div></section>

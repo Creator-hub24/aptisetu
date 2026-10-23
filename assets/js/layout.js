@@ -28,9 +28,12 @@
     header.innerHTML = `
     <div class="container nav">
       <a href="index.html" class="logo">${logo()}<span data-brand></span></a>
+      <button type="button" class="theme-btn" aria-label="Dark theme" aria-pressed="${window.Theme && Theme.get() === "dark" ? "true" : "false"}"><span class="ti-moon" aria-hidden="true">☾</span><span class="ti-sun" aria-hidden="true">☀</span></button>
       <button type="button" class="menu-btn" aria-label="Menu" aria-expanded="false">☰</button>
       <nav class="nav-links">${links}<span class="auth-slot" id="auth-slot"></span><a href="practice.html" class="btn btn-sm">Start practising</a></nav>
     </div>`;
+    const tb = header.querySelector(".theme-btn");
+    tb.addEventListener("click", () => { if (window.Theme) Theme.toggle(); });
     const mb = header.querySelector(".menu-btn");
     mb.addEventListener("click", () => mb.setAttribute("aria-expanded", document.body.classList.toggle("nav-open")));
     header.querySelectorAll(".nav-dd").forEach(dd => {

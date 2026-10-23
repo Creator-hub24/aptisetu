@@ -45,12 +45,13 @@
  .a12-table .a12-empty td{display:block}.a12-table .a12-empty td::before{content:none}
 }
 /* dark theme (see style.css v9 for the shared tokens) */
-@media (prefers-color-scheme: dark){
- .a12-chip,.a12-controls select,.a12-controls input,.a12-wrap{background:var(--card);color:var(--ink)}
- .a12-chip[aria-pressed="true"]{background:var(--btn1);border-color:var(--btn1);color:#fff}
- .a12-controls select:focus,.a12-controls input:focus{outline-color:#3b43a8}
- .a12-table tbody tr:hover td{background:var(--surface2)}
- .a12-pill{background:var(--surface2);color:#cbd5e1}
- .a12-pill.any{background:var(--tint);border-color:#3b43a8;color:#c7d2fe}
- @media(max-width:760px){.a12-wrap{background:transparent}.a12-table tbody tr{background:var(--card)}.a12-table tbody tr:hover td{background:transparent}}
-}
+/* dark (html[data-theme=dark], set by assets/js/theme.js) */
+html[data-theme="dark"] .a12-chip,html[data-theme="dark"] .a12-controls select,html[data-theme="dark"] .a12-controls input,html[data-theme="dark"] .a12-wrap{background:var(--card);color:var(--ink)}
+ html[data-theme="dark"] .a12-chip[aria-pressed="true"]{background:var(--btn1);border-color:var(--btn1);color:#fff}
+ html[data-theme="dark"] .a12-controls select:focus,html[data-theme="dark"] .a12-controls input:focus{outline-color:#3b43a8}
+ html[data-theme="dark"] .a12-table tbody tr:hover td{background:var(--surface2)}
+ html[data-theme="dark"] .a12-pill{background:var(--surface2);color:#cbd5e1}
+ html[data-theme="dark"] .a12-pill.any{background:var(--tint);border-color:#3b43a8;color:#c7d2fe}
+ @media(max-width:760px){html[data-theme="dark"] .a12-wrap{background:transparent}
+ html[data-theme="dark"] .a12-table tbody tr{background:var(--card)}
+ html[data-theme="dark"] .a12-table tbody tr:hover td{background:transparent}}
