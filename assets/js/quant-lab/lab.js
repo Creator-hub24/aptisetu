@@ -263,6 +263,7 @@
 
   const onScheme = () => { readP(); redraw.forEach(f => { try { f(); } catch (e) { } }); };
   if (DARK.addEventListener) DARK.addEventListener('change', onScheme);
+  document.addEventListener('themechange', onScheme);
   if (RM.addEventListener) RM.addEventListener('change', () => { labs.forEach(l => { l.stop(); l.start(); }); onScheme(); });
   document.body.dataset.qlReady = '1';
 })();
