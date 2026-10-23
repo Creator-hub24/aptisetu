@@ -542,7 +542,7 @@ rng=lambda rep: ", ".join(f"{L} (sets {rep[L]['range'][0]}–{rep[L]['range'][1]
 for sec,slug,name,color in (("qa","quant","Quant","var(--quant)"),("varc","varc","VARC","var(--varc)"),("dilr","dilr","DILR","var(--dilr)")):
     rep=SETS_META["sections"][sec]; nready=sum(len(rep[L]["ready"]) for L in ("Easy","Medium","Hard"))
     fmt_note={"qa":"10 single questions per set, MCQ and TITA.","varc":"10 questions per set: reading-comprehension passages stay whole, topped up with verbal-ability items.",
-              "dilr":"Each set is 2 data sets of 5 questions."}[sec]
+              "dilr":"Each set is 2 data sets of 4–5 questions (8–10 questions)."}[sec]
     page(f"cat-{slug}-sets.html", f"CAT {name} Practice Sets", f"""
 <div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="cat.html">CAT</a> / {name} sets</div>
 <h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">CAT {name}: {rep["count"]} practice sets</h1>
@@ -552,7 +552,7 @@ for sec,slug,name,color in (("qa","quant","Quant","var(--quant)"),("varc","varc"
 <noscript><div class="notice">The practice sets need JavaScript.</div></noscript>
 {GATE_NOTE}
 </div></section>
-""", desc=f"CAT {name} practice in {rep["count"]} sets of 10 questions at Easy, Medium and Hard level, with a timer, CAT marking and worked solutions.",
+""", desc=f"CAT {name} practice in {rep["count"]} sets of {"8–10" if sec=="dilr" else "10"} questions at Easy, Medium and Hard level, with a timer, CAT marking and worked solutions.",
          extra='<script src="assets/js/sets.js"></script>')
 
 page("set.html", "CAT Practice Set", f"""

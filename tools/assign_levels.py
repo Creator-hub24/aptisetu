@@ -63,6 +63,37 @@ def pack(gs, limit):
         ready.append(cur); rest = keep
     return ready, rest
 
+FILL = {"varc", "dilr"}   # fill every empty slot (see fill())
+
+def hardness(g): return sum(RANK[q["difficulty"]] for q in g) / len(g)
+
+def fill(sec, questions, rep, start, slots):
+    """VARC/DILR have almost no Easy-tagged content, so slots left empty by the difficulty rules above are filled
+    by RELATIVE difficulty: unused non-mock groups (bank, practice-* and *-sectional packs; never mock-* packs)
+    sorted easiest first (stable, bank order), packed into the empty slots in order Easy -> Medium -> Hard.
+    Sets made earlier keep their exact content. DILR: 2 data sets (4 or 5 questions each), VARC: exactly 10."""
+    used = {i for lv in LEVELS for st in rep[lv]["ready"] for i in st["ids"]}
+    free = [g for g in groups([q for q in questions if not (q.get("pack") or "").startswith("mock-")])
+            if not any(q["id"] in used for q in g)]
+    if sec == "dilr": free = [g for g in free if len(g) in (4, 5)]
+    free.sort(key=hardness)
+    for lv in LEVELS:
+        have = {x["set"] for x in rep[lv]["ready"]}
+        for n in range(start[lv], start[lv] + slots[lv]):
+            if n in have or not free: continue
+            if sec == "dilr":
+                if len(free) < 2: break
+                st = [free.pop(0), free.pop(0)]
+            else:
+                got, rest = pack(free, 1)
+                if not got: break
+                st, free = got[0], rest
+            for g in st:
+                for q in g: q["practiceSet"] = n
+            rep[lv]["ready"].append({"set": n, "ids": [q["id"] for g in st for q in g],
+                                     "groups": [g[0]["set"] for g in st if g[0].get("set")], "filled": True})
+        rep[lv]["ready"].sort(key=lambda x: x["set"])
+
 def assign(cat_out, path):
     report = {}
     for sec, s in cat_out["sections"].items():
@@ -98,6 +129,7 @@ def assign(cat_out, path):
                              "groups": [g[0]["set"] for g in st if g[0].get("set")]})
             rep[lv] = {"range": [start[lv], start[lv] + slots[lv] - 1], "ready": sets,
                        "leftoverQuestions": sum(map(len, left)), "leftoverIds": [q["id"] for g in left for q in g]}
+        if sec in FILL: fill(sec, s["questions"], rep, start, slots)
         rep["count"] = n0 - 1
         if sec == "dilr": rep["excludedDataSets"] = excluded
     out = {"size": SIZE, "levels": list(LEVELS), "timers": {"qa": 20, "varc": 20, "dilr": 25}, "sections": report}

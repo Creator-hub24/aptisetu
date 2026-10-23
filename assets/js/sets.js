@@ -33,7 +33,7 @@
       else if (!user) st = n === guestSet ? (done[n] ? "done" : "open") : "login";
       else if (!unlocked[L]) st = "locked";
       else st = done[n] ? "done" : "open";
-      sets.push({ n, level: L, state: st, row: done[n] || null });
+      sets.push({ n, level: L, state: st, row: done[n] || null, size: ready ? (lv[L].ready.find(x => x.set === n).ids.length) : m.size });
     }
     return { sec, user, sets, unlocked, readyBy, range, count: lv.count, timer: m.timers[sec] };
   }
@@ -41,7 +41,7 @@
   function card(sec, s, info) {
     const L = s.level, prev = LEVELS[LEVELS.indexOf(L) - 1];
     const href = `set.html?sec=${sec}&set=${s.n}`, here = encodeURIComponent(location.pathname.split("/").pop());
-    const head = `<b>Set ${s.n}</b><span class="muted" style="font-size:.85rem">${L} · 10 questions · ${info.timer} min</span>`;
+    const head = `<b>Set ${s.n}</b><span class="muted" style="font-size:.85rem">${L} · ${s.size} questions · ${info.timer} min</span>`;
     if (s.state === "soon") return `<div class="set-card soon">${head}<span class="sbadge soon">Coming soon</span></div>`;
     if (s.state === "login") return `<a class="set-card locked" href="login.html?next=${here}">${head}<span class="sbadge lock">🔒 Login to unlock</span></a>`;
     if (s.state === "locked") return `<div class="set-card locked">${head}<span class="sbadge lock">🔒 Locked</span><span class="muted" style="font-size:.8rem">Finish all ${prev} sets to unlock</span></div>`;

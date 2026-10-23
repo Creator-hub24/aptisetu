@@ -39,7 +39,7 @@ for(const W of [1280,390]){const p=await b.newPage({viewport:{width:W,height:W>5
  await c.clock.runFor(39*60*1000);const before=await c.$eval('#c-results',e=>e.classList.contains('hidden'));await c.clock.runFor(61*1000);
  ok('CAT sectional still running at 39 min, auto-submits at 40 min',before&&await c.$eval('#c-results',e=>!e.classList.contains('hidden')));await c.close()}
 {const c=await b.newPage({viewport:{width:390,height:844}});await c.goto(B+'login.html?mock=1');await c.evaluate(()=>sessionStorage.setItem('aptisetu.mock.user',JSON.stringify({id:'mock-t@x.in',email:'t@x.in'})));
- for(const [sec,n,m] of [['qa',1,20],['varc',6,20],['dilr',6,25]]){await c.goto(B+`set.html?sec=${sec}&set=${n}`,{waitUntil:'networkidle'});await c.waitForSelector('#c-start:not(.hidden)');
+ for(const [sec,n,m] of [['qa',1,20],['varc',1,20],['dilr',1,25]]){await c.goto(B+`set.html?sec=${sec}&set=${n}`,{waitUntil:'networkidle'});await c.waitForSelector('#c-start:not(.hidden)');
   const info=await c.textContent('#set-info');if(sec!='dilr')await c.screenshot({path:S+`timers-set-${sec}-start-390.png`});await c.click('#c-start');await c.waitForTimeout(400);const tm=(await c.textContent('#c-timer')).trim();
   if(sec=='qa')await c.screenshot({path:S+'timers-set-qa-clock-390.png'});
   ok(`${sec} set ${n}: ${m}-minute timer, clock ${m}:00`,info.includes(m+'-minute timer')&&new RegExp('\\b('+m+':00|'+(m-1)+':5\\d)').test(tm),tm);}
