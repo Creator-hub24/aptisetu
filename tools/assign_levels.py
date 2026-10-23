@@ -14,7 +14,7 @@ Rules
 Each question gets "level"; questions in a ready set also get "practiceSet" (int).
 Writes data/cat/sets.json: per section, the level ranges, the total slot count and the ready sets.
 """
-import json
+import json, os
 LEVELS = ("Easy", "Medium", "Hard"); SIZE = 10
 RANK = {l: i for i, l in enumerate(LEVELS)}
 SLOTS = {"qa": {"Easy": 5, "Medium": 8, "Hard": 5},
@@ -64,6 +64,10 @@ def pack(gs, limit):
     return ready, rest
 
 FILL = {"varc", "dilr"}   # fill every empty slot (see fill())
+# Former relative-easy fill of VARC/DILR sets 1-5, replaced by genuine Easy packs (practice-easy). Held in reserve
+# (never re-used by fill()), so the filled Medium/Hard sets 6-15 keep exactly the same content.
+RESERVE = {k: set(v) for k, v in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "cat", "level_reserve.json"))).items()
+           if not k.startswith("_")}
 
 def hardness(g): return sum(RANK[q["difficulty"]] for q in g) / len(g)
 
@@ -74,7 +78,7 @@ def fill(sec, questions, rep, start, slots):
     Sets made earlier keep their exact content. DILR: 2 data sets (4 or 5 questions each), VARC: exactly 10."""
     used = {i for lv in LEVELS for st in rep[lv]["ready"] for i in st["ids"]}
     free = [g for g in groups([q for q in questions if not (q.get("pack") or "").startswith("mock-")])
-            if not any(q["id"] in used for q in g)]
+            if not any(q["id"] in used or q["id"] in RESERVE.get(sec, ()) for q in g)]
     if sec == "dilr": free = [g for g in free if len(g) in (4, 5)]
     free.sort(key=hardness)
     for lv in LEVELS:
@@ -132,6 +136,7 @@ def assign(cat_out, path):
         if sec in FILL: fill(sec, s["questions"], rep, start, slots)
         rep["count"] = n0 - 1
         if sec == "dilr": rep["excludedDataSets"] = excluded
+        if sec in RESERVE: rep["reserveIds"] = sorted(RESERVE[sec])
     out = {"size": SIZE, "levels": list(LEVELS), "timers": {"qa": 20, "varc": 20, "dilr": 25}, "sections": report}
     json.dump(out, open(path, "w"), ensure_ascii=False, indent=1)
     for sec, rep in report.items():

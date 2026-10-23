@@ -1,0 +1,837 @@
+{
+ "name": "practice-easy — VARC",
+ "questions": [
+  {
+   "id": "EZV-01",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "According to the passage, why did local time cause problems for railways?",
+   "solution": "Paragraph 2 says the same train seemed to leave at odd times, passengers missed connections, and staff on single-track lines could put two engines on the same stretch. Option 1 is never said. Option 4 contradicts paragraph 1, where farmers did not care. Option 3 has no support.",
+   "set": "ez-rc1",
+   "type": "mcq",
+   "options": [
+    "Local clocks were usually broken and could not be repaired.",
+    "Stations in different towns showed different times, which confused timetables and endangered trains on shared track.",
+    "Astronomers would not allow towns to change their clocks.",
+    "Farmers refused to travel by train unless trains followed local time."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZV-02",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "Why were some public clocks fitted with two minute hands?",
+   "solution": "Paragraph 3 states it directly: one hand for local time and one for the railway. The other options are not mentioned.",
+   "set": "ez-rc1",
+   "type": "mcq",
+   "options": [
+    "To help the clock keep running if one hand broke.",
+    "To show both local time and railway time.",
+    "To mark the start and end of the working day.",
+    "To show the time in two different countries."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZV-03",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "Which of the following can be inferred from the final paragraph?",
+   "solution": "The last paragraph says the zones made clocks 'less faithful to the local sun' and the agreed time can be 'slightly wrong for the place'. So clock noon and solar noon can differ. Option 4 reverses this. Option 2 contradicts 'not handed down by astronomers'. Option 1 contradicts the whole passage.",
+   "set": "ez-rc1",
+   "type": "mcq",
+   "options": [
+    "Most people today still set their clocks by the local sun.",
+    "Astronomers invented time zones to improve scientific measurement.",
+    "A time zone may show noon slightly before or after the sun is actually highest at a given place.",
+    "Time zones were designed to make clocks match the sun more closely."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZV-04",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "Which of the following best captures the main idea of the passage?",
+   "solution": "The passage traces how faster rail travel forced towns to agree on one time, then zones, and ends by calling this a useful compromise. Option 3 picks one detail (safety) and adds 'poor engineering'. Option 2 is not claimed. Option 4 takes a position the author does not take.",
+   "set": "ez-rc1",
+   "type": "mcq",
+   "options": [
+    "Standard time was a practical agreement that faster travel made necessary, even though it departs from local solar time.",
+    "Britain was the first country in the world to build railways.",
+    "Railways were dangerous in the nineteenth century because of poor engineering.",
+    "Local solar time is more accurate than any other way of keeping time and should be restored."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "EZV-05",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Easy",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>However, only a small share are ever collected, because many owners assume the phone is gone for good.</li><li>Every year, thousands of people lose their phones on buses and trains.</li><li>Transport companies therefore now send a text message to the phone's emergency contact whenever a phone is found.</li><li>Most of these phones are handed in to a lost-property office by staff or other passengers.</li></ol>",
+   "solution": "Correct order 2413. Opener: the general fact about lost phones. 'These phones' must follow it. 'However, only a small share' contrasts with phones being handed in. 'Therefore' gives the response to owners not collecting them.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2413"
+  },
+  {
+   "id": "EZV-06",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Easy",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>Together, these features explain why honey found in very old jars can sometimes still be eaten.</li><li>Its high sugar content and low moisture leave little room for bacteria to grow.</li><li>Honey is one of the few foods that almost never spoils.</li><li>Bees also add an enzyme that produces small amounts of a natural disinfectant.</li></ol>",
+   "solution": "Correct order 3241. The claim comes first, then the first reason, then 'also' adds a second reason, and 'Together, these features' sums up.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "3241"
+  },
+  {
+   "id": "EZV-07",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Easy",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Bicycles take up far less road space than cars.</li><li>A single car lane can carry several times as many people when it is turned into a cycle lane.</li><li>Cities short of space have therefore started to see cycling as a way to move more people on the same roads.</li><li>The first bicycles had no pedals and were pushed along with the feet.</li><li>Safe, separated lanes are usually needed before many people will switch.</li></ol>",
+   "solution": "Sentence 4 is the odd one out. Sentences 1, 2, 4 and 5 argue that cycling saves road space and what cities need to do about it. The odd one is about early bicycle history, which is off-topic.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4"
+  },
+  {
+   "id": "EZV-08",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Easy",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Most people believe that they are better than average drivers. Since only half of all drivers can be above the median, many of these people must be wrong. Psychologists explain the belief by pointing out that we judge ourselves by our intentions but judge others by their actions. We know we meant to signal; we only see that the other driver did not.</p>",
+   "solution": "Option 2 keeps both the claim (people overrate themselves) and the explanation (intentions versus actions). Option 1 is not said. Option 3 picks up a side calculation. Option 4 misreads the example.",
+   "type": "mcq",
+   "options": [
+    "Most drivers are dangerous and should be retested.",
+    "People overrate their own driving partly because they judge themselves by intentions and others by actions.",
+    "Psychologists have proved that half of all drivers are below average.",
+    "Signalling is the most important driving skill."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZV-09",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Easy",
+   "question": "<p>There is a sentence or phrase missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Many workers now check email on their phones late into the evening. It feels efficient, because problems are dealt with quickly. ____ Some companies have therefore begun to switch off email servers at night, so that staff can rest properly.</p>",
+   "solution": "The blank must turn from 'feels efficient' to the problem that makes companies switch off servers 'therefore'. Only Option 4 gives that problem. The other options are off-topic.",
+   "type": "mcq",
+   "options": [
+    "Phones have become cheaper over the last decade.",
+    "Email was first used by scientists in the 1970s.",
+    "Many people prefer to write letters by hand.",
+    "Over time, however, never being fully off work can leave people tired and less productive."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZV-10",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Easy",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Queues at a supermarket often seem slowest when we are in them. One reason is that we notice when the line next to us moves ahead but forget the times our own line moved faster. Waiting also feels longer when we have nothing to do, which is why some shops place magazines and small items near the tills.</p>",
+   "solution": "Option 2 has both reasons. Option 4 is not stated. Option 1 is not claimed. Option 3 states as fact what the paragraph calls a perception.",
+   "type": "mcq",
+   "options": [
+    "Magazines are the most profitable items in supermarkets.",
+    "Our sense that our queue is slowest comes from selective memory, and idle waiting feels longer.",
+    "The queue next to us always moves faster.",
+    "Supermarkets deliberately make their queues slow."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZV-11",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "According to the passage, how do trees cool a street?",
+   "solution": "Paragraph 1 names the two ways: leaves block sunlight, and they release water vapour that removes heat as it evaporates. Option 3 mixes in a different benefit (dust) and noise is not mentioned. Options 4 and 2 are invented.",
+   "set": "ez-rc2",
+   "type": "mcq",
+   "options": [
+    "By blocking sunlight and releasing water vapour that carries heat away.",
+    "By drawing cool air up from underground pipes.",
+    "By absorbing traffic noise and dust.",
+    "By preventing people from walking on hot pavements."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "EZV-12",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "Which of the following is NOT mentioned as a difficulty faced by street trees?",
+   "solution": "Paragraph 3 mentions packed soil, lack of watering, cutting for wires and signs, and road widening. Pests and disease are never mentioned.",
+   "set": "ez-rc2",
+   "type": "mcq",
+   "options": [
+    "Attacks by insects and plant diseases.",
+    "Severe cutting when they grow into overhead wires.",
+    "Hard-packed soil under pavements.",
+    "Lack of watering in the first dry seasons."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "EZV-13",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "Why does the author say that the number of trees planted is 'a poor measure of success'?",
+   "solution": "Paragraph 4: a city that plants a thousand saplings and loses most of them achieves little; large old trees give many times the benefit. Option 4 contradicts paragraph 5 ('not especially costly'). Option 3 reverses the passage. Option 1 contradicts paragraph 2.",
+   "set": "ez-rc2",
+   "type": "mcq",
+   "options": [
+    "Because residents prefer streets without trees.",
+    "Because most of the benefit comes from trees that survive to maturity, and many saplings die.",
+    "Because young trees provide more shade than old ones.",
+    "Because planting trees is too expensive for most cities."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZV-14",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "The author's attitude towards tree-planting ceremonies can best be described as:",
+   "solution": "The author notes that trees 'planted with great ceremony' often die and contrasts long-term care with 'decorations to be added for a ribbon-cutting'. That is mild scepticism, not a call for a ban (Option 1) and not enthusiasm (Option 2). The author clearly has a view, so Option 3 is wrong.",
+   "set": "ez-rc2",
+   "type": "mcq",
+   "options": [
+    "strongly hostile, demanding that they be banned.",
+    "enthusiastic, seeing them as the key to green cities.",
+    "completely indifferent.",
+    "mildly sceptical, because ceremonies alone do not keep trees alive."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZV-15",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Easy",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>This was because films at the time had no recorded sound.</li><li>When films with sound arrived in the late 1920s, most of these musicians lost their jobs.</li><li>Many early cinemas employed a pianist who played along with the film.</li><li>Without the pianist, audiences would have watched every scene in near silence.</li></ol>",
+   "solution": "Correct order 3142. 'This was because' explains why the cinemas in the opening sentence employed a pianist. 'Without the pianist … near silence' follows from 'no recorded sound'. The arrival of sound and the loss of 'these musicians' jobs closes the paragraph.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "3142"
+  },
+  {
+   "id": "EZV-16",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Easy",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>A city in the hills once found that its water pipes were losing a third of their water to leaks.</li><li>The sensors pointed repair crews to the exact spots that needed work.</li><li>Within two years, the city was losing less than half as much water as before.</li><li>Instead of digging up every street, engineers fitted cheap sensors that listen for the sound of escaping water.</li></ol>",
+   "solution": "Correct order 1423. The problem comes first, then 'Instead of digging' gives the solution. 'The sensors' refers back to it, and the result comes last.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "1423"
+  },
+  {
+   "id": "EZV-17",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Easy",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Sleep helps the brain store what we learned during the day.</li><li>In experiments, people who slept after studying remembered more than those who stayed awake.</li><li>Some animals, such as dolphins, sleep with one half of the brain at a time.</li><li>This is why teachers warn against staying up all night before an exam.</li><li>A rested brain recalls information more easily than a tired one.</li></ol>",
+   "solution": "Sentence 3 is the odd one out. The paragraph is about sleep and memory for study. Dolphin sleep is an unrelated fact.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3"
+  },
+  {
+   "id": "EZV-18",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Easy",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Plastic was once praised as a wonder material because it is cheap, light and lasts for a very long time. The same durability is now its biggest problem. A plastic bag used for a few minutes may stay in the environment for centuries, breaking into smaller pieces but never truly disappearing.</p>",
+   "solution": "The paragraph turns on one irony: durability is both the virtue and the problem. Option 4 is an extreme the author does not state. Options 3 and 2 are details or overstatements.",
+   "type": "mcq",
+   "options": [
+    "The long life that made plastic useful also makes its waste a lasting problem.",
+    "Plastic is cheaper and lighter than all other materials.",
+    "Plastic bags are used for only a few minutes.",
+    "Plastic should never have been invented."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "EZV-19",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Easy",
+   "question": "<p>There is a sentence or phrase missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>A good map leaves things out. If every tree, lamp post and doorway were shown, the map would be too crowded to read. ____ A walking map, for instance, shows footpaths and hills, while a road map shows motorways and petrol stations.</p>",
+   "solution": "The next sentence gives examples ('for instance') of choosing details by purpose, so the blank must state that idea. Option 2 does. The others break the link.",
+   "type": "mcq",
+   "options": [
+    "Trees are difficult to draw accurately.",
+    "The mapmaker's skill lies in choosing what to include for the map's purpose.",
+    "Maps were first drawn on clay tablets.",
+    "Most people today use maps on their phones."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZV-20",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Easy",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Many people think of deserts as empty, but a desert can be full of life that is simply hard to see. Animals hide underground during the heat of the day and come out at night. Seeds can lie in the soil for years, waiting for rain, and then the ground can turn green within days.</p>",
+   "solution": "Option 3 restates the contrast between seeming empty and hidden life. Option 1 is not discussed. Option 2 merges the details about animals and seeds wrongly. Option 4 contradicts the paragraph.",
+   "type": "mcq",
+   "options": [
+    "Deserts are the hottest places on Earth.",
+    "Animals in deserts sleep for years until it rains.",
+    "Deserts seem empty, but much of their life is hidden or waiting for the right conditions.",
+    "It never rains in deserts."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZV-21",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "Why, according to the passage, did many people expect public libraries to disappear?",
+   "solution": "Paragraph 1: if any fact could be found on a phone in seconds, why visit a building full of books? Option 1 is not mentioned. Option 4 contradicts paragraph 4 on children's borrowing. Option 3 is not mentioned.",
+   "set": "ez-rc3",
+   "type": "mcq",
+   "options": [
+    "Because librarians were retiring and could not be replaced.",
+    "Because information could be found quickly on the internet.",
+    "Because books had become too expensive for libraries to buy.",
+    "Because children had stopped reading."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZV-22",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "Which of the following groups is NOT mentioned as using libraries?",
+   "solution": "Paragraph 2 lists students, elderly residents, parents with children and job seekers. Tourists are never mentioned.",
+   "set": "ez-rc3",
+   "type": "mcq",
+   "options": [
+    "Tourists looking for maps of the town.",
+    "Elderly residents looking for newspapers and company.",
+    "Students who need a quiet place to study.",
+    "Job seekers preparing applications."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "EZV-23",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "What does the author mean by calling the library 'the bridge' in the third paragraph?",
+   "solution": "The sentence comes right after describing people without a connection, a computer or confidence, and is followed by librarians helping with passwords and forms. The 'bridge' leads to online services. The other options are literal or unrelated readings.",
+   "set": "ez-rc3",
+   "type": "mcq",
+   "options": [
+    "Librarians act as translators between different languages.",
+    "Libraries link one town's book collection to another's.",
+    "Libraries are usually built near rivers.",
+    "The library connects people who lack internet access or skills to services that have moved online."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZV-24",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "Which of the following statements would the author most likely agree with?",
+   "solution": "The conclusion calls a library 'a shared room open to everyone'. Option 3 contradicts 'books remain central'. Option 4 contradicts the point about depending on public funding. Option 1 is the prediction the author rejects.",
+   "set": "ez-rc3",
+   "type": "mcq",
+   "options": [
+    "The internet has made libraries unnecessary for most people.",
+    "The usefulness of libraries comes largely from being free public spaces, not only from their books.",
+    "Libraries should stop lending books and focus only on computers.",
+    "Public libraries no longer need government funding."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZV-25",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Easy",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>Parents can find this tiring, especially at the end of a long day.</li><li>Children often ask 'why' many times in a row.</li><li>Answering patiently, or exploring the question together, helps that picture grow.</li><li>Yet researchers see these questions as a sign that a child is building a picture of how the world works.</li></ol>",
+   "solution": "Correct order 2143. The habit, then the parents' reaction to 'this', then 'Yet' gives the positive view, and 'that picture' refers back to it.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2143"
+  },
+  {
+   "id": "EZV-26",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Easy",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>As this liquid cools quickly, its particles do not have time to arrange themselves into crystals.</li><li>The result is a hard, clear material that lets light pass straight through.</li><li>When sand is heated to a very high temperature, it melts into a thick liquid.</li><li>Glass looks solid and still, but it is made from one of the most common materials on Earth: sand.</li></ol>",
+   "solution": "Correct order 4312. Material (sand), then heating, then cooling of 'this liquid', then 'The result'.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "4312"
+  },
+  {
+   "id": "EZV-27",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Easy",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Many villages now collect rainwater from rooftops.</li><li>The water is led through pipes into covered tanks.</li><li>During the dry months, families draw on this stored water for cleaning and gardening.</li><li>This reduces the pressure on wells that often run low before the monsoon.</li><li>Monsoon winds change direction with the seasons.</li></ol>",
+   "solution": "Sentence 5 is the odd one out. The four sentences describe rooftop rainwater collection and its benefit. The sentence explaining monsoon winds is about weather, not water storage.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5"
+  },
+  {
+   "id": "EZV-28",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Easy",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Learning a musical instrument as an adult is harder than as a child, but not for the reason people assume. Adults can learn new skills well. What they usually lack is time: a child may practise every day for years, while an adult fits in a few hours a week around work and family.</p>",
+   "solution": "Option 4 keeps the contrast: not ability but time. Option 2 contradicts 'Adults can learn new skills well'. Option 3 is the assumption the paragraph rejects. Option 1 is not said.",
+   "type": "mcq",
+   "options": [
+    "Everyone should learn an instrument as a child.",
+    "Adults cannot learn musical instruments.",
+    "Children are naturally more musical than adults.",
+    "Adults find instruments harder mainly because they have less time to practise, not because they cannot learn."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZV-29",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Easy",
+   "question": "<p>There is a sentence or phrase missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>When a new road is built to ease traffic, journeys often become faster for a while. Drivers notice this and some change their habits, choosing to drive instead of taking the train, or making extra trips. ____</p>",
+   "solution": "The paragraph describes more people driving because the road is faster. The natural conclusion is that congestion returns. Option 1 is an overstatement, and Options 4 and 2 are irrelevant.",
+   "type": "mcq",
+   "options": [
+    "Trains are always faster than cars.",
+    "Most drivers prefer quiet country roads.",
+    "Within a few years, the new road can become as crowded as the old ones.",
+    "Roads are usually built by private companies."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZV-30",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Easy",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Some schools have replaced end-of-year exams with projects that students complete over several weeks. Supporters say projects test skills that exams miss, such as planning, research and working with others. Critics reply that projects are harder to mark fairly, and that a student with help at home may gain an advantage.</p>",
+   "solution": "Option 1 gives both sides fairly. Option 2 overstates 'some schools'. Option 4 takes the critics' side as fact. Option 3 is not said.",
+   "type": "mcq",
+   "options": [
+    "Projects test a wider range of skills than exams but raise concerns about fair marking and outside help.",
+    "Projects have completely replaced exams in all schools.",
+    "Students prefer projects because they last several weeks.",
+    "Exams are the only fair way to assess students."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "EZV-31",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "According to the passage, why do some mangroves have breathing roots?",
+   "solution": "Paragraph 1 states that some send up breathing roots 'because the soil itself contains so little oxygen'. Option 3 contradicts 'salty' mud. Options 2 and 4 are invented.",
+   "set": "ez-rc4",
+   "type": "mcq",
+   "options": [
+    "Because the mud they grow in contains very little oxygen.",
+    "Because they need to catch insects for food.",
+    "Because they grow only in fresh water.",
+    "Because their leaves cannot absorb sunlight."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "EZV-32",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "Why were mangroves cleared in the past?",
+   "solution": "Paragraph 2: they were treated as wasteland and cleared for shrimp ponds, ports and housing. The other options are not stated, and Option 4 runs against paragraph 3's point that mangroves support fishing.",
+   "set": "ez-rc4",
+   "type": "mcq",
+   "options": [
+    "They were dying from disease and had to be removed.",
+    "They were seen as useless wasteland and the land was wanted for other purposes.",
+    "They were believed to cause storms.",
+    "Fishermen asked for them to be removed to reach the sea."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZV-33",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "Which of the following can be inferred from the passage?",
+   "solution": "Paragraph 3 says cutting mangroves can reduce fish catches 'far from the place where the trees once stood' and that mangroves protect villages further inland. Option 1 is the opposite. Option 4 contradicts paragraph 4 (the carbon is mostly in the mud). Option 3 contradicts paragraph 5.",
+   "set": "ez-rc4",
+   "type": "mcq",
+   "options": [
+    "Clearing mangroves affects only the land where the trees grew.",
+    "Destroying a mangrove forest can harm people who live and work some distance away from it.",
+    "Replanting seedlings anywhere on the shore always succeeds.",
+    "Mangroves store most of their carbon in their leaves."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZV-34",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "Which of the following would be the most suitable title for the passage?",
+   "solution": "The passage moves from mangroves being seen as wasteland to their value (coast protection, fish nurseries, carbon) and their protection today. Options 4 and 2 are passing details. Option 1 is outside the passage.",
+   "set": "ez-rc4",
+   "type": "mcq",
+   "options": [
+    "Why Beaches Are Disappearing Worldwide",
+    "The Problem of Mosquitoes in the Tropics",
+    "Mangroves: From Wasteland to Valued Coastal Protector",
+    "How to Build a Shrimp Farm"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZV-35",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Easy",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>In the past, sailors used the stars to find their way across open sea.</li><li>This is one reason why the invention of reliable instruments was such an important step for navigation.</li><li>Cloudy weather, however, could leave a ship with no way to check its position for days.</li><li>On a clear night, the height of certain stars above the horizon told them how far north or south they were.</li></ol>",
+   "solution": "Correct order 1432. General practice, then how it worked, then 'however' gives the weakness, and 'This is one reason' draws the conclusion.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "1432"
+  },
+  {
+   "id": "EZV-36",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Easy",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>As a result, the bakery wastes almost nothing and has gained new customers who come in early for a bargain.</li><li>A small bakery in our town began selling yesterday's bread at half price.</li><li>The discounted bread now sells out within an hour of opening.</li><li>The owner had been throwing away several loaves every evening.</li></ol>",
+   "solution": "Correct order 2431. The new practice, then the background reason (past perfect 'had been'), then the outcome, then 'As a result'.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2431"
+  },
+  {
+   "id": "EZV-37",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Easy",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Museums are putting more of their collections online.</li><li>Ticket prices at museums vary widely between countries.</li><li>High-quality photographs let people study objects that are too fragile to display.</li><li>Students in distant towns can now examine paintings they may never see in person.</li><li>Some museums report that online interest even encourages people to visit.</li></ol>",
+   "solution": "Sentence 2 is the odd one out. The topic is museum collections going online. Ticket prices are a different subject.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "2"
+  },
+  {
+   "id": "EZV-38",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Easy",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Weather forecasts are often blamed when it rains on a day that was predicted to be dry. But a forecast of a 30 per cent chance of rain does not promise a dry day; it means that on similar days it rains about three times in ten. Many complaints about forecasts come from reading probabilities as promises.</p>",
+   "solution": "The point is the misreading of probabilities. Option 3 is what complainers think, not the author. Option 2 misstates the example. Option 1 is not suggested.",
+   "type": "mcq",
+   "options": [
+    "Forecasters should stop using percentages.",
+    "It rains on three days out of every ten.",
+    "Weather forecasts are usually wrong.",
+    "Many complaints about forecasts arise from treating a stated probability as a guarantee."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZV-39",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Easy",
+   "question": "<p>There is a sentence or phrase missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Before refrigerators, people had many ways of keeping food from spoiling. Meat and fish were dried, salted or smoked. Fruit was boiled with sugar to make jam. ____ Many of these methods survive today, not because we need them, but because we enjoy the flavours they create.</p>",
+   "solution": "The blank continues the list of preserving methods before 'Many of these methods survive'. Option 4 adds another method. The others leave the topic of preserving food.",
+   "type": "mcq",
+   "options": [
+    "Supermarkets sell food from all over the world.",
+    "Refrigerators use a gas that absorbs heat.",
+    "Fish is a healthy source of protein.",
+    "Vegetables were pickled in vinegar or brine."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZV-40",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Easy",
+   "question": "<p>There is a sentence or phrase missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Libraries in some towns have started lending seeds. Members borrow a packet, grow vegetables or flowers, and at the end of the season ____ In this way the collection renews itself each year, and plants that grow well locally become more common.</p>",
+   "solution": "'In this way the collection renews itself' requires members to give seeds back. Only Option 3 does that. Options 4 and 1 are unrelated library ideas, and Option 2 would not renew the collection.",
+   "type": "mcq",
+   "options": [
+    "pay a fine for late returns.",
+    "throw away the plants they have grown.",
+    "return some seeds saved from their own plants.",
+    "buy new books from the library shop."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZV-41",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "According to the passage, what is 'redundancy' as engineers use the term?",
+   "solution": "Paragraph 1 defines it in these words. Option 3 is the opposite. Options 4 and 1 are other everyday meanings of the word, not the engineers' sense used here.",
+   "set": "ez-rc5",
+   "type": "mcq",
+   "options": [
+    "Repeating the same instruction several times.",
+    "Having more than one way of doing something important so that one failure does not stop everything.",
+    "Removing parts of a system that are rarely used.",
+    "Dismissing workers when a factory closes."
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZV-42",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "Which of the following is given as an example of redundancy in the passage?",
+   "solution": "Paragraph 2 lists hospital generators as redundancy. Options 2 and 3 are examples of cutting redundancy (paragraph 3). Option 1 describes the person who might call redundancy waste.",
+   "set": "ez-rc5",
+   "type": "mcq",
+   "options": [
+    "An accountant studying everyday costs.",
+    "A factory holding less stock in its warehouse.",
+    "A team in which everyone is fully busy.",
+    "A hospital keeping generators in case the power is cut."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZV-43",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "What point does the author make with the example of an untested spare generator?",
+   "solution": "Paragraph 4 uses the untested generator to show that one must check 'that the backup really works', and paragraph 5 repeats the point. The other options are either unsupported or contrary to the passage.",
+   "set": "ez-rc5",
+   "type": "mcq",
+   "options": [
+    "Generators are more reliable than spare keys.",
+    "Testing equipment is a waste of money.",
+    "Hospitals should not rely on generators at all.",
+    "A backup is useful only if it is kept in working order."
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZV-44",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "Which of the following best summarises the passage?",
+   "solution": "This combines the passage's main points: redundancy looks like waste (paragraphs 2 and 3), it protects against shocks, it should be chosen sensibly (paragraph 4), and it must be kept ready (paragraph 5). Option 3 is the temptation the author warns against. Option 4 is rejected in paragraph 4. Option 2 overstates the illustration.",
+   "set": "ez-rc5",
+   "type": "mcq",
+   "options": [
+    "Spare capacity can look wasteful in normal times but protects against failure, provided it is chosen sensibly and kept ready.",
+    "Spare keys are the most important safety measure in a household.",
+    "Organisations should always cut spare capacity to save money.",
+    "Every system should have as many backups as possible."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "EZV-45",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Easy",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>Then television companies began paying large sums to broadcast matches.</li><li>This shift explains why match times are now often set to suit television audiences rather than supporters in the stadium.</li><li>Football clubs once relied almost entirely on ticket sales for their income.</li><li>Today, for the biggest clubs, broadcasting money is worth far more than what fans pay at the gate.</li></ol>",
+   "solution": "Correct order 3142. Past, 'Then' gives the change, 'Today' the present situation, and 'This shift' its consequence.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "3142"
+  },
+  {
+   "id": "EZV-46",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Easy",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>This route is blocked when we have a cold, which is why food then seems to have little flavour.</li><li>Our sense of taste depends heavily on our sense of smell.</li><li>Cooks who understand this pay as much attention to the aroma of a dish as to its seasoning.</li><li>When we chew, smells from the food travel up the back of the throat to the nose.</li></ol>",
+   "solution": "Correct order 2413. Claim, then the mechanism (smells travel up the throat), then 'This route is blocked' needs that route to have been described, and 'Cooks who understand this' applies the whole idea.",
+   "type": "tita",
+   "kind": "sequence",
+   "answer": "2413"
+  },
+  {
+   "id": "EZV-47",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Easy",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Office chairs were first designed with wheels in the nineteenth century.</li><li>Walking meetings have become popular in some offices.</li><li>Instead of sitting around a table, two or three colleagues talk while walking outside.</li><li>Supporters say the movement helps people think more freely and keeps meetings short.</li><li>They work best for small groups and for conversations that do not need screens or documents.</li></ol>",
+   "solution": "Sentence 1 is the odd one out. The four sentences describe walking meetings. The history of office chairs does not belong.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1"
+  },
+  {
+   "id": "EZV-48",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Easy",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>In many cities, old factories and warehouses have been turned into flats, offices and galleries. The buildings were sturdy and had large open floors and big windows, which suit new uses well. Reusing them also keeps some of a neighbourhood's history visible, instead of replacing it with buildings that look the same everywhere.</p>",
+   "solution": "Option 3 covers both reasons (a practical design and kept history). Option 4 is extreme. Option 2 overstates. Option 1 contradicts 'big windows'.",
+   "type": "mcq",
+   "options": [
+    "Warehouses were built with small windows.",
+    "New buildings in cities all look exactly the same.",
+    "Old industrial buildings are being reused because their design suits new purposes and they preserve local character.",
+    "All factories should be turned into art galleries."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZV-49",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Easy",
+   "question": "<p>There is a sentence or phrase missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Bamboo is one of the fastest-growing plants in the world; some kinds can grow almost a metre in a single day. ____ This makes it a useful material for scaffolding, furniture and even houses in many parts of Asia.</p>",
+   "solution": "'This makes it a useful material for scaffolding … houses' needs a property tied to building. Strength for its weight (Option 3) does that, together with fast growth. The other options are true-sounding but unrelated to building.",
+   "type": "mcq",
+   "options": [
+    "Pandas eat large amounts of bamboo.",
+    "Bamboo grows in many colours.",
+    "It is also remarkably strong for its weight.",
+    "Bamboo flowers only once every few decades."
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZV-50",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Easy",
+   "question": "<p>There is a sentence or phrase missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>A sports coach once noticed that her team played worse after long training sessions than after short ones. She cut practice time by a third but made every session more focused. ____</p>",
+   "solution": "The paragraph sets up a change made for a reason, so the natural completion is its outcome (Option 2). The other options are irrelevant details.",
+   "type": "mcq",
+   "options": [
+    "She had played the same sport as a child.",
+    "The team's results improved over the following season.",
+    "Long sessions are popular in many other sports.",
+    "The team's uniforms were changed that year."
+   ],
+   "answer": 1
+  }
+ ],
+ "sets": {
+  "ez-rc1": {
+   "kind": "passage",
+   "title": "Passage: How railways set the clock",
+   "theme": "history",
+   "words": "415",
+   "html": "<b>Passage: How railways set the clock</b><p>Until the middle of the nineteenth century, every town kept its own time. Noon was the moment the sun stood highest over the local church or town hall, and clocks were set by it. Because the sun appears to move from east to west, a town a few hundred kilometres to the west reached noon several minutes later than its neighbour. For most people this hardly mattered. A farmer walking to market did not care whether his clock agreed with one in a distant city.</p><p>The railways changed that. A train could now cover in a morning a distance that once took days, and its timetable had to be read by passengers at many stations. If each station printed departures in its own local time, the same train seemed to leave at odd and confusing minutes, and travellers who changed lines often missed their connections. Worse, railway staff working on single-track lines relied on timetables to keep trains apart. A disagreement of a few minutes between two stations could put two engines on the same stretch of track.</p><p>Railway companies responded by choosing one time for the whole network, usually the time at a major city, and telling every station to follow it. In Britain this 'railway time' spread quickly in the 1840s, carried along the telegraph wires that ran beside the tracks. Some towns resisted at first. A few public clocks were fitted with two minute hands, one for local time and one for the railway, so that citizens could see what they were giving up. Within a generation, however, the convenience of a single time won, and the law eventually followed the practice.</p><p>Larger countries faced a harder problem, because one time across a whole continent would put noon in the middle of the night somewhere. The answer, agreed in stages during the late nineteenth century, was to divide the world into zones, each usually one hour apart. Inside a zone, clocks agree; crossing into the next zone, travellers simply move their watches forward or back by an hour.</p><p>Time zones now feel so natural that it is easy to forget they were invented for a practical reason. They were not handed down by astronomers seeking accuracy. If anything, they made clocks less faithful to the local sun. They were a compromise, accepted because a society that moves quickly needs its members to agree on what time it is, even if that agreed time is slightly wrong for the place where they stand.</p>"
+  },
+  "ez-rc2": {
+   "kind": "passage",
+   "title": "Passage: Trees on city streets",
+   "theme": "environment",
+   "words": "420",
+   "html": "<b>Passage: Trees on city streets</b><p>Walk down a city street on a hot afternoon and you can feel the difference a row of trees makes. Measurements in many cities show that shaded pavements can be several degrees cooler than exposed ones, and the air under a dense canopy is noticeably more comfortable. Trees cool a street in two ways. Their leaves block sunlight before it can heat the road and walls, and they release water vapour, which carries heat away as it evaporates.</p><p>The benefits do not stop at temperature. Tree roots and the soil around them soak up rainwater that would otherwise rush into drains, which helps during heavy storms. Leaves trap some dust from traffic. Studies of shopping streets have found that people tend to linger longer where there is greenery, which is good news for small shops. There is also evidence that residents of leafy neighbourhoods report less stress, though such findings are harder to measure precisely. Birds and insects also find food and shelter in street trees, so a well-planted avenue can link small parks into a chain of green space across the city.</p><p>Yet street trees lead difficult lives. Their roots are squeezed between pipes, cables and foundations, and the soil beneath a pavement is often packed so hard that water and air cannot reach them. Many young trees planted with great ceremony die within a few years because nobody waters them during their first dry seasons. Others are cut back severely when they grow into overhead wires or block shop signs. A tree that survives all this may still be removed when a road is widened.</p><p>For these reasons, experts increasingly argue that the number of trees planted is a poor measure of success. A city that plants a thousand saplings and loses most of them has achieved little. What matters is how many trees reach maturity, because a large old tree provides many times the shade and water absorption of a young one. This shifts attention from planting days to less glamorous work: preparing good soil pits, choosing species that suit local conditions, and paying crews to water and inspect trees for years afterwards.</p><p>None of this is especially costly compared with other city spending, but it requires patience. The rewards of a tree arrive slowly, often after the officials who planted it have left office. Cities that have built lasting canopies tend to be those that treated trees as long-term public infrastructure, like water pipes or roads, rather than as decorations to be added for a ribbon-cutting.</p>"
+  },
+  "ez-rc3": {
+   "kind": "passage",
+   "title": "Passage: What libraries are for now",
+   "theme": "society",
+   "words": "407",
+   "html": "<b>Passage: What libraries are for now</b><p>When home internet connections became common, many people predicted that public libraries would fade away. If any fact could be found on a phone in seconds, why would anyone visit a building full of books? Some local governments acted on this belief and cut library budgets, shortened opening hours or closed branches altogether. The prediction seemed reasonable. It turned out to misunderstand what libraries actually do.</p><p>Libraries have never been only stores of information. They are also among the few indoor public places where a person can stay for hours without being expected to buy anything. Students without a quiet room at home use them to study. Elderly residents come for newspapers and company. Parents bring small children to story sessions, often the child's first experience of a group activity outside the family. Job seekers use library computers and printers to prepare applications, and many people still need help from a librarian to fill in an online form. On a cold or very hot day, a library may also be the only comfortable public room nearby. For people living alone, a short conversation at the front desk can be the main social contact of the week.</p><p>In fact, the internet has created new reasons to visit. Government services, banking and even school homework have moved online, but not everyone has a reliable connection, a working computer or the confidence to use them. For these people the library is the bridge. Librarians in many towns report that they spend less time finding books and more time helping visitors with passwords, email accounts and digital forms.</p><p>Libraries that have thrived tend to be those that recognised this shift. They have rearranged their spaces, adding study rooms, meeting areas and workshops alongside the shelves. Some lend tools, musical instruments or laptops. Others host classes in everything from basic computing to tax filing. Books remain central, and borrowing figures for children's books in particular have held up well, but they are no longer the whole story.</p><p>None of this means that libraries are safe. They depend on public funding, and their benefits are spread across many people in small amounts, which makes them easy to cut when budgets are tight. But the early prediction of their disappearance was based on a narrow view of their purpose. A library is less a warehouse of books than a shared room open to everyone, and the need for such rooms has not gone away.</p>"
+  },
+  "ez-rc4": {
+   "kind": "passage",
+   "title": "Passage: The coast's living wall",
+   "theme": "ecology",
+   "words": "408",
+   "html": "<b>Passage: The coast's living wall</b><p>Along many tropical coasts, the boundary between land and sea is not a beach but a forest. Mangroves are trees that have adapted to grow in salty, waterlogged mud that would kill most plants. Some send up small breathing roots from the mud, because the soil itself contains so little oxygen. Others stand on arching roots that look like stilts, holding the trunk above the rising and falling tide. Twice a day, the sea flows in among their roots and drains out again. Their leaves can get rid of extra salt, and some species simply keep it out at the roots. These adaptations let mangroves live where few other trees can compete with them.</p><p>For a long time, mangroves were treated as wasteland. They were difficult to walk through, full of mosquitoes and of little obvious use, so they were cleared for shrimp ponds, ports and housing. Large areas disappeared in the second half of the twentieth century. Only gradually did people come to see what had been lost.</p><p>The tangled roots that make mangroves hard to cross are exactly what makes them valuable. They slow down waves and trap mud, so the coast behind them erodes more slowly. During storms, a wide belt of mangroves can reduce the height and force of the water that reaches villages further inland. The calm, shaded water among the roots is also a nursery for young fish, crabs and prawns, many of which later move out to sea, where fishermen catch them. In this way, cutting a mangrove forest can reduce fish catches far from the place where the trees once stood.</p><p>Mangroves also store large amounts of carbon, mostly in the deep mud beneath them rather than in the trees themselves. Because the mud is waterlogged, dead plant material breaks down very slowly and can stay buried for centuries. When mangroves are cleared and the mud dries out, much of this carbon is released into the air.</p><p>Many countries now protect their remaining mangroves and try to replant lost ones. Replanting has had mixed results. Seedlings placed in the wrong part of the shore, where the tide is too deep or too shallow, often die. The most successful projects tend to start by restoring the natural flow of water, after which mangroves often return on their own. The lesson is a familiar one in conservation: it is usually easier and cheaper to keep a healthy ecosystem than to rebuild one.</p>"
+  },
+  "ez-rc5": {
+   "kind": "passage",
+   "title": "Passage: Why we keep a spare key",
+   "theme": "psychology",
+   "words": "400",
+   "html": "<b>Passage: Why we keep a spare key</b><p>Most households keep a spare key somewhere: with a neighbour, under a flowerpot, or in a drawer at a relative's house. The spare is rarely used. Yet people who lose their only key, and spend an evening waiting for a locksmith, tend to make a spare the very next day. The spare key is a small example of a larger idea that engineers call redundancy: having more than one way of doing something important, so that a single failure does not stop everything.</p><p>Redundancy is everywhere in systems that must not fail. Aircraft have more than one engine and several independent ways of controlling the wings. Hospitals keep generators in case the electricity supply is cut. Large websites copy their data onto machines in different cities. In each case, the extra part sits idle most of the time, and an accountant looking only at everyday costs might call it waste. The value of the spare shows only in the rare moment when the main part fails. Then the backup takes over, often so smoothly that passengers, patients or users never notice that anything went wrong.</p><p>That is exactly the temptation organisations face. When budgets are tight, spare capacity is an easy target. A factory can save money by holding less stock in its warehouse and relying on deliveries arriving just in time. A team can work with no extra staff, so that everyone is fully busy. In normal times these choices look efficient. The cost appears only when something goes wrong: a delivery is delayed, a worker falls ill, and there is nothing in reserve to absorb the shock.</p><p>This does not mean that more redundancy is always better. Every spare costs money, takes space and must be maintained. A spare generator that has never been tested may fail on the one day it is needed. The skill lies in deciding which failures would be serious enough to justify a backup, and in checking that the backup really works.</p><p>The spare key captures this balance well. It is cheap, and the trouble it saves is large, so almost everyone agrees it is worth having. But it only helps if someone remembers where it is and if it still fits the lock. Good redundancy, in a household or a hospital, is not just a matter of owning a spare. It means keeping that spare ready for the day it is needed.</p>"
+  }
+ }
+}

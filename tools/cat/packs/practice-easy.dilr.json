@@ -1,0 +1,857 @@
+{
+ "name": "practice-easy — DILR",
+ "questions": [
+  {
+   "id": "EZ-ROW1-01",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "Who is in bay 2?",
+   "solution": "Step 1: use \"Bina's colour is white.\" — this fixes: Bina's colour is white. Step 2: use \"Chetan's colour is red.\" — this fixes: Chetan's colour is red. Step 3: use \"Arun's colour is grey.\" — this fixes: Arun's colour is grey. Step 4: use \"Deepa is immediately to the left of Arun.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Arun is immediately to the left of Esha.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"The colour in bay 2 is blue.\" — this fixes: Deepa's colour is blue; Esha's colour is black; Arun is in bay 3; Deepa is in bay 2; Esha is in bay 4. Step 7: use \"Bina is not in bay 1.\" — this fixes: Bina is in bay 5; Chetan is in bay 1. Final arrangement: bay 1: Chetan (red); bay 2: Deepa (blue); bay 3: Arun (grey); bay 4: Esha (black); bay 5: Bina (white). Reading off: Deepa.",
+   "set": "ez-row1",
+   "type": "mcq",
+   "options": [
+    "Deepa",
+    "Esha",
+    "Arun",
+    "Chetan"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "EZ-ROW1-02",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "What is Deepa's colour?",
+   "solution": "Step 1: use \"Bina's colour is white.\" — this fixes: Bina's colour is white. Step 2: use \"Chetan's colour is red.\" — this fixes: Chetan's colour is red. Step 3: use \"Arun's colour is grey.\" — this fixes: Arun's colour is grey. Step 4: use \"Deepa is immediately to the left of Arun.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Arun is immediately to the left of Esha.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"The colour in bay 2 is blue.\" — this fixes: Deepa's colour is blue; Esha's colour is black; Arun is in bay 3; Deepa is in bay 2; Esha is in bay 4. Step 7: use \"Bina is not in bay 1.\" — this fixes: Bina is in bay 5; Chetan is in bay 1. Final arrangement: bay 1: Chetan (red); bay 2: Deepa (blue); bay 3: Arun (grey); bay 4: Esha (black); bay 5: Bina (white). Reading off: blue.",
+   "set": "ez-row1",
+   "type": "mcq",
+   "options": [
+    "white",
+    "black",
+    "grey",
+    "blue"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZ-ROW1-03",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "In which bay is the person whose colour is white?",
+   "solution": "Step 1: use \"Bina's colour is white.\" — this fixes: Bina's colour is white. Step 2: use \"Chetan's colour is red.\" — this fixes: Chetan's colour is red. Step 3: use \"Arun's colour is grey.\" — this fixes: Arun's colour is grey. Step 4: use \"Deepa is immediately to the left of Arun.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Arun is immediately to the left of Esha.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"The colour in bay 2 is blue.\" — this fixes: Deepa's colour is blue; Esha's colour is black; Arun is in bay 3; Deepa is in bay 2; Esha is in bay 4. Step 7: use \"Bina is not in bay 1.\" — this fixes: Bina is in bay 5; Chetan is in bay 1. Final arrangement: bay 1: Chetan (red); bay 2: Deepa (blue); bay 3: Arun (grey); bay 4: Esha (black); bay 5: Bina (white). Reading off: 5.",
+   "set": "ez-row1",
+   "type": "mcq",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZ-ROW1-04",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "How many of the five are in a bay strictly between Deepa and Esha?",
+   "solution": "Step 1: use \"Bina's colour is white.\" — this fixes: Bina's colour is white. Step 2: use \"Chetan's colour is red.\" — this fixes: Chetan's colour is red. Step 3: use \"Arun's colour is grey.\" — this fixes: Arun's colour is grey. Step 4: use \"Deepa is immediately to the left of Arun.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Arun is immediately to the left of Esha.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"The colour in bay 2 is blue.\" — this fixes: Deepa's colour is blue; Esha's colour is black; Arun is in bay 3; Deepa is in bay 2; Esha is in bay 4. Step 7: use \"Bina is not in bay 1.\" — this fixes: Bina is in bay 5; Chetan is in bay 1. Final arrangement: bay 1: Chetan (red); bay 2: Deepa (blue); bay 3: Arun (grey); bay 4: Esha (black); bay 5: Bina (white). Reading off: 1.",
+   "set": "ez-row1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1"
+  },
+  {
+   "id": "EZ-ROW1-05",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "What is the colour of the person in bay 2?",
+   "solution": "Step 1: use \"Bina's colour is white.\" — this fixes: Bina's colour is white. Step 2: use \"Chetan's colour is red.\" — this fixes: Chetan's colour is red. Step 3: use \"Arun's colour is grey.\" — this fixes: Arun's colour is grey. Step 4: use \"Deepa is immediately to the left of Arun.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Arun is immediately to the left of Esha.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"The colour in bay 2 is blue.\" — this fixes: Deepa's colour is blue; Esha's colour is black; Arun is in bay 3; Deepa is in bay 2; Esha is in bay 4. Step 7: use \"Bina is not in bay 1.\" — this fixes: Bina is in bay 5; Chetan is in bay 1. Final arrangement: bay 1: Chetan (red); bay 2: Deepa (blue); bay 3: Arun (grey); bay 4: Esha (black); bay 5: Bina (white). Reading off: blue.",
+   "set": "ez-row1",
+   "type": "mcq",
+   "options": [
+    "blue",
+    "grey",
+    "red",
+    "black"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "EZ-ROW2-01",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "Who is at position 4?",
+   "solution": "Step 1: use \"Harsh's city is Pune.\" — this fixes: Harsh's city is Pune. Step 2: use \"Farhan's city is Agra.\" — this fixes: Farhan's city is Agra. Step 3: use \"Jai is not at position 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Gita is not at position 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"The city at position 3 is Kochi.\" — this fixes: Isha's city is Kochi; Isha is at position 3. Step 6: use \"Isha is immediately before Gita.\" — this fixes: Gita is at position 4. Step 7: use \"The city at position 1 is Patna.\" — this fixes: Gita's city is Surat; Jai's city is Patna; Jai is at position 1. Step 8: use \"Farhan is not at position 5.\" — this fixes: Farhan is at position 2; Harsh is at position 5. Final arrangement: position 1: Jai (Patna); position 2: Farhan (Agra); position 3: Isha (Kochi); position 4: Gita (Surat); position 5: Harsh (Pune). Reading off: Gita.",
+   "set": "ez-row2",
+   "type": "mcq",
+   "options": [
+    "Harsh",
+    "Jai",
+    "Gita",
+    "Farhan"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZ-ROW2-02",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "What is Farhan's city?",
+   "solution": "Step 1: use \"Harsh's city is Pune.\" — this fixes: Harsh's city is Pune. Step 2: use \"Farhan's city is Agra.\" — this fixes: Farhan's city is Agra. Step 3: use \"Jai is not at position 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Gita is not at position 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"The city at position 3 is Kochi.\" — this fixes: Isha's city is Kochi; Isha is at position 3. Step 6: use \"Isha is immediately before Gita.\" — this fixes: Gita is at position 4. Step 7: use \"The city at position 1 is Patna.\" — this fixes: Gita's city is Surat; Jai's city is Patna; Jai is at position 1. Step 8: use \"Farhan is not at position 5.\" — this fixes: Farhan is at position 2; Harsh is at position 5. Final arrangement: position 1: Jai (Patna); position 2: Farhan (Agra); position 3: Isha (Kochi); position 4: Gita (Surat); position 5: Harsh (Pune). Reading off: Agra.",
+   "set": "ez-row2",
+   "type": "mcq",
+   "options": [
+    "Patna",
+    "Pune",
+    "Agra",
+    "Kochi"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZ-ROW2-03",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "In which position is the person whose city is Patna?",
+   "solution": "Step 1: use \"Harsh's city is Pune.\" — this fixes: Harsh's city is Pune. Step 2: use \"Farhan's city is Agra.\" — this fixes: Farhan's city is Agra. Step 3: use \"Jai is not at position 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Gita is not at position 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"The city at position 3 is Kochi.\" — this fixes: Isha's city is Kochi; Isha is at position 3. Step 6: use \"Isha is immediately before Gita.\" — this fixes: Gita is at position 4. Step 7: use \"The city at position 1 is Patna.\" — this fixes: Gita's city is Surat; Jai's city is Patna; Jai is at position 1. Step 8: use \"Farhan is not at position 5.\" — this fixes: Farhan is at position 2; Harsh is at position 5. Final arrangement: position 1: Jai (Patna); position 2: Farhan (Agra); position 3: Isha (Kochi); position 4: Gita (Surat); position 5: Harsh (Pune). Reading off: 1.",
+   "set": "ez-row2",
+   "type": "mcq",
+   "options": [
+    "1",
+    "2",
+    "5",
+    "4"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "EZ-ROW2-04",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "How many of the five are at a position strictly between Jai and Harsh?",
+   "solution": "Step 1: use \"Harsh's city is Pune.\" — this fixes: Harsh's city is Pune. Step 2: use \"Farhan's city is Agra.\" — this fixes: Farhan's city is Agra. Step 3: use \"Jai is not at position 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Gita is not at position 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"The city at position 3 is Kochi.\" — this fixes: Isha's city is Kochi; Isha is at position 3. Step 6: use \"Isha is immediately before Gita.\" — this fixes: Gita is at position 4. Step 7: use \"The city at position 1 is Patna.\" — this fixes: Gita's city is Surat; Jai's city is Patna; Jai is at position 1. Step 8: use \"Farhan is not at position 5.\" — this fixes: Farhan is at position 2; Harsh is at position 5. Final arrangement: position 1: Jai (Patna); position 2: Farhan (Agra); position 3: Isha (Kochi); position 4: Gita (Surat); position 5: Harsh (Pune). Reading off: 3.",
+   "set": "ez-row2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3"
+  },
+  {
+   "id": "EZ-ROW2-05",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "What is the city of the person at position 2?",
+   "solution": "Step 1: use \"Harsh's city is Pune.\" — this fixes: Harsh's city is Pune. Step 2: use \"Farhan's city is Agra.\" — this fixes: Farhan's city is Agra. Step 3: use \"Jai is not at position 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Gita is not at position 3.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"The city at position 3 is Kochi.\" — this fixes: Isha's city is Kochi; Isha is at position 3. Step 6: use \"Isha is immediately before Gita.\" — this fixes: Gita is at position 4. Step 7: use \"The city at position 1 is Patna.\" — this fixes: Gita's city is Surat; Jai's city is Patna; Jai is at position 1. Step 8: use \"Farhan is not at position 5.\" — this fixes: Farhan is at position 2; Harsh is at position 5. Final arrangement: position 1: Jai (Patna); position 2: Farhan (Agra); position 3: Isha (Kochi); position 4: Gita (Surat); position 5: Harsh (Pune). Reading off: Agra.",
+   "set": "ez-row2",
+   "type": "mcq",
+   "options": [
+    "Surat",
+    "Pune",
+    "Kochi",
+    "Agra"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZ-ROW3-01",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "Who is in shop 5?",
+   "solution": "Step 1: use \"Kabir's item is shoes.\" — this fixes: Kabir's item is shoes. Step 2: use \"Om's item is books.\" — this fixes: Om's item is books. Step 3: use \"Manoj's item is toys.\" — this fixes: Manoj's item is toys. Step 4: use \"The item in shop 4 is shoes.\" — this fixes: Kabir is in shop 4. Step 5: use \"Neha is immediately west of Kabir.\" — this fixes: Neha is in shop 3. Step 6: use \"The item in shop 1 is tea.\" — this fixes: Lata's item is tea; Neha's item is bread; Lata is in shop 1. Step 7: use \"Manoj is not in shop 2.\" — this fixes: Manoj is in shop 5; Om is in shop 2. Final arrangement: shop 1: Lata (tea); shop 2: Om (books); shop 3: Neha (bread); shop 4: Kabir (shoes); shop 5: Manoj (toys). Reading off: Manoj.",
+   "set": "ez-row3",
+   "type": "mcq",
+   "options": [
+    "Kabir",
+    "Manoj",
+    "Om",
+    "Neha"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZ-ROW3-02",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "What is Neha's item?",
+   "solution": "Step 1: use \"Kabir's item is shoes.\" — this fixes: Kabir's item is shoes. Step 2: use \"Om's item is books.\" — this fixes: Om's item is books. Step 3: use \"Manoj's item is toys.\" — this fixes: Manoj's item is toys. Step 4: use \"The item in shop 4 is shoes.\" — this fixes: Kabir is in shop 4. Step 5: use \"Neha is immediately west of Kabir.\" — this fixes: Neha is in shop 3. Step 6: use \"The item in shop 1 is tea.\" — this fixes: Lata's item is tea; Neha's item is bread; Lata is in shop 1. Step 7: use \"Manoj is not in shop 2.\" — this fixes: Manoj is in shop 5; Om is in shop 2. Final arrangement: shop 1: Lata (tea); shop 2: Om (books); shop 3: Neha (bread); shop 4: Kabir (shoes); shop 5: Manoj (toys). Reading off: bread.",
+   "set": "ez-row3",
+   "type": "mcq",
+   "options": [
+    "toys",
+    "books",
+    "tea",
+    "bread"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZ-ROW3-03",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "In which shop is the person whose item is books?",
+   "solution": "Step 1: use \"Kabir's item is shoes.\" — this fixes: Kabir's item is shoes. Step 2: use \"Om's item is books.\" — this fixes: Om's item is books. Step 3: use \"Manoj's item is toys.\" — this fixes: Manoj's item is toys. Step 4: use \"The item in shop 4 is shoes.\" — this fixes: Kabir is in shop 4. Step 5: use \"Neha is immediately west of Kabir.\" — this fixes: Neha is in shop 3. Step 6: use \"The item in shop 1 is tea.\" — this fixes: Lata's item is tea; Neha's item is bread; Lata is in shop 1. Step 7: use \"Manoj is not in shop 2.\" — this fixes: Manoj is in shop 5; Om is in shop 2. Final arrangement: shop 1: Lata (tea); shop 2: Om (books); shop 3: Neha (bread); shop 4: Kabir (shoes); shop 5: Manoj (toys). Reading off: 2.",
+   "set": "ez-row3",
+   "type": "mcq",
+   "options": [
+    "3",
+    "5",
+    "1",
+    "2"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZ-ROW3-04",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "How many of the five are in a shop strictly between Neha and Lata?",
+   "solution": "Step 1: use \"Kabir's item is shoes.\" — this fixes: Kabir's item is shoes. Step 2: use \"Om's item is books.\" — this fixes: Om's item is books. Step 3: use \"Manoj's item is toys.\" — this fixes: Manoj's item is toys. Step 4: use \"The item in shop 4 is shoes.\" — this fixes: Kabir is in shop 4. Step 5: use \"Neha is immediately west of Kabir.\" — this fixes: Neha is in shop 3. Step 6: use \"The item in shop 1 is tea.\" — this fixes: Lata's item is tea; Neha's item is bread; Lata is in shop 1. Step 7: use \"Manoj is not in shop 2.\" — this fixes: Manoj is in shop 5; Om is in shop 2. Final arrangement: shop 1: Lata (tea); shop 2: Om (books); shop 3: Neha (bread); shop 4: Kabir (shoes); shop 5: Manoj (toys). Reading off: 1.",
+   "set": "ez-row3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1"
+  },
+  {
+   "id": "EZ-ROW3-05",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Arrangements",
+   "difficulty": "Easy",
+   "question": "What is the item of the person in shop 2?",
+   "solution": "Step 1: use \"Kabir's item is shoes.\" — this fixes: Kabir's item is shoes. Step 2: use \"Om's item is books.\" — this fixes: Om's item is books. Step 3: use \"Manoj's item is toys.\" — this fixes: Manoj's item is toys. Step 4: use \"The item in shop 4 is shoes.\" — this fixes: Kabir is in shop 4. Step 5: use \"Neha is immediately west of Kabir.\" — this fixes: Neha is in shop 3. Step 6: use \"The item in shop 1 is tea.\" — this fixes: Lata's item is tea; Neha's item is bread; Lata is in shop 1. Step 7: use \"Manoj is not in shop 2.\" — this fixes: Manoj is in shop 5; Om is in shop 2. Final arrangement: shop 1: Lata (tea); shop 2: Om (books); shop 3: Neha (bread); shop 4: Kabir (shoes); shop 5: Manoj (toys). Reading off: books.",
+   "set": "ez-row3",
+   "type": "mcq",
+   "options": [
+    "bread",
+    "shoes",
+    "books",
+    "tea"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZ-SCHED1-01",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Scheduling",
+   "difficulty": "Easy",
+   "question": "Who is on Day 3?",
+   "solution": "Step 1: use \"Pooja's subject is Excel.\" — this fixes: Pooja's subject is Excel. Step 2: use \"Ritu's subject is design.\" — this fixes: Ritu's subject is design. Step 3: use \"The subject on Day 3 is coding.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Tara is not on Day 1.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Tara is immediately before Pooja.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"The subject on Day 4 is writing.\" — this fixes: Tara's subject is writing; Pooja is on Day 5; Tara is on Day 4. Step 7: use \"Sahil is immediately before Qadir.\" — this fixes: Qadir's subject is coding; Sahil's subject is sales; Qadir is on Day 3; Ritu is on Day 1; Sahil is on Day 2. Final arrangement: Day 1: Ritu (design); Day 2: Sahil (sales); Day 3: Qadir (coding); Day 4: Tara (writing); Day 5: Pooja (Excel). Reading off: Qadir.",
+   "set": "ez-sched1",
+   "type": "mcq",
+   "options": [
+    "Sahil",
+    "Pooja",
+    "Qadir",
+    "Tara"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZ-SCHED1-02",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Scheduling",
+   "difficulty": "Easy",
+   "question": "What is Ritu's subject?",
+   "solution": "Step 1: use \"Pooja's subject is Excel.\" — this fixes: Pooja's subject is Excel. Step 2: use \"Ritu's subject is design.\" — this fixes: Ritu's subject is design. Step 3: use \"The subject on Day 3 is coding.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Tara is not on Day 1.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Tara is immediately before Pooja.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"The subject on Day 4 is writing.\" — this fixes: Tara's subject is writing; Pooja is on Day 5; Tara is on Day 4. Step 7: use \"Sahil is immediately before Qadir.\" — this fixes: Qadir's subject is coding; Sahil's subject is sales; Qadir is on Day 3; Ritu is on Day 1; Sahil is on Day 2. Final arrangement: Day 1: Ritu (design); Day 2: Sahil (sales); Day 3: Qadir (coding); Day 4: Tara (writing); Day 5: Pooja (Excel). Reading off: design.",
+   "set": "ez-sched1",
+   "type": "mcq",
+   "options": [
+    "coding",
+    "Excel",
+    "writing",
+    "design"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZ-SCHED1-03",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Scheduling",
+   "difficulty": "Easy",
+   "question": "On which day is the writing workshop held?",
+   "solution": "Step 1: use \"Pooja's subject is Excel.\" — this fixes: Pooja's subject is Excel. Step 2: use \"Ritu's subject is design.\" — this fixes: Ritu's subject is design. Step 3: use \"The subject on Day 3 is coding.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Tara is not on Day 1.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Tara is immediately before Pooja.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"The subject on Day 4 is writing.\" — this fixes: Tara's subject is writing; Pooja is on Day 5; Tara is on Day 4. Step 7: use \"Sahil is immediately before Qadir.\" — this fixes: Qadir's subject is coding; Sahil's subject is sales; Qadir is on Day 3; Ritu is on Day 1; Sahil is on Day 2. Final arrangement: Day 1: Ritu (design); Day 2: Sahil (sales); Day 3: Qadir (coding); Day 4: Tara (writing); Day 5: Pooja (Excel). Reading off: 4.",
+   "set": "ez-sched1",
+   "type": "mcq",
+   "options": [
+    "1",
+    "4",
+    "5",
+    "3"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZ-SCHED1-04",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Scheduling",
+   "difficulty": "Easy",
+   "question": "How many of the five are on a day strictly between Qadir and Tara?",
+   "solution": "Step 1: use \"Pooja's subject is Excel.\" — this fixes: Pooja's subject is Excel. Step 2: use \"Ritu's subject is design.\" — this fixes: Ritu's subject is design. Step 3: use \"The subject on Day 3 is coding.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Tara is not on Day 1.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Tara is immediately before Pooja.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"The subject on Day 4 is writing.\" — this fixes: Tara's subject is writing; Pooja is on Day 5; Tara is on Day 4. Step 7: use \"Sahil is immediately before Qadir.\" — this fixes: Qadir's subject is coding; Sahil's subject is sales; Qadir is on Day 3; Ritu is on Day 1; Sahil is on Day 2. Final arrangement: Day 1: Ritu (design); Day 2: Sahil (sales); Day 3: Qadir (coding); Day 4: Tara (writing); Day 5: Pooja (Excel). Reading off: 0.",
+   "set": "ez-sched1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "0"
+  },
+  {
+   "id": "EZ-SCHED1-05",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Scheduling",
+   "difficulty": "Easy",
+   "question": "What is the subject of the person on Day 2?",
+   "solution": "Step 1: use \"Pooja's subject is Excel.\" — this fixes: Pooja's subject is Excel. Step 2: use \"Ritu's subject is design.\" — this fixes: Ritu's subject is design. Step 3: use \"The subject on Day 3 is coding.\" — nothing is fixed outright yet, but it removes options needed later. Step 4: use \"Tara is not on Day 1.\" — nothing is fixed outright yet, but it removes options needed later. Step 5: use \"Tara is immediately before Pooja.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"The subject on Day 4 is writing.\" — this fixes: Tara's subject is writing; Pooja is on Day 5; Tara is on Day 4. Step 7: use \"Sahil is immediately before Qadir.\" — this fixes: Qadir's subject is coding; Sahil's subject is sales; Qadir is on Day 3; Ritu is on Day 1; Sahil is on Day 2. Final arrangement: Day 1: Ritu (design); Day 2: Sahil (sales); Day 3: Qadir (coding); Day 4: Tara (writing); Day 5: Pooja (Excel). Reading off: sales.",
+   "set": "ez-sched1",
+   "type": "mcq",
+   "options": [
+    "design",
+    "sales",
+    "Excel",
+    "writing"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZ-SCHED2-01",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Scheduling",
+   "difficulty": "Easy",
+   "question": "Who is on Day 3?",
+   "solution": "Step 1: use \"Zubin's ward is Ward A.\" — this fixes: Zubin's ward is A. Step 2: use \"The ward on Day 5 is Ward A.\" — this fixes: Zubin is on Day 5. Step 3: use \"Wasim's ward is Ward E.\" — this fixes: Wasim's ward is E. Step 4: use \"Uma's ward is Ward D.\" — this fixes: Uma's ward is D. Step 5: use \"Varun is immediately before Uma.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Wasim is not on Day 2.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Wasim is not on Day 1.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"The ward on Day 3 is Ward C.\" — this fixes: Varun's ward is B; Yamini's ward is C; Uma is on Day 2; Varun is on Day 1; Wasim is on Day 4; Yamini is on Day 3. Final arrangement: Day 1: Varun (B); Day 2: Uma (D); Day 3: Yamini (C); Day 4: Wasim (E); Day 5: Zubin (A). Reading off: Yamini.",
+   "set": "ez-sched2",
+   "type": "mcq",
+   "options": [
+    "Uma",
+    "Wasim",
+    "Varun",
+    "Yamini"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZ-SCHED2-02",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Scheduling",
+   "difficulty": "Easy",
+   "question": "What is Wasim's ward?",
+   "solution": "Step 1: use \"Zubin's ward is Ward A.\" — this fixes: Zubin's ward is A. Step 2: use \"The ward on Day 5 is Ward A.\" — this fixes: Zubin is on Day 5. Step 3: use \"Wasim's ward is Ward E.\" — this fixes: Wasim's ward is E. Step 4: use \"Uma's ward is Ward D.\" — this fixes: Uma's ward is D. Step 5: use \"Varun is immediately before Uma.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Wasim is not on Day 2.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Wasim is not on Day 1.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"The ward on Day 3 is Ward C.\" — this fixes: Varun's ward is B; Yamini's ward is C; Uma is on Day 2; Varun is on Day 1; Wasim is on Day 4; Yamini is on Day 3. Final arrangement: Day 1: Varun (B); Day 2: Uma (D); Day 3: Yamini (C); Day 4: Wasim (E); Day 5: Zubin (A). Reading off: Ward E.",
+   "set": "ez-sched2",
+   "type": "mcq",
+   "options": [
+    "Ward E",
+    "Ward C",
+    "Ward A",
+    "Ward D"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "EZ-SCHED2-03",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Scheduling",
+   "difficulty": "Easy",
+   "question": "On which day is the doctor of Ward C on duty?",
+   "solution": "Step 1: use \"Zubin's ward is Ward A.\" — this fixes: Zubin's ward is A. Step 2: use \"The ward on Day 5 is Ward A.\" — this fixes: Zubin is on Day 5. Step 3: use \"Wasim's ward is Ward E.\" — this fixes: Wasim's ward is E. Step 4: use \"Uma's ward is Ward D.\" — this fixes: Uma's ward is D. Step 5: use \"Varun is immediately before Uma.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Wasim is not on Day 2.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Wasim is not on Day 1.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"The ward on Day 3 is Ward C.\" — this fixes: Varun's ward is B; Yamini's ward is C; Uma is on Day 2; Varun is on Day 1; Wasim is on Day 4; Yamini is on Day 3. Final arrangement: Day 1: Varun (B); Day 2: Uma (D); Day 3: Yamini (C); Day 4: Wasim (E); Day 5: Zubin (A). Reading off: 3.",
+   "set": "ez-sched2",
+   "type": "mcq",
+   "options": [
+    "4",
+    "2",
+    "3",
+    "5"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZ-SCHED2-04",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Scheduling",
+   "difficulty": "Easy",
+   "question": "How many of the five are on a day strictly between Uma and Yamini?",
+   "solution": "Step 1: use \"Zubin's ward is Ward A.\" — this fixes: Zubin's ward is A. Step 2: use \"The ward on Day 5 is Ward A.\" — this fixes: Zubin is on Day 5. Step 3: use \"Wasim's ward is Ward E.\" — this fixes: Wasim's ward is E. Step 4: use \"Uma's ward is Ward D.\" — this fixes: Uma's ward is D. Step 5: use \"Varun is immediately before Uma.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Wasim is not on Day 2.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Wasim is not on Day 1.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"The ward on Day 3 is Ward C.\" — this fixes: Varun's ward is B; Yamini's ward is C; Uma is on Day 2; Varun is on Day 1; Wasim is on Day 4; Yamini is on Day 3. Final arrangement: Day 1: Varun (B); Day 2: Uma (D); Day 3: Yamini (C); Day 4: Wasim (E); Day 5: Zubin (A). Reading off: 0.",
+   "set": "ez-sched2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "0"
+  },
+  {
+   "id": "EZ-SCHED2-05",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Scheduling",
+   "difficulty": "Easy",
+   "question": "What is the ward of the doctor on Day 4?",
+   "solution": "Step 1: use \"Zubin's ward is Ward A.\" — this fixes: Zubin's ward is A. Step 2: use \"The ward on Day 5 is Ward A.\" — this fixes: Zubin is on Day 5. Step 3: use \"Wasim's ward is Ward E.\" — this fixes: Wasim's ward is E. Step 4: use \"Uma's ward is Ward D.\" — this fixes: Uma's ward is D. Step 5: use \"Varun is immediately before Uma.\" — nothing is fixed outright yet, but it removes options needed later. Step 6: use \"Wasim is not on Day 2.\" — nothing is fixed outright yet, but it removes options needed later. Step 7: use \"Wasim is not on Day 1.\" — nothing is fixed outright yet, but it removes options needed later. Step 8: use \"The ward on Day 3 is Ward C.\" — this fixes: Varun's ward is B; Yamini's ward is C; Uma is on Day 2; Varun is on Day 1; Wasim is on Day 4; Yamini is on Day 3. Final arrangement: Day 1: Varun (B); Day 2: Uma (D); Day 3: Yamini (C); Day 4: Wasim (E); Day 5: Zubin (A). Reading off: Ward E.",
+   "set": "ez-sched2",
+   "type": "mcq",
+   "options": [
+    "Ward B",
+    "Ward E",
+    "Ward D",
+    "Ward A"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "EZ-TAB1-01",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "Which of the following had the highest value in 2024?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): North, 2025 = row total 60 − (39 + 6) = 15; South, 2023 = row total 70 − (25 + 14) = 31; East, 2023 = row total 81 − (16 + 33) = 32; West, 2025 = row total 65 − (30 + 23) = 12. Step 2: check against the column totals: 2023 = 163, 2024 = 102, 2025 = 86 (all match). Step 3: compare the five values in that column. Answer: Central.",
+   "set": "ez-tab1",
+   "type": "mcq",
+   "options": [
+    "West",
+    "South",
+    "North",
+    "Central"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZ-TAB1-02",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "What is the missing value for West in 2025?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): North, 2025 = row total 60 − (39 + 6) = 15; South, 2023 = row total 70 − (25 + 14) = 31; East, 2023 = row total 81 − (16 + 33) = 32; West, 2025 = row total 65 − (30 + 23) = 12. Step 2: check against the column totals: 2023 = 163, 2024 = 102, 2025 = 86 (all match). Step 3: this is one of the blanks filled in Step 1. Answer: 12.",
+   "set": "ez-tab1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "12"
+  },
+  {
+   "id": "EZ-TAB1-03",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "By how much did South change from 2023 to 2025? Enter the increase (use a minus sign for a decrease).",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): North, 2025 = row total 60 − (39 + 6) = 15; South, 2023 = row total 70 − (25 + 14) = 31; East, 2023 = row total 81 − (16 + 33) = 32; West, 2025 = row total 65 − (30 + 23) = 12. Step 2: check against the column totals: 2023 = 163, 2024 = 102, 2025 = 86 (all match). Step 3: subtract the first period from the last. Answer: -17.",
+   "set": "ez-tab1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "-17"
+  },
+  {
+   "id": "EZ-TAB1-04",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "For how many of the five is the three-period total at least 70?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): North, 2025 = row total 60 − (39 + 6) = 15; South, 2023 = row total 70 − (25 + 14) = 31; East, 2023 = row total 81 − (16 + 33) = 32; West, 2025 = row total 65 − (30 + 23) = 12. Step 2: check against the column totals: 2023 = 163, 2024 = 102, 2025 = 86 (all match). Step 3: compare each row total with the threshold. Answer: 3.",
+   "set": "ez-tab1",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3"
+  },
+  {
+   "id": "EZ-TAB1-05",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "Which period had the largest column total?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): North, 2025 = row total 60 − (39 + 6) = 15; South, 2023 = row total 70 − (25 + 14) = 31; East, 2023 = row total 81 − (16 + 33) = 32; West, 2025 = row total 65 − (30 + 23) = 12. Step 2: check against the column totals: 2023 = 163, 2024 = 102, 2025 = 86 (all match). Step 3: compare the three column totals. Answer: 2023.",
+   "set": "ez-tab1",
+   "type": "mcq",
+   "options": [
+    "All three periods are equal",
+    "2024",
+    "2023",
+    "2025"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZ-TAB2-01",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "Which of the following had the highest value in Class X?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Maths, Class XII = row total 58 − (37 + 16) = 5; Physics, Class XII = row total 62 − (8 + 26) = 28; Chemistry, Class XI = row total 88 − (30 + 39) = 19; Biology, Class X = row total 77 − (20 + 30) = 27. Step 2: check against the column totals: Class X = 127, Class XI = 90, Class XII = 121 (all match). Step 3: compare the five values in that column. Answer: Maths.",
+   "set": "ez-tab2",
+   "type": "mcq",
+   "options": [
+    "Chemistry",
+    "English",
+    "Maths",
+    "Physics"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZ-TAB2-02",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "What is the missing value for Maths in Class XII?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Maths, Class XII = row total 58 − (37 + 16) = 5; Physics, Class XII = row total 62 − (8 + 26) = 28; Chemistry, Class XI = row total 88 − (30 + 39) = 19; Biology, Class X = row total 77 − (20 + 30) = 27. Step 2: check against the column totals: Class X = 127, Class XI = 90, Class XII = 121 (all match). Step 3: this is one of the blanks filled in Step 1. Answer: 5.",
+   "set": "ez-tab2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5"
+  },
+  {
+   "id": "EZ-TAB2-03",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "By how much did Physics change from Class X to Class XII? Enter the increase (use a minus sign for a decrease).",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Maths, Class XII = row total 58 − (37 + 16) = 5; Physics, Class XII = row total 62 − (8 + 26) = 28; Chemistry, Class XI = row total 88 − (30 + 39) = 19; Biology, Class X = row total 77 − (20 + 30) = 27. Step 2: check against the column totals: Class X = 127, Class XI = 90, Class XII = 121 (all match). Step 3: subtract the first period from the last. Answer: 20.",
+   "set": "ez-tab2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "20"
+  },
+  {
+   "id": "EZ-TAB2-04",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "For how many of the five is the three-period total at least 62?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Maths, Class XII = row total 58 − (37 + 16) = 5; Physics, Class XII = row total 62 − (8 + 26) = 28; Chemistry, Class XI = row total 88 − (30 + 39) = 19; Biology, Class X = row total 77 − (20 + 30) = 27. Step 2: check against the column totals: Class X = 127, Class XI = 90, Class XII = 121 (all match). Step 3: compare each row total with the threshold. Answer: 3.",
+   "set": "ez-tab2",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3"
+  },
+  {
+   "id": "EZ-TAB2-05",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "Which period had the largest column total?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Maths, Class XII = row total 58 − (37 + 16) = 5; Physics, Class XII = row total 62 − (8 + 26) = 28; Chemistry, Class XI = row total 88 − (30 + 39) = 19; Biology, Class X = row total 77 − (20 + 30) = 27. Step 2: check against the column totals: Class X = 127, Class XI = 90, Class XII = 121 (all match). Step 3: compare the three column totals. Answer: Class X.",
+   "set": "ez-tab2",
+   "type": "mcq",
+   "options": [
+    "Class XI",
+    "Class XII",
+    "All three periods are equal",
+    "Class X"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZ-TAB3-01",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "Which of the following had the highest value in Mar?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Rice, Mar = row total 60 − (37 + 6) = 17; Wheat, Mar = row total 37 − (5 + 9) = 23; Sugar, Jan = row total 45 − (22 + 10) = 13; Oil, Feb = row total 30 − (4 + 18) = 8. Step 2: check against the column totals: Jan = 87, Feb = 67, Mar = 73 (all match). Step 3: compare the five values in that column. Answer: Wheat.",
+   "set": "ez-tab3",
+   "type": "mcq",
+   "options": [
+    "Pulses",
+    "Rice",
+    "Sugar",
+    "Wheat"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZ-TAB3-02",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "What is the missing value for Rice in Mar?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Rice, Mar = row total 60 − (37 + 6) = 17; Wheat, Mar = row total 37 − (5 + 9) = 23; Sugar, Jan = row total 45 − (22 + 10) = 13; Oil, Feb = row total 30 − (4 + 18) = 8. Step 2: check against the column totals: Jan = 87, Feb = 67, Mar = 73 (all match). Step 3: this is one of the blanks filled in Step 1. Answer: 17.",
+   "set": "ez-tab3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "17"
+  },
+  {
+   "id": "EZ-TAB3-03",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "By how much did Oil change from Jan to Mar? Enter the increase (use a minus sign for a decrease).",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Rice, Mar = row total 60 − (37 + 6) = 17; Wheat, Mar = row total 37 − (5 + 9) = 23; Sugar, Jan = row total 45 − (22 + 10) = 13; Oil, Feb = row total 30 − (4 + 18) = 8. Step 2: check against the column totals: Jan = 87, Feb = 67, Mar = 73 (all match). Step 3: subtract the first period from the last. Answer: 14.",
+   "set": "ez-tab3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "14"
+  },
+  {
+   "id": "EZ-TAB3-04",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "For how many of the five is the three-period total at least 45?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Rice, Mar = row total 60 − (37 + 6) = 17; Wheat, Mar = row total 37 − (5 + 9) = 23; Sugar, Jan = row total 45 − (22 + 10) = 13; Oil, Feb = row total 30 − (4 + 18) = 8. Step 2: check against the column totals: Jan = 87, Feb = 67, Mar = 73 (all match). Step 3: compare each row total with the threshold. Answer: 3.",
+   "set": "ez-tab3",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3"
+  },
+  {
+   "id": "EZ-TAB3-05",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "Which period had the largest column total?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Rice, Mar = row total 60 − (37 + 6) = 17; Wheat, Mar = row total 37 − (5 + 9) = 23; Sugar, Jan = row total 45 − (22 + 10) = 13; Oil, Feb = row total 30 − (4 + 18) = 8. Step 2: check against the column totals: Jan = 87, Feb = 67, Mar = 73 (all match). Step 3: compare the three column totals. Answer: Jan.",
+   "set": "ez-tab3",
+   "type": "mcq",
+   "options": [
+    "All three periods are equal",
+    "Feb",
+    "Jan",
+    "Mar"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZ-TAB4-01",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "Which of the following had the highest value in Round 1?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Team P, Round 3 = row total 108 − (39 + 36) = 33; Team R, Round 2 = row total 68 − (6 + 33) = 29; Team S, Round 1 = row total 85 − (36 + 39) = 10; Team T, Round 2 = row total 44 − (11 + 24) = 9. Step 2: check against the column totals: Round 1 = 80, Round 2 = 136, Round 3 = 134 (all match). Step 3: compare the five values in that column. Answer: Team P.",
+   "set": "ez-tab4",
+   "type": "mcq",
+   "options": [
+    "Team Q",
+    "Team T",
+    "Team P",
+    "Team R"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "EZ-TAB4-02",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "What is the missing value for Team P in Round 3?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Team P, Round 3 = row total 108 − (39 + 36) = 33; Team R, Round 2 = row total 68 − (6 + 33) = 29; Team S, Round 1 = row total 85 − (36 + 39) = 10; Team T, Round 2 = row total 44 − (11 + 24) = 9. Step 2: check against the column totals: Round 1 = 80, Round 2 = 136, Round 3 = 134 (all match). Step 3: this is one of the blanks filled in Step 1. Answer: 33.",
+   "set": "ez-tab4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "33"
+  },
+  {
+   "id": "EZ-TAB4-03",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "By how much did Team S change from Round 1 to Round 3? Enter the increase (use a minus sign for a decrease).",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Team P, Round 3 = row total 108 − (39 + 36) = 33; Team R, Round 2 = row total 68 − (6 + 33) = 29; Team S, Round 1 = row total 85 − (36 + 39) = 10; Team T, Round 2 = row total 44 − (11 + 24) = 9. Step 2: check against the column totals: Round 1 = 80, Round 2 = 136, Round 3 = 134 (all match). Step 3: subtract the first period from the last. Answer: 29.",
+   "set": "ez-tab4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "29"
+  },
+  {
+   "id": "EZ-TAB4-04",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "For how many of the five is the three-period total at least 68?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Team P, Round 3 = row total 108 − (39 + 36) = 33; Team R, Round 2 = row total 68 − (6 + 33) = 29; Team S, Round 1 = row total 85 − (36 + 39) = 10; Team T, Round 2 = row total 44 − (11 + 24) = 9. Step 2: check against the column totals: Round 1 = 80, Round 2 = 136, Round 3 = 134 (all match). Step 3: compare each row total with the threshold. Answer: 3.",
+   "set": "ez-tab4",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3"
+  },
+  {
+   "id": "EZ-TAB4-05",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "Which period had the largest column total?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Team P, Round 3 = row total 108 − (39 + 36) = 33; Team R, Round 2 = row total 68 − (6 + 33) = 29; Team S, Round 1 = row total 85 − (36 + 39) = 10; Team T, Round 2 = row total 44 − (11 + 24) = 9. Step 2: check against the column totals: Round 1 = 80, Round 2 = 136, Round 3 = 134 (all match). Step 3: compare the three column totals. Answer: Round 2.",
+   "set": "ez-tab4",
+   "type": "mcq",
+   "options": [
+    "All three periods are equal",
+    "Round 3",
+    "Round 1",
+    "Round 2"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZ-TAB5-01",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "Which of the following had the highest value in Saturday?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Hall A, Sunday = row total 51 − (21 + 22) = 8; Hall B, Friday = row total 82 − (7 + 36) = 39; Hall D, Saturday = row total 37 − (27 + 5) = 5; Hall E, Saturday = row total 93 − (33 + 39) = 21. Step 2: check against the column totals: Friday = 133, Saturday = 91, Sunday = 114 (all match). Step 3: compare the five values in that column. Answer: Hall C.",
+   "set": "ez-tab5",
+   "type": "mcq",
+   "options": [
+    "Hall E",
+    "Hall D",
+    "Hall B",
+    "Hall C"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "EZ-TAB5-02",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "What is the missing value for Hall B in Friday?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Hall A, Sunday = row total 51 − (21 + 22) = 8; Hall B, Friday = row total 82 − (7 + 36) = 39; Hall D, Saturday = row total 37 − (27 + 5) = 5; Hall E, Saturday = row total 93 − (33 + 39) = 21. Step 2: check against the column totals: Friday = 133, Saturday = 91, Sunday = 114 (all match). Step 3: this is one of the blanks filled in Step 1. Answer: 39.",
+   "set": "ez-tab5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "39"
+  },
+  {
+   "id": "EZ-TAB5-03",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "By how much did Hall C change from Friday to Sunday? Enter the increase (use a minus sign for a decrease).",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Hall A, Sunday = row total 51 − (21 + 22) = 8; Hall B, Friday = row total 82 − (7 + 36) = 39; Hall D, Saturday = row total 37 − (27 + 5) = 5; Hall E, Saturday = row total 93 − (33 + 39) = 21. Step 2: check against the column totals: Friday = 133, Saturday = 91, Sunday = 114 (all match). Step 3: subtract the first period from the last. Answer: 13.",
+   "set": "ez-tab5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "13"
+  },
+  {
+   "id": "EZ-TAB5-04",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "For how many of the five is the three-period total at least 75?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Hall A, Sunday = row total 51 − (21 + 22) = 8; Hall B, Friday = row total 82 − (7 + 36) = 39; Hall D, Saturday = row total 37 − (27 + 5) = 5; Hall E, Saturday = row total 93 − (33 + 39) = 21. Step 2: check against the column totals: Friday = 133, Saturday = 91, Sunday = 114 (all match). Step 3: compare each row total with the threshold. Answer: 3.",
+   "set": "ez-tab5",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3"
+  },
+  {
+   "id": "EZ-TAB5-05",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Easy",
+   "question": "Which period had the largest column total?",
+   "solution": "Step 1: fill the blanks from the row totals (each row has one blank): Hall A, Sunday = row total 51 − (21 + 22) = 8; Hall B, Friday = row total 82 − (7 + 36) = 39; Hall D, Saturday = row total 37 − (27 + 5) = 5; Hall E, Saturday = row total 93 − (33 + 39) = 21. Step 2: check against the column totals: Friday = 133, Saturday = 91, Sunday = 114 (all match). Step 3: compare the three column totals. Answer: Friday.",
+   "set": "ez-tab5",
+   "type": "mcq",
+   "options": [
+    "Saturday",
+    "All three periods are equal",
+    "Friday",
+    "Sunday"
+   ],
+   "answer": 2
+  }
+ ],
+ "sets": {
+  "ez-row1": {
+   "kind": "dilr",
+   "title": "Arrangement (Easy)",
+   "html": "<b>Arrangement</b><p>Five friends, Arun, Bina, Chetan, Deepa and Esha, park their cars in a row of five bays numbered 1 to 5 from left to right, one car per bay. Each car is a different colour: red, blue, white, black and grey.</p><p>The following is known:</p><ul class='clues'><li>Bina's colour is white.</li><li>Deepa is immediately to the left of Arun.</li><li>Chetan's colour is red.</li><li>Arun is immediately to the left of Esha.</li><li>Bina is not in bay 1.</li><li>The colour in bay 2 is blue.</li><li>Arun's colour is grey.</li></ul>"
+  },
+  "ez-row2": {
+   "kind": "dilr",
+   "title": "Arrangement (Easy)",
+   "html": "<b>Arrangement</b><p>Five students, Farhan, Gita, Harsh, Isha and Jai, stand in a queue at positions 1 to 5 (position 1 is the front). Each holds a ticket for a different city: Pune, Kochi, Agra, Surat and Patna.</p><p>The following is known:</p><ul class='clues'><li>Jai is not at position 3.</li><li>Harsh's city is Pune.</li><li>Gita is not at position 3.</li><li>The city at position 3 is Kochi.</li><li>Farhan is not at position 5.</li><li>The city at position 1 is Patna.</li><li>Isha is immediately before Gita.</li><li>Farhan's city is Agra.</li></ul>"
+  },
+  "ez-row3": {
+   "kind": "dilr",
+   "title": "Arrangement (Easy)",
+   "html": "<b>Arrangement</b><p>Five shops in a lane are numbered 1 to 5 from west to east. They are run by Kabir, Lata, Manoj, Neha and Om, one each, and each sells a different item: tea, books, shoes, toys and bread.</p><p>The following is known:</p><ul class='clues'><li>Neha is immediately west of Kabir.</li><li>Kabir's item is shoes.</li><li>Om's item is books.</li><li>Manoj's item is toys.</li><li>Manoj is not in shop 2.</li><li>The item in shop 1 is tea.</li><li>The item in shop 4 is shoes.</li></ul>"
+  },
+  "ez-sched1": {
+   "kind": "dilr",
+   "title": "Scheduling (Easy)",
+   "html": "<b>Scheduling</b><p>Five trainers, Pooja, Qadir, Ritu, Sahil and Tara, each run one workshop on a different day of a week, Day 1 (Monday) to Day 5 (Friday). Each workshop is on a different subject: Excel, design, sales, writing and coding.</p><p>The following is known:</p><ul class='clues'><li>The subject on Day 3 is coding.</li><li>Tara is not on Day 1.</li><li>Pooja's subject is Excel.</li><li>Tara is immediately before Pooja.</li><li>Sahil is immediately before Qadir.</li><li>The subject on Day 4 is writing.</li><li>Ritu's subject is design.</li></ul>"
+  },
+  "ez-sched2": {
+   "kind": "dilr",
+   "title": "Scheduling (Easy)",
+   "html": "<b>Scheduling</b><p>A clinic has five doctors, Uma, Varun, Wasim, Yamini and Zubin, each on duty on exactly one of five consecutive days, Day 1 to Day 5, one doctor per day. Each doctor works in a different ward: Wards A, B, C, D and E.</p><p>The following is known:</p><ul class='clues'><li>Varun is immediately before Uma.</li><li>Zubin's ward is Ward A.</li><li>Wasim is not on Day 2.</li><li>Wasim is not on Day 1.</li><li>The ward on Day 5 is Ward A.</li><li>Wasim's ward is Ward E.</li><li>The ward on Day 3 is Ward C.</li><li>Uma's ward is Ward D.</li></ul>"
+  },
+  "ez-tab1": {
+   "kind": "dilr",
+   "title": "Table with missing data (Easy)",
+   "html": "<b>Table with missing data</b><p>The table shows the number of scooters (in hundreds) sold by a dealer network in five zones over three years. Some entries are missing; the row totals and column totals are complete.</p><table class='data'><tr><th></th><th>2023</th><th>2024</th><th>2025</th><th>Total</th></tr><tr><td>North</td><td>39</td><td>6</td><td class='miss'>?</td><td>60</td></tr><tr><td>South</td><td class='miss'>?</td><td>25</td><td>14</td><td>70</td></tr><tr><td>East</td><td class='miss'>?</td><td>16</td><td>33</td><td>81</td></tr><tr><td>West</td><td>30</td><td>23</td><td class='miss'>?</td><td>65</td></tr><tr><td>Central</td><td>31</td><td>32</td><td>12</td><td>75</td></tr><tr><td>Total</td><td>163</td><td>102</td><td>86</td><td>351</td></tr></table><p>All values are whole numbers; units: hundred scooters.</p>"
+  },
+  "ez-tab2": {
+   "kind": "dilr",
+   "title": "Table with missing data (Easy)",
+   "html": "<b>Table with missing data</b><p>The table shows the number of students who chose each subject as an elective in three classes of a school. Some entries are missing; the row totals and column totals are complete.</p><table class='data'><tr><th></th><th>Class X</th><th>Class XI</th><th>Class XII</th><th>Total</th></tr><tr><td>Maths</td><td>37</td><td>16</td><td class='miss'>?</td><td>58</td></tr><tr><td>Physics</td><td>8</td><td>26</td><td class='miss'>?</td><td>62</td></tr><tr><td>Chemistry</td><td>30</td><td class='miss'>?</td><td>39</td><td>88</td></tr><tr><td>Biology</td><td class='miss'>?</td><td>20</td><td>30</td><td>77</td></tr><tr><td>English</td><td>25</td><td>9</td><td>19</td><td>53</td></tr><tr><td>Total</td><td>127</td><td>90</td><td>121</td><td>338</td></tr></table><p>All values are whole numbers; units: students.</p>"
+  },
+  "ez-tab3": {
+   "kind": "dilr",
+   "title": "Table with missing data (Easy)",
+   "html": "<b>Table with missing data</b><p>The table shows the stock (in tonnes) received by a warehouse for five goods over three months. Some entries are missing; the row totals and column totals are complete.</p><table class='data'><tr><th></th><th>Jan</th><th>Feb</th><th>Mar</th><th>Total</th></tr><tr><td>Rice</td><td>37</td><td>6</td><td class='miss'>?</td><td>60</td></tr><tr><td>Wheat</td><td>5</td><td>9</td><td class='miss'>?</td><td>37</td></tr><tr><td>Pulses</td><td>28</td><td>22</td><td>5</td><td>55</td></tr><tr><td>Sugar</td><td class='miss'>?</td><td>22</td><td>10</td><td>45</td></tr><tr><td>Oil</td><td>4</td><td class='miss'>?</td><td>18</td><td>30</td></tr><tr><td>Total</td><td>87</td><td>67</td><td>73</td><td>227</td></tr></table><p>All values are whole numbers; units: tonnes.</p>"
+  },
+  "ez-tab4": {
+   "kind": "dilr",
+   "title": "Table with missing data (Easy)",
+   "html": "<b>Table with missing data</b><p>The table shows the points scored by five teams in three rounds of a quiz. Some entries are missing; the row totals and column totals are complete.</p><table class='data'><tr><th></th><th>Round 1</th><th>Round 2</th><th>Round 3</th><th>Total</th></tr><tr><td>Team P</td><td>39</td><td>36</td><td class='miss'>?</td><td>108</td></tr><tr><td>Team Q</td><td>14</td><td>26</td><td>5</td><td>45</td></tr><tr><td>Team R</td><td>6</td><td class='miss'>?</td><td>33</td><td>68</td></tr><tr><td>Team S</td><td class='miss'>?</td><td>36</td><td>39</td><td>85</td></tr><tr><td>Team T</td><td>11</td><td class='miss'>?</td><td>24</td><td>44</td></tr><tr><td>Total</td><td>80</td><td>136</td><td>134</td><td>350</td></tr></table><p>All values are whole numbers; units: points.</p>"
+  },
+  "ez-tab5": {
+   "kind": "dilr",
+   "title": "Table with missing data (Easy)",
+   "html": "<b>Table with missing data</b><p>The table shows the number of tickets (in tens) sold for five halls of a cinema over a weekend. Some entries are missing; the row totals and column totals are complete.</p><table class='data'><tr><th></th><th>Friday</th><th>Saturday</th><th>Sunday</th><th>Total</th></tr><tr><td>Hall A</td><td>21</td><td>22</td><td class='miss'>?</td><td>51</td></tr><tr><td>Hall B</td><td class='miss'>?</td><td>7</td><td>36</td><td>82</td></tr><tr><td>Hall C</td><td>13</td><td>36</td><td>26</td><td>75</td></tr><tr><td>Hall D</td><td>27</td><td class='miss'>?</td><td>5</td><td>37</td></tr><tr><td>Hall E</td><td>33</td><td class='miss'>?</td><td>39</td><td>93</td></tr><tr><td>Total</td><td>133</td><td>91</td><td>114</td><td>338</td></tr></table><p>All values are whole numbers; units: tens of tickets.</p>"
+  }
+ }
+}
