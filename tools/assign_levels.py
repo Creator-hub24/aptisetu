@@ -67,8 +67,10 @@ def assign(cat_out, path):
     report = {}
     for sec, s in cat_out["sections"].items():
         for q in s["questions"]:
-            if q.get("pack"): q["level"] = q["difficulty"]   # fixed packs: own level, never in levelled sets
-        gs = groups([q for q in s["questions"] if not q.get("pack")]); rep = report[sec] = {}
+            if q.get("pack"): q["level"] = q["difficulty"]; q.pop("practiceSet", None)   # fixed packs: own level
+        # mock/sectional packs never enter levelled sets; practice-* packs fill the remaining slots (after the
+        # original bank in bank order, so earlier sets keep their exact content)
+        gs = groups([q for q in s["questions"] if not q.get("pack") or q["pack"].startswith("practice-")]); rep = report[sec] = {}
         slots = SLOTS[sec]; start, n0 = {}, 1
         for lv in LEVELS: start[lv] = n0; n0 += slots[lv]
         for g in gs:

@@ -1,5 +1,5 @@
 // CAT practice sets: status of each set (ready / locked / done) and the hub pages.
-// Unlock rule: Easy is open (guests: only Easy set 1). A level unlocks once every READY set of the previous level
+// Unlock rule: Easy is open (guests: only the first ready set). A level unlocks once every READY set of the previous level
 // is completed; if the previous level has no ready sets, it counts as complete (otherwise VARC/DILR, which have no
 // Easy sets yet, could never unlock Medium). Completion comes only from the user's set_progress rows (Supabase).
 // This is a UI gate only: the question files are public.
@@ -23,12 +23,14 @@
       const P = LEVELS[i - 1];
       unlocked[L] = unlocked[P] && readyBy[P].every(n => done[n]);
     });
+    // guests get the first ready set of the section (Easy 1 for Quant; VARC/DILR have no Easy sets yet)
+    const guestSet = Math.min(...LEVELS.flatMap(L => readyBy[L]));
     const sets = [];
     for (let n = 1; n <= lv.count; n++) {
       const L = levelOf(n), ready = readyBy[L].includes(n);
       let st;
       if (!ready) st = "soon";
-      else if (!user) st = L === "Easy" && n === 1 ? (done[n] ? "done" : "open") : "login";
+      else if (!user) st = n === guestSet ? (done[n] ? "done" : "open") : "login";
       else if (!unlocked[L]) st = "locked";
       else st = done[n] ? "done" : "open";
       sets.push({ n, level: L, state: st, row: done[n] || null });
@@ -51,7 +53,7 @@
     const sec = el.dataset.sec;
     try {
       const info = await status(sec);
-      el.innerHTML = (info.user ? "" : `<div class="notice">You're browsing as a guest: Easy set 1 is open. <a href="login.html?next=${encodeURIComponent(location.pathname.split("/").pop())}">Login</a> to save progress and unlock levels.</div>`) +
+      el.innerHTML = (info.user ? "" : `<div class="notice">You're browsing as a guest: set ${info.sets.find(s => s.state === "open" || s.state === "done")?.n ?? 1} is open. <a href="login.html?next=${encodeURIComponent(location.pathname.split("/").pop())}">Login</a> to save progress and unlock levels.</div>`) +
         LEVELS.map(L => {
           const n = info.readyBy[L].length, lock = info.user && !info.unlocked[L];
           return `<div class="level-head"><h2>${L}</h2><span class="muted">Sets ${info.range[L][0]}–${info.range[L][1]} · ${n ? n + " ready" : "coming soon"}${lock ? " · 🔒 locked" : ""}</span></div>

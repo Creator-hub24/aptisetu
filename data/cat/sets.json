@@ -45,17 +45,43 @@
        "cv-luck",
        "cv-translation"
       ]
+     },
+     {
+      "set": 7,
+      "ids": [
+       "CV21",
+       "CV24",
+       "CV26",
+       "CV28",
+       "CV29",
+       "CV30",
+       "CV31",
+       "PV-01",
+       "PV-04",
+       "PV-06"
+      ],
+      "groups": []
+     },
+     {
+      "set": 8,
+      "ids": [
+       "PV-08",
+       "PV-10",
+       "PV-12",
+       "PV-14",
+       "PV-17",
+       "PV-19",
+       "PV-21",
+       "PV-23",
+       "PV-25",
+       "PV-27"
+      ],
+      "groups": []
      }
     ],
-    "leftoverQuestions": 7,
+    "leftoverQuestions": 1,
     "leftoverIds": [
-     "CV21",
-     "CV24",
-     "CV26",
-     "CV28",
-     "CV29",
-     "CV30",
-     "CV31"
+     "PV-29"
     ]
    },
    "Hard": {
@@ -82,14 +108,113 @@
        "cv-repair",
        "cv-replication"
       ]
+     },
+     {
+      "set": 12,
+      "ids": [
+       "CV22",
+       "CV23",
+       "CV25",
+       "CV27",
+       "PR1-01",
+       "PR1-02",
+       "PR1-03",
+       "PR1-04",
+       "PV-02",
+       "PV-03"
+      ],
+      "groups": [
+       "pr1-rc1"
+      ]
+     },
+     {
+      "set": 13,
+      "ids": [
+       "PR1-05",
+       "PR1-06",
+       "PR1-07",
+       "PR1-08",
+       "PR1-09",
+       "PR1-10",
+       "PR1-11",
+       "PR1-12",
+       "PV-05",
+       "PV-07"
+      ],
+      "groups": [
+       "pr1-rc2",
+       "pr1-rc3"
+      ]
+     },
+     {
+      "set": 14,
+      "ids": [
+       "PR1-13",
+       "PR1-14",
+       "PR1-15",
+       "PR1-16",
+       "PR2-01",
+       "PR2-02",
+       "PR2-03",
+       "PR2-04",
+       "PV-09",
+       "PV-11"
+      ],
+      "groups": [
+       "pr1-rc4",
+       "pr2-rc1"
+      ]
+     },
+     {
+      "set": 15,
+      "ids": [
+       "PR2-05",
+       "PR2-06",
+       "PR2-07",
+       "PR2-08",
+       "PR2-09",
+       "PR2-10",
+       "PR2-11",
+       "PR2-12",
+       "PV-13",
+       "PV-15"
+      ],
+      "groups": [
+       "pr2-rc2",
+       "pr2-rc3"
+      ]
      }
     ],
-    "leftoverQuestions": 4,
+    "leftoverQuestions": 28,
     "leftoverIds": [
-     "CV22",
-     "CV23",
-     "CV25",
-     "CV27"
+     "PR2-13",
+     "PR2-14",
+     "PR2-15",
+     "PR2-16",
+     "PR3-01",
+     "PR3-02",
+     "PR3-03",
+     "PR3-04",
+     "PR3-05",
+     "PR3-06",
+     "PR3-07",
+     "PR3-08",
+     "PR3-09",
+     "PR3-10",
+     "PR3-11",
+     "PR3-12",
+     "PR3-13",
+     "PR3-14",
+     "PR3-15",
+     "PR3-16",
+     "PV-16",
+     "PV-18",
+     "PV-20",
+     "PV-22",
+     "PV-24",
+     "PV-26",
+     "PV-28",
+     "PV-30"
     ]
    },
    "count": 15
@@ -128,15 +253,53 @@
        "cd-seminar",
        "cd-league"
       ]
+     },
+     {
+      "set": 7,
+      "ids": [
+       "CD11",
+       "CD12",
+       "CD13",
+       "CD14",
+       "CD15",
+       "DP-LINEAR1-01",
+       "DP-LINEAR1-02",
+       "DP-LINEAR1-03",
+       "DP-LINEAR1-04",
+       "DP-LINEAR1-05"
+      ],
+      "groups": [
+       "cd-books",
+       "dp-linear1"
+      ]
+     },
+     {
+      "set": 8,
+      "ids": [
+       "DP-TOURN13-55",
+       "DP-TOURN13-56",
+       "DP-TOURN13-57",
+       "DP-TOURN13-58",
+       "DP-TOURN13-59",
+       "DP-GROUP16-69",
+       "DP-GROUP16-70",
+       "DP-GROUP16-71",
+       "DP-GROUP16-72",
+       "DP-GROUP16-73"
+      ],
+      "groups": [
+       "dp-tourn13",
+       "dp-group16"
+      ]
      }
     ],
     "leftoverQuestions": 5,
     "leftoverIds": [
-     "CD11",
-     "CD12",
-     "CD13",
-     "CD14",
-     "CD15"
+     "DP-RANK18-78",
+     "DP-RANK18-79",
+     "DP-RANK18-80",
+     "DP-RANK18-81",
+     "DP-RANK18-82"
     ]
    },
    "Hard": {
@@ -144,14 +307,72 @@
      11,
      15
     ],
-    "ready": [],
+    "ready": [
+     {
+      "set": 11,
+      "ids": [
+       "CD16",
+       "CD17",
+       "CD18",
+       "CD19",
+       "CD20",
+       "DP-TOURN3-10",
+       "DP-TOURN3-11",
+       "DP-TOURN3-12",
+       "DP-TOURN3-13",
+       "DP-TOURN3-14"
+      ],
+      "groups": [
+       "cd-coins",
+       "dp-tourn3"
+      ]
+     },
+     {
+      "set": 12,
+      "ids": [
+       "DP-NETWORK5-19",
+       "DP-NETWORK5-20",
+       "DP-NETWORK5-21",
+       "DP-NETWORK5-22",
+       "DP-NETWORK5-23",
+       "DP-CIRCULAR7-28",
+       "DP-CIRCULAR7-29",
+       "DP-CIRCULAR7-30",
+       "DP-CIRCULAR7-31",
+       "DP-CIRCULAR7-32"
+      ],
+      "groups": [
+       "dp-network5",
+       "dp-circular7"
+      ]
+     },
+     {
+      "set": 13,
+      "ids": [
+       "DP-TABLE9-37",
+       "DP-TABLE9-38",
+       "DP-TABLE9-39",
+       "DP-TABLE9-40",
+       "DP-TABLE9-41",
+       "DP-LINEAR11-46",
+       "DP-LINEAR11-47",
+       "DP-LINEAR11-48",
+       "DP-LINEAR11-49",
+       "DP-LINEAR11-50"
+      ],
+      "groups": [
+       "dp-table9",
+       "dp-linear11"
+      ]
+     }
+    ],
     "leftoverQuestions": 5,
     "leftoverIds": [
-     "CD16",
-     "CD17",
-     "CD18",
-     "CD19",
-     "CD20"
+     "DP-NETWORK15-64",
+     "DP-NETWORK15-65",
+     "DP-NETWORK15-66",
+     "DP-NETWORK15-67",
+     "DP-NETWORK15-68"
     ]
    },
    "count": 15,
@@ -159,7 +380,16 @@
     "cd-choc",
     "cd-code",
     "cd-houses",
-    "cd-quiz"
+    "cd-quiz",
+    "dp-circular2",
+    "dp-table4",
+    "dp-linear6",
+    "dp-tourn8",
+    "dp-network10",
+    "dp-circular12",
+    "dp-table14",
+    "dp-group17",
+    "dp-rank19"
    ]
   },
   "qa": {

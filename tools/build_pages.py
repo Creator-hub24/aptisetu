@@ -535,7 +535,7 @@ practice_page("cat-practice.html", "cat", "CAT", "cat.html", "CAT", "40 min · C
 
 # ---------- CAT PRACTICE SETS (hubs, set page, login) ----------
 SETS_META=json.load(open("data/cat/sets.json"))
-GATE_NOTE=('<p class="muted" style="font-size:.85rem;margin-top:22px">How locks work: Easy is open (guests can try Easy set 1). A level unlocks when you have '
+GATE_NOTE=('<p class="muted" style="font-size:.85rem;margin-top:22px">How locks work: Easy is open (guests can try the first set of each section). A level unlocks when you have '
   'completed every set that is ready in the level before it; if that level has no ready sets yet, the next level is already open. '
   'Locks are only a convenience to guide your practice, not a security feature: all questions on this site are public.</p>')
 rng=lambda rep: ", ".join(f"{L} (sets {rep[L]['range'][0]}–{rep[L]['range'][1]})" for L in ("Easy","Medium","Hard"))

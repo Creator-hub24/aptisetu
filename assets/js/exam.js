@@ -305,7 +305,7 @@
     $("#set-h1").textContent = `${NAME[SET.sec]} · Set ${SET.n}`;
     const msg = {
       soon: `This set is <b>coming soon</b>. We're still writing the questions for it.`,
-      login: `🔒 Please <a href="login.html?next=${encodeURIComponent(location.pathname.split("/").pop() + location.search)}">login</a> to open this set. Guests can try Easy set 1.`,
+      login: `🔒 Please <a href="login.html?next=${encodeURIComponent(location.pathname.split("/").pop() + location.search)}">login</a> to open this set. Guests can try the first set of each section.`,
       locked: `🔒 This set is locked. Finish all ${["Easy", "Medium", "Hard"][["Easy", "Medium", "Hard"].indexOf(L) - 1]} sets first.`
     }[s.state];
     if (msg) { info.innerHTML = `<div class="notice">${msg} <a href="${hubUrl}">See all ${NAME[SET.sec]} sets</a></div>`; return; }

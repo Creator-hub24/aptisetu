@@ -390,7 +390,8 @@
      "type": "tita",
      "kind": "sequence",
      "answer": "2134",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "CV22",
@@ -403,7 +404,8 @@
      "type": "tita",
      "kind": "sequence",
      "answer": "4321",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "id": "CV23",
@@ -421,7 +423,8 @@
       "Remote work spread mainly because of the needs of carers."
      ],
      "answer": 1,
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "id": "CV24",
@@ -439,7 +442,8 @@
       "Nostalgia is the strongest force behind successful language revival."
      ],
      "answer": 1,
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "CV25",
@@ -457,7 +461,8 @@
       "Most employees are indifferent to their pensions."
      ],
      "answer": 1,
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "id": "CV26",
@@ -475,7 +480,8 @@
       "Provenance information is of little interest to museum visitors."
      ],
      "answer": 1,
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "CV27",
@@ -493,7 +499,8 @@
       "Productivity is impossible to measure accurately."
      ],
      "answer": 1,
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "id": "CV28",
@@ -506,7 +513,8 @@
      "type": "tita",
      "kind": "number",
      "answer": "4",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "CV29",
@@ -519,7 +527,8 @@
      "type": "tita",
      "kind": "number",
      "answer": "2",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "CV30",
@@ -532,7 +541,8 @@
      "type": "tita",
      "kind": "number",
      "answer": "3",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "CV31",
@@ -545,7 +555,8 @@
      "type": "tita",
      "kind": "number",
      "answer": "1",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "M1-01",
@@ -2825,7 +2836,8 @@
      ],
      "answer": 2,
      "pack": "practice-rc-1",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "id": "PR1-02",
@@ -2845,7 +2857,8 @@
      ],
      "answer": 0,
      "pack": "practice-rc-1",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "id": "PR1-03",
@@ -2865,7 +2878,8 @@
      ],
      "answer": 3,
      "pack": "practice-rc-1",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "id": "PR1-04",
@@ -2885,7 +2899,8 @@
      ],
      "answer": 3,
      "pack": "practice-rc-1",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "id": "PR1-05",
@@ -2905,7 +2920,8 @@
      ],
      "answer": 3,
      "pack": "practice-rc-1",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "id": "PR1-06",
@@ -2925,7 +2941,8 @@
      ],
      "answer": 1,
      "pack": "practice-rc-1",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "id": "PR1-07",
@@ -2945,7 +2962,8 @@
      ],
      "answer": 2,
      "pack": "practice-rc-1",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "id": "PR1-08",
@@ -2965,7 +2983,8 @@
      ],
      "answer": 1,
      "pack": "practice-rc-1",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "id": "PR1-09",
@@ -2985,7 +3004,8 @@
      ],
      "answer": 1,
      "pack": "practice-rc-1",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "id": "PR1-10",
@@ -3005,7 +3025,8 @@
      ],
      "answer": 3,
      "pack": "practice-rc-1",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "id": "PR1-11",
@@ -3025,7 +3046,8 @@
      ],
      "answer": 3,
      "pack": "practice-rc-1",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "id": "PR1-12",
@@ -3045,7 +3067,8 @@
      ],
      "answer": 2,
      "pack": "practice-rc-1",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "id": "PR1-13",
@@ -3065,7 +3088,8 @@
      ],
      "answer": 2,
      "pack": "practice-rc-1",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 14
     },
     {
      "id": "PR1-14",
@@ -3085,7 +3109,8 @@
      ],
      "answer": 3,
      "pack": "practice-rc-1",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 14
     },
     {
      "id": "PR1-15",
@@ -3105,7 +3130,8 @@
      ],
      "answer": 1,
      "pack": "practice-rc-1",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 14
     },
     {
      "id": "PR1-16",
@@ -3125,7 +3151,8 @@
      ],
      "answer": 2,
      "pack": "practice-rc-1",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 14
     },
     {
      "id": "PR2-01",
@@ -3145,7 +3172,8 @@
      ],
      "answer": 2,
      "pack": "practice-rc-2",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 14
     },
     {
      "id": "PR2-02",
@@ -3165,7 +3193,8 @@
      ],
      "answer": 3,
      "pack": "practice-rc-2",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 14
     },
     {
      "id": "PR2-03",
@@ -3185,7 +3214,8 @@
      ],
      "answer": 0,
      "pack": "practice-rc-2",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 14
     },
     {
      "id": "PR2-04",
@@ -3205,7 +3235,8 @@
      ],
      "answer": 1,
      "pack": "practice-rc-2",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 14
     },
     {
      "id": "PR2-05",
@@ -3225,7 +3256,8 @@
      ],
      "answer": 1,
      "pack": "practice-rc-2",
-     "level": "Easy"
+     "level": "Hard",
+     "practiceSet": 15
     },
     {
      "id": "PR2-06",
@@ -3245,7 +3277,8 @@
      ],
      "answer": 2,
      "pack": "practice-rc-2",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 15
     },
     {
      "id": "PR2-07",
@@ -3265,7 +3298,8 @@
      ],
      "answer": 1,
      "pack": "practice-rc-2",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 15
     },
     {
      "id": "PR2-08",
@@ -3285,7 +3319,8 @@
      ],
      "answer": 0,
      "pack": "practice-rc-2",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 15
     },
     {
      "id": "PR2-09",
@@ -3305,7 +3340,8 @@
      ],
      "answer": 1,
      "pack": "practice-rc-2",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 15
     },
     {
      "id": "PR2-10",
@@ -3325,7 +3361,8 @@
      ],
      "answer": 3,
      "pack": "practice-rc-2",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 15
     },
     {
      "id": "PR2-11",
@@ -3345,7 +3382,8 @@
      ],
      "answer": 0,
      "pack": "practice-rc-2",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 15
     },
     {
      "id": "PR2-12",
@@ -3365,7 +3403,8 @@
      ],
      "answer": 0,
      "pack": "practice-rc-2",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 15
     },
     {
      "id": "PR2-13",
@@ -3385,7 +3424,7 @@
      ],
      "answer": 1,
      "pack": "practice-rc-2",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "id": "PR2-14",
@@ -3445,7 +3484,7 @@
      ],
      "answer": 3,
      "pack": "practice-rc-2",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "id": "PR3-01",
@@ -3465,7 +3504,7 @@
      ],
      "answer": 0,
      "pack": "practice-rc-3",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "id": "PR3-02",
@@ -3525,7 +3564,7 @@
      ],
      "answer": 0,
      "pack": "practice-rc-3",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "id": "PR3-05",
@@ -3545,7 +3584,7 @@
      ],
      "answer": 3,
      "pack": "practice-rc-3",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "id": "PR3-06",
@@ -3625,7 +3664,7 @@
      ],
      "answer": 1,
      "pack": "practice-rc-3",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "id": "PR3-10",
@@ -3685,7 +3724,7 @@
      ],
      "answer": 0,
      "pack": "practice-rc-3",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "id": "PR3-13",
@@ -3705,7 +3744,7 @@
      ],
      "answer": 0,
      "pack": "practice-rc-3",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "id": "PR3-14",
@@ -3765,7 +3804,7 @@
      ],
      "answer": 3,
      "pack": "practice-rc-3",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "id": "PV-01",
@@ -3784,7 +3823,8 @@
      ],
      "answer": 3,
      "pack": "practice-va",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "PV-02",
@@ -3803,7 +3843,8 @@
      ],
      "answer": 0,
      "pack": "practice-va",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "id": "PV-03",
@@ -3822,7 +3863,8 @@
      ],
      "answer": 2,
      "pack": "practice-va",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "id": "PV-04",
@@ -3841,7 +3883,8 @@
      ],
      "answer": 1,
      "pack": "practice-va",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "PV-05",
@@ -3860,7 +3903,8 @@
      ],
      "answer": 1,
      "pack": "practice-va",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "id": "PV-06",
@@ -3879,7 +3923,8 @@
      ],
      "answer": 3,
      "pack": "practice-va",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "PV-07",
@@ -3898,7 +3943,8 @@
      ],
      "answer": 0,
      "pack": "practice-va",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "id": "PV-08",
@@ -3917,7 +3963,8 @@
      ],
      "answer": 3,
      "pack": "practice-va",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "id": "PV-09",
@@ -3936,7 +3983,8 @@
      ],
      "answer": 1,
      "pack": "practice-va",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 14
     },
     {
      "id": "PV-10",
@@ -3955,7 +4003,8 @@
      ],
      "answer": 1,
      "pack": "practice-va",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "id": "PV-11",
@@ -3974,7 +4023,8 @@
      ],
      "answer": 0,
      "pack": "practice-va",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 14
     },
     {
      "id": "PV-12",
@@ -3993,7 +4043,8 @@
      ],
      "answer": 1,
      "pack": "practice-va",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "id": "PV-13",
@@ -4012,7 +4063,8 @@
      ],
      "answer": 1,
      "pack": "practice-va",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 15
     },
     {
      "id": "PV-14",
@@ -4031,7 +4083,8 @@
      ],
      "answer": 0,
      "pack": "practice-va",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "id": "PV-15",
@@ -4045,7 +4098,8 @@
      "kind": "number",
      "answer": "4",
      "pack": "practice-va",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 15
     },
     {
      "id": "PV-16",
@@ -4073,7 +4127,8 @@
      "kind": "number",
      "answer": "4",
      "pack": "practice-va",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "id": "PV-18",
@@ -4101,7 +4156,8 @@
      "kind": "number",
      "answer": "4",
      "pack": "practice-va",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "id": "PV-20",
@@ -4129,7 +4185,8 @@
      "kind": "number",
      "answer": "5",
      "pack": "practice-va",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "id": "PV-22",
@@ -4157,7 +4214,8 @@
      "kind": "sequence",
      "answer": "2314",
      "pack": "practice-va",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "id": "PV-24",
@@ -4185,7 +4243,8 @@
      "kind": "sequence",
      "answer": "2413",
      "pack": "practice-va",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "id": "PV-26",
@@ -4213,7 +4272,8 @@
      "kind": "sequence",
      "answer": "2134",
      "pack": "practice-va",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "id": "PV-28",
@@ -5366,7 +5426,8 @@
      "type": "tita",
      "kind": "number",
      "answer": "60",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "CD12",
@@ -5380,7 +5441,8 @@
      "type": "tita",
      "kind": "number",
      "answer": "180",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "CD13",
@@ -5399,7 +5461,8 @@
       "Comics"
      ],
      "answer": 0,
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "CD14",
@@ -5419,7 +5482,8 @@
      ],
      "answer": 2,
      "fixed": true,
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "CD15",
@@ -5438,7 +5502,8 @@
       "40% increase"
      ],
      "answer": 1,
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "id": "CD16",
@@ -5458,7 +5523,8 @@
      ],
      "answer": 1,
      "fixed": true,
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 11
     },
     {
      "id": "CD17",
@@ -5472,7 +5538,8 @@
      "type": "tita",
      "kind": "number",
      "answer": "10",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 11
     },
     {
      "id": "CD18",
@@ -5486,7 +5553,8 @@
      "type": "tita",
      "kind": "number",
      "answer": "21",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 11
     },
     {
      "id": "CD19",
@@ -5505,7 +5573,8 @@
       "4"
      ],
      "answer": 2,
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 11
     },
     {
      "id": "CD20",
@@ -5525,7 +5594,8 @@
      ],
      "answer": 3,
      "fixed": true,
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 11
     },
     {
      "id": "CD21",
@@ -8389,7 +8459,8 @@
      "answer": 2,
      "id": "DP-LINEAR1-01",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "exam": "cat",
@@ -8404,7 +8475,8 @@
      "answer": "2",
      "id": "DP-LINEAR1-02",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "exam": "cat",
@@ -8424,7 +8496,8 @@
      "answer": 0,
      "id": "DP-LINEAR1-03",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "exam": "cat",
@@ -8439,7 +8512,8 @@
      "answer": "3",
      "id": "DP-LINEAR1-04",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "exam": "cat",
@@ -8454,7 +8528,8 @@
      "answer": "0",
      "id": "DP-LINEAR1-05",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 7
     },
     {
      "exam": "cat",
@@ -8534,7 +8609,8 @@
      "answer": "13",
      "id": "DP-TOURN3-10",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 11
     },
     {
      "exam": "cat",
@@ -8554,7 +8630,8 @@
      "answer": 3,
      "id": "DP-TOURN3-11",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 11
     },
     {
      "exam": "cat",
@@ -8569,7 +8646,8 @@
      "answer": "0",
      "id": "DP-TOURN3-12",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 11
     },
     {
      "exam": "cat",
@@ -8584,7 +8662,8 @@
      "answer": "30",
      "id": "DP-TOURN3-13",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 11
     },
     {
      "exam": "cat",
@@ -8599,7 +8678,8 @@
      "answer": "3",
      "id": "DP-TOURN3-14",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 11
     },
     {
      "exam": "cat",
@@ -8614,7 +8694,7 @@
      "answer": "40",
      "id": "DP-TABLE4-15",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -8664,7 +8744,7 @@
      "answer": 3,
      "id": "DP-TABLE4-18",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -8679,7 +8759,8 @@
      "answer": "14",
      "id": "DP-NETWORK5-19",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "exam": "cat",
@@ -8694,7 +8775,8 @@
      "answer": "1",
      "id": "DP-NETWORK5-20",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "exam": "cat",
@@ -8709,7 +8791,8 @@
      "answer": "1",
      "id": "DP-NETWORK5-21",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "exam": "cat",
@@ -8724,7 +8807,8 @@
      "answer": "1",
      "id": "DP-NETWORK5-22",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "exam": "cat",
@@ -8739,7 +8823,8 @@
      "answer": "1",
      "id": "DP-NETWORK5-23",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "exam": "cat",
@@ -8824,7 +8909,8 @@
      "answer": "1",
      "id": "DP-CIRCULAR7-28",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "exam": "cat",
@@ -8844,7 +8930,8 @@
      "answer": 3,
      "id": "DP-CIRCULAR7-29",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "exam": "cat",
@@ -8859,7 +8946,8 @@
      "answer": "1",
      "id": "DP-CIRCULAR7-30",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "exam": "cat",
@@ -8874,7 +8962,8 @@
      "answer": "0",
      "id": "DP-CIRCULAR7-31",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "exam": "cat",
@@ -8889,7 +8978,8 @@
      "answer": "1",
      "id": "DP-CIRCULAR7-32",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 12
     },
     {
      "exam": "cat",
@@ -8969,7 +9059,8 @@
      "answer": "40",
      "id": "DP-TABLE9-37",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "exam": "cat",
@@ -8984,7 +9075,8 @@
      "answer": "45",
      "id": "DP-TABLE9-38",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "exam": "cat",
@@ -8999,7 +9091,8 @@
      "answer": "60",
      "id": "DP-TABLE9-39",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "exam": "cat",
@@ -9019,7 +9112,8 @@
      "answer": 0,
      "id": "DP-TABLE9-40",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "exam": "cat",
@@ -9034,7 +9128,8 @@
      "answer": "38",
      "id": "DP-TABLE9-41",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "exam": "cat",
@@ -9094,7 +9189,7 @@
      "answer": "0",
      "id": "DP-NETWORK10-45",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -9109,7 +9204,8 @@
      "answer": "0",
      "id": "DP-LINEAR11-46",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "exam": "cat",
@@ -9129,7 +9225,8 @@
      "answer": 2,
      "id": "DP-LINEAR11-47",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "exam": "cat",
@@ -9144,7 +9241,8 @@
      "answer": "1",
      "id": "DP-LINEAR11-48",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "exam": "cat",
@@ -9159,7 +9257,8 @@
      "answer": "1",
      "id": "DP-LINEAR11-49",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "exam": "cat",
@@ -9174,7 +9273,8 @@
      "answer": "1",
      "id": "DP-LINEAR11-50",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Hard",
+     "practiceSet": 13
     },
     {
      "exam": "cat",
@@ -9249,7 +9349,7 @@
      "answer": 1,
      "id": "DP-CIRCULAR12-54",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -9264,7 +9364,8 @@
      "answer": "4",
      "id": "DP-TOURN13-55",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "exam": "cat",
@@ -9284,7 +9385,8 @@
      "answer": 1,
      "id": "DP-TOURN13-56",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "exam": "cat",
@@ -9299,7 +9401,8 @@
      "answer": "8",
      "id": "DP-TOURN13-57",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "exam": "cat",
@@ -9319,7 +9422,8 @@
      "answer": 2,
      "id": "DP-TOURN13-58",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "exam": "cat",
@@ -9334,7 +9438,8 @@
      "answer": "1",
      "id": "DP-TOURN13-59",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "exam": "cat",
@@ -9454,7 +9559,7 @@
      "answer": "13",
      "id": "DP-NETWORK15-67",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -9469,7 +9574,7 @@
      "answer": "0",
      "id": "DP-NETWORK15-68",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -9484,7 +9589,8 @@
      "answer": "0",
      "id": "DP-GROUP16-69",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "exam": "cat",
@@ -9504,7 +9610,8 @@
      "answer": 0,
      "id": "DP-GROUP16-70",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "exam": "cat",
@@ -9524,7 +9631,8 @@
      "answer": 3,
      "id": "DP-GROUP16-71",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "exam": "cat",
@@ -9544,7 +9652,8 @@
      "answer": 3,
      "id": "DP-GROUP16-72",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "exam": "cat",
@@ -9559,7 +9668,8 @@
      "answer": "1",
      "id": "DP-GROUP16-73",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Medium",
+     "practiceSet": 8
     },
     {
      "exam": "cat",
@@ -9634,7 +9744,7 @@
      "answer": 0,
      "id": "DP-GROUP17-77",
      "pack": "practice-dilr",
-     "level": "Medium"
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -9649,7 +9759,7 @@
      "answer": "6",
      "id": "DP-RANK18-78",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Medium"
     },
     {
      "exam": "cat",
@@ -9684,7 +9794,7 @@
      "answer": "10",
      "id": "DP-RANK18-80",
      "pack": "practice-dilr",
-     "level": "Hard"
+     "level": "Medium"
     },
     {
      "exam": "cat",
