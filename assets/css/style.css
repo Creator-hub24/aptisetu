@@ -443,7 +443,7 @@ main p a:not(.btn),main li a:not(.btn),.notice a:not(.btn),.sample-fb p a,#site-
 .theme-btn .ti-sun{display:none}html[data-theme="dark"] .theme-btn .ti-sun{display:inline}html[data-theme="dark"] .theme-btn .ti-moon{display:none}
 .menu-btn{min-width:44px;min-height:44px;color:var(--ink)}
 @media(min-width:1061px){.nav-links>a:not(.btn),.nav-dd-btn,.auth-slot a{min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center}}
-.breadcrumb a{min-width:44px;justify-content:center}
+.breadcrumb a{display:inline-flex;align-items:center;min-height:44px;margin:-10px 0}
 /* unified cards */
 .card{padding:var(--pad);border-radius:var(--r)}
 .compact .card{padding:18px}
