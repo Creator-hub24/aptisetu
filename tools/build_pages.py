@@ -58,15 +58,20 @@ PAGES=[]   # (fn, indexed)
 TITLES={}
 GC_TAG=(f'<script data-goatcounter="https://{GC}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n    ' if GC else "")
 SOCIAL=[("WhatsApp Channel","https://whatsapp.com/channel/0029VbDp9l12ER6pnIeDNn2m"),("YouTube","https://www.youtube.com/@AptiSetu"),("Telegram","https://t.me/aptisetu"),("Instagram","https://www.instagram.com/edumaths360/")]
+SOCIAL_ICONS={
+"WhatsApp Channel":'<path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c-.4 1-.2 2.2.9 3.7s2.5 2.3 3.7 2.6c.8.2 1.5-.4 1.7-1l-1.7-1-.8.7c-.9-.3-2-1.4-2.4-2.4l.7-.8-.9-1.9c-.4 0-1 .1-1.2.1z" fill="currentColor"/>',
+"YouTube":'<rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9.2v5.6l5-2.8z" fill="currentColor"/>',
+"Telegram":'<path d="M21 4 3 11.2l5.6 2L10.4 20l3.2-3.6 4.6 3.4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.6 13.2 21 4l-10.6 11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
+"Instagram":'<rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="7" r="1.1" fill="currentColor"/>'}
 def footer_html():
     contact=f'<a href="contact.html">Contact us</a>'+(f'<a href="mailto:{A(EMAIL)}">{_esc.escape(EMAIL)}</a>' if EMAIL else '')
-    social="".join(f'<a href="{A(u)}" target="_blank" rel="noopener">{n}</a>' for n,u in SOCIAL)
+    social="".join(f'<a href="{A(u)}" target="_blank" rel="noopener" aria-label="{A(n)}" title="{A(n)}"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">{SOCIAL_ICONS[n]}</svg></a>' for n,u in SOCIAL)
     return f"""<div class="container footer-grid">
       <div><a href="index.html" class="logo"><img src="assets/img/favicon.svg" alt="" width="34" height="34" class="logo-mark"><span data-brand>{_esc.escape(BRAND)}</span></a>
-        <p class="muted">Free Quant, Reasoning, DILR and VARC practice for CAT, CUET, Bank, SSC and campus placements. Not affiliated with NTA, the IIMs or any exam body.</p></div>
+        <p class="muted">Free Quant, Reasoning, DILR and VARC practice for CAT, CUET, Bank, SSC and campus placements. Not affiliated with NTA, the IIMs or any exam body.</p>
+        <div class="social" aria-label="Follow AptiSetu">{social}</div></div>
       <div><h2 class="fh">Learn</h2><a href="quant.html">Quantitative Aptitude</a><a href="quant-lab.html">Quant Lab</a><a href="reasoning.html">Logical Reasoning</a><a href="dilr.html">DILR</a><a href="cat.html">CAT track</a><a href="cuet.html">CUET (UG) track</a><a href="varc.html">VARC</a><a href="after12.html">After 12</a><a href="after-graduation.html">After Graduation</a></div>
-      <div><h2 class="fh">Practice</h2><a href="cat-practice.html">CAT sectionals</a><a href="cuet-practice.html">CUET sectionals</a><a href="practice.html?exam=general">Bank / SSC quizzes</a><a href="practice.html?section=mixed">Mixed practice</a>
-        <h2 class="fh foot-follow">Follow</h2>{social}</div>
+      <div><h2 class="fh">Practice</h2><a href="cat-practice.html">CAT sectionals</a><a href="cuet-practice.html">CUET sectionals</a><a href="practice.html?exam=general">Bank / SSC quizzes</a><a href="practice.html?section=mixed">Mixed practice</a></div>
       <div><h2 class="fh">About</h2><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="corrections.html">Corrections</a>{contact}<a href="privacy.html">Privacy</a><a href="terms.html">Terms &amp; disclaimer</a></div>
     </div>
     {GC_TAG}<div class="container copyright">© {YEAR} <span data-brand>{_esc.escape(BRAND)}</span>. All rights reserved.</div>"""
