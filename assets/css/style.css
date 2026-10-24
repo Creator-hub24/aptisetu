@@ -514,3 +514,28 @@ html[data-theme="dark"] .hero{background:radial-gradient(1100px 460px at 85% -10
 .xcard .eyebrow{display:block}.xcard .tags{justify-content:flex-start}
 
 main .p-links a:not(.btn),main .chip-links a:not(.btn){text-decoration:none}
+
+/* v12: Quant Lab feature + After 12 scope */
+.qlband{background:#0B1F3A;color:#fff;padding:56px 0}
+.ql-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.ql-copy{min-width:0}.ql-copy h2{color:#fff;margin:.3em 0}.ql-copy p{color:#d6deea;max-width:52ch}
+.qlband .eyebrow-gold{color:#e3c25a}
+.ql-btns{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:18px}
+.qlband .btn{background:#C9A227;color:#0B1F3A;border-color:#C9A227}
+.ql-link{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.ql-fig{margin:0;background:#12294a;border:1px solid #284a78;border-radius:14px;padding:16px;min-width:0}
+.ql-fig svg{width:100%;height:auto;display:block}
+.ql-fig figcaption{font-size:.8rem;color:#b9c6da;margin-top:8px}
+.q-t{fill:#e8eef8;font:600 13px Inter,system-ui,sans-serif}.q-s{fill:#e3c25a;font:600 13px Inter,system-ui,sans-serif}
+.q-b1{fill:#6c7cf0}.q-b2{fill:#3fb6a8}.q-b3{fill:#C9A227}.q-dash{stroke:#fff;stroke-width:1.5;stroke-dasharray:3 3}
+.scope{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.scope-t{display:flex;flex-direction:column;gap:6px;padding:18px;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:var(--r);color:var(--ink);text-decoration:none;min-width:0}
+.scope-t b{font-size:1.05rem}.scope-t span{color:var(--muted);font-size:.92rem;line-height:1.45}
+.scope-t:hover{box-shadow:var(--sh)}
+.scope-cta{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-top:24px}
+.ql-link2{font-weight:600}
+@media(max-width:1000px){.scope{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:800px){.ql-grid{grid-template-columns:1fr;gap:24px}.qlband{padding:40px 0}}
+@media(max-width:480px){.scope{grid-template-columns:1fr}}
+.ql-copy h2{text-wrap:balance}
+main .qlband a.btn,html[data-theme="dark"] .qlband a.btn{background:#C9A227;color:#0B1F3A;border-color:#C9A227}
