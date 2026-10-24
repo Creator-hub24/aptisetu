@@ -1,0 +1,24 @@
+name: Site checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Build pages
+        run: python3 tools/build_pages.py
+      - name: Site health (links, titles, sitemap, secrets)
+        run: python3 tools/check_site.py
+      - name: Quant Lab tests
+        run: |
+          cd tests/quant-lab
+          node all.js
