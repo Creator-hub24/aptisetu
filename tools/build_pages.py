@@ -57,7 +57,7 @@ A=lambda s: _esc.escape(s, quote=True)
 PAGES=[]   # (fn, indexed)
 TITLES={}
 GC_TAG=(f'<script data-goatcounter="https://{GC}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n    ' if GC else "")
-SOCIAL=[("WhatsApp Channel","https://whatsapp.com/channel/0029VbDp9l12ER6pnIeDNn2m"),("Telegram","https://t.me/aptisetu"),("Instagram","https://www.instagram.com/edumaths360/")]
+SOCIAL=[("WhatsApp Channel","https://whatsapp.com/channel/0029VbDp9l12ER6pnIeDNn2m"),("YouTube","https://www.youtube.com/@AptiSetu"),("Telegram","https://t.me/aptisetu"),("Instagram","https://www.instagram.com/edumaths360/")]
 def footer_html():
     contact=f'<a href="contact.html">Contact us</a>'+(f'<a href="mailto:{A(EMAIL)}">{_esc.escape(EMAIL)}</a>' if EMAIL else '')
     social="".join(f'<a href="{A(u)}" target="_blank" rel="noopener">{n}</a>' for n,u in SOCIAL)
