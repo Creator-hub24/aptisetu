@@ -57,8 +57,9 @@ A=lambda s: _esc.escape(s, quote=True)
 PAGES=[]   # (fn, indexed)
 TITLES={}
 GC_TAG=(f'<script data-goatcounter="https://{GC}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n    ' if GC else "")
-SOCIAL=[("WhatsApp Channel","https://whatsapp.com/channel/0029VbDp9l12ER6pnIeDNn2m"),("YouTube","https://www.youtube.com/@AptiSetu"),("Telegram","https://t.me/aptisetu"),("Instagram","https://www.instagram.com/edumaths360/")]
+SOCIAL=[("WhatsApp Channel","https://whatsapp.com/channel/0029VbDp9l12ER6pnIeDNn2m"),("YouTube","https://www.youtube.com/@AptiSetu"),("Telegram","https://t.me/aptisetu"),("Instagram","https://www.instagram.com/edumaths360/"),("Facebook","https://www.facebook.com/share/1Y8cTsvtvb/")]
 SOCIAL_ICONS={
+"Facebook":'<path d="M14 21v-8h3l.5-3.5H14V7.7c0-1 .4-1.7 1.8-1.7h1.8V3.1A22 22 0 0 0 15.3 3C12.8 3 11 4.6 11 7.4v2.1H8V13h3v8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
 "WhatsApp Channel":'<path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c-.4 1-.2 2.2.9 3.7s2.5 2.3 3.7 2.6c.8.2 1.5-.4 1.7-1l-1.7-1-.8.7c-.9-.3-2-1.4-2.4-2.4l.7-.8-.9-1.9c-.4 0-1 .1-1.2.1z" fill="currentColor"/>',
 "YouTube":'<rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9.2v5.6l5-2.8z" fill="currentColor"/>',
 "Telegram":'<path d="M21 4 3 11.2l5.6 2L10.4 20l3.2-3.6 4.6 3.4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.6 13.2 21 4l-10.6 11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',

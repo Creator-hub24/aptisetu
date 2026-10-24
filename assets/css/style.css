@@ -548,6 +548,7 @@ main .qlband a.btn,html[data-theme="dark"] .qlband a.btn{background:#C9A227;colo
 #site-footer .social a[aria-label="YouTube"]{color:#FF4B4B;border-color:#FF4B4B}
 #site-footer .social a[aria-label="Telegram"]{color:#3DB3F2;border-color:#3DB3F2}
 #site-footer .social a[aria-label="Instagram"]{color:#F06292;border-color:#F06292}
+#site-footer .social a[aria-label="Facebook"]{color:#5B9BFF;border-color:#5B9BFF}
 #site-footer .social a:hover{background:rgba(255,255,255,.08);transform:translateY(-2px)}
 #site-footer .social a{transition:transform .15s,background .15s}
 @media(prefers-reduced-motion:reduce){#site-footer .social a{transition:none}#site-footer .social a:hover{transform:none}}
