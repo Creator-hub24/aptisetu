@@ -6691,6 +6691,640 @@
      ],
      "answer": 0,
      "fixed": true
+    },
+    {
+     "id": "UE28",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Easy",
+     "question": "The passage is mainly about:",
+     "solution": "The passage explains what stepwells were, why they were decorated, why they were abandoned and how some are being restored.",
+     "type": "mcq",
+     "options": [
+      "stepwells: their purpose, beauty, decline and revival",
+      "how piped water systems are built in cities",
+      "the history of trade routes in western India",
+      "the sculptures found in temples"
+     ],
+     "answer": 0,
+     "set": "cu-stepwell"
+    },
+    {
+     "id": "UE29",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "According to the passage, many stepwells were richly decorated because:",
+     "solution": "The second paragraph says they were decorated 'because the people who paid for them saw the gift of water as an act of merit'.",
+     "type": "mcq",
+     "options": [
+      "the people who paid for them saw giving water as an act of merit",
+      "kings wanted to attract foreign traders",
+      "the carvings kept the water cool",
+      "villagers used the sculptures to measure the water level"
+     ],
+     "answer": 0,
+     "set": "cu-stepwell"
+    },
+    {
+     "id": "UE30",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Easy",
+     "question": "What led to the decline of stepwells?",
+     "solution": "The third paragraph says the decline began when piped water and hand pumps arrived and water could be drawn without climbing down.",
+     "type": "mcq",
+     "options": [
+      "The arrival of piped water and hand pumps",
+      "A shortage of stone for repairs",
+      "Laws that banned their use",
+      "Heavy rainfall that flooded them"
+     ],
+     "answer": 0,
+     "set": "cu-stepwell"
+    },
+    {
+     "id": "UE31",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "Which of the following is NOT mentioned in the passage?",
+     "solution": "Resting places, silt-clearing by volunteers and the World Heritage status of Rani ki Vav are all stated. Irrigation of large farms is never mentioned.",
+     "type": "mcq",
+     "options": [
+      "Stepwells were used to irrigate large farms",
+      "Stepwells gave travellers a cool place to rest",
+      "Some stepwells have been cleared of silt by volunteers",
+      "Rani ki Vav is a World Heritage site"
+     ],
+     "answer": 0,
+     "set": "cu-stepwell"
+    },
+    {
+     "id": "UE32",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The restoration work described in the last paragraph suggests that:",
+     "solution": "The volunteers' view is that structures that store rain where it falls 'may be useful again in regions where groundwater is running low'. The passage does not say they should replace modern supplies.",
+     "type": "mcq",
+     "options": [
+      "old structures that store rainwater could help regions where groundwater is falling",
+      "stepwells should replace all modern water supply",
+      "volunteers dislike modern technology",
+      "stepwells can only be useful as tourist sites"
+     ],
+     "answer": 0,
+     "set": "cu-stepwell"
+    },
+    {
+     "id": "UE33",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Easy",
+     "question": "According to the passage, during sleep the brain appears to:",
+     "solution": "The first paragraph says the brain 'appears to replay and strengthen what was learned', helping to move it into long-term memory.",
+     "type": "mcq",
+     "options": [
+      "replay and strengthen what was learned during the day",
+      "stop storing information",
+      "forget unimportant details completely",
+      "work faster than during the day"
+     ],
+     "answer": 0,
+     "set": "cu-sleep"
+    },
+    {
+     "id": "UE34",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "Why do many teenagers find early school starts difficult?",
+     "solution": "The third paragraph explains that in adolescence the internal clock shifts later, yet school often starts early in the morning.",
+     "type": "mcq",
+     "options": [
+      "Their body clock shifts later, so they feel sleepy late at night",
+      "They have more homework than younger children",
+      "They dislike waking up to alarms",
+      "Their schools are far from home"
+     ],
+     "answer": 0,
+     "set": "cu-sleep"
+    },
+    {
+     "id": "UE35",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The author's attitude to the evidence on later school start times is best described as:",
+     "solution": "The author reports better attendance and alertness but adds that 'results vary' and 'more studies are needed', which is a cautious view.",
+     "type": "mcq",
+     "options": [
+      "cautious",
+      "dismissive",
+      "enthusiastic",
+      "indifferent"
+     ],
+     "answer": 0,
+     "set": "cu-sleep"
+    },
+    {
+     "id": "UE36",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The statement that sleep is 'part of studying, not a break from it' means that:",
+     "solution": "The writer argues that sleep helps memory and attention, so it supports study rather than interrupting it.",
+     "type": "mcq",
+     "options": [
+      "sleep contributes to learning instead of wasting study time",
+      "students should never study at night",
+      "studying is more tiring than sleeping",
+      "a break from studying is the same as sleeping"
+     ],
+     "answer": 0,
+     "set": "cu-sleep"
+    },
+    {
+     "id": "UE37",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "With which statement would the author most likely agree?",
+     "solution": "The fourth paragraph accepts an occasional late night, while the second paragraph says the effects of short sleep add up when it becomes a habit. The other options contradict the passage.",
+     "type": "mcq",
+     "options": [
+      "An occasional late night may be unavoidable, but regular short sleep can harm learning",
+      "Students should avoid studying after sunset",
+      "Sleep has no effect on attention",
+      "Later school start times always improve results"
+     ],
+     "answer": 0,
+     "set": "cu-sleep"
+    },
+    {
+     "id": "UE38",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Easy",
+     "question": "Why did Arjun hold his bag in front of him 'as if it were a shield'?",
+     "solution": "A shield protects. The image shows that Arjun felt unsafe and guarded on his first day in a new school.",
+     "type": "mcq",
+     "options": [
+      "He felt nervous and defensive in a new place",
+      "He was carrying valuable books",
+      "He wanted to leave quickly",
+      "He was angry with his teacher"
+     ],
+     "answer": 0,
+     "set": "cu-lastbench"
+    },
+    {
+     "id": "UE39",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "Why did Arjun stay in the classroom at the break?",
+     "solution": "The passage says he 'had decided, quite firmly, that it was easier not to try'.",
+     "type": "mcq",
+     "options": [
+      "He had decided it was easier not to try to make friends",
+      "He had a test to prepare for",
+      "The teacher asked him to stay",
+      "He was feeling unwell"
+     ],
+     "answer": 0,
+     "set": "cu-lastbench"
+    },
+    {
+     "id": "UE40",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "Imran 'laughed, as though it were a joke against himself'. This suggests that he:",
+     "solution": "He jokes that nobody comes to the back bench, including himself. The joke is on him, not on Arjun, which shows warmth.",
+     "type": "mcq",
+     "options": [
+      "is friendly and makes light of his own loneliness at the back",
+      "is making fun of Arjun",
+      "is proud of the last bench",
+      "dislikes the other students"
+     ],
+     "answer": 0,
+     "set": "cu-lastbench"
+    },
+    {
+     "id": "UE41",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "What does Imran imply by saying that the work is hard 'only if you're alone'?",
+     "solution": "He offers his notes and help straight after saying it, which shows that he means help from others makes the work manageable.",
+     "type": "mcq",
+     "options": [
+      "Difficulties become easier when people help each other",
+      "Group work is always faster",
+      "Mr Rao only gives homework to students who sit alone",
+      "Arjun should not ask any questions"
+     ],
+     "answer": 0,
+     "set": "cu-lastbench"
+    },
+    {
+     "id": "UE42",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "The last line says the last bench 'was not quite as far from everything as it had looked'. It most likely means that:",
+     "solution": "The distance in the line is emotional, not physical: after meeting Imran, Arjun no longer feels cut off from everyone.",
+     "type": "mcq",
+     "options": [
+      "Arjun now feels less isolated than he did that morning",
+      "the last bench is closer to the board than the others",
+      "Arjun has decided to leave the school",
+      "Imran will move to another seat"
+     ],
+     "answer": 0,
+     "set": "cu-lastbench"
+    },
+    {
+     "id": "UE43",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Easy",
+     "question": "The main idea of the passage is that:",
+     "solution": "The author gives reasons for keeping handwriting and ends by recommending that we keep both tools.",
+     "type": "mcq",
+     "options": [
+      "handwriting still has value and should be kept alongside typing",
+      "typing should replace handwriting completely",
+      "keyboards are harmful to students",
+      "handwriting is faster than typing"
+     ],
+     "answer": 0,
+     "set": "cu-handwriting"
+    },
+    {
+     "id": "UE44",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "According to the passage, why might handwritten notes lead to better understanding?",
+     "solution": "The second paragraph says the writer 'cannot copy everything and must decide what matters', whereas a typist can record almost every word.",
+     "type": "mcq",
+     "options": [
+      "Handwriting is slow, so the writer must decide what matters",
+      "Handwritten notes are neater",
+      "Pens help people stay awake",
+      "Handwriting is easier to read later"
+     ],
+     "answer": 0,
+     "set": "cu-handwriting"
+    },
+    {
+     "id": "UE45",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Easy",
+     "question": "The comparison with 'lighting a lamp with a match' suggests that some people see handwriting as:",
+     "solution": "The author uses the match to show what people mean when they say the skill's 'time has passed'.",
+     "type": "mcq",
+     "options": [
+      "a skill that has become outdated",
+      "a dangerous habit",
+      "a modern invention",
+      "an expensive hobby"
+     ],
+     "answer": 0,
+     "set": "cu-handwriting"
+    },
+    {
+     "id": "UE46",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The author's conclusion is that we should:",
+     "solution": "The last sentence recommends keeping both: 'the pen when we want to think and the keyboard when we want to produce'.",
+     "type": "mcq",
+     "options": [
+      "use the pen to think and the keyboard to produce",
+      "give up keyboards for good",
+      "type all our notes",
+      "write only signatures by hand"
+     ],
+     "answer": 0,
+     "set": "cu-handwriting"
+    },
+    {
+     "id": "UE47",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "Which of the following is NOT supported by the passage?",
+     "solution": "The author says that none of this is an argument against keyboards and calls them indispensable for long documents. The claim that typing is 'always worse' is never made.",
+     "type": "mcq",
+     "options": [
+      "Typing is always worse than handwriting",
+      "Keyboards are indispensable for long documents",
+      "A signature is still trusted as proof of presence",
+      "Some studies link handwritten notes with better understanding"
+     ],
+     "answer": 0,
+     "set": "cu-handwriting"
+    },
+    {
+     "id": "UE48",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Synonyms & Antonyms",
+     "difficulty": "Easy",
+     "question": "Choose the word closest in meaning to PRUDENT.",
+     "solution": "Prudent means acting with care and good judgement, i.e. cautious. Reckless is its antonym.",
+     "type": "mcq",
+     "options": [
+      "Cautious",
+      "Reckless",
+      "Generous",
+      "Lazy"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE49",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Synonyms & Antonyms",
+     "difficulty": "Easy",
+     "question": "Choose the word closest in meaning to CONCEAL.",
+     "solution": "To conceal is to keep something from being seen or known, i.e. to hide. Reveal is its antonym.",
+     "type": "mcq",
+     "options": [
+      "Hide",
+      "Reveal",
+      "Protect",
+      "Admire"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE50",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Synonyms & Antonyms",
+     "difficulty": "Medium",
+     "question": "Choose the word closest in meaning to SCARCE.",
+     "solution": "Scarce means in short supply, i.e. rare or hard to find. Plentiful is its antonym.",
+     "type": "mcq",
+     "options": [
+      "Rare",
+      "Plentiful",
+      "Heavy",
+      "Ancient"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE51",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Synonyms & Antonyms",
+     "difficulty": "Easy",
+     "question": "Choose the word most nearly OPPOSITE in meaning to GENEROUS.",
+     "solution": "Generous means willing to give freely; miserly means unwilling to spend or give. Kind is close to the original meaning, not opposite.",
+     "type": "mcq",
+     "options": [
+      "Miserly",
+      "Kind",
+      "Wealthy",
+      "Polite"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE52",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Synonyms & Antonyms",
+     "difficulty": "Easy",
+     "question": "Choose the word most nearly OPPOSITE in meaning to VICTORY.",
+     "solution": "Victory is winning; defeat is losing. Triumph and success are synonyms of victory.",
+     "type": "mcq",
+     "options": [
+      "Defeat",
+      "Triumph",
+      "Success",
+      "Glory"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE53",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Choosing the correct word",
+     "difficulty": "Easy",
+     "question": "Fill in the blank: She is allergic ______ peanuts.",
+     "solution": "The correct preposition after 'allergic' is 'to'.",
+     "type": "mcq",
+     "options": [
+      "to",
+      "with",
+      "from",
+      "of"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE54",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Choosing the correct word",
+     "difficulty": "Easy",
+     "question": "Fill in the blank: I have lived in this town ______ 2015.",
+     "solution": "'Since' is used with a point in time (2015). 'For' would be used with a period, such as 'for nine years'.",
+     "type": "mcq",
+     "options": [
+      "since",
+      "for",
+      "from",
+      "at"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE55",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Choosing the correct word",
+     "difficulty": "Medium",
+     "question": "Fill in the blank: Each of the players ______ a medal at the ceremony.",
+     "solution": "'Each' takes a singular verb, so 'have received', 'were receiving' and 'are given' (all plural) are wrong. 'Received' works as a past-tense verb with a singular subject.",
+     "type": "mcq",
+     "options": [
+      "received",
+      "have received",
+      "were receiving",
+      "are given"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE56",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Choosing the correct word",
+     "difficulty": "Medium",
+     "question": "Fill in the blank: Neither of the two answers ______ correct.",
+     "solution": "'Neither' is treated as singular, so the singular verb 'is' is required.",
+     "type": "mcq",
+     "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE57",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Error spotting",
+     "difficulty": "Medium",
+     "question": "Identify the part of the sentence that contains an error: (A) The news about the floods / (B) were broadcast / (C) on every channel / (D) last night.",
+     "solution": "'News' is an uncountable noun and takes a singular verb. It should be 'was broadcast'. The error is in part B.",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 1,
+     "fixed": true
+    },
+    {
+     "id": "UE58",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Error spotting",
+     "difficulty": "Medium",
+     "question": "Identify the part of the sentence that contains an error: (A) She said me / (B) that she would / (C) come to the party / (D) tomorrow.",
+     "solution": "'Said' cannot take a direct person object. It should be 'told me' (or 'said to me'). The error is in part A.",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 0,
+     "fixed": true
+    },
+    {
+     "id": "UE59",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Rearranging the parts",
+     "difficulty": "Medium",
+     "question": "Rearrange the parts to form a meaningful sentence:<br>P: the scientists &nbsp; Q: a new species &nbsp; R: discovered &nbsp; S: in the deep sea",
+     "solution": "'The scientists (P) discovered (R) a new species (Q) in the deep sea (S).' The subject comes first, then the verb, then its object, then the place.",
+     "type": "mcq",
+     "options": [
+      "PRQS",
+      "PQRS",
+      "RPQS",
+      "SPRQ"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE60",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Easy",
+     "question": "Choose the one word that can replace the phrase: a person who can speak many languages.",
+     "solution": "A polyglot knows and can use several languages. A pedant is overly concerned with detail, a philanthropist helps others with money, and a pessimist expects the worst.",
+     "type": "mcq",
+     "options": [
+      "Polyglot",
+      "Pedant",
+      "Philanthropist",
+      "Pessimist"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE61",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Easy",
+     "question": "Choose the one word that can replace the phrase: a large cage or building in which birds are kept.",
+     "solution": "An aviary is a place for keeping birds. An apiary is for bees, an aquarium is for fish and an armoury is for weapons.",
+     "type": "mcq",
+     "options": [
+      "Aviary",
+      "Apiary",
+      "Aquarium",
+      "Armoury"
+     ],
+     "answer": 0
     }
    ]
   },
@@ -7166,6 +7800,600 @@
       "2/5"
      ],
      "answer": 0
+    },
+    {
+     "id": "UM27",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Matrices",
+     "difficulty": "Easy",
+     "question": "If A = <span class='mx'><span class='mx-r'><span>1</span><span>2</span></span><span class='mx-r'><span>3</span><span>4</span></span></span>, then A² is:",
+     "solution": "A² = A × A. Row × column: (1,1) = 1·1 + 2·3 = 7; (1,2) = 1·2 + 2·4 = 10; (2,1) = 3·1 + 4·3 = 15; (2,2) = 3·2 + 4·4 = 22. Squaring each entry (the second option) is not matrix multiplication.",
+     "type": "mcq",
+     "options": [
+      "<span class='mx'><span class='mx-r'><span>7</span><span>10</span></span><span class='mx-r'><span>15</span><span>22</span></span></span>",
+      "<span class='mx'><span class='mx-r'><span>1</span><span>4</span></span><span class='mx-r'><span>9</span><span>16</span></span></span>",
+      "<span class='mx'><span class='mx-r'><span>5</span><span>6</span></span><span class='mx-r'><span>11</span><span>16</span></span></span>",
+      "<span class='mx'><span class='mx-r'><span>2</span><span>4</span></span><span class='mx-r'><span>6</span><span>8</span></span></span>"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM28",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Matrices",
+     "difficulty": "Medium",
+     "question": "If A is a 2 × 2 matrix with |A| = 5, then |3A| equals:",
+     "solution": "For an n × n matrix, |kA| = kⁿ|A|. Here n = 2 and k = 3, so |3A| = 3² × 5 = 45. (15 forgets that both rows are multiplied by 3.)",
+     "type": "mcq",
+     "options": [
+      "45",
+      "15",
+      "135",
+      "25"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM29",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Matrices",
+     "difficulty": "Medium",
+     "question": "If <span class='mx'><span class='mx-r'><span>x + y</span><span>2</span></span><span class='mx-r'><span>5</span><span>x − y</span></span></span> = <span class='mx'><span class='mx-r'><span>7</span><span>2</span></span><span class='mx-r'><span>5</span><span>1</span></span></span>, then the value of xy is:",
+     "solution": "Equal matrices have equal entries: x + y = 7 and x − y = 1. Adding gives x = 4, and then y = 3. So xy = 12.",
+     "type": "mcq",
+     "options": [
+      "12",
+      "7",
+      "10",
+      "15"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM30",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Determinants",
+     "difficulty": "Medium",
+     "question": "The value of the determinant <span class='mx'><span class='mx-r'><span>1</span><span>1</span><span>1</span></span><span class='mx-r'><span>1</span><span>2</span><span>3</span></span><span class='mx-r'><span>1</span><span>4</span><span>9</span></span></span> is:",
+     "solution": "Subtract the first row from the second and third: rows become (0, 1, 2) and (0, 3, 8). Expanding along the first column gives 1 × (1·8 − 2·3) = 2.",
+     "type": "mcq",
+     "options": [
+      "2",
+      "0",
+      "6",
+      "−2"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM31",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Determinants",
+     "difficulty": "Medium",
+     "question": "If A is a 3 × 3 matrix with |A| = 4, then |adj A| equals:",
+     "solution": "For an n × n matrix, |adj A| = |A|ⁿ⁻¹. With n = 3 this is 4² = 16.",
+     "type": "mcq",
+     "options": [
+      "16",
+      "4",
+      "64",
+      "12"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM32",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Continuity & Differentiability",
+     "difficulty": "Medium",
+     "question": "If y = xˣ (x > 0), then dy/dx at x = 1 is:",
+     "solution": "Take logs: log y = x log x, so y′/y = log x + 1 and y′ = xˣ(1 + log x). At x = 1: 1 × (1 + 0) = 1.",
+     "type": "mcq",
+     "options": [
+      "1",
+      "0",
+      "e",
+      "2"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM33",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Continuity & Differentiability",
+     "difficulty": "Medium",
+     "question": "f(x) = kx + 1 for x ≤ 5 and f(x) = 3x − 5 for x > 5. For which value of k is f continuous at x = 5?",
+     "solution": "The left value is 5k + 1 and the right limit is 3(5) − 5 = 10. Continuity needs 5k + 1 = 10, so k = 9/5.",
+     "type": "mcq",
+     "options": [
+      "9/5",
+      "2",
+      "1",
+      "5/9"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM34",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Applications of Derivatives",
+     "difficulty": "Easy",
+     "question": "What is the equation of the tangent to the curve y = x² at the point (1, 1)?",
+     "solution": "dy/dx = 2x = 2 at x = 1. The tangent through (1, 1) is y − 1 = 2(x − 1), i.e. y = 2x − 1.",
+     "type": "mcq",
+     "options": [
+      "y = 2x − 1",
+      "y = x",
+      "y = 2x + 1",
+      "y = x²"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM35",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Applications of Derivatives",
+     "difficulty": "Medium",
+     "question": "A rectangle has a perimeter of 40 cm. What is the largest area it can have?",
+     "solution": "With sides w and 20 − w the area is w(20 − w). Its derivative 20 − 2w is zero at w = 10, giving a square of side 10 and area 100 cm², which is a maximum because the second derivative is negative.",
+     "type": "mcq",
+     "options": [
+      "100 cm²",
+      "80 cm²",
+      "96 cm²",
+      "120 cm²"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM36",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Integrals",
+     "difficulty": "Easy",
+     "question": "∫ x/(x² + 1) dx equals:",
+     "solution": "Put u = x² + 1, so du = 2x dx and x dx = du/2. The integral becomes (1/2) ∫ du/u = (1/2) log|u| + C.",
+     "type": "mcq",
+     "options": [
+      "(1/2) log(x² + 1) + C",
+      "log(x² + 1) + C",
+      "tan⁻¹ x + C",
+      "(1/2) tan⁻¹ x + C"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM37",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Integrals",
+     "difficulty": "Medium",
+     "question": "Evaluate ∫₀¹ x² e^{x³} dx.",
+     "solution": "Put u = x³, du = 3x² dx. The limits stay 0 to 1, and the integral is (1/3) ∫₀¹ eᵘ du = (e − 1)/3.",
+     "type": "mcq",
+     "options": [
+      "(e − 1)/3",
+      "e − 1",
+      "e/3",
+      "(e + 1)/3"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM38",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Integrals",
+     "difficulty": "Easy",
+     "question": "∫ dx/√(4 − x²) equals:",
+     "solution": "Use the standard result ∫ dx/√(a² − x²) = sin⁻¹(x/a) + C with a = 2.",
+     "type": "mcq",
+     "options": [
+      "sin⁻¹(x/2) + C",
+      "sin⁻¹ x + C",
+      "(1/2) sin⁻¹(x/2) + C",
+      "cos⁻¹(x/2) + C"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM39",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Application of Integrals",
+     "difficulty": "Medium",
+     "question": "What is the area enclosed between the curves y = x and y = x² ?",
+     "solution": "The curves meet at x = 0 and x = 1, and y = x lies above y = x² in between. Area = ∫₀¹ (x − x²) dx = 1/2 − 1/3 = 1/6.",
+     "type": "mcq",
+     "options": [
+      "1/6 square unit",
+      "1/3 square unit",
+      "1/2 square unit",
+      "1 square unit"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM40",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Differential Equations",
+     "difficulty": "Medium",
+     "question": "The integrating factor of the differential equation dy/dx + (2/x) y = x² (x > 0) is:",
+     "solution": "The integrating factor is e^{∫P dx} with P = 2/x. ∫(2/x) dx = 2 log x, so the factor is e^{2 log x} = x².",
+     "type": "mcq",
+     "options": [
+      "x²",
+      "e^{2x}",
+      "1/x²",
+      "2x"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM41",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Differential Equations",
+     "difficulty": "Easy",
+     "question": "If dy/dx = y and y = 1 when x = 0, then the value of y at x = 1 is:",
+     "solution": "Separating variables, dy/y = dx gives log y = x + c. y(0) = 1 gives c = 0, so y = eˣ and y(1) = e.",
+     "type": "mcq",
+     "options": [
+      "e",
+      "1",
+      "2",
+      "e²"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM42",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Probability",
+     "difficulty": "Medium",
+     "question": "A fair coin is tossed four times. What is the probability of getting at least one head?",
+     "solution": "P(no head) = (1/2)⁴ = 1/16. So P(at least one head) = 1 − 1/16 = 15/16.",
+     "type": "mcq",
+     "options": [
+      "15/16",
+      "7/8",
+      "1/16",
+      "3/4"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM43",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Relations & Functions",
+     "difficulty": "Medium",
+     "question": "How many reflexive relations can be defined on a set with 3 elements?",
+     "solution": "A relation on a 3-element set is a subset of the 9 ordered pairs. For reflexivity the 3 pairs (a, a) must be included, and the other 6 pairs are free: 2⁶ = 64. (512 = 2⁹ counts all relations.)",
+     "type": "mcq",
+     "options": [
+      "64",
+      "512",
+      "8",
+      "27"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM44",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Relations & Functions",
+     "difficulty": "Easy",
+     "question": "The function f: R → R defined by f(x) = x² is:",
+     "solution": "f(2) = f(−2) = 4, so f is not one-one. Its values are never negative, so the range is [0, ∞) and not all of R: f is not onto.",
+     "type": "mcq",
+     "options": [
+      "neither one-one nor onto",
+      "one-one but not onto",
+      "onto but not one-one",
+      "both one-one and onto"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM45",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Relations & Functions",
+     "difficulty": "Easy",
+     "question": "If f(x) = 2x + 1 and g(x) = x², then (g∘f)(2) equals:",
+     "solution": "(g∘f)(2) = g(f(2)) = g(5) = 25. (9 is (f∘g)(2) = f(4), the composition in the other order.)",
+     "type": "mcq",
+     "options": [
+      "25",
+      "9",
+      "17",
+      "5"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM46",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Inverse Trigonometric Functions",
+     "difficulty": "Hard",
+     "question": "The value of tan⁻¹ 1 + tan⁻¹ 2 + tan⁻¹ 3 is:",
+     "solution": "tan⁻¹ 1 = π/4. For tan⁻¹ 2 + tan⁻¹ 3, ab = 6 > 1, so the sum is π + tan⁻¹((2 + 3)/(1 − 6)) = π + tan⁻¹(−1) = π − π/4 = 3π/4. Total = π/4 + 3π/4 = π.",
+     "type": "mcq",
+     "options": [
+      "π",
+      "π/2",
+      "3π/4",
+      "2π"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM47",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Inverse Trigonometric Functions",
+     "difficulty": "Medium",
+     "question": "The value of sin(cos⁻¹(3/5)) is:",
+     "solution": "Let θ = cos⁻¹(3/5), so cos θ = 3/5 with θ in [0, π]. Then sin θ = √(1 − 9/25) = 4/5, which is positive in that range.",
+     "type": "mcq",
+     "options": [
+      "4/5",
+      "3/5",
+      "5/4",
+      "3/4"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM48",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Inverse Trigonometric Functions",
+     "difficulty": "Easy",
+     "question": "What is the principal value of cos⁻¹(−1/2)?",
+     "solution": "The principal range of cos⁻¹ is [0, π]. cos(2π/3) = −1/2 and 2π/3 lies in that range. (4π/3 also has cosine −1/2 but is outside the range.)",
+     "type": "mcq",
+     "options": [
+      "2π/3",
+      "π/3",
+      "−π/3",
+      "4π/3"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM49",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Continuity & Differentiability",
+     "difficulty": "Medium",
+     "question": "If x = at² and y = 2at, then dy/dx at t = 1 is:",
+     "solution": "dx/dt = 2at and dy/dt = 2a, so dy/dx = (dy/dt)/(dx/dt) = 2a/(2at) = 1/t. At t = 1 this is 1.",
+     "type": "mcq",
+     "options": [
+      "1",
+      "2",
+      "0",
+      "1/2"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM50",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Continuity & Differentiability",
+     "difficulty": "Medium",
+     "question": "Rolle's theorem is applied to f(x) = x² − 4x + 3 on [1, 3]. The value of c is:",
+     "solution": "f(1) = f(3) = 0, so Rolle's theorem applies. f′(x) = 2x − 4 = 0 gives c = 2, which lies in (1, 3).",
+     "type": "mcq",
+     "options": [
+      "2",
+      "1.5",
+      "2.5",
+      "3"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM51",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Applications of Derivatives",
+     "difficulty": "Medium",
+     "question": "The local maximum value of f(x) = x³ − 12x is:",
+     "solution": "f′(x) = 3x² − 12 = 0 gives x = ±2. f″(x) = 6x is negative at x = −2, so that is the local maximum: f(−2) = −8 + 24 = 16. (−16 is the local minimum at x = 2.)",
+     "type": "mcq",
+     "options": [
+      "16",
+      "−16",
+      "2",
+      "0"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM52",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Applications of Derivatives",
+     "difficulty": "Medium",
+     "question": "The edge of a cube increases at 3 cm/s. How fast is its volume increasing when the edge is 2 cm?",
+     "solution": "V = a³, so dV/dt = 3a² · da/dt = 3 × 4 × 3 = 36 cm³/s.",
+     "type": "mcq",
+     "options": [
+      "36 cm³/s",
+      "12 cm³/s",
+      "24 cm³/s",
+      "54 cm³/s"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM53",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Vectors",
+     "difficulty": "Easy",
+     "question": "If |a| = 3, |b| = 4 and a · b = 6, then the angle between a and b is:",
+     "solution": "cos θ = (a · b)/(|a||b|) = 6/12 = 1/2, so θ = 60°.",
+     "type": "mcq",
+     "options": [
+      "60°",
+      "30°",
+      "45°",
+      "90°"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM54",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Vectors",
+     "difficulty": "Medium",
+     "question": "The vectors a = î + 2ĵ + 3k̂ and b = 3î − ĵ + λk̂ are perpendicular. The value of λ is:",
+     "solution": "Perpendicular vectors have a · b = 0: 3 − 2 + 3λ = 0, so λ = −1/3.",
+     "type": "mcq",
+     "options": [
+      "−1/3",
+      "1/3",
+      "3",
+      "−3"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM55",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Three-dimensional Geometry",
+     "difficulty": "Medium",
+     "question": "What is the distance of the point (1, 2, 3) from the plane x + 2y + 2z = 3?",
+     "solution": "Distance = |1 + 2(2) + 2(3) − 3| / √(1 + 4 + 4) = 8/3.",
+     "type": "mcq",
+     "options": [
+      "8/3",
+      "3",
+      "11/3",
+      "2/3"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM56",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Three-dimensional Geometry",
+     "difficulty": "Easy",
+     "question": "A line has direction ratios 2, 3, 6. The cosine of the angle it makes with the x-axis is:",
+     "solution": "The length of (2, 3, 6) is √(4 + 9 + 36) = 7, so the direction cosines are 2/7, 3/7 and 6/7. The cosine with the x-axis is the first one, 2/7.",
+     "type": "mcq",
+     "options": [
+      "2/7",
+      "2/3",
+      "3/7",
+      "6/7"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM57",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Probability",
+     "difficulty": "Medium",
+     "question": "For events A and B, P(A) = 0.3, P(B) = 0.5 and P(A ∪ B) = 0.65. Then:",
+     "solution": "P(A ∩ B) = P(A) + P(B) − P(A ∪ B) = 0.8 − 0.65 = 0.15. This equals P(A)P(B) = 0.15, so the events are independent. They are not mutually exclusive because P(A ∩ B) ≠ 0.",
+     "type": "mcq",
+     "options": [
+      "A and B are independent",
+      "A and B are mutually exclusive",
+      "P(A ∩ B) = 0.2",
+      "P(A | B) = 0.6"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM58",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Probability",
+     "difficulty": "Medium",
+     "question": "A random variable X follows a binomial distribution with n = 6 and p = 1/3. Its mean and variance are:",
+     "solution": "Mean = np = 6 × 1/3 = 2. Variance = npq = 6 × 1/3 × 2/3 = 4/3.",
+     "type": "mcq",
+     "options": [
+      "2 and 4/3",
+      "2 and 2/3",
+      "6 and 4/3",
+      "1/3 and 2/3"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM59",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Linear Programming",
+     "difficulty": "Medium",
+     "question": "Minimise Z = 2x + 3y subject to x + y ≥ 4, x ≥ 1, y ≥ 0. The minimum value of Z is:",
+     "solution": "The corner points of this (unbounded) region are (1, 3) and (4, 0). Z = 11 at (1, 3) and Z = 8 at (4, 0). Because Z has positive coefficients, it only grows along the open directions, so the minimum is 8.",
+     "type": "mcq",
+     "options": [
+      "8",
+      "11",
+      "12",
+      "9"
+     ],
+     "answer": 0
     }
    ]
   }
@@ -7190,6 +8418,26 @@
    "kind": "passage",
    "title": "Literary passage: The first rain",
    "html": "<b>Literary passage: The first rain</b><p>The first rain of the monsoon does not arrive so much as announce itself. For days the sky has been a sheet of tin, the air thick enough to lean on, and the city has waited with the irritable patience of a queue that has stopped moving. Then the wind changes. Leaves turn their pale undersides to the sky, as if to check what is coming, and somewhere a door bangs shut.</p>\n<p>When the drops come, they are large and few, each one landing on the dusty road with a sound like a coin dropped on a table. Children run out before their mothers can stop them. Shopkeepers, who have spent the week complaining of the heat, stand in their doorways and complain instead about the mud, though their faces say otherwise.</p>\n<p>And then there is the smell. The parched earth, touched by water, releases a scent so particular that we have borrowed a scientist's word, petrichor, to name it, though no word quite contains it. For a moment the whole city seems to breathe out.</p>\n<p>By evening the gutters are rivers and the traffic has given up. Tomorrow there will be potholes, leaking roofs and the long grey weeks of the season. But tonight nobody is thinking of tomorrow. Tonight the rain is not weather; it is a reprieve.</p>"
+  },
+  "cu-stepwell": {
+   "kind": "passage",
+   "title": "Factual passage: Stepwells",
+   "html": "<b>Factual passage: Stepwells</b><p>In the dry parts of western India, people once solved the problem of water not by building walls around it but by digging down to meet it. The result was the stepwell, known as a vav or baoli: a well so wide that a flight of steps could lead from the ground to the water below. As the water level rose and fell with the seasons, villagers simply walked down or up to reach it.</p>\n<p>Stepwells were more than water tanks. The cool, shaded air at the bottom made them places to rest in the heat of the day, and travellers on long trade routes often stopped at them. Many were decorated with carved pillars, balconies and sculpted figures, because the people who paid for them saw the gift of water as an act of merit. Some, like Rani ki Vav in Gujarat, are now World Heritage sites.</p>\n<p>Their decline began when piped water and hand pumps arrived. Once water could be drawn without walking down a hundred steps, many stepwells were abandoned, filled with rubbish or used as dumps. Yet some are being given new life. Volunteers have cleared silt, repaired walls and let rainwater flow back in. The lesson, they say, is practical as well as historical: structures that store rain where it falls may be useful again in regions where groundwater is running low.</p>"
+  },
+  "cu-sleep": {
+   "kind": "passage",
+   "title": "Factual passage: Sleep and learning",
+   "html": "<b>Factual passage: Sleep and learning</b><p>Most students know the feeling of studying late into the night and then struggling to remember anything the next day. Research on sleep suggests that this is not just bad luck. During sleep, the brain appears to replay and strengthen what was learned during the day, helping to move new information into long-term memory. A student who sleeps well after studying may therefore recall more than one who stays awake revising for the same extra hours.</p>\n<p>Sleep matters for another reason: attention. A tired mind finds it harder to focus, makes more careless mistakes and is slower to solve problems. These effects are small after one bad night but add up when short sleep becomes a habit.</p>\n<p>Teenagers face a particular difficulty. During adolescence the body's internal clock tends to shift later, so many teenagers do not feel sleepy until late at night, yet school often begins early in the morning. Some schools that moved their start times later have reported better attendance and alertness, though researchers caution that results vary and that more studies are needed.</p>\n<p>None of this means that studying late is always a mistake; an occasional late night before an exam may be unavoidable. But the evidence suggests that sleep is part of studying, not a break from it. A regular bedtime, a dark room and keeping phones away from the bed are simple steps that cost nothing and may help.</p>"
+  },
+  "cu-lastbench": {
+   "kind": "passage",
+   "title": "Narrative passage: The last bench",
+   "html": "<b>Narrative passage: The last bench</b><p>Arjun's family had moved cities in the middle of the school year, and on his first morning he walked into Class IX with his bag held tightly in front of him, as if it were a shield. The teacher pointed to the only empty seat, on the last bench by the window. He sat down and looked at the board without really reading it.</p>\n<p>At the break, the others drifted out in noisy groups. Arjun stayed, pretending to search his bag. He knew nobody here, and he had decided, quite firmly, that it was easier not to try.</p>\n<p>\"You can have the window seat,\" said a voice. A boy with a patched blue bag had stopped beside the bench. \"I always sit here, but nobody comes this far back anyway.\" He laughed, as though it were a joke against himself. \"I'm Imran. We have maths next. Mr Rao gives homework before he even says good morning.\"</p>\n<p>Arjun almost smiled. \"Is it hard?\"</p>\n<p>\"Only if you're alone,\" said Imran, and pulled out a spare notebook. \"Copy the last class's notes from mine. I'll show you which ones matter.\"</p>\n<p>By the end of the day Arjun had stopped holding his bag like a shield. He did not know yet whether he would like the city or the school. But the last bench, he thought, was not quite as far from everything as it had looked that morning.</p>"
+  },
+  "cu-handwriting": {
+   "kind": "passage",
+   "title": "Discursive passage: In defence of handwriting",
+   "html": "<b>Discursive passage: In defence of handwriting</b><p>Few people write by hand for long these days. Messages are typed, notes are dictated and even shopping lists live on phones. It is easy to say that handwriting is a skill whose time has passed, like lighting a lamp with a match. But before we let it go, we might ask what it quietly does for us.</p>\n<p>Several small studies suggest that students who take notes by hand tend to understand lecture material a little better than those who type. The explanation offered is simple: handwriting is slow, so the writer cannot copy everything and must decide what matters. Typing is fast enough to record almost every word, and the typist may leave the lecture with pages of text and little thought behind them.</p>\n<p>Handwriting also carries something of the writer. A letter in a familiar hand can comfort a reader in a way that a printed page cannot, and a signature is still trusted as proof of a person's presence.</p>\n<p>None of this is an argument against keyboards, which are faster, tidier and indispensable for long documents. It is only an argument against giving up one tool simply because another has arrived. The sensible course is to keep both, using the pen when we want to think and the keyboard when we want to produce.</p>"
   }
  }
 }

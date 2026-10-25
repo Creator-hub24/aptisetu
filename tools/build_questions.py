@@ -762,7 +762,7 @@ except ImportError:
     raise SystemExit("CUET maths checks need sympy: run with a Python that has it, e.g. /workspace/.venv-edu/bin/python tools/build_questions.py")
 from ucommon import UBank
 import gat as _gat, english as _eng, maths as _maths
-UB = UBank(); _gat.build(UB); _eng.build(UB); _maths.build(UB)
+UB = UBank(); _gat.build(UB); _eng.build(UB); _maths.build(UB); _eng.build2(UB); _maths.build2(UB)
 # reuse: tagged general items join the GAT pool (copied, with their original id kept for traceability)
 reused = []
 for q in OUT["quant"] + OUT["reasoning"]:

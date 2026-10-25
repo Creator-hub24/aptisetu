@@ -642,7 +642,7 @@ gat_parts = {p: sum(1 for q in UQ["gat"] if q["part"] == p) for p in dict.fromke
 csec = ""
 for sec, ic, col, blurb in [
     ("gat", "🧠", "var(--cuet)", "Quantitative reasoning, logical &amp; analytical reasoning, general mental ability and static GK (science, environment, polity, geography, history)."),
-    ("english", "📖", "var(--varc)", "Three short passages (factual, narrative, literary) plus synonyms and antonyms, correct-word, error spotting, rearranging parts and matching."),
+    ("english", "📖", "var(--varc)", "Seven short passages (factual, narrative, literary) plus synonyms and antonyms, correct-word, error spotting, rearranging parts, matching and one-word substitution."),
     ("maths", "➗", "var(--quant)", "Section A (common) and Section B1 (Mathematics): matrices, determinants, calculus, differential equations, vectors, 3D, LPP and probability.")]:
     n = CUETN[sec]; T = min(50, n) * 72
     csec += f"""<div class="card sec-card" style="--c:{col}"><div class="icon">{ic}</div><h3>{UB['sections'][sec]['name']}</h3>
