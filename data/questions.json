@@ -1967,6 +1967,478 @@
     ],
     "answer": 1,
     "solution": "Sum 5: 4 ways (1,4), (2,3), (3,2), (4,1). Sum 10: 3 ways (4,6), (5,5), (6,4). Favourable = 7 out of 36, so the probability = 7/36."
+   },
+   {
+    "id": "Q126",
+    "exam": "general",
+    "topic": "Percentages",
+    "difficulty": "Easy",
+    "question": "A company's headcount rises from 800 to 920. What is the percentage increase?",
+    "options": [
+     "12%",
+     "14%",
+     "18%",
+     "15%"
+    ],
+    "answer": 3,
+    "solution": "Increase = 920 − 800 = 120. Percentage increase = 120/800 × 100 = 15%.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q127",
+    "exam": "general",
+    "topic": "Percentages",
+    "difficulty": "Medium",
+    "question": "In a campus drive, 25% of 640 students were shortlisted and 40% of the shortlisted students received offers. How many students received offers?",
+    "options": [
+     "64",
+     "56",
+     "72",
+     "80"
+    ],
+    "answer": 0,
+    "solution": "Shortlisted = 25% of 640 = 160. Offers = 40% of 160 = 64.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q128",
+    "exam": "general",
+    "topic": "Percentages",
+    "difficulty": "Medium",
+    "question": "A package of ₹6 lakh is raised by 20% and then cut by 20%. What is the final package?",
+    "options": [
+     "₹5.60 lakh",
+     "₹5.88 lakh",
+     "₹5.76 lakh",
+     "₹6.00 lakh"
+    ],
+    "answer": 2,
+    "solution": "After the raise: 6 × 1.2 = 7.2. After the cut: 7.2 × 0.8 = ₹5.76 lakh.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q129",
+    "exam": "general",
+    "topic": "Profit & Loss",
+    "difficulty": "Easy",
+    "question": "A laptop bought for ₹40,000 is sold at a 15% profit. What is the selling price?",
+    "options": [
+     "₹46,000",
+     "₹45,000",
+     "₹44,000",
+     "₹47,500"
+    ],
+    "answer": 0,
+    "solution": "Profit = 15% of 40,000 = ₹6,000. Selling price = 40,000 + 6,000 = ₹46,000.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q130",
+    "exam": "general",
+    "topic": "Profit & Loss",
+    "difficulty": "Medium",
+    "question": "An item is marked at ₹1,250 and sold after a 20% discount, still giving a 25% profit. What is the cost price?",
+    "options": [
+     "₹750",
+     "₹850",
+     "₹800",
+     "₹900"
+    ],
+    "answer": 2,
+    "solution": "Selling price = 1,250 × 0.8 = ₹1,000. Cost price = 1,000/1.25 = ₹800.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q131",
+    "exam": "general",
+    "topic": "Profit & Loss",
+    "difficulty": "Hard",
+    "question": "An item costs ₹500 and is marked 40% above cost. After a 15% discount, what is the profit percentage?",
+    "options": [
+     "19%",
+     "17%",
+     "15%",
+     "21%"
+    ],
+    "answer": 0,
+    "solution": "Marked price = 500 × 1.4 = ₹700. Selling price = 700 × 0.85 = ₹595. Profit = 95, which is 95/500 = 19%."
+   },
+   {
+    "id": "Q132",
+    "exam": "general",
+    "topic": "Simple & Compound Interest",
+    "difficulty": "Easy",
+    "question": "What is the simple interest on ₹12,000 at 7.5% per annum for 4 years?",
+    "options": [
+     "₹3,000",
+     "₹3,600",
+     "₹3,200",
+     "₹3,900"
+    ],
+    "answer": 1,
+    "solution": "SI = 12,000 × 7.5 × 4/100 = ₹3,600.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q133",
+    "exam": "general",
+    "topic": "Simple & Compound Interest",
+    "difficulty": "Medium",
+    "question": "At what rate of simple interest per annum will a sum of money double itself in 8 years?",
+    "options": [
+     "10%",
+     "12%",
+     "15%",
+     "12.5%"
+    ],
+    "answer": 3,
+    "solution": "The interest equals the principal: P = P × r × 8/100, so r = 100/8 = 12.5%.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q134",
+    "exam": "general",
+    "topic": "Ratio & Proportion",
+    "difficulty": "Easy",
+    "question": "Two employees' salaries are in the ratio 5 : 7 and together amount to ₹60,000. What is the difference between them?",
+    "options": [
+     "₹10,000",
+     "₹8,000",
+     "₹12,000",
+     "₹15,000"
+    ],
+    "answer": 0,
+    "solution": "One part = 60,000/12 = ₹5,000. The salaries are ₹25,000 and ₹35,000, a difference of ₹10,000.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q135",
+    "exam": "general",
+    "topic": "Ratio & Proportion",
+    "difficulty": "Medium",
+    "question": "Among 240 candidates the ratio of boys to girls is 7 : 5. If 20 more girls join, what is the new ratio of boys to girls?",
+    "options": [
+     "7 : 5",
+     "5 : 4",
+     "6 : 5",
+     "7 : 6"
+    ],
+    "answer": 3,
+    "solution": "Boys = 140 and girls = 100. After 20 more girls: 140 : 120 = 7 : 6.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q136",
+    "exam": "general",
+    "topic": "Averages & Alligation",
+    "difficulty": "Medium",
+    "question": "The average of six consecutive even numbers is 15. What is the largest of them?",
+    "options": [
+     "18",
+     "24",
+     "22",
+     "20"
+    ],
+    "answer": 3,
+    "solution": "For consecutive even numbers the average is the middle of the list: the 3rd and 4th numbers are 14 and 16. So the numbers are 10, 12, 14, 16, 18, 20 and the largest is 20.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q137",
+    "exam": "general",
+    "topic": "Averages & Alligation",
+    "difficulty": "Medium",
+    "question": "Thirty students have an average score of 60 and twenty students have an average of 70. What is the average of all fifty students?",
+    "options": [
+     "63",
+     "65",
+     "64",
+     "66"
+    ],
+    "answer": 2,
+    "solution": "Total = 30 × 60 + 20 × 70 = 1,800 + 1,400 = 3,200. Average = 3,200/50 = 64.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q138",
+    "exam": "general",
+    "topic": "Averages & Alligation",
+    "difficulty": "Hard",
+    "question": "In what ratio should a 20% salt solution be mixed with a 50% salt solution to get a 30% solution?",
+    "options": [
+     "2 : 1",
+     "1 : 2",
+     "3 : 2",
+     "3 : 1"
+    ],
+    "answer": 0,
+    "solution": "Using alligation: (50 − 30) : (30 − 20) = 20 : 10 = 2 : 1, the 20% solution to the 50% solution."
+   },
+   {
+    "id": "Q139",
+    "exam": "general",
+    "topic": "Time & Work",
+    "difficulty": "Easy",
+    "question": "A can finish a task in 12 days and B can finish it in 24 days. How long will they take working together?",
+    "options": [
+     "6 days",
+     "10 days",
+     "9 days",
+     "8 days"
+    ],
+    "answer": 3,
+    "solution": "Work per day = 1/12 + 1/24 = 3/24 = 1/8. They finish in 8 days.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q140",
+    "exam": "general",
+    "topic": "Time & Work",
+    "difficulty": "Medium",
+    "question": "8 workers can finish a job in 15 days. After 5 days, 8 more workers join. How many more days will it take to finish the job?",
+    "options": [
+     "4 days",
+     "7 days",
+     "6 days",
+     "5 days"
+    ],
+    "answer": 3,
+    "solution": "Total work = 8 × 15 = 120 worker-days. In 5 days 40 are done, leaving 80. With 16 workers the rest takes 80/16 = 5 days.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q141",
+    "exam": "general",
+    "topic": "Time & Work",
+    "difficulty": "Medium",
+    "question": "Pipe A can fill a tank in 8 hours and pipe B in 12 hours. Both are opened for 3 hours and then B is closed. How many more hours will A take to fill the rest?",
+    "options": [
+     "3 hours",
+     "2 hours",
+     "4 hours",
+     "5 hours"
+    ],
+    "answer": 0,
+    "solution": "In 3 hours both fill 3 × (1/8 + 1/12) = 3 × 5/24 = 5/8 of the tank. The remaining 3/8 is filled by A alone in 3/8 × 8 = 3 hours.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q142",
+    "exam": "general",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Medium",
+    "question": "A car travels 120 km at 60 km/h and returns the same 120 km at 40 km/h. What is its average speed for the whole trip?",
+    "options": [
+     "48 km/h",
+     "45 km/h",
+     "50 km/h",
+     "52 km/h"
+    ],
+    "answer": 0,
+    "solution": "Time going = 2 h and time returning = 3 h. Average speed = 240/5 = 48 km/h.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q143",
+    "exam": "general",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Easy",
+    "question": "A 150 m long train running at 54 km/h passes a pole. How long does it take?",
+    "options": [
+     "8 seconds",
+     "12 seconds",
+     "10 seconds",
+     "15 seconds"
+    ],
+    "answer": 2,
+    "solution": "54 km/h = 54 × 5/18 = 15 m/s. Time = 150/15 = 10 seconds.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q144",
+    "exam": "general",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Hard",
+    "question": "Two trains of lengths 100 m and 125 m run in opposite directions at 36 km/h and 54 km/h. How long do they take to cross each other?",
+    "options": [
+     "8 seconds",
+     "12 seconds",
+     "10 seconds",
+     "9 seconds"
+    ],
+    "answer": 3,
+    "solution": "Relative speed = 90 km/h = 25 m/s. Distance = 225 m. Time = 225/25 = 9 seconds."
+   },
+   {
+    "id": "Q145",
+    "exam": "general",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Medium",
+    "question": "A boat goes upstream at 12 km/h and downstream at 20 km/h. What is its speed in still water?",
+    "options": [
+     "14 km/h",
+     "15 km/h",
+     "16 km/h",
+     "18 km/h"
+    ],
+    "answer": 2,
+    "solution": "Speed in still water = (20 + 12)/2 = 16 km/h.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q146",
+    "exam": "general",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "What is the smallest number which leaves a remainder of 5 when divided by 6, 8 and 12?",
+    "options": [
+     "24",
+     "41",
+     "29",
+     "53"
+    ],
+    "answer": 2,
+    "solution": "LCM of 6, 8 and 12 = 24. The smallest such number is 24 + 5 = 29.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q147",
+    "exam": "general",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "What is the sum of all multiples of 7 from 1 to 100?",
+    "options": [
+     "665",
+     "700",
+     "770",
+     "735"
+    ],
+    "answer": 3,
+    "solution": "The multiples are 7 × 1 up to 7 × 14 (98). Sum = 7 × (14 × 15/2) = 7 × 105 = 735.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q148",
+    "exam": "general",
+    "topic": "Algebra",
+    "difficulty": "Medium",
+    "question": "If a + b = 10 and ab = 21, what is the value of a² + b²?",
+    "options": [
+     "56",
+     "58",
+     "60",
+     "62"
+    ],
+    "answer": 1,
+    "solution": "a² + b² = (a + b)² − 2ab = 100 − 42 = 58.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q149",
+    "exam": "general",
+    "topic": "Algebra",
+    "difficulty": "Hard",
+    "question": "The product of two consecutive positive integers is 342. What is their sum?",
+    "options": [
+     "35",
+     "39",
+     "37",
+     "41"
+    ],
+    "answer": 2,
+    "solution": "18 × 19 = 342, so the integers are 18 and 19 and their sum is 37."
+   },
+   {
+    "id": "Q150",
+    "exam": "general",
+    "topic": "Geometry & Mensuration",
+    "difficulty": "Medium",
+    "question": "The perimeter of a rectangle is 36 cm and its length is twice its breadth. What is its area?",
+    "options": [
+     "64 cm²",
+     "80 cm²",
+     "72 cm²",
+     "96 cm²"
+    ],
+    "answer": 2,
+    "solution": "2(l + b) = 36 with l = 2b gives 6b = 36, so b = 6 and l = 12. Area = 72 cm².",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q151",
+    "exam": "general",
+    "topic": "Geometry & Mensuration",
+    "difficulty": "Easy",
+    "question": "The area of a circle is 154 cm². What is its circumference? (Take π = 22/7)",
+    "options": [
+     "33 cm",
+     "66 cm",
+     "55 cm",
+     "44 cm"
+    ],
+    "answer": 3,
+    "solution": "πr² = 154 gives r² = 49, so r = 7. Circumference = 2 × 22/7 × 7 = 44 cm.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q152",
+    "exam": "general",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can the letters of the word CAMPUS be arranged so that the two vowels are together?",
+    "options": [
+     "240",
+     "180",
+     "120",
+     "360"
+    ],
+    "answer": 0,
+    "solution": "Treat the vowels A and U as one block. The 5 units (C, M, P, S and the block) can be arranged in 5! = 120 ways, and the vowels in the block can swap in 2 ways. Total = 240."
+   },
+   {
+    "id": "Q153",
+    "exam": "general",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Easy",
+    "question": "In how many ways can a team of 4 be chosen from 10 candidates?",
+    "options": [
+     "210",
+     "180",
+     "120",
+     "240"
+    ],
+    "answer": 0,
+    "solution": "10C4 = (10 × 9 × 8 × 7)/(4 × 3 × 2 × 1) = 210."
+   },
+   {
+    "id": "Q154",
+    "exam": "general",
+    "topic": "Probability",
+    "difficulty": "Easy",
+    "question": "A bag has 5 red, 3 blue and 2 green balls. One ball is drawn at random. What is the probability that it is not blue?",
+    "options": [
+     "3/10",
+     "1/2",
+     "4/5",
+     "7/10"
+    ],
+    "answer": 3,
+    "solution": "Not blue = 5 + 2 = 7 balls out of 10. Probability = 7/10."
+   },
+   {
+    "id": "Q155",
+    "exam": "general",
+    "topic": "Probability",
+    "difficulty": "Medium",
+    "question": "A committee of 2 is chosen at random from 4 men and 3 women. What is the probability that both are women?",
+    "options": [
+     "1/7",
+     "2/7",
+     "3/7",
+     "1/3"
+    ],
+    "answer": 0,
+    "solution": "Total ways = 7C2 = 21. Both women: 3C2 = 3. Probability = 3/21 = 1/7."
    }
   ]
  },
@@ -3942,6 +4414,327 @@
     "answer": 3,
     "solution": "PEN = 16 + 5 + 14 = 35, which confirms the rule. INK = 9 + 14 + 11 = 34.",
     "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R124",
+    "exam": "general",
+    "topic": "Syllogisms",
+    "difficulty": "Medium",
+    "question": "Statements: All engineers are graduates. Some graduates are managers.<br>Conclusions: I. Some engineers are managers II. Some managers are graduates",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 1,
+    "solution": "Converting 'some graduates are managers' gives some managers are graduates (II). The managers may not be engineers, so I does not follow.",
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R125",
+    "exam": "general",
+    "topic": "Syllogisms",
+    "difficulty": "Hard",
+    "question": "Statements: No coder is a tester. All testers are analysts.<br>Conclusions: I. No coder is an analyst II. Some analysts are not coders",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 1,
+    "solution": "Testers are analysts and no tester is a coder, so some analysts (the testers) are not coders (II). Other analysts may be coders, so I does not follow.",
+    "fixed": true
+   },
+   {
+    "id": "R126",
+    "exam": "general",
+    "topic": "Seating Arrangement",
+    "difficulty": "Medium",
+    "question": "Six interns A, B, C, D, E and F sit in a row facing north. B sits at the left end. A sits two places to the right of B. C sits immediately to the right of A. D does not sit at the right end. E sits to the left of D. Who sits at the right end?",
+    "options": [
+     "F",
+     "E",
+     "D",
+     "C"
+    ],
+    "answer": 0,
+    "solution": "B is 1st, A is 3rd and C is 4th. The free seats are 2nd, 5th and 6th for D, E and F. D is not 6th and E is to the left of D, so D is 5th and E is 2nd. That leaves F in the 6th seat, at the right end.",
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R127",
+    "exam": "general",
+    "topic": "Seating Arrangement",
+    "difficulty": "Hard",
+    "question": "Five persons P, Q, R, S and T sit around a circular table facing the centre. P sits between Q and R. R sits immediately clockwise of P. S does not sit next to R. Who sits between T and Q?",
+    "options": [
+     "P",
+     "R",
+     "S",
+     "Cannot be determined"
+    ],
+    "answer": 2,
+    "solution": "Going clockwise from P: R is next, and Q is on P's other side, so Q is last. S and T take the two middle seats. S cannot be next to R, so S is the fourth seat and T the third. The order clockwise is P, R, T, S, Q. S sits between T and Q.",
+    "fixed": true
+   },
+   {
+    "id": "R128",
+    "exam": "general",
+    "topic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "A is the brother of B. B is the sister of C. D is the father of A. How is C related to D?",
+    "options": [
+     "Son",
+     "Daughter",
+     "Son or daughter",
+     "Nephew"
+    ],
+    "answer": 2,
+    "solution": "A, B and C are siblings, and D is the father of A, so D is the father of all three. C's gender is not given, so C is D's son or daughter.",
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R129",
+    "exam": "general",
+    "topic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Pointing to a man, Sita says, 'He is the son of my mother's only brother.' How is the man related to Sita?",
+    "options": [
+     "Cousin",
+     "Brother",
+     "Nephew",
+     "Uncle"
+    ],
+    "answer": 0,
+    "solution": "Sita's mother's only brother is her maternal uncle. His son is Sita's cousin.",
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R130",
+    "exam": "general",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, WORK is written as XQUO, where the letters are moved forward by 1, 2, 3 and 4 places respectively. How is PLAY written in that code?",
+    "options": [
+     "QNDC",
+     "QNCD",
+     "OJXU",
+     "QMDC"
+    ],
+    "answer": 0,
+    "solution": "P+1 = Q, L+2 = N, A+3 = D, Y+4 = C (after Z comes A, B, C). So PLAY is written QNDC.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R131",
+    "exam": "general",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, 'bright red car' is written as 'ka mi to', 'red car park' as 'mi to se' and 'park fast' as 'se ju'. How is 'bright' written in that code?",
+    "options": [
+     "mi",
+     "ka",
+     "to",
+     "se"
+    ],
+    "answer": 1,
+    "solution": "'red car' is common to the first two statements and 'mi to' is common to the codes, so red and car are mi and to in some order. The remaining code in the first statement, 'ka', stands for bright.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R132",
+    "exam": "general",
+    "topic": "Number & Letter Series",
+    "difficulty": "Medium",
+    "question": "Find the next term: 7, 10, 16, 28, 52, ?",
+    "options": [
+     "100",
+     "96",
+     "88",
+     "104"
+    ],
+    "answer": 0,
+    "solution": "The differences are 3, 6, 12, 24, doubling each time, so the next difference is 48: 52 + 48 = 100.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R133",
+    "exam": "general",
+    "topic": "Number & Letter Series",
+    "difficulty": "Easy",
+    "question": "Find the next term: 1, 2, 6, 24, 120, ?",
+    "options": [
+     "720",
+     "600",
+     "240",
+     "840"
+    ],
+    "answer": 0,
+    "solution": "The terms are factorials: 1!, 2!, 3!, 4!, 5!. The next is 6! = 720.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R134",
+    "exam": "general",
+    "topic": "Number & Letter Series",
+    "difficulty": "Medium",
+    "question": "Find the next term: Z, X, U, Q, L, ?",
+    "options": [
+     "E",
+     "G",
+     "F",
+     "H"
+    ],
+    "answer": 2,
+    "solution": "The positions are 26, 24, 21, 17, 12. The differences are −2, −3, −4, −5, so the next is −6: 12 − 6 = 6, which is F.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R135",
+    "exam": "general",
+    "topic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man starts walking east, covers 10 m, turns right and walks 4 m, then turns right again and walks 10 m. How far and in which direction is he from the starting point?",
+    "options": [
+     "14 m west",
+     "4 m north",
+     "10 m south",
+     "4 m south"
+    ],
+    "answer": 3,
+    "solution": "East 10 m, then right (south) 4 m, then right (west) 10 m. The east and west moves cancel, so he is 4 m south of the start.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R136",
+    "exam": "general",
+    "topic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Facing south-west, Anil turns 180° and then 90° anticlockwise. Which direction is he facing now?",
+    "options": [
+     "North-West",
+     "North-East",
+     "South-East",
+     "South-West"
+    ],
+    "answer": 0,
+    "solution": "Turning 180° from south-west gives north-east. Turning 90° anticlockwise from north-east gives north-west.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R137",
+    "exam": "general",
+    "topic": "Clocks & Calendars",
+    "difficulty": "Hard",
+    "question": "A clock gains 5 minutes every hour. It is set correctly at 6 AM. What time will it show when the true time is 2 PM?",
+    "options": [
+     "2:30 PM",
+     "2:50 PM",
+     "2:45 PM",
+     "2:40 PM"
+    ],
+    "answer": 3,
+    "solution": "From 6 AM to 2 PM is 8 hours. The clock gains 8 × 5 = 40 minutes, so it shows 2:40 PM."
+   },
+   {
+    "id": "R138",
+    "exam": "general",
+    "topic": "Clocks & Calendars",
+    "difficulty": "Easy",
+    "question": "If 1 January 2026 is a Thursday, what day is 1 January 2027?",
+    "options": [
+     "Thursday",
+     "Sunday",
+     "Saturday",
+     "Friday"
+    ],
+    "answer": 3,
+    "solution": "2026 is not a leap year, so it has 365 days = 52 weeks + 1 day. The day moves forward by 1: Thursday → Friday.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R139",
+    "exam": "general",
+    "topic": "Alphabet Test",
+    "difficulty": "Medium",
+    "question": "Which letter is the 5th to the left of the 20th letter from the left end of the alphabet?",
+    "options": [
+     "N",
+     "Q",
+     "P",
+     "O"
+    ],
+    "answer": 3,
+    "solution": "The 20th letter is T. Five places to its left is the 15th letter, which is O.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R140",
+    "exam": "general",
+    "topic": "Ranking & Order",
+    "difficulty": "Medium",
+    "question": "In a group of 45, Arun is 14th from the top and Bimal is 5 places below Arun. What is Bimal's position from the bottom?",
+    "options": [
+     "25th",
+     "27th",
+     "26th",
+     "28th"
+    ],
+    "answer": 1,
+    "solution": "Bimal is 14 + 5 = 19th from the top. From the bottom: 45 − 19 + 1 = 27th.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R141",
+    "exam": "general",
+    "topic": "Odd One Out",
+    "difficulty": "Easy",
+    "question": "Find the odd one out: Python, Java, Ruby, Excel, C++",
+    "options": [
+     "Python",
+     "Excel",
+     "Ruby",
+     "C++"
+    ],
+    "answer": 1,
+    "solution": "Python, Java, Ruby and C++ are programming languages. Excel is a spreadsheet application.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R142",
+    "exam": "general",
+    "topic": "Puzzles",
+    "difficulty": "Medium",
+    "question": "Five interns Ravi, Sita, Tarun, Uma and Vikas earn different stipends. Uma earns more than Ravi. Ravi earns more than Tarun. Sita earns less than Tarun. Vikas earns more than Uma. Who earns the least?",
+    "options": [
+     "Ravi",
+     "Uma",
+     "Tarun",
+     "Sita"
+    ],
+    "answer": 3,
+    "solution": "The clues give Vikas > Uma > Ravi > Tarun > Sita. Sita earns the least.",
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R143",
+    "exam": "general",
+    "topic": "Inequalities",
+    "difficulty": "Medium",
+    "question": "Statements: G > H ≥ I = J ≥ K<br>Conclusions: I. G > K II. K &lt; H",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 0,
+    "solution": "G > H ≥ I = J ≥ K gives G > K (I follows). H ≥ K only, so K < H is not certain (II does not follow).",
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
    }
   ]
  },
@@ -5183,6 +5976,176 @@
     "solution": "Only Bank becomes 80 − 20 = 60 and both becomes 40 + 20 = 60. Only SSC stays 50. Exactly one = 60 + 50 = 110. Ratio = 110 : 60 = 11 : 6.",
     "data": "<p>In a survey of 200 students, 120 are preparing for the Bank exam, 90 are preparing for the SSC exam and 40 are preparing for both. Some students are preparing for neither.</p>",
     "set": "venn-bank-ssc"
+   },
+   {
+    "id": "D74",
+    "exam": "general",
+    "topic": "Tables",
+    "difficulty": "Easy",
+    "question": "How many candidates were selected in total across the five companies?",
+    "options": [
+     "180",
+     "184",
+     "192",
+     "188"
+    ],
+    "answer": 3,
+    "solution": "30 + 50 + 36 + 48 + 24 = 188.",
+    "data": "<b>Campus recruitment drive: five companies</b><table class='data'><tr><th>Company</th><th>Applied</th><th>Shortlisted</th><th>Selected</th></tr><tr><td>A</td><td>400</td><td>120</td><td>30</td></tr><tr><td>B</td><td>500</td><td>200</td><td>50</td></tr><tr><td>C</td><td>300</td><td>90</td><td>36</td></tr><tr><td>D</td><td>600</td><td>240</td><td>48</td></tr><tr><td>E</td><td>200</td><td>80</td><td>24</td></tr></table>",
+    "set": "table-drive"
+   },
+   {
+    "id": "D75",
+    "exam": "general",
+    "topic": "Tables",
+    "difficulty": "Easy",
+    "question": "What percentage of Company B's applicants were shortlisted?",
+    "options": [
+     "30%",
+     "35%",
+     "40%",
+     "45%"
+    ],
+    "answer": 2,
+    "solution": "Company B had 500 applicants and 200 were shortlisted. The percentage is 200/500 × 100 = 40%.",
+    "data": "<b>Campus recruitment drive: five companies</b><table class='data'><tr><th>Company</th><th>Applied</th><th>Shortlisted</th><th>Selected</th></tr><tr><td>A</td><td>400</td><td>120</td><td>30</td></tr><tr><td>B</td><td>500</td><td>200</td><td>50</td></tr><tr><td>C</td><td>300</td><td>90</td><td>36</td></tr><tr><td>D</td><td>600</td><td>240</td><td>48</td></tr><tr><td>E</td><td>200</td><td>80</td><td>24</td></tr></table>",
+    "set": "table-drive"
+   },
+   {
+    "id": "D76",
+    "exam": "general",
+    "topic": "Tables",
+    "difficulty": "Medium",
+    "question": "For which company is the ratio of selected to shortlisted candidates the highest?",
+    "options": [
+     "Company A",
+     "Company E",
+     "Company D",
+     "Company C"
+    ],
+    "answer": 3,
+    "solution": "Selected/shortlisted: A 25%, B 25%, C 40%, D 20%, E 30%. Company C is the highest.",
+    "data": "<b>Campus recruitment drive: five companies</b><table class='data'><tr><th>Company</th><th>Applied</th><th>Shortlisted</th><th>Selected</th></tr><tr><td>A</td><td>400</td><td>120</td><td>30</td></tr><tr><td>B</td><td>500</td><td>200</td><td>50</td></tr><tr><td>C</td><td>300</td><td>90</td><td>36</td></tr><tr><td>D</td><td>600</td><td>240</td><td>48</td></tr><tr><td>E</td><td>200</td><td>80</td><td>24</td></tr></table>",
+    "set": "table-drive"
+   },
+   {
+    "id": "D77",
+    "exam": "general",
+    "topic": "Tables",
+    "difficulty": "Medium",
+    "question": "What percentage of all applicants across the five companies were selected?",
+    "options": [
+     "8.4%",
+     "10.4%",
+     "9.4%",
+     "11.4%"
+    ],
+    "answer": 2,
+    "solution": "Total applicants = 2,000 and total selected = 188. 188/2,000 = 9.4%.",
+    "data": "<b>Campus recruitment drive: five companies</b><table class='data'><tr><th>Company</th><th>Applied</th><th>Shortlisted</th><th>Selected</th></tr><tr><td>A</td><td>400</td><td>120</td><td>30</td></tr><tr><td>B</td><td>500</td><td>200</td><td>50</td></tr><tr><td>C</td><td>300</td><td>90</td><td>36</td></tr><tr><td>D</td><td>600</td><td>240</td><td>48</td></tr><tr><td>E</td><td>200</td><td>80</td><td>24</td></tr></table>",
+    "set": "table-drive"
+   },
+   {
+    "id": "D78",
+    "exam": "general",
+    "topic": "Tables",
+    "difficulty": "Hard",
+    "question": "If the selections at Company D rise by 25% and those at Company E fall by 25%, what is the new total number of selections?",
+    "options": [
+     "190",
+     "194",
+     "192",
+     "196"
+    ],
+    "answer": 1,
+    "solution": "D: 48 × 1.25 = 60 (+12). E: 24 × 0.75 = 18 (−6). New total = 188 + 12 − 6 = 194.",
+    "data": "<b>Campus recruitment drive: five companies</b><table class='data'><tr><th>Company</th><th>Applied</th><th>Shortlisted</th><th>Selected</th></tr><tr><td>A</td><td>400</td><td>120</td><td>30</td></tr><tr><td>B</td><td>500</td><td>200</td><td>50</td></tr><tr><td>C</td><td>300</td><td>90</td><td>36</td></tr><tr><td>D</td><td>600</td><td>240</td><td>48</td></tr><tr><td>E</td><td>200</td><td>80</td><td>24</td></tr></table>",
+    "set": "table-drive"
+   },
+   {
+    "id": "D79",
+    "exam": "general",
+    "topic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "How many offers were made by the five companies in total?",
+    "options": [
+     "380",
+     "420",
+     "400",
+     "440"
+    ],
+    "answer": 2,
+    "solution": "80 + 120 + 60 + 100 + 40 = 400.",
+    "data": "<b>Job offers made by five companies this season</b><div class='bars'><div class='bar-row'><span>Company A</span><i style='width:66.7%'></i><span>80</span></div><div class='bar-row'><span>Company B</span><i style='width:100.0%'></i><span>120</span></div><div class='bar-row'><span>Company C</span><i style='width:50.0%'></i><span>60</span></div><div class='bar-row'><span>Company D</span><i style='width:83.3%'></i><span>100</span></div><div class='bar-row'><span>Company E</span><i style='width:33.3%'></i><span>40</span></div></div>",
+    "set": "bar-offers"
+   },
+   {
+    "id": "D80",
+    "exam": "general",
+    "topic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "Company B's offers are what percentage of the total?",
+    "options": [
+     "30%",
+     "28%",
+     "25%",
+     "32%"
+    ],
+    "answer": 0,
+    "solution": "Company B made 120 of the 400 offers in total. The percentage is 120/400 × 100 = 30%.",
+    "data": "<b>Job offers made by five companies this season</b><div class='bars'><div class='bar-row'><span>Company A</span><i style='width:66.7%'></i><span>80</span></div><div class='bar-row'><span>Company B</span><i style='width:100.0%'></i><span>120</span></div><div class='bar-row'><span>Company C</span><i style='width:50.0%'></i><span>60</span></div><div class='bar-row'><span>Company D</span><i style='width:83.3%'></i><span>100</span></div><div class='bar-row'><span>Company E</span><i style='width:33.3%'></i><span>40</span></div></div>",
+    "set": "bar-offers"
+   },
+   {
+    "id": "D81",
+    "exam": "general",
+    "topic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "How many companies made more offers than the average of the five?",
+    "options": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "answer": 1,
+    "solution": "Average = 400/5 = 80. Only Company B (120) and Company D (100) are above 80; Company A is equal to it. So 2 companies.",
+    "data": "<b>Job offers made by five companies this season</b><div class='bars'><div class='bar-row'><span>Company A</span><i style='width:66.7%'></i><span>80</span></div><div class='bar-row'><span>Company B</span><i style='width:100.0%'></i><span>120</span></div><div class='bar-row'><span>Company C</span><i style='width:50.0%'></i><span>60</span></div><div class='bar-row'><span>Company D</span><i style='width:83.3%'></i><span>100</span></div><div class='bar-row'><span>Company E</span><i style='width:33.3%'></i><span>40</span></div></div>",
+    "set": "bar-offers"
+   },
+   {
+    "id": "D82",
+    "exam": "general",
+    "topic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "What is the ratio of the highest number of offers to the lowest?",
+    "options": [
+     "2 : 1",
+     "3 : 1",
+     "5 : 2",
+     "4 : 1"
+    ],
+    "answer": 1,
+    "solution": "Highest = 120 (Company B) and lowest = 40 (Company E). 120 : 40 = 3 : 1.",
+    "data": "<b>Job offers made by five companies this season</b><div class='bars'><div class='bar-row'><span>Company A</span><i style='width:66.7%'></i><span>80</span></div><div class='bar-row'><span>Company B</span><i style='width:100.0%'></i><span>120</span></div><div class='bar-row'><span>Company C</span><i style='width:50.0%'></i><span>60</span></div><div class='bar-row'><span>Company D</span><i style='width:83.3%'></i><span>100</span></div><div class='bar-row'><span>Company E</span><i style='width:33.3%'></i><span>40</span></div></div>",
+    "set": "bar-offers"
+   },
+   {
+    "id": "D83",
+    "exam": "general",
+    "topic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "If Company A's offers rise by 25% and Company C's rise by 50%, what percentage of the new total do these two companies make together?",
+    "options": [
+     "40.0%",
+     "42.2%",
+     "44.4%",
+     "46.7%"
+    ],
+    "answer": 1,
+    "solution": "A becomes 100 (+20) and C becomes 90 (+30). New total = 400 + 50 = 450. A + C = 190. 190/450 = 42.2%.",
+    "data": "<b>Job offers made by five companies this season</b><div class='bars'><div class='bar-row'><span>Company A</span><i style='width:66.7%'></i><span>80</span></div><div class='bar-row'><span>Company B</span><i style='width:100.0%'></i><span>120</span></div><div class='bar-row'><span>Company C</span><i style='width:50.0%'></i><span>60</span></div><div class='bar-row'><span>Company D</span><i style='width:83.3%'></i><span>100</span></div><div class='bar-row'><span>Company E</span><i style='width:33.3%'></i><span>40</span></div></div>",
+    "set": "bar-offers"
    }
   ]
  }

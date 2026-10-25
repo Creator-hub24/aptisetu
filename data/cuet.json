@@ -3406,6 +3406,446 @@
      "orig_id": "Q119"
     },
     {
+     "id": "G-Q126",
+     "exam": "cuet",
+     "topic": "Percentages",
+     "difficulty": "Easy",
+     "question": "A company's headcount rises from 800 to 920. What is the percentage increase?",
+     "options": [
+      "12%",
+      "14%",
+      "18%",
+      "15%"
+     ],
+     "answer": 3,
+     "solution": "Increase = 920 − 800 = 120. Percentage increase = 120/800 × 100 = 15%.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q126"
+    },
+    {
+     "id": "G-Q127",
+     "exam": "cuet",
+     "topic": "Percentages",
+     "difficulty": "Medium",
+     "question": "In a campus drive, 25% of 640 students were shortlisted and 40% of the shortlisted students received offers. How many students received offers?",
+     "options": [
+      "64",
+      "56",
+      "72",
+      "80"
+     ],
+     "answer": 0,
+     "solution": "Shortlisted = 25% of 640 = 160. Offers = 40% of 160 = 64.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q127"
+    },
+    {
+     "id": "G-Q128",
+     "exam": "cuet",
+     "topic": "Percentages",
+     "difficulty": "Medium",
+     "question": "A package of ₹6 lakh is raised by 20% and then cut by 20%. What is the final package?",
+     "options": [
+      "₹5.60 lakh",
+      "₹5.88 lakh",
+      "₹5.76 lakh",
+      "₹6.00 lakh"
+     ],
+     "answer": 2,
+     "solution": "After the raise: 6 × 1.2 = 7.2. After the cut: 7.2 × 0.8 = ₹5.76 lakh.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q128"
+    },
+    {
+     "id": "G-Q129",
+     "exam": "cuet",
+     "topic": "Profit & Loss",
+     "difficulty": "Easy",
+     "question": "A laptop bought for ₹40,000 is sold at a 15% profit. What is the selling price?",
+     "options": [
+      "₹46,000",
+      "₹45,000",
+      "₹44,000",
+      "₹47,500"
+     ],
+     "answer": 0,
+     "solution": "Profit = 15% of 40,000 = ₹6,000. Selling price = 40,000 + 6,000 = ₹46,000.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q129"
+    },
+    {
+     "id": "G-Q130",
+     "exam": "cuet",
+     "topic": "Profit & Loss",
+     "difficulty": "Medium",
+     "question": "An item is marked at ₹1,250 and sold after a 20% discount, still giving a 25% profit. What is the cost price?",
+     "options": [
+      "₹750",
+      "₹850",
+      "₹800",
+      "₹900"
+     ],
+     "answer": 2,
+     "solution": "Selling price = 1,250 × 0.8 = ₹1,000. Cost price = 1,000/1.25 = ₹800.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q130"
+    },
+    {
+     "id": "G-Q132",
+     "exam": "cuet",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Easy",
+     "question": "What is the simple interest on ₹12,000 at 7.5% per annum for 4 years?",
+     "options": [
+      "₹3,000",
+      "₹3,600",
+      "₹3,200",
+      "₹3,900"
+     ],
+     "answer": 1,
+     "solution": "SI = 12,000 × 7.5 × 4/100 = ₹3,600.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q132"
+    },
+    {
+     "id": "G-Q133",
+     "exam": "cuet",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Medium",
+     "question": "At what rate of simple interest per annum will a sum of money double itself in 8 years?",
+     "options": [
+      "10%",
+      "12%",
+      "15%",
+      "12.5%"
+     ],
+     "answer": 3,
+     "solution": "The interest equals the principal: P = P × r × 8/100, so r = 100/8 = 12.5%.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q133"
+    },
+    {
+     "id": "G-Q134",
+     "exam": "cuet",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Easy",
+     "question": "Two employees' salaries are in the ratio 5 : 7 and together amount to ₹60,000. What is the difference between them?",
+     "options": [
+      "₹10,000",
+      "₹8,000",
+      "₹12,000",
+      "₹15,000"
+     ],
+     "answer": 0,
+     "solution": "One part = 60,000/12 = ₹5,000. The salaries are ₹25,000 and ₹35,000, a difference of ₹10,000.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q134"
+    },
+    {
+     "id": "G-Q135",
+     "exam": "cuet",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "Among 240 candidates the ratio of boys to girls is 7 : 5. If 20 more girls join, what is the new ratio of boys to girls?",
+     "options": [
+      "7 : 5",
+      "5 : 4",
+      "6 : 5",
+      "7 : 6"
+     ],
+     "answer": 3,
+     "solution": "Boys = 140 and girls = 100. After 20 more girls: 140 : 120 = 7 : 6.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q135"
+    },
+    {
+     "id": "G-Q136",
+     "exam": "cuet",
+     "topic": "Averages & Alligation",
+     "difficulty": "Medium",
+     "question": "The average of six consecutive even numbers is 15. What is the largest of them?",
+     "options": [
+      "18",
+      "24",
+      "22",
+      "20"
+     ],
+     "answer": 3,
+     "solution": "For consecutive even numbers the average is the middle of the list: the 3rd and 4th numbers are 14 and 16. So the numbers are 10, 12, 14, 16, 18, 20 and the largest is 20.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q136"
+    },
+    {
+     "id": "G-Q137",
+     "exam": "cuet",
+     "topic": "Averages & Alligation",
+     "difficulty": "Medium",
+     "question": "Thirty students have an average score of 60 and twenty students have an average of 70. What is the average of all fifty students?",
+     "options": [
+      "63",
+      "65",
+      "64",
+      "66"
+     ],
+     "answer": 2,
+     "solution": "Total = 30 × 60 + 20 × 70 = 1,800 + 1,400 = 3,200. Average = 3,200/50 = 64.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q137"
+    },
+    {
+     "id": "G-Q139",
+     "exam": "cuet",
+     "topic": "Time & Work",
+     "difficulty": "Easy",
+     "question": "A can finish a task in 12 days and B can finish it in 24 days. How long will they take working together?",
+     "options": [
+      "6 days",
+      "10 days",
+      "9 days",
+      "8 days"
+     ],
+     "answer": 3,
+     "solution": "Work per day = 1/12 + 1/24 = 3/24 = 1/8. They finish in 8 days.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q139"
+    },
+    {
+     "id": "G-Q140",
+     "exam": "cuet",
+     "topic": "Time & Work",
+     "difficulty": "Medium",
+     "question": "8 workers can finish a job in 15 days. After 5 days, 8 more workers join. How many more days will it take to finish the job?",
+     "options": [
+      "4 days",
+      "7 days",
+      "6 days",
+      "5 days"
+     ],
+     "answer": 3,
+     "solution": "Total work = 8 × 15 = 120 worker-days. In 5 days 40 are done, leaving 80. With 16 workers the rest takes 80/16 = 5 days.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q140"
+    },
+    {
+     "id": "G-Q141",
+     "exam": "cuet",
+     "topic": "Time & Work",
+     "difficulty": "Medium",
+     "question": "Pipe A can fill a tank in 8 hours and pipe B in 12 hours. Both are opened for 3 hours and then B is closed. How many more hours will A take to fill the rest?",
+     "options": [
+      "3 hours",
+      "2 hours",
+      "4 hours",
+      "5 hours"
+     ],
+     "answer": 0,
+     "solution": "In 3 hours both fill 3 × (1/8 + 1/12) = 3 × 5/24 = 5/8 of the tank. The remaining 3/8 is filled by A alone in 3/8 × 8 = 3 hours.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q141"
+    },
+    {
+     "id": "G-Q142",
+     "exam": "cuet",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "A car travels 120 km at 60 km/h and returns the same 120 km at 40 km/h. What is its average speed for the whole trip?",
+     "options": [
+      "48 km/h",
+      "45 km/h",
+      "50 km/h",
+      "52 km/h"
+     ],
+     "answer": 0,
+     "solution": "Time going = 2 h and time returning = 3 h. Average speed = 240/5 = 48 km/h.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q142"
+    },
+    {
+     "id": "G-Q143",
+     "exam": "cuet",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Easy",
+     "question": "A 150 m long train running at 54 km/h passes a pole. How long does it take?",
+     "options": [
+      "8 seconds",
+      "12 seconds",
+      "10 seconds",
+      "15 seconds"
+     ],
+     "answer": 2,
+     "solution": "54 km/h = 54 × 5/18 = 15 m/s. Time = 150/15 = 10 seconds.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q143"
+    },
+    {
+     "id": "G-Q145",
+     "exam": "cuet",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "A boat goes upstream at 12 km/h and downstream at 20 km/h. What is its speed in still water?",
+     "options": [
+      "14 km/h",
+      "15 km/h",
+      "16 km/h",
+      "18 km/h"
+     ],
+     "answer": 2,
+     "solution": "Speed in still water = (20 + 12)/2 = 16 km/h.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q145"
+    },
+    {
+     "id": "G-Q146",
+     "exam": "cuet",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "What is the smallest number which leaves a remainder of 5 when divided by 6, 8 and 12?",
+     "options": [
+      "24",
+      "41",
+      "29",
+      "53"
+     ],
+     "answer": 2,
+     "solution": "LCM of 6, 8 and 12 = 24. The smallest such number is 24 + 5 = 29.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q146"
+    },
+    {
+     "id": "G-Q147",
+     "exam": "cuet",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "What is the sum of all multiples of 7 from 1 to 100?",
+     "options": [
+      "665",
+      "700",
+      "770",
+      "735"
+     ],
+     "answer": 3,
+     "solution": "The multiples are 7 × 1 up to 7 × 14 (98). Sum = 7 × (14 × 15/2) = 7 × 105 = 735.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q147"
+    },
+    {
+     "id": "G-Q148",
+     "exam": "cuet",
+     "topic": "Algebra",
+     "difficulty": "Medium",
+     "question": "If a + b = 10 and ab = 21, what is the value of a² + b²?",
+     "options": [
+      "56",
+      "58",
+      "60",
+      "62"
+     ],
+     "answer": 1,
+     "solution": "a² + b² = (a + b)² − 2ab = 100 − 42 = 58.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q148"
+    },
+    {
+     "id": "G-Q150",
+     "exam": "cuet",
+     "topic": "Geometry & Mensuration",
+     "difficulty": "Medium",
+     "question": "The perimeter of a rectangle is 36 cm and its length is twice its breadth. What is its area?",
+     "options": [
+      "64 cm²",
+      "80 cm²",
+      "72 cm²",
+      "96 cm²"
+     ],
+     "answer": 2,
+     "solution": "2(l + b) = 36 with l = 2b gives 6b = 36, so b = 6 and l = 12. Area = 72 cm².",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q150"
+    },
+    {
+     "id": "G-Q151",
+     "exam": "cuet",
+     "topic": "Geometry & Mensuration",
+     "difficulty": "Easy",
+     "question": "The area of a circle is 154 cm². What is its circumference? (Take π = 22/7)",
+     "options": [
+      "33 cm",
+      "66 cm",
+      "55 cm",
+      "44 cm"
+     ],
+     "answer": 3,
+     "solution": "πr² = 154 gives r² = 49, so r = 7. Circumference = 2 × 22/7 × 7 = 44 cm.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q151"
+    },
+    {
      "id": "G-R1",
      "exam": "cuet",
      "topic": "Syllogisms",
@@ -5402,6 +5842,348 @@
      "type": "mcq",
      "source": "general",
      "orig_id": "R123"
+    },
+    {
+     "id": "G-R124",
+     "exam": "cuet",
+     "topic": "Syllogisms",
+     "difficulty": "Medium",
+     "question": "Statements: All engineers are graduates. Some graduates are managers.<br>Conclusions: I. Some engineers are managers II. Some managers are graduates",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither follows"
+     ],
+     "answer": 1,
+     "solution": "Converting 'some graduates are managers' gives some managers are graduates (II). The managers may not be engineers, so I does not follow.",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R124"
+    },
+    {
+     "id": "G-R126",
+     "exam": "cuet",
+     "topic": "Seating Arrangement",
+     "difficulty": "Medium",
+     "question": "Six interns A, B, C, D, E and F sit in a row facing north. B sits at the left end. A sits two places to the right of B. C sits immediately to the right of A. D does not sit at the right end. E sits to the left of D. Who sits at the right end?",
+     "options": [
+      "F",
+      "E",
+      "D",
+      "C"
+     ],
+     "answer": 0,
+     "solution": "B is 1st, A is 3rd and C is 4th. The free seats are 2nd, 5th and 6th for D, E and F. D is not 6th and E is to the left of D, so D is 5th and E is 2nd. That leaves F in the 6th seat, at the right end.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R126"
+    },
+    {
+     "id": "G-R128",
+     "exam": "cuet",
+     "topic": "Blood Relations",
+     "difficulty": "Easy",
+     "question": "A is the brother of B. B is the sister of C. D is the father of A. How is C related to D?",
+     "options": [
+      "Son",
+      "Daughter",
+      "Son or daughter",
+      "Nephew"
+     ],
+     "answer": 2,
+     "solution": "A, B and C are siblings, and D is the father of A, so D is the father of all three. C's gender is not given, so C is D's son or daughter.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R128"
+    },
+    {
+     "id": "G-R129",
+     "exam": "cuet",
+     "topic": "Blood Relations",
+     "difficulty": "Medium",
+     "question": "Pointing to a man, Sita says, 'He is the son of my mother's only brother.' How is the man related to Sita?",
+     "options": [
+      "Cousin",
+      "Brother",
+      "Nephew",
+      "Uncle"
+     ],
+     "answer": 0,
+     "solution": "Sita's mother's only brother is her maternal uncle. His son is Sita's cousin.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R129"
+    },
+    {
+     "id": "G-R130",
+     "exam": "cuet",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "In a certain code, WORK is written as XQUO, where the letters are moved forward by 1, 2, 3 and 4 places respectively. How is PLAY written in that code?",
+     "options": [
+      "QNDC",
+      "QNCD",
+      "OJXU",
+      "QMDC"
+     ],
+     "answer": 0,
+     "solution": "P+1 = Q, L+2 = N, A+3 = D, Y+4 = C (after Z comes A, B, C). So PLAY is written QNDC.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R130"
+    },
+    {
+     "id": "G-R131",
+     "exam": "cuet",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "In a certain code, 'bright red car' is written as 'ka mi to', 'red car park' as 'mi to se' and 'park fast' as 'se ju'. How is 'bright' written in that code?",
+     "options": [
+      "mi",
+      "ka",
+      "to",
+      "se"
+     ],
+     "answer": 1,
+     "solution": "'red car' is common to the first two statements and 'mi to' is common to the codes, so red and car are mi and to in some order. The remaining code in the first statement, 'ka', stands for bright.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R131"
+    },
+    {
+     "id": "G-R132",
+     "exam": "cuet",
+     "topic": "Number & Letter Series",
+     "difficulty": "Medium",
+     "question": "Find the next term: 7, 10, 16, 28, 52, ?",
+     "options": [
+      "100",
+      "96",
+      "88",
+      "104"
+     ],
+     "answer": 0,
+     "solution": "The differences are 3, 6, 12, 24, doubling each time, so the next difference is 48: 52 + 48 = 100.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R132"
+    },
+    {
+     "id": "G-R133",
+     "exam": "cuet",
+     "topic": "Number & Letter Series",
+     "difficulty": "Easy",
+     "question": "Find the next term: 1, 2, 6, 24, 120, ?",
+     "options": [
+      "720",
+      "600",
+      "240",
+      "840"
+     ],
+     "answer": 0,
+     "solution": "The terms are factorials: 1!, 2!, 3!, 4!, 5!. The next is 6! = 720.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R133"
+    },
+    {
+     "id": "G-R134",
+     "exam": "cuet",
+     "topic": "Number & Letter Series",
+     "difficulty": "Medium",
+     "question": "Find the next term: Z, X, U, Q, L, ?",
+     "options": [
+      "E",
+      "G",
+      "F",
+      "H"
+     ],
+     "answer": 2,
+     "solution": "The positions are 26, 24, 21, 17, 12. The differences are −2, −3, −4, −5, so the next is −6: 12 − 6 = 6, which is F.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R134"
+    },
+    {
+     "id": "G-R135",
+     "exam": "cuet",
+     "topic": "Direction Sense",
+     "difficulty": "Medium",
+     "question": "A man starts walking east, covers 10 m, turns right and walks 4 m, then turns right again and walks 10 m. How far and in which direction is he from the starting point?",
+     "options": [
+      "14 m west",
+      "4 m north",
+      "10 m south",
+      "4 m south"
+     ],
+     "answer": 3,
+     "solution": "East 10 m, then right (south) 4 m, then right (west) 10 m. The east and west moves cancel, so he is 4 m south of the start.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R135"
+    },
+    {
+     "id": "G-R136",
+     "exam": "cuet",
+     "topic": "Direction Sense",
+     "difficulty": "Medium",
+     "question": "Facing south-west, Anil turns 180° and then 90° anticlockwise. Which direction is he facing now?",
+     "options": [
+      "North-West",
+      "North-East",
+      "South-East",
+      "South-West"
+     ],
+     "answer": 0,
+     "solution": "Turning 180° from south-west gives north-east. Turning 90° anticlockwise from north-east gives north-west.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R136"
+    },
+    {
+     "id": "G-R138",
+     "exam": "cuet",
+     "topic": "Clocks & Calendars",
+     "difficulty": "Easy",
+     "question": "If 1 January 2026 is a Thursday, what day is 1 January 2027?",
+     "options": [
+      "Thursday",
+      "Sunday",
+      "Saturday",
+      "Friday"
+     ],
+     "answer": 3,
+     "solution": "2026 is not a leap year, so it has 365 days = 52 weeks + 1 day. The day moves forward by 1: Thursday → Friday.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R138"
+    },
+    {
+     "id": "G-R139",
+     "exam": "cuet",
+     "topic": "Alphabet Test",
+     "difficulty": "Medium",
+     "question": "Which letter is the 5th to the left of the 20th letter from the left end of the alphabet?",
+     "options": [
+      "N",
+      "Q",
+      "P",
+      "O"
+     ],
+     "answer": 3,
+     "solution": "The 20th letter is T. Five places to its left is the 15th letter, which is O.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R139"
+    },
+    {
+     "id": "G-R140",
+     "exam": "cuet",
+     "topic": "Ranking & Order",
+     "difficulty": "Medium",
+     "question": "In a group of 45, Arun is 14th from the top and Bimal is 5 places below Arun. What is Bimal's position from the bottom?",
+     "options": [
+      "25th",
+      "27th",
+      "26th",
+      "28th"
+     ],
+     "answer": 1,
+     "solution": "Bimal is 14 + 5 = 19th from the top. From the bottom: 45 − 19 + 1 = 27th.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R140"
+    },
+    {
+     "id": "G-R141",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Easy",
+     "question": "Find the odd one out: Python, Java, Ruby, Excel, C++",
+     "options": [
+      "Python",
+      "Excel",
+      "Ruby",
+      "C++"
+     ],
+     "answer": 1,
+     "solution": "Python, Java, Ruby and C++ are programming languages. Excel is a spreadsheet application.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R141"
+    },
+    {
+     "id": "G-R142",
+     "exam": "cuet",
+     "topic": "Puzzles",
+     "difficulty": "Medium",
+     "question": "Five interns Ravi, Sita, Tarun, Uma and Vikas earn different stipends. Uma earns more than Ravi. Ravi earns more than Tarun. Sita earns less than Tarun. Vikas earns more than Uma. Who earns the least?",
+     "options": [
+      "Ravi",
+      "Uma",
+      "Tarun",
+      "Sita"
+     ],
+     "answer": 3,
+     "solution": "The clues give Vikas > Uma > Ravi > Tarun > Sita. Sita earns the least.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R142"
+    },
+    {
+     "id": "G-R143",
+     "exam": "cuet",
+     "topic": "Inequalities",
+     "difficulty": "Medium",
+     "question": "Statements: G > H ≥ I = J ≥ K<br>Conclusions: I. G > K II. K &lt; H",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither follows"
+     ],
+     "answer": 0,
+     "solution": "G > H ≥ I = J ≥ K gives G > K (I follows). H ≥ K only, so K < H is not certain (II does not follow).",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R143"
     }
    ]
   },

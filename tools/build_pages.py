@@ -239,7 +239,7 @@ page("index.html","", f"""
    <div class="tags"><span class="tag">General Aptitude</span><span class="tag">English</span><span class="tag">Maths</span></div><a class="p-cta" href="cuet.html">Explore CUET →</a></div>
   <div class="card xcard"><span class="eyebrow">Bank · SSC · Placements</span><h3>Aptitude sections</h3><p class="muted">Concept notes, formula sheets and timed quizzes for the sections these exams share.</p>
    <div class="chip-links"><a href="quant.html">Quant</a><a href="reasoning.html">Reasoning</a><a href="dilr.html">DILR</a></div>
-   <p class="muted soon-note">Campus placement sets: <a href="placements.html">coming soon</a></p></div>
+   <p class="muted soon-note">Campus placement practice: <a href="placements.html">open placement prep</a></p></div>
  </div>
 </div></section>
 
@@ -250,7 +250,7 @@ page("index.html","", f"""
   <div class="feat"><h3>Worked solutions</h3><p class="muted">Every question has a step-by-step solution, shown after you submit.</p></div>
   <div class="feat"><h3>Notes &amp; formula sheets</h3><p class="muted">Concept notes and topic-wise sheets for Quant, Reasoning, DILR and VARC.</p></div>
  </div>
- <p class="soon-line">Coming soon: Bank, SSC and GMAT mocks · company-wise placement sets · progress analytics</p>
+ <p class="soon-line">Coming soon: Bank, SSC and GMAT mocks · progress analytics</p>
 </div></section>
 
 <section><div class="container"><div class="cta-band">
@@ -849,15 +849,15 @@ page("mock-tests.html","Mock Tests","""
 """.replace("%M%",_M).replace("%S%",_S).replace("%P%",_PR), desc="Free full-length CAT mocks, VARC and DILR sectionals and practice packs, with CAT marking and worked solutions.")
 
 page("placements.html","Placement Prep","""
-<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Placement Prep</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Campus placement prep <span class="badge soon">Coming soon</span></h1><p class="muted">Company-wise aptitude practice for service and product companies.</p></div></div>
+<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Placement Prep</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Campus placement prep</h1><p class="muted">Aptitude practice for the written round of IT-services and campus hiring tests: Quant, Reasoning and data-interpretation questions with worked solutions.</p></div></div>
 <section style="padding-top:16px"><div class="container"><div class="grid g4">
- <div class="card"><h3>TCS NQT</h3><p class="muted">Numerical, verbal and reasoning ability</p></div>
- <div class="card"><h3>Infosys</h3><p class="muted">Logical reasoning, maths, pseudo-code</p></div>
- <div class="card"><h3>Accenture</h3><p class="muted">Cognitive and technical assessment</p></div>
- <div class="card"><h3>Wipro / Capgemini</h3><p class="muted">Aptitude, logical and verbal</p></div>
+ <div class="card"><h3>TCS</h3><p class="muted">Numerical and reasoning ability</p></div>
+ <div class="card"><h3>Infosys</h3><p class="muted">Logical reasoning and mathematical ability</p></div>
+ <div class="card"><h3>Accenture / Cognizant</h3><p class="muted">Quantitative and logical sections</p></div>
+ <div class="card"><h3>Wipro / Capgemini</h3><p class="muted">Aptitude and logical reasoning</p></div>
 </div>
 <div class="card" style="margin-top:20px"><h3>Most-asked placement topics</h3><div class="tags"><span class="tag">Percentages</span><span class="tag">Profit &amp; Loss</span><span class="tag">Time &amp; Work</span><span class="tag">TSD</span><span class="tag">Number Series</span><span class="tag">Coding-Decoding</span><span class="tag">Blood Relations</span><span class="tag">Seating</span><span class="tag">Data Interpretation</span></div>
-<a class="btn btn-sm" href="practice.html?section=mixed">Practise mixed aptitude now →</a></div></div></section>
-""", desc="Company-wise campus placement aptitude prep is coming soon. Practise mixed aptitude questions now.", noindex=True)
+<p class="muted" style="margin-top:12px">Placement-style practice sits in the Bank / SSC / Placements track. Verbal and coding sections are not covered yet. Exam patterns change, so check the company's official hiring page for the current format. AptiSetu is not affiliated with any company.</p><a class="btn btn-sm" href="practice.html?exam=general">Start placement practice →</a></div></div></section>
+""", desc="Free campus placement aptitude practice: Quant, Reasoning and data interpretation with worked solutions, useful for IT-services hiring tests.")
 
 exec(open("tools/pages_info.py").read())
