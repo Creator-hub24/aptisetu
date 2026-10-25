@@ -376,6 +376,84 @@ Q(s,T,"Medium","What is the shortest road distance from P to T?",["13 km","14 km
 Q(s,T,"Medium","What is the shortest road distance from Q to T?",["10 km","11 km","12 km","9 km"],f"{sp('Q','T')} km","Q–R–S–T = 2 + 3 + 5 = 10. Q–R–T and Q–S–T are both 11.",NET,S9)
 Q(s,T,"Hard","If road Q–R is closed, what is the shortest distance from P to S?",["9 km","10 km","11 km","13 km"],f"{sp('P','S',closed=[('Q','R')])} km","Without Q–R: P–R–S = 10 and P–Q–S = 10, so 10 km.",NET,S9)
 
+# ======================= BANK / SSC EXPANSION (added Oct 2026; new questions append, so earlier ids never change) =======================
+import random as _rnd
+_pos = [t for _ in range(14) for t in range(4)]; _rnd.Random(11).shuffle(_pos); _pi = iter(_pos)
+def QB(sec, topic, diff, text, options, correct, *a, **k):
+    """Q() with the correct option moved (by swapping) to a balanced, deterministic position, so the answer is not mostly B.
+    Standard answer sets (Only I follows ...) and 'No/None/Neither/Cannot ...' sets keep their fixed order."""
+    options = list(options)
+    if options not in (SY, SYE) and not any(o.startswith(("Cannot", "No ", "None", "Neither")) for o in options):
+        t = next(_pi); c = options.index(correct); options[c], options[t] = options[t], options[c]
+    Q(sec, topic, diff, text, options, correct, *a, **k)
+s = "quant"
+QB(s,"Percentages","Easy","The price of an article is reduced by 15% and then by a further 20%. What is the overall reduction?",["35%","32%","30%","34%"],"32%","Price after both cuts = 0.85 × 0.80 = 0.68 of the original, so the overall reduction is 32%.",chk=(100*(1-.85*.8),32))
+QB(s,"Percentages","Medium","In an election between two candidates the winner got 55% of the votes cast and won by 1,200 votes. How many votes were cast in all?",["10,000","12,000","15,000","14,400"],"12,000","The winner got 55% and the loser 45%, a margin of 10% of the votes. 10% of the total = 1,200, so the total = 12,000.",chk=(1200/0.10,12000))
+QB(s,"Permutations & Combinations","Medium","In how many ways can 5 people be seated in a row if two particular people must sit together?",["24","48","60","72"],"48","Treat the two people as one block. 4 units can be arranged in 4! = 24 ways, and the two can swap inside the block in 2 ways. Total = 24 × 2 = 48.",chk=(2*math.factorial(4),48))
+QB(s,"Profit & Loss","Medium","A shopkeeper marks an article 20% above its cost price and then allows a discount of 10%. What is his profit percentage?",["8%","10%","12%","6%"],"8%","Take cost = 100. Marked price = 120. Selling price = 120 × 0.90 = 108. Profit = 8%.",chk=((1.2*.9-1)*100,8))
+QB(s,"Profit & Loss","Hard","A trader sells two articles at ₹1,200 each. On one he gains 20% and on the other he loses 20%. What is his overall result?",["No overall change","4% loss","4% profit","2% loss"],"4% loss","The first cost 1,200/1.2 = ₹1,000. The second cost 1,200/0.8 = ₹1,500. Total cost = ₹2,500 and total sale = ₹2,400, a loss of ₹100, which is 4% of 2,500.",chk=((2500-2400)/2500*100,4))
+QB(s,"Simple & Compound Interest","Easy","What is the simple interest on ₹5,000 at 8% per annum for 3 years?",["₹1,000","₹1,200","₹1,400","₹1,600"],"₹1,200","SI = P × R × T / 100 = 5,000 × 8 × 3 / 100 = ₹1,200.",chk=(5000*8*3/100,1200))
+QB(s,"Simple & Compound Interest","Medium","What is the difference between the compound interest and the simple interest on ₹10,000 for 2 years at 10% per annum?",["₹50","₹100","₹110","₹200"],"₹100","For 2 years the difference = P × (R/100)² = 10,000 × (0.1)² = ₹100.",chk=(10000*1.1**2-10000-10000*.1*2,100))
+QB(s,"Simple & Compound Interest","Hard","A sum of money doubles itself in 5 years at simple interest. In how many years will it become four times itself?",["10 years","12 years","15 years","20 years"],"15 years","Doubling in 5 years means the interest in 5 years equals the principal, so the interest per year is P/5. To reach 4P the interest must be 3P, which takes 3 × 5 = 15 years.",chk=(3*5,15))
+QB(s,"Ratio & Proportion","Medium","If A : B = 3 : 4 and B : C = 6 : 5, what is A : B : C?",["9 : 12 : 10","3 : 4 : 5","9 : 8 : 10","6 : 8 : 5"],"9 : 12 : 10","Make B equal in both ratios. A : B = 3 : 4 = 9 : 12 and B : C = 6 : 5 = 12 : 10. So A : B : C = 9 : 12 : 10.",chk=(F(3,4)*F(12,1),9))
+QB(s,"Averages & Alligation","Easy","The average of five numbers is 24. When one number is removed, the average of the remaining four becomes 22. What is the number removed?",["30","32","34","36"],"32","Sum of five = 5 × 24 = 120. Sum of four = 4 × 22 = 88. The removed number = 120 − 88 = 32.",chk=(5*24-4*22,32))
+QB(s,"Averages & Alligation","Medium","In what ratio should rice costing ₹40 per kg be mixed with rice costing ₹60 per kg to get a mixture worth ₹48 per kg?",["2 : 3","3 : 2","1 : 2","4 : 3"],"3 : 2","By alligation, cheaper : dearer = (60 − 48) : (48 − 40) = 12 : 8 = 3 : 2.",chk=((60-48)/(48-40),1.5))
+QB(s,"Time & Work","Easy","A can complete a job in 10 days and B in 15 days. Working together, in how many days will they finish it?",["5 days","6 days","7.5 days","8 days"],"6 days","Together they do 1/10 + 1/15 = 5/30 = 1/6 of the job per day, so they take 6 days.",chk=(1/(1/10+1/15),6))
+QB(s,"Time & Work","Medium","A and B together can finish a job in 12 days. A alone can finish it in 20 days. In how many days can B alone finish it?",["28 days","30 days","32 days","36 days"],"30 days","B's daily work = 1/12 − 1/20 = 5/60 − 3/60 = 2/60 = 1/30, so B alone takes 30 days.",chk=(1/(1/12-1/20),30))
+QB(s,"Time, Speed & Distance","Easy","A train 150 m long passes a pole in 10 seconds. What is its speed?",["45 km/h","54 km/h","60 km/h","72 km/h"],"54 km/h","Speed = 150/10 = 15 m/s. In km/h that is 15 × 18/5 = 54 km/h.",chk=(150/10*3.6,54))
+QB(s,"Time, Speed & Distance","Medium","A man goes 60 km at 30 km/h and returns the same 60 km at 20 km/h. What is his average speed for the whole trip?",["24 km/h","25 km/h","26 km/h","22.5 km/h"],"24 km/h","Total distance = 120 km. Time = 60/30 + 60/20 = 2 + 3 = 5 hours. Average speed = 120/5 = 24 km/h.",chk=(120/(60/30+60/20),24))
+QB(s,"Time, Speed & Distance","Hard","Two trains of length 120 m and 180 m run in opposite directions at 54 km/h and 36 km/h. How long do they take to cross each other?",["10 s","12 s","15 s","18 s"],"12 s","Relative speed = 54 + 36 = 90 km/h = 25 m/s. Distance to cover = 120 + 180 = 300 m. Time = 300/25 = 12 s.",chk=(300/(90/3.6),12))
+QB(s,"Number System","Medium","What is the remainder when 2^50 is divided by 7?",["1","2","4","6"],"4","Powers of 2 repeat their remainders modulo 7 in a cycle of 3: 2, 4, 1. Since 50 = 3 × 16 + 2, the remainder is the 2nd in the cycle, which is 4.",chk=(pow(2,50,7),4))
+QB(s,"Algebra","Easy","If x + 1/x = 5, what is the value of x² + 1/x²?",["21","23","25","27"],"23","Square both sides: x² + 2 + 1/x² = 25, so x² + 1/x² = 23.",chk=(5**2-2,23))
+QB(s,"Geometry & Mensuration","Medium","The circumference of a circle is 44 cm. What is its area? (Take π = 22/7)",["144 cm²","154 cm²","164 cm²","176 cm²"],"154 cm²","2πr = 44 gives r = 44 × 7/(2 × 22) = 7 cm. Area = πr² = 22/7 × 49 = 154 cm².",chk=(22/7*7*7,154))
+QB(s,"Probability","Medium","A bag has 4 red and 6 blue balls. Two balls are drawn at random without replacement. What is the probability that both are red?",["2/15","4/25","1/5","3/10"],"2/15","Favourable = 4C2 = 6. Total = 10C2 = 45. Probability = 6/45 = 2/15.",chk=(comb(4,2)/comb(10,2),2/15))
+
+s = "reasoning"
+QB(s,"Syllogisms","Medium","Statements: Some pens are books. All books are tables.<br>Conclusions: I. Some pens are tables II. All tables are books",SY,"Only I follows","The pens that are books are also tables, so some pens are tables (I). Nothing says every table is a book, so II does not follow.")
+QB(s,"Syllogisms","Medium","Statements: Some A are B. Some B are C.<br>Conclusions: I. Some A are C II. Some C are A",SY,"Neither follows","Two 'some' statements do not connect A and C: the A's that are B may not be the B's that are C. Neither conclusion follows.")
+QB(s,"Syllogisms","Hard","Statements: No doctor is a teacher. All teachers are writers.<br>Conclusions: I. Some writers are not doctors II. No writer is a doctor",SY,"Only I follows","Teachers are writers and no teacher is a doctor, so those writers are not doctors (I). Other writers may still be doctors, so II does not follow.")
+QB(s,"Number & Letter Series","Easy","Find the next number: 3, 6, 12, 24, ?",["36","42","48","54"],"48","Each term is double the previous one, so the next is 24 × 2 = 48.")
+QB(s,"Number & Letter Series","Medium","Find the next number: 2, 6, 12, 20, 30, ?",["40","42","44","46"],"42","The terms are 1×2, 2×3, 3×4, 4×5, 5×6, so the next is 6 × 7 = 42.")
+QB(s,"Number & Letter Series","Medium","Find the next letter: B, E, H, K, ?",["L","M","N","O"],"N","Each letter is 3 places after the previous one: B(2), E(5), H(8), K(11), so the next is the 14th letter, N.")
+QB(s,"Coding-Decoding","Easy","In a certain code, CAT is written as DBU. How is DOG written in that code?",["EPH","EPG","DPH","FPI"],"EPH","Each letter is moved one place forward: C→D, A→B, T→U. So D→E, O→P, G→H, giving EPH.")
+QB(s,"Coding-Decoding","Medium","In a certain code, PEN is written as QGQ. How is BAG written in that code?",["CCJ","CBJ","CCH","DCJ"],"CCJ","The 1st, 2nd and 3rd letters are moved forward by 1, 2 and 3 places: P→Q, E→G, N→Q. So B→C, A→C, G→J, giving CCJ.")
+QB(s,"Blood Relations","Easy","Pointing to a man, a woman says, 'His mother is the only daughter of my mother.' How is the woman related to the man?",["Sister","Mother","Aunt","Grandmother"],"Mother","The only daughter of the woman's mother is the woman herself. So the man's mother is the woman, and she is his mother.")
+QB(s,"Blood Relations","Medium","A is B's brother. C is A's father. D is C's father. E is B's son. How is D related to E?",["Grandfather","Great-grandfather","Uncle","Father"],"Great-grandfather","C is the father of both A and B. D is C's father, so D is B's grandfather. E is B's son, so D is E's great-grandfather.")
+QB(s,"Direction Sense","Easy","A man walks 5 km north, then 3 km east, and then 5 km south. How far is he from the starting point and in which direction?",["3 km east","3 km west","5 km north","8 km east"],"3 km east","The north and south walks cancel out. Only the 3 km east remains, so he is 3 km east of the start.")
+QB(s,"Direction Sense","Medium","A person walks 10 m south, turns right and walks 20 m, turns right and walks 10 m, then turns left and walks 5 m. How far is he from the starting point and in which direction?",["25 m west","25 m east","20 m west","15 m west"],"25 m west","South 10 m, then right (west) 20 m, then right (north) 10 m brings him back to the start's latitude, 20 m west. Turning left from north is west, so 5 m more makes 25 m west of the start.")
+QB(s,"Clocks & Calendars","Medium","What is the angle between the hands of a clock at 3:30?",["60°","75°","90°","105°"],"75°","At 3:30 the hour hand is at 3 × 30 + 30 × 0.5 = 105°. The minute hand is at 30 × 6 = 180°. The angle = 180 − 105 = 75°.")
+QB(s,"Clocks & Calendars","Medium","If 1 January 2024 was a Monday, on which day was 1 January 2025?",["Tuesday","Wednesday","Thursday","Monday"],datetime.date(2025,1,1).strftime("%A"),"2024 is a leap year with 366 days = 52 weeks + 2 days. So 1 January 2025 falls 2 days after Monday, a Wednesday.")
+assert datetime.date(2024,1,1).strftime("%A")=="Monday" and datetime.date(2025,1,1).strftime("%A")=="Wednesday"
+QB(s,"Alphabet Test","Easy","Which letter is the 5th to the right of the 12th letter from the left in the English alphabet?",["P","Q","R","O"],AL[11+5],"The 12th letter is L. Counting 5 places to the right gives the 17th letter, Q.")
+QB(s,"Alphabet Test","Medium","Which letter is exactly midway between G and S in the English alphabet?",["L","M","N","K"],AL[(6+18)//2],"G is the 7th letter and S is the 19th. The midpoint is the (7 + 19)/2 = 13th letter, M.")
+QB(s,"Inequalities","Medium","Statements: P > Q ≥ R, R > S, T < Q.<br>Conclusions: I. P > S II. T < P",SY,"Both I and II follow","P > Q ≥ R > S gives P > S (I). T < Q and Q < P give T < P (II). Both follow.")
+QB(s,"Inequalities","Hard","Statements: A ≥ B > C, D < C, A = E.<br>Conclusions: I. E > D II. B ≥ E",SY,"Only I follows","A ≥ B > C > D gives A > D, and E = A, so E > D (I). B ≥ E would mean B ≥ A, but A ≥ B; they could differ, so II does not follow.")
+QB(s,"Ranking & Order","Medium","In a row of 40 students, Rahul is 15th from the left. What is his position from the right?",["24th","25th","26th","27th"],"26th","Position from the right = 40 − 15 + 1 = 26.",chk=(40-15+1,26))
+sd=[p for p in itertools.permutations("PQRST") if {p[0],p[4]}=={"R","T"} and p.index("Q")==p.index("P")+1 and p.index("Q")!=2]
+assert len(sd)==2 and all(p[2]=="P" for p in sd)
+QB(s,"Seating Arrangement","Medium","Five friends P, Q, R, S and T sit in a row facing north. R and T sit at the two ends. P sits immediately to the left of Q. Q does not sit in the middle. Who sits in the middle?",["P","Q","S","T"],"P","R and T occupy the ends, so P, Q and S fill the three middle seats. P is immediately left of Q, which gives S P Q or P Q S. In P Q S, Q is in the middle, which is not allowed. So the order is S P Q and P sits in the middle.")
+
+s = "dilr"
+ex={"Exam P":[400,450,500,600],"Exam Q":[300,360,420,480],"Exam R":[200,220,330,300]}; ey=[2022,2023,2024,2025]
+etot=[sum(v[i] for v in ex.values()) for i in range(4)]
+ETAB="<b>Applicants for three bank recruitment exams (thousands)</b><table class='data'><tr><th>Exam</th>"+"".join(f"<th>{y}</th>" for y in ey)+"</tr>"+"".join(f"<tr><td>{k}</td>"+"".join(f"<td>{x}</td>" for x in v)+"</tr>" for k,v in ex.items())+"</table>"
+T="Tables"; SE="table-exams"
+QB(s,T,"Easy","How many thousand applicants were there in total across the three exams in 2024?",["1,150","1,250","1,300","1,380"],"1,250","2024: 500 + 420 + 330 = 1,250 thousand.",ETAB,SE,chk=(etot[2],1250))
+QB(s,T,"Easy","What is the percentage increase in Exam P's applicants from 2022 to 2025?",["40%","50%","60%","75%"],"50%","(600 − 400)/400 = 200/400 = 50%.",ETAB,SE,chk=((600-400)/400*100,50))
+gr={y:(ex["Exam R"][i]-ex["Exam R"][i-1])/ex["Exam R"][i-1] for i,y in enumerate(ey) if i}; assert max(gr,key=gr.get)==2024
+QB(s,T,"Medium","In which year did Exam R's applicants show the highest percentage increase over the previous year?",["2023","2024","2025","Same in two years"],"2024","2023: 20/200 = 10%. 2024: 110/220 = 50%. 2025: a fall of 30. So 2024 is the highest.",ETAB,SE)
+QB(s,T,"Medium","What is the ratio of Exam Q's applicants in 2025 to Exam R's applicants in 2023?",["24 : 11","12 : 11","2 : 1","16 : 7"],"24 : 11","480 : 220 = 48 : 22 = 24 : 11.",ETAB,SE,chk=(F(480,220),F(24,11)))
+ptot=sum(ex["Exam P"]); gtot=sum(etot); assert (ptot,gtot)==(1950,4560)
+QB(s,T,"Hard","Over 2022–2025, what percentage of the combined applicants of all three exams belonged to Exam P?",["38.5%","40.2%","42.8%","45.0%"],"42.8%","Exam P total = 400 + 450 + 500 + 600 = 1,950. All exams = 1,950 + 1,560 + 1,050 = 4,560. Share = 1,950/4,560 = 42.8%.",ETAB,SE,chk=(round(ptot/gtot*100,1),42.8))
+br=[("Lucknow",120),("Kanpur",90),("Varanasi",150),("Prayagraj",60),("Agra",80)]; bv=dict(br); bt=sum(bv.values()); assert bt==500
+BBAR="<b>Loan applications received by five bank branches in a month</b><div class='bars'>"+"".join(f"<div class='bar-row'><span>{c}</span><i style='width:{v/150*100:.1f}%'></i><span>{v}</span></div>" for c,v in br)+"</div>"
+T="Bar Charts"; SB="bar-branches"
+QB(s,T,"Easy","How many applications did the five branches receive in total?",["480","500","520","540"],"500","120 + 90 + 150 + 60 + 80 = 500.",BBAR,SB,chk=(bt,500))
+QB(s,T,"Easy","Varanasi's applications are what percentage of the total?",["28%","30%","32%","35%"],"30%","Varanasi received 150 of the 500 applications in total, so its share is 150/500 = 30%.",BBAR,SB,chk=(150/bt*100,30))
+QB(s,T,"Medium","How many branches received more applications than the five-branch average?",["1","2","3","4"],str(sum(1 for v in bv.values() if v>bt/5)),"Average = 500/5 = 100. Lucknow (120) and Varanasi (150) are above it, so 2 branches.",BBAR,SB)
+QB(s,T,"Medium","By what percentage are Kanpur's applications less than Lucknow's?",["20%","25%","30%","33.3%"],"25%","(120 − 90)/120 = 30/120 = 25%.",BBAR,SB,chk=((120-90)/120*100,25))
+QB(s,T,"Hard","If Prayagraj's applications double and Agra's fall by 25%, what is the new total for the five branches?",["520","530","540","550"],"540","Prayagraj becomes 120 (+60). Agra becomes 80 × 0.75 = 60 (−20). New total = 500 + 60 − 20 = 540.",BBAR,SB,chk=(bt+60-20,540))
+
 NAMES={"quant":"Quantitative Aptitude","reasoning":"Logical Reasoning","dilr":"DILR"}
 import os, collections
 # ---- CUET reuse tags: Easy/Medium general items that sit within the CUET General Aptitude Test syllabus ----
