@@ -2806,6 +2806,606 @@
      "orig_id": "Q84"
     },
     {
+     "id": "G-Q86",
+     "exam": "cuet",
+     "topic": "Percentages",
+     "difficulty": "Easy",
+     "question": "What is 35% of 240?",
+     "options": [
+      "84",
+      "80",
+      "88",
+      "96"
+     ],
+     "answer": 0,
+     "solution": "35% of 240 = 35 × 240/100 = 84.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q86"
+    },
+    {
+     "id": "G-Q87",
+     "exam": "cuet",
+     "topic": "Percentages",
+     "difficulty": "Medium",
+     "question": "A number is increased by 30% and the result is then decreased by 10%. What is the net percentage change?",
+     "options": [
+      "20%",
+      "27%",
+      "3%",
+      "17%"
+     ],
+     "answer": 3,
+     "solution": "Take the number as 100. After +30%: 130. After −10% of 130: 130 − 13 = 117. The net change is a 17% increase.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q87"
+    },
+    {
+     "id": "G-Q88",
+     "exam": "cuet",
+     "topic": "Percentages",
+     "difficulty": "Medium",
+     "question": "A's income is 20% more than B's. By what percentage is B's income less than A's?",
+     "options": [
+      "16.67%",
+      "20%",
+      "15%",
+      "18%"
+     ],
+     "answer": 0,
+     "solution": "Let B = 100, so A = 120. B is less than A by 20/120 = 16.67%.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q88"
+    },
+    {
+     "id": "G-Q89",
+     "exam": "cuet",
+     "topic": "Percentages",
+     "difficulty": "Medium",
+     "question": "In an exam 40% of the candidates failed. If 300 candidates passed, how many appeared?",
+     "options": [
+      "450",
+      "500",
+      "550",
+      "600"
+     ],
+     "answer": 1,
+     "solution": "The pass percentage is 60%. 60% of the candidates = 300, so the total = 300/0.60 = 500.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q89"
+    },
+    {
+     "id": "G-Q91",
+     "exam": "cuet",
+     "topic": "Profit & Loss",
+     "difficulty": "Easy",
+     "question": "An article bought for ₹480 is sold for ₹552. What is the profit percentage?",
+     "options": [
+      "12%",
+      "15%",
+      "18%",
+      "20%"
+     ],
+     "answer": 1,
+     "solution": "Profit = 552 − 480 = ₹72. Profit % = 72/480 × 100 = 15%.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q91"
+    },
+    {
+     "id": "G-Q92",
+     "exam": "cuet",
+     "topic": "Profit & Loss",
+     "difficulty": "Medium",
+     "question": "A shopkeeper gives a discount of 12% on the marked price and still gains 10%. If the cost price is ₹800, what is the marked price?",
+     "options": [
+      "₹950",
+      "₹1,050",
+      "₹1,000",
+      "₹1,100"
+     ],
+     "answer": 2,
+     "solution": "Selling price = 800 × 1.10 = ₹880. This is 88% of the marked price, so the marked price = 880/0.88 = ₹1,000.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q92"
+    },
+    {
+     "id": "G-Q93",
+     "exam": "cuet",
+     "topic": "Profit & Loss",
+     "difficulty": "Medium",
+     "question": "By selling an article for ₹720 a man loses 10%. At what price should he sell it to gain 10%?",
+     "options": [
+      "₹880",
+      "₹860",
+      "₹800",
+      "₹900"
+     ],
+     "answer": 0,
+     "solution": "720 is 90% of the cost, so cost = 720/0.9 = ₹800. For a 10% gain, selling price = 800 × 1.1 = ₹880.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q93"
+    },
+    {
+     "id": "G-Q95",
+     "exam": "cuet",
+     "topic": "Profit & Loss",
+     "difficulty": "Medium",
+     "question": "Two successive discounts of 20% and 10% are equal to a single discount of:",
+     "options": [
+      "30%",
+      "28%",
+      "25%",
+      "32%"
+     ],
+     "answer": 1,
+     "solution": "Price after both = 0.80 × 0.90 = 0.72 of the marked price, so the single discount is 28%.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q95"
+    },
+    {
+     "id": "G-Q96",
+     "exam": "cuet",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Easy",
+     "question": "₹2,000 becomes ₹2,480 in 3 years at simple interest. What is the rate per annum?",
+     "options": [
+      "6%",
+      "10%",
+      "9%",
+      "8%"
+     ],
+     "answer": 3,
+     "solution": "Interest = 2,480 − 2,000 = ₹480. Rate = 480 × 100/(2,000 × 3) = 8%.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q96"
+    },
+    {
+     "id": "G-Q97",
+     "exam": "cuet",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Medium",
+     "question": "What is the compound interest on ₹5,000 at 8% per annum for 2 years?",
+     "options": [
+      "₹832",
+      "₹800",
+      "₹864",
+      "₹900"
+     ],
+     "answer": 0,
+     "solution": "Amount = 5,000 × 1.08 × 1.08 = ₹5,832. Compound interest = 5,832 − 5,000 = ₹832.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q97"
+    },
+    {
+     "id": "G-Q98",
+     "exam": "cuet",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Medium",
+     "question": "A sum becomes ₹7,986 in 3 years at 10% per annum compound interest. What is the sum?",
+     "options": [
+      "₹5,800",
+      "₹6,500",
+      "₹6,200",
+      "₹6,000"
+     ],
+     "answer": 3,
+     "solution": "Amount = P × 1.1³ = 1.331P. So P = 7,986/1.331 = ₹6,000.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q98"
+    },
+    {
+     "id": "G-Q100",
+     "exam": "cuet",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Easy",
+     "question": "₹2,400 is divided between A and B in the ratio 5 : 3. How much does A get?",
+     "options": [
+      "₹1,200",
+      "₹1,400",
+      "₹1,500",
+      "₹1,600"
+     ],
+     "answer": 2,
+     "solution": "A's share = 5/8 × 2,400 = ₹1,500.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q100"
+    },
+    {
+     "id": "G-Q101",
+     "exam": "cuet",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "Two numbers are in the ratio 3 : 5. If 10 is added to each, the ratio becomes 5 : 7. What is the smaller number?",
+     "options": [
+      "15",
+      "12",
+      "9",
+      "18"
+     ],
+     "answer": 0,
+     "solution": "Let the numbers be 3x and 5x. (3x + 10)/(5x + 10) = 5/7 gives 21x + 70 = 25x + 50, so x = 5. The smaller number = 15.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q101"
+    },
+    {
+     "id": "G-Q102",
+     "exam": "cuet",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "A 50-litre mixture has milk and water in the ratio 4 : 1. How much water must be added to make the ratio 2 : 1?",
+     "options": [
+      "10 L",
+      "8 L",
+      "12 L",
+      "15 L"
+     ],
+     "answer": 0,
+     "solution": "Milk = 40 L and water = 10 L. For a 2 : 1 ratio the water must be 20 L, so add 10 L.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q102"
+    },
+    {
+     "id": "G-Q103",
+     "exam": "cuet",
+     "topic": "Averages & Alligation",
+     "difficulty": "Easy",
+     "question": "What is the average of 11, 15, 19, 23 and 27?",
+     "options": [
+      "17",
+      "19",
+      "21",
+      "23"
+     ],
+     "answer": 1,
+     "solution": "The numbers are evenly spaced, so the average is the middle number, 19. Check: 95/5 = 19.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q103"
+    },
+    {
+     "id": "G-Q104",
+     "exam": "cuet",
+     "topic": "Averages & Alligation",
+     "difficulty": "Medium",
+     "question": "The average weight of 20 students is 52 kg. When a new student joins, the average becomes 53 kg. What is the weight of the new student?",
+     "options": [
+      "70 kg",
+      "72 kg",
+      "73 kg",
+      "75 kg"
+     ],
+     "answer": 2,
+     "solution": "New total = 21 × 53 = 1,113 kg. Old total = 20 × 52 = 1,040 kg. The new student weighs 1,113 − 1,040 = 73 kg.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q104"
+    },
+    {
+     "id": "G-Q105",
+     "exam": "cuet",
+     "topic": "Averages & Alligation",
+     "difficulty": "Medium",
+     "question": "Sugar costing ₹30 per kg is mixed with sugar costing ₹45 per kg in the ratio 2 : 3. What is the cost per kg of the mixture?",
+     "options": [
+      "₹36",
+      "₹38",
+      "₹40",
+      "₹39"
+     ],
+     "answer": 3,
+     "solution": "Cost of 5 kg = 2 × 30 + 3 × 45 = 60 + 135 = ₹195. Per kg = 195/5 = ₹39.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q105"
+    },
+    {
+     "id": "G-Q106",
+     "exam": "cuet",
+     "topic": "Time & Work",
+     "difficulty": "Easy",
+     "question": "12 men can complete a work in 20 days. In how many days will 8 men complete it?",
+     "options": [
+      "24 days",
+      "30 days",
+      "28 days",
+      "32 days"
+     ],
+     "answer": 1,
+     "solution": "Total work = 12 × 20 = 240 man-days. With 8 men, time = 240/8 = 30 days.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q106"
+    },
+    {
+     "id": "G-Q107",
+     "exam": "cuet",
+     "topic": "Time & Work",
+     "difficulty": "Medium",
+     "question": "A, B and C can do a job alone in 10, 12 and 15 days respectively. In how many days will they finish it working together?",
+     "options": [
+      "3 days",
+      "5 days",
+      "4 days",
+      "6 days"
+     ],
+     "answer": 2,
+     "solution": "Work per day = 1/10 + 1/12 + 1/15 = (6 + 5 + 4)/60 = 15/60 = 1/4. They finish in 4 days.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q107"
+    },
+    {
+     "id": "G-Q108",
+     "exam": "cuet",
+     "topic": "Time & Work",
+     "difficulty": "Medium",
+     "question": "Pipe A fills a tank in 12 hours and pipe B fills it in 15 hours. Pipe C empties it in 20 hours. If all three are opened together, how long will the empty tank take to fill?",
+     "options": [
+      "8 hours",
+      "12 hours",
+      "10 hours",
+      "15 hours"
+     ],
+     "answer": 2,
+     "solution": "Net rate = 1/12 + 1/15 − 1/20 = (5 + 4 − 3)/60 = 6/60 = 1/10. The tank fills in 10 hours.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q108"
+    },
+    {
+     "id": "G-Q109",
+     "exam": "cuet",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Easy",
+     "question": "A car travelling at 45 km/h covers a distance of 270 km. How long does it take?",
+     "options": [
+      "6 hours",
+      "5 hours",
+      "7 hours",
+      "8 hours"
+     ],
+     "answer": 0,
+     "solution": "Time = distance/speed = 270/45 = 6 hours.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q109"
+    },
+    {
+     "id": "G-Q110",
+     "exam": "cuet",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "A boat's speed in still water is 10 km/h and the stream flows at 2 km/h. How long does it take to go 24 km downstream and return 24 km upstream?",
+     "options": [
+      "5 hours",
+      "4 hours",
+      "6 hours",
+      "7.5 hours"
+     ],
+     "answer": 0,
+     "solution": "Downstream speed = 12 km/h, so 24/12 = 2 hours. Upstream speed = 8 km/h, so 24/8 = 3 hours. Total = 5 hours.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q110"
+    },
+    {
+     "id": "G-Q111",
+     "exam": "cuet",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "A walks at 5 km/h. Two hours later B starts from the same point in the same direction at 7 km/h. How many hours after B starts will B catch A?",
+     "options": [
+      "4 hours",
+      "6 hours",
+      "5 hours",
+      "7 hours"
+     ],
+     "answer": 2,
+     "solution": "A has a head start of 5 × 2 = 10 km. B gains 7 − 5 = 2 km every hour, so B catches A in 10/2 = 5 hours.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q111"
+    },
+    {
+     "id": "G-Q113",
+     "exam": "cuet",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "What is the greatest number that divides 1,657 and 2,037 leaving remainders 6 and 5 respectively?",
+     "options": [
+      "127",
+      "121",
+      "113",
+      "131"
+     ],
+     "answer": 0,
+     "solution": "The number divides 1,657 − 6 = 1,651 and 2,037 − 5 = 2,032. 1,651 = 13 × 127 and 2,032 = 16 × 127, so the HCF is 127 (which is larger than both remainders).",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q113"
+    },
+    {
+     "id": "G-Q114",
+     "exam": "cuet",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "What is the unit digit of 8^35?",
+     "options": [
+      "4",
+      "2",
+      "6",
+      "8"
+     ],
+     "answer": 1,
+     "solution": "The unit digits of powers of 8 repeat in a cycle of 4: 8, 4, 2, 6. Since 35 = 4 × 8 + 3, the unit digit is the 3rd in the cycle, 2.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q114"
+    },
+    {
+     "id": "G-Q115",
+     "exam": "cuet",
+     "topic": "Algebra",
+     "difficulty": "Medium",
+     "question": "The sum of two numbers is 24 and their product is 143. What is their difference?",
+     "options": [
+      "1",
+      "3",
+      "2",
+      "4"
+     ],
+     "answer": 2,
+     "solution": "(a − b)² = (a + b)² − 4ab = 576 − 572 = 4, so the difference is 2. (The numbers are 13 and 11.)",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q115"
+    },
+    {
+     "id": "G-Q116",
+     "exam": "cuet",
+     "topic": "Algebra",
+     "difficulty": "Medium",
+     "question": "If the roots of x² − 9x + 14 = 0 are a and b, what is a² + b²?",
+     "options": [
+      "49",
+      "51",
+      "55",
+      "53"
+     ],
+     "answer": 3,
+     "solution": "a + b = 9 and ab = 14. a² + b² = (a + b)² − 2ab = 81 − 28 = 53.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q116"
+    },
+    {
+     "id": "G-Q117",
+     "exam": "cuet",
+     "topic": "Geometry & Mensuration",
+     "difficulty": "Medium",
+     "question": "What is the area of a triangle whose sides are 13 cm, 14 cm and 15 cm?",
+     "options": [
+      "84 cm²",
+      "78 cm²",
+      "72 cm²",
+      "90 cm²"
+     ],
+     "answer": 0,
+     "solution": "Semi-perimeter = 21. Area = √(21 × 8 × 7 × 6) = √7,056 = 84 cm².",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q117"
+    },
+    {
+     "id": "G-Q118",
+     "exam": "cuet",
+     "topic": "Geometry & Mensuration",
+     "difficulty": "Easy",
+     "question": "The total surface area of a cube is 150 cm². What is its volume?",
+     "options": [
+      "100 cm³",
+      "216 cm³",
+      "150 cm³",
+      "125 cm³"
+     ],
+     "answer": 3,
+     "solution": "6a² = 150 gives a² = 25, so a = 5 cm. Volume = 5³ = 125 cm³.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q118"
+    },
+    {
+     "id": "G-Q119",
+     "exam": "cuet",
+     "topic": "Geometry & Mensuration",
+     "difficulty": "Medium",
+     "question": "What is the curved surface area of a cylinder of radius 7 cm and height 10 cm? (Take π = 22/7)",
+     "options": [
+      "340 cm²",
+      "400 cm²",
+      "480 cm²",
+      "440 cm²"
+     ],
+     "answer": 3,
+     "solution": "Curved surface area = 2πrh = 2 × 22/7 × 7 × 10 = 440 cm².",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q119"
+    },
+    {
      "id": "G-R1",
      "exam": "cuet",
      "topic": "Syllogisms",
@@ -4178,6 +4778,630 @@
      "type": "mcq",
      "source": "general",
      "orig_id": "R83"
+    },
+    {
+     "id": "G-R84",
+     "exam": "cuet",
+     "topic": "Syllogisms",
+     "difficulty": "Medium",
+     "question": "Statements: All roses are flowers. All flowers are plants.<br>Conclusions: I. All roses are plants II. Some plants are roses",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither follows"
+     ],
+     "answer": 2,
+     "solution": "Roses ⊂ flowers ⊂ plants, so all roses are plants (I). Converting I gives some plants are roses (II). Both follow.",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R84"
+    },
+    {
+     "id": "G-R85",
+     "exam": "cuet",
+     "topic": "Syllogisms",
+     "difficulty": "Medium",
+     "question": "Statements: Some cars are bikes. No bike is a bus.<br>Conclusions: I. Some cars are not buses II. No car is a bus",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither follows"
+     ],
+     "answer": 0,
+     "solution": "The cars that are bikes cannot be buses, so some cars are not buses (I). Other cars may still be buses, so II does not follow.",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R85"
+    },
+    {
+     "id": "G-R88",
+     "exam": "cuet",
+     "topic": "Seating Arrangement",
+     "difficulty": "Medium",
+     "question": "Five friends A, B, C, D and E sit in a row facing north. A sits second from the left end. C sits immediately to the right of A. B sits at one of the ends. D does not sit next to C. E sits somewhere to the right of D. Who sits at the extreme right end?",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "E"
+     ],
+     "answer": 1,
+     "solution": "A is 2nd and C is 3rd. D cannot sit next to C, so D is not 4th, and the 2nd seat is taken, so D is in the 1st or 5th seat. E sits to the right of D, so D cannot be 5th. D is 1st. B must be at an end, so B is 5th and E is 4th: D A C E B. B sits at the extreme right.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R88"
+    },
+    {
+     "id": "G-R90",
+     "exam": "cuet",
+     "topic": "Seating Arrangement",
+     "difficulty": "Medium",
+     "question": "Six persons A to F live on six different floors of a building (1 is the lowest, 6 the highest). A lives on floor 1. B lives on an even-numbered floor above C. D lives immediately below E. F lives above E. Who lives on the top floor?",
+     "options": [
+      "B",
+      "D",
+      "E",
+      "C"
+     ],
+     "answer": 0,
+     "solution": "A is on floor 1. F is above E and E is above D, so F, E and D are three of floors 2 to 6, and F cannot be on floor 6 if B is to sit on an even floor above C with room left for the D-E pair. Checking every arrangement that fits all four clues, B always ends up on floor 6, the top floor.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R90"
+    },
+    {
+     "id": "G-R91",
+     "exam": "cuet",
+     "topic": "Blood Relations",
+     "difficulty": "Easy",
+     "question": "A's mother is B's sister. How is A related to B?",
+     "options": [
+      "Uncle",
+      "Cousin",
+      "Brother or sister",
+      "Nephew or niece"
+     ],
+     "answer": 3,
+     "solution": "B's sister is A's mother, so B is A's maternal uncle or aunt. A is B's nephew or niece.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R91"
+    },
+    {
+     "id": "G-R92",
+     "exam": "cuet",
+     "topic": "Blood Relations",
+     "difficulty": "Medium",
+     "question": "Pointing to a photograph, Ravi says, 'She is the daughter of my grandfather's only son.' How is she related to Ravi?",
+     "options": [
+      "Cousin",
+      "Sister",
+      "Aunt",
+      "Niece"
+     ],
+     "answer": 1,
+     "solution": "Ravi's grandfather's only son is Ravi's father. The daughter of Ravi's father is Ravi's sister.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R92"
+    },
+    {
+     "id": "G-R93",
+     "exam": "cuet",
+     "topic": "Blood Relations",
+     "difficulty": "Medium",
+     "question": "X is Y's father. Z is X's sister. W is Z's son. How is W related to Y?",
+     "options": [
+      "Brother",
+      "Uncle",
+      "Nephew",
+      "Cousin"
+     ],
+     "answer": 3,
+     "solution": "Z is Y's paternal aunt. Z's son W is the child of Y's aunt, so W is Y's cousin.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R93"
+    },
+    {
+     "id": "G-R94",
+     "exam": "cuet",
+     "topic": "Coding-Decoding",
+     "difficulty": "Easy",
+     "question": "In a certain code, STONE is written as RSNMD. How is PLATE written in that code?",
+     "options": [
+      "OLZSD",
+      "OKZSF",
+      "QMBUF",
+      "OKZSD"
+     ],
+     "answer": 3,
+     "solution": "Each letter is moved one place back: S→R, T→S, O→N, N→M, E→D. So P→O, L→K, A→Z, T→S, E→D, giving OKZSD.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R94"
+    },
+    {
+     "id": "G-R95",
+     "exam": "cuet",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "In a certain code, 'pen ink' is written as 'ta ma', 'ink pot' as 'ma ki' and 'pot cup' as 'ki lo'. How is 'pen' written in that code?",
+     "options": [
+      "ki",
+      "ma",
+      "ta",
+      "lo"
+     ],
+     "answer": 2,
+     "solution": "'ink' is common to the first two statements and 'ma' is common to the two codes, so ink = ma. Then pen = ta.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R95"
+    },
+    {
+     "id": "G-R98",
+     "exam": "cuet",
+     "topic": "Puzzles",
+     "difficulty": "Easy",
+     "question": "The sum of the ages of a father and his son is 50 years. Five years ago the father was four times as old as the son. What is the son's present age?",
+     "options": [
+      "11 years",
+      "13 years",
+      "12 years",
+      "14 years"
+     ],
+     "answer": 1,
+     "solution": "Let the son be s now, so the father is 50 − s. Five years ago: 50 − s − 5 = 4(s − 5), so 45 − s = 4s − 20 and 5s = 65, giving s = 13.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R98"
+    },
+    {
+     "id": "G-R99",
+     "exam": "cuet",
+     "topic": "Puzzles",
+     "difficulty": "Medium",
+     "question": "Among five boxes P, Q, R, S and T: P is heavier than Q but lighter than R. S is heavier than R. T is lighter than Q. Which box is the second heaviest?",
+     "options": [
+      "P",
+      "Q",
+      "R",
+      "S"
+     ],
+     "answer": 2,
+     "solution": "From the clues S > R > P > Q > T. The second heaviest is R.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R99"
+    },
+    {
+     "id": "G-R101",
+     "exam": "cuet",
+     "topic": "Direction Sense",
+     "difficulty": "Easy",
+     "question": "A man walks 10 m west, turns left and walks 6 m, turns left and walks 10 m, then turns right and walks 4 m. How far and in which direction is he from the starting point?",
+     "options": [
+      "10 m south",
+      "10 m north",
+      "6 m south",
+      "14 m south"
+     ],
+     "answer": 0,
+     "solution": "Take the start as (0, 0). West 10 m: (−10, 0). Left (south) 6 m: (−10, −6). Left (east) 10 m: (0, −6). Right (south) 4 m: (0, −10). He is 10 m south of the start.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R101"
+    },
+    {
+     "id": "G-R102",
+     "exam": "cuet",
+     "topic": "Direction Sense",
+     "difficulty": "Medium",
+     "question": "Rohan faces north, turns 90° to his right and then 135° to his left. Which direction is he facing now?",
+     "options": [
+      "North-East",
+      "South-West",
+      "North-West",
+      "South-East"
+     ],
+     "answer": 2,
+     "solution": "Facing north, 90° right is east. Turning 135° left (anticlockwise) from east passes north and ends 45° beyond it, which is north-west.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R102"
+    },
+    {
+     "id": "G-R103",
+     "exam": "cuet",
+     "topic": "Direction Sense",
+     "difficulty": "Medium",
+     "question": "Rohan walks 8 km south, turns left and walks 6 km, then turns left again and walks 8 km. How far and in which direction is he from his starting point?",
+     "options": [
+      "6 km west",
+      "6 km east",
+      "8 km east",
+      "10 km east"
+     ],
+     "answer": 1,
+     "solution": "Facing south, a left turn points east, so he goes 6 km east. Another left turn points north, and the 8 km north cancels the 8 km south. He ends 6 km east of the start.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R103"
+    },
+    {
+     "id": "G-R104",
+     "exam": "cuet",
+     "topic": "Number & Letter Series",
+     "difficulty": "Medium",
+     "question": "Find the next term: 3, 8, 18, 38, 78, ?",
+     "options": [
+      "148",
+      "156",
+      "158",
+      "162"
+     ],
+     "answer": 2,
+     "solution": "Each term is double the previous term plus 2: 78 × 2 + 2 = 158.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R104"
+    },
+    {
+     "id": "G-R105",
+     "exam": "cuet",
+     "topic": "Number & Letter Series",
+     "difficulty": "Medium",
+     "question": "Find the next term: 5, 11, 23, 47, 95, ?",
+     "options": [
+      "181",
+      "189",
+      "193",
+      "191"
+     ],
+     "answer": 3,
+     "solution": "Each term is double the previous term plus 1: 95 × 2 + 1 = 191.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R105"
+    },
+    {
+     "id": "G-R106",
+     "exam": "cuet",
+     "topic": "Number & Letter Series",
+     "difficulty": "Easy",
+     "question": "Find the next term: 1, 3, 7, 13, 21, ?",
+     "options": [
+      "29",
+      "31",
+      "33",
+      "35"
+     ],
+     "answer": 1,
+     "solution": "The differences are 2, 4, 6, 8, so the next difference is 10: 21 + 10 = 31.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R106"
+    },
+    {
+     "id": "G-R108",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Easy",
+     "question": "Find the odd one out: 16, 25, 36, 49, 50",
+     "options": [
+      "16",
+      "50",
+      "49",
+      "25"
+     ],
+     "answer": 1,
+     "solution": "16, 25, 36 and 49 are perfect squares (4², 5², 6², 7²). 50 is not.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R108"
+    },
+    {
+     "id": "G-R109",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Easy",
+     "question": "Find the odd one out: Mercury, Venus, Moon, Mars, Jupiter",
+     "options": [
+      "Mercury",
+      "Venus",
+      "Moon",
+      "Jupiter"
+     ],
+     "answer": 2,
+     "solution": "Mercury, Venus, Mars and Jupiter are planets. The Moon is a satellite of the Earth.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R109"
+    },
+    {
+     "id": "G-R110",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Medium",
+     "question": "Find the odd one out: 14, 21, 35, 49, 52",
+     "options": [
+      "14",
+      "52",
+      "49",
+      "35"
+     ],
+     "answer": 1,
+     "solution": "14, 21, 35 and 49 are multiples of 7. 52 is not.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R110"
+    },
+    {
+     "id": "G-R111",
+     "exam": "cuet",
+     "topic": "Clocks & Calendars",
+     "difficulty": "Medium",
+     "question": "What is the angle between the hands of a clock at 7:20?",
+     "options": [
+      "90°",
+      "100°",
+      "110°",
+      "120°"
+     ],
+     "answer": 1,
+     "solution": "At 7:20 the hour hand is at 7 × 30 + 20 × 0.5 = 220°. The minute hand is at 20 × 6 = 120°. The angle is 220 − 120 = 100°.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R111"
+    },
+    {
+     "id": "G-R112",
+     "exam": "cuet",
+     "topic": "Clocks & Calendars",
+     "difficulty": "Medium",
+     "question": "If 15 August 2026 is a Saturday, what day of the week is 26 January 2027?",
+     "options": [
+      "Sunday",
+      "Tuesday",
+      "Monday",
+      "Wednesday"
+     ],
+     "answer": 1,
+     "solution": "From 15 August to 26 January: 16 (rest of August) + 30 + 31 + 30 + 31 + 26 = 164 days. 164 = 7 × 23 + 3, so move 3 days forward from Saturday: Tuesday.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R112"
+    },
+    {
+     "id": "G-R114",
+     "exam": "cuet",
+     "topic": "Alphabet Test",
+     "difficulty": "Easy",
+     "question": "How many letters are there between G and R in the English alphabet?",
+     "options": [
+      "9",
+      "12",
+      "11",
+      "10"
+     ],
+     "answer": 3,
+     "solution": "G is the 7th letter and R is the 18th. The letters between are 18 − 7 − 1 = 10.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R114"
+    },
+    {
+     "id": "G-R115",
+     "exam": "cuet",
+     "topic": "Alphabet Test",
+     "difficulty": "Medium",
+     "question": "Which letter is exactly as far from the end of the alphabet as K is from the beginning?",
+     "options": [
+      "P",
+      "O",
+      "Q",
+      "R"
+     ],
+     "answer": 0,
+     "solution": "K is the 11th letter from the left. The letter 11th from the right is 27 − 11 = 16th from the left, which is P.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R115"
+    },
+    {
+     "id": "G-R116",
+     "exam": "cuet",
+     "topic": "Alphabet Test",
+     "difficulty": "Medium",
+     "question": "If the letters of the word BRIGHT are arranged in alphabetical order, which letter is third from the left?",
+     "options": [
+      "G",
+      "H",
+      "I",
+      "R"
+     ],
+     "answer": 1,
+     "solution": "Alphabetical order: B, G, H, I, R, T. The third letter is H.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R116"
+    },
+    {
+     "id": "G-R117",
+     "exam": "cuet",
+     "topic": "Inequalities",
+     "difficulty": "Medium",
+     "question": "Statements: A ≤ B &lt; C = D > E<br>Conclusions: I. A &lt; D II. B &lt; E",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither follows"
+     ],
+     "answer": 0,
+     "solution": "A ≤ B < C = D, so A < D (I follows). B and E are both below D but nothing links them, so II does not follow.",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R117"
+    },
+    {
+     "id": "G-R118",
+     "exam": "cuet",
+     "topic": "Inequalities",
+     "difficulty": "Medium",
+     "question": "Statements: J ≥ K > L = M ≥ N<br>Conclusions: I. J = M II. N ≤ K",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither follows"
+     ],
+     "answer": 1,
+     "solution": "J ≥ K > L = M, so J > M and I (J = M) is false. K > L = M ≥ N gives K > N, so N ≤ K holds (II follows).",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R118"
+    },
+    {
+     "id": "G-R120",
+     "exam": "cuet",
+     "topic": "Ranking & Order",
+     "difficulty": "Easy",
+     "question": "In a row of 40 students, Anil is 12th from the left and Sunil is 15th from the right. How many students are between them?",
+     "options": [
+      "12",
+      "13",
+      "14",
+      "15"
+     ],
+     "answer": 1,
+     "solution": "Sunil is 40 − 15 + 1 = 26th from the left. Students between = 26 − 12 − 1 = 13.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R120"
+    },
+    {
+     "id": "G-R121",
+     "exam": "cuet",
+     "topic": "Ranking & Order",
+     "difficulty": "Easy",
+     "question": "Sanjay ranks 11th from the top and 29th from the bottom in a class. How many students are there in the class?",
+     "options": [
+      "38",
+      "39",
+      "40",
+      "41"
+     ],
+     "answer": 1,
+     "solution": "Total = 11 + 29 − 1 = 39.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R121"
+    },
+    {
+     "id": "G-R122",
+     "exam": "cuet",
+     "topic": "Ranking & Order",
+     "difficulty": "Medium",
+     "question": "In a class of 35, Priya is 12th from the top and Neha is 9th from the bottom. How many students are between them?",
+     "options": [
+      "14",
+      "13",
+      "12",
+      "15"
+     ],
+     "answer": 0,
+     "solution": "Neha is 35 − 9 + 1 = 27th from the top. Between them: 27 − 12 − 1 = 14.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R122"
+    },
+    {
+     "id": "G-R123",
+     "exam": "cuet",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "In a certain code, each word is coded as the sum of the position values of its letters (A = 1, B = 2, … Z = 26). PEN is coded as 35. How is INK coded?",
+     "options": [
+      "32",
+      "33",
+      "36",
+      "34"
+     ],
+     "answer": 3,
+     "solution": "PEN = 16 + 5 + 14 = 35, which confirms the rule. INK = 9 + 14 + 11 = 34.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R123"
     }
    ]
   },

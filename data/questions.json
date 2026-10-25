@@ -1337,6 +1337,636 @@
     ],
     "answer": 2,
     "solution": "Favourable = 4C2 = 6. Total = 10C2 = 45. Probability = 6/45 = 2/15."
+   },
+   {
+    "id": "Q86",
+    "exam": "general",
+    "topic": "Percentages",
+    "difficulty": "Easy",
+    "question": "What is 35% of 240?",
+    "options": [
+     "84",
+     "80",
+     "88",
+     "96"
+    ],
+    "answer": 0,
+    "solution": "35% of 240 = 35 × 240/100 = 84.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q87",
+    "exam": "general",
+    "topic": "Percentages",
+    "difficulty": "Medium",
+    "question": "A number is increased by 30% and the result is then decreased by 10%. What is the net percentage change?",
+    "options": [
+     "20%",
+     "27%",
+     "3%",
+     "17%"
+    ],
+    "answer": 3,
+    "solution": "Take the number as 100. After +30%: 130. After −10% of 130: 130 − 13 = 117. The net change is a 17% increase.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q88",
+    "exam": "general",
+    "topic": "Percentages",
+    "difficulty": "Medium",
+    "question": "A's income is 20% more than B's. By what percentage is B's income less than A's?",
+    "options": [
+     "16.67%",
+     "20%",
+     "15%",
+     "18%"
+    ],
+    "answer": 0,
+    "solution": "Let B = 100, so A = 120. B is less than A by 20/120 = 16.67%.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q89",
+    "exam": "general",
+    "topic": "Percentages",
+    "difficulty": "Medium",
+    "question": "In an exam 40% of the candidates failed. If 300 candidates passed, how many appeared?",
+    "options": [
+     "450",
+     "500",
+     "550",
+     "600"
+    ],
+    "answer": 1,
+    "solution": "The pass percentage is 60%. 60% of the candidates = 300, so the total = 300/0.60 = 500.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q90",
+    "exam": "general",
+    "topic": "Percentages",
+    "difficulty": "Hard",
+    "question": "The population of a town grows by 10% every year. Its present population is 21,780. What was it two years ago?",
+    "options": [
+     "18,000",
+     "17,500",
+     "18,500",
+     "19,000"
+    ],
+    "answer": 0,
+    "solution": "Present = P × 1.1 × 1.1 = 1.21P. So P = 21,780/1.21 = 18,000."
+   },
+   {
+    "id": "Q91",
+    "exam": "general",
+    "topic": "Profit & Loss",
+    "difficulty": "Easy",
+    "question": "An article bought for ₹480 is sold for ₹552. What is the profit percentage?",
+    "options": [
+     "12%",
+     "15%",
+     "18%",
+     "20%"
+    ],
+    "answer": 1,
+    "solution": "Profit = 552 − 480 = ₹72. Profit % = 72/480 × 100 = 15%.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q92",
+    "exam": "general",
+    "topic": "Profit & Loss",
+    "difficulty": "Medium",
+    "question": "A shopkeeper gives a discount of 12% on the marked price and still gains 10%. If the cost price is ₹800, what is the marked price?",
+    "options": [
+     "₹950",
+     "₹1,050",
+     "₹1,000",
+     "₹1,100"
+    ],
+    "answer": 2,
+    "solution": "Selling price = 800 × 1.10 = ₹880. This is 88% of the marked price, so the marked price = 880/0.88 = ₹1,000.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q93",
+    "exam": "general",
+    "topic": "Profit & Loss",
+    "difficulty": "Medium",
+    "question": "By selling an article for ₹720 a man loses 10%. At what price should he sell it to gain 10%?",
+    "options": [
+     "₹880",
+     "₹860",
+     "₹800",
+     "₹900"
+    ],
+    "answer": 0,
+    "solution": "720 is 90% of the cost, so cost = 720/0.9 = ₹800. For a 10% gain, selling price = 800 × 1.1 = ₹880.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q94",
+    "exam": "general",
+    "topic": "Profit & Loss",
+    "difficulty": "Hard",
+    "question": "A sells an article to B at a 20% profit, and B sells it to C at a 25% profit. If C pays ₹1,500, what did it cost A?",
+    "options": [
+     "₹900",
+     "₹1,000",
+     "₹1,100",
+     "₹1,200"
+    ],
+    "answer": 1,
+    "solution": "C's price = A's cost × 1.20 × 1.25 = 1.5 × A's cost. So A's cost = 1,500/1.5 = ₹1,000."
+   },
+   {
+    "id": "Q95",
+    "exam": "general",
+    "topic": "Profit & Loss",
+    "difficulty": "Medium",
+    "question": "Two successive discounts of 20% and 10% are equal to a single discount of:",
+    "options": [
+     "30%",
+     "28%",
+     "25%",
+     "32%"
+    ],
+    "answer": 1,
+    "solution": "Price after both = 0.80 × 0.90 = 0.72 of the marked price, so the single discount is 28%.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q96",
+    "exam": "general",
+    "topic": "Simple & Compound Interest",
+    "difficulty": "Easy",
+    "question": "₹2,000 becomes ₹2,480 in 3 years at simple interest. What is the rate per annum?",
+    "options": [
+     "6%",
+     "10%",
+     "9%",
+     "8%"
+    ],
+    "answer": 3,
+    "solution": "Interest = 2,480 − 2,000 = ₹480. Rate = 480 × 100/(2,000 × 3) = 8%.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q97",
+    "exam": "general",
+    "topic": "Simple & Compound Interest",
+    "difficulty": "Medium",
+    "question": "What is the compound interest on ₹5,000 at 8% per annum for 2 years?",
+    "options": [
+     "₹832",
+     "₹800",
+     "₹864",
+     "₹900"
+    ],
+    "answer": 0,
+    "solution": "Amount = 5,000 × 1.08 × 1.08 = ₹5,832. Compound interest = 5,832 − 5,000 = ₹832.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q98",
+    "exam": "general",
+    "topic": "Simple & Compound Interest",
+    "difficulty": "Medium",
+    "question": "A sum becomes ₹7,986 in 3 years at 10% per annum compound interest. What is the sum?",
+    "options": [
+     "₹5,800",
+     "₹6,500",
+     "₹6,200",
+     "₹6,000"
+    ],
+    "answer": 3,
+    "solution": "Amount = P × 1.1³ = 1.331P. So P = 7,986/1.331 = ₹6,000.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q99",
+    "exam": "general",
+    "topic": "Simple & Compound Interest",
+    "difficulty": "Hard",
+    "question": "A sum lent at simple interest amounts to ₹1,200 in 2 years and ₹1,350 in 5 years. What is the sum?",
+    "options": [
+     "₹1,000",
+     "₹1,100",
+     "₹1,050",
+     "₹1,150"
+    ],
+    "answer": 1,
+    "solution": "Interest for 3 years (years 2 to 5) = 1,350 − 1,200 = ₹150, so ₹50 a year. Interest for 2 years = ₹100, so the sum = 1,200 − 100 = ₹1,100."
+   },
+   {
+    "id": "Q100",
+    "exam": "general",
+    "topic": "Ratio & Proportion",
+    "difficulty": "Easy",
+    "question": "₹2,400 is divided between A and B in the ratio 5 : 3. How much does A get?",
+    "options": [
+     "₹1,200",
+     "₹1,400",
+     "₹1,500",
+     "₹1,600"
+    ],
+    "answer": 2,
+    "solution": "A's share = 5/8 × 2,400 = ₹1,500.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q101",
+    "exam": "general",
+    "topic": "Ratio & Proportion",
+    "difficulty": "Medium",
+    "question": "Two numbers are in the ratio 3 : 5. If 10 is added to each, the ratio becomes 5 : 7. What is the smaller number?",
+    "options": [
+     "15",
+     "12",
+     "9",
+     "18"
+    ],
+    "answer": 0,
+    "solution": "Let the numbers be 3x and 5x. (3x + 10)/(5x + 10) = 5/7 gives 21x + 70 = 25x + 50, so x = 5. The smaller number = 15.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q102",
+    "exam": "general",
+    "topic": "Ratio & Proportion",
+    "difficulty": "Medium",
+    "question": "A 50-litre mixture has milk and water in the ratio 4 : 1. How much water must be added to make the ratio 2 : 1?",
+    "options": [
+     "10 L",
+     "8 L",
+     "12 L",
+     "15 L"
+    ],
+    "answer": 0,
+    "solution": "Milk = 40 L and water = 10 L. For a 2 : 1 ratio the water must be 20 L, so add 10 L.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q103",
+    "exam": "general",
+    "topic": "Averages & Alligation",
+    "difficulty": "Easy",
+    "question": "What is the average of 11, 15, 19, 23 and 27?",
+    "options": [
+     "17",
+     "19",
+     "21",
+     "23"
+    ],
+    "answer": 1,
+    "solution": "The numbers are evenly spaced, so the average is the middle number, 19. Check: 95/5 = 19.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q104",
+    "exam": "general",
+    "topic": "Averages & Alligation",
+    "difficulty": "Medium",
+    "question": "The average weight of 20 students is 52 kg. When a new student joins, the average becomes 53 kg. What is the weight of the new student?",
+    "options": [
+     "70 kg",
+     "72 kg",
+     "73 kg",
+     "75 kg"
+    ],
+    "answer": 2,
+    "solution": "New total = 21 × 53 = 1,113 kg. Old total = 20 × 52 = 1,040 kg. The new student weighs 1,113 − 1,040 = 73 kg.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q105",
+    "exam": "general",
+    "topic": "Averages & Alligation",
+    "difficulty": "Medium",
+    "question": "Sugar costing ₹30 per kg is mixed with sugar costing ₹45 per kg in the ratio 2 : 3. What is the cost per kg of the mixture?",
+    "options": [
+     "₹36",
+     "₹38",
+     "₹40",
+     "₹39"
+    ],
+    "answer": 3,
+    "solution": "Cost of 5 kg = 2 × 30 + 3 × 45 = 60 + 135 = ₹195. Per kg = 195/5 = ₹39.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q106",
+    "exam": "general",
+    "topic": "Time & Work",
+    "difficulty": "Easy",
+    "question": "12 men can complete a work in 20 days. In how many days will 8 men complete it?",
+    "options": [
+     "24 days",
+     "30 days",
+     "28 days",
+     "32 days"
+    ],
+    "answer": 1,
+    "solution": "Total work = 12 × 20 = 240 man-days. With 8 men, time = 240/8 = 30 days.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q107",
+    "exam": "general",
+    "topic": "Time & Work",
+    "difficulty": "Medium",
+    "question": "A, B and C can do a job alone in 10, 12 and 15 days respectively. In how many days will they finish it working together?",
+    "options": [
+     "3 days",
+     "5 days",
+     "4 days",
+     "6 days"
+    ],
+    "answer": 2,
+    "solution": "Work per day = 1/10 + 1/12 + 1/15 = (6 + 5 + 4)/60 = 15/60 = 1/4. They finish in 4 days.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q108",
+    "exam": "general",
+    "topic": "Time & Work",
+    "difficulty": "Medium",
+    "question": "Pipe A fills a tank in 12 hours and pipe B fills it in 15 hours. Pipe C empties it in 20 hours. If all three are opened together, how long will the empty tank take to fill?",
+    "options": [
+     "8 hours",
+     "12 hours",
+     "10 hours",
+     "15 hours"
+    ],
+    "answer": 2,
+    "solution": "Net rate = 1/12 + 1/15 − 1/20 = (5 + 4 − 3)/60 = 6/60 = 1/10. The tank fills in 10 hours.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q109",
+    "exam": "general",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Easy",
+    "question": "A car travelling at 45 km/h covers a distance of 270 km. How long does it take?",
+    "options": [
+     "6 hours",
+     "5 hours",
+     "7 hours",
+     "8 hours"
+    ],
+    "answer": 0,
+    "solution": "Time = distance/speed = 270/45 = 6 hours.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q110",
+    "exam": "general",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Medium",
+    "question": "A boat's speed in still water is 10 km/h and the stream flows at 2 km/h. How long does it take to go 24 km downstream and return 24 km upstream?",
+    "options": [
+     "5 hours",
+     "4 hours",
+     "6 hours",
+     "7.5 hours"
+    ],
+    "answer": 0,
+    "solution": "Downstream speed = 12 km/h, so 24/12 = 2 hours. Upstream speed = 8 km/h, so 24/8 = 3 hours. Total = 5 hours.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q111",
+    "exam": "general",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Medium",
+    "question": "A walks at 5 km/h. Two hours later B starts from the same point in the same direction at 7 km/h. How many hours after B starts will B catch A?",
+    "options": [
+     "4 hours",
+     "6 hours",
+     "5 hours",
+     "7 hours"
+    ],
+    "answer": 2,
+    "solution": "A has a head start of 5 × 2 = 10 km. B gains 7 − 5 = 2 km every hour, so B catches A in 10/2 = 5 hours.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q112",
+    "exam": "general",
+    "topic": "Time, Speed & Distance",
+    "difficulty": "Hard",
+    "question": "A train crosses a 200 m platform in 25 seconds and a pole in 15 seconds. What is the length of the train?",
+    "options": [
+     "300 m",
+     "250 m",
+     "350 m",
+     "400 m"
+    ],
+    "answer": 0,
+    "solution": "Let the length be L and the speed v. v = L/15 and v = (L + 200)/25. So 25L = 15L + 3,000, which gives L = 300 m."
+   },
+   {
+    "id": "Q113",
+    "exam": "general",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "What is the greatest number that divides 1,657 and 2,037 leaving remainders 6 and 5 respectively?",
+    "options": [
+     "127",
+     "121",
+     "113",
+     "131"
+    ],
+    "answer": 0,
+    "solution": "The number divides 1,657 − 6 = 1,651 and 2,037 − 5 = 2,032. 1,651 = 13 × 127 and 2,032 = 16 × 127, so the HCF is 127 (which is larger than both remainders).",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q114",
+    "exam": "general",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "What is the unit digit of 8^35?",
+    "options": [
+     "4",
+     "2",
+     "6",
+     "8"
+    ],
+    "answer": 1,
+    "solution": "The unit digits of powers of 8 repeat in a cycle of 4: 8, 4, 2, 6. Since 35 = 4 × 8 + 3, the unit digit is the 3rd in the cycle, 2.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q115",
+    "exam": "general",
+    "topic": "Algebra",
+    "difficulty": "Medium",
+    "question": "The sum of two numbers is 24 and their product is 143. What is their difference?",
+    "options": [
+     "1",
+     "3",
+     "2",
+     "4"
+    ],
+    "answer": 2,
+    "solution": "(a − b)² = (a + b)² − 4ab = 576 − 572 = 4, so the difference is 2. (The numbers are 13 and 11.)",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q116",
+    "exam": "general",
+    "topic": "Algebra",
+    "difficulty": "Medium",
+    "question": "If the roots of x² − 9x + 14 = 0 are a and b, what is a² + b²?",
+    "options": [
+     "49",
+     "51",
+     "55",
+     "53"
+    ],
+    "answer": 3,
+    "solution": "a + b = 9 and ab = 14. a² + b² = (a + b)² − 2ab = 81 − 28 = 53.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q117",
+    "exam": "general",
+    "topic": "Geometry & Mensuration",
+    "difficulty": "Medium",
+    "question": "What is the area of a triangle whose sides are 13 cm, 14 cm and 15 cm?",
+    "options": [
+     "84 cm²",
+     "78 cm²",
+     "72 cm²",
+     "90 cm²"
+    ],
+    "answer": 0,
+    "solution": "Semi-perimeter = 21. Area = √(21 × 8 × 7 × 6) = √7,056 = 84 cm².",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q118",
+    "exam": "general",
+    "topic": "Geometry & Mensuration",
+    "difficulty": "Easy",
+    "question": "The total surface area of a cube is 150 cm². What is its volume?",
+    "options": [
+     "100 cm³",
+     "216 cm³",
+     "150 cm³",
+     "125 cm³"
+    ],
+    "answer": 3,
+    "solution": "6a² = 150 gives a² = 25, so a = 5 cm. Volume = 5³ = 125 cm³.",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q119",
+    "exam": "general",
+    "topic": "Geometry & Mensuration",
+    "difficulty": "Medium",
+    "question": "What is the curved surface area of a cylinder of radius 7 cm and height 10 cm? (Take π = 22/7)",
+    "options": [
+     "340 cm²",
+     "400 cm²",
+     "480 cm²",
+     "440 cm²"
+    ],
+    "answer": 3,
+    "solution": "Curved surface area = 2πrh = 2 × 22/7 × 7 × 10 = 440 cm².",
+    "cuet_part": "Quantitative Reasoning"
+   },
+   {
+    "id": "Q120",
+    "exam": "general",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Easy",
+    "question": "How many 3-digit numbers can be formed from the digits 1, 2, 3, 4 and 5 if no digit is repeated?",
+    "options": [
+     "30",
+     "90",
+     "60",
+     "125"
+    ],
+    "answer": 2,
+    "solution": "Choose and arrange 3 of the 5 digits: 5 × 4 × 3 = 60."
+   },
+   {
+    "id": "Q121",
+    "exam": "general",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Medium",
+    "question": "A committee of 3 is to be chosen from 5 men and 4 women, with at least one woman. In how many ways can this be done?",
+    "options": [
+     "64",
+     "84",
+     "74",
+     "94"
+    ],
+    "answer": 2,
+    "solution": "All committees: 9C3 = 84. Committees with no woman: 5C3 = 10. With at least one woman: 84 − 10 = 74."
+   },
+   {
+    "id": "Q122",
+    "exam": "general",
+    "topic": "Permutations & Combinations",
+    "difficulty": "Medium",
+    "question": "In how many ways can the letters of the word BANANA be arranged?",
+    "options": [
+     "30",
+     "120",
+     "90",
+     "60"
+    ],
+    "answer": 3,
+    "solution": "BANANA has 6 letters with A three times and N twice. Arrangements = 6!/(3! × 2!) = 720/12 = 60."
+   },
+   {
+    "id": "Q123",
+    "exam": "general",
+    "topic": "Probability",
+    "difficulty": "Easy",
+    "question": "One card is drawn from a well-shuffled pack of 52 cards. What is the probability that it is a king or a queen?",
+    "options": [
+     "1/13",
+     "4/13",
+     "3/13",
+     "2/13"
+    ],
+    "answer": 3,
+    "solution": "There are 4 kings and 4 queens, so 8 favourable cards. Probability = 8/52 = 2/13."
+   },
+   {
+    "id": "Q124",
+    "exam": "general",
+    "topic": "Probability",
+    "difficulty": "Medium",
+    "question": "Two fair coins and one fair die are thrown together. What is the probability of getting two heads and an even number?",
+    "options": [
+     "1/6",
+     "1/8",
+     "1/4",
+     "1/12"
+    ],
+    "answer": 1,
+    "solution": "P(two heads) = 1/4 and P(even number) = 1/2. They are independent, so the probability = 1/4 × 1/2 = 1/8."
+   },
+   {
+    "id": "Q125",
+    "exam": "general",
+    "topic": "Probability",
+    "difficulty": "Hard",
+    "question": "Two fair dice are thrown. What is the probability that the sum is a multiple of 5?",
+    "options": [
+     "5/36",
+     "7/36",
+     "1/6",
+     "2/9"
+    ],
+    "answer": 1,
+    "solution": "Sum 5: 4 ways (1,4), (2,3), (3,2), (4,1). Sum 10: 3 ways (4,6), (5,5), (6,4). Favourable = 7 out of 36, so the probability = 7/36."
    }
   ]
  },
@@ -2674,6 +3304,644 @@
     "answer": 0,
     "solution": "R and T occupy the ends, so P, Q and S fill the three middle seats. P is immediately left of Q, which gives S P Q or P Q S. In P Q S, Q is in the middle, which is not allowed. So the order is S P Q and P sits in the middle.",
     "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R84",
+    "exam": "general",
+    "topic": "Syllogisms",
+    "difficulty": "Medium",
+    "question": "Statements: All roses are flowers. All flowers are plants.<br>Conclusions: I. All roses are plants II. Some plants are roses",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 2,
+    "solution": "Roses ⊂ flowers ⊂ plants, so all roses are plants (I). Converting I gives some plants are roses (II). Both follow.",
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R85",
+    "exam": "general",
+    "topic": "Syllogisms",
+    "difficulty": "Medium",
+    "question": "Statements: Some cars are bikes. No bike is a bus.<br>Conclusions: I. Some cars are not buses II. No car is a bus",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 0,
+    "solution": "The cars that are bikes cannot be buses, so some cars are not buses (I). Other cars may still be buses, so II does not follow.",
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R86",
+    "exam": "general",
+    "topic": "Syllogisms",
+    "difficulty": "Hard",
+    "question": "Statements: All pencils are pens. Some pens are erasers.<br>Conclusions: I. Some pencils are erasers II. Some erasers are pens",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 1,
+    "solution": "Converting 'some pens are erasers' gives some erasers are pens (II). The pens that are erasers may not be pencils, so I does not follow.",
+    "fixed": true
+   },
+   {
+    "id": "R87",
+    "exam": "general",
+    "topic": "Syllogisms",
+    "difficulty": "Hard",
+    "question": "Statements: Some tables are chairs. All chairs are wooden. Some wooden things are boxes.<br>Conclusions: I. Some tables are wooden II. Some chairs are boxes",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 0,
+    "solution": "The tables that are chairs are also wooden, so some tables are wooden (I). 'Some wooden things are boxes' does not connect boxes to chairs, so II does not follow.",
+    "fixed": true
+   },
+   {
+    "id": "R88",
+    "exam": "general",
+    "topic": "Seating Arrangement",
+    "difficulty": "Medium",
+    "question": "Five friends A, B, C, D and E sit in a row facing north. A sits second from the left end. C sits immediately to the right of A. B sits at one of the ends. D does not sit next to C. E sits somewhere to the right of D. Who sits at the extreme right end?",
+    "options": [
+     "A",
+     "B",
+     "C",
+     "E"
+    ],
+    "answer": 1,
+    "solution": "A is 2nd and C is 3rd. D cannot sit next to C, so D is not 4th, and the 2nd seat is taken, so D is in the 1st or 5th seat. E sits to the right of D, so D cannot be 5th. D is 1st. B must be at an end, so B is 5th and E is 4th: D A C E B. B sits at the extreme right.",
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R89",
+    "exam": "general",
+    "topic": "Seating Arrangement",
+    "difficulty": "Hard",
+    "question": "Six persons P, Q, R, S, T and U sit around a circular table, equally spaced and facing the centre. R sits between P and T. U sits opposite R. S is not next to P. Who sits opposite P?",
+    "options": [
+     "Q",
+     "U",
+     "T",
+     "S"
+    ],
+    "answer": 3,
+    "solution": "R sits between P and T, so P and T are R's two neighbours. Number the seats 1 to 6 around the table with P in seat 1, R in seat 2, T in seat 3 and U opposite R in seat 5. Seats 4 and 6 are left for Q and S. Seat 6 is next to P and S cannot be next to P, so S takes seat 4, directly opposite P. The mirror-image arrangement gives the same result."
+   },
+   {
+    "id": "R90",
+    "exam": "general",
+    "topic": "Seating Arrangement",
+    "difficulty": "Medium",
+    "question": "Six persons A to F live on six different floors of a building (1 is the lowest, 6 the highest). A lives on floor 1. B lives on an even-numbered floor above C. D lives immediately below E. F lives above E. Who lives on the top floor?",
+    "options": [
+     "B",
+     "D",
+     "E",
+     "C"
+    ],
+    "answer": 0,
+    "solution": "A is on floor 1. F is above E and E is above D, so F, E and D are three of floors 2 to 6, and F cannot be on floor 6 if B is to sit on an even floor above C with room left for the D-E pair. Checking every arrangement that fits all four clues, B always ends up on floor 6, the top floor.",
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R91",
+    "exam": "general",
+    "topic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "A's mother is B's sister. How is A related to B?",
+    "options": [
+     "Uncle",
+     "Cousin",
+     "Brother or sister",
+     "Nephew or niece"
+    ],
+    "answer": 3,
+    "solution": "B's sister is A's mother, so B is A's maternal uncle or aunt. A is B's nephew or niece.",
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R92",
+    "exam": "general",
+    "topic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Pointing to a photograph, Ravi says, 'She is the daughter of my grandfather's only son.' How is she related to Ravi?",
+    "options": [
+     "Cousin",
+     "Sister",
+     "Aunt",
+     "Niece"
+    ],
+    "answer": 1,
+    "solution": "Ravi's grandfather's only son is Ravi's father. The daughter of Ravi's father is Ravi's sister.",
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R93",
+    "exam": "general",
+    "topic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "X is Y's father. Z is X's sister. W is Z's son. How is W related to Y?",
+    "options": [
+     "Brother",
+     "Uncle",
+     "Nephew",
+     "Cousin"
+    ],
+    "answer": 3,
+    "solution": "Z is Y's paternal aunt. Z's son W is the child of Y's aunt, so W is Y's cousin.",
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R94",
+    "exam": "general",
+    "topic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "In a certain code, STONE is written as RSNMD. How is PLATE written in that code?",
+    "options": [
+     "OLZSD",
+     "OKZSF",
+     "QMBUF",
+     "OKZSD"
+    ],
+    "answer": 3,
+    "solution": "Each letter is moved one place back: S→R, T→S, O→N, N→M, E→D. So P→O, L→K, A→Z, T→S, E→D, giving OKZSD.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R95",
+    "exam": "general",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, 'pen ink' is written as 'ta ma', 'ink pot' as 'ma ki' and 'pot cup' as 'ki lo'. How is 'pen' written in that code?",
+    "options": [
+     "ki",
+     "ma",
+     "ta",
+     "lo"
+    ],
+    "answer": 2,
+    "solution": "'ink' is common to the first two statements and 'ma' is common to the two codes, so ink = ma. Then pen = ta.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R96",
+    "exam": "general",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If MADRAS is coded as NBESBT, how is BOMBAY coded?",
+    "options": [
+     "CPMCBZ",
+     "CPNCBX",
+     "CPNCBZ",
+     "DPNCBZ"
+    ],
+    "answer": 2,
+    "solution": "Each letter is moved one place forward: M→N, A→B, D→E, R→S, A→B, S→T. So B→C, O→P, M→N, B→C, A→B, Y→Z, giving CPNCBZ."
+   },
+   {
+    "id": "R97",
+    "exam": "general",
+    "topic": "Seating Arrangement",
+    "difficulty": "Hard",
+    "question": "Five exams P, Q, R, S and T are held on five consecutive days, Monday to Friday, one exam a day. R is held the day right after Q. P is held before Q. S is held on Tuesday, Wednesday or Thursday. T is held after S but not on Friday. Which exam is held on Wednesday?",
+    "options": [
+     "P",
+     "Q",
+     "S",
+     "T"
+    ],
+    "answer": 3,
+    "solution": "Q and R are consecutive days with P earlier. If Q is Tuesday, P is Monday, S and T fill Thursday and Friday, which forces T onto Friday. If Q is Wednesday, S must be Tuesday and T Friday, again not allowed. So Q is Thursday and R is Friday. P, S and T take Monday to Wednesday with S before T: S is Tuesday, T is Wednesday and P is Monday."
+   },
+   {
+    "id": "R98",
+    "exam": "general",
+    "topic": "Puzzles",
+    "difficulty": "Easy",
+    "question": "The sum of the ages of a father and his son is 50 years. Five years ago the father was four times as old as the son. What is the son's present age?",
+    "options": [
+     "11 years",
+     "13 years",
+     "12 years",
+     "14 years"
+    ],
+    "answer": 1,
+    "solution": "Let the son be s now, so the father is 50 − s. Five years ago: 50 − s − 5 = 4(s − 5), so 45 − s = 4s − 20 and 5s = 65, giving s = 13.",
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R99",
+    "exam": "general",
+    "topic": "Puzzles",
+    "difficulty": "Medium",
+    "question": "Among five boxes P, Q, R, S and T: P is heavier than Q but lighter than R. S is heavier than R. T is lighter than Q. Which box is the second heaviest?",
+    "options": [
+     "P",
+     "Q",
+     "R",
+     "S"
+    ],
+    "answer": 2,
+    "solution": "From the clues S > R > P > Q > T. The second heaviest is R.",
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R100",
+    "exam": "general",
+    "topic": "Puzzles",
+    "difficulty": "Hard",
+    "question": "Four friends A, B, C and D each like a different colour out of red, blue, green and yellow. A likes neither red nor blue. B likes neither blue nor green. C likes neither red, green nor yellow. D likes neither green nor yellow. Who likes red?",
+    "options": [
+     "D",
+     "B",
+     "C",
+     "A"
+    ],
+    "answer": 0,
+    "solution": "C can like only blue. Then A (not red, not blue) must like green or yellow, and B (not blue, not green) must like red or yellow. D (not green, not yellow) must like red or blue, and blue is taken, so D likes red. B then likes yellow and A likes green."
+   },
+   {
+    "id": "R101",
+    "exam": "general",
+    "topic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man walks 10 m west, turns left and walks 6 m, turns left and walks 10 m, then turns right and walks 4 m. How far and in which direction is he from the starting point?",
+    "options": [
+     "10 m south",
+     "10 m north",
+     "6 m south",
+     "14 m south"
+    ],
+    "answer": 0,
+    "solution": "Take the start as (0, 0). West 10 m: (−10, 0). Left (south) 6 m: (−10, −6). Left (east) 10 m: (0, −6). Right (south) 4 m: (0, −10). He is 10 m south of the start.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R102",
+    "exam": "general",
+    "topic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Rohan faces north, turns 90° to his right and then 135° to his left. Which direction is he facing now?",
+    "options": [
+     "North-East",
+     "South-West",
+     "North-West",
+     "South-East"
+    ],
+    "answer": 2,
+    "solution": "Facing north, 90° right is east. Turning 135° left (anticlockwise) from east passes north and ends 45° beyond it, which is north-west.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R103",
+    "exam": "general",
+    "topic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "Rohan walks 8 km south, turns left and walks 6 km, then turns left again and walks 8 km. How far and in which direction is he from his starting point?",
+    "options": [
+     "6 km west",
+     "6 km east",
+     "8 km east",
+     "10 km east"
+    ],
+    "answer": 1,
+    "solution": "Facing south, a left turn points east, so he goes 6 km east. Another left turn points north, and the 8 km north cancels the 8 km south. He ends 6 km east of the start.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R104",
+    "exam": "general",
+    "topic": "Number & Letter Series",
+    "difficulty": "Medium",
+    "question": "Find the next term: 3, 8, 18, 38, 78, ?",
+    "options": [
+     "148",
+     "156",
+     "158",
+     "162"
+    ],
+    "answer": 2,
+    "solution": "Each term is double the previous term plus 2: 78 × 2 + 2 = 158.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R105",
+    "exam": "general",
+    "topic": "Number & Letter Series",
+    "difficulty": "Medium",
+    "question": "Find the next term: 5, 11, 23, 47, 95, ?",
+    "options": [
+     "181",
+     "189",
+     "193",
+     "191"
+    ],
+    "answer": 3,
+    "solution": "Each term is double the previous term plus 1: 95 × 2 + 1 = 191.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R106",
+    "exam": "general",
+    "topic": "Number & Letter Series",
+    "difficulty": "Easy",
+    "question": "Find the next term: 1, 3, 7, 13, 21, ?",
+    "options": [
+     "29",
+     "31",
+     "33",
+     "35"
+    ],
+    "answer": 1,
+    "solution": "The differences are 2, 4, 6, 8, so the next difference is 10: 21 + 10 = 31.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R107",
+    "exam": "general",
+    "topic": "Number & Letter Series",
+    "difficulty": "Hard",
+    "question": "Find the next term: 120, 99, 80, 63, 48, ?",
+    "options": [
+     "33",
+     "37",
+     "35",
+     "39"
+    ],
+    "answer": 2,
+    "solution": "The differences are 21, 19, 17, 15, so the next difference is 13: 48 − 13 = 35."
+   },
+   {
+    "id": "R108",
+    "exam": "general",
+    "topic": "Odd One Out",
+    "difficulty": "Easy",
+    "question": "Find the odd one out: 16, 25, 36, 49, 50",
+    "options": [
+     "16",
+     "50",
+     "49",
+     "25"
+    ],
+    "answer": 1,
+    "solution": "16, 25, 36 and 49 are perfect squares (4², 5², 6², 7²). 50 is not.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R109",
+    "exam": "general",
+    "topic": "Odd One Out",
+    "difficulty": "Easy",
+    "question": "Find the odd one out: Mercury, Venus, Moon, Mars, Jupiter",
+    "options": [
+     "Mercury",
+     "Venus",
+     "Moon",
+     "Jupiter"
+    ],
+    "answer": 2,
+    "solution": "Mercury, Venus, Mars and Jupiter are planets. The Moon is a satellite of the Earth.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R110",
+    "exam": "general",
+    "topic": "Odd One Out",
+    "difficulty": "Medium",
+    "question": "Find the odd one out: 14, 21, 35, 49, 52",
+    "options": [
+     "14",
+     "52",
+     "49",
+     "35"
+    ],
+    "answer": 1,
+    "solution": "14, 21, 35 and 49 are multiples of 7. 52 is not.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R111",
+    "exam": "general",
+    "topic": "Clocks & Calendars",
+    "difficulty": "Medium",
+    "question": "What is the angle between the hands of a clock at 7:20?",
+    "options": [
+     "90°",
+     "100°",
+     "110°",
+     "120°"
+    ],
+    "answer": 1,
+    "solution": "At 7:20 the hour hand is at 7 × 30 + 20 × 0.5 = 220°. The minute hand is at 20 × 6 = 120°. The angle is 220 − 120 = 100°.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R112",
+    "exam": "general",
+    "topic": "Clocks & Calendars",
+    "difficulty": "Medium",
+    "question": "If 15 August 2026 is a Saturday, what day of the week is 26 January 2027?",
+    "options": [
+     "Sunday",
+     "Tuesday",
+     "Monday",
+     "Wednesday"
+    ],
+    "answer": 1,
+    "solution": "From 15 August to 26 January: 16 (rest of August) + 30 + 31 + 30 + 31 + 26 = 164 days. 164 = 7 × 23 + 3, so move 3 days forward from Saturday: Tuesday.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R113",
+    "exam": "general",
+    "topic": "Clocks & Calendars",
+    "difficulty": "Hard",
+    "question": "How many times do the hour hand and the minute hand of a clock overlap in 12 hours?",
+    "options": [
+     "10",
+     "12",
+     "11",
+     "13"
+    ],
+    "answer": 2,
+    "solution": "The hands overlap every 12/11 hours, so in 12 hours they overlap 11 times (the 12 o'clock overlap counts once for 11 and 12)."
+   },
+   {
+    "id": "R114",
+    "exam": "general",
+    "topic": "Alphabet Test",
+    "difficulty": "Easy",
+    "question": "How many letters are there between G and R in the English alphabet?",
+    "options": [
+     "9",
+     "12",
+     "11",
+     "10"
+    ],
+    "answer": 3,
+    "solution": "G is the 7th letter and R is the 18th. The letters between are 18 − 7 − 1 = 10.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R115",
+    "exam": "general",
+    "topic": "Alphabet Test",
+    "difficulty": "Medium",
+    "question": "Which letter is exactly as far from the end of the alphabet as K is from the beginning?",
+    "options": [
+     "P",
+     "O",
+     "Q",
+     "R"
+    ],
+    "answer": 0,
+    "solution": "K is the 11th letter from the left. The letter 11th from the right is 27 − 11 = 16th from the left, which is P.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R116",
+    "exam": "general",
+    "topic": "Alphabet Test",
+    "difficulty": "Medium",
+    "question": "If the letters of the word BRIGHT are arranged in alphabetical order, which letter is third from the left?",
+    "options": [
+     "G",
+     "H",
+     "I",
+     "R"
+    ],
+    "answer": 1,
+    "solution": "Alphabetical order: B, G, H, I, R, T. The third letter is H.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R117",
+    "exam": "general",
+    "topic": "Inequalities",
+    "difficulty": "Medium",
+    "question": "Statements: A ≤ B &lt; C = D > E<br>Conclusions: I. A &lt; D II. B &lt; E",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 0,
+    "solution": "A ≤ B < C = D, so A < D (I follows). B and E are both below D but nothing links them, so II does not follow.",
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R118",
+    "exam": "general",
+    "topic": "Inequalities",
+    "difficulty": "Medium",
+    "question": "Statements: J ≥ K > L = M ≥ N<br>Conclusions: I. J = M II. N ≤ K",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 1,
+    "solution": "J ≥ K > L = M, so J > M and I (J = M) is false. K > L = M ≥ N gives K > N, so N ≤ K holds (II follows).",
+    "fixed": true,
+    "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R119",
+    "exam": "general",
+    "topic": "Inequalities",
+    "difficulty": "Hard",
+    "question": "Statements: F &lt; G ≤ H = I &lt; J<br>Conclusions: I. G &lt; J II. F ≤ H",
+    "options": [
+     "Only I follows",
+     "Only II follows",
+     "Both I and II follow",
+     "Neither follows"
+    ],
+    "answer": 2,
+    "solution": "G ≤ H = I < J gives G < J (I). F < G ≤ H gives F < H, so F ≤ H (II). Both follow.",
+    "fixed": true
+   },
+   {
+    "id": "R120",
+    "exam": "general",
+    "topic": "Ranking & Order",
+    "difficulty": "Easy",
+    "question": "In a row of 40 students, Anil is 12th from the left and Sunil is 15th from the right. How many students are between them?",
+    "options": [
+     "12",
+     "13",
+     "14",
+     "15"
+    ],
+    "answer": 1,
+    "solution": "Sunil is 40 − 15 + 1 = 26th from the left. Students between = 26 − 12 − 1 = 13.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R121",
+    "exam": "general",
+    "topic": "Ranking & Order",
+    "difficulty": "Easy",
+    "question": "Sanjay ranks 11th from the top and 29th from the bottom in a class. How many students are there in the class?",
+    "options": [
+     "38",
+     "39",
+     "40",
+     "41"
+    ],
+    "answer": 1,
+    "solution": "Total = 11 + 29 − 1 = 39.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R122",
+    "exam": "general",
+    "topic": "Ranking & Order",
+    "difficulty": "Medium",
+    "question": "In a class of 35, Priya is 12th from the top and Neha is 9th from the bottom. How many students are between them?",
+    "options": [
+     "14",
+     "13",
+     "12",
+     "15"
+    ],
+    "answer": 0,
+    "solution": "Neha is 35 − 9 + 1 = 27th from the top. Between them: 27 − 12 − 1 = 14.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R123",
+    "exam": "general",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "In a certain code, each word is coded as the sum of the position values of its letters (A = 1, B = 2, … Z = 26). PEN is coded as 35. How is INK coded?",
+    "options": [
+     "32",
+     "33",
+     "36",
+     "34"
+    ],
+    "answer": 3,
+    "solution": "PEN = 16 + 5 + 14 = 35, which confirms the rule. INK = 9 + 14 + 11 = 34.",
+    "cuet_part": "General Mental Ability"
    }
   ]
  },
@@ -3575,6 +4843,346 @@
     "solution": "Prayagraj becomes 120 (+60). Agra becomes 80 × 0.75 = 60 (−20). New total = 500 + 60 − 20 = 540.",
     "data": "<b>Loan applications received by five bank branches in a month</b><div class='bars'><div class='bar-row'><span>Lucknow</span><i style='width:80.0%'></i><span>120</span></div><div class='bar-row'><span>Kanpur</span><i style='width:60.0%'></i><span>90</span></div><div class='bar-row'><span>Varanasi</span><i style='width:100.0%'></i><span>150</span></div><div class='bar-row'><span>Prayagraj</span><i style='width:40.0%'></i><span>60</span></div><div class='bar-row'><span>Agra</span><i style='width:53.3%'></i><span>80</span></div></div>",
     "set": "bar-branches"
+   },
+   {
+    "id": "D54",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Easy",
+    "question": "How much does the branch spend on technology in a year?",
+    "options": [
+     "₹16 lakh",
+     "₹14 lakh",
+     "₹12 lakh",
+     "₹18 lakh"
+    ],
+    "answer": 0,
+    "solution": "20% of ₹80 lakh = ₹16 lakh.",
+    "data": "<b>Annual expenditure of a bank branch (total ₹80 lakh)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 40%,#0891b2 40% 55%,#db2777 55% 75%,#f59e0b 75% 85%,#16a34a 85% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Salaries 40%</div><div><i style='background:#0891b2'></i>Rent 15%</div><div><i style='background:#db2777'></i>Technology 20%</div><div><i style='background:#f59e0b'></i>Marketing 10%</div><div><i style='background:#16a34a'></i>Others 15%</div></div></div>",
+    "set": "pie-branch-exp"
+   },
+   {
+    "id": "D55",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Easy",
+    "question": "What is the central angle of the Salaries sector?",
+    "options": [
+     "144°",
+     "132°",
+     "120°",
+     "150°"
+    ],
+    "answer": 0,
+    "solution": "The Salaries sector is 40% of the whole circle. 40% of 360° = 0.4 × 360° = 144°.",
+    "data": "<b>Annual expenditure of a bank branch (total ₹80 lakh)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 40%,#0891b2 40% 55%,#db2777 55% 75%,#f59e0b 75% 85%,#16a34a 85% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Salaries 40%</div><div><i style='background:#0891b2'></i>Rent 15%</div><div><i style='background:#db2777'></i>Technology 20%</div><div><i style='background:#f59e0b'></i>Marketing 10%</div><div><i style='background:#16a34a'></i>Others 15%</div></div></div>",
+    "set": "pie-branch-exp"
+   },
+   {
+    "id": "D56",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Medium",
+    "question": "By how much does the spend on Salaries exceed the combined spend on Rent and Marketing?",
+    "options": [
+     "₹10 lakh",
+     "₹12 lakh",
+     "₹14 lakh",
+     "₹16 lakh"
+    ],
+    "answer": 1,
+    "solution": "Salaries = 40%. Rent + Marketing = 15% + 10% = 25%. The difference is 15% of ₹80 lakh = ₹12 lakh.",
+    "data": "<b>Annual expenditure of a bank branch (total ₹80 lakh)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 40%,#0891b2 40% 55%,#db2777 55% 75%,#f59e0b 75% 85%,#16a34a 85% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Salaries 40%</div><div><i style='background:#0891b2'></i>Rent 15%</div><div><i style='background:#db2777'></i>Technology 20%</div><div><i style='background:#f59e0b'></i>Marketing 10%</div><div><i style='background:#16a34a'></i>Others 15%</div></div></div>",
+    "set": "pie-branch-exp"
+   },
+   {
+    "id": "D57",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Medium",
+    "question": "If the Marketing spend rises by 50% and every other item stays the same, what is the new total expenditure?",
+    "options": [
+     "₹82 lakh",
+     "₹86 lakh",
+     "₹84 lakh",
+     "₹88 lakh"
+    ],
+    "answer": 2,
+    "solution": "Marketing = ₹8 lakh. A 50% rise adds ₹4 lakh, so the new total = 80 + 4 = ₹84 lakh.",
+    "data": "<b>Annual expenditure of a bank branch (total ₹80 lakh)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 40%,#0891b2 40% 55%,#db2777 55% 75%,#f59e0b 75% 85%,#16a34a 85% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Salaries 40%</div><div><i style='background:#0891b2'></i>Rent 15%</div><div><i style='background:#db2777'></i>Technology 20%</div><div><i style='background:#f59e0b'></i>Marketing 10%</div><div><i style='background:#16a34a'></i>Others 15%</div></div></div>",
+    "set": "pie-branch-exp"
+   },
+   {
+    "id": "D58",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Hard",
+    "question": "Technology spend rises by 10% and Rent falls by 20%, with all else unchanged. What is the new total expenditure?",
+    "options": [
+     "₹79.2 lakh",
+     "₹78.4 lakh",
+     "₹80.8 lakh",
+     "₹81.6 lakh"
+    ],
+    "answer": 0,
+    "solution": "Technology = ₹16 lakh, up by 1.6. Rent = ₹12 lakh, down by 2.4. Net change = −0.8, so the new total = 80 − 0.8 = ₹79.2 lakh.",
+    "data": "<b>Annual expenditure of a bank branch (total ₹80 lakh)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 40%,#0891b2 40% 55%,#db2777 55% 75%,#f59e0b 75% 85%,#16a34a 85% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Salaries 40%</div><div><i style='background:#0891b2'></i>Rent 15%</div><div><i style='background:#db2777'></i>Technology 20%</div><div><i style='background:#f59e0b'></i>Marketing 10%</div><div><i style='background:#16a34a'></i>Others 15%</div></div></div>",
+    "set": "pie-branch-exp"
+   },
+   {
+    "id": "D59",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "How many accounts (in hundreds) were opened from January to June in total?",
+    "options": [
+     "170",
+     "175",
+     "180",
+     "185"
+    ],
+    "answer": 2,
+    "solution": "18 + 24 + 30 + 27 + 37 + 44 = 180 hundred.",
+    "data": "<b>New savings accounts opened at a bank each month, 2026 (in hundreds)</b><svg viewBox='0 0 360 170' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='150.0' y2='150.0' stroke='#e2e8f0'/><text x='30' y='154.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='124.0' y2='124.0' stroke='#e2e8f0'/><text x='30' y='128.0' font-size='10' text-anchor='end' fill='#64748b'>10</text><line x1='36' x2='350' y1='98.0' y2='98.0' stroke='#e2e8f0'/><text x='30' y='102.0' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='72.0' y2='72.0' stroke='#e2e8f0'/><text x='30' y='76.0' font-size='10' text-anchor='end' fill='#64748b'>30</text><line x1='36' x2='350' y1='46.0' y2='46.0' stroke='#e2e8f0'/><text x='30' y='50.0' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='20.0' y2='20.0' stroke='#e2e8f0'/><text x='30' y='24.0' font-size='10' text-anchor='end' fill='#64748b'>50</text><polyline points='36.0,103.2 98.0,87.6 160.0,72.0 222.0,79.8 284.0,53.8 346.0,35.6' fill='none' stroke='#0891b2' stroke-width='2.5'/><circle cx='36.0' cy='103.2' r='3.5' fill='#0891b2'/><text x='36.0' y='95.2' font-size='10' text-anchor='middle' fill='#0f172a'>18</text><circle cx='98.0' cy='87.6' r='3.5' fill='#0891b2'/><text x='98.0' y='79.6' font-size='10' text-anchor='middle' fill='#0f172a'>24</text><circle cx='160.0' cy='72.0' r='3.5' fill='#0891b2'/><text x='160.0' y='64.0' font-size='10' text-anchor='middle' fill='#0f172a'>30</text><circle cx='222.0' cy='79.8' r='3.5' fill='#0891b2'/><text x='222.0' y='71.8' font-size='10' text-anchor='middle' fill='#0f172a'>27</text><circle cx='284.0' cy='53.8' r='3.5' fill='#0891b2'/><text x='284.0' y='45.8' font-size='10' text-anchor='middle' fill='#0f172a'>37</text><circle cx='346.0' cy='35.6' r='3.5' fill='#0891b2'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#0f172a'>44</text><text x='36.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jan</text><text x='98.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Feb</text><text x='160.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Mar</text><text x='222.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Apr</text><text x='284.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>May</text><text x='346.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jun</text></svg>",
+    "set": "line-accounts"
+   },
+   {
+    "id": "D60",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "In which month did the number of new accounts fall compared with the previous month?",
+    "options": [
+     "February",
+     "March",
+     "May",
+     "April"
+    ],
+    "answer": 3,
+    "solution": "Accounts rose in Feb, Mar, May and Jun. In April they fell from 30 to 27.",
+    "data": "<b>New savings accounts opened at a bank each month, 2026 (in hundreds)</b><svg viewBox='0 0 360 170' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='150.0' y2='150.0' stroke='#e2e8f0'/><text x='30' y='154.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='124.0' y2='124.0' stroke='#e2e8f0'/><text x='30' y='128.0' font-size='10' text-anchor='end' fill='#64748b'>10</text><line x1='36' x2='350' y1='98.0' y2='98.0' stroke='#e2e8f0'/><text x='30' y='102.0' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='72.0' y2='72.0' stroke='#e2e8f0'/><text x='30' y='76.0' font-size='10' text-anchor='end' fill='#64748b'>30</text><line x1='36' x2='350' y1='46.0' y2='46.0' stroke='#e2e8f0'/><text x='30' y='50.0' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='20.0' y2='20.0' stroke='#e2e8f0'/><text x='30' y='24.0' font-size='10' text-anchor='end' fill='#64748b'>50</text><polyline points='36.0,103.2 98.0,87.6 160.0,72.0 222.0,79.8 284.0,53.8 346.0,35.6' fill='none' stroke='#0891b2' stroke-width='2.5'/><circle cx='36.0' cy='103.2' r='3.5' fill='#0891b2'/><text x='36.0' y='95.2' font-size='10' text-anchor='middle' fill='#0f172a'>18</text><circle cx='98.0' cy='87.6' r='3.5' fill='#0891b2'/><text x='98.0' y='79.6' font-size='10' text-anchor='middle' fill='#0f172a'>24</text><circle cx='160.0' cy='72.0' r='3.5' fill='#0891b2'/><text x='160.0' y='64.0' font-size='10' text-anchor='middle' fill='#0f172a'>30</text><circle cx='222.0' cy='79.8' r='3.5' fill='#0891b2'/><text x='222.0' y='71.8' font-size='10' text-anchor='middle' fill='#0f172a'>27</text><circle cx='284.0' cy='53.8' r='3.5' fill='#0891b2'/><text x='284.0' y='45.8' font-size='10' text-anchor='middle' fill='#0f172a'>37</text><circle cx='346.0' cy='35.6' r='3.5' fill='#0891b2'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#0f172a'>44</text><text x='36.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jan</text><text x='98.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Feb</text><text x='160.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Mar</text><text x='222.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Apr</text><text x='284.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>May</text><text x='346.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jun</text></svg>",
+    "set": "line-accounts"
+   },
+   {
+    "id": "D61",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "What is the average monthly number of accounts (in hundreds) opened from January to March?",
+    "options": [
+     "22",
+     "28",
+     "26",
+     "24"
+    ],
+    "answer": 3,
+    "solution": "(18 + 24 + 30)/3 = 72/3 = 24.",
+    "data": "<b>New savings accounts opened at a bank each month, 2026 (in hundreds)</b><svg viewBox='0 0 360 170' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='150.0' y2='150.0' stroke='#e2e8f0'/><text x='30' y='154.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='124.0' y2='124.0' stroke='#e2e8f0'/><text x='30' y='128.0' font-size='10' text-anchor='end' fill='#64748b'>10</text><line x1='36' x2='350' y1='98.0' y2='98.0' stroke='#e2e8f0'/><text x='30' y='102.0' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='72.0' y2='72.0' stroke='#e2e8f0'/><text x='30' y='76.0' font-size='10' text-anchor='end' fill='#64748b'>30</text><line x1='36' x2='350' y1='46.0' y2='46.0' stroke='#e2e8f0'/><text x='30' y='50.0' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='20.0' y2='20.0' stroke='#e2e8f0'/><text x='30' y='24.0' font-size='10' text-anchor='end' fill='#64748b'>50</text><polyline points='36.0,103.2 98.0,87.6 160.0,72.0 222.0,79.8 284.0,53.8 346.0,35.6' fill='none' stroke='#0891b2' stroke-width='2.5'/><circle cx='36.0' cy='103.2' r='3.5' fill='#0891b2'/><text x='36.0' y='95.2' font-size='10' text-anchor='middle' fill='#0f172a'>18</text><circle cx='98.0' cy='87.6' r='3.5' fill='#0891b2'/><text x='98.0' y='79.6' font-size='10' text-anchor='middle' fill='#0f172a'>24</text><circle cx='160.0' cy='72.0' r='3.5' fill='#0891b2'/><text x='160.0' y='64.0' font-size='10' text-anchor='middle' fill='#0f172a'>30</text><circle cx='222.0' cy='79.8' r='3.5' fill='#0891b2'/><text x='222.0' y='71.8' font-size='10' text-anchor='middle' fill='#0f172a'>27</text><circle cx='284.0' cy='53.8' r='3.5' fill='#0891b2'/><text x='284.0' y='45.8' font-size='10' text-anchor='middle' fill='#0f172a'>37</text><circle cx='346.0' cy='35.6' r='3.5' fill='#0891b2'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#0f172a'>44</text><text x='36.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jan</text><text x='98.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Feb</text><text x='160.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Mar</text><text x='222.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Apr</text><text x='284.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>May</text><text x='346.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jun</text></svg>",
+    "set": "line-accounts"
+   },
+   {
+    "id": "D62",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "By roughly what percentage did the accounts opened in June exceed those in April?",
+    "options": [
+     "53%",
+     "58%",
+     "63%",
+     "68%"
+    ],
+    "answer": 2,
+    "solution": "(44 − 27)/27 = 17/27 = 63%.",
+    "data": "<b>New savings accounts opened at a bank each month, 2026 (in hundreds)</b><svg viewBox='0 0 360 170' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='150.0' y2='150.0' stroke='#e2e8f0'/><text x='30' y='154.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='124.0' y2='124.0' stroke='#e2e8f0'/><text x='30' y='128.0' font-size='10' text-anchor='end' fill='#64748b'>10</text><line x1='36' x2='350' y1='98.0' y2='98.0' stroke='#e2e8f0'/><text x='30' y='102.0' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='72.0' y2='72.0' stroke='#e2e8f0'/><text x='30' y='76.0' font-size='10' text-anchor='end' fill='#64748b'>30</text><line x1='36' x2='350' y1='46.0' y2='46.0' stroke='#e2e8f0'/><text x='30' y='50.0' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='20.0' y2='20.0' stroke='#e2e8f0'/><text x='30' y='24.0' font-size='10' text-anchor='end' fill='#64748b'>50</text><polyline points='36.0,103.2 98.0,87.6 160.0,72.0 222.0,79.8 284.0,53.8 346.0,35.6' fill='none' stroke='#0891b2' stroke-width='2.5'/><circle cx='36.0' cy='103.2' r='3.5' fill='#0891b2'/><text x='36.0' y='95.2' font-size='10' text-anchor='middle' fill='#0f172a'>18</text><circle cx='98.0' cy='87.6' r='3.5' fill='#0891b2'/><text x='98.0' y='79.6' font-size='10' text-anchor='middle' fill='#0f172a'>24</text><circle cx='160.0' cy='72.0' r='3.5' fill='#0891b2'/><text x='160.0' y='64.0' font-size='10' text-anchor='middle' fill='#0f172a'>30</text><circle cx='222.0' cy='79.8' r='3.5' fill='#0891b2'/><text x='222.0' y='71.8' font-size='10' text-anchor='middle' fill='#0f172a'>27</text><circle cx='284.0' cy='53.8' r='3.5' fill='#0891b2'/><text x='284.0' y='45.8' font-size='10' text-anchor='middle' fill='#0f172a'>37</text><circle cx='346.0' cy='35.6' r='3.5' fill='#0891b2'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#0f172a'>44</text><text x='36.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jan</text><text x='98.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Feb</text><text x='160.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Mar</text><text x='222.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Apr</text><text x='284.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>May</text><text x='346.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jun</text></svg>",
+    "set": "line-accounts"
+   },
+   {
+    "id": "D63",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "In which month was the percentage growth over the previous month the highest?",
+    "options": [
+     "February",
+     "March",
+     "June",
+     "May"
+    ],
+    "answer": 3,
+    "solution": "Growth: Feb 6/18 = 33.3%, Mar 6/24 = 25%, May 10/27 = 37.0%, Jun 7/37 = 18.9%. May is the highest.",
+    "data": "<b>New savings accounts opened at a bank each month, 2026 (in hundreds)</b><svg viewBox='0 0 360 170' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='150.0' y2='150.0' stroke='#e2e8f0'/><text x='30' y='154.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='124.0' y2='124.0' stroke='#e2e8f0'/><text x='30' y='128.0' font-size='10' text-anchor='end' fill='#64748b'>10</text><line x1='36' x2='350' y1='98.0' y2='98.0' stroke='#e2e8f0'/><text x='30' y='102.0' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='72.0' y2='72.0' stroke='#e2e8f0'/><text x='30' y='76.0' font-size='10' text-anchor='end' fill='#64748b'>30</text><line x1='36' x2='350' y1='46.0' y2='46.0' stroke='#e2e8f0'/><text x='30' y='50.0' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='20.0' y2='20.0' stroke='#e2e8f0'/><text x='30' y='24.0' font-size='10' text-anchor='end' fill='#64748b'>50</text><polyline points='36.0,103.2 98.0,87.6 160.0,72.0 222.0,79.8 284.0,53.8 346.0,35.6' fill='none' stroke='#0891b2' stroke-width='2.5'/><circle cx='36.0' cy='103.2' r='3.5' fill='#0891b2'/><text x='36.0' y='95.2' font-size='10' text-anchor='middle' fill='#0f172a'>18</text><circle cx='98.0' cy='87.6' r='3.5' fill='#0891b2'/><text x='98.0' y='79.6' font-size='10' text-anchor='middle' fill='#0f172a'>24</text><circle cx='160.0' cy='72.0' r='3.5' fill='#0891b2'/><text x='160.0' y='64.0' font-size='10' text-anchor='middle' fill='#0f172a'>30</text><circle cx='222.0' cy='79.8' r='3.5' fill='#0891b2'/><text x='222.0' y='71.8' font-size='10' text-anchor='middle' fill='#0f172a'>27</text><circle cx='284.0' cy='53.8' r='3.5' fill='#0891b2'/><text x='284.0' y='45.8' font-size='10' text-anchor='middle' fill='#0f172a'>37</text><circle cx='346.0' cy='35.6' r='3.5' fill='#0891b2'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#0f172a'>44</text><text x='36.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jan</text><text x='98.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Feb</text><text x='160.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Mar</text><text x='222.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Apr</text><text x='284.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>May</text><text x='346.0' y='166' font-size='10' text-anchor='middle' fill='#64748b'>Jun</text></svg>",
+    "set": "line-accounts"
+   },
+   {
+    "id": "D64",
+    "exam": "general",
+    "topic": "Tables",
+    "difficulty": "Easy",
+    "question": "Who has the highest total across the four sections?",
+    "options": [
+     "Divya",
+     "Chirag",
+     "Bhavna",
+     "Esha"
+    ],
+    "answer": 0,
+    "solution": "Totals: Aman 136, Bhavna 150, Chirag 140, Divya 151, Esha 128. Divya is highest.",
+    "data": "<b>Marks of five candidates in a mock test (each section out of 50)</b><table class='data'><tr><th>Candidate</th><th>Quant</th><th>Reasoning</th><th>English</th><th>GK</th></tr><tr><td>Aman</td><td>42</td><td>39</td><td>30</td><td>25</td></tr><tr><td>Bhavna</td><td>36</td><td>44</td><td>40</td><td>30</td></tr><tr><td>Chirag</td><td>28</td><td>35</td><td>45</td><td>32</td></tr><tr><td>Divya</td><td>38</td><td>41</td><td>35</td><td>37</td></tr><tr><td>Esha</td><td>33</td><td>30</td><td>38</td><td>27</td></tr></table>",
+    "set": "table-mock-marks"
+   },
+   {
+    "id": "D65",
+    "exam": "general",
+    "topic": "Tables",
+    "difficulty": "Easy",
+    "question": "What is Bhavna's combined score in Reasoning and English?",
+    "options": [
+     "84",
+     "82",
+     "80",
+     "86"
+    ],
+    "answer": 0,
+    "solution": "Read Bhavna's row: Reasoning 44 and English 40. Their sum is 44 + 40 = 84.",
+    "data": "<b>Marks of five candidates in a mock test (each section out of 50)</b><table class='data'><tr><th>Candidate</th><th>Quant</th><th>Reasoning</th><th>English</th><th>GK</th></tr><tr><td>Aman</td><td>42</td><td>39</td><td>30</td><td>25</td></tr><tr><td>Bhavna</td><td>36</td><td>44</td><td>40</td><td>30</td></tr><tr><td>Chirag</td><td>28</td><td>35</td><td>45</td><td>32</td></tr><tr><td>Divya</td><td>38</td><td>41</td><td>35</td><td>37</td></tr><tr><td>Esha</td><td>33</td><td>30</td><td>38</td><td>27</td></tr></table>",
+    "set": "table-mock-marks"
+   },
+   {
+    "id": "D66",
+    "exam": "general",
+    "topic": "Tables",
+    "difficulty": "Medium",
+    "question": "What is the average GK score of the five candidates?",
+    "options": [
+     "29.6",
+     "31.0",
+     "30.2",
+     "31.4"
+    ],
+    "answer": 2,
+    "solution": "GK total = 25 + 30 + 32 + 37 + 27 = 151. Average = 151/5 = 30.2.",
+    "data": "<b>Marks of five candidates in a mock test (each section out of 50)</b><table class='data'><tr><th>Candidate</th><th>Quant</th><th>Reasoning</th><th>English</th><th>GK</th></tr><tr><td>Aman</td><td>42</td><td>39</td><td>30</td><td>25</td></tr><tr><td>Bhavna</td><td>36</td><td>44</td><td>40</td><td>30</td></tr><tr><td>Chirag</td><td>28</td><td>35</td><td>45</td><td>32</td></tr><tr><td>Divya</td><td>38</td><td>41</td><td>35</td><td>37</td></tr><tr><td>Esha</td><td>33</td><td>30</td><td>38</td><td>27</td></tr></table>",
+    "set": "table-mock-marks"
+   },
+   {
+    "id": "D67",
+    "exam": "general",
+    "topic": "Tables",
+    "difficulty": "Medium",
+    "question": "How many candidates scored more than 35 in at least three sections?",
+    "options": [
+     "1",
+     "4",
+     "3",
+     "2"
+    ],
+    "answer": 3,
+    "solution": "More than 35 in three sections: Bhavna (36, 44, 40) and Divya (38, 41, 37). Aman has only two (42, 39). Chirag has one (45) and Esha has one (38). So 2 candidates.",
+    "data": "<b>Marks of five candidates in a mock test (each section out of 50)</b><table class='data'><tr><th>Candidate</th><th>Quant</th><th>Reasoning</th><th>English</th><th>GK</th></tr><tr><td>Aman</td><td>42</td><td>39</td><td>30</td><td>25</td></tr><tr><td>Bhavna</td><td>36</td><td>44</td><td>40</td><td>30</td></tr><tr><td>Chirag</td><td>28</td><td>35</td><td>45</td><td>32</td></tr><tr><td>Divya</td><td>38</td><td>41</td><td>35</td><td>37</td></tr><tr><td>Esha</td><td>33</td><td>30</td><td>38</td><td>27</td></tr></table>",
+    "set": "table-mock-marks"
+   },
+   {
+    "id": "D68",
+    "exam": "general",
+    "topic": "Tables",
+    "difficulty": "Hard",
+    "question": "What percentage of Chirag's total score comes from English?",
+    "options": [
+     "30.5%",
+     "35.0%",
+     "33.3%",
+     "32.1%"
+    ],
+    "answer": 3,
+    "solution": "Chirag's total = 28 + 35 + 45 + 32 = 140. English share = 45/140 = 32.1%.",
+    "data": "<b>Marks of five candidates in a mock test (each section out of 50)</b><table class='data'><tr><th>Candidate</th><th>Quant</th><th>Reasoning</th><th>English</th><th>GK</th></tr><tr><td>Aman</td><td>42</td><td>39</td><td>30</td><td>25</td></tr><tr><td>Bhavna</td><td>36</td><td>44</td><td>40</td><td>30</td></tr><tr><td>Chirag</td><td>28</td><td>35</td><td>45</td><td>32</td></tr><tr><td>Divya</td><td>38</td><td>41</td><td>35</td><td>37</td></tr><tr><td>Esha</td><td>33</td><td>30</td><td>38</td><td>27</td></tr></table>",
+    "set": "table-mock-marks"
+   },
+   {
+    "id": "D69",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Easy",
+    "question": "How many students are preparing only for the Bank exam?",
+    "options": [
+     "70",
+     "120",
+     "90",
+     "80"
+    ],
+    "answer": 3,
+    "solution": "Only Bank = 120 − 40 = 80.",
+    "data": "<p>In a survey of 200 students, 120 are preparing for the Bank exam, 90 are preparing for the SSC exam and 40 are preparing for both. Some students are preparing for neither.</p>",
+    "set": "venn-bank-ssc"
+   },
+   {
+    "id": "D70",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Easy",
+    "question": "How many students are preparing for neither exam?",
+    "options": [
+     "30",
+     "20",
+     "40",
+     "50"
+    ],
+    "answer": 0,
+    "solution": "Bank or SSC = 120 + 90 − 40 = 170. Neither = 200 − 170 = 30.",
+    "data": "<p>In a survey of 200 students, 120 are preparing for the Bank exam, 90 are preparing for the SSC exam and 40 are preparing for both. Some students are preparing for neither.</p>",
+    "set": "venn-bank-ssc"
+   },
+   {
+    "id": "D71",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Medium",
+    "question": "What percentage of all the students are preparing for exactly one of the two exams?",
+    "options": [
+     "55%",
+     "65%",
+     "60%",
+     "70%"
+    ],
+    "answer": 1,
+    "solution": "Only Bank = 80 and only SSC = 90 − 40 = 50. Exactly one = 130. 130/200 = 65%.",
+    "data": "<p>In a survey of 200 students, 120 are preparing for the Bank exam, 90 are preparing for the SSC exam and 40 are preparing for both. Some students are preparing for neither.</p>",
+    "set": "venn-bank-ssc"
+   },
+   {
+    "id": "D72",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Medium",
+    "question": "Of the students preparing for the Bank exam, what percentage also prepare for the SSC exam?",
+    "options": [
+     "25%",
+     "33.3%",
+     "30%",
+     "40%"
+    ],
+    "answer": 1,
+    "solution": "40 of the 120 Bank students also prepare for SSC: 40/120 = 33.3%.",
+    "data": "<p>In a survey of 200 students, 120 are preparing for the Bank exam, 90 are preparing for the SSC exam and 40 are preparing for both. Some students are preparing for neither.</p>",
+    "set": "venn-bank-ssc"
+   },
+   {
+    "id": "D73",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Hard",
+    "question": "Suppose 20 of the students preparing only for the Bank exam also start preparing for the SSC exam. What is then the ratio of students preparing exactly one exam to those preparing both?",
+    "options": [
+     "13 : 4",
+     "11 : 6",
+     "5 : 3",
+     "7 : 4"
+    ],
+    "answer": 1,
+    "solution": "Only Bank becomes 80 − 20 = 60 and both becomes 40 + 20 = 60. Only SSC stays 50. Exactly one = 60 + 50 = 110. Ratio = 110 : 60 = 11 : 6.",
+    "data": "<p>In a survey of 200 students, 120 are preparing for the Bank exam, 90 are preparing for the SSC exam and 40 are preparing for both. Some students are preparing for neither.</p>",
+    "set": "venn-bank-ssc"
    }
   ]
  }
