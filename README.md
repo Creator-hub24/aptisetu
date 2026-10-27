@@ -68,3 +68,9 @@ Tests (dev-only; Playwright and axe-core are not shipped):
 - `RUNS=1000 node tests/quant-lab/generator.test.js`: every type is checked against an independent solver.
 - `RUNS=1000 node tests/quant-lab/viz.test.js`: every visual is checked for valid SVG.
 - `NODE_PATH=<playwright+axe-core> BASE=http://127.0.0.1:PORT/ node tests/quant-lab/e2e.js`: covers 390/1280 × light/dark, every type and explainer, the labs and practice, hostile URL parameters, console errors, CSP violations, axe colour-contrast and reduced motion.
+
+## Month 1 growth features
+- **Question pages:** `tools/qpages.py` (run by `build_pages.py`) writes `q/<track>/<id>-<topic>.html` for every open-bank question (CAT, CUET, Bank/SSC), topic hubs `q/<track>/<section>-<topic>.html` and `q/index.html`; all go into `sitemap.xml`. Excluded on purpose: CAT mock and fixed sectional packs (kept unseen) and CUET items reused from the general bank (one page each, in Bank/SSC). Pages use `<base href="/">` so shared relative links work; JSON-LD `Quiz` per page.
+- **Daily 10:** `cat-practice.html?daily=1`, `cuet-practice.html?daily=1` (exam.js) and `practice.html?daily=1` (quiz.js): 10 standalone open-bank questions, same for everyone on a date (date-seeded shuffle). Linked from the home page.
+- **Post-test report** (exam.js): weak topics with practice links, time per question, and a progress graph from `localStorage["aptisetu.history"]` after 2+ attempts of the same test type.
+- **Tests:** `tests/features.js` (same setup as `tests/flow.js`).
