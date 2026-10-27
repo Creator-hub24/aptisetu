@@ -55,6 +55,7 @@
     $("#start").onclick = () => start();
     document.querySelectorAll("[data-quick]").forEach(b => b.onclick = () => quick(+b.dataset.quick));
     showProgress(); offerResume();
+    if (params.get("daily") === "1") { daily(); return; }
     const qn = parseInt(params.get("quick"), 10);
     if (qn > 0) { quick(Math.min(qn, 20)); return; }
     if (params.get("exam") === "general" || pre) fillTopics(params.get("topic"));
@@ -66,12 +67,23 @@
     start({ s: "mixed", topic: "", n, per: 60, neg: false, name: `Quick start · ${n} mixed questions` });
   }
 
+  // Daily 10 (practice.html?daily=1): the same 10 standalone questions for everyone on a date (date-seeded shuffle), 60 s each
+  async function daily() {
+    try { await ensure("mixed"); } catch (e) { fail(); return; }
+    const t = new Date(), d = t.getFullYear() + "-" + String(t.getMonth() + 1).padStart(2, "0") + "-" + String(t.getDate()).padStart(2, "0");
+    let x = 0; for (const c of "general" + d) x = (Math.imul(x, 31) + c.charCodeAt(0)) | 0;
+    const rnd = () => { x = (x + 0x6D2B79F5) | 0; let u = Math.imul(x ^ (x >>> 15), 1 | x); u = (u + Math.imul(u ^ (u >>> 7), 61 | u)) ^ u; return ((u ^ (u >>> 14)) >>> 0) / 4294967296; };
+    const pool = poolFor("mixed").filter(q => !q.set).sort((a, b) => a.id < b.id ? -1 : 1);
+    for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+    start({ s: "mixed", topic: "", n: 10, per: 60, neg: false, name: `Bank / SSC Daily 10 · ${d}`, pick: pool.slice(0, 10) });
+  }
+
   function start(o) {
     o = o || { s: sec(), topic: $("#topic").value, n: +$("#count").value, per: +$("#per").value, neg: $("#neg").checked };
     const { s, topic, n, per } = o;
     const pool = poolFor(s, topic);
     if (!pool.length) return;
-    let pick = shuffle(pool).slice(0, Math.min(n, pool.length));
+    let pick = o.pick || shuffle(pool).slice(0, Math.min(n, pool.length));
     // keep questions from the same DILR set together, in their original order
     const order = new Map(); pick.forEach((q, i) => { const k = q.set || q.id; if (!order.has(k)) order.set(k, i); });
     pick.sort((a, b) => (order.get(a.set || a.id) - order.get(b.set || b.id)) || (pool.indexOf(a) - pool.indexOf(b)));

@@ -21,6 +21,10 @@
   // set page (set.html?sec=&set=): one fixed CAT practice set of 10, own save key, result saved to the account
   const SET = document.getElementById("set-info") ? (() => { const p = new URLSearchParams(location.search); return { sec: p.get("sec"), n: parseInt(p.get("set"), 10) }; })() : null;
   // fixed pack (cat-practice.html?pack=mock-1&section=qa&mode=sectional): mocks, sectionals and practice packs from tools/cat/packs
+  // Daily 10 (cat-practice.html?daily=1): the same 10 questions for everyone on a given date, picked with a date-seeded
+  // shuffle from the open bank's standalone questions (no mocks, no packs, no passage/data-set questions), across all sections.
+  const DAILY = !SET && new URLSearchParams(location.search).get("daily") === "1";
+  const today = () => { const d = new Date(); return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); };
   const PACK = (new URLSearchParams(location.search).get("pack") || "").replace(/[^a-z0-9-]/g, "");
   const inPool = q => !q.pack || (!PACK && q.pack.startsWith("practice-"));   // random sectionals: original bank; topic practice adds practice packs
   let saveTick = 0;
@@ -36,7 +40,7 @@
   function ensure(s) {
     if (bank.sections[s]) return Promise.resolve();
     return loading[s] = loading[s] || fetch(EX.dir + s + ".json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(d => { bank.sections[s] = { name: d.name, questions: d.questions }; Object.assign(bank.sets, d.sets || {}); });
+      .then(d => { d.questions.forEach(q => q._sec = s); bank.sections[s] = { name: d.name, questions: d.questions }; Object.assign(bank.sets, d.sets || {}); });
   }
   const fail = () => { $("#c-setup").innerHTML = "<div class='notice'>Could not load " + EX.label + " questions. Please check your connection, or open the site through a web server.</div>"; };
 
@@ -225,7 +229,7 @@
     $("#c-report").innerHTML = report(q);
     paletteOnly(); save();
   }
-  const report = q => P ? P.reportLink({ id: q.id, exam: EX.label, section: bank.sections[sec].name + " · " + q.topic }) : "";
+  const report = q => P ? P.reportLink({ id: q.id, exam: EX.label, section: bank.sections[q._sec || sec].name + " · " + q.topic }) : "";
   function stat(i) { return !visited[i] ? "nv" : marked[i] ? (answered(i) ? "am" : "m") : answered(i) ? "a" : "na"; }
   function paletteOnly() {
     $("#c-palette").innerHTML = qs.map((_, i) => `<button class="${stat(i)} ${i === cur ? "cur" : ""} ${mode === "practice" && checked[i] ? (isCorrect(qs[i], resp[i]) ? "ok" : "bad") : ""}" data-i="${i}" title="Question ${i + 1}">${i + 1}</button>`).join("");
@@ -240,7 +244,7 @@
       if (!confirm(mode === "sectional" ? `Submit this section?${un ? ` ${un} question(s) unanswered.` : ""}` : "Finish this practice session?")) return;
     }
     leave(); clearInterval(timerId);
-    if (P) { P.clearRun(saveKey); P.record(ENG, qs.map((q, i) => ({ topic: q.topic, section: sec, attempted: answered(i), correct: isCorrect(q, resp[i]) }))); }
+    if (P) { P.clearRun(saveKey); P.record(ENG, qs.map((q, i) => ({ topic: q.topic, section: q._sec || sec, attempted: answered(i), correct: isCorrect(q, resp[i]) }))); }
     if (window.track) { const ev = `${window.EXAM || "cat"}-${sec}`; window.track(`${mode}-finish-${ev}`); if (auto) window.track(`${mode}-autosubmit-${ev}`); }
     const rows = qs.map((q, i) => ({ q, i, att: answered(i), ok: isCorrect(q, resp[i]), t: tspent[i] }));
     const att = rows.filter(r => r.att), ok = att.filter(r => r.ok), wrong = att.filter(r => !r.ok);
@@ -270,6 +274,7 @@
       tr.map(([t, v]) => `<tr>${showPart ? `<td style="text-align:left" class="muted">${esc(v.part)}</td>` : ""}<td style="text-align:left">${esc(t)}</td><td>${v.n}</td><td>${v.att}</td><td>${v.ok}</td><td>${v.att ? Math.round(v.ok / v.att * 100) + "%" : "–"}</td><td>${Math.round(v.time / v.n)} s</td><td>${label(v)}</td></tr>`).join("") + `</table></div>
       <p class="muted" style="font-size:.85rem">Strong = 70%+ accuracy on attempts · Weak = below 50% · based on this session only.</p>`;
     let last = null;
+    $("#c-topics").insertAdjacentHTML("beforeend", extraReport(rows, topics, score, maxScore, acc));
     $("#c-review").innerHTML = rows.map(({ q, i, att: a, ok: o, t }) => {
       let pane = ""; if (q.set && q.set !== last) { const s = bank.sets[q.set]; pane = `<details class="rv-pane"><summary>Show ${s.kind === "passage" ? "passage" : "data set"}: ${esc(s.title)}</summary><div class="q-data">${s.html}</div></details>`; } last = q.set || null;
       const yours = !a ? "Not answered" : q.type === "mcq" ? `${L[resp[i]]}. ${q.options[resp[i]]}` : esc(resp[i]);
@@ -282,6 +287,55 @@
     if (SET) setSaved(score, maxScore);
     scrollTo({ top: 0, behavior: "instant" });
   }
+  // ---------- post-test report: weak topics, time per question, progress over attempts ----------
+  const HKEY = "aptisetu.history";
+  function history(key, entry) {
+    let all = {}; try { all = JSON.parse(localStorage.getItem(HKEY)) || {}; } catch (e) {}
+    const h = (all[key] = all[key] || []); if (entry) { h.push(entry); if (h.length > 30) h.splice(0, h.length - 30); try { localStorage.setItem(HKEY, JSON.stringify(all)); } catch (e) {} }
+    return h;
+  }
+  function extraReport(rows, topics, score, maxScore, acc) {
+    const prac = ENG + "-practice.html";
+    const weak = Object.entries(topics).filter(([, v]) => !v.att || v.ok / v.att < 0.5)
+      .sort((a, b) => (a[1].att ? a[1].ok / a[1].att : -1) - (b[1].att ? b[1].ok / b[1].att : -1));
+    const secOf = t => (rows.find(r => r.q.topic === t) || {}).q;
+    let h = `<div class="report-extra"><h3>Weak topics</h3>` + (weak.length
+      ? `<ul class="weak-list">${weak.map(([t, v]) => { const q = secOf(t); return `<li><b>${esc(t)}</b> · ${v.att ? Math.round(v.ok / v.att * 100) + "% of " + v.att + " attempted" : "not attempted"} · <a href="${prac}?mode=practice&section=${encodeURIComponent(q._sec || sec)}&topic=${encodeURIComponent(t)}">Practise this topic →</a></li>`; }).join("")}</ul>`
+      : `<p class="muted">No weak topics in this session: every topic you attempted was 50% or better.</p>`);
+    const mx = Math.max(1, ...rows.map(r => r.t));
+    h += `<h3>Time per question</h3><div class="tpq" role="img" aria-label="Seconds spent on each question">${rows.map(r => `<div class="tpq-col" title="Q${r.i + 1}: ${Math.round(r.t)} s · ${!r.att ? "skipped" : r.ok ? "correct" : "wrong"}"><span class="tpq-bar ${!r.att ? "skip" : r.ok ? "ok" : "bad"}" style="height:${Math.max(4, Math.round(r.t / mx * 100))}%"></span><small>${r.i + 1}</small></div>`).join("")}</div>
+      <p class="muted" style="font-size:.85rem">Bar height = seconds spent (longest ${Math.round(mx)} s) · green correct · red wrong · grey skipped.</p>`;
+    const key = ENG + "-" + (DAILY ? "daily" : SET ? "set-" + SET.sec + "-" + SET.n : (PACK || sec) + "-" + mode);
+    const hist = history(key, { t: Date.now(), score, max: maxScore, acc });
+    if (hist.length >= 2) {
+      const W = 320, H = 120, pts = hist.map((e, i) => [20 + i * (W - 40) / (hist.length - 1), H - 15 - (e.max ? Math.max(0, e.score) / e.max : 0) * (H - 30)]);
+      h += `<h3>Your progress</h3><svg class="prog-graph" viewBox="0 0 ${W} ${H}" width="100%" style="max-width:${W * 1.5}px" role="img" aria-label="Score percentage over your last ${hist.length} attempts">
+        <line x1="20" y1="${H - 15}" x2="${W - 20}" y2="${H - 15}" stroke="currentColor" opacity=".25"/><line x1="20" y1="15" x2="${W - 20}" y2="15" stroke="currentColor" opacity=".12"/>
+        <polyline fill="none" stroke="#4f46e5" stroke-width="2.5" points="${pts.map(p => p.map(v => v.toFixed(1)).join(",")).join(" ")}"/>
+        ${pts.map((p, i) => `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3.5" fill="#4f46e5"><title>Attempt ${i + 1}: ${hist[i].score}/${hist[i].max}</title></circle>`).join("")}
+        <text x="2" y="19" font-size="9" fill="currentColor">100%</text><text x="8" y="${H - 11}" font-size="9" fill="currentColor">0</text></svg>
+        <p class="muted" style="font-size:.85rem">Score as % of maximum over your last ${hist.length} attempts of this test type in this browser (latest on the right).</p>`;
+    } else h += `<p class="muted" style="font-size:.85rem">Take this test type again to see your progress graph (saved only in this browser).</p>`;
+    return h + "</div>";
+  }
+  async function initDaily() {
+    const box = $("#c-setup");
+    try { await Promise.all(EX.secs.map(ensure)); } catch (e) { fail(); return; }
+    const d = today(); let x = 0; for (const c of ENG + d) x = (Math.imul(x, 31) + c.charCodeAt(0)) | 0;
+    const rnd = () => { x = (x + 0x6D2B79F5) | 0; let t = Math.imul(x ^ (x >>> 15), 1 | x); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+    const pool = EX.secs.flatMap(s => bank.sections[s].questions.filter(q => !q.pack && !q.set)).sort((a, b) => a.id < b.id ? -1 : 1);
+    for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+    const picked = pool.slice(0, 10);
+    mode = "practice"; sec = picked[0]._sec; qs = prep(picked); saveKey = "daily-" + ENG + "-" + d;
+    const n = qs.length; resp = Array(n).fill(null); marked = Array(n).fill(false); visited = Array(n).fill(false); tspent = Array(n).fill(0); checked = Array(n).fill(false);
+    sectionTime = 0; cur = 0; elapsed = 0; timeLeft = 0; title = `${EX.label} Daily 10 · ${d}`;
+    const r = P && P.loadRun(saveKey);
+    if (r && r.qs && r.qs.length) ({ mode, sec, qs, cur, resp, marked, visited, tspent, checked, timeLeft, elapsed, sectionTime, title } = r);
+    if (window.track) window.track(`daily-start-${ENG}`);
+    box.dataset.daily = picked.map(q => q.id).join(",");
+    begin();
+  }
+
   async function setSaved(score, total) {
     const el = $("#set-save"); if (!el) return;
     const A = window.Auth, u = A && await A.ready;
@@ -358,6 +412,7 @@
   }
 
   async function init() {
+    if (DAILY) return initDaily();
     if (SET) { $$("[data-progress]").forEach(x => P && P.panel(x, x.dataset.progress)); return initSet(); }
     $$("[data-progress]").forEach(x => P && P.panel(x, x.dataset.progress));
     offerResume();
@@ -380,7 +435,7 @@
     $("#c-clear").onclick = () => { if (mode === "practice" && checked[cur]) return; resp[cur] = null; render(); };
     $("#c-check").onclick = () => { checked[cur] = true; render(); };
     $("#c-submit").onclick = () => submit(false);
-    $("#c-retry").onclick = SET ? () => location.reload() : () => { $("#c-results").classList.add("hidden"); $("#c-setup").classList.remove("hidden"); $("#c-progress").classList.remove("hidden"); refreshSetup(); scrollTo({ top: 0, behavior: "instant" }); };
+    $("#c-retry").onclick = DAILY ? () => { location.href = location.pathname; } : SET ? () => location.reload() : () => { $("#c-results").classList.add("hidden"); $("#c-setup").classList.remove("hidden"); $("#c-progress").classList.remove("hidden"); refreshSetup(); scrollTo({ top: 0, behavior: "instant" }); };
     init();
   });
 })();
