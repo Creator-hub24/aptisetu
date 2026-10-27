@@ -552,3 +552,13 @@ main .qlband a.btn,html[data-theme="dark"] .qlband a.btn{background:#C9A227;colo
 #site-footer .social a:hover{background:rgba(255,255,255,.08);transform:translateY(-2px)}
 #site-footer .social a{transition:transform .15s,background .15s}
 @media(prefers-reduced-motion:reduce){#site-footer .social a{transition:none}#site-footer .social a:hover{transform:none}}
+@media (prefers-color-scheme: dark){.ql-band{background:linear-gradient(135deg,rgba(16,185,129,.16),rgba(59,130,246,.1))}}
+/* question pages, Daily 10, post-test report */
+.qp-ans{margin-top:10px}.qp-ans summary{list-style:none;display:inline-flex;cursor:pointer}.qp-ans summary::-webkit-details-marker{display:none}
+.qp-sim li,.qp-list li,.qp-hubs li{margin:.35em 0}.qp-hubs{padding-left:1.1em;margin:.4em 0 0}
+.daily-card{display:flex;flex-direction:column}.daily-card .btn{align-self:flex-start}
+.report-extra h3{margin-top:1.2em}.weak-list{padding-left:1.1em}.weak-list li{margin:.35em 0}
+.tpq{display:flex;align-items:flex-end;gap:3px;height:110px;padding:6px 0;overflow-x:auto}
+.tpq-col{flex:1 0 16px;max-width:34px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center}
+.tpq-col small{font-size:.65rem;color:var(--muted)}.tpq-bar{width:100%;border-radius:4px 4px 0 0;background:#cbd5e1}.tpq-bar.ok{background:var(--ok)}.tpq-bar.bad{background:var(--bad)}
+.prog-graph{display:block;color:var(--muted)}

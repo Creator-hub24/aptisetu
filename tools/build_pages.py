@@ -50,7 +50,7 @@ def externalize(fn, html):
         n[0]+=1; name=f"assets/js/page/{fn[:-5]}-{n[0]}.js"
         open(name,"w").write(m.group(1).strip()+"\n"); return f'<script src="{name}"></script>'
     html=_re.sub(r"<script>(.*?)</script>", rep, html, flags=_re.S)
-    assert not _re.search(r"<script(?![^>]*\bsrc=)[^>]*>", html), ("inline script left", fn)
+    assert not _re.search(r"<script(?![^>]*\b(?:src=|type=\"application/ld\+json\"))[^>]*>", html), ("inline script left", fn)
     m=_re.search(r"<[a-zA-Z][^<>]*\son[a-z]+\s*=\s*[\"']", html); assert not m, ("inline event handler", fn, m and m.group(0)[:80])
     return html
 A=lambda s: _esc.escape(s, quote=True)
@@ -72,7 +72,7 @@ def footer_html():
         <p class="muted">Free Quant, Reasoning, DILR and VARC practice for CAT, CUET, Bank, SSC and campus placements. Not affiliated with NTA, the IIMs or any exam body.</p>
         <div class="social" aria-label="Follow AptiSetu">{social}</div></div>
       <div><h2 class="fh">Learn</h2><a href="quant.html">Quantitative Aptitude</a><a href="quant-lab.html">Quant Lab</a><a href="reasoning.html">Logical Reasoning</a><a href="dilr.html">DILR</a><a href="cat.html">CAT track</a><a href="cuet.html">CUET (UG) track</a><a href="varc.html">VARC</a><a href="after12.html">After 12</a><a href="after-graduation.html">After Graduation</a></div>
-      <div><h2 class="fh">Practice</h2><a href="cat-practice.html">CAT sectionals</a><a href="cuet-practice.html">CUET sectionals</a><a href="practice.html?exam=general">Bank / SSC quizzes</a><a href="practice.html?section=mixed">Mixed practice</a></div>
+      <div><h2 class="fh">Practice</h2><a href="cat-practice.html">CAT sectionals</a><a href="cuet-practice.html">CUET sectionals</a><a href="practice.html?exam=general">Bank / SSC quizzes</a><a href="practice.html?section=mixed">Mixed practice</a><a href="q/index.html">Question bank</a></div>
       <div><h2 class="fh">About</h2><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="corrections.html">Corrections</a>{contact}<a href="privacy.html">Privacy</a><a href="terms.html">Terms &amp; disclaimer</a></div>
     </div>
     {GC_TAG}<div class="container copyright">© {YEAR} <span data-brand>{_esc.escape(BRAND)}</span>. All rights reserved.</div>"""
@@ -167,6 +167,15 @@ page("index.html","", f"""
   <h2 id="sample-q" class="sample-q">A finishes a job in 12 days, B in 18 days. Working together, how many days do they need?</h2>
   <div class="sample-opts" role="group" aria-label="Answer options"><button type="button" class="mini-opt" data-ok="0">A. 6 days</button><button type="button" class="mini-opt" data-ok="1">B. 7.2 days</button><button type="button" class="mini-opt" data-ok="0">C. 7.5 days</button><button type="button" class="mini-opt" data-ok="0">D. 15 days</button></div>
   <div id="sample-fb" class="sample-fb hidden" aria-live="polite"></div>
+ </div>
+</div></section>
+
+<section class="daily10"><div class="container">
+ <div class="section-head"><h2>Daily 10</h2><p class="muted">Ten fresh questions a day for each track, the same set for everyone today. Solutions straight after each answer.</p></div>
+ <div class="grid g3">
+  <div class="card daily-card"><h3>🎯 CAT</h3><p class="muted" style="flex:1">QA and verbal ability, CAT marking.</p><a class="btn" href="cat-practice.html?daily=1">Start today's 10</a></div>
+  <div class="card daily-card"><h3>🎓 CUET (UG)</h3><p class="muted" style="flex:1">General Aptitude, English and Maths.</p><a class="btn" href="cuet-practice.html?daily=1">Start today's 10</a></div>
+  <div class="card daily-card"><h3>🏦 Bank / SSC</h3><p class="muted" style="flex:1">Quant, reasoning and data, 60 s each.</p><a class="btn" href="practice.html?daily=1">Start today's 10</a></div>
  </div>
 </div></section>
 
@@ -860,4 +869,5 @@ page("placements.html","Placement Prep","""
 <p class="muted" style="margin-top:12px">Placement-style practice sits in the Bank / SSC / Placements track. Verbal and coding sections are not covered yet. Exam patterns change, so check the company's official hiring page for the current format. AptiSetu is not affiliated with any company.</p><a class="btn btn-sm" href="practice.html?exam=general">Start placement practice →</a></div></div></section>
 """, desc="Free campus placement aptitude practice: Quant, Reasoning and data interpretation with worked solutions, useful for IT-services hiring tests.")
 
+exec(open("tools/qpages.py").read())
 exec(open("tools/pages_info.py").read())
