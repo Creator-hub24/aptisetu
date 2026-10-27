@@ -153,6 +153,7 @@ def fix_headings(html):
     return _re.sub(r"<h([1-6])(\s[^>]*)?>(.*?)</h\1>", lambda m: rep(type("M",(),{"group":lambda self,i: (m.group(i) or "") if i==2 else m.group(i)})()), html, flags=_re.S)
 
 # ---------- LANDING ----------
+exec(open("tools/facts.py").read())
 page("index.html","", f"""
 <section class="hero"><div class="container hero-grid">
  <div>
@@ -457,6 +458,7 @@ page("cat.html","CAT Track: VARC, DILR & QA",f"""
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CAT track <span class="exam-tag tag-cat" style="vertical-align:middle">CAT</span></h1>
 <p class="muted" style="max-width:720px">A separate track for CAT aspirants: VARC, DILR and QA questions from easy to hard level, in CAT's question formats (MCQ and TITA) with CAT marking. All questions and passages were written by our team. They are not taken from CAT papers or any coaching material, and each has a worked solution.</p>
 <div class="cta-row"><a class="btn" href="cat-quant-sets.html">Practice sets: Quant →</a><a class="btn btn-ghost" href="cat-varc-sets.html">VARC sets</a><a class="btn btn-ghost" href="cat-dilr-sets.html">DILR sets</a><a class="btn btn-ghost" href="cat-practice.html">40-min sectional</a><a class="btn btn-ghost" href="varc.html">VARC strategy &amp; rules</a></div></div></div>
+<section style="padding-top:16px;padding-bottom:0"><div class="container">{facts_box("cat")}</div></section>
 <section style="padding-top:20px"><div class="container"><div class="grid g3">{secblk}</div></div></section>
 <section class="alt"><div class="container"><div class="grid g2">
  <div class="card"><h3>⏱ Sectional mode</h3><ul class="clean">
@@ -662,6 +664,7 @@ page("cuet.html", "CUET (UG) Track: General Aptitude Test, English & Maths", f""
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CUET (UG) track <span class="exam-tag tag-cuet" style="vertical-align:middle">CUET</span></h1>
 <p class="muted" style="max-width:740px">Practice for the Common University Entrance Test (UG), run by the National Testing Agency (NTA) for admission to central and other participating universities. We cover three of its papers: the <b>General Aptitude Test</b>, <b>English</b> and <b>Mathematics</b>. All questions were written by our team; none are taken from NTA papers or any coaching material. Some General Aptitude questions are shared with our Bank / SSC track and are marked as such.</p>
 <div class="cta-row"><a class="btn" href="cuet-practice.html">Start a CUET sectional →</a><a class="btn btn-ghost" href="#pattern">Exam pattern</a></div></div></div>
+<section style="padding-top:16px;padding-bottom:0"><div class="container">{facts_box("cuet")}</div></section>
 <section style="padding-top:20px"><div class="container"><div class="grid g3">{csec}</div></div></section>
 <section id="pattern" class="alt"><div class="container"><h2>CUET (UG) exam pattern</h2>
 <p class="muted" style="margin-top:-.4em">As given in NTA's CUET (UG) 2026 Information Bulletin, the latest cycle (exam held in May–June 2026). Always check <a href="https://cuet.nta.nic.in/" rel="noopener" target="_blank">cuet.nta.nic.in</a> for the current year.</p>
@@ -870,4 +873,5 @@ page("placements.html","Placement Prep","""
 """, desc="Free campus placement aptitude practice: Quant, Reasoning and data interpretation with worked solutions, useful for IT-services hiring tests.")
 
 exec(open("tools/qpages.py").read())
+exec(open("tools/m2pages.py").read())
 exec(open("tools/pages_info.py").read())
