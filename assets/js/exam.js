@@ -323,9 +323,22 @@
     try { await Promise.all(EX.secs.map(ensure)); } catch (e) { fail(); return; }
     const d = today(); let x = 0; for (const c of ENG + d) x = (Math.imul(x, 31) + c.charCodeAt(0)) | 0;
     const rnd = () => { x = (x + 0x6D2B79F5) | 0; let t = Math.imul(x ^ (x >>> 15), 1 | x); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
-    const pool = EX.secs.flatMap(s => bank.sections[s].questions.filter(q => !q.pack && !q.set)).sort((a, b) => a.id < b.id ? -1 : 1);
-    for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
-    const picked = pool.slice(0, 10);
+    const byId = (a, b) => a.id < b.id ? -1 : 1;
+    const shuf = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+    const open = q => !q.pack || q.pack.startsWith("practice-");   // open bank + practice packs; never mocks or fixed sectionals
+    let picked = [];
+    if (ENG === "cat") {
+      // 3 standalone QA + one whole DILR set + one whole RC passage set (4-question sets), all date-seeded
+      const setOf = (s, n) => { const g = {}; bank.sections[s].questions.filter(q => q.set && open(q)).forEach(q => (g[q.set] = g[q.set] || []).push(q));
+        const ks = Object.keys(g).filter(k => g[k].length === n).sort(); return ks.length ? g[shuf(ks)[0]] : []; };
+      const qa = shuf(bank.sections.qa.questions.filter(q => !q.pack && !q.set).sort(byId));
+      picked = [...qa.slice(0, 3), ...setOf("dilr", 4), ...setOf("varc", 4)];
+    } else {
+      const all = EX.secs.flatMap(s => bank.sections[s].questions.filter(q => !q.pack && !q.set)).sort(byId);
+      // CUET: CUET-specific items first (English, Maths and GAT items written for CUET); shared Bank/SSC items only to top up
+      const own = shuf(all.filter(q => q.source !== "general")), shared = shuf(all.filter(q => q.source === "general"));
+      picked = [...own, ...shared].slice(0, 10);
+    }
     mode = "practice"; sec = picked[0]._sec; qs = prep(picked); saveKey = "daily-" + ENG + "-" + d;
     const n = qs.length; resp = Array(n).fill(null); marked = Array(n).fill(false); visited = Array(n).fill(false); tspent = Array(n).fill(0); checked = Array(n).fill(false);
     sectionTime = 0; cur = 0; elapsed = 0; timeLeft = 0; title = `${EX.label} Daily 10 · ${d}`;

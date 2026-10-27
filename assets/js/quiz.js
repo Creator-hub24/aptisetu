@@ -2,7 +2,7 @@
 (function () {
   const $ = s => document.querySelector(s);
   const L = "ABCD", SECS = ["quant", "reasoning", "dilr"], P = window.Progress;
-  let bank = {}, qs = [], cur = 0, ans = [], marked = [], timeLeft = 0, timerId = null, cfg = {}, saveTick = 0;
+  let bank = {}, qs = [], cur = 0, ans = [], marked = [], timeLeft = 0, timerId = null, cfg = {}, saveTick = 0, tsp = [], shownAt = 0, lastCur = -1;
 
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const fmt = s => `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
@@ -41,10 +41,10 @@
     const bar = document.createElement("div"); bar.className = "notice resume-bar";
     bar.innerHTML = `<b>Unfinished quiz:</b> ${r.cfg.name} · ${n}/${r.qs.length} answered · ${fmt(r.timeLeft)} left. <span class="resume-actions"><button type="button" class="btn btn-sm" id="resume-go">Resume</button><button type="button" class="btn btn-ghost btn-sm" id="resume-drop">Discard</button></span>`;
     const host = $("#exam-pick"); host.parentNode.insertBefore(bar, host);
-    $("#resume-go").onclick = () => { bar.remove(); qs = r.qs; ans = r.ans; marked = r.marked; cur = r.cur; timeLeft = r.timeLeft; cfg = r.cfg; begin(); };
+    $("#resume-go").onclick = () => { bar.remove(); qs = r.qs; ans = r.ans; marked = r.marked; cur = r.cur; timeLeft = r.timeLeft; cfg = r.cfg; tsp = r.tsp || []; lastCur = -1; begin(); };
     $("#resume-drop").onclick = () => { P.clearRun("general"); bar.remove(); };
   }
-  function save() { if (P && qs.length) P.saveRun("general", { qs, ans, marked, cur, timeLeft, cfg }); }
+  function save() { if (P && qs.length) P.saveRun("general", { qs, ans, marked, cur, timeLeft, cfg, tsp }); }
 
   async function init() {
     const params = new URLSearchParams(location.search);
@@ -90,7 +90,7 @@
     // shuffle option order unless the order is meaningful
     qs = pick.map(q => { const idx = q.fixed ? [0, 1, 2, 3] : shuffle([0, 1, 2, 3]); return { ...q, options: idx.map(i => q.options[i]), answer: idx.indexOf(q.answer) }; });
     cfg = { name: o.name || ((s === "mixed" ? "Mixed" : bank[s].name) + (topic ? " · " + topic : "")), neg: o.neg, ev: "general-" + s, per };
-    ans = Array(qs.length).fill(null); marked = Array(qs.length).fill(false); cur = 0;
+    ans = Array(qs.length).fill(null); marked = Array(qs.length).fill(false); cur = 0; tsp = Array(qs.length).fill(0); lastCur = -1; shownAt = 0;
     timeLeft = qs.length * per;
     window.track && window.track("quiz-start-" + cfg.ev);
     begin();
@@ -113,7 +113,9 @@
   const report = q => P ? P.reportLink({ id: q.id, exam: "Bank / SSC / Placements", section: secName(q) + " · " + q.topic }) : "";
 
   function render() {
-    const q = qs[cur];
+    const q = qs[cur], now = Date.now();
+    if (!tsp || tsp.length !== qs.length) tsp = Array(qs.length).fill(0);
+    if (lastCur >= 0 && shownAt) tsp[lastCur] += (now - shownAt) / 1000; lastCur = cur; shownAt = now;
     $("#q-num").textContent = `Question ${cur + 1} of ${qs.length}`;
     $("#q-topic").textContent = `${q.topic} · ${q.difficulty}`;
     $("#bar").style.width = ((ans.filter(a => a !== null).length) / qs.length * 100) + "%";
@@ -133,7 +135,7 @@
 
   function submit(auto) {
     if (!auto) { const un = ans.filter(a => a === null).length; if (un && !confirm(`${un} question(s) unanswered. Submit anyway?`)) return; }
-    clearInterval(timerId);
+    clearInterval(timerId); if (lastCur >= 0 && shownAt) tsp[lastCur] += (Date.now() - shownAt) / 1000; shownAt = 0; lastCur = -1;
     if (window.track) { window.track("quiz-finish-" + cfg.ev); if (auto) window.track("quiz-autosubmit-" + cfg.ev); }
     let c = 0, w = 0;
     qs.forEach((q, i) => { if (ans[i] === null) return; ans[i] === q.answer ? c++ : w++; });
@@ -149,6 +151,7 @@
       <p class="muted" style="text-align:center">✅ ${c} correct · ❌ ${w} wrong · ⏭ ${qs.length - c - w} skipped ${cfg.neg ? "· Marking: +3 / −1" : ""}</p>
       ${st ? `<p style="text-align:center;margin:.2em 0 0">🔥 <b>${st.count}-day streak</b> · ${st.quizzes} quiz${st.quizzes === 1 ? "" : "zes"} finished</p>` : ""}
       ${P ? `<div class="cta-row share-row" style="justify-content:center;margin:14px 0 0">${P.shareButton(`I scored ${score}/${max} (${pct}%) in a ${cfg.name} aptitude quiz on ${brand}! Can you beat it?`, "practice.html")}</div>` : ""}`;
+    $("#res-summary").insertAdjacentHTML("beforeend", extraReport(score, max, pct));
     let lastSet = null;
     $("#review").innerHTML = qs.map((q, i) => {
       const showData = q.data && (!q.set || q.set !== lastSet); lastSet = q.set || null;
@@ -161,6 +164,26 @@
       </div>`; }).join("");
     showProgress();
     scrollTo(0, 0);
+  }
+
+  // post-test report: topic accuracy, weak topics, time per question, progress graph (history kept in this browser only)
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  function extraReport(score, max, pct) {
+    const rows = qs.map((q, i) => ({ q, i, att: ans[i] !== null, ok: ans[i] === q.answer, t: tsp[i] || 0 }));
+    const topics = {}; rows.forEach(r => { const k = r.q.topic, v = (topics[k] = topics[k] || { n: 0, att: 0, ok: 0, t: 0, sec: r.q._sec }); v.n++; v.t += r.t; if (r.att) v.att++; if (r.ok) v.ok++; });
+    let h = `<div class="report-extra"><h3>Topic accuracy</h3><div class="table-wrap"><table class="topic-acc"><thead><tr><th>Topic</th><th>Correct</th><th>Accuracy</th><th>Avg time</th></tr></thead><tbody>${Object.entries(topics).map(([t, v]) => `<tr><td>${esc(t)}</td><td>${v.ok}/${v.n}</td><td>${v.att ? Math.round(v.ok / v.att * 100) + "%" : "–"}</td><td>${Math.round(v.t / v.n)} s</td></tr>`).join("")}</tbody></table></div>`;
+    const weak = Object.entries(topics).filter(([, v]) => !v.att || v.ok / v.att < 0.5);
+    h += `<h3>Weak topics</h3>` + (weak.length ? `<ul class="weak-list">${weak.map(([t, v]) => `<li><b>${esc(t)}</b> · ${v.att ? Math.round(v.ok / v.att * 100) + "% of " + v.att + " attempted" : "not attempted"} · <a href="practice.html?section=${encodeURIComponent(v.sec)}&topic=${encodeURIComponent(t)}">Practise this topic →</a></li>`).join("")}</ul>` : `<p class="muted">No weak topics in this quiz: every topic you attempted was 50% or better.</p>`);
+    const mx = Math.max(1, ...rows.map(r => r.t));
+    h += `<h3>Time per question</h3><div class="tpq" role="img" aria-label="Seconds spent on each question">${rows.map(r => `<div class="tpq-col" title="Q${r.i + 1}: ${Math.round(r.t)} s · ${!r.att ? "skipped" : r.ok ? "correct" : "wrong"}"><span class="tpq-bar ${!r.att ? "skip" : r.ok ? "ok" : "bad"}" style="height:${Math.max(4, Math.round(r.t / mx * 100))}%"></span><small>${r.i + 1}</small></div>`).join("")}</div><p class="muted" style="font-size:.85rem">Bar height = seconds spent (longest ${Math.round(mx)} s) · green correct · red wrong · grey skipped.</p>`;
+    let all = {}; try { all = JSON.parse(localStorage.getItem("aptisetu.history")) || {}; } catch (e) {}
+    const key = "general-" + (/Daily 10/.test(cfg.name) ? "daily" : cfg.ev), hist = (all[key] = all[key] || []);
+    hist.push({ t: Date.now(), score, max, acc: pct }); if (hist.length > 30) hist.splice(0, hist.length - 30); try { localStorage.setItem("aptisetu.history", JSON.stringify(all)); } catch (e) {}
+    if (hist.length >= 2) {
+      const W = 320, H = 120, pts = hist.map((e, i) => [20 + i * (W - 40) / (hist.length - 1), H - 15 - (e.max ? Math.max(0, e.score) / e.max : 0) * (H - 30)]);
+      h += `<h3>Your progress</h3><svg class="prog-graph" viewBox="0 0 ${W} ${H}" width="100%" style="max-width:${W * 1.5}px" role="img" aria-label="Score percentage over your last ${hist.length} attempts"><line x1="20" y1="${H - 15}" x2="${W - 20}" y2="${H - 15}" stroke="currentColor" opacity=".25"/><polyline fill="none" stroke="#4f46e5" stroke-width="2.5" points="${pts.map(p => p.map(v => v.toFixed(1)).join(",")).join(" ")}"/>${pts.map((p, i) => `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3.5" fill="#4f46e5"><title>Attempt ${i + 1}: ${hist[i].score}/${hist[i].max}</title></circle>`).join("")}<text x="2" y="19" font-size="9" fill="currentColor">100%</text><text x="8" y="${H - 11}" font-size="9" fill="currentColor">0</text></svg><p class="muted" style="font-size:.85rem">Score as % of maximum over your last ${hist.length} quizzes of this type in this browser (latest on the right).</p>`;
+    } else h += `<p class="muted" style="font-size:.85rem">Take this quiz type again to see your progress graph (saved only in this browser).</p>`;
+    return h + "</div>";
   }
 
   document.addEventListener("DOMContentLoaded", () => {

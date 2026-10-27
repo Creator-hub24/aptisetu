@@ -562,3 +562,6 @@ main .qlband a.btn,html[data-theme="dark"] .qlband a.btn{background:#C9A227;colo
 .tpq-col{flex:1 0 16px;max-width:34px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center}
 .tpq-col small{font-size:.65rem;color:var(--muted)}.tpq-bar{width:100%;border-radius:4px 4px 0 0;background:#cbd5e1}.tpq-bar.ok{background:var(--ok)}.tpq-bar.bad{background:var(--bad)}
 .prog-graph{display:block;color:var(--muted)}
+.topic-acc{width:100%;border-collapse:collapse;font-size:.92rem}.topic-acc th,.topic-acc td{padding:6px 8px;border-bottom:1px solid var(--line,#e5e7eb);text-align:left}
+.hero-grid>*{min-width:0}.hero h1{overflow-wrap:anywhere}
+.hero .pill{white-space:normal;max-width:100%}
