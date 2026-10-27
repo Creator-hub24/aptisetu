@@ -46,4 +46,17 @@ ok('no page uses the personal address',!qfiles.some(f=>fs.readFileSync(f,'utf8')
   ok(`bank report ${k+1}: topic table, weak topics, time chart`,(await p.locator('#res-summary .topic-acc tr').count())>1&&(await p.locator('#res-summary .tpq-col').count())===10&&await p.isVisible('#res-summary .weak-list, #res-summary .report-extra p'));
   ok(`bank report ${k+1}: progress graph ${k?'shown':'hidden'}`,(await p.locator('#res-summary .prog-graph').count())===(k?1:0))}
  ok('bank report: no page errors',!errs.length,errs.join('|'));await c.close()}
+// Month 2 content: facts boxes, exam pages, guides, formula sheets
+{const NEW=['bank-ssc.html','ibps-po.html','ibps-clerk.html','sbi-po.html','ssc-cgl.html','ssc-chsl.html','guides.html','formula-sheets.html','formula-cat-quant.html','formula-bank-ssc-quant.html','formula-reasoning.html',...fs.readdirSync('.').filter(f=>/^guide-.*\.html$/.test(f))];
+ ok('10 guides built',NEW.filter(f=>f.startsWith('guide-')).length===10);
+ ok('new pages are in sitemap.xml',NEW.every(f=>sm.includes('https://aptisetu.com/'+f)));
+ ok('3 formula PDFs exist',['cat-quant','bank-ssc-quant','reasoning'].every(s=>fs.statSync('assets/pdf/formula-'+s+'.pdf').size>10000));
+ const p=await b.newPage({viewport:{width:360,height:800}});const errs=[];p.on('pageerror',e=>errs.push(e.message));let bad=[];
+ for(const f of ['cat.html','cuet.html',...NEW]){await p.goto(B+f,{waitUntil:'domcontentloaded'});
+  const r=await p.evaluate(()=>({w:document.documentElement.scrollWidth,prim:[...document.querySelectorAll('main .btn:not(.btn-ghost), .page-head .btn:not(.btn-ghost), .container .btn:not(.btn-ghost)')].filter(e=>e.offsetParent).length,facts:document.querySelectorAll('.facts').length,toc:!!document.querySelector('.toc'),ins:!!document.querySelector('.insight'),faq:document.querySelectorAll('.faq-item').length,src:document.querySelectorAll('.sources li').length}));
+  if(r.w>360)bad.push(f+' overflow '+r.w);if(NEW.includes(f)&&r.prim>1)bad.push(f+' primary buttons '+r.prim);
+  if((/^(cat|cuet|bank-ssc|ibps|sbi|ssc)/.test(f))&&r.facts!==1)bad.push(f+' facts '+r.facts);
+  if(f.startsWith('guide-')&&!(r.toc&&r.ins&&r.faq>=2&&r.src>=1))bad.push(f+' guide format');}
+ ok('new pages: facts boxes, guide format, 1 primary CTA, no overflow at 360px',!bad.length,bad.join('; '));
+ ok('new pages: no page errors',!errs.length,errs.join('|'));await p.close()}
 console.log(`${fails} failed of ${n}`);await b.close();process.exit(fails?1:0)})();
