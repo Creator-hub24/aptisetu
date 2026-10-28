@@ -11,6 +11,11 @@
     }
     const u = await A.ready;
     if (u) { box.innerHTML = `<p>You're logged in as <b>${esc(u.email || "")}</b>.</p><p><a class="btn" href="${esc(next)}">Continue →</a></p>`; return; }
+    if ((window.SITE || {}).GOOGLE_LOGIN === "on" && !A.mock) {
+      const g = document.createElement("p"); g.innerHTML = `<button type="button" class="btn btn-ghost" id="login-google">Continue with Google</button>`;
+      $("#login-form").after(g);
+      $("#login-google").addEventListener("click", async () => { try { await A.loginGoogle(next); } catch (err) { msg.className = "notice"; msg.textContent = err.message; } });
+    }
     $("#login-form").addEventListener("submit", async e => {
       e.preventDefault(); const btn = $("#login-send"); btn.disabled = true; msg.className = "muted"; msg.textContent = "Sending…";
       try {

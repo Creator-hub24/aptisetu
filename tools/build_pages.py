@@ -33,13 +33,18 @@ YEAR=_dt.date.today().year
 _ph=lambda v: (not v) or v.startswith("YOUR_")
 SB_URL=CFG.get("SUPABASE_URL",""); SB_ORIGIN="" if _ph(SB_URL) else "{0.scheme}://{0.netloc}".format(_up(SB_URL))
 assert not SB_ORIGIN or _re.fullmatch(r"https://[a-z0-9.-]+", SB_ORIGIN), "SUPABASE_URL must be https://<project>.supabase.co"
+PAY=CFG.get("PAYMENTS_ENABLED","off")=="on"
+assert not PAY or SB_ORIGIN, "PAYMENTS_ENABLED needs SUPABASE_URL"
+assert not PAY or _re.fullmatch(r"\d{3}", CFG.get("PASS_PRICE","")), "PAYMENTS_ENABLED needs PASS_PRICE in rupees, e.g. 299"
+RZP=" https://checkout.razorpay.com" if PAY else ""
 CSP="; ".join([
     "default-src 'self'",
-    "script-src 'self'" + (" https://gc.zgo.at" if GC else ""),
+    "script-src 'self'" + (" https://gc.zgo.at" if GC else "") + RZP,
     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
     "font-src 'self' https://fonts.gstatic.com",
     "img-src 'self' data:" + (f" https://{GC}.goatcounter.com" if GC else ""),
     "connect-src 'self'" + (f" {SB_ORIGIN}" if SB_ORIGIN else "") + (f" https://{GC}.goatcounter.com" if GC else ""),
+    *(["frame-src https://api.razorpay.com https://checkout.razorpay.com"] if PAY else []),
     "base-uri 'self'", "form-action 'self'", "object-src 'none'", "upgrade-insecure-requests"])
 import shutil as _sh
 _sh.rmtree("assets/js/page", ignore_errors=True); os.makedirs("assets/js/page")
@@ -129,6 +134,7 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 <script src="assets/js/config.js"></script>
 <script src="assets/js/layout.js"></script>
 <script src="assets/js/auth.js"></script>
+<script src="assets/js/account.js"></script>
 <script src="assets/js/stats.js"></script>
 {extra}
 </body>
@@ -854,6 +860,7 @@ _M,_S,_PR=_pack_cards()
 page("mock-tests.html","Mock Tests","""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Mock Tests</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CAT mock tests</h1><p class="muted">Full CAT-pattern mocks: VARC 24, DILR 22 and QA 22 questions, 40 minutes per section, +3 / −1 for a wrong MCQ and 0 for a wrong TITA. Take the sections in order (VARC, DILR, QA) for the real exam experience.</p></div></div>
 <section style="padding-top:16px"><div class="container">
+<div class="notice" style="margin-bottom:16px">📅 <b>AptiSetu Open Mock</b>: one free mock for everyone on the first Sunday of every month, with a leaderboard. <a href="open-mock.html">Details and next date →</a></div>
 <h2>Full mocks</h2><div class="grid g3">%M%</div>
 <h2 style="margin-top:24px">Sectional tests</h2><div class="grid g3">%S%</div>
 <h2 style="margin-top:24px">Practice packs</h2><div class="grid g3">%P%</div>

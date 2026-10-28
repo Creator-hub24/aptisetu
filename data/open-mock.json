@@ -1,0 +1,18 @@
+{
+ "mocks": [
+  {
+   "id": "2026-11",
+   "title": "AptiSetu Open Mock · November 2026",
+   "pack": "mock-5",
+   "date": "2026-11-01",
+   "starts_at": "2026-11-01T10:00:00+05:30",
+   "ends_at": "2026-11-01T22:00:00+05:30",
+   "questions": {
+    "varc": 24,
+    "dilr": 22,
+    "qa": 22
+   },
+   "reused_public_mock": true
+  }
+ ]
+}

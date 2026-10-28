@@ -74,3 +74,10 @@ Tests (dev-only; Playwright and axe-core are not shipped):
 - **Daily 10:** `cat-practice.html?daily=1`, `cuet-practice.html?daily=1` (exam.js) and `practice.html?daily=1` (quiz.js): 10 standalone open-bank questions, same for everyone on a date (date-seeded shuffle). Linked from the home page.
 - **Post-test report** (exam.js): weak topics with practice links, time per question, and a progress graph from `localStorage["aptisetu.history"]` after 2+ attempts of the same test type.
 - **Tests:** `tests/features.js` (same setup as `tests/flow.js`).
+
+## Backend (Supabase + Razorpay) — Month 3
+- Migrations: `supabase/migrations/` (accounts, history, passes, Open Mock with server-side scoring, `pass_gating` flag default **false**).
+- Edge Functions: `create-order`, `verify-payment` (HMAC `order_id|payment_id`), `razorpay-webhook` (raw-body signature). Live keys refused unless `ALLOW_LIVE_PAYMENTS=true`; price from `PASS_PRICE_PAISE`.
+- Deploy: export `SUPABASE_ACCESS_TOKEN SUPABASE_PROJECT_REF SUPABASE_DB_PASSWORD RAZORPAY_KEY_ID RAZORPAY_KEY_SECRET RAZORPAY_WEBHOOK_SECRET PASS_PRICE_PAISE`, then `bash tools/deploy_supabase.sh` and `python3 tools/set_supabase_config.py`. Secrets are never printed or committed.
+- Payment UI stays hidden until `PAYMENTS_ENABLED:"on"` in config.js **and** `pass_gating=true` in `app_settings`.
+- Tests: `node tests/supabase/sql.test.mjs` (needs `@electric-sql/pglite`), `deno test supabase/functions/_shared/razorpay_test.ts`, `node tests/month3.js`.

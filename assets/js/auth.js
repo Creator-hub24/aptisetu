@@ -41,6 +41,15 @@
   const Auth = window.Auth = {
     configured: mock || real, mock, ready,
     user: () => user,
+    client: () => client,
+    async session() { await ready; if (!client) return null; const { data } = await client.auth.getSession(); return data.session; },
+    async loginGoogle(next) {
+      if (mock) throw new Error("Google login is not available in test mode.");
+      await ready; if (!client) throw new Error("Login not configured yet.");
+      const base = location.href.replace(/[^/]*([?#].*)?$/, "");
+      const { error } = await client.auth.signInWithOAuth({ provider: "google", options: { redirectTo: base + (next || "login.html") } });
+      if (error) throw error;
+    },
     onChange(f) { listeners.push(f); },
     async login(email, next) {
       email = String(email || "").trim();
@@ -78,7 +87,7 @@
     const slot = document.getElementById("auth-slot"); if (!slot) return;
     const here = location.pathname.split("/").pop() + location.search;
     if (user) {
-      slot.innerHTML = `<span class="who" title="${esc(user.email || "")}">${esc(user.email || "Logged in")}</span><button type="button" class="link" id="auth-logout">Logout</button>`;
+      slot.innerHTML = `<a class="who" href="account.html" title="My account: ${esc(user.email || "")}">${esc(user.email || "My account")}</a><button type="button" class="link" id="auth-logout">Logout</button>`;
       document.getElementById("auth-logout").addEventListener("click", async () => { await Auth.logout(); location.reload(); });
     } else if (!/^login\.html/.test(here)) {
       slot.innerHTML = `<a href="login.html?next=${encodeURIComponent(here || "index.html")}">Login</a>`;

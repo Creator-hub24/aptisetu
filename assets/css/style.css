@@ -590,3 +590,9 @@ a.card-link{display:block;color:inherit;text-decoration:none}a.card-link:hover h
  .fs-n,.muted{color:#333!important}.sheet h1{font-size:16pt}
  @page{size:A4;margin:12mm}
 }
+
+/* solution language toggle */
+.lang-toggle{display:flex;align-items:center;gap:6px;margin:0 0 12px;flex-wrap:wrap}
+.lang-toggle button{border:1px solid var(--line,#ccd);background:transparent;color:inherit;border-radius:999px;padding:4px 14px;font:inherit;font-size:.9rem;cursor:pointer;min-height:36px}
+.lang-toggle button[aria-pressed="true"]{background:var(--ink,#1d2433);color:var(--bg,#fff);border-color:var(--ink,#1d2433)}
+.sol-hi{line-height:1.75}

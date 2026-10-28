@@ -15,6 +15,14 @@ QTRACKS = [  # track, label, sections, practice URL builder
 ]
 def _slug(s): return _re.sub(r"[^a-z0-9]+", "-", _esc.unescape(s).lower()).strip("-")[:48]
 def _plain(h): return _re.sub(r"\s+", " ", _esc.unescape(_re.sub(r"<[^>]+>", " ", h))).strip()
+_HI = _json.load(open("data/hi/general-solutions.json", encoding="utf8"))
+def _solhtml(qq, sol, trk):
+    """English solution, plus the Hindi translation and an EN/हिंदी toggle for Bank/SSC questions (assets/js/sol-lang.js)."""
+    h = _HI.get(qq["id"]) if trk == "bank-ssc" else None
+    if not h: return f'<div class="sol"><b>Solution:</b> {sol}</div>'
+    return ('<div class="lang-toggle" role="group" aria-label="Solution language"><span class="muted">Solution in:</span><button type="button" data-lang="en">EN</button><button type="button" data-lang="hi" lang="hi">हिंदी</button></div>'
+            f'<div class="sol"><b class="sol-h" data-en="Solution:" data-hi="हल:">Solution:</b> <span class="sol-en">{sol}</span><span class="sol-hi" lang="hi" hidden>{h}</span></div>'
+            '<script src="assets/js/sol-lang.js" defer></script>')
 def _optfix(sol):  # solutions say "Option 1".."Option 4" (bank order); pages show bank order as A-D
     return _re.sub(r"\b([Oo]ptions?) ([1-4](?:(?:, | and | or )[1-4])*)\b", lambda m: m.group(1) + " " + _re.sub(r"[1-4]", lambda d: QL[int(d.group(0)) - 1], m.group(2)), sol)
 def _report(qid, ctx, url):
@@ -72,7 +80,7 @@ for trk, tlabel, ddir, secs, purl in QTRACKS:
 <section style="padding-top:12px"><div class="container" style="max-width:820px"><article class="card qpage" data-qid="{A(qq['id'])}">
 {ctx_html}<div class="q-text">{qq['question']}</div>{opts}
 <details class="qp-ans"><summary class="btn btn-ghost btn-sm">Show answer &amp; solution</summary>
-<p style="margin:.8em 0 .4em">Correct answer: <b>{ans}</b></p><div class="sol"><b>Solution:</b> {sol}</div></details>
+<p style="margin:.8em 0 .4em">Correct answer: <b>{ans}</b></p>{_solhtml(qq, sol, trk)}</details>
 <div style="margin-top:6px">{_report(qq['id'], ctx, url)}</div></article>
 <div class="cta-row" style="margin:18px 0"><a class="btn" href="{purl(s, topic)}">Start practice: {topic} →</a><a class="btn btn-ghost" href="{hub}">All {topic} questions</a></div>
 {f'<h2 style="font-size:1.2rem">Similar questions</h2><ul class="qp-sim">{simh}</ul>' if simh else ''}

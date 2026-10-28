@@ -1,0 +1,11 @@
+# Minimal Supabase CLI config for AptiSetu (used by tools/deploy_supabase.sh).
+project_id = "aptisetu"
+
+[functions.create-order]
+verify_jwt = true
+
+[functions.verify-payment]
+verify_jwt = true
+
+[functions.razorpay-webhook]
+verify_jwt = false   # Razorpay calls this; it is protected by the X-Razorpay-Signature HMAC check instead

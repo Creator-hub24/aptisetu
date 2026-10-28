@@ -160,10 +160,28 @@
         ${showData ? `<div class="q-data">${q.data}</div>` : (q.data ? `<div class="muted" style="font-size:.85rem;margin:.3em 0">Same data as the previous question.</div>` : "")}
         <div class="q-text">${q.question}</div>
         ${q.options.map((o, j) => `<div class="opt ${j === q.answer ? "correct" : ""} ${ans[i] === j && j !== q.answer ? "wrong" : ""}"><b>${L[j]}</b><span>${o}</span></div>`).join("")}
-        <div class="sol"><b>Solution:</b> ${q.solution}</div>${report(q)}
+        <div class="sol"><b class="sol-h" data-en="Solution:" data-hi="हल:">${lang === "hi" && HI[q.id] ? "हल:" : "Solution:"}</b> <span class="sol-en"${lang === "hi" && HI[q.id] ? " hidden" : ""}>${q.solution}</span>${HI[q.id] ? `<span class="sol-hi" lang="hi"${lang === "hi" ? "" : " hidden"}>${HI[q.id]}</span>` : ""}</div>${report(q)}
       </div>`; }).join("");
+    langBar();
     showProgress();
     scrollTo(0, 0);
+  }
+
+  // EN / हिंदी toggle for solutions. Hindi text: data/hi/general-solutions.json (checked by tools/hindi_check.py:
+  // same numbers as the English). English solutions and answers are never changed; the choice is kept in this browser.
+  let HI = {}, lang = (() => { try { return localStorage.getItem("aptisetu.sol-lang") || "en"; } catch (e) { return "en"; } })();
+  fetch("data/hi/general-solutions.json").then(r => r.ok ? r.json() : {}).then(d => { HI = d || {}; }).catch(() => {});
+  function setLang(l) {
+    lang = l; try { localStorage.setItem("aptisetu.sol-lang", l); } catch (e) {}
+    document.querySelectorAll("#review .sol").forEach(s => { const h = s.querySelector(".sol-hi"), hi = l === "hi" && h;
+      s.querySelector(".sol-en").hidden = !!hi; if (h) h.hidden = !hi; const b = s.querySelector(".sol-h"); b.textContent = hi ? b.dataset.hi : b.dataset.en; });
+    document.querySelectorAll(".lang-toggle button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === l)));
+  }
+  function langBar() {
+    if (!Object.keys(HI).length || document.querySelector(".lang-toggle")) { if (document.querySelector(".lang-toggle")) setLang(lang); return; }
+    $("#review").insertAdjacentHTML("beforebegin", `<div class="lang-toggle" role="group" aria-label="Solution language"><span class="muted">Solutions in:</span><button type="button" data-lang="en">EN</button><button type="button" data-lang="hi" lang="hi">हिंदी</button></div>`);
+    document.querySelectorAll(".lang-toggle button").forEach(b => b.onclick = () => setLang(b.dataset.lang));
+    setLang(lang);
   }
 
   // post-test report: topic accuracy, weak topics, time per question, progress graph (history kept in this browser only)
@@ -179,6 +197,7 @@
     let all = {}; try { all = JSON.parse(localStorage.getItem("aptisetu.history")) || {}; } catch (e) {}
     const key = "general-" + (/Daily 10/.test(cfg.name) ? "daily" : cfg.ev), hist = (all[key] = all[key] || []);
     hist.push({ t: Date.now(), score, max, acc: pct }); if (hist.length > 30) hist.splice(0, hist.length - 30); try { localStorage.setItem("aptisetu.history", JSON.stringify(all)); } catch (e) {}
+    if (window.Account) { Account.saveAttempt({ key, title: cfg.name, score, max, acc: pct, questions: qs.length, time_s: tsp.reduce((a, b) => a + (b || 0), 0) }); setTimeout(() => Account.gate(document.querySelector(".report-extra"), "The detailed report"), 0); }
     if (hist.length >= 2) {
       const W = 320, H = 120, pts = hist.map((e, i) => [20 + i * (W - 40) / (hist.length - 1), H - 15 - (e.max ? Math.max(0, e.score) / e.max : 0) * (H - 30)]);
       h += `<h3>Your progress</h3><svg class="prog-graph" viewBox="0 0 ${W} ${H}" width="100%" style="max-width:${W * 1.5}px" role="img" aria-label="Score percentage over your last ${hist.length} attempts"><line x1="20" y1="${H - 15}" x2="${W - 20}" y2="${H - 15}" stroke="currentColor" opacity=".25"/><polyline fill="none" stroke="#4f46e5" stroke-width="2.5" points="${pts.map(p => p.map(v => v.toFixed(1)).join(",")).join(" ")}"/>${pts.map((p, i) => `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3.5" fill="#4f46e5"><title>Attempt ${i + 1}: ${hist[i].score}/${hist[i].max}</title></circle>`).join("")}<text x="2" y="19" font-size="9" fill="currentColor">100%</text><text x="8" y="${H - 11}" font-size="9" fill="currentColor">0</text></svg><p class="muted" style="font-size:.85rem">Score as % of maximum over your last ${hist.length} quizzes of this type in this browser (latest on the right).</p>`;

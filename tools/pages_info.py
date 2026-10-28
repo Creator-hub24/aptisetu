@@ -79,6 +79,12 @@ page("privacy.html","Privacy Policy",info_head("Privacy","Privacy policy",f"Last
 <li><b>Fonts:</b> fonts are loaded from Google Fonts, so your browser connects to Google's servers to download them. See Google's privacy policy for details.</li>
 <li><b>Email:</b> if you email us (including through a "Report an error" link, which opens your own email app with the question ID filled in), we receive your email address and message and use them only to reply.</li></ul>
 {ANALYTICS}
+<h3>Accounts, saved history, Open Mock and AptiSetu Pass (draft: applies once these launch)</h3>
+<div class="notice">Draft. These features are built but not switched on yet. This section will be finalised before they launch.</div>
+<ul><li><b>Saved history:</b> when you are logged in, the score, maximum, accuracy, number of questions, time taken and test name of each finished test are stored with your account (in Supabase) so you can see them on any device.</li>
+<li><b>Open Mock:</b> when you submit an Open Mock section while logged in, your answers for that section are sent to our server to be scored. We store the score, number correct and wrong, and the time. The public leaderboard shows only the display name you choose and your total, never your email.</li>
+<li><b>AptiSetu Pass payments:</b> processed by <b>Razorpay</b>. We receive the order and payment IDs, amount and status, and never your card, UPI or bank details. See Razorpay's privacy policy.</li></ul>
+<p>To delete your account and all of this data, email <a href="mailto:{EMAIL}">{EMAIL}</a> from the address you log in with. Payment records may have to be kept for as long as tax law requires.</p>
 <h3>Children</h3><p>The site is meant for students, including school students preparing for CUET (UG). Because we don't collect personal information, no information about children is collected.</p>
 <h3>Changes and contact</h3><p>We'll update this page if anything changes. Questions? <a href="contact.html">Contact us</a>.</p>
 """), desc=f"Privacy policy for {BRAND}: login is optional and only stores your email and CAT practice-set results (via Supabase); no cookies. Hosted on GitHub Pages; fonts from Google Fonts.")
@@ -90,6 +96,8 @@ page("terms.html","Terms & Disclaimer",info_head("Terms","Terms of use &amp; dis
 <h3>No guarantee of results</h3><p>Practising here does not guarantee any score, rank, admission or job. The difficulty and format of our questions may differ from the real exams.</p>
 <h3>Accuracy</h3><p>We check answers carefully, including automatic checks when the site is built, but mistakes can still happen. The material is provided "as is". Exam patterns, syllabi and marking schemes change, so always confirm details on the official exam website.</p>
 <h3>Not affiliated</h3><p><span data-brand>{B}</span> is independent. It is not affiliated with, endorsed by or connected to the National Testing Agency (NTA), the IIMs, IBPS, SBI, SSC, or any other exam body, university or company. All exam and company names belong to their owners and are used only to describe what the practice is for.</p>
+<h3>AptiSetu Pass (draft: not on sale yet)</h3><p>When AptiSetu Pass goes on sale, it will be a one-time payment for the period shown at checkout, for one person's use. It adds a detailed report, Open Mock rank, saved history and full-length mocks; free practice stays free. Payments are processed by Razorpay. Refunds follow our <a href="refund.html">refund policy (draft)</a>. Accounts that share or resell access may be closed.</p>
+<h3>Open Mock and leaderboard</h3><p>Only the first attempt of each section during the Open Mock window counts. Choose a display name that isn't offensive or someone else's; we may remove names or results that break these terms or look like cheating.</p>
 <h3>External links</h3><p>Some pages link to official websites. We aren't responsible for their content.</p>
 <h3>Changes</h3><p>We may update the site and these terms at any time. Questions? <a href="contact.html">Contact us</a>.</p>
 """), desc=f"Terms of use and disclaimer for {BRAND}: educational use, original questions, no guarantee of results, not affiliated with NTA, the IIMs or any exam body.")
@@ -145,6 +153,7 @@ paths_page("after-graduation.html", "After Graduation: Courses, Exams &amp; Jobs
  "Every path after graduation in one table: MBA, M.Tech, M.Sc, UPSC, SSC, bank exams, law, medicine, teaching, defence and jobs. Filter by your degree and compare entry exams and careers.",
  "aftergrad-data.js")
 
+exec(open("tools/m3pages.py").read())   # Month 3 pages (before the sitemap)
 # ---------- cleanup, sitemap, robots ----------
 for old in ("signup.html",):
     if os.path.exists(old): os.remove(old)

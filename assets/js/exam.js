@@ -23,6 +23,7 @@
   // fixed pack (cat-practice.html?pack=mock-1&section=qa&mode=sectional): mocks, sectionals and practice packs from tools/cat/packs
   // Daily 10 (cat-practice.html?daily=1): the same 10 questions for everyone on a given date, picked with a date-seeded
   // shuffle from the open bank's standalone questions (no mocks, no packs, no passage/data-set questions), across all sections.
+  const OPEN = (new URLSearchParams(location.search).get("open") || "").replace(/[^0-9-]/g, "").slice(0, 10);
   const DAILY = !SET && new URLSearchParams(location.search).get("daily") === "1";
   const today = () => { const d = new Date(); return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); };
   const PACK = (new URLSearchParams(location.search).get("pack") || "").replace(/[^a-z0-9-]/g, "");
@@ -285,7 +286,23 @@
     }).join("");
     $$("[data-progress]").forEach(x => P && P.panel(x, x.dataset.progress));
     if (SET) setSaved(score, maxScore);
+    if (OPEN) openMockSubmit(score);
     scrollTo({ top: 0, behavior: "instant" });
+  }
+  // ---------- AptiSetu Open Mock: send responses (not the score) to the server, which scores them from its hidden key ----------
+  // full mocks are a Pass feature once payments are on (Open Mock day stays free for everyone)
+  if (/^mock-/.test(PACK) && !OPEN && window.Account && Account.payments) Account.gate(document.getElementById("c-setup"), "Full-length mocks");
+  async function openMockSubmit(localScore) {
+    const box = document.createElement("div"); box.className = "notice open-mock-result"; box.setAttribute("role", "status");
+    $("#c-res-head").appendChild(box);
+    const A = window.Auth, ACC = window.Account;
+    if (!ACC || !A || !A.configured) { box.innerHTML = `Open Mock ranks need login, which isn't switched on yet. Your score is shown above and saved in this browser. <a href="open-mock.html">Open Mock page →</a>`; return; }
+    if (!(await A.ready)) { box.innerHTML = `<a href="login.html?next=open-mock.html">Log in</a> before you start to be ranked. This attempt is practice only.`; return; }
+    const responses = {}; qs.forEach((q, i) => { if (answered(i)) responses[q.id] = resp[i]; });
+    if (A.mock) responses.__score = localScore;
+    box.textContent = "Submitting to the Open Mock leaderboard…";
+    try { const r = await ACC.submitOpenMock(OPEN, sec, responses); box.innerHTML = r && r.first_attempt ? `✓ Submitted to the Open Mock: ${esc(bank.sections[sec].name)} score ${r.score}. <a href="open-mock.html">See the leaderboard →</a>` : `Only your first attempt of each section counts for rank; this one is practice. <a href="open-mock.html">Leaderboard →</a>`; }
+    catch (e) { box.textContent = `Not submitted: ${e.message}`; }
   }
   // ---------- post-test report: weak topics, time per question, progress over attempts ----------
   const HKEY = "aptisetu.history";
@@ -307,6 +324,7 @@
       <p class="muted" style="font-size:.85rem">Bar height = seconds spent (longest ${Math.round(mx)} s) · green correct · red wrong · grey skipped.</p>`;
     const key = ENG + "-" + (DAILY ? "daily" : SET ? "set-" + SET.sec + "-" + SET.n : (PACK || sec) + "-" + mode);
     const hist = history(key, { t: Date.now(), score, max: maxScore, acc });
+    if (window.Account) { Account.saveAttempt({ key, title, score, max: maxScore, acc, questions: rows.length, time_s: rows.reduce((a, r) => a + r.t, 0) }); setTimeout(() => Account.gate(document.querySelector(".report-extra"), "The detailed report"), 0); }
     if (hist.length >= 2) {
       const W = 320, H = 120, pts = hist.map((e, i) => [20 + i * (W - 40) / (hist.length - 1), H - 15 - (e.max ? Math.max(0, e.score) / e.max : 0) * (H - 30)]);
       h += `<h3>Your progress</h3><svg class="prog-graph" viewBox="0 0 ${W} ${H}" width="100%" style="max-width:${W * 1.5}px" role="img" aria-label="Score percentage over your last ${hist.length} attempts">

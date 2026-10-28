@@ -13,5 +13,12 @@ window.SITE = {
   // While these are placeholders, login shows "Login not configured yet". The anon key is public by design; RLS protects data.
   SUPABASE_URL: "YOUR_SUPABASE_URL",                            // e.g. https://abcdefgh.supabase.co
   SUPABASE_ANON_KEY: "YOUR_SUPABASE_ANON_KEY",
+  // Google login button on login.html: "on" only after enabling Google in Supabase > Authentication > Providers.
+  GOOGLE_LOGIN: "off",
+  // AptiSetu Pass (Razorpay). Keep "off" until the price is confirmed. While off, no payment UI or Razorpay script
+  // is loaded and every feature stays free. The real price is charged by the server (PASS_PRICE_PAISE secret);
+  // PASS_PRICE here is only the label shown on the button and must match it.
+  PAYMENTS_ENABLED: "off",
+  PASS_PRICE: "",
   YEAR: new Date().getFullYear()
 };

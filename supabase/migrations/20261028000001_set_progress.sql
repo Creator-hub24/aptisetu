@@ -4,7 +4,7 @@
 create table if not exists public.set_progress (
   user_id    uuid        not null references auth.users (id) on delete cascade,
   section    text        not null check (section in ('qa', 'varc', 'dilr')),
-  set_no     smallint    not null check (set_no between 1 and 30)   -- Quant has 18 sets today; room to grow,
+  set_no     smallint    not null check (set_no between 1 and 30),  -- Quant has 18 sets today; room to grow
   score      integer     not null check (score between -30 and 30),   -- 10 questions, +3 / -1
   total      integer     not null check (total between 1 and 30),
   updated_at timestamptz not null default now(),
