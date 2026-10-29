@@ -6,7 +6,7 @@
   async function paint() {
     const A = window.Auth, box = $("#login-box"), msg = $("#login-msg");
     if (!A.configured) {
-      box.innerHTML = `<div class="notice"><b>Login not configured yet.</b> You can still practise everything that doesn't need an account, including Easy Quant set 1. <a href="${esc(next)}">Continue →</a></div>`;
+      box.innerHTML = `<div class="notice"><b>Login isn't switched on yet.</b> You can practise everything without an account, and your progress is saved in this browser. To move it to another device, use the backup code below. <a href="${esc(next)}">Continue →</a></div>`;
       return;
     }
     const u = await A.ready;

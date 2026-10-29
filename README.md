@@ -87,3 +87,4 @@ Tests (dev-only; Playwright and axe-core are not shipped):
 - **Question bank filters:** exam chips and topic search on `q/index.html`, difficulty chips on topic hubs (`assets/js/qfilter.js`).
 - **Career tables:** SSC CHSL, SSC CGL, IBPS PO and IBPS Clerk rows link to their exam pages; placement rows link to `placements.html`.
 - **Tests:** `tests/phase1.js` (same setup as `tests/flow.js`).
+- **Phase 1b:** home goal selector (`assets/js/home-goal.js`, choice kept in `aptisetu.goal`); contact report builder that opens a pre-filled email or copies the text (`assets/js/contact.js`, `contact.html?q=<id>` pre-fills the ID); backup code on `login.html#backup` to move local progress between devices without an account (`assets/js/backup.js`, only progress keys, never login tokens); WebSite JSON-LD on the home page. Tests: `tests/phase1b.js`.

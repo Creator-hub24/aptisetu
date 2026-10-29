@@ -15,9 +15,20 @@ page("contact.html","Contact",info_head("Contact","Contact us","Questions, feedb
 <section style="padding-top:16px"><div class="container" style="max-width:820px"><div class="card">
 <h3>Reach us</h3>{reach}<p>📍 India (online)</p>
 {f'<div class="cta-row" style="margin-bottom:0">{btns}</div>' if btns else ''}
-<p class="muted" style="font-size:.9rem;margin-top:1em">If you are reporting an error in a question, please mention the page, the section and the question text so we can find it quickly. There is no contact form on this site, so nothing you type here is stored by us. (Login is used only to save practice-set progress.)</p>
+</div>
+<div class="card report-card" id="report" style="margin-top:16px"{'' if EMAIL else ' hidden'}>
+<h3>Report a mistake or send feedback</h3>
+<p class="muted" style="font-size:.92rem">Fill this in and press <b>Open email</b>: your email app opens with everything filled in. Nothing is sent or stored by this page.</p>
+<form id="rp-form" class="form rp-form" novalidate>
+<label>What is it about?<select id="rp-type"><option>Wrong answer or solution</option><option>Typo or unclear question</option><option>Topic request</option><option>Site problem</option><option>Other feedback</option></select></label>
+<label>Question ID or page (optional)<input id="rp-qid" type="text" maxlength="120" placeholder="For example Q23, CQ104 or the page address"></label>
+<label>Details<textarea id="rp-body" rows="5" required maxlength="3000" placeholder="What looks wrong, and what you expected"></textarea></label>
+<div class="cta-row" style="margin:4px 0 0"><button type="submit" class="btn">Open email</button><button type="button" class="btn btn-ghost" id="rp-copy">Copy text</button></div>
+<p id="rp-msg" class="muted" aria-live="polite" style="font-size:.9rem"></p>
+</form>
+<p class="muted" style="font-size:.88rem">No email app? Copy the text and send it to <b>{_esc.escape(EMAIL)}</b>. Every fix is listed on the <a href="corrections.html">corrections page</a>.</p>
 </div></div></section>
-""", desc=f"Contact {BRAND}: send feedback, report a wrong answer or suggest a topic.")
+""", desc=f"Contact {BRAND}: send feedback, report a wrong answer or suggest a topic.", extra='<script src="assets/js/contact.js"></script>')
 
 # ---------- ABOUT ----------
 page("about.html","About",info_head("About",f"About {B}","A free practice site for Indian students preparing for aptitude tests.")+prose(f"""
@@ -71,7 +82,7 @@ page("privacy.html","Privacy Policy",info_head("Privacy","Privacy policy",f"Last
 <h3>Login (optional)</h3><p>Login is only needed to save progress and unlock levels in the CAT practice sets. When you log in, we use <b>Supabase</b> (our login and database provider) to send you a one-time login link and to store:</p><ul><li>your <b>email address</b> (to log you in), and</li><li>your <b>set results</b>: the section, set number, score, total and the time you finished.</li></ul><p>We use this only to show your progress and unlock levels. We don't sell it or use it for marketing. To have your account and results deleted, email <a href="mailto:{EMAIL}">{EMAIL}</a> from the address you log in with. Supabase keeps a login session in your browser's local storage while you are logged in; logging out removes it.</p>
 <h3>Your quiz answers and progress</h3><p>Quizzes run in your browser. Your answers are never sent to us. The only thing sent is the final score of a CAT practice set, and only when you are logged in (see above).</p>
 <p>To let you resume an unfinished quiz and see your daily streak and topic-wise accuracy, the site saves this information in your browser's <b>local storage</b> on your device. It contains only quiz data (questions in progress, your answers, dates you practised and accuracy counts), never your name or contact details, and it is not sent to us or anyone else. You can delete it at any time with the <b>Reset my progress</b> button on the <a href="practice.html">Practice page</a>, or by clearing this site's data (cookies and site data) in your browser settings.</p>
-<p>The <a href="quant-lab.html">Quant Lab</a> practice page likewise saves your answered and correct counts, best score and topic-wise accuracy in local storage on your device. This is never sent to us or anyone else. Its <b>Reset stats</b> button, or clearing site data, deletes it.</p>
+<p>The <b>backup code</b> on the <a href="login.html#backup">Login page</a> is made in your browser from this local data so you can move it to another device. It is not sent to us. The <a href="quant-lab.html">Quant Lab</a> practice page likewise saves your answered and correct counts, best score and topic-wise accuracy in local storage on your device. This is never sent to us or anyone else. Its <b>Reset stats</b> button, or clearing site data, deletes it.</p>
 <h3>Cookies</h3><p>The site does not set cookies. Local storage (above) is kept only on your device.</p>
 <h3>Third-party services</h3><ul>
 <li><b>Login and saved results:</b> handled by Supabase (supabase.com) when you log in. See Supabase's privacy policy for details.</li>

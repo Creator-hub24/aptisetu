@@ -631,3 +631,17 @@ a.card-link{display:block;color:inherit;text-decoration:none}a.card-link:hover h
 .qf-chip[aria-pressed="true"]{border-color:var(--brand);color:var(--brand);box-shadow:inset 0 0 0 1px var(--brand)}
 .qf-count{color:var(--muted);font-size:.9rem}
 .qf-hide{display:none!important}
+/* ---- Home goal selector ---- */
+.goal{margin:18px 0 6px}
+.goal-q{font-weight:700;margin:0 0 8px}
+.goal-chips{display:flex;flex-wrap:wrap;gap:8px}
+.goal-chip{min-height:44px;padding:0 1em;border:1px solid var(--line);border-radius:99px;background:var(--card);color:var(--ink);font:inherit;font-weight:600;cursor:pointer}
+.goal-chip[aria-pressed="true"]{border-color:var(--brand);color:var(--brand);box-shadow:inset 0 0 0 1px var(--brand)}
+.goal-desc{color:var(--muted);margin:12px 0 4px;max-width:560px}
+.goal-pane[hidden]{display:none}
+/* ---- Contact report builder and backup ---- */
+.rp-form{display:grid;gap:12px}.rp-form label{display:grid;gap:6px;font-weight:600}
+.rp-form select,.rp-form input,.rp-form textarea,.backup textarea{width:100%;min-height:44px;padding:.6em .8em;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit}
+.backup textarea{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85rem;word-break:break-all}
+.bk-label{display:block;font-weight:600;margin:6px 0}
+.backup [hidden]{display:none!important}

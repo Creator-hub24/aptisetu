@@ -158,6 +158,11 @@ def fix_headings(html):
         prev[0]=lvl; return m.group(0)
     return _re.sub(r"<h([1-6])(\s[^>]*)?>(.*?)</h\1>", lambda m: rep(type("M",(),{"group":lambda self,i: (m.group(i) or "") if i==2 else m.group(i)})()), html, flags=_re.S)
 
+def _ld_site():
+    import json as _j
+    d={"@context":"https://schema.org","@type":"WebSite","name":BRAND,"url":SITE_URL,"inLanguage":"en-IN",
+       "description":"Free aptitude practice for CAT, CUET (UG), Bank, SSC and campus placements, with worked solutions."}
+    return '<script type="application/ld+json">'+_j.dumps(d,ensure_ascii=False).replace("</","<\\/")+'</script>\n'
 # ---------- LANDING ----------
 exec(open("tools/facts.py").read())
 page("index.html","", f"""
@@ -166,7 +171,7 @@ page("index.html","", f"""
   <span class="pill">Free practice · CAT · CUET · Bank · SSC · Placements</span>
   <h1>Master <span class="hl">Quant, Reasoning, DILR &amp; VARC</span> the smart way</h1>
   <p class="lead">Timed practice with worked solutions, a visual Quant Lab for concepts, and clear guidance on your options after 12th and graduation. Built for CAT, CUET, bank, SSC and placement aspirants.</p>
-  <div class="cta-row hero-cta"><a href="practice.html" class="btn">Start a free quiz →</a><a href="#pillars" class="btn btn-ghost">Choose your path</a></div>
+  <div class="goal" id="goal"><p class="goal-q" id="goal-q">What are you preparing for?</p><div class="goal-chips" role="group" aria-labelledby="goal-q"><button type="button" class="goal-chip" data-goal="cat" aria-pressed="true">🎯 CAT</button><button type="button" class="goal-chip" data-goal="cuet" aria-pressed="false">🎓 CUET (UG)</button><button type="button" class="goal-chip" data-goal="bank" aria-pressed="false">🏦 Bank / SSC</button><button type="button" class="goal-chip" data-goal="placements" aria-pressed="false">💼 Placements</button></div><div class="goal-pane" data-goal-pane="cat"><p class="goal-desc">VARC, DILR and QA sets and 40-minute sectionals with CAT marking (+3 / −1, TITA).</p><div class="cta-row hero-cta"><a href="cat.html" class="btn">Open the CAT track →</a><a href="cat-practice.html?daily=1" class="btn btn-ghost">Today's 10</a></div></div><div class="goal-pane" data-goal-pane="cuet" hidden><p class="goal-desc">General Aptitude, English and Maths with +5 / −1 marking and 60-minute sectionals.</p><div class="cta-row hero-cta"><a href="cuet.html" class="btn">Open the CUET track →</a><a href="cuet-practice.html?daily=1" class="btn btn-ghost">Today's 10</a></div></div><div class="goal-pane" data-goal-pane="bank" hidden><p class="goal-desc">Quant, Reasoning and DI for IBPS, SBI and SSC exams, with a Hindi solution for every question.</p><div class="cta-row hero-cta"><a href="bank-ssc.html" class="btn">Open Bank &amp; SSC →</a><a href="practice.html?daily=1" class="btn btn-ghost">Today's 10</a></div></div><div class="goal-pane" data-goal-pane="placements" hidden><p class="goal-desc">Aptitude for campus hiring tests: Quant, Reasoning and data interpretation.</p><div class="cta-row hero-cta"><a href="placements.html" class="btn">Open placement prep →</a><a href="practice.html?exam=general" class="btn btn-ghost">Start a timed quiz</a></div></div></div>
   <p class="trust">Free practice · Timed quizzes · Worked solutions</p>
  </div>
  <div class="hero-card" id="sample" role="group" aria-labelledby="sample-q">
@@ -278,7 +283,7 @@ bs.forEach(function(b){{b.onclick=function(){{var ok=b.dataset.ok==='1';bs.forEa
 fb.innerHTML=(ok?'<b>✅ Correct!</b> ':'<b>❌ Not quite.</b> The answer is B. ')+'Together they finish 1/12 + 1/18 = 5/36 of the job a day, so they need 36/5 = 7.2 days.'+
 '<div class="cta-row" style="margin:.8em 0 0"><a class="btn btn-sm" href="practice.html?quick=10">Try a 10-question quick quiz →</a><button type="button" class="btn btn-ghost btn-sm" id="sample-again">Try again</button></div>';
 fb.classList.remove('hidden');document.getElementById('sample-again').onclick=function(){{bs.forEach(function(x){{x.disabled=false;x.classList.remove('right','wrong')}});fb.classList.add('hidden')}};}}}});}})();</script>
-""", desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and placements: Quant, Reasoning, DILR and VARC timed quizzes with worked solutions and formula sheets.")
+""", desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and placements: Quant, Reasoning, DILR and VARC timed quizzes with worked solutions and formula sheets.", head_extra=_ld_site(), extra='<script src="assets/js/home-goal.js"></script>')
 
 # ---------- SECTION PAGES ----------
 def fs_section(formulas, color, heading="Formula &amp; rules sheet", unit="formulas and rules", prose=False):
@@ -637,7 +642,17 @@ page("login.html", "Login", f"""
  <p id="login-msg" class="muted" aria-live="polite" style="margin-top:12px"></p>
  <p class="muted" style="font-size:.85rem">We store your email address and your practice-set results to save your progress. See the <a href="privacy.html">privacy policy</a>.</p>
 </div></div></section>
-""", desc="Log in with an email link to save your CAT practice-set progress and unlock levels.", noindex=True, extra='<script src="assets/js/login.js"></script>')
+<section style="padding-top:0"><div class="container"><div class="card login-box backup" id="backup">
+ <h2 style="font-size:1.2rem;margin-top:0">Move your progress to another device</h2>
+ <p class="muted">No account needed. Copy a backup code here, then paste it on your other device. It carries your quiz history, streak, topic accuracy, Quant Lab stats and flashcard progress. The code is made in your browser and is not sent to us.</p>
+ <div class="cta-row" style="margin:10px 0"><button type="button" class="btn" id="bk-make">Make backup code</button></div>
+ <label for="bk-code" class="bk-label">Backup code</label>
+ <textarea id="bk-code" rows="4" spellcheck="false" placeholder="Your code appears here, or paste a code from your other device."></textarea>
+ <div class="cta-row" style="margin:10px 0 0"><button type="button" class="btn btn-ghost" id="bk-copy">Copy code</button><button type="button" class="btn btn-ghost" id="bk-check">Restore from pasted code</button></div>
+ <div id="bk-confirm" hidden><p id="bk-preview"></p><div class="cta-row"><button type="button" class="btn" id="bk-apply">Yes, replace progress on this device</button><button type="button" class="btn btn-ghost" id="bk-cancel">Cancel</button></div></div>
+ <p id="bk-msg" class="muted" aria-live="polite"></p>
+</div></div></section>
+""", desc="Log in with an email link to save your CAT practice-set progress and unlock levels.", noindex=True, extra='<script src="assets/js/login.js"></script>\n<script src="assets/js/backup.js"></script>')
 
 # ---------- CUET (UG) TRACK ----------
 from urllib.parse import quote as _q

@@ -25,7 +25,18 @@
 <section style="padding-top:16px"><div class="container" style="max-width:820px"><div class="card">
 <h2 class="h3">Reach us</h2><p>📧 <a href="mailto:edumaths360@gmail.com">edumaths360@gmail.com</a></p><p>📍 India (online)</p>
 <div class="cta-row" style="margin-bottom:0"><a class="btn" href="mailto:edumaths360@gmail.com?subject=AptiSetu%20enquiry">📧 Email us</a></div>
-<p class="muted" style="font-size:.9rem;margin-top:1em">If you are reporting an error in a question, please mention the page, the section and the question text so we can find it quickly. There is no contact form on this site, so nothing you type here is stored by us. (Login is used only to save practice-set progress.)</p>
+</div>
+<div class="card report-card" id="report" style="margin-top:16px">
+<h3>Report a mistake or send feedback</h3>
+<p class="muted" style="font-size:.92rem">Fill this in and press <b>Open email</b>: your email app opens with everything filled in. Nothing is sent or stored by this page.</p>
+<form id="rp-form" class="form rp-form" novalidate>
+<label>What is it about?<select id="rp-type"><option>Wrong answer or solution</option><option>Typo or unclear question</option><option>Topic request</option><option>Site problem</option><option>Other feedback</option></select></label>
+<label>Question ID or page (optional)<input id="rp-qid" type="text" maxlength="120" placeholder="For example Q23, CQ104 or the page address"></label>
+<label>Details<textarea id="rp-body" rows="5" required maxlength="3000" placeholder="What looks wrong, and what you expected"></textarea></label>
+<div class="cta-row" style="margin:4px 0 0"><button type="submit" class="btn">Open email</button><button type="button" class="btn btn-ghost" id="rp-copy">Copy text</button></div>
+<p id="rp-msg" class="muted" aria-live="polite" style="font-size:.9rem"></p>
+</form>
+<p class="muted" style="font-size:.88rem">No email app? Copy the text and send it to <b>edumaths360@gmail.com</b>. Every fix is listed on the <a href="corrections.html">corrections page</a>.</p>
 </div></div></section>
 
 </main>
@@ -44,6 +55,6 @@
 <script src="assets/js/auth.js"></script>
 <script src="assets/js/account.js"></script>
 <script src="assets/js/stats.js"></script>
-
+<script src="assets/js/contact.js"></script>
 </body>
 </html>
