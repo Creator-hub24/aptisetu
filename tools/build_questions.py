@@ -812,6 +812,10 @@ import b6_quant as _b6q
 _BA = _Adder(Q, OUT, SY, SYE, seed=606); _b6q.build(_BA)
 _hp = _o6.path.join(_o6.path.dirname(_o6.path.abspath(__file__)), "..", "data", "hi", "general-solutions.json")
 _hh = _j6.load(open(_hp, encoding="utf8")); _hh.update(_BA.hi); _j6.dump(_hh, open(_hp, "w", encoding="utf8"), ensure_ascii=False, indent=1)
+import b7_reasoning as _b7r
+_BR = _Adder(Q, OUT, SY, SYE, seed=707); _b7r.build(_BR)
+_hh = _j6.load(open(_hp, encoding="utf8")); _hh.update(_BR.hi); _j6.dump(_hh, open(_hp, "w", encoding="utf8"), ensure_ascii=False, indent=1)
+del _s6.modules["rcheck"]
 _s6.path.remove(_o6.path.join(_o6.path.dirname(_o6.path.abspath(__file__)), "bank")); del _s6.modules["common"]
 
 NAMES={"quant":"Quantitative Aptitude","reasoning":"Logical Reasoning","dilr":"DILR"}

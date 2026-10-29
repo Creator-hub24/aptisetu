@@ -8245,6 +8245,1354 @@
      "type": "mcq",
      "source": "general",
      "orig_id": "R144"
+    },
+    {
+     "id": "G-R146",
+     "exam": "cuet",
+     "topic": "Alphabet Test",
+     "difficulty": "Easy",
+     "question": "Which letter is the 9th to the left of the 6th letter from the right end of the English alphabet?",
+     "options": [
+      "K",
+      "M",
+      "L",
+      "N"
+     ],
+     "answer": 2,
+     "solution": "The 6th letter from the right is the (27 − 6) = 21st letter from the left, U. 9 places to its left is the 21 − 9 = 12th letter, L.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R146"
+    },
+    {
+     "id": "G-R147",
+     "exam": "cuet",
+     "topic": "Alphabet Test",
+     "difficulty": "Medium",
+     "question": "If the first half of the English alphabet (A to M) is written in reverse order and the second half is left unchanged, which letter will be the 4th to the right of the 9th letter from the left?",
+     "options": [
+      "A",
+      "D",
+      "Q",
+      "R"
+     ],
+     "answer": 0,
+     "solution": "The new sequence starts M L K J I H G F E D C B A N O P … The 9th letter from the left is E, and the 4th letter to its right is the 13th letter of the sequence, A.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R147"
+    },
+    {
+     "id": "G-R148",
+     "exam": "cuet",
+     "topic": "Alphabet Test",
+     "difficulty": "Easy",
+     "question": "Which letter lies exactly midway between the 5th letter from the left and the 4th letter from the right of the English alphabet?",
+     "options": [
+      "M",
+      "N",
+      "O",
+      "L"
+     ],
+     "answer": 1,
+     "solution": "The 5th letter from the left is E (position 5) and the 4th from the right is W (position 27 − 4 = 23). The midpoint is position (5 + 23)/2 = 14, which is N.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R148"
+    },
+    {
+     "id": "G-R149",
+     "exam": "cuet",
+     "topic": "Alphabet Test",
+     "difficulty": "Medium",
+     "question": "If every alternate letter of the English alphabet, starting with B, is removed, which letter will be the 7th from the right end of the remaining sequence?",
+     "options": [
+      "N",
+      "K",
+      "O",
+      "M"
+     ],
+     "answer": 3,
+     "solution": "Removing B, D, F, …, Z leaves A, C, E, …, Y — 13 letters. Counting from the right: Y, W, U, S, Q, O, M. The 7th is M.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R149"
+    },
+    {
+     "id": "G-R150",
+     "exam": "cuet",
+     "topic": "Alphabet Test",
+     "difficulty": "Medium",
+     "question": "If the letters of the word FORMULATE are arranged in reverse alphabetical order (Z to A), which letter will be 3rd from the left?",
+     "options": [
+      "O",
+      "R",
+      "T",
+      "M"
+     ],
+     "answer": 1,
+     "solution": "In reverse alphabetical order the letters are U T R O M L F E A. The 3rd from the left is R.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R150"
+    },
+    {
+     "id": "G-R152",
+     "exam": "cuet",
+     "topic": "Alphabet Test",
+     "difficulty": "Medium",
+     "question": "How many vowels are there in the English alphabet strictly between the 4th letter from the left and the 3rd letter from the right?",
+     "options": [
+      "5",
+      "4",
+      "3",
+      "6"
+     ],
+     "answer": 1,
+     "solution": "The 4th letter from the left is D and the 3rd from the right is X. The letters strictly between them run from E to W, which contain the vowels E, I, O and U — 4 vowels.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R152"
+    },
+    {
+     "id": "G-R153",
+     "exam": "cuet",
+     "topic": "Alphabet Test",
+     "difficulty": "Easy",
+     "question": "If the English alphabet is written in reverse order (Z to A), which letter will be the 7th to the right of T?",
+     "options": [
+      "N",
+      "A",
+      "G",
+      "M"
+     ],
+     "answer": 3,
+     "solution": "In the reversed alphabet, moving right from T gives S, R, Q, P, O, N, M. The 7th letter is M.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R153"
+    },
+    {
+     "id": "G-R154",
+     "exam": "cuet",
+     "topic": "Alphabet Test",
+     "difficulty": "Medium",
+     "question": "If the letters of the word PLANET are arranged in alphabetical order, how many letters will remain in the same position as in the original word?",
+     "options": [
+      "2",
+      "1",
+      "0",
+      "3"
+     ],
+     "answer": 0,
+     "solution": "Alphabetical order gives A E L N P T. Comparing with P L A N E T position by position, only N (4th) and T (6th) stay in place: 2 letters.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R154"
+    },
+    {
+     "id": "G-R155",
+     "exam": "cuet",
+     "topic": "Blood Relations",
+     "difficulty": "Easy",
+     "question": "Pointing to a girl, Arjun says, \"She is the only daughter of my father's only son.\" How is the girl related to Arjun?",
+     "options": [
+      "Cousin",
+      "Sister",
+      "Niece",
+      "Daughter"
+     ],
+     "answer": 3,
+     "solution": "Arjun is a man, so his father's only son is Arjun himself. The girl is the only daughter of Arjun, i.e. his daughter.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R155"
+    },
+    {
+     "id": "G-R156",
+     "exam": "cuet",
+     "topic": "Blood Relations",
+     "difficulty": "Medium",
+     "question": "A is the mother of B. B is the sister of C. D is the son of C. E is the wife of D. How is E related to A?",
+     "options": [
+      "Daughter-in-law",
+      "Granddaughter-in-law",
+      "Granddaughter",
+      "Niece"
+     ],
+     "answer": 1,
+     "solution": "B and C are A's children, so D (C's son) is A's grandson. E is the wife of A's grandson, so E is A's granddaughter-in-law.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R156"
+    },
+    {
+     "id": "G-R157",
+     "exam": "cuet",
+     "topic": "Blood Relations",
+     "difficulty": "Medium",
+     "question": "In a code, P × Q means P is the father of Q; P + Q means P is the brother of Q; P − Q means P is the sister of Q; P ÷ Q means P is the mother of Q. If A × B + C − D ÷ E, how is A related to E?",
+     "options": [
+      "Grandfather",
+      "Father",
+      "Uncle",
+      "Great-grandfather"
+     ],
+     "answer": 0,
+     "solution": "A × B: A is B's father. B + C and C − D: B, C and D are siblings, so A is also D's father. D ÷ E: D is E's mother. So A is the father of E's mother — E's grandfather.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R157"
+    },
+    {
+     "id": "G-R158",
+     "exam": "cuet",
+     "topic": "Blood Relations",
+     "difficulty": "Medium",
+     "question": "A family has six members P, Q, R, S, T and U, with two married couples. R is the wife of P. S is the only son of P and R. T is the sister of S and is unmarried. U is the daughter-in-law of R. Q is the son of U. How is T related to Q?",
+     "options": [
+      "Mother",
+      "Aunt",
+      "Sister",
+      "Grandmother"
+     ],
+     "answer": 1,
+     "solution": "S is the only son of P and R, so U (R's daughter-in-law) is S's wife, and the two couples are P–R and S–U. Q, the son of U, is therefore S's son. T is S's sister, so T is Q's father's sister — Q's aunt.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R158"
+    },
+    {
+     "id": "G-R159",
+     "exam": "cuet",
+     "topic": "Blood Relations",
+     "difficulty": "Easy",
+     "question": "Introducing a man, Neha says, \"His wife is the only daughter of my father.\" How is the man related to Neha?",
+     "options": [
+      "Brother-in-law",
+      "Brother",
+      "Husband",
+      "Father-in-law"
+     ],
+     "answer": 2,
+     "solution": "Neha is a woman, so the only daughter of her father is Neha herself. The man's wife is Neha, so he is her husband.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R159"
+    },
+    {
+     "id": "G-R160",
+     "exam": "cuet",
+     "topic": "Blood Relations",
+     "difficulty": "Medium",
+     "question": "A is the brother of B. B is the son of C. D is the father of C. E is the daughter of D. How is A related to E?",
+     "options": [
+      "Son",
+      "Nephew",
+      "Brother",
+      "Cousin"
+     ],
+     "answer": 1,
+     "solution": "A and B are C's children. C and E are both D's children, so E is C's sister. A is the son of E's sibling, so A is E's nephew.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R160"
+    },
+    {
+     "id": "G-R161",
+     "exam": "cuet",
+     "topic": "Blood Relations",
+     "difficulty": "Medium",
+     "question": "In a code, A @ B means A is the daughter of B; A $ B means A is the wife of B; A # B means A is the father of B; A & B means A is the brother of B. If P @ Q $ R # S & T, how is P related to T?",
+     "options": [
+      "Sister",
+      "Daughter",
+      "Mother",
+      "Cannot be determined"
+     ],
+     "answer": 0,
+     "solution": "P @ Q: P is Q's daughter. Q $ R: Q is R's wife, so P is also R's daughter. R # S and S & T: S and T are R's children. P is a female child of the same parents as T, so P is T's sister (whatever T's gender).",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R161"
+    },
+    {
+     "id": "G-R163",
+     "exam": "cuet",
+     "topic": "Clocks & Calendars",
+     "difficulty": "Medium",
+     "question": "What is the smaller angle between the hour hand and the minute hand of a clock at 8:25?",
+     "options": [
+      "112.5°",
+      "107.5°",
+      "97.5°",
+      "102.5°"
+     ],
+     "answer": 3,
+     "solution": "Angle = |30H − 5.5M| = |30 × 8 − 5.5 × 25| = |240 − 137.5| = 102.5°.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R163"
+    },
+    {
+     "id": "G-R167",
+     "exam": "cuet",
+     "topic": "Clocks & Calendars",
+     "difficulty": "Medium",
+     "question": "On which day of the week did 26 January 1950 fall?",
+     "options": [
+      "Friday",
+      "Wednesday",
+      "Thursday",
+      "Sunday"
+     ],
+     "answer": 2,
+     "solution": "Odd days up to 31 December 1949: 1600 years give 0, the next 300 years give 1, and 49 years (12 leap + 37 ordinary) give 12 × 2 + 37 = 61, i.e. 5. Total so far 0 + 1 + 5 = 6. Add 26 days of January: 6 + 26 = 32, and 32 leaves remainder 4 on division by 7. Day 4 (counting Sunday as 0) is Thursday.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R167"
+    },
+    {
+     "id": "G-R168",
+     "exam": "cuet",
+     "topic": "Clocks & Calendars",
+     "difficulty": "Medium",
+     "question": "3 March 2027 is a Wednesday. What day of the week will 3 March 2028 be?",
+     "options": [
+      "Wednesday",
+      "Thursday",
+      "Saturday",
+      "Friday"
+     ],
+     "answer": 3,
+     "solution": "The period from 3 March 2027 to 3 March 2028 includes 29 February 2028 (2028 is a leap year), so it has 366 days = 52 weeks + 2 days. 2 days after Wednesday is Friday.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R168"
+    },
+    {
+     "id": "G-R170",
+     "exam": "cuet",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "In a certain code, MOTHER is written as SFIUPN. How is FATHER written in that code?",
+     "options": [
+      "SFIUBG",
+      "SFIUGB",
+      "GBUIFS",
+      "RDHTAF"
+     ],
+     "answer": 0,
+     "solution": "The word is reversed and each letter is then moved one place forward: MOTHER → REHTOM → SFIUPN. Similarly FATHER → REHTAF → SFIUBG.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R170"
+    },
+    {
+     "id": "G-R171",
+     "exam": "cuet",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "In a certain code, ROAD is written as 9-12-26-23. How is LANE written in that code?",
+     "options": [
+      "14-26-13-22",
+      "12-1-14-5",
+      "15-26-14-22",
+      "15-26-13-22"
+     ],
+     "answer": 3,
+     "solution": "Each letter is replaced by its position counted from the end of the alphabet (Z = 1, …, A = 26): R = 9, O = 12, A = 26, D = 23. So L = 15, A = 26, N = 13, E = 22, giving 15-26-13-22.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R171"
+    },
+    {
+     "id": "G-R172",
+     "exam": "cuet",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "In a certain code language, 'come and go' is written as 'pa ri sa', 'go and run' as 'ri na pa', and 'run fast now' as 'ta na ke'. What is the code for 'come'?",
+     "options": [
+      "pa",
+      "sa",
+      "ri",
+      "na"
+     ],
+     "answer": 1,
+     "solution": "'and go' is common to the first two sentences, and 'pa ri' is common to their codes, so 'and' and 'go' are coded as 'pa' and 'ri' in some order. The remaining word of the first sentence, 'come', must be 'sa'.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R172"
+    },
+    {
+     "id": "G-R173",
+     "exam": "cuet",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "If PAINT is coded as 74128 and EXCEL as 93596, how is ACCEPT coded?",
+     "options": [
+      "455978",
+      "455987",
+      "545978",
+      "454978"
+     ],
+     "answer": 0,
+     "solution": "Each letter has a fixed digit: P = 7, A = 4, I = 1, N = 2, T = 8 and E = 9, X = 3, C = 5, L = 6 (E = 9 is consistent at both ends of EXCEL). So A C C E P T = 4 5 5 9 7 8 = 455978.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R173"
+    },
+    {
+     "id": "G-R174",
+     "exam": "cuet",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "In a certain code, PLANET is written as QKBMFS. How is CORNER written in that code?",
+     "options": [
+      "BNQMDQ",
+      "DPSOFS",
+      "DNSMFQ",
+      "DNSMFS"
+     ],
+     "answer": 2,
+     "solution": "Letters in odd positions move one step forward and letters in even positions move one step back: P+1 = Q, L−1 = K, A+1 = B, N−1 = M, E+1 = F, T−1 = S. So C+1 = D, O−1 = N, R+1 = S, N−1 = M, E+1 = F, R−1 = Q: DNSMFQ.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R174"
+    },
+    {
+     "id": "G-R175",
+     "exam": "cuet",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "In a certain code, BAD = 8 and CAB = 6. Following the same rule, what is the code for DEED?",
+     "options": [
+      "320",
+      "18",
+      "200",
+      "400"
+     ],
+     "answer": 3,
+     "solution": "The code is the product of the alphabet positions: BAD = 2 × 1 × 4 = 8 and CAB = 3 × 1 × 2 = 6. So DEED = 4 × 5 × 5 × 4 = 400.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R175"
+    },
+    {
+     "id": "G-R177",
+     "exam": "cuet",
+     "topic": "Direction Sense",
+     "difficulty": "Medium",
+     "question": "Kiran walks 6 km east, turns left and walks 8 km, then turns left again and walks 12 km. How far and in which direction is she from her starting point?",
+     "options": [
+      "14 km North-West",
+      "10 km North-East",
+      "10 km North-West",
+      "10 km South-West"
+     ],
+     "answer": 2,
+     "solution": "Take the start as (0, 0). After 6 km east she is at (6, 0); turning left she faces north and reaches (6, 8); turning left again she faces west and reaches (6 − 12, 8) = (−6, 8). Distance = √(6² + 8²) = 10 km, towards the north-west.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R177"
+    },
+    {
+     "id": "G-R178",
+     "exam": "cuet",
+     "topic": "Direction Sense",
+     "difficulty": "Medium",
+     "question": "A man is facing east. He turns 45° clockwise, then 180° anticlockwise, and then 90° clockwise. Which direction is he facing now?",
+     "options": [
+      "South-East",
+      "South-West",
+      "North-West",
+      "North-East"
+     ],
+     "answer": 3,
+     "solution": "Measure bearings clockwise from north: east = 90°. After the turns: 90 + 45 = 135°, then 135 − 180 = −45° (i.e. 315°), then 315 + 90 = 405° = 45°, which is north-east.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R178"
+    },
+    {
+     "id": "G-R179",
+     "exam": "cuet",
+     "topic": "Direction Sense",
+     "difficulty": "Medium",
+     "question": "Point A is 9 m west of point B. Point C is 12 m south of point B. How far is C from A, and in which direction is C with respect to A?",
+     "options": [
+      "15 m, South-East",
+      "15 m, South-West",
+      "21 m, South-East",
+      "15 m, North-East"
+     ],
+     "answer": 0,
+     "solution": "Take B = (0, 0): A = (−9, 0) and C = (0, −12). From A, C is 9 m to the east and 12 m to the south, so AC = √(9² + 12²) = 15 m and C is to the south-east of A.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R179"
+    },
+    {
+     "id": "G-R180",
+     "exam": "cuet",
+     "topic": "Direction Sense",
+     "difficulty": "Easy",
+     "question": "At 4 p.m. on a sunny day, Rina stands facing her own shadow. Which direction is she facing?",
+     "options": [
+      "South",
+      "West",
+      "North",
+      "East"
+     ],
+     "answer": 3,
+     "solution": "In the afternoon the sun is in the west, so shadows fall towards the east. Facing her shadow, Rina faces east.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R180"
+    },
+    {
+     "id": "G-R182",
+     "exam": "cuet",
+     "topic": "Direction Sense",
+     "difficulty": "Medium",
+     "question": "P and Q start from the same point. P walks 7 km north and then 3 km east. Q walks 3 km west and then 1 km south. What is the straight-line distance between P and Q now?",
+     "options": [
+      "14 km",
+      "10 km",
+      "8 km",
+      "12 km"
+     ],
+     "answer": 1,
+     "solution": "With the start at (0, 0), P is at (3, 7) and Q at (−3, −1). The horizontal gap is 3 + 3 = 6 km and the vertical gap 7 + 1 = 8 km, so PQ = √(6² + 8²) = 10 km.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R182"
+    },
+    {
+     "id": "G-R183",
+     "exam": "cuet",
+     "topic": "Direction Sense",
+     "difficulty": "Medium",
+     "question": "A wall clock is fixed so that its 12 points towards the north-east. In which direction will the hour hand point at 1:30?",
+     "options": [
+      "South-East",
+      "North",
+      "East",
+      "North-East"
+     ],
+     "answer": 2,
+     "solution": "At 1:30 the hour hand is 1.5 × 30 = 45° clockwise from the 12. The 12 points north-east (45° from north), so the hour hand points at 45 + 45 = 90° from north, which is east.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R183"
+    },
+    {
+     "id": "G-R184",
+     "exam": "cuet",
+     "topic": "Direction Sense",
+     "difficulty": "Medium",
+     "question": "Village Q is 10 km north of village P. Village R is 6 km east of Q. Village S is 2 km south of R, and village T is 6 km west of S. Where is T with respect to P?",
+     "options": [
+      "10 km North",
+      "8 km North",
+      "8 km North-East",
+      "6 km North"
+     ],
+     "answer": 1,
+     "solution": "Take P = (0, 0). Then Q = (0, 10), R = (6, 10), S = (6, 8) and T = (0, 8). T is 8 km due north of P.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R184"
+    },
+    {
+     "id": "G-R185",
+     "exam": "cuet",
+     "topic": "Inequalities",
+     "difficulty": "Medium",
+     "question": "Statements: M > N ≥ O = P, Q &lt; O<br>Conclusions: I. M > P II. Q &lt; N",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither follows"
+     ],
+     "answer": 2,
+     "solution": "Combining: M > N ≥ O = P gives M > P, so I follows. Q < O = P and O ≤ N gives Q < N, so II follows. Both follow.",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R185"
+    },
+    {
+     "id": "G-R186",
+     "exam": "cuet",
+     "topic": "Inequalities",
+     "difficulty": "Medium",
+     "question": "Statements: A ≥ B = C, D ≤ C<br>Conclusions: I. A ≥ D II. D > B",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither follows"
+     ],
+     "answer": 0,
+     "solution": "A ≥ B = C ≥ D gives A ≥ D, so I follows. Since D ≤ C = B, D can never be greater than B, so II does not follow. Only I follows.",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R186"
+    },
+    {
+     "id": "G-R188",
+     "exam": "cuet",
+     "topic": "Inequalities",
+     "difficulty": "Medium",
+     "question": "Statements: K ≤ L = M, M ≥ N<br>Conclusions: I. K &lt; M II. K = M",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Either I or II follows",
+      "Neither follows"
+     ],
+     "answer": 2,
+     "solution": "K ≤ L = M gives K ≤ M. Neither K < M nor K = M is certain on its own, but one of them must be true and they cover every case of K ≤ M. So either I or II follows.",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R188"
+    },
+    {
+     "id": "G-R192",
+     "exam": "cuet",
+     "topic": "Inequalities",
+     "difficulty": "Medium",
+     "question": "Statements: X ≤ Y &lt; Z, W > Z<br>Conclusions: I. W > X II. Y ≥ W",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither follows"
+     ],
+     "answer": 0,
+     "solution": "W > Z > Y ≥ X gives W > X, so I follows. The same chain gives W > Y, so Y ≥ W is false. Only I follows.",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R192"
+    },
+    {
+     "id": "G-R194",
+     "exam": "cuet",
+     "topic": "Number & Letter Series",
+     "difficulty": "Medium",
+     "question": "Find the next term: 4, 10, 28, 82, 244, ?",
+     "options": [
+      "730",
+      "732",
+      "728",
+      "488"
+     ],
+     "answer": 0,
+     "solution": "Each term is 3 times the previous term minus 2: 4 × 3 − 2 = 10, 10 × 3 − 2 = 28, 28 × 3 − 2 = 82, 82 × 3 − 2 = 244, so the next is 244 × 3 − 2 = 730.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R194"
+    },
+    {
+     "id": "G-R196",
+     "exam": "cuet",
+     "topic": "Number & Letter Series",
+     "difficulty": "Medium",
+     "question": "Find the next term: BDF, HJL, NPR, ?",
+     "options": [
+      "SUW",
+      "TUV",
+      "TVX",
+      "UWY"
+     ],
+     "answer": 2,
+     "solution": "The letters run B, D, F, H, J, L, N, P, R, … skipping one letter each time, taken three at a time. The next group is T, V, X.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R196"
+    },
+    {
+     "id": "G-R197",
+     "exam": "cuet",
+     "topic": "Number & Letter Series",
+     "difficulty": "Medium",
+     "question": "Find the next term: 1, 4, 27, 256, ?",
+     "options": [
+      "3125",
+      "1024",
+      "625",
+      "3025"
+     ],
+     "answer": 0,
+     "solution": "The terms are 1¹, 2², 3³, 4⁴, so the next term is 5⁵ = 3125.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R197"
+    },
+    {
+     "id": "G-R198",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Easy",
+     "question": "Find the odd one out: 13, 17, 19, 27, 29",
+     "options": [
+      "19",
+      "17",
+      "27",
+      "29"
+     ],
+     "answer": 2,
+     "solution": "13, 17, 19 and 29 are prime numbers. 27 = 3 × 9 is not prime, so it is the odd one out.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R198"
+    },
+    {
+     "id": "G-R199",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Medium",
+     "question": "Find the odd one out: 216, 343, 512, 720, 1000",
+     "options": [
+      "1000",
+      "343",
+      "512",
+      "720"
+     ],
+     "answer": 3,
+     "solution": "216 = 6³, 343 = 7³, 512 = 8³ and 1000 = 10³ are perfect cubes. 720 is not a perfect cube (9³ = 729).",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R199"
+    },
+    {
+     "id": "G-R200",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Easy",
+     "question": "Find the odd one out: Lion, Tiger, Leopard, Wolf, Cheetah",
+     "options": [
+      "Cheetah",
+      "Tiger",
+      "Leopard",
+      "Wolf"
+     ],
+     "answer": 3,
+     "solution": "Lion, tiger, leopard and cheetah are all big cats (cat family). The wolf belongs to the dog family, so it is the odd one out.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R200"
+    },
+    {
+     "id": "G-R201",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Medium",
+     "question": "Find the odd one out: BCD, FGH, JKM, PQR",
+     "options": [
+      "JKM",
+      "BCD",
+      "FGH",
+      "PQR"
+     ],
+     "answer": 0,
+     "solution": "BCD, FGH and PQR are three consecutive letters of the alphabet. In JKM, L is skipped between K and M, so JKM is the odd one out.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R201"
+    },
+    {
+     "id": "G-R202",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Medium",
+     "question": "Find the odd one out: 35, 48, 63, 80, 100",
+     "options": [
+      "80",
+      "48",
+      "63",
+      "100"
+     ],
+     "answer": 3,
+     "solution": "35 = 6² − 1, 48 = 7² − 1, 63 = 8² − 1 and 80 = 9² − 1. The pattern continues with 10² − 1 = 99, so 100 does not fit.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R202"
+    },
+    {
+     "id": "G-R203",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Medium",
+     "question": "Find the odd pair: 3 : 27, 4 : 64, 5 : 125, 6 : 216, 7 : 350",
+     "options": [
+      "4 : 64",
+      "7 : 350",
+      "5 : 125",
+      "6 : 216"
+     ],
+     "answer": 1,
+     "solution": "In each pair the second number is the cube of the first: 3³ = 27, 4³ = 64, 5³ = 125, 6³ = 216. But 7³ = 343, not 350, so 7 : 350 is the odd pair.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R203"
+    },
+    {
+     "id": "G-R204",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Easy",
+     "question": "Find the odd one out: Rupee, Dollar, Yen, Euro, Kilogram",
+     "options": [
+      "Dollar",
+      "Kilogram",
+      "Yen",
+      "Euro"
+     ],
+     "answer": 1,
+     "solution": "Rupee, dollar, yen and euro are currencies. Kilogram is a unit of mass, so it is the odd one out.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R204"
+    },
+    {
+     "id": "G-R205",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Medium",
+     "question": "Find the odd one out: ACE, IKM, OQS, UWY, EGJ",
+     "options": [
+      "OQS",
+      "IKM",
+      "EGJ",
+      "UWY"
+     ],
+     "answer": 2,
+     "solution": "In ACE, IKM, OQS and UWY each letter is 2 places after the previous one (A+2 = C, C+2 = E). In EGJ, G+2 would be I, not J, so EGJ is the odd one out.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R205"
+    },
+    {
+     "id": "G-R207",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Easy",
+     "question": "Find the odd one out: 123, 234, 345, 456, 568",
+     "options": [
+      "234",
+      "568",
+      "345",
+      "456"
+     ],
+     "answer": 1,
+     "solution": "123, 234, 345 and 456 are made of three consecutive digits in increasing order. In 568 the digit 7 is skipped, so it is the odd one out.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R207"
+    },
+    {
+     "id": "G-R208",
+     "exam": "cuet",
+     "topic": "Seating Arrangement",
+     "difficulty": "Medium",
+     "question": "Seven friends A, B, C, D, E, F and G sit in a row facing north. D sits third from the left end. Exactly two persons sit between D and G. A sits immediately to the right of G. B sits at one of the ends, and C sits next to B. E sits somewhere to the left of F.<br>Who sits at the right end of the row?",
+     "options": [
+      "F",
+      "G",
+      "B",
+      "A"
+     ],
+     "answer": 3,
+     "solution": "Working through the clues gives the unique row (left to right): B C D E F G A. D is 3rd from the left; G, with two persons between, is 6th; A, immediately right of G, is 7th. B must be at the left end (the right end is taken) and C 2nd. E before F fills places 4 and 5. A is at the right end.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R208"
+    },
+    {
+     "id": "G-R209",
+     "exam": "cuet",
+     "topic": "Seating Arrangement",
+     "difficulty": "Medium",
+     "question": "Seven friends A, B, C, D, E, F and G sit in a row facing north. D sits third from the left end. Exactly two persons sit between D and G. A sits immediately to the right of G. B sits at one of the ends, and C sits next to B. E sits somewhere to the left of F.<br>Who sits exactly between D and F?",
+     "options": [
+      "B",
+      "C",
+      "G",
+      "E"
+     ],
+     "answer": 3,
+     "solution": "Working through the clues gives the unique row (left to right): B C D E F G A. D is 3rd and F is 5th, so the person between them, 4th from the left, is E.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R209"
+    },
+    {
+     "id": "G-R210",
+     "exam": "cuet",
+     "topic": "Seating Arrangement",
+     "difficulty": "Medium",
+     "question": "Seven friends A, B, C, D, E, F and G sit in a row facing north. D sits third from the left end. Exactly two persons sit between D and G. A sits immediately to the right of G. B sits at one of the ends, and C sits next to B. E sits somewhere to the left of F.<br>How many persons sit between C and G?",
+     "options": [
+      "1",
+      "2",
+      "4",
+      "3"
+     ],
+     "answer": 3,
+     "solution": "Working through the clues gives the unique row (left to right): B C D E F G A. C is 2nd and G is 6th from the left, so D, E and F — 3 persons — sit between them.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R210"
+    },
+    {
+     "id": "G-R211",
+     "exam": "cuet",
+     "topic": "Seating Arrangement",
+     "difficulty": "Medium",
+     "question": "Seven friends A, B, C, D, E, F and G sit in a row facing north. D sits third from the left end. Exactly two persons sit between D and G. A sits immediately to the right of G. B sits at one of the ends, and C sits next to B. E sits somewhere to the left of F.<br>Who sits second to the right of E?",
+     "options": [
+      "F",
+      "G",
+      "A",
+      "D"
+     ],
+     "answer": 1,
+     "solution": "Working through the clues gives the unique row (left to right): B C D E F G A. E is 4th from the left; two places to the right (facing north, right is towards the right end) is the 6th seat, G.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R211"
+    },
+    {
+     "id": "G-R220",
+     "exam": "cuet",
+     "topic": "Puzzles",
+     "difficulty": "Medium",
+     "question": "Six lectures U, V, W, X, Y and Z are held on six consecutive days from Monday to Saturday, one per day. W is held on Wednesday. Exactly one lecture is held between W and Y. Y is not held on Monday. U is held on the day immediately after X. Z is held on some day before V.<br>Which lecture is held on Thursday?",
+     "options": [
+      "Z",
+      "Y",
+      "V",
+      "U"
+     ],
+     "answer": 0,
+     "solution": "The arrangement is unique: Monday X, Tuesday U, Wednesday W, Thursday Z, Friday Y, Saturday V. Y is two days from Wednesday and not on Monday, so Y is on Friday. X–U must be consecutive among Monday, Tuesday, Thursday and Saturday, so X is Monday and U Tuesday. Z before V leaves Z on Thursday and V on Saturday.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R220"
+    },
+    {
+     "id": "G-R221",
+     "exam": "cuet",
+     "topic": "Puzzles",
+     "difficulty": "Medium",
+     "question": "Six lectures U, V, W, X, Y and Z are held on six consecutive days from Monday to Saturday, one per day. W is held on Wednesday. Exactly one lecture is held between W and Y. Y is not held on Monday. U is held on the day immediately after X. Z is held on some day before V.<br>How many lectures are held between U and Y?",
+     "options": [
+      "3",
+      "1",
+      "2",
+      "0"
+     ],
+     "answer": 2,
+     "solution": "The arrangement is unique: Monday X, Tuesday U, Wednesday W, Thursday Z, Friday Y, Saturday V. U is on Tuesday and Y on Friday, so W and Z — 2 lectures — fall between them.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R221"
+    },
+    {
+     "id": "G-R222",
+     "exam": "cuet",
+     "topic": "Puzzles",
+     "difficulty": "Medium",
+     "question": "Six lectures U, V, W, X, Y and Z are held on six consecutive days from Monday to Saturday, one per day. W is held on Wednesday. Exactly one lecture is held between W and Y. Y is not held on Monday. U is held on the day immediately after X. Z is held on some day before V.<br>On which day is V held?",
+     "options": [
+      "Tuesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+     ],
+     "answer": 3,
+     "solution": "The arrangement is unique: Monday X, Tuesday U, Wednesday W, Thursday Z, Friday Y, Saturday V. V is the last lecture, on Saturday.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R222"
+    },
+    {
+     "id": "G-R223",
+     "exam": "cuet",
+     "topic": "Puzzles",
+     "difficulty": "Medium",
+     "question": "Six friends A, B, C, D, E and F have different heights. C is taller than only two of them. E is taller than A, and A is taller than C. F is shorter than D. B is not the shortest. E is not the tallest. D is taller than B.<br>Who is the tallest?",
+     "options": [
+      "B",
+      "E",
+      "A",
+      "D"
+     ],
+     "answer": 3,
+     "solution": "The unique order from tallest to shortest is D, E, A, C, B, F. C is 4th tallest, so B and F are the two below C. E and A are above C; D is taller than both B and F, so D cannot be among the two below C, and D, E, A fill the top three; E is not the tallest and A is below E, so D is tallest, then E, then A. B is not the shortest, so B is 5th and F 6th.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R223"
+    },
+    {
+     "id": "G-R224",
+     "exam": "cuet",
+     "topic": "Puzzles",
+     "difficulty": "Medium",
+     "question": "Six friends A, B, C, D, E and F have different heights. C is taller than only two of them. E is taller than A, and A is taller than C. F is shorter than D. B is not the shortest. E is not the tallest. D is taller than B.<br>Who is the second shortest?",
+     "options": [
+      "B",
+      "C",
+      "F",
+      "A"
+     ],
+     "answer": 0,
+     "solution": "The unique order from tallest to shortest is D, E, A, C, B, F. From the shortest: F, then B. B is second shortest.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R224"
+    },
+    {
+     "id": "G-R225",
+     "exam": "cuet",
+     "topic": "Puzzles",
+     "difficulty": "Medium",
+     "question": "Six friends A, B, C, D, E and F have different heights. C is taller than only two of them. E is taller than A, and A is taller than C. F is shorter than D. B is not the shortest. E is not the tallest. D is taller than B.<br>How many friends are taller than A?",
+     "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "answer": 1,
+     "solution": "The unique order from tallest to shortest is D, E, A, C, B, F. Only D and E are taller than A: 2 friends.",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R225"
+    },
+    {
+     "id": "G-R226",
+     "exam": "cuet",
+     "topic": "Ranking & Order",
+     "difficulty": "Easy",
+     "question": "In a row of 45 children, Neha is 17th from the right end. What is her position from the left end?",
+     "options": [
+      "28th",
+      "29th",
+      "30th",
+      "27th"
+     ],
+     "answer": 1,
+     "solution": "Position from left = total − position from right + 1 = 45 − 17 + 1 = 29th.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R226"
+    },
+    {
+     "id": "G-R228",
+     "exam": "cuet",
+     "topic": "Ranking & Order",
+     "difficulty": "Medium",
+     "question": "Among the students who passed an exam, Ravi ranked 7th from the top and 26th from the bottom. If 5 students failed and 3 were absent, how many students are in the class?",
+     "options": [
+      "32",
+      "40",
+      "37",
+      "38"
+     ],
+     "answer": 1,
+     "solution": "Students who passed = 7 + 26 − 1 = 32. Adding 5 who failed and 3 who were absent: 32 + 5 + 3 = 40.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R228"
+    },
+    {
+     "id": "G-R229",
+     "exam": "cuet",
+     "topic": "Ranking & Order",
+     "difficulty": "Medium",
+     "question": "In a class of 40 students, Sita ranks 9th from the top. Mira is 6 ranks below Sita. What is Mira's rank from the bottom?",
+     "options": [
+      "31st",
+      "25th",
+      "26th",
+      "27th"
+     ],
+     "answer": 2,
+     "solution": "Mira's rank from the top = 9 + 6 = 15th. From the bottom: 40 − 15 + 1 = 26th.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R229"
+    },
+    {
+     "id": "G-R230",
+     "exam": "cuet",
+     "topic": "Ranking & Order",
+     "difficulty": "Medium",
+     "question": "In a test, Q scored more than S but less than P. T scored less than R but more than P. Who scored the second lowest?",
+     "options": [
+      "P",
+      "Q",
+      "S",
+      "T"
+     ],
+     "answer": 1,
+     "solution": "S < Q < P and P < T < R combine into R > T > P > Q > S. The lowest is S, so the second lowest is Q.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R230"
+    },
+    {
+     "id": "G-R231",
+     "exam": "cuet",
+     "topic": "Ranking & Order",
+     "difficulty": "Easy",
+     "question": "In a row of 50 students, Bharat is 25th from the left end. What is his position from the right end?",
+     "options": [
+      "27th",
+      "25th",
+      "24th",
+      "26th"
+     ],
+     "answer": 3,
+     "solution": "Position from right = 50 − 25 + 1 = 26th.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R231"
+    },
+    {
+     "id": "G-R232",
+     "exam": "cuet",
+     "topic": "Ranking & Order",
+     "difficulty": "Easy",
+     "question": "Arjun is 20th from the top and also 20th from the bottom in a class ranking. How many students are in the class?",
+     "options": [
+      "38",
+      "40",
+      "41",
+      "39"
+     ],
+     "answer": 3,
+     "solution": "Total = 20 + 20 − 1 = 39 (Arjun is counted in both positions).",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R232"
+    },
+    {
+     "id": "G-R234",
+     "exam": "cuet",
+     "topic": "Ranking & Order",
+     "difficulty": "Medium",
+     "question": "Mohan is 10th from the left end in a row of 35 boys. If he shifts 4 places to the right, what will be his position from the right end?",
+     "options": [
+      "26th",
+      "21st",
+      "22nd",
+      "23rd"
+     ],
+     "answer": 2,
+     "solution": "After the shift he is 10 + 4 = 14th from the left, so from the right he is 35 − 14 + 1 = 22nd.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R234"
+    },
+    {
+     "id": "G-R236",
+     "exam": "cuet",
+     "topic": "Syllogisms",
+     "difficulty": "Medium",
+     "question": "Statements: All keys are locks. Some locks are doors. No door is a window.<br>Conclusions: I. Some locks are not windows. II. Some keys are windows.",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither follows"
+     ],
+     "answer": 0,
+     "solution": "The locks that are doors cannot be windows, because no door is a window, so some locks are not windows: I follows. Keys are not linked to windows by any statement, so II is not certain. Only I follows.",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R236"
+    },
+    {
+     "id": "G-R237",
+     "exam": "cuet",
+     "topic": "Syllogisms",
+     "difficulty": "Medium",
+     "question": "Statements: Some rivers are lakes. All lakes are ponds. No pond is a well.<br>Conclusions: I. Some rivers are not wells. II. Some lakes are wells.",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither follows"
+     ],
+     "answer": 0,
+     "solution": "The rivers that are lakes are also ponds, and no pond is a well, so those rivers are not wells: I follows. Every lake is a pond and no pond is a well, so no lake is a well: II is false. Only I follows.",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R237"
+    },
+    {
+     "id": "G-R238",
+     "exam": "cuet",
+     "topic": "Syllogisms",
+     "difficulty": "Medium",
+     "question": "Statements: Some pens are markers. Some markers are not crayons. All crayons are pens.<br>Conclusions: I. Some markers are crayons. II. Some pens are crayons.",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither follows"
+     ],
+     "answer": 1,
+     "solution": "Nothing forces any marker to be a crayon (the markers may lie wholly outside crayons), so I does not follow. Crayons exist and every crayon is a pen, so some pens are crayons: II follows. Only II follows.",
+     "fixed": true,
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R238"
     }
    ]
   },
