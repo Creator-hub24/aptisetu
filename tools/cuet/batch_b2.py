@@ -247,3 +247,39 @@ def gat(B):
     M(GK,"Environment","Medium","In which year was Project Tiger launched in India?",["1973","1972","1985","1992"],"1973","Project Tiger was launched on 1 April 1973 to protect the tiger and its habitat. (The Wildlife Protection Act was passed in 1972.)")
     M(GK,"Environment","Easy","Which of the following is a non-renewable resource?",["Coal","Solar energy","Wind energy","Tidal energy"],"Coal","Coal is a fossil fuel formed over millions of years and cannot be replaced on a human timescale. Solar, wind and tidal energy are renewable.")
     M(GK,"Environment","Medium","Which greenhouse gas is released in the largest quantity by burning fossil fuels?",["Carbon dioxide","Methane","Nitrous oxide","Ozone"],"Carbon dioxide","Burning coal, oil and gas releases carbon dioxide in far larger amounts than any other greenhouse gas; methane comes mainly from agriculture, wetlands and gas leaks.")
+
+
+def maths3(B):
+    """Batch 4 (29 Oct 2026, evening): Application of Integrals +4 and Linear Programming +4; every answer computed here."""
+    M = balanced(B, "maths", 2611)
+    X, Y = symbols("X Y")
+    t = "Application of Integrals"
+    a = integrate(sin(x), (x, 0, pi)); assert a == 2
+    M(A1,t,"Easy","What is the area of the region bounded by the curve y = sin x and the x-axis between x = 0 and x = π?",["2 square units","1 square unit","π square units","4 square units"],"2 square units","sin x ≥ 0 on [0, π]. Area = ∫₀^π sin x dx = [−cos x] from 0 to π = −cos π + cos 0 = 1 + 1 = 2.")
+    a = integrate(sp.Abs(x**3), (x, -1, 1)); assert a == Q(1, 2) and integrate(x**3, (x, -1, 1)) == 0
+    M(A1,t,"Medium","What is the area of the region bounded by the curve y = x³, the x-axis and the lines x = −1 and x = 1?",["1/2 square unit","0","1/4 square unit","1 square unit"],"1/2 square unit","The curve is below the x-axis for −1 ≤ x < 0 and above it for 0 < x ≤ 1, so the two parts must be added as positive areas (simply integrating x³ from −1 to 1 gives 0, which is not the area). Each part is ∫₀¹ x³ dx = 1/4, so the area = 1/4 + 1/4 = 1/2.")
+    assert set(sp.solve(sp.Eq(x**2, 4*x), x)) == {0, 4}
+    a = integrate(2*sp.sqrt(x) - x, (x, 0, 4)); assert a == Q(8, 3)
+    M(A1,t,"Hard","What is the area of the region enclosed by the parabola y² = 4x and the line y = x?",["8/3 square units","16/3 square units","4/3 square units","32/3 square units"],"8/3 square units","Substituting y = x in y² = 4x gives x² = 4x, so the curves meet at x = 0 and x = 4. For 0 ≤ x ≤ 4 the upper branch y = 2√x lies above the line. Area = ∫₀⁴ (2√x − x) dx = [(4/3)x^{3/2} − x²/2] from 0 to 4 = 32/3 − 8 = 8/3.")
+    a = integrate(2*x + 1, (x, 0, 2)); assert a == 6
+    M(A1,t,"Easy","What is the area of the region bounded by the line y = 2x + 1, the x-axis and the lines x = 0 and x = 2?",["6 square units","5 square units","4 square units","8 square units"],"6 square units","The line is above the x-axis on [0, 2]. Area = ∫₀² (2x + 1) dx = [x² + x] from 0 to 2 = 4 + 2 = 6. (Check: it is a trapezium with parallel sides 1 and 5 and width 2, so (1 + 5)/2 × 2 = 6.)")
+    t = "Linear Programming"
+    v = lp_vertices([3*X + 5*Y - 15, 5*X + 2*Y - 10, -X, -Y]); z = {p: 5*p[0] + 3*p[1] for p in v}
+    assert v == {(0, 0), (2, 0), (0, 3), (Q(20, 19), Q(45, 19))} and max(z.values()) == Q(235, 19) and max(z, key=z.get) == (Q(20, 19), Q(45, 19))
+    M(A1,t,"Medium","Maximise Z = 5x + 3y subject to 3x + 5y ≤ 15, 5x + 2y ≤ 10, x ≥ 0, y ≥ 0. The maximum value of Z is:",["235/19","10","9","15"],"235/19","Corner points: (0, 0), (2, 0), (0, 3) and the meeting point of 3x + 5y = 15 and 5x + 2y = 10, which is (20/19, 45/19). Z = 0, 10, 9 and 100/19 + 135/19 = 235/19 (about 12.4). The maximum is 235/19.")
+    v = lp_vertices([3 - X - 3*Y, 2 - X - Y, -X, -Y]); z = {p: 3*p[0] + 5*p[1] for p in v}
+    assert v == {(3, 0), (0, 2), (Q(3, 2), Q(1, 2))} and min(z.values()) == 7
+    # the region is unbounded, so confirm that the half-plane 3x + 5y < 7 contains no feasible point
+    from fractions import Fraction as Fr
+    grid = [Fr(i, 4) for i in range(0, 41)]
+    assert all(3*a_ + 5*b_ >= 7 for a_ in grid for b_ in grid if a_ + 3*b_ >= 3 and a_ + b_ >= 2)
+    # exact argument: 3x + 5y = 2(x + y) + (x + 3y) ≥ 2·2 + 3 = 7 on the whole region
+    M(A1,t,"Hard","Minimise Z = 3x + 5y subject to x + 3y ≥ 3, x + y ≥ 2, x ≥ 0, y ≥ 0. The minimum value of Z is:",["7","9","10","Z has no minimum value"],"7","The feasible region is unbounded, with corner points (3, 0), (0, 2) and (3/2, 1/2), where x + 3y = 3 meets x + y = 2. Z = 9, 10 and 9/2 + 5/2 = 7. Because the region is unbounded, check that 3x + 5y < 7 has no point in common with it: in fact 3x + 5y = 2(x + y) + (x + 3y) ≥ 2 × 2 + 3 = 7 everywhere in the region. So the minimum is 7, at (3/2, 1/2).")
+    pts = [(0, 0), (5, 0), (3, 4), (0, 5)]; z = {p: 2*p[0] + 3*p[1] for p in pts}; assert max(z.values()) == 18 and max(z, key=z.get) == (3, 4)
+    M(A1,t,"Easy","The corner points of the bounded feasible region of an LPP are (0, 0), (5, 0), (3, 4) and (0, 5). What is the maximum value of Z = 2x + 3y?",["18","15","10","17"],"18","Evaluate Z at each corner point: (0, 0) gives 0, (5, 0) gives 10, (3, 4) gives 6 + 12 = 18 and (0, 5) gives 15. The maximum is 18, at (3, 4).")
+    pts = [(0, 0), (4, 0), (3, 2), (0, 3)]
+    k = sp.symbols("k"); ks = sp.solve(sp.Eq(4, 3 + 2*k), k); assert ks == [Q(1, 2)]
+    zz = {p: p[0] + Q(1, 2)*p[1] for p in pts}; assert max(zz.values()) == 4 and sorted(p for p in zz if zz[p] == 4) == [(3, 2), (4, 0)]
+    # the region with these corners is convex (all turns in the same direction)
+    cr = [(pts[(i+1)%4][0]-pts[i][0])*(pts[(i+2)%4][1]-pts[i][1])-(pts[(i+1)%4][1]-pts[i][1])*(pts[(i+2)%4][0]-pts[i][0]) for i in range(4)]; assert all(c > 0 for c in cr)
+    M(A1,t,"Hard","The corner points of the bounded feasible region of an LPP are (0, 0), (4, 0), (3, 2) and (0, 3). The maximum of Z = x + ky (k > 0) occurs at both (4, 0) and (3, 2). What is the value of k?",["1/2","1","2","1/4"],"1/2","At (4, 0), Z = 4; at (3, 2), Z = 3 + 2k. Equal maxima need 3 + 2k = 4, so k = 1/2. Check: then Z at (0, 3) is 3/2 and at (0, 0) is 0, both less than 4, so 4 really is the maximum.")
