@@ -643,18 +643,18 @@
      {
       "set": 10,
       "ids": [
+       "B20D-05",
+       "B20D-06",
+       "B20D-07",
+       "B20D-08",
        "B2D-17",
        "B2D-18",
        "B2D-19",
-       "B2D-20",
-       "B12D-01",
-       "B12D-02",
-       "B12D-03",
-       "B12D-04"
+       "B2D-20"
       ],
       "groups": [
-       "b2-fruit",
-       "b12-knockout"
+       "b20-siblings",
+       "b2-fruit"
       ],
       "filled": true
      }
@@ -734,36 +734,36 @@
      {
       "set": 14,
       "ids": [
+       "B12D-01",
+       "B12D-02",
+       "B12D-03",
+       "B12D-04",
        "B12D-09",
        "B12D-10",
        "B12D-11",
-       "B12D-12",
-       "B12D-13",
-       "B12D-14",
-       "B12D-15",
-       "B12D-16"
+       "B12D-12"
       ],
       "groups": [
-       "b12-clubs",
-       "b12-interviews"
+       "b12-knockout",
+       "b12-clubs"
       ],
       "filled": true
      },
      {
       "set": 15,
       "ids": [
+       "B12D-13",
+       "B12D-14",
+       "B12D-15",
+       "B12D-16",
        "B12D-21",
        "B12D-22",
        "B12D-23",
-       "B12D-24",
-       "B12D-25",
-       "B12D-26",
-       "B12D-27",
-       "B12D-28"
+       "B12D-24"
       ],
       "groups": [
-       "b12-thief",
-       "b12-quarters"
+       "b12-interviews",
+       "b12-thief"
       ],
       "filled": true
      }
@@ -782,6 +782,7 @@
     "b12-pipes",
     "b12-rows",
     "b2-fruit",
+    "b20-siblings",
     "cd-choc",
     "cd-code",
     "cd-houses",
@@ -793,10 +794,17 @@
     "b12-quarters",
     "b2-knights",
     "b2-floors",
+    "b20-anskey",
+    "b20-parcels",
+    "b20-pebbles",
+    "b20-auction",
+    "b20-exams",
     "cd-quiz",
     "b12-vote",
     "b2-unique",
     "b2-doubling",
+    "b20-rps",
+    "b20-project",
     "dp-circular2",
     "dp-table4",
     "dp-linear6",

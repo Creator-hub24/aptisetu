@@ -10616,7 +10616,7 @@
      "answer": 2,
      "pack": "practice-b12",
      "level": "Medium",
-     "practiceSet": 10
+     "practiceSet": 14
     },
     {
      "id": "B12D-02",
@@ -10632,7 +10632,7 @@
      "answer": "6",
      "pack": "practice-b12",
      "level": "Medium",
-     "practiceSet": 10
+     "practiceSet": 14
     },
     {
      "id": "B12D-03",
@@ -10648,7 +10648,7 @@
      "answer": "19",
      "pack": "practice-b12",
      "level": "Medium",
-     "practiceSet": 10
+     "practiceSet": 14
     },
     {
      "id": "B12D-04",
@@ -10669,7 +10669,7 @@
      "answer": 0,
      "pack": "practice-b12",
      "level": "Medium",
-     "practiceSet": 10
+     "practiceSet": 14
     },
     {
      "id": "B12D-05",
@@ -10838,7 +10838,7 @@
      "answer": 3,
      "pack": "practice-b12",
      "level": "Medium",
-     "practiceSet": 14
+     "practiceSet": 15
     },
     {
      "id": "B12D-14",
@@ -10860,7 +10860,7 @@
      "fixed": true,
      "pack": "practice-b12",
      "level": "Medium",
-     "practiceSet": 14
+     "practiceSet": 15
     },
     {
      "id": "B12D-15",
@@ -10882,7 +10882,7 @@
      "fixed": true,
      "pack": "practice-b12",
      "level": "Medium",
-     "practiceSet": 14
+     "practiceSet": 15
     },
     {
      "id": "B12D-16",
@@ -10898,7 +10898,7 @@
      "answer": "1",
      "pack": "practice-b12",
      "level": "Medium",
-     "practiceSet": 14
+     "practiceSet": 15
     },
     {
      "id": "B12D-17",
@@ -11067,8 +11067,7 @@
      "kind": "number",
      "answer": "10",
      "pack": "practice-b12",
-     "level": "Medium",
-     "practiceSet": 15
+     "level": "Medium"
     },
     {
      "id": "B12D-26",
@@ -11089,8 +11088,7 @@
      "answer": 0,
      "fixed": true,
      "pack": "practice-b12",
-     "level": "Medium",
-     "practiceSet": 15
+     "level": "Medium"
     },
     {
      "id": "B12D-27",
@@ -11111,8 +11109,7 @@
      "answer": 2,
      "fixed": true,
      "pack": "practice-b12",
-     "level": "Medium",
-     "practiceSet": 15
+     "level": "Medium"
     },
     {
      "id": "B12D-28",
@@ -11133,8 +11130,7 @@
      "answer": 2,
      "fixed": true,
      "pack": "practice-b12",
-     "level": "Medium",
-     "practiceSet": 15
+     "level": "Medium"
     },
     {
      "id": "B12D-29",
@@ -11646,6 +11642,575 @@
      "pack": "practice-b2",
      "level": "Easy",
      "practiceSet": 10
+    },
+    {
+     "id": "B20D-01",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "How many of the five questions have the answer 'true'?",
+     "solution": "Asha and Chitra differ only on Q1 and Q3, so equal scores mean the key matches Asha on exactly one of them: the key has the same value for Q1 and Q3. Asha and Esha differ only on Q3 and Q4, so in the same way the key has the same value for Q3 and Q4. Hence Q1 = Q3 = Q4 in the key. Let x (0, 1 or 2) be the number of the questions Q2, Q5 on which the key matches Asha's answers (T, F). If Q1 = Q3 = Q4 = F: Asha = 1 + x and Dev = 2 + (2 − x) = 4 − x (Dev's Q2, Q5 answers are the opposite of Asha's). Dev below Asha needs x = 2, but then Bharat = 1 + 0 = 1 is below Dev's 2, so Dev is not the lowest — this case fails. If Q1 = Q3 = Q4 = T: Asha = 2 + x, Chitra = 2 + x, Esha = 2 + x, Bharat = 2 + (2 − x) = 4 − x and Dev = 1 + (2 − x) = 3 − x. Asha > Bharat needs 2 + x > 4 − x, so x = 2: Q2 = T and Q5 = F. Key: T, T, T, T, F. Scores: Asha 4, Bharat 2, Chitra 4, Dev 1, Esha 4, and Dev is lowest ✓. A computer check of all 32 possible keys finds only this one. The key has 4 trues.",
+     "set": "b20-anskey",
+     "type": "mcq",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "answer": 2,
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-02",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "What was Bharat's score?",
+     "solution": "Asha and Chitra differ only on Q1 and Q3, so equal scores mean the key matches Asha on exactly one of them: the key has the same value for Q1 and Q3. Asha and Esha differ only on Q3 and Q4, so in the same way the key has the same value for Q3 and Q4. Hence Q1 = Q3 = Q4 in the key. Let x (0, 1 or 2) be the number of the questions Q2, Q5 on which the key matches Asha's answers (T, F). If Q1 = Q3 = Q4 = F: Asha = 1 + x and Dev = 2 + (2 − x) = 4 − x (Dev's Q2, Q5 answers are the opposite of Asha's). Dev below Asha needs x = 2, but then Bharat = 1 + 0 = 1 is below Dev's 2, so Dev is not the lowest — this case fails. If Q1 = Q3 = Q4 = T: Asha = 2 + x, Chitra = 2 + x, Esha = 2 + x, Bharat = 2 + (2 − x) = 4 − x and Dev = 1 + (2 − x) = 3 − x. Asha > Bharat needs 2 + x > 4 − x, so x = 2: Q2 = T and Q5 = F. Key: T, T, T, T, F. Scores: Asha 4, Bharat 2, Chitra 4, Dev 1, Esha 4, and Dev is lowest ✓. A computer check of all 32 possible keys finds only this one. Bharat matches the key on Q1 and Q4 only, so his score is 2.",
+     "set": "b20-anskey",
+     "type": "tita",
+     "kind": "number",
+     "answer": "2",
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-03",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "If the quiz had instead given +2 for a correct answer and −1 for a wrong answer, what would the five students' marks add up to?",
+     "solution": "Asha and Chitra differ only on Q1 and Q3, so equal scores mean the key matches Asha on exactly one of them: the key has the same value for Q1 and Q3. Asha and Esha differ only on Q3 and Q4, so in the same way the key has the same value for Q3 and Q4. Hence Q1 = Q3 = Q4 in the key. Let x (0, 1 or 2) be the number of the questions Q2, Q5 on which the key matches Asha's answers (T, F). If Q1 = Q3 = Q4 = F: Asha = 1 + x and Dev = 2 + (2 − x) = 4 − x (Dev's Q2, Q5 answers are the opposite of Asha's). Dev below Asha needs x = 2, but then Bharat = 1 + 0 = 1 is below Dev's 2, so Dev is not the lowest — this case fails. If Q1 = Q3 = Q4 = T: Asha = 2 + x, Chitra = 2 + x, Esha = 2 + x, Bharat = 2 + (2 − x) = 4 − x and Dev = 1 + (2 − x) = 3 − x. Asha > Bharat needs 2 + x > 4 − x, so x = 2: Q2 = T and Q5 = F. Key: T, T, T, T, F. Scores: Asha 4, Bharat 2, Chitra 4, Dev 1, Esha 4, and Dev is lowest ✓. A computer check of all 32 possible keys finds only this one. Together they gave 4 + 2 + 4 + 1 + 4 = 15 correct and 25 − 15 = 10 wrong answers, so the total is 2 × 15 − 10 = 20.",
+     "set": "b20-anskey",
+     "type": "tita",
+     "kind": "number",
+     "answer": "20",
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-04",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "For how many of the five questions did exactly three of the five students give the correct answer?",
+     "solution": "Asha and Chitra differ only on Q1 and Q3, so equal scores mean the key matches Asha on exactly one of them: the key has the same value for Q1 and Q3. Asha and Esha differ only on Q3 and Q4, so in the same way the key has the same value for Q3 and Q4. Hence Q1 = Q3 = Q4 in the key. Let x (0, 1 or 2) be the number of the questions Q2, Q5 on which the key matches Asha's answers (T, F). If Q1 = Q3 = Q4 = F: Asha = 1 + x and Dev = 2 + (2 − x) = 4 − x (Dev's Q2, Q5 answers are the opposite of Asha's). Dev below Asha needs x = 2, but then Bharat = 1 + 0 = 1 is below Dev's 2, so Dev is not the lowest — this case fails. If Q1 = Q3 = Q4 = T: Asha = 2 + x, Chitra = 2 + x, Esha = 2 + x, Bharat = 2 + (2 − x) = 4 − x and Dev = 1 + (2 − x) = 3 − x. Asha > Bharat needs 2 + x > 4 − x, so x = 2: Q2 = T and Q5 = F. Key: T, T, T, T, F. Scores: Asha 4, Bharat 2, Chitra 4, Dev 1, Esha 4, and Dev is lowest ✓. A computer check of all 32 possible keys finds only this one. Reading each column against the key T, T, T, T, F, every question was answered correctly by exactly three students, so the answer is 5.",
+     "set": "b20-anskey",
+     "type": "mcq",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "answer": 3,
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-05",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Easy",
+     "question": "How old is Dimple (in years)?",
+     "solution": "Let Chirag be c and Dimple d. Then Anil = c + 4, Ekta = c + 7 and Babita = 2d, so the total is 3c + 3d + 11 = 50, giving c + d = 13 with d > c. The youngest is Chirag (Anil and Ekta are older than Chirag, and so are Dimple and Babita), so 2d − c = 8. With c + d = 13 this gives 3d = 21: d = 7, c = 6. Ages: Anil 10, Babita 14, Chirag 6, Dimple 7, Ekta 13 (total 50 ✓, Babita eldest ✓).",
+     "set": "b20-siblings",
+     "type": "tita",
+     "kind": "number",
+     "answer": "7",
+     "pack": "practice-b20",
+     "level": "Easy",
+     "practiceSet": 10
+    },
+    {
+     "id": "B20D-06",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Easy",
+     "question": "Who is the second eldest of the five?",
+     "solution": "Let Chirag be c and Dimple d. Then Anil = c + 4, Ekta = c + 7 and Babita = 2d, so the total is 3c + 3d + 11 = 50, giving c + d = 13 with d > c. The youngest is Chirag (Anil and Ekta are older than Chirag, and so are Dimple and Babita), so 2d − c = 8. With c + d = 13 this gives 3d = 21: d = 7, c = 6. Ages: Anil 10, Babita 14, Chirag 6, Dimple 7, Ekta 13 (total 50 ✓, Babita eldest ✓). In order of age: Babita 14, Ekta 13, Anil 10, Dimple 7, Chirag 6.",
+     "set": "b20-siblings",
+     "type": "mcq",
+     "options": [
+      "Anil",
+      "Chirag",
+      "Dimple",
+      "Ekta"
+     ],
+     "answer": 3,
+     "pack": "practice-b20",
+     "level": "Easy",
+     "practiceSet": 10
+    },
+    {
+     "id": "B20D-07",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Easy",
+     "question": "How many of the siblings are older than Anil?",
+     "solution": "Let Chirag be c and Dimple d. Then Anil = c + 4, Ekta = c + 7 and Babita = 2d, so the total is 3c + 3d + 11 = 50, giving c + d = 13 with d > c. The youngest is Chirag (Anil and Ekta are older than Chirag, and so are Dimple and Babita), so 2d − c = 8. With c + d = 13 this gives 3d = 21: d = 7, c = 6. Ages: Anil 10, Babita 14, Chirag 6, Dimple 7, Ekta 13 (total 50 ✓, Babita eldest ✓). Only Babita (14) and Ekta (13) are older than Anil (10).",
+     "set": "b20-siblings",
+     "type": "mcq",
+     "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "answer": 1,
+     "pack": "practice-b20",
+     "level": "Easy",
+     "practiceSet": 10
+    },
+    {
+     "id": "B20D-08",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Easy",
+     "question": "After how many years will the combined age of Chirag and Dimple equal Babita's age at that time?",
+     "solution": "Let Chirag be c and Dimple d. Then Anil = c + 4, Ekta = c + 7 and Babita = 2d, so the total is 3c + 3d + 11 = 50, giving c + d = 13 with d > c. The youngest is Chirag (Anil and Ekta are older than Chirag, and so are Dimple and Babita), so 2d − c = 8. With c + d = 13 this gives 3d = 21: d = 7, c = 6. Ages: Anil 10, Babita 14, Chirag 6, Dimple 7, Ekta 13 (total 50 ✓, Babita eldest ✓). After t years: (6 + t) + (7 + t) = 14 + t, so 13 + 2t = 14 + t and t = 1.",
+     "set": "b20-siblings",
+     "type": "tita",
+     "kind": "number",
+     "answer": "1",
+     "pack": "practice-b20",
+     "level": "Easy",
+     "practiceSet": 10
+    },
+    {
+     "id": "B20D-09",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "What is the total weight (in kg) of all five parcels?",
+     "solution": "Each parcel appears in 4 of the 10 pairs, so the readings add up to 4 × (total weight): 196 = 4 × total, total = 49 kg. The two lightest readings must be P + Q = 11 and P + R = 13; the two heaviest must be S + T = 29 and R + T = 25. Then R = 49 − (P + Q) − (S + T) = 49 − 11 − 29 = 9, so P = 13 − 9 = 4, Q = 7, T = 25 − 9 = 16 and S = 13. Check: the ten sums of 4, 7, 9, 13, 16 are exactly 11, 13, 16, 17, 20, 20, 22, 23, 25, 29 ✓ (a computer search over all sets of five weights up to 40 kg finds no other).",
+     "set": "b20-parcels",
+     "type": "tita",
+     "kind": "number",
+     "answer": "49",
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-10",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "What is the weight (in kg) of parcel R?",
+     "solution": "Each parcel appears in 4 of the 10 pairs, so the readings add up to 4 × (total weight): 196 = 4 × total, total = 49 kg. The two lightest readings must be P + Q = 11 and P + R = 13; the two heaviest must be S + T = 29 and R + T = 25. Then R = 49 − (P + Q) − (S + T) = 49 − 11 − 29 = 9, so P = 13 − 9 = 4, Q = 7, T = 25 − 9 = 16 and S = 13. Check: the ten sums of 4, 7, 9, 13, 16 are exactly 11, 13, 16, 17, 20, 20, 22, 23, 25, 29 ✓ (a computer search over all sets of five weights up to 40 kg finds no other).",
+     "set": "b20-parcels",
+     "type": "tita",
+     "kind": "number",
+     "answer": "9",
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-11",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "What is the weight of parcel T?",
+     "solution": "Each parcel appears in 4 of the 10 pairs, so the readings add up to 4 × (total weight): 196 = 4 × total, total = 49 kg. The two lightest readings must be P + Q = 11 and P + R = 13; the two heaviest must be S + T = 29 and R + T = 25. Then R = 49 − (P + Q) − (S + T) = 49 − 11 − 29 = 9, so P = 13 − 9 = 4, Q = 7, T = 25 − 9 = 16 and S = 13. Check: the ten sums of 4, 7, 9, 13, 16 are exactly 11, 13, 16, 17, 20, 20, 22, 23, 25, 29 ✓ (a computer search over all sets of five weights up to 40 kg finds no other).",
+     "set": "b20-parcels",
+     "type": "mcq",
+     "options": [
+      "13 kg",
+      "15 kg",
+      "16 kg",
+      "18 kg"
+     ],
+     "answer": 2,
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-12",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "Which two pairs gave the reading of 20 kg?",
+     "solution": "Each parcel appears in 4 of the 10 pairs, so the readings add up to 4 × (total weight): 196 = 4 × total, total = 49 kg. The two lightest readings must be P + Q = 11 and P + R = 13; the two heaviest must be S + T = 29 and R + T = 25. Then R = 49 − (P + Q) − (S + T) = 49 − 11 − 29 = 9, so P = 13 − 9 = 4, Q = 7, T = 25 − 9 = 16 and S = 13. Check: the ten sums of 4, 7, 9, 13, 16 are exactly 11, 13, 16, 17, 20, 20, 22, 23, 25, 29 ✓ (a computer search over all sets of five weights up to 40 kg finds no other). 4 + 16 = 20 (P–T) and 7 + 13 = 20 (Q–S).",
+     "set": "b20-parcels",
+     "type": "mcq",
+     "options": [
+      "P–T and Q–S",
+      "P–S and Q–T",
+      "Q–S and R–S",
+      "P–T and R–S"
+     ],
+     "answer": 0,
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-13",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Hard",
+     "question": "How many rounds did Ravi win?",
+     "solution": "Write RP for 'Ravi rock, Sima paper' and so on; with no draws there are six kinds of round. Let RP = x. Ravi's rocks: RP + RS = 4, so RS = 4 − x. Sima's paper: RP + SP = 3, so SP = 3 − x. Ravi's scissors: SR + SP = 2, so SR = x − 1. Sima's rock: PR + SR = 2, so PR = 3 − x. Ravi's paper: PR + PS = 3, so PS = x. (Sima's scissors: RS + PS = 4 ✓.) So 1 ≤ x ≤ 3. Ravi wins with RS, PR and SP: (4 − x) + (3 − x) + (3 − x) = 10 − 3x; Sima wins the other 3x − 1. x = 1 gives Ravi 7 wins (Sima does not win more); x = 3 gives Ravi only 1 win; so x = 2. Rounds: RP 2, RS 2, PR 1, PS 2, SR 1, SP 1. Ravi won 4 rounds and Sima 5.",
+     "set": "b20-rps",
+     "type": "tita",
+     "kind": "number",
+     "answer": "4",
+     "pack": "practice-b20",
+     "level": "Hard"
+    },
+    {
+     "id": "B20D-14",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Hard",
+     "question": "In how many rounds did Ravi's rock lose to Sima's paper?",
+     "solution": "Write RP for 'Ravi rock, Sima paper' and so on; with no draws there are six kinds of round. Let RP = x. Ravi's rocks: RP + RS = 4, so RS = 4 − x. Sima's paper: RP + SP = 3, so SP = 3 − x. Ravi's scissors: SR + SP = 2, so SR = x − 1. Sima's rock: PR + SR = 2, so PR = 3 − x. Ravi's paper: PR + PS = 3, so PS = x. (Sima's scissors: RS + PS = 4 ✓.) So 1 ≤ x ≤ 3. Ravi wins with RS, PR and SP: (4 − x) + (3 − x) + (3 − x) = 10 − 3x; Sima wins the other 3x − 1. x = 1 gives Ravi 7 wins (Sima does not win more); x = 3 gives Ravi only 1 win; so x = 2. Rounds: RP 2, RS 2, PR 1, PS 2, SR 1, SP 1. Ravi won 4 rounds and Sima 5. RP = x = 2.",
+     "set": "b20-rps",
+     "type": "tita",
+     "kind": "number",
+     "answer": "2",
+     "pack": "practice-b20",
+     "level": "Hard"
+    },
+    {
+     "id": "B20D-15",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Hard",
+     "question": "In how many rounds did Ravi show paper and win?",
+     "solution": "Write RP for 'Ravi rock, Sima paper' and so on; with no draws there are six kinds of round. Let RP = x. Ravi's rocks: RP + RS = 4, so RS = 4 − x. Sima's paper: RP + SP = 3, so SP = 3 − x. Ravi's scissors: SR + SP = 2, so SR = x − 1. Sima's rock: PR + SR = 2, so PR = 3 − x. Ravi's paper: PR + PS = 3, so PS = x. (Sima's scissors: RS + PS = 4 ✓.) So 1 ≤ x ≤ 3. Ravi wins with RS, PR and SP: (4 − x) + (3 − x) + (3 − x) = 10 − 3x; Sima wins the other 3x − 1. x = 1 gives Ravi 7 wins (Sima does not win more); x = 3 gives Ravi only 1 win; so x = 2. Rounds: RP 2, RS 2, PR 1, PS 2, SR 1, SP 1. Ravi won 4 rounds and Sima 5. Ravi's paper wins against rock: PR = 1.",
+     "set": "b20-rps",
+     "type": "mcq",
+     "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+     ],
+     "answer": 1,
+     "pack": "practice-b20",
+     "level": "Hard"
+    },
+    {
+     "id": "B20D-16",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Hard",
+     "question": "If the last condition (Ravi won at least two rounds) were dropped, how many different values would be possible for the number of rounds Ravi won?",
+     "solution": "Write RP for 'Ravi rock, Sima paper' and so on; with no draws there are six kinds of round. Let RP = x. Ravi's rocks: RP + RS = 4, so RS = 4 − x. Sima's paper: RP + SP = 3, so SP = 3 − x. Ravi's scissors: SR + SP = 2, so SR = x − 1. Sima's rock: PR + SR = 2, so PR = 3 − x. Ravi's paper: PR + PS = 3, so PS = x. (Sima's scissors: RS + PS = 4 ✓.) So 1 ≤ x ≤ 3. Ravi wins with RS, PR and SP: (4 − x) + (3 − x) + (3 − x) = 10 − 3x; Sima wins the other 3x − 1. x = 1 gives Ravi 7 wins (Sima does not win more); x = 3 gives Ravi only 1 win; so x = 2. Rounds: RP 2, RS 2, PR 1, PS 2, SR 1, SP 1. Ravi won 4 rounds and Sima 5. Without that condition both x = 2 and x = 3 are allowed, giving Ravi 4 or 1 wins — two possible values.",
+     "set": "b20-rps",
+     "type": "mcq",
+     "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "answer": 1,
+     "pack": "practice-b20",
+     "level": "Hard"
+    },
+    {
+     "id": "B20D-17",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Medium",
+     "question": "Who gives pebbles in round 3?",
+     "solution": "Holdings (A, B, C, D) after each round: start (11, 7, 4, 2); round 1, A gives: (8, 8, 5, 3); round 2, A gives (tie with B, A first): (5, 9, 6, 4); round 3, B gives: (6, 6, 7, 5); round 4, C gives: (7, 7, 4, 6); round 5, A gives: (4, 8, 5, 7); round 6, B gives: (5, 5, 6, 8); round 7, D gives: (6, 6, 7, 5) — the same as after round 3. So from round 3 on the holdings repeat every 4 rounds, with givers C, A, B, D in rounds 4, 5, 6, 7, then 8, 9, 10, 11, and so on.",
+     "set": "b20-pebbles",
+     "type": "mcq",
+     "options": [
+      "A",
+      "C",
+      "B",
+      "D"
+     ],
+     "answer": 2,
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-18",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Medium",
+     "question": "How many pebbles does D hold after round 50?",
+     "solution": "Holdings (A, B, C, D) after each round: start (11, 7, 4, 2); round 1, A gives: (8, 8, 5, 3); round 2, A gives (tie with B, A first): (5, 9, 6, 4); round 3, B gives: (6, 6, 7, 5); round 4, C gives: (7, 7, 4, 6); round 5, A gives: (4, 8, 5, 7); round 6, B gives: (5, 5, 6, 8); round 7, D gives: (6, 6, 7, 5) — the same as after round 3. So from round 3 on the holdings repeat every 4 rounds, with givers C, A, B, D in rounds 4, 5, 6, 7, then 8, 9, 10, 11, and so on. After round r (r ≥ 3) the holdings depend on r mod 4: 50 leaves remainder 2, the same as round 6, so D holds 8.",
+     "set": "b20-pebbles",
+     "type": "tita",
+     "kind": "number",
+     "answer": "8",
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-19",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Medium",
+     "question": "In how many of the first 20 rounds is A the child who gives?",
+     "solution": "Holdings (A, B, C, D) after each round: start (11, 7, 4, 2); round 1, A gives: (8, 8, 5, 3); round 2, A gives (tie with B, A first): (5, 9, 6, 4); round 3, B gives: (6, 6, 7, 5); round 4, C gives: (7, 7, 4, 6); round 5, A gives: (4, 8, 5, 7); round 6, B gives: (5, 5, 6, 8); round 7, D gives: (6, 6, 7, 5) — the same as after round 3. So from round 3 on the holdings repeat every 4 rounds, with givers C, A, B, D in rounds 4, 5, 6, 7, then 8, 9, 10, 11, and so on. A gives in rounds 1, 2, 5, 9, 13 and 17 — 6 times.",
+     "set": "b20-pebbles",
+     "type": "tita",
+     "kind": "number",
+     "answer": "6",
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-20",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Medium",
+     "question": "Over the first 100 rounds, what is the smallest number of pebbles held by any child at the end of a round?",
+     "solution": "Holdings (A, B, C, D) after each round: start (11, 7, 4, 2); round 1, A gives: (8, 8, 5, 3); round 2, A gives (tie with B, A first): (5, 9, 6, 4); round 3, B gives: (6, 6, 7, 5); round 4, C gives: (7, 7, 4, 6); round 5, A gives: (4, 8, 5, 7); round 6, B gives: (5, 5, 6, 8); round 7, D gives: (6, 6, 7, 5) — the same as after round 3. So from round 3 on the holdings repeat every 4 rounds, with givers C, A, B, D in rounds 4, 5, 6, 7, then 8, 9, 10, 11, and so on. D has 3 after round 1; after that every state in the cycle has at least 4 in each hand (round 2's smallest is 4 too). So the minimum is 3.",
+     "set": "b20-pebbles",
+     "type": "mcq",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "answer": 1,
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-21",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Medium",
+     "question": "How many tokens does Z have left at the end of the auction?",
+     "solution": "Lot 1: Z bids 45 (highest), second-highest is W's 40 — Z pays 40 and has 60 left. Lot 2: X 45 wins and pays Y's 40 (X left 60). Lot 3: Y 45 wins and pays W's 35 (Y left 65). Lot 4: Z 45 (Z still has 60) wins and pays X's 40 — Z has 20 left. Lot 5: Z's planned 40 is cut to 20 tokens; W 50 wins and pays the second-highest actual bid, X's 30 (W left 70). Final tokens: W 70, X 60, Y 65, Z 20.",
+     "set": "b20-auction",
+     "type": "tita",
+     "kind": "number",
+     "answer": "20",
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-22",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Medium",
+     "question": "Which lot was sold for the lowest price?",
+     "solution": "Lot 1: Z bids 45 (highest), second-highest is W's 40 — Z pays 40 and has 60 left. Lot 2: X 45 wins and pays Y's 40 (X left 60). Lot 3: Y 45 wins and pays W's 35 (Y left 65). Lot 4: Z 45 (Z still has 60) wins and pays X's 40 — Z has 20 left. Lot 5: Z's planned 40 is cut to 20 tokens; W 50 wins and pays the second-highest actual bid, X's 30 (W left 70). Final tokens: W 70, X 60, Y 65, Z 20. Prices: 40, 40, 35, 40, 30 — Lot 5 at 30 is the lowest.",
+     "set": "b20-auction",
+     "type": "mcq",
+     "options": [
+      "Lot 1",
+      "Lot 3",
+      "Lot 4",
+      "Lot 5"
+     ],
+     "answer": 3,
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-23",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Medium",
+     "question": "If bids were never cut down to the tokens a collector has left (everything else unchanged), how many tokens would W have at the end?",
+     "solution": "Lot 1: Z bids 45 (highest), second-highest is W's 40 — Z pays 40 and has 60 left. Lot 2: X 45 wins and pays Y's 40 (X left 60). Lot 3: Y 45 wins and pays W's 35 (Y left 65). Lot 4: Z 45 (Z still has 60) wins and pays X's 40 — Z has 20 left. Lot 5: Z's planned 40 is cut to 20 tokens; W 50 wins and pays the second-highest actual bid, X's 30 (W left 70). Final tokens: W 70, X 60, Y 65, Z 20. Only Lot 5 changes: Z's bid stays 40, so W still wins with 50 but pays 40 instead of 30, ending with 100 − 40 = 60.",
+     "set": "b20-auction",
+     "type": "tita",
+     "kind": "number",
+     "answer": "60",
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-24",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Medium",
+     "question": "If instead the winner of each lot paid his own actual bid (everything else unchanged), how many tokens would Z have at the end?",
+     "solution": "Lot 1: Z bids 45 (highest), second-highest is W's 40 — Z pays 40 and has 60 left. Lot 2: X 45 wins and pays Y's 40 (X left 60). Lot 3: Y 45 wins and pays W's 35 (Y left 65). Lot 4: Z 45 (Z still has 60) wins and pays X's 40 — Z has 20 left. Lot 5: Z's planned 40 is cut to 20 tokens; W 50 wins and pays the second-highest actual bid, X's 30 (W left 70). Final tokens: W 70, X 60, Y 65, Z 20. With pay-your-bid: Z wins Lot 1 for 45 (55 left), X wins Lot 2 for 45, Y wins Lot 3 for 45, Z wins Lot 4 for 45 (10 left), and W wins Lot 5 for 50 (Z's bid is cut to 10). Z ends with 10.",
+     "set": "b20-auction",
+     "type": "mcq",
+     "options": [
+      "0",
+      "10",
+      "15",
+      "20"
+     ],
+     "answer": 1,
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-25",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Scheduling",
+     "difficulty": "Medium",
+     "question": "With as many workers as needed, what is the minimum number of days to finish the whole renovation?",
+     "solution": "With enough workers, every task starts as soon as its predecessors finish. Finish days: A 3, B 4, C 5, D 9 (after A and B), E 8, F 13 (after D at 9 and E at 8), G 6, H 11. So the project needs 13 days, along the chain B → D → F (4 + 5 + 4). Working backwards from day 13, the latest finishes are A 4, B 4, C 6, D 9, E 9, F 13, G 8, H 13, so the slacks are A 1, B 0, C 1, D 0, E 1, F 0, G 2, H 2.",
+     "set": "b20-project",
+     "type": "tita",
+     "kind": "number",
+     "answer": "13",
+     "pack": "practice-b20",
+     "level": "Hard"
+    },
+    {
+     "id": "B20D-26",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Scheduling",
+     "difficulty": "Hard",
+     "question": "With as many workers as needed and the renovation finishing in the minimum time, which tasks can each be delayed by 2 days without delaying the finish?",
+     "solution": "With enough workers, every task starts as soon as its predecessors finish. Finish days: A 3, B 4, C 5, D 9 (after A and B), E 8, F 13 (after D at 9 and E at 8), G 6, H 11. So the project needs 13 days, along the chain B → D → F (4 + 5 + 4). Working backwards from day 13, the latest finishes are A 4, B 4, C 6, D 9, E 9, F 13, G 8, H 13, so the slacks are A 1, B 0, C 1, D 0, E 1, F 0, G 2, H 2. Only G and H have a slack of 2 days.",
+     "set": "b20-project",
+     "type": "mcq",
+     "options": [
+      "C, E and G only",
+      "A, C and E only",
+      "G and H only",
+      "G only"
+     ],
+     "answer": 2,
+     "pack": "practice-b20",
+     "level": "Hard"
+    },
+    {
+     "id": "B20D-27",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Scheduling",
+     "difficulty": "Hard",
+     "question": "If only two workers are available, what is the minimum number of days needed?",
+     "solution": "With enough workers, every task starts as soon as its predecessors finish. Finish days: A 3, B 4, C 5, D 9 (after A and B), E 8, F 13 (after D at 9 and E at 8), G 6, H 11. So the project needs 13 days, along the chain B → D → F (4 + 5 + 4). Working backwards from day 13, the latest finishes are A 4, B 4, C 6, D 9, E 9, F 13, G 8, H 13, so the slacks are A 1, B 0, C 1, D 0, E 1, F 0, G 2, H 2. The tasks total 3 + 4 + 2 + 5 + 3 + 4 + 2 + 5 = 28 worker-days, so two workers need at least 14 days. 14 is achievable: worker 1 does A (0–3), C (3–5), D (5–10), F (10–14); worker 2 does B (0–4), G (4–6), E (6–9), H (9–14). Every task starts after its predecessors finish, so the answer is 14.",
+     "set": "b20-project",
+     "type": "tita",
+     "kind": "number",
+     "answer": "14",
+     "pack": "practice-b20",
+     "level": "Hard"
+    },
+    {
+     "id": "B20D-28",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Scheduling",
+     "difficulty": "Hard",
+     "question": "What is the smallest number of workers with which the renovation can still be finished in the minimum possible time found with unlimited workers?",
+     "solution": "With enough workers, every task starts as soon as its predecessors finish. Finish days: A 3, B 4, C 5, D 9 (after A and B), E 8, F 13 (after D at 9 and E at 8), G 6, H 11. So the project needs 13 days, along the chain B → D → F (4 + 5 + 4). Working backwards from day 13, the latest finishes are A 4, B 4, C 6, D 9, E 9, F 13, G 8, H 13, so the slacks are A 1, B 0, C 1, D 0, E 1, F 0, G 2, H 2. Two workers need at least 28/2 = 14 days, so 13 days needs at least 3. With three it works: start every task as early as possible — at most three tasks (C, D and G, during day 4 to 5) are ever in progress together, so 3 workers suffice.",
+     "set": "b20-project",
+     "type": "mcq",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "answer": 1,
+     "pack": "practice-b20",
+     "level": "Hard"
+    },
+    {
+     "id": "B20D-29",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Scheduling",
+     "difficulty": "Medium",
+     "question": "Which paper is held on Day 3?",
+     "solution": "Accounts and Economics are 3 days apart with no free day between, so Accounts, two other papers and Economics fill four consecutive days. French follows a free day and Chemistry comes after French, so Chemistry is not on Day 1–3 and French is not on Day 1. Trying the placements (the computer checks all 20,160 ways): the only timetable that fits is Day 1 Accounts, Day 2 Biology, Day 3 Drawing, Day 4 Economics, Day 5 free, Day 6 French, Day 7 free, Day 8 Chemistry. Check: free days 5 and 7 not adjacent ✓; Biology (2) before Chemistry (8), not consecutive ✓; Economics 4 = Accounts 1 + 3 with Days 2–3 busy ✓; French on 6 after free Day 5 ✓; Biology on an even day ✓; Chemistry after French ✓.",
+     "set": "b20-exams",
+     "type": "mcq",
+     "options": [
+      "Biology",
+      "French",
+      "Economics",
+      "Drawing"
+     ],
+     "answer": 3,
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-30",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Scheduling",
+     "difficulty": "Medium",
+     "question": "On which day is French held?",
+     "solution": "Accounts and Economics are 3 days apart with no free day between, so Accounts, two other papers and Economics fill four consecutive days. French follows a free day and Chemistry comes after French, so Chemistry is not on Day 1–3 and French is not on Day 1. Trying the placements (the computer checks all 20,160 ways): the only timetable that fits is Day 1 Accounts, Day 2 Biology, Day 3 Drawing, Day 4 Economics, Day 5 free, Day 6 French, Day 7 free, Day 8 Chemistry. Check: free days 5 and 7 not adjacent ✓; Biology (2) before Chemistry (8), not consecutive ✓; Economics 4 = Accounts 1 + 3 with Days 2–3 busy ✓; French on 6 after free Day 5 ✓; Biology on an even day ✓; Chemistry after French ✓.",
+     "set": "b20-exams",
+     "type": "tita",
+     "kind": "number",
+     "answer": "6",
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-31",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Scheduling",
+     "difficulty": "Medium",
+     "question": "Which are the two free days?",
+     "solution": "Accounts and Economics are 3 days apart with no free day between, so Accounts, two other papers and Economics fill four consecutive days. French follows a free day and Chemistry comes after French, so Chemistry is not on Day 1–3 and French is not on Day 1. Trying the placements (the computer checks all 20,160 ways): the only timetable that fits is Day 1 Accounts, Day 2 Biology, Day 3 Drawing, Day 4 Economics, Day 5 free, Day 6 French, Day 7 free, Day 8 Chemistry. Check: free days 5 and 7 not adjacent ✓; Biology (2) before Chemistry (8), not consecutive ✓; Economics 4 = Accounts 1 + 3 with Days 2–3 busy ✓; French on 6 after free Day 5 ✓; Biology on an even day ✓; Chemistry after French ✓.",
+     "set": "b20-exams",
+     "type": "mcq",
+     "options": [
+      "Days 4 and 6",
+      "Days 5 and 7",
+      "Days 3 and 5",
+      "Days 2 and 7"
+     ],
+     "answer": 1,
+     "pack": "practice-b20",
+     "level": "Medium"
+    },
+    {
+     "id": "B20D-32",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Scheduling",
+     "difficulty": "Medium",
+     "question": "How many papers are held after Biology but before Chemistry?",
+     "solution": "Accounts and Economics are 3 days apart with no free day between, so Accounts, two other papers and Economics fill four consecutive days. French follows a free day and Chemistry comes after French, so Chemistry is not on Day 1–3 and French is not on Day 1. Trying the placements (the computer checks all 20,160 ways): the only timetable that fits is Day 1 Accounts, Day 2 Biology, Day 3 Drawing, Day 4 Economics, Day 5 free, Day 6 French, Day 7 free, Day 8 Chemistry. Check: free days 5 and 7 not adjacent ✓; Biology (2) before Chemistry (8), not consecutive ✓; Economics 4 = Accounts 1 + 3 with Days 2–3 busy ✓; French on 6 after free Day 5 ✓; Biology on an even day ✓; Chemistry after French ✓. Drawing (3), Economics (4) and French (6) lie between Biology (2) and Chemistry (8): 3 papers.",
+     "set": "b20-exams",
+     "type": "mcq",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "answer": 1,
+     "pack": "practice-b20",
+     "level": "Medium"
     },
     {
      "exam": "cat",
@@ -21406,6 +21971,46 @@
    "kind": "passage",
    "title": "Why proverbs disagree",
    "html": "<b>Why proverbs disagree</b><p>Collections of proverbs are full of contradictions. 'Look before you leap' sits uneasily beside 'he who hesitates is lost'; 'many hands make light work' is flatly denied by 'too many cooks spoil the broth'. To the systematic mind this looks like an embarrassment. A body of advice that recommends both caution and boldness, both cooperation and its avoidance, seems to recommend nothing at all.</p><p>The embarrassment fades once we ask what proverbs are for. They are not premises from which conclusions can be deduced, still less laws that hold in all cases. They are closer to tools, each suited to a recurring kind of situation. A carpenter is not inconsistent for owning both a saw and a glue pot; the question is never which tool is correct in general, but which one this job needs. A proverb is summoned when a speaker has already sized up a situation and wants to name it compactly, and the name carries a recommendation with it. The recommendation is only as good as the sizing-up that came before it: describe a hasty plan as bold and the proverb about hesitation blesses it; describe it as reckless and the proverb about looking first condemns it.</p><p>This means that the real knowledge lies not in the proverbs but in the judgement that selects among them, and that judgement is precisely what proverbs cannot supply. No proverb tells you whether the moment calls for looking or for leaping. Seen in this light, the oddity is not that proverbs contradict each other but that anyone expected them not to. A culture that offered only one of each pair would be giving worse advice, not better, because it would be pretending that one kind of situation never occurs.</p><p>There is, however, a less flattering side to this flexibility. Because a proverb can be found to support almost any course of action, proverbs are well suited to justifying decisions after they have been made. The person who rushed in and succeeded quotes the saying about hesitation; had the venture failed, an onlooker would have been ready with the one about looking first. Used this way, the stock of proverbs becomes a device for making every outcome seem to have been foreseeable.</p><p>The two uses are hard to tell apart from the outside, since the same words serve both. The difference lies in timing and in honesty: whether the saying is brought to the situation before the choice, as a way of thinking about it, or fitted to the result afterwards, as a way of not having to. A simple test is to ask whether the speaker could have said in advance which saying they would reach for. If so, the proverb did some work; if the choice was settled only by how things turned out, it did none.</p>"
+  },
+  "b20-anskey": {
+   "kind": "dilr",
+   "title": "The missing answer key (Medium)",
+   "html": "<b>The missing answer key</b><p>A quiz had five true/false questions, Q1 to Q5. Five students answered every question; their answers are shown below (T = true, F = false). Each correct answer earned 1 mark and there was no negative marking. The answer key has been lost.</p><table class='data'><tr><th>Student</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Q5</th></tr><tr><td>Asha</td><td>T</td><td>T</td><td>F</td><td>T</td><td>F</td></tr><tr><td>Bharat</td><td>T</td><td>F</td><td>F</td><td>T</td><td>T</td></tr><tr><td>Chitra</td><td>F</td><td>T</td><td>T</td><td>T</td><td>F</td></tr><tr><td>Dev</td><td>F</td><td>F</td><td>T</td><td>F</td><td>T</td></tr><tr><td>Esha</td><td>T</td><td>T</td><td>T</td><td>F</td><td>F</td></tr></table><ul class='clues'><li>Asha, Chitra and Esha got the same score.</li><li>Each of Asha, Chitra and Esha scored more than Bharat.</li><li>Dev scored less than every other student.</li></ul>"
+  },
+  "b20-siblings": {
+   "kind": "dilr",
+   "title": "Five siblings (Easy)",
+   "html": "<b>Five siblings</b><p>Anil, Babita, Chirag, Dimple and Ekta are siblings. Their ages are whole numbers of years, and no two of them are the same age.</p><ul class='clues'><li>Their ages add up to 50 years.</li><li>Anil is 4 years older than Chirag.</li><li>Babita is twice as old as Dimple.</li><li>Ekta is 3 years older than Anil.</li><li>Dimple is older than Chirag.</li><li>Babita is the eldest, and she is 8 years older than the youngest sibling.</li></ul>"
+  },
+  "b20-parcels": {
+   "kind": "dilr",
+   "title": "Parcels weighed in pairs (Medium)",
+   "html": "<b>Parcels weighed in pairs</b><p>Five parcels P, Q, R, S and T have different weights, each a whole number of kilograms, with P &lt; Q &lt; R &lt; S &lt; T. Every one of the ten possible pairs of parcels was put on a scale together, and the ten readings were written down without noting which pair gave which reading. The readings, in kg, in increasing order were:</p><p><b>11, 13, 16, 17, 20, 20, 22, 23, 25, 29</b></p>"
+  },
+  "b20-rps": {
+   "kind": "dilr",
+   "title": "Rock, paper, scissors (Hard)",
+   "html": "<b>Rock, paper, scissors</b><p>Ravi and Sima played 9 rounds of rock–paper–scissors. In each round both show one hand at the same time: rock beats scissors, scissors beats paper and paper beats rock; the same hand on both sides is a draw.</p><ul class='clues'><li>None of the 9 rounds was a draw.</li><li>Ravi showed rock 4 times, paper 3 times and scissors 2 times.</li><li>Sima showed rock 2 times, paper 3 times and scissors 4 times.</li><li>Sima won more rounds than Ravi.</li><li>Ravi won at least two rounds.</li></ul>"
+  },
+  "b20-pebbles": {
+   "kind": "dilr",
+   "title": "Passing pebbles (Medium)",
+   "html": "<b>Passing pebbles</b><p>Four children, A, B, C and D, start a game with 11, 7, 4 and 2 pebbles respectively. The game is played in rounds. In each round, the child holding the most pebbles gives one pebble to each of the other three children. If two or more children are tied for the most, the one who comes first in alphabetical order gives.</p>"
+  },
+  "b20-auction": {
+   "kind": "dilr",
+   "title": "Sealed-bid auction (Medium)",
+   "html": "<b>Sealed-bid auction</b><p>Four collectors, W, X, Y and Z, each start with 100 tokens. Five lots are auctioned one after another, Lot 1 to Lot 5. Before the auction each collector wrote down a planned bid for every lot (table below). The rules are:</p><ul class='clues'><li>For each lot, a collector's actual bid is the planned bid, or the tokens he has left at that moment if that is smaller.</li><li>The highest actual bid wins the lot, but the winner pays the <i>second-highest</i> actual bid for that lot.</li><li>If two collectors tie for the highest bid, the one with more tokens left wins (this never happens below).</li></ul><table class='data'><tr><th>Collector</th><th>Lot 1</th><th>Lot 2</th><th>Lot 3</th><th>Lot 4</th><th>Lot 5</th></tr><tr><td>W</td><td>40</td><td>30</td><td>35</td><td>20</td><td>50</td></tr><tr><td>X</td><td>35</td><td>45</td><td>10</td><td>40</td><td>30</td></tr><tr><td>Y</td><td>30</td><td>40</td><td>45</td><td>30</td><td>25</td></tr><tr><td>Z</td><td>45</td><td>20</td><td>30</td><td>45</td><td>40</td></tr></table>"
+  },
+  "b20-project": {
+   "kind": "dilr",
+   "title": "Workshop renovation (Hard)",
+   "html": "<b>Workshop renovation</b><p>A renovation has eight tasks, A to H. The table gives each task's duration in days and the tasks that must be fully finished before it can start. A task, once started, is done by one worker without a break; a worker does one task at a time; any worker can do any task.</p><table class='data'><tr><th>Task</th><th>Duration (days)</th><th>Must follow</th></tr><tr><td>A</td><td>3</td><td>—</td></tr><tr><td>B</td><td>4</td><td>—</td></tr><tr><td>C</td><td>2</td><td>A</td></tr><tr><td>D</td><td>5</td><td>A, B</td></tr><tr><td>E</td><td>3</td><td>C</td></tr><tr><td>F</td><td>4</td><td>D, E</td></tr><tr><td>G</td><td>2</td><td>B</td></tr><tr><td>H</td><td>5</td><td>G</td></tr></table>"
+  },
+  "b20-exams": {
+   "kind": "dilr",
+   "title": "Exam timetable (Medium)",
+   "html": "<b>Exam timetable</b><p>Six papers — Accounts, Biology, Chemistry, Drawing, Economics and French — are to be held over eight days, Day 1 to Day 8, at most one paper a day. So exactly two days have no paper (free days).</p><ul class='clues'><li>There is a paper on Day 1 and on Day 8, and the two free days are not next to each other.</li><li>Biology is held before Chemistry, and they are not on consecutive days.</li><li>Economics is held exactly three days after Accounts, and there is no free day between them.</li><li>French is held on the day just after a free day.</li><li>Biology is held on an even-numbered day.</li><li>Chemistry is held after French.</li></ul>"
   },
   "dp-linear1": {
    "kind": "dilr",

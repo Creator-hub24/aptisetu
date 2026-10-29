@@ -903,7 +903,7 @@ def _pack_cards():
         return f"<div class='card'><h3>{title}</h3><p class='muted'>{'Each section: 40 min, CAT marking' if mode=='sectional' else 'Untimed, solution after each answer'}</p>{links}</div>"
     mocks="".join(card(pk,"CAT Mock "+pk.split("-")[1],"sectional") for pk in sorted(P) if pk.startswith("mock-"))
     secs="".join(card(pk,pk.split("-")[0].upper()+" Sectional "+pk.split("-")[-1],"sectional") for pk in sorted(P) if "-sectional-" in pk)
-    prac="".join(card(pk,{"practice-dilr":"DILR practice sets","practice-va":"Verbal ability practice","practice-b2":"Practice pack B2 (QA, DILR, VARC)","practice-b9":"Practice pack B9 (QA)","practice-b12":"Practice pack B12 (DILR)","practice-b13":"Practice pack B13 (QA)","practice-b16":"Practice pack B16 (VARC)","practice-b17":"Practice pack B17 (QA)","practice-b18":"Practice pack B18 (QA)"}.get(pk,"RC practice "+pk.split("-")[-1]),"practice") for pk in sorted(P) if pk.startswith("practice-"))
+    prac="".join(card(pk,{"practice-dilr":"DILR practice sets","practice-va":"Verbal ability practice","practice-b2":"Practice pack B2 (QA, DILR, VARC)","practice-b9":"Practice pack B9 (QA)","practice-b12":"Practice pack B12 (DILR)","practice-b13":"Practice pack B13 (QA)","practice-b16":"Practice pack B16 (VARC)","practice-b17":"Practice pack B17 (QA)","practice-b18":"Practice pack B18 (QA)","practice-b20":"Practice pack B20 (DILR)","practice-b21":"Practice pack B21 (QA)"}.get(pk,"RC practice "+pk.split("-")[-1]),"practice") for pk in sorted(P) if pk.startswith("practice-"))
     return mocks,secs,prac
 _M,_S,_PR=_pack_cards()
 page("mock-tests.html","Mock Tests","""
