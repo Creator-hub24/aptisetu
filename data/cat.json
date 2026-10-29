@@ -7704,7 +7704,7 @@
      "id": "DS2-LINEAR3-11",
      "pack": "dilr-sectional-2",
      "level": "Hard",
-     "practiceSet": 10
+     "practiceSet": 14
     },
     {
      "exam": "cat",
@@ -7725,7 +7725,7 @@
      "id": "DS2-LINEAR3-12",
      "pack": "dilr-sectional-2",
      "level": "Hard",
-     "practiceSet": 10
+     "practiceSet": 14
     },
     {
      "exam": "cat",
@@ -7746,7 +7746,7 @@
      "id": "DS2-LINEAR3-13",
      "pack": "dilr-sectional-2",
      "level": "Hard",
-     "practiceSet": 10
+     "practiceSet": 14
     },
     {
      "exam": "cat",
@@ -7762,7 +7762,7 @@
      "id": "DS2-LINEAR3-14",
      "pack": "dilr-sectional-2",
      "level": "Medium",
-     "practiceSet": 10
+     "practiceSet": 14
     },
     {
      "exam": "cat",
@@ -9747,7 +9747,7 @@
      "answer": "3",
      "pack": "practice-b2",
      "level": "Medium",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "id": "B2D-02",
@@ -9768,7 +9768,7 @@
      "answer": 2,
      "pack": "practice-b2",
      "level": "Medium",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "id": "B2D-03",
@@ -9789,7 +9789,7 @@
      "answer": 2,
      "pack": "practice-b2",
      "level": "Medium",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "id": "B2D-04",
@@ -9810,7 +9810,7 @@
      "answer": 0,
      "pack": "practice-b2",
      "level": "Medium",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "id": "B2D-05",
@@ -9910,7 +9910,7 @@
      "answer": 2,
      "pack": "practice-b2",
      "level": "Hard",
-     "practiceSet": 14
+     "practiceSet": 15
     },
     {
      "id": "B2D-10",
@@ -9926,7 +9926,7 @@
      "answer": "4",
      "pack": "practice-b2",
      "level": "Hard",
-     "practiceSet": 14
+     "practiceSet": 15
     },
     {
      "id": "B2D-11",
@@ -9947,7 +9947,7 @@
      "answer": 0,
      "pack": "practice-b2",
      "level": "Hard",
-     "practiceSet": 14
+     "practiceSet": 15
     },
     {
      "id": "B2D-12",
@@ -9963,7 +9963,7 @@
      "answer": "9",
      "pack": "practice-b2",
      "level": "Hard",
-     "practiceSet": 14
+     "practiceSet": 15
     },
     {
      "id": "B2D-13",
@@ -10029,6 +10029,82 @@
      "answer": "104",
      "pack": "practice-b2",
      "level": "Hard"
+    },
+    {
+     "id": "B2D-17",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Distribution",
+     "difficulty": "Easy",
+     "question": "How many bananas did X get?",
+     "solution": "Z's six fruits are apples plus equal numbers of oranges and bananas, so Z's apples = 6 − 2 × (Z's bananas), an even number. If Z had 2 or more apples, X would need at least 3 and Y at least 4, which is 9 or more apples, but there are only 7. So Z has 0 apples, 3 bananas and 3 oranges. X has no oranges, so the remaining 5 − 3 = 2 oranges are Y's. Y's other 4 fruits are apples and bananas, and X's 6 fruits are apples and bananas. X and Y share all 7 apples with Y having more: the splits (3, 4), (2, 5) and (1, 6) are possible in principle, but Y can hold at most 4 apples, so X has 3 apples and Y has 4. Then X has 6 − 3 = 3 bananas and Y has 0 bananas. Result: X 3 apples, 3 bananas, 0 oranges; Y 4 apples, 0 bananas, 2 oranges; Z 0 apples, 3 bananas, 3 oranges. A computer check of every possible split confirms this is the only one. X got 3 bananas.",
+     "set": "b2-fruit",
+     "type": "tita",
+     "kind": "number",
+     "answer": "3",
+     "pack": "practice-b2",
+     "level": "Easy",
+     "practiceSet": 9
+    },
+    {
+     "id": "B2D-18",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Distribution",
+     "difficulty": "Easy",
+     "question": "Which friend got no bananas?",
+     "solution": "Z's six fruits are apples plus equal numbers of oranges and bananas, so Z's apples = 6 − 2 × (Z's bananas), an even number. If Z had 2 or more apples, X would need at least 3 and Y at least 4, which is 9 or more apples, but there are only 7. So Z has 0 apples, 3 bananas and 3 oranges. X has no oranges, so the remaining 5 − 3 = 2 oranges are Y's. Y's other 4 fruits are apples and bananas, and X's 6 fruits are apples and bananas. X and Y share all 7 apples with Y having more: the splits (3, 4), (2, 5) and (1, 6) are possible in principle, but Y can hold at most 4 apples, so X has 3 apples and Y has 4. Then X has 6 − 3 = 3 bananas and Y has 0 bananas. Result: X 3 apples, 3 bananas, 0 oranges; Y 4 apples, 0 bananas, 2 oranges; Z 0 apples, 3 bananas, 3 oranges. A computer check of every possible split confirms this is the only one. Only Y got no bananas.",
+     "set": "b2-fruit",
+     "type": "mcq",
+     "options": [
+      "X",
+      "Y",
+      "Z",
+      "None of them"
+     ],
+     "answer": 1,
+     "fixed": true,
+     "pack": "practice-b2",
+     "level": "Easy",
+     "practiceSet": 9
+    },
+    {
+     "id": "B2D-19",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Distribution",
+     "difficulty": "Easy",
+     "question": "Which friend got the most oranges?",
+     "solution": "Z's six fruits are apples plus equal numbers of oranges and bananas, so Z's apples = 6 − 2 × (Z's bananas), an even number. If Z had 2 or more apples, X would need at least 3 and Y at least 4, which is 9 or more apples, but there are only 7. So Z has 0 apples, 3 bananas and 3 oranges. X has no oranges, so the remaining 5 − 3 = 2 oranges are Y's. Y's other 4 fruits are apples and bananas, and X's 6 fruits are apples and bananas. X and Y share all 7 apples with Y having more: the splits (3, 4), (2, 5) and (1, 6) are possible in principle, but Y can hold at most 4 apples, so X has 3 apples and Y has 4. Then X has 6 − 3 = 3 bananas and Y has 0 bananas. Result: X 3 apples, 3 bananas, 0 oranges; Y 4 apples, 0 bananas, 2 oranges; Z 0 apples, 3 bananas, 3 oranges. A computer check of every possible split confirms this is the only one. Z got 3 oranges, more than Y's 2 and X's 0.",
+     "set": "b2-fruit",
+     "type": "mcq",
+     "options": [
+      "X",
+      "Y",
+      "Z",
+      "Y and Z got the same number"
+     ],
+     "answer": 2,
+     "fixed": true,
+     "pack": "practice-b2",
+     "level": "Easy",
+     "practiceSet": 9
+    },
+    {
+     "id": "B2D-20",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Distribution",
+     "difficulty": "Medium",
+     "question": "How many of the three friends got at least one fruit of each of the three kinds?",
+     "solution": "Z's six fruits are apples plus equal numbers of oranges and bananas, so Z's apples = 6 − 2 × (Z's bananas), an even number. If Z had 2 or more apples, X would need at least 3 and Y at least 4, which is 9 or more apples, but there are only 7. So Z has 0 apples, 3 bananas and 3 oranges. X has no oranges, so the remaining 5 − 3 = 2 oranges are Y's. Y's other 4 fruits are apples and bananas, and X's 6 fruits are apples and bananas. X and Y share all 7 apples with Y having more: the splits (3, 4), (2, 5) and (1, 6) are possible in principle, but Y can hold at most 4 apples, so X has 3 apples and Y has 4. Then X has 6 − 3 = 3 bananas and Y has 0 bananas. Result: X 3 apples, 3 bananas, 0 oranges; Y 4 apples, 0 bananas, 2 oranges; Z 0 apples, 3 bananas, 3 oranges. A computer check of every possible split confirms this is the only one. X has no oranges, Y has no bananas and Z has no apples, so none of them has all three kinds: the answer is 0.",
+     "set": "b2-fruit",
+     "type": "tita",
+     "kind": "number",
+     "answer": "0",
+     "pack": "practice-b2",
+     "level": "Easy",
+     "practiceSet": 9
     },
     {
      "exam": "cat",
@@ -10887,8 +10963,7 @@
      "answer": 1,
      "id": "DP-CIRCULAR12-51",
      "pack": "practice-dilr",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -10903,8 +10978,7 @@
      "answer": "1",
      "id": "DP-CIRCULAR12-52",
      "pack": "practice-dilr",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -10924,8 +10998,7 @@
      "answer": 2,
      "id": "DP-CIRCULAR12-53",
      "pack": "practice-dilr",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -10945,8 +11018,7 @@
      "answer": 1,
      "id": "DP-CIRCULAR12-54",
      "pack": "practice-dilr",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -17903,6 +17975,11 @@
    "kind": "dilr",
    "title": "The doubling game (Hard)",
    "html": "<b>The doubling game</b><p>Four players, A, B, C and D, play four rounds of a game with coins. Each round has exactly one loser, and every player loses exactly one round. The loser of a round pays each of the other three players as many coins as that player holds at that moment, so each of the other three doubles their holding. The loser always has enough coins to pay. No other coins change hands.</p><ul class='clues'><li>After the four rounds, A, B, C and D hold 16, 32, 48 and 64 coins respectively.</li><li>At the start, B held more coins than the other three put together.</li><li>At the start, C held fewer coins than each of the others.</li><li>D lost a round before A did.</li></ul>"
+  },
+  "b2-fruit": {
+   "kind": "dilr",
+   "title": "Sharing fruit (Easy)",
+   "html": "<b>Sharing fruit</b><p>Seven apples, six bananas and five oranges (18 fruits in all) are shared among three friends, X, Y and Z, so that each friend gets exactly six fruits. It is also known that:</p><ul class='clues'><li>X got no oranges.</li><li>Y got more apples than X, and X got more apples than Z.</li><li>Z got as many oranges as bananas.</li></ul>"
   },
   "b2-rc1": {
    "kind": "passage",

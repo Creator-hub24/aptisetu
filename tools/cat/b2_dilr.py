@@ -147,3 +147,25 @@ def build(B):
     T("Games with rules", "Hard", "How many coins did C hold at the end of round 2?", h[2][2], exp + f" C held {h[2][2]} coins after round 2.")
     mx = max(max(x) for x in h); assert mx == 104
     T("Games with rules", "Hard", "What is the largest number of coins held by any one player at any time (at the start or at the end of any round)?", mx, exp + f" The largest holding is C's {mx} coins after round 3.")
+
+    # ---------- Set 5: sharing fruit (Distribution) ----------
+    sols = []
+    for xa, xb, xo, ya, yb, yo in itertools.product(range(7), repeat=6):
+        za, zb, zo = 7 - xa - ya, 6 - xb - yb, 5 - xo - yo
+        if min(za, zb, zo) < 0 or xa + xb + xo != 6 or ya + yb + yo != 6 or za + zb + zo != 6: continue
+        if xo != 0 or not (ya > xa > za) or zo != zb: continue
+        sols.append(((xa, xb, xo), (ya, yb, yo), (za, zb, zo)))
+    assert sols == [((3, 3, 0), (4, 0, 2), (0, 3, 3))]; X_, Y_, Z_ = sols[0]
+    B.add_set("b2-fruit", "dilr", "Sharing fruit (Easy)",
+        "<b>Sharing fruit</b><p>Seven apples, six bananas and five oranges (18 fruits in all) are shared among three friends, X, Y and Z, so that each friend gets exactly six fruits. It is also known that:</p>"
+        + ul(["X got no oranges.", "Y got more apples than X, and X got more apples than Z.", "Z got as many oranges as bananas."]))
+    exp = ("Z's six fruits are apples plus equal numbers of oranges and bananas, so Z's apples = 6 − 2 × (Z's bananas), an even number. If Z had 2 or more apples, X would need at least 3 and Y at least 4, which is 9 or more apples, but there are only 7. "
+           "So Z has 0 apples, 3 bananas and 3 oranges. X has no oranges, so the remaining 5 − 3 = 2 oranges are Y's. Y's other 4 fruits are apples and bananas, and X's 6 fruits are apples and bananas. "
+           "X and Y share all 7 apples with Y having more: the splits (3, 4), (2, 5) and (1, 6) are possible in principle, but Y can hold at most 4 apples, so X has 3 apples and Y has 4. Then X has 6 − 3 = 3 bananas and Y has 0 bananas. "
+           "Result: X 3 apples, 3 bananas, 0 oranges; Y 4 apples, 0 bananas, 2 oranges; Z 0 apples, 3 bananas, 3 oranges. A computer check of every possible split confirms this is the only one.")
+    T, M = (lambda *a, **k: B.tita(s, *a, set_id="b2-fruit", **k)), (lambda *a, **k: B.mcq(s, *a, set_id="b2-fruit", **k))
+    T("Distribution", "Easy", "How many bananas did X get?", X_[1], exp + " X got 3 bananas.")
+    M("Distribution", "Easy", "Which friend got no bananas?", ["X", "Y", "Z", "None of them"], "Y", exp + " Only Y got no bananas.", fixed=True)
+    M("Distribution", "Easy", "Which friend got the most oranges?", ["X", "Y", "Z", "Y and Z got the same number"], "Z", exp + " Z got 3 oranges, more than Y's 2 and X's 0.", fixed=True)
+    allk = sum(all(v > 0 for v in f) for f in (X_, Y_, Z_)); assert allk == 0
+    T("Distribution", "Medium", "How many of the three friends got at least one fruit of each of the three kinds?", allk, exp + " X has no oranges, Y has no bananas and Z has no apples, so none of them has all three kinds: the answer is 0.")

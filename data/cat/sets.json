@@ -591,36 +591,36 @@
      {
       "set": 9,
       "ids": [
+       "B2D-17",
+       "B2D-18",
+       "B2D-19",
+       "B2D-20",
        "B2D-05",
        "B2D-06",
        "B2D-07",
-       "B2D-08",
-       "B2D-01",
-       "B2D-02",
-       "B2D-03",
-       "B2D-04"
+       "B2D-08"
       ],
       "groups": [
-       "b2-floors",
-       "b2-knights"
+       "b2-fruit",
+       "b2-floors"
       ],
       "filled": true
      },
      {
       "set": 10,
       "ids": [
+       "B2D-01",
+       "B2D-02",
+       "B2D-03",
+       "B2D-04",
        "DS1-TOURN3-11",
        "DS1-TOURN3-12",
        "DS1-TOURN3-13",
-       "DS1-TOURN3-14",
-       "DS2-LINEAR3-11",
-       "DS2-LINEAR3-12",
-       "DS2-LINEAR3-13",
-       "DS2-LINEAR3-14"
+       "DS1-TOURN3-14"
       ],
       "groups": [
-       "ds1-tourn3",
-       "ds2-linear3"
+       "b2-knights",
+       "ds1-tourn3"
       ],
       "filled": true
      }
@@ -700,36 +700,36 @@
      {
       "set": 14,
       "ids": [
+       "DS2-LINEAR3-11",
+       "DS2-LINEAR3-12",
+       "DS2-LINEAR3-13",
+       "DS2-LINEAR3-14",
        "DS2-GROUP5-19",
        "DS2-GROUP5-20",
        "DS2-GROUP5-21",
-       "DS2-GROUP5-22",
-       "B2D-09",
-       "B2D-10",
-       "B2D-11",
-       "B2D-12"
+       "DS2-GROUP5-22"
       ],
       "groups": [
-       "ds2-group5",
-       "b2-unique"
+       "ds2-linear3",
+       "ds2-group5"
       ],
       "filled": true
      },
      {
       "set": 15,
       "ids": [
+       "B2D-09",
+       "B2D-10",
+       "B2D-11",
+       "B2D-12",
        "DP-NETWORK10-42",
        "DP-NETWORK10-43",
        "DP-NETWORK10-44",
-       "DP-NETWORK10-45",
-       "DP-CIRCULAR12-51",
-       "DP-CIRCULAR12-52",
-       "DP-CIRCULAR12-53",
-       "DP-CIRCULAR12-54"
+       "DP-NETWORK10-45"
       ],
       "groups": [
-       "dp-network10",
-       "dp-circular12"
+       "b2-unique",
+       "dp-network10"
       ],
       "filled": true
      }
@@ -745,6 +745,7 @@
    },
    "count": 15,
    "excludedDataSets": [
+    "b2-fruit",
     "cd-choc",
     "cd-code",
     "cd-houses",
