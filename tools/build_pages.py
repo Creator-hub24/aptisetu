@@ -23,6 +23,8 @@ def _cfg():
     t=open("assets/js/config.js").read()
     return {k:v for k,v in _re.findall(r'^\s*([A-Z_]+):\s*"((?:[^"\\]|\\.)*)"', t, _re.M)}
 CFG=_cfg()
+import hashlib as _hl
+CSSV=_hl.md5(open("assets/css/style.css","rb").read()).hexdigest()[:8]   # cache-busting version for the stylesheet
 BRAND=CFG["BRAND"]; TAGLINE=CFG.get("TAGLINE",""); EMAIL=CFG.get("EMAIL",""); FORM=CFG.get("GOOGLE_FORM_URL",""); GC=CFG.get("GOATCOUNTER","").strip().lower()
 assert not GC or _re.fullmatch(r"[a-z0-9][a-z0-9-]*", GC), "GOATCOUNTER must be just the code, e.g. aptisetu"
 SITE_URL=CFG["SITE_URL"].rstrip("/")+"/"
@@ -116,13 +118,13 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 <meta name="referrer" content="strict-origin-when-cross-origin">
 {basetag}<title>{A(full)}</title>
 <meta name="description" content="{A(desc)}">
-{robots}{canon}<meta name="theme-color" content="#FBF6EA"><meta name="color-scheme" content="light dark">
+{robots}{canon}<meta name="theme-color" content="#FAF7F0"><meta name="color-scheme" content="light dark">
 <script src="assets/js/theme.js"></script>
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <meta property="og:type" content="website"><meta property="og:site_name" content="{A(BRAND)}"><meta property="og:title" content="{A(full)}"><meta property="og:description" content="{A(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{img}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{A(full)}"><meta name="twitter:description" content="{A(desc)}"><meta name="twitter:image" content="{img}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800{{MONO}}&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v={CSSV}">
 {head_extra}</head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
