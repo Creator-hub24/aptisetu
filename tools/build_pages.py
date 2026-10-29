@@ -881,4 +881,5 @@ page("placements.html","Placement Prep","""
 
 exec(open("tools/qpages.py").read())
 exec(open("tools/m2pages.py").read())
+exec(open("tools/flashcards.py").read())
 exec(open("tools/pages_info.py").read())

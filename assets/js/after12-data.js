@@ -57,7 +57,7 @@
     { n: "NDA / NA (Army, Navy, Air Force)", c: CATS[8], s: ALL, d: "3 years at NDA, then service academy", y: 3, e: "UPSC NDA/NA exam, then SSB interview and medical", o: "Commissioned officer in the Army, Navy or Air Force", x: "Army wing: any stream. Navy and Air Force wings: Physics and Maths. Age limits apply." },
     { n: "Technical Entry (Army TES, Navy B.Tech Cadet)", c: CATS[8], s: ["M"], d: "4-year degree plus training", y: 4, e: "JEE Main score, then SSB and medical", o: "Technical officer in the Army or Navy" },
     { n: "Agniveer (Army, Navy, Air Force)", c: CATS[8], s: ALL, d: "4-year engagement", y: 4, e: "Online exam, physical tests and medical", o: "Soldier, sailor or airman; some are retained after 4 years under the scheme", x: "Class 10 or 12 depending on role; subject rules differ (Navy SSR needs Maths and Physics)" },
-    { n: "SSC CHSL and other Class 12-level government jobs", c: CATS[8], s: ALL, d: "Exam-based job, no course", y: null, e: "SSC CHSL tiers, railway (RRB) and state-police exams", o: "Clerk, assistant, data-entry and postal roles; study further while working" },
+    { n: "SSC CHSL and other Class 12-level government jobs", c: CATS[8], s: ALL, d: "Exam-based job, no course", y: null, e: "SSC CHSL tiers, railway (RRB) and state-police exams", o: "Clerk, assistant, data-entry and postal roles; study further while working", u: "chsl" },
 
     { n: "ITEP (4-year integrated B.Ed)", c: CATS[9], s: ALL, d: "4 years", y: 4, e: "NCET (conducted by NTA)", o: "School teacher; later CTET and state TETs" },
     { n: "D.El.Ed / B.El.Ed (elementary teaching)", c: CATS[9], s: ALL, d: "2 to 4 years", y: 2, e: "State entrance or merit; rules differ by state", o: "Primary-school teacher after TET or CTET" },
@@ -73,6 +73,6 @@
     who: { M: "PCM students", B: "PCB students", C: "Commerce students", A: "Arts students" },
     allWho: "all streams", anyLabel: "Any stream", allChip: "All streams",
     cats: CATS, rows: D, track: "after12",
-    links: { cuet: { href: "cuet-practice.html", text: "Practise CUET (UG) on this site" } }
+    links: { cuet: { href: "cuet-practice.html", text: "Practise CUET (UG) on this site" }, chsl: { href: "ssc-chsl.html", text: "SSC CHSL pattern and practice" } }
   };
 })();

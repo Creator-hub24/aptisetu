@@ -596,3 +596,38 @@ a.card-link{display:block;color:inherit;text-decoration:none}a.card-link:hover h
 .lang-toggle button{border:1px solid var(--line,#ccd);background:transparent;color:inherit;border-radius:999px;padding:4px 14px;font:inherit;font-size:.9rem;cursor:pointer;min-height:36px}
 .lang-toggle button[aria-pressed="true"]{background:var(--ink,#1d2433);color:var(--bg,#fff);border-color:var(--ink,#1d2433)}
 .sol-hi{line-height:1.75}
+/* ---- Formula flashcards (flashcards.html) ---- */
+.fc-wrap{max-width:760px}
+.fc-wrap [hidden]{display:none!important}
+.fc-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 14px}
+.fc-tab{min-height:44px;padding:0 1em;border:1px solid var(--line);border-radius:99px;background:var(--card);color:var(--ink);font:inherit;font-weight:600;cursor:pointer}
+.fc-tab[aria-selected="true"]{border-color:var(--brand);color:var(--brand);box-shadow:inset 0 0 0 1px var(--brand)}
+.fc-count{font-weight:500;color:var(--muted);font-size:.85em}
+.fc-bar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:.92rem;margin-bottom:8px}
+.fc-card{display:block;width:100%;min-height:230px;padding:26px 22px;border:1px solid var(--line);border-radius:18px;background:var(--card);color:var(--ink);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh);position:relative}
+.fc-card:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.fc-face{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-height:178px}
+.fc-back{display:none}.fc-card.flipped .fc-back{display:flex}.fc-card.flipped .fc-front{display:none}
+.fc-card.flipped{border-color:var(--brand)}
+.fc-g{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--brand)}
+.fc-q{font-size:clamp(1.15rem,3.4vw,1.5rem);font-weight:700;line-height:1.35;max-width:36ch;overflow-wrap:anywhere}
+.fc-a{font-size:clamp(1.1rem,3.2vw,1.4rem);font-weight:700;line-height:1.4;max-width:40ch;overflow-wrap:anywhere}
+.fc-n{color:var(--muted);max-width:44ch}
+.fc-hint{color:var(--muted);font-size:.85rem}
+.fc-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 8px}
+.fc-actions .btn{min-height:48px;justify-content:center}
+.fc-tools{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:6px 0 10px}.fc-tools .btn{justify-content:center}@media(max-width:560px){.fc-tools{grid-template-columns:1fr 1fr}}
+.fc-done{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:22px;text-align:center}
+.fc-done h2{margin-top:0}
+.fc-help{font-size:.88rem}
+.fc-all{margin-top:18px}.fc-all summary{cursor:pointer;font-weight:600}
+.fc-list{padding-left:1.1em}.fc-list li{margin:.45em 0}.fc-list-q{font-weight:600}
+@media(prefers-reduced-motion:no-preference){.fc-face{animation:fcIn .18s ease-out}}
+@keyframes fcIn{from{opacity:.2}to{opacity:1}}
+/* ---- Question bank filters ---- */
+.qf-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:4px 0 14px}
+.qf-bar input[type=search]{flex:1 1 220px;min-height:44px;padding:0 .9em;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit}
+.qf-chip{min-height:40px;padding:0 .95em;border:1px solid var(--line);border-radius:99px;background:var(--card);color:var(--ink);font:inherit;font-weight:600;cursor:pointer}
+.qf-chip[aria-pressed="true"]{border-color:var(--brand);color:var(--brand);box-shadow:inset 0 0 0 1px var(--brand)}
+.qf-count{color:var(--muted);font-size:.9rem}
+.qf-hide{display:none!important}

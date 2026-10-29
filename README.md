@@ -81,3 +81,9 @@ Tests (dev-only; Playwright and axe-core are not shipped):
 - Deploy: export `SUPABASE_ACCESS_TOKEN SUPABASE_PROJECT_REF SUPABASE_DB_PASSWORD RAZORPAY_KEY_ID RAZORPAY_KEY_SECRET RAZORPAY_WEBHOOK_SECRET PASS_PRICE_PAISE`, then `bash tools/deploy_supabase.sh` and `python3 tools/set_supabase_config.py`. Secrets are never printed or committed.
 - Payment UI stays hidden until `PAYMENTS_ENABLED:"on"` in config.js **and** `pass_gating=true` in `app_settings`.
 - Tests: `node tests/supabase/sql.test.mjs` (needs `@electric-sql/pglite`), `deno test supabase/functions/_shared/razorpay_test.ts`, `node tests/month3.js`.
+
+## Phase 1 (recall and discovery)
+- **Formula flashcards:** `tools/flashcards.py` (run by `build_pages.py`) turns the checked printable sheets in `tools/sheets.py` into `flashcards.html` and `assets/js/flashcards-data.js` (76 cards, 3 decks). Fronts are generated from each formula (text up to the first `=`, `⇒` or `⇔`); odd ones are set in `FC_FRONT`. Progress ("known") stays in the viewer's browser. Each formula sheet links to its deck (`flashcards.html#<slug>`).
+- **Question bank filters:** exam chips and topic search on `q/index.html`, difficulty chips on topic hubs (`assets/js/qfilter.js`).
+- **Career tables:** SSC CHSL, SSC CGL, IBPS PO and IBPS Clerk rows link to their exam pages; placement rows link to `placements.html`.
+- **Tests:** `tests/phase1.js` (same setup as `tests/flow.js`).

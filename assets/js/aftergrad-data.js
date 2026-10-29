@@ -26,12 +26,12 @@
 
     { n: "UPSC Civil Services (IAS, IPS, IFS and others)", c: CATS[3], s: ALL, d: "Exam-based job, no course", y: null, e: "UPSC CSE: prelims, mains and interview", o: "All-India and central services: administration, police, foreign service, revenue and more", x: "Age limits and a fixed number of attempts apply" },
     { n: "State civil services (PCS)", c: CATS[3], s: ALL, d: "Exam-based job, no course", y: null, e: "State PSC exam: prelims, mains and interview", o: "State administrative, police and allied services" },
-    { n: "SSC CGL", c: CATS[3], s: ALL, d: "Exam-based job, no course", y: null, e: "SSC CGL tiers (Quant, Reasoning, English, General Awareness)", o: "Central government Group B and C posts: inspector, auditor, assistant section officer and more", u: "bank" },
+    { n: "SSC CGL", c: CATS[3], s: ALL, d: "Exam-based job, no course", y: null, e: "SSC CGL tiers (Quant, Reasoning, English, General Awareness)", o: "Central government Group B and C posts: inspector, auditor, assistant section officer and more", u: "cgl" },
     { n: "Railway graduate posts (RRB NTPC)", c: CATS[3], s: ALL, d: "Exam-based job, no course", y: null, e: "RRB NTPC computer-based tests and skill test where needed", o: "Station master, goods guard, clerk and other railway posts", u: "bank" },
-    { n: "RBI Grade B, SEBI and NABARD Grade A", c: CATS[3], s: ALL, d: "Exam-based job, no course", y: null, e: "Phase 1 and Phase 2 exams, then interview", o: "Officer posts at the central bank and financial regulators", x: "Marks criteria apply; some streams have their own posts" },
+    { n: "RBI Grade B, SEBI and NABARD Grade A", c: CATS[3], s: ALL, d: "Exam-based job, no course", y: null, e: "Phase 1 and Phase 2 exams, then interview", o: "Officer posts at the central bank and financial regulators", x: "Marks criteria apply; some streams have their own posts", u: "bank" },
 
-    { n: "Bank PO (IBPS PO, SBI PO)", c: CATS[4], s: ALL, d: "Exam-based job, no course", y: null, e: "Prelims and mains (Quant, Reasoning, English), then interview", o: "Probationary officer, then bank branch and management roles", u: "bank" },
-    { n: "Bank Clerk (IBPS Clerk, SBI Clerk)", c: CATS[4], s: ALL, d: "Exam-based job, no course", y: null, e: "Prelims and mains (Quant, Reasoning, English)", o: "Clerical and customer-service posts; internal promotion to officer", u: "bank" },
+    { n: "Bank PO (IBPS PO, SBI PO)", c: CATS[4], s: ALL, d: "Exam-based job, no course", y: null, e: "Prelims and mains (Quant, Reasoning, English), then interview", o: "Probationary officer, then bank branch and management roles", u: "po" },
+    { n: "Bank Clerk (IBPS Clerk, SBI Clerk)", c: CATS[4], s: ALL, d: "Exam-based job, no course", y: null, e: "Prelims and mains (Quant, Reasoning, English)", o: "Clerical and customer-service posts; internal promotion to officer", u: "clerk" },
     { n: "Insurance officer (LIC AAO, NIACL AO and others)", c: CATS[4], s: ALL, d: "Exam-based job, no course", y: null, e: "Prelims, mains and interview", o: "Administrative officer posts at public-sector insurers", u: "bank" },
     { n: "CA, CS or CMA (graduate route)", c: CATS[4], s: ALL, d: "2.5 to 4 years", y: 3, e: "Graduates can enter at the Intermediate or Executive level, subject to each institute's marks rules", o: "Audit, tax, compliance and finance roles; own practice", x: "Commerce graduates find the syllabus most familiar" },
     { n: "CFA / FRM", c: CATS[4], s: ALL, d: "1.5 to 3 years", y: 2, e: "CFA Institute exams (three levels) or GARP FRM exams (two parts)", o: "Investment analysis, portfolio management, risk management" },
@@ -45,7 +45,7 @@
     { n: "MDS", c: CATS[6], s: ["M"], d: "3 years", y: 3, e: "NEET MDS, then counselling", o: "Specialist dentist; teaching", x: "For BDS graduates" },
     { n: "UPSC Combined Medical Services (CMS)", c: CATS[6], s: ["M"], d: "Exam-based job, no course", y: null, e: "UPSC CMS exam and interview", o: "Medical officer in railways, central health services and other government bodies", x: "For MBBS graduates" },
     { n: "Master of Public Health (MPH)", c: CATS[6], s: ["M", "S"], d: "2 years", y: 2, e: "Institute entrance tests and interviews", o: "Public health programmes, NGOs, research, health policy" },
-    { n: "Hospital and healthcare management (MHA, MBA)", c: CATS[6], s: ["M", "S", "C"], d: "2 years", y: 2, e: "Institute tests, CAT or MAT scores, interviews", o: "Hospital administration and healthcare operations" },
+    { n: "Hospital and healthcare management (MHA, MBA)", c: CATS[6], s: ["M", "S", "C"], d: "2 years", y: 2, e: "Institute tests, CAT or MAT scores, interviews", o: "Hospital administration and healthcare operations", u: "cat" },
 
     { n: "B.Ed", c: CATS[7], s: ALL, d: "1 to 2 years", y: 2, e: "State or university B.Ed entrance, or merit", o: "School teacher after CTET or state TET", x: "One-year B.Ed is returning from 2026-27 for four-year graduates and postgraduates; check NCTE rules" },
     { n: "Assistant professor or JRF (UGC NET, CSIR NET)", c: CATS[7], s: ALL, d: "2-year master's, then exam", y: 2, e: "UGC NET or CSIR NET (NTA)", o: "College lecturer, junior research fellowship, PhD admission", x: "Needs a master's, or a four-year degree with 75% marks" },
@@ -75,7 +75,10 @@
     links: {
       cat: { href: "cat.html", text: "Prepare for CAT on this site" },
       bank: { href: "practice.html?exam=general", text: "Practise Bank / SSC aptitude" },
-      apt: { href: "practice.html?section=mixed", text: "Practise placement aptitude" }
+      apt: { href: "placements.html", text: "Placement aptitude practice" },
+      cgl: { href: "ssc-cgl.html", text: "SSC CGL pattern and practice" },
+      po: { href: "ibps-po.html", text: "IBPS PO pattern and practice" },
+      clerk: { href: "ibps-clerk.html", text: "IBPS Clerk pattern and practice" }
     }
   };
 })();

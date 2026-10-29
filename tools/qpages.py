@@ -25,6 +25,11 @@ def _solhtml(qq, sol, trk):
             '<script src="assets/js/sol-lang.js" defer></script>')
 def _optfix(sol):  # solutions say "Option 1".."Option 4" (bank order); pages show bank order as A-D
     return _re.sub(r"\b([Oo]ptions?) ([1-4](?:(?:, | and | or )[1-4])*)\b", lambda m: m.group(1) + " " + _re.sub(r"[1-4]", lambda d: QL[int(d.group(0)) - 1], m.group(2)), sol)
+def _qf_diff(tq):  # difficulty chips for a topic hub (only levels present; none when a hub has a single level)
+    lv = [d for d in ("Easy", "Medium", "Hard") if any(x.get("difficulty") == d for x in tq)]
+    if len(lv) < 2: return ""
+    return ('<div class="qf-bar" data-qf="d" role="group" aria-label="Filter by difficulty"><button type="button" class="qf-chip" data-v="" aria-pressed="true">All</button>'
+            + "".join(f'<button type="button" class="qf-chip" data-v="{d}" aria-pressed="false">{d}</button>' for d in lv) + '<span class="qf-count" aria-live="polite"></span></div>')
 def _report(qid, ctx, url):
     body = f"Question ID: {qid}\nExam / section: {ctx}\nPage: {url}\n\nWhat looks wrong:\n"
     if FORM: href = FORM.replace("{REPORT}", _q(body)) if "{REPORT}" in FORM else FORM
@@ -87,17 +92,19 @@ for trk, tlabel, ddir, secs, purl in QTRACKS:
 </div></section>"""
                 page(fn, _esc.escape(title), body, desc=desc, base=True, head_extra=f'<script type="application/ld+json">{ldj}</script>\n')
                 QSTATS["pages"] += 1
-            items = "".join(f'<li><a href="{fn_of[x["id"]]}">{_esc.escape(_plain(x["question"])[:110])}{"…" if len(_plain(x["question"])) > 110 else ""}</a> <span class="muted">· {x["id"]} · {x.get("difficulty", "")}</span></li>' for x in tq)
+            items = "".join(f'<li data-d="{x.get("difficulty", "")}"><a href="{fn_of[x["id"]]}">{_esc.escape(_plain(x["question"])[:110])}{"…" if len(_plain(x["question"])) > 110 else ""}</a> <span class="muted">· {x["id"]} · {x.get("difficulty", "")}</span></li>' for x in tq)
             page(hub, f"{tlabel} {sname}: {topic} questions with solutions", f"""<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="q/index.html">Question bank</a> / {tlabel} {sname}</div>
 <h1 style="font-size:clamp(1.5rem,3.6vw,2.2rem)">{tlabel} {sname}: {topic}</h1><p class="muted">{len(tq)} practice questions, each with the answer and a worked solution.</p>
 <div class="cta-row" style="margin:12px 0 0"><a class="btn" href="{purl(s, topic)}">Start practice →</a></div></div></div>
-<section style="padding-top:12px"><div class="container" style="max-width:860px"><ol class="qp-list">{items}</ol></div></section>""",
+<section style="padding-top:12px"><div class="container" style="max-width:860px">{_qf_diff(tq)}<ol class="qp-list" data-qf-list>{items}</ol></div></section>""", extra='<script src="assets/js/qfilter.js"></script>',
                  desc=f"{len(tq)} free {tlabel} {_plain(sname)} questions on {_plain(topic)}, each with the answer and a worked solution.", base=True)
             QSTATS["hubs"] += 1
 _groups = {}
 for trk, tlabel, sname, topic, hub, n in _hubs: _groups.setdefault((tlabel, sname), []).append((topic, hub, n))
 page("q/index.html", "Question bank: every practice question with solutions", '<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Question bank</div><h1 style="font-size:clamp(1.6rem,4vw,2.4rem)">Question bank</h1>'
-     f'<p class="muted">{QSTATS["pages"]} practice questions by exam and topic, each on its own page with the answer and a worked solution. Full mocks and fixed sectionals are not listed here, so they stay unseen until you take them.</p></div></div><section style="padding-top:12px"><div class="container grid g3">'
-     + "".join(f'<div class="card"><h3>{tl} · {sn}</h3><ul class="qp-hubs">' + "".join(f'<li><a href="{h}">{t}</a> <span class="muted">({n})</span></li>' for t, h, n in v) + "</ul></div>" for (tl, sn), v in _groups.items()) + "</div></section>",
+     f'<p class="muted">{QSTATS["pages"]} practice questions by exam and topic, each on its own page with the answer and a worked solution. Full mocks and fixed sectionals are not listed here, so they stay unseen until you take them.</p></div></div><section style="padding-top:12px">'
+     + '<div class="container"><div class="qf-bar" data-qf="t" role="group" aria-label="Filter by exam"><button type="button" class="qf-chip" data-v="" aria-pressed="true">All exams</button>' + "".join(f'<button type="button" class="qf-chip" data-v="{t}" aria-pressed="false">{t}</button>' for t in dict.fromkeys(tl for tl, _ in _groups)) + '<input type="search" id="qf-q" placeholder="Search topics, e.g. percentages" aria-label="Search topics"><span class="qf-count" aria-live="polite"></span></div></div><div class="container grid g3">'
+     + "".join(f'<div class="card" data-t="{tl}"><h3>{tl} · {sn}</h3><ul class="qp-hubs">' + "".join(f'<li><a href="{h}">{t}</a> <span class="muted">({n})</span></li>' for t, h, n in v) + "</ul></div>" for (tl, sn), v in _groups.items()) + "</div></section>",
+     extra='<script src="assets/js/qfilter.js"></script>',
      desc="Browse every AptiSetu practice question by exam and topic: CAT, CUET (UG), Bank and SSC, each with the answer and a worked solution.", base=True)
 print("question pages:", QSTATS)
