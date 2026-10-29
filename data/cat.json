@@ -7334,8 +7334,7 @@
      "answer": "20",
      "id": "DS1-TOURN3-11",
      "pack": "dilr-sectional-1",
-     "level": "Hard",
-     "practiceSet": 10
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7355,8 +7354,7 @@
      "answer": 1,
      "id": "DS1-TOURN3-12",
      "pack": "dilr-sectional-1",
-     "level": "Hard",
-     "practiceSet": 10
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7371,8 +7369,7 @@
      "answer": "4",
      "id": "DS1-TOURN3-13",
      "pack": "dilr-sectional-1",
-     "level": "Hard",
-     "practiceSet": 10
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7387,8 +7384,7 @@
      "answer": "7",
      "id": "DS1-TOURN3-14",
      "pack": "dilr-sectional-1",
-     "level": "Medium",
-     "practiceSet": 10
+     "level": "Medium"
     },
     {
      "exam": "cat",
@@ -7703,8 +7699,7 @@
      "answer": "3",
      "id": "DS2-LINEAR3-11",
      "pack": "dilr-sectional-2",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7724,8 +7719,7 @@
      "answer": 1,
      "id": "DS2-LINEAR3-12",
      "pack": "dilr-sectional-2",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7745,8 +7739,7 @@
      "answer": 0,
      "id": "DS2-LINEAR3-13",
      "pack": "dilr-sectional-2",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7761,8 +7754,7 @@
      "answer": "1",
      "id": "DS2-LINEAR3-14",
      "pack": "dilr-sectional-2",
-     "level": "Medium",
-     "practiceSet": 14
+     "level": "Medium"
     },
     {
      "exam": "cat",
@@ -7847,8 +7839,7 @@
      "answer": 3,
      "id": "DS2-GROUP5-19",
      "pack": "dilr-sectional-2",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7868,8 +7859,7 @@
      "answer": 2,
      "id": "DS2-GROUP5-20",
      "pack": "dilr-sectional-2",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7889,8 +7879,7 @@
      "answer": 1,
      "id": "DS2-GROUP5-21",
      "pack": "dilr-sectional-2",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7905,8 +7894,7 @@
      "answer": "2",
      "id": "DS2-GROUP5-22",
      "pack": "dilr-sectional-2",
-     "level": "Medium",
-     "practiceSet": 14
+     "level": "Medium"
     },
     {
      "exam": "cat",
@@ -9734,6 +9722,695 @@
      "level": "Medium"
     },
     {
+     "id": "B12D-01",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Tournaments",
+     "difficulty": "Medium",
+     "question": "Who won the tournament?",
+     "solution": "C won no game, so C lost 2–0 to D. B, F and G each won exactly one game, so each lost their quarter-final 2–1 (a winner of a match has at least 2 games): A beat B 2–1, E beat F 2–1 and H beat G 2–1. D has 2 games from the quarter-final and 5 in all. Had D lost the semi-final, D would have at most 2 + 1 = 3; had D won both the semi-final and the final, D would have at least 2 + 2 + 2 = 6. So D won the semi-final and lost the final 2–1, giving 2 + 2 + 1 = 5. D's semi-final opponent was A, who has 2 games from beating B and 3 in all, so A lost that semi-final 2–1. H has 2 games from the quarter-final and fewer than A's 3, so H won no game in the other semi-final: E beat H 2–0, and E then beat D 2–1 in the final. Check: the three-game matches are A–B, E–F, G–H, D–A and the final — exactly five ✓. Games won: A 3, B 1, C 0, D 5, E 6, F 1, G 1, H 2. A computer check of all 4⁷ possible results finds only this one. The champion is E.",
+     "set": "b12-knockout",
+     "type": "mcq",
+     "options": [
+      "D",
+      "H",
+      "E",
+      "A"
+     ],
+     "answer": 2,
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 10
+    },
+    {
+     "id": "B12D-02",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Tournaments",
+     "difficulty": "Medium",
+     "question": "How many games did E win in the tournament?",
+     "solution": "C won no game, so C lost 2–0 to D. B, F and G each won exactly one game, so each lost their quarter-final 2–1 (a winner of a match has at least 2 games): A beat B 2–1, E beat F 2–1 and H beat G 2–1. D has 2 games from the quarter-final and 5 in all. Had D lost the semi-final, D would have at most 2 + 1 = 3; had D won both the semi-final and the final, D would have at least 2 + 2 + 2 = 6. So D won the semi-final and lost the final 2–1, giving 2 + 2 + 1 = 5. D's semi-final opponent was A, who has 2 games from beating B and 3 in all, so A lost that semi-final 2–1. H has 2 games from the quarter-final and fewer than A's 3, so H won no game in the other semi-final: E beat H 2–0, and E then beat D 2–1 in the final. Check: the three-game matches are A–B, E–F, G–H, D–A and the final — exactly five ✓. Games won: A 3, B 1, C 0, D 5, E 6, F 1, G 1, H 2. A computer check of all 4⁷ possible results finds only this one. E won 2 + 2 + 2 = 6 games.",
+     "set": "b12-knockout",
+     "type": "tita",
+     "kind": "number",
+     "answer": "6",
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 10
+    },
+    {
+     "id": "B12D-03",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Tournaments",
+     "difficulty": "Medium",
+     "question": "How many games were played in the whole tournament?",
+     "solution": "C won no game, so C lost 2–0 to D. B, F and G each won exactly one game, so each lost their quarter-final 2–1 (a winner of a match has at least 2 games): A beat B 2–1, E beat F 2–1 and H beat G 2–1. D has 2 games from the quarter-final and 5 in all. Had D lost the semi-final, D would have at most 2 + 1 = 3; had D won both the semi-final and the final, D would have at least 2 + 2 + 2 = 6. So D won the semi-final and lost the final 2–1, giving 2 + 2 + 1 = 5. D's semi-final opponent was A, who has 2 games from beating B and 3 in all, so A lost that semi-final 2–1. H has 2 games from the quarter-final and fewer than A's 3, so H won no game in the other semi-final: E beat H 2–0, and E then beat D 2–1 in the final. Check: the three-game matches are A–B, E–F, G–H, D–A and the final — exactly five ✓. Games won: A 3, B 1, C 0, D 5, E 6, F 1, G 1, H 2. A computer check of all 4⁷ possible results finds only this one. Every game has exactly one winner, so the games played equal the games won: 3 + 1 + 0 + 5 + 6 + 1 + 1 + 2 = 19.",
+     "set": "b12-knockout",
+     "type": "tita",
+     "kind": "number",
+     "answer": "19",
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 10
+    },
+    {
+     "id": "B12D-04",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Tournaments",
+     "difficulty": "Medium",
+     "question": "Which player(s) did H defeat in the tournament?",
+     "solution": "C won no game, so C lost 2–0 to D. B, F and G each won exactly one game, so each lost their quarter-final 2–1 (a winner of a match has at least 2 games): A beat B 2–1, E beat F 2–1 and H beat G 2–1. D has 2 games from the quarter-final and 5 in all. Had D lost the semi-final, D would have at most 2 + 1 = 3; had D won both the semi-final and the final, D would have at least 2 + 2 + 2 = 6. So D won the semi-final and lost the final 2–1, giving 2 + 2 + 1 = 5. D's semi-final opponent was A, who has 2 games from beating B and 3 in all, so A lost that semi-final 2–1. H has 2 games from the quarter-final and fewer than A's 3, so H won no game in the other semi-final: E beat H 2–0, and E then beat D 2–1 in the final. Check: the three-game matches are A–B, E–F, G–H, D–A and the final — exactly five ✓. Games won: A 3, B 1, C 0, D 5, E 6, F 1, G 1, H 2. A computer check of all 4⁷ possible results finds only this one. H beat G in the quarter-final and then lost 2–0 to E.",
+     "set": "b12-knockout",
+     "type": "mcq",
+     "options": [
+      "G only",
+      "G and E",
+      "F only",
+      "H did not win a match"
+     ],
+     "answer": 0,
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 10
+    },
+    {
+     "id": "B12D-05",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Networks & routes",
+     "difficulty": "Easy",
+     "question": "What percentage of the water reaching junction A goes to tank C?",
+     "solution": "Junction B sends 60% to D, so the other 40% goes to E: 40% of B's inflow = 200, so B receives 500 litres/min and sends 300 to D. Then S sends 1,200 − 500 = 700 to A. Tank D gets 720, of which 300 comes from B, so pipe A→D carries 420 and pipe A→C carries 700 − 420 = 280. Flows (litres/min): S→A 700, S→B 500, A→C 280, A→D 420, B→D 300, B→E 200. 280/700 = 40%.",
+     "set": "b12-pipes",
+     "type": "tita",
+     "kind": "number",
+     "answer": "40",
+     "pack": "practice-b12",
+     "level": "Easy",
+     "practiceSet": 9
+    },
+    {
+     "id": "B12D-06",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Networks & routes",
+     "difficulty": "Easy",
+     "question": "How many litres per minute does tank C receive?",
+     "solution": "Junction B sends 60% to D, so the other 40% goes to E: 40% of B's inflow = 200, so B receives 500 litres/min and sends 300 to D. Then S sends 1,200 − 500 = 700 to A. Tank D gets 720, of which 300 comes from B, so pipe A→D carries 420 and pipe A→C carries 700 − 420 = 280. Flows (litres/min): S→A 700, S→B 500, A→C 280, A→D 420, B→D 300, B→E 200.",
+     "set": "b12-pipes",
+     "type": "mcq",
+     "options": [
+      "240",
+      "280",
+      "300",
+      "420"
+     ],
+     "answer": 1,
+     "pack": "practice-b12",
+     "level": "Easy",
+     "practiceSet": 9
+    },
+    {
+     "id": "B12D-07",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Networks & routes",
+     "difficulty": "Easy",
+     "question": "What fraction of the water entering at S ends up in tank D?",
+     "solution": "Junction B sends 60% to D, so the other 40% goes to E: 40% of B's inflow = 200, so B receives 500 litres/min and sends 300 to D. Then S sends 1,200 − 500 = 700 to A. Tank D gets 720, of which 300 comes from B, so pipe A→D carries 420 and pipe A→C carries 700 − 420 = 280. Flows (litres/min): S→A 700, S→B 500, A→C 280, A→D 420, B→D 300, B→E 200. 720/1,200 = 3/5.",
+     "set": "b12-pipes",
+     "type": "mcq",
+     "options": [
+      "1/2",
+      "7/12",
+      "3/5",
+      "2/3"
+     ],
+     "answer": 2,
+     "pack": "practice-b12",
+     "level": "Easy",
+     "practiceSet": 9
+    },
+    {
+     "id": "B12D-08",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Networks & routes",
+     "difficulty": "Easy",
+     "question": "If junction B were changed to send all its water to tank D, with everything else unchanged, how many litres per minute would tank D receive?",
+     "solution": "Junction B sends 60% to D, so the other 40% goes to E: 40% of B's inflow = 200, so B receives 500 litres/min and sends 300 to D. Then S sends 1,200 − 500 = 700 to A. Tank D gets 720, of which 300 comes from B, so pipe A→D carries 420 and pipe A→C carries 700 − 420 = 280. Flows (litres/min): S→A 700, S→B 500, A→C 280, A→D 420, B→D 300, B→E 200. D would get 420 from A plus all 500 from B = 920.",
+     "set": "b12-pipes",
+     "type": "tita",
+     "kind": "number",
+     "answer": "920",
+     "pack": "practice-b12",
+     "level": "Easy",
+     "practiceSet": 9
+    },
+    {
+     "id": "B12D-09",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Distribution",
+     "difficulty": "Medium",
+     "question": "How many students belong to all three clubs?",
+     "solution": "48 students are in at least one club. Adding the three club sizes counts students in one club once, in two clubs twice and in all three thrice: 22 + 22 + 25 = 69 = (only one) + 2 × 15 + 3 × (all three). Also (only one) + 15 + (all three) = 48. Subtracting, 69 − 48 = 15 + 2 × (all three), so 3 students are in all three clubs and 30 are in exactly one. Let Music-and-Drama-only = d and Drama-and-Sports-only = f, with Music-and-Sports-only = 4, so d + f = 11. Only Music = 22 − d − 4 − 3 = 15 − d and only Sports = 25 − 4 − f − 3 = 18 − f. The clue 'only Sports = only Music + 2' gives 18 − f = 17 − d, so f = d + 1; with d + f = 11, d = 5 and f = 6. So: only Music 10, only Drama 8, only Sports 12, Music & Drama only 5, Music & Sports only 4, Drama & Sports only 6, all three 3, none 12.",
+     "set": "b12-clubs",
+     "type": "tita",
+     "kind": "number",
+     "answer": "3",
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 14
+    },
+    {
+     "id": "B12D-10",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Distribution",
+     "difficulty": "Medium",
+     "question": "How many students belong to exactly one club?",
+     "solution": "48 students are in at least one club. Adding the three club sizes counts students in one club once, in two clubs twice and in all three thrice: 22 + 22 + 25 = 69 = (only one) + 2 × 15 + 3 × (all three). Also (only one) + 15 + (all three) = 48. Subtracting, 69 − 48 = 15 + 2 × (all three), so 3 students are in all three clubs and 30 are in exactly one. Let Music-and-Drama-only = d and Drama-and-Sports-only = f, with Music-and-Sports-only = 4, so d + f = 11. Only Music = 22 − d − 4 − 3 = 15 − d and only Sports = 25 − 4 − f − 3 = 18 − f. The clue 'only Sports = only Music + 2' gives 18 − f = 17 − d, so f = d + 1; with d + f = 11, d = 5 and f = 6. So: only Music 10, only Drama 8, only Sports 12, Music & Drama only 5, Music & Sports only 4, Drama & Sports only 6, all three 3, none 12. 10 + 8 + 12 = 30.",
+     "set": "b12-clubs",
+     "type": "tita",
+     "kind": "number",
+     "answer": "30",
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 14
+    },
+    {
+     "id": "B12D-11",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Distribution",
+     "difficulty": "Medium",
+     "question": "How many students are in Drama and Sports but not in Music?",
+     "solution": "48 students are in at least one club. Adding the three club sizes counts students in one club once, in two clubs twice and in all three thrice: 22 + 22 + 25 = 69 = (only one) + 2 × 15 + 3 × (all three). Also (only one) + 15 + (all three) = 48. Subtracting, 69 − 48 = 15 + 2 × (all three), so 3 students are in all three clubs and 30 are in exactly one. Let Music-and-Drama-only = d and Drama-and-Sports-only = f, with Music-and-Sports-only = 4, so d + f = 11. Only Music = 22 − d − 4 − 3 = 15 − d and only Sports = 25 − 4 − f − 3 = 18 − f. The clue 'only Sports = only Music + 2' gives 18 − f = 17 − d, so f = d + 1; with d + f = 11, d = 5 and f = 6. So: only Music 10, only Drama 8, only Sports 12, Music & Drama only 5, Music & Sports only 4, Drama & Sports only 6, all three 3, none 12.",
+     "set": "b12-clubs",
+     "type": "mcq",
+     "options": [
+      "4",
+      "5",
+      "6",
+      "9"
+     ],
+     "answer": 2,
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 14
+    },
+    {
+     "id": "B12D-12",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Distribution",
+     "difficulty": "Medium",
+     "question": "How many students belong to Music or Drama (or both)?",
+     "solution": "48 students are in at least one club. Adding the three club sizes counts students in one club once, in two clubs twice and in all three thrice: 22 + 22 + 25 = 69 = (only one) + 2 × 15 + 3 × (all three). Also (only one) + 15 + (all three) = 48. Subtracting, 69 − 48 = 15 + 2 × (all three), so 3 students are in all three clubs and 30 are in exactly one. Let Music-and-Drama-only = d and Drama-and-Sports-only = f, with Music-and-Sports-only = 4, so d + f = 11. Only Music = 22 − d − 4 − 3 = 15 − d and only Sports = 25 − 4 − f − 3 = 18 − f. The clue 'only Sports = only Music + 2' gives 18 − f = 17 − d, so f = d + 1; with d + f = 11, d = 5 and f = 6. So: only Music 10, only Drama 8, only Sports 12, Music & Drama only 5, Music & Sports only 4, Drama & Sports only 6, all three 3, none 12. Everyone except the 12 in no club and the 12 only in Sports: 60 − 24 = 36.",
+     "set": "b12-clubs",
+     "type": "mcq",
+     "options": [
+      "30",
+      "36",
+      "39",
+      "44"
+     ],
+     "answer": 1,
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 14
+    },
+    {
+     "id": "B12D-13",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Scheduling",
+     "difficulty": "Medium",
+     "question": "Who is interviewed on Monday afternoon?",
+     "solution": "Z has two interviews on different days and none on Monday, so Z does one on Tuesday and one on Wednesday. S and T share a day with S in the morning; Wednesday morning is U's, so S and T are on Monday or Tuesday. T is Z's, and Z does not work Monday, so S and T are on Tuesday: S on Tuesday morning and T (with Z) on Tuesday afternoon. R is in an afternoon with Y; Tuesday afternoon is T's, so R is on Monday afternoon or Wednesday afternoon. P and Q take the other two slots on different days with P earlier. If R were on Wednesday afternoon, P and Q would be Monday morning and Monday afternoon — the same day — impossible. So R is on Monday afternoon (Y), P on Monday morning (X, by the first clue) and Q on Wednesday afternoon, also with X. Then Monday has X and Y, Wednesday has Z (with U, morning) and X (Q, afternoon), and Tuesday has Y (S, morning) and Z (T, afternoon). Final: Mon — P (X), R (Y); Tue — S (Y), T (Z); Wed — U (Z), Q (X).",
+     "set": "b12-interviews",
+     "type": "mcq",
+     "options": [
+      "P",
+      "Q",
+      "S",
+      "R"
+     ],
+     "answer": 3,
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 14
+    },
+    {
+     "id": "B12D-14",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Scheduling",
+     "difficulty": "Medium",
+     "question": "Who interviews U?",
+     "solution": "Z has two interviews on different days and none on Monday, so Z does one on Tuesday and one on Wednesday. S and T share a day with S in the morning; Wednesday morning is U's, so S and T are on Monday or Tuesday. T is Z's, and Z does not work Monday, so S and T are on Tuesday: S on Tuesday morning and T (with Z) on Tuesday afternoon. R is in an afternoon with Y; Tuesday afternoon is T's, so R is on Monday afternoon or Wednesday afternoon. P and Q take the other two slots on different days with P earlier. If R were on Wednesday afternoon, P and Q would be Monday morning and Monday afternoon — the same day — impossible. So R is on Monday afternoon (Y), P on Monday morning (X, by the first clue) and Q on Wednesday afternoon, also with X. Then Monday has X and Y, Wednesday has Z (with U, morning) and X (Q, afternoon), and Tuesday has Y (S, morning) and Z (T, afternoon). Final: Mon — P (X), R (Y); Tue — S (Y), T (Z); Wed — U (Z), Q (X). U's Wednesday-morning interview is taken by Z.",
+     "set": "b12-interviews",
+     "type": "mcq",
+     "options": [
+      "X",
+      "Y",
+      "Z",
+      "Cannot be determined"
+     ],
+     "answer": 2,
+     "fixed": true,
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 14
+    },
+    {
+     "id": "B12D-15",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Scheduling",
+     "difficulty": "Medium",
+     "question": "Who interviews S?",
+     "solution": "Z has two interviews on different days and none on Monday, so Z does one on Tuesday and one on Wednesday. S and T share a day with S in the morning; Wednesday morning is U's, so S and T are on Monday or Tuesday. T is Z's, and Z does not work Monday, so S and T are on Tuesday: S on Tuesday morning and T (with Z) on Tuesday afternoon. R is in an afternoon with Y; Tuesday afternoon is T's, so R is on Monday afternoon or Wednesday afternoon. P and Q take the other two slots on different days with P earlier. If R were on Wednesday afternoon, P and Q would be Monday morning and Monday afternoon — the same day — impossible. So R is on Monday afternoon (Y), P on Monday morning (X, by the first clue) and Q on Wednesday afternoon, also with X. Then Monday has X and Y, Wednesday has Z (with U, morning) and X (Q, afternoon), and Tuesday has Y (S, morning) and Z (T, afternoon). Final: Mon — P (X), R (Y); Tue — S (Y), T (Z); Wed — U (Z), Q (X).",
+     "set": "b12-interviews",
+     "type": "mcq",
+     "options": [
+      "X",
+      "Y",
+      "Z",
+      "Cannot be determined"
+     ],
+     "answer": 1,
+     "fixed": true,
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 14
+    },
+    {
+     "id": "B12D-16",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Scheduling",
+     "difficulty": "Medium",
+     "question": "How many of X's interviews are in the morning?",
+     "solution": "Z has two interviews on different days and none on Monday, so Z does one on Tuesday and one on Wednesday. S and T share a day with S in the morning; Wednesday morning is U's, so S and T are on Monday or Tuesday. T is Z's, and Z does not work Monday, so S and T are on Tuesday: S on Tuesday morning and T (with Z) on Tuesday afternoon. R is in an afternoon with Y; Tuesday afternoon is T's, so R is on Monday afternoon or Wednesday afternoon. P and Q take the other two slots on different days with P earlier. If R were on Wednesday afternoon, P and Q would be Monday morning and Monday afternoon — the same day — impossible. So R is on Monday afternoon (Y), P on Monday morning (X, by the first clue) and Q on Wednesday afternoon, also with X. Then Monday has X and Y, Wednesday has Z (with U, morning) and X (Q, afternoon), and Tuesday has Y (S, morning) and Z (T, afternoon). Final: Mon — P (X), R (Y); Tue — S (Y), T (Z); Wed — U (Z), Q (X). X does Monday morning (P) and Wednesday afternoon (Q), so 1.",
+     "set": "b12-interviews",
+     "type": "tita",
+     "kind": "number",
+     "answer": "1",
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 14
+    },
+    {
+     "id": "B12D-17",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Medium",
+     "question": "What is the value of m?",
+     "solution": "Play the game for each m (leaving order, last name = the child left in the circle): m = 2: Bala, Dev, Farah, Anu, Esha, Chetan, Gopal; m = 3: Chetan, Farah, Bala, Gopal, Esha, Anu, Dev; m = 4: Dev, Anu, Farah, Esha, Gopal, Chetan, Bala; m = 5: Esha, Chetan, Bala, Dev, Gopal, Anu, Farah; m = 6: Farah, Esha, Gopal, Bala, Anu, Dev, Chetan; m = 7: Gopal, Anu, Chetan, Farah, Bala, Dev, Esha; m = 8: Anu, Chetan, Farah, Esha, Bala, Gopal, Dev; m = 9: Bala, Esha, Chetan, Dev, Anu, Farah, Gopal. Anu leaves first only for m = 8. Gopal is among the first three for m = 6 (third) and m = 7 (first). Dev has already left when Anu leaves for m = 2, 4, 5 and 9. Only m = 3 satisfies all three clues. With m = 3 the children leave in the order Chetan, Farah, Bala, Gopal, Esha, Anu, and Dev is left.",
+     "set": "b12-countout",
+     "type": "tita",
+     "kind": "number",
+     "answer": "3",
+     "pack": "practice-b12",
+     "level": "Medium"
+    },
+    {
+     "id": "B12D-18",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Medium",
+     "question": "Which child is left at the end?",
+     "solution": "Play the game for each m (leaving order, last name = the child left in the circle): m = 2: Bala, Dev, Farah, Anu, Esha, Chetan, Gopal; m = 3: Chetan, Farah, Bala, Gopal, Esha, Anu, Dev; m = 4: Dev, Anu, Farah, Esha, Gopal, Chetan, Bala; m = 5: Esha, Chetan, Bala, Dev, Gopal, Anu, Farah; m = 6: Farah, Esha, Gopal, Bala, Anu, Dev, Chetan; m = 7: Gopal, Anu, Chetan, Farah, Bala, Dev, Esha; m = 8: Anu, Chetan, Farah, Esha, Bala, Gopal, Dev; m = 9: Bala, Esha, Chetan, Dev, Anu, Farah, Gopal. Anu leaves first only for m = 8. Gopal is among the first three for m = 6 (third) and m = 7 (first). Dev has already left when Anu leaves for m = 2, 4, 5 and 9. Only m = 3 satisfies all three clues. With m = 3 the children leave in the order Chetan, Farah, Bala, Gopal, Esha, Anu, and Dev is left.",
+     "set": "b12-countout",
+     "type": "mcq",
+     "options": [
+      "Gopal",
+      "Dev",
+      "Anu",
+      "Esha"
+     ],
+     "answer": 1,
+     "pack": "practice-b12",
+     "level": "Medium"
+    },
+    {
+     "id": "B12D-19",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Medium",
+     "question": "Who was the fourth child to leave?",
+     "solution": "Play the game for each m (leaving order, last name = the child left in the circle): m = 2: Bala, Dev, Farah, Anu, Esha, Chetan, Gopal; m = 3: Chetan, Farah, Bala, Gopal, Esha, Anu, Dev; m = 4: Dev, Anu, Farah, Esha, Gopal, Chetan, Bala; m = 5: Esha, Chetan, Bala, Dev, Gopal, Anu, Farah; m = 6: Farah, Esha, Gopal, Bala, Anu, Dev, Chetan; m = 7: Gopal, Anu, Chetan, Farah, Bala, Dev, Esha; m = 8: Anu, Chetan, Farah, Esha, Bala, Gopal, Dev; m = 9: Bala, Esha, Chetan, Dev, Anu, Farah, Gopal. Anu leaves first only for m = 8. Gopal is among the first three for m = 6 (third) and m = 7 (first). Dev has already left when Anu leaves for m = 2, 4, 5 and 9. Only m = 3 satisfies all three clues. With m = 3 the children leave in the order Chetan, Farah, Bala, Gopal, Esha, Anu, and Dev is left.",
+     "set": "b12-countout",
+     "type": "mcq",
+     "options": [
+      "Bala",
+      "Esha",
+      "Gopal",
+      "Farah"
+     ],
+     "answer": 2,
+     "pack": "practice-b12",
+     "level": "Medium"
+    },
+    {
+     "id": "B12D-20",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Hard",
+     "question": "If the children had used a number one larger than m, with everything else the same, who would have been left at the end?",
+     "solution": "Play the game for each m (leaving order, last name = the child left in the circle): m = 2: Bala, Dev, Farah, Anu, Esha, Chetan, Gopal; m = 3: Chetan, Farah, Bala, Gopal, Esha, Anu, Dev; m = 4: Dev, Anu, Farah, Esha, Gopal, Chetan, Bala; m = 5: Esha, Chetan, Bala, Dev, Gopal, Anu, Farah; m = 6: Farah, Esha, Gopal, Bala, Anu, Dev, Chetan; m = 7: Gopal, Anu, Chetan, Farah, Bala, Dev, Esha; m = 8: Anu, Chetan, Farah, Esha, Bala, Gopal, Dev; m = 9: Bala, Esha, Chetan, Dev, Anu, Farah, Gopal. Anu leaves first only for m = 8. Gopal is among the first three for m = 6 (third) and m = 7 (first). Dev has already left when Anu leaves for m = 2, 4, 5 and 9. Only m = 3 satisfies all three clues. With m = 3 the children leave in the order Chetan, Farah, Bala, Gopal, Esha, Anu, and Dev is left. With 4 the order is Dev, Anu, Farah, Esha, Gopal, Chetan, Bala, so Bala is left.",
+     "set": "b12-countout",
+     "type": "mcq",
+     "options": [
+      "Bala",
+      "Chetan",
+      "Dev",
+      "Gopal"
+     ],
+     "answer": 0,
+     "pack": "practice-b12",
+     "level": "Medium"
+    },
+    {
+     "id": "B12D-21",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "Who is the thief?",
+     "solution": "Exactly two people (the thief and the joker) lie. Suppose D tells the truth: then E is the joker, so E's statements are false and B is the thief. But then C, who is neither, must be truthful, and C says the thief is D or E — a contradiction. So D lies. If D were the joker, D's 'I am not the thief' would be false, making D the thief as well — impossible. So D is the thief. Then B's 'C is the thief' is false, so B is the other liar, the joker; B's 'I am not the joker' is indeed false ✓. Check the truth-tellers A, C, E: A is not the thief ✓, C is not the joker ✓; the thief is D ✓, A is not the joker ✓; B is not the thief ✓, D is not the joker ✓. D's 'E is the joker' is false ✓. Checking all 20 thief–joker pairs confirms D is the thief and B the joker, and nothing else works.",
+     "set": "b12-thief",
+     "type": "mcq",
+     "options": [
+      "B",
+      "C",
+      "E",
+      "D"
+     ],
+     "answer": 3,
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 15
+    },
+    {
+     "id": "B12D-22",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "Who is the joker?",
+     "solution": "Exactly two people (the thief and the joker) lie. Suppose D tells the truth: then E is the joker, so E's statements are false and B is the thief. But then C, who is neither, must be truthful, and C says the thief is D or E — a contradiction. So D lies. If D were the joker, D's 'I am not the thief' would be false, making D the thief as well — impossible. So D is the thief. Then B's 'C is the thief' is false, so B is the other liar, the joker; B's 'I am not the joker' is indeed false ✓. Check the truth-tellers A, C, E: A is not the thief ✓, C is not the joker ✓; the thief is D ✓, A is not the joker ✓; B is not the thief ✓, D is not the joker ✓. D's 'E is the joker' is false ✓. Checking all 20 thief–joker pairs confirms D is the thief and B the joker, and nothing else works.",
+     "set": "b12-thief",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "E"
+     ],
+     "answer": 1,
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 15
+    },
+    {
+     "id": "B12D-23",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "How many of the ten statements are true?",
+     "solution": "Exactly two people (the thief and the joker) lie. Suppose D tells the truth: then E is the joker, so E's statements are false and B is the thief. But then C, who is neither, must be truthful, and C says the thief is D or E — a contradiction. So D lies. If D were the joker, D's 'I am not the thief' would be false, making D the thief as well — impossible. So D is the thief. Then B's 'C is the thief' is false, so B is the other liar, the joker; B's 'I am not the joker' is indeed false ✓. Check the truth-tellers A, C, E: A is not the thief ✓, C is not the joker ✓; the thief is D ✓, A is not the joker ✓; B is not the thief ✓, D is not the joker ✓. D's 'E is the joker' is false ✓. Checking all 20 thief–joker pairs confirms D is the thief and B the joker, and nothing else works. The three truth-tellers make 2 true statements each: 6.",
+     "set": "b12-thief",
+     "type": "tita",
+     "kind": "number",
+     "answer": "6",
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 15
+    },
+    {
+     "id": "B12D-24",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "Which one of the following statements is false?",
+     "solution": "Exactly two people (the thief and the joker) lie. Suppose D tells the truth: then E is the joker, so E's statements are false and B is the thief. But then C, who is neither, must be truthful, and C says the thief is D or E — a contradiction. So D lies. If D were the joker, D's 'I am not the thief' would be false, making D the thief as well — impossible. So D is the thief. Then B's 'C is the thief' is false, so B is the other liar, the joker; B's 'I am not the joker' is indeed false ✓. Check the truth-tellers A, C, E: A is not the thief ✓, C is not the joker ✓; the thief is D ✓, A is not the joker ✓; B is not the thief ✓, D is not the joker ✓. D's 'E is the joker' is false ✓. Checking all 20 thief–joker pairs confirms D is the thief and B the joker, and nothing else works.",
+     "set": "b12-thief",
+     "type": "mcq",
+     "options": [
+      "A: “C is not the joker.”",
+      "C: “A is not the joker.”",
+      "D: “E is the joker.”",
+      "E: “D is not the joker.”"
+     ],
+     "answer": 2,
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 15
+    },
+    {
+     "id": "B12D-25",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Tables with missing data",
+     "difficulty": "Medium",
+     "question": "What were N's sales in Q2 (in hundreds of units)?",
+     "solution": "Q1: 12 + 10 + M1 + 14 = 44, so M's Q1 = 8. Q3: 18 + L3 + 16 + 12 = 57, so L's Q3 = 11, and L's year = 10 + 14 + 11 + 13 = 48. M's year is also 48 = 8 + 9 + 16 + M4, so M's Q4 = 15. Q4 total = 212 − 44 − 48 − 57 = 63 = K4 + 13 + 15 + 20, so K's Q4 = 15 and therefore K's Q2 = 15. Q2: 15 + 14 + 9 + N2 = 48, so N's Q2 = 10. Full table — K: 12, 15, 18, 15 (60); L: 10, 14, 11, 13 (48); M: 8, 9, 16, 15 (48); N: 14, 10, 12, 20 (56).",
+     "set": "b12-quarters",
+     "type": "tita",
+     "kind": "number",
+     "answer": "10",
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 15
+    },
+    {
+     "id": "B12D-26",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Tables with missing data",
+     "difficulty": "Medium",
+     "question": "Which product had the highest total sales for the year?",
+     "solution": "Q1: 12 + 10 + M1 + 14 = 44, so M's Q1 = 8. Q3: 18 + L3 + 16 + 12 = 57, so L's Q3 = 11, and L's year = 10 + 14 + 11 + 13 = 48. M's year is also 48 = 8 + 9 + 16 + M4, so M's Q4 = 15. Q4 total = 212 − 44 − 48 − 57 = 63 = K4 + 13 + 15 + 20, so K's Q4 = 15 and therefore K's Q2 = 15. Q2: 15 + 14 + 9 + N2 = 48, so N's Q2 = 10. Full table — K: 12, 15, 18, 15 (60); L: 10, 14, 11, 13 (48); M: 8, 9, 16, 15 (48); N: 14, 10, 12, 20 (56).",
+     "set": "b12-quarters",
+     "type": "mcq",
+     "options": [
+      "K",
+      "L",
+      "M",
+      "N"
+     ],
+     "answer": 0,
+     "fixed": true,
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 15
+    },
+    {
+     "id": "B12D-27",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Tables with missing data",
+     "difficulty": "Medium",
+     "question": "In which quarter were M's sales the highest?",
+     "solution": "Q1: 12 + 10 + M1 + 14 = 44, so M's Q1 = 8. Q3: 18 + L3 + 16 + 12 = 57, so L's Q3 = 11, and L's year = 10 + 14 + 11 + 13 = 48. M's year is also 48 = 8 + 9 + 16 + M4, so M's Q4 = 15. Q4 total = 212 − 44 − 48 − 57 = 63 = K4 + 13 + 15 + 20, so K's Q4 = 15 and therefore K's Q2 = 15. Q2: 15 + 14 + 9 + N2 = 48, so N's Q2 = 10. Full table — K: 12, 15, 18, 15 (60); L: 10, 14, 11, 13 (48); M: 8, 9, 16, 15 (48); N: 14, 10, 12, 20 (56). M: 8, 9, 16, 15.",
+     "set": "b12-quarters",
+     "type": "mcq",
+     "options": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+     ],
+     "answer": 2,
+     "fixed": true,
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 15
+    },
+    {
+     "id": "B12D-28",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Tables with missing data",
+     "difficulty": "Medium",
+     "question": "Approximately what percentage of the year's total sales came in Q4?",
+     "solution": "Q1: 12 + 10 + M1 + 14 = 44, so M's Q1 = 8. Q3: 18 + L3 + 16 + 12 = 57, so L's Q3 = 11, and L's year = 10 + 14 + 11 + 13 = 48. M's year is also 48 = 8 + 9 + 16 + M4, so M's Q4 = 15. Q4 total = 212 − 44 − 48 − 57 = 63 = K4 + 13 + 15 + 20, so K's Q4 = 15 and therefore K's Q2 = 15. Q2: 15 + 14 + 9 + N2 = 48, so N's Q2 = 10. Full table — K: 12, 15, 18, 15 (60); L: 10, 14, 11, 13 (48); M: 8, 9, 16, 15 (48); N: 14, 10, 12, 20 (56). Q4 = 63, and 63/212 ≈ 29.7%, about 30%.",
+     "set": "b12-quarters",
+     "type": "mcq",
+     "options": [
+      "About 25%",
+      "About 27%",
+      "About 30%",
+      "About 33%"
+     ],
+     "answer": 2,
+     "fixed": true,
+     "pack": "practice-b12",
+     "level": "Medium",
+     "practiceSet": 15
+    },
+    {
+     "id": "B12D-29",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Rankings & scoring",
+     "difficulty": "Medium",
+     "question": "What is the value of x?",
+     "solution": "x + y = 120 − 93 = 27. First count: P 30, Q 25 + y, R 20, S 18 + x. Q has 25 + y = 52 − x, so S = Q + 2 gives 18 + x = 54 − x, x = 18 and y = 9. Count 1: P 30, Q 34, R 20, S 36 — no majority (61 needed); R is eliminated and R's 20 ballots (R > Q > P > S) go to Q. Count 2: P 30, Q 54, S 36 — no majority; P is eliminated and P's 30 ballots (P > Q > R > S) go to Q. Count 3: Q 84, S 36, so Q wins.",
+     "set": "b12-vote",
+     "type": "tita",
+     "kind": "number",
+     "answer": "18",
+     "pack": "practice-b12",
+     "level": "Hard"
+    },
+    {
+     "id": "B12D-30",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Rankings & scoring",
+     "difficulty": "Medium",
+     "question": "Which candidate was eliminated first?",
+     "solution": "x + y = 120 − 93 = 27. First count: P 30, Q 25 + y, R 20, S 18 + x. Q has 25 + y = 52 − x, so S = Q + 2 gives 18 + x = 54 − x, x = 18 and y = 9. Count 1: P 30, Q 34, R 20, S 36 — no majority (61 needed); R is eliminated and R's 20 ballots (R > Q > P > S) go to Q. Count 2: P 30, Q 54, S 36 — no majority; P is eliminated and P's 30 ballots (P > Q > R > S) go to Q. Count 3: Q 84, S 36, so Q wins.",
+     "set": "b12-vote",
+     "type": "mcq",
+     "options": [
+      "P",
+      "Q",
+      "R",
+      "S"
+     ],
+     "answer": 2,
+     "fixed": true,
+     "pack": "practice-b12",
+     "level": "Hard"
+    },
+    {
+     "id": "B12D-31",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Rankings & scoring",
+     "difficulty": "Hard",
+     "question": "How many ballots did the winner have in the final count?",
+     "solution": "x + y = 120 − 93 = 27. First count: P 30, Q 25 + y, R 20, S 18 + x. Q has 25 + y = 52 − x, so S = Q + 2 gives 18 + x = 54 − x, x = 18 and y = 9. Count 1: P 30, Q 34, R 20, S 36 — no majority (61 needed); R is eliminated and R's 20 ballots (R > Q > P > S) go to Q. Count 2: P 30, Q 54, S 36 — no majority; P is eliminated and P's 30 ballots (P > Q > R > S) go to Q. Count 3: Q 84, S 36, so Q wins.",
+     "set": "b12-vote",
+     "type": "tita",
+     "kind": "number",
+     "answer": "84",
+     "pack": "practice-b12",
+     "level": "Hard"
+    },
+    {
+     "id": "B12D-32",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Rankings & scoring",
+     "difficulty": "Hard",
+     "question": "Suppose the 20 members who ranked R > Q > P > S had instead ranked R > S > Q > P, and every other ballot stayed the same. How many ballots would S have in the final count?",
+     "solution": "x + y = 120 − 93 = 27. First count: P 30, Q 25 + y, R 20, S 18 + x. Q has 25 + y = 52 − x, so S = Q + 2 gives 18 + x = 54 − x, x = 18 and y = 9. Count 1: P 30, Q 34, R 20, S 36 — no majority (61 needed); R is eliminated and R's 20 ballots (R > Q > P > S) go to Q. Count 2: P 30, Q 54, S 36 — no majority; P is eliminated and P's 30 ballots (P > Q > R > S) go to Q. Count 3: Q 84, S 36, so Q wins. With the change, count 1 is the same and R is eliminated, but R's 20 ballots now go to S: P 30, Q 34, S 56. P is eliminated and P's ballots go to Q: Q 64, S 56. Q still wins, and S has 56.",
+     "set": "b12-vote",
+     "type": "tita",
+     "kind": "number",
+     "answer": "56",
+     "pack": "practice-b12",
+     "level": "Hard"
+    },
+    {
+     "id": "B12D-33",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Arrangements",
+     "difficulty": "Easy",
+     "question": "Who faces Firoz?",
+     "solution": "Firoz is immediately to Amit's right, in the same row, and Amit is at an end, so Firoz is in the north row's middle seat. Charu must then take the middle seat of the south row, facing Firoz. Deepak is in the south row, so the north row's remaining end seat goes to Bhavna. Ela faces Amit, so Deepak takes the other south end seat, facing Bhavna. Directions: the north row faces south, so a north-row person's right is towards the west. With Firoz on Amit's right, Amit is at the east end: north row (west to east) Bhavna, Firoz, Amit; south row (west to east) Deepak, Charu, Ela.",
+     "set": "b12-rows",
+     "type": "mcq",
+     "options": [
+      "Charu",
+      "Deepak",
+      "Ela",
+      "Bhavna"
+     ],
+     "answer": 0,
+     "pack": "practice-b12",
+     "level": "Easy",
+     "practiceSet": 9
+    },
+    {
+     "id": "B12D-34",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Arrangements",
+     "difficulty": "Easy",
+     "question": "Who faces Bhavna?",
+     "solution": "Firoz is immediately to Amit's right, in the same row, and Amit is at an end, so Firoz is in the north row's middle seat. Charu must then take the middle seat of the south row, facing Firoz. Deepak is in the south row, so the north row's remaining end seat goes to Bhavna. Ela faces Amit, so Deepak takes the other south end seat, facing Bhavna. Directions: the north row faces south, so a north-row person's right is towards the west. With Firoz on Amit's right, Amit is at the east end: north row (west to east) Bhavna, Firoz, Amit; south row (west to east) Deepak, Charu, Ela.",
+     "set": "b12-rows",
+     "type": "mcq",
+     "options": [
+      "Amit",
+      "Charu",
+      "Ela",
+      "Deepak"
+     ],
+     "answer": 3,
+     "pack": "practice-b12",
+     "level": "Easy",
+     "practiceSet": 9
+    },
+    {
+     "id": "B12D-35",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Arrangements",
+     "difficulty": "Easy",
+     "question": "Who sits immediately to Charu's left?",
+     "solution": "Firoz is immediately to Amit's right, in the same row, and Amit is at an end, so Firoz is in the north row's middle seat. Charu must then take the middle seat of the south row, facing Firoz. Deepak is in the south row, so the north row's remaining end seat goes to Bhavna. Ela faces Amit, so Deepak takes the other south end seat, facing Bhavna. Directions: the north row faces south, so a north-row person's right is towards the west. With Firoz on Amit's right, Amit is at the east end: north row (west to east) Bhavna, Firoz, Amit; south row (west to east) Deepak, Charu, Ela. Charu faces north, so Charu's left is towards the west, where Deepak sits.",
+     "set": "b12-rows",
+     "type": "mcq",
+     "options": [
+      "Ela",
+      "Deepak",
+      "Firoz",
+      "No one"
+     ],
+     "answer": 1,
+     "pack": "practice-b12",
+     "level": "Easy",
+     "practiceSet": 9
+    },
+    {
+     "id": "B12D-36",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Arrangements",
+     "difficulty": "Easy",
+     "question": "Which one of the following is true?",
+     "solution": "Firoz is immediately to Amit's right, in the same row, and Amit is at an end, so Firoz is in the north row's middle seat. Charu must then take the middle seat of the south row, facing Firoz. Deepak is in the south row, so the north row's remaining end seat goes to Bhavna. Ela faces Amit, so Deepak takes the other south end seat, facing Bhavna. Directions: the north row faces south, so a north-row person's right is towards the west. With Firoz on Amit's right, Amit is at the east end: north row (west to east) Bhavna, Firoz, Amit; south row (west to east) Deepak, Charu, Ela. Charu faces north, so her right is east, where Ela sits. Firoz faces south, so his left is east, where Amit (not Bhavna) sits; Ela, not Deepak, faces Amit; and Firoz is in a middle seat.",
+     "set": "b12-rows",
+     "type": "mcq",
+     "options": [
+      "Deepak faces Amit",
+      "Bhavna sits immediately to Firoz's left",
+      "Ela sits immediately to Charu's right",
+      "Firoz sits at an end of a row"
+     ],
+     "answer": 2,
+     "pack": "practice-b12",
+     "level": "Easy",
+     "practiceSet": 9
+    },
+    {
      "id": "B2D-01",
      "exam": "cat",
      "section": "dilr",
@@ -9746,8 +10423,7 @@
      "kind": "number",
      "answer": "3",
      "pack": "practice-b2",
-     "level": "Medium",
-     "practiceSet": 10
+     "level": "Medium"
     },
     {
      "id": "B2D-02",
@@ -9767,8 +10443,7 @@
      ],
      "answer": 2,
      "pack": "practice-b2",
-     "level": "Medium",
-     "practiceSet": 10
+     "level": "Medium"
     },
     {
      "id": "B2D-03",
@@ -9788,8 +10463,7 @@
      ],
      "answer": 2,
      "pack": "practice-b2",
-     "level": "Medium",
-     "practiceSet": 10
+     "level": "Medium"
     },
     {
      "id": "B2D-04",
@@ -9809,8 +10483,7 @@
      ],
      "answer": 0,
      "pack": "practice-b2",
-     "level": "Medium",
-     "practiceSet": 10
+     "level": "Medium"
     },
     {
      "id": "B2D-05",
@@ -9830,8 +10503,7 @@
      ],
      "answer": 1,
      "pack": "practice-b2",
-     "level": "Medium",
-     "practiceSet": 9
+     "level": "Medium"
     },
     {
      "id": "B2D-06",
@@ -9851,8 +10523,7 @@
      ],
      "answer": 2,
      "pack": "practice-b2",
-     "level": "Medium",
-     "practiceSet": 9
+     "level": "Medium"
     },
     {
      "id": "B2D-07",
@@ -9867,8 +10538,7 @@
      "kind": "number",
      "answer": "3",
      "pack": "practice-b2",
-     "level": "Medium",
-     "practiceSet": 9
+     "level": "Medium"
     },
     {
      "id": "B2D-08",
@@ -9888,8 +10558,7 @@
      ],
      "answer": 0,
      "pack": "practice-b2",
-     "level": "Medium",
-     "practiceSet": 9
+     "level": "Medium"
     },
     {
      "id": "B2D-09",
@@ -9909,8 +10578,7 @@
      ],
      "answer": 2,
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "B2D-10",
@@ -9925,8 +10593,7 @@
      "kind": "number",
      "answer": "4",
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "B2D-11",
@@ -9946,8 +10613,7 @@
      ],
      "answer": 0,
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "B2D-12",
@@ -9962,8 +10628,7 @@
      "kind": "number",
      "answer": "9",
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "B2D-13",
@@ -10044,7 +10709,7 @@
      "answer": "3",
      "pack": "practice-b2",
      "level": "Easy",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "id": "B2D-18",
@@ -10066,7 +10731,7 @@
      "fixed": true,
      "pack": "practice-b2",
      "level": "Easy",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "id": "B2D-19",
@@ -10088,7 +10753,7 @@
      "fixed": true,
      "pack": "practice-b2",
      "level": "Easy",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "id": "B2D-20",
@@ -10104,7 +10769,7 @@
      "answer": "0",
      "pack": "practice-b2",
      "level": "Easy",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "exam": "cat",
@@ -10809,8 +11474,7 @@
      "answer": "1",
      "id": "DP-NETWORK10-42",
      "pack": "practice-dilr",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -10825,8 +11489,7 @@
      "answer": "1",
      "id": "DP-NETWORK10-43",
      "pack": "practice-dilr",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -10841,8 +11504,7 @@
      "answer": "1",
      "id": "DP-NETWORK10-44",
      "pack": "practice-dilr",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -10857,8 +11519,7 @@
      "answer": "0",
      "id": "DP-NETWORK10-45",
      "pack": "practice-dilr",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -18294,6 +18955,51 @@
    "kind": "passage",
    "title": "Passage: The meaning of a signature",
    "html": "<b>Passage: The meaning of a signature</b><p>Signatures were once the chief way of binding a person to a document. A name written by hand was hard to forge convincingly, and its presence on a page signalled that the signer had seen and accepted what was written there. Today most agreements are made with a click, a typed name or a box ticked on a screen, and the handwritten signature survives mainly for occasions that people regard as solemn: marriages, property sales, wills.</p><p>It is tempting to see this survival as nostalgia, but it serves a purpose. The effort of signing, small as it is, marks a transition from considering to committing. People sign fewer things than they click, and the act draws attention to the fact that something consequential is happening. Legal scholars call this the cautionary function of formalities: requirements that slow people down so that they notice what they are doing.</p><p>Digital agreements have largely abandoned this function in pursuit of convenience. A user who accepts the terms of a service may do so dozens of times a week, and the click that binds her is identical to the click that dismisses an advertisement. The law generally treats such clicks as valid consent, but few people believe they represent the considered acceptance that the older form was meant to secure.</p><p>The history of formalities suggests that they have always been a compromise between caution and convenience. Wax seals, witnesses and notaries each slowed the making of agreements and each was relaxed when commerce demanded speed. Legal systems responded by distinguishing between transactions: ordinary sales could be made by word of mouth, while gifts of land or promises without payment required writing, witnesses or both. The distinction rested on the observation that people are most likely to act rashly when they give something away or bind their future selves, and that these were the cases in which a moment of ceremony was most valuable.</p><p>Digital systems have largely collapsed this distinction. The same interface is used to accept a trivial licence and to consent to the sharing of medical records, and the user is given no signal that one matters more than the other. Some of the difficulty is commercial: firms that profit from frictionless consent have little reason to introduce ceremony. But some of it reflects a genuine uncertainty about which online agreements deserve a pause, since their consequences are often hidden in terms that few users read and fewer understand.</p><p>Some designers propose restoring friction to important digital agreements: requiring users to type a phrase, wait a few seconds or confirm twice. Critics reply that friction will soon become habitual and that people will learn to perform it as absent-mindedly as they now click. The disagreement turns on whether the cautionary effect of formalities comes from the effort itself or from its rarity. If rarity is what matters, adding friction to every agreement would defeat the purpose; it would work only if reserved for the agreements that genuinely deserve it.</p>"
+  },
+  "b12-knockout": {
+   "kind": "dilr",
+   "title": "Knockout badminton (Medium)",
+   "html": "<b>Knockout badminton</b><p>Eight players, A to H, played a knockout badminton tournament. In the quarter-finals A played B, C played D, E played F and G played H. The winner of A–B met the winner of C–D in one semi-final, the winner of E–F met the winner of G–H in the other, and the two semi-final winners met in the final. Every match was the best of three games: the first player to win two games won the match, so each match ended 2–0 or 2–1. There were no walkovers.</p><ul class='clues'><li>C did not win a single game in the tournament.</li><li>D won 5 games in all.</li><li>B, F and G won exactly one game each.</li><li>A won 3 games in all.</li><li>Exactly five matches went to three games.</li><li>H won fewer games than A.</li></ul>"
+  },
+  "b12-pipes": {
+   "kind": "dilr",
+   "title": "Water pipeline network (Easy)",
+   "html": "<b>Water pipeline network</b><p>Water enters a network at junction S at 1,200 litres per minute and flows only along the pipes listed below, in the direction shown. At a junction, all the water that comes in leaves through its outgoing pipes; nothing is stored or lost. The water ends up in three tanks, C, D and E.</p><table class='data'><tr><th>Pipe</th><th>From</th><th>To</th></tr><tr><td>1</td><td>S</td><td>A</td></tr><tr><td>2</td><td>S</td><td>B</td></tr><tr><td>3</td><td>A</td><td>Tank C</td></tr><tr><td>4</td><td>A</td><td>Tank D</td></tr><tr><td>5</td><td>B</td><td>Tank D</td></tr><tr><td>6</td><td>B</td><td>Tank E</td></tr></table><ul class='clues'><li>Tank E receives 200 litres per minute.</li><li>Junction B sends 60% of the water it receives to tank D.</li><li>Tank D receives 720 litres per minute.</li></ul>"
+  },
+  "b12-clubs": {
+   "kind": "dilr",
+   "title": "Three clubs (Medium)",
+   "html": "<b>Three clubs</b><p>A class of 60 students has three clubs: Music, Drama and Sports. A student may join any number of the clubs, including none.</p><ul class='clues'><li>Music has 22 members, Drama has 22 and Sports has 25.</li><li>Exactly 15 students belong to exactly two clubs.</li><li>12 students belong to no club.</li><li>The number of students who are only in Sports is 2 more than the number who are only in Music.</li><li>Exactly 4 students are in Music and Sports but not in Drama.</li></ul>"
+  },
+  "b12-interviews": {
+   "kind": "dilr",
+   "title": "Interview schedule (Medium)",
+   "html": "<b>Interview schedule</b><p>Six candidates, P, Q, R, S, T and U, are interviewed one at a time over three days, Monday to Wednesday, with one interview each morning and one each afternoon. Three interviewers, X, Y and Z, each conduct exactly two of the six interviews, and no interviewer conducts two interviews on the same day.</p><ul class='clues'><li>X conducts the Monday-morning interview.</li><li>R is interviewed in an afternoon, by Y.</li><li>S and T are interviewed on the same day; T is interviewed by Z, and S in the morning.</li><li>P is interviewed on an earlier day than Q, and both are interviewed by the same interviewer.</li><li>U is interviewed on Wednesday morning.</li><li>Z does not conduct any interview on Monday.</li></ul>"
+  },
+  "b12-countout": {
+   "kind": "dilr",
+   "title": "Counting-out game (Medium)",
+   "html": "<b>Counting-out game</b><p>Seven children — Anu, Bala, Chetan, Dev, Esha, Farah and Gopal — stand in a circle in that order, clockwise (Gopal is next to Anu). They choose a whole number <i>m</i> from 2 to 9. Starting with Anu as 1, they count clockwise round the circle, and the child who is counted <i>m</i> leaves. Counting starts again at 1 from the next child still in the circle, and so on, until one child is left.</p><ul class='clues'><li>Anu was not the first child to leave.</li><li>Gopal was not among the first three children to leave.</li><li>Dev was still in the circle when Anu left.</li></ul>"
+  },
+  "b12-thief": {
+   "kind": "dilr",
+   "title": "The thief and the joker (Medium)",
+   "html": "<b>The thief and the joker</b><p>Five people, A, B, C, D and E, are questioned about a theft. Exactly one of them is the thief and exactly one other is a joker. The thief and the joker both make two false statements; each of the other three makes two true statements.</p><ul class='clues'><li>A: “I am not the thief.” “C is not the joker.”</li><li>B: “C is the thief.” “I am not the joker.”</li><li>C: “The thief is D or E.” “A is not the joker.”</li><li>D: “I am not the thief.” “E is the joker.”</li><li>E: “B is not the thief.” “D is not the joker.”</li></ul>"
+  },
+  "b12-quarters": {
+   "kind": "dilr",
+   "title": "Quarterly sales (Medium)",
+   "html": "<b>Quarterly sales</b><p>The table shows a company's sales (in hundreds of units) of four products, K, L, M and N, in the four quarters of a year. Some entries are missing.</p><table class='data'><tr><th>Product</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th></tr><tr><td>K</td><td>12</td><td class='miss'>?</td><td>18</td><td class='miss'>?</td></tr><tr><td>L</td><td>10</td><td>14</td><td class='miss'>?</td><td>13</td></tr><tr><td>M</td><td class='miss'>?</td><td>9</td><td>16</td><td class='miss'>?</td></tr><tr><td>N</td><td>14</td><td class='miss'>?</td><td>12</td><td>20</td></tr></table><ul class='clues'><li>Total sales of the four products were 44 in Q1, 48 in Q2 and 57 in Q3.</li><li>K's sales in Q2 and Q4 were equal.</li><li>L and M had equal total sales for the year.</li><li>Total sales for the year (all products, all quarters) were 212.</li></ul>"
+  },
+  "b12-vote": {
+   "kind": "dilr",
+   "title": "Preferential vote (Hard)",
+   "html": "<b>Preferential vote</b><p>120 members elect a president from four candidates, P, Q, R and S. Each member ranks all four candidates. The table shows how many members chose each ranking (first preference on the left); two counts, x and y, are missing.</p><table class='data'><tr><th>Ranking</th><th>Members</th></tr><tr><td>P &gt; Q &gt; R &gt; S</td><td>30</td></tr><tr><td>Q &gt; R &gt; P &gt; S</td><td>25</td></tr><tr><td>R &gt; Q &gt; P &gt; S</td><td>20</td></tr><tr><td>S &gt; R &gt; Q &gt; P</td><td>18</td></tr><tr><td>S &gt; P &gt; Q &gt; R</td><td>x</td></tr><tr><td>Q &gt; P &gt; R &gt; S</td><td>y</td></tr></table><p>Counting: each ballot counts for the highest-ranked candidate still in the race. If a candidate has more than half the ballots, that candidate wins. Otherwise the candidate with the fewest ballots is eliminated and the ballots are counted again.</p><ul class='clues'><li>In the first count, S had exactly 2 more ballots than Q.</li></ul>"
+  },
+  "b12-rows": {
+   "kind": "dilr",
+   "title": "Two facing rows (Easy)",
+   "html": "<b>Two facing rows</b><p>Six friends — Amit, Bhavna, Charu, Deepak, Ela and Firoz — sit in two rows of three seats. The north row faces south and the south row faces north, so each person directly faces one person in the other row.</p><ul class='clues'><li>Amit sits in the north row, in an end seat, and faces Ela.</li><li>Firoz sits immediately to Amit's right.</li><li>Charu sits in the middle seat of a row.</li><li>Deepak does not sit in the same row as Amit.</li><li>Bhavna does not face Firoz.</li></ul>"
   },
   "b2-knights": {
    "kind": "dilr",

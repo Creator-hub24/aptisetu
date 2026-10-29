@@ -591,36 +591,36 @@
      {
       "set": 9,
       "ids": [
-       "B2D-17",
-       "B2D-18",
-       "B2D-19",
-       "B2D-20",
-       "B2D-05",
-       "B2D-06",
-       "B2D-07",
-       "B2D-08"
+       "B12D-05",
+       "B12D-06",
+       "B12D-07",
+       "B12D-08",
+       "B12D-33",
+       "B12D-34",
+       "B12D-35",
+       "B12D-36"
       ],
       "groups": [
-       "b2-fruit",
-       "b2-floors"
+       "b12-pipes",
+       "b12-rows"
       ],
       "filled": true
      },
      {
       "set": 10,
       "ids": [
-       "B2D-01",
-       "B2D-02",
-       "B2D-03",
-       "B2D-04",
-       "DS1-TOURN3-11",
-       "DS1-TOURN3-12",
-       "DS1-TOURN3-13",
-       "DS1-TOURN3-14"
+       "B2D-17",
+       "B2D-18",
+       "B2D-19",
+       "B2D-20",
+       "B12D-01",
+       "B12D-02",
+       "B12D-03",
+       "B12D-04"
       ],
       "groups": [
-       "b2-knights",
-       "ds1-tourn3"
+       "b2-fruit",
+       "b12-knockout"
       ],
       "filled": true
      }
@@ -700,36 +700,36 @@
      {
       "set": 14,
       "ids": [
-       "DS2-LINEAR3-11",
-       "DS2-LINEAR3-12",
-       "DS2-LINEAR3-13",
-       "DS2-LINEAR3-14",
-       "DS2-GROUP5-19",
-       "DS2-GROUP5-20",
-       "DS2-GROUP5-21",
-       "DS2-GROUP5-22"
+       "B12D-09",
+       "B12D-10",
+       "B12D-11",
+       "B12D-12",
+       "B12D-13",
+       "B12D-14",
+       "B12D-15",
+       "B12D-16"
       ],
       "groups": [
-       "ds2-linear3",
-       "ds2-group5"
+       "b12-clubs",
+       "b12-interviews"
       ],
       "filled": true
      },
      {
       "set": 15,
       "ids": [
-       "B2D-09",
-       "B2D-10",
-       "B2D-11",
-       "B2D-12",
-       "DP-NETWORK10-42",
-       "DP-NETWORK10-43",
-       "DP-NETWORK10-44",
-       "DP-NETWORK10-45"
+       "B12D-21",
+       "B12D-22",
+       "B12D-23",
+       "B12D-24",
+       "B12D-25",
+       "B12D-26",
+       "B12D-27",
+       "B12D-28"
       ],
       "groups": [
-       "b2-unique",
-       "dp-network10"
+       "b12-thief",
+       "b12-quarters"
       ],
       "filled": true
      }
@@ -745,13 +745,22 @@
    },
    "count": 15,
    "excludedDataSets": [
+    "b12-pipes",
+    "b12-rows",
     "b2-fruit",
     "cd-choc",
     "cd-code",
     "cd-houses",
+    "b12-knockout",
+    "b12-clubs",
+    "b12-interviews",
+    "b12-countout",
+    "b12-thief",
+    "b12-quarters",
     "b2-knights",
     "b2-floors",
     "cd-quiz",
+    "b12-vote",
     "b2-unique",
     "b2-doubling",
     "dp-circular2",
