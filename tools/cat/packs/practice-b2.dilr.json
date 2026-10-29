@@ -1,0 +1,280 @@
+{
+ "name": "practice-b2 — DILR",
+ "sets": {
+  "b2-knights": {
+   "kind": "dilr",
+   "title": "Knights and knaves (Hard)",
+   "html": "<b>Knights and knaves</b><p>On an island every inhabitant is either a <i>knight</i>, who always tells the truth, or a <i>knave</i>, who always lies. Six inhabitants, A, B, C, D, E and F, make one statement each:</p><ul class='clues'><li>A: “B is a knave.”</li><li>B: “Exactly three of us six are knights.”</li><li>C: “D is a knave, or A is a knight.”</li><li>D: “E and F are of the same type.”</li><li>E: “A and D are of the same type.”</li><li>F: “C is a knave, or E is a knave.”</li></ul><p>(“X or Y” is true when at least one of X, Y is true.)</p>"
+  },
+  "b2-floors": {
+   "kind": "dilr",
+   "title": "Floors, pets and jobs (Medium)",
+   "html": "<b>Floors, pets and jobs</b><p>Arjun, Bina, Chetan, Divya and Esha live on floors 1 to 5 of a building (floor 1 is the lowest), one person per floor. Each has a different pet — cat, dog, parrot, fish, rabbit — and a different job — doctor, lawyer, teacher, engineer, pilot.</p><ul class='clues'><li>The pilot lives above the dog owner, and the dog owner lives on the floor immediately above the teacher.</li><li>Arjun lives on the floor immediately below the rabbit owner.</li><li>The doctor lives on an odd-numbered floor and owns neither the cat nor the dog.</li><li>Bina lives on an even-numbered floor and is neither the teacher nor the pilot.</li><li>The fish owner lives exactly three floors below the dog owner.</li><li>The lawyer owns the cat.</li><li>Esha lives above Divya but below Bina.</li></ul>"
+  },
+  "b2-unique": {
+   "kind": "dilr",
+   "title": "The unique-number game (Hard)",
+   "html": "<b>The unique-number game</b><p>Four players, P, Q, R and S, play three rounds of a game. In each round every player secretly writes a whole number from 1 to 4; different players may write the same number. When the numbers are revealed, a player scores the number he wrote if nobody else wrote that number in that round; otherwise he scores 0 for the round.</p><ul class='clues'><li>In every round, at least two players wrote the same number.</li><li>Q wrote 4 in round 1.</li><li>In round 2, exactly three players wrote the same number.</li><li>P scored in round 3.</li><li>R wrote a different number in each round.</li><li>At the end of the three rounds, the total scores were P 4, Q 1, R 5 and S 2.</li><li>The twelve numbers written add up to 33.</li></ul>"
+  },
+  "b2-doubling": {
+   "kind": "dilr",
+   "title": "The doubling game (Hard)",
+   "html": "<b>The doubling game</b><p>Four players, A, B, C and D, play four rounds of a game with coins. Each round has exactly one loser, and every player loses exactly one round. The loser of a round pays each of the other three players as many coins as that player holds at that moment, so each of the other three doubles their holding. The loser always has enough coins to pay. No other coins change hands.</p><ul class='clues'><li>After the four rounds, A, B, C and D hold 16, 32, 48 and 64 coins respectively.</li><li>At the start, B held more coins than the other three put together.</li><li>At the start, C held fewer coins than each of the others.</li><li>D lost a round before A did.</li></ul>"
+  }
+ },
+ "questions": [
+  {
+   "id": "B2D-01",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Logic puzzles",
+   "difficulty": "Medium",
+   "question": "How many of the six are knights?",
+   "solution": "Split on B. If B is a knave, A's 'B is a knave' is true, so A is a knight, and C's statement is true (A is a knight), so C is a knight. If E were a knight, D would match A (a knight), D's 'E and F same type' would make F a knight, and F's 'C or E is a knave' would be false — impossible. So E is a knave, D differs from A (a knave), D's lie means F differs from E (F a knight), and F's 'E is a knave' is true ✓. That gives exactly three knights (A, C, F), which makes B's claim true — but B was assumed a knave. So B is a knight. Then A is a knave. If E were a knave, D would differ from A (a knight), so E and F match (F a knave), and F's lie would need both C and E to be knights — but E is a knave. So E is a knight, D is a knave (same as A), D's lie means F differs from E (F a knave), and F's lie means C and E are both knights; C's 'D is a knave or A is a knight' is true ✓. Result: B, C and E are knights; A, D and F are knaves (three knights, so B told the truth ✓). A computer check of all 64 possible assignments confirms this is the only consistent one. So there are 3 knights.",
+   "set": "b2-knights",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3"
+  },
+  {
+   "id": "B2D-02",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Logic puzzles",
+   "difficulty": "Medium",
+   "question": "Which one of the following is a knight?",
+   "solution": "Split on B. If B is a knave, A's 'B is a knave' is true, so A is a knight, and C's statement is true (A is a knight), so C is a knight. If E were a knight, D would match A (a knight), D's 'E and F same type' would make F a knight, and F's 'C or E is a knave' would be false — impossible. So E is a knave, D differs from A (a knave), D's lie means F differs from E (F a knight), and F's 'E is a knave' is true ✓. That gives exactly three knights (A, C, F), which makes B's claim true — but B was assumed a knave. So B is a knight. Then A is a knave. If E were a knave, D would differ from A (a knight), so E and F match (F a knave), and F's lie would need both C and E to be knights — but E is a knave. So E is a knight, D is a knave (same as A), D's lie means F differs from E (F a knave), and F's lie means C and E are both knights; C's 'D is a knave or A is a knight' is true ✓. Result: B, C and E are knights; A, D and F are knaves (three knights, so B told the truth ✓). A computer check of all 64 possible assignments confirms this is the only consistent one. Of the options, only E is a knight.",
+   "set": "b2-knights",
+   "type": "mcq",
+   "options": [
+    "A",
+    "D",
+    "E",
+    "F"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "B2D-03",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Logic puzzles",
+   "difficulty": "Medium",
+   "question": "Which of the following pairs are of the same type?",
+   "solution": "Split on B. If B is a knave, A's 'B is a knave' is true, so A is a knight, and C's statement is true (A is a knight), so C is a knight. If E were a knight, D would match A (a knight), D's 'E and F same type' would make F a knight, and F's 'C or E is a knave' would be false — impossible. So E is a knave, D differs from A (a knave), D's lie means F differs from E (F a knight), and F's 'E is a knave' is true ✓. That gives exactly three knights (A, C, F), which makes B's claim true — but B was assumed a knave. So B is a knight. Then A is a knave. If E were a knave, D would differ from A (a knight), so E and F match (F a knave), and F's lie would need both C and E to be knights — but E is a knave. So E is a knight, D is a knave (same as A), D's lie means F differs from E (F a knave), and F's lie means C and E are both knights; C's 'D is a knave or A is a knight' is true ✓. Result: B, C and E are knights; A, D and F are knaves (three knights, so B told the truth ✓). A computer check of all 64 possible assignments confirms this is the only consistent one. C and E are both knights; each of the other pairs has one knight and one knave.",
+   "set": "b2-knights",
+   "type": "mcq",
+   "options": [
+    "A and B",
+    "B and D",
+    "C and E",
+    "D and E"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "B2D-04",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Logic puzzles",
+   "difficulty": "Hard",
+   "question": "Suppose B's statement were instead “Exactly four of us six are knights”, and all the other statements stayed the same. Who would then be the knights?",
+   "solution": "First, B cannot be a knight: then A is a knave; if E is a knight, D is a knave (same as A), D's lie makes F a knave, and F's lie makes C and E knights — only B, C, E are knights, three not four; if E is a knave, D is a knight, D's truth makes F a knave like E, and F's lie needs E to be a knight — impossible. So B is a knave. Then A's 'B is a knave' is true, so A is a knight; C's statement is then true (A is a knight), so C is a knight. E says A and D are the same type: if E were a knight, D would be a knight, but D's 'E and F same type' would force F to be a knight too, and F's 'C or E is a knave' would be false — a contradiction. So E is a knave, D is a knave (different from A), and D's lie means E and F differ, so F is a knight; F's claim 'E is a knave' is indeed true. Knights: A, C, F — three, so B's 'four' is false, consistent. A full check of all 64 assignments gives only this one.",
+   "set": "b2-knights",
+   "type": "mcq",
+   "options": [
+    "A, C and F only",
+    "B, C and E only",
+    "C only",
+    "A and C only"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "B2D-05",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Logic puzzles",
+   "difficulty": "Medium",
+   "question": "Who lives on floor 3?",
+   "solution": "Fish is three floors below dog, so (fish, dog) is on floors (1, 4) or (2, 5). The dog owner is immediately above the teacher and below the pilot, so the dog cannot be on floor 5: fish on 1, dog on 4, teacher on 3 and pilot on 5. Bina is on an even floor above Esha, who is above Divya, so Bina is on floor 4 (the dog owner). Arjun is immediately below someone, so Arjun is not on 5: Chetan is on 5 and is the pilot. The doctor is on an odd floor other than 3 (teacher) and 5 (pilot), so on floor 1 with the fish. The lawyer owns the cat, so the lawyer is not on floor 1 (fish), 3 (teacher), 4 (dog) or 5 (pilot): the lawyer is on floor 2 with the cat. So the rabbit is not on floor 2 and Arjun cannot be on floor 1; Arjun is on floor 2 (lawyer, cat) with the rabbit on floor 3. Divya is below Esha, so Divya is on 1 and Esha on 3. Bina is the remaining engineer and Chetan has the remaining parrot. Final: floor 1: Divya (fish, doctor); floor 2: Arjun (cat, lawyer); floor 3: Esha (rabbit, teacher); floor 4: Bina (dog, engineer); floor 5: Chetan (parrot, pilot). (A computer check of every arrangement finds only this one.)",
+   "set": "b2-floors",
+   "type": "mcq",
+   "options": [
+    "Arjun",
+    "Esha",
+    "Divya",
+    "Chetan"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "B2D-06",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Logic puzzles",
+   "difficulty": "Medium",
+   "question": "Which pet does the pilot own?",
+   "solution": "Fish is three floors below dog, so (fish, dog) is on floors (1, 4) or (2, 5). The dog owner is immediately above the teacher and below the pilot, so the dog cannot be on floor 5: fish on 1, dog on 4, teacher on 3 and pilot on 5. Bina is on an even floor above Esha, who is above Divya, so Bina is on floor 4 (the dog owner). Arjun is immediately below someone, so Arjun is not on 5: Chetan is on 5 and is the pilot. The doctor is on an odd floor other than 3 (teacher) and 5 (pilot), so on floor 1 with the fish. The lawyer owns the cat, so the lawyer is not on floor 1 (fish), 3 (teacher), 4 (dog) or 5 (pilot): the lawyer is on floor 2 with the cat. So the rabbit is not on floor 2 and Arjun cannot be on floor 1; Arjun is on floor 2 (lawyer, cat) with the rabbit on floor 3. Divya is below Esha, so Divya is on 1 and Esha on 3. Bina is the remaining engineer and Chetan has the remaining parrot. Final: floor 1: Divya (fish, doctor); floor 2: Arjun (cat, lawyer); floor 3: Esha (rabbit, teacher); floor 4: Bina (dog, engineer); floor 5: Chetan (parrot, pilot). (A computer check of every arrangement finds only this one.) The pilot is Chetan, who owns the parrot.",
+   "set": "b2-floors",
+   "type": "mcq",
+   "options": [
+    "Dog",
+    "Cat",
+    "Parrot",
+    "Rabbit"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "B2D-07",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Logic puzzles",
+   "difficulty": "Medium",
+   "question": "How many people live above the lawyer?",
+   "solution": "Fish is three floors below dog, so (fish, dog) is on floors (1, 4) or (2, 5). The dog owner is immediately above the teacher and below the pilot, so the dog cannot be on floor 5: fish on 1, dog on 4, teacher on 3 and pilot on 5. Bina is on an even floor above Esha, who is above Divya, so Bina is on floor 4 (the dog owner). Arjun is immediately below someone, so Arjun is not on 5: Chetan is on 5 and is the pilot. The doctor is on an odd floor other than 3 (teacher) and 5 (pilot), so on floor 1 with the fish. The lawyer owns the cat, so the lawyer is not on floor 1 (fish), 3 (teacher), 4 (dog) or 5 (pilot): the lawyer is on floor 2 with the cat. So the rabbit is not on floor 2 and Arjun cannot be on floor 1; Arjun is on floor 2 (lawyer, cat) with the rabbit on floor 3. Divya is below Esha, so Divya is on 1 and Esha on 3. Bina is the remaining engineer and Chetan has the remaining parrot. Final: floor 1: Divya (fish, doctor); floor 2: Arjun (cat, lawyer); floor 3: Esha (rabbit, teacher); floor 4: Bina (dog, engineer); floor 5: Chetan (parrot, pilot). (A computer check of every arrangement finds only this one.) The lawyer is Arjun on floor 2, so 3 people live above.",
+   "set": "b2-floors",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3"
+  },
+  {
+   "id": "B2D-08",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Logic puzzles",
+   "difficulty": "Medium",
+   "question": "Which one of the following is true?",
+   "solution": "Fish is three floors below dog, so (fish, dog) is on floors (1, 4) or (2, 5). The dog owner is immediately above the teacher and below the pilot, so the dog cannot be on floor 5: fish on 1, dog on 4, teacher on 3 and pilot on 5. Bina is on an even floor above Esha, who is above Divya, so Bina is on floor 4 (the dog owner). Arjun is immediately below someone, so Arjun is not on 5: Chetan is on 5 and is the pilot. The doctor is on an odd floor other than 3 (teacher) and 5 (pilot), so on floor 1 with the fish. The lawyer owns the cat, so the lawyer is not on floor 1 (fish), 3 (teacher), 4 (dog) or 5 (pilot): the lawyer is on floor 2 with the cat. So the rabbit is not on floor 2 and Arjun cannot be on floor 1; Arjun is on floor 2 (lawyer, cat) with the rabbit on floor 3. Divya is below Esha, so Divya is on 1 and Esha on 3. Bina is the remaining engineer and Chetan has the remaining parrot. Final: floor 1: Divya (fish, doctor); floor 2: Arjun (cat, lawyer); floor 3: Esha (rabbit, teacher); floor 4: Bina (dog, engineer); floor 5: Chetan (parrot, pilot). (A computer check of every arrangement finds only this one.)",
+   "set": "b2-floors",
+   "type": "mcq",
+   "options": [
+    "The doctor owns the fish.",
+    "Bina is the lawyer.",
+    "The rabbit owner lives on floor 4.",
+    "Chetan owns the dog."
+   ],
+   "answer": 0
+  },
+  {
+   "id": "B2D-09",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Games with rules",
+   "difficulty": "Hard",
+   "question": "What number did S write in round 2?",
+   "solution": "Count scoring turns. R's 5 must come from two different numbers (1 + 4 or 2 + 3), so R scores in exactly two rounds; P, Q and S each score at least once. That is at least 5 scoring turns. A round with a repeated number has at most 2 scorers, and round 2 has exactly 1, so there are at most 2 + 1 + 2 = 5. Hence exactly 5: P scores once (4, in round 3), Q once (1), S once (2), R twice, and rounds 1 and 3 have two scorers each. Q wrote 4 in round 1 but scored only 1 overall, so Q did not score in round 1; P scored only in round 3. So the round-1 scorers are R and S, and Q's 4 was matched by P: round 1 is P 4, Q 4, S 2, R a with a = 1 or 3. If R scored again in round 3 (and Q in round 2), the totals of the numbers come out to 32 + 2b for a whole number b, never 33 — impossible. So Q scored 1 in round 3 and R scored alone in round 2 with 5 − a. If a = 3, R's numbers 3, 2 and his round-3 number (which must pair with S, avoiding 4 and 1) clash; so a = 1 and R wrote 4 in round 2. Round 2: P, Q, S wrote the same d; round 3: P 4, Q 1, R and S both c (c = 2 or 3). Sum: 11 + (3d + 4) + (5 + 2c) = 33 gives 3d + 2c = 13, so c = 2 and d = 3. Final: round 1 — P 4, Q 4, R 1, S 2; round 2 — P 3, Q 3, R 4, S 3; round 3 — P 4, Q 1, R 2, S 2. A computer check of all 4¹² possibilities confirms it is the only one.",
+   "set": "b2-unique",
+   "type": "mcq",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "B2D-10",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Games with rules",
+   "difficulty": "Hard",
+   "question": "In how many of the twelve writes was the number 4 written?",
+   "solution": "Count scoring turns. R's 5 must come from two different numbers (1 + 4 or 2 + 3), so R scores in exactly two rounds; P, Q and S each score at least once. That is at least 5 scoring turns. A round with a repeated number has at most 2 scorers, and round 2 has exactly 1, so there are at most 2 + 1 + 2 = 5. Hence exactly 5: P scores once (4, in round 3), Q once (1), S once (2), R twice, and rounds 1 and 3 have two scorers each. Q wrote 4 in round 1 but scored only 1 overall, so Q did not score in round 1; P scored only in round 3. So the round-1 scorers are R and S, and Q's 4 was matched by P: round 1 is P 4, Q 4, S 2, R a with a = 1 or 3. If R scored again in round 3 (and Q in round 2), the totals of the numbers come out to 32 + 2b for a whole number b, never 33 — impossible. So Q scored 1 in round 3 and R scored alone in round 2 with 5 − a. If a = 3, R's numbers 3, 2 and his round-3 number (which must pair with S, avoiding 4 and 1) clash; so a = 1 and R wrote 4 in round 2. Round 2: P, Q, S wrote the same d; round 3: P 4, Q 1, R and S both c (c = 2 or 3). Sum: 11 + (3d + 4) + (5 + 2c) = 33 gives 3d + 2c = 13, so c = 2 and d = 3. Final: round 1 — P 4, Q 4, R 1, S 2; round 2 — P 3, Q 3, R 4, S 3; round 3 — P 4, Q 1, R 2, S 2. A computer check of all 4¹² possibilities confirms it is the only one. The number 4 was written twice in round 1, once in round 2 and once in round 3: 4 times.",
+   "set": "b2-unique",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4"
+  },
+  {
+   "id": "B2D-11",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Games with rules",
+   "difficulty": "Hard",
+   "question": "Which players scored in round 1?",
+   "solution": "Count scoring turns. R's 5 must come from two different numbers (1 + 4 or 2 + 3), so R scores in exactly two rounds; P, Q and S each score at least once. That is at least 5 scoring turns. A round with a repeated number has at most 2 scorers, and round 2 has exactly 1, so there are at most 2 + 1 + 2 = 5. Hence exactly 5: P scores once (4, in round 3), Q once (1), S once (2), R twice, and rounds 1 and 3 have two scorers each. Q wrote 4 in round 1 but scored only 1 overall, so Q did not score in round 1; P scored only in round 3. So the round-1 scorers are R and S, and Q's 4 was matched by P: round 1 is P 4, Q 4, S 2, R a with a = 1 or 3. If R scored again in round 3 (and Q in round 2), the totals of the numbers come out to 32 + 2b for a whole number b, never 33 — impossible. So Q scored 1 in round 3 and R scored alone in round 2 with 5 − a. If a = 3, R's numbers 3, 2 and his round-3 number (which must pair with S, avoiding 4 and 1) clash; so a = 1 and R wrote 4 in round 2. Round 2: P, Q, S wrote the same d; round 3: P 4, Q 1, R and S both c (c = 2 or 3). Sum: 11 + (3d + 4) + (5 + 2c) = 33 gives 3d + 2c = 13, so c = 2 and d = 3. Final: round 1 — P 4, Q 4, R 1, S 2; round 2 — P 3, Q 3, R 4, S 3; round 3 — P 4, Q 1, R 2, S 2. A computer check of all 4¹² possibilities confirms it is the only one.",
+   "set": "b2-unique",
+   "type": "mcq",
+   "options": [
+    "R and S only",
+    "P and R only",
+    "R only",
+    "Q, R and S only"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "B2D-12",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Games with rules",
+   "difficulty": "Medium",
+   "question": "What was the sum of the four numbers written in round 3?",
+   "solution": "Count scoring turns. R's 5 must come from two different numbers (1 + 4 or 2 + 3), so R scores in exactly two rounds; P, Q and S each score at least once. That is at least 5 scoring turns. A round with a repeated number has at most 2 scorers, and round 2 has exactly 1, so there are at most 2 + 1 + 2 = 5. Hence exactly 5: P scores once (4, in round 3), Q once (1), S once (2), R twice, and rounds 1 and 3 have two scorers each. Q wrote 4 in round 1 but scored only 1 overall, so Q did not score in round 1; P scored only in round 3. So the round-1 scorers are R and S, and Q's 4 was matched by P: round 1 is P 4, Q 4, S 2, R a with a = 1 or 3. If R scored again in round 3 (and Q in round 2), the totals of the numbers come out to 32 + 2b for a whole number b, never 33 — impossible. So Q scored 1 in round 3 and R scored alone in round 2 with 5 − a. If a = 3, R's numbers 3, 2 and his round-3 number (which must pair with S, avoiding 4 and 1) clash; so a = 1 and R wrote 4 in round 2. Round 2: P, Q, S wrote the same d; round 3: P 4, Q 1, R and S both c (c = 2 or 3). Sum: 11 + (3d + 4) + (5 + 2c) = 33 gives 3d + 2c = 13, so c = 2 and d = 3. Final: round 1 — P 4, Q 4, R 1, S 2; round 2 — P 3, Q 3, R 4, S 3; round 3 — P 4, Q 1, R 2, S 2. A computer check of all 4¹² possibilities confirms it is the only one. Round 3: 4 + 1 + 2 + 2 = 9.",
+   "set": "b2-unique",
+   "type": "tita",
+   "kind": "number",
+   "answer": "9"
+  },
+  {
+   "id": "B2D-13",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Games with rules",
+   "difficulty": "Hard",
+   "question": "How many coins did A hold at the start?",
+   "solution": "The total, 160 coins, never changes. Work backwards from the end: in the round a player loses, every other player's holding is halved (undoing the doubling) and the loser gets back what he paid. Undoing the rounds for each of the 24 possible orders of losers shows that the round-1 loser always starts with 81 to 84 coins and everyone else with at most 44, so 'B held more than the other three together' means B lost round 1. Of the six orders with B first, only (B, D, A, C) and (B, A, D, C) leave C with the fewest coins at the start, and 'D before A' picks the first. Undoing the rounds for B, D, A, C gives starting holdings A 21, B 82, C 13, D 44. Forward check: after round 1 (B loses) 42, 4, 26, 88; after round 2 (D loses) 84, 8, 52, 16; after round 3 (A loses) 8, 16, 104, 32; after round 4 (C loses) 16, 32, 48, 64 ✓.",
+   "set": "b2-doubling",
+   "type": "tita",
+   "kind": "number",
+   "answer": "21"
+  },
+  {
+   "id": "B2D-14",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Games with rules",
+   "difficulty": "Hard",
+   "question": "Who lost round 2?",
+   "solution": "The total, 160 coins, never changes. Work backwards from the end: in the round a player loses, every other player's holding is halved (undoing the doubling) and the loser gets back what he paid. Undoing the rounds for each of the 24 possible orders of losers shows that the round-1 loser always starts with 81 to 84 coins and everyone else with at most 44, so 'B held more than the other three together' means B lost round 1. Of the six orders with B first, only (B, D, A, C) and (B, A, D, C) leave C with the fewest coins at the start, and 'D before A' picks the first. Undoing the rounds for B, D, A, C gives starting holdings A 21, B 82, C 13, D 44. Forward check: after round 1 (B loses) 42, 4, 26, 88; after round 2 (D loses) 84, 8, 52, 16; after round 3 (A loses) 8, 16, 104, 32; after round 4 (C loses) 16, 32, 48, 64 ✓.",
+   "set": "b2-doubling",
+   "type": "mcq",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "B2D-15",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Games with rules",
+   "difficulty": "Hard",
+   "question": "How many coins did C hold at the end of round 2?",
+   "solution": "The total, 160 coins, never changes. Work backwards from the end: in the round a player loses, every other player's holding is halved (undoing the doubling) and the loser gets back what he paid. Undoing the rounds for each of the 24 possible orders of losers shows that the round-1 loser always starts with 81 to 84 coins and everyone else with at most 44, so 'B held more than the other three together' means B lost round 1. Of the six orders with B first, only (B, D, A, C) and (B, A, D, C) leave C with the fewest coins at the start, and 'D before A' picks the first. Undoing the rounds for B, D, A, C gives starting holdings A 21, B 82, C 13, D 44. Forward check: after round 1 (B loses) 42, 4, 26, 88; after round 2 (D loses) 84, 8, 52, 16; after round 3 (A loses) 8, 16, 104, 32; after round 4 (C loses) 16, 32, 48, 64 ✓. C held 52 coins after round 2.",
+   "set": "b2-doubling",
+   "type": "tita",
+   "kind": "number",
+   "answer": "52"
+  },
+  {
+   "id": "B2D-16",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Games with rules",
+   "difficulty": "Hard",
+   "question": "What is the largest number of coins held by any one player at any time (at the start or at the end of any round)?",
+   "solution": "The total, 160 coins, never changes. Work backwards from the end: in the round a player loses, every other player's holding is halved (undoing the doubling) and the loser gets back what he paid. Undoing the rounds for each of the 24 possible orders of losers shows that the round-1 loser always starts with 81 to 84 coins and everyone else with at most 44, so 'B held more than the other three together' means B lost round 1. Of the six orders with B first, only (B, D, A, C) and (B, A, D, C) leave C with the fewest coins at the start, and 'D before A' picks the first. Undoing the rounds for B, D, A, C gives starting holdings A 21, B 82, C 13, D 44. Forward check: after round 1 (B loses) 42, 4, 26, 88; after round 2 (D loses) 84, 8, 52, 16; after round 3 (A loses) 8, 16, 104, 32; after round 4 (C loses) 16, 32, 48, 64 ✓. The largest holding is C's 104 coins after round 3.",
+   "set": "b2-doubling",
+   "type": "tita",
+   "kind": "number",
+   "answer": "104"
+  }
+ ]
+}

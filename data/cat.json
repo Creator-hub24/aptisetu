@@ -6844,8 +6844,7 @@
      "answer": "2",
      "id": "DS1-CIRCULAR1-01",
      "pack": "dilr-sectional-1",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -6865,8 +6864,7 @@
      "answer": 3,
      "id": "DS1-CIRCULAR1-02",
      "pack": "dilr-sectional-1",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -6886,8 +6884,7 @@
      "answer": 1,
      "id": "DS1-CIRCULAR1-03",
      "pack": "dilr-sectional-1",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -6907,8 +6904,7 @@
      "answer": 0,
      "id": "DS1-CIRCULAR1-04",
      "pack": "dilr-sectional-1",
-     "level": "Medium",
-     "practiceSet": 15
+     "level": "Medium"
     },
     {
      "exam": "cat",
@@ -6923,8 +6919,7 @@
      "answer": "0",
      "id": "DS1-CIRCULAR1-05",
      "pack": "dilr-sectional-1",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7025,7 +7020,7 @@
      "id": "DS1-TOURN3-11",
      "pack": "dilr-sectional-1",
      "level": "Hard",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "exam": "cat",
@@ -7046,7 +7041,7 @@
      "id": "DS1-TOURN3-12",
      "pack": "dilr-sectional-1",
      "level": "Hard",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "exam": "cat",
@@ -7062,7 +7057,7 @@
      "id": "DS1-TOURN3-13",
      "pack": "dilr-sectional-1",
      "level": "Hard",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "exam": "cat",
@@ -7078,7 +7073,7 @@
      "id": "DS1-TOURN3-14",
      "pack": "dilr-sectional-1",
      "level": "Medium",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "exam": "cat",
@@ -7233,8 +7228,7 @@
      "answer": 3,
      "id": "DS2-TOURN1-01",
      "pack": "dilr-sectional-2",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7249,8 +7243,7 @@
      "answer": "7",
      "id": "DS2-TOURN1-02",
      "pack": "dilr-sectional-2",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7265,8 +7258,7 @@
      "answer": "0",
      "id": "DS2-TOURN1-03",
      "pack": "dilr-sectional-2",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7286,8 +7278,7 @@
      "answer": 1,
      "id": "DS2-TOURN1-04",
      "pack": "dilr-sectional-2",
-     "level": "Medium",
-     "practiceSet": 15
+     "level": "Medium"
     },
     {
      "exam": "cat",
@@ -7302,8 +7293,7 @@
      "answer": "35",
      "id": "DS2-TOURN1-05",
      "pack": "dilr-sectional-2",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -7399,7 +7389,7 @@
      "id": "DS2-LINEAR3-11",
      "pack": "dilr-sectional-2",
      "level": "Hard",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "exam": "cat",
@@ -7420,7 +7410,7 @@
      "id": "DS2-LINEAR3-12",
      "pack": "dilr-sectional-2",
      "level": "Hard",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "exam": "cat",
@@ -7441,7 +7431,7 @@
      "id": "DS2-LINEAR3-13",
      "pack": "dilr-sectional-2",
      "level": "Hard",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "exam": "cat",
@@ -7457,7 +7447,7 @@
      "id": "DS2-LINEAR3-14",
      "pack": "dilr-sectional-2",
      "level": "Medium",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "exam": "cat",
@@ -7543,7 +7533,7 @@
      "id": "DS2-GROUP5-19",
      "pack": "dilr-sectional-2",
      "level": "Hard",
-     "practiceSet": 10
+     "practiceSet": 14
     },
     {
      "exam": "cat",
@@ -7564,7 +7554,7 @@
      "id": "DS2-GROUP5-20",
      "pack": "dilr-sectional-2",
      "level": "Hard",
-     "practiceSet": 10
+     "practiceSet": 14
     },
     {
      "exam": "cat",
@@ -7585,7 +7575,7 @@
      "id": "DS2-GROUP5-21",
      "pack": "dilr-sectional-2",
      "level": "Hard",
-     "practiceSet": 10
+     "practiceSet": 14
     },
     {
      "exam": "cat",
@@ -7601,7 +7591,7 @@
      "id": "DS2-GROUP5-22",
      "pack": "dilr-sectional-2",
      "level": "Medium",
-     "practiceSet": 10
+     "practiceSet": 14
     },
     {
      "exam": "cat",
@@ -9429,6 +9419,303 @@
      "level": "Medium"
     },
     {
+     "id": "B2D-01",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "How many of the six are knights?",
+     "solution": "Split on B. If B is a knave, A's 'B is a knave' is true, so A is a knight, and C's statement is true (A is a knight), so C is a knight. If E were a knight, D would match A (a knight), D's 'E and F same type' would make F a knight, and F's 'C or E is a knave' would be false — impossible. So E is a knave, D differs from A (a knave), D's lie means F differs from E (F a knight), and F's 'E is a knave' is true ✓. That gives exactly three knights (A, C, F), which makes B's claim true — but B was assumed a knave. So B is a knight. Then A is a knave. If E were a knave, D would differ from A (a knight), so E and F match (F a knave), and F's lie would need both C and E to be knights — but E is a knave. So E is a knight, D is a knave (same as A), D's lie means F differs from E (F a knave), and F's lie means C and E are both knights; C's 'D is a knave or A is a knight' is true ✓. Result: B, C and E are knights; A, D and F are knaves (three knights, so B told the truth ✓). A computer check of all 64 possible assignments confirms this is the only consistent one. So there are 3 knights.",
+     "set": "b2-knights",
+     "type": "tita",
+     "kind": "number",
+     "answer": "3",
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 9
+    },
+    {
+     "id": "B2D-02",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "Which one of the following is a knight?",
+     "solution": "Split on B. If B is a knave, A's 'B is a knave' is true, so A is a knight, and C's statement is true (A is a knight), so C is a knight. If E were a knight, D would match A (a knight), D's 'E and F same type' would make F a knight, and F's 'C or E is a knave' would be false — impossible. So E is a knave, D differs from A (a knave), D's lie means F differs from E (F a knight), and F's 'E is a knave' is true ✓. That gives exactly three knights (A, C, F), which makes B's claim true — but B was assumed a knave. So B is a knight. Then A is a knave. If E were a knave, D would differ from A (a knight), so E and F match (F a knave), and F's lie would need both C and E to be knights — but E is a knave. So E is a knight, D is a knave (same as A), D's lie means F differs from E (F a knave), and F's lie means C and E are both knights; C's 'D is a knave or A is a knight' is true ✓. Result: B, C and E are knights; A, D and F are knaves (three knights, so B told the truth ✓). A computer check of all 64 possible assignments confirms this is the only consistent one. Of the options, only E is a knight.",
+     "set": "b2-knights",
+     "type": "mcq",
+     "options": [
+      "A",
+      "D",
+      "E",
+      "F"
+     ],
+     "answer": 2,
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 9
+    },
+    {
+     "id": "B2D-03",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "Which of the following pairs are of the same type?",
+     "solution": "Split on B. If B is a knave, A's 'B is a knave' is true, so A is a knight, and C's statement is true (A is a knight), so C is a knight. If E were a knight, D would match A (a knight), D's 'E and F same type' would make F a knight, and F's 'C or E is a knave' would be false — impossible. So E is a knave, D differs from A (a knave), D's lie means F differs from E (F a knight), and F's 'E is a knave' is true ✓. That gives exactly three knights (A, C, F), which makes B's claim true — but B was assumed a knave. So B is a knight. Then A is a knave. If E were a knave, D would differ from A (a knight), so E and F match (F a knave), and F's lie would need both C and E to be knights — but E is a knave. So E is a knight, D is a knave (same as A), D's lie means F differs from E (F a knave), and F's lie means C and E are both knights; C's 'D is a knave or A is a knight' is true ✓. Result: B, C and E are knights; A, D and F are knaves (three knights, so B told the truth ✓). A computer check of all 64 possible assignments confirms this is the only consistent one. C and E are both knights; each of the other pairs has one knight and one knave.",
+     "set": "b2-knights",
+     "type": "mcq",
+     "options": [
+      "A and B",
+      "B and D",
+      "C and E",
+      "D and E"
+     ],
+     "answer": 2,
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 9
+    },
+    {
+     "id": "B2D-04",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Hard",
+     "question": "Suppose B's statement were instead “Exactly four of us six are knights”, and all the other statements stayed the same. Who would then be the knights?",
+     "solution": "First, B cannot be a knight: then A is a knave; if E is a knight, D is a knave (same as A), D's lie makes F a knave, and F's lie makes C and E knights — only B, C, E are knights, three not four; if E is a knave, D is a knight, D's truth makes F a knave like E, and F's lie needs E to be a knight — impossible. So B is a knave. Then A's 'B is a knave' is true, so A is a knight; C's statement is then true (A is a knight), so C is a knight. E says A and D are the same type: if E were a knight, D would be a knight, but D's 'E and F same type' would force F to be a knight too, and F's 'C or E is a knave' would be false — a contradiction. So E is a knave, D is a knave (different from A), and D's lie means E and F differ, so F is a knight; F's claim 'E is a knave' is indeed true. Knights: A, C, F — three, so B's 'four' is false, consistent. A full check of all 64 assignments gives only this one.",
+     "set": "b2-knights",
+     "type": "mcq",
+     "options": [
+      "A, C and F only",
+      "B, C and E only",
+      "C only",
+      "A and C only"
+     ],
+     "answer": 0,
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 9
+    },
+    {
+     "id": "B2D-05",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "Who lives on floor 3?",
+     "solution": "Fish is three floors below dog, so (fish, dog) is on floors (1, 4) or (2, 5). The dog owner is immediately above the teacher and below the pilot, so the dog cannot be on floor 5: fish on 1, dog on 4, teacher on 3 and pilot on 5. Bina is on an even floor above Esha, who is above Divya, so Bina is on floor 4 (the dog owner). Arjun is immediately below someone, so Arjun is not on 5: Chetan is on 5 and is the pilot. The doctor is on an odd floor other than 3 (teacher) and 5 (pilot), so on floor 1 with the fish. The lawyer owns the cat, so the lawyer is not on floor 1 (fish), 3 (teacher), 4 (dog) or 5 (pilot): the lawyer is on floor 2 with the cat. So the rabbit is not on floor 2 and Arjun cannot be on floor 1; Arjun is on floor 2 (lawyer, cat) with the rabbit on floor 3. Divya is below Esha, so Divya is on 1 and Esha on 3. Bina is the remaining engineer and Chetan has the remaining parrot. Final: floor 1: Divya (fish, doctor); floor 2: Arjun (cat, lawyer); floor 3: Esha (rabbit, teacher); floor 4: Bina (dog, engineer); floor 5: Chetan (parrot, pilot). (A computer check of every arrangement finds only this one.)",
+     "set": "b2-floors",
+     "type": "mcq",
+     "options": [
+      "Arjun",
+      "Esha",
+      "Divya",
+      "Chetan"
+     ],
+     "answer": 1,
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 9
+    },
+    {
+     "id": "B2D-06",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "Which pet does the pilot own?",
+     "solution": "Fish is three floors below dog, so (fish, dog) is on floors (1, 4) or (2, 5). The dog owner is immediately above the teacher and below the pilot, so the dog cannot be on floor 5: fish on 1, dog on 4, teacher on 3 and pilot on 5. Bina is on an even floor above Esha, who is above Divya, so Bina is on floor 4 (the dog owner). Arjun is immediately below someone, so Arjun is not on 5: Chetan is on 5 and is the pilot. The doctor is on an odd floor other than 3 (teacher) and 5 (pilot), so on floor 1 with the fish. The lawyer owns the cat, so the lawyer is not on floor 1 (fish), 3 (teacher), 4 (dog) or 5 (pilot): the lawyer is on floor 2 with the cat. So the rabbit is not on floor 2 and Arjun cannot be on floor 1; Arjun is on floor 2 (lawyer, cat) with the rabbit on floor 3. Divya is below Esha, so Divya is on 1 and Esha on 3. Bina is the remaining engineer and Chetan has the remaining parrot. Final: floor 1: Divya (fish, doctor); floor 2: Arjun (cat, lawyer); floor 3: Esha (rabbit, teacher); floor 4: Bina (dog, engineer); floor 5: Chetan (parrot, pilot). (A computer check of every arrangement finds only this one.) The pilot is Chetan, who owns the parrot.",
+     "set": "b2-floors",
+     "type": "mcq",
+     "options": [
+      "Dog",
+      "Cat",
+      "Parrot",
+      "Rabbit"
+     ],
+     "answer": 2,
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 9
+    },
+    {
+     "id": "B2D-07",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "How many people live above the lawyer?",
+     "solution": "Fish is three floors below dog, so (fish, dog) is on floors (1, 4) or (2, 5). The dog owner is immediately above the teacher and below the pilot, so the dog cannot be on floor 5: fish on 1, dog on 4, teacher on 3 and pilot on 5. Bina is on an even floor above Esha, who is above Divya, so Bina is on floor 4 (the dog owner). Arjun is immediately below someone, so Arjun is not on 5: Chetan is on 5 and is the pilot. The doctor is on an odd floor other than 3 (teacher) and 5 (pilot), so on floor 1 with the fish. The lawyer owns the cat, so the lawyer is not on floor 1 (fish), 3 (teacher), 4 (dog) or 5 (pilot): the lawyer is on floor 2 with the cat. So the rabbit is not on floor 2 and Arjun cannot be on floor 1; Arjun is on floor 2 (lawyer, cat) with the rabbit on floor 3. Divya is below Esha, so Divya is on 1 and Esha on 3. Bina is the remaining engineer and Chetan has the remaining parrot. Final: floor 1: Divya (fish, doctor); floor 2: Arjun (cat, lawyer); floor 3: Esha (rabbit, teacher); floor 4: Bina (dog, engineer); floor 5: Chetan (parrot, pilot). (A computer check of every arrangement finds only this one.) The lawyer is Arjun on floor 2, so 3 people live above.",
+     "set": "b2-floors",
+     "type": "tita",
+     "kind": "number",
+     "answer": "3",
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 9
+    },
+    {
+     "id": "B2D-08",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Logic puzzles",
+     "difficulty": "Medium",
+     "question": "Which one of the following is true?",
+     "solution": "Fish is three floors below dog, so (fish, dog) is on floors (1, 4) or (2, 5). The dog owner is immediately above the teacher and below the pilot, so the dog cannot be on floor 5: fish on 1, dog on 4, teacher on 3 and pilot on 5. Bina is on an even floor above Esha, who is above Divya, so Bina is on floor 4 (the dog owner). Arjun is immediately below someone, so Arjun is not on 5: Chetan is on 5 and is the pilot. The doctor is on an odd floor other than 3 (teacher) and 5 (pilot), so on floor 1 with the fish. The lawyer owns the cat, so the lawyer is not on floor 1 (fish), 3 (teacher), 4 (dog) or 5 (pilot): the lawyer is on floor 2 with the cat. So the rabbit is not on floor 2 and Arjun cannot be on floor 1; Arjun is on floor 2 (lawyer, cat) with the rabbit on floor 3. Divya is below Esha, so Divya is on 1 and Esha on 3. Bina is the remaining engineer and Chetan has the remaining parrot. Final: floor 1: Divya (fish, doctor); floor 2: Arjun (cat, lawyer); floor 3: Esha (rabbit, teacher); floor 4: Bina (dog, engineer); floor 5: Chetan (parrot, pilot). (A computer check of every arrangement finds only this one.)",
+     "set": "b2-floors",
+     "type": "mcq",
+     "options": [
+      "The doctor owns the fish.",
+      "Bina is the lawyer.",
+      "The rabbit owner lives on floor 4.",
+      "Chetan owns the dog."
+     ],
+     "answer": 0,
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 9
+    },
+    {
+     "id": "B2D-09",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Hard",
+     "question": "What number did S write in round 2?",
+     "solution": "Count scoring turns. R's 5 must come from two different numbers (1 + 4 or 2 + 3), so R scores in exactly two rounds; P, Q and S each score at least once. That is at least 5 scoring turns. A round with a repeated number has at most 2 scorers, and round 2 has exactly 1, so there are at most 2 + 1 + 2 = 5. Hence exactly 5: P scores once (4, in round 3), Q once (1), S once (2), R twice, and rounds 1 and 3 have two scorers each. Q wrote 4 in round 1 but scored only 1 overall, so Q did not score in round 1; P scored only in round 3. So the round-1 scorers are R and S, and Q's 4 was matched by P: round 1 is P 4, Q 4, S 2, R a with a = 1 or 3. If R scored again in round 3 (and Q in round 2), the totals of the numbers come out to 32 + 2b for a whole number b, never 33 — impossible. So Q scored 1 in round 3 and R scored alone in round 2 with 5 − a. If a = 3, R's numbers 3, 2 and his round-3 number (which must pair with S, avoiding 4 and 1) clash; so a = 1 and R wrote 4 in round 2. Round 2: P, Q, S wrote the same d; round 3: P 4, Q 1, R and S both c (c = 2 or 3). Sum: 11 + (3d + 4) + (5 + 2c) = 33 gives 3d + 2c = 13, so c = 2 and d = 3. Final: round 1 — P 4, Q 4, R 1, S 2; round 2 — P 3, Q 3, R 4, S 3; round 3 — P 4, Q 1, R 2, S 2. A computer check of all 4¹² possibilities confirms it is the only one.",
+     "set": "b2-unique",
+     "type": "mcq",
+     "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "answer": 2,
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B2D-10",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Hard",
+     "question": "In how many of the twelve writes was the number 4 written?",
+     "solution": "Count scoring turns. R's 5 must come from two different numbers (1 + 4 or 2 + 3), so R scores in exactly two rounds; P, Q and S each score at least once. That is at least 5 scoring turns. A round with a repeated number has at most 2 scorers, and round 2 has exactly 1, so there are at most 2 + 1 + 2 = 5. Hence exactly 5: P scores once (4, in round 3), Q once (1), S once (2), R twice, and rounds 1 and 3 have two scorers each. Q wrote 4 in round 1 but scored only 1 overall, so Q did not score in round 1; P scored only in round 3. So the round-1 scorers are R and S, and Q's 4 was matched by P: round 1 is P 4, Q 4, S 2, R a with a = 1 or 3. If R scored again in round 3 (and Q in round 2), the totals of the numbers come out to 32 + 2b for a whole number b, never 33 — impossible. So Q scored 1 in round 3 and R scored alone in round 2 with 5 − a. If a = 3, R's numbers 3, 2 and his round-3 number (which must pair with S, avoiding 4 and 1) clash; so a = 1 and R wrote 4 in round 2. Round 2: P, Q, S wrote the same d; round 3: P 4, Q 1, R and S both c (c = 2 or 3). Sum: 11 + (3d + 4) + (5 + 2c) = 33 gives 3d + 2c = 13, so c = 2 and d = 3. Final: round 1 — P 4, Q 4, R 1, S 2; round 2 — P 3, Q 3, R 4, S 3; round 3 — P 4, Q 1, R 2, S 2. A computer check of all 4¹² possibilities confirms it is the only one. The number 4 was written twice in round 1, once in round 2 and once in round 3: 4 times.",
+     "set": "b2-unique",
+     "type": "tita",
+     "kind": "number",
+     "answer": "4",
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B2D-11",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Hard",
+     "question": "Which players scored in round 1?",
+     "solution": "Count scoring turns. R's 5 must come from two different numbers (1 + 4 or 2 + 3), so R scores in exactly two rounds; P, Q and S each score at least once. That is at least 5 scoring turns. A round with a repeated number has at most 2 scorers, and round 2 has exactly 1, so there are at most 2 + 1 + 2 = 5. Hence exactly 5: P scores once (4, in round 3), Q once (1), S once (2), R twice, and rounds 1 and 3 have two scorers each. Q wrote 4 in round 1 but scored only 1 overall, so Q did not score in round 1; P scored only in round 3. So the round-1 scorers are R and S, and Q's 4 was matched by P: round 1 is P 4, Q 4, S 2, R a with a = 1 or 3. If R scored again in round 3 (and Q in round 2), the totals of the numbers come out to 32 + 2b for a whole number b, never 33 — impossible. So Q scored 1 in round 3 and R scored alone in round 2 with 5 − a. If a = 3, R's numbers 3, 2 and his round-3 number (which must pair with S, avoiding 4 and 1) clash; so a = 1 and R wrote 4 in round 2. Round 2: P, Q, S wrote the same d; round 3: P 4, Q 1, R and S both c (c = 2 or 3). Sum: 11 + (3d + 4) + (5 + 2c) = 33 gives 3d + 2c = 13, so c = 2 and d = 3. Final: round 1 — P 4, Q 4, R 1, S 2; round 2 — P 3, Q 3, R 4, S 3; round 3 — P 4, Q 1, R 2, S 2. A computer check of all 4¹² possibilities confirms it is the only one.",
+     "set": "b2-unique",
+     "type": "mcq",
+     "options": [
+      "R and S only",
+      "P and R only",
+      "R only",
+      "Q, R and S only"
+     ],
+     "answer": 0,
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B2D-12",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Medium",
+     "question": "What was the sum of the four numbers written in round 3?",
+     "solution": "Count scoring turns. R's 5 must come from two different numbers (1 + 4 or 2 + 3), so R scores in exactly two rounds; P, Q and S each score at least once. That is at least 5 scoring turns. A round with a repeated number has at most 2 scorers, and round 2 has exactly 1, so there are at most 2 + 1 + 2 = 5. Hence exactly 5: P scores once (4, in round 3), Q once (1), S once (2), R twice, and rounds 1 and 3 have two scorers each. Q wrote 4 in round 1 but scored only 1 overall, so Q did not score in round 1; P scored only in round 3. So the round-1 scorers are R and S, and Q's 4 was matched by P: round 1 is P 4, Q 4, S 2, R a with a = 1 or 3. If R scored again in round 3 (and Q in round 2), the totals of the numbers come out to 32 + 2b for a whole number b, never 33 — impossible. So Q scored 1 in round 3 and R scored alone in round 2 with 5 − a. If a = 3, R's numbers 3, 2 and his round-3 number (which must pair with S, avoiding 4 and 1) clash; so a = 1 and R wrote 4 in round 2. Round 2: P, Q, S wrote the same d; round 3: P 4, Q 1, R and S both c (c = 2 or 3). Sum: 11 + (3d + 4) + (5 + 2c) = 33 gives 3d + 2c = 13, so c = 2 and d = 3. Final: round 1 — P 4, Q 4, R 1, S 2; round 2 — P 3, Q 3, R 4, S 3; round 3 — P 4, Q 1, R 2, S 2. A computer check of all 4¹² possibilities confirms it is the only one. Round 3: 4 + 1 + 2 + 2 = 9.",
+     "set": "b2-unique",
+     "type": "tita",
+     "kind": "number",
+     "answer": "9",
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B2D-13",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Hard",
+     "question": "How many coins did A hold at the start?",
+     "solution": "The total, 160 coins, never changes. Work backwards from the end: in the round a player loses, every other player's holding is halved (undoing the doubling) and the loser gets back what he paid. Undoing the rounds for each of the 24 possible orders of losers shows that the round-1 loser always starts with 81 to 84 coins and everyone else with at most 44, so 'B held more than the other three together' means B lost round 1. Of the six orders with B first, only (B, D, A, C) and (B, A, D, C) leave C with the fewest coins at the start, and 'D before A' picks the first. Undoing the rounds for B, D, A, C gives starting holdings A 21, B 82, C 13, D 44. Forward check: after round 1 (B loses) 42, 4, 26, 88; after round 2 (D loses) 84, 8, 52, 16; after round 3 (A loses) 8, 16, 104, 32; after round 4 (C loses) 16, 32, 48, 64 ✓.",
+     "set": "b2-doubling",
+     "type": "tita",
+     "kind": "number",
+     "answer": "21",
+     "pack": "practice-b2",
+     "level": "Hard"
+    },
+    {
+     "id": "B2D-14",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Hard",
+     "question": "Who lost round 2?",
+     "solution": "The total, 160 coins, never changes. Work backwards from the end: in the round a player loses, every other player's holding is halved (undoing the doubling) and the loser gets back what he paid. Undoing the rounds for each of the 24 possible orders of losers shows that the round-1 loser always starts with 81 to 84 coins and everyone else with at most 44, so 'B held more than the other three together' means B lost round 1. Of the six orders with B first, only (B, D, A, C) and (B, A, D, C) leave C with the fewest coins at the start, and 'D before A' picks the first. Undoing the rounds for B, D, A, C gives starting holdings A 21, B 82, C 13, D 44. Forward check: after round 1 (B loses) 42, 4, 26, 88; after round 2 (D loses) 84, 8, 52, 16; after round 3 (A loses) 8, 16, 104, 32; after round 4 (C loses) 16, 32, 48, 64 ✓.",
+     "set": "b2-doubling",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 3,
+     "pack": "practice-b2",
+     "level": "Hard"
+    },
+    {
+     "id": "B2D-15",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Hard",
+     "question": "How many coins did C hold at the end of round 2?",
+     "solution": "The total, 160 coins, never changes. Work backwards from the end: in the round a player loses, every other player's holding is halved (undoing the doubling) and the loser gets back what he paid. Undoing the rounds for each of the 24 possible orders of losers shows that the round-1 loser always starts with 81 to 84 coins and everyone else with at most 44, so 'B held more than the other three together' means B lost round 1. Of the six orders with B first, only (B, D, A, C) and (B, A, D, C) leave C with the fewest coins at the start, and 'D before A' picks the first. Undoing the rounds for B, D, A, C gives starting holdings A 21, B 82, C 13, D 44. Forward check: after round 1 (B loses) 42, 4, 26, 88; after round 2 (D loses) 84, 8, 52, 16; after round 3 (A loses) 8, 16, 104, 32; after round 4 (C loses) 16, 32, 48, 64 ✓. C held 52 coins after round 2.",
+     "set": "b2-doubling",
+     "type": "tita",
+     "kind": "number",
+     "answer": "52",
+     "pack": "practice-b2",
+     "level": "Hard"
+    },
+    {
+     "id": "B2D-16",
+     "exam": "cat",
+     "section": "dilr",
+     "topic": "Games with rules",
+     "difficulty": "Hard",
+     "question": "What is the largest number of coins held by any one player at any time (at the start or at the end of any round)?",
+     "solution": "The total, 160 coins, never changes. Work backwards from the end: in the round a player loses, every other player's holding is halved (undoing the doubling) and the loser gets back what he paid. Undoing the rounds for each of the 24 possible orders of losers shows that the round-1 loser always starts with 81 to 84 coins and everyone else with at most 44, so 'B held more than the other three together' means B lost round 1. Of the six orders with B first, only (B, D, A, C) and (B, A, D, C) leave C with the fewest coins at the start, and 'D before A' picks the first. Undoing the rounds for B, D, A, C gives starting holdings A 21, B 82, C 13, D 44. Forward check: after round 1 (B loses) 42, 4, 26, 88; after round 2 (D loses) 84, 8, 52, 16; after round 3 (A loses) 8, 16, 104, 32; after round 4 (C loses) 16, 32, 48, 64 ✓. The largest holding is C's 104 coins after round 3.",
+     "set": "b2-doubling",
+     "type": "tita",
+     "kind": "number",
+     "answer": "104",
+     "pack": "practice-b2",
+     "level": "Hard"
+    },
+    {
      "exam": "cat",
      "section": "dilr",
      "topic": "Arrangements",
@@ -10132,7 +10419,7 @@
      "id": "DP-NETWORK10-42",
      "pack": "practice-dilr",
      "level": "Hard",
-     "practiceSet": 10
+     "practiceSet": 15
     },
     {
      "exam": "cat",
@@ -10148,7 +10435,7 @@
      "id": "DP-NETWORK10-43",
      "pack": "practice-dilr",
      "level": "Hard",
-     "practiceSet": 10
+     "practiceSet": 15
     },
     {
      "exam": "cat",
@@ -10164,7 +10451,7 @@
      "id": "DP-NETWORK10-44",
      "pack": "practice-dilr",
      "level": "Hard",
-     "practiceSet": 10
+     "practiceSet": 15
     },
     {
      "exam": "cat",
@@ -10180,7 +10467,7 @@
      "id": "DP-NETWORK10-45",
      "pack": "practice-dilr",
      "level": "Hard",
-     "practiceSet": 10
+     "practiceSet": 15
     },
     {
      "exam": "cat",
@@ -10286,7 +10573,7 @@
      "id": "DP-CIRCULAR12-51",
      "pack": "practice-dilr",
      "level": "Hard",
-     "practiceSet": 14
+     "practiceSet": 15
     },
     {
      "exam": "cat",
@@ -10302,7 +10589,7 @@
      "id": "DP-CIRCULAR12-52",
      "pack": "practice-dilr",
      "level": "Hard",
-     "practiceSet": 14
+     "practiceSet": 15
     },
     {
      "exam": "cat",
@@ -10323,7 +10610,7 @@
      "id": "DP-CIRCULAR12-53",
      "pack": "practice-dilr",
      "level": "Hard",
-     "practiceSet": 14
+     "practiceSet": 15
     },
     {
      "exam": "cat",
@@ -10344,7 +10631,7 @@
      "id": "DP-CIRCULAR12-54",
      "pack": "practice-dilr",
      "level": "Hard",
-     "practiceSet": 14
+     "practiceSet": 15
     },
     {
      "exam": "cat",
@@ -10684,8 +10971,7 @@
      "answer": 2,
      "id": "DP-GROUP17-74",
      "pack": "practice-dilr",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -10705,8 +10991,7 @@
      "answer": 1,
      "id": "DP-GROUP17-75",
      "pack": "practice-dilr",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -10721,8 +11006,7 @@
      "answer": "2",
      "id": "DP-GROUP17-76",
      "pack": "practice-dilr",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -10742,8 +11026,7 @@
      "answer": 0,
      "id": "DP-GROUP17-77",
      "pack": "practice-dilr",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "exam": "cat",
@@ -14016,7 +14299,7 @@
      ],
      "answer": 0,
      "level": "Medium",
-     "practiceSet": 12
+     "practiceSet": 13
     },
     {
      "id": "CQ127",
@@ -14029,8 +14312,7 @@
      "type": "tita",
      "kind": "number",
      "answer": "9",
-     "level": "Medium",
-     "practiceSet": 13
+     "level": "Medium"
     },
     {
      "id": "CQ128",
@@ -14076,7 +14358,7 @@
      "kind": "number",
      "answer": "36",
      "level": "Medium",
-     "practiceSet": 12
+     "practiceSet": 13
     },
     {
      "id": "CQ131",
@@ -14263,8 +14545,7 @@
       "24"
      ],
      "answer": 1,
-     "level": "Medium",
-     "practiceSet": 13
+     "level": "Medium"
     },
     {
      "id": "CQ142",
@@ -14362,7 +14643,7 @@
      "kind": "number",
      "answer": "120",
      "level": "Medium",
-     "practiceSet": 12
+     "practiceSet": 13
     },
     {
      "id": "CQ148",
@@ -14380,8 +14661,7 @@
       "7"
      ],
      "answer": 0,
-     "level": "Medium",
-     "practiceSet": 13
+     "level": "Medium"
     },
     {
      "id": "CQ149",
@@ -14394,8 +14674,7 @@
      "type": "tita",
      "kind": "number",
      "answer": "22",
-     "level": "Medium",
-     "practiceSet": 13
+     "level": "Medium"
     },
     {
      "id": "CQ150",
@@ -14447,8 +14726,7 @@
      "type": "tita",
      "kind": "number",
      "answer": "108",
-     "level": "Medium",
-     "practiceSet": 13
+     "level": "Medium"
     },
     {
      "id": "CQ154",
@@ -14516,8 +14794,7 @@
       "5760"
      ],
      "answer": 0,
-     "level": "Medium",
-     "practiceSet": 13
+     "level": "Medium"
     },
     {
      "id": "CQ158",
@@ -14554,8 +14831,7 @@
       "9/20"
      ],
      "answer": 1,
-     "level": "Medium",
-     "practiceSet": 13
+     "level": "Medium"
     },
     {
      "id": "M1-QA-01",
@@ -16446,6 +16722,513 @@
      "answer": 0,
      "pack": "mock-5",
      "level": "Hard"
+    },
+    {
+     "id": "B2Q-01",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Averages",
+     "difficulty": "Medium",
+     "question": "A batsman scores 87 runs in an innings and his batting average goes up by 3. In his very next innings he scores 33 and his average falls by 2. How many innings had he played before the innings in which he scored 87?",
+     "solution": "Let him have played n innings with average a. After 87: (na + 87)/(n + 1) = a + 3, so 87 = a + 3n + 3, i.e. a = 84 − 3n. After 33 the average is a + 1 over n + 2 innings: (n + 1)(a + 3) + 33 = (n + 2)(a + 1), which simplifies to 33 = a − 2n − 1, i.e. a = 2n + 34. So 84 − 3n = 2n + 34, giving n = 10 (and a = 54). Check: 540 + 87 = 627 = 11 × 57; 627 + 33 = 660 = 12 × 55.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "10",
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 12
+    },
+    {
+     "id": "B2Q-02",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Averages",
+     "difficulty": "Hard",
+     "question": "The integers 1, 2, 3, …, n are written on a board and one of them is erased. The average of the numbers left is 35 47/69. Which number was erased?",
+     "solution": "Erasing one number from 1…n leaves an average between n/2 (if n is erased) and (n + 2)/2 (if 1 is erased). So n/2 ≤ 35.68 ≤ (n + 2)/2, i.e. n = 70 or 71. The remaining count n − 1 must be a multiple of 69 for the average to have denominator 69, so n = 70. The sum 1 + … + 70 = 2485, and the remaining sum is 69 × (35 + 47/69) = 2415 + 47 = 2462. The erased number is 2485 − 2462 = 23. A full search over all n and all erased numbers confirms this is the only possibility.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "23",
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 16
+    },
+    {
+     "id": "B2Q-03",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Averages",
+     "difficulty": "Hard",
+     "question": "In an examination, the students who passed averaged 65 marks, those who failed averaged 35, and the whole group averaged 53. On re-evaluation, five students who had failed, with an average of 40, were declared passed; the average of all passed students then became 62.5. How many students took the examination?",
+     "solution": "Passed : failed = (53 − 35) : (65 − 53) = 18 : 12 = 3 : 2. If P students passed originally, (65P + 5 × 40)/(P + 5) = 62.5, so 65P + 200 = 62.5P + 312.5 and P = 45. Then 30 failed, and the total is 45 + 30 = 75. (Check: (45 × 65 + 30 × 35)/75 = 53.)",
+     "type": "tita",
+     "kind": "number",
+     "answer": "75",
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 16
+    },
+    {
+     "id": "B2Q-04",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Averages",
+     "difficulty": "Medium",
+     "question": "For five numbers A, B, C, D and E, the average of A, B and C is 30, the average of B, C and D is 34, and the average of C, D and E is 38. If A = 24 and E = 46, what is C?",
+     "solution": "A + B + C = 90 and B + C + D = 102, so D − A = 12 and D = 36. Then C + D + E = 114 gives C = 114 − 36 − 46 = 32. (B is then 34, and every average checks.)",
+     "type": "mcq",
+     "options": [
+      "28",
+      "32",
+      "34",
+      "36"
+     ],
+     "answer": 1,
+     "pack": "practice-b2",
+     "level": "Medium"
+    },
+    {
+     "id": "B2Q-05",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Sets",
+     "difficulty": "Medium",
+     "question": "Each of the 150 students of a college studies at least one of French, German and Spanish. 80 study French, 70 study German and 60 study Spanish. If exactly 30 students study exactly two of these languages, how many study all three?",
+     "solution": "Let e₁, e₂, e₃ be the numbers studying exactly one, two and three languages. Then e₁ + e₂ + e₃ = 150 and e₁ + 2e₂ + 3e₃ = 80 + 70 + 60 = 210. Subtracting, e₂ + 2e₃ = 60. With e₂ = 30, e₃ = 15.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "15",
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 13
+    },
+    {
+     "id": "B2Q-06",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Sets",
+     "difficulty": "Hard",
+     "question": "Each of 200 people reads at least one of three newspapers A, B and C. A is read by 120 people, B by 110 and C by 90. What is the maximum possible number of people who read exactly one newspaper?",
+     "solution": "With e₁, e₂, e₃ as the numbers reading exactly one, two and three papers: e₁ + e₂ + e₃ = 200 and e₁ + 2e₂ + 3e₃ = 320, so e₂ + 2e₃ = 120. e₁ = 200 − (e₂ + e₃) is largest when e₂ + e₃ is smallest, i.e. when e₂ = 0 and e₃ = 60, giving e₁ = 140. This is achievable: 60 read all three, and 60, 50 and 30 read only A, only B and only C.",
+     "type": "mcq",
+     "options": [
+      "110",
+      "125",
+      "140",
+      "150"
+     ],
+     "answer": 2,
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 16
+    },
+    {
+     "id": "B2Q-07",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Sets",
+     "difficulty": "Hard",
+     "question": "Of a group of 100 tourists, 72 have visited Goa, 65 have visited Jaipur and 58 have visited Kochi. What is the minimum possible number of tourists who have visited at least two of these three cities?",
+     "solution": "Total visits = 72 + 65 + 58 = 195 among at most 100 tourists. With x₁, x₂, x₃ tourists who visited exactly one, two and three cities, x₁ + 2x₂ + 3x₃ = 195 and x₁ + x₂ + x₃ ≤ 100, so x₂ + 2x₃ ≥ 95. To make x₂ + x₃ small, make x₃ as large as possible: x₃ = 47 and x₂ = 1 gives 48, and nothing smaller works because x₂ + x₃ ≥ (x₂ + 2x₃)/2 ≥ 47.5. A valid split: 47 visited all three, 1 visited Goa and Jaipur only, and 24, 17 and 11 visited only Goa, only Jaipur and only Kochi (total 100).",
+     "type": "mcq",
+     "options": [
+      "43",
+      "48",
+      "50",
+      "95"
+     ],
+     "answer": 1,
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 16
+    },
+    {
+     "id": "B2Q-08",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Sets",
+     "difficulty": "Medium",
+     "question": "In a class, 45% of the students like Mathematics, 55% like Science and 20% like both. If 32 students like neither subject, how many like Science but not Mathematics?",
+     "solution": "Students liking at least one = 45% + 55% − 20% = 80%, so 20% like neither: 20% = 32 gives a class of 160. Science only = 55% − 20% = 35% of 160 = 56.",
+     "type": "mcq",
+     "options": [
+      "44",
+      "56",
+      "64",
+      "72"
+     ],
+     "answer": 1,
+     "pack": "practice-b2",
+     "level": "Medium"
+    },
+    {
+     "id": "B2Q-09",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Hard",
+     "question": "The savings of A, B and C are in the ratio 3 : 4 : 5. A spends one-third of his savings and B spends 40% of hers. C then gives a part of his savings to A, after which A and C have equal amounts and B has ₹1,320 less than C. What were their total savings at the start, in ₹?",
+     "solution": "Let the savings be 3k, 4k and 5k. A has 2k left and B has 2.4k. If C gives a fraction f of 5k to A, then 2k + 5kf = 5k − 5kf, so f = 0.3 and A = C = 3.5k. C − B = 3.5k − 2.4k = 1.1k = 1320, so k = 1200 and the total was 12k = ₹14,400.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "14400",
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 16
+    },
+    {
+     "id": "B2Q-10",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "A hostel's monthly cost is partly fixed and partly proportional to the number of students. With 40 students the cost per student is ₹3,000 a month; with 60 students it is ₹2,500. What is the cost per student with 100 students?",
+     "solution": "Total cost = F + nv. 40 students: F + 40v = 1,20,000; 60 students: F + 60v = 1,50,000. So v = 1,500 and F = 60,000. For 100 students the total is 60,000 + 1,50,000 = 2,10,000, i.e. ₹2,100 per student.",
+     "type": "mcq",
+     "options": [
+      "₹1,800",
+      "₹2,000",
+      "₹2,100",
+      "₹2,250"
+     ],
+     "answer": 2,
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 13
+    },
+    {
+     "id": "B2Q-11",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "A invests ₹x for 12 months, B invests ₹(x + 5,000) for 8 months and C invests ₹2x for 6 months in a business. A and B receive equal shares of the profit. If the total profit is ₹45,000, what is C's share, in ₹?",
+     "solution": "Profit is shared in the ratio of (capital × time). A and B equal: 12x = 8(x + 5000), so x = 10,000. The products are A: 1,20,000, B: 8 × 15,000 = 1,20,000 and C: 6 × 20,000 = 1,20,000, all equal. So C gets one-third of ₹45,000 = ₹15,000.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "15000",
+     "pack": "practice-b2",
+     "level": "Medium"
+    },
+    {
+     "id": "B2Q-12",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Functions",
+     "difficulty": "Medium",
+     "question": "A function f satisfies f(x + y) = f(x) + f(y) + 2xy for all real x and y, and f(1) = 3. What is f(10)?",
+     "solution": "Putting y = 1: f(x + 1) = f(x) + 3 + 2x. With x = y = 0, f(0) = 0. Then f(n) = 3n + 2(0 + 1 + … + (n − 1)) = 3n + n(n − 1) = n² + 2n. So f(10) = 100 + 20 = 120.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "120",
+     "pack": "practice-b2",
+     "level": "Medium"
+    },
+    {
+     "id": "B2Q-13",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Functions",
+     "difficulty": "Hard",
+     "question": "For how many positive integer values of k does the equation |x² − 6x + 5| = k have exactly four distinct real solutions?",
+     "solution": "y = x² − 6x + 5 = (x − 3)² − 4 dips to −4 at x = 3, so |y| has a 'hump' of height 4 at x = 3 between the roots 1 and 5. A horizontal line y = k meets the graph of |y| in four points when 0 < k < 4, in three points when k = 4 and in two points when k > 4. The positive integers with 0 < k < 4 are 1, 2 and 3: three values.",
+     "type": "mcq",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "Infinitely many"
+     ],
+     "answer": 1,
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 16
+    },
+    {
+     "id": "B2Q-14",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Functions",
+     "difficulty": "Medium",
+     "question": "What is the minimum value of f(x) = max(2x − 3, 9 − x, x + 1) over all real x?",
+     "solution": "9 − x decreases while 2x − 3 and x + 1 increase, so the maximum is smallest where the decreasing line meets the higher of the two rising lines. At x = 4 all three are equal: 2(4) − 3 = 5, 9 − 4 = 5, 4 + 1 = 5. For x < 4, 9 − x > 5; for x > 4, x + 1 > 5. So the minimum is 5.",
+     "type": "mcq",
+     "options": [
+      "4",
+      "5",
+      "13/3",
+      "6"
+     ],
+     "answer": 1,
+     "pack": "practice-b2",
+     "level": "Medium"
+    },
+    {
+     "id": "B2Q-15",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Mixtures & Alligation",
+     "difficulty": "Medium",
+     "question": "A container holds 30 litres of a solution that is 20% acid. How many litres of a 50% acid solution must be added to it to obtain a solution that is 38% acid?",
+     "solution": "Acid: 0.2 × 30 + 0.5x = 0.38(30 + x), so 6 + 0.5x = 11.4 + 0.38x and 0.12x = 5.4, giving x = 45. (Alligation check: (50 − 38) : (38 − 20) = 12 : 18 = 2 : 3 = 30 : 45.)",
+     "type": "tita",
+     "kind": "number",
+     "answer": "45",
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 12
+    },
+    {
+     "id": "B2Q-16",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Mixtures & Alligation",
+     "difficulty": "Medium",
+     "question": "A tank holds 100 litres of pure milk. 20 litres are drawn off and replaced with water. Then 25 litres of the mixture are drawn off and replaced with water. Finally 40 litres of the mixture are drawn off and replaced with water. What percentage of the final mixture is milk?",
+     "solution": "Each draw-and-replace keeps the volume at 100 L and multiplies the milk by (1 − drawn/100): 100 × 0.80 × 0.75 × 0.60 = 36 L of milk in 100 L, i.e. 36%.",
+     "type": "mcq",
+     "options": [
+      "36%",
+      "40%",
+      "45%",
+      "48%"
+     ],
+     "answer": 0,
+     "pack": "practice-b2",
+     "level": "Medium"
+    },
+    {
+     "id": "B2Q-17",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Mixtures & Alligation",
+     "difficulty": "Medium",
+     "question": "Vessel P contains a mixture that is 80% milk and vessel Q a mixture that is 55% milk (the rest is water in both). Some litres from P and some from Q are poured into an empty jar, and 5 litres of pure water are added, giving 30 litres of a mixture that is 60% milk. How many litres were taken from P?",
+     "solution": "The P and Q parts total 30 − 5 = 25 L, and they must contain all the milk, 60% of 30 = 18 L. With x litres from P: 0.8x + 0.55(25 − x) = 18, so 0.25x = 4.25 and x = 17 (and 8 L from Q).",
+     "type": "tita",
+     "kind": "number",
+     "answer": "17",
+     "pack": "practice-b2",
+     "level": "Medium"
+    },
+    {
+     "id": "B2Q-18",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Mensuration",
+     "difficulty": "Medium",
+     "question": "A sphere is placed inside a right circular cone of base radius 6 cm and height 8 cm so that it touches the base and the curved surface all round. What is the radius of the sphere, in cm?",
+     "solution": "A vertical section through the axis is an isosceles triangle with base 12 and height 8, so each slant side is √(6² + 8²) = 10. The sphere's section is the circle inscribed in this triangle, with radius = area / semi-perimeter = (½ × 12 × 8)/((10 + 10 + 12)/2) = 48/16 = 3 cm.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "3",
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 13
+    },
+    {
+     "id": "B2Q-19",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Mensuration",
+     "difficulty": "Hard",
+     "question": "A rectangular tank with a base of 2 m × 1.5 m contains water to a depth of 1 m. A solid rectangular block measuring 1.5 m × 1 m × 2 m is stood upright on the floor of the tank on its 1.5 m × 1 m face. Assuming no water overflows, by how many centimetres does the water level rise?",
+     "solution": "The water volume is 2 × 1.5 × 1 = 3 m³. With the block standing in the tank, the free floor area is 3 − 1.5 = 1.5 m², so if the water stays below the block's top, its depth is 3/1.5 = 2 m. That equals the block's height of 2 m, so the assumption holds (and the block is just covered). The level rises from 1 m to 2 m, i.e. by 100 cm.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "100",
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 16
+    },
+    {
+     "id": "B2Q-20",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Mensuration",
+     "difficulty": "Medium",
+     "question": "A circle is inscribed in a regular hexagon of side 6 cm. What is the area of the region inside the hexagon but outside the circle, in cm²?",
+     "solution": "Hexagon area = 6 × (√3/4) × 6² = 54√3. The inscribed circle's radius is the distance from the centre to a side, which is the height of one equilateral triangle: (√3/2) × 6 = 3√3, so its area is 27π. The region = 54√3 − 27π.",
+     "type": "mcq",
+     "options": [
+      "54√3 − 27π",
+      "54√3 − 36π",
+      "36√3 − 27π",
+      "54√3 − 18π"
+     ],
+     "answer": 0,
+     "pack": "practice-b2",
+     "level": "Medium"
+    },
+    {
+     "id": "B2Q-21",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Logarithms",
+     "difficulty": "Medium",
+     "question": "For how many integers x is log<sub>(x − 2)</sub>(10 − x) defined and positive?",
+     "solution": "Defined: base x − 2 > 0 and ≠ 1, and 10 − x > 0, so 2 < x < 10 with x ≠ 3. There is no integer with 0 < x − 2 < 1, so the base is greater than 1 for the integers left (x = 4 to 9), and the log is positive when 10 − x > 1, i.e. x < 9. So x = 4, 5, 6, 7, 8: five integers.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "5",
+     "pack": "practice-b2",
+     "level": "Medium"
+    },
+    {
+     "id": "B2Q-22",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Logarithms",
+     "difficulty": "Medium",
+     "question": "What is the product of all real x that satisfy (log₂ x)² − log₂(x⁵) + 6 = 0?",
+     "solution": "Let t = log₂ x. Then log₂(x⁵) = 5t, so t² − 5t + 6 = 0 and t = 2 or 3, i.e. x = 4 or 8. The product is 32. (Shortcut: the product of the roots is 2^(t₁ + t₂) = 2⁵.)",
+     "type": "mcq",
+     "options": [
+      "5",
+      "12",
+      "32",
+      "64"
+     ],
+     "answer": 2,
+     "pack": "practice-b2",
+     "level": "Medium"
+    },
+    {
+     "id": "B2Q-23",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Hard",
+     "question": "A sum of money amounts to ₹6,050 in 2 years at compound interest (compounded annually). The simple interest on the same sum for 2 years at the same rate is ₹1,000. If the rate is below 100% per annum, what is the rate, in % per annum?",
+     "solution": "Let the sum be P and the rate r (as a fraction). SI: 2Pr = 1000, so Pr = 500. CI amount: P(1 + r)² = P + 2Pr + Pr² = P + 1000 + 500r = 6050, so P + 500r = 5050. With P = 500/r: 500/r + 500r = 5050, i.e. r² − 10.1r + 1 = 0, so r = 0.1 or r = 10. r = 10 means 1000% a year, which the question rules out, so r = 10% and P = ₹5,000. Check: 5000 × 1.21 = 6050; SI = 5000 × 0.1 × 2 = 1000.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "10",
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 16
+    },
+    {
+     "id": "B2Q-24",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Medium",
+     "question": "₹20,000 is invested for 2 years at 20% per annum. How much more interest is earned if interest is compounded half-yearly instead of annually?",
+     "solution": "Annual: 20000 × 1.2² = ₹28,800. Half-yearly: 10% for 4 half-years, 20000 × 1.1⁴ = 20000 × 1.4641 = ₹29,282. Difference = ₹482.",
+     "type": "mcq",
+     "options": [
+      "₹400",
+      "₹441",
+      "₹482",
+      "₹520"
+     ],
+     "answer": 2,
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 13
+    },
+    {
+     "id": "B2Q-25",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Time & Work",
+     "difficulty": "Medium",
+     "question": "A worker can finish a job alone in 36 days. She starts the job alone on day 1, and from day 2 onwards one more worker of the same efficiency joins at the start of every day (so 2 work on day 2, 3 on day 3, and so on). On which day is the job completed?",
+     "solution": "Measure work in worker-days: the job is 36. After k days the work done is 1 + 2 + … + k = k(k + 1)/2. This first reaches 36 at k = 8 (8 × 9/2 = 36), so the job is finished at the end of day 8.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "8",
+     "pack": "practice-b2",
+     "level": "Medium",
+     "practiceSet": 12
+    },
+    {
+     "id": "B2Q-26",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Time & Work",
+     "difficulty": "Medium",
+     "question": "A and B can finish a job in 12 and 18 days respectively. They start together, but A leaves 3 days before the job is finished. In how many days is the whole job finished?",
+     "solution": "If the job takes x days, B works x days and A works x − 3 days: x/18 + (x − 3)/12 = 1. Multiply by 36: 2x + 3x − 9 = 36, so x = 9.",
+     "type": "mcq",
+     "options": [
+      "7.2 days",
+      "9 days",
+      "10 days",
+      "10.8 days"
+     ],
+     "answer": 1,
+     "pack": "practice-b2",
+     "level": "Medium"
+    },
+    {
+     "id": "B2Q-27",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Probability",
+     "difficulty": "Hard",
+     "question": "Three different numbers are chosen at random from 1, 2, …, 10. What is the probability that they can be arranged to form an arithmetic progression?",
+     "solution": "There are C(10, 3) = 120 choices. A set a < b < c is an AP when a + c = 2b, i.e. a and c have the same parity and b is their average. Pairs of the same parity: C(5, 2) + C(5, 2) = 20, each giving exactly one b. Probability = 20/120 = 1/6.",
+     "type": "mcq",
+     "options": [
+      "1/6",
+      "1/8",
+      "1/5",
+      "1/12"
+     ],
+     "answer": 0,
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 16
+    },
+    {
+     "id": "B2Q-28",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Probability",
+     "difficulty": "Medium",
+     "question": "A point is chosen at random inside a square of side 2 cm. What is the probability that it is less than 1 cm from the centre of the square?",
+     "solution": "The favourable region is the circle of radius 1 cm centred at the square's centre; it fits inside the square (it touches the sides). Probability = π × 1²/2² = π/4.",
+     "type": "mcq",
+     "options": [
+      "π/4",
+      "π/2",
+      "1/2",
+      "π/8"
+     ],
+     "answer": 0,
+     "pack": "practice-b2",
+     "level": "Medium"
+    },
+    {
+     "id": "B2Q-29",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Permutations & Combinations",
+     "difficulty": "Hard",
+     "question": "How many positive integers less than 1000 have digits that add up to 10?",
+     "solution": "Write each number as a three-digit string abc with leading zeros allowed (0 itself has digit sum 0, so it is not counted). We need a + b + c = 10 with each digit 0 to 9. Without the upper limit there are C(12, 2) = 66 solutions; the ones with a digit equal to 10 (10, 0, 0 in some order) are not allowed, and there are 3 of them. 66 − 3 = 63.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "63",
+     "pack": "practice-b2",
+     "level": "Hard",
+     "practiceSet": 16
+    },
+    {
+     "id": "B2Q-30",
+     "exam": "cat",
+     "section": "qa",
+     "topic": "Permutations & Combinations",
+     "difficulty": "Medium",
+     "question": "How many three-digit numbers have a middle digit that is strictly greater than both the first digit and the last digit?",
+     "solution": "If the middle digit is m, the first digit can be 1 to m − 1 (m − 1 choices) and the last 0 to m − 1 (m choices). Sum over m = 2 to 9 of m(m − 1) = 2 + 6 + 12 + 20 + 30 + 42 + 56 + 72 = 240.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "240",
+     "pack": "practice-b2",
+     "level": "Medium"
     }
    ]
   }
@@ -16785,6 +17568,26 @@
    "kind": "passage",
    "title": "Passage: The meaning of a signature",
    "html": "<b>Passage: The meaning of a signature</b><p>Signatures were once the chief way of binding a person to a document. A name written by hand was hard to forge convincingly, and its presence on a page signalled that the signer had seen and accepted what was written there. Today most agreements are made with a click, a typed name or a box ticked on a screen, and the handwritten signature survives mainly for occasions that people regard as solemn: marriages, property sales, wills.</p><p>It is tempting to see this survival as nostalgia, but it serves a purpose. The effort of signing, small as it is, marks a transition from considering to committing. People sign fewer things than they click, and the act draws attention to the fact that something consequential is happening. Legal scholars call this the cautionary function of formalities: requirements that slow people down so that they notice what they are doing.</p><p>Digital agreements have largely abandoned this function in pursuit of convenience. A user who accepts the terms of a service may do so dozens of times a week, and the click that binds her is identical to the click that dismisses an advertisement. The law generally treats such clicks as valid consent, but few people believe they represent the considered acceptance that the older form was meant to secure.</p><p>The history of formalities suggests that they have always been a compromise between caution and convenience. Wax seals, witnesses and notaries each slowed the making of agreements and each was relaxed when commerce demanded speed. Legal systems responded by distinguishing between transactions: ordinary sales could be made by word of mouth, while gifts of land or promises without payment required writing, witnesses or both. The distinction rested on the observation that people are most likely to act rashly when they give something away or bind their future selves, and that these were the cases in which a moment of ceremony was most valuable.</p><p>Digital systems have largely collapsed this distinction. The same interface is used to accept a trivial licence and to consent to the sharing of medical records, and the user is given no signal that one matters more than the other. Some of the difficulty is commercial: firms that profit from frictionless consent have little reason to introduce ceremony. But some of it reflects a genuine uncertainty about which online agreements deserve a pause, since their consequences are often hidden in terms that few users read and fewer understand.</p><p>Some designers propose restoring friction to important digital agreements: requiring users to type a phrase, wait a few seconds or confirm twice. Critics reply that friction will soon become habitual and that people will learn to perform it as absent-mindedly as they now click. The disagreement turns on whether the cautionary effect of formalities comes from the effort itself or from its rarity. If rarity is what matters, adding friction to every agreement would defeat the purpose; it would work only if reserved for the agreements that genuinely deserve it.</p>"
+  },
+  "b2-knights": {
+   "kind": "dilr",
+   "title": "Knights and knaves (Hard)",
+   "html": "<b>Knights and knaves</b><p>On an island every inhabitant is either a <i>knight</i>, who always tells the truth, or a <i>knave</i>, who always lies. Six inhabitants, A, B, C, D, E and F, make one statement each:</p><ul class='clues'><li>A: “B is a knave.”</li><li>B: “Exactly three of us six are knights.”</li><li>C: “D is a knave, or A is a knight.”</li><li>D: “E and F are of the same type.”</li><li>E: “A and D are of the same type.”</li><li>F: “C is a knave, or E is a knave.”</li></ul><p>(“X or Y” is true when at least one of X, Y is true.)</p>"
+  },
+  "b2-floors": {
+   "kind": "dilr",
+   "title": "Floors, pets and jobs (Medium)",
+   "html": "<b>Floors, pets and jobs</b><p>Arjun, Bina, Chetan, Divya and Esha live on floors 1 to 5 of a building (floor 1 is the lowest), one person per floor. Each has a different pet — cat, dog, parrot, fish, rabbit — and a different job — doctor, lawyer, teacher, engineer, pilot.</p><ul class='clues'><li>The pilot lives above the dog owner, and the dog owner lives on the floor immediately above the teacher.</li><li>Arjun lives on the floor immediately below the rabbit owner.</li><li>The doctor lives on an odd-numbered floor and owns neither the cat nor the dog.</li><li>Bina lives on an even-numbered floor and is neither the teacher nor the pilot.</li><li>The fish owner lives exactly three floors below the dog owner.</li><li>The lawyer owns the cat.</li><li>Esha lives above Divya but below Bina.</li></ul>"
+  },
+  "b2-unique": {
+   "kind": "dilr",
+   "title": "The unique-number game (Hard)",
+   "html": "<b>The unique-number game</b><p>Four players, P, Q, R and S, play three rounds of a game. In each round every player secretly writes a whole number from 1 to 4; different players may write the same number. When the numbers are revealed, a player scores the number he wrote if nobody else wrote that number in that round; otherwise he scores 0 for the round.</p><ul class='clues'><li>In every round, at least two players wrote the same number.</li><li>Q wrote 4 in round 1.</li><li>In round 2, exactly three players wrote the same number.</li><li>P scored in round 3.</li><li>R wrote a different number in each round.</li><li>At the end of the three rounds, the total scores were P 4, Q 1, R 5 and S 2.</li><li>The twelve numbers written add up to 33.</li></ul>"
+  },
+  "b2-doubling": {
+   "kind": "dilr",
+   "title": "The doubling game (Hard)",
+   "html": "<b>The doubling game</b><p>Four players, A, B, C and D, play four rounds of a game with coins. Each round has exactly one loser, and every player loses exactly one round. The loser of a round pays each of the other three players as many coins as that player holds at that moment, so each of the other three doubles their holding. The loser always has enough coins to pay. No other coins change hands.</p><ul class='clues'><li>After the four rounds, A, B, C and D hold 16, 32, 48 and 64 coins respectively.</li><li>At the start, B held more coins than the other three put together.</li><li>At the start, C held fewer coins than each of the others.</li><li>D lost a round before A did.</li></ul>"
   },
   "dp-linear1": {
    "kind": "dilr",

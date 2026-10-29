@@ -574,6 +574,24 @@
      {
       "set": 9,
       "ids": [
+       "B2D-05",
+       "B2D-06",
+       "B2D-07",
+       "B2D-08",
+       "B2D-01",
+       "B2D-02",
+       "B2D-03",
+       "B2D-04"
+      ],
+      "groups": [
+       "b2-floors",
+       "b2-knights"
+      ],
+      "filled": true
+     },
+     {
+      "set": 10,
+      "ids": [
        "DS1-TOURN3-11",
        "DS1-TOURN3-12",
        "DS1-TOURN3-13",
@@ -586,24 +604,6 @@
       "groups": [
        "ds1-tourn3",
        "ds2-linear3"
-      ],
-      "filled": true
-     },
-     {
-      "set": 10,
-      "ids": [
-       "DS2-GROUP5-19",
-       "DS2-GROUP5-20",
-       "DS2-GROUP5-21",
-       "DS2-GROUP5-22",
-       "DP-NETWORK10-42",
-       "DP-NETWORK10-43",
-       "DP-NETWORK10-44",
-       "DP-NETWORK10-45"
-      ],
-      "groups": [
-       "ds2-group5",
-       "dp-network10"
       ],
       "filled": true
      }
@@ -683,38 +683,36 @@
      {
       "set": 14,
       "ids": [
-       "DP-CIRCULAR12-51",
-       "DP-CIRCULAR12-52",
-       "DP-CIRCULAR12-53",
-       "DP-CIRCULAR12-54",
-       "DP-GROUP17-74",
-       "DP-GROUP17-75",
-       "DP-GROUP17-76",
-       "DP-GROUP17-77"
+       "DS2-GROUP5-19",
+       "DS2-GROUP5-20",
+       "DS2-GROUP5-21",
+       "DS2-GROUP5-22",
+       "B2D-09",
+       "B2D-10",
+       "B2D-11",
+       "B2D-12"
       ],
       "groups": [
-       "dp-circular12",
-       "dp-group17"
+       "ds2-group5",
+       "b2-unique"
       ],
       "filled": true
      },
      {
       "set": 15,
       "ids": [
-       "DS1-CIRCULAR1-01",
-       "DS1-CIRCULAR1-02",
-       "DS1-CIRCULAR1-03",
-       "DS1-CIRCULAR1-04",
-       "DS1-CIRCULAR1-05",
-       "DS2-TOURN1-01",
-       "DS2-TOURN1-02",
-       "DS2-TOURN1-03",
-       "DS2-TOURN1-04",
-       "DS2-TOURN1-05"
+       "DP-NETWORK10-42",
+       "DP-NETWORK10-43",
+       "DP-NETWORK10-44",
+       "DP-NETWORK10-45",
+       "DP-CIRCULAR12-51",
+       "DP-CIRCULAR12-52",
+       "DP-CIRCULAR12-53",
+       "DP-CIRCULAR12-54"
       ],
       "groups": [
-       "ds1-circular1",
-       "ds2-tourn1"
+       "dp-network10",
+       "dp-circular12"
       ],
       "filled": true
      }
@@ -733,7 +731,11 @@
     "cd-choc",
     "cd-code",
     "cd-houses",
+    "b2-knights",
+    "b2-floors",
     "cd-quiz",
+    "b2-unique",
+    "b2-doubling",
     "dp-circular2",
     "dp-table4",
     "dp-linear6",
@@ -992,34 +994,54 @@
        "CQ140",
        "CQ144",
        "CQ146",
+       "B2Q-01",
+       "B2Q-15",
+       "B2Q-25",
        "CQ145",
-       "CQ143",
-       "CQ147",
-       "CQ126",
-       "CQ130"
+       "CQ143"
       ],
       "groups": []
      },
      {
       "set": 13,
       "ids": [
+       "CQ147",
+       "CQ126",
+       "CQ130",
+       "B2Q-18",
        "CQ156",
        "CQ158",
+       "B2Q-05",
        "CQ138",
-       "CQ148",
-       "CQ127",
-       "CQ153",
-       "CQ157",
-       "CQ159",
-       "CQ141",
-       "CQ149"
+       "B2Q-10",
+       "B2Q-24"
       ],
       "groups": []
      }
     ],
-    "leftoverQuestions": 9,
+    "leftoverQuestions": 29,
     "leftoverIds": [
+     "B2Q-12",
+     "B2Q-04",
+     "B2Q-16",
+     "B2Q-26",
+     "B2Q-21",
+     "CQ148",
+     "CQ127",
+     "CQ153",
+     "B2Q-20",
+     "CQ157",
+     "CQ159",
+     "B2Q-08",
+     "CQ141",
+     "B2Q-11",
+     "B2Q-14",
+     "B2Q-17",
+     "B2Q-22",
+     "CQ149",
      "CQ154",
+     "B2Q-30",
+     "B2Q-28",
      "CQ150",
      "CQ151",
      "CQ152",
@@ -1065,6 +1087,22 @@
        "CQ58",
        "CQ61",
        "CQ62"
+      ],
+      "groups": []
+     },
+     {
+      "set": 16,
+      "ids": [
+       "B2Q-02",
+       "B2Q-06",
+       "B2Q-09",
+       "B2Q-13",
+       "B2Q-19",
+       "B2Q-23",
+       "B2Q-27",
+       "B2Q-29",
+       "B2Q-03",
+       "B2Q-07"
       ],
       "groups": []
      }
