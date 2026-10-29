@@ -4,10 +4,10 @@
   let n = 0;
   // Header mark: same navy #0B1F3A / gold #C9A227 icon as the favicon (drawn by tools/make_images.py)
   const logo = () => `<img src="assets/img/favicon.svg" alt="" width="36" height="36" class="logo-mark">`;
-  // Grouped nav (v2): Home · Quant Lab · Tracks & Practice · Question Bank · Flashcards & Guides · Careers · About & Legal
+  // Grouped nav (v2): Home · Labs (Quant Lab, Reasoning Lab) · Tracks & Practice · Question Bank · Flashcards & Guides · Careers · About & Legal
   const nav = [
     ["index.html", "Home"],
-    ["quant-lab.html", "Quant Lab"],
+    ["labs", "Labs", [["quant-lab.html", "Quant Lab"], ["reasoning-lab.html", "Reasoning Lab"]]],
     ["tracks", "Tracks &amp; Practice", [["tracks.html", "All tracks"], ["cat.html", "CAT"], ["cuet.html", "CUET (UG)"], ["bank-ssc.html", "Bank &amp; SSC"], ["placements.html", "Placements"], ["practice.html", "Practice quizzes"], ["mock-tests.html", "CAT mock tests"], ["open-mock.html", "Open Mock"], ["mistakes.html", "Mistakes notebook"]]],
     ["q/index.html", "Question Bank"],
     ["study", "Flashcards &amp; Guides", [["flashcards.html", "Formula flashcards"], ["formula-sheets.html", "Formula sheets"], ["guides.html", "Guides"], ["quant.html", "Quant notes"], ["reasoning.html", "Reasoning notes"], ["dilr.html", "DILR notes"]]],
@@ -15,7 +15,7 @@
     ["about", "About &amp; Legal", [["about.html", "About"], ["faq.html", "FAQ"], ["corrections.html", "Corrections"], ["contact.html", "Contact"], ["privacy.html", "Privacy"], ["terms.html", "Terms"], ["refund.html", "Refunds"]]]
   ];
   const here = location.pathname.split("/").pop() || "index.html", inQ = /\/q\//.test(location.pathname);
-  const alias = { "quant-lab-explainers.html": "quant-lab.html", "quant-lab-generator.html": "quant-lab.html", "quant-lab-concept-lab.html": "quant-lab.html", "quant-lab-practice.html": "quant-lab.html", "cat-practice.html": "cat.html", "cuet-practice.html": "cuet.html", "varc.html": "cat.html",
+  const alias = { "quant-lab-explainers.html": "quant-lab.html", "quant-lab-generator.html": "quant-lab.html", "quant-lab-concept-lab.html": "quant-lab.html", "quant-lab-practice.html": "quant-lab.html", "reasoning-lab-learn.html": "reasoning-lab.html", "reasoning-lab-practice.html": "reasoning-lab.html", "reasoning-lab-lab.html": "reasoning-lab.html", "reasoning-lab-timed.html": "reasoning-lab.html", "reasoning-lab-progress.html": "reasoning-lab.html", "cat-practice.html": "cat.html", "cuet-practice.html": "cuet.html", "varc.html": "cat.html",
                   "set.html": "cat-" + ({ qa: "quant", varc: "varc", dilr: "dilr" }[new URLSearchParams(location.search).get("sec")] || "quant") + "-sets.html" };
   const fam = h => /^cat-.*sets\.html$|^set\.html$/.test(h) ? "cat.html" : /^(ibps|sbi|ssc)-/.test(h) ? "bank-ssc.html" : /^formula-/.test(h) ? "formula-sheets.html" : /^(guide|g-)/.test(h) ? "guides.html" : null;
   const active = inQ ? "q/index.html" : (alias[here] && alias[here].indexOf("-sets") < 0 ? alias[here] : fam(here) || alias[here] || here);

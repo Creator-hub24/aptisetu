@@ -1,0 +1,117 @@
+{
+ "samples": 27000,
+ "corpusStrings": 8482,
+ "files": [
+  "data/general/reasoning.json",
+  "data/general/dilr.json",
+  "data/cat/dilr.json",
+  "data/cat/sets.json",
+  "data/cuet/gat.json",
+  "data/questions.json",
+  "data/cat.json",
+  "data/cuet.json",
+  "data/open-mock.json"
+ ],
+ "exactMatches": 0,
+ "maxOverlap": 0.45454545454545453,
+ "over25": 8,
+ "top8": [
+  {
+   "r": 0.45454545454545453,
+   "id": "cube-m1",
+   "text": "a cuboid 3 cm × 4 cm × 7 cm is painted on all faces and cut into 1 cm cubes how many cubes have no painted faces ?",
+   "hits": [
+    "is painted on all faces and cut into",
+    "painted on all faces and cut into 1",
+    "on all faces and cut into 1 cm"
+   ],
+   "src": "data/cat.json: a 12 × 8 × 6 cm cuboid is painted on all faces and cut into 1 cm cubes how many cubes have no painted face ?"
+  },
+  {
+   "r": 0.4,
+   "id": "code-e1",
+   "text": "in a certain code mango is written as nbohp how is crown written in that code ?",
+   "hits": [
+    "in a certain code mango is written as",
+    "a certain code mango is written as nbohp",
+    "certain code mango is written as nbohp how"
+   ],
+   "src": "data/cuet/gat.json: in a certain code mango is written as nbohp how is apple written in that code ?"
+  },
+  {
+   "r": 0.3851851851851852,
+   "id": "blood-e3",
+   "text": "in a code a × b means a is the mother of b a + b means a is the sister of b a @ b means a is the daughter of b a $ b means a is the wife of b a # b means a is t",
+   "hits": [
+    "b means a is the mother of b",
+    "b means a is the sister of b",
+    "a @ b means a is the daughter"
+   ],
+   "src": "data/cuet/gat.json: a + b means a is the father of b a × b means a is the sister of b and a − b means a is the mother of b if p + q × r how is p related to r ?"
+  },
+  {
+   "r": 0.3673469387755102,
+   "id": "blood-h2",
+   "text": "in a code a @ b means a is the wife of b a ÷ b means a is the daughter of b a $ b means a is the father of b a × b means a is the sister of b a − b means a is t",
+   "hits": [
+    "in a code a @ b means a",
+    "a code a @ b means a is",
+    "code a @ b means a is the"
+   ],
+   "src": "data/general/reasoning.json: in a code a @ b means a is the daughter of b a $ b means a is the wife of b a # b means a is the father of b a & b means a is the brother of b if p @ q $ r # s "
+  },
+  {
+   "r": 0.3237410071942446,
+   "id": "blood-m3",
+   "text": "in a code a × b means a is the wife of b a # b means a is the father of b a ÷ b means a is the brother of b a $ b means a is the son of b a @ b means a is the d",
+   "hits": [
+    "b means a is the wife of b",
+    "means a is the wife of b a",
+    "a is the wife of b a #"
+   ],
+   "src": "data/general/reasoning.json: in a code a @ b means a is the daughter of b a $ b means a is the wife of b a # b means a is the father of b a & b means a is the brother of b if p @ q $ r # s "
+  },
+  {
+   "r": 0.2857142857142857,
+   "id": "ser-m1",
+   "text": "find the wrong number in the series 2 5 10 17 26 37 54",
+   "hits": [
+    "find the wrong number in the series 2",
+    "the wrong number in the series 2 5"
+   ],
+   "src": "data/general/reasoning.json: find the wrong number in the series 2 5 11 23 47 96 191"
+  },
+  {
+   "r": 0.2857142857142857,
+   "id": "ser-h3",
+   "text": "find the wrong number in the series 2 5 14 41 122 365 1098",
+   "hits": [
+    "find the wrong number in the series 2",
+    "the wrong number in the series 2 5"
+   ],
+   "src": "data/general/reasoning.json: find the wrong number in the series 2 5 11 23 47 96 191"
+  },
+  {
+   "r": 0.2727272727272727,
+   "id": "dir-m2",
+   "text": "one morning om stood with his shadow falling exactly to his right which direction was om facing ?",
+   "hits": [
+    "with his shadow falling exactly to his right",
+    "his shadow falling exactly to his right which",
+    "shadow falling exactly to his right which direction"
+   ],
+   "src": "data/general/reasoning.json: early in the morning rohan stands with his shadow falling exactly to his right which direction is he facing ?"
+  }
+ ],
+ "over25ids": [
+  "cube-m1 0.45 | a cuboid 3 cm × 4 cm × 7 cm is painted on all faces and cut into 1 cm cubes how many cubes",
+  "code-e1 0.40 | in a certain code mango is written as nbohp how is crown written in that code ?",
+  "blood-e3 0.39 | in a code a × b means a is the mother of b a + b means a is the sister of b a @ b means a ",
+  "blood-h2 0.37 | in a code a @ b means a is the wife of b a ÷ b means a is the daughter of b a $ b means a ",
+  "blood-m3 0.32 | in a code a × b means a is the wife of b a # b means a is the father of b a ÷ b means a is",
+  "ser-m1 0.29 | find the wrong number in the series 2 5 10 17 26 37 54",
+  "ser-h3 0.29 | find the wrong number in the series 2 5 14 41 122 365 1098",
+  "dir-m2 0.27 | one morning om stood with his shadow falling exactly to his right which direction was om f"
+ ],
+ "pyqMarkers": []
+}

@@ -1,0 +1,7 @@
+/* Reasoning Lab page chrome (light DOM). The app itself is styled by reasoning-lab.css inside its shadow root. */
+.rl-subnav{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.rl-subnav a{padding:.45em .9em;border:1px solid var(--line);border-radius:99px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.92rem;background:var(--card);min-height:44px;display:inline-flex;align-items:center}
+.rl-subnav a[aria-current=page]{background:var(--brand);border-color:var(--brand);color:var(--card)}
+.rl-credit{font-size:.88rem;color:var(--muted);margin:.6em 0 0}
+.rl-app{min-height:60vh;margin-bottom:40px}
+.rl-nojs{padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
