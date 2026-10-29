@@ -815,6 +815,9 @@ _hh = _j6.load(open(_hp, encoding="utf8")); _hh.update(_BA.hi); _j6.dump(_hh, op
 import b7_reasoning as _b7r
 _BR = _Adder(Q, OUT, SY, SYE, seed=707); _b7r.build(_BR)
 _hh = _j6.load(open(_hp, encoding="utf8")); _hh.update(_BR.hi); _j6.dump(_hh, open(_hp, "w", encoding="utf8"), ensure_ascii=False, indent=1)
+import b8_dilr as _b8d
+_BD = _Adder(Q, OUT, SY, SYE, seed=808); _b8d.build(_BD)
+_hh = _j6.load(open(_hp, encoding="utf8")); _hh.update(_BD.hi); _j6.dump(_hh, open(_hp, "w", encoding="utf8"), ensure_ascii=False, indent=1)
 del _s6.modules["rcheck"]
 _s6.path.remove(_o6.path.join(_o6.path.dirname(_o6.path.abspath(__file__)), "bank")); del _s6.modules["common"]
 

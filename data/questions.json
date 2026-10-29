@@ -9378,6 +9378,1282 @@
     ],
     "answer": 1,
     "solution": "A to C needs 2 east and 1 north moves in some order: 3!/(2! × 1!) = 3 ways. C to B needs the remaining 2 east and 2 north: 4!/(2! × 2!) = 6 ways. Routes through C = 3 × 6 = 18."
+   },
+   {
+    "id": "D106",
+    "exam": "general",
+    "topic": "Bar Charts",
+    "difficulty": "Easy",
+    "question": "By what percentage did the dealer's car sales rise from 2023 to 2024?",
+    "options": [
+     "15%",
+     "18%",
+     "20%",
+     "24%"
+    ],
+    "answer": 2,
+    "solution": "2023 = 180, 2024 = 216. Rise = 36/180 × 100 = 20%.",
+    "data": "<b>Cars sold by a dealer, 2020–2025</b><div class='bars'><div class='bar-row'><span>2020</span><i style='width:45.6%'></i><span>120</span></div><div class='bar-row'><span>2021</span><i style='width:57.0%'></i><span>150</span></div><div class='bar-row'><span>2022</span><i style='width:51.3%'></i><span>135</span></div><div class='bar-row'><span>2023</span><i style='width:68.4%'></i><span>180</span></div><div class='bar-row'><span>2024</span><i style='width:82.1%'></i><span>216</span></div><div class='bar-row'><span>2025</span><i style='width:91.2%'></i><span>240</span></div></div>",
+    "set": "bar-cars-b8"
+   },
+   {
+    "id": "D107",
+    "exam": "general",
+    "topic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "What was the average number of cars sold per year over 2020–2025?",
+    "options": [
+     "170",
+     "175.5",
+     "173.5",
+     "180"
+    ],
+    "answer": 2,
+    "solution": "Total = 120 + 150 + 135 + 180 + 216 + 240 = 1041. Average = 1041/6 = 173.5.",
+    "data": "<b>Cars sold by a dealer, 2020–2025</b><div class='bars'><div class='bar-row'><span>2020</span><i style='width:45.6%'></i><span>120</span></div><div class='bar-row'><span>2021</span><i style='width:57.0%'></i><span>150</span></div><div class='bar-row'><span>2022</span><i style='width:51.3%'></i><span>135</span></div><div class='bar-row'><span>2023</span><i style='width:68.4%'></i><span>180</span></div><div class='bar-row'><span>2024</span><i style='width:82.1%'></i><span>216</span></div><div class='bar-row'><span>2025</span><i style='width:91.2%'></i><span>240</span></div></div>",
+    "set": "bar-cars-b8"
+   },
+   {
+    "id": "D108",
+    "exam": "general",
+    "topic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "In how many years were sales lower than in the previous year?",
+    "options": [
+     "0",
+     "1",
+     "2",
+     "3"
+    ],
+    "answer": 1,
+    "solution": "Only 2022 (135) is below the year before it (150 in 2021). Every other year is higher, so the answer is 1.",
+    "data": "<b>Cars sold by a dealer, 2020–2025</b><div class='bars'><div class='bar-row'><span>2020</span><i style='width:45.6%'></i><span>120</span></div><div class='bar-row'><span>2021</span><i style='width:57.0%'></i><span>150</span></div><div class='bar-row'><span>2022</span><i style='width:51.3%'></i><span>135</span></div><div class='bar-row'><span>2023</span><i style='width:68.4%'></i><span>180</span></div><div class='bar-row'><span>2024</span><i style='width:82.1%'></i><span>216</span></div><div class='bar-row'><span>2025</span><i style='width:91.2%'></i><span>240</span></div></div>",
+    "set": "bar-cars-b8"
+   },
+   {
+    "id": "D109",
+    "exam": "general",
+    "topic": "Bar Charts",
+    "difficulty": "Medium",
+    "question": "What is the ratio of cars sold in 2021 to cars sold in 2025?",
+    "options": [
+     "3 : 5",
+     "5 : 8",
+     "4 : 7",
+     "5 : 7"
+    ],
+    "answer": 1,
+    "solution": "150 : 240 = 5 : 8 (dividing both by 30).",
+    "data": "<b>Cars sold by a dealer, 2020–2025</b><div class='bars'><div class='bar-row'><span>2020</span><i style='width:45.6%'></i><span>120</span></div><div class='bar-row'><span>2021</span><i style='width:57.0%'></i><span>150</span></div><div class='bar-row'><span>2022</span><i style='width:51.3%'></i><span>135</span></div><div class='bar-row'><span>2023</span><i style='width:68.4%'></i><span>180</span></div><div class='bar-row'><span>2024</span><i style='width:82.1%'></i><span>216</span></div><div class='bar-row'><span>2025</span><i style='width:91.2%'></i><span>240</span></div></div>",
+    "set": "bar-cars-b8"
+   },
+   {
+    "id": "D110",
+    "exam": "general",
+    "topic": "Bar Charts",
+    "difficulty": "Hard",
+    "question": "The average price per car was ₹8 lakh in 2022 and ₹9 lakh in 2025. By what percentage did the dealer's total sales revenue rise from 2022 to 2025?",
+    "options": [
+     "100%",
+     "88.9%",
+     "77.8%",
+     "125%"
+    ],
+    "answer": 0,
+    "solution": "Revenue 2022 = 135 × 8 = ₹1080 lakh. Revenue 2025 = 240 × 9 = ₹2160 lakh. Rise = 1080/1080 × 100 = 100%.",
+    "data": "<b>Cars sold by a dealer, 2020–2025</b><div class='bars'><div class='bar-row'><span>2020</span><i style='width:45.6%'></i><span>120</span></div><div class='bar-row'><span>2021</span><i style='width:57.0%'></i><span>150</span></div><div class='bar-row'><span>2022</span><i style='width:51.3%'></i><span>135</span></div><div class='bar-row'><span>2023</span><i style='width:68.4%'></i><span>180</span></div><div class='bar-row'><span>2024</span><i style='width:82.1%'></i><span>216</span></div><div class='bar-row'><span>2025</span><i style='width:91.2%'></i><span>240</span></div></div>",
+    "set": "bar-cars-b8"
+   },
+   {
+    "id": "D111",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Easy",
+    "question": "How many employees work in IT?",
+    "options": [
+     "900",
+     "810",
+     "720",
+     "960"
+    ],
+    "answer": 0,
+    "solution": "25% of 3600 = 900.",
+    "data": "<b>Employees of a company by department (total 3,600)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 35%,#0891b2 35% 55%,#db2777 55% 60%,#f59e0b 60% 75%,#16a34a 75% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Production 35%</div><div><i style='background:#0891b2'></i>Sales 20%</div><div><i style='background:#db2777'></i>HR 5%</div><div><i style='background:#f59e0b'></i>Finance 15%</div><div><i style='background:#16a34a'></i>IT 25%</div></div></div>",
+    "set": "pie-staff-b8"
+   },
+   {
+    "id": "D112",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Easy",
+    "question": "What is the central angle of the Finance sector?",
+    "options": [
+     "48°",
+     "60°",
+     "54°",
+     "72°"
+    ],
+    "answer": 2,
+    "solution": "15% of 360° = 54°.",
+    "data": "<b>Employees of a company by department (total 3,600)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 35%,#0891b2 35% 55%,#db2777 55% 60%,#f59e0b 60% 75%,#16a34a 75% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Production 35%</div><div><i style='background:#0891b2'></i>Sales 20%</div><div><i style='background:#db2777'></i>HR 5%</div><div><i style='background:#f59e0b'></i>Finance 15%</div><div><i style='background:#16a34a'></i>IT 25%</div></div></div>",
+    "set": "pie-staff-b8"
+   },
+   {
+    "id": "D113",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Medium",
+    "question": "How many more employees work in Production than in Sales?",
+    "options": [
+     "540",
+     "450",
+     "600",
+     "720"
+    ],
+    "answer": 0,
+    "solution": "Production − Sales = (35% − 20%) of 3600 = 15% of 3600 = 540.",
+    "data": "<b>Employees of a company by department (total 3,600)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 35%,#0891b2 35% 55%,#db2777 55% 60%,#f59e0b 60% 75%,#16a34a 75% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Production 35%</div><div><i style='background:#0891b2'></i>Sales 20%</div><div><i style='background:#db2777'></i>HR 5%</div><div><i style='background:#f59e0b'></i>Finance 15%</div><div><i style='background:#16a34a'></i>IT 25%</div></div></div>",
+    "set": "pie-staff-b8"
+   },
+   {
+    "id": "D114",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Medium",
+    "question": "What is the ratio of HR employees to IT employees?",
+    "options": [
+     "1 : 4",
+     "1 : 6",
+     "2 : 9",
+     "1 : 5"
+    ],
+    "answer": 3,
+    "solution": "5% : 25% = 1 : 5.",
+    "data": "<b>Employees of a company by department (total 3,600)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 35%,#0891b2 35% 55%,#db2777 55% 60%,#f59e0b 60% 75%,#16a34a 75% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Production 35%</div><div><i style='background:#0891b2'></i>Sales 20%</div><div><i style='background:#db2777'></i>HR 5%</div><div><i style='background:#f59e0b'></i>Finance 15%</div><div><i style='background:#16a34a'></i>IT 25%</div></div></div>",
+    "set": "pie-staff-b8"
+   },
+   {
+    "id": "D115",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Hard",
+    "question": "40% of Production staff and 30% of Sales staff are women. If the company has 1,350 women in all, how many women work in HR, Finance and IT together?",
+    "options": [
+     "540",
+     "585",
+     "630",
+     "675"
+    ],
+    "answer": 2,
+    "solution": "Production = 1260, so women there = 40% of 1260 = 504. Sales = 720, so women = 30% of 720 = 216. Others = 1350 − 504 − 216 = 630.",
+    "data": "<b>Employees of a company by department (total 3,600)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 35%,#0891b2 35% 55%,#db2777 55% 60%,#f59e0b 60% 75%,#16a34a 75% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Production 35%</div><div><i style='background:#0891b2'></i>Sales 20%</div><div><i style='background:#db2777'></i>HR 5%</div><div><i style='background:#f59e0b'></i>Finance 15%</div><div><i style='background:#16a34a'></i>IT 25%</div></div></div>",
+    "set": "pie-staff-b8"
+   },
+   {
+    "id": "D116",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Easy",
+    "question": "How much is paid as royalty?",
+    "options": [
+     "₹60,000",
+     "₹54,000",
+     "₹48,000",
+     "₹64,000"
+    ],
+    "answer": 0,
+    "solution": "15% of ₹4,00,000 = ₹60,000.",
+    "data": "<b>Cost of publishing 5,000 copies of a book (total ₹4,00,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 25%,#0891b2 25% 45%,#db2777 45% 55%,#f59e0b 55% 70%,#16a34a 70% 82%,#7c3aed 82% 90%,#64748b 90% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Paper 25%</div><div><i style='background:#0891b2'></i>Printing 20%</div><div><i style='background:#db2777'></i>Binding 10%</div><div><i style='background:#f59e0b'></i>Royalty 15%</div><div><i style='background:#16a34a'></i>Promotion 12%</div><div><i style='background:#7c3aed'></i>Transport 8%</div><div><i style='background:#64748b'></i>Miscellaneous 10%</div></div></div>",
+    "set": "pie-book-b8"
+   },
+   {
+    "id": "D117",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Medium",
+    "question": "What is the central angle of the Promotion sector?",
+    "options": [
+     "40.8°",
+     "43.2°",
+     "45°",
+     "48.6°"
+    ],
+    "answer": 1,
+    "solution": "12% of 360° = 43.2°.",
+    "data": "<b>Cost of publishing 5,000 copies of a book (total ₹4,00,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 25%,#0891b2 25% 45%,#db2777 45% 55%,#f59e0b 55% 70%,#16a34a 70% 82%,#7c3aed 82% 90%,#64748b 90% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Paper 25%</div><div><i style='background:#0891b2'></i>Printing 20%</div><div><i style='background:#db2777'></i>Binding 10%</div><div><i style='background:#f59e0b'></i>Royalty 15%</div><div><i style='background:#16a34a'></i>Promotion 12%</div><div><i style='background:#7c3aed'></i>Transport 8%</div><div><i style='background:#64748b'></i>Miscellaneous 10%</div></div></div>",
+    "set": "pie-book-b8"
+   },
+   {
+    "id": "D118",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Medium",
+    "question": "If the cost of paper rises by 20% and all other costs stay the same, by what percentage does the total cost rise?",
+    "options": [
+     "4%",
+     "5%",
+     "6%",
+     "20%"
+    ],
+    "answer": 1,
+    "solution": "Paper is 25% of the total. A 20% rise in it adds 20% of 25% = 5% to the total.",
+    "data": "<b>Cost of publishing 5,000 copies of a book (total ₹4,00,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 25%,#0891b2 25% 45%,#db2777 45% 55%,#f59e0b 55% 70%,#16a34a 70% 82%,#7c3aed 82% 90%,#64748b 90% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Paper 25%</div><div><i style='background:#0891b2'></i>Printing 20%</div><div><i style='background:#db2777'></i>Binding 10%</div><div><i style='background:#f59e0b'></i>Royalty 15%</div><div><i style='background:#16a34a'></i>Promotion 12%</div><div><i style='background:#7c3aed'></i>Transport 8%</div><div><i style='background:#64748b'></i>Miscellaneous 10%</div></div></div>",
+    "set": "pie-book-b8"
+   },
+   {
+    "id": "D119",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Medium",
+    "question": "The publisher sells every copy at a price that gives a 25% profit on cost. What is the price of one copy?",
+    "options": [
+     "₹100",
+     "₹96",
+     "₹90",
+     "₹125"
+    ],
+    "answer": 0,
+    "solution": "Cost per copy = 400000/5000 = ₹80. Price = 80 × 1.25 = ₹100.",
+    "data": "<b>Cost of publishing 5,000 copies of a book (total ₹4,00,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 25%,#0891b2 25% 45%,#db2777 45% 55%,#f59e0b 55% 70%,#16a34a 70% 82%,#7c3aed 82% 90%,#64748b 90% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Paper 25%</div><div><i style='background:#0891b2'></i>Printing 20%</div><div><i style='background:#db2777'></i>Binding 10%</div><div><i style='background:#f59e0b'></i>Royalty 15%</div><div><i style='background:#16a34a'></i>Promotion 12%</div><div><i style='background:#7c3aed'></i>Transport 8%</div><div><i style='background:#64748b'></i>Miscellaneous 10%</div></div></div>",
+    "set": "pie-book-b8"
+   },
+   {
+    "id": "D120",
+    "exam": "general",
+    "topic": "Pie Charts",
+    "difficulty": "Hard",
+    "question": "By what percentage is the combined cost of printing and binding more than the cost of transport?",
+    "options": [
+     "225%",
+     "275%",
+     "250%",
+     "300%"
+    ],
+    "answer": 1,
+    "solution": "Printing + binding = 20% + 10% = 30%. Transport = 8%. (30 − 8)/8 × 100 = 275%.",
+    "data": "<b>Cost of publishing 5,000 copies of a book (total ₹4,00,000)</b><div class='pie-wrap'><div class='pie' style='background:conic-gradient(#4f46e5 0% 25%,#0891b2 25% 45%,#db2777 45% 55%,#f59e0b 55% 70%,#16a34a 70% 82%,#7c3aed 82% 90%,#64748b 90% 100%)'></div><div class='pie-legend'><div><i style='background:#4f46e5'></i>Paper 25%</div><div><i style='background:#0891b2'></i>Printing 20%</div><div><i style='background:#db2777'></i>Binding 10%</div><div><i style='background:#f59e0b'></i>Royalty 15%</div><div><i style='background:#16a34a'></i>Promotion 12%</div><div><i style='background:#7c3aed'></i>Transport 8%</div><div><i style='background:#64748b'></i>Miscellaneous 10%</div></div></div>",
+    "set": "pie-book-b8"
+   },
+   {
+    "id": "D121",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "In which year did B's exports fall compared with the previous year?",
+    "options": [
+     "2024",
+     "2022",
+     "2023",
+     "2021"
+    ],
+    "answer": 3,
+    "solution": "B: 50 → 45 from 2020 to 2021 is the only fall; every later year rises (54, 63, 70, 84).",
+    "data": "<b>Exports of companies A and B (₹ crore)</b><div style='font-size:.85rem'><span style='color:#db2777;margin-right:1em'>● A</span><span style='color:#0891b2;margin-right:1em'>● B</span></div><svg viewBox='0 0 360 180' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='158.0' y2='158.0' stroke='#e2e8f0'/><text x='30' y='162.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='130.8' y2='130.8' stroke='#e2e8f0'/><text x='30' y='134.8' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='103.6' y2='103.6' stroke='#e2e8f0'/><text x='30' y='107.6' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='76.4' y2='76.4' stroke='#e2e8f0'/><text x='30' y='80.4' font-size='10' text-anchor='end' fill='#64748b'>60</text><line x1='36' x2='350' y1='49.2' y2='49.2' stroke='#e2e8f0'/><text x='30' y='53.2' font-size='10' text-anchor='end' fill='#64748b'>80</text><line x1='36' x2='350' y1='22.0' y2='22.0' stroke='#e2e8f0'/><text x='30' y='26.0' font-size='10' text-anchor='end' fill='#64748b'>100</text><polyline points='36.0,103.6 98.0,92.7 160.0,96.8 222.0,76.4 284.0,60.1 346.0,35.6' fill='none' stroke='#db2777' stroke-width='2.5'/><circle cx='36.0' cy='103.6' r='3.5' fill='#db2777'/><text x='36.0' y='95.6' font-size='10' text-anchor='middle' fill='#db2777'>40</text><circle cx='98.0' cy='92.7' r='3.5' fill='#db2777'/><text x='98.0' y='84.7' font-size='10' text-anchor='middle' fill='#db2777'>48</text><circle cx='160.0' cy='96.8' r='3.5' fill='#db2777'/><text x='160.0' y='88.8' font-size='10' text-anchor='middle' fill='#db2777'>45</text><circle cx='222.0' cy='76.4' r='3.5' fill='#db2777'/><text x='222.0' y='68.4' font-size='10' text-anchor='middle' fill='#db2777'>60</text><circle cx='284.0' cy='60.1' r='3.5' fill='#db2777'/><text x='284.0' y='52.1' font-size='10' text-anchor='middle' fill='#db2777'>72</text><circle cx='346.0' cy='35.6' r='3.5' fill='#db2777'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#db2777'>90</text><polyline points='36.0,90.0 98.0,96.8 160.0,84.6 222.0,72.3 284.0,62.8 346.0,43.8' fill='none' stroke='#0891b2' stroke-width='2.5'/><circle cx='36.0' cy='90.0' r='3.5' fill='#0891b2'/><text x='36.0' y='104.0' font-size='10' text-anchor='middle' fill='#0891b2'>50</text><circle cx='98.0' cy='96.8' r='3.5' fill='#0891b2'/><text x='98.0' y='110.8' font-size='10' text-anchor='middle' fill='#0891b2'>45</text><circle cx='160.0' cy='84.6' r='3.5' fill='#0891b2'/><text x='160.0' y='98.6' font-size='10' text-anchor='middle' fill='#0891b2'>54</text><circle cx='222.0' cy='72.3' r='3.5' fill='#0891b2'/><text x='222.0' y='86.3' font-size='10' text-anchor='middle' fill='#0891b2'>63</text><circle cx='284.0' cy='62.8' r='3.5' fill='#0891b2'/><text x='284.0' y='76.8' font-size='10' text-anchor='middle' fill='#0891b2'>70</text><circle cx='346.0' cy='43.8' r='3.5' fill='#0891b2'/><text x='346.0' y='57.8' font-size='10' text-anchor='middle' fill='#0891b2'>84</text><text x='36.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2020</text><text x='98.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2021</text><text x='160.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2022</text><text x='222.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2023</text><text x='284.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2024</text><text x='346.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2025</text></svg>",
+    "set": "line-exports-b8"
+   },
+   {
+    "id": "D122",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "In how many of the six years were A's exports higher than B's?",
+    "options": [
+     "3",
+     "2",
+     "4",
+     "5"
+    ],
+    "answer": 0,
+    "solution": "A > B in 2021 (48 vs 45), 2024 (72 vs 70) and 2025 (90 vs 84). In 2020, 2022 and 2023 B is higher. So 3 years.",
+    "data": "<b>Exports of companies A and B (₹ crore)</b><div style='font-size:.85rem'><span style='color:#db2777;margin-right:1em'>● A</span><span style='color:#0891b2;margin-right:1em'>● B</span></div><svg viewBox='0 0 360 180' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='158.0' y2='158.0' stroke='#e2e8f0'/><text x='30' y='162.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='130.8' y2='130.8' stroke='#e2e8f0'/><text x='30' y='134.8' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='103.6' y2='103.6' stroke='#e2e8f0'/><text x='30' y='107.6' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='76.4' y2='76.4' stroke='#e2e8f0'/><text x='30' y='80.4' font-size='10' text-anchor='end' fill='#64748b'>60</text><line x1='36' x2='350' y1='49.2' y2='49.2' stroke='#e2e8f0'/><text x='30' y='53.2' font-size='10' text-anchor='end' fill='#64748b'>80</text><line x1='36' x2='350' y1='22.0' y2='22.0' stroke='#e2e8f0'/><text x='30' y='26.0' font-size='10' text-anchor='end' fill='#64748b'>100</text><polyline points='36.0,103.6 98.0,92.7 160.0,96.8 222.0,76.4 284.0,60.1 346.0,35.6' fill='none' stroke='#db2777' stroke-width='2.5'/><circle cx='36.0' cy='103.6' r='3.5' fill='#db2777'/><text x='36.0' y='95.6' font-size='10' text-anchor='middle' fill='#db2777'>40</text><circle cx='98.0' cy='92.7' r='3.5' fill='#db2777'/><text x='98.0' y='84.7' font-size='10' text-anchor='middle' fill='#db2777'>48</text><circle cx='160.0' cy='96.8' r='3.5' fill='#db2777'/><text x='160.0' y='88.8' font-size='10' text-anchor='middle' fill='#db2777'>45</text><circle cx='222.0' cy='76.4' r='3.5' fill='#db2777'/><text x='222.0' y='68.4' font-size='10' text-anchor='middle' fill='#db2777'>60</text><circle cx='284.0' cy='60.1' r='3.5' fill='#db2777'/><text x='284.0' y='52.1' font-size='10' text-anchor='middle' fill='#db2777'>72</text><circle cx='346.0' cy='35.6' r='3.5' fill='#db2777'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#db2777'>90</text><polyline points='36.0,90.0 98.0,96.8 160.0,84.6 222.0,72.3 284.0,62.8 346.0,43.8' fill='none' stroke='#0891b2' stroke-width='2.5'/><circle cx='36.0' cy='90.0' r='3.5' fill='#0891b2'/><text x='36.0' y='104.0' font-size='10' text-anchor='middle' fill='#0891b2'>50</text><circle cx='98.0' cy='96.8' r='3.5' fill='#0891b2'/><text x='98.0' y='110.8' font-size='10' text-anchor='middle' fill='#0891b2'>45</text><circle cx='160.0' cy='84.6' r='3.5' fill='#0891b2'/><text x='160.0' y='98.6' font-size='10' text-anchor='middle' fill='#0891b2'>54</text><circle cx='222.0' cy='72.3' r='3.5' fill='#0891b2'/><text x='222.0' y='86.3' font-size='10' text-anchor='middle' fill='#0891b2'>63</text><circle cx='284.0' cy='62.8' r='3.5' fill='#0891b2'/><text x='284.0' y='76.8' font-size='10' text-anchor='middle' fill='#0891b2'>70</text><circle cx='346.0' cy='43.8' r='3.5' fill='#0891b2'/><text x='346.0' y='57.8' font-size='10' text-anchor='middle' fill='#0891b2'>84</text><text x='36.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2020</text><text x='98.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2021</text><text x='160.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2022</text><text x='222.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2023</text><text x='284.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2024</text><text x='346.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2025</text></svg>",
+    "set": "line-exports-b8"
+   },
+   {
+    "id": "D123",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "In which year was A's year-on-year percentage growth in exports the highest?",
+    "options": [
+     "2021",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "answer": 1,
+    "solution": "A's growth: 2021: 8/40 = 20%; 2022: a fall; 2023: 15/45 = 33.3%; 2024: 12/60 = 20%; 2025: 18/72 = 25%. Highest is 2023.",
+    "data": "<b>Exports of companies A and B (₹ crore)</b><div style='font-size:.85rem'><span style='color:#db2777;margin-right:1em'>● A</span><span style='color:#0891b2;margin-right:1em'>● B</span></div><svg viewBox='0 0 360 180' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='158.0' y2='158.0' stroke='#e2e8f0'/><text x='30' y='162.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='130.8' y2='130.8' stroke='#e2e8f0'/><text x='30' y='134.8' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='103.6' y2='103.6' stroke='#e2e8f0'/><text x='30' y='107.6' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='76.4' y2='76.4' stroke='#e2e8f0'/><text x='30' y='80.4' font-size='10' text-anchor='end' fill='#64748b'>60</text><line x1='36' x2='350' y1='49.2' y2='49.2' stroke='#e2e8f0'/><text x='30' y='53.2' font-size='10' text-anchor='end' fill='#64748b'>80</text><line x1='36' x2='350' y1='22.0' y2='22.0' stroke='#e2e8f0'/><text x='30' y='26.0' font-size='10' text-anchor='end' fill='#64748b'>100</text><polyline points='36.0,103.6 98.0,92.7 160.0,96.8 222.0,76.4 284.0,60.1 346.0,35.6' fill='none' stroke='#db2777' stroke-width='2.5'/><circle cx='36.0' cy='103.6' r='3.5' fill='#db2777'/><text x='36.0' y='95.6' font-size='10' text-anchor='middle' fill='#db2777'>40</text><circle cx='98.0' cy='92.7' r='3.5' fill='#db2777'/><text x='98.0' y='84.7' font-size='10' text-anchor='middle' fill='#db2777'>48</text><circle cx='160.0' cy='96.8' r='3.5' fill='#db2777'/><text x='160.0' y='88.8' font-size='10' text-anchor='middle' fill='#db2777'>45</text><circle cx='222.0' cy='76.4' r='3.5' fill='#db2777'/><text x='222.0' y='68.4' font-size='10' text-anchor='middle' fill='#db2777'>60</text><circle cx='284.0' cy='60.1' r='3.5' fill='#db2777'/><text x='284.0' y='52.1' font-size='10' text-anchor='middle' fill='#db2777'>72</text><circle cx='346.0' cy='35.6' r='3.5' fill='#db2777'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#db2777'>90</text><polyline points='36.0,90.0 98.0,96.8 160.0,84.6 222.0,72.3 284.0,62.8 346.0,43.8' fill='none' stroke='#0891b2' stroke-width='2.5'/><circle cx='36.0' cy='90.0' r='3.5' fill='#0891b2'/><text x='36.0' y='104.0' font-size='10' text-anchor='middle' fill='#0891b2'>50</text><circle cx='98.0' cy='96.8' r='3.5' fill='#0891b2'/><text x='98.0' y='110.8' font-size='10' text-anchor='middle' fill='#0891b2'>45</text><circle cx='160.0' cy='84.6' r='3.5' fill='#0891b2'/><text x='160.0' y='98.6' font-size='10' text-anchor='middle' fill='#0891b2'>54</text><circle cx='222.0' cy='72.3' r='3.5' fill='#0891b2'/><text x='222.0' y='86.3' font-size='10' text-anchor='middle' fill='#0891b2'>63</text><circle cx='284.0' cy='62.8' r='3.5' fill='#0891b2'/><text x='284.0' y='76.8' font-size='10' text-anchor='middle' fill='#0891b2'>70</text><circle cx='346.0' cy='43.8' r='3.5' fill='#0891b2'/><text x='346.0' y='57.8' font-size='10' text-anchor='middle' fill='#0891b2'>84</text><text x='36.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2020</text><text x='98.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2021</text><text x='160.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2022</text><text x='222.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2023</text><text x='284.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2024</text><text x='346.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2025</text></svg>",
+    "set": "line-exports-b8"
+   },
+   {
+    "id": "D124",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "What were B's average annual exports over the six years (₹ crore)?",
+    "options": [
+     "61",
+     "60",
+     "58",
+     "63"
+    ],
+    "answer": 0,
+    "solution": "B total = 50 + 45 + 54 + 63 + 70 + 84 = 366. Average = 366/6 = 61.",
+    "data": "<b>Exports of companies A and B (₹ crore)</b><div style='font-size:.85rem'><span style='color:#db2777;margin-right:1em'>● A</span><span style='color:#0891b2;margin-right:1em'>● B</span></div><svg viewBox='0 0 360 180' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='158.0' y2='158.0' stroke='#e2e8f0'/><text x='30' y='162.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='130.8' y2='130.8' stroke='#e2e8f0'/><text x='30' y='134.8' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='103.6' y2='103.6' stroke='#e2e8f0'/><text x='30' y='107.6' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='76.4' y2='76.4' stroke='#e2e8f0'/><text x='30' y='80.4' font-size='10' text-anchor='end' fill='#64748b'>60</text><line x1='36' x2='350' y1='49.2' y2='49.2' stroke='#e2e8f0'/><text x='30' y='53.2' font-size='10' text-anchor='end' fill='#64748b'>80</text><line x1='36' x2='350' y1='22.0' y2='22.0' stroke='#e2e8f0'/><text x='30' y='26.0' font-size='10' text-anchor='end' fill='#64748b'>100</text><polyline points='36.0,103.6 98.0,92.7 160.0,96.8 222.0,76.4 284.0,60.1 346.0,35.6' fill='none' stroke='#db2777' stroke-width='2.5'/><circle cx='36.0' cy='103.6' r='3.5' fill='#db2777'/><text x='36.0' y='95.6' font-size='10' text-anchor='middle' fill='#db2777'>40</text><circle cx='98.0' cy='92.7' r='3.5' fill='#db2777'/><text x='98.0' y='84.7' font-size='10' text-anchor='middle' fill='#db2777'>48</text><circle cx='160.0' cy='96.8' r='3.5' fill='#db2777'/><text x='160.0' y='88.8' font-size='10' text-anchor='middle' fill='#db2777'>45</text><circle cx='222.0' cy='76.4' r='3.5' fill='#db2777'/><text x='222.0' y='68.4' font-size='10' text-anchor='middle' fill='#db2777'>60</text><circle cx='284.0' cy='60.1' r='3.5' fill='#db2777'/><text x='284.0' y='52.1' font-size='10' text-anchor='middle' fill='#db2777'>72</text><circle cx='346.0' cy='35.6' r='3.5' fill='#db2777'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#db2777'>90</text><polyline points='36.0,90.0 98.0,96.8 160.0,84.6 222.0,72.3 284.0,62.8 346.0,43.8' fill='none' stroke='#0891b2' stroke-width='2.5'/><circle cx='36.0' cy='90.0' r='3.5' fill='#0891b2'/><text x='36.0' y='104.0' font-size='10' text-anchor='middle' fill='#0891b2'>50</text><circle cx='98.0' cy='96.8' r='3.5' fill='#0891b2'/><text x='98.0' y='110.8' font-size='10' text-anchor='middle' fill='#0891b2'>45</text><circle cx='160.0' cy='84.6' r='3.5' fill='#0891b2'/><text x='160.0' y='98.6' font-size='10' text-anchor='middle' fill='#0891b2'>54</text><circle cx='222.0' cy='72.3' r='3.5' fill='#0891b2'/><text x='222.0' y='86.3' font-size='10' text-anchor='middle' fill='#0891b2'>63</text><circle cx='284.0' cy='62.8' r='3.5' fill='#0891b2'/><text x='284.0' y='76.8' font-size='10' text-anchor='middle' fill='#0891b2'>70</text><circle cx='346.0' cy='43.8' r='3.5' fill='#0891b2'/><text x='346.0' y='57.8' font-size='10' text-anchor='middle' fill='#0891b2'>84</text><text x='36.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2020</text><text x='98.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2021</text><text x='160.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2022</text><text x='222.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2023</text><text x='284.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2024</text><text x='346.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2025</text></svg>",
+    "set": "line-exports-b8"
+   },
+   {
+    "id": "D125",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "By what percentage did the combined exports of A and B rise from 2020 to 2025?",
+    "options": [
+     "86.7%",
+     "90%",
+     "96.7%",
+     "93.3%"
+    ],
+    "answer": 3,
+    "solution": "2020: 40 + 50 = 90. 2025: 90 + 84 = 174. Rise = 84/90 × 100 = 93.3%.",
+    "data": "<b>Exports of companies A and B (₹ crore)</b><div style='font-size:.85rem'><span style='color:#db2777;margin-right:1em'>● A</span><span style='color:#0891b2;margin-right:1em'>● B</span></div><svg viewBox='0 0 360 180' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='158.0' y2='158.0' stroke='#e2e8f0'/><text x='30' y='162.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='130.8' y2='130.8' stroke='#e2e8f0'/><text x='30' y='134.8' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='103.6' y2='103.6' stroke='#e2e8f0'/><text x='30' y='107.6' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='76.4' y2='76.4' stroke='#e2e8f0'/><text x='30' y='80.4' font-size='10' text-anchor='end' fill='#64748b'>60</text><line x1='36' x2='350' y1='49.2' y2='49.2' stroke='#e2e8f0'/><text x='30' y='53.2' font-size='10' text-anchor='end' fill='#64748b'>80</text><line x1='36' x2='350' y1='22.0' y2='22.0' stroke='#e2e8f0'/><text x='30' y='26.0' font-size='10' text-anchor='end' fill='#64748b'>100</text><polyline points='36.0,103.6 98.0,92.7 160.0,96.8 222.0,76.4 284.0,60.1 346.0,35.6' fill='none' stroke='#db2777' stroke-width='2.5'/><circle cx='36.0' cy='103.6' r='3.5' fill='#db2777'/><text x='36.0' y='95.6' font-size='10' text-anchor='middle' fill='#db2777'>40</text><circle cx='98.0' cy='92.7' r='3.5' fill='#db2777'/><text x='98.0' y='84.7' font-size='10' text-anchor='middle' fill='#db2777'>48</text><circle cx='160.0' cy='96.8' r='3.5' fill='#db2777'/><text x='160.0' y='88.8' font-size='10' text-anchor='middle' fill='#db2777'>45</text><circle cx='222.0' cy='76.4' r='3.5' fill='#db2777'/><text x='222.0' y='68.4' font-size='10' text-anchor='middle' fill='#db2777'>60</text><circle cx='284.0' cy='60.1' r='3.5' fill='#db2777'/><text x='284.0' y='52.1' font-size='10' text-anchor='middle' fill='#db2777'>72</text><circle cx='346.0' cy='35.6' r='3.5' fill='#db2777'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#db2777'>90</text><polyline points='36.0,90.0 98.0,96.8 160.0,84.6 222.0,72.3 284.0,62.8 346.0,43.8' fill='none' stroke='#0891b2' stroke-width='2.5'/><circle cx='36.0' cy='90.0' r='3.5' fill='#0891b2'/><text x='36.0' y='104.0' font-size='10' text-anchor='middle' fill='#0891b2'>50</text><circle cx='98.0' cy='96.8' r='3.5' fill='#0891b2'/><text x='98.0' y='110.8' font-size='10' text-anchor='middle' fill='#0891b2'>45</text><circle cx='160.0' cy='84.6' r='3.5' fill='#0891b2'/><text x='160.0' y='98.6' font-size='10' text-anchor='middle' fill='#0891b2'>54</text><circle cx='222.0' cy='72.3' r='3.5' fill='#0891b2'/><text x='222.0' y='86.3' font-size='10' text-anchor='middle' fill='#0891b2'>63</text><circle cx='284.0' cy='62.8' r='3.5' fill='#0891b2'/><text x='284.0' y='76.8' font-size='10' text-anchor='middle' fill='#0891b2'>70</text><circle cx='346.0' cy='43.8' r='3.5' fill='#0891b2'/><text x='346.0' y='57.8' font-size='10' text-anchor='middle' fill='#0891b2'>84</text><text x='36.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2020</text><text x='98.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2021</text><text x='160.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2022</text><text x='222.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2023</text><text x='284.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2024</text><text x='346.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2025</text></svg>",
+    "set": "line-exports-b8"
+   },
+   {
+    "id": "D126",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Easy",
+    "question": "What was the qualifying percentage in 2022?",
+    "options": [
+     "37.5%",
+     "35%",
+     "40%",
+     "42.5%"
+    ],
+    "answer": 0,
+    "solution": "27/72 × 100 = 37.5%.",
+    "data": "<b>Candidates who appeared and qualified in an exam (hundreds)</b><div style='font-size:.85rem'><span style='color:#4f46e5;margin-right:1em'>● Appeared</span><span style='color:#16a34a;margin-right:1em'>● Qualified</span></div><svg viewBox='0 0 360 180' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='158.0' y2='158.0' stroke='#e2e8f0'/><text x='30' y='162.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='130.8' y2='130.8' stroke='#e2e8f0'/><text x='30' y='134.8' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='103.6' y2='103.6' stroke='#e2e8f0'/><text x='30' y='107.6' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='76.4' y2='76.4' stroke='#e2e8f0'/><text x='30' y='80.4' font-size='10' text-anchor='end' fill='#64748b'>60</text><line x1='36' x2='350' y1='49.2' y2='49.2' stroke='#e2e8f0'/><text x='30' y='53.2' font-size='10' text-anchor='end' fill='#64748b'>80</text><line x1='36' x2='350' y1='22.0' y2='22.0' stroke='#e2e8f0'/><text x='30' y='26.0' font-size='10' text-anchor='end' fill='#64748b'>100</text><polyline points='36.0,90.0 98.0,76.4 160.0,71.0 222.0,60.1 284.0,49.2 346.0,35.6' fill='none' stroke='#4f46e5' stroke-width='2.5'/><circle cx='36.0' cy='90.0' r='3.5' fill='#4f46e5'/><text x='36.0' y='82.0' font-size='10' text-anchor='middle' fill='#4f46e5'>50</text><circle cx='98.0' cy='76.4' r='3.5' fill='#4f46e5'/><text x='98.0' y='68.4' font-size='10' text-anchor='middle' fill='#4f46e5'>60</text><circle cx='160.0' cy='71.0' r='3.5' fill='#4f46e5'/><text x='160.0' y='63.0' font-size='10' text-anchor='middle' fill='#4f46e5'>64</text><circle cx='222.0' cy='60.1' r='3.5' fill='#4f46e5'/><text x='222.0' y='52.1' font-size='10' text-anchor='middle' fill='#4f46e5'>72</text><circle cx='284.0' cy='49.2' r='3.5' fill='#4f46e5'/><text x='284.0' y='41.2' font-size='10' text-anchor='middle' fill='#4f46e5'>80</text><circle cx='346.0' cy='35.6' r='3.5' fill='#4f46e5'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#4f46e5'>90</text><polyline points='36.0,130.8 98.0,129.4 160.0,114.5 222.0,121.3 284.0,109.0 346.0,96.8' fill='none' stroke='#16a34a' stroke-width='2.5'/><circle cx='36.0' cy='130.8' r='3.5' fill='#16a34a'/><text x='36.0' y='144.8' font-size='10' text-anchor='middle' fill='#16a34a'>20</text><circle cx='98.0' cy='129.4' r='3.5' fill='#16a34a'/><text x='98.0' y='143.4' font-size='10' text-anchor='middle' fill='#16a34a'>21</text><circle cx='160.0' cy='114.5' r='3.5' fill='#16a34a'/><text x='160.0' y='128.5' font-size='10' text-anchor='middle' fill='#16a34a'>32</text><circle cx='222.0' cy='121.3' r='3.5' fill='#16a34a'/><text x='222.0' y='135.3' font-size='10' text-anchor='middle' fill='#16a34a'>27</text><circle cx='284.0' cy='109.0' r='3.5' fill='#16a34a'/><text x='284.0' y='123.0' font-size='10' text-anchor='middle' fill='#16a34a'>36</text><circle cx='346.0' cy='96.8' r='3.5' fill='#16a34a'/><text x='346.0' y='110.8' font-size='10' text-anchor='middle' fill='#16a34a'>45</text><text x='36.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2019</text><text x='98.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2020</text><text x='160.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2021</text><text x='222.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2022</text><text x='284.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2023</text><text x='346.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2024</text></svg>",
+    "set": "line-exam-b8"
+   },
+   {
+    "id": "D127",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "In which year was the qualifying percentage the lowest?",
+    "options": [
+     "2019",
+     "2023",
+     "2022",
+     "2020"
+    ],
+    "answer": 3,
+    "solution": "Qualifying %: 2019 40%, 2020 21/60 = 35%, 2021 50%, 2022 37.5%, 2023 45%, 2024 50%. Lowest is 2020.",
+    "data": "<b>Candidates who appeared and qualified in an exam (hundreds)</b><div style='font-size:.85rem'><span style='color:#4f46e5;margin-right:1em'>● Appeared</span><span style='color:#16a34a;margin-right:1em'>● Qualified</span></div><svg viewBox='0 0 360 180' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='158.0' y2='158.0' stroke='#e2e8f0'/><text x='30' y='162.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='130.8' y2='130.8' stroke='#e2e8f0'/><text x='30' y='134.8' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='103.6' y2='103.6' stroke='#e2e8f0'/><text x='30' y='107.6' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='76.4' y2='76.4' stroke='#e2e8f0'/><text x='30' y='80.4' font-size='10' text-anchor='end' fill='#64748b'>60</text><line x1='36' x2='350' y1='49.2' y2='49.2' stroke='#e2e8f0'/><text x='30' y='53.2' font-size='10' text-anchor='end' fill='#64748b'>80</text><line x1='36' x2='350' y1='22.0' y2='22.0' stroke='#e2e8f0'/><text x='30' y='26.0' font-size='10' text-anchor='end' fill='#64748b'>100</text><polyline points='36.0,90.0 98.0,76.4 160.0,71.0 222.0,60.1 284.0,49.2 346.0,35.6' fill='none' stroke='#4f46e5' stroke-width='2.5'/><circle cx='36.0' cy='90.0' r='3.5' fill='#4f46e5'/><text x='36.0' y='82.0' font-size='10' text-anchor='middle' fill='#4f46e5'>50</text><circle cx='98.0' cy='76.4' r='3.5' fill='#4f46e5'/><text x='98.0' y='68.4' font-size='10' text-anchor='middle' fill='#4f46e5'>60</text><circle cx='160.0' cy='71.0' r='3.5' fill='#4f46e5'/><text x='160.0' y='63.0' font-size='10' text-anchor='middle' fill='#4f46e5'>64</text><circle cx='222.0' cy='60.1' r='3.5' fill='#4f46e5'/><text x='222.0' y='52.1' font-size='10' text-anchor='middle' fill='#4f46e5'>72</text><circle cx='284.0' cy='49.2' r='3.5' fill='#4f46e5'/><text x='284.0' y='41.2' font-size='10' text-anchor='middle' fill='#4f46e5'>80</text><circle cx='346.0' cy='35.6' r='3.5' fill='#4f46e5'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#4f46e5'>90</text><polyline points='36.0,130.8 98.0,129.4 160.0,114.5 222.0,121.3 284.0,109.0 346.0,96.8' fill='none' stroke='#16a34a' stroke-width='2.5'/><circle cx='36.0' cy='130.8' r='3.5' fill='#16a34a'/><text x='36.0' y='144.8' font-size='10' text-anchor='middle' fill='#16a34a'>20</text><circle cx='98.0' cy='129.4' r='3.5' fill='#16a34a'/><text x='98.0' y='143.4' font-size='10' text-anchor='middle' fill='#16a34a'>21</text><circle cx='160.0' cy='114.5' r='3.5' fill='#16a34a'/><text x='160.0' y='128.5' font-size='10' text-anchor='middle' fill='#16a34a'>32</text><circle cx='222.0' cy='121.3' r='3.5' fill='#16a34a'/><text x='222.0' y='135.3' font-size='10' text-anchor='middle' fill='#16a34a'>27</text><circle cx='284.0' cy='109.0' r='3.5' fill='#16a34a'/><text x='284.0' y='123.0' font-size='10' text-anchor='middle' fill='#16a34a'>36</text><circle cx='346.0' cy='96.8' r='3.5' fill='#16a34a'/><text x='346.0' y='110.8' font-size='10' text-anchor='middle' fill='#16a34a'>45</text><text x='36.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2019</text><text x='98.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2020</text><text x='160.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2021</text><text x='222.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2022</text><text x='284.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2023</text><text x='346.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2024</text></svg>",
+    "set": "line-exam-b8"
+   },
+   {
+    "id": "D128",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "In how many years was the qualifying percentage 45% or more?",
+    "options": [
+     "2",
+     "3",
+     "4",
+     "5"
+    ],
+    "answer": 1,
+    "solution": "2021 (32/64 = 50%), 2023 (36/80 = 45%) and 2024 (45/90 = 50%). So 3 years.",
+    "data": "<b>Candidates who appeared and qualified in an exam (hundreds)</b><div style='font-size:.85rem'><span style='color:#4f46e5;margin-right:1em'>● Appeared</span><span style='color:#16a34a;margin-right:1em'>● Qualified</span></div><svg viewBox='0 0 360 180' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='158.0' y2='158.0' stroke='#e2e8f0'/><text x='30' y='162.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='130.8' y2='130.8' stroke='#e2e8f0'/><text x='30' y='134.8' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='103.6' y2='103.6' stroke='#e2e8f0'/><text x='30' y='107.6' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='76.4' y2='76.4' stroke='#e2e8f0'/><text x='30' y='80.4' font-size='10' text-anchor='end' fill='#64748b'>60</text><line x1='36' x2='350' y1='49.2' y2='49.2' stroke='#e2e8f0'/><text x='30' y='53.2' font-size='10' text-anchor='end' fill='#64748b'>80</text><line x1='36' x2='350' y1='22.0' y2='22.0' stroke='#e2e8f0'/><text x='30' y='26.0' font-size='10' text-anchor='end' fill='#64748b'>100</text><polyline points='36.0,90.0 98.0,76.4 160.0,71.0 222.0,60.1 284.0,49.2 346.0,35.6' fill='none' stroke='#4f46e5' stroke-width='2.5'/><circle cx='36.0' cy='90.0' r='3.5' fill='#4f46e5'/><text x='36.0' y='82.0' font-size='10' text-anchor='middle' fill='#4f46e5'>50</text><circle cx='98.0' cy='76.4' r='3.5' fill='#4f46e5'/><text x='98.0' y='68.4' font-size='10' text-anchor='middle' fill='#4f46e5'>60</text><circle cx='160.0' cy='71.0' r='3.5' fill='#4f46e5'/><text x='160.0' y='63.0' font-size='10' text-anchor='middle' fill='#4f46e5'>64</text><circle cx='222.0' cy='60.1' r='3.5' fill='#4f46e5'/><text x='222.0' y='52.1' font-size='10' text-anchor='middle' fill='#4f46e5'>72</text><circle cx='284.0' cy='49.2' r='3.5' fill='#4f46e5'/><text x='284.0' y='41.2' font-size='10' text-anchor='middle' fill='#4f46e5'>80</text><circle cx='346.0' cy='35.6' r='3.5' fill='#4f46e5'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#4f46e5'>90</text><polyline points='36.0,130.8 98.0,129.4 160.0,114.5 222.0,121.3 284.0,109.0 346.0,96.8' fill='none' stroke='#16a34a' stroke-width='2.5'/><circle cx='36.0' cy='130.8' r='3.5' fill='#16a34a'/><text x='36.0' y='144.8' font-size='10' text-anchor='middle' fill='#16a34a'>20</text><circle cx='98.0' cy='129.4' r='3.5' fill='#16a34a'/><text x='98.0' y='143.4' font-size='10' text-anchor='middle' fill='#16a34a'>21</text><circle cx='160.0' cy='114.5' r='3.5' fill='#16a34a'/><text x='160.0' y='128.5' font-size='10' text-anchor='middle' fill='#16a34a'>32</text><circle cx='222.0' cy='121.3' r='3.5' fill='#16a34a'/><text x='222.0' y='135.3' font-size='10' text-anchor='middle' fill='#16a34a'>27</text><circle cx='284.0' cy='109.0' r='3.5' fill='#16a34a'/><text x='284.0' y='123.0' font-size='10' text-anchor='middle' fill='#16a34a'>36</text><circle cx='346.0' cy='96.8' r='3.5' fill='#16a34a'/><text x='346.0' y='110.8' font-size='10' text-anchor='middle' fill='#16a34a'>45</text><text x='36.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2019</text><text x='98.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2020</text><text x='160.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2021</text><text x='222.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2022</text><text x='284.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2023</text><text x='346.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2024</text></svg>",
+    "set": "line-exam-b8"
+   },
+   {
+    "id": "D129",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Medium",
+    "question": "How many candidates in all failed to qualify over the six years?",
+    "options": [
+     "23,500",
+     "22,500",
+     "24,500",
+     "25,000"
+    ],
+    "answer": 0,
+    "solution": "Appeared = 416 hundred, qualified = 181 hundred. Not qualified = 235 hundred = 23,500.",
+    "data": "<b>Candidates who appeared and qualified in an exam (hundreds)</b><div style='font-size:.85rem'><span style='color:#4f46e5;margin-right:1em'>● Appeared</span><span style='color:#16a34a;margin-right:1em'>● Qualified</span></div><svg viewBox='0 0 360 180' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='158.0' y2='158.0' stroke='#e2e8f0'/><text x='30' y='162.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='130.8' y2='130.8' stroke='#e2e8f0'/><text x='30' y='134.8' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='103.6' y2='103.6' stroke='#e2e8f0'/><text x='30' y='107.6' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='76.4' y2='76.4' stroke='#e2e8f0'/><text x='30' y='80.4' font-size='10' text-anchor='end' fill='#64748b'>60</text><line x1='36' x2='350' y1='49.2' y2='49.2' stroke='#e2e8f0'/><text x='30' y='53.2' font-size='10' text-anchor='end' fill='#64748b'>80</text><line x1='36' x2='350' y1='22.0' y2='22.0' stroke='#e2e8f0'/><text x='30' y='26.0' font-size='10' text-anchor='end' fill='#64748b'>100</text><polyline points='36.0,90.0 98.0,76.4 160.0,71.0 222.0,60.1 284.0,49.2 346.0,35.6' fill='none' stroke='#4f46e5' stroke-width='2.5'/><circle cx='36.0' cy='90.0' r='3.5' fill='#4f46e5'/><text x='36.0' y='82.0' font-size='10' text-anchor='middle' fill='#4f46e5'>50</text><circle cx='98.0' cy='76.4' r='3.5' fill='#4f46e5'/><text x='98.0' y='68.4' font-size='10' text-anchor='middle' fill='#4f46e5'>60</text><circle cx='160.0' cy='71.0' r='3.5' fill='#4f46e5'/><text x='160.0' y='63.0' font-size='10' text-anchor='middle' fill='#4f46e5'>64</text><circle cx='222.0' cy='60.1' r='3.5' fill='#4f46e5'/><text x='222.0' y='52.1' font-size='10' text-anchor='middle' fill='#4f46e5'>72</text><circle cx='284.0' cy='49.2' r='3.5' fill='#4f46e5'/><text x='284.0' y='41.2' font-size='10' text-anchor='middle' fill='#4f46e5'>80</text><circle cx='346.0' cy='35.6' r='3.5' fill='#4f46e5'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#4f46e5'>90</text><polyline points='36.0,130.8 98.0,129.4 160.0,114.5 222.0,121.3 284.0,109.0 346.0,96.8' fill='none' stroke='#16a34a' stroke-width='2.5'/><circle cx='36.0' cy='130.8' r='3.5' fill='#16a34a'/><text x='36.0' y='144.8' font-size='10' text-anchor='middle' fill='#16a34a'>20</text><circle cx='98.0' cy='129.4' r='3.5' fill='#16a34a'/><text x='98.0' y='143.4' font-size='10' text-anchor='middle' fill='#16a34a'>21</text><circle cx='160.0' cy='114.5' r='3.5' fill='#16a34a'/><text x='160.0' y='128.5' font-size='10' text-anchor='middle' fill='#16a34a'>32</text><circle cx='222.0' cy='121.3' r='3.5' fill='#16a34a'/><text x='222.0' y='135.3' font-size='10' text-anchor='middle' fill='#16a34a'>27</text><circle cx='284.0' cy='109.0' r='3.5' fill='#16a34a'/><text x='284.0' y='123.0' font-size='10' text-anchor='middle' fill='#16a34a'>36</text><circle cx='346.0' cy='96.8' r='3.5' fill='#16a34a'/><text x='346.0' y='110.8' font-size='10' text-anchor='middle' fill='#16a34a'>45</text><text x='36.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2019</text><text x='98.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2020</text><text x='160.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2021</text><text x='222.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2022</text><text x='284.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2023</text><text x='346.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2024</text></svg>",
+    "set": "line-exam-b8"
+   },
+   {
+    "id": "D130",
+    "exam": "general",
+    "topic": "Line Graphs",
+    "difficulty": "Hard",
+    "question": "By what percentage did the number of qualified candidates rise from 2019 to 2024?",
+    "options": [
+     "125%",
+     "112.5%",
+     "100%",
+     "150%"
+    ],
+    "answer": 0,
+    "solution": "20 → 45 hundred. Rise = 25/20 × 100 = 125%.",
+    "data": "<b>Candidates who appeared and qualified in an exam (hundreds)</b><div style='font-size:.85rem'><span style='color:#4f46e5;margin-right:1em'>● Appeared</span><span style='color:#16a34a;margin-right:1em'>● Qualified</span></div><svg viewBox='0 0 360 180' style='width:100%;max-width:420px;display:block'><line x1='36' x2='350' y1='158.0' y2='158.0' stroke='#e2e8f0'/><text x='30' y='162.0' font-size='10' text-anchor='end' fill='#64748b'>0</text><line x1='36' x2='350' y1='130.8' y2='130.8' stroke='#e2e8f0'/><text x='30' y='134.8' font-size='10' text-anchor='end' fill='#64748b'>20</text><line x1='36' x2='350' y1='103.6' y2='103.6' stroke='#e2e8f0'/><text x='30' y='107.6' font-size='10' text-anchor='end' fill='#64748b'>40</text><line x1='36' x2='350' y1='76.4' y2='76.4' stroke='#e2e8f0'/><text x='30' y='80.4' font-size='10' text-anchor='end' fill='#64748b'>60</text><line x1='36' x2='350' y1='49.2' y2='49.2' stroke='#e2e8f0'/><text x='30' y='53.2' font-size='10' text-anchor='end' fill='#64748b'>80</text><line x1='36' x2='350' y1='22.0' y2='22.0' stroke='#e2e8f0'/><text x='30' y='26.0' font-size='10' text-anchor='end' fill='#64748b'>100</text><polyline points='36.0,90.0 98.0,76.4 160.0,71.0 222.0,60.1 284.0,49.2 346.0,35.6' fill='none' stroke='#4f46e5' stroke-width='2.5'/><circle cx='36.0' cy='90.0' r='3.5' fill='#4f46e5'/><text x='36.0' y='82.0' font-size='10' text-anchor='middle' fill='#4f46e5'>50</text><circle cx='98.0' cy='76.4' r='3.5' fill='#4f46e5'/><text x='98.0' y='68.4' font-size='10' text-anchor='middle' fill='#4f46e5'>60</text><circle cx='160.0' cy='71.0' r='3.5' fill='#4f46e5'/><text x='160.0' y='63.0' font-size='10' text-anchor='middle' fill='#4f46e5'>64</text><circle cx='222.0' cy='60.1' r='3.5' fill='#4f46e5'/><text x='222.0' y='52.1' font-size='10' text-anchor='middle' fill='#4f46e5'>72</text><circle cx='284.0' cy='49.2' r='3.5' fill='#4f46e5'/><text x='284.0' y='41.2' font-size='10' text-anchor='middle' fill='#4f46e5'>80</text><circle cx='346.0' cy='35.6' r='3.5' fill='#4f46e5'/><text x='346.0' y='27.6' font-size='10' text-anchor='middle' fill='#4f46e5'>90</text><polyline points='36.0,130.8 98.0,129.4 160.0,114.5 222.0,121.3 284.0,109.0 346.0,96.8' fill='none' stroke='#16a34a' stroke-width='2.5'/><circle cx='36.0' cy='130.8' r='3.5' fill='#16a34a'/><text x='36.0' y='144.8' font-size='10' text-anchor='middle' fill='#16a34a'>20</text><circle cx='98.0' cy='129.4' r='3.5' fill='#16a34a'/><text x='98.0' y='143.4' font-size='10' text-anchor='middle' fill='#16a34a'>21</text><circle cx='160.0' cy='114.5' r='3.5' fill='#16a34a'/><text x='160.0' y='128.5' font-size='10' text-anchor='middle' fill='#16a34a'>32</text><circle cx='222.0' cy='121.3' r='3.5' fill='#16a34a'/><text x='222.0' y='135.3' font-size='10' text-anchor='middle' fill='#16a34a'>27</text><circle cx='284.0' cy='109.0' r='3.5' fill='#16a34a'/><text x='284.0' y='123.0' font-size='10' text-anchor='middle' fill='#16a34a'>36</text><circle cx='346.0' cy='96.8' r='3.5' fill='#16a34a'/><text x='346.0' y='110.8' font-size='10' text-anchor='middle' fill='#16a34a'>45</text><text x='36.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2019</text><text x='98.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2020</text><text x='160.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2021</text><text x='222.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2022</text><text x='284.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2023</text><text x='346.0' y='176' font-size='10' text-anchor='middle' fill='#64748b'>2024</text></svg>",
+    "set": "line-exam-b8"
+   },
+   {
+    "id": "D131",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Easy",
+    "question": "How many girls are in the Commerce stream?",
+    "options": [
+     "168",
+     "148",
+     "176",
+     "252"
+    ],
+    "answer": 0,
+    "solution": "Boys = 700, girls = 500. Science = 540 (boys 300, girls 240), Commerce = 420 (girls 168, boys 252), Arts = 240. Commerce girls = 40% of 420 = 168.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A school has 1,200 senior students; boys and girls are in the ratio 7 : 5. Each student is in exactly one stream: Science (45% of students), Commerce (35%) or Arts (the rest). In Science, boys and girls are in the ratio 5 : 4. In Commerce, 40% of the students are girls.</p>",
+    "set": "caselet-streams-b8"
+   },
+   {
+    "id": "D132",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Medium",
+    "question": "How many boys are in the Arts stream?",
+    "options": [
+     "92",
+     "132",
+     "148",
+     "160"
+    ],
+    "answer": 2,
+    "solution": "Boys = 700, girls = 500. Science = 540 (boys 300, girls 240), Commerce = 420 (girls 168, boys 252), Arts = 240. Arts girls = 500 − 240 − 168 = 92, so Arts boys = 240 − 92 = 148.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A school has 1,200 senior students; boys and girls are in the ratio 7 : 5. Each student is in exactly one stream: Science (45% of students), Commerce (35%) or Arts (the rest). In Science, boys and girls are in the ratio 5 : 4. In Commerce, 40% of the students are girls.</p>",
+    "set": "caselet-streams-b8"
+   },
+   {
+    "id": "D133",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Medium",
+    "question": "What percentage of the Arts students are girls (approximately)?",
+    "options": [
+     "38.3%",
+     "35.0%",
+     "40.0%",
+     "42.5%"
+    ],
+    "answer": 0,
+    "solution": "Boys = 700, girls = 500. Science = 540 (boys 300, girls 240), Commerce = 420 (girls 168, boys 252), Arts = 240. Arts girls = 500 − 240 − 168 = 92. 92/240 × 100 = 38.3%.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A school has 1,200 senior students; boys and girls are in the ratio 7 : 5. Each student is in exactly one stream: Science (45% of students), Commerce (35%) or Arts (the rest). In Science, boys and girls are in the ratio 5 : 4. In Commerce, 40% of the students are girls.</p>",
+    "set": "caselet-streams-b8"
+   },
+   {
+    "id": "D134",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Medium",
+    "question": "What is the ratio of boys in Science to boys in Commerce?",
+    "options": [
+     "5 : 4",
+     "25 : 21",
+     "6 : 5",
+     "20 : 17"
+    ],
+    "answer": 1,
+    "solution": "Boys = 700, girls = 500. Science = 540 (boys 300, girls 240), Commerce = 420 (girls 168, boys 252), Arts = 240. 300 : 252 = 25 : 21 (dividing by 12).",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A school has 1,200 senior students; boys and girls are in the ratio 7 : 5. Each student is in exactly one stream: Science (45% of students), Commerce (35%) or Arts (the rest). In Science, boys and girls are in the ratio 5 : 4. In Commerce, 40% of the students are girls.</p>",
+    "set": "caselet-streams-b8"
+   },
+   {
+    "id": "D135",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Hard",
+    "question": "If 60 boys move from Science to Arts, what percentage of the Arts stream will then be boys (approximately)?",
+    "options": [
+     "61.7%",
+     "65.0%",
+     "72.0%",
+     "69.3%"
+    ],
+    "answer": 3,
+    "solution": "Boys = 700, girls = 500. Science = 540 (boys 300, girls 240), Commerce = 420 (girls 168, boys 252), Arts = 240. Arts boys = 240 − 92 = 148. After the move: Arts boys = 148 + 60 = 208, Arts total = 240 + 60 = 300. 208/300 × 100 = 69.3%.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A school has 1,200 senior students; boys and girls are in the ratio 7 : 5. Each student is in exactly one stream: Science (45% of students), Commerce (35%) or Arts (the rest). In Science, boys and girls are in the ratio 5 : 4. In Commerce, 40% of the students are girls.</p>",
+    "set": "caselet-streams-b8"
+   },
+   {
+    "id": "D136",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Easy",
+    "question": "How many brand Q phones did shop Y sell?",
+    "options": [
+     "250",
+     "375",
+     "325",
+     "400"
+    ],
+    "answer": 1,
+    "solution": "X = 600, so Y + Z = 1200 with Y = Z + 50: Z = 575, Y = 625. Brand P: X 360, Y 250, so Z = 1000 − 360 − 250 = 390. Brand Q: X 240, Y 375, Z 185. Y's brand Q = 625 − 250 = 375.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>Three shops X, Y and Z together sold 1,800 phones of two brands, P and Q, in a month. X sold one-third of all the phones, and Y sold 50 more phones than Z. Brand P made up 60% of X's sales and 40% of Y's sales. In all, 1,000 phones of brand P were sold.</p>",
+    "set": "caselet-phones-b8"
+   },
+   {
+    "id": "D137",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Medium",
+    "question": "How many brand P phones did shop Z sell?",
+    "options": [
+     "360",
+     "375",
+     "410",
+     "390"
+    ],
+    "answer": 3,
+    "solution": "X = 600, so Y + Z = 1200 with Y = Z + 50: Z = 575, Y = 625. Brand P: X 360, Y 250, so Z = 1000 − 360 − 250 = 390. Brand Q: X 240, Y 375, Z 185.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>Three shops X, Y and Z together sold 1,800 phones of two brands, P and Q, in a month. X sold one-third of all the phones, and Y sold 50 more phones than Z. Brand P made up 60% of X's sales and 40% of Y's sales. In all, 1,000 phones of brand P were sold.</p>",
+    "set": "caselet-phones-b8"
+   },
+   {
+    "id": "D138",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Medium",
+    "question": "Which shop sold the most brand Q phones?",
+    "options": [
+     "Y",
+     "X",
+     "Z",
+     "X and Y equally"
+    ],
+    "answer": 0,
+    "solution": "X = 600, so Y + Z = 1200 with Y = Z + 50: Z = 575, Y = 625. Brand P: X 360, Y 250, so Z = 1000 − 360 − 250 = 390. Brand Q: X 240, Y 375, Z 185. So Y sold the most.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>Three shops X, Y and Z together sold 1,800 phones of two brands, P and Q, in a month. X sold one-third of all the phones, and Y sold 50 more phones than Z. Brand P made up 60% of X's sales and 40% of Y's sales. In all, 1,000 phones of brand P were sold.</p>",
+    "set": "caselet-phones-b8"
+   },
+   {
+    "id": "D139",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Medium",
+    "question": "Brand P made up roughly what percentage of shop Z's sales?",
+    "options": [
+     "62.5%",
+     "67.8%",
+     "65.2%",
+     "70.4%"
+    ],
+    "answer": 1,
+    "solution": "X = 600, so Y + Z = 1200 with Y = Z + 50: Z = 575, Y = 625. Brand P: X 360, Y 250, so Z = 1000 − 360 − 250 = 390. Brand Q: X 240, Y 375, Z 185. 390/575 × 100 = 67.8%.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>Three shops X, Y and Z together sold 1,800 phones of two brands, P and Q, in a month. X sold one-third of all the phones, and Y sold 50 more phones than Z. Brand P made up 60% of X's sales and 40% of Y's sales. In all, 1,000 phones of brand P were sold.</p>",
+    "set": "caselet-phones-b8"
+   },
+   {
+    "id": "D140",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Hard",
+    "question": "The profit is ₹1,500 on each brand P phone and ₹1,200 on each brand Q phone. What was shop X's total profit for the month?",
+    "options": [
+     "₹7,92,000",
+     "₹8,28,000",
+     "₹8,10,000",
+     "₹8,64,000"
+    ],
+    "answer": 1,
+    "solution": "X = 600 phones: P = 60% = 360, Q = 240. Profit = 360 × 1500 + 240 × 1200 = 540000 + 288000 = ₹8,28,000.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>Three shops X, Y and Z together sold 1,800 phones of two brands, P and Q, in a month. X sold one-third of all the phones, and Y sold 50 more phones than Z. Brand P made up 60% of X's sales and 40% of Y's sales. In all, 1,000 phones of brand P were sold.</p>",
+    "set": "caselet-phones-b8"
+   },
+   {
+    "id": "D141",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Medium",
+    "question": "Who lives in the West flat of floor 3?",
+    "options": [
+     "N",
+     "J",
+     "O",
+     "P"
+    ],
+    "answer": 1,
+    "solution": "Q is in floor 1 East, so L is in floor 2 East and N in floor 2 West. M is in an East flat with P directly below it, so M is in floor 4 East and P in floor 3 East. K takes floor 4 West. O must be below J in a West flat: the West flats left are on floors 3 and 1, so J is in floor 3 West and O in floor 1 West. So J.",
+    "data": "<b>Building puzzle</b><p style='margin:.3em 0 0'>Eight people J, K, L, M, N, O, P and Q live in a four-storey building (floor 1 is the lowest, floor 4 the top). Each floor has two flats, West and East, and each person lives in a different flat.<br>• K lives on the top floor.<br>• Q lives in the East flat of floor 1.<br>• L lives in the flat directly above Q's flat.<br>• P lives in the flat directly below M's flat, and M lives in an East flat.<br>• N lives on the same floor as L.<br>• O lives in a West flat on a floor below J's floor.</p>",
+    "set": "floors-flats-b8"
+   },
+   {
+    "id": "D142",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Easy",
+    "question": "Who lives on the same floor as O?",
+    "options": [
+     "N",
+     "Q",
+     "L",
+     "J"
+    ],
+    "answer": 1,
+    "solution": "Q is in floor 1 East, so L is in floor 2 East and N in floor 2 West. M is in an East flat with P directly below it, so M is in floor 4 East and P in floor 3 East. K takes floor 4 West. O must be below J in a West flat: the West flats left are on floors 3 and 1, so J is in floor 3 West and O in floor 1 West. O shares floor 1 with Q.",
+    "data": "<b>Building puzzle</b><p style='margin:.3em 0 0'>Eight people J, K, L, M, N, O, P and Q live in a four-storey building (floor 1 is the lowest, floor 4 the top). Each floor has two flats, West and East, and each person lives in a different flat.<br>• K lives on the top floor.<br>• Q lives in the East flat of floor 1.<br>• L lives in the flat directly above Q's flat.<br>• P lives in the flat directly below M's flat, and M lives in an East flat.<br>• N lives on the same floor as L.<br>• O lives in a West flat on a floor below J's floor.</p>",
+    "set": "floors-flats-b8"
+   },
+   {
+    "id": "D143",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Medium",
+    "question": "Who lives in the flat directly below K?",
+    "options": [
+     "P",
+     "J",
+     "N",
+     "O"
+    ],
+    "answer": 1,
+    "solution": "Q is in floor 1 East, so L is in floor 2 East and N in floor 2 West. M is in an East flat with P directly below it, so M is in floor 4 East and P in floor 3 East. K takes floor 4 West. O must be below J in a West flat: the West flats left are on floors 3 and 1, so J is in floor 3 West and O in floor 1 West. Below floor 4 West is floor 3 West: J.",
+    "data": "<b>Building puzzle</b><p style='margin:.3em 0 0'>Eight people J, K, L, M, N, O, P and Q live in a four-storey building (floor 1 is the lowest, floor 4 the top). Each floor has two flats, West and East, and each person lives in a different flat.<br>• K lives on the top floor.<br>• Q lives in the East flat of floor 1.<br>• L lives in the flat directly above Q's flat.<br>• P lives in the flat directly below M's flat, and M lives in an East flat.<br>• N lives on the same floor as L.<br>• O lives in a West flat on a floor below J's floor.</p>",
+    "set": "floors-flats-b8"
+   },
+   {
+    "id": "D144",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Medium",
+    "question": "On which floor does N live?",
+    "options": [
+     "2",
+     "1",
+     "3",
+     "4"
+    ],
+    "answer": 0,
+    "solution": "Q is in floor 1 East, so L is in floor 2 East and N in floor 2 West. M is in an East flat with P directly below it, so M is in floor 4 East and P in floor 3 East. K takes floor 4 West. O must be below J in a West flat: the West flats left are on floors 3 and 1, so J is in floor 3 West and O in floor 1 West. N is on floor 2.",
+    "data": "<b>Building puzzle</b><p style='margin:.3em 0 0'>Eight people J, K, L, M, N, O, P and Q live in a four-storey building (floor 1 is the lowest, floor 4 the top). Each floor has two flats, West and East, and each person lives in a different flat.<br>• K lives on the top floor.<br>• Q lives in the East flat of floor 1.<br>• L lives in the flat directly above Q's flat.<br>• P lives in the flat directly below M's flat, and M lives in an East flat.<br>• N lives on the same floor as L.<br>• O lives in a West flat on a floor below J's floor.</p>",
+    "set": "floors-flats-b8"
+   },
+   {
+    "id": "D145",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Hard",
+    "question": "Which of these groups lives entirely in East flats?",
+    "options": [
+     "M, L, Q",
+     "K, P, L",
+     "M, P, N",
+     "J, L, Q"
+    ],
+    "answer": 0,
+    "solution": "Q is in floor 1 East, so L is in floor 2 East and N in floor 2 West. M is in an East flat with P directly below it, so M is in floor 4 East and P in floor 3 East. K takes floor 4 West. O must be below J in a West flat: the West flats left are on floors 3 and 1, so J is in floor 3 West and O in floor 1 West. East flats from top: M, P, L, Q. Of the groups, only M, L, Q are all East.",
+    "data": "<b>Building puzzle</b><p style='margin:.3em 0 0'>Eight people J, K, L, M, N, O, P and Q live in a four-storey building (floor 1 is the lowest, floor 4 the top). Each floor has two flats, West and East, and each person lives in a different flat.<br>• K lives on the top floor.<br>• Q lives in the East flat of floor 1.<br>• L lives in the flat directly above Q's flat.<br>• P lives in the flat directly below M's flat, and M lives in an East flat.<br>• N lives on the same floor as L.<br>• O lives in a West flat on a floor below J's floor.</p>",
+    "set": "floors-flats-b8"
+   },
+   {
+    "id": "D146",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Medium",
+    "question": "Which colour does R like?",
+    "options": [
+     "Blue",
+     "Green",
+     "Pink",
+     "White"
+    ],
+    "answer": 3,
+    "solution": "V (Black) is at an end; T is second to its left and R second to T's left, so V cannot be at the left end: V is 6th, T 4th, R 2nd (counting from the left). S is at an end, so S is 1st. U and W take the 3rd and 5th seats. Pink is just right of W: if W were 5th, Pink would be V, who likes Black; so W is 3rd, U 5th and T likes Pink. Green is at an end, so S likes Green. White is just left of Blue: only R (2nd) and W (3rd) remain, so R likes White and W likes Blue. Order: S, R, W, T, U, V.",
+    "data": "<b>Row arrangement</b><p style='margin:.3em 0 0'>Six people R, S, T, U, V and W sit in a row facing north. Each likes a different colour: Red, Blue, Green, Black, White or Pink.<br>• V likes Black, and the person who likes Black sits at one end of the row.<br>• T sits second to the left of V.<br>• R sits second to the left of T.<br>• Exactly one person sits between U and W.<br>• S sits at one end of the row.<br>• The person who likes Pink sits immediately to the right of W.<br>• U likes Red.<br>• The person who likes White sits immediately to the left of the person who likes Blue.<br>• The person who likes Green sits at one end of the row.</p>",
+    "set": "row-colours-b8"
+   },
+   {
+    "id": "D147",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Easy",
+    "question": "Who likes Pink?",
+    "options": [
+     "W",
+     "U",
+     "T",
+     "S"
+    ],
+    "answer": 2,
+    "solution": "V (Black) is at an end; T is second to its left and R second to T's left, so V cannot be at the left end: V is 6th, T 4th, R 2nd (counting from the left). S is at an end, so S is 1st. U and W take the 3rd and 5th seats. Pink is just right of W: if W were 5th, Pink would be V, who likes Black; so W is 3rd, U 5th and T likes Pink. Green is at an end, so S likes Green. White is just left of Blue: only R (2nd) and W (3rd) remain, so R likes White and W likes Blue. Order: S, R, W, T, U, V.",
+    "data": "<b>Row arrangement</b><p style='margin:.3em 0 0'>Six people R, S, T, U, V and W sit in a row facing north. Each likes a different colour: Red, Blue, Green, Black, White or Pink.<br>• V likes Black, and the person who likes Black sits at one end of the row.<br>• T sits second to the left of V.<br>• R sits second to the left of T.<br>• Exactly one person sits between U and W.<br>• S sits at one end of the row.<br>• The person who likes Pink sits immediately to the right of W.<br>• U likes Red.<br>• The person who likes White sits immediately to the left of the person who likes Blue.<br>• The person who likes Green sits at one end of the row.</p>",
+    "set": "row-colours-b8"
+   },
+   {
+    "id": "D148",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Medium",
+    "question": "How many people sit between S and U?",
+    "options": [
+     "2",
+     "4",
+     "3",
+     "1"
+    ],
+    "answer": 2,
+    "solution": "V (Black) is at an end; T is second to its left and R second to T's left, so V cannot be at the left end: V is 6th, T 4th, R 2nd (counting from the left). S is at an end, so S is 1st. U and W take the 3rd and 5th seats. Pink is just right of W: if W were 5th, Pink would be V, who likes Black; so W is 3rd, U 5th and T likes Pink. Green is at an end, so S likes Green. White is just left of Blue: only R (2nd) and W (3rd) remain, so R likes White and W likes Blue. Order: S, R, W, T, U, V. Between S (1st) and U (5th) sit R, W and T: 3 people.",
+    "data": "<b>Row arrangement</b><p style='margin:.3em 0 0'>Six people R, S, T, U, V and W sit in a row facing north. Each likes a different colour: Red, Blue, Green, Black, White or Pink.<br>• V likes Black, and the person who likes Black sits at one end of the row.<br>• T sits second to the left of V.<br>• R sits second to the left of T.<br>• Exactly one person sits between U and W.<br>• S sits at one end of the row.<br>• The person who likes Pink sits immediately to the right of W.<br>• U likes Red.<br>• The person who likes White sits immediately to the left of the person who likes Blue.<br>• The person who likes Green sits at one end of the row.</p>",
+    "set": "row-colours-b8"
+   },
+   {
+    "id": "D149",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Medium",
+    "question": "Who sits immediately to the right of the person who likes Blue?",
+    "options": [
+     "R",
+     "T",
+     "U",
+     "V"
+    ],
+    "answer": 1,
+    "solution": "V (Black) is at an end; T is second to its left and R second to T's left, so V cannot be at the left end: V is 6th, T 4th, R 2nd (counting from the left). S is at an end, so S is 1st. U and W take the 3rd and 5th seats. Pink is just right of W: if W were 5th, Pink would be V, who likes Black; so W is 3rd, U 5th and T likes Pink. Green is at an end, so S likes Green. White is just left of Blue: only R (2nd) and W (3rd) remain, so R likes White and W likes Blue. Order: S, R, W, T, U, V. W likes Blue; T sits just to W's right.",
+    "data": "<b>Row arrangement</b><p style='margin:.3em 0 0'>Six people R, S, T, U, V and W sit in a row facing north. Each likes a different colour: Red, Blue, Green, Black, White or Pink.<br>• V likes Black, and the person who likes Black sits at one end of the row.<br>• T sits second to the left of V.<br>• R sits second to the left of T.<br>• Exactly one person sits between U and W.<br>• S sits at one end of the row.<br>• The person who likes Pink sits immediately to the right of W.<br>• U likes Red.<br>• The person who likes White sits immediately to the left of the person who likes Blue.<br>• The person who likes Green sits at one end of the row.</p>",
+    "set": "row-colours-b8"
+   },
+   {
+    "id": "D150",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Hard",
+    "question": "Which person and colour are correctly matched?",
+    "options": [
+     "U – Green",
+     "R – Pink",
+     "S – White",
+     "W – Blue"
+    ],
+    "answer": 3,
+    "solution": "V (Black) is at an end; T is second to its left and R second to T's left, so V cannot be at the left end: V is 6th, T 4th, R 2nd (counting from the left). S is at an end, so S is 1st. U and W take the 3rd and 5th seats. Pink is just right of W: if W were 5th, Pink would be V, who likes Black; so W is 3rd, U 5th and T likes Pink. Green is at an end, so S likes Green. White is just left of Blue: only R (2nd) and W (3rd) remain, so R likes White and W likes Blue. Order: S, R, W, T, U, V.",
+    "data": "<b>Row arrangement</b><p style='margin:.3em 0 0'>Six people R, S, T, U, V and W sit in a row facing north. Each likes a different colour: Red, Blue, Green, Black, White or Pink.<br>• V likes Black, and the person who likes Black sits at one end of the row.<br>• T sits second to the left of V.<br>• R sits second to the left of T.<br>• Exactly one person sits between U and W.<br>• S sits at one end of the row.<br>• The person who likes Pink sits immediately to the right of W.<br>• U likes Red.<br>• The person who likes White sits immediately to the left of the person who likes Blue.<br>• The person who likes Green sits at one end of the row.</p>",
+    "set": "row-colours-b8"
+   },
+   {
+    "id": "D151",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Easy",
+    "question": "How many matches in the league were drawn?",
+    "options": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "answer": 1,
+    "solution": "6 matches were played and 16 points were awarded. A decided match gives 3 points and a draw 2, so with d decided matches 3d + 2(6 − d) = 16, giving d = 4 and 2 draws. D has 0, so D lost all 3 matches. A = 7 = two wins + one draw, B = 5 = one win + two draws, C = 4 = one win + one draw. B's two draws must be against A and C (D drew nothing), so B beat D, C beat D, and A beat C.",
+    "data": "<b>League table</b><p style='margin:.3em 0 0'>Four teams A, B, C and D play a league in which each team plays every other team once. A win earns 3 points, a draw 1 point and a loss 0. The final points were A 7, B 5, C 4 and D 0.</p>",
+    "set": "league-four-b8"
+   },
+   {
+    "id": "D152",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Medium",
+    "question": "What was the result of the match between A and C?",
+    "options": [
+     "A won",
+     "C won",
+     "It was drawn",
+     "Cannot be determined"
+    ],
+    "answer": 0,
+    "solution": "6 matches were played and 16 points were awarded. A decided match gives 3 points and a draw 2, so with d decided matches 3d + 2(6 − d) = 16, giving d = 4 and 2 draws. D has 0, so D lost all 3 matches. A = 7 = two wins + one draw, B = 5 = one win + two draws, C = 4 = one win + one draw. B's two draws must be against A and C (D drew nothing), so B beat D, C beat D, and A beat C.",
+    "data": "<b>League table</b><p style='margin:.3em 0 0'>Four teams A, B, C and D play a league in which each team plays every other team once. A win earns 3 points, a draw 1 point and a loss 0. The final points were A 7, B 5, C 4 and D 0.</p>",
+    "fixed": true,
+    "set": "league-four-b8"
+   },
+   {
+    "id": "D153",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Medium",
+    "question": "Which team drew the most matches?",
+    "options": [
+     "A",
+     "C",
+     "B",
+     "D"
+    ],
+    "answer": 2,
+    "solution": "6 matches were played and 16 points were awarded. A decided match gives 3 points and a draw 2, so with d decided matches 3d + 2(6 − d) = 16, giving d = 4 and 2 draws. D has 0, so D lost all 3 matches. A = 7 = two wins + one draw, B = 5 = one win + two draws, C = 4 = one win + one draw. B's two draws must be against A and C (D drew nothing), so B beat D, C beat D, and A beat C. B drew 2 matches; A and C drew 1 each.",
+    "data": "<b>League table</b><p style='margin:.3em 0 0'>Four teams A, B, C and D play a league in which each team plays every other team once. A win earns 3 points, a draw 1 point and a loss 0. The final points were A 7, B 5, C 4 and D 0.</p>",
+    "set": "league-four-b8"
+   },
+   {
+    "id": "D154",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Medium",
+    "question": "Against which team did C record its only win?",
+    "options": [
+     "D",
+     "B",
+     "A",
+     "C did not win any match"
+    ],
+    "answer": 0,
+    "solution": "6 matches were played and 16 points were awarded. A decided match gives 3 points and a draw 2, so with d decided matches 3d + 2(6 − d) = 16, giving d = 4 and 2 draws. D has 0, so D lost all 3 matches. A = 7 = two wins + one draw, B = 5 = one win + two draws, C = 4 = one win + one draw. B's two draws must be against A and C (D drew nothing), so B beat D, C beat D, and A beat C.",
+    "data": "<b>League table</b><p style='margin:.3em 0 0'>Four teams A, B, C and D play a league in which each team plays every other team once. A win earns 3 points, a draw 1 point and a loss 0. The final points were A 7, B 5, C 4 and D 0.</p>",
+    "set": "league-four-b8"
+   },
+   {
+    "id": "D155",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Hard",
+    "question": "If the same results were scored with 2 points for a win (draw 1, loss 0), how many points would B have?",
+    "options": [
+     "3",
+     "5",
+     "4",
+     "6"
+    ],
+    "answer": 2,
+    "solution": "6 matches were played and 16 points were awarded. A decided match gives 3 points and a draw 2, so with d decided matches 3d + 2(6 − d) = 16, giving d = 4 and 2 draws. D has 0, so D lost all 3 matches. A = 7 = two wins + one draw, B = 5 = one win + two draws, C = 4 = one win + one draw. B's two draws must be against A and C (D drew nothing), so B beat D, C beat D, and A beat C. B has 1 win and 2 draws: 2 + 1 + 1 = 4.",
+    "data": "<b>League table</b><p style='margin:.3em 0 0'>Four teams A, B, C and D play a league in which each team plays every other team once. A win earns 3 points, a draw 1 point and a loss 0. The final points were A 7, B 5, C 4 and D 0.</p>",
+    "set": "league-four-b8"
+   },
+   {
+    "id": "D156",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Easy",
+    "question": "How many players get a bye in round 1?",
+    "options": [
+     "8",
+     "16",
+     "24",
+     "32"
+    ],
+    "answer": 2,
+    "solution": "The next power of 2 above 40 is 64. Byes = 64 − 40 = 24.",
+    "data": "<b>Knockout draw</b><p style='margin:.3em 0 0'>A badminton tournament has 40 players in a single-elimination (knockout) draw: every match has one winner, who goes on, and the loser is out. The draw is made up to the next power of 2 by giving byes in round 1 only (a player with a bye goes straight to round 2). The two semi-final losers also play one extra match for third place.</p>",
+    "set": "knockout-byes-b8"
+   },
+   {
+    "id": "D157",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Medium",
+    "question": "How many matches are played in round 1?",
+    "options": [
+     "8",
+     "12",
+     "16",
+     "20"
+    ],
+    "answer": 0,
+    "solution": "Byes = 64 − 40 = 24, so 40 − 24 = 16 players play in round 1, making 16/2 = 8 matches.",
+    "data": "<b>Knockout draw</b><p style='margin:.3em 0 0'>A badminton tournament has 40 players in a single-elimination (knockout) draw: every match has one winner, who goes on, and the loser is out. The draw is made up to the next power of 2 by giving byes in round 1 only (a player with a bye goes straight to round 2). The two semi-final losers also play one extra match for third place.</p>",
+    "set": "knockout-byes-b8"
+   },
+   {
+    "id": "D158",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Medium",
+    "question": "How many players take part in round 2?",
+    "options": [
+     "32",
+     "28",
+     "24",
+     "36"
+    ],
+    "answer": 0,
+    "solution": "The 24 bye players join the 8 winners of round 1: 24 + 8 = 32.",
+    "data": "<b>Knockout draw</b><p style='margin:.3em 0 0'>A badminton tournament has 40 players in a single-elimination (knockout) draw: every match has one winner, who goes on, and the loser is out. The draw is made up to the next power of 2 by giving byes in round 1 only (a player with a bye goes straight to round 2). The two semi-final losers also play one extra match for third place.</p>",
+    "set": "knockout-byes-b8"
+   },
+   {
+    "id": "D159",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Medium",
+    "question": "How many rounds does the knockout need to produce a champion?",
+    "options": [
+     "6",
+     "5",
+     "7",
+     "8"
+    ],
+    "answer": 0,
+    "solution": "The draw has 64 = 2^6 slots, so 6 rounds (64 → 32 → 16 → 8 → 4 → 2 → 1).",
+    "data": "<b>Knockout draw</b><p style='margin:.3em 0 0'>A badminton tournament has 40 players in a single-elimination (knockout) draw: every match has one winner, who goes on, and the loser is out. The draw is made up to the next power of 2 by giving byes in round 1 only (a player with a bye goes straight to round 2). The two semi-final losers also play one extra match for third place.</p>",
+    "set": "knockout-byes-b8"
+   },
+   {
+    "id": "D160",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Hard",
+    "question": "How many matches are played in the whole tournament, including the third-place match?",
+    "options": [
+     "39",
+     "63",
+     "41",
+     "40"
+    ],
+    "answer": 3,
+    "solution": "Every knockout match eliminates exactly one player, and 39 of the 40 players must be eliminated: 39 matches. Adding the third-place match gives 40.",
+    "data": "<b>Knockout draw</b><p style='margin:.3em 0 0'>A badminton tournament has 40 players in a single-elimination (knockout) draw: every match has one winner, who goes on, and the loser is out. The draw is made up to the next power of 2 by giving byes in round 1 only (a player with a bye goes straight to round 2). The two semi-final losers also play one extra match for third place.</p>",
+    "set": "knockout-byes-b8"
+   },
+   {
+    "id": "D161",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Easy",
+    "question": "How many people read none of the three newspapers?",
+    "options": [
+     "95",
+     "105",
+     "115",
+     "125"
+    ],
+    "answer": 1,
+    "solution": "At least one = 205 + 180 + 145 − 60 − 50 − 45 + 20 = 395. None = 500 − 395 = 105.",
+    "data": "<b>Survey</b><p style='margin:.3em 0 0'>500 people were asked which of three newspapers A, B and C they read. 205 read A, 180 read B and 145 read C. 60 read both A and B, 50 read both B and C, 45 read both A and C, and 20 read all three.</p>",
+    "set": "venn-papers-b8"
+   },
+   {
+    "id": "D162",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Medium",
+    "question": "How many people read exactly one newspaper?",
+    "options": [
+     "260",
+     "270",
+     "280",
+     "290"
+    ],
+    "answer": 2,
+    "solution": "Only A and B = 60 − 20 = 40, only B and C = 50 − 20 = 30, only A and C = 45 − 20 = 25. Only A = 205 − 40 − 25 − 20 = 120, only B = 180 − 40 − 30 − 20 = 90, only C = 145 − 30 − 25 − 20 = 70. Exactly one = 120 + 90 + 70 = 280.",
+    "data": "<b>Survey</b><p style='margin:.3em 0 0'>500 people were asked which of three newspapers A, B and C they read. 205 read A, 180 read B and 145 read C. 60 read both A and B, 50 read both B and C, 45 read both A and C, and 20 read all three.</p>",
+    "set": "venn-papers-b8"
+   },
+   {
+    "id": "D163",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Medium",
+    "question": "How many people read at least two newspapers?",
+    "options": [
+     "115",
+     "105",
+     "95",
+     "125"
+    ],
+    "answer": 0,
+    "solution": "Only A and B = 60 − 20 = 40, only B and C = 50 − 20 = 30, only A and C = 45 − 20 = 25. Only A = 205 − 40 − 25 − 20 = 120, only B = 180 − 40 − 30 − 20 = 90, only C = 145 − 30 − 25 − 20 = 70. At least two = 40 + 30 + 25 + 20 = 115.",
+    "data": "<b>Survey</b><p style='margin:.3em 0 0'>500 people were asked which of three newspapers A, B and C they read. 205 read A, 180 read B and 145 read C. 60 read both A and B, 50 read both B and C, 45 read both A and C, and 20 read all three.</p>",
+    "set": "venn-papers-b8"
+   },
+   {
+    "id": "D164",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Medium",
+    "question": "How many people read B but not C?",
+    "options": [
+     "110",
+     "130",
+     "120",
+     "140"
+    ],
+    "answer": 1,
+    "solution": "Only A and B = 60 − 20 = 40, only B and C = 50 − 20 = 30, only A and C = 45 − 20 = 25. Only A = 205 − 40 − 25 − 20 = 120, only B = 180 − 40 − 30 − 20 = 90, only C = 145 − 30 − 25 − 20 = 70. B but not C = only B + only A and B = 90 + 40 = 130.",
+    "data": "<b>Survey</b><p style='margin:.3em 0 0'>500 people were asked which of three newspapers A, B and C they read. 205 read A, 180 read B and 145 read C. 60 read both A and B, 50 read both B and C, 45 read both A and C, and 20 read all three.</p>",
+    "set": "venn-papers-b8"
+   },
+   {
+    "id": "D165",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Hard",
+    "question": "Among the readers of A, what percentage read only A (approximately)?",
+    "options": [
+     "52.4%",
+     "58.5%",
+     "55.6%",
+     "61.0%"
+    ],
+    "answer": 1,
+    "solution": "Only A and B = 60 − 20 = 40, only B and C = 50 − 20 = 30, only A and C = 45 − 20 = 25. Only A = 205 − 40 − 25 − 20 = 120, only B = 180 − 40 − 30 − 20 = 90, only C = 145 − 30 − 25 − 20 = 70. 120/205 × 100 = 58.5%.",
+    "data": "<b>Survey</b><p style='margin:.3em 0 0'>500 people were asked which of three newspapers A, B and C they read. 205 read A, 180 read B and 145 read C. 60 read both A and B, 50 read both B and C, 45 read both A and C, and 20 read all three.</p>",
+    "set": "venn-papers-b8"
+   },
+   {
+    "id": "D166",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Easy",
+    "question": "How many members play both games?",
+    "options": [
+     "14",
+     "18",
+     "16",
+     "20"
+    ],
+    "answer": 1,
+    "solution": "At least one game = 120 − 14 = 106. Both = 70 + 54 − 106 = 18.",
+    "data": "<b>Sports club</b><p style='margin:.3em 0 0'>A club has 120 members. 70 play cricket, 54 play football and 14 play neither game.</p>",
+    "set": "venn-club-b8"
+   },
+   {
+    "id": "D167",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Medium",
+    "question": "How many members play only cricket?",
+    "options": [
+     "48",
+     "52",
+     "56",
+     "60"
+    ],
+    "answer": 1,
+    "solution": "Both = 70 + 54 − (120 − 14) = 18. Only cricket = 70 − 18 = 52.",
+    "data": "<b>Sports club</b><p style='margin:.3em 0 0'>A club has 120 members. 70 play cricket, 54 play football and 14 play neither game.</p>",
+    "set": "venn-club-b8"
+   },
+   {
+    "id": "D168",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Medium",
+    "question": "How many members play exactly one of the two games?",
+    "options": [
+     "88",
+     "86",
+     "84",
+     "90"
+    ],
+    "answer": 0,
+    "solution": "Both = 70 + 54 − (120 − 14) = 18. Exactly one = (70 − 18) + (54 − 18) = 52 + 36 = 88.",
+    "data": "<b>Sports club</b><p style='margin:.3em 0 0'>A club has 120 members. 70 play cricket, 54 play football and 14 play neither game.</p>",
+    "set": "venn-club-b8"
+   },
+   {
+    "id": "D169",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Medium",
+    "question": "What percentage of the football players also play cricket (approximately)?",
+    "options": [
+     "25.7%",
+     "30.0%",
+     "36.0%",
+     "33.3%"
+    ],
+    "answer": 3,
+    "solution": "Both = 70 + 54 − (120 − 14) = 18. 18/54 × 100 = 33.3%.",
+    "data": "<b>Sports club</b><p style='margin:.3em 0 0'>A club has 120 members. 70 play cricket, 54 play football and 14 play neither game.</p>",
+    "set": "venn-club-b8"
+   },
+   {
+    "id": "D170",
+    "exam": "general",
+    "topic": "Venn Diagrams",
+    "difficulty": "Hard",
+    "question": "Suppose the number of members playing neither game were not known. What is the least possible number of members who play both games?",
+    "options": [
+     "4",
+     "0",
+     "14",
+     "18"
+    ],
+    "answer": 0,
+    "solution": "Members playing at least one game can be at most 120. Both = 70 + 54 − (at least one) ≥ 124 − 120 = 4.",
+    "data": "<b>Sports club</b><p style='margin:.3em 0 0'>A club has 120 members. 70 play cricket, 54 play football and 14 play neither game.</p>",
+    "set": "venn-club-b8"
+   },
+   {
+    "id": "D171",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Medium",
+    "question": "What is the shortest road distance from P to T?",
+    "options": [
+     "17 km",
+     "16 km",
+     "18 km",
+     "19 km"
+    ],
+    "answer": 0,
+    "solution": "P–Q–R–S–T = 5 + 3 + 4 + 5 = 17. Other routes, such as P–Q–R–T = 18 and P–R–S–T = 18, are longer.",
+    "data": "<b>Two-way roads between seven towns (km)</b><table class='data'><tr><th>Road</th><th>Length</th><th>Road</th><th>Length</th></tr><tr><td>P–Q</td><td>5</td><td>S–T</td><td>5</td></tr><tr><td>P–R</td><td>9</td><td>S–U</td><td>9</td></tr><tr><td>Q–R</td><td>3</td><td>T–U</td><td>3</td></tr><tr><td>Q–S</td><td>8</td><td>T–V</td><td>7</td></tr><tr><td>R–S</td><td>4</td><td>U–V</td><td>2</td></tr><tr><td>R–T</td><td>10</td><td></td><td></td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-seven-b8"
+   },
+   {
+    "id": "D172",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Medium",
+    "question": "What is the shortest road distance from P to V?",
+    "options": [
+     "22 km",
+     "21 km",
+     "23 km",
+     "24 km"
+    ],
+    "answer": 0,
+    "solution": "P–Q–R–S–T–U–V = 5 + 3 + 4 + 5 + 3 + 2 = 22. Every other route is at least 23 km (for example P–Q–R–S–U–V or P–R–S–T–U–V).",
+    "data": "<b>Two-way roads between seven towns (km)</b><table class='data'><tr><th>Road</th><th>Length</th><th>Road</th><th>Length</th></tr><tr><td>P–Q</td><td>5</td><td>S–T</td><td>5</td></tr><tr><td>P–R</td><td>9</td><td>S–U</td><td>9</td></tr><tr><td>Q–R</td><td>3</td><td>T–U</td><td>3</td></tr><tr><td>Q–S</td><td>8</td><td>T–V</td><td>7</td></tr><tr><td>R–S</td><td>4</td><td>U–V</td><td>2</td></tr><tr><td>R–T</td><td>10</td><td></td><td></td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-seven-b8"
+   },
+   {
+    "id": "D173",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Easy",
+    "question": "What is the shortest road distance from Q to U?",
+    "options": [
+     "14 km",
+     "16 km",
+     "15 km",
+     "17 km"
+    ],
+    "answer": 2,
+    "solution": "Q–R–S–T–U = 3 + 4 + 5 + 3 = 15. Every other route is at least 16 km (for example Q–S–T–U = 8 + 5 + 3 = 16).",
+    "data": "<b>Two-way roads between seven towns (km)</b><table class='data'><tr><th>Road</th><th>Length</th><th>Road</th><th>Length</th></tr><tr><td>P–Q</td><td>5</td><td>S–T</td><td>5</td></tr><tr><td>P–R</td><td>9</td><td>S–U</td><td>9</td></tr><tr><td>Q–R</td><td>3</td><td>T–U</td><td>3</td></tr><tr><td>Q–S</td><td>8</td><td>T–V</td><td>7</td></tr><tr><td>R–S</td><td>4</td><td>U–V</td><td>2</td></tr><tr><td>R–T</td><td>10</td><td></td><td></td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-seven-b8"
+   },
+   {
+    "id": "D174",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Hard",
+    "question": "If the road S–T is closed, by how many km does the shortest road distance from P to V increase?",
+    "options": [
+     "3 km",
+     "2 km",
+     "1 km",
+     "4 km"
+    ],
+    "answer": 2,
+    "solution": "With every road open, the best is P–Q–R–S–T–U–V = 5 + 3 + 4 + 5 + 3 + 2 = 22. Without S–T: P–Q–R–S–U–V = 5 + 3 + 4 + 9 + 2 = 23, and P–Q–R–T–U–V = 5 + 3 + 10 + 3 + 2 = 23 as well. Nothing shorter exists, so the increase is 23 − 22 = 1 km.",
+    "data": "<b>Two-way roads between seven towns (km)</b><table class='data'><tr><th>Road</th><th>Length</th><th>Road</th><th>Length</th></tr><tr><td>P–Q</td><td>5</td><td>S–T</td><td>5</td></tr><tr><td>P–R</td><td>9</td><td>S–U</td><td>9</td></tr><tr><td>Q–R</td><td>3</td><td>T–U</td><td>3</td></tr><tr><td>Q–S</td><td>8</td><td>T–V</td><td>7</td></tr><tr><td>R–S</td><td>4</td><td>U–V</td><td>2</td></tr><tr><td>R–T</td><td>10</td><td></td><td></td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-seven-b8"
+   },
+   {
+    "id": "D175",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Hard",
+    "question": "A truck must go from P to V without passing through town S. What is the shortest distance it can drive?",
+    "options": [
+     "23 km",
+     "22 km",
+     "21 km",
+     "25 km"
+    ],
+    "answer": 0,
+    "solution": "Avoiding S, the route must use R–T: P–Q–R–T–U–V = 5 + 3 + 10 + 3 + 2 = 23. P–R–T–U–V = 9 + 10 + 3 + 2 = 24 is longer.",
+    "data": "<b>Two-way roads between seven towns (km)</b><table class='data'><tr><th>Road</th><th>Length</th><th>Road</th><th>Length</th></tr><tr><td>P–Q</td><td>5</td><td>S–T</td><td>5</td></tr><tr><td>P–R</td><td>9</td><td>S–U</td><td>9</td></tr><tr><td>Q–R</td><td>3</td><td>T–U</td><td>3</td></tr><tr><td>Q–S</td><td>8</td><td>T–V</td><td>7</td></tr><tr><td>R–S</td><td>4</td><td>U–V</td><td>2</td></tr><tr><td>R–T</td><td>10</td><td></td><td></td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-seven-b8"
+   },
+   {
+    "id": "D176",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Medium",
+    "question": "What is the length of the shortest possible round?",
+    "options": [
+     "26 km",
+     "31 km",
+     "30 km",
+     "28 km"
+    ],
+    "answer": 3,
+    "solution": "Checking all 24 orders, the best is O–A–B–C–D–O = 6 + 5 + 4 + 6 + 7 = 28 (or the same round driven in reverse).",
+    "data": "<b>Delivery round</b><table class='data'><tr><th>km</th><th>O</th><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><th>O</th><td>–</td><td>6</td><td>8</td><td>10</td><td>7</td></tr><tr><th>A</th><td>6</td><td>–</td><td>5</td><td>9</td><td>11</td></tr><tr><th>B</th><td>8</td><td>5</td><td>–</td><td>4</td><td>12</td></tr><tr><th>C</th><td>10</td><td>9</td><td>4</td><td>–</td><td>6</td></tr><tr><th>D</th><td>7</td><td>11</td><td>12</td><td>6</td><td>–</td></tr></table><p style='margin:.3em 0 0'>A van starts at depot O, must visit each of the shops A, B, C and D exactly once, and return to O. The table gives the direct distance between every pair of places; the van always drives directly from one place to the next.</p>",
+    "set": "tour-depot-b8"
+   },
+   {
+    "id": "D177",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Easy",
+    "question": "What is the length of the round O–A–B–D–C–O?",
+    "options": [
+     "35 km",
+     "37 km",
+     "41 km",
+     "39 km"
+    ],
+    "answer": 3,
+    "solution": "6 + 5 + 12 + 6 + 10 = 39.",
+    "data": "<b>Delivery round</b><table class='data'><tr><th>km</th><th>O</th><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><th>O</th><td>–</td><td>6</td><td>8</td><td>10</td><td>7</td></tr><tr><th>A</th><td>6</td><td>–</td><td>5</td><td>9</td><td>11</td></tr><tr><th>B</th><td>8</td><td>5</td><td>–</td><td>4</td><td>12</td></tr><tr><th>C</th><td>10</td><td>9</td><td>4</td><td>–</td><td>6</td></tr><tr><th>D</th><td>7</td><td>11</td><td>12</td><td>6</td><td>–</td></tr></table><p style='margin:.3em 0 0'>A van starts at depot O, must visit each of the shops A, B, C and D exactly once, and return to O. The table gives the direct distance between every pair of places; the van always drives directly from one place to the next.</p>",
+    "set": "tour-depot-b8"
+   },
+   {
+    "id": "D178",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Medium",
+    "question": "On the shortest round, which two shops are visited one right after the other?",
+    "options": [
+     "A and C",
+     "B and D",
+     "C and D",
+     "A and D"
+    ],
+    "answer": 2,
+    "solution": "The shortest round is O–A–B–C–D–O (28 km), driven either way. Consecutive shops on it: A–B, B–C and C–D. Of the options, only C and D.",
+    "data": "<b>Delivery round</b><table class='data'><tr><th>km</th><th>O</th><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><th>O</th><td>–</td><td>6</td><td>8</td><td>10</td><td>7</td></tr><tr><th>A</th><td>6</td><td>–</td><td>5</td><td>9</td><td>11</td></tr><tr><th>B</th><td>8</td><td>5</td><td>–</td><td>4</td><td>12</td></tr><tr><th>C</th><td>10</td><td>9</td><td>4</td><td>–</td><td>6</td></tr><tr><th>D</th><td>7</td><td>11</td><td>12</td><td>6</td><td>–</td></tr></table><p style='margin:.3em 0 0'>A van starts at depot O, must visit each of the shops A, B, C and D exactly once, and return to O. The table gives the direct distance between every pair of places; the van always drives directly from one place to the next.</p>",
+    "set": "tour-depot-b8"
+   },
+   {
+    "id": "D179",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Medium",
+    "question": "Shop D is closed for the day, so the van visits only A, B and C. What is the shortest round now?",
+    "options": [
+     "21 km",
+     "23 km",
+     "25 km",
+     "27 km"
+    ],
+    "answer": 2,
+    "solution": "There are 3 different rounds (each can be driven either way): O–A–B–C–O = 6 + 5 + 4 + 10 = 25, O–A–C–B–O = 6 + 9 + 4 + 8 = 27, O–B–A–C–O = 8 + 5 + 9 + 10 = 32. Shortest = 25.",
+    "data": "<b>Delivery round</b><table class='data'><tr><th>km</th><th>O</th><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><th>O</th><td>–</td><td>6</td><td>8</td><td>10</td><td>7</td></tr><tr><th>A</th><td>6</td><td>–</td><td>5</td><td>9</td><td>11</td></tr><tr><th>B</th><td>8</td><td>5</td><td>–</td><td>4</td><td>12</td></tr><tr><th>C</th><td>10</td><td>9</td><td>4</td><td>–</td><td>6</td></tr><tr><th>D</th><td>7</td><td>11</td><td>12</td><td>6</td><td>–</td></tr></table><p style='margin:.3em 0 0'>A van starts at depot O, must visit each of the shops A, B, C and D exactly once, and return to O. The table gives the direct distance between every pair of places; the van always drives directly from one place to the next.</p>",
+    "set": "tour-depot-b8"
+   },
+   {
+    "id": "D180",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Hard",
+    "question": "All four shops are open again, but the direct road between B and C is closed, so the van cannot drive straight from B to C or from C to B. What is the shortest round now?",
+    "options": [
+     "35 km",
+     "33 km",
+     "32 km",
+     "39 km"
+    ],
+    "answer": 0,
+    "solution": "Among the 24 orders, drop every round that has B and C next to each other. The best remaining is O–B–A–C–D–O = 8 + 5 + 9 + 6 + 7 = 35 (or its reverse). The next best, O–A–B–D–C–O, is 6 + 5 + 12 + 6 + 10 = 39.",
+    "data": "<b>Delivery round</b><table class='data'><tr><th>km</th><th>O</th><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><th>O</th><td>–</td><td>6</td><td>8</td><td>10</td><td>7</td></tr><tr><th>A</th><td>6</td><td>–</td><td>5</td><td>9</td><td>11</td></tr><tr><th>B</th><td>8</td><td>5</td><td>–</td><td>4</td><td>12</td></tr><tr><th>C</th><td>10</td><td>9</td><td>4</td><td>–</td><td>6</td></tr><tr><th>D</th><td>7</td><td>11</td><td>12</td><td>6</td><td>–</td></tr></table><p style='margin:.3em 0 0'>A van starts at depot O, must visit each of the shops A, B, C and D exactly once, and return to O. The table gives the direct distance between every pair of places; the van always drives directly from one place to the next.</p>",
+    "set": "tour-depot-b8"
    }
   ]
  }
