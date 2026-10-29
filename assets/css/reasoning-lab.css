@@ -5,12 +5,16 @@
   --brand-soft: color-mix(in srgb, var(--brand) 12%, var(--card));
   --accent-soft: color-mix(in srgb, var(--accent) 22%, var(--card));
   --ok-soft: color-mix(in srgb, var(--ok) 14%, var(--card));
+  /* text-on-tint inks: the site's light --ok/--bad/--accent are too bright for small text on a tint (WCAG AA) */
+  --ok-ink: color-mix(in srgb, var(--ok) 55%, var(--ink));
+  --bad-ink: color-mix(in srgb, var(--bad) 70%, var(--ink));
+  --accent-ink: color-mix(in srgb, var(--accent) 50%, var(--ink));
   --bad-soft: color-mix(in srgb, var(--bad) 14%, var(--card));
   --red: #e11d48; --blue: #2563eb; --green: #059669; --unp: #dfe3ee;
   --radius: 14px; --shadow: 0 1px 2px rgba(15, 23, 42, .06), 0 6px 20px rgba(15, 23, 42, .06);
   --font: Inter, "Inter Fallback", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
 }
-:host(.dark) { --red: #fb7185; --blue: #60a5fa; --green: #34d399; --unp: #2a3550; --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 20px rgba(0, 0, 0, .25); }
+:host(.dark) { --ok-ink: var(--ok); --bad-ink: var(--bad); --accent-ink: color-mix(in srgb, var(--accent) 70%, var(--ink)); --red: #fb7185; --blue: #60a5fa; --green: #34d399; --unp: #2a3550; --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 20px rgba(0, 0, 0, .25); }
 .tbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; padding: 8px 10px; margin: 0 0 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
 .tbar .grow, .row .grow { flex: 1; }
 .tbar select { max-width: 100%; }
@@ -46,9 +50,9 @@ h3 { font-size: 16px; margin: 0 0 6px; }
 .btn.ghost { background: transparent; }
 .btn:disabled { opacity: .5; cursor: default; }
 .chip { display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; background: var(--brand-soft); color: var(--brand); }
-.chip.easy { background: var(--ok-soft); color: var(--ok); }
-.chip.medium { background: var(--accent-soft); color: color-mix(in srgb, var(--accent) 70%, var(--ink)); }
-.chip.hard { background: var(--bad-soft); color: var(--bad); }
+.chip.easy { background: var(--ok-soft); color: var(--ok-ink); }
+.chip.medium { background: var(--accent-soft); color: var(--accent-ink); }
+.chip.hard { background: var(--bad-soft); color: var(--bad-ink); }
 .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--card); }
 .seg button { border: 0; background: transparent; padding: 7px 12px; cursor: pointer; font-weight: 600; color: var(--muted); }
 .seg button[aria-pressed="true"] { background: var(--brand); color: #fff; }
@@ -84,8 +88,8 @@ h3 { font-size: 16px; margin: 0 0 6px; }
 .opt .ov { flex: 1; min-width: 0; }
 .opt svg { max-width: 100%; height: auto; display: block; }
 .verdict { font-weight: 700; padding: 8px 12px; border-radius: 10px; }
-.verdict.ok { background: var(--ok-soft); color: var(--ok); }
-.verdict.bad { background: var(--bad-soft); color: var(--bad); }
+.verdict.ok { background: var(--ok-soft); color: var(--ok-ink); }
+.verdict.bad { background: var(--bad-soft); color: var(--bad-ink); }
 .solve { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 14px; margin-top: 12px; }
 .steplist { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
 .steplist li { padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line); cursor: pointer; color: var(--muted); }
@@ -136,7 +140,7 @@ h3 { font-size: 16px; margin: 0 0 6px; }
 .dash { stroke-dasharray: 5 4; }
 .t { fill: var(--ink); font: 600 14px var(--font); }
 .t.sm { font-size: 11px; } .t.lg { font-size: 20px; } .t.xl { font-size: 28px; } .t.b { font-weight: 800; }
-.t.mu { fill: var(--muted); } .t.br { fill: var(--brand); } .t.ac { fill: color-mix(in srgb, var(--accent) 75%, var(--ink)); } .t.okc { fill: var(--ok); } .t.badc { fill: var(--bad); } .t.wh { fill: #fff; }
+.t.mu { fill: var(--muted); } .t.br { fill: var(--brand); } .t.ac { fill: color-mix(in srgb, var(--accent) 75%, var(--ink)); } .t.okc { fill: var(--ok-ink); } .t.badc { fill: var(--bad-ink); } .t.wh { fill: #fff; }
 .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 .anim-pop { animation: pop .35s ease both; }
 @keyframes pop { from { opacity: 0; transform: scale(.92); } to { opacity: 1; transform: none; } }

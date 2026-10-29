@@ -84,7 +84,7 @@
       const ob = optionsBlock(p, i => { if (sol) return; const ok = i === p.answerIndex; ob.mark(i); record(p, ok); verdict.className = 'verdict ' + (ok ? 'ok' : 'bad'); verdict.textContent = ok ? '✓ Correct!' : `✗ Not quite. The answer is ${String.fromCharCode(65 + p.answerIndex)}${p.options[p.answerIndex].label ? ' (' + p.options[p.answerIndex].label + ')' : ''}.`; reveal(); });
       const reveal = () => { if (sol) return; sol = stepper(p); solHost.appendChild(sol); showBtn.disabled = true; };
       const showBtn = btn('Show solution', 'ghost', () => { ob.mark(-1); reveal(); });
-      card.append(ob.el, H('div', { cls: 'row' }, [verdict, H('span', { cls: 'grow' }), showBtn, btn('Next question →', '', () => { fresh(); card.scrollIntoView ? null : null; })]), solHost); area.appendChild(card); }
+      card.append(ob.el, H('div', { cls: 'row' }, [verdict, H('span', { cls: 'grow' }), showBtn, btn('Next question →', '', () => fresh())]), solHost); area.appendChild(card); }
     host.append(ctl, area); fillTypes(); fresh();
     return { key: e => { if (!cur) return; if (/^[1-5a-eA-E]$/.test(e.key) && !sol) { const i = /\d/.test(e.key) ? +e.key - 1 : e.key.toLowerCase().charCodeAt(0) - 97; const b = area.querySelectorAll('.opt')[i]; if (b) b.click(); } else if (e.key === 'n' || e.key === 'N') fresh(); else if (sol && sol.keyNav) sol.keyNav(e); } }; }
 
@@ -161,7 +161,8 @@
     else if (PAGE === 'lab') lab(own({ cube: 1, dice: 1, family: 1, seating: 1 }, h[0]) ? h[0] : 'cube');
     else if (PAGE === 'timed') timed(); else if (PAGE === 'progress') progress(); else home();
     document.title = title; }
-  const top = () => { const y = hostEl.getBoundingClientRect().top + g.scrollY - 80; if (g.scrollY > y) g.scrollTo(0, Math.max(0, y)); main.focus({ preventScroll: true }); };
+  const top = () => { const hd = document.getElementById('site-header'), off = (hd ? Math.max(0, hd.getBoundingClientRect().bottom) : 0) + 8; // clear the sticky site header
+    const y = hostEl.getBoundingClientRect().top + g.scrollY - off; if (g.scrollY > y) g.scrollTo(0, Math.max(0, y)); main.focus({ preventScroll: true }); };
   g.addEventListener('hashchange', () => { route(); top(); });
   route();
 })(typeof globalThis !== 'undefined' ? globalThis : this);
