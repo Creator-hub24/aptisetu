@@ -16,7 +16,7 @@ module.exports = {
     m[2].split(', then ').forEach(t => { a += t === 'right' ? -90 : t === 'left' ? 90 : 180; }); const [x, y] = [Math.round(Math.cos(a * Math.PI / 180)), Math.round(Math.sin(a * Math.PI / 180))]; return dirOf(x, y); },
   'dir-m1': p => { const [x, y] = relWalk(p.question); return fmt(x, y); },
   'dir-h3': p => { const [x, y] = relWalk(p.question); return fmt(-x, -y); },
-  'dir-m2': p => { const m = p.question.match(/One (morning|evening), (\w+) stood with \w+ shadow falling exactly to \w+ (left|right|front|back)\./);
+  'dir-m2': p => { const m = p.question.match(/One (morning|evening), (\w+) noticed that \w+ shadow pointed straight out to \w+ (left|right|front|back)\./);
     const sun = m[1] === 'morning' ? [1, 0] : [-1, 0]; const shadow = [-sun[0], -sun[1]];
     // facing f; the shadow must equal the body-relative vector: front = f, right = rotate f clockwise, etc.
     for (const [nm, f] of Object.entries(UNIT)) { const rel = { front: f, back: [-f[0], -f[1]], right: [f[1], -f[0]], left: [-f[1], f[0]] }[m[3]];

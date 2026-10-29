@@ -44,7 +44,7 @@
   RL.reg('series', 'easy', 'ser-e2', 'Letter series', ['ssc', 'cuet', 'govt'], () => {
     const s = ri(0, 25), inc = pick([0, 1]), d = pick([2, 3, 4, 5, -2, -3]); const p = [s]; for (let i = 1; i < 7; i++) p.push(p[i - 1] + d + (inc ? (i - 1) : 0));
     const t = p.map(L), ans = t[6]; const ds = [L(p[6] + 1), L(p[6] - 1), L(p[6] + 2), L(p[5] + d), L(p[6] + 3)].filter(x => x !== ans);
-    return { question: `Find the next letter: ${t.slice(0, 6).join(', ')}, ?`, ...RL.mcq(ans, ds), viz: sviz(t.slice(0, 6), { letters: true }),
+    return { question: `Which letter comes next: ${t.slice(0, 6).join(', ')}, ?`, ...RL.mcq(ans, ds), viz: sviz(t.slice(0, 6), { letters: true }),
       steps: [{ text: 'Turn letters into positions (A = 1).', viz: sviz(p.slice(0, 6).map(v => ((v % 26) + 26) % 26 + 1), { diffs: true }) }, { text: inc ? `The gaps grow by 1: ${d}, ${d + 1}, ${d + 2}, …` : `Each step moves ${d}.` }, { text: `Next letter: ${ans}.`, viz: sviz(t, { letters: true, hl: 6 }) }],
       traps: ['The alphabet wraps: after Z comes A.', 'Use EJOTY (5, 10, 15, 20, 25) to count positions fast.'], params: { p } };
   });
@@ -71,7 +71,7 @@
       const opts = shuffle([...Array(7).keys()].filter(i => i !== k)).slice(0, 3).map(i => String(bad[i]));
       if (new Set(bad).size < 7) return null;
       for (let j = 0; j < 7; j++) if (j !== k) { const u = bad.slice(); u[j] = null; if (simpleFit(u)) return null; }
-      return { question: `Find the wrong number in the series: ${bad.join(', ')}`, ...RL.mcq(String(bad[k]), opts), viz: sviz(bad),
+      return { question: `Spot the number that breaks the pattern: ${bad.join(', ')}`, ...RL.mcq(String(bad[k]), opts), viz: sviz(bad),
         steps: [{ text: 'Find the rule that fits most of the terms.', viz: sviz(bad, { diffs: true }) }, { text: `Rule: ${r.d}`, viz: sviz(t, { diffs: true, hl: k }) }, { text: `The term at position ${k + 1} should be ${t[k]}, not ${bad[k]}.`, viz: sviz(bad, { hl: k, bad: true }) }],
         traps: ['One wrong term spoils two differences, so look for the pair that breaks the pattern.', 'Fix the suspect term and re-check the whole series.'], params: { fam: f, bad, k } };
     });

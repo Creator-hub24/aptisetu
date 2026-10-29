@@ -3,7 +3,7 @@
 const ORD = { first: 1, second: 2, third: 3, fourth: 4, fifth: 5, sixth: 6, seventh: 7, eighth: 8 };
 function perms(a) { if (a.length <= 1) return [a]; return a.flatMap((x, i) => perms(a.slice(0, i).concat(a.slice(i + 1))).map(r => [x].concat(r))); }
 function layout(q) { let m;
-  if ((m = q.match(/^(\d+) people (.+?) sit in a straight row(\. Some face north and some face south|, all facing north)\./))) return { kind: 'line', n: +m[1], names: m[2].split(', '), mixed: /Some face/.test(m[3]) };
+  if ((m = q.match(/^(\d+) people (.+?) are seated in a single row(\. Some face north and some face south|, all facing north)\./))) return { kind: 'line', n: +m[1], names: m[2].split(', '), mixed: /Some face/.test(m[3]) };
   if ((m = q.match(/^(\d+) people (.+?) sit around a circular table, all facing the centre\./))) return { kind: 'circle', n: +m[1], names: m[2].split(', ') };
   if ((m = q.match(/^(\d+) people (.+?) sit in two parallel rows of (\d+)\. People in Row 1 face south and people in Row 2 face north/))) return { kind: 'rows', n: +m[1], names: m[2].split(', '), m: +m[3] };
   throw new Error('layout'); }

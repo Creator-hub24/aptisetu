@@ -37,7 +37,7 @@ function answer(facts, x, y) { const W = derive(facts);
   if (a.size === 1 && b.size === 1 && both.length === 1) return both[0]; if (a.size || b.size) return 'Cannot be determined'; throw new Error('solver: no relation'); }
 const parseFacts = clues => clues.map(c => { const m = c.match(/^(\w+) is the ([\w-]+) of (\w+)\.$/); if (!m) throw new Error('bad fact ' + c); return [m[1], m[2], m[3]]; });
 const factsQ = p => { const m = p.question.match(/How is (\w+) related to (\w+)\?/); return answer(parseFacts(p.clues), m[1], m[2]); };
-const coded = p => { const leg = {}; for (const m of p.question.matchAll(/'A (\S+) B' means A is the (\w+) of B/g)) leg[m[1]] = m[2];
+const coded = p => { const leg = {}; for (const m of p.question.matchAll(/'A (\S+) B' stands for: A is B's (\w+)/g)) leg[m[1]] = m[2];
   const m = p.question.match(/If (.+), how is (\w+) related to (\w+)\?/); const tk = m[1].split(' '); const facts = [];
   for (let i = 1; i < tk.length; i += 2) { if (!leg[tk[i]]) throw new Error('bad sym'); facts.push([tk[i - 1], leg[tk[i]], tk[i + 1]]); }
   return answer(facts, m[2], m[3]); };

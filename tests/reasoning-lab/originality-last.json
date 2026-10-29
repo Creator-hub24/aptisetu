@@ -1,6 +1,6 @@
 {
  "samples": 27000,
- "corpusStrings": 8482,
+ "corpusStrings": 8624,
  "files": [
   "data/general/reasoning.json",
   "data/general/dilr.json",
@@ -13,105 +13,98 @@
   "data/open-mock.json"
  ],
  "exactMatches": 0,
- "maxOverlap": 0.45454545454545453,
- "over25": 8,
+ "maxOverlap": 0.2222222222222222,
+ "over25": 0,
  "top8": [
   {
-   "r": 0.45454545454545453,
-   "id": "cube-m1",
-   "text": "a cuboid 3 cm × 4 cm × 7 cm is painted on all faces and cut into 1 cm cubes how many cubes have no painted faces ?",
+   "r": 0.2222222222222222,
+   "id": "rank-m2",
+   "text": "in a row pooja is 23rd from the left and karan is 7th from the right when they swap places pooja becomes 18th from the left how many people are in the row ?",
    "hits": [
-    "is painted on all faces and cut into",
-    "painted on all faces and cut into 1",
-    "on all faces and cut into 1 cm"
+    "becomes 18th from the left how many people",
+    "18th from the left how many people are",
+    "from the left how many people are in"
+   ],
+   "src": "data/general/reasoning.json: in a row a is 10th from the left and b is 15th from the right when they swap places a becomes 18th from the left how many people are in the row ?"
+  },
+  {
+   "r": 0.20588235294117646,
+   "id": "dir-m1",
+   "text": "a cyclist starts facing north and walks 10 m turns left and walks 2 m turns right and walks 6 m turns left and walks 10 m how far and in which direction is the ",
+   "hits": [
+    "and walks 6 m turns left and walks",
+    "walks 6 m turns left and walks 10",
+    "6 m turns left and walks 10 m"
+   ],
+   "src": "data/general/reasoning.json: a man walks 10 m west turns left and walks 6 m turns left and walks 10 m then turns right and walks 4 m how far and in which direction is he from the starting p"
+  },
+  {
+   "r": 0.17647058823529413,
+   "id": "dir-e3",
+   "text": "a man walks 12 m east then 8 m north then 11 m west in which direction is he from the starting point ?",
+   "hits": [
+    "in which direction is he from the starting",
+    "which direction is he from the starting point",
+    "direction is he from the starting point ?"
+   ],
+   "src": "data/general/reasoning.json: a man walks 10 m west turns left and walks 6 m turns left and walks 10 m then turns right and walks 4 m how far and in which direction is he from the starting p"
+  },
+  {
+   "r": 0.125,
+   "id": "cube-m1",
+   "text": "a 7 cm × 4 cm × 5 cm cuboid has all six faces painted and is then sliced into 1 cm cubes how many cubes have no painted faces ?",
+   "hits": [
+    "into 1 cm cubes how many cubes have",
+    "1 cm cubes how many cubes have no",
+    "cm cubes how many cubes have no painted"
    ],
    "src": "data/cat.json: a 12 × 8 × 6 cm cuboid is painted on all faces and cut into 1 cm cubes how many cubes have no painted face ?"
   },
   {
-   "r": 0.4,
-   "id": "code-e1",
-   "text": "in a certain code mango is written as nbohp how is crown written in that code ?",
+   "r": 0.11764705882352941,
+   "id": "rank-h2",
+   "text": "amit is 9th from the top and 16th from the bottom in a class 13 students ranked below amit leave the class and 3 new students join all ranked below amit what is",
    "hits": [
-    "in a certain code mango is written as",
-    "a certain code mango is written as nbohp",
-    "certain code mango is written as nbohp how"
+    "is 9th from the top and 16th from",
+    "9th from the top and 16th from the",
+    "from the top and 16th from the bottom"
    ],
-   "src": "data/cuet/gat.json: in a certain code mango is written as nbohp how is apple written in that code ?"
+   "src": "data/general/reasoning.json: priya is 9th from the top and 16th from the bottom in her class ranking how many students are in the class ?"
   },
   {
-   "r": 0.3851851851851852,
-   "id": "blood-e3",
-   "text": "in a code a × b means a is the mother of b a + b means a is the sister of b a @ b means a is the daughter of b a $ b means a is the wife of b a # b means a is t",
+   "r": 0.11538461538461539,
+   "id": "puz-e1",
+   "text": "five people a b c d e live on the five floors of a building floor 1 is the bottom one per floor who is on floor 4 ? e lives on floor 4 a lives on floor 1 b live",
    "hits": [
-    "b means a is the mother of b",
-    "b means a is the sister of b",
-    "a @ b means a is the daughter"
+    "a lives on floor 1 b lives on",
+    "lives on floor 1 b lives on an",
+    "on floor 1 b lives on an even"
    ],
-   "src": "data/cuet/gat.json: a + b means a is the father of b a × b means a is the sister of b and a − b means a is the mother of b if p + q × r how is p related to r ?"
+   "src": "data/general/reasoning.json: six persons a to f live on six different floors of a building 1 is the lowest 6 the highest a lives on floor 1 b lives on an even - numbered floor above c d liv"
   },
   {
-   "r": 0.3673469387755102,
-   "id": "blood-h2",
-   "text": "in a code a @ b means a is the wife of b a ÷ b means a is the daughter of b a $ b means a is the father of b a × b means a is the sister of b a − b means a is t",
+   "r": 0.11392405063291139,
+   "id": "seat-h1",
+   "text": "8 people p q r s t u v w sit around a circular table all facing the centre who sits directly opposite t ? q sits immediately to the right of r s sits third to t",
    "hits": [
-    "in a code a @ b means a",
-    "a code a @ b means a is",
-    "code a @ b means a is the"
+    "to the right of r s sits third",
+    "the right of r s sits third to",
+    "right of r s sits third to the"
    ],
-   "src": "data/general/reasoning.json: in a code a @ b means a is the daughter of b a $ b means a is the wife of b a # b means a is the father of b a & b means a is the brother of b if p @ q $ r # s "
+   "src": "data/general/dilr.json: six people p q r s t and u sit in a row all facing north r sits at the extreme left end p sits second to the right of r s sits third to the right of u t does no"
   },
   {
-   "r": 0.3237410071942446,
-   "id": "blood-m3",
-   "text": "in a code a × b means a is the wife of b a # b means a is the father of b a ÷ b means a is the brother of b a $ b means a is the son of b a @ b means a is the d",
+   "r": 0.1111111111111111,
+   "id": "blood-m1",
+   "text": "read the facts how is w related to s ? s is the daughter of p u is the wife of w p is the husband of y y is the daughter of w",
    "hits": [
-    "b means a is the wife of b",
-    "means a is the wife of b a",
-    "a is the wife of b a #"
+    "is the husband of y y is the",
+    "the husband of y y is the daughter",
+    "husband of y y is the daughter of"
    ],
-   "src": "data/general/reasoning.json: in a code a @ b means a is the daughter of b a $ b means a is the wife of b a # b means a is the father of b a & b means a is the brother of b if p @ q $ r # s "
-  },
-  {
-   "r": 0.2857142857142857,
-   "id": "ser-m1",
-   "text": "find the wrong number in the series 2 5 10 17 26 37 54",
-   "hits": [
-    "find the wrong number in the series 2",
-    "the wrong number in the series 2 5"
-   ],
-   "src": "data/general/reasoning.json: find the wrong number in the series 2 5 11 23 47 96 191"
-  },
-  {
-   "r": 0.2857142857142857,
-   "id": "ser-h3",
-   "text": "find the wrong number in the series 2 5 14 41 122 365 1098",
-   "hits": [
-    "find the wrong number in the series 2",
-    "the wrong number in the series 2 5"
-   ],
-   "src": "data/general/reasoning.json: find the wrong number in the series 2 5 11 23 47 96 191"
-  },
-  {
-   "r": 0.2727272727272727,
-   "id": "dir-m2",
-   "text": "one morning om stood with his shadow falling exactly to his right which direction was om facing ?",
-   "hits": [
-    "with his shadow falling exactly to his right",
-    "his shadow falling exactly to his right which",
-    "shadow falling exactly to his right which direction"
-   ],
-   "src": "data/general/reasoning.json: early in the morning rohan stands with his shadow falling exactly to his right which direction is he facing ?"
+   "src": "data/cuet/gat.json: x is the husband of y y is the daughter of z w is z s only son how is w related to x ?"
   }
  ],
- "over25ids": [
-  "cube-m1 0.45 | a cuboid 3 cm × 4 cm × 7 cm is painted on all faces and cut into 1 cm cubes how many cubes",
-  "code-e1 0.40 | in a certain code mango is written as nbohp how is crown written in that code ?",
-  "blood-e3 0.39 | in a code a × b means a is the mother of b a + b means a is the sister of b a @ b means a ",
-  "blood-h2 0.37 | in a code a @ b means a is the wife of b a ÷ b means a is the daughter of b a $ b means a ",
-  "blood-m3 0.32 | in a code a × b means a is the wife of b a # b means a is the father of b a ÷ b means a is",
-  "ser-m1 0.29 | find the wrong number in the series 2 5 10 17 26 37 54",
-  "ser-h3 0.29 | find the wrong number in the series 2 5 14 41 122 365 1098",
-  "dir-m2 0.27 | one morning om stood with his shadow falling exactly to his right which direction was om f"
- ],
+ "over25ids": [],
  "pyqMarkers": []
 }

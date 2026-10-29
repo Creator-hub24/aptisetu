@@ -23,7 +23,7 @@ function compare(p) { const q = p.question; const names = q.match(/\(([^)]+)\)/)
   else throw new Error('ask?');
   if (outs.size !== 1) throw new Error('answer not unique'); return [...outs][0]; }
 module.exports = {
-  'rank-e1': p => { const m = p.question.match(/(\d+)\w\w from the \w+ and (\d+)\w\w from the/); return String(+m[1] + +m[2] - 1); },
+  'rank-e1': p => { const m = p.question.match(/stands (\d+)\w\w; counting from the \w+, \w+ stands (\d+)\w\w/); return String(+m[1] + +m[2] - 1); },
   'rank-e2': p => { const m = p.question.match(/row of (\d+) \w+, \w+ is (\d+)\w\w from the left/); return ord(+m[1] - +m[2] + 1); },
   'rank-m1': p => { const m = p.question.match(/row of (\d+) \w+, \w+ is (\d+)\w\w from the left and \w+ is (\d+)\w\w from the right/); const N = +m[1], a = +m[2], b = N - +m[3] + 1;
     if (a === b) throw new Error('same'); return String(Math.abs(a - b) - 1); },

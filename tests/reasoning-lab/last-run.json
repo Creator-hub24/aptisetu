@@ -1,0 +1,71 @@
+{
+ "N": 300,
+ "when": "2026-10-29T17:00:54.980Z",
+ "totalTypes": 9,
+ "failing": 0,
+ "report": [
+  {
+   "id": "dir-e1",
+   "runs": 300,
+   "fails": 0,
+   "avgms": 0.03,
+   "sample": []
+  },
+  {
+   "id": "dir-e2",
+   "runs": 300,
+   "fails": 0,
+   "avgms": 0.01,
+   "sample": []
+  },
+  {
+   "id": "dir-e3",
+   "runs": 300,
+   "fails": 0,
+   "avgms": 0.01,
+   "sample": []
+  },
+  {
+   "id": "dir-m1",
+   "runs": 300,
+   "fails": 0,
+   "avgms": 0.03,
+   "sample": []
+  },
+  {
+   "id": "dir-m2",
+   "runs": 300,
+   "fails": 0,
+   "avgms": 0.01,
+   "sample": []
+  },
+  {
+   "id": "dir-m3",
+   "runs": 300,
+   "fails": 0,
+   "avgms": 0.08,
+   "sample": []
+  },
+  {
+   "id": "dir-h1",
+   "runs": 300,
+   "fails": 0,
+   "avgms": 0.01,
+   "sample": []
+  },
+  {
+   "id": "dir-h2",
+   "runs": 300,
+   "fails": 0,
+   "avgms": 0.06,
+   "sample": []
+  },
+  {
+   "id": "dir-h3",
+   "runs": 300,
+   "fails": 0,
+   "avgms": 0.03,
+   "sample": []
+  }
+ ]
+}

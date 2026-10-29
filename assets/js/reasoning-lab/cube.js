@@ -63,7 +63,7 @@
     let d; do { d = [ri(3, 8), ri(3, 8), ri(2, 7)]; } while (d[0] === d[1] && d[1] === d[2]);
     const k = ri(0, 3), ans = countK(d, allPaint('brand'), k); const [a, b, c] = d;
     const parts = [(a - 2) * (b - 2) * (c - 2), 2 * ((a - 2) * (b - 2) + (b - 2) * (c - 2) + (a - 2) * (c - 2)), 4 * ((a - 2) + (b - 2) + (c - 2)), 8];
-    return { question: `A cuboid ${a} cm × ${b} cm × ${c} cm is painted on all faces and cut into 1 cm cubes. How many cubes have ${word(k)} painted face${k === 1 ? '' : 's'}?`,
+    return { question: `A ${a} cm × ${b} cm × ${c} cm cuboid has all six faces painted and is then sliced into 1 cm cubes. How many cubes have ${word(k)} painted face${k === 1 ? '' : 's'}?`,
       ...RL.mcq(String(ans), RL.numDistract(ans, Math.max(6, ans >> 2), parts.concat([a * b * c - ans, ans + 4, ans * 2]))),
       viz: viz(d, allPaint('brand'), { faces: k }),
       steps: [{ text: `Treat each dimension separately: along a length L, 2 cubes are on the ends and L − 2 are inside. Here: ${a - 2}, ${b - 2}, ${c - 2}.`, viz: viz(d, allPaint('brand'), null) },
@@ -110,7 +110,7 @@
     // simulate quickly by layers (y index 0..n-2 kept; top layer y=n-1 removed)
     for (let x = 0; x < n; x++) for (let y = 0; y < n - 1; y++) for (let z = 0; z < n; z++) { const f = (x === 0) + (x === n - 1) + (y === 0) + (z === 0) + (z === n - 1); if (f === k) ans++; }
     const naive = countK([n, n, n], allPaint('brand'), k);
-    return { question: `A cube of side ${n} is painted on all faces and cut into unit cubes. The entire top layer of ${n * n} cubes is removed. Among the remaining cubes (counting only the original paint), how many have ${word(k)} painted face${k === 1 ? '' : 's'}?`,
+    return { question: `A cube of side ${n} has all six faces painted and is then sliced into unit cubes. The entire top layer of ${n * n} cubes is removed. Among the remaining cubes (counting only the original paint), how many have ${word(k)} painted face${k === 1 ? '' : 's'}?`,
       ...RL.mcq(String(ans), RL.numDistract(ans, Math.max(6, ans >> 1), [naive, naive - (k === 3 ? 4 : n), ans + 4, ans + n - 2, ans - 4].filter(x => x >= 0))),
       viz: viz([n, n, n], allPaint('brand'), { faces: k }, { removeTop: 1 }),
       steps: [{ text: `Removing the top layer leaves ${n} × ${n} × ${n - 1}. Its top is now an unpainted cut surface, while the other 5 faces keep their paint.`, viz: viz([n, n, n], allPaint('brand'), null, { removeTop: 1 }) },
@@ -139,7 +139,7 @@
     const n = ri(4, 12), given = ri(0, 2), ask = pick([0, 1, 2].filter(x => x !== given));
     const f = m => [(m - 2) ** 3, 6 * (m - 2) ** 2, 12 * (m - 2)];
     const gv = f(n)[given], ans = f(n)[ask];
-    return { question: `A cube painted on all faces is cut into identical small cubes. If ${gv} small cubes have ${word(given)} painted face${given === 1 ? '' : 's'}, how many have ${word(ask)} painted face${ask === 1 ? '' : 's'}?`,
+    return { question: `A cube with all six faces painted is sliced into identical small cubes. If ${gv} small cubes have ${word(given)} painted face${given === 1 ? '' : 's'}, how many have ${word(ask)} painted face${ask === 1 ? '' : 's'}?`,
       ...RL.mcq(String(ans), RL.numDistract(ans, Math.max(6, ans >> 2), [f(n + 1)[ask], f(n - 1)[ask], n ** 3 - gv, gv, f(n)[3 - given - ask]])),
       viz: viz([n, n, n], allPaint('brand'), { faces: ask }, { explode: ask === 0 }),
       steps: [{ text: `Write the given count in terms of n: ${['(n−2)³', '6(n−2)²', '12(n−2)'][given]} = ${gv}.` },

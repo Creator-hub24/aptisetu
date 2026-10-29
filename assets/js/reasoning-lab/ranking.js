@@ -9,7 +9,7 @@
   const qv = (N, marks, extra) => Object.assign({ kind: 'queue', N, marks }, extra || {});
   RL.reg('ranking', 'easy', 'rank-e1', 'Total from both-end ranks', ['ssc', 'bank', 'cuet', 'govt'], () => {
     const k = ri(4, 30), m = ri(4, 30), N = k + m - 1, [a] = sample(NM, 1), side = pick([['top', 'bottom', 'a class'], ['left', 'right', 'a row'], ['front', 'back', 'a queue']]);
-    return { question: `${a} is ${ord(k)} from the ${side[0]} and ${ord(m)} from the ${side[1]} in ${side[2]}. How many people are there in ${side[2]}?`, ...RL.mcq(String(N), [N + 1, N + 2, N - 2, k + m + 1].map(String)), viz: qv(N, [{ pos: k, label: a }]),
+    return { question: `Counting from the ${side[0]} of ${side[2]}, ${a} stands ${ord(k)}; counting from the ${side[1]}, ${a} stands ${ord(m)}. How many people are in ${side[2]}?`, ...RL.mcq(String(N), [N + 1, N + 2, N - 2, k + m + 1].map(String)), viz: qv(N, [{ pos: k, label: a }]),
       steps: [{ text: `${k - 1} people are on one side of ${a} and ${m - 1} on the other.`, viz: qv(N, [{ pos: k, label: a }], { brace: [[1, k - 1], [k + 1, N]] }) }, { text: `Total = ${k} + ${m} − 1 = ${N} (${a} was counted twice).`, viz: qv(N, [{ pos: k, label: a }]) }],
       traps: ['Subtract 1, because the person is counted in both ranks.', 'Don\'t add 1 out of habit.'], params: { k, m } };
   });

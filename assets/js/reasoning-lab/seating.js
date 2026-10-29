@@ -88,7 +88,7 @@
       let opts; if (Q.num) opts = RL.mcq(Q.ans, ['0', '1', '2', '3', '4', '5', '6'].filter(v => v !== Q.ans && +v <= L.n - 2));
       else if (Q.pair) { const ps = []; for (let i = 0; i < L.n; i++) for (let j = i + 1; j < L.n; j++) ps.push(N[i] + ' and ' + N[j]); opts = RL.mcq(Q.ans, shuffle(ps)); }
       else opts = RL.mcq(Q.ans, shuffle(N.filter(v => v !== Q.ans)));
-      const desc = L.kind === 'linear' ? `${L.n} people ${N.join(', ')} sit in a straight row${L.mixed ? '. Some face north and some face south' : ', all facing north'}.` : L.kind === 'circle' ? `${L.n} people ${N.join(', ')} sit around a circular table, all facing the centre.` :
+      const desc = L.kind === 'linear' ? `${L.n} people ${N.join(', ')} are seated in a single row${L.mixed ? '. Some face north and some face south' : ', all facing north'}.` : L.kind === 'circle' ? `${L.n} people ${N.join(', ')} sit around a circular table, all facing the centre.` :
         `${L.n} people ${N.join(', ')} sit in two parallel rows of ${L.m}. People in Row 1 face south and people in Row 2 face north, so each person in one row faces exactly one person in the other.`;
       const clueTxt = B.clues.map(q => clueText(L, N, q));
       const steps = [{ text: `Without clues there are ${B.total.toLocaleString('en-IN')} possible arrangements${L.kind === 'circle' ? ` (${N[0]} fixed at the top to remove rotations)` : ''}.`, viz: vizS(L, N, new Array(L.n).fill(null), { count: B.total, total: B.total, face: null }) }]

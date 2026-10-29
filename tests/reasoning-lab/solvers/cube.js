@@ -21,7 +21,7 @@ module.exports = {
   'cube-e1': p => { const n = +p.question.match(/side (\d+) cm/)[1]; return count(cubes(n, n, n, ALL('x')), pred(p.question)); },
   'cube-e2': p => { const c = +p.question.match(/using (\d+) straight cuts/)[1]; let best = 0; for (let a = 0; a <= c; a++) for (let b = 0; a + b <= c; b++) best = Math.max(best, (a + 1) * (b + 1) * (c - a - b + 1)); return String(best); },
   'cube-e3': p => { const N = +p.question.match(/cut into (\d+) identical/)[1]; const n = Math.round(Math.cbrt(N)); if (n ** 3 !== N) throw new Error('not a cube'); return count(cubes(n, n, n, ALL('x')), pred(p.question)); },
-  'cube-m1': p => { const [, a, b, c] = p.question.match(/cuboid (\d+) cm × (\d+) cm × (\d+) cm/).map(Number); return count(cubes(a, b, c, ALL('x')), pred(p.question)); },
+  'cube-m1': p => { const [, a, b, c] = p.question.match(/(\d+) cm × (\d+) cm × (\d+) cm cuboid/).map(Number); return count(cubes(a, b, c, ALL('x')), pred(p.question)); },
   'cube-m2': p => { const q = p.question, n = +q.match(/side (\d+)/)[1]; let paint = {}; let m;
     if ((m = q.match(/on all faces except the (\w+)/))) { paint = ALL('x'); delete paint[m[1]]; }
     else { m = q.match(/painted only on the (.+?) faces,/); m[1].replace(/,? and /, ', ').split(', ').forEach(f => { if (!['top', 'bottom', 'front', 'back', 'left', 'right'].includes(f)) throw new Error('face ' + f); paint[f] = 'x'; }); }

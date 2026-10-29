@@ -106,8 +106,8 @@
         if (used.length !== len) continue; const [x, y] = Math.random() < .5 ? [path[0], path[len]] : [path[len], path[0]];
         const C = closure(used); const r = relation(C, x, y); if (r.terms.size !== 1) continue; const term = [...r.terms][0];
         const expr = path.map((p, i) => i ? code[used[i - 1].rel] + ' ' + p : p).join(' ');
-        const legend = rels.map(r => `'A ${code[r]} B' means A is the ${r} of B`);
-        return { question: `In a code, ${legend.join('; ')}. If ${expr}, how is ${x} related to ${y}?`, clues: legend.map(s => s + '.').concat([`Expression: ${expr}`]),
+        const legend = rels.map(r => `'A ${code[r]} B' stands for: A is B's ${r}`);
+        return { question: `Symbol key: ${legend.join('; ')}. If ${expr}, how is ${x} related to ${y}?`, clues: legend.map(s => s + '.').concat([`Expression: ${expr}`]),
           ...RL.mcq(term, termDistract(term)), viz: { kind: 'coderel', expr, legend }, steps: [{ text: `Decode the pairs left to right: ${used.map(factTxt).join(' ')}`, viz: treeViz(used.slice(0, 1)) },
             { text: 'Draw each pair into the family tree.', viz: treeViz(used, []) }, { text: `${x} is ${y}'s ${term}.`, viz: treeViz(used, [x, y]) }],
           traps: ['Each symbol links only the two names on either side of it.', 'Check the direction asked: X related to Y, not Y to X.', 'Gender comes from the code word for that person (father = male), so look for it.'], params: { legend, expr, x, y } };
