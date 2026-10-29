@@ -116,7 +116,7 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 <meta name="referrer" content="strict-origin-when-cross-origin">
 {basetag}<title>{A(full)}</title>
 <meta name="description" content="{A(desc)}">
-{robots}{canon}<meta name="theme-color" content="#ffffff"><meta name="color-scheme" content="light dark">
+{robots}{canon}<meta name="theme-color" content="#FBF6EA"><meta name="color-scheme" content="light dark">
 <script src="assets/js/theme.js"></script>
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <meta property="og:type" content="website"><meta property="og:site_name" content="{A(BRAND)}"><meta property="og:title" content="{A(full)}"><meta property="og:description" content="{A(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{img}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="en_IN">

@@ -5,7 +5,7 @@
   function saved() { try { var t = localStorage.getItem(KEY); return t === "light" || t === "dark" ? t : null; } catch (e) { return null; } }
   function apply(t) {
     root.setAttribute("data-theme", t); root.style.colorScheme = t;
-    var m = document.querySelector('meta[name="theme-color"]'); if (m) m.setAttribute("content", t === "dark" ? "#0b1220" : "#ffffff");
+    var m = document.querySelector('meta[name="theme-color"]'); if (m) m.setAttribute("content", t === "dark" ? "#0b1220" : "#FBF6EA");
     document.querySelectorAll(".theme-btn").forEach(function (b) { b.setAttribute("aria-pressed", t === "dark" ? "true" : "false"); });
     try { document.dispatchEvent(new CustomEvent("themechange", { detail: t })); } catch (e) {}
   }
