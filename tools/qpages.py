@@ -38,6 +38,7 @@ def _report(qid, ctx, url):
     return f'<a class="report-link" href="{A(href)}"{ext} data-qid="{A(qid)}">⚑ Report an error</a>'
 QSTATS = {"pages": 0, "hubs": 0, "excluded": {}}
 _hubs = []
+QINDEX = []   # data/qindex.json: question-bank search and Mistakes-notebook links
 for trk, tlabel, ddir, secs, purl in QTRACKS:
     _os.makedirs(f"q/{trk}", exist_ok=True)
     for s in secs:
@@ -49,6 +50,7 @@ for trk, tlabel, ddir, secs, purl in QTRACKS:
             if qq.get("source") == "general": QSTATS["excluded"]["cuet reused from bank-ssc"] = QSTATS["excluded"].get("cuet reused from bank-ssc", 0) + 1; continue
             keep.append(qq)
         fn_of = {qq["id"]: f"q/{trk}/{_slug(qq['id'])}-{_slug(qq['topic'])}.html" for qq in keep}
+        for qq in keep: QINDEX.append({"k": trk, "id": qq["id"], "u": fn_of[qq["id"]], "e": tlabel, "s": _plain(sname), "t": _plain(qq["topic"]), "d": qq.get("difficulty", ""), "x": _plain(qq["question"])[:140]})
         bytopic = {}
         for qq in keep: bytopic.setdefault(qq["topic"], []).append(qq)
         for topic, tq in bytopic.items():
@@ -103,8 +105,10 @@ _groups = {}
 for trk, tlabel, sname, topic, hub, n in _hubs: _groups.setdefault((tlabel, sname), []).append((topic, hub, n))
 page("q/index.html", "Question bank: every practice question with solutions", '<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Question bank</div><h1 style="font-size:clamp(1.6rem,4vw,2.4rem)">Question bank</h1>'
      f'<p class="muted">{QSTATS["pages"]} practice questions by exam and topic, each on its own page with the answer and a worked solution. Full mocks and fixed sectionals are not listed here, so they stay unseen until you take them.</p></div></div><section style="padding-top:12px">'
-     + '<div class="container"><div class="qf-bar" data-qf="t" role="group" aria-label="Filter by exam"><button type="button" class="qf-chip" data-v="" aria-pressed="true">All exams</button>' + "".join(f'<button type="button" class="qf-chip" data-v="{t}" aria-pressed="false">{t}</button>' for t in dict.fromkeys(tl for tl, _ in _groups)) + '<input type="search" id="qf-q" placeholder="Search topics, e.g. percentages" aria-label="Search topics"><span class="qf-count" aria-live="polite"></span></div></div><div class="container grid g3">'
+     + '<div class="container"><div class="qf-bar" data-qf="t" role="group" aria-label="Filter by exam"><button type="button" class="qf-chip" data-v="" aria-pressed="true">All exams</button>' + "".join(f'<button type="button" class="qf-chip" data-v="{t}" aria-pressed="false">{t}</button>' for t in dict.fromkeys(tl for tl, _ in _groups)) + '<input type="search" id="qf-q" placeholder="Search topics or questions, e.g. percentages" aria-label="Search topics and questions"><label class="qf-dl">Difficulty <select id="qf-d"><option value="">Any</option><option>Easy</option><option>Medium</option><option>Hard</option></select></label><span class="qf-count" aria-live="polite"></span></div><div id="qf-res" class="qf-res" hidden><h2 class="qf-res-h" id="qf-res-h">Matching questions</h2><ol class="qf-qs" id="qf-qs"></ol></div><h2 class="qf-res-h" id="qf-topics-h">Topics</h2></div><div class="container grid g3">'
      + "".join(f'<div class="card" data-t="{tl}"><h3>{tl} · {sn}</h3><ul class="qp-hubs">' + "".join(f'<li><a href="{h}">{t}</a> <span class="muted">({n})</span></li>' for t, h, n in v) + "</ul></div>" for (tl, sn), v in _groups.items()) + "</div></section>",
      extra='<script src="assets/js/qfilter.js"></script>',
      desc="Browse every AptiSetu practice question by exam and topic: CAT, CUET (UG), Bank and SSC, each with the answer and a worked solution.", base=True)
+_os.makedirs("data", exist_ok=True)
+_json.dump(QINDEX, open("data/qindex.json", "w", encoding="utf8"), ensure_ascii=False, separators=(",", ":"))
 print("question pages:", QSTATS)

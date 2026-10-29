@@ -38,6 +38,7 @@ page("about.html","About",info_head("About",f"About {B}","A free practice site f
 <li><b>CAT track:</b> <a href="cat.html">VARC, DILR and QA</a> with 40-minute sectionals, MCQ and TITA questions and CAT marking.</li>
 <li><b>CUET (UG) track:</b> <a href="cuet.html">General Aptitude Test, English and Mathematics</a> with +5 / −1 marking at the real pace.</li></ul>
 <h3>Our questions</h3><p>Every question and passage on the site was written by our team. None are taken from past papers or any coaching material. Each comes with a worked solution, and our build process checks the answers automatically before anything is published. If you still spot a mistake, please <a href="contact.html">tell us</a>; see our <a href="corrections.html">corrections &amp; editorial policy</a>.</p>
+<h3>Who makes it</h3><p><span data-brand>{B}</span> is made by Vaibhav Gupta, who has taught CAT and CLAT aptitude for six years, at Career Launcher and at Edumaths360 in Prayagraj. Questions and solutions are written and checked by our team; see how we fix errors on the <a href="corrections.html">corrections page</a>. Write to <a href="mailto:{A(EMAIL)}">{_esc.escape(EMAIL)}</a>.</p>
 <h3>Independent</h3><p><span data-brand>{B}</span> is an independent site. It is not affiliated with, endorsed by or connected to the National Testing Agency (NTA), the IIMs, IBPS, SBI, SSC or any other exam body or company. Exam names are used only to describe what the practice is for.</p>
 """), desc=f"About {BRAND}: a free, independent aptitude practice site with original questions for CAT, CUET (UG), Bank, SSC and placements.")
 
@@ -165,6 +166,7 @@ paths_page("after-graduation.html", "After Graduation: Courses, Exams &amp; Jobs
  "aftergrad-data.js")
 
 exec(open("tools/m3pages.py").read())   # Month 3 pages (before the sitemap)
+exec(open("tools/v2pages.py").read())   # v2 pages: tracks, mistakes notebook (before the sitemap)
 # ---------- cleanup, sitemap, robots ----------
 for old in ("signup.html",):
     if os.path.exists(old): os.remove(old)

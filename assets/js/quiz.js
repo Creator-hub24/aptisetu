@@ -83,7 +83,7 @@
     const { s, topic, n, per } = o;
     const pool = poolFor(s, topic);
     if (!pool.length) return;
-    let pick = o.pick || shuffle(pool).slice(0, Math.min(n, pool.length));
+    let pick = o.pick || (window.Notebook ? Notebook.unseenFirst(shuffle(pool)) : shuffle(pool)).slice(0, Math.min(n, pool.length));   // no-repeat pool: unseen questions first
     // keep questions from the same DILR set together, in their original order
     const order = new Map(); pick.forEach((q, i) => { const k = q.set || q.id; if (!order.has(k)) order.set(k, i); });
     pick.sort((a, b) => (order.get(a.set || a.id) - order.get(b.set || b.id)) || (pool.indexOf(a) - pool.indexOf(b)));
@@ -142,6 +142,7 @@
     const score = cfg.neg ? c * 3 - w : c, max = cfg.neg ? qs.length * 3 : qs.length;
     const pct = Math.round(c / qs.length * 100);
     if (P) { P.clearRun("general"); P.record("general", qs.map((q, i) => ({ topic: q.topic, section: q._sec, attempted: ans[i] !== null, correct: ans[i] === q.answer }))); }
+    if (window.Notebook) { Notebook.seen(qs.map(q => q.id)); Notebook.record(qs.map((q, i) => ({ q, exam: "general", attempted: ans[i] !== null, correct: ans[i] === q.answer }))); }
     const st = P ? P.streak() : null;
     $("#quiz").classList.add("hidden"); $("#results").classList.remove("hidden");
     const brand = (window.SITE || {}).BRAND || "";

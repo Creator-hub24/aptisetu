@@ -4,20 +4,21 @@
   let n = 0;
   // Header mark: same navy #0B1F3A / gold #C9A227 icon as the favicon (drawn by tools/make_images.py)
   const logo = () => `<img src="assets/img/favicon.svg" alt="" width="36" height="36" class="logo-mark">`;
+  // Grouped nav (v2): Home · Quant Lab · Tracks & Practice · Question Bank · Flashcards & Guides · Careers · About & Legal
   const nav = [
     ["index.html", "Home"],
-    ["learn", "Learn", [["quant.html", "Quant"], ["reasoning.html", "Reasoning"], ["dilr.html", "DILR"], ["practice.html", "Practice quizzes"], ["guides.html", "Guides"], ["formula-sheets.html", "Formula sheets"]]],
     ["quant-lab.html", "Quant Lab"],
-    ["cat", "CAT", [["cat.html", "CAT Overview"], ["cat-quant-sets.html", "Quant sets"], ["cat-varc-sets.html", "VARC sets"], ["cat-dilr-sets.html", "DILR sets"], ["mock-tests.html", "Mock tests"]]],
-    ["cuet.html", "CUET"],
-    ["bank", "Bank/SSC", [["bank-ssc.html", "Overview"], ["ibps-po.html", "IBPS PO"], ["ibps-clerk.html", "IBPS Clerk"], ["sbi-po.html", "SBI PO"], ["ssc-cgl.html", "SSC CGL"], ["ssc-chsl.html", "SSC CHSL"]]],
-    ["careers", "Careers", [["after12.html", "After 12"], ["after-graduation.html", "After Graduation"]]],
-    ["more", "More", [["about.html", "About"], ["faq.html", "FAQ"], ["corrections.html", "Corrections"], ["contact.html", "Contact"]]]
+    ["tracks", "Tracks &amp; Practice", [["tracks.html", "All tracks"], ["cat.html", "CAT"], ["cuet.html", "CUET (UG)"], ["bank-ssc.html", "Bank &amp; SSC"], ["placements.html", "Placements"], ["practice.html", "Practice quizzes"], ["mock-tests.html", "CAT mock tests"], ["open-mock.html", "Open Mock"], ["mistakes.html", "Mistakes notebook"]]],
+    ["q/index.html", "Question Bank"],
+    ["study", "Flashcards &amp; Guides", [["flashcards.html", "Formula flashcards"], ["formula-sheets.html", "Formula sheets"], ["guides.html", "Guides"], ["quant.html", "Quant notes"], ["reasoning.html", "Reasoning notes"], ["dilr.html", "DILR notes"]]],
+    ["careers", "Careers", [["after12.html", "After 12th"], ["after-graduation.html", "After graduation"]]],
+    ["about", "About &amp; Legal", [["about.html", "About"], ["faq.html", "FAQ"], ["corrections.html", "Corrections"], ["contact.html", "Contact"], ["privacy.html", "Privacy"], ["terms.html", "Terms"], ["refund.html", "Refunds"]]]
   ];
-  const here = location.pathname.split("/").pop() || "index.html";
+  const here = location.pathname.split("/").pop() || "index.html", inQ = /\/q\//.test(location.pathname);
   const alias = { "quant-lab-explainers.html": "quant-lab.html", "quant-lab-generator.html": "quant-lab.html", "quant-lab-concept-lab.html": "quant-lab.html", "quant-lab-practice.html": "quant-lab.html", "cat-practice.html": "cat.html", "cuet-practice.html": "cuet.html", "varc.html": "cat.html",
                   "set.html": "cat-" + ({ qa: "quant", varc: "varc", dilr: "dilr" }[new URLSearchParams(location.search).get("sec")] || "quant") + "-sets.html" };
-  const active = alias[here] || here;
+  const fam = h => /^cat-.*sets\.html$|^set\.html$/.test(h) ? "cat.html" : /^(ibps|sbi|ssc)-/.test(h) ? "bank-ssc.html" : /^formula-/.test(h) ? "formula-sheets.html" : /^(guide|g-)/.test(h) ? "guides.html" : null;
+  const active = inQ ? "q/index.html" : (alias[here] && alias[here].indexOf("-sets") < 0 ? alias[here] : fam(here) || alias[here] || here);
   const links = nav.map(([h, t, kids]) => {
     if (!kids) return `<a href="${h}" class="${h === active ? "active" : ""}">${t}</a>`;
     const on = kids.some(([k]) => k === active);
@@ -31,7 +32,7 @@
       <a href="index.html" class="logo">${logo()}<span data-brand></span></a>
       <button type="button" class="theme-btn" aria-label="Dark theme" aria-pressed="${window.Theme && Theme.get() === "dark" ? "true" : "false"}"><span class="ti-moon" aria-hidden="true">☾</span><span class="ti-sun" aria-hidden="true">☀</span></button>
       <button type="button" class="menu-btn" aria-label="Menu" aria-expanded="false">☰</button>
-      <nav class="nav-links">${links}<span class="auth-slot" id="auth-slot"></span><a href="practice.html" class="btn btn-sm">Start practising</a></nav>
+      <nav class="nav-links">${links}<span class="auth-slot" id="auth-slot"></span></nav>
     </div>`;
     const tb = header.querySelector(".theme-btn");
     tb.addEventListener("click", () => { if (window.Theme) Theme.toggle(); });

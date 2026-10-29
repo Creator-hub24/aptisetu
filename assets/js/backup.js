@@ -3,7 +3,7 @@
 (function () {
   var $ = function (id) { return document.getElementById(id); };
   if (!$("bk-make")) return;
-  var ALLOW = /^(aptiprep\.progress\.v1|aptiprep\.resume\.v1\.|aptisetu\.history$|aptisetu\.quantlab\.v1$|aptisetu\.sol-lang$|aptisetu\.goal$|fc:)/;
+  var ALLOW = /^(aptiprep\.progress\.v1|aptiprep\.resume\.v1\.|aptisetu\.history$|aptisetu\.quantlab\.v1$|aptisetu\.sol-lang$|aptisetu\.goal$|aptisetu\.mistakes\.v1$|aptisetu\.seen\.v1$|fc:)/;
   var MAX = 1500000, msg = $("bk-msg"), pending = null;
   var say = function (t) { msg.textContent = t; };
   function collect() {

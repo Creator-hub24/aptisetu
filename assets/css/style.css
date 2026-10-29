@@ -645,3 +645,97 @@ a.card-link{display:block;color:inherit;text-decoration:none}a.card-link:hover h
 .backup textarea{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85rem;word-break:break-all}
 .bk-label{display:block;font-weight:600;margin:6px 0}
 .backup [hidden]{display:none!important}
+
+/* ===== v2 design: chips row, indigo hero, track cards, lab preview, targets, pods, Open Mock alert ===== */
+.chips-row{display:flex;gap:8px;flex-wrap:wrap;padding:6px 20px 10px;max-width:1160px;margin:0 auto}
+.chip{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 12px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:.86rem;font-weight:600;white-space:nowrap}
+.chip b{color:var(--brand)}.chip:hover{border-color:var(--brand)}
+.chip[data-chip=a]{margin-left:auto;background:#eef2ff;color:#3730a3;border-color:#c7d2fe}
+html[data-theme="dark"] .chip[data-chip=a]{background:var(--tint);color:#c7d2fe;border-color:#3b4380}
+@media(max-width:420px){.chips-row{padding:4px 12px 8px;gap:6px}.chip{padding:0 10px;font-size:.8rem}.chip[data-chip=a]{margin-left:0}}
+
+.hero.hero-v2{background-color:#1e1b4b;background-image:radial-gradient(900px 420px at 90% -10%,rgba(124,58,237,.55),transparent),radial-gradient(700px 380px at -10% 110%,rgba(79,70,229,.5),transparent);color:#eef2ff}
+.hero-v2 h1{color:#fff}.hero-v2 .hl{color:#fcd34d}
+.hero-v2 p.lead,.hero-v2 .goal-q,.hero-v2 .goal-pane p{color:#d4d8f5}
+.hero-v2 .pill{background:rgba(255,255,255,.12);color:#e0e7ff}
+.hero-v2 a:not(.btn){color:#fde68a}
+.hero-v2 .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.hero-v2 .btn-ghost:hover{background:rgba(255,255,255,.08)}
+.hero-v2 .btn:not(.btn-ghost){background:#fbbf24;color:#1e1b4b;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+html[data-theme="dark"] .hero.hero-v2{background-color:#140f33}
+html[data-theme="dark"] .hero-v2 .btn:not(.btn-ghost){background:#fbbf24;color:#1e1b4b}
+html[data-theme="dark"] .hero-v2 .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.step-n{display:inline-block;background:#fbbf24;color:#1e1b4b;font-size:.72rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:.15em .6em;border-radius:6px;margin-right:6px;vertical-align:2px}
+.hero-v2 .goal-chips{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.hero-v2 .goal-chip{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;padding:12px;border-radius:12px;min-height:84px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);color:#fff}
+.hero-v2 .goal-chip[aria-pressed="true"]{background:#fff;color:#1e1b4b;border-color:#fff;box-shadow:0 0 0 3px #fbbf24}
+.hero-v2 .goal-chip:focus-visible{outline:3px solid #fbbf24;outline-offset:2px}
+.gc-ic{font-size:1.25rem;line-height:1}.gc-t{font-weight:700;font-size:.95rem;line-height:1.25}.gc-s{font-size:.75rem;opacity:.85;font-weight:500}
+@media(max-width:860px){.hero-v2 .goal-chips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.goal-link{display:inline-block;font-weight:600;margin-left:4px}
+.hero-v2 .goal-pane .cta-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+
+.lab-peek{background:var(--card);color:var(--ink);border-radius:var(--r);padding:20px;box-shadow:0 18px 40px rgba(0,0,0,.25);min-width:0}
+.lab-peek h2.sample-q{font-size:1.05rem;line-height:1.45;margin:.4em 0 .8em}
+.lab-peek output{font-weight:800;color:var(--brand)}
+.pk-l{display:block;font-size:.85rem;font-weight:600;color:var(--muted);margin-top:6px}
+.lab-peek input[type=range]{width:100%;accent-color:var(--brand);min-height:32px}
+.pk-bars{display:grid;gap:6px;margin:10px 0}
+.pk-row{display:grid;grid-template-columns:42px 1fr;align-items:center;gap:8px;font-size:.8rem}
+.pk-row i{font-style:normal;font-weight:700;color:var(--muted)}
+.pk-bar{display:block;height:12px;border-radius:6px;min-width:4px;transition:width .2s}
+.pk-a{background:#6366f1}.pk-b{background:#06b6d4}.pk-t{background:#f59e0b}
+.pk-out{font-size:.95rem;margin:.4em 0 .6em}
+.lab-peek a.goal-link{color:var(--brand)}
+@media(prefers-reduced-motion:reduce){.pk-bar{transition:none}}
+
+.tcard{display:flex;flex-direction:column;gap:4px;color:var(--ink);border-top:4px solid var(--brand);transition:transform .15s}
+.tcard:hover{transform:translateY(-2px)}.tcard h3{margin:.2em 0}.tcard p{color:var(--muted);margin:0 0 .6em;flex:1}
+.tc-tag{display:inline-block;align-self:flex-start;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.2em .6em;border-radius:6px;background:#eef2ff;color:#3730a3}
+.tc-go{font-weight:700;color:var(--brand)}
+.tc-qa{border-top-color:#4f46e5}.tc-dilr{border-top-color:#db2777}.tc-varc{border-top-color:#059669}
+.tc-dilr .tc-tag{background:#fce7f3;color:#9d174d}.tc-varc .tc-tag{background:#d1fae5;color:#065f46}
+html[data-theme="dark"] .tc-tag{background:#1d2448;color:#c7d2fe}
+html[data-theme="dark"] .tc-dilr .tc-tag{background:#3a1430;color:#fbcfe8}html[data-theme="dark"] .tc-varc .tc-tag{background:#0e2a1e;color:#a7f3d0}
+.sub-h{margin:28px 0 12px;font-size:1.1rem}
+.pod{display:flex;flex-direction:column;gap:4px;border-left:4px solid #4f46e5}.pod-b{border-left-color:#0891b2}
+.pod p{flex:1}.pod .btn{align-self:flex-start}
+.om-alert{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:22px;border-radius:var(--r);background:#fffbeb;border:1px solid #fcd34d;color:#422006}
+.om-alert h2{font-size:1.25rem;margin:.3em 0}.om-alert p{margin:0;color:#57350b}.om-alert>div{min-width:0}
+.om-alert .tc-tag{background:#fde68a;color:#713f12}
+.om-act{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.om-alert a.goal-link{color:#92400e;margin:0}
+html[data-theme="dark"] .om-alert{background:var(--warn-bg);border-color:var(--warn-line);color:var(--ink)}
+html[data-theme="dark"] .om-alert p{color:var(--warn-ink)}html[data-theme="dark"] .om-alert .tc-tag{background:#4a3a10;color:#fde68a}
+html[data-theme="dark"] .om-alert a.goal-link{color:#fcd34d}
+
+/* Quant Lab share bar */
+.share-sim{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0 0}
+.share-msg{font-size:.85rem;color:var(--muted);overflow-wrap:anywhere;min-width:0}
+
+/* Question bank: difficulty filter and question search results */
+.qf-dl{display:inline-flex;align-items:center;gap:6px;font-size:.9rem;font-weight:600}
+.qf-dl select{min-height:40px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit;padding:0 8px}
+.qf-res{margin:16px 0 24px}.qf-res[hidden]{display:none}.qf-res-h{font-size:1.15rem}
+.qf-qs{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.qf-qs li{border:1px solid var(--line);border-radius:10px;background:var(--card);padding:10px 12px;min-width:0}
+.qf-qs li a{color:var(--ink);font-weight:600;overflow-wrap:anywhere}.qf-qs .qf-m{display:block;font-size:.8rem;color:var(--muted);margin-bottom:2px}
+
+/* Tracks page */
+.tr-tools{margin-bottom:20px}.tr-tool h2,.trk h2{font-size:1.2rem}
+.tr-on{font-size:.72rem;font-weight:700;vertical-align:3px;padding:.15em .55em;border-radius:6px;background:var(--ok-bg,#dcfce7);color:var(--ok-ink,#166534)}
+.tr-count{font-weight:700}
+.trk{border-top:4px solid #4f46e5;min-width:0}.trk-cuet{border-top-color:#ea580c}.trk-bank{border-top-color:#0891b2}.trk-pl{border-top-color:#059669}
+.trk .tags{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+.tr-links{display:flex;flex-wrap:wrap;gap:6px 14px;padding:0;margin:8px 0 0;list-style:none;font-weight:600}
+.tr-hi{font-size:.8rem;font-weight:600;color:var(--muted)}
+.tr-note{margin-top:18px;font-size:.9rem}
+
+/* Mistakes notebook */
+.mk-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}
+.mk-sum{font-weight:700;margin:0}
+.mk-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.mk-item{padding:16px;min-width:0}.mk-meta{font-size:.82rem;color:var(--muted);overflow-wrap:anywhere}
+.mk-q{margin:.5em 0;overflow-wrap:anywhere}.mk-act{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-weight:600}
+.mk-empty[hidden],.mk-tools[hidden]{display:none}
+.fc-all h2.fc-lh{font-size:1.1rem;margin:1em 0 .4em}

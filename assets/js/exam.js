@@ -31,7 +31,7 @@
   let saveTick = 0;
   let bank = { sections: {}, sets: {} }, mode, sec, qs = [], cur = 0, resp = [], marked = [], visited = [], tspent = [], checked = [], timeLeft = 0, timerId = null, shownAt = 0, elapsed = 0;
 
-  const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return window.Notebook ? Notebook.unseenFirst(a) : a; };   // no-repeat pool: questions (or whole sets) not yet shown to you come first
   const fmt = s => `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const val = (name) => (document.querySelector(`input[name=${name}]:checked`) || {}).value;
@@ -246,6 +246,7 @@
     }
     leave(); clearInterval(timerId);
     if (P) { P.clearRun(saveKey); P.record(ENG, qs.map((q, i) => ({ topic: q.topic, section: q._sec || sec, attempted: answered(i), correct: isCorrect(q, resp[i]) }))); }
+    if (window.Notebook) { Notebook.seen(qs.map(q => q.id)); Notebook.record(qs.map((q, i) => ({ q, exam: ENG, attempted: answered(i), correct: isCorrect(q, resp[i]) }))); }
     if (window.track) { const ev = `${window.EXAM || "cat"}-${sec}`; window.track(`${mode}-finish-${ev}`); if (auto) window.track(`${mode}-autosubmit-${ev}`); }
     const rows = qs.map((q, i) => ({ q, i, att: answered(i), ok: isCorrect(q, resp[i]), t: tspent[i] }));
     const att = rows.filter(r => r.att), ok = att.filter(r => r.ok), wrong = att.filter(r => !r.ok);
@@ -357,9 +358,12 @@
       const own = shuf(all.filter(q => q.source !== "general")), shared = shuf(all.filter(q => q.source === "general"));
       picked = [...own, ...shared].slice(0, 10);
     }
-    mode = "practice"; sec = picked[0]._sec; qs = prep(picked); saveKey = "daily-" + ENG + "-" + d;
+    // ?part=qa|dilr|varc (CAT only): just that part of today's Daily 10 (the home page's 15-minute target cards)
+    const PART = ENG === "cat" ? ["qa", "dilr", "varc"].find(k => k === new URLSearchParams(location.search).get("part")) : null;
+    if (PART) picked = picked.filter(q => q._sec === PART);
+    mode = "practice"; sec = picked[0]._sec; qs = prep(picked); saveKey = "daily-" + ENG + "-" + d + (PART ? "-" + PART : "");
     const n = qs.length; resp = Array(n).fill(null); marked = Array(n).fill(false); visited = Array(n).fill(false); tspent = Array(n).fill(0); checked = Array(n).fill(false);
-    sectionTime = 0; cur = 0; elapsed = 0; timeLeft = 0; title = `${EX.label} Daily 10 · ${d}`;
+    sectionTime = 0; cur = 0; elapsed = 0; timeLeft = 0; title = `${EX.label} Daily 10 · ${d}` + (PART ? ` · ${{ qa: "Quant mini-set", dilr: "DILR set", varc: "VARC RC" }[PART]}` : "");
     const r = P && P.loadRun(saveKey);
     if (r && r.qs && r.qs.length) ({ mode, sec, qs, cur, resp, marked, visited, tspent, checked, timeLeft, elapsed, sectionTime, title } = r);
     if (window.track) window.track(`daily-start-${ENG}`);

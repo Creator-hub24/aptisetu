@@ -1,6 +1,6 @@
 // UI/UX regression checks: theme toggle, no flash, focus ring, skip link, heading order, horizontal overflow, console errors.
 const {chromium}=require('playwright');const B=process.env.BASE||'http://localhost:8765/';
-const PAGES=['index.html','cat.html','practice.html','cat-practice.html','cat-quant-sets.html','cat-dilr-sets.html','set.html?sec=qa&set=1','quant.html','reasoning.html','varc.html','dilr.html','cuet.html','login.html','quant-lab.html','about.html'];
+const PAGES=['index.html','cat.html','practice.html','cat-practice.html','cat-quant-sets.html','cat-dilr-sets.html','set.html?sec=qa&set=1','quant.html','reasoning.html','varc.html','dilr.html','cuet.html','login.html','quant-lab.html','about.html','tracks.html','mistakes.html','q/index.html','flashcards.html'];
 (async()=>{const b=await chromium.launch();let fails=0,n=0;const ok=(t,c,x='')=>{n++;if(!c)fails++;console.log((c?'PASS ':'FAIL ')+t+(x?' — '+x:''))};
  // 1. Theme toggle: aria-pressed, persists across pages + reload, independent of progress keys
  {const c=await b.newContext({viewport:{width:390,height:844},colorScheme:'light'});const p=await c.newPage();
