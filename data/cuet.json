@@ -12542,6 +12542,852 @@
       "1/4"
      ],
      "answer": 2
+    },
+    {
+     "id": "UM89",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Matrices",
+     "difficulty": "Medium",
+     "question": "If A = <span class='mx'><span class='mx-r'><span>1</span><span>2</span></span><span class='mx-r'><span>2</span><span>1</span></span></span>, then A² − 2A equals:",
+     "solution": "A² = [[1·1 + 2·2, 1·2 + 2·1], [2·1 + 1·2, 2·2 + 1·1]] = [[5, 4], [4, 5]]. A² − 2A = [[5 − 2, 4 − 4], [4 − 4, 5 − 2]] = [[3, 0], [0, 3]] = 3I.",
+     "type": "mcq",
+     "options": [
+      "I",
+      "3I",
+      "2I",
+      "−3I"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM90",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Matrices",
+     "difficulty": "Easy",
+     "question": "The inverse of the diagonal matrix <span class='mx'><span class='mx-r'><span>2</span><span>0</span></span><span class='mx-r'><span>0</span><span>3</span></span></span> is:",
+     "solution": "For a diagonal matrix with non-zero diagonal entries, the inverse is the diagonal matrix of reciprocals: diag(1/2, 1/3). Check: diag(2, 3) × diag(1/2, 1/3) = diag(1, 1) = I.",
+     "type": "mcq",
+     "options": [
+      "<span class='mx'><span class='mx-r'><span>1/2</span><span>0</span></span><span class='mx-r'><span>0</span><span>1/3</span></span></span>",
+      "<span class='mx'><span class='mx-r'><span>3</span><span>0</span></span><span class='mx-r'><span>0</span><span>2</span></span></span>",
+      "<span class='mx'><span class='mx-r'><span>−1/2</span><span>0</span></span><span class='mx-r'><span>0</span><span>−1/3</span></span></span>",
+      "<span class='mx'><span class='mx-r'><span>1/3</span><span>0</span></span><span class='mx-r'><span>0</span><span>1/2</span></span></span>"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM91",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Matrices",
+     "difficulty": "Easy",
+     "question": "How many 3 × 3 matrices can be formed if every entry is either 0 or 1?",
+     "solution": "A 3 × 3 matrix has 9 entries and each entry has 2 choices, so the number of matrices is 2⁹ = 512.",
+     "type": "mcq",
+     "options": [
+      "9",
+      "81",
+      "512",
+      "729"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM92",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Matrices",
+     "difficulty": "Medium",
+     "question": "The matrix A = <span class='mx'><span class='mx-r'><span>1</span><span>3</span></span><span class='mx-r'><span>5</span><span>7</span></span></span> is written as P + Q, where P is symmetric and Q is skew-symmetric. The entry in row 1, column 2 of P is:",
+     "solution": "P = (A + Aᵀ)/2. Aᵀ = [[1, 5], [3, 7]], so A + Aᵀ = [[2, 8], [8, 14]] and P = [[1, 4], [4, 7]]. The row 1, column 2 entry is (3 + 5)/2 = 4. (Q = (A − Aᵀ)/2 = [[0, −1], [1, 0]].)",
+     "type": "mcq",
+     "options": [
+      "−1",
+      "3",
+      "5",
+      "4"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM93",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Determinants",
+     "difficulty": "Hard",
+     "question": "A is a 3 × 3 matrix with |A| = 2. What is |adj(2A)|?",
+     "solution": "For an n × n matrix, |adj B| = |B|ⁿ⁻¹. Here B = 2A with n = 3, so |B| = 2³ × |A| = 8 × 2 = 16, and |adj(2A)| = 16² = 256.",
+     "type": "mcq",
+     "options": [
+      "16",
+      "64",
+      "256",
+      "128"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM94",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Determinants",
+     "difficulty": "Easy",
+     "question": "For which value of k are the points (1, 2), (3, k) and (5, 10) collinear?",
+     "solution": "The points are collinear when the area determinant is zero: 1(k − 10) − 2(3 − 5) + 1(30 − 5k) = k − 10 + 4 + 30 − 5k = 24 − 4k = 0, so k = 6.",
+     "type": "mcq",
+     "options": [
+      "6",
+      "5",
+      "8",
+      "4"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM95",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Determinants",
+     "difficulty": "Medium",
+     "question": "For which value of k does the system x + y + z = 1, x + 2y + 3z = 2, x + 3y + kz = 3 fail to have a unique solution?",
+     "solution": "A unique solution exists exactly when the coefficient determinant is non-zero. Determinant = 1(2k − 9) − 1(k − 3) + 1(3 − 2) = 2k − 9 − k + 3 + 1 = k − 5, which is zero when k = 5.",
+     "type": "mcq",
+     "options": [
+      "6",
+      "3",
+      "4",
+      "5"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM96",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Integrals",
+     "difficulty": "Medium",
+     "question": "Evaluate ∫₀^{π/4} tan²x dx.",
+     "solution": "tan²x = sec²x − 1, so the integral is [tan x − x] from 0 to π/4 = (1 − π/4) − 0 = 1 − π/4.",
+     "type": "mcq",
+     "options": [
+      "1 − π/4",
+      "π/4 − 1",
+      "1 + π/4",
+      "π/4"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM97",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Integrals",
+     "difficulty": "Easy",
+     "question": "Evaluate ∫₋₁¹ |x| dx.",
+     "solution": "|x| is even, so the integral = 2∫₀¹ x dx = 2 × 1/2 = 1.",
+     "type": "mcq",
+     "options": [
+      "1/2",
+      "0",
+      "2",
+      "1"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM98",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Integrals",
+     "difficulty": "Medium",
+     "question": "Evaluate ∫₀^π x sin x dx.",
+     "solution": "Integrate by parts: ∫ x sin x dx = −x cos x + sin x. From 0 to π: (−π cos π + sin π) − (0 + 0) = π.",
+     "type": "mcq",
+     "options": [
+      "0",
+      "2π",
+      "π/2",
+      "π"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM99",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Integrals",
+     "difficulty": "Hard",
+     "question": "Evaluate ∫₀^{π/2} sin x / (sin x + cos x) dx.",
+     "solution": "Call it I. Replacing x by π/2 − x gives I = ∫₀^{π/2} cos x / (cos x + sin x) dx. Adding the two forms, 2I = ∫₀^{π/2} 1 dx = π/2, so I = π/4.",
+     "type": "mcq",
+     "options": [
+      "π/4",
+      "π/2",
+      "1",
+      "π/8"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM100",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Integrals",
+     "difficulty": "Medium",
+     "question": "∫ dx / (x(x + 1)) equals:",
+     "solution": "Partial fractions: 1/(x(x + 1)) = 1/x − 1/(x + 1). Integrating gives log|x| − log|x + 1| + C = log|x/(x + 1)| + C.",
+     "type": "mcq",
+     "options": [
+      "log|x(x + 1)| + C",
+      "log|x/(x + 1)| + C",
+      "log|(x + 1)/x| + C",
+      "1/(x + 1) + C"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM101",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Differential Equations",
+     "difficulty": "Medium",
+     "question": "The differential equation of the family of curves y = A e^{2x} + B e^{−2x} (A, B arbitrary constants) is:",
+     "solution": "Differentiate twice: y′ = 2A e^{2x} − 2B e^{−2x}, y″ = 4A e^{2x} + 4B e^{−2x} = 4y. Two constants are eliminated, so the equation has order 2.",
+     "type": "mcq",
+     "options": [
+      "d²y/dx² = 4y",
+      "d²y/dx² = 2y",
+      "dy/dx = 2y",
+      "d²y/dx² = −4y"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM102",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Differential Equations",
+     "difficulty": "Medium",
+     "question": "The general solution of dy/dx = (1 + y²)/(1 + x²) is:",
+     "solution": "Separate the variables: dy/(1 + y²) = dx/(1 + x²). Integrating both sides gives tan⁻¹y = tan⁻¹x + C.",
+     "type": "mcq",
+     "options": [
+      "tan⁻¹y = tan⁻¹x + C",
+      "tan⁻¹y = tan⁻¹x · C",
+      "y = x + C",
+      "log(1 + y²) = log(1 + x²) + C"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM103",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Differential Equations",
+     "difficulty": "Medium",
+     "question": "If dy/dx = e^{x − y} and y = log 2 when x = 0, what is y when x = log 3?",
+     "solution": "Separate: eʸ dy = eˣ dx, so eʸ = eˣ + C. At x = 0, y = log 2: 2 = 1 + C, so C = 1. At x = log 3: eʸ = 3 + 1 = 4, so y = log 4.",
+     "type": "mcq",
+     "options": [
+      "log 4",
+      "log 3",
+      "log 2",
+      "log 6"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM104",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Differential Equations",
+     "difficulty": "Easy",
+     "question": "What is the degree of the differential equation (d²y/dx²)² + sin(dy/dx) = 0?",
+     "solution": "Degree is defined only when the equation is a polynomial in its derivatives. Here dy/dx appears inside sin, so the equation is not a polynomial in its derivatives and its degree is not defined (its order is 2).",
+     "type": "mcq",
+     "options": [
+      "2",
+      "Not defined",
+      "1",
+      "0"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM105",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Continuity & Differentiability",
+     "difficulty": "Easy",
+     "question": "At x = 2, the function f(x) = |x − 2| is:",
+     "solution": "The limit of |x − 2| as x → 2 is 0 = f(2), so f is continuous there. The right-hand derivative is +1 and the left-hand derivative is −1; they differ, so f is not differentiable at x = 2.",
+     "type": "mcq",
+     "options": [
+      "differentiable but not continuous",
+      "continuous but not differentiable",
+      "both continuous and differentiable",
+      "neither continuous nor differentiable"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM106",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Continuity & Differentiability",
+     "difficulty": "Medium",
+     "question": "If y = sin⁻¹x, then the value of (1 − x²) d²y/dx² − x dy/dx is:",
+     "solution": "y′ = 1/√(1 − x²), so √(1 − x²) y′ = 1. Differentiate: √(1 − x²) y″ − x y′/√(1 − x²) = 0. Multiply by √(1 − x²): (1 − x²) y″ − x y′ = 0.",
+     "type": "mcq",
+     "options": [
+      "1",
+      "0",
+      "−1",
+      "x"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM107",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Continuity & Differentiability",
+     "difficulty": "Medium",
+     "question": "d/dx [log(sec x + tan x)] equals:",
+     "solution": "By the chain rule, the derivative is (sec x tan x + sec²x)/(sec x + tan x) = sec x (tan x + sec x)/(sec x + tan x) = sec x.",
+     "type": "mcq",
+     "options": [
+      "sec x tan x",
+      "tan x",
+      "sec x",
+      "sec²x"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM108",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Continuity & Differentiability",
+     "difficulty": "Easy",
+     "question": "For the curve x² + y² = 25, what is dy/dx at the point (3, 4)?",
+     "solution": "Differentiate implicitly: 2x + 2y dy/dx = 0, so dy/dx = −x/y = −3/4 at (3, 4).",
+     "type": "mcq",
+     "options": [
+      "−3/4",
+      "3/4",
+      "−4/3",
+      "4/3"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM109",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Continuity & Differentiability",
+     "difficulty": "Medium",
+     "question": "The value of c given by the Mean Value Theorem for f(x) = x³ on [0, 3] is:",
+     "solution": "MVT: f′(c) = (f(3) − f(0))/(3 − 0) = 27/3 = 9. f′(c) = 3c² = 9 gives c² = 3, so c = √3, which lies in (0, 3).",
+     "type": "mcq",
+     "options": [
+      "√2",
+      "3/2",
+      "1",
+      "√3"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM110",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Applications of Derivatives",
+     "difficulty": "Medium",
+     "question": "The maximum value of f(x) = x e^{−x} is:",
+     "solution": "f′(x) = e^{−x}(1 − x) = 0 gives x = 1, and f′ changes from positive to negative there, so it is a maximum. f(1) = 1 · e^{−1} = 1/e.",
+     "type": "mcq",
+     "options": [
+      "1/e",
+      "e",
+      "1",
+      "2/e²"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM111",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Applications of Derivatives",
+     "difficulty": "Easy",
+     "question": "What is the slope of the normal to the curve y = x³ at the point (2, 8)?",
+     "solution": "The tangent slope is dy/dx = 3x² = 3 × 2² = 12 at x = 2. The normal is perpendicular, so its slope is −1/12.",
+     "type": "mcq",
+     "options": [
+      "12",
+      "−1/12",
+      "−12",
+      "1/12"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM112",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Applications of Derivatives",
+     "difficulty": "Medium",
+     "question": "On which set is f(x) = 2x³ − 9x² + 12x + 1 strictly increasing?",
+     "solution": "f′(x) = 6x² − 18x + 12 = 6(x − 1)(x − 2). This is positive when x < 1 or x > 2, so f is strictly increasing on (−∞, 1) ∪ (2, ∞) and decreasing on (1, 2).",
+     "type": "mcq",
+     "options": [
+      "(1, ∞)",
+      "(1, 2)",
+      "(−∞, 2)",
+      "(−∞, 1) ∪ (2, ∞)"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM113",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Applications of Derivatives",
+     "difficulty": "Medium",
+     "question": "Using differentials, the approximate value of √25.2 is:",
+     "solution": "Take y = √x, x = 25, Δx = 0.2. dy = Δx/(2√x) = 0.2/10 = 0.02, so √25.2 ≈ 5 + 0.02 = 5.02.",
+     "type": "mcq",
+     "options": [
+      "5.2",
+      "5.04",
+      "5.01",
+      "5.02"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM114",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Probability",
+     "difficulty": "Easy",
+     "question": "If P(A) = 0.4 and P(B | A) = 0.5, what is P(A ∩ B)?",
+     "solution": "By the multiplication rule, P(A ∩ B) = P(A) × P(B | A) = 0.4 × 0.5 = 0.2.",
+     "type": "mcq",
+     "options": [
+      "0.8",
+      "0.9",
+      "0.2",
+      "0.1"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM115",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Probability",
+     "difficulty": "Easy",
+     "question": "A and B are independent events with P(A) = 0.3 and P(B) = 0.4. What is P(A ∪ B)?",
+     "solution": "For independent events P(A ∩ B) = 0.3 × 0.4 = 0.12, so P(A ∪ B) = 0.3 + 0.4 − 0.12 = 0.58.",
+     "type": "mcq",
+     "options": [
+      "0.12",
+      "0.7",
+      "0.58",
+      "0.82"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM116",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Probability",
+     "difficulty": "Medium",
+     "question": "Machine A makes 60% of a factory's bolts and machine B the rest. 2% of A's bolts and 3% of B's bolts are defective. A bolt chosen at random is defective. What is the probability that it was made by B?",
+     "solution": "By Bayes' theorem: P(B | defective) = (0.4 × 0.03)/(0.6 × 0.02 + 0.4 × 0.03) = 0.012/(0.012 + 0.012) = 1/2.",
+     "type": "mcq",
+     "options": [
+      "1/3",
+      "2/5",
+      "3/5",
+      "1/2"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM117",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Probability",
+     "difficulty": "Medium",
+     "question": "A random variable X takes the values 0, 1, 2, 3 with P(X = 0) = k, P(X = 1) = 2k, P(X = 2) = 3k and P(X = 3) = 4k. What is the mean E(X)?",
+     "solution": "The probabilities add to 1: k + 2k + 3k + 4k = 10k = 1, so k = 1/10. E(X) = 0(1/10) + 1(2/10) + 2(3/10) + 3(4/10) = (0 + 2 + 6 + 12)/10 = 2.",
+     "type": "mcq",
+     "options": [
+      "3/2",
+      "1",
+      "2",
+      "5/2"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM118",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Probability",
+     "difficulty": "Easy",
+     "question": "A fair coin is tossed 5 times. What is the probability of getting exactly 2 heads?",
+     "solution": "By the binomial distribution, P(X = 2) = ⁵C₂ (1/2)⁵ = 10/32 = 5/16.",
+     "type": "mcq",
+     "options": [
+      "2/5",
+      "1/4",
+      "5/16",
+      "3/16"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM119",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Relations & Functions",
+     "difficulty": "Easy",
+     "question": "How many relations can be defined on the set A = {1, 2}?",
+     "solution": "A relation on A is any subset of A × A. A × A has 2 × 2 = 4 ordered pairs, so there are 2⁴ = 16 relations.",
+     "type": "mcq",
+     "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM120",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Relations & Functions",
+     "difficulty": "Medium",
+     "question": "How many symmetric relations can be defined on the set {1, 2, 3}?",
+     "solution": "A symmetric relation is fixed by choosing which of the 3 diagonal pairs (a, a) it contains and which of the 3 unordered pairs {a, b} (a ≠ b) it contains, taking both orders together. That is 3 + 3 = 6 independent yes/no choices, so there are 2⁶ = 64 relations.",
+     "type": "mcq",
+     "options": [
+      "512",
+      "64",
+      "8",
+      "27"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM121",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Relations & Functions",
+     "difficulty": "Easy",
+     "question": "If f: R → R is defined by f(x) = 3x + 2, then f⁻¹(11) equals:",
+     "solution": "f⁻¹(11) is the x with 3x + 2 = 11, i.e. x = 3. (In general f⁻¹(y) = (y − 2)/3.)",
+     "type": "mcq",
+     "options": [
+      "13/3",
+      "35",
+      "3",
+      "11/3"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM122",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Relations & Functions",
+     "difficulty": "Medium",
+     "question": "How many onto functions are there from {1, 2, 3, 4} to {a, b}?",
+     "solution": "There are 2⁴ = 16 functions in all. Exactly 2 of them are not onto (all values a, or all values b), so 16 − 2 = 14 are onto.",
+     "type": "mcq",
+     "options": [
+      "16",
+      "14",
+      "8",
+      "12"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM123",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Inverse Trigonometric Functions",
+     "difficulty": "Medium",
+     "question": "The value of sin⁻¹(sin(2π/3)) is:",
+     "solution": "The principal range of sin⁻¹ is [−π/2, π/2], and 2π/3 is outside it. sin(2π/3) = sin(π − 2π/3) = sin(π/3), and π/3 is inside the range, so the value is π/3.",
+     "type": "mcq",
+     "options": [
+      "π/6",
+      "2π/3",
+      "−π/3",
+      "π/3"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM124",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Inverse Trigonometric Functions",
+     "difficulty": "Easy",
+     "question": "For any real x, cos(tan⁻¹x + cot⁻¹x) equals:",
+     "solution": "For every real x, tan⁻¹x + cot⁻¹x = π/2, and cos(π/2) = 0.",
+     "type": "mcq",
+     "options": [
+      "−1",
+      "1",
+      "0",
+      "1/2"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM125",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Inverse Trigonometric Functions",
+     "difficulty": "Easy",
+     "question": "If sin⁻¹x = π/5 for some x, then cos⁻¹x equals:",
+     "solution": "For x in [−1, 1], sin⁻¹x + cos⁻¹x = π/2, so cos⁻¹x = π/2 − π/5 = 3π/10.",
+     "type": "mcq",
+     "options": [
+      "π/10",
+      "π/5",
+      "4π/5",
+      "3π/10"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM126",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Inverse Trigonometric Functions",
+     "difficulty": "Easy",
+     "question": "What is the principal value of tan⁻¹(−√3)?",
+     "solution": "The principal range of tan⁻¹ is (−π/2, π/2). tan(−π/3) = −√3 and −π/3 lies in that range, so the principal value is −π/3.",
+     "type": "mcq",
+     "options": [
+      "−π/6",
+      "2π/3",
+      "π/3",
+      "−π/3"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM127",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Vectors",
+     "difficulty": "Hard",
+     "question": "Vectors a, b and c satisfy a + b + c = 0, with |a| = 3, |b| = 5 and |c| = 7. What is the angle between a and b?",
+     "solution": "c = −(a + b), so |c|² = |a|² + |b|² + 2 a·b: 49 = 9 + 25 + 2 a·b, giving a·b = 15/2. cos θ = (15/2)/(3 × 5) = 1/2, so θ = 60°.",
+     "type": "mcq",
+     "options": [
+      "45°",
+      "30°",
+      "60°",
+      "120°"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM128",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Vectors",
+     "difficulty": "Medium",
+     "question": "What is the area of the triangle with vertices A(1, 1, 1), B(1, 2, 3) and C(2, 3, 1)?",
+     "solution": "AB = ĵ + 2k̂ and AC = î + 2ĵ. AB × AC = (1·0 − 2·2)î + (2·1 − 0·0)ĵ + (0·2 − 1·1)k̂ = −4î + 2ĵ − k̂, with magnitude √(16 + 4 + 1) = √21. Area = ½|AB × AC| = √21/2.",
+     "type": "mcq",
+     "options": [
+      "√21/2 square units",
+      "√21 square units",
+      "√30/2 square units",
+      "5/2 square units"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM129",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Vectors",
+     "difficulty": "Easy",
+     "question": "For which value of λ are the vectors 2î + 3ĵ − k̂ and 4î + λĵ − 2k̂ parallel?",
+     "solution": "Parallel vectors have proportional components: 4/2 = λ/3 = (−2)/(−1) = 2, so λ = 6.",
+     "type": "mcq",
+     "options": [
+      "4",
+      "3",
+      "−6",
+      "6"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM130",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Vectors",
+     "difficulty": "Easy",
+     "question": "The value of î · (ĵ × k̂) + ĵ · (k̂ × î) + k̂ · (î × ĵ) is:",
+     "solution": "ĵ × k̂ = î, k̂ × î = ĵ and î × ĵ = k̂. So the sum is î·î + ĵ·ĵ + k̂·k̂ = 1 + 1 + 1 = 3.",
+     "type": "mcq",
+     "options": [
+      "0",
+      "3",
+      "1",
+      "−3"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM131",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Three-dimensional Geometry",
+     "difficulty": "Medium",
+     "question": "What is the angle between the line (x − 1)/1 = (y + 2)/2 = (z − 3)/2 and the plane 2x − y + 2z = 5?",
+     "solution": "The line has direction b = (1, 2, 2) and the plane has normal n = (2, −1, 2). sin θ = |b·n|/(|b||n|) = |2 − 2 + 4|/(3 × 3) = 4/9, so θ = sin⁻¹(4/9).",
+     "type": "mcq",
+     "options": [
+      "sin⁻¹(4/9)",
+      "cos⁻¹(4/9)",
+      "sin⁻¹(2/9)",
+      "π/2"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM132",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Three-dimensional Geometry",
+     "difficulty": "Medium",
+     "question": "What is the foot of the perpendicular from the origin to the plane 2x + y + 2z = 9?",
+     "solution": "The perpendicular from the origin runs along the normal, so the foot is t(2, 1, 2). Substituting: 4t + t + 4t = 9, so t = 1 and the foot is (2, 1, 2).",
+     "type": "mcq",
+     "options": [
+      "(2, 2, 1)",
+      "(1, 2, 2)",
+      "(2, 1, 2)",
+      "(4, 2, 4)"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM133",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Three-dimensional Geometry",
+     "difficulty": "Easy",
+     "question": "A line makes equal angles with the three coordinate axes. Its direction cosines are:",
+     "solution": "If l = m = n, then l² + m² + n² = 1 gives 3l² = 1, so l = ±1/√3. The direction cosines are ±(1/√3, 1/√3, 1/√3).",
+     "type": "mcq",
+     "options": [
+      "(1, 1, 1)",
+      "±(1/√3, 1/√3, 1/√3)",
+      "±(1/3, 1/3, 1/3)",
+      "±(1/√2, 1/√2, 1/√2)"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM134",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Three-dimensional Geometry",
+     "difficulty": "Medium",
+     "question": "What is the distance between the parallel planes 2x + y + 2z = 1 and 4x + 2y + 4z = 14?",
+     "solution": "Divide the second equation by 2: 2x + y + 2z = 7. For planes ax + by + cz = d₁ and ax + by + cz = d₂, distance = |d₂ − d₁|/√(a² + b² + c²) = |7 − 1|/3 = 2.",
+     "type": "mcq",
+     "options": [
+      "4 units",
+      "13/3 units",
+      "5/3 units",
+      "2 units"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM135",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Three-dimensional Geometry",
+     "difficulty": "Easy",
+     "question": "For which value of k are the lines (x − 1)/2 = (y − 2)/k = (z − 3)/1 and x/1 = y/2 = z/(−4) perpendicular?",
+     "solution": "The direction ratios are (2, k, 1) and (1, 2, −4). The lines are perpendicular when 2·1 + k·2 + 1·(−4) = 0, i.e. 2k − 2 = 0, so k = 1.",
+     "type": "mcq",
+     "options": [
+      "−1",
+      "2",
+      "1",
+      "4"
+     ],
+     "answer": 2
     }
    ]
   }
