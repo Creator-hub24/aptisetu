@@ -1,0 +1,395 @@
+{
+ "name": "practice-b13 — QA",
+ "sets": {},
+ "questions": [
+  {
+   "id": "B13Q-01",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Logarithms",
+   "difficulty": "Medium",
+   "question": "If log₂x + log₄y = 4 and log₄x + log₂y = 5, what is the value of xy?",
+   "solution": "Write a = log₂x and b = log₂y. Since log₄ = ½ log₂, the equations are a + b/2 = 4 and a/2 + b = 5, i.e. 2a + b = 8 and a + 2b = 10. So a = 2 and b = 4, giving x = 4, y = 16 and xy = 64.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "64"
+  },
+  {
+   "id": "B13Q-02",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Logarithms",
+   "difficulty": "Medium",
+   "question": "How many integers n satisfy 1 < log₂(log₃ n) < 2?",
+   "solution": "1 < log₂(log₃ n) < 2 means 2 < log₃ n < 4, i.e. 9 < n < 81. The integers are 10, 11, …, 80, which is 71 integers.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "71"
+  },
+  {
+   "id": "B13Q-03",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Logarithms",
+   "difficulty": "Hard",
+   "question": "What is the product of all real values of x for which x^(log₁₀x) = 100x?",
+   "solution": "Take log₁₀ of both sides and write t = log₁₀x: t·t = 2 + t, so t² − t − 2 = 0 and t = 2 or t = −1. Then x = 100 or x = 1/10 (both positive, so both valid), and the product is 100 × 1/10 = 10.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "10"
+  },
+  {
+   "id": "B13Q-04",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Logarithms",
+   "difficulty": "Hard",
+   "question": "If log₁₂18 = a, then log₂₄16 equals",
+   "solution": "Let r = log 3 / log 2. Then a = log 18 / log 12 = (1 + 2r)/(2 + r), so r = (2a − 1)/(2 − a). Next, log₂₄16 = 4 log 2/(3 log 2 + log 3) = 4/(3 + r) = 4(2 − a)/(3(2 − a) + 2a − 1) = 4(2 − a)/(5 − a).",
+   "type": "mcq",
+   "options": [
+    "(2 − a)/(5 − a)",
+    "4(2 + a)/(5 + a)",
+    "4(2 − a)/(5 − a)",
+    "4(a − 2)/(a + 5)"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "B13Q-05",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Functions",
+   "difficulty": "Medium",
+   "question": "Let f(x) = x/(1 + x) for x > 0, and let fⁿ denote f applied n times (so f²(x) = f(f(x))). What is f¹⁰(1)?",
+   "solution": "f(f(x)) = (x/(1 + x))/(1 + x/(1 + x)) = x/(1 + 2x), and in general fⁿ(x) = x/(1 + nx), as each step adds x to the denominator. So f¹⁰(1) = 1/(1 + 10) = 1/11.",
+   "type": "mcq",
+   "options": [
+    "1/20",
+    "1/12",
+    "1/11",
+    "1/2"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "B13Q-06",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Functions",
+   "difficulty": "Hard",
+   "question": "How many functions f from {1, 2, 3, 4} to itself satisfy f(f(x)) = x for every x in the set?",
+   "solution": "Such an f pairs the elements up and fixes the rest (any element not fixed is swapped with its partner). No swaps: 1 function. Exactly one swapped pair: C(4,2) = 6. Two swapped pairs: 3. Total = 1 + 6 + 3 = 10.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "10"
+  },
+  {
+   "id": "B13Q-07",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Functions",
+   "difficulty": "Medium",
+   "question": "For real x, let g(x) = min(2x + 1, x + 4, 7 − x). What is the largest value g(x) can take?",
+   "solution": "7 − x falls as x grows while the other two rise, so the maximum of the minimum is where 7 − x meets the smaller rising line. 2x + 1 = 7 − x at x = 2, where both equal 5 and x + 4 = 6 is larger. (Where x + 4 = 7 − x, at x = 1.5, 2x + 1 is only 4.) So the largest value is 5, at x = 2.",
+   "type": "mcq",
+   "options": [
+    "3",
+    "4",
+    "4.5",
+    "5"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "B13Q-08",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Averages",
+   "difficulty": "Medium",
+   "question": "Section A has 30 students with an average score of 62, and Section B has 45 students with an average of 58. Five students move from A to B, after which A's average rises to 63. What is B's new average?",
+   "solution": "The five movers' total = 30 × 62 − 25 × 63 = 1860 − 1575 = 285. B's new total = 45 × 58 + 285 = 2610 + 285 = 2895 for 50 students, so its average is 2895/50 = 57.9.",
+   "type": "mcq",
+   "options": [
+    "57.9",
+    "58.1",
+    "58.3",
+    "58.5"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "B13Q-09",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Ratio & Proportion",
+   "difficulty": "Medium",
+   "question": "A, B and C start a business with capitals in the ratio 3 : 4 : 5. After 4 months A doubles his capital, and after 6 months C withdraws half of hers. B's capital is unchanged. Out of a year-end profit of ₹15,300, what is C's share (in ₹)?",
+   "solution": "Take capitals 3, 4, 5 units. Capital × months: A = 3 × 4 + 6 × 8 = 60; B = 4 × 12 = 48; C = 5 × 6 + 2.5 × 6 = 45. Total = 153. C's share = 15,300 × 45/153 = ₹4,500.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4500"
+  },
+  {
+   "id": "B13Q-10",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Permutations & Combinations",
+   "difficulty": "Hard",
+   "question": "In how many ways can 12 be written as a sum of three different positive integers, if the order of the terms does not matter?",
+   "solution": "List a < b < c with a + b + c = 12. a = 1: (2, 9), (3, 8), (4, 7), (5, 6), so 4 ways. a = 2: (3, 7), (4, 6), so 2. a = 3: (4, 5), so 1. Since 3a + 3 ≤ 12, a ≤ 3. Total = 7.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "7"
+  },
+  {
+   "id": "B13Q-11",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Probability",
+   "difficulty": "Hard",
+   "question": "A and B take turns, A first. On each of A's turns A rolls a fair die and wins on a six; on each of B's turns B tosses a fair coin and wins on heads. They continue until someone wins. What is the probability that A wins?",
+   "solution": "A round in which nobody wins has probability (5/6)(1/2) = 5/12. A wins on the first turn of a round with probability 1/6, so P(A) = (1/6)(1 + 5/12 + (5/12)² + …) = (1/6)/(7/12) = 2/7.",
+   "type": "mcq",
+   "options": [
+    "1/6",
+    "2/7",
+    "1/3",
+    "5/12"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "B13Q-12",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Progressions",
+   "difficulty": "Medium",
+   "question": "In a geometric progression with positive terms, the sum of the first three terms is 26 and the sum of the next three terms is 702. What is the fifth term?",
+   "solution": "The next three terms are the first three multiplied by r³, so r³ = 702/26 = 27 and r = 3. Then a(1 + 3 + 9) = 26 gives a = 2, and the fifth term is 2 × 3⁴ = 162.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "162"
+  },
+  {
+   "id": "B13Q-13",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Progressions",
+   "difficulty": "Hard",
+   "question": "What is the value of 1×2 + 2×3 + 3×4 + … + 20×21?",
+   "solution": "k(k + 1) = [k(k + 1)(k + 2) − (k − 1)k(k + 1)]/3, so the sum telescopes to n(n + 1)(n + 2)/3. With n = 20: 20 × 21 × 22/3 = 3080.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "3080"
+  },
+  {
+   "id": "B13Q-14",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Progressions",
+   "difficulty": "Medium",
+   "question": "What is the value of 1/(1×3) + 1/(3×5) + 1/(5×7) + … + 1/(49×51)?",
+   "solution": "1/(k(k + 2)) = ½(1/k − 1/(k + 2)), so the sum telescopes to ½(1 − 1/51) = ½ × 50/51 = 25/51.",
+   "type": "mcq",
+   "options": [
+    "25/51",
+    "26/51",
+    "50/51",
+    "1"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "B13Q-15",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mensuration",
+   "difficulty": "Medium",
+   "question": "A rectangular lawn is 60 m by 40 m. A path of uniform width runs inside it along all four edges, and the path's area is 736 m². What is the width of the path (in m)?",
+   "solution": "The grass left is (60 − 2w)(40 − 2w) = 2400 − 736 = 1664. Expanding, 4w² − 200w + 2400 = 1664, i.e. w² − 50w + 184 = 0, so w = (50 ± 42)/2 = 4 or 46. The width must be under 20 m, so w = 4.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4"
+  },
+  {
+   "id": "B13Q-16",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Hard",
+   "question": "How many non-congruent triangles with integer side lengths have a perimeter of 20?",
+   "solution": "Let a ≤ b ≤ c with a + b + c = 20 and a + b > c, so c < 10 and c ≥ 7. c = 9: (2,9), (3,8), (4,7), (5,6), so 4. c = 8: (4,8), (5,7), (6,6), so 3. c = 7: (6,7), so 1. Total = 8.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "8"
+  },
+  {
+   "id": "B13Q-17",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Medium",
+   "question": "What is the remainder when 1! + 2! + 3! + … + 100! is divided by 12?",
+   "solution": "From 4! = 24 onwards every factorial is a multiple of 12, so only 1! + 2! + 3! = 1 + 2 + 6 = 9 matters. The remainder is 9.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "9"
+  },
+  {
+   "id": "B13Q-18",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Medium",
+   "question": "How many integers from 1 to 1000 are perfect squares or perfect cubes (or both)?",
+   "solution": "Squares: 1², …, 31² (32² = 1024 is too big), so 31. Cubes: 1³, …, 10³, so 10. Both means sixth powers: 1, 64 and 729, so 3. Total = 31 + 10 − 3 = 38.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "38"
+  },
+  {
+   "id": "B13Q-19",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Medium",
+   "question": "The roots of x² − px + q = 0 are two consecutive integers. What is the value of p² − 4q?",
+   "solution": "If the roots are n and n + 1, then p = 2n + 1 and q = n(n + 1). So p² − 4q = 4n² + 4n + 1 − 4n² − 4n = 1. (p² − 4q is also the square of the difference of the roots, which is 1² = 1.)",
+   "type": "mcq",
+   "options": [
+    "0",
+    "1",
+    "4",
+    "It depends on p"
+   ],
+   "answer": 1,
+   "fixed": true
+  },
+  {
+   "id": "B13Q-20",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Medium",
+   "question": "How many real numbers x satisfy x² − 5|x| + 6 = 0?",
+   "solution": "Since x² = |x|², the equation is |x|² − 5|x| + 6 = 0, so |x| = 2 or |x| = 3. That gives x = ±2 and ±3: 4 solutions.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "4"
+  },
+  {
+   "id": "B13Q-21",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Inequalities",
+   "difficulty": "Hard",
+   "question": "x and y are positive real numbers with x + y = 10. What is the smallest possible value of (1 + 1/x)(1 + 1/y)?",
+   "solution": "(1 + 1/x)(1 + 1/y) = 1 + 1/x + 1/y + 1/(xy) = 1 + (x + y + 1)/(xy) = 1 + 11/(xy). This is smallest when xy is largest, and with x + y = 10 the largest product is 5 × 5 = 25. So the minimum is 1 + 11/25 = 36/25 = 1.44.",
+   "type": "mcq",
+   "options": [
+    "1.44",
+    "1.5",
+    "1.6",
+    "2"
+   ],
+   "answer": 0,
+   "fixed": true
+  },
+  {
+   "id": "B13Q-22",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Permutations & Combinations",
+   "difficulty": "Hard",
+   "question": "Three vertices of a regular octagon are chosen to form a triangle. In how many ways can this be done so that no side of the triangle is a side of the octagon?",
+   "solution": "Count choices of 3 vertices with no two adjacent. Total C(8,3) = 56. With at least one adjacent pair: a pair of adjacent vertices can be chosen in 8 ways and the third vertex in 6 ways, but the 8 triangles made of three consecutive vertices are counted twice, so 8 × 6 − 8 = 40. Answer = 56 − 40 = 16.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "16"
+  },
+  {
+   "id": "B13Q-23",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Logarithms",
+   "difficulty": "Easy",
+   "question": "What is the value of log₃5 × log₂₅27?",
+   "solution": "log₃5 × log₂₅27 = (log 5/log 3) × (3 log 3/2 log 5) = 3/2.",
+   "type": "mcq",
+   "options": [
+    "1/2",
+    "2/3",
+    "1",
+    "3/2"
+   ],
+   "answer": 3,
+   "fixed": true
+  },
+  {
+   "id": "B13Q-24",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Averages",
+   "difficulty": "Medium",
+   "question": "The average of 20 numbers is 0. At most how many of them can be greater than 0?",
+   "solution": "Not all 20 can be positive, because then the sum would be positive. 19 can be: take nineteen 1s and one −19, whose sum is 0. So the answer is 19.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "19"
+  },
+  {
+   "id": "B13Q-25",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Progressions",
+   "difficulty": "Hard",
+   "question": "The 3rd, 5th and 9th terms of a non-constant arithmetic progression are, in that order, three consecutive terms of a geometric progression. What is the common ratio of the geometric progression?",
+   "solution": "With first term a and difference d ≠ 0: (a + 4d)² = (a + 2d)(a + 8d). Expanding, a² + 8ad + 16d² = a² + 10ad + 16d², so 2ad = 0 and a = 0. The three terms are 2d, 4d and 8d, so the ratio is 2.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "2"
+  },
+  {
+   "id": "B13Q-26",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Probability",
+   "difficulty": "Hard",
+   "question": "A positive divisor of 720 is chosen at random, all divisors being equally likely. What is the probability that it is a multiple of 12?",
+   "solution": "720 = 2⁴ × 3² × 5 has 5 × 3 × 2 = 30 divisors. A multiple of 12 = 2² × 3 needs the power of 2 to be 2, 3 or 4 (3 ways), the power of 3 to be 1 or 2 (2 ways) and any power of 5 (2 ways): 12 divisors. Probability = 12/30 = 2/5.",
+   "type": "mcq",
+   "options": [
+    "1/4",
+    "3/10",
+    "1/3",
+    "2/5"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "B13Q-27",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time, Speed & Distance",
+   "difficulty": "Medium",
+   "question": "Two cyclists start at the same time from towns 300 km apart and ride towards each other at 40 km/h and 60 km/h. A drone starts with the first cyclist and flies at 80 km/h back and forth between the two, turning instantly, until the cyclists meet. How many km does the drone fly?",
+   "solution": "The cyclists close the gap at 40 + 60 = 100 km/h, so they meet after 300/100 = 3 hours. The drone flies the whole 3 hours at 80 km/h, i.e. 240 km. There is no need to add up the individual trips.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "240"
+  },
+  {
+   "id": "B13Q-28",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Hard",
+   "question": "Two parallel chords of a circle have lengths 16 cm and 30 cm and lie on opposite sides of the centre, 23 cm apart. What is the radius of the circle (in cm)?",
+   "solution": "Let the 16 cm chord be a cm from the centre and the 30 cm chord (23 − a) cm away. Then r² = 8² + a² = 15² + (23 − a)². So 64 + a² = 225 + 529 − 46a + a², giving 46a = 690 and a = 15. r² = 64 + 225 = 289, so r = 17.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "17"
+  }
+ ]
+}
