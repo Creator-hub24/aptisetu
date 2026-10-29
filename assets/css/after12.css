@@ -30,8 +30,8 @@
 .a12-dur{font-variant-numeric:tabular-nums}
 .a12-link{display:block;margin-top:.45em;font-size:.84rem;font-weight:600;color:var(--brand)}
 .a12-empty td{color:var(--muted);padding:1.6em .9em}
-@media(min-width:761px){.a12-table{min-width:880px}.a12-dur{white-space:nowrap}
- .a12-table th:nth-child(1),.a12-table td:nth-child(1){width:22%}.a12-table th:nth-child(2),.a12-table td:nth-child(2){width:15%}.a12-table th:nth-child(3),.a12-table td:nth-child(3){width:11%}.a12-table th:nth-child(4),.a12-table td:nth-child(4){width:27%}}
+@media(min-width:761px){.a12-table{min-width:880px;table-layout:fixed}
+ .a12-table th:nth-child(1),.a12-table td:nth-child(1){width:19%}.a12-table th:nth-child(2),.a12-table td:nth-child(2){width:12%}.a12-table th:nth-child(3),.a12-table td:nth-child(3){width:10%}.a12-table th:nth-child(4),.a12-table td:nth-child(4){width:32%}.a12-table th:nth-child(5),.a12-table td:nth-child(5){width:27%}}
 @media(max-width:760px){
  .a12-wrap{overflow:visible;background:transparent;border:0;box-shadow:none}
  .a12-table,.a12-table thead,.a12-table tbody,.a12-table tr,.a12-table td{display:block;min-width:0}

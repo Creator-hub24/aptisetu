@@ -98,7 +98,7 @@ for trk, tlabel, ddir, secs, purl in QTRACKS:
             page(hub, f"{tlabel} {sname}: {topic} questions with solutions", f"""<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="q/index.html">Question bank</a> / {tlabel} {sname}</div>
 <h1 style="font-size:clamp(1.5rem,3.6vw,2.2rem)">{tlabel} {sname}: {topic}</h1><p class="muted">{len(tq)} practice questions, each with the answer and a worked solution.</p>
 <div class="cta-row" style="margin:12px 0 0"><a class="btn" href="{purl(s, topic)}">Start practice →</a></div></div></div>
-<section style="padding-top:12px"><div class="container" style="max-width:860px">{_qf_diff(tq)}<ol class="qp-list" data-qf-list>{items}</ol></div></section>""", extra='<script src="assets/js/qfilter.js"></script>',
+<section style="padding-top:12px"><div class="container">{_qf_diff(tq)}<ol class="qp-list" data-qf-list>{items}</ol></div></section>""", extra='<script src="assets/js/qfilter.js"></script>',
                  desc=f"{len(tq)} free {tlabel} {_plain(sname)} questions on {_plain(topic)}, each with the answer and a worked solution.", base=True)
             QSTATS["hubs"] += 1
 _groups = {}
