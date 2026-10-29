@@ -48,8 +48,8 @@
   function chips() {
     const h = document.getElementById("site-header"); if (!h || document.getElementById("chips-row")) return;
     h.insertAdjacentHTML("beforeend", `<div class="container chips-row" id="chips-row">
-      <a class="chip chip-m" data-chip="m" href="mistakes.html">📓 Mistakes <b>0</b></a>
-      <a class="chip chip-s" data-chip="s" href="practice.html?daily=1">🔥 <b>0</b>-day streak</a>
+      <a class="chip chip-m" data-chip="m" href="mistakes.html"><span aria-hidden="true">📓</span><span>Mistakes <b>0</b></span></a>
+      <a class="chip chip-s" data-chip="s" href="practice.html?daily=1"><span aria-hidden="true">🔥</span><span><b>0</b>-day streak</span></a>
       <a class="chip chip-sync" data-chip="a" href="login.html">Sign in / Sync</a></div>`);
     N.paint();
     const A = window.Auth; if (A && A.ready) A.ready.then(u => { if (u) { const a = h.querySelector("[data-chip=a]"); a.textContent = "✓ Synced"; a.href = "account.html"; } }).catch(() => {});
