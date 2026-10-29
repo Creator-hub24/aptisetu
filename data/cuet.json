@@ -2665,6 +2665,276 @@
      "answer": 0
     },
     {
+     "id": "UG147",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Ranking & Order",
+     "difficulty": "Easy",
+     "question": "In a row of students, Pallavi is 9th from the left end and 14th from the right end. How many students are in the row?",
+     "solution": "Total = (position from left) + (position from right) − 1 = 9 + 14 − 1 = 22.",
+     "type": "mcq",
+     "options": [
+      "23",
+      "22",
+      "21",
+      "24"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG148",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Ranking & Order",
+     "difficulty": "Medium",
+     "question": "Among five friends, A is taller than B but shorter than C. D is the tallest of all, and E is shorter than B. Who is the third tallest?",
+     "solution": "D is the tallest. C > A > B and B > E, so the full order is D > C > A > B > E, which is the only order that fits. The third tallest is A.",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "E"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG149",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Time & Work",
+     "difficulty": "Easy",
+     "question": "15 men can finish a job in 20 days. How many men are needed to finish the same job in 12 days?",
+     "solution": "Total work = 15 × 20 = 300 man-days. Men needed for 12 days = 300/12 = 25.",
+     "type": "mcq",
+     "options": [
+      "25",
+      "20",
+      "30",
+      "18"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG150",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Odd One Out",
+     "difficulty": "Easy",
+     "question": "Which letter group is the odd one out? ACE, BDF, GIK, MOR",
+     "solution": "In ACE, BDF and GIK each letter is 2 places after the one before it. In MOR, O is 2 after M but R is 3 after O, so MOR is the odd one out.",
+     "type": "mcq",
+     "options": [
+      "ACE",
+      "GIK",
+      "BDF",
+      "MOR"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG151",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Odd One Out",
+     "difficulty": "Easy",
+     "question": "Which is the odd one out? Triangle, Square, Pentagon, Cube",
+     "solution": "A triangle, a square and a pentagon are flat (two-dimensional) figures. A cube is a solid (three-dimensional) figure, so it is the odd one out.",
+     "type": "mcq",
+     "options": [
+      "Pentagon",
+      "Square",
+      "Cube",
+      "Triangle"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG152",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "In a certain code, GOLD is written as TLOW. How is SILVER written in that code?",
+     "solution": "Each letter is replaced by its opposite letter in the alphabet (A↔Z, B↔Y, …; the positions add up to 27): G→T, O→L, L→O, D→W. So S→H, I→R, L→O, V→E, E→V, R→I, giving HROEVI.",
+     "type": "mcq",
+     "options": [
+      "HROEVI",
+      "HRPEVI",
+      "TJMWFS",
+      "HROEUI"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG153",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Coding-Decoding",
+     "difficulty": "Easy",
+     "question": "In a certain code, each letter of a word is replaced by the letter two places before it in the alphabet. How is FRIEND written in that code?",
+     "solution": "Move each letter two places back: F→D, R→P, I→G, E→C, N→L, D→B. FRIEND becomes DPGCLB.",
+     "type": "mcq",
+     "options": [
+      "HTKGPF",
+      "DPGCLB",
+      "DPGCMB",
+      "EQHDMC"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG154",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Direction Sense",
+     "difficulty": "Easy",
+     "question": "Meena walks 6 km east, then turns left and walks 8 km. How far is she from her starting point?",
+     "solution": "Turning left from east means walking north. Her displacement has 6 km east and 8 km north, so the distance is √(6² + 8²) = √100 = 10 km.",
+     "type": "mcq",
+     "options": [
+      "14 km",
+      "10 km",
+      "2 km",
+      "12 km"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG155",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Direction Sense",
+     "difficulty": "Medium",
+     "question": "A man is facing south. He turns 135° anticlockwise. Which direction is he facing now?",
+     "solution": "Turning 90° anticlockwise from south brings him to face east. A further 45° anticlockwise takes him halfway from east to north, i.e. north-east.",
+     "type": "mcq",
+     "options": [
+      "South-East",
+      "South-West",
+      "North-West",
+      "North-East"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG156",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Percentages",
+     "difficulty": "Easy",
+     "question": "What is 25% of 40% of 600?",
+     "solution": "40% of 600 = 240, and 25% of 240 = 60.",
+     "type": "mcq",
+     "options": [
+      "150",
+      "240",
+      "60",
+      "90"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG157",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Percentages",
+     "difficulty": "Easy",
+     "question": "The population of a town is 20,000. It increases by 10% each year. What will it be after 2 years?",
+     "solution": "After 1 year: 20,000 × 1.1 = 22,000. After 2 years: 22,000 × 1.1 = 24,200.",
+     "type": "mcq",
+     "options": [
+      "24,000",
+      "24,200",
+      "22,000",
+      "24,400"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG158",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Easy",
+     "question": "A sum of money amounts to ₹7,200 in 4 years at 5% per annum simple interest. What is the sum?",
+     "solution": "Amount = P(1 + RT/100) = P(1 + 20/100) = 1.2P. So 1.2P = 7,200 and P = ₹6,000.",
+     "type": "mcq",
+     "options": [
+      "₹6,480",
+      "₹5,760",
+      "₹6,200",
+      "₹6,000"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG159",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "Walking at 3/4 of his usual speed, a man reaches his office 20 minutes late. What is his usual time for the journey?",
+     "solution": "At 3/4 of the speed, the time becomes 4/3 of the usual time T. The extra time is T/3 = 20 minutes, so T = 60 minutes.",
+     "type": "mcq",
+     "options": [
+      "60 minutes",
+      "80 minutes",
+      "45 minutes",
+      "40 minutes"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG160",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Blood Relations",
+     "difficulty": "Medium",
+     "question": "'A + B' means A is the father of B, 'A × B' means A is the sister of B and 'A − B' means A is the mother of B. If P + Q × R, how is P related to R?",
+     "solution": "P + Q: P is Q's father. Q × R: Q is R's sister, so Q and R share parents. Hence P is R's father.",
+     "type": "mcq",
+     "options": [
+      "Brother",
+      "Father",
+      "Uncle",
+      "Grandfather"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG161",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Number & Letter Series",
+     "difficulty": "Medium",
+     "question": "Find the next term: 4, 9, 25, 49, 121, ?",
+     "solution": "The terms are squares of consecutive primes: 2², 3², 5², 7², 11². The next prime is 13, so the next term is 13² = 169.",
+     "type": "mcq",
+     "options": [
+      "225",
+      "144",
+      "196",
+      "169"
+     ],
+     "answer": 3
+    },
+    {
      "id": "G-Q1",
      "exam": "cuet",
      "topic": "Percentages",
