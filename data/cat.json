@@ -2819,6 +2819,930 @@
      "level": "Hard"
     },
     {
+     "id": "B16V-01",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The stockings experiment is used in the passage chiefly to show that:",
+     "solution": "The choice 'was driven mostly by position', yet people cited softness or sheen and 'sincerely believed the reasons they gave'. 'Deliberately conceal' contradicts 'They were not lying'. The passage offers no explanation of the right-hand preference, and the point is not about telling products apart: the pairs were identical.",
+     "set": "b16-rc1",
+     "type": "mcq",
+     "options": [
+      "people deliberately conceal the true reasons for their choices",
+      "people can sincerely give reasons for a choice that were not its actual cause",
+      "people prefer items placed on their right because of a habit of reading from left to right",
+      "people cannot distinguish between products of similar quality"
+     ],
+     "answer": 1,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 12
+    },
+    {
+     "id": "B16V-02",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "Which of the following findings would most strengthen the view, described in the second paragraph, that we explain our own behaviour much as an outsider would?",
+     "solution": "The passage names the 'tell-tale sign': our explanations are 'no more accurate than the explanations a stranger would offer for us, and are wrong in the same ways'. The finding about observers matches that sign exactly. Removing the effect by warning people bears on the effect, not on how explanations are produced. Accuracy about steps in a sum is the passage's own example of genuine self-knowledge, which limits the thesis. Length of explanation is irrelevant.",
+     "set": "b16-rc1",
+     "type": "mcq",
+     "options": [
+      "Participants who are told about position effects in advance no longer show them.",
+      "People are usually accurate when they report which step of a calculation they are on.",
+      "Participants give longer explanations for important decisions than for trivial ones.",
+      "Observers who merely read a description of an experiment predict the reasons participants will give about as accurately as the participants report them, and make the same errors."
+     ],
+     "answer": 3,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 12
+    },
+    {
+     "id": "B16V-03",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The author's reference to a person in pain and to someone working through a sum serves to:",
+     "solution": "The examples follow 'It would be easy to overstate the point' and show that the research does not make us 'wrong about everything inside us'. They qualify the claim rather than criticise the experiments. They are cases of knowledge, not of unnoticed causes, and the last paragraph treats outside evidence as the better guide, so the passage does not rank introspection higher.",
+     "set": "b16-rc1",
+     "type": "mcq",
+     "options": [
+      "limit the scope of the conclusion by giving cases where self-knowledge seems reliable",
+      "show that the experiments were badly designed",
+      "illustrate the kind of causes people fail to notice",
+      "argue that introspection is more reliable than outside observation"
+     ],
+     "answer": 0,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 12
+    },
+    {
+     "id": "B16V-04",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "It can be inferred that, according to the author, the reasons a job candidate gives for wanting a post are likely to reveal:",
+     "solution": "Para 4: such answers 'tell us less about the person than we assume, and more about what that person, and the culture around her, regards as a respectable reason'. 'Nothing at all' and 'always false' overstate; the passage says explanations are 'partly constructions'. Sincerity does not secure accuracy (the stocking participants were sincere). Detecting lies is not discussed.",
+     "set": "b16-rc1",
+     "type": "mcq",
+     "options": [
+      "nothing at all, since self-reports are always false",
+      "the candidate's true motives, provided she is sincere",
+      "something about what the candidate and her culture regard as acceptable reasons, even if they misdescribe what moved her",
+      "whether the candidate is lying, if her account is compared with a stranger's"
+     ],
+     "answer": 2,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 12
+    },
+    {
+     "id": "B16V-05",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The author's main purpose in the passage is to:",
+     "solution": "The final paragraph says 'A useful debate would separate these questions' and states each: harm to industry ('an empirical matter') and fairness of waste ('a question about responsibility'). The passage argues that a ban would likely fail, rejects 'benign' ('None of this makes the trade benign'), and never says the factories were never competitive.",
+     "set": "b16-rc2",
+     "type": "mcq",
+     "options": [
+      "argue that African governments should ban imports of used clothing",
+      "defend the used-clothing trade as wholly beneficial to importing countries",
+      "show that debates about the used-clothing trade confuse an empirical question about industry with a separate question about responsibility for waste",
+      "explain why textile factories in Africa were never competitive"
+     ],
+     "answer": 2,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 13
+    },
+    {
+     "id": "B16V-06",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "The critics' argument described in the second paragraph is most vulnerable to the objection that it:",
+     "solution": "The critics note that the decline 'coincided with' the flood of imports and 'draw the obvious conclusion'. Para 3 answers that 'The same decades saw other changes', such as tariff removal, unreliable power and cheap Asian clothing. That is the objection of inferring cause from coincidence while ignoring rivals. Sample size, donors' motives and untried tariffs are not the passage's objection.",
+     "set": "b16-rc2",
+     "type": "mcq",
+     "options": [
+      "infers that one development caused the factories' decline because the two happened at the same time, ignoring other causes in the same period",
+      "relies on data from too few countries",
+      "assumes that donors in wealthy countries act out of charity",
+      "overlooks the fact that tariffs on used clothing have never been tried"
+     ],
+     "answer": 0,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 13
+    },
+    {
+     "id": "B16V-07",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The comparison of the trade with 'a lottery' is meant to suggest that:",
+     "solution": "Right after the comparison: 'skill lies in judging suppliers, spotting quality and repairing what others would discard'. The uncertainty is the trader's, since no one knows a bale's contents until it is opened, and the point is that skill handles it. Losses, regulation, and customers' ignorance are not claimed.",
+     "set": "b16-rc2",
+     "type": "mcq",
+     "options": [
+      "traders are gamblers who usually lose money",
+      "the trade should be regulated like gambling",
+      "customers cannot know the quality of what they buy",
+      "success in the trade depends on skill in managing uncertainty, not merely on chance"
+     ],
+     "answer": 3,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 13
+    },
+    {
+     "id": "B16V-08",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "Which of the following best captures the author's view of the waste problem?",
+     "solution": "Para 5: importing countries 'bear the cost of disposing of clothes that the donors have, in effect, exported rather than thrown away', and 'The problem here is not that Africans buy used clothes but that rich countries consume clothing at a rate their own waste systems would struggle to absorb'. That rules out blaming buyers or local disposal, and the industry question is treated separately.",
+     "set": "b16-rc2",
+     "type": "mcq",
+     "options": [
+      "It shows that Africans should stop buying used clothing",
+      "It reflects the scale of clothing consumption in donor countries, whose costs are shifted onto the importing countries",
+      "It proves that the used-clothing trade has destroyed local industry",
+      "It is caused mainly by careless disposal practices in the importing countries"
+     ],
+     "answer": 1,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 13
+    },
+    {
+     "id": "B16V-09",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "According to the passage, the 'error' of the park founders lay in:",
+     "solution": "Para 3: 'The error lay in the idea that protection meant the absence of people, and in the assumption that the people who were there did not count as part of what was being protected.' The same paragraph says the threats 'were real', and the founders did draw boundaries.",
+     "set": "b16-rc3",
+     "type": "mcq",
+     "options": [
+      "equating protection with the absence of people and disregarding the inhabitants as part of what was protected",
+      "trying to protect landscapes that were not in fact threatened",
+      "allowing logging and mining inside the parks",
+      "failing to draw boundaries around the parks"
+     ],
+     "answer": 0,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 13
+    },
+    {
+     "id": "B16V-10",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "The example of grasslands turning to forest after burning stopped is used to support which claim?",
+     "solution": "Para 2 introduces the example to show 'how much of the 'wilderness' that visitors admire is the product of that management': when burning stopped, 'the very scenery the parks had been created to protect began to change'. The passage never says fire is always good, faults travellers, or ranks forests below grasslands.",
+     "set": "b16-rc3",
+     "type": "mcq",
+     "options": [
+      "Fire is always beneficial to ecosystems.",
+      "Early travellers were poor observers of nature.",
+      "Some landscapes valued as natural were maintained by human practices, so removing the people changed them.",
+      "Forests are less valuable than grasslands."
+     ],
+     "answer": 2,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 13
+    },
+    {
+     "id": "B16V-11",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The author draws attention to the word 'intact' in order to point out that:",
+     "solution": "Para 4: funding flows to projects that keep areas 'intact', 'a word that quietly implies that human presence is a form of damage'. The passage says nothing about project size, says communities' practices may have helped shape habitats, and calls the 'wilderness' idea persistent rather than abandoned.",
+     "set": "b16-rc3",
+     "type": "mcq",
+     "options": [
+      "funders prefer large projects to small ones",
+      "the language of funding can carry an unstated assumption that human presence is damage",
+      "communities inside parks have destroyed the habitats they live in",
+      "conservationists have stopped using the word 'wilderness'"
+     ],
+     "answer": 1,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 13
+    },
+    {
+     "id": "B16V-12",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "Which of the following policies would the author be most likely to support?",
+     "solution": "Para 5: 'The alternative is not to abolish protected areas but to rethink what they are for', and some parks are 'restoring traditional burning under the guidance of the communities that once practised it'. Abolition is explicitly rejected, strict exclusion is the error the passage criticises, and industrial logging is one of the real threats the parks were right to resist.",
+     "set": "b16-rc3",
+     "type": "mcq",
+     "options": [
+      "Abolishing protected areas and returning all land to private ownership",
+      "Fencing parks more strictly to keep out every form of human use",
+      "Allowing industrial logging inside parks to fund conservation",
+      "Inviting a community expelled from a park to resume seasonal burning under its own guidance, with the park's support"
+     ],
+     "answer": 3,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 13
+    },
+    {
+     "id": "B16V-13",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "According to the passage, why have individual restaurants that abolished tipping often reverted?",
+     "solution": "Para 3: a menu without tips must show prices 'about a fifth higher', customers 'tend to choose the restaurant that looks cheaper, even when the final bill would be the same', which is 'why such experiments have so often failed'. Worse service, legal requirements and refusal to pay are not mentioned.",
+     "set": "b16-rc4",
+     "type": "mcq",
+     "options": [
+      "Their staff provided worse service once tips were removed",
+      "Laws required them to permit tipping",
+      "Customers refused to pay for service at all",
+      "Their prices looked higher than rivals' even when the final bill was similar, so customers chose the rivals"
+     ],
+     "answer": 3,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B16V-14",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "The evidence cited in the second paragraph most directly undermines which claim?",
+     "solution": "Para 2 sets out 'the standard defence', that tipping rewards good service, and then finds 'only a small connection' between tips and rated service. That evidence targets the incentive claim. Price disguise and the pleasure of giving are later explanations the passage takes seriously, and variation with appearance is one of its own findings.",
+     "set": "b16-rc4",
+     "type": "mcq",
+     "options": [
+      "Tipping makes prices on menus look lower.",
+      "Tipping motivates servers to provide better service.",
+      "Customers enjoy feeling generous.",
+      "Tips vary with servers' appearance."
+     ],
+     "answer": 1,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B16V-15",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "The author mentions that a gift 'can be withheld' in order to:",
+     "solution": "'A gift, unlike a wage, can be withheld, and those who depend on it are exposed to the prejudices as well as the generosity of strangers', supported by research on appearance, age and ethnicity. The passage does not urge customers to stop, contradicts the service claim, and says nothing about servers' preferences.",
+     "set": "b16-rc4",
+     "type": "mcq",
+     "options": [
+      "argue that customers should stop tipping",
+      "show that tipping improves service",
+      "explain why depending on tips exposes workers to customers' prejudices",
+      "suggest that servers prefer gifts to wages"
+     ],
+     "answer": 2,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B16V-16",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "Which of the following is consistent with the author's discussion of remedies?",
+     "solution": "Para 5: if tipping 'survives mainly because it hides prices, then the solution lies in rules that require all-inclusive pricing for every restaurant at once'. If customers value giving, abolition 'may be neither achievable nor entirely desirable', so a ban does not follow. The last paragraph doubts that market pressure alone will end the custom, and a base wage is proposed to limit damage, not to raise tips.",
+     "set": "b16-rc4",
+     "type": "mcq",
+     "options": [
+      "If price disguise is the main cause, a rule requiring all restaurants to show all-inclusive prices at the same time would address it",
+      "If customers value giving, tipping should be banned by law",
+      "Market competition alone will eventually eliminate tipping",
+      "A guaranteed base wage would increase the size of tips"
+     ],
+     "answer": 0,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B16V-17",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The example of circular orbits and ellipses is used by the sceptics to argue that:",
+     "solution": "Para 2: circles were admired, ellipses 'at first thought ugly', and 'If the standard of beauty shifts to accommodate whatever theories succeed, then beauty cannot be an independent test of success.' The other options misread the example or overstate it.",
+     "set": "b16-rc5",
+     "type": "mcq",
+     "options": [
+      "ellipses are more beautiful than circles",
+      "standards of beauty change to fit successful theories, so beauty cannot independently test them",
+      "early astronomers had no interest in elegance",
+      "simple theories are always false"
+     ],
+     "answer": 1,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B16V-18",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "On the 'more modest version' of the aesthetic criterion, elegance is valuable because:",
+     "solution": "Para 3: simplicity is preferred 'because a theory with fewer adjustable parts makes sharper predictions and is easier to refute', valuable 'not as a sign that nature itself is beautiful but as a practical virtue'. Funding and teaching are not the modest version's reasons.",
+     "set": "b16-rc5",
+     "type": "mcq",
+     "options": [
+      "nature itself is fundamentally beautiful",
+      "beautiful theories are more likely to attract funding",
+      "simple theories are easier to teach to students",
+      "theories with fewer adjustable parts make sharper predictions and are easier to refute"
+     ],
+     "answer": 3,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B16V-19",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "Which scientist's conduct would the author regard as having 'left science for something closer to taste'?",
+     "solution": "Para 5 contrasts using elegance 'as a tool' (preferring the easier-to-test theory) with believing a theory 'because it is too beautiful to be wrong', which makes elegance 'a substitute for the test'. Abandoning a refuted theory and pursuing an idea to test it are ordinary science, and preferring the testable theory is the passage's example of the tool.",
+     "set": "b16-rc5",
+     "type": "mcq",
+     "options": [
+      "One who keeps defending a theory without any testable prediction because it is too elegant to be wrong",
+      "One who prefers the simpler of two theories because it is easier to test",
+      "One who abandons an elegant theory after an experiment refutes it",
+      "One who pursues an elegant idea to see whether it yields testable predictions"
+     ],
+     "answer": 0,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B16V-20",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The passage suggests that the risk described in the final paragraph is greatest when:",
+     "solution": "'If they never do, the field risks becoming a contest of aesthetic preferences'. If tests arrive, the theory 'will be confirmed or refuted like any other'. Disagreement about beauty and many adjustable parts are not identified as the condition for that risk.",
+     "set": "b16-rc5",
+     "type": "mcq",
+     "options": [
+      "experiments confirm an elegant theory",
+      "physicists disagree about the meaning of beauty",
+      "decisive tests of competing theories never become possible",
+      "a theory has many adjustable parts"
+     ],
+     "answer": 2,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B16V-21",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The detail about a severed arm reaching for food is offered mainly to illustrate that:",
+     "solution": "The example follows 'Most of an octopus's neurons are not in its central brain but in its arms, each of which can … respond … with a degree of independence.' Regrowth, pain and brain size are not what the detail shows.",
+     "set": "b16-rc6",
+     "type": "mcq",
+     "options": [
+      "octopuses can regrow lost limbs",
+      "octopuses feel pain in their arms",
+      "much of the octopus's nervous control is distributed in its arms rather than centralised",
+      "the octopus brain is larger than once thought"
+     ],
+     "answer": 2,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 15
+    },
+    {
+     "id": "B16V-22",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "How does the author respond to the critics who say that wound-tending behaviour does not prove feeling?",
+     "solution": "'This is true, but it proves less than the critics hope. The same could be said of any animal other than oneself.' The author concedes, then generalises the objection. 'Beyond doubt' contradicts the concession, the passage never says machines feel, and it says the anatomical similarity 'is missing'.",
+     "set": "b16-rc6",
+     "type": "mcq",
+     "options": [
+      "By conceding the point but noting that the same is true of the evidence we accept for other animals, so it does not settle the matter",
+      "By rejecting it, since the behaviour proves sentience beyond doubt",
+      "By arguing that machines also feel pain",
+      "By pointing out that octopuses share our anatomy"
+     ],
+     "answer": 0,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 15
+    },
+    {
+     "id": "B16V-23",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The 'increasingly influential' view described in the fifth paragraph holds that:",
+     "solution": "That view says that 'the burden of proof should fall on those who would subject it to conditions likely to cause suffering', and it 'does not claim to know what the octopus feels'. Waiting for proof is the opposing view; certainty and painkiller-based farming are not part of it.",
+     "set": "b16-rc6",
+     "type": "mcq",
+     "options": [
+      "protection should await proof that an animal is sentient",
+      "octopuses certainly feel pain as humans do",
+      "farming octopuses is acceptable if painkillers are used",
+      "where suffering is a realistic possibility, those who would impose harmful conditions must justify them"
+     ],
+     "answer": 3,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 15
+    },
+    {
+     "id": "B16V-24",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "The final paragraph suggests that the octopus challenges us chiefly because:",
+     "solution": "'We are used to extending moral concern along lines of resemblance. An animal whose mind may be rich but is certainly strange invites us to ask whether resemblance was ever the right guide.' The passage ranks no animal above mammals, stresses uncertainty rather than proof, and describes the octopus's evolutionary history.",
+     "set": "b16-rc6",
+     "type": "mcq",
+     "options": [
+      "it is more intelligent than mammals",
+      "it may have a rich mind that does not resemble ours, which calls into question our habit of extending concern by resemblance",
+      "science has proved that it is sentient",
+      "its evolutionary history is unknown"
+     ],
+     "answer": 1,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 15
+    },
+    {
+     "id": "B16V-25",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-summary",
+     "difficulty": "Hard",
+     "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><blockquote class='ps'>A ship's captain who runs aground in fog is judged harshly; one who takes the same route in the same fog and arrives safely is not judged at all. Inquiries into accidents therefore study only the voyages that went wrong, and conclude that the decisions taken on them were reckless. Yet if the same decisions were taken routinely on voyages that succeeded, they are not what distinguishes failure from success, and correcting them may achieve little. An honest inquiry would ask how often the fatal choice was made without consequence.</blockquote>",
+     "solution": "The paragraph's point is that studying only failures can blame decisions that also occurred in successes, and so misidentify causes; hence 'ask how often the fatal choice was made without consequence'. Calling all fog-sailing reckless reverses the point, abolition is never proposed, and the paragraph does not rank successes above failures.",
+     "type": "mcq",
+     "options": [
+      "Inquiries that examine only failures may blame choices that were equally common in successes, and so misidentify what causes accidents.",
+      "Captains who sail in fog are reckless whether or not they arrive safely.",
+      "Accident inquiries should be abolished because they are biased.",
+      "Successful voyages teach more than failed ones."
+     ],
+     "answer": 0,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 12
+    },
+    {
+     "id": "B16V-26",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-summary",
+     "difficulty": "Medium",
+     "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><blockquote class='ps'>Planners laying out a new university campus once left the lawns between its buildings unpaved for a year. By the end of it, students had worn bare tracks across the grass along the routes they actually walked, and the planners paved those tracks. Paths designed in advance express a guess about how people will move; paths worn by use record how they do. Where a design can wait for that record, it can avoid the familiar sight of fenced-off lawns that people cross anyway.</blockquote>",
+     "solution": "The paragraph contrasts paths that 'express a guess' with paths that 'record how they do', and recommends waiting for the record. The option about observing actual behaviour states that lesson. The students walked on tracks that were later paved, so they did not prefer grass as such; 'never be paved' contradicts the planners' action; and the fenced lawns 'people cross anyway' show fences failing.",
+     "type": "mcq",
+     "options": [
+      "Students prefer walking on grass to walking on paved paths.",
+      "Campus lawns should never be paved.",
+      "Designs that wait to observe how people actually behave can fit that behaviour better than designs based on advance guesses.",
+      "Fences are an effective way to keep people off lawns."
+     ],
+     "answer": 2,
+     "pack": "practice-b16",
+     "level": "Medium",
+     "practiceSet": 7
+    },
+    {
+     "id": "B16V-27",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-summary",
+     "difficulty": "Hard",
+     "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><blockquote class='ps'>Shops make a large share of their profit on electrical goods not from the goods but from extended warranties sold at the till. The warranties are profitable because the faults they cover are rare and the repairs cheap compared with the price charged. Customers buy them anyway, partly because a breakdown is easy to picture at the moment of purchase, and partly because a single large loss feels worse than many small payments of the same total. A buyer who could afford to replace the item would, on average, do better by taking the risk herself.</blockquote>",
+     "solution": "The paragraph explains why warranties are profitable (rare faults, cheap repairs), why people buy them (vivid breakdowns, dislike of one large loss), and concludes that a buyer who can bear the risk does better without one. The option about overweighted losses captures all three. Faults are said to be 'rare', a ban is never proposed, and the paragraph does not say most buyers cannot afford replacement.",
+     "type": "mcq",
+     "options": [
+      "Electrical goods break down more often than customers expect.",
+      "Warranties profit sellers because buyers overweight vivid but unlikely losses, so buyers who can bear the risk would usually do better to decline them.",
+      "Shops should be prohibited from selling extended warranties.",
+      "Most buyers cannot afford to replace electrical goods."
+     ],
+     "answer": 1,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 12
+    },
+    {
+     "id": "B16V-28",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-summary",
+     "difficulty": "Hard",
+     "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><blockquote class='ps'>A company that measures customer service by how quickly calls are answered will soon have calls answered quickly. Whether customers are helped is another matter: an agent rewarded for speed has every reason to end a call before the problem is solved, and a customer who must call back three times generates three quickly answered calls. The number improves while the service it was meant to track gets worse.</blockquote>",
+     "solution": "The example shows the number improving while 'the service it was meant to track gets worse', because agents optimise the metric itself. The option about a measure becoming the target generalises exactly that. Hiring and customer preference are not the point, and agents' skill is not discussed.",
+     "type": "mcq",
+     "options": [
+      "Call centres should hire more agents to reduce waiting times.",
+      "Customers prefer to have their calls answered quickly.",
+      "Agents who are rewarded for speed are less skilled than others.",
+      "When a measure becomes the target, people can improve the measure in ways that defeat the purpose it was meant to serve."
+     ],
+     "answer": 3,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 13
+    },
+    {
+     "id": "B16V-29",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-summary",
+     "difficulty": "Medium",
+     "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><blockquote class='ps'>Old farming terraces on steep hillsides can look like monuments to backbreaking toil, and in a sense they are. But they are also machines for managing water. Each level slows the runoff from the one above, letting rain soak into the soil instead of carrying it away. When terraces are abandoned and their walls collapse, the slopes below often suffer floods and landslides that the terraces had long prevented.</blockquote>",
+     "solution": "The paragraph moves from terraces as 'monuments to backbreaking toil' to their role as 'machines for managing water', and shows what is lost when they collapse. The option about a continuing water-control function lost on abandonment captures both. The paragraph does not argue against terracing, blame rainfall alone, or discuss the area of flat land.",
+     "type": "mcq",
+     "options": [
+      "Terraced farming is too laborious to be worth continuing.",
+      "Hillside floods are caused mainly by heavy rainfall.",
+      "Terraces were built mainly to increase the area of flat land.",
+      "Besides representing great labour, terraces perform a continuing function in controlling water, which is lost when they are abandoned."
+     ],
+     "answer": 3,
+     "pack": "practice-b16",
+     "level": "Medium",
+     "practiceSet": 7
+    },
+    {
+     "id": "B16V-30",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-summary",
+     "difficulty": "Hard",
+     "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><blockquote class='ps'>A cinema that sells a small popcorn for ₹150 and a large one for ₹300 finds that most customers buy the small. When it adds a medium at ₹270, sales of the large rise sharply, though almost nobody buys the medium. The medium's job is not to be chosen but to make the large look like a bargain beside it. Choices that seem to be judgements of each option's worth are often judgements of how the options compare with one another.</blockquote>",
+     "solution": "The medium is almost never bought but shifts sales to the large, and the last sentence generalises: choices are 'judgements of how the options compare with one another'. The option about an unchosen option changing choices states this. Profit share is not discussed, 'almost nobody buys the medium' contradicts a preference for it, and no price was raised.",
+     "type": "mcq",
+     "options": [
+      "Cinemas earn most of their profit from popcorn.",
+      "An option that few people choose can still change what they choose, because options are judged largely by comparison with the alternatives on offer.",
+      "Customers usually prefer medium-sized portions.",
+      "Raising prices is an effective way of increasing sales."
+     ],
+     "answer": 1,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 13
+    },
+    {
+     "id": "B16V-31",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-completion",
+     "difficulty": "Hard",
+     "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>In the 1840s a doctor in Vienna noticed that mothers whose babies were delivered by doctors died of fever far more often than those attended by midwives. He traced the difference to doctors who came to the ward straight from dissecting corpses, and when he required them to wash their hands in a chlorine solution, deaths fell sharply. ____ It took the germ theory of disease, decades later, to supply the explanation that made his practice impossible to ignore.</p>",
+     "solution": "The final sentence says a later theory made the practice 'impossible to ignore', so the gap must say that it was ignored or resisted for lack of an explanation. 'At once adopted' contradicts that; the claim about midwives is unsupported and does not lead to the explanation; the floor-cleaning sentence is irrelevant.",
+     "type": "mcq",
+     "options": [
+      "His method was at once adopted by hospitals across Europe.",
+      "Midwives had always washed their hands more carefully than doctors.",
+      "Yet many of his colleagues rejected the practice, partly because he could not explain why it worked.",
+      "Chlorine had long been used to clean hospital floors."
+     ],
+     "answer": 2,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B16V-32",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-completion",
+     "difficulty": "Hard",
+     "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>A new species of beetle is often described from a single specimen in a museum drawer. ____ The result is that for many insects we know the shape of one individual in great detail and almost nothing about how the species lives: what it eats, where it breeds, or whether it is still found anywhere at all.</p>",
+     "solution": "'The result is that' needs a cause: a detailed description of one dead individual without study of the living animal. The option about measuring and naming a specimen seldom seen alive supplies both halves of the contrast that follows. The other options do not explain why we know shape 'in great detail' but not behaviour.",
+     "type": "mcq",
+     "options": [
+      "The specimen is measured, drawn and named, but the animal is seldom observed alive.",
+      "Beetles are the most numerous group of animals on earth.",
+      "Museums have stopped collecting insects in recent decades.",
+      "Every specimen must be examined by at least two experts."
+     ],
+     "answer": 0,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 14
+    },
+    {
+     "id": "B16V-33",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-completion",
+     "difficulty": "Medium",
+     "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Speed bumps slow traffic, but drivers dislike them and some accelerate hard between them, adding noise and fumes. Planners have experimented with an alternative: narrowing the road with planters and parked cars so that it simply feels too tight for speed. ____ Drivers who would resent an obstacle adjust without complaint to a street that seems to require care.</p>",
+     "solution": "The last sentence explains a success ('adjust without complaint'), so the gap must report that success: narrowing slows traffic as much as bumps 'with less resentment'. Cost, preference for wide roads and watering do not prepare the final explanation.",
+     "type": "mcq",
+     "options": [
+      "Speed bumps are cheaper to build than planters.",
+      "The narrower streets often slow traffic as much as bumps do, with less resentment.",
+      "Many drivers prefer wide roads to narrow ones.",
+      "Planters must be watered regularly."
+     ],
+     "answer": 1,
+     "pack": "practice-b16",
+     "level": "Medium",
+     "practiceSet": 7
+    },
+    {
+     "id": "B16V-34",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-completion",
+     "difficulty": "Medium",
+     "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>After a walk in the hills, a Swiss engineer found burrs clinging to his trousers and to his dog's coat. Under a microscope he saw that each burr was covered in tiny hooks that caught on loops of fibre. ____ The fastener he developed from this observation, two strips of fabric covered in hooks and loops, is now found on everything from shoes to spacecraft.</p>",
+     "solution": "The gap must link the microscope observation (hooks catching loops) to the invention that follows. Only the sentence about copying the arrangement to join and reopen two surfaces makes that link. Wind-borne seeds would lead away from the invention, and the other two sentences are side remarks.",
+     "type": "mcq",
+     "options": [
+      "He decided to study plants that spread their seeds by wind instead.",
+      "Burrs are a nuisance to farmers and walkers alike.",
+      "Dogs with long coats collect more burrs than dogs with short ones.",
+      "It occurred to him that the same arrangement, made artificially, could join two surfaces that could be pulled apart and closed again."
+     ],
+     "answer": 3,
+     "pack": "practice-b16",
+     "level": "Medium",
+     "practiceSet": 8
+    },
+    {
+     "id": "B16V-35",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-completion",
+     "difficulty": "Medium",
+     "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Students who reread their notes before an exam usually feel well prepared. The material looks familiar, and familiarity is easily mistaken for knowledge. ____ Those who instead test themselves, by closing the book and trying to recall what they have read, often feel less confident but remember more.</p>",
+     "solution": "The gap must separate familiarity from knowledge before the paragraph introduces self-testing. The 'recognising is not recalling' sentence does that and sets up the contrast with recall. 'Most efficient' contradicts the paragraph, and group study and exam difficulty are off topic.",
+     "type": "mcq",
+     "options": [
+      "Yet recognising something on the page is not the same as being able to recall it without help.",
+      "Rereading is therefore the most efficient way to study.",
+      "Most students prefer studying in groups.",
+      "Exams have become harder in recent years."
+     ],
+     "answer": 0,
+     "pack": "practice-b16",
+     "level": "Medium",
+     "practiceSet": 8
+    },
+    {
+     "id": "B16V-36",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-completion",
+     "difficulty": "Hard",
+     "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Firms that offer unlimited paid holiday often find that employees take fewer days off than they did under a fixed allowance. ____ Without a number to aim at, people look to their colleagues for a sense of what is acceptable, and no one wants to be the person who takes the most.</p>",
+     "solution": "The sentence after the gap explains behaviour once the number is gone, so the gap must say what the number did: an allowance also signals how much leave is expected. Calling the policy dishonest is a judgement the paragraph does not make; 'never use all their days' and refusals by managers are not supported and do not lead to the explanation that follows.",
+     "type": "mcq",
+     "options": [
+      "Unlimited holiday is therefore a dishonest policy.",
+      "Employees under fixed allowances never use all their days.",
+      "The reason is that an allowance, as well as limiting leave, also tells people how much they are expected to take.",
+      "Managers usually refuse requests for leave."
+     ],
+     "answer": 2,
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 15
+    },
+    {
+     "id": "B16V-37",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Odd sentence out",
+     "difficulty": "Hard",
+     "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Bridges in cold regions are fitted with expansion joints, gaps that let the deck lengthen in summer and shrink in winter.</li><li>Without them, the steel or concrete would push against the supports with enormous force as temperatures rose.</li><li>Over time this stress would crack the structure or bend it out of shape.</li><li>Suspension bridges can span far greater distances than beam bridges of the same weight.</li><li>The joints therefore allow a bridge to change size safely instead of resisting the change.</li></ol>",
+     "solution": "Odd sentence: 4. Sentences 1, 2, 3 and 5 explain expansion joints: what they are, the force they relieve, the damage avoided, and the conclusion. The sentence on suspension bridges concerns bridges but compares spans and plays no part in the thermal argument.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "4",
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 15
+    },
+    {
+     "id": "B16V-38",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Odd sentence out",
+     "difficulty": "Medium",
+     "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Seed banks store the seeds of crop varieties at low temperatures so that they remain alive for decades.</li><li>Many of these varieties are no longer grown by farmers, who have switched to a few high-yielding types.</li><li>Supermarkets now stock a wider range of imported vegetables than they did a generation ago.</li><li>If a disease attacks the high-yielding crops, breeders can search the stored varieties for genes that resist it.</li><li>A seed bank is thus less a museum of old crops than an insurance policy for new ones.</li></ol>",
+     "solution": "Odd sentence: 3. Sentences 1, 2, 4 and 5 explain what seed banks store, why those varieties matter now that farmers grow only a few, how breeders use them against disease, and the conclusion. The sentence on supermarket ranges concerns food variety for shoppers, not the conservation of crop genes.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "3",
+     "pack": "practice-b16",
+     "level": "Medium",
+     "practiceSet": 8
+    },
+    {
+     "id": "B16V-39",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Odd sentence out",
+     "difficulty": "Hard",
+     "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>A household that buys a more fuel-efficient car may end up driving more, because each journey now costs less.</li><li>Electric cars produce no exhaust emissions at the point of use.</li><li>Economists call this the rebound effect.</li><li>Its size varies: sometimes it eats up a small part of the expected saving, occasionally most of it.</li><li>Policies built on efficiency alone should therefore expect smaller savings than the engineering figures suggest.</li></ol>",
+     "solution": "Odd sentence: 2. Sentences 1, 3, 4 and 5 define the rebound effect, name it, describe its size and draw the policy conclusion. The electric-car sentence is about cars and emissions, but it introduces a different technology and claim and breaks the chain between the example and 'Economists call this'.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "2",
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 15
+    },
+    {
+     "id": "B16V-40",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Odd sentence out",
+     "difficulty": "Medium",
+     "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Parents often praise children for being clever when they solve a problem.</li><li>Studies suggest that children praised this way may avoid harder tasks afterwards, for fear of losing the label.</li><li>Children praised instead for the effort they made are more willing to attempt difficult problems.</li><li>The kind of praise, not just its amount, appears to shape how children approach challenges.</li><li>Children's vocabulary grows fastest between the ages of two and six.</li></ol>",
+     "solution": "Odd sentence: 5. Sentences 1–4 compare praise for cleverness with praise for effort and conclude that the kind of praise matters. The vocabulary sentence is about child development but has nothing to do with praise or challenge.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "5",
+     "pack": "practice-b16",
+     "level": "Medium",
+     "practiceSet": 8
+    },
+    {
+     "id": "B16V-41",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Odd sentence out",
+     "difficulty": "Medium",
+     "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Many of the oldest city parks in Europe began as private hunting grounds of the nobility.</li><li>Cities that plan for floods have begun to design parks that can be safely submerged.</li><li>In dry weather they serve as playgrounds and sports fields.</li><li>During heavy rain they fill with water that would otherwise flood streets and homes.</li><li>The same land thus does two jobs, each at a different time.</li></ol>",
+     "solution": "Odd sentence: 1. Sentences 2–5 describe the floodable park: its design, its dry-weather use, its use in storms, and the conclusion about dual use. The sentence on hunting grounds is about parks but concerns their history, not flood design.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "1",
+     "pack": "practice-b16",
+     "level": "Medium",
+     "practiceSet": 8
+    },
+    {
+     "id": "B16V-42",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Odd sentence out",
+     "difficulty": "Hard",
+     "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>Some orchestras now audition players from behind a screen, so that judges hear the playing but cannot see the player.</li><li>When such screens were introduced, the share of women hired rose noticeably.</li><li>The change suggested that judges had been influenced by what they saw, not only by what they heard.</li><li>Violins made by famous craftsmen centuries ago are among the most expensive instruments in the world.</li><li>Blind auditions thus offered a way to remove one source of bias without having to change the judges' minds.</li></ol>",
+     "solution": "Odd sentence: 4. Sentences 1, 2, 3 and 5 describe screened auditions, their effect on hiring women, what that implied, and why the method works. The sentence on the price of old violins is about orchestral music but not about auditions or bias.",
+     "type": "tita",
+     "kind": "number",
+     "answer": "4",
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 15
+    },
+    {
+     "id": "B16V-43",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-jumbles",
+     "difficulty": "Medium",
+     "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>Its cause, a lack of vitamin C, was not understood, and remedies ranged from vinegar to sea water.</li><li>It was forgotten partly because boiling the juice to preserve it destroyed the very substance that made it effective.</li><li>For centuries, sailors feared a disease that loosened their teeth and reopened old wounds on long voyages.</li><li>One of the few that worked, citrus juice, was repeatedly discovered and then forgotten.</li></ol>",
+     "solution": "Correct order: 3142. The disease is introduced first. 'Its cause … remedies ranged' follows. 'One of the few that worked' picks a remedy from that range. 'It was forgotten partly because' explains the forgetting just mentioned, so it must come last.",
+     "type": "tita",
+     "kind": "sequence",
+     "answer": "3142",
+     "pack": "practice-b16",
+     "level": "Medium",
+     "practiceSet": 8
+    },
+    {
+     "id": "B16V-44",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-jumbles",
+     "difficulty": "Medium",
+     "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>For such species, preventing every fire can be as harmful as an unusually severe one.</li><li>A forest fire seems to destroy everything in its path.</li><li>Fire managers have therefore begun to allow, and sometimes to set, small controlled burns.</li><li>Yet some trees depend on it: their cones open only in intense heat, releasing seeds onto ground cleared of competitors.</li></ol>",
+     "solution": "Correct order: 2413. The common view opens. 'Yet some trees depend on it' qualifies it. 'For such species' refers back to those trees. 'Therefore … controlled burns' draws the practical conclusion and ends the paragraph.",
+     "type": "tita",
+     "kind": "sequence",
+     "answer": "2413",
+     "pack": "practice-b16",
+     "level": "Medium",
+     "practiceSet": 8
+    },
+    {
+     "id": "B16V-45",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-jumbles",
+     "difficulty": "Hard",
+     "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>What we see, in other words, is shaped as much by what we are looking for as by what is there.</li><li>In experiments, however, people often fail to see a person in a gorilla suit walk through a scene while they are counting passes in a ball game.</li><li>This failure is not a defect of the eyes but a consequence of attention, which selects a small part of what the eyes take in.</li><li>Most of us assume that we would notice a large change in what we are looking at.</li></ol>",
+     "solution": "Correct order: 4231. The assumption comes first; 'however' introduces the experiment that contradicts it; 'This failure' explains the failure in the experiment; 'in other words' restates the explanation as a general conclusion.",
+     "type": "tita",
+     "kind": "sequence",
+     "answer": "4231",
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 15
+    },
+    {
+     "id": "B16V-46",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-jumbles",
+     "difficulty": "Medium",
+     "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>A small microphone picks up the steady noise around the listener, such as the hum of an aircraft engine.</li><li>This works well for steady, low sounds but poorly for sudden ones such as voices, which change too quickly to be matched.</li><li>The headphones then produce a sound wave that is its exact mirror image, so that the two cancel each other out.</li><li>Noise-cancelling headphones do not simply block sound; they add sound.</li></ol>",
+     "solution": "Correct order: 4132. The claim that the headphones 'add sound' opens. The microphone picking up noise comes next. 'then produce a sound wave that is its exact mirror image' needs that noise. 'This works well' evaluates the whole process and ends the paragraph.",
+     "type": "tita",
+     "kind": "sequence",
+     "answer": "4132",
+     "pack": "practice-b16",
+     "level": "Medium",
+     "practiceSet": 8
+    },
+    {
+     "id": "B16V-47",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-jumbles",
+     "difficulty": "Hard",
+     "question": "<p>The five sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the five numbers (e.g. 21435).</p><ol class='pj'><li>Once enough products carried codes, the remaining manufacturers had to adopt them, and the problem of coordination turned into a pressure to conform.</li><li>The obstacle was coordination: a barcode was useless to a shop unless manufacturers printed it, and manufacturers had no reason to print it until shops could read it.</li><li>The deadlock was broken when an industry committee agreed on a single standard and large supermarket chains committed to installing scanners.</li><li>When barcodes were first proposed for groceries, the technology was not the main obstacle.</li><li>Each side was waiting for the other to move first.</li></ol>",
+     "solution": "Correct order: 42531. 'The technology was not the main obstacle' sets up 'The obstacle was coordination', which explains the mutual dependence. 'Each side was waiting' sums up that dependence. 'The deadlock was broken' needs the deadlock. 'Once enough products carried codes' describes what followed and ends the paragraph.",
+     "type": "tita",
+     "kind": "sequence",
+     "answer": "42531",
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 15
+    },
+    {
+     "id": "B16V-48",
+     "exam": "cat",
+     "section": "varc",
+     "topic": "Para-jumbles",
+     "difficulty": "Hard",
+     "question": "<p>The five sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the five numbers (e.g. 21435).</p><ol class='pj'><li>Attention shifted to what happened afterwards: how long patients took to recover, and whether they could live as they had before.</li><li>But they are closer to what patients themselves care about, which is why many hospitals now try to track them.</li><li>Hospitals once measured success mainly by whether patients survived an operation.</li><li>These later outcomes are harder to record, since they unfold over months and outside the hospital.</li><li>As survival rates rose, that measure began to say less and less about the quality of care.</li></ol>",
+     "solution": "Correct order: 35142. The old measure opens. 'As survival rates rose, that measure' needs it. 'Attention shifted to what happened afterwards' introduces the new outcomes. 'These later outcomes are harder to record' refers to them. 'But they are closer to what patients care about' answers that difficulty and closes the paragraph.",
+     "type": "tita",
+     "kind": "sequence",
+     "answer": "35142",
+     "pack": "practice-b16",
+     "level": "Hard",
+     "practiceSet": 10
+    },
+    {
      "id": "B2V-01",
      "exam": "cat",
      "section": "varc",
@@ -2837,7 +3761,7 @@
      "answer": 2,
      "pack": "practice-b2",
      "level": "Hard",
-     "practiceSet": 12
+     "practiceSet": 10
     },
     {
      "id": "B2V-02",
@@ -2858,7 +3782,7 @@
      "answer": 0,
      "pack": "practice-b2",
      "level": "Hard",
-     "practiceSet": 12
+     "practiceSet": 10
     },
     {
      "id": "B2V-03",
@@ -2879,7 +3803,7 @@
      "answer": 3,
      "pack": "practice-b2",
      "level": "Hard",
-     "practiceSet": 12
+     "practiceSet": 10
     },
     {
      "id": "B2V-04",
@@ -2900,7 +3824,7 @@
      "answer": 1,
      "pack": "practice-b2",
      "level": "Hard",
-     "practiceSet": 12
+     "practiceSet": 10
     },
     {
      "id": "B2V-05",
@@ -2920,8 +3844,7 @@
      ],
      "answer": 3,
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 13
+     "level": "Hard"
     },
     {
      "id": "B2V-06",
@@ -2941,8 +3864,7 @@
      ],
      "answer": 2,
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 13
+     "level": "Hard"
     },
     {
      "id": "B2V-07",
@@ -2962,8 +3884,7 @@
      ],
      "answer": 0,
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 13
+     "level": "Hard"
     },
     {
      "id": "B2V-08",
@@ -2983,8 +3904,7 @@
      ],
      "answer": 1,
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 13
+     "level": "Hard"
     },
     {
      "id": "B2V-09",
@@ -3003,8 +3923,7 @@
      ],
      "answer": 0,
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 12
+     "level": "Hard"
     },
     {
      "id": "B2V-10",
@@ -3023,8 +3942,7 @@
      ],
      "answer": 3,
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 12
+     "level": "Hard"
     },
     {
      "id": "B2V-11",
@@ -3043,8 +3961,7 @@
      ],
      "answer": 2,
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 13
+     "level": "Hard"
     },
     {
      "id": "B2V-12",
@@ -3058,8 +3975,7 @@
      "kind": "number",
      "answer": "3",
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 13
+     "level": "Hard"
     },
     {
      "id": "B2V-13",
@@ -3073,8 +3989,7 @@
      "kind": "number",
      "answer": "5",
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 13
+     "level": "Hard"
     },
     {
      "id": "B2V-14",
@@ -3088,8 +4003,7 @@
      "kind": "number",
      "answer": "1",
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 13
+     "level": "Hard"
     },
     {
      "id": "B2V-15",
@@ -3103,8 +4017,7 @@
      "kind": "sequence",
      "answer": "3142",
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 13
+     "level": "Hard"
     },
     {
      "id": "B2V-16",
@@ -3118,8 +4031,7 @@
      "kind": "sequence",
      "answer": "2413",
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 13
+     "level": "Hard"
     },
     {
      "id": "B2V-17",
@@ -3133,8 +4045,7 @@
      "kind": "sequence",
      "answer": "4132",
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "id": "B2V-18",
@@ -3148,8 +4059,7 @@
      "kind": "sequence",
      "answer": "3421",
      "pack": "practice-b2",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "id": "EZV-01",
@@ -4114,8 +5024,7 @@
      ],
      "answer": 2,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "id": "PR1-02",
@@ -4135,8 +5044,7 @@
      ],
      "answer": 0,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "id": "PR1-03",
@@ -4156,8 +5064,7 @@
      ],
      "answer": 3,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "id": "PR1-04",
@@ -4177,8 +5084,7 @@
      ],
      "answer": 3,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "id": "PR1-05",
@@ -4198,8 +5104,7 @@
      ],
      "answer": 3,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "id": "PR1-06",
@@ -4219,8 +5124,7 @@
      ],
      "answer": 1,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "id": "PR1-07",
@@ -4240,8 +5144,7 @@
      ],
      "answer": 2,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "id": "PR1-08",
@@ -4261,8 +5164,7 @@
      ],
      "answer": 1,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 14
+     "level": "Hard"
     },
     {
      "id": "PR1-09",
@@ -4282,8 +5184,7 @@
      ],
      "answer": 1,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "PR1-10",
@@ -4303,8 +5204,7 @@
      ],
      "answer": 3,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "PR1-11",
@@ -4324,8 +5224,7 @@
      ],
      "answer": 3,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "PR1-12",
@@ -4345,8 +5244,7 @@
      ],
      "answer": 2,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "PR1-13",
@@ -4366,8 +5264,7 @@
      ],
      "answer": 2,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "PR1-14",
@@ -4387,8 +5284,7 @@
      ],
      "answer": 3,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "PR1-15",
@@ -4408,8 +5304,7 @@
      ],
      "answer": 1,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "PR1-16",
@@ -4429,8 +5324,7 @@
      ],
      "answer": 2,
      "pack": "practice-rc-1",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "PR2-01",
@@ -4531,7 +5425,7 @@
      "answer": 1,
      "pack": "practice-rc-2",
      "level": "Hard",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "id": "PR2-06",
@@ -4552,7 +5446,7 @@
      "answer": 2,
      "pack": "practice-rc-2",
      "level": "Hard",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "id": "PR2-07",
@@ -4573,7 +5467,7 @@
      "answer": 1,
      "pack": "practice-rc-2",
      "level": "Hard",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "id": "PR2-08",
@@ -4594,7 +5488,7 @@
      "answer": 0,
      "pack": "practice-rc-2",
      "level": "Hard",
-     "practiceSet": 9
+     "practiceSet": 10
     },
     {
      "id": "PR2-09",
@@ -4614,8 +5508,7 @@
      ],
      "answer": 1,
      "pack": "practice-rc-2",
-     "level": "Hard",
-     "practiceSet": 9
+     "level": "Hard"
     },
     {
      "id": "PR2-10",
@@ -4635,8 +5528,7 @@
      ],
      "answer": 3,
      "pack": "practice-rc-2",
-     "level": "Hard",
-     "practiceSet": 9
+     "level": "Hard"
     },
     {
      "id": "PR2-11",
@@ -4656,8 +5548,7 @@
      ],
      "answer": 0,
      "pack": "practice-rc-2",
-     "level": "Hard",
-     "practiceSet": 9
+     "level": "Hard"
     },
     {
      "id": "PR2-12",
@@ -4677,8 +5568,7 @@
      ],
      "answer": 0,
      "pack": "practice-rc-2",
-     "level": "Hard",
-     "practiceSet": 9
+     "level": "Hard"
     },
     {
      "id": "PR2-13",
@@ -5098,7 +5988,7 @@
      "answer": 3,
      "pack": "practice-va",
      "level": "Medium",
-     "practiceSet": 7
+     "practiceSet": 8
     },
     {
      "id": "PV-02",
@@ -5117,8 +6007,7 @@
      ],
      "answer": 0,
      "pack": "practice-va",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "PV-03",
@@ -5137,8 +6026,7 @@
      ],
      "answer": 2,
      "pack": "practice-va",
-     "level": "Hard",
-     "practiceSet": 15
+     "level": "Hard"
     },
     {
      "id": "PV-04",
@@ -5158,7 +6046,7 @@
      "answer": 1,
      "pack": "practice-va",
      "level": "Medium",
-     "practiceSet": 7
+     "practiceSet": 8
     },
     {
      "id": "PV-05",
@@ -5177,8 +6065,7 @@
      ],
      "answer": 1,
      "pack": "practice-va",
-     "level": "Hard",
-     "practiceSet": 9
+     "level": "Hard"
     },
     {
      "id": "PV-06",
@@ -5198,7 +6085,7 @@
      "answer": 3,
      "pack": "practice-va",
      "level": "Medium",
-     "practiceSet": 7
+     "practiceSet": 9
     },
     {
      "id": "PV-07",
@@ -5217,8 +6104,7 @@
      ],
      "answer": 0,
      "pack": "practice-va",
-     "level": "Hard",
-     "practiceSet": 9
+     "level": "Hard"
     },
     {
      "id": "PV-08",
@@ -5238,7 +6124,7 @@
      "answer": 3,
      "pack": "practice-va",
      "level": "Medium",
-     "practiceSet": 8
+     "practiceSet": 9
     },
     {
      "id": "PV-09",
@@ -5257,8 +6143,7 @@
      ],
      "answer": 1,
      "pack": "practice-va",
-     "level": "Hard",
-     "practiceSet": 10
+     "level": "Hard"
     },
     {
      "id": "PV-10",
@@ -5278,7 +6163,7 @@
      "answer": 1,
      "pack": "practice-va",
      "level": "Medium",
-     "practiceSet": 8
+     "practiceSet": 9
     },
     {
      "id": "PV-11",
@@ -5297,8 +6182,7 @@
      ],
      "answer": 0,
      "pack": "practice-va",
-     "level": "Hard",
-     "practiceSet": 10
+     "level": "Hard"
     },
     {
      "id": "PV-12",
@@ -5318,7 +6202,7 @@
      "answer": 1,
      "pack": "practice-va",
      "level": "Medium",
-     "practiceSet": 8
+     "practiceSet": 9
     },
     {
      "id": "PV-13",
@@ -5357,7 +6241,7 @@
      "answer": 0,
      "pack": "practice-va",
      "level": "Medium",
-     "practiceSet": 8
+     "practiceSet": 9
     },
     {
      "id": "PV-15",
@@ -5400,7 +6284,7 @@
      "answer": "4",
      "pack": "practice-va",
      "level": "Medium",
-     "practiceSet": 8
+     "practiceSet": 9
     },
     {
      "id": "PV-18",
@@ -5429,7 +6313,7 @@
      "answer": "4",
      "pack": "practice-va",
      "level": "Medium",
-     "practiceSet": 8
+     "practiceSet": 9
     },
     {
      "id": "PV-20",
@@ -5458,7 +6342,7 @@
      "answer": "5",
      "pack": "practice-va",
      "level": "Medium",
-     "practiceSet": 8
+     "practiceSet": 9
     },
     {
      "id": "PV-22",
@@ -5487,7 +6371,7 @@
      "answer": "2314",
      "pack": "practice-va",
      "level": "Medium",
-     "practiceSet": 8
+     "practiceSet": 9
     },
     {
      "id": "PV-24",
@@ -5516,7 +6400,7 @@
      "answer": "2413",
      "pack": "practice-va",
      "level": "Medium",
-     "practiceSet": 8
+     "practiceSet": 9
     },
     {
      "id": "PV-26",
@@ -5545,7 +6429,7 @@
      "answer": "2134",
      "pack": "practice-va",
      "level": "Medium",
-     "practiceSet": 8
+     "practiceSet": 10
     },
     {
      "id": "PV-28",
@@ -6139,8 +7023,7 @@
      ],
      "answer": 2,
      "pack": "varc-sectional-2",
-     "level": "Medium",
-     "practiceSet": 10
+     "level": "Medium"
     },
     {
      "id": "S2-06",
@@ -6160,8 +7043,7 @@
      ],
      "answer": 1,
      "pack": "varc-sectional-2",
-     "level": "Hard",
-     "practiceSet": 10
+     "level": "Hard"
     },
     {
      "id": "S2-07",
@@ -6181,8 +7063,7 @@
      ],
      "answer": 1,
      "pack": "varc-sectional-2",
-     "level": "Medium",
-     "practiceSet": 10
+     "level": "Medium"
     },
     {
      "id": "S2-08",
@@ -6202,8 +7083,7 @@
      ],
      "answer": 1,
      "pack": "varc-sectional-2",
-     "level": "Hard",
-     "practiceSet": 10
+     "level": "Hard"
     },
     {
      "id": "S2-09",
@@ -6223,8 +7103,7 @@
      ],
      "answer": 3,
      "pack": "varc-sectional-2",
-     "level": "Medium",
-     "practiceSet": 10
+     "level": "Medium"
     },
     {
      "id": "S2-10",
@@ -6244,8 +7123,7 @@
      ],
      "answer": 0,
      "pack": "varc-sectional-2",
-     "level": "Hard",
-     "practiceSet": 10
+     "level": "Hard"
     },
     {
      "id": "S2-11",
@@ -6265,8 +7143,7 @@
      ],
      "answer": 0,
      "pack": "varc-sectional-2",
-     "level": "Hard",
-     "practiceSet": 10
+     "level": "Hard"
     },
     {
      "id": "S2-12",
@@ -6286,8 +7163,7 @@
      ],
      "answer": 3,
      "pack": "varc-sectional-2",
-     "level": "Medium",
-     "practiceSet": 10
+     "level": "Medium"
     },
     {
      "id": "S2-13",
@@ -19465,6 +20341,36 @@
    "kind": "dilr",
    "title": "Two facing rows (Easy)",
    "html": "<b>Two facing rows</b><p>Six friends — Amit, Bhavna, Charu, Deepak, Ela and Firoz — sit in two rows of three seats. The north row faces south and the south row faces north, so each person directly faces one person in the other row.</p><ul class='clues'><li>Amit sits in the north row, in an end seat, and faces Ela.</li><li>Firoz sits immediately to Amit's right.</li><li>Charu sits in the middle seat of a row.</li><li>Deepak does not sit in the same row as Amit.</li><li>Bhavna does not face Firoz.</li></ul>"
+  },
+  "b16-rc1": {
+   "kind": "passage",
+   "title": "Telling more than we can know",
+   "html": "<b>Telling more than we can know</b><p>Ask people why they chose one of several identical pairs of stockings laid out on a table, and they will give reasons readily: this pair felt softer, that one had a better sheen. In a well-known set of experiments, the pairs really were identical, and the choice was driven mostly by position: people tended to prefer whichever item lay furthest to the right. Yet almost nobody mentioned position, and when it was suggested to them, most denied it firmly. They were not lying. They sincerely believed the reasons they gave.</p><p>Findings of this kind have led some psychologists to a startling conclusion: that we have far less direct access to the causes of our own behaviour than we suppose. On this view, when we explain our choices we are not reading off a report from some inner observatory. We are doing what an outsider would do: drawing on a stock of plausible theories about why people act as they do, and applying the one that seems to fit. The tell-tale sign is that our explanations of our own behaviour are often no more accurate than the explanations a stranger would offer for us, and are wrong in the same ways.</p><p>It would be easy to overstate the point. The experiments show that people can be mistaken about causes they have no reason to notice, such as the position of an item on a table. They do not show that we are wrong about everything inside us. A person in pain generally knows that she is in pain, and someone working through a sum in her head can usually say which step she is on. What the research undermines is not self-knowledge in general but a particular confidence: the belief that when we can produce a reason for an action, the reason we produce is the one that moved us.</p><p>That confidence matters, because so much of social life depends on the reasons people give. We ask job candidates why they want the post, witnesses why they noticed what they did, and voters why they prefer one candidate. If the answers are partly constructions, assembled after the fact from the stock of available theories, then they tell us less about the person than we assume, and more about what that person, and the culture around her, regards as a respectable reason.</p><p>There is a further and less comfortable implication. If our explanations are theories, they can be improved, as theories can, but only by evidence that comes from outside. The person who wishes to know why she really avoids certain colleagues may learn more from a careful record of when she does so than from any amount of reflection. Introspection, on this account, is not useless, but it is a source of hypotheses rather than of verdicts, and it deserves the same scepticism we bring to any hypothesis that flatters the person who holds it.</p>"
+  },
+  "b16-rc2": {
+   "kind": "passage",
+   "title": "The second life of clothes",
+   "html": "<b>The second life of clothes</b><p>Every year, bales of used clothing donated in wealthy countries are sorted, compressed and shipped to markets in East and West Africa, where traders buy them unseen and resell the contents piece by piece. For the donor the transaction ends at the collection bin and feels like charity. For the economies at the other end it is something more complicated: a large, unregulated trade that has been blamed for destroying local textile industries and praised for clothing millions of people cheaply.</p><p>The case against the trade is usually made through history. In the decades after independence, several countries built clothing and textile factories that employed tens of thousands of workers. Many of those factories have since closed, and their decline coincided with a flood of imported second-hand clothing. Critics draw the obvious conclusion and some governments have acted on it, proposing high tariffs or outright bans on used garments in the hope of reviving domestic production.</p><p>The conclusion is less obvious than it looks. The same decades saw other changes that hurt local factories at least as much: the removal of protective tariffs under structural adjustment programmes, unreliable electricity, and above all the arrival of very cheap new clothing from Asia. Studies that try to separate these causes generally find that second-hand imports played a real but partial role. A ban on used clothing, on this evidence, would be more likely to open the market to cheap new imports than to bring back the old factories.</p><p>Meanwhile the trade itself supports a dense web of livelihoods. Importers sell bales to wholesalers, who sell them to market traders, who employ tailors to alter, mend and restyle what they buy. Because no trader knows what a bale contains until it is opened, the business resembles a lottery in which skill lies in judging suppliers, spotting quality and repairing what others would discard. Those who make a living this way are not victims of the trade but its practitioners, and their interests are seldom heard in debates conducted on their behalf.</p><p>None of this makes the trade benign. The quality of bales has declined as fast fashion has spread in the donor countries, so that a growing share of what arrives is too worn or too flimsy to sell. That share ends up in landfills and on riverbanks in the importing countries, which bear the cost of disposing of clothes that the donors have, in effect, exported rather than thrown away. The problem here is not that Africans buy used clothes but that rich countries consume clothing at a rate their own waste systems would struggle to absorb.</p><p>A useful debate would separate these questions. Whether used clothing harms local industry is an empirical matter, and the answer appears to be: somewhat, but less than other forces. Whether the trade's waste is fair is a question about responsibility, and the answer points back towards the donors' wardrobes rather than towards the markets that receive their castoffs.</p>"
+  },
+  "b16-rc3": {
+   "kind": "passage",
+   "title": "The invention of wilderness",
+   "html": "<b>The invention of wilderness</b><p>The great national parks of the nineteenth and twentieth centuries were founded on a picture of nature as a place without people. Their creators spoke of untouched landscapes, of country as it had been before human history began, and they drew boundaries to keep it that way. What they seldom acknowledged was that many of these landscapes had been inhabited, hunted, burned and managed for thousands of years, and that making them empty required removing the people who lived there.</p><p>Historians have since shown how much of the 'wilderness' that visitors admire is the product of that management. Open grasslands that early travellers took for natural features were often maintained by regular, deliberate burning; when the burning stopped after the inhabitants were expelled, forests crept in and the very scenery the parks had been created to protect began to change. In some places, the removal of grazing or of small-scale cultivation reduced rather than increased the variety of plants and animals.</p><p>None of this means that the founders were simply wrong to want to protect these places. The threats they saw, from logging, mining and settlement on an industrial scale, were real, and the parks did save landscapes that would otherwise have been destroyed. The error lay in the idea that protection meant the absence of people, and in the assumption that the people who were there did not count as part of what was being protected.</p><p>The idea persists in subtler forms. Conservation funding often flows more readily to projects that promise to keep areas 'intact', a word that quietly implies that human presence is a form of damage. Communities living inside or beside protected areas may be allowed to stay only on condition that they give up practices, such as seasonal burning or the collection of forest produce, that may have helped to shape the habitat in the first place. In such cases, conservation can end up undermining the very ecological conditions it aims to preserve.</p><p>The alternative is not to abolish protected areas but to rethink what they are for. If many valued landscapes are joint products of natural processes and long human use, then protecting them may require keeping some of that use going, and the people who know how to do it may be the most useful allies a park can have. Some parks have begun to work in this way, restoring traditional burning under the guidance of the communities that once practised it.</p><p>The lesson reaches beyond particular parks. The word 'wilderness' carries a story about human beings as outsiders to nature, visitors who can only spoil what they touch. That story has inspired admirable acts of protection. But a story in which people are always the problem makes it hard to imagine them as part of any solution, and it has fallen hardest on those whose presence in the landscape was longest.</p>"
+  },
+  "b16-rc4": {
+   "kind": "passage",
+   "title": "What a tip pays for",
+   "html": "<b>What a tip pays for</b><p>Tipping is one of the few economic customs that most of its participants claim to dislike and nearly all continue to practise. In countries where it is expected, diners complain about calculating percentages, workers complain about unpredictable earnings, and economists complain that the custom serves none of the purposes usually claimed for it. Yet attempts by restaurants to abolish tips and raise prices instead have often been abandoned within a year or two.</p><p>The standard defence of tipping is that it rewards good service. A waiter who knows that his income depends on the customer's satisfaction will, the argument goes, work harder to provide it. The evidence for this is surprisingly weak. Studies that compare the size of tips with diners' own ratings of the service usually find only a small connection between the two. Tips depend more on the size of the bill, the weather, whether the server introduced herself by name, and the diner's mood than on anything the server did with the food.</p><p>If tipping does little to discipline service, why does it survive? One answer is that it disguises prices. A menu without tips must show prices about a fifth higher, and customers comparing menus tend to choose the restaurant that looks cheaper, even when the final bill would be the same. A restaurant that abolishes tipping on its own therefore appears more expensive than its rivals, which is why such experiments have so often failed.</p><p>A second answer concerns the relationship between diner and server. Tipping lets the customer feel generous, and turns a commercial payment into something closer to a gift. Many people value that feeling, and some are willing to pay for it. The difficulty is that a gift, unlike a wage, can be withheld, and those who depend on it are exposed to the prejudices as well as the generosity of strangers. Research has repeatedly found that tips vary with servers' appearance, age and ethnicity in ways that have nothing to do with the quality of their work.</p><p>These two explanations suggest different remedies. If tipping survives mainly because it hides prices, then the solution lies in rules that require all-inclusive pricing for every restaurant at once, so that no single business is punished for honesty. If it survives because customers value the gesture of giving, then abolition may be neither achievable nor entirely desirable, and the task becomes to limit the damage, for instance by guaranteeing a base wage that does not depend on the gift.</p><p>In practice both forces are at work, which may explain why the custom has proved so durable. A practice that conceals prices from customers and offers them a pleasant feeling of generosity at the same time is unlikely to disappear through market pressure alone.</p>"
+  },
+  "b16-rc5": {
+   "kind": "passage",
+   "title": "Beauty as evidence",
+   "html": "<b>Beauty as evidence</b><p>Physicists often describe the theories they most admire as beautiful, and some have gone further, claiming that beauty is a reliable guide to truth. A theory that explains a wide range of phenomena from a few simple principles, with no arbitrary adjustments, is said to carry a mark of correctness, and history seems to offer support: several equations chosen for their elegance were later confirmed by experiment in ways their authors could not have foreseen.</p><p>Sceptics reply that this history is selective. For every elegant theory that was confirmed, there were others, equally admired in their day, that turned out to be false. Nobody remembers them because textbooks record the winners. Moreover, what counts as beautiful has changed. The circular orbits of early astronomy were admired for their perfection, and the ellipses that replaced them were at first thought ugly. If the standard of beauty shifts to accommodate whatever theories succeed, then beauty cannot be an independent test of success.</p><p>Defenders of the aesthetic criterion need not claim that beauty guarantees truth. A more modest version holds that, in the absence of decisive evidence, simplicity and economy are reasonable grounds for preferring one theory over another, because a theory with fewer adjustable parts makes sharper predictions and is easier to refute. On this view, elegance is valuable not as a sign that nature itself is beautiful but as a practical virtue: it keeps theories honest by limiting their ability to fit any result.</p><p>The difficulty arises when the modest version slides into the ambitious one. In some areas of modern physics, experiments that could decide between rival theories lie far beyond present technology, and may remain so for generations. In that situation it is tempting to let aesthetic judgement do the work of evidence, and to treat a theory's elegance as grounds for believing it rather than merely as grounds for investigating it further. Critics argue that whole research programmes have been sustained for decades in this way, absorbing talent and funding while producing no testable predictions.</p><p>The disagreement is not, at bottom, about whether beauty matters. Almost everyone agrees that it guides the choice of which ideas to pursue. It is about what happens when guidance hardens into conviction. A scientist who prefers a simple theory because it is easier to test is using elegance as a tool. A scientist who believes a theory because it is too beautiful to be wrong has made elegance a substitute for the test, and has, in a sense, left science for something closer to taste.</p><p>Whether that matters depends on whether the tests eventually arrive. If they do, the beautiful theory will be confirmed or refuted like any other, and the confidence placed in it will be judged by the result. If they never do, the field risks becoming a contest of aesthetic preferences in which the deciding votes belong to whoever holds the most influential positions.</p>"
+  },
+  "b16-rc6": {
+   "kind": "passage",
+   "title": "Minds in the sea",
+   "html": "<b>Minds in the sea</b><p>The octopus is an awkward animal for anyone who believes that intelligence is a mark of our own lineage. Its last common ancestor with humans was a small, probably worm-like creature that lived more than five hundred million years ago, long before either line had anything resembling a brain. Yet octopuses solve puzzles, use objects as tools, recognise individual people, and appear to play. Whatever intelligence they have, it evolved on its own, by a different route, in a body that could hardly be less like ours.</p><p>That body shapes the mind it carries. Most of an octopus's neurons are not in its central brain but in its arms, each of which can taste, touch and respond to what it encounters with a degree of independence. An arm severed from the body will still reach for food and attempt to pass it to a mouth that is no longer there. It is unclear what, if anything, it is like to be such an animal, but it is unlikely to resemble the single, centred point of view that we take for granted in ourselves.</p><p>These facts have become practical as well as philosophical. Proposals to farm octopuses on an industrial scale have prompted scientists and ethicists to ask whether the animals can suffer, and if so, what farming would mean for them. A government review in one country concluded that there was strong evidence of sentience in octopuses and their relatives, enough to bring them within animal-welfare law. The evidence included signs that injured octopuses tend their wounds, avoid places where they were hurt, and will accept a painkiller when one is offered.</p><p>Critics of the review pointed out that none of these behaviours proves that the animal feels anything. A sufficiently complicated machine might avoid damage and tend its injuries without any experience at all. This is true, but it proves less than the critics hope. The same could be said of any animal other than oneself; we infer that other mammals feel pain from just such behaviour, together with similarities of anatomy. In the octopus the anatomical similarity is missing, which makes the inference weaker, but the behavioural evidence is no less striking.</p><p>What, then, should follow from uncertainty? One view holds that we should extend protection only when sentience is established. The opposite view, increasingly influential, holds that when there is a realistic possibility that a creature can suffer, the burden of proof should fall on those who would subject it to conditions likely to cause suffering. The second view does not claim to know what the octopus feels. It claims that ignorance, in a matter where the possible harm is grave and the cost of caution modest, is a reason for restraint rather than a licence.</p><p>The octopus thus poses a test less of our science than of our habits of reasoning. We are used to extending moral concern along lines of resemblance. An animal whose mind may be rich but is certainly strange invites us to ask whether resemblance was ever the right guide.</p>"
   },
   "b2-knights": {
    "kind": "dilr",

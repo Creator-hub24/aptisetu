@@ -36,7 +36,8 @@ def gat(B):
     assert datetime.date(2025, 8, 15).weekday() == 4 and datetime.date(2026, 8, 15).strftime("%A") == "Saturday"
     M(GMA,t,"Easy","15 August 2025 was a Friday. On which day of the week does 15 August 2026 fall?",["Saturday","Friday","Sunday","Thursday"],"Saturday","The 365 days from 15 August 2025 to 15 August 2026 contain no 29 February (2026 is not a leap year), and 365 = 52 weeks + 1 day. So the day moves one place forward: Friday → Saturday.")
     tot = 11*60 + 60 - (4*60 + 40); assert divmod(tot, 60) == (7, 20)
-    M(GMA,t,"Medium","A clock shows 4:40. What time does its reflection in a plane mirror (placed vertically beside it) appear to show?",["7:20","8:20","7:40","4:20"],"7:20","For a mirror image of a clock, subtract the actual time from 11:60. 11:60 − 4:40 = 7:20. (Check: the hour hand just past 4 and minute hand at 8 appear just short of 8 and at 4, i.e. 7:20.)")
+    h_, m_ = 3, 25; hh = (h_ % 12) * 30 + m_ / 2; mm = m_ * 6; rh, rm = (360 - hh) % 360, (360 - mm) % 360; assert (int(rh // 30), int(rm / 6)) == (8, 35)   # reflected hands read 8:35
+    M(GMA,t,"Medium","The time on a wall clock is 3:25. What time will it appear to show when seen in a plane mirror held vertically beside it?",["8:35","9:35","8:25","3:35"],"8:35","A vertical mirror reflects the dial left to right, so the reflected time is 11:60 − actual time. 11:60 − 3:25 = 8:35. (Check: the minute hand at 5 appears at 7, i.e. 35 minutes, and the hour hand a little past 3 appears a little past 8.)")
     assert datetime.date(2023, 3, 1).strftime("%A") == "Wednesday" and datetime.date(2024, 3, 1).strftime("%A") == "Friday"
     # ================= Number System (QR) =================
     t = "Number System"
@@ -86,8 +87,8 @@ def gat(B):
     pos = lambda w: [ord(ch) - 64 for ch in w]
     assert math.prod(pos("BAD")) == 8 and math.prod(pos("FED")) == 120 and math.prod(pos("CAGE")) == 105
     M(GMA,t,"Medium","In a certain code, BAD is written as 8 and FED as 120. How is CAGE written in that code?",["105","16","210","70"],"105","Each word becomes the product of its letters' positions in the alphabet: BAD = 2 × 1 × 4 = 8 and FED = 6 × 5 × 4 = 120. So CAGE = 3 × 1 × 7 × 5 = 105.")
-    assert "PENCIL"[::-1] == "LICNEP" and "ERASER"[::-1] == "RESARE"
-    M(GMA,t,"Easy","In a certain code, PENCIL is written as LICNEP. How is ERASER written in that code?",["RESARE","RESAER","REASER","ERESAR"],"RESARE","The code writes the word backwards: PENCIL → L-I-C-N-E-P. ERASER backwards is R-E-S-A-R-E = RESARE.")
+    assert "STAPLE"[::-1] == "ELPATS" and "ERASER"[::-1] == "RESARE"
+    M(GMA,t,"Easy","If STAPLE is coded as ELPATS, what is the code for ERASER?",["RESARE","RESAER","REASER","ERESAR"],"RESARE","The code writes the word backwards: STAPLE → E-L-P-A-T-S. ERASER backwards is R-E-S-A-R-E = RESARE.")
     sents = {"eat fresh fruit": "tip nok sa", "fruit is sweet": "nok ri pa", "fresh is good": "sa ri lum"}
     words = sorted({w for s_ in sents for w in s_.split()}); codes = sorted({c for v in sents.values() for c in v.split()})
     good = [dict(zip(words, pm)) for pm in itertools.permutations(codes) if all(sorted(dict(zip(words, pm))[w] for w in s_.split()) == sorted(v.split()) for s_, v in sents.items())]
@@ -106,11 +107,11 @@ def gat(B):
     M(GMA,t,"Easy","A man walks 3 km north, then 4 km east, and then 3 km north again. How far is he from his starting point?",["2√13 km","10 km","5 km","7 km"],"2√13 km","He ends 3 + 3 = 6 km north and 4 km east of the start. Distance = √(6² + 4²) = √52 = 2√13 km (about 7.2 km).")
     # ================= Number & Letter Series (GMA) =================
     t = "Number & Letter Series"
-    s_ = [n*n + 1 for n in range(1, 7)]; assert s_ == [2, 5, 10, 17, 26, 37]
-    M(GMA,t,"Easy","Find the next term: 2, 5, 10, 17, 26, ?",["37","35","36","39"],"37","Each term is one more than a perfect square: 1² + 1, 2² + 1, 3² + 1, 4² + 1, 5² + 1. The next is 6² + 1 = 37.")
+    s_ = [2*n*n - 1 for n in range(1, 7)]; assert s_ == [1, 7, 17, 31, 49, 71]
+    M(GMA,t,"Easy","Which number comes next in the series 1, 7, 17, 31, 49, ?",["71","67","69","73"],"71","Each term is one less than twice a perfect square: 2×1² − 1, 2×2² − 1, 2×3² − 1, 2×4² − 1, 2×5² − 1. The next is 2×6² − 1 = 71. (Equivalently, the differences 6, 10, 14, 18 grow by 4, so the next difference is 22 and 49 + 22 = 71.)")
     L = [26]; [L.append(L[-1] - k) for k in range(2, 7)]; assert "".join(chr(64 + v) for v in L) == "ZXUQLF"
-    s_ = [3]; [s_.append(s_[-1] + k*k) for k in range(1, 6)]; assert s_ == [3, 4, 8, 17, 33, 58]
-    M(GMA,t,"Medium","Find the next term: 3, 4, 8, 17, 33, ?",["58","49","56","65"],"58","The differences are 1, 4, 9, 16, the squares of 1, 2, 3, 4. The next difference is 5² = 25, so the next term is 33 + 25 = 58.")
+    s_ = [11]; [s_.append(s_[-1] + k*k) for k in range(2, 7)]; assert s_ == [11, 15, 24, 40, 65, 101]
+    M(GMA,t,"Medium","Which number comes next in the series 11, 15, 24, 40, 65, ?",["101","90","96","105"],"101","The differences are 4, 9, 16, 25, the squares of 2, 3, 4, 5. The next difference is 6² = 36, so the next term is 65 + 36 = 101.")
     s_ = [5]; [s_.append(2*s_[-1] + 1) for _ in range(5)]; assert s_ == [5, 11, 23, 47, 95, 191]
     # ================= Odd One Out (GMA) =================
     t = "Odd One Out"

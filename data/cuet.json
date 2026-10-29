@@ -3013,14 +3013,14 @@
      "part": "General Mental Ability",
      "topic": "Clocks & Calendars",
      "difficulty": "Medium",
-     "question": "A clock shows 4:40. What time does its reflection in a plane mirror (placed vertically beside it) appear to show?",
-     "solution": "For a mirror image of a clock, subtract the actual time from 11:60. 11:60 − 4:40 = 7:20. (Check: the hour hand just past 4 and minute hand at 8 appear just short of 8 and at 4, i.e. 7:20.)",
+     "question": "The time on a wall clock is 3:25. What time will it appear to show when seen in a plane mirror held vertically beside it?",
+     "solution": "A vertical mirror reflects the dial left to right, so the reflected time is 11:60 − actual time. 11:60 − 3:25 = 8:35. (Check: the minute hand at 5 appears at 7, i.e. 35 minutes, and the hour hand a little past 3 appears a little past 8.)",
      "type": "mcq",
      "options": [
-      "8:20",
-      "7:20",
-      "7:40",
-      "4:20"
+      "9:35",
+      "8:35",
+      "8:25",
+      "3:35"
      ],
      "answer": 1
     },
@@ -3193,8 +3193,8 @@
      "part": "General Mental Ability",
      "topic": "Coding-Decoding",
      "difficulty": "Easy",
-     "question": "In a certain code, PENCIL is written as LICNEP. How is ERASER written in that code?",
-     "solution": "The code writes the word backwards: PENCIL → L-I-C-N-E-P. ERASER backwards is R-E-S-A-R-E = RESARE.",
+     "question": "If STAPLE is coded as ELPATS, what is the code for ERASER?",
+     "solution": "The code writes the word backwards: STAPLE → E-L-P-A-T-S. ERASER backwards is R-E-S-A-R-E = RESARE.",
      "type": "mcq",
      "options": [
       "ERESAR",
@@ -3301,14 +3301,14 @@
      "part": "General Mental Ability",
      "topic": "Number & Letter Series",
      "difficulty": "Easy",
-     "question": "Find the next term: 2, 5, 10, 17, 26, ?",
-     "solution": "Each term is one more than a perfect square: 1² + 1, 2² + 1, 3² + 1, 4² + 1, 5² + 1. The next is 6² + 1 = 37.",
+     "question": "Which number comes next in the series 1, 7, 17, 31, 49, ?",
+     "solution": "Each term is one less than twice a perfect square: 2×1² − 1, 2×2² − 1, 2×3² − 1, 2×4² − 1, 2×5² − 1. The next is 2×6² − 1 = 71. (Equivalently, the differences 6, 10, 14, 18 grow by 4, so the next difference is 22 and 49 + 22 = 71.)",
      "type": "mcq",
      "options": [
-      "37",
-      "35",
-      "36",
-      "39"
+      "71",
+      "67",
+      "69",
+      "73"
      ],
      "answer": 0
     },
@@ -3319,14 +3319,14 @@
      "part": "General Mental Ability",
      "topic": "Number & Letter Series",
      "difficulty": "Medium",
-     "question": "Find the next term: 3, 4, 8, 17, 33, ?",
-     "solution": "The differences are 1, 4, 9, 16, the squares of 1, 2, 3, 4. The next difference is 5² = 25, so the next term is 33 + 25 = 58.",
+     "question": "Which number comes next in the series 11, 15, 24, 40, 65, ?",
+     "solution": "The differences are 4, 9, 16, 25, the squares of 2, 3, 4, 5. The next difference is 6² = 36, so the next term is 65 + 36 = 101.",
      "type": "mcq",
      "options": [
-      "49",
-      "58",
-      "56",
-      "65"
+      "90",
+      "101",
+      "96",
+      "105"
      ],
      "answer": 1
     },
@@ -12229,6 +12229,1016 @@
       "PSQR"
      ],
      "answer": 3
+    },
+    {
+     "id": "UE74",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Synonyms & Antonyms",
+     "difficulty": "Medium",
+     "question": "Choose the word closest in meaning to CORROBORATE.",
+     "solution": "To corroborate is to confirm or support a statement with further evidence (a witness corroborates an alibi). 'Collaborate' (work together) and 'corrode' (wear away) only look similar; 'contradict' is nearly the opposite.",
+     "type": "mcq",
+     "options": [
+      "Contradict",
+      "Collaborate",
+      "Confirm",
+      "Corrode"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE75",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Synonyms & Antonyms",
+     "difficulty": "Medium",
+     "question": "Choose the word closest in meaning to SPURIOUS.",
+     "solution": "Spurious means false or not what it claims to be (a spurious claim, a spurious coin). 'Genuine' is its opposite; 'spirited' and 'curious' are sound-alike traps.",
+     "type": "mcq",
+     "options": [
+      "Curious",
+      "Spirited",
+      "Genuine",
+      "False"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UE76",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Synonyms & Antonyms",
+     "difficulty": "Hard",
+     "question": "Choose the word closest in meaning to AUSTERE.",
+     "solution": "Austere means severe or strict in manner, and plain and without luxury in style (an austere room, an austere life). 'Highly decorated' is the opposite sense; the other two are unrelated.",
+     "type": "mcq",
+     "options": [
+      "Deeply anxious",
+      "Highly decorated",
+      "Severely plain",
+      "Freely generous"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE77",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Synonyms & Antonyms",
+     "difficulty": "Easy",
+     "question": "Choose the word most nearly OPPOSITE in meaning to ZENITH.",
+     "solution": "The zenith is the highest point; the nadir is the lowest point. 'Summit' and 'climax' are near-synonyms of zenith, and the horizon is not an extreme at all.",
+     "type": "mcq",
+     "options": [
+      "Climax",
+      "Summit",
+      "Nadir",
+      "Horizon"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE78",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Synonyms & Antonyms",
+     "difficulty": "Hard",
+     "question": "Choose the word most nearly OPPOSITE in meaning to LOQUACIOUS.",
+     "solution": "Loquacious means very talkative. 'Garrulous' and 'voluble' are synonyms of it, and 'eloquent' (fluent and persuasive) is also about speaking well. Taciturn, meaning saying very little, is the opposite.",
+     "type": "mcq",
+     "options": [
+      "Taciturn",
+      "Garrulous",
+      "Eloquent",
+      "Voluble"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE79",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Choosing the correct word",
+     "difficulty": "Easy",
+     "question": "Fill in the blank: My teacher's ______ helped me choose the right subjects.",
+     "solution": "A noun is needed after the possessive 'teacher's'. 'Advice' is the noun and is uncountable, so 'advices' is wrong; 'advise' is the verb and 'advised' is its past form.",
+     "type": "mcq",
+     "options": [
+      "advise",
+      "advice",
+      "advices",
+      "advised"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UE80",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Choosing the correct word",
+     "difficulty": "Medium",
+     "question": "Fill in the blank: The new timetable will ______ every student who joined after April.",
+     "solution": "'Affect' is the verb meaning 'to have an influence on'. 'Effect' is normally a noun (as a verb it means 'to bring about', which does not fit), 'infect' refers to disease, and 'afflict' means to cause suffering.",
+     "type": "mcq",
+     "options": [
+      "effect",
+      "affect",
+      "infect",
+      "afflict"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UE81",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Choosing the correct word",
+     "difficulty": "Hard",
+     "question": "Fill in the blank: Hardly had we reached the platform ______ the train began to move.",
+     "solution": "'Hardly' and 'scarcely' pair with 'when' (or 'before'): 'Hardly had we reached … when …'. 'Than' belongs with 'no sooner'; 'then' and 'that' do not complete the construction.",
+     "type": "mcq",
+     "options": [
+      "that",
+      "than",
+      "then",
+      "when"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UE82",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Choosing the correct word",
+     "difficulty": "Medium",
+     "question": "Fill in the blank: The firm has lost money for three years running; ______, it has decided to close two branches.",
+     "solution": "Closing branches is a result of the losses, so a connector of result is needed: 'consequently'. 'Nevertheless' signals contrast, 'meanwhile' signals simultaneous time, and 'otherwise' signals an alternative.",
+     "type": "mcq",
+     "options": [
+      "meanwhile",
+      "nevertheless",
+      "consequently",
+      "otherwise"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE83",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Choosing the correct word",
+     "difficulty": "Easy",
+     "question": "Fill in the blank: One of my cousins ______ in Chennai.",
+     "solution": "The subject is 'one' (not 'cousins'), which is singular, so the verb must be singular: 'lives'. The other three are plural forms.",
+     "type": "mcq",
+     "options": [
+      "are living",
+      "live",
+      "lives",
+      "have lived"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE84",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Choosing the correct word",
+     "difficulty": "Medium",
+     "question": "Fill in the blank: After the quarrel, the two brothers stopped speaking to ______.",
+     "solution": "A reciprocal pronoun is needed (each brother stopped speaking to the other): 'each other'. 'Themselves' would mean each spoke to himself, 'ourselves' does not match the subject, and 'one other' is not a reciprocal pronoun.",
+     "type": "mcq",
+     "options": [
+      "one other",
+      "each other",
+      "themselves",
+      "ourselves"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UE85",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Choosing the correct word",
+     "difficulty": "Medium",
+     "question": "Fill in the blank: If it ______ tomorrow, the match will be postponed.",
+     "solution": "In a first conditional the if-clause takes the simple present and the main clause takes 'will': 'If it rains tomorrow, the match will be postponed.' 'Will rain' is not used in the if-clause, and 'rained/would rain' belong to the second conditional.",
+     "type": "mcq",
+     "options": [
+      "would rain",
+      "will rain",
+      "rained",
+      "rains"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UE86",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Error spotting",
+     "difficulty": "Easy",
+     "question": "Identify the part of the sentence that contains an error: (A) The furniture / (B) in these rooms / (C) are very old / (D) and needs polishing.",
+     "solution": "'Furniture' is an uncountable noun and takes a singular verb, as part D already shows ('needs'). So 'are' in part C must be 'is'. Corrected: 'The furniture in these rooms is very old and needs polishing.'",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 2,
+     "fixed": true
+    },
+    {
+     "id": "UE87",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Error spotting",
+     "difficulty": "Hard",
+     "question": "Identify the part of the sentence that contains an error: (A) He is one of those people / (B) who always tries / (C) to help / (D) others in need.",
+     "solution": "The relative pronoun 'who' refers to 'those people' (plural), not to 'one', so its verb must be plural: 'who always try'. The error is in part B. Corrected: 'He is one of those people who always try to help others in need.'",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 1,
+     "fixed": true
+    },
+    {
+     "id": "UE88",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Error spotting",
+     "difficulty": "Medium",
+     "question": "Identify the part of the sentence that contains an error: (A) No sooner did the bell ring / (B) when the children / (C) rushed out / (D) of the classroom.",
+     "solution": "'No sooner' is always followed by 'than', not 'when'. The error is in part B. Corrected: 'No sooner did the bell ring than the children rushed out of the classroom.'",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 1,
+     "fixed": true
+    },
+    {
+     "id": "UE89",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Error spotting",
+     "difficulty": "Medium",
+     "question": "Identify the part of the sentence that contains an error: (A) I prefer reading novels / (B) than watching / (C) films on / (D) my phone.",
+     "solution": "'Prefer' takes 'to' for the second item: 'prefer reading novels to watching films'. The error is in part B. Corrected: 'I prefer reading novels to watching films on my phone.'",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 1,
+     "fixed": true
+    },
+    {
+     "id": "UE90",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Error spotting",
+     "difficulty": "Hard",
+     "question": "Identify the part of the sentence that contains an error: (A) Ten kilometres / (B) are a long distance / (C) to walk / (D) in this heat.",
+     "solution": "A plural amount treated as a single quantity (a distance, a sum of money, a period of time) takes a singular verb: 'Ten kilometres is a long distance'. The error is in part B. Corrected: 'Ten kilometres is a long distance to walk in this heat.'",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 1,
+     "fixed": true
+    },
+    {
+     "id": "UE91",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Error spotting",
+     "difficulty": "Medium",
+     "question": "Identify the part of the sentence that contains an error: (A) Scarcely had I / (B) opened the door / (C) than the cat / (D) ran inside.",
+     "solution": "'Scarcely' (like 'hardly') pairs with 'when' or 'before', not 'than'. The error is in part C. Corrected: 'Scarcely had I opened the door when the cat ran inside.'",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 2,
+     "fixed": true
+    },
+    {
+     "id": "UE92",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Error spotting",
+     "difficulty": "Easy",
+     "question": "Identify the part of the sentence that contains an error: (A) The police has / (B) arrested the man / (C) who stole / (D) the bicycle.",
+     "solution": "'Police' is a plural noun in English and takes a plural verb: 'The police have arrested …'. The error is in part A. Corrected: 'The police have arrested the man who stole the bicycle.'",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 0,
+     "fixed": true
+    },
+    {
+     "id": "UE93",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Error spotting",
+     "difficulty": "Medium",
+     "question": "Identify the part of the sentence that contains an error: (A) Unless you do not / (B) work hard, / (C) you will not / (D) pass the examination.",
+     "solution": "'Unless' already means 'if not', so adding 'do not' creates a double negative. It should be 'Unless you work hard, you will not pass'. The error is in part A. Corrected: 'Unless you work hard, you will not pass the examination.'",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 0,
+     "fixed": true
+    },
+    {
+     "id": "UE94",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Rearranging the parts",
+     "difficulty": "Easy",
+     "question": "Rearrange the parts to form a meaningful sentence:<br>P: the importance of saving water &nbsp; Q: the village council &nbsp; R: through street plays &nbsp; S: explained to the residents",
+     "solution": "'The village council (Q) explained to the residents (S) the importance of saving water (P) through street plays (R).' Subject, verb with its indirect object, the thing explained, then the means.",
+     "type": "mcq",
+     "options": [
+      "QPRS",
+      "SQPR",
+      "PQSR",
+      "QSPR"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UE95",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Rearranging the parts",
+     "difficulty": "Easy",
+     "question": "Rearrange the parts to form a meaningful sentence:<br>P: was postponed &nbsp; Q: because of the heavy rain &nbsp; R: the cricket match &nbsp; S: scheduled for Sunday",
+     "solution": "'The cricket match (R) scheduled for Sunday (S) was postponed (P) because of the heavy rain (Q).' The phrase 'scheduled for Sunday' must follow the noun it describes.",
+     "type": "mcq",
+     "options": [
+      "RPSQ",
+      "RSPQ",
+      "SRPQ",
+      "PRSQ"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UE96",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Rearranging the parts",
+     "difficulty": "Hard",
+     "question": "The sentence begins: 'Only…'. Rearrange the parts to complete it:<br>P: did he realise &nbsp; Q: after he had left the house &nbsp; R: his phone &nbsp; S: that he had forgotten",
+     "solution": "'Only after he had left the house (Q) did he realise (P) that he had forgotten (S) his phone (R).' A sentence opening with 'Only after …' requires inversion in the main clause ('did he realise'), which must come directly after the time clause.",
+     "type": "mcq",
+     "options": [
+      "QPSR",
+      "QSPR",
+      "PQSR",
+      "QRPS"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE97",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Rearranging the parts",
+     "difficulty": "Medium",
+     "question": "Rearrange the parts to form a meaningful sentence:<br>P: a balanced diet &nbsp; Q: doctors recommend &nbsp; R: and regular exercise &nbsp; S: for a healthy life",
+     "solution": "'Doctors recommend (Q) a balanced diet (P) and regular exercise (R) for a healthy life (S).' 'And regular exercise' must follow the first item it is joined to.",
+     "type": "mcq",
+     "options": [
+      "PQRS",
+      "QPRS",
+      "RPQS",
+      "SQRP"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UE98",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Rearranging the parts",
+     "difficulty": "Medium",
+     "question": "Rearrange the parts to form a meaningful sentence:<br>P: who had been missing for two days &nbsp; Q: the police found &nbsp; R: the little boy &nbsp; S: in a nearby forest",
+     "solution": "'The police found (Q) the little boy (R) who had been missing for two days (P) in a nearby forest (S).' The relative clause must come right after 'the little boy', the person it describes.",
+     "type": "mcq",
+     "options": [
+      "RSQP",
+      "QPRS",
+      "QRPS",
+      "PQSR"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE99",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Rearranging the parts",
+     "difficulty": "Hard",
+     "question": "Rearrange the parts to form a meaningful sentence:<br>P: but also writes her own songs &nbsp; Q: not only sings &nbsp; R: the young artist &nbsp; S: beautifully",
+     "solution": "'The young artist (R) not only sings (Q) beautifully (S) but also writes her own songs (P).' 'Not only' must come before 'but also', and the adverb 'beautifully' belongs with 'sings'.",
+     "type": "mcq",
+     "options": [
+      "RSQP",
+      "RQSP",
+      "QRSP",
+      "RQPS"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UE100",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Rearranging the parts",
+     "difficulty": "Medium",
+     "question": "Rearrange the parts to form a meaningful sentence:<br>P: than any other student &nbsp; Q: worked harder &nbsp; R: in the class &nbsp; S: Priya",
+     "solution": "'Priya (S) worked harder (Q) than any other student (P) in the class (R).' The comparison 'than any other student' is completed by 'in the class'.",
+     "type": "mcq",
+     "options": [
+      "QSRP",
+      "SPQR",
+      "SQPR",
+      "PRSQ"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE101",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Rearranging the parts",
+     "difficulty": "Easy",
+     "question": "Rearrange the parts to form a meaningful sentence:<br>P: the bridge &nbsp; Q: built over a century ago &nbsp; R: still carries &nbsp; S: heavy traffic every day",
+     "solution": "'The bridge (P) built over a century ago (Q) still carries (R) heavy traffic every day (S).' The participle phrase describes the bridge and is followed by the verb and its object.",
+     "type": "mcq",
+     "options": [
+      "PRQS",
+      "PQRS",
+      "SRPQ",
+      "RPQS"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UE102",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Match the following",
+     "difficulty": "Medium",
+     "question": "Match each word in List I with its meaning in List II.<br>List I: (a) Verbose (b) Ominous (c) Resilient (d) Tenacious<br>List II: (i) suggesting that something bad will happen (ii) holding firmly to a purpose (iii) able to recover quickly from difficulty (iv) using more words than needed",
+     "solution": "Verbose = using more words than needed (iv); Ominous = suggesting that something bad will happen (i); Resilient = able to recover quickly from difficulty (iii); Tenacious = holding firmly to a purpose (ii). These are the standard dictionary senses of the four words.",
+     "type": "mcq",
+     "options": [
+      "a–ii, b–iii, c–iv, d–i",
+      "a–i, b–iii, c–ii, d–iv",
+      "a–iv, b–i, c–iii, d–ii",
+      "a–iii, b–iv, c–ii, d–i"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE103",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Match the following",
+     "difficulty": "Easy",
+     "question": "Match each idiom in List I with its meaning in List II.<br>List I: (a) A piece of cake (b) Once in a blue moon (c) To spill the beans (d) To hit the sack<br>List II: (i) very rarely (ii) to go to bed (iii) to reveal a secret (iv) something very easy",
+     "solution": "A piece of cake = something very easy (iv); Once in a blue moon = very rarely (i); To spill the beans = to reveal a secret (iii); To hit the sack = to go to bed (ii). These are the accepted meanings of the four idioms.",
+     "type": "mcq",
+     "options": [
+      "a–iv, b–i, c–iii, d–ii",
+      "a–i, b–iv, c–ii, d–iii",
+      "a–iii, b–i, c–ii, d–iv",
+      "a–iv, b–ii, c–iii, d–i"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE104",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Match the following",
+     "difficulty": "Easy",
+     "question": "Match each collective phrase in List I with the noun it is used for in List II.<br>List I: (a) A pride of (b) A swarm of (c) A school of (d) A herd of<br>List II: (i) bees (ii) cattle (iii) fish (iv) lions",
+     "solution": "A pride of = lions (iv); A swarm of = bees (i); A school of = fish (iii); A herd of = cattle (ii). A pride of lions, a swarm of bees, a school of fish and a herd of cattle are the standard collective expressions.",
+     "type": "mcq",
+     "options": [
+      "a–i, b–ii, c–iv, d–iii",
+      "a–iv, b–i, c–iii, d–ii",
+      "a–ii, b–iv, c–iii, d–i",
+      "a–iv, b–ii, c–i, d–iii"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UE105",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Match the following",
+     "difficulty": "Medium",
+     "question": "Match each word in List I with its antonym in List II.<br>List I: (a) Optimist (b) Benign (c) Lenient (d) Affluent<br>List II: (i) malignant (ii) impoverished (iii) strict (iv) pessimist",
+     "solution": "Optimist = pessimist (iv); Benign = malignant (i); Lenient = strict (iii); Affluent = impoverished (ii). Each pair is a standard pair of opposites: hopeful/gloomy, harmless/harmful, mild/severe in discipline, and rich/poor.",
+     "type": "mcq",
+     "options": [
+      "a–ii, b–i, c–iii, d–iv",
+      "a–iv, b–i, c–iii, d–ii",
+      "a–iii, b–ii, c–i, d–iv",
+      "a–iv, b–iii, c–i, d–ii"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UE106",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Match the following",
+     "difficulty": "Hard",
+     "question": "Match each figure of speech in List I with its example in List II.<br>List I: (a) Oxymoron (b) Onomatopoeia (c) Hyperbole (d) Irony<br>List II: (i) the buzz of the bees (ii) The fire station burned down. (iii) I have told you a million times. (iv) a deafening silence",
+     "solution": "Oxymoron = a deafening silence (iv); Onomatopoeia = the buzz of the bees (i); Hyperbole = I have told you a million times. (iii); Irony = The fire station burned down. (ii). An oxymoron joins contradictory words; onomatopoeia imitates a sound; hyperbole is deliberate exaggeration; irony (here, situational) is an outcome opposite to what one would expect.",
+     "type": "mcq",
+     "options": [
+      "a–iv, b–i, c–iii, d–ii",
+      "a–i, b–iii, c–iv, d–ii",
+      "a–ii, b–iv, c–i, d–iii",
+      "a–iii, b–iv, c–i, d–ii"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE107",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Match the following",
+     "difficulty": "Medium",
+     "question": "Match each phrasal verb in List I with its meaning in List II.<br>List I: (a) Put off (b) Give up (c) Look after (d) Turn down<br>List II: (i) stop trying (ii) reject (iii) take care of (iv) postpone",
+     "solution": "Put off = postpone (iv); Give up = stop trying (i); Look after = take care of (iii); Turn down = reject (ii). These are the common meanings of the four phrasal verbs.",
+     "type": "mcq",
+     "options": [
+      "a–i, b–ii, c–iii, d–iv",
+      "a–iv, b–i, c–iii, d–ii",
+      "a–ii, b–iii, c–i, d–iv",
+      "a–iii, b–ii, c–iv, d–i"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UE108",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Match the following",
+     "difficulty": "Hard",
+     "question": "Match each specialist in List I with what he or she studies or collects in List II.<br>List I: (a) Ornithologist (b) Entomologist (c) Seismologist (d) Numismatist<br>List II: (i) insects (ii) coins (iii) earthquakes (iv) birds",
+     "solution": "Ornithologist = birds (iv); Entomologist = insects (i); Seismologist = earthquakes (iii); Numismatist = coins (ii). Ornith- (bird), entomo- (insect), seismo- (shaking) and numism- (coin) give the four meanings. Entomologist is often confused with etymologist, who studies word origins.",
+     "type": "mcq",
+     "options": [
+      "a–iii, b–i, c–iv, d–ii",
+      "a–i, b–iv, c–iii, d–ii",
+      "a–iv, b–i, c–iii, d–ii",
+      "a–iv, b–iii, c–ii, d–i"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE109",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Medium",
+     "question": "Choose the one word that can replace the phrase: a person who walks in his or her sleep.",
+     "solution": "Somnambulist (Latin somnus 'sleep' + ambulare 'to walk') is a sleepwalker. An insomniac cannot sleep, a pedestrian walks on the road, and a hypochondriac worries excessively about illness.",
+     "type": "mcq",
+     "options": [
+      "Insomniac",
+      "Somnambulist",
+      "Pedestrian",
+      "Hypochondriac"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UE110",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Medium",
+     "question": "Choose the one word that can replace the phrase: a remedy for all diseases or problems.",
+     "solution": "A panacea is a cure-all. A placebo is a dummy treatment, an antidote counters one particular poison, and a vaccine protects against one particular disease.",
+     "type": "mcq",
+     "options": [
+      "Panacea",
+      "Placebo",
+      "Antidote",
+      "Vaccine"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE111",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Easy",
+     "question": "Choose the one word that can replace the phrase: an extreme fear of heights.",
+     "solution": "Acro- means height or top. Claustrophobia is fear of enclosed spaces, hydrophobia of water, and agoraphobia of open or crowded public places.",
+     "type": "mcq",
+     "options": [
+      "Acrophobia",
+      "Claustrophobia",
+      "Hydrophobia",
+      "Agoraphobia"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE112",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Medium",
+     "question": "Choose the one word that can replace the phrase: handwriting that cannot be read.",
+     "solution": "Illegible means not readable. Ineligible means not qualified, indelible means impossible to erase, and inaudible means impossible to hear.",
+     "type": "mcq",
+     "options": [
+      "Illegible",
+      "Ineligible",
+      "Indelible",
+      "Inaudible"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE113",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Easy",
+     "question": "Choose the one word that can replace the phrase: a person who eats far too much.",
+     "solution": "A glutton eats excessively. A gourmet is a connoisseur of fine food, a carnivore eats meat, and a cannibal eats the flesh of its own kind.",
+     "type": "mcq",
+     "options": [
+      "Carnivore",
+      "Gourmet",
+      "Glutton",
+      "Cannibal"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE114",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Easy",
+     "question": "Choose the one word that can replace the phrase: a list of items to be discussed at a meeting.",
+     "solution": "The agenda is the list drawn up before a meeting; the minutes record what was said afterwards. An itinerary is a travel plan and a memorandum is a written note or message.",
+     "type": "mcq",
+     "options": [
+      "Agenda",
+      "Minutes",
+      "Itinerary",
+      "Memorandum"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE115",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Hard",
+     "question": "Choose the one word that can replace the phrase: a person who endures pain or hardship without showing feelings or complaining.",
+     "solution": "A stoic bears hardship calmly. A cynic distrusts people's motives, a sceptic doubts claims, and a hedonist pursues pleasure, which is nearly the opposite.",
+     "type": "mcq",
+     "options": [
+      "Hedonist",
+      "Cynic",
+      "Sceptic",
+      "Stoic"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UE116",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Hard",
+     "question": "Choose the one word that can replace the phrase: words written on a tombstone in memory of the person buried there.",
+     "solution": "An epitaph is the inscription on a tomb. An epigram is a short witty saying, an epilogue is a closing section of a book or play, and an epithet is a descriptive name such as 'Alexander the Great'.",
+     "type": "mcq",
+     "options": [
+      "Epilogue",
+      "Epigram",
+      "Epitaph",
+      "Epithet"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE117",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Easy",
+     "question": "According to the passage, the boundary that marks the end of one year's growth lies between:",
+     "solution": "Paragraph 1: 'The sharp boundary between one summer's dark wood and the next spring's pale wood marks the edge of a year.' Ring width (wide or narrow) is about weather, not the year boundary, and the bark is not discussed.",
+     "type": "mcq",
+     "options": [
+      "a wide ring and a narrow ring",
+      "two pale rings formed in the same spring",
+      "the bark and the outermost ring",
+      "the small, dark late-summer wood and the next spring's wide, pale wood"
+     ],
+     "answer": 3,
+     "set": "cu-treerings"
+    },
+    {
+     "id": "UE118",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "A tree shows an unusually narrow ring for a particular year. By the passage's account, that year was most probably:",
+     "solution": "Paragraph 2: 'In a wet, mild year a tree lays down a broad ring; in a year of drought, a narrow one.' So a narrow ring points to drought. Planting or cutting is not linked to ring width.",
+     "type": "mcq",
+     "options": [
+      "dry",
+      "wet and mild",
+      "the year the tree was planted",
+      "a year in which the tree was cut"
+     ],
+     "answer": 0,
+     "set": "cu-treerings"
+    },
+    {
+     "id": "UE119",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The comparison with 'people in one town' who 'share memories of the same hard winters' is used to explain why:",
+     "solution": "The simile follows 'every tree in a region feels the same weather', so trees there 'share the same pattern', just as townspeople share memories of the same winters. It is an analogy for a common record, not a claim about memory, building or estimating age.",
+     "type": "mcq",
+     "options": [
+      "old trees remember past weather better than young ones",
+      "trees of one species in a region show the same pattern of wide and narrow rings",
+      "towns were often built from local timber",
+      "people can estimate a tree's age by looking at it"
+     ],
+     "answer": 1,
+     "set": "cu-treerings"
+    },
+    {
+     "id": "UE120",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "Records 'thousands of years long' are possible mainly because:",
+     "solution": "Paragraph 3 says the shared pattern lets scientists 'reach far beyond the life of any single tree' by matching a living tree with an old beam, and that beam with older timber. The passage does not rely on very old living trees; rainfall records are said not to go back that far ('long before anyone measured rainfall'); and paintings and ships are things dated by the method, not sources for it.",
+     "type": "mcq",
+     "options": [
+      "the ring patterns of overlapping pieces of wood of different ages can be matched and linked",
+      "some living trees are thousands of years old",
+      "rainfall has been measured for thousands of years",
+      "paintings and ships record the dates on which they were made"
+     ],
+     "answer": 0,
+     "set": "cu-treerings"
+    },
+    {
+     "id": "UE121",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Easy",
+     "question": "What assumption about placebos do the trials described in the passage challenge?",
+     "solution": "Paragraph 1 states the old assumption: a placebo 'could work only if the patient was deceived'. Paragraph 2 says the trials 'challenged this assumption' by telling patients exactly what they were taking. The other options are not under challenge.",
+     "type": "mcq",
+     "options": [
+      "That a placebo contains no active ingredient",
+      "That a placebo can work only if the patient is deceived",
+      "That back pain is a long-lasting condition",
+      "That sugar pills are cheap to produce"
+     ],
+     "answer": 1,
+     "set": "cu-placebo"
+    },
+    {
+     "id": "UE122",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "According to the researchers, honest placebos may work because:",
+     "solution": "Paragraph 2: 'the ritual of treatment, the act of taking something regularly with care and attention, may itself prompt the body and mind to respond.' The passage gives no support for secret belief, an effect of sugar, or selective prescribing.",
+     "type": "mcq",
+     "options": [
+      "patients secretly believe the pills contain medicine",
+      "the ritual of taking a treatment with care and attention may itself prompt a response",
+      "sugar has a mild pain-relieving effect",
+      "doctors give the pills only to patients who are already recovering"
+     ],
+     "answer": 1,
+     "set": "cu-placebo"
+    },
+    {
+     "id": "UE123",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "The author mentions that the conditions studied are 'ones in which patients themselves report how they feel' in order to:",
+     "solution": "The remark is part of the author's 'caution', and is followed by the contrast between a headache feeling less severe and shrinking a tumour. The point is a limit on what has been shown, not an accusation of lying. 'Should replace pain medicines' contradicts 'not a substitute', and the trials are called small, not large.",
+     "type": "mcq",
+     "options": [
+      "argue that honest placebos should replace pain medicines",
+      "prove that the patients in the trials were not telling the truth",
+      "suggest that the benefits found may be limited to how symptoms are felt, not to measurable disease",
+      "show that the trials were too large to be reliable"
+     ],
+     "answer": 2,
+     "set": "cu-placebo"
+    },
+    {
+     "id": "UE124",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "Which statement best expresses the author's conclusion?",
+     "solution": "The final paragraph says honest placebos 'are not a substitute for medicine' but may show that the way care is given 'can be part of' treatment. 'As effective as most medicines' and 'cure any illness' overstate the evidence, and the passage praises honest placebos for removing the ethical problem rather than calling them unethical.",
+     "type": "mcq",
+     "options": [
+      "Honest placebos are as effective as most medicines",
+      "The way care is given can be part of a treatment, though honest placebos cannot replace real medicine",
+      "Placebos are unethical and should not be used",
+      "The trials prove that the mind can cure any illness"
+     ],
+     "answer": 1,
+     "set": "cu-placebo"
+    },
+    {
+     "id": "UE125",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Easy",
+     "question": "Why was this Joseph's last evening at the lighthouse?",
+     "solution": "The department's letter says the light 'would be made automatic in March' with a machine switching it on and off and a technician visiting twice a year. Nothing suggests dismissal, a request from the granddaughter, or closure of the light.",
+     "type": "mcq",
+     "options": [
+      "His granddaughter had asked him to stop working",
+      "He had been dismissed after an inspector's visit",
+      "The light was being made automatic, so a keeper was no longer needed",
+      "The lighthouse was being closed to shipping"
+     ],
+     "answer": 2,
+     "set": "cu-lighthouse"
+    },
+    {
+     "id": "UE126",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "The detail that Joseph knew 'each step by its sound' mainly suggests:",
+     "solution": "After thirty-one years of nightly climbs he knows the seventh step rings and the fortieth is cracked; the detail conveys intimate familiarity. The passage gives no hint of danger, poor eyesight or dislike.",
+     "type": "mcq",
+     "options": [
+      "that the staircase was dangerous and needed repair",
+      "how long and closely he had lived with the lighthouse",
+      "that he had poor eyesight",
+      "that he disliked climbing the steps"
+     ],
+     "answer": 1,
+     "set": "cu-lighthouse"
+    },
+    {
+     "id": "UE127",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Hard",
+     "question": "Joseph's reply, 'The machine knows when it is dark. That is most of the job,' most likely reveals:",
+     "solution": "He pauses ('considered this'), concedes that the machine covers 'most' of the job, and so implies a remainder (attention to the boats) it cannot cover. The tone is restrained, not angry, and he neither praises the machine as better nor tries to frighten the girl.",
+     "type": "mcq",
+     "options": [
+      "a quiet acceptance mixed with the sense that something the machine cannot do is being lost",
+      "his belief that the machine will do the work better than he did",
+      "anger at the department for replacing him",
+      "that he wants to frighten his granddaughter about the boats"
+     ],
+     "answer": 0,
+     "set": "cu-lighthouse"
+    },
+    {
+     "id": "UE128",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Reading Comprehension",
+     "topic": "Reading Comprehension",
+     "difficulty": "Medium",
+     "question": "How does Joseph respond to the department's letter?",
+     "solution": "'Joseph read it twice, folded it into a careful square and put it under the clock.' The careful, silent handling shows restraint. There is no tearing, protest letter or immediate telling.",
+     "type": "mcq",
+     "options": [
+      "With restraint: he reads it twice, folds it carefully and puts it away",
+      "With open anger, tearing it up",
+      "By writing a letter of protest",
+      "By telling his granddaughter about it at once"
+     ],
+     "answer": 0,
+     "set": "cu-lighthouse"
     }
    ]
   },
@@ -14710,6 +15720,21 @@
    "kind": "passage",
    "title": "Discursive passage: In defence of handwriting",
    "html": "<b>Discursive passage: In defence of handwriting</b><p>Few people write by hand for long these days. Messages are typed, notes are dictated and even shopping lists live on phones. It is easy to say that handwriting is a skill whose time has passed, like lighting a lamp with a match. But before we let it go, we might ask what it quietly does for us.</p>\n<p>Several small studies suggest that students who take notes by hand tend to understand lecture material a little better than those who type. The explanation offered is simple: handwriting is slow, so the writer cannot copy everything and must decide what matters. Typing is fast enough to record almost every word, and the typist may leave the lecture with pages of text and little thought behind them.</p>\n<p>Handwriting also carries something of the writer. A letter in a familiar hand can comfort a reader in a way that a printed page cannot, and a signature is still trusted as proof of a person's presence.</p>\n<p>None of this is an argument against keyboards, which are faster, tidier and indispensable for long documents. It is only an argument against giving up one tool simply because another has arrived. The sensible course is to keep both, using the pen when we want to think and the keyboard when we want to produce.</p>"
+  },
+  "cu-treerings": {
+   "kind": "passage",
+   "title": "Factual passage: Reading the rings of trees",
+   "html": "<b>Factual passage: Reading the rings of trees</b><p>Cut across the trunk of an old oak and you will see a series of rings, one for each year of the tree's life. In spring a tree grows quickly and makes wide, pale cells; by late summer growth slows and the cells become small and dark. The sharp boundary between one summer's dark wood and the next spring's pale wood marks the edge of a year.</p>\n<p>Counting rings gives a tree's age, but their real value lies in their widths. In a wet, mild year a tree lays down a broad ring; in a year of drought, a narrow one. Because every tree in a region feels the same weather, trees of the same species there share the same pattern of wide and narrow rings, much as people in one town share memories of the same hard winters.</p>\n<p>This shared pattern lets scientists reach far beyond the life of any single tree. The inner rings of a living tree can be matched with the outer rings of a beam from an old building, whose inner rings can then be matched with timber older still. Linked in this way, overlapping pieces of wood have produced continuous records thousands of years long.</p>\n<p>Such records have practical uses. A wooden panel on which a painting was made can be dated, and so can a ship found on the seabed. Ring patterns also preserve a history of past droughts long before anyone measured rainfall, a history that helps planners judge how severe a dry spell might one day become.</p>"
+  },
+  "cu-placebo": {
+   "kind": "passage",
+   "title": "Discursive passage: The honest placebo",
+   "html": "<b>Discursive passage: The honest placebo</b><p>A placebo is a treatment with no active ingredient, such as a sugar pill. For decades doctors assumed that it could work only if the patient was deceived. If you knew the pill was sugar, the reasoning went, your expectation of relief would vanish, and with it any benefit.</p>\n<p>A series of small trials has challenged this assumption. Patients with certain long-lasting conditions, such as some kinds of back pain, were handed bottles plainly labelled as placebo and told exactly what was inside. Many nevertheless reported less discomfort than patients who received no pills at all. The researchers suggest that the ritual of treatment, the act of taking something regularly with care and attention, may itself prompt the body and mind to respond.</p>\n<p>The finding is attractive because it seems to remove an ethical problem. Giving fake medicine without telling the patient is a kind of lying; an honest placebo involves no lie at all. Yet caution is needed. The trials have mostly been short and small, and the conditions studied are ones in which patients themselves report how they feel. A sugar pill may make a headache feel less severe; there is no good evidence that it can shrink a tumour or cure an infection.</p>\n<p>The lesson, then, is narrower than the headlines suggest. Honest placebos are not a substitute for medicine. What they may show is that the way care is given, including the time and attention a patient receives, is not merely decoration around a treatment but can be part of it.</p>"
+  },
+  "cu-lighthouse": {
+   "kind": "passage",
+   "title": "Literary passage: The last keeper",
+   "html": "<b>Literary passage: The last keeper</b><p>For thirty-one years Joseph Fernandes had climbed the hundred and twelve steps of the lighthouse every evening at dusk. He knew each step by its sound: the seventh rang slightly, the fortieth had a crack his boot always found, and the last ten groaned like an old man rising from a chair. At the top he would wipe the great lens, light the lamp and write the time in a ledger that nobody but the inspector ever read.</p>\n<p>The letter from the department was polite. The light would be made automatic in March; a small machine would switch it on and off by itself, and a technician would visit twice a year. His service, it said, had been \"much appreciated\". Joseph read it twice, folded it into a careful square and put it under the clock.</p>\n<p>On his last evening his granddaughter came with him. She counted the steps aloud and complained halfway up. At the top she pressed her face to the glass and watched the beam sweep out across the dark water, catching for an instant the white edge of a fishing boat.</p>\n<p>\"Does the machine know about the boats?\" she asked.</p>\n<p>Joseph considered this. \"The machine knows when it is dark,\" he said at last. \"That is most of the job.\"</p>\n<p>He wrote the time in the ledger, and then, after a moment, he wrote something else beneath it, which he did not let her read.</p>"
   }
  }
 }
