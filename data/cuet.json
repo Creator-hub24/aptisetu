@@ -1645,6 +1645,1026 @@
      "answer": 0
     },
     {
+     "id": "UG91",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Averages",
+     "difficulty": "Medium",
+     "question": "The average weight of 8 people goes up by 2.5 kg when one of them, who weighs 55 kg, is replaced by a new person. What is the weight of the new person?",
+     "solution": "The total weight goes up by 8 × 2.5 = 20 kg, so the new person weighs 20 kg more than the person replaced: 55 + 20 = 75 kg.",
+     "type": "mcq",
+     "options": [
+      "65 kg",
+      "57.5 kg",
+      "75 kg",
+      "80 kg"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG92",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Averages",
+     "difficulty": "Easy",
+     "question": "The average of three consecutive odd numbers is 27. What is the largest of them?",
+     "solution": "For consecutive odd numbers the average is the middle number, 27. The numbers are 25, 27 and 29, so the largest is 29.",
+     "type": "mcq",
+     "options": [
+      "27",
+      "29",
+      "31",
+      "25"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG93",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Averages",
+     "difficulty": "Medium",
+     "question": "A student's average mark in 5 subjects is 72. How many marks must the student score in a sixth subject to raise the average of all six to 75?",
+     "solution": "Total needed for 6 subjects = 6 × 75 = 450. Total so far = 5 × 72 = 360. Marks needed = 450 − 360 = 90.",
+     "type": "mcq",
+     "options": [
+      "85",
+      "78",
+      "90",
+      "95"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG94",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Averages",
+     "difficulty": "Medium",
+     "question": "The average age of the 5 members of a family is 30 years. A baby is born, and one year later the average age of the 6 members is:",
+     "solution": "Total age now = 5 × 30 = 150. One year later the 5 members add 5 years (155) and the baby is 1, so the total is 156. Average = 156/6 = 26.",
+     "type": "mcq",
+     "options": [
+      "31 years",
+      "25 years",
+      "25.8 years",
+      "26 years"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG95",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Geometry",
+     "difficulty": "Easy",
+     "question": "What is the sum of the interior angles of a hexagon?",
+     "solution": "Sum of interior angles = (n − 2) × 180° = (6 − 2) × 180° = 720°.",
+     "type": "mcq",
+     "options": [
+      "360°",
+      "540°",
+      "900°",
+      "720°"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG96",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Geometry",
+     "difficulty": "Easy",
+     "question": "The two shorter sides of a right-angled triangle are 9 cm and 12 cm. What is the length of the hypotenuse?",
+     "solution": "By Pythagoras, hypotenuse = √(9² + 12²) = √(81 + 144) = √225 = 15 cm.",
+     "type": "mcq",
+     "options": [
+      "13 cm",
+      "21 cm",
+      "15 cm",
+      "√63 cm"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG97",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Geometry",
+     "difficulty": "Medium",
+     "question": "Each exterior angle of a regular polygon is 40°. How many sides does it have?",
+     "solution": "The exterior angles of any convex polygon add up to 360°. Number of sides = 360°/40° = 9.",
+     "type": "mcq",
+     "options": [
+      "9",
+      "8",
+      "10",
+      "12"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG98",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Geometry",
+     "difficulty": "Medium",
+     "question": "An arc of a circle subtends an angle of 110° at the centre. What angle does it subtend at a point on the remaining part of the circle?",
+     "solution": "The angle subtended by an arc at the centre is twice the angle it subtends at any point on the remaining part of the circle. So the angle is 110°/2 = 55°.",
+     "type": "mcq",
+     "options": [
+      "55°",
+      "110°",
+      "70°",
+      "125°"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG99",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Mensuration",
+     "difficulty": "Medium",
+     "question": "A cylindrical tank has a base radius of 7 m and a height of 10 m. How many litres of water can it hold when full? (Use π = 22/7 and 1 m³ = 1000 litres.)",
+     "solution": "Volume = πr²h = 22/7 × 7 × 7 × 10 = 1540 m³. In litres: 1540 × 1000 = 15,40,000 litres.",
+     "type": "mcq",
+     "options": [
+      "1,54,000 litres",
+      "15,40,000 litres",
+      "15,400 litres",
+      "4,40,000 litres"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG100",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Mensuration",
+     "difficulty": "Medium",
+     "question": "A cuboid measures 12 cm by 8 cm by 5 cm. What is its total surface area?",
+     "solution": "Total surface area = 2(lb + bh + hl) = 2(12 × 8 + 8 × 5 + 5 × 12) = 2(96 + 40 + 60) = 2 × 196 = 392 cm².",
+     "type": "mcq",
+     "options": [
+      "296 cm²",
+      "480 cm²",
+      "196 cm²",
+      "392 cm²"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG101",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Mensuration",
+     "difficulty": "Medium",
+     "question": "A right circular cone has a base radius of 6 cm and a slant height of 10 cm. What is its volume?",
+     "solution": "Height h = √(10² − 6²) = √64 = 8 cm. Volume = (1/3)πr²h = (1/3) × π × 36 × 8 = 96π cm³.",
+     "type": "mcq",
+     "options": [
+      "360π cm³",
+      "120π cm³",
+      "288π cm³",
+      "96π cm³"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG102",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Mensuration",
+     "difficulty": "Easy",
+     "question": "A rectangle is 12 cm long and 5 cm wide. What is the length of its diagonal?",
+     "solution": "Diagonal = √(12² + 5²) = √(144 + 25) = √169 = 13 cm.",
+     "type": "mcq",
+     "options": [
+      "12.5 cm",
+      "17 cm",
+      "13 cm",
+      "√119 cm"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG103",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Statistics",
+     "difficulty": "Easy",
+     "question": "What is the mean of 4, 8, 12, 16 and 20?",
+     "solution": "Sum = 4 + 8 + 12 + 16 + 20 = 60. Mean = 60/5 = 12.",
+     "type": "mcq",
+     "options": [
+      "10",
+      "12",
+      "14",
+      "60"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG104",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Statistics",
+     "difficulty": "Easy",
+     "question": "What is the range of the data 15, 7, 22, 9, 31, 12?",
+     "solution": "Range = largest − smallest = 31 − 7 = 24.",
+     "type": "mcq",
+     "options": [
+      "22",
+      "24",
+      "31",
+      "16"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG105",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Statistics",
+     "difficulty": "Medium",
+     "question": "The mean of 6, 8, x, 10 and 12 is 9. What is x?",
+     "solution": "The sum must be 5 × 9 = 45. 6 + 8 + 10 + 12 = 36, so x = 45 − 36 = 9.",
+     "type": "mcq",
+     "options": [
+      "7",
+      "8",
+      "10",
+      "9"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG106",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Statistics",
+     "difficulty": "Hard",
+     "question": "What is the variance of 2, 4, 6, 8 and 10? (Divide by the number of observations.)",
+     "solution": "Mean = 30/5 = 6. Squared deviations: 16, 4, 0, 4, 16, total 40. Variance = 40/5 = 8.",
+     "type": "mcq",
+     "options": [
+      "4",
+      "10",
+      "8",
+      "2√2"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG107",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Assertion & Reason",
+     "difficulty": "Medium",
+     "question": "Assertion (A): The Sun appears reddish at sunrise and sunset.<br>Reason (R): At these times sunlight travels a longer path through the atmosphere, so more of the blue light is scattered away before it reaches us.",
+     "solution": "Both statements are true, and the longer path that removes blue light by scattering is exactly why the remaining light looks red. So R correctly explains A.",
+     "type": "mcq",
+     "options": [
+      "Both A and R are true, and R is the correct explanation of A",
+      "Both A and R are true, but R is not the correct explanation of A",
+      "A is true, but R is false",
+      "A is false, but R is true"
+     ],
+     "answer": 0,
+     "fixed": true
+    },
+    {
+     "id": "UG108",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Assertion & Reason",
+     "difficulty": "Medium",
+     "question": "Assertion (A): A person standing in a lift that is accelerating upward feels heavier than usual.<br>Reason (R): The mass of the person increases when the lift accelerates upward.",
+     "solution": "A is true: the floor must push up with more than the person's weight to accelerate them, so they feel heavier. R is false: mass does not change; only the normal force (apparent weight) increases.",
+     "type": "mcq",
+     "options": [
+      "Both A and R are true, and R is the correct explanation of A",
+      "Both A and R are true, but R is not the correct explanation of A",
+      "A is true, but R is false",
+      "A is false, but R is true"
+     ],
+     "answer": 2,
+     "fixed": true
+    },
+    {
+     "id": "UG109",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Statements & Conclusions",
+     "difficulty": "Easy",
+     "question": "Statement: No student who scored below 40% in the final exam was promoted. Rohan was promoted.<br>Conclusions: I. Rohan scored at least 40% in the final exam. II. Rohan scored above 90% in the final exam.",
+     "solution": "If Rohan had scored below 40% he would not have been promoted, so he scored at least 40%: I follows. Nothing tells us how far above 40% he scored, so II does not follow.",
+     "type": "mcq",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+     ],
+     "answer": 0,
+     "fixed": true
+    },
+    {
+     "id": "UG110",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Statements & Conclusions",
+     "difficulty": "Medium",
+     "question": "Statement: The municipal corporation has decided to fine anyone found throwing waste on the streets ₹500.<br>Conclusions: I. The corporation wants the streets to be kept clean. II. From now on, nobody will throw waste on the streets.",
+     "solution": "A fine for littering shows that the corporation wants clean streets, so I follows. A fine discourages littering but cannot guarantee that nobody will ever do it, so II does not follow.",
+     "type": "mcq",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+     ],
+     "answer": 0,
+     "fixed": true
+    },
+    {
+     "id": "UG111",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Statements & Conclusions",
+     "difficulty": "Medium",
+     "question": "Statement: All trains to Jaipur have been cancelled today because of track repairs. Amit needed to travel to Jaipur today by train.<br>Conclusions: I. Amit could not travel to Jaipur by train today. II. Track repairs on the Jaipur route are carried out every day.",
+     "solution": "Since every train to Jaipur is cancelled today, Amit could not go by train: I follows. The statement is about today only, so II does not follow.",
+     "type": "mcq",
+     "options": [
+      "Only I follows",
+      "Only II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+     ],
+     "answer": 0,
+     "fixed": true
+    },
+    {
+     "id": "UG112",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Data Sufficiency",
+     "difficulty": "Easy",
+     "question": "Question: What is Ravi's age?<br>Statement I: Ravi is 4 years older than Sita.<br>Statement II: The sum of the ages of Ravi and Sita is 30 years.",
+     "solution": "I alone gives only the difference of the ages, and II alone gives only their sum. Together: R − S = 4 and R + S = 30, so R = 17. Both statements are needed.",
+     "type": "mcq",
+     "options": [
+      "Statement I alone is sufficient, but II alone is not",
+      "Statement II alone is sufficient, but I alone is not",
+      "Both statements together are needed; neither alone is sufficient",
+      "Each statement alone is sufficient"
+     ],
+     "answer": 2,
+     "fixed": true
+    },
+    {
+     "id": "UG113",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Data Sufficiency",
+     "difficulty": "Medium",
+     "question": "Question: What is the value of the integer n?<br>Statement I: n² = 49 and n is positive.<br>Statement II: 3n − 5 = 16.",
+     "solution": "I: n² = 49 gives n = 7 or −7, and n positive leaves n = 7. II: 3n = 21, so n = 7. Each statement alone gives the value.",
+     "type": "mcq",
+     "options": [
+      "Statement I alone is sufficient, but II alone is not",
+      "Statement II alone is sufficient, but I alone is not",
+      "Both statements together are needed; neither alone is sufficient",
+      "Each statement alone is sufficient"
+     ],
+     "answer": 3,
+     "fixed": true
+    },
+    {
+     "id": "UG114",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Data Sufficiency",
+     "difficulty": "Medium",
+     "question": "Question: How many students are there in the class?<br>Statement I: Riya is 12th from the top and 18th from the bottom of the class list.<br>Statement II: The class has 5 more boys than girls.",
+     "solution": "I gives the total: 12 + 18 − 1 = 29 students. II gives only the difference between boys and girls, not the total. So I alone is sufficient, but II alone is not.",
+     "type": "mcq",
+     "options": [
+      "Statement I alone is sufficient, but II alone is not",
+      "Statement II alone is sufficient, but I alone is not",
+      "Both statements together are needed; neither alone is sufficient",
+      "Each statement alone is sufficient"
+     ],
+     "answer": 0,
+     "fixed": true
+    },
+    {
+     "id": "UG115",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Statements & Assumptions",
+     "difficulty": "Easy",
+     "question": "Statement: \"Please carry an umbrella; the weather office has forecast heavy rain this evening,\" a mother tells her son.<br>Assumptions: I. The weather forecast is likely to be reliable. II. An umbrella can protect a person from rain.",
+     "solution": "The advice only makes sense if the mother trusts the forecast (I) and believes an umbrella will help in rain (II). Both are implicit.",
+     "type": "mcq",
+     "options": [
+      "Only assumption I is implicit",
+      "Only assumption II is implicit",
+      "Both I and II are implicit",
+      "Neither I nor II is implicit"
+     ],
+     "answer": 2,
+     "fixed": true
+    },
+    {
+     "id": "UG116",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Statements & Assumptions",
+     "difficulty": "Medium",
+     "question": "Statement: The government has decided to set up 100 new public libraries in rural areas.<br>Assumptions: I. People in rural areas would use the libraries. II. There are no public libraries in urban areas.",
+     "solution": "Building libraries assumes that people will use them, so I is implicit. The decision is about rural areas and says nothing about urban libraries, so II is not implicit.",
+     "type": "mcq",
+     "options": [
+      "Only assumption I is implicit",
+      "Only assumption II is implicit",
+      "Both I and II are implicit",
+      "Neither I nor II is implicit"
+     ],
+     "answer": 0,
+     "fixed": true
+    },
+    {
+     "id": "UG117",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Statements & Assumptions",
+     "difficulty": "Easy",
+     "question": "Statement: \"Use our toothpaste for stronger teeth,\" says an advertisement.<br>Assumptions: I. People want stronger teeth. II. No other toothpaste can make teeth stronger.",
+     "solution": "An advertisement promising stronger teeth assumes that people want them, so I is implicit. It does not need to assume that every other toothpaste fails, so II is not implicit.",
+     "type": "mcq",
+     "options": [
+      "Only assumption I is implicit",
+      "Only assumption II is implicit",
+      "Both I and II are implicit",
+      "Neither I nor II is implicit"
+     ],
+     "answer": 0,
+     "fixed": true
+    },
+    {
+     "id": "UG118",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Statements & Assumptions",
+     "difficulty": "Medium",
+     "question": "Statement: A company has announced a 10% bonus for employees who join its new training programme.<br>Assumptions: I. Some employees may be motivated by a bonus to join the programme. II. The training programme is compulsory for all employees.",
+     "solution": "Offering a bonus to those who join assumes that a bonus can motivate some employees, so I is implicit. If the programme were compulsory there would be no need for an incentive, so II is not implicit.",
+     "type": "mcq",
+     "options": [
+      "Only assumption I is implicit",
+      "Only assumption II is implicit",
+      "Both I and II are implicit",
+      "Neither I nor II is implicit"
+     ],
+     "answer": 0,
+     "fixed": true
+    },
+    {
+     "id": "UG119",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Venn Diagrams",
+     "difficulty": "Easy",
+     "question": "In a class of 50 students, every student studies Hindi or English or both. 28 study Hindi and 30 study English. How many study both?",
+     "solution": "n(H ∪ E) = 50. Both = 28 + 30 − 50 = 8.",
+     "type": "mcq",
+     "options": [
+      "12",
+      "8",
+      "22",
+      "2"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG120",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Venn Diagrams",
+     "difficulty": "Medium",
+     "question": "Of 120 people surveyed, 60 read newspaper A, 45 read B and 40 read C. 20 read both A and B, 15 read both B and C, 18 read both A and C, and 8 read all three. How many read none of the three?",
+     "solution": "At least one = 60 + 45 + 40 − 20 − 15 − 18 + 8 = 100. None = 120 − 100 = 20.",
+     "type": "mcq",
+     "options": [
+      "28",
+      "20",
+      "12",
+      "32"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG121",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Venn Diagrams",
+     "difficulty": "Easy",
+     "question": "In a club of 70 members, 30 play chess, 25 play carrom and 20 play both. How many play exactly one of the two games?",
+     "solution": "Only chess = 30 − 20 = 10 and only carrom = 25 − 20 = 5. Exactly one = 10 + 5 = 15.",
+     "type": "mcq",
+     "options": [
+      "45",
+      "35",
+      "55",
+      "15"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG122",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Venn Diagrams",
+     "difficulty": "Medium",
+     "question": "Of 200 people, 150 own a smartphone and 120 own a laptop. What is the least possible number of people who own both?",
+     "solution": "At most 200 people can own at least one. Both = 150 + 120 − (number with at least one) ≥ 270 − 200 = 70, and 70 is reached when everyone owns at least one.",
+     "type": "mcq",
+     "options": [
+      "50",
+      "30",
+      "120",
+      "70"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG123",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Analogies",
+     "difficulty": "Easy",
+     "question": "Doctor : Hospital :: Teacher : ?",
+     "solution": "A doctor works in a hospital; a teacher works in a school.",
+     "type": "mcq",
+     "options": [
+      "Book",
+      "School",
+      "Student",
+      "Lesson"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG124",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Analogies",
+     "difficulty": "Easy",
+     "question": "3 : 27 :: 5 : ?",
+     "solution": "27 = 3³, so the second term is the cube of the first. 5³ = 125.",
+     "type": "mcq",
+     "options": [
+      "75",
+      "25",
+      "15",
+      "125"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG125",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Analogies",
+     "difficulty": "Medium",
+     "question": "ACE : BDF :: GIK : ?",
+     "solution": "Each letter of ACE moves one place forward to give BDF. Doing the same to GIK gives HJL.",
+     "type": "mcq",
+     "options": [
+      "FHJ",
+      "HIJ",
+      "IKM",
+      "HJL"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG126",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Analogies",
+     "difficulty": "Medium",
+     "question": "Bird : Flock :: Fish : ?",
+     "solution": "A group of birds is a flock; a group of fish is a school. A herd is of cattle, a pack of wolves and a swarm of insects.",
+     "type": "mcq",
+     "options": [
+      "School",
+      "Herd",
+      "Pack",
+      "Swarm"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG127",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Mathematical Operations",
+     "difficulty": "Medium",
+     "question": "If × means +, + means −, − means ÷ and ÷ means ×, what is the value of 18 × 6 − 3 + 4 ÷ 2?",
+     "solution": "Replacing the signs gives 18 + 6 ÷ 3 − 4 × 2. Division and multiplication first: 18 + 2 − 8 = 12.",
+     "type": "mcq",
+     "options": [
+      "12",
+      "16",
+      "8",
+      "20"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG128",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Mathematical Operations",
+     "difficulty": "Easy",
+     "question": "If P means +, Q means −, R means × and S means ÷, what is the value of 20 P 15 S 3 Q 4 R 2?",
+     "solution": "The expression is 20 + 15 ÷ 3 − 4 × 2 = 20 + 5 − 8 = 17.",
+     "type": "mcq",
+     "options": [
+      "21",
+      "25",
+      "13",
+      "17"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG129",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Mathematical Operations",
+     "difficulty": "Medium",
+     "question": "If a ★ b = a² − b, what is the value of 5 ★ (3 ★ 4)?",
+     "solution": "3 ★ 4 = 9 − 4 = 5. Then 5 ★ 5 = 25 − 5 = 20.",
+     "type": "mcq",
+     "options": [
+      "20",
+      "21",
+      "5",
+      "16"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG130",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Mathematical Operations",
+     "difficulty": "Easy",
+     "question": "If a # b = 2a + 3b, and x # 4 = 20, what is x?",
+     "solution": "x # 4 = 2x + 12 = 20, so 2x = 8 and x = 4.",
+     "type": "mcq",
+     "options": [
+      "4",
+      "8",
+      "2",
+      "6"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG131",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Mathematical Operations",
+     "difficulty": "Hard",
+     "question": "Which two signs must be interchanged to make the equation 12 ÷ 4 + 3 × 6 − 2 = 13 correct?",
+     "solution": "Interchanging + and × gives 12 ÷ 4 × 3 + 6 − 2 = 3 × 3 + 6 − 2 = 9 + 6 − 2 = 13, which is correct. The other swaps give: ÷ and − → 12 − 4 + 3 × 6 ÷ 2 = 17; + and ÷ → 12 + 4 ÷ 3 × 6 − 2 = 18; × and − → 12 ÷ 4 + 3 − 6 × 2 = −6.",
+     "type": "mcq",
+     "options": [
+      "÷ and −",
+      "+ and ×",
+      "+ and ÷",
+      "× and −"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG132",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "Indian Polity",
+     "difficulty": "Easy",
+     "question": "Who appoints the Chief Justice of India?",
+     "solution": "Under Article 124 of the Constitution, the judges of the Supreme Court, including the Chief Justice of India, are appointed by the President.",
+     "type": "mcq",
+     "options": [
+      "The Union Law Minister",
+      "The Prime Minister",
+      "The Parliament",
+      "The President of India"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG133",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "Geography",
+     "difficulty": "Easy",
+     "question": "Which is the largest state of India by area?",
+     "solution": "Rajasthan, at about 3.42 lakh km², is the largest state by area; Madhya Pradesh is second.",
+     "type": "mcq",
+     "options": [
+      "Uttar Pradesh",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Rajasthan"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG134",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "Geography",
+     "difficulty": "Easy",
+     "question": "The Western Ghats are also known as the:",
+     "solution": "The Western Ghats are called the Sahyadri. The Aravalli, Vindhya and Satpura are separate ranges in north-western and central India.",
+     "type": "mcq",
+     "options": [
+      "Aravalli",
+      "Sahyadri",
+      "Vindhya",
+      "Satpura"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG135",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "Geography",
+     "difficulty": "Medium",
+     "question": "Which is the southernmost point of mainland India?",
+     "solution": "Kanyakumari (Cape Comorin) is the southern tip of the mainland. Indira Point, in the Great Nicobar island, is the southernmost point of India as a whole, but it is not on the mainland.",
+     "type": "mcq",
+     "options": [
+      "Rameswaram",
+      "Indira Point",
+      "Kanyakumari",
+      "Thiruvananthapuram"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG136",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "History",
+     "difficulty": "Easy",
+     "question": "The Jallianwala Bagh massacre of 1919 took place in which city?",
+     "solution": "On 13 April 1919, troops under General Dyer fired on a crowd at Jallianwala Bagh in Amritsar, Punjab.",
+     "type": "mcq",
+     "options": [
+      "Lahore",
+      "Amritsar",
+      "Lucknow",
+      "Meerut"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG137",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "History",
+     "difficulty": "Easy",
+     "question": "Who founded the Maurya Empire?",
+     "solution": "Chandragupta Maurya founded the empire around 321 BCE with the help of Chanakya. Bindusara was his son and Ashoka his grandson; Bimbisara was an earlier ruler of Magadha.",
+     "type": "mcq",
+     "options": [
+      "Bindusara",
+      "Ashoka",
+      "Chandragupta Maurya",
+      "Bimbisara"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG138",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "History",
+     "difficulty": "Medium",
+     "question": "In which year was the Quit India Movement launched?",
+     "solution": "The Quit India Movement was launched by the Indian National Congress on 8 August 1942 in Bombay.",
+     "type": "mcq",
+     "options": [
+      "1942",
+      "1930",
+      "1920",
+      "1947"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG139",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "General Science",
+     "difficulty": "Easy",
+     "question": "Which gas do green plants take in from the air for photosynthesis?",
+     "solution": "In photosynthesis plants use carbon dioxide and water, with sunlight, to make glucose, and release oxygen.",
+     "type": "mcq",
+     "options": [
+      "Carbon dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG140",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "General Science",
+     "difficulty": "Easy",
+     "question": "What is the chemical formula of common salt?",
+     "solution": "Common salt is sodium chloride, NaCl. KCl is potassium chloride, NaOH is sodium hydroxide and CaCO₃ is calcium carbonate.",
+     "type": "mcq",
+     "options": [
+      "NaCl",
+      "KCl",
+      "NaOH",
+      "CaCO₃"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG141",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "General Science",
+     "difficulty": "Easy",
+     "question": "Which part of a cell is known as its 'powerhouse'?",
+     "solution": "Mitochondria carry out cellular respiration and release most of the cell's energy (as ATP), hence the name 'powerhouse'.",
+     "type": "mcq",
+     "options": [
+      "Ribosome",
+      "Nucleus",
+      "Mitochondria",
+      "Cell wall"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG142",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "General Science",
+     "difficulty": "Medium",
+     "question": "What is the approximate speed of light in a vacuum?",
+     "solution": "Light travels about 3 × 10⁸ metres per second in a vacuum (more precisely 299,792,458 m/s).",
+     "type": "mcq",
+     "options": [
+      "3 × 10¹⁰ m/s",
+      "3 × 10⁶ m/s",
+      "3 × 10⁵ m/s",
+      "3 × 10⁸ m/s"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG143",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "Environment",
+     "difficulty": "Easy",
+     "question": "The ozone layer is found mainly in which layer of the atmosphere?",
+     "solution": "Most of the atmosphere's ozone lies in the stratosphere, roughly 15 to 35 km above the Earth, where it absorbs harmful ultraviolet rays.",
+     "type": "mcq",
+     "options": [
+      "Mesosphere",
+      "Troposphere",
+      "Stratosphere",
+      "Thermosphere"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG144",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "Environment",
+     "difficulty": "Medium",
+     "question": "In which year was Project Tiger launched in India?",
+     "solution": "Project Tiger was launched on 1 April 1973 to protect the tiger and its habitat. (The Wildlife Protection Act was passed in 1972.)",
+     "type": "mcq",
+     "options": [
+      "1972",
+      "1973",
+      "1985",
+      "1992"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG145",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "Environment",
+     "difficulty": "Easy",
+     "question": "Which of the following is a non-renewable resource?",
+     "solution": "Coal is a fossil fuel formed over millions of years and cannot be replaced on a human timescale. Solar, wind and tidal energy are renewable.",
+     "type": "mcq",
+     "options": [
+      "Solar energy",
+      "Coal",
+      "Wind energy",
+      "Tidal energy"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG146",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Knowledge",
+     "topic": "Environment",
+     "difficulty": "Medium",
+     "question": "Which greenhouse gas is released in the largest quantity by burning fossil fuels?",
+     "solution": "Burning coal, oil and gas releases carbon dioxide in far larger amounts than any other greenhouse gas; methane comes mainly from agriculture, wetlands and gas leaks.",
+     "type": "mcq",
+     "options": [
+      "Carbon dioxide",
+      "Methane",
+      "Nitrous oxide",
+      "Ozone"
+     ],
+     "answer": 0
+    },
+    {
      "id": "G-Q1",
      "exam": "cuet",
      "topic": "Percentages",
@@ -6184,6 +7204,26 @@
      "type": "mcq",
      "source": "general",
      "orig_id": "R143"
+    },
+    {
+     "id": "G-R144",
+     "exam": "cuet",
+     "topic": "Odd One Out",
+     "difficulty": "Medium",
+     "question": "Find the odd one out: 3, 10, 29, 65, 127",
+     "options": [
+      "3",
+      "29",
+      "127",
+      "65"
+     ],
+     "answer": 3,
+     "solution": "Each term should be a cube plus 2, that is n³ + 2: 1 + 2 = 3, 8 + 2 = 10, 27 + 2 = 29, 64 + 2 = 66, 125 + 2 = 127. The fourth term should be 66, so 65 is the odd one out.",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "R144"
     }
    ]
   },
@@ -7325,6 +8365,223 @@
       "Armoury"
      ],
      "answer": 0
+    },
+    {
+     "id": "UE62",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Match the following",
+     "difficulty": "Easy",
+     "question": "Match each word in List I with its meaning in List II.<br>List I: (a) Candid (b) Frugal (c) Lethargic (d) Obstinate<br>List II: (i) careful not to waste money (ii) stubbornly refusing to change (iii) sluggish and without energy (iv) frank and honest",
+     "solution": "Candid = frank and honest (iv); Frugal = careful not to waste money (i); Lethargic = sluggish and without energy (iii); Obstinate = stubbornly refusing to change (ii). These are the standard dictionary senses of the four words.",
+     "type": "mcq",
+     "options": [
+      "a–iv, b–i, c–iii, d–ii",
+      "a–i, b–iv, c–iii, d–ii",
+      "a–iv, b–iii, c–i, d–ii",
+      "a–ii, b–i, c–iii, d–iv"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE63",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Match the following",
+     "difficulty": "Medium",
+     "question": "Match each phrase in List I with its meaning in List II.<br>List I: (a) A blessing in disguise (b) To burn the midnight oil (c) To beat about the bush (d) A red-letter day<br>List II: (i) to work or study late into the night (ii) a memorable, happy day (iii) to avoid coming to the point (iv) something good that first seemed bad",
+     "solution": "A blessing in disguise = something good that first seemed bad (iv); To burn the midnight oil = to work or study late into the night (i); To beat about the bush = to avoid coming to the point (iii); A red-letter day = a memorable, happy day (ii). These are the accepted meanings of the four idioms.",
+     "type": "mcq",
+     "options": [
+      "a–iv, b–i, c–ii, d–iii",
+      "a–iv, b–i, c–iii, d–ii",
+      "a–iii, b–i, c–iv, d–ii",
+      "a–iv, b–ii, c–i, d–iii"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UE64",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Match the following",
+     "difficulty": "Medium",
+     "question": "Match each word in List I with its antonym in List II.<br>List I: (a) Transparent (b) Ancient (c) Expand (d) Humble<br>List II: (i) modern (ii) arrogant (iii) contract (iv) opaque",
+     "solution": "Transparent = opaque (iv); Ancient = modern (i); Expand = contract (iii); Humble = arrogant (ii). Each pair is a standard pair of opposites.",
+     "type": "mcq",
+     "options": [
+      "a–iv, b–i, c–ii, d–iii",
+      "a–i, b–iv, c–iii, d–ii",
+      "a–iv, b–i, c–iii, d–ii",
+      "a–iii, b–ii, c–iv, d–i"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE65",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Match the following",
+     "difficulty": "Medium",
+     "question": "Match each literary device in List I with its example in List II.<br>List I: (a) Simile (b) Metaphor (c) Personification (d) Alliteration<br>List II: (i) Time is a thief. (ii) Peter picked a peck of pickled peppers. (iii) The wind whispered through the trees. (iv) Her smile was like sunshine.",
+     "solution": "Simile = Her smile was like sunshine. (iv); Metaphor = Time is a thief. (i); Personification = The wind whispered through the trees. (iii); Alliteration = Peter picked a peck of pickled peppers. (ii). A simile compares using 'like' or 'as'; a metaphor states that one thing is another; personification gives human actions to a non-human thing; alliteration repeats the opening consonant sound.",
+     "type": "mcq",
+     "options": [
+      "a–iv, b–iii, c–i, d–ii",
+      "a–iv, b–i, c–ii, d–iii",
+      "a–iv, b–i, c–iii, d–ii",
+      "a–ii, b–i, c–iii, d–iv"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE66",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Match the following",
+     "difficulty": "Hard",
+     "question": "Match each word in List I with its meaning in List II.<br>List I: (a) Ubiquitous (b) Pragmatic (c) Ambivalent (d) Laconic<br>List II: (i) dealing with things in a practical way (ii) using very few words (iii) having mixed feelings (iv) found everywhere",
+     "solution": "Ubiquitous = found everywhere (iv); Pragmatic = dealing with things in a practical way (i); Ambivalent = having mixed feelings (iii); Laconic = using very few words (ii). These are the standard dictionary senses of the four words.",
+     "type": "mcq",
+     "options": [
+      "a–iv, b–i, c–ii, d–iii",
+      "a–iv, b–iii, c–i, d–ii",
+      "a–i, b–ii, c–iii, d–iv",
+      "a–iv, b–i, c–iii, d–ii"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UE67",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Easy",
+     "question": "Choose the one word that can replace the phrase: a person who does not believe in the existence of God.",
+     "solution": "An atheist denies that God exists. An agnostic holds that it cannot be known, a heretic rejects the accepted teaching of a religion, and a pagan follows a non-mainstream or older faith.",
+     "type": "mcq",
+     "options": [
+      "Heretic",
+      "Agnostic",
+      "Atheist",
+      "Pagan"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UE68",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Easy",
+     "question": "Choose the one word that can replace the phrase: a speech made by a character alone on the stage, speaking their thoughts aloud.",
+     "solution": "A soliloquy is spoken alone, voicing one's thoughts. A dialogue needs two or more speakers, an epilogue is a closing section, and a monograph is a detailed written study.",
+     "type": "mcq",
+     "options": [
+      "Monograph",
+      "Dialogue",
+      "Epilogue",
+      "Soliloquy"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UE69",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Medium",
+     "question": "Choose the one word that can replace the phrase: a government by a small group of powerful people.",
+     "solution": "Oligarchy is rule by a few. Monarchy is rule by one sovereign, democracy is rule by the people, and anarchy is the absence of government.",
+     "type": "mcq",
+     "options": [
+      "Anarchy",
+      "Monarchy",
+      "Democracy",
+      "Oligarchy"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UE70",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "One-word substitution",
+     "difficulty": "Medium",
+     "question": "Choose the one word that can replace the phrase: a word or phrase that reads the same backwards as forwards.",
+     "solution": "'Level' and 'madam' are palindromes. An anagram rearranges letters, an acronym is formed from initial letters, and a homonym shares spelling or sound with a different word.",
+     "type": "mcq",
+     "options": [
+      "Palindrome",
+      "Anagram",
+      "Acronym",
+      "Homonym"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UE71",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Error spotting",
+     "difficulty": "Medium",
+     "question": "Identify the part of the sentence that contains an error: (A) Although she is / (B) senior than me / (C) by three years, / (D) we joined the firm together.",
+     "solution": "Adjectives such as senior, junior, superior and inferior take 'to', not 'than'. The correct phrase is 'senior to me', so the error is in part B.",
+     "type": "mcq",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 1,
+     "fixed": true
+    },
+    {
+     "id": "UE72",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Rearranging the parts",
+     "difficulty": "Easy",
+     "question": "Rearrange the parts to form a meaningful sentence:<br>P: before sunrise &nbsp; Q: my grandfather &nbsp; R: every morning &nbsp; S: goes for a walk",
+     "solution": "'My grandfather (Q) goes for a walk (S) every morning (R) before sunrise (P).' Subject, verb phrase, then how often, then when.",
+     "type": "mcq",
+     "options": [
+      "SPQR",
+      "QRPS",
+      "SQRP",
+      "QSRP"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UE73",
+     "exam": "cuet",
+     "section": "english",
+     "part": "Verbal Ability",
+     "topic": "Rearranging the parts",
+     "difficulty": "Medium",
+     "question": "Rearrange the parts to form a meaningful sentence:<br>P: although it was raining heavily &nbsp; Q: reached the station &nbsp; R: on time &nbsp; S: the students",
+     "solution": "'Although it was raining heavily (P), the students (S) reached the station (Q) on time (R).' The concessive clause comes first; the main clause has its subject before the verb and object.",
+     "type": "mcq",
+     "options": [
+      "SPQR",
+      "SQPR",
+      "PQSR",
+      "PSQR"
+     ],
+     "answer": 3
     }
    ]
   },
@@ -8392,6 +9649,384 @@
       "11",
       "12",
       "9"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM60",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Application of Integrals",
+     "difficulty": "Easy",
+     "question": "What is the area of the region bounded by the parabola y = 4 − x² and the x-axis?",
+     "solution": "The parabola meets the x-axis at x = ±2. Area = ∫₋₂² (4 − x²) dx = [4x − x³/3] from −2 to 2 = (8 − 8/3) − (−8 + 8/3) = 32/3.",
+     "type": "mcq",
+     "options": [
+      "32/3 square units",
+      "16/3 square units",
+      "8 square units",
+      "64/3 square units"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM61",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Application of Integrals",
+     "difficulty": "Medium",
+     "question": "What is the area of the region bounded by y = √x, the x-axis and the line x = 4?",
+     "solution": "Area = ∫₀⁴ x^{1/2} dx = [(2/3) x^{3/2}] from 0 to 4 = (2/3)(8) = 16/3.",
+     "type": "mcq",
+     "options": [
+      "4 square units",
+      "8/3 square units",
+      "16/3 square units",
+      "32/3 square units"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM62",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Application of Integrals",
+     "difficulty": "Hard",
+     "question": "What is the area of the region enclosed by the parabola y = x² and the line y = x + 2?",
+     "solution": "The curves meet where x² = x + 2, i.e. x = −1 and x = 2, and the line lies above the parabola in between. Area = ∫₋₁² (x + 2 − x²) dx = [x²/2 + 2x − x³/3] from −1 to 2 = 10/3 − (−7/6) = 9/2.",
+     "type": "mcq",
+     "options": [
+      "11/2 square units",
+      "7/2 square units",
+      "5 square units",
+      "9/2 square units"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM63",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Application of Integrals",
+     "difficulty": "Medium",
+     "question": "What is the area of the region in the first quadrant bounded by the circle x² + y² = 9 and the coordinate axes?",
+     "solution": "The region is a quarter of a circle of radius 3. Area = ∫₀³ √(9 − x²) dx = (1/4)π(3)² = 9π/4.",
+     "type": "mcq",
+     "options": [
+      "9π/4 square units",
+      "9π/2 square units",
+      "3π/4 square units",
+      "9π square units"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM64",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Linear Programming",
+     "difficulty": "Medium",
+     "question": "Maximise Z = 4x + 5y subject to x + 2y ≤ 8, 3x + y ≤ 9, x ≥ 0, y ≥ 0. The maximum value of Z is:",
+     "solution": "Corner points: (0, 0), (3, 0), (0, 4) and the meeting point of x + 2y = 8 and 3x + y = 9, which is (2, 3). Z = 0, 12, 20 and 8 + 15 = 23. The maximum is 23 at (2, 3).",
+     "type": "mcq",
+     "options": [
+      "23",
+      "20",
+      "12",
+      "24"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM65",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Linear Programming",
+     "difficulty": "Medium",
+     "question": "Minimise Z = 3x + y subject to x + y ≥ 2, 1 ≤ x ≤ 4 and 0 ≤ y ≤ 4. The minimum value of Z is:",
+     "solution": "The corner points are (1, 1), (2, 0), (4, 0), (4, 4) and (1, 4). Z = 4, 6, 12, 16 and 7. The minimum is 4 at (1, 1).",
+     "type": "mcq",
+     "options": [
+      "6",
+      "4",
+      "5",
+      "3"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM66",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Linear Programming",
+     "difficulty": "Hard",
+     "question": "For Z = 2x + 2y subject to x + y ≤ 6, x ≤ 4, x ≥ 0, y ≥ 0, which statement is true?",
+     "solution": "Corner points: (0, 0), (4, 0), (4, 2) and (0, 6). Z = 0, 8, 12 and 12. Two adjacent corners give the same largest value and Z = 2(x + y) is constant along x + y = 6, so the maximum 12 is attained at every point of the segment joining (4, 2) and (0, 6).",
+     "type": "mcq",
+     "options": [
+      "The maximum 12 occurs only at (0, 6)",
+      "The maximum 12 occurs at every point of the segment joining (4, 2) and (0, 6)",
+      "The maximum 16 occurs at (4, 4)",
+      "Z has no maximum value"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM67",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Linear Programming",
+     "difficulty": "Easy",
+     "question": "In a linear programming problem, the feasible region is:",
+     "solution": "By definition the feasible region is the common region of all the constraints of the problem (including x ≥ 0, y ≥ 0). An optimal value, if it exists, occurs at a corner point of this region.",
+     "type": "mcq",
+     "options": [
+      "the set of points that satisfy at least one constraint",
+      "the set of corner points only",
+      "the region where the objective function is zero",
+      "the set of points that satisfy all the constraints, including the non-negativity constraints"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM68",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Three-dimensional Geometry",
+     "difficulty": "Easy",
+     "question": "What is the distance between the points (1, −2, 3) and (3, 4, −1)?",
+     "solution": "Distance = √((3 − 1)² + (4 + 2)² + (−1 − 3)²) = √(4 + 36 + 16) = √56 = 2√14.",
+     "type": "mcq",
+     "options": [
+      "14 units",
+      "√14 units",
+      "2√14 units",
+      "4√7 units"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM69",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Three-dimensional Geometry",
+     "difficulty": "Medium",
+     "question": "The cosine of the angle between the planes 2x − y + 2z = 5 and x + 2y − 2z = 1 is:",
+     "solution": "The angle between planes is the angle between their normals (2, −1, 2) and (1, 2, −2). cos θ = |2 − 2 − 4| / (3 × 3) = 4/9.",
+     "type": "mcq",
+     "options": [
+      "2/9",
+      "4/9",
+      "1/3",
+      "5/9"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM70",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Three-dimensional Geometry",
+     "difficulty": "Hard",
+     "question": "What is the shortest distance between the lines r = (î + 2ĵ + 3k̂) + λ(î + k̂) and r = ĵ + μ(ĵ + k̂)?",
+     "solution": "With a₁ = (1, 2, 3), a₂ = (0, 1, 0), b₁ = (1, 0, 1) and b₂ = (0, 1, 1): b₁ × b₂ = (−1, −1, 1), whose length is √3, and a₂ − a₁ = (−1, −1, −3). The dot product (a₂ − a₁) · (b₁ × b₂) = 1 + 1 − 3 = −1. Shortest distance = |−1|/√3 = 1/√3.",
+     "type": "mcq",
+     "options": [
+      "√3 units",
+      "2/√3 units",
+      "1/√3 units",
+      "1 unit"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM71",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Vectors",
+     "difficulty": "Medium",
+     "question": "The projection of a = 2î − ĵ + 2k̂ on b = î + ĵ is:",
+     "solution": "Projection of a on b = (a · b)/|b| = (2 − 1 + 0)/√2 = 1/√2.",
+     "type": "mcq",
+     "options": [
+      "1/√2",
+      "1",
+      "√2",
+      "1/3"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM72",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Vectors",
+     "difficulty": "Medium",
+     "question": "What is the volume of the parallelepiped whose edges are a = î + ĵ + k̂, b = î − ĵ and c = ĵ + 2k̂?",
+     "solution": "Volume = |[a b c]| = |det of rows (1, 1, 1), (1, −1, 0), (0, 1, 2)| = |1(−2 − 0) − 1(2 − 0) + 1(1 − 0)| = |−3| = 3.",
+     "type": "mcq",
+     "options": [
+      "2 cubic units",
+      "3 cubic units",
+      "6 cubic units",
+      "1 cubic unit"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM73",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Vectors",
+     "difficulty": "Easy",
+     "question": "The unit vector in the direction of 3î − 4ĵ is:",
+     "solution": "|3î − 4ĵ| = √(9 + 16) = 5, so the unit vector is (3î − 4ĵ)/5.",
+     "type": "mcq",
+     "options": [
+      "(3î − 4ĵ)/7",
+      "(3î − 4ĵ)/5",
+      "(3î + 4ĵ)/5",
+      "(4î − 3ĵ)/5"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM74",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Determinants",
+     "difficulty": "Medium",
+     "question": "For which values of k is the matrix [[k, 2], [3, k − 1]] singular?",
+     "solution": "Singular means the determinant is zero: k(k − 1) − 6 = 0, i.e. k² − k − 6 = 0 = (k − 3)(k + 2). So k = 3 or k = −2.",
+     "type": "mcq",
+     "options": [
+      "k = 1 only",
+      "k = −3 or k = 2",
+      "k = 2 or k = 3",
+      "k = 3 or k = −2"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM75",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Determinants",
+     "difficulty": "Easy",
+     "question": "By Cramer's rule, the solution of 2x + 3y = 8 and x − y = −1 is:",
+     "solution": "D = (2)(−1) − (3)(1) = −5. Dx = (8)(−1) − (3)(−1) = −5. Dy = (2)(−1) − (8)(1) = −10. x = Dx/D = 1 and y = Dy/D = 2.",
+     "type": "mcq",
+     "options": [
+      "x = 1, y = −2",
+      "x = 2, y = 1",
+      "x = −1, y = 2",
+      "x = 1, y = 2"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM76",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Differential Equations",
+     "difficulty": "Hard",
+     "question": "The solution of dy/dx + y = e^{−x} with y(0) = 2 is:",
+     "solution": "The integrating factor is eˣ. Then d(y eˣ)/dx = e^{−x} · eˣ = 1, so y eˣ = x + c. y(0) = 2 gives c = 2, so y = (x + 2)e^{−x}.",
+     "type": "mcq",
+     "options": [
+      "y = 2e^{−x} + x",
+      "y = (x − 2)e^{−x}",
+      "y = (x + 2)e^{−x}",
+      "y = (2x + 1)e^{−x}"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UM77",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section A (common)",
+     "topic": "Differential Equations",
+     "difficulty": "Medium",
+     "question": "The solution of dy/dx = 2xy with y(0) = 3 is:",
+     "solution": "Separate the variables: dy/y = 2x dx, so log|y| = x² + c and y = Ae^{x²}. y(0) = 3 gives A = 3.",
+     "type": "mcq",
+     "options": [
+      "y = 3e^{x²}",
+      "y = e^{3x²}",
+      "y = 3e^{2x}",
+      "y = x² + 3"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UM78",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Inverse Trigonometric Functions",
+     "difficulty": "Medium",
+     "question": "The value of tan(2 tan⁻¹(1/3)) is:",
+     "solution": "Let θ = tan⁻¹(1/3), so tan θ = 1/3. tan 2θ = 2 tan θ / (1 − tan²θ) = (2/3)/(8/9) = 3/4.",
+     "type": "mcq",
+     "options": [
+      "1/3",
+      "2/3",
+      "4/3",
+      "3/4"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UM79",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Inverse Trigonometric Functions",
+     "difficulty": "Hard",
+     "question": "The value of cos⁻¹(cos(7π/6)) is:",
+     "solution": "The principal range of cos⁻¹ is [0, π], and 7π/6 is outside it. cos(7π/6) = cos(2π − 7π/6) = cos(5π/6), and 5π/6 lies in [0, π]. So the value is 5π/6.",
+     "type": "mcq",
+     "options": [
+      "7π/6",
+      "5π/6",
+      "π/6",
+      "−π/6"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UM80",
+     "exam": "cuet",
+     "section": "maths",
+     "part": "Section B1 (Mathematics)",
+     "topic": "Relations & Functions",
+     "difficulty": "Hard",
+     "question": "How many equivalence relations can be defined on the set {1, 2, 3}?",
+     "solution": "An equivalence relation corresponds to a partition of the set. {1, 2, 3} has 5 partitions: all three separate (1 way), one pair together with the third alone (3 ways), and all three together (1 way). So there are 5.",
+     "type": "mcq",
+     "options": [
+      "5",
+      "3",
+      "4",
+      "8"
      ],
      "answer": 0
     }

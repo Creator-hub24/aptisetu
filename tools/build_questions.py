@@ -702,6 +702,108 @@ Q_(s,T,"Medium","What is the ratio of the highest number of offers to the lowest
 Q_(s,T,"Hard","If Company A's offers rise by 25% and Company C's rise by 50%, what percentage of the new total do these two companies make together?",["40.0%","42.2%","44.4%","46.7%"],"42.2%","A becomes 100 (+20) and C becomes 90 (+30). New total = 400 + 50 = 450. A + C = 190. 190/450 = 42.2%.",OB,SOB,chk=(round(190/450*100,1),42.2))
 
 
+# ======================= BANK / SSC EXPANSION 3 (+18 DILR: Arrangements, Caselets, Games & Tournaments, Network & Routes) =======================
+s = "dilr"
+# --- circular arrangement, brute-forced over all seatings (A fixed; clockwise index; facing the centre, left = clockwise)
+_seat = []
+for _p in itertools.permutations(range(1, 8)):
+    _ps = {"A": 0}; _ps.update(dict(zip("BCDEFGH", _p)))
+    if _ps["F"] != 1 or _ps["D"] != 6 or _ps["B"] != (_ps["C"] + 2) % 8: continue
+    if (_ps["H"] - _ps["C"]) % 8 not in (1, 7) or (_ps["H"] - _ps["B"]) % 8 not in (1, 7): continue
+    if (_ps["G"] - _ps["H"]) % 8 != 4: continue
+    _seat.append(_ps)
+assert len(_seat) == 1; _ps = _seat[0]; _at = {v: k for k, v in _ps.items()}
+assert "".join(_at[i] for i in range(8)) == "AFCHBEDG"
+T = "Arrangements"; SB1 = "circle-eight-b3"
+CIR = "<b>Circular arrangement</b><p style='margin:.3em 0 0'>Eight friends A, B, C, D, E, F, G and H sit around a circular table, equally spaced, all facing the centre.<br>• F sits to the immediate left of A.<br>• D sits second to the right of A.<br>• B sits second to the left of C.<br>• H is an immediate neighbour of both B and C.<br>• G sits directly opposite H.</p>"
+CIRS = "Fix A. F is on A's immediate left and D is second to A's right. C, H and B sit together in that order going left (B is second to the left of C, with H between them). The free seats are the second, third, fourth, fifth and seventh to the left of A (D holds the sixth). If C, H and B take the third, fourth and fifth seats, G must sit opposite H, which is A's seat, so that fails. So C, H and B take the second, third and fourth seats to the left of A, G is opposite H in the seventh seat, and E takes the fifth. Going left (clockwise) from A: A, F, C, H, B, E, D, G."
+Q(s,T,"Medium","Who sits directly opposite F?",["D","E","G","B"],_at[(_ps["F"]+4)%8],CIRS+" F and E are 4 seats apart, so E is opposite F.",CIR,SB1)
+Q(s,T,"Easy","Who sits to the immediate right of B?",["E","C","H","G"],_at[(_ps["B"]-1)%8],CIRS+" One seat to the right of B (anticlockwise) is H.",CIR,SB1)
+Q(s,T,"Medium","Who sits third to the left of E?",["G","D","F","A"],_at[(_ps["E"]+3)%8],CIRS+" Counting left from E: D, G, A. So A is third to the left of E.",CIR,SB1)
+Q(s,T,"Hard","Going clockwise from G to C, how many people sit between them?",["1","2","3","4"],str((_ps["C"]-_ps["G"])%8-1),CIRS+" Clockwise from G come A and F, then C. So 2 people sit between them.",CIR,SB1)
+
+# --- caselet
+T = "Caselets"; SB2 = "caselet-coaching-b3"
+_tot = 600; _bk, _sc, _rl = [_tot * r // 12 for r in (5, 4, 3)]
+_gb, _gs = _bk * 40 // 100, _sc * 35 // 100; _gr = (_rl) // 3                 # Railways: girls are half the boys -> g = 150/3
+assert (_bk, _sc, _rl, _gb, _gs, _gr) == (250, 200, 150, 100, 70, 50) and _gr * 2 == _rl - _gr
+_mb, _ms, _mr = _bk - _gb, _sc - _gs, _rl - _gr; _hb = [m * 30 // 100 for m in (_mb, _ms, _mr)]
+assert (_mb, _ms, _mr) == (150, 130, 100) and _hb == [45, 39, 30] and all(m * 30 % 100 == 0 for m in (_mb, _ms, _mr))
+CSL = "<b>Caselet</b><p style='margin:.3em 0 0'>A coaching centre has 600 students in three courses, Bank, SSC and Railways, in the ratio 5 : 4 : 3. Girls make up 40% of the Bank course and 35% of the SSC course. In the Railways course, the number of girls is half the number of boys. 30% of the boys in every course live in the hostel; no girl lives in the hostel.</p>"
+CSLS = "Bank = 5/12 of 600 = 250, SSC = 200, Railways = 150. Girls: Bank 40% of 250 = 100, SSC 35% of 200 = 70, Railways 150/3 = 50 (boys 100). Boys: Bank 150, SSC 130, Railways 100."
+Q(s,T,"Easy","How many girls are there at the centre in all?",["200","210","220","230"],str(_gb+_gs+_gr),CSLS+" Girls = 100 + 70 + 50 = 220.",CSL,SB2,chk=(_gb+_gs+_gr,220))
+Q(s,T,"Easy","What is the ratio of boys in the Bank course to boys in the Railways course?",["5 : 3","3 : 2","4 : 3","5 : 2"],"3 : 2",CSLS+" 150 : 100 = 3 : 2.",CSL,SB2,chk=(F(_mb,_mr),F(3,2)))
+Q(s,T,"Medium","How many students live in the hostel?",["108","114","120","126"],str(sum(_hb)),CSLS+" Hostel = 30% of each boys' figure: 45 + 39 + 30 = 114.",CSL,SB2,chk=(sum(_hb),114))
+Q(s,T,"Medium","Boys of the SSC course make up roughly what percentage of all the students?",["19.5%","21.7%","23.3%","25.0%"],"21.7%",CSLS+" SSC boys = 130. 130/600 = 21.7%.",CSL,SB2,chk=(round(_ms/_tot*100,1),21.7))
+Q(s,T,"Hard","If 30 more girls join the Railways course, what percentage of that course will be girls?",["40.0%","42.5%","44.4%","46.7%"],"44.4%",CSLS+" Railways becomes 150 + 30 = 180 students with 50 + 30 = 80 girls. 80/180 = 44.4%.",CSL,SB2,chk=(round((_gr+30)/(_rl+30)*100,1),44.4))
+
+# --- round-robin league, brute-forced over all 3^10 results
+T = "Games & Tournaments"; SB3 = "league-five-b3"
+_tm = "ABCDE"; _pr = list(itertools.combinations(_tm, 2)); _lg = []
+for _r in itertools.product((0, 1, 2), repeat=10):
+    _pt = dict.fromkeys(_tm, 0); _w = dict.fromkeys(_tm, 0); _d = dict.fromkeys(_tm, 0)
+    for (x, y), v in zip(_pr, _r):
+        if v == 1: _pt[x] += 1; _pt[y] += 1; _d[x] += 1; _d[y] += 1
+        else: z = x if v == 0 else y; _pt[z] += 2; _w[z] += 1
+    if [_pt[t] for t in _tm] == [7, 6, 4, 2, 1] and sum(_d.values()) == 6 and _w["A"] == 3 and dict(zip(_pr, _r))[("A", "B")] == 1 and _d["C"] == 0:
+        _lg.append(dict(zip(_pr, _r)))
+assert len(_lg) == 1; _lg = _lg[0]
+assert _lg == {("A","B"):1,("A","C"):0,("A","D"):0,("A","E"):0,("B","C"):0,("B","D"):1,("B","E"):0,("C","D"):0,("C","E"):0,("D","E"):1}
+LGE = "<b>League table</b><p style='margin:.3em 0 0'>Five teams A, B, C, D and E play a league in which every team plays every other team once. A win earns 2 points, a draw 1 point and a loss 0.<br>• Final points: A 7, B 6, C 4, D 2, E 1.<br>• Exactly 3 matches were drawn, one of them between A and B.<br>• A won three matches.<br>• C did not draw any match.</p>"
+LGS = "A drew with B and won its other three matches, so A beat C, D and E. B has 6 = 1 (draw with A) + 5 from its games against C, D and E, so B won two of them and drew one; it cannot be against C (C never drew). E has 1 point, so E drew exactly one match. If B drew with E, the third draw would have to involve D with a team that has no draw left, which is impossible; so B drew with D and beat C and E. E's only draw is then with D. D (2 points) lost to A, drew with B and E, so D lost to C. C (4 points) lost to A and B and beat D, so C also beat E."
+Q(s,T,"Medium","With which team did E draw its match?",["A","B","C","D"],"D",LGS+" E's draw was against D.",LGE,SB3)
+Q(s,T,"Hard","What was the result of the match between B and D?",["B won","D won","It was drawn","B won by forfeit"],"It was drawn",LGS+" So B and D drew.",LGE,SB3)
+Q(s,T,"Medium","Who won the match between C and D?",["D","C","It was drawn","Cannot be determined"],"C",LGS+" C beat D.",LGE,SB3)
+Q(s,T,"Easy","How many matches did D lose?",["0","1","2","3"],str(sum(1 for (x,y),v in _lg.items() if (x=="D" and v==2) or (y=="D" and v==0))),LGS+" D lost to A and to C: 2 matches.",LGE,SB3)
+
+# --- road network, every simple path enumerated
+T = "Network & Routes"; SB4 = "net-towns-b3"
+_rd = {("K","L"):6,("K","M"):4,("L","M"):3,("L","N"):5,("M","N"):8,("M","O"):7,("N","O"):2,("N","P"):6,("O","P"):3}
+def _paths(a, b, closed=()):
+    adj = {}
+    for (x, y), d in _rd.items():
+        if (x, y) in closed: continue
+        adj.setdefault(x, []).append((y, d)); adj.setdefault(y, []).append((x, d))
+    out = []
+    def go(u, path, dist):
+        if u == b: out.append((dist, "".join(path))); return
+        for v, w in adj.get(u, []):
+            if v not in path: go(v, path + [v], dist + w)
+    go(a, [a], 0); return sorted(out)
+_kp = _paths("K","P"); _kn = _paths("K","N"); _lp = _paths("L","P"); _kc = _paths("K","P",[("M","O")])
+assert _kp[0] == (14,"KMOP") and _kp[1][0] > 14 and _kn[0] == (11,"KLN") and _kn[1][0] > 11 and _lp[0] == (10,"LNOP") and _lp[1][0] > 10 and _kc[0] == (16,"KLNOP") and _kc[1][0] > 16
+RDN = "<b>Two-way roads between six towns (km)</b><table class='data'><tr><th>Road</th>" + "".join(f"<th>{x}–{y}</th>" for x, y in _rd) + "</tr><tr><td>Length</td>" + "".join(f"<td>{d}</td>" for d in _rd.values()) + "</tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>"
+Q(s,T,"Medium","What is the shortest road distance from K to P?",["13 km","14 km","15 km","16 km"],f"{_kp[0][0]} km","K–M–O–P = 4 + 7 + 3 = 14. The next best, K–L–N–O–P, is 6 + 5 + 2 + 3 = 16.",RDN,SB4,chk=(4+7+3,14))
+Q(s,T,"Easy","What is the shortest road distance from K to N?",["10 km","11 km","12 km","13 km"],f"{_kn[0][0]} km","K–L–N = 6 + 5 = 11. K–M–N = 4 + 8 = 12 and K–M–L–N = 4 + 3 + 5 = 12 are longer.",RDN,SB4,chk=(6+5,11))
+Q(s,T,"Medium","What is the shortest road distance from L to P?",["9 km","10 km","11 km","12 km"],f"{_lp[0][0]} km","L–N–O–P = 5 + 2 + 3 = 10. L–N–P = 5 + 6 = 11 is longer.",RDN,SB4,chk=(5+2+3,10))
+Q(s,T,"Hard","If the road M–O is closed, what is the shortest road distance from K to P?",["15 km","16 km","17 km","18 km"],f"{_kc[0][0]} km","Without M–O: K–L–N–O–P = 6 + 5 + 2 + 3 = 16. K–L–N–P = 6 + 5 + 6 = 17 is longer.",RDN,SB4,chk=(6+5+2+3,16))
+Q(s,T,"Easy","How many roads does the shortest route from K to P use?",["2","3","4","5"],str(len(_kp[0][1])-1),"The shortest route is K–M–O–P (14 km), which uses 3 roads: K–M, M–O and O–P.",RDN,SB4)
+
+
+# ======================= BANK / SSC EXPANSION 4 (+4 DILR, +2 reasoning: each topic to 10) =======================
+s = "dilr"
+_row = []
+for _p in itertools.permutations(range(6)):
+    _x = dict(zip("PQRSTU", _p))
+    if _x["R"] == 0 and _x["P"] == _x["R"] + 2 and _x["S"] == _x["U"] + 3 and _x["T"] not in (0, 5): _row.append("".join(sorted(_x, key=_x.get)))
+assert _row == ["RUPTSQ"]
+Q(s,"Arrangements","Medium","Six people P, Q, R, S, T and U sit in a row, all facing north. R sits at the extreme left end. P sits second to the right of R. S sits third to the right of U. T does not sit at either end. Who sits exactly between P and S?",["Q","U","T","R"],_row[0][3],"R takes the first seat from the left, so P takes the third. S is three seats to the right of U, and the only free pair of seats that far apart is the second and fifth (the third is P's), so U is second and S is fifth. Seats four and six are left for Q and T. T is not at an end, so T is fourth and Q is sixth. The row is R, U, P, T, S, Q, and T sits between P and S.")
+_pens = 240 * 40 // 100; _rest = 240 - _pens; _er = (_rest - 30) // 2; _pc = _er + 30
+assert _pens == 96 and _pc + _er == 144 and (_pc, _er) == (87, 57)
+Q(s,"Caselets","Medium","A stationery shop sold 240 items last week, made up only of pens, pencils and erasers. Pens made up 40% of the items sold, and 30 more pencils than erasers were sold. One-third of the pencils and one-third of the erasers were sold at a discount. How many pencils and erasers in total were sold at a discount?",["57","29","87","48"],str(_pc // 3 + _er // 3),"Pens = 40% of 240 = 96, so pencils + erasers = 240 − 96 = 144. With pencils = erasers + 30: 2 × erasers = 114, so erasers = 57 and pencils = 87. Sold at a discount: 87 ÷ 3 + 57 ÷ 3 = 29 + 19 = 48.",chk=(_pc/3+_er/3,48))
+_tp = 2 * (8 * 7 // 2)
+Q(s,"Games & Tournaments","Medium","Eight teams play a single round-robin league: each team plays every other team exactly once. A win earns 2 points, a draw 1 point to each side and a loss 0. Whatever the results, how many points in total are shared among the eight teams at the end of the league?",["56","28","64","48"],str(_tp),"Number of matches = 8 × 7 ÷ 2 = 28. Every match hands out exactly 2 points in total (2 + 0 for a result, 1 + 1 for a draw), so the total is 28 × 2 = 56, whatever the results.",chk=(_tp,56))
+_rt = math.comb(3, 1) * math.comb(4, 2)
+Q(s,"Network & Routes","Medium","A town's streets form a square grid. To go from junction A to junction B a cyclist must travel 4 blocks east and 3 blocks north, moving only east or north at each junction. Junction C lies 2 blocks east and 1 block north of A. How many of these shortest routes from A to B pass through C?",["35","18","12","24"],str(_rt),"A to C needs 2 east and 1 north moves in some order: 3!/(2! × 1!) = 3 ways. C to B needs the remaining 2 east and 2 north: 4!/(2! × 2!) = 6 ways. Routes through C = 3 × 6 = 18.",chk=(_rt,18))
+s = "reasoning"
+_seq = [3, 10, 29, 65, 127]
+assert [n for n, k in zip(_seq, range(1, 6)) if n != k**3 + 2] == [65]
+Q(s,"Odd One Out","Medium","Find the odd one out: 3, 10, 29, 65, 127",["3","29","127","65"],"65","Each term should be a cube plus 2, that is n³ + 2: 1 + 2 = 3, 8 + 2 = 10, 27 + 2 = 29, 64 + 2 = 66, 125 + 2 = 127. The fourth term should be 66, so 65 is the odd one out.")
+_mb = [dict(zip("ABCDE", _p)) for _p in itertools.permutations([2, 4, 6, 8, 10])]
+_mb = [x for x in _mb if x["A"] == x["C"] + 4 and x["D"] < x["B"] < x["E"] and x["D"] > x["C"]]
+assert len(_mb) == 1
+Q(s,"Puzzles","Hard","Five friends A, B, C, D and E have 2, 4, 6, 8 and 10 marbles, one number each. A has 4 more marbles than C. B has more marbles than D but fewer than E. D has more marbles than C. Who has 6 marbles?",["B","D","E","A"],[k for k, v in _mb[0].items() if v == 6][0],"C has fewer marbles than D, and D < B < E, so C has fewer than three others. A = C + 4 is also more than C, so C has the fewest: 2. Then A = 6. D, B and E take 4, 8 and 10 in increasing order: D = 4, B = 8, E = 10. So A has 6 marbles.")
+
 NAMES={"quant":"Quantitative Aptitude","reasoning":"Logical Reasoning","dilr":"DILR"}
 import os, collections
 # ---- CUET reuse tags: Easy/Medium general items that sit within the CUET General Aptitude Test syllabus ----
@@ -761,8 +863,8 @@ try:
 except ImportError:
     raise SystemExit("CUET maths checks need sympy: run with a Python that has it, e.g. /workspace/.venv-edu/bin/python tools/build_questions.py")
 from ucommon import UBank
-import gat as _gat, english as _eng, maths as _maths
-UB = UBank(); _gat.build(UB); _eng.build(UB); _maths.build(UB); _eng.build2(UB); _maths.build2(UB)
+import gat as _gat, english as _eng, maths as _maths, batch_b2 as _b2
+UB = UBank(); _gat.build(UB); _eng.build(UB); _maths.build(UB); _eng.build2(UB); _maths.build2(UB); _b2.maths(UB); _b2.english(UB); _b2.gat(UB)
 # reuse: tagged general items join the GAT pool (copied, with their original id kept for traceability)
 reused = []
 for q in OUT["quant"] + OUT["reasoning"]:

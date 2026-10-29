@@ -4735,6 +4735,37 @@
     "solution": "G > H ≥ I = J ≥ K gives G > K (I follows). H ≥ K only, so K < H is not certain (II does not follow).",
     "fixed": true,
     "cuet_part": "Logical & Analytical Reasoning"
+   },
+   {
+    "id": "R144",
+    "exam": "general",
+    "topic": "Odd One Out",
+    "difficulty": "Medium",
+    "question": "Find the odd one out: 3, 10, 29, 65, 127",
+    "options": [
+     "3",
+     "29",
+     "127",
+     "65"
+    ],
+    "answer": 3,
+    "solution": "Each term should be a cube plus 2, that is n³ + 2: 1 + 2 = 3, 8 + 2 = 10, 27 + 2 = 29, 64 + 2 = 66, 125 + 2 = 127. The fourth term should be 66, so 65 is the odd one out.",
+    "cuet_part": "General Mental Ability"
+   },
+   {
+    "id": "R145",
+    "exam": "general",
+    "topic": "Puzzles",
+    "difficulty": "Hard",
+    "question": "Five friends A, B, C, D and E have 2, 4, 6, 8 and 10 marbles, one number each. A has 4 more marbles than C. B has more marbles than D but fewer than E. D has more marbles than C. Who has 6 marbles?",
+    "options": [
+     "B",
+     "D",
+     "E",
+     "A"
+    ],
+    "answer": 3,
+    "solution": "C has fewer marbles than D, and D < B < E, so C has fewer than three others. A = C + 4 is also more than C, so C has the fewest: 2. Then A = 6. D, B and E take 4, 8 and 10 in increasing order: D = 4, B = 8, E = 10. So A has 6 marbles."
    }
   ]
  },
@@ -6146,6 +6177,373 @@
     "solution": "A becomes 100 (+20) and C becomes 90 (+30). New total = 400 + 50 = 450. A + C = 190. 190/450 = 42.2%.",
     "data": "<b>Job offers made by five companies this season</b><div class='bars'><div class='bar-row'><span>Company A</span><i style='width:66.7%'></i><span>80</span></div><div class='bar-row'><span>Company B</span><i style='width:100.0%'></i><span>120</span></div><div class='bar-row'><span>Company C</span><i style='width:50.0%'></i><span>60</span></div><div class='bar-row'><span>Company D</span><i style='width:83.3%'></i><span>100</span></div><div class='bar-row'><span>Company E</span><i style='width:33.3%'></i><span>40</span></div></div>",
     "set": "bar-offers"
+   },
+   {
+    "id": "D84",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Medium",
+    "question": "Who sits directly opposite F?",
+    "options": [
+     "D",
+     "E",
+     "G",
+     "B"
+    ],
+    "answer": 1,
+    "solution": "Fix A. F is on A's immediate left and D is second to A's right. C, H and B sit together in that order going left (B is second to the left of C, with H between them). The free seats are the second, third, fourth, fifth and seventh to the left of A (D holds the sixth). If C, H and B take the third, fourth and fifth seats, G must sit opposite H, which is A's seat, so that fails. So C, H and B take the second, third and fourth seats to the left of A, G is opposite H in the seventh seat, and E takes the fifth. Going left (clockwise) from A: A, F, C, H, B, E, D, G. F and E are 4 seats apart, so E is opposite F.",
+    "data": "<b>Circular arrangement</b><p style='margin:.3em 0 0'>Eight friends A, B, C, D, E, F, G and H sit around a circular table, equally spaced, all facing the centre.<br>• F sits to the immediate left of A.<br>• D sits second to the right of A.<br>• B sits second to the left of C.<br>• H is an immediate neighbour of both B and C.<br>• G sits directly opposite H.</p>",
+    "set": "circle-eight-b3"
+   },
+   {
+    "id": "D85",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Easy",
+    "question": "Who sits to the immediate right of B?",
+    "options": [
+     "E",
+     "C",
+     "H",
+     "G"
+    ],
+    "answer": 2,
+    "solution": "Fix A. F is on A's immediate left and D is second to A's right. C, H and B sit together in that order going left (B is second to the left of C, with H between them). The free seats are the second, third, fourth, fifth and seventh to the left of A (D holds the sixth). If C, H and B take the third, fourth and fifth seats, G must sit opposite H, which is A's seat, so that fails. So C, H and B take the second, third and fourth seats to the left of A, G is opposite H in the seventh seat, and E takes the fifth. Going left (clockwise) from A: A, F, C, H, B, E, D, G. One seat to the right of B (anticlockwise) is H.",
+    "data": "<b>Circular arrangement</b><p style='margin:.3em 0 0'>Eight friends A, B, C, D, E, F, G and H sit around a circular table, equally spaced, all facing the centre.<br>• F sits to the immediate left of A.<br>• D sits second to the right of A.<br>• B sits second to the left of C.<br>• H is an immediate neighbour of both B and C.<br>• G sits directly opposite H.</p>",
+    "set": "circle-eight-b3"
+   },
+   {
+    "id": "D86",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Medium",
+    "question": "Who sits third to the left of E?",
+    "options": [
+     "G",
+     "D",
+     "F",
+     "A"
+    ],
+    "answer": 3,
+    "solution": "Fix A. F is on A's immediate left and D is second to A's right. C, H and B sit together in that order going left (B is second to the left of C, with H between them). The free seats are the second, third, fourth, fifth and seventh to the left of A (D holds the sixth). If C, H and B take the third, fourth and fifth seats, G must sit opposite H, which is A's seat, so that fails. So C, H and B take the second, third and fourth seats to the left of A, G is opposite H in the seventh seat, and E takes the fifth. Going left (clockwise) from A: A, F, C, H, B, E, D, G. Counting left from E: D, G, A. So A is third to the left of E.",
+    "data": "<b>Circular arrangement</b><p style='margin:.3em 0 0'>Eight friends A, B, C, D, E, F, G and H sit around a circular table, equally spaced, all facing the centre.<br>• F sits to the immediate left of A.<br>• D sits second to the right of A.<br>• B sits second to the left of C.<br>• H is an immediate neighbour of both B and C.<br>• G sits directly opposite H.</p>",
+    "set": "circle-eight-b3"
+   },
+   {
+    "id": "D87",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Hard",
+    "question": "Going clockwise from G to C, how many people sit between them?",
+    "options": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "answer": 1,
+    "solution": "Fix A. F is on A's immediate left and D is second to A's right. C, H and B sit together in that order going left (B is second to the left of C, with H between them). The free seats are the second, third, fourth, fifth and seventh to the left of A (D holds the sixth). If C, H and B take the third, fourth and fifth seats, G must sit opposite H, which is A's seat, so that fails. So C, H and B take the second, third and fourth seats to the left of A, G is opposite H in the seventh seat, and E takes the fifth. Going left (clockwise) from A: A, F, C, H, B, E, D, G. Clockwise from G come A and F, then C. So 2 people sit between them.",
+    "data": "<b>Circular arrangement</b><p style='margin:.3em 0 0'>Eight friends A, B, C, D, E, F, G and H sit around a circular table, equally spaced, all facing the centre.<br>• F sits to the immediate left of A.<br>• D sits second to the right of A.<br>• B sits second to the left of C.<br>• H is an immediate neighbour of both B and C.<br>• G sits directly opposite H.</p>",
+    "set": "circle-eight-b3"
+   },
+   {
+    "id": "D88",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Easy",
+    "question": "How many girls are there at the centre in all?",
+    "options": [
+     "200",
+     "210",
+     "220",
+     "230"
+    ],
+    "answer": 2,
+    "solution": "Bank = 5/12 of 600 = 250, SSC = 200, Railways = 150. Girls: Bank 40% of 250 = 100, SSC 35% of 200 = 70, Railways 150/3 = 50 (boys 100). Boys: Bank 150, SSC 130, Railways 100. Girls = 100 + 70 + 50 = 220.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A coaching centre has 600 students in three courses, Bank, SSC and Railways, in the ratio 5 : 4 : 3. Girls make up 40% of the Bank course and 35% of the SSC course. In the Railways course, the number of girls is half the number of boys. 30% of the boys in every course live in the hostel; no girl lives in the hostel.</p>",
+    "set": "caselet-coaching-b3"
+   },
+   {
+    "id": "D89",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Easy",
+    "question": "What is the ratio of boys in the Bank course to boys in the Railways course?",
+    "options": [
+     "5 : 3",
+     "3 : 2",
+     "4 : 3",
+     "5 : 2"
+    ],
+    "answer": 1,
+    "solution": "Bank = 5/12 of 600 = 250, SSC = 200, Railways = 150. Girls: Bank 40% of 250 = 100, SSC 35% of 200 = 70, Railways 150/3 = 50 (boys 100). Boys: Bank 150, SSC 130, Railways 100. 150 : 100 = 3 : 2.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A coaching centre has 600 students in three courses, Bank, SSC and Railways, in the ratio 5 : 4 : 3. Girls make up 40% of the Bank course and 35% of the SSC course. In the Railways course, the number of girls is half the number of boys. 30% of the boys in every course live in the hostel; no girl lives in the hostel.</p>",
+    "set": "caselet-coaching-b3"
+   },
+   {
+    "id": "D90",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Medium",
+    "question": "How many students live in the hostel?",
+    "options": [
+     "108",
+     "114",
+     "120",
+     "126"
+    ],
+    "answer": 1,
+    "solution": "Bank = 5/12 of 600 = 250, SSC = 200, Railways = 150. Girls: Bank 40% of 250 = 100, SSC 35% of 200 = 70, Railways 150/3 = 50 (boys 100). Boys: Bank 150, SSC 130, Railways 100. Hostel = 30% of each boys' figure: 45 + 39 + 30 = 114.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A coaching centre has 600 students in three courses, Bank, SSC and Railways, in the ratio 5 : 4 : 3. Girls make up 40% of the Bank course and 35% of the SSC course. In the Railways course, the number of girls is half the number of boys. 30% of the boys in every course live in the hostel; no girl lives in the hostel.</p>",
+    "set": "caselet-coaching-b3"
+   },
+   {
+    "id": "D91",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Medium",
+    "question": "Boys of the SSC course make up roughly what percentage of all the students?",
+    "options": [
+     "19.5%",
+     "21.7%",
+     "23.3%",
+     "25.0%"
+    ],
+    "answer": 1,
+    "solution": "Bank = 5/12 of 600 = 250, SSC = 200, Railways = 150. Girls: Bank 40% of 250 = 100, SSC 35% of 200 = 70, Railways 150/3 = 50 (boys 100). Boys: Bank 150, SSC 130, Railways 100. SSC boys = 130. 130/600 = 21.7%.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A coaching centre has 600 students in three courses, Bank, SSC and Railways, in the ratio 5 : 4 : 3. Girls make up 40% of the Bank course and 35% of the SSC course. In the Railways course, the number of girls is half the number of boys. 30% of the boys in every course live in the hostel; no girl lives in the hostel.</p>",
+    "set": "caselet-coaching-b3"
+   },
+   {
+    "id": "D92",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Hard",
+    "question": "If 30 more girls join the Railways course, what percentage of that course will be girls?",
+    "options": [
+     "40.0%",
+     "42.5%",
+     "44.4%",
+     "46.7%"
+    ],
+    "answer": 2,
+    "solution": "Bank = 5/12 of 600 = 250, SSC = 200, Railways = 150. Girls: Bank 40% of 250 = 100, SSC 35% of 200 = 70, Railways 150/3 = 50 (boys 100). Boys: Bank 150, SSC 130, Railways 100. Railways becomes 150 + 30 = 180 students with 50 + 30 = 80 girls. 80/180 = 44.4%.",
+    "data": "<b>Caselet</b><p style='margin:.3em 0 0'>A coaching centre has 600 students in three courses, Bank, SSC and Railways, in the ratio 5 : 4 : 3. Girls make up 40% of the Bank course and 35% of the SSC course. In the Railways course, the number of girls is half the number of boys. 30% of the boys in every course live in the hostel; no girl lives in the hostel.</p>",
+    "set": "caselet-coaching-b3"
+   },
+   {
+    "id": "D93",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Medium",
+    "question": "With which team did E draw its match?",
+    "options": [
+     "A",
+     "B",
+     "C",
+     "D"
+    ],
+    "answer": 3,
+    "solution": "A drew with B and won its other three matches, so A beat C, D and E. B has 6 = 1 (draw with A) + 5 from its games against C, D and E, so B won two of them and drew one; it cannot be against C (C never drew). E has 1 point, so E drew exactly one match. If B drew with E, the third draw would have to involve D with a team that has no draw left, which is impossible; so B drew with D and beat C and E. E's only draw is then with D. D (2 points) lost to A, drew with B and E, so D lost to C. C (4 points) lost to A and B and beat D, so C also beat E. E's draw was against D.",
+    "data": "<b>League table</b><p style='margin:.3em 0 0'>Five teams A, B, C, D and E play a league in which every team plays every other team once. A win earns 2 points, a draw 1 point and a loss 0.<br>• Final points: A 7, B 6, C 4, D 2, E 1.<br>• Exactly 3 matches were drawn, one of them between A and B.<br>• A won three matches.<br>• C did not draw any match.</p>",
+    "set": "league-five-b3"
+   },
+   {
+    "id": "D94",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Hard",
+    "question": "What was the result of the match between B and D?",
+    "options": [
+     "B won",
+     "D won",
+     "It was drawn",
+     "B won by forfeit"
+    ],
+    "answer": 2,
+    "solution": "A drew with B and won its other three matches, so A beat C, D and E. B has 6 = 1 (draw with A) + 5 from its games against C, D and E, so B won two of them and drew one; it cannot be against C (C never drew). E has 1 point, so E drew exactly one match. If B drew with E, the third draw would have to involve D with a team that has no draw left, which is impossible; so B drew with D and beat C and E. E's only draw is then with D. D (2 points) lost to A, drew with B and E, so D lost to C. C (4 points) lost to A and B and beat D, so C also beat E. So B and D drew.",
+    "data": "<b>League table</b><p style='margin:.3em 0 0'>Five teams A, B, C, D and E play a league in which every team plays every other team once. A win earns 2 points, a draw 1 point and a loss 0.<br>• Final points: A 7, B 6, C 4, D 2, E 1.<br>• Exactly 3 matches were drawn, one of them between A and B.<br>• A won three matches.<br>• C did not draw any match.</p>",
+    "set": "league-five-b3"
+   },
+   {
+    "id": "D95",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Medium",
+    "question": "Who won the match between C and D?",
+    "options": [
+     "D",
+     "C",
+     "It was drawn",
+     "Cannot be determined"
+    ],
+    "answer": 1,
+    "solution": "A drew with B and won its other three matches, so A beat C, D and E. B has 6 = 1 (draw with A) + 5 from its games against C, D and E, so B won two of them and drew one; it cannot be against C (C never drew). E has 1 point, so E drew exactly one match. If B drew with E, the third draw would have to involve D with a team that has no draw left, which is impossible; so B drew with D and beat C and E. E's only draw is then with D. D (2 points) lost to A, drew with B and E, so D lost to C. C (4 points) lost to A and B and beat D, so C also beat E. C beat D.",
+    "data": "<b>League table</b><p style='margin:.3em 0 0'>Five teams A, B, C, D and E play a league in which every team plays every other team once. A win earns 2 points, a draw 1 point and a loss 0.<br>• Final points: A 7, B 6, C 4, D 2, E 1.<br>• Exactly 3 matches were drawn, one of them between A and B.<br>• A won three matches.<br>• C did not draw any match.</p>",
+    "fixed": true,
+    "set": "league-five-b3"
+   },
+   {
+    "id": "D96",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Easy",
+    "question": "How many matches did D lose?",
+    "options": [
+     "0",
+     "1",
+     "2",
+     "3"
+    ],
+    "answer": 2,
+    "solution": "A drew with B and won its other three matches, so A beat C, D and E. B has 6 = 1 (draw with A) + 5 from its games against C, D and E, so B won two of them and drew one; it cannot be against C (C never drew). E has 1 point, so E drew exactly one match. If B drew with E, the third draw would have to involve D with a team that has no draw left, which is impossible; so B drew with D and beat C and E. E's only draw is then with D. D (2 points) lost to A, drew with B and E, so D lost to C. C (4 points) lost to A and B and beat D, so C also beat E. D lost to A and to C: 2 matches.",
+    "data": "<b>League table</b><p style='margin:.3em 0 0'>Five teams A, B, C, D and E play a league in which every team plays every other team once. A win earns 2 points, a draw 1 point and a loss 0.<br>• Final points: A 7, B 6, C 4, D 2, E 1.<br>• Exactly 3 matches were drawn, one of them between A and B.<br>• A won three matches.<br>• C did not draw any match.</p>",
+    "set": "league-five-b3"
+   },
+   {
+    "id": "D97",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Medium",
+    "question": "What is the shortest road distance from K to P?",
+    "options": [
+     "13 km",
+     "14 km",
+     "15 km",
+     "16 km"
+    ],
+    "answer": 1,
+    "solution": "K–M–O–P = 4 + 7 + 3 = 14. The next best, K–L–N–O–P, is 6 + 5 + 2 + 3 = 16.",
+    "data": "<b>Two-way roads between six towns (km)</b><table class='data'><tr><th>Road</th><th>K–L</th><th>K–M</th><th>L–M</th><th>L–N</th><th>M–N</th><th>M–O</th><th>N–O</th><th>N–P</th><th>O–P</th></tr><tr><td>Length</td><td>6</td><td>4</td><td>3</td><td>5</td><td>8</td><td>7</td><td>2</td><td>6</td><td>3</td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-towns-b3"
+   },
+   {
+    "id": "D98",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Easy",
+    "question": "What is the shortest road distance from K to N?",
+    "options": [
+     "10 km",
+     "11 km",
+     "12 km",
+     "13 km"
+    ],
+    "answer": 1,
+    "solution": "K–L–N = 6 + 5 = 11. K–M–N = 4 + 8 = 12 and K–M–L–N = 4 + 3 + 5 = 12 are longer.",
+    "data": "<b>Two-way roads between six towns (km)</b><table class='data'><tr><th>Road</th><th>K–L</th><th>K–M</th><th>L–M</th><th>L–N</th><th>M–N</th><th>M–O</th><th>N–O</th><th>N–P</th><th>O–P</th></tr><tr><td>Length</td><td>6</td><td>4</td><td>3</td><td>5</td><td>8</td><td>7</td><td>2</td><td>6</td><td>3</td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-towns-b3"
+   },
+   {
+    "id": "D99",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Medium",
+    "question": "What is the shortest road distance from L to P?",
+    "options": [
+     "9 km",
+     "10 km",
+     "11 km",
+     "12 km"
+    ],
+    "answer": 1,
+    "solution": "L–N–O–P = 5 + 2 + 3 = 10. L–N–P = 5 + 6 = 11 is longer.",
+    "data": "<b>Two-way roads between six towns (km)</b><table class='data'><tr><th>Road</th><th>K–L</th><th>K–M</th><th>L–M</th><th>L–N</th><th>M–N</th><th>M–O</th><th>N–O</th><th>N–P</th><th>O–P</th></tr><tr><td>Length</td><td>6</td><td>4</td><td>3</td><td>5</td><td>8</td><td>7</td><td>2</td><td>6</td><td>3</td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-towns-b3"
+   },
+   {
+    "id": "D100",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Hard",
+    "question": "If the road M–O is closed, what is the shortest road distance from K to P?",
+    "options": [
+     "15 km",
+     "16 km",
+     "17 km",
+     "18 km"
+    ],
+    "answer": 1,
+    "solution": "Without M–O: K–L–N–O–P = 6 + 5 + 2 + 3 = 16. K–L–N–P = 6 + 5 + 6 = 17 is longer.",
+    "data": "<b>Two-way roads between six towns (km)</b><table class='data'><tr><th>Road</th><th>K–L</th><th>K–M</th><th>L–M</th><th>L–N</th><th>M–N</th><th>M–O</th><th>N–O</th><th>N–P</th><th>O–P</th></tr><tr><td>Length</td><td>6</td><td>4</td><td>3</td><td>5</td><td>8</td><td>7</td><td>2</td><td>6</td><td>3</td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-towns-b3"
+   },
+   {
+    "id": "D101",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Easy",
+    "question": "How many roads does the shortest route from K to P use?",
+    "options": [
+     "2",
+     "3",
+     "4",
+     "5"
+    ],
+    "answer": 1,
+    "solution": "The shortest route is K–M–O–P (14 km), which uses 3 roads: K–M, M–O and O–P.",
+    "data": "<b>Two-way roads between six towns (km)</b><table class='data'><tr><th>Road</th><th>K–L</th><th>K–M</th><th>L–M</th><th>L–N</th><th>M–N</th><th>M–O</th><th>N–O</th><th>N–P</th><th>O–P</th></tr><tr><td>Length</td><td>6</td><td>4</td><td>3</td><td>5</td><td>8</td><td>7</td><td>2</td><td>6</td><td>3</td></tr></table><p class='muted' style='margin:0;font-size:.85rem'>No other roads exist.</p>",
+    "set": "net-towns-b3"
+   },
+   {
+    "id": "D102",
+    "exam": "general",
+    "topic": "Arrangements",
+    "difficulty": "Medium",
+    "question": "Six people P, Q, R, S, T and U sit in a row, all facing north. R sits at the extreme left end. P sits second to the right of R. S sits third to the right of U. T does not sit at either end. Who sits exactly between P and S?",
+    "options": [
+     "Q",
+     "U",
+     "T",
+     "R"
+    ],
+    "answer": 2,
+    "solution": "R takes the first seat from the left, so P takes the third. S is three seats to the right of U, and the only free pair of seats that far apart is the second and fifth (the third is P's), so U is second and S is fifth. Seats four and six are left for Q and T. T is not at an end, so T is fourth and Q is sixth. The row is R, U, P, T, S, Q, and T sits between P and S."
+   },
+   {
+    "id": "D103",
+    "exam": "general",
+    "topic": "Caselets",
+    "difficulty": "Medium",
+    "question": "A stationery shop sold 240 items last week, made up only of pens, pencils and erasers. Pens made up 40% of the items sold, and 30 more pencils than erasers were sold. One-third of the pencils and one-third of the erasers were sold at a discount. How many pencils and erasers in total were sold at a discount?",
+    "options": [
+     "57",
+     "29",
+     "87",
+     "48"
+    ],
+    "answer": 3,
+    "solution": "Pens = 40% of 240 = 96, so pencils + erasers = 240 − 96 = 144. With pencils = erasers + 30: 2 × erasers = 114, so erasers = 57 and pencils = 87. Sold at a discount: 87 ÷ 3 + 57 ÷ 3 = 29 + 19 = 48."
+   },
+   {
+    "id": "D104",
+    "exam": "general",
+    "topic": "Games & Tournaments",
+    "difficulty": "Medium",
+    "question": "Eight teams play a single round-robin league: each team plays every other team exactly once. A win earns 2 points, a draw 1 point to each side and a loss 0. Whatever the results, how many points in total are shared among the eight teams at the end of the league?",
+    "options": [
+     "56",
+     "28",
+     "64",
+     "48"
+    ],
+    "answer": 0,
+    "solution": "Number of matches = 8 × 7 ÷ 2 = 28. Every match hands out exactly 2 points in total (2 + 0 for a result, 1 + 1 for a draw), so the total is 28 × 2 = 56, whatever the results."
+   },
+   {
+    "id": "D105",
+    "exam": "general",
+    "topic": "Network & Routes",
+    "difficulty": "Medium",
+    "question": "A town's streets form a square grid. To go from junction A to junction B a cyclist must travel 4 blocks east and 3 blocks north, moving only east or north at each junction. Junction C lies 2 blocks east and 1 block north of A. How many of these shortest routes from A to B pass through C?",
+    "options": [
+     "35",
+     "18",
+     "12",
+     "24"
+    ],
+    "answer": 1,
+    "solution": "A to C needs 2 east and 1 north moves in some order: 3!/(2! × 1!) = 3 ways. C to B needs the remaining 2 east and 2 north: 4!/(2! × 2!) = 6 ways. Routes through C = 3 × 6 = 18."
    }
   ]
  }
