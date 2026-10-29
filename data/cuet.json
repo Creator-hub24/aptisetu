@@ -4866,6 +4866,1027 @@
      "orig_id": "Q151"
     },
     {
+     "id": "G-Q156",
+     "exam": "cuet",
+     "topic": "Algebra",
+     "difficulty": "Easy",
+     "question": "If 2x + 3y = 12 and 3x − y = 7, what is the value of x + y?",
+     "options": [
+      "7",
+      "4",
+      "6",
+      "5"
+     ],
+     "answer": 3,
+     "solution": "From the second equation, y = 3x − 7. Substituting in the first: 2x + 9x − 21 = 12, so 11x = 33 and x = 3. Then y = 9 − 7 = 2, and x + y = 5.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q156"
+    },
+    {
+     "id": "G-Q157",
+     "exam": "cuet",
+     "topic": "Algebra",
+     "difficulty": "Medium",
+     "question": "If x − 1/x = 3, what is the value of x³ − 1/x³?",
+     "options": [
+      "30",
+      "27",
+      "36",
+      "33"
+     ],
+     "answer": 2,
+     "solution": "Use (x − 1/x)³ = x³ − 1/x³ − 3(x − 1/x). So x³ − 1/x³ = 3³ + 3 × 3 = 27 + 9 = 36.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q157"
+    },
+    {
+     "id": "G-Q158",
+     "exam": "cuet",
+     "topic": "Algebra",
+     "difficulty": "Medium",
+     "question": "If a + b + c = 12 and a² + b² + c² = 50, what is the value of ab + bc + ca?",
+     "options": [
+      "45",
+      "94",
+      "47",
+      "62"
+     ],
+     "answer": 2,
+     "solution": "(a + b + c)² = a² + b² + c² + 2(ab + bc + ca). So 144 = 50 + 2(ab + bc + ca), giving ab + bc + ca = 94/2 = 47.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q158"
+    },
+    {
+     "id": "G-Q160",
+     "exam": "cuet",
+     "topic": "Algebra",
+     "difficulty": "Easy",
+     "question": "Which quadratic equation has roots 3 and −5?",
+     "options": [
+      "x² − 2x − 15 = 0",
+      "x² + 2x − 15 = 0",
+      "x² + 8x + 15 = 0",
+      "x² − 8x − 15 = 0"
+     ],
+     "answer": 1,
+     "solution": "Sum of roots = 3 + (−5) = −2 and product = 3 × (−5) = −15. The equation is x² − (sum)x + product = 0, i.e. x² + 2x − 15 = 0.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q160"
+    },
+    {
+     "id": "G-Q162",
+     "exam": "cuet",
+     "topic": "Algebra",
+     "difficulty": "Medium",
+     "question": "For what value of k does the equation kx² − 12x + 9 = 0 have two equal roots?",
+     "options": [
+      "4",
+      "3",
+      "−4",
+      "6"
+     ],
+     "answer": 0,
+     "solution": "Equal roots need the discriminant to be zero: (−12)² − 4 × k × 9 = 0, i.e. 144 − 36k = 0, so k = 4.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q162"
+    },
+    {
+     "id": "G-Q163",
+     "exam": "cuet",
+     "topic": "Algebra",
+     "difficulty": "Easy",
+     "question": "3 pens and 2 notebooks cost ₹110, while 2 pens and 3 notebooks cost ₹115. What is the cost of one pen and one notebook together?",
+     "options": [
+      "₹50",
+      "₹40",
+      "₹45",
+      "₹55"
+     ],
+     "answer": 2,
+     "solution": "Adding the two equations: 5 pens + 5 notebooks = ₹225, so 1 pen + 1 notebook = ₹45. (Separately, a pen costs ₹20 and a notebook ₹25.)",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q163"
+    },
+    {
+     "id": "G-Q164",
+     "exam": "cuet",
+     "topic": "Algebra",
+     "difficulty": "Medium",
+     "question": "If 4ˣ = 8⁽ˣ⁻¹⁾, what is the value of x?",
+     "options": [
+      "2",
+      "3",
+      "4",
+      "−3"
+     ],
+     "answer": 1,
+     "solution": "Write both sides as powers of 2: 4ˣ = 2²ˣ and 8⁽ˣ⁻¹⁾ = 2³ˣ⁻³. So 2x = 3x − 3, giving x = 3.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q164"
+    },
+    {
+     "id": "G-Q166",
+     "exam": "cuet",
+     "topic": "Averages & Alligation",
+     "difficulty": "Medium",
+     "question": "The average of 11 results is 50. The average of the first six results is 49 and that of the last six is 52. What is the sixth result?",
+     "options": [
+      "52",
+      "50",
+      "56",
+      "58"
+     ],
+     "answer": 2,
+     "solution": "The sixth result is counted in both groups of six. So it equals (sum of first six) + (sum of last six) − (sum of all eleven) = 6 × 49 + 6 × 52 − 11 × 50 = 294 + 312 − 550 = 56.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q166"
+    },
+    {
+     "id": "G-Q168",
+     "exam": "cuet",
+     "topic": "Averages & Alligation",
+     "difficulty": "Medium",
+     "question": "The average age of a family of 5 members is 30 years. The youngest member is 6 years old. What was the average age of the family just before the youngest member was born?",
+     "options": [
+      "30 years",
+      "24 years",
+      "28.5 years",
+      "36 years"
+     ],
+     "answer": 0,
+     "solution": "Total age now = 5 × 30 = 150 years. The other four members total 150 − 6 = 144 years now; 6 years ago they totalled 144 − 4 × 6 = 120 years. Average then = 120/4 = 30 years.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q168"
+    },
+    {
+     "id": "G-Q169",
+     "exam": "cuet",
+     "topic": "Averages & Alligation",
+     "difficulty": "Easy",
+     "question": "What is the average of the first 15 odd natural numbers?",
+     "options": [
+      "15",
+      "16",
+      "14",
+      "30"
+     ],
+     "answer": 0,
+     "solution": "The sum of the first n odd numbers is n², so the sum of the first 15 is 225. Average = 225/15 = 15.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q169"
+    },
+    {
+     "id": "G-Q170",
+     "exam": "cuet",
+     "topic": "Averages & Alligation",
+     "difficulty": "Medium",
+     "question": "A batsman has an average of 40 runs after 20 innings. How many runs must he score in his 21st innings to raise his average to 42?",
+     "options": [
+      "62",
+      "82",
+      "84",
+      "80"
+     ],
+     "answer": 1,
+     "solution": "Runs so far = 20 × 40 = 800. To average 42 after 21 innings he needs 21 × 42 = 882 runs. So he must score 882 − 800 = 82.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q170"
+    },
+    {
+     "id": "G-Q172",
+     "exam": "cuet",
+     "topic": "Averages & Alligation",
+     "difficulty": "Medium",
+     "question": "Two alloys contain gold and copper in the ratios 2 : 3 and 3 : 7 respectively. Equal weights of the two alloys are melted together. What is the ratio of gold to copper in the new alloy?",
+     "options": [
+      "6 : 11",
+      "5 : 10",
+      "1 : 2",
+      "7 : 13"
+     ],
+     "answer": 3,
+     "solution": "Take 1 kg of each. Gold = 2/5 + 3/10 = 7/10 kg; copper = 3/5 + 7/10 = 13/10 kg. Ratio = 7 : 13.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q172"
+    },
+    {
+     "id": "G-Q173",
+     "exam": "cuet",
+     "topic": "Geometry & Mensuration",
+     "difficulty": "Easy",
+     "question": "The diagonals of a rhombus are 16 cm and 12 cm. What is its area?",
+     "options": [
+      "100 cm²",
+      "192 cm²",
+      "48 cm²",
+      "96 cm²"
+     ],
+     "answer": 3,
+     "solution": "Area of a rhombus = (product of diagonals)/2 = 16 × 12 / 2 = 96 cm².",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q173"
+    },
+    {
+     "id": "G-Q174",
+     "exam": "cuet",
+     "topic": "Geometry & Mensuration",
+     "difficulty": "Medium",
+     "question": "What is the volume of a right circular cone of base radius 7 cm and height 12 cm? (Take π = 22/7)",
+     "options": [
+      "1848 cm³",
+      "616 cm³",
+      "308 cm³",
+      "924 cm³"
+     ],
+     "answer": 1,
+     "solution": "Volume = (1/3)πr²h = (1/3) × (22/7) × 49 × 12 = 616 cm³.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q174"
+    },
+    {
+     "id": "G-Q175",
+     "exam": "cuet",
+     "topic": "Geometry & Mensuration",
+     "difficulty": "Medium",
+     "question": "A wire bent into a square encloses an area of 121 cm². The same wire is bent into a circle. What is the area of the circle? (Take π = 22/7)",
+     "options": [
+      "144 cm²",
+      "121 cm²",
+      "176 cm²",
+      "154 cm²"
+     ],
+     "answer": 3,
+     "solution": "Side of the square = √121 = 11 cm, so the wire is 4 × 11 = 44 cm long. As a circle, 2πr = 44 gives r = 7 cm. Area = (22/7) × 7² = 154 cm².",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q175"
+    },
+    {
+     "id": "G-Q176",
+     "exam": "cuet",
+     "topic": "Geometry & Mensuration",
+     "difficulty": "Medium",
+     "question": "A solid metal hemisphere of radius 9 cm is melted and recast into small solid spheres, each of radius 1.5 cm. How many spheres are obtained?",
+     "options": [
+      "72",
+      "216",
+      "54",
+      "108"
+     ],
+     "answer": 3,
+     "solution": "Number of spheres = volume of hemisphere / volume of one sphere = (2/3)π × 9³ ÷ [(4/3)π × 1.5³] = 486π ÷ 4.5π = 108.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q176"
+    },
+    {
+     "id": "G-Q177",
+     "exam": "cuet",
+     "topic": "Geometry & Mensuration",
+     "difficulty": "Easy",
+     "question": "The sum of the interior angles of a polygon is 1440°. How many sides does it have?",
+     "options": [
+      "8",
+      "10",
+      "12",
+      "9"
+     ],
+     "answer": 1,
+     "solution": "Sum of interior angles = (n − 2) × 180°. So (n − 2) × 180 = 1440, n − 2 = 8 and n = 10.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q177"
+    },
+    {
+     "id": "G-Q178",
+     "exam": "cuet",
+     "topic": "Geometry & Mensuration",
+     "difficulty": "Medium",
+     "question": "What is the length of the longest rod that can be placed in a room 12 m long, 9 m wide and 8 m high?",
+     "options": [
+      "17 m",
+      "15 m",
+      "19 m",
+      "29 m"
+     ],
+     "answer": 0,
+     "solution": "The longest rod lies along the room's diagonal: √(12² + 9² + 8²) = √(144 + 81 + 64) = √289 = 17 m.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q178"
+    },
+    {
+     "id": "G-Q180",
+     "exam": "cuet",
+     "topic": "Geometry & Mensuration",
+     "difficulty": "Medium",
+     "question": "A path 2 m wide runs all round the outside of a rectangular garden 30 m long and 20 m wide. What is the area of the path?",
+     "options": [
+      "200 m²",
+      "216 m²",
+      "208 m²",
+      "232 m²"
+     ],
+     "answer": 1,
+     "solution": "With the path, the outer rectangle is (30 + 4) m by (20 + 4) m = 34 m by 24 m, area 816 m². Area of path = 816 − 600 = 216 m².",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q180"
+    },
+    {
+     "id": "G-Q181",
+     "exam": "cuet",
+     "topic": "Number System",
+     "difficulty": "Easy",
+     "question": "Which of the following numbers is divisible by 11?",
+     "options": [
+      "4,825",
+      "5,918",
+      "6,173",
+      "7,341"
+     ],
+     "answer": 1,
+     "solution": "A number is divisible by 11 when the difference between the sums of its alternate digits is a multiple of 11. For 5918: (5 + 1) − (9 + 8) = −11, a multiple of 11. For 4825, 6173 and 7341 the differences are −7, 9 and 7. (5918 = 11 × 538.)",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q181"
+    },
+    {
+     "id": "G-Q182",
+     "exam": "cuet",
+     "topic": "Number System",
+     "difficulty": "Easy",
+     "question": "Two numbers are in the ratio 3 : 5 and their LCM is 225. What is their HCF?",
+     "options": [
+      "15",
+      "45",
+      "9",
+      "25"
+     ],
+     "answer": 0,
+     "solution": "Let the numbers be 3h and 5h, where h is the HCF (3 and 5 are co-prime). Their LCM = 15h = 225, so h = 15.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q182"
+    },
+    {
+     "id": "G-Q184",
+     "exam": "cuet",
+     "topic": "Number System",
+     "difficulty": "Easy",
+     "question": "What is the least number that must be added to 1,056 to make it exactly divisible by 23?",
+     "options": [
+      "2",
+      "21",
+      "3",
+      "4"
+     ],
+     "answer": 0,
+     "solution": "1,056 = 23 × 45 + 21, so the remainder is 21. Adding 23 − 21 = 2 gives 1,058 = 23 × 46.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q184"
+    },
+    {
+     "id": "G-Q185",
+     "exam": "cuet",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "How many even factors does 540 have?",
+     "options": [
+      "12",
+      "24",
+      "8",
+      "16"
+     ],
+     "answer": 3,
+     "solution": "540 = 2² × 3³ × 5. An even factor must contain 2¹ or 2², so there are 2 choices for the power of 2, 4 for the power of 3 and 2 for the power of 5: 2 × 4 × 2 = 16.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q185"
+    },
+    {
+     "id": "G-Q186",
+     "exam": "cuet",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "What is the largest four-digit number that is exactly divisible by each of 12, 15 and 18?",
+     "options": [
+      "9900",
+      "9720",
+      "9990",
+      "9960"
+     ],
+     "answer": 0,
+     "solution": "LCM of 12, 15 and 18 = 180. 9,999 = 180 × 55 + 99, so the largest multiple of 180 with four digits is 9,999 − 99 = 9,900.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q186"
+    },
+    {
+     "id": "G-Q188",
+     "exam": "cuet",
+     "topic": "Number System",
+     "difficulty": "Easy",
+     "question": "Which fraction is equal to the recurring decimal 0.363636…?",
+     "options": [
+      "36/100",
+      "9/25",
+      "4/11",
+      "3/8"
+     ],
+     "answer": 2,
+     "solution": "For a two-digit repeating block, 0.3636… = 36/99. Dividing numerator and denominator by 9 gives 4/11.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q188"
+    },
+    {
+     "id": "G-Q189",
+     "exam": "cuet",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "A number leaves a remainder of 19 when divided by 36. What remainder does it leave when divided by 12?",
+     "options": [
+      "7",
+      "19",
+      "5",
+      "Cannot be determined"
+     ],
+     "answer": 0,
+     "solution": "The number is 36k + 19 for some whole number k. Since 36 is a multiple of 12, the remainder on division by 12 is the remainder of 19, which is 7.",
+     "fixed": true,
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q189"
+    },
+    {
+     "id": "G-Q190",
+     "exam": "cuet",
+     "topic": "Percentages",
+     "difficulty": "Medium",
+     "question": "In a school, 60% of the students are boys. If 30% of the boys and 40% of the girls take part in sports, what percentage of all the students take part in sports?",
+     "options": [
+      "36%",
+      "35%",
+      "34%",
+      "70%"
+     ],
+     "answer": 2,
+     "solution": "Take 100 students: 60 boys and 40 girls. Boys in sports = 30% of 60 = 18; girls = 40% of 40 = 16. Total 34 out of 100, i.e. 34%.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q190"
+    },
+    {
+     "id": "G-Q192",
+     "exam": "cuet",
+     "topic": "Percentages",
+     "difficulty": "Easy",
+     "question": "If x% of 250 is equal to 20% of 400, what is x?",
+     "options": [
+      "40",
+      "30",
+      "25",
+      "32"
+     ],
+     "answer": 3,
+     "solution": "20% of 400 = 80. x% of 250 = 80 gives x = 80 × 100 / 250 = 32.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q192"
+    },
+    {
+     "id": "G-Q212",
+     "exam": "cuet",
+     "topic": "Profit & Loss",
+     "difficulty": "Medium",
+     "question": "The cost price of 20 articles equals the selling price of 16 articles. What is the profit percentage?",
+     "options": [
+      "20%",
+      "25%",
+      "16%",
+      "4%"
+     ],
+     "answer": 1,
+     "solution": "Let each article cost ₹1, so 20 articles cost ₹20, which is what 16 articles sell for. Profit on 16 articles = 20 − 16 = 4 on a cost of 16, i.e. 4/16 × 100 = 25%.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q212"
+    },
+    {
+     "id": "G-Q213",
+     "exam": "cuet",
+     "topic": "Profit & Loss",
+     "difficulty": "Medium",
+     "question": "A shopkeeper sells an article at a loss of 10%. Had he sold it for ₹90 more, he would have gained 5%. What is the cost price?",
+     "options": [
+      "₹450",
+      "₹900",
+      "₹600",
+      "₹750"
+     ],
+     "answer": 2,
+     "solution": "The difference between a 5% gain and a 10% loss is 15% of the cost price, and this equals ₹90. Cost price = 90 / 0.15 = ₹600.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q213"
+    },
+    {
+     "id": "G-Q215",
+     "exam": "cuet",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Easy",
+     "question": "What is the fourth proportional to 4, 9 and 12?",
+     "options": [
+      "27",
+      "24",
+      "36",
+      "16"
+     ],
+     "answer": 0,
+     "solution": "If x is the fourth proportional, 4 : 9 = 12 : x, so 4x = 9 × 12 = 108 and x = 27.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q215"
+    },
+    {
+     "id": "G-Q216",
+     "exam": "cuet",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "A purse contains ₹5, ₹2 and ₹1 coins in the ratio 1 : 3 : 5 by number. If the total value is ₹128, how many ₹2 coins are there?",
+     "options": [
+      "24",
+      "8",
+      "40",
+      "32"
+     ],
+     "answer": 0,
+     "solution": "Let the numbers be k, 3k and 5k. Value = 5k + 2 × 3k + 1 × 5k = 16k = 128, so k = 8. Number of ₹2 coins = 3 × 8 = 24.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q216"
+    },
+    {
+     "id": "G-Q217",
+     "exam": "cuet",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "The present ages of A and B are in the ratio 3 : 4. Ten years from now, the ratio will be 5 : 6. What is B's present age?",
+     "options": [
+      "30 years",
+      "15 years",
+      "25 years",
+      "20 years"
+     ],
+     "answer": 3,
+     "solution": "Let the ages be 3k and 4k. Then (3k + 10)/(4k + 10) = 5/6, so 18k + 60 = 20k + 50 and k = 5. B's present age = 4 × 5 = 20 years.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q217"
+    },
+    {
+     "id": "G-Q218",
+     "exam": "cuet",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "A invests ₹20,000 for 12 months and B invests ₹30,000 for 8 months in a business. Out of a total profit of ₹18,000, what is A's share?",
+     "options": [
+      "₹9,000",
+      "₹7,200",
+      "₹10,800",
+      "₹6,000"
+     ],
+     "answer": 0,
+     "solution": "Profit is shared in the ratio of capital × time: A = 20,000 × 12 = 2,40,000 and B = 30,000 × 8 = 2,40,000. The ratio is 1 : 1, so A gets half of ₹18,000 = ₹9,000.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q218"
+    },
+    {
+     "id": "G-Q219",
+     "exam": "cuet",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "The salaries of A and B are in the ratio 3 : 4. If each gets an increment of ₹4,000, the ratio becomes 4 : 5. What is A's present salary?",
+     "options": [
+      "₹15,000",
+      "₹16,000",
+      "₹9,000",
+      "₹12,000"
+     ],
+     "answer": 3,
+     "solution": "Let the salaries be 3k and 4k. Then (3k + 4,000)/(4k + 4,000) = 4/5, so 15k + 20,000 = 16k + 16,000 and k = 4,000. A's salary = 3 × 4,000 = ₹12,000.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q219"
+    },
+    {
+     "id": "G-Q220",
+     "exam": "cuet",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Easy",
+     "question": "What is the third proportional to 16 and 36?",
+     "options": [
+      "72",
+      "56",
+      "64",
+      "81"
+     ],
+     "answer": 3,
+     "solution": "If x is the third proportional, 16 : 36 = 36 : x, so x = 36 × 36 / 16 = 1296/16 = 81.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q220"
+    },
+    {
+     "id": "G-Q222",
+     "exam": "cuet",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "The incomes of A and B are in the ratio 5 : 4 and their expenditures are in the ratio 3 : 2. If each of them saves ₹2,000, what is A's income?",
+     "options": [
+      "₹5,000",
+      "₹4,000",
+      "₹6,000",
+      "₹10,000"
+     ],
+     "answer": 0,
+     "solution": "Let incomes be 5x and 4x and expenditures 3y and 2y. Then 5x − 3y = 2,000 and 4x − 2y = 2,000. From the second, y = 2x − 1,000; substituting, 5x − 6x + 3,000 = 2,000, so x = 1,000. A's income = 5 × 1,000 = ₹5,000.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q222"
+    },
+    {
+     "id": "G-Q223",
+     "exam": "cuet",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "₹3,240 is divided among A, B and C so that A gets 2/3 of B's share and B gets 3/4 of C's share. What is A's share?",
+     "options": [
+      "₹1,440",
+      "₹1,080",
+      "₹720",
+      "₹960"
+     ],
+     "answer": 2,
+     "solution": "Let C = 4m. Then B = 3/4 × 4m = 3m and A = 2/3 × 3m = 2m, so A : B : C = 2 : 3 : 4. A's share = 2/9 × 3,240 = ₹720.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q223"
+    },
+    {
+     "id": "G-Q224",
+     "exam": "cuet",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Medium",
+     "question": "What is the compound interest on ₹16,000 for 1½ years at 10% per annum, compounded half-yearly?",
+     "options": [
+      "₹2,400",
+      "₹2,522",
+      "₹2,480",
+      "₹2,560"
+     ],
+     "answer": 1,
+     "solution": "Half-yearly compounding at 10% a year means 5% per half-year for 3 half-years. Amount = 16,000 × 1.05³ = 16,000 × 1.157625 = ₹18,522. CI = 18,522 − 16,000 = ₹2,522.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q224"
+    },
+    {
+     "id": "G-Q226",
+     "exam": "cuet",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Easy",
+     "question": "In how many years will ₹4,000 amount to ₹5,200 at 6% per annum simple interest?",
+     "options": [
+      "3 years",
+      "4 years",
+      "6 years",
+      "5 years"
+     ],
+     "answer": 3,
+     "solution": "Interest needed = 5,200 − 4,000 = ₹1,200. Interest per year = 6% of 4,000 = ₹240. Time = 1,200 / 240 = 5 years.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q226"
+    },
+    {
+     "id": "G-Q227",
+     "exam": "cuet",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Medium",
+     "question": "What is the difference between the compound interest and the simple interest on ₹5,000 for 3 years at 10% per annum?",
+     "options": [
+      "₹155",
+      "₹150",
+      "₹50",
+      "₹165"
+     ],
+     "answer": 0,
+     "solution": "SI = 5,000 × 10 × 3 / 100 = ₹1,500. Amount at CI = 5,000 × 1.1³ = ₹6,655, so CI = ₹1,655. Difference = 1,655 − 1,500 = ₹155.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q227"
+    },
+    {
+     "id": "G-Q228",
+     "exam": "cuet",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Medium",
+     "question": "₹10,800 is split into two parts so that the simple interest on the first part at 8% per annum for 3 years equals the simple interest on the second part at 6% per annum for 5 years. What is the first part?",
+     "options": [
+      "₹6,400",
+      "₹4,800",
+      "₹5,400",
+      "₹6,000"
+     ],
+     "answer": 3,
+     "solution": "Interest on the first part = a × 8 × 3 / 100 = 24a/100; on the second = b × 6 × 5 / 100 = 30b/100. Equal interests give 24a = 30b, so a : b = 5 : 4. First part = 5/9 × 10,800 = ₹6,000.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q228"
+    },
+    {
+     "id": "G-Q229",
+     "exam": "cuet",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Easy",
+     "question": "At what rate of compound interest per annum will ₹2,500 amount to ₹3,025 in 2 years?",
+     "options": [
+      "12%",
+      "11%",
+      "10%",
+      "10.5%"
+     ],
+     "answer": 2,
+     "solution": "(1 + r/100)² = 3,025 / 2,500 = 1.21 = 1.1², so 1 + r/100 = 1.1 and r = 10%.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q229"
+    },
+    {
+     "id": "G-Q230",
+     "exam": "cuet",
+     "topic": "Time & Work",
+     "difficulty": "Medium",
+     "question": "A is 50% more efficient than B, and together they finish a piece of work in 18 days. In how many days can B alone finish it?",
+     "options": [
+      "30 days",
+      "45 days",
+      "36 days",
+      "27 days"
+     ],
+     "answer": 1,
+     "solution": "If B does 2 units a day, A does 3 units, so B does 2/5 of the combined daily work. Together they do 1/18 of the job a day, so B alone does 2/5 × 1/18 = 1/45. B alone takes 45 days.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q230"
+    },
+    {
+     "id": "G-Q231",
+     "exam": "cuet",
+     "topic": "Time & Work",
+     "difficulty": "Medium",
+     "question": "A and B together can do a job in 10 days, B and C in 15 days, and A and C in 12 days. In how many days can C alone do it?",
+     "options": [
+      "24 days",
+      "40 days",
+      "30 days",
+      "60 days"
+     ],
+     "answer": 1,
+     "solution": "Adding the three rates: 2(A + B + C) = 1/10 + 1/15 + 1/12 = (6 + 4 + 5)/60 = 15/60 = 1/4, so A + B + C = 1/8. C = 1/8 − 1/10 = 1/40, so C alone takes 40 days.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q231"
+    },
+    {
+     "id": "G-Q233",
+     "exam": "cuet",
+     "topic": "Time & Work",
+     "difficulty": "Medium",
+     "question": "10 men or 15 women can finish a job in 12 days. In how many days will 6 men and 11 women finish it?",
+     "options": [
+      "10 days",
+      "9 days",
+      "8 days",
+      "12 days"
+     ],
+     "answer": 1,
+     "solution": "10 men do as much as 15 women, so 1 man = 1.5 women. 6 men + 11 women = 9 + 11 = 20 women. The job needs 15 × 12 = 180 woman-days, so 20 women take 180/20 = 9 days.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q233"
+    },
+    {
+     "id": "G-Q234",
+     "exam": "cuet",
+     "topic": "Time & Work",
+     "difficulty": "Medium",
+     "question": "A pipe can fill a tank in 10 hours, but because of a leak at the bottom it takes 12 hours to fill. In how many hours can the leak alone empty the full tank?",
+     "options": [
+      "22 hours",
+      "60 hours",
+      "30 hours",
+      "120 hours"
+     ],
+     "answer": 1,
+     "solution": "Rate of the leak = 1/10 − 1/12 = (6 − 5)/60 = 1/60 of the tank per hour. So the leak empties the full tank in 60 hours.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q234"
+    },
+    {
+     "id": "G-Q235",
+     "exam": "cuet",
+     "topic": "Time & Work",
+     "difficulty": "Easy",
+     "question": "A completes one-fourth of a piece of work in 5 days. How many days will he take to finish the whole work?",
+     "options": [
+      "20 days",
+      "15 days",
+      "25 days",
+      "10 days"
+     ],
+     "answer": 0,
+     "solution": "One-fourth takes 5 days, so the whole work (four quarters) takes 4 × 5 = 20 days.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q235"
+    },
+    {
+     "id": "G-Q237",
+     "exam": "cuet",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "A thief is spotted by a policeman from a distance of 200 m, and both start running at the same moment. The thief runs at 10 km/h and the policeman at 12 km/h. How far will the thief have run when he is caught?",
+     "options": [
+      "1.2 km",
+      "1 km",
+      "800 m",
+      "600 m"
+     ],
+     "answer": 1,
+     "solution": "The policeman gains 12 − 10 = 2 km/h on the thief. To close the gap of 200 m = 0.2 km he needs 0.2/2 = 0.1 hour. In that time the thief runs 10 × 0.1 = 1 km.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q237"
+    },
+    {
+     "id": "G-Q238",
+     "exam": "cuet",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Easy",
+     "question": "Two stations are 450 km apart. At 8 a.m. one train leaves each station and they travel towards each other at 70 km/h and 80 km/h. At what time do they meet?",
+     "options": [
+      "11 a.m.",
+      "10:30 a.m.",
+      "11:30 a.m.",
+      "12 noon"
+     ],
+     "answer": 0,
+     "solution": "They approach each other at 70 + 80 = 150 km/h, so they meet after 450/150 = 3 hours, at 8 a.m. + 3 hours = 11 a.m.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q238"
+    },
+    {
+     "id": "G-Q239",
+     "exam": "cuet",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "Walking at 4 km/h, a man reaches his office 10 minutes late. Walking at 5 km/h, he reaches 5 minutes early. How far is his office?",
+     "options": [
+      "5 km",
+      "4 km",
+      "6 km",
+      "7.5 km"
+     ],
+     "answer": 0,
+     "solution": "The two times differ by 10 + 5 = 15 minutes = 1/4 hour. So d/4 − d/5 = 1/4, i.e. d/20 = 1/4, giving d = 5 km.",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "type": "mcq",
+     "source": "general",
+     "orig_id": "Q239"
+    },
+    {
      "id": "G-R1",
      "exam": "cuet",
      "topic": "Syllogisms",

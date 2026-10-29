@@ -804,6 +804,16 @@ _mb = [x for x in _mb if x["A"] == x["C"] + 4 and x["D"] < x["B"] < x["E"] and x
 assert len(_mb) == 1
 Q(s,"Puzzles","Hard","Five friends A, B, C, D and E have 2, 4, 6, 8 and 10 marbles, one number each. A has 4 more marbles than C. B has more marbles than D but fewer than E. D has more marbles than C. Who has 6 marbles?",["B","D","E","A"],[k for k, v in _mb[0].items() if v == 6][0],"C has fewer marbles than D, and D < B < E, so C has fewer than three others. A = C + 4 is also more than C, so C has the fewest: 2. Then A = 6. D, B and E take 4, 8 and 10 in increasing order: D = 4, B = 8, E = 10. So A has 6 marbles.")
 
+# ======================= BANK / SSC BATCHES B6+ (tools/bank/*.py; each item verified in its module, Hindi kept in step) =======================
+import sys as _s6, os as _o6, json as _j6
+_s6.path.insert(0, _o6.path.join(_o6.path.dirname(_o6.path.abspath(__file__)), "bank"))
+from common import Adder as _Adder
+import b6_quant as _b6q
+_BA = _Adder(Q, OUT, SY, SYE, seed=606); _b6q.build(_BA)
+_hp = _o6.path.join(_o6.path.dirname(_o6.path.abspath(__file__)), "..", "data", "hi", "general-solutions.json")
+_hh = _j6.load(open(_hp, encoding="utf8")); _hh.update(_BA.hi); _j6.dump(_hh, open(_hp, "w", encoding="utf8"), ensure_ascii=False, indent=1)
+_s6.path.remove(_o6.path.join(_o6.path.dirname(_o6.path.abspath(__file__)), "bank")); del _s6.modules["common"]
+
 NAMES={"quant":"Quantitative Aptitude","reasoning":"Logical Reasoning","dilr":"DILR"}
 import os, collections
 # ---- CUET reuse tags: Easy/Medium general items that sit within the CUET General Aptitude Test syllabus ----
