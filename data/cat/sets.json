@@ -899,8 +899,10 @@
       "groups": []
      }
     ],
-    "leftoverQuestions": 0,
-    "leftoverIds": []
+    "leftoverQuestions": 1,
+    "leftoverIds": [
+     "B9Q-09"
+    ]
    },
    "Medium": {
     "range": [
@@ -1037,7 +1039,7 @@
       "groups": []
      }
     ],
-    "leftoverQuestions": 29,
+    "leftoverQuestions": 41,
     "leftoverIds": [
      "B2Q-12",
      "B2Q-04",
@@ -1054,14 +1056,26 @@
      "CQ141",
      "B2Q-11",
      "B2Q-14",
+     "B9Q-13",
      "B2Q-17",
      "B2Q-22",
      "CQ149",
      "CQ154",
+     "B9Q-10",
      "B2Q-30",
      "B2Q-28",
+     "B9Q-02",
+     "B9Q-06",
+     "B9Q-14",
+     "B9Q-16",
+     "B9Q-19",
      "CQ150",
+     "B9Q-11",
+     "B9Q-21",
+     "B9Q-04",
+     "B9Q-07",
      "CQ151",
+     "B9Q-05",
      "CQ152",
      "CQ124",
      "CQ129",
@@ -1119,14 +1133,23 @@
        "B2Q-23",
        "B2Q-27",
        "B2Q-29",
-       "B2Q-03",
-       "B2Q-07"
+       "B9Q-17",
+       "B9Q-20"
       ],
       "groups": []
      }
     ],
-    "leftoverQuestions": 0,
-    "leftoverIds": []
+    "leftoverQuestions": 8,
+    "leftoverIds": [
+     "B2Q-03",
+     "B2Q-07",
+     "B9Q-08",
+     "B9Q-15",
+     "B9Q-12",
+     "B9Q-18",
+     "B9Q-01",
+     "B9Q-03"
+    ]
    },
    "count": 18
   }

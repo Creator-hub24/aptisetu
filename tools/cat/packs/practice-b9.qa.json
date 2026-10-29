@@ -1,0 +1,303 @@
+{
+ "name": "practice-b9 — QA",
+ "sets": {},
+ "questions": [
+  {
+   "id": "B9Q-01",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Sets",
+   "difficulty": "Hard",
+   "question": "Each of 100 people likes at least one of tea, coffee and juice. 60 like tea, 50 like coffee and 40 like juice. What is the largest possible number of people who like all three?",
+   "solution": "Let e₁, e₂, e₃ be the numbers liking exactly one, two and three drinks. Then e₁ + e₂ + e₃ = 100 and e₁ + 2e₂ + 3e₃ = 60 + 50 + 40 = 150, so e₂ + 2e₃ = 50 and e₃ ≤ 25. It is reached: 25 like all three, nobody likes exactly two, and 35, 25 and 15 like only tea, only coffee and only juice (35 + 25 + 15 + 25 = 100).",
+   "type": "tita",
+   "kind": "number",
+   "answer": "25"
+  },
+  {
+   "id": "B9Q-02",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Sets",
+   "difficulty": "Medium",
+   "question": "Of 200 students, 120 passed Mathematics, 90 passed Physics and 70 passed Chemistry. 40 passed both Mathematics and Physics, 30 passed both Physics and Chemistry, 35 passed both Mathematics and Chemistry, and 15 passed all three. How many students failed all three subjects?",
+   "solution": "Passed at least one = 120 + 90 + 70 − 40 − 30 − 35 + 15 = 190. Failed all three = 200 − 190 = 10.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "10"
+  },
+  {
+   "id": "B9Q-03",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Sets",
+   "difficulty": "Hard",
+   "question": "How many integers from 1 to 1000 are divisible by at least one of 2, 3 and 5 but are not divisible by 7?",
+   "solution": "Divisible by 2, 3 or 5: 500 + 333 + 200 − 166 − 100 − 66 + 33 = 734. Those that are also multiples of 7 are 7m with m ≤ 142 and m divisible by 2, 3 or 5: 71 + 47 + 28 − 23 − 14 − 9 + 4 = 104. Answer = 734 − 104 = 630.",
+   "type": "mcq",
+   "options": [
+    "620",
+    "634",
+    "630",
+    "644"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "B9Q-04",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Sets",
+   "difficulty": "Medium",
+   "question": "In a class, three-fifths of the students play football, half play cricket and a quarter play both games. If 18 students play neither game, how many students are in the class?",
+   "solution": "Fraction playing at least one game = 3/5 + 1/2 − 1/4 = 17/20, so 3/20 play neither. 3/20 of the class = 18, so the class has 120 students.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "120"
+  },
+  {
+   "id": "B9Q-05",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Sets",
+   "difficulty": "Medium",
+   "question": "In a survey, 80% of people like apples, 85% like bananas, 75% like cherries and 70% like dates. What is the least possible percentage of people who like all four fruits?",
+   "solution": "The people who miss at least one fruit are at most 20% + 15% + 25% + 30% = 90% (when those groups do not overlap). So at least 100% − 90% = 10% like all four, and 10% is achievable by making the four 'dislike' groups disjoint.",
+   "type": "mcq",
+   "options": [
+    "10%",
+    "5%",
+    "15%",
+    "20%"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "B9Q-06",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Ratio & Proportion",
+   "difficulty": "Medium",
+   "question": "₹6,300 is shared among A, B and C so that A gets two-thirds of what B and C together get, and B gets three-fourths of what A and C together get. How much (in ₹) does C get?",
+   "solution": "A = (2/3)(B + C) means A : (B + C) = 2 : 3, so A = 2/5 of 6300 = 2520. B = (3/4)(A + C) means B = 3/7 of 6300 = 2700. C = 6300 − 2520 − 2700 = 1080.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1080"
+  },
+  {
+   "id": "B9Q-07",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Ratio & Proportion",
+   "difficulty": "Medium",
+   "question": "If a : b = 2 : 3, b : c = 4 : 5 and c : d = 6 : 7, what is a : d?",
+   "solution": "a/d = (a/b)(b/c)(c/d) = (2/3)(4/5)(6/7) = 48/105 = 16/35.",
+   "type": "mcq",
+   "options": [
+    "8 : 21",
+    "24 : 35",
+    "12 : 35",
+    "16 : 35"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "B9Q-08",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Ratio & Proportion",
+   "difficulty": "Hard",
+   "question": "If x/(y + z) = y/(z + x) = z/(x + y) = k for real numbers x, y, z with no denominator zero, which values can k take?",
+   "solution": "Adding numerators and denominators: if x + y + z ≠ 0, k = (x + y + z)/(2(x + y + z)) = 1/2. If x + y + z = 0, then y + z = −x and k = x/(−x) = −1 (e.g. x = 1, y = 1, z = −2). Both values occur.",
+   "type": "mcq",
+   "options": [
+    "1/2 only",
+    "1/2 or −1",
+    "−1 only",
+    "2 or −1"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "B9Q-09",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mensuration",
+   "difficulty": "Easy",
+   "question": "A solid metal cone of base radius 6 cm and height 8 cm is melted and recast into solid spheres of radius 2 cm, with no metal wasted. How many spheres are made?",
+   "solution": "Cone volume = (1/3)π × 36 × 8 = 96π. Sphere volume = (4/3)π × 8 = 32π/3. Number = 96π ÷ (32π/3) = 9.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "9"
+  },
+  {
+   "id": "B9Q-10",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mensuration",
+   "difficulty": "Medium",
+   "question": "A right circular cylinder of height 12 cm is placed inside a sphere of radius 10 cm so that both circular rims touch the sphere. What is the volume of the cylinder?",
+   "solution": "The centre of the sphere is at mid-height, 6 cm from each rim. Rim radius r satisfies r² + 6² = 10², so r² = 64. Volume = π × 64 × 12 = 768π cm³.",
+   "type": "mcq",
+   "options": [
+    "576π cm³",
+    "864π cm³",
+    "768π cm³",
+    "960π cm³"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "B9Q-11",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mensuration",
+   "difficulty": "Medium",
+   "question": "From each corner of a square sheet of side 14 cm, a quarter-circle of radius 7 cm is cut out. What area (in cm²) is left? Take π = 22/7.",
+   "solution": "The four quarter-circles make one full circle of radius 7: area = (22/7) × 49 = 154. Remaining = 14² − 154 = 196 − 154 = 42.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "42"
+  },
+  {
+   "id": "B9Q-12",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mensuration",
+   "difficulty": "Hard",
+   "question": "A room is 12 m long, 9 m wide and 7 m high. An ant at one corner of the floor wants to reach the diagonally opposite corner of the ceiling, walking only on the walls, floor and ceiling. What is the length (in m) of the shortest such path?",
+   "solution": "Unfold two adjacent faces into a rectangle. The three possible unfoldings give √(12² + (9 + 7)²) = √400 = 20, √(9² + (12 + 7)²) = √442 and √(7² + (12 + 9)²) = √490. The shortest is 20 m.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "20"
+  },
+  {
+   "id": "B9Q-13",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Averages",
+   "difficulty": "Medium",
+   "question": "Section A has 40 students with an average score of 64; section B has an average of 70. The combined average of both sections is 66. How many students are in section B?",
+   "solution": "By alligation, A : B = (70 − 66) : (66 − 64) = 4 : 2 = 2 : 1. With 40 in A, B has 20.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "20"
+  },
+  {
+   "id": "B9Q-14",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Functions",
+   "difficulty": "Medium",
+   "question": "A function f satisfies f(x + y) = f(x)·f(y) for all real x, y, and f(1) = 3. What is f(1) + f(2) + f(3) + f(4)?",
+   "solution": "f(2) = f(1)² = 9, f(3) = f(2)f(1) = 27, f(4) = 81. Sum = 3 + 9 + 27 + 81 = 120.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "120"
+  },
+  {
+   "id": "B9Q-15",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Functions",
+   "difficulty": "Hard",
+   "question": "For how many integers x is (x² − 5x + 4)/(x² − 9) ≤ 0?",
+   "solution": "Write it as (x − 1)(x − 4)/((x − 3)(x + 3)). The sign changes at −3, 1, 3 and 4. It is negative on (−3, 1) and on (3, 4), and zero at x = 1 and x = 4 (x = ±3 are excluded). Integers: −2, −1, 0, 1 and 4, so 5.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "5"
+  },
+  {
+   "id": "B9Q-16",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mixtures & Alligation",
+   "difficulty": "Medium",
+   "question": "A trader mixes rice costing ₹42 per kg with rice costing ₹54 per kg and sells the mixture at ₹60 per kg, making a 20% profit. If he used 30 kg of the cheaper rice, how many kg of the costlier rice did he use?",
+   "solution": "Cost price of the mixture = 60/1.2 = ₹50 per kg. Cheaper : costlier = (54 − 50) : (50 − 42) = 4 : 8 = 1 : 2, so 30 kg of the cheaper needs 60 kg of the costlier.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "60"
+  },
+  {
+   "id": "B9Q-17",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mixtures & Alligation",
+   "difficulty": "Hard",
+   "question": "Three vessels of equal volume are full of mixtures of spirit and water in the ratios 1 : 2, 2 : 3 and 3 : 4. Their contents are emptied into one large tank. What is the ratio of spirit to water in the tank?",
+   "solution": "Take each vessel as 1 unit. Spirit = 1/3 + 2/5 + 3/7 = (35 + 42 + 45)/105 = 122/105. Water = 3 − 122/105 = 193/105. Ratio = 122 : 193.",
+   "type": "mcq",
+   "options": [
+    "122 : 193",
+    "6 : 11",
+    "61 : 105",
+    "121 : 194"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "B9Q-18",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Simple & Compound Interest",
+   "difficulty": "Hard",
+   "question": "A sum earns ₹1,260 as simple interest in 3 years. At the same rate, the compound interest (compounded annually) on the same sum for 2 years is ₹882. What is the rate of interest per annum?",
+   "solution": "Simple interest per year = 1260/3 = 420. Over 2 years, CI exceeds SI by the interest on the first year's interest: 882 − 840 = 42 = 420 × r/100, so r = 10%.",
+   "type": "mcq",
+   "options": [
+    "8%",
+    "15%",
+    "12%",
+    "10%"
+   ],
+   "answer": 3
+  },
+  {
+   "id": "B9Q-19",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Logarithms",
+   "difficulty": "Medium",
+   "question": "If logₐb = 2 and log_b c = 3, what is the value of log_c(a⁶)?",
+   "solution": "b = a² and c = b³ = a⁶. So log_c(a⁶) = log_c c = 1.",
+   "type": "tita",
+   "kind": "number",
+   "answer": "1"
+  },
+  {
+   "id": "B9Q-20",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Logarithms",
+   "difficulty": "Hard",
+   "question": "Which values of x satisfy log_x 2 × log_(x/16) 2 = log_(x/64) 2?",
+   "solution": "Let t = log₂x. Then log_x 2 = 1/t, log_(x/16) 2 = 1/(t − 4) and log_(x/64) 2 = 1/(t − 6). So 1/(t(t − 4)) = 1/(t − 6), giving t² − 4t = t − 6, i.e. t² − 5t + 6 = 0 and t = 2 or 3. So x = 4 or 8; neither makes a base equal to 1 or non-positive.",
+   "type": "mcq",
+   "options": [
+    "4 only",
+    "4 or 8",
+    "8 only",
+    "2 or 8"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "B9Q-21",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Probability",
+   "difficulty": "Medium",
+   "question": "Three boys and three girls stand in a row in a random order. What is the probability that no two girls stand next to each other?",
+   "solution": "Arrange the boys (3! ways), creating 4 gaps; put the girls in 3 of the gaps in 4 × 3 × 2 = 24 ways. Favourable = 6 × 24 = 144 out of 6! = 720. Probability = 144/720 = 1/5.",
+   "type": "mcq",
+   "options": [
+    "1/10",
+    "1/4",
+    "1/5",
+    "3/10"
+   ],
+   "answer": 2
+  }
+ ]
+}
