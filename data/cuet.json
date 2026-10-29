@@ -2935,6 +2935,1014 @@
      "answer": 3
     },
     {
+     "id": "UG162",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Algebra",
+     "difficulty": "Easy",
+     "question": "If (x + 2)/(x − 1) = 4, what is the value of x?",
+     "solution": "Cross-multiply: x + 2 = 4(x − 1) = 4x − 4, so 3x = 6 and x = 2. Check: (2 + 2)/(2 − 1) = 4.",
+     "type": "mcq",
+     "options": [
+      "1/2",
+      "3",
+      "−2",
+      "2"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG163",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Algebra",
+     "difficulty": "Medium",
+     "question": "The sum of a two-digit number and the number formed by reversing its digits is 121. The tens digit exceeds the units digit by 3. What is the number?",
+     "solution": "Let the number be 10a + b. Then (10a + b) + (10b + a) = 11(a + b) = 121, so a + b = 11. With a − b = 3, a = 7 and b = 4. The number is 74 (check: 74 + 47 = 121).",
+     "type": "mcq",
+     "options": [
+      "83",
+      "47",
+      "74",
+      "65"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG164",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Algebra",
+     "difficulty": "Easy",
+     "question": "A father is three times as old as his son. Ten years from now he will be twice as old as his son. What is the son's present age?",
+     "solution": "Let the son be s years old; the father is 3s. In 10 years: 3s + 10 = 2(s + 10), so s = 10. (Father 30; in 10 years 40 = 2 × 20.)",
+     "type": "mcq",
+     "options": [
+      "15 years",
+      "10 years",
+      "12 years",
+      "20 years"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG165",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Clocks & Calendars",
+     "difficulty": "Easy",
+     "question": "15 August 2025 was a Friday. On which day of the week does 15 August 2026 fall?",
+     "solution": "The 365 days from 15 August 2025 to 15 August 2026 contain no 29 February (2026 is not a leap year), and 365 = 52 weeks + 1 day. So the day moves one place forward: Friday → Saturday.",
+     "type": "mcq",
+     "options": [
+      "Thursday",
+      "Friday",
+      "Sunday",
+      "Saturday"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG166",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Clocks & Calendars",
+     "difficulty": "Medium",
+     "question": "A clock shows 4:40. What time does its reflection in a plane mirror (placed vertically beside it) appear to show?",
+     "solution": "For a mirror image of a clock, subtract the actual time from 11:60. 11:60 − 4:40 = 7:20. (Check: the hour hand just past 4 and minute hand at 8 appear just short of 8 and at 4, i.e. 7:20.)",
+     "type": "mcq",
+     "options": [
+      "8:20",
+      "7:20",
+      "7:40",
+      "4:20"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG167",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Number System",
+     "difficulty": "Medium",
+     "question": "How many whole numbers from 1 to 100 (both included) are divisible by 3 or by 5?",
+     "solution": "Multiples of 3: 33. Multiples of 5: 20. Multiples of both (of 15): 6. By inclusion–exclusion, 33 + 20 − 6 = 47.",
+     "type": "mcq",
+     "options": [
+      "47",
+      "53",
+      "45",
+      "48"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG168",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Ranking & Order",
+     "difficulty": "Medium",
+     "question": "In a queue, Amit is 10th from the front and Rahul is 25th from the back. Rahul is behind Amit, and exactly 4 people stand between them. How many people are in the queue?",
+     "solution": "Rahul is 10 + 4 + 1 = 15th from the front. Total = (position from front) + (position from back) − 1 = 15 + 25 − 1 = 39.",
+     "type": "mcq",
+     "options": [
+      "38",
+      "40",
+      "39",
+      "35"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG169",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Ranking & Order",
+     "difficulty": "Medium",
+     "question": "In a class of 59 students, Pooja's rank from the top is three times her rank from the bottom. What is her rank from the top?",
+     "solution": "Let her rank from the bottom be b. Then 3b + b − 1 = 59, so b = 15 and her rank from the top is 3 × 15 = 45.",
+     "type": "mcq",
+     "options": [
+      "42",
+      "45",
+      "48",
+      "15"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG170",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "Three numbers are in the ratio 3 : 4 : 5 and the sum of their squares is 1250. What is the largest number?",
+     "solution": "Let the numbers be 3k, 4k and 5k. Then 9k² + 16k² + 25k² = 50k² = 1250, so k² = 25 and k = 5. The largest is 5 × 5 = 25.",
+     "type": "mcq",
+     "options": [
+      "15",
+      "20",
+      "25",
+      "30"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG171",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Time & Work",
+     "difficulty": "Medium",
+     "question": "A can finish a job in 20 days. He works alone for 5 days and is then joined by B; together they finish the rest in 9 days. How many days would B alone take for the whole job?",
+     "solution": "In 5 days A does 5/20 = 1/4, leaving 3/4. Together they do (3/4)/9 = 1/12 per day. B's share = 1/12 − 1/20 = 1/30 per day, so B alone takes 30 days.",
+     "type": "mcq",
+     "options": [
+      "36 days",
+      "30 days",
+      "24 days",
+      "45 days"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG172",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Time & Work",
+     "difficulty": "Easy",
+     "question": "5 workers, working 9 hours a day, finish a job in 16 days. How many days will 8 workers take if they work 6 hours a day?",
+     "solution": "Total work = 5 × 9 × 16 = 720 worker-hours. 8 workers at 6 hours a day put in 48 worker-hours a day, so they need 720/48 = 15 days.",
+     "type": "mcq",
+     "options": [
+      "16 days",
+      "12 days",
+      "15 days",
+      "18 days"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG173",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Blood Relations",
+     "difficulty": "Easy",
+     "question": "P is the son of Q. Q is the daughter of R, and S is R's husband. How is P related to S?",
+     "solution": "Q is the daughter of R and S (S is R's husband). P is Q's son, so P is the son of S's daughter: S's grandson.",
+     "type": "mcq",
+     "options": [
+      "Grandson",
+      "Son",
+      "Nephew",
+      "Son-in-law"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG174",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Blood Relations",
+     "difficulty": "Medium",
+     "question": "A and B are a married couple, and B is the mother of D and E. E is married to C, and F is the son of C and E. If A is male, how is A related to F?",
+     "solution": "A is B's husband, so A is the father of D and E. F is E's son, so A is F's grandfather.",
+     "type": "mcq",
+     "options": [
+      "Father-in-law",
+      "Father",
+      "Uncle",
+      "Grandfather"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG175",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "In a certain code, BAD is written as 8 and FED as 120. How is CAGE written in that code?",
+     "solution": "Each word becomes the product of its letters' positions in the alphabet: BAD = 2 × 1 × 4 = 8 and FED = 6 × 5 × 4 = 120. So CAGE = 3 × 1 × 7 × 5 = 105.",
+     "type": "mcq",
+     "options": [
+      "105",
+      "16",
+      "210",
+      "70"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG176",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Coding-Decoding",
+     "difficulty": "Easy",
+     "question": "In a certain code, PENCIL is written as LICNEP. How is ERASER written in that code?",
+     "solution": "The code writes the word backwards: PENCIL → L-I-C-N-E-P. ERASER backwards is R-E-S-A-R-E = RESARE.",
+     "type": "mcq",
+     "options": [
+      "ERESAR",
+      "RESAER",
+      "REASER",
+      "RESARE"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG177",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "In a certain code language, 'tip nok sa' means 'eat fresh fruit', 'nok ri pa' means 'fruit is sweet' and 'sa ri lum' means 'fresh is good'. What is the code for 'sweet'?",
+     "solution": "'fruit' is common to the first two sentences and 'nok' to their codes, so fruit = nok. 'is' is common to the last two (code ri), and 'fresh' to the first and third (code sa). In 'nok ri pa' (fruit is sweet), the remaining code pa must mean 'sweet'.",
+     "type": "mcq",
+     "options": [
+      "ri",
+      "pa",
+      "nok",
+      "lum"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG178",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Coding-Decoding",
+     "difficulty": "Easy",
+     "question": "If A = 1, B = 2, C = 3 and so on up to Z = 26, which word is written as 8-5-1-18-20?",
+     "solution": "8 = H, 5 = E, 1 = A, 18 = R and 20 = T, which spells HEART.",
+     "type": "mcq",
+     "options": [
+      "HEART",
+      "HEARD",
+      "HEATS",
+      "EARTH"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG179",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Direction Sense",
+     "difficulty": "Hard",
+     "question": "In a changed set of directions, south-east is called north and north-east is called west. What is west called?",
+     "solution": "South-east (135°) becomes north (0°), and north-east (45°) becomes west (270°, i.e. −90°): every direction is turned 135° anticlockwise. West (270°) therefore becomes 270° − 135° = 135°, which is south-east.",
+     "type": "mcq",
+     "options": [
+      "North-west",
+      "South-east",
+      "South",
+      "North-east"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG180",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Direction Sense",
+     "difficulty": "Medium",
+     "question": "One evening Raj and Karan stand facing each other. Raj's shadow falls exactly to his right. Which direction is Karan facing?",
+     "solution": "In the evening the sun is in the west, so shadows fall towards the east. Raj's right is east, so Raj faces north. Karan faces Raj, so Karan faces south.",
+     "type": "mcq",
+     "options": [
+      "West",
+      "North",
+      "East",
+      "South"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG181",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Direction Sense",
+     "difficulty": "Easy",
+     "question": "A man walks 3 km north, then 4 km east, and then 3 km north again. How far is he from his starting point?",
+     "solution": "He ends 3 + 3 = 6 km north and 4 km east of the start. Distance = √(6² + 4²) = √52 = 2√13 km (about 7.2 km).",
+     "type": "mcq",
+     "options": [
+      "2√13 km",
+      "10 km",
+      "5 km",
+      "7 km"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG182",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Number & Letter Series",
+     "difficulty": "Easy",
+     "question": "Find the next term: 2, 5, 10, 17, 26, ?",
+     "solution": "Each term is one more than a perfect square: 1² + 1, 2² + 1, 3² + 1, 4² + 1, 5² + 1. The next is 6² + 1 = 37.",
+     "type": "mcq",
+     "options": [
+      "37",
+      "35",
+      "36",
+      "39"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG183",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Number & Letter Series",
+     "difficulty": "Medium",
+     "question": "Find the next term: 3, 4, 8, 17, 33, ?",
+     "solution": "The differences are 1, 4, 9, 16, the squares of 1, 2, 3, 4. The next difference is 5² = 25, so the next term is 33 + 25 = 58.",
+     "type": "mcq",
+     "options": [
+      "49",
+      "58",
+      "56",
+      "65"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG184",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Odd One Out",
+     "difficulty": "Easy",
+     "question": "Which is the odd one out? Sitar, Veena, Sarod, Tabla",
+     "solution": "The sitar, veena and sarod are string instruments. The tabla is a percussion (drum) instrument.",
+     "type": "mcq",
+     "options": [
+      "Tabla",
+      "Sitar",
+      "Veena",
+      "Sarod"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG185",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Odd One Out",
+     "difficulty": "Medium",
+     "question": "Which is the odd one out? Kilogram, Metre, Second, Litre",
+     "solution": "The kilogram, metre and second are SI base units (of mass, length and time). The litre is not an SI unit at all; the SI unit of volume is the cubic metre.",
+     "type": "mcq",
+     "options": [
+      "Metre",
+      "Kilogram",
+      "Litre",
+      "Second"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG186",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Puzzles",
+     "difficulty": "Medium",
+     "question": "Six boxes P, Q, R, S, T and U are stacked one above another. R is at the top. Q is immediately above T. There are exactly two boxes between P and U. S is immediately below P. U is not at the bottom. Which box is third from the bottom?",
+     "solution": "R is 6th (top). S is directly below P and Q directly above T, so S–P and T–Q are two blocks of two. U must be three places from P and not at the bottom. Trying P at 2 (S at 1): U at 5, and T–Q fill 3–4. P at 3 or higher leaves no valid place for both T–Q and U. So from the bottom: S, P, T, Q, U, R, and T is third from the bottom.",
+     "type": "mcq",
+     "options": [
+      "U",
+      "Q",
+      "P",
+      "T"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG187",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Seating Arrangement",
+     "difficulty": "Medium",
+     "question": "Six friends A, B, C, D, E and F sit in a row facing north. D is third from the left end. A sits at one of the ends, and exactly one person sits between A and C. B and E sit next to each other, and E is not at an end. F sits somewhere to the right of B. Who sits second from the right end?",
+     "solution": "D is 3rd from the left. If A were at the left end, C would be 3rd, which is D's seat; so A is at the right end (6th) and C is 4th. The free seats are 1, 2 and 5. B and E must be adjacent, so they take 1 and 2; E is not at an end, so E is 2nd and B 1st. F takes the 5th seat, which is to the right of B. From the left: B, E, D, C, F, A, so F is second from the right end.",
+     "type": "mcq",
+     "options": [
+      "B",
+      "C",
+      "E",
+      "F"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG188",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Seating Arrangement",
+     "difficulty": "Hard",
+     "question": "Six friends P, Q, R, S, T and U sit around a circular table, facing the centre. S sits directly opposite P. S sits immediately to the right of Q. T sits next to P. R sits directly opposite T. Who sits immediately to the left of P?",
+     "solution": "Facing the centre, a person's left neighbour is the next seat clockwise. S is opposite P, and Q has S on his right, so Q is the seat after S going clockwise. T is next to P: the seat clockwise of P would make R (opposite T) land on Q's seat, so T is the seat just anticlockwise of P. Then R is opposite T and U takes the last seat. Clockwise from P the order is P, U, R, S, Q, T, so U is immediately to P's left.",
+     "type": "mcq",
+     "options": [
+      "U",
+      "T",
+      "Q",
+      "R"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG189",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Medium",
+     "question": "The simple interest on a sum for 3 years at 6% per annum is ₹1,440. What is the compound interest on the same sum for 2 years at 10% per annum?",
+     "solution": "Sum = 1440 × 100/(3 × 6) = ₹8,000. Compound interest = 8000 × (1.1² − 1) = 8000 × 0.21 = ₹1,680.",
+     "type": "mcq",
+     "options": [
+      "₹1,680",
+      "₹1,600",
+      "₹1,760",
+      "₹1,440"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG190",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "A thief runs away at 8 km/h. A policeman starts chasing him 10 minutes later at 10 km/h. How long after the policeman starts will he catch the thief?",
+     "solution": "In 10 minutes the thief gets 8 × 10/60 = 4/3 km ahead. The policeman closes the gap at 10 − 8 = 2 km/h, so he needs (4/3)/2 = 2/3 hour = 40 minutes.",
+     "type": "mcq",
+     "options": [
+      "1 hour",
+      "50 minutes",
+      "30 minutes",
+      "40 minutes"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG191",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Time, Speed & Distance",
+     "difficulty": "Medium",
+     "question": "A cyclist covers the first half of a journey at 30 km/h and the second half at 45 km/h, taking 5 hours in all. What is the total distance?",
+     "solution": "Let the distance be d. Time = (d/2)/30 + (d/2)/45 = d/60 + d/90 = d/36. So d/36 = 5 and d = 180 km.",
+     "type": "mcq",
+     "options": [
+      "150 km",
+      "180 km",
+      "225 km",
+      "200 km"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG192",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Percentages",
+     "difficulty": "Medium",
+     "question": "A man spends 30% of his salary on rent and 25% of the remaining amount on food. He is then left with ₹15,750. What is his salary?",
+     "solution": "After rent, 70% remains; after food, 75% of that, i.e. 0.7 × 0.75 = 52.5% of the salary, is left. Salary = 15,750/0.525 = ₹30,000.",
+     "type": "mcq",
+     "options": [
+      "₹31,500",
+      "₹35,000",
+      "₹28,000",
+      "₹30,000"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG193",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Percentages",
+     "difficulty": "Easy",
+     "question": "60% of a number is 24 more than 40% of the same number. What is the number?",
+     "solution": "60% − 40% = 20% of the number = 24, so the number is 24 × 5 = 120.",
+     "type": "mcq",
+     "options": [
+      "60",
+      "120",
+      "100",
+      "240"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG194",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Algebra",
+     "difficulty": "Hard",
+     "question": "A two-digit number is equal to 4 times the sum of its digits and also to 3 times the product of its digits. What is the number?",
+     "solution": "Let the number be 10a + b. From 10a + b = 4(a + b), 6a = 3b, so b = 2a. Then 10a + 2a = 3 × a × 2a gives 12a = 6a², so a = 2 and b = 4. The number is 24 (check: 4 × 6 = 24 and 3 × 8 = 24).",
+     "type": "mcq",
+     "options": [
+      "24",
+      "36",
+      "12",
+      "48"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG195",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Algebra",
+     "difficulty": "Medium",
+     "question": "If 2^(x + 1) + 2^x = 96, what is the value of x?",
+     "solution": "2^(x + 1) + 2^x = 2 × 2^x + 2^x = 3 × 2^x = 96, so 2^x = 32 = 2⁵ and x = 5.",
+     "type": "mcq",
+     "options": [
+      "5",
+      "4",
+      "6",
+      "3"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG196",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Algebra",
+     "difficulty": "Easy",
+     "question": "The sum of a number greater than 1 and its reciprocal is 10/3. What is the number?",
+     "solution": "x + 1/x = 10/3 gives 3x² − 10x + 3 = 0, i.e. (3x − 1)(x − 3) = 0, so x = 3 or 1/3. The number greater than 1 is 3.",
+     "type": "mcq",
+     "options": [
+      "9",
+      "3/10",
+      "10/3",
+      "3"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG197",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Clocks & Calendars",
+     "difficulty": "Hard",
+     "question": "Which is the next year after 2026 whose calendar is exactly the same as that of 2026?",
+     "solution": "2026 is an ordinary year. Count odd days year by year from 2026: 2026 (1), 2027 (1), 2028 (2, leap), 2029 (1), 2030 (1), 2031 (1), 2032 (2, leap), 2033 (1), 2034 (1), 2035 (1), 2036 (2, leap). The running total first reaches 7 after 2031, so 2032 starts on the same weekday as 2026, but 2032 is a leap year and its calendar differs from February onwards. The total next reaches a multiple of 7 (14) after 2036, so 1 January 2037 falls on the same weekday as 1 January 2026, and 2037 is an ordinary year. Hence 2037.",
+     "type": "mcq",
+     "options": [
+      "2034",
+      "2032",
+      "2037",
+      "2043"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG198",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Clocks & Calendars",
+     "difficulty": "Easy",
+     "question": "How many days are there from 1 January 2028 to 30 June 2028, both days included?",
+     "solution": "2028 is divisible by 4, so it is a leap year and February has 29 days. January to June: 31 + 29 + 31 + 30 + 31 + 30 = 182 days.",
+     "type": "mcq",
+     "options": [
+      "183",
+      "181",
+      "182",
+      "180"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG199",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Number System",
+     "difficulty": "Easy",
+     "question": "The HCF of two numbers is 12 and their LCM is 360. If one number is 60, what is the other?",
+     "solution": "For two numbers, HCF × LCM = product of the numbers. So the other number = 12 × 360/60 = 72. (Check: HCF(60, 72) = 12 and LCM = 360.)",
+     "type": "mcq",
+     "options": [
+      "72",
+      "84",
+      "48",
+      "96"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG200",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Profit & Loss",
+     "difficulty": "Medium",
+     "question": "A kettle is marked at ₹1,500. The shopkeeper gives two successive discounts of 20% and 10% and still makes a profit of 8%. What is the cost price of the kettle?",
+     "solution": "Selling price = 1500 × 0.8 × 0.9 = ₹1,080. This is 108% of the cost price, so cost price = 1080/1.08 = ₹1,000.",
+     "type": "mcq",
+     "options": [
+      "₹1,050",
+      "₹1,080",
+      "₹1,000",
+      "₹960"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG201",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Profit & Loss",
+     "difficulty": "Easy",
+     "question": "A seller buys pens at 8 for ₹60 and sells them at 5 for ₹45. What is his profit percentage?",
+     "solution": "Cost per pen = 60/8 = ₹7.50. Selling price per pen = 45/5 = ₹9. Profit = 1.50 on 7.50 = 20%.",
+     "type": "mcq",
+     "options": [
+      "15%",
+      "20%",
+      "25%",
+      "12.5%"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG202",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Profit & Loss",
+     "difficulty": "Easy",
+     "question": "If an article is sold at a profit of 12% instead of 7%, the seller gets ₹40 more. What is its cost price?",
+     "solution": "The extra 12% − 7% = 5% of the cost price equals ₹40, so the cost price = 40 × 100/5 = ₹800.",
+     "type": "mcq",
+     "options": [
+      "₹800",
+      "₹400",
+      "₹500",
+      "₹1,000"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG203",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Ranking & Order",
+     "difficulty": "Easy",
+     "question": "In a test, P scored more than Q but less than R. S scored less than Q, and T scored more than R. No two scored the same. Who scored the third-highest marks?",
+     "solution": "Putting the clues together from highest to lowest: T > R > P > Q > S. The third-highest is P.",
+     "type": "mcq",
+     "options": [
+      "P",
+      "R",
+      "Q",
+      "T"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG204",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Time & Work",
+     "difficulty": "Hard",
+     "question": "A does one-third of a job in 5 days and B does two-fifths of it in 10 days. How long will A and B take to do the whole job together?",
+     "solution": "A alone needs 5 × 3 = 15 days; B alone needs 10 × 5/2 = 25 days. Together they do 1/15 + 1/25 = 8/75 of the job per day, so they need 75/8 = 9 3/8 days.",
+     "type": "mcq",
+     "options": [
+      "8 1/3 days",
+      "10 days",
+      "9 3/8 days",
+      "9 days"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG205",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Number & Letter Series",
+     "difficulty": "Medium",
+     "question": "Find the next term: 4, 6, 9, 13.5, 20.25, ?",
+     "solution": "Each term is 1.5 times the previous one: 4 × 1.5 = 6, 6 × 1.5 = 9, and so on. 20.25 × 1.5 = 30.375.",
+     "type": "mcq",
+     "options": [
+      "27",
+      "30.375",
+      "30.25",
+      "31.5"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG206",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Number & Letter Series",
+     "difficulty": "Hard",
+     "question": "Find the next term: AZ, CX, FU, JQ, ?",
+     "solution": "First letters: A, C, F, J move forward by 2, 3, 4, so the next move is 5: J → O. Second letters: Z, X, U, Q move back by 2, 3, 4, so next is back 5: Q → L. The next term is OL.",
+     "type": "mcq",
+     "options": [
+      "PL",
+      "NL",
+      "OK",
+      "OL"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG207",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Odd One Out",
+     "difficulty": "Medium",
+     "question": "Which letter group is the odd one out? BDF, HJL, NPR, TVW",
+     "solution": "In BDF, HJL and NPR each letter is two places after the previous one (B+2 = D, D+2 = F). In TVW, V + 1 = W breaks the pattern (it should be TVX).",
+     "type": "mcq",
+     "options": [
+      "NPR",
+      "BDF",
+      "HJL",
+      "TVW"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG208",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Logical & Analytical Reasoning",
+     "topic": "Puzzles",
+     "difficulty": "Medium",
+     "question": "Five lectures K, L, M, N and O are held on the five days from Monday to Friday, one each day. O is held on the day immediately after K. L is held neither on Monday nor on Friday. N is held on some day after M, and L on some day before M. M is not on Monday, and O is not on Friday. Which lecture is held on Thursday?",
+     "solution": "L is before M and M is before N, so L, M, N occupy three days in that order, and K–O are two consecutive days. L is not on Monday, so L–M–N cannot start the week; hence K and O take Monday and Tuesday and L, M, N take Wednesday, Thursday and Friday. M is on Thursday.",
+     "type": "mcq",
+     "options": [
+      "N",
+      "L",
+      "M",
+      "O"
+     ],
+     "answer": 2
+    },
+    {
+     "id": "UG209",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Medium",
+     "question": "Ravi invests ₹5,000 at 8% per annum and ₹4,000 at 10% per annum, both at simple interest. After how long will his total interest be ₹3,000?",
+     "solution": "Yearly interest = 5000 × 8% + 4000 × 10% = 400 + 400 = ₹800. Time = 3000/800 = 3.75 years = 3 years 9 months.",
+     "type": "mcq",
+     "options": [
+      "3 years 9 months",
+      "3 years 6 months",
+      "4 years",
+      "3 years"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG210",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Simple & Compound Interest",
+     "difficulty": "Medium",
+     "question": "The compound interest (compounded annually) on a sum is ₹1,320 for the second year and ₹1,452 for the third year. What is the rate of interest?",
+     "solution": "Each year's interest is earned on the previous year's amount, so the third-year interest exceeds the second-year interest by the interest on ₹1,320. Rate = (1452 − 1320)/1320 × 100 = 132/1320 × 100 = 10%.",
+     "type": "mcq",
+     "options": [
+      "10%",
+      "12%",
+      "11%",
+      "9%"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG211",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Percentages",
+     "difficulty": "Medium",
+     "question": "A number is first increased by 20% and the result is then decreased by 20%. The final value is 48 less than the original number. What is the original number?",
+     "solution": "The net change is 1.2 × 0.8 = 0.96, a 4% fall. So 4% of the number = 48, and the number = 1,200.",
+     "type": "mcq",
+     "options": [
+      "1,200",
+      "960",
+      "1,000",
+      "2,400"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG212",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Clocks & Calendars",
+     "difficulty": "Medium",
+     "question": "In a month of 31 days, the 5th is a Tuesday. How many Sundays are there in that month?",
+     "solution": "If the 5th is a Tuesday, the 3rd is a Sunday. The Sundays fall on the 3rd, 10th, 17th, 24th and 31st, so there are 5.",
+     "type": "mcq",
+     "options": [
+      "5",
+      "4",
+      "6",
+      "3"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG213",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Ratio & Proportion",
+     "difficulty": "Medium",
+     "question": "If 3A = 4B = 6C, what is A : B : C?",
+     "solution": "Let 3A = 4B = 6C = 12k. Then A = 4k, B = 3k and C = 2k, so A : B : C = 4 : 3 : 2.",
+     "type": "mcq",
+     "options": [
+      "2 : 3 : 4",
+      "3 : 4 : 6",
+      "6 : 4 : 3",
+      "4 : 3 : 2"
+     ],
+     "answer": 3
+    },
+    {
+     "id": "UG214",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "Quantitative Reasoning",
+     "topic": "Time & Work",
+     "difficulty": "Medium",
+     "question": "A can do a job in 6 days and B in 9 days. They do it together and are paid ₹1,800 for the whole job, shared in proportion to the work each does. What is A's share?",
+     "solution": "Working together for the same time, their shares of the work are in the ratio of their daily rates, 1/6 : 1/9 = 3 : 2. A gets 3/5 × 1800 = ₹1,080.",
+     "type": "mcq",
+     "options": [
+      "₹720",
+      "₹1,080",
+      "₹1,200",
+      "₹900"
+     ],
+     "answer": 1
+    },
+    {
+     "id": "UG215",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Ranking & Order",
+     "difficulty": "Medium",
+     "question": "In a row of 40 students facing north, Rohan is 16th from the left end. He moves 5 places to his right. What is his new position from the right end?",
+     "solution": "Facing north, his right is towards the right end. Moving 5 places right makes him 16 + 5 = 21st from the left. From the right he is 40 − 21 + 1 = 20th.",
+     "type": "mcq",
+     "options": [
+      "20th",
+      "19th",
+      "21st",
+      "25th"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG216",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Direction Sense",
+     "difficulty": "Medium",
+     "question": "Town P is 5 km north of town Q. Town R is 10 km east of Q, and town S is 5 km south of R. In which direction is S from P?",
+     "solution": "Take Q at (0, 0). Then P = (0, 5), R = (10, 0) and S = (10, −5). From P to S is 10 km east and 10 km south, an equal amount of each, so S is exactly south-east of P (at a distance of 10√2 km).",
+     "type": "mcq",
+     "options": [
+      "South-east",
+      "South-west",
+      "North-east",
+      "East"
+     ],
+     "answer": 0
+    },
+    {
+     "id": "UG217",
+     "exam": "cuet",
+     "section": "gat",
+     "part": "General Mental Ability",
+     "topic": "Coding-Decoding",
+     "difficulty": "Medium",
+     "question": "In a certain code, every vowel in a word is replaced by the next letter of the alphabet and every consonant by the previous letter. How is SMILE written in that code?",
+     "solution": "S (consonant) → R, M → L, I (vowel) → J, L → K, E (vowel) → F. So SMILE becomes RLJKF.",
+     "type": "mcq",
+     "options": [
+      "TNJMF",
+      "RLJKF",
+      "RLHKD",
+      "RLJKD"
+     ],
+     "answer": 1
+    },
+    {
      "id": "G-Q1",
      "exam": "cuet",
      "topic": "Percentages",
