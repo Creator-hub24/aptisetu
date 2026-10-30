@@ -2,21 +2,21 @@
 -- Applied by tools/deploy_supabase.sh (supabase db push). Every table has Row Level Security on.
 -- Clients use the public anon key; the service-role key is used only inside Edge Functions.
 
--- ---------- profiles: the name shown on the leaderboard ----------
-create table if not exists public.profiles (
+-- ---------- aptisetu_profiles (own name: the shared Supabase project already has an unrelated "profiles" table): the name shown on the leaderboard ----------
+create table if not exists public.aptisetu_profiles (
   user_id      uuid primary key references auth.users (id) on delete cascade,
   display_name text not null default 'Aspirant' check (char_length(display_name) between 2 and 30),
   created_at   timestamptz not null default now()
 );
-alter table public.profiles enable row level security;
-drop policy if exists "read own profile"   on public.profiles;
-drop policy if exists "insert own profile" on public.profiles;
-drop policy if exists "update own profile" on public.profiles;
-create policy "read own profile"   on public.profiles for select to authenticated using ((select auth.uid()) = user_id);
-create policy "insert own profile" on public.profiles for insert to authenticated with check ((select auth.uid()) = user_id);
-create policy "update own profile" on public.profiles for update to authenticated using ((select auth.uid()) = user_id) with check ((select auth.uid()) = user_id);
-grant select, insert, update on public.profiles to authenticated;
-revoke all on public.profiles from anon;
+alter table public.aptisetu_profiles enable row level security;
+drop policy if exists "read own profile"   on public.aptisetu_profiles;
+drop policy if exists "insert own profile" on public.aptisetu_profiles;
+drop policy if exists "update own profile" on public.aptisetu_profiles;
+create policy "read own profile"   on public.aptisetu_profiles for select to authenticated using ((select auth.uid()) = user_id);
+create policy "insert own profile" on public.aptisetu_profiles for insert to authenticated with check ((select auth.uid()) = user_id);
+create policy "update own profile" on public.aptisetu_profiles for update to authenticated using ((select auth.uid()) = user_id) with check ((select auth.uid()) = user_id);
+grant select, insert, update on public.aptisetu_profiles to authenticated;
+revoke all on public.aptisetu_profiles from anon;
 
 -- ---------- test_attempts: saved history of every finished quiz / sectional ----------
 create table if not exists public.test_attempts (
@@ -150,7 +150,7 @@ language sql stable security definer set search_path = public as $$
     select a.user_id, sum(a.score)::int total, count(*)::int sections, max(a.submitted_at) last_at
     from public.open_mock_attempts a where a.mock_id = p_mock group by a.user_id)
   select rank() over (order by t.total desc), coalesce(p.display_name, 'Aspirant'), t.total, t.sections
-  from t left join public.profiles p on p.user_id = t.user_id
+  from t left join public.aptisetu_profiles p on p.user_id = t.user_id
   order by 1, t.last_at limit least(greatest(p_limit, 1), 200)
 $$;
 grant execute on function public.open_mock_leaderboard(text, integer) to anon, authenticated;

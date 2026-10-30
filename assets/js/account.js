@@ -47,14 +47,14 @@
     async displayName() {
       const u = await A.ready; if (!u) return "";
       if (A.mock) return ss.get(MN, "");
-      const { data } = await db().from("profiles").select("display_name").maybeSingle(); return (data && data.display_name) || "";
+      const { data } = await db().from("aptisetu_profiles").select("display_name").maybeSingle(); return (data && data.display_name) || "";
     },
     async setDisplayName(n) {
       n = String(n || "").trim().replace(/\s+/g, " ");
       if (n.length < 2 || n.length > 30) throw new Error("Use 2 to 30 characters.");
       const u = await A.ready; if (!u) throw new Error("Please log in first.");
       if (A.mock) { ss.set(MN, n); return n; }
-      const { error } = await db().from("profiles").upsert({ user_id: u.id, display_name: n }); if (error) throw error; return n;
+      const { error } = await db().from("aptisetu_profiles").upsert({ user_id: u.id, display_name: n }); if (error) throw error; return n;
     },
     async submitOpenMock(mock, section, responses) {
       const u = await A.ready; if (!u) throw new Error("Please log in first.");
