@@ -15,7 +15,7 @@ let fail = 0; const ok = (c, m) => { console.log((c ? 'PASS ' : 'FAIL ') + m); i
     ok(await p.locator('#prof-form .req').count() === 2, name + ': two red asterisks (Name, Email)');
     ok(await p.inputValue('#prof-email') === 'edumaths360@gmail.com' && await p.getAttribute('#prof-email', 'readonly') !== null, name + ': email shown, read-only');
     ok(/rgb\((2[0-9]{2}|1[0-9]{2}), (\d{1,2}|1[0-3]\d), (\d{1,2}|1[0-3]\d)\)/.test(await p.$eval('#prof-form .req', e => getComputedStyle(e).color)), name + ': asterisk is red');
-    ok(/stay private/.test(await p.textContent('#acct-profile')), name + ': says city/state/exam are private');
+    ok(await p.locator('#acct-profile a[href*="privacy"]').count() === 1, name + ': privacy link present');
     await p.fill('#prof-name', ''); await p.click('#prof-form button[type=submit]'); await p.waitForTimeout(200);
     ok(/name/i.test(await p.textContent('#prof-msg')), name + ': empty name is blocked');
     await p.fill('#prof-name', 'Asha K.'); await p.fill('#prof-city', 'Prayagraj'); await p.selectOption('#prof-state', 'Uttar Pradesh'); await p.selectOption('#prof-exam', 'CAT');

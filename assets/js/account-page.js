@@ -12,11 +12,11 @@
     const opt = (list, cur) => `<option value="">Select</option>` + list.map(x => `<option${x === cur ? " selected" : ""}>${esc(x)}</option>`).join("");
     card.hidden = false;
     card.innerHTML = `<h2 style="margin-top:0">Your profile</h2>
-      <p class="muted" style="margin-top:0">A few details so we know who's practising. <span class="req">*</span> = needed. City, state and exam are optional and stay private. <a href="privacy.html#account-data">Privacy</a></p>
+      <p class="muted" style="margin-top:0">Details to track your progress. <a href="privacy.html#account-data">Privacy</a></p>
       <form id="prof-form" class="form" novalidate>
         <label>Name <span class="req" title="Required">*</span><input id="prof-name" type="text" maxlength="30" autocomplete="nickname" required value="${esc(p.display_name && p.display_name !== "Aspirant" ? p.display_name : "")}" placeholder="Shown on the leaderboard"></label>
         <label>Email <span class="req" title="Required">*</span><input id="prof-email" type="email" value="${esc((u && u.email) || "")}" readonly aria-readonly="true"></label>
-        <label>City<input id="prof-city" type="text" maxlength="60" autocomplete="address-level2" value="${esc(p.city || "")}" placeholder="e.g. Prayagraj"></label>
+        <label>City<input id="prof-city" type="text" maxlength="60" autocomplete="address-level2" value="${esc(p.city || "")}"></label>
         <label>State<select id="prof-state">${opt(STATES, p.state)}</select></label>
         <label>Exam<select id="prof-exam">${opt(EXAMS, p.target_exam)}</select></label>
         <div class="cta-row" style="margin-top:12px"><button class="btn" type="submit">Save</button></div>
