@@ -32,6 +32,7 @@ page("account.html", "My account", f"""
 <h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">My account</h1><p class="muted" style="max-width:640px">Your saved test history across devices. Results are saved when you finish a quiz, sectional or mock while logged in.</p></div></div>
 <section style="padding-top:12px"><div class="container" style="max-width:860px">
  <div id="acct-box" class="card"><p class="muted">Loading…</p></div>
+ <div id="acct-profile" class="card" style="margin-top:18px" hidden></div>
  <div id="acct-history" class="card" style="margin-top:18px"></div>
 </div></section>
 """, desc="Your AptiSetu account: saved test history and AptiSetu Pass status.", noindex=True, extra='<script src="assets/js/account-page.js"></script>')

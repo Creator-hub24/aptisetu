@@ -276,7 +276,7 @@ button.mini-opt:disabled{cursor:default}
 .nav-dd-menu a{display:flex;padding:.45em .8em;border-radius:8px}.nav-dd-menu a:hover,.nav-dd-menu a.active{background:#eef2ff;color:var(--ink)}
 @media(min-width:1061px){.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu,.nav-dd.open .nav-dd-menu{display:block}}
 @media(max-width:1060px){.nav-dd-btn{width:100%;justify-content:space-between;padding:.6em 0}.nav-dd.open .nav-dd-menu{display:block;position:static;box-shadow:none;border:0;border-left:3px solid #C9A227;border-radius:0;padding:0 0 0 12px;margin:0 0 .3em}}
-.auth-slot{display:inline-flex;align-items:center;gap:.5em;font-size:.9rem}.auth-slot .who{color:var(--muted);max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.auth-slot{display:inline-flex;align-items:center;gap:.5em;font-size:.9rem}.auth-slot .who{color:var(--muted);display:inline-block;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:46px}@media(max-width:1060px){.auth-slot .who{max-width:min(64vw,280px)}}
 .auth-slot button.link{background:none;border:0;color:var(--brand);font:inherit;font-weight:600;cursor:pointer;min-height:44px;padding:0}
 .set-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
 .set-card{display:flex;flex-direction:column;gap:.3em;padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:inherit;min-height:104px}

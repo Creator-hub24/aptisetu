@@ -56,6 +56,22 @@
       if (A.mock) { ss.set(MN, n); return n; }
       const { error } = await db().from("aptisetu_profiles").upsert({ user_id: u.id, display_name: n }); if (error) throw error; return n;
     },
+    // Optional profile (all fields optional): name, city, state, target exam. Only the signed-in user can read or change their own row.
+    async getProfile() {
+      const u = await A.ready; if (!u) return null;
+      if (A.mock) return ss.get("aptisetu.mock.profile", {});
+      const { data } = await db().from("aptisetu_profiles").select("display_name,city,state,target_exam").maybeSingle(); return data || {};
+    },
+    async saveProfile(f) {
+      const u = await A.ready; if (!u) throw new Error("Please log in first.");
+      const clean = v => { v = String(v || "").trim().replace(/\s+/g, " "); return v || null; };
+      const row = { display_name: clean(f.display_name), city: clean(f.city), state: clean(f.state), target_exam: clean(f.target_exam) };
+      if (row.display_name && (row.display_name.length < 2 || row.display_name.length > 30)) throw new Error("Name: use 2 to 30 characters.");
+      if (row.city && (row.city.length < 2 || row.city.length > 60)) throw new Error("City: use 2 to 60 characters.");
+      if (!row.display_name) delete row.display_name;   // never blank the leaderboard name
+      if (A.mock) { ss.set("aptisetu.mock.profile", { ...ss.get("aptisetu.mock.profile", {}), ...row }); if (row.display_name) ss.set(MN, row.display_name); return row; }
+      const { error } = await db().from("aptisetu_profiles").upsert({ user_id: u.id, ...row, updated_at: new Date().toISOString() }); if (error) throw error; return row;
+    },
     async submitOpenMock(mock, section, responses) {
       const u = await A.ready; if (!u) throw new Error("Please log in first.");
       if (A.mock) { const all = ss.get(MO, {}); const k = `${mock}:${section}`; const first = !all[k]; if (first) { all[k] = { score: responses.__score || 0 }; ss.set(MO, all); } return { score: all[k].score, first_attempt: first }; }
