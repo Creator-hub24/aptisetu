@@ -89,9 +89,7 @@
     if (user) {
       slot.innerHTML = `<a class="who" href="account.html" title="My account: ${esc(user.email || "")}">${esc(user.email || "My account")}</a><button type="button" class="link" id="auth-logout">Logout</button>`;
       document.getElementById("auth-logout").addEventListener("click", async () => { await Auth.logout(); location.reload(); });
-    } else if (!/^login\.html/.test(here)) {
-      slot.innerHTML = `<a href="login.html?next=${encodeURIComponent(here || "index.html")}">Login</a>`;
-    } else slot.innerHTML = "";
+    } else slot.innerHTML = "";   // logged out: the "Login / Sync" chip under the header is the only login entry
   }
   Auth.onChange(paint);
   const go = () => ready.then(paint);

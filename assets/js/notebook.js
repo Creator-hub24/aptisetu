@@ -1,4 +1,4 @@
-// Mistakes notebook, no-repeat pool and the header chips row (Mistakes · streak · Sign in / Sync).
+// Mistakes notebook, no-repeat pool and the header chips row (Mistakes · streak · Login / Sync).
 // Everything lives in this browser's localStorage; counts are real and start at 0. Nothing is sent anywhere.
 (function () {
   const MK = "aptisetu.mistakes.v1", SK = "aptisetu.seen.v1", PK = "aptiprep.progress.v1", MAXM = 300, MAXS = 4000;
@@ -50,7 +50,7 @@
     h.insertAdjacentHTML("beforeend", `<div class="container chips-row" id="chips-row">
       <a class="chip chip-m" data-chip="m" href="mistakes.html"><span aria-hidden="true">📓</span><span>Mistakes <b>0</b></span></a>
       <a class="chip chip-s" data-chip="s" href="practice.html?daily=1"><span aria-hidden="true">🔥</span><span><b>0</b>-day streak</span></a>
-      <a class="chip chip-sync" data-chip="a" href="login.html">Sign in / Sync</a></div>`);
+      <a class="chip chip-sync" data-chip="a" href="login.html">Login / Sync</a></div>`);
     N.paint();
     const A = window.Auth; if (A && A.ready) A.ready.then(u => { if (u) { const a = h.querySelector("[data-chip=a]"); a.textContent = "✓ Synced"; a.href = "account.html"; } }).catch(() => {});
   }

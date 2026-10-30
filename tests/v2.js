@@ -10,7 +10,7 @@ let fails=0,n=0;const ok=(c,m,x)=>{n++;console.log((c?'PASS ':'FAIL ')+m+(c||x==
  ok(await p.isVisible('#chips-row'),'chips row visible');
  ok((await p.textContent('[data-chip=m] b')).trim()==='0','mistakes chip starts at 0');
  ok((await p.textContent('[data-chip=s] b')).trim()==='0','streak chip starts at 0');
- ok(/Sign in/.test(await p.textContent('[data-chip=a]'))&&(await p.getAttribute('[data-chip=a]','href'))==='login.html','sign-in chip links to login');
+ ok(/Login \/ Sync/.test(await p.textContent('[data-chip=a]'))&&(await p.getAttribute('[data-chip=a]','href'))==='login.html','sign-in chip links to login');
  ok(/See the maths/i.test(await p.textContent('.hero-v2 h1')),'v2 hero headline');
  ok((await p.$$('.hero-v2 .goal-chip')).length===4,'four track cards');
  ok(/1\/6 \+ 1\/12 = 1\/4/.test(await p.textContent('#pk-out'))&&/4 h/.test(await p.textContent('#pk-out')),'lab preview default 6 h + 12 h = 4 h');
