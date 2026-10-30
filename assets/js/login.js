@@ -21,7 +21,7 @@
       try {
         const r = await A.login($("#login-email").value, next);
         if (r === "mock") { location.href = next; return; }
-        msg.className = "notice"; msg.innerHTML = "📧 Check your inbox: we've sent you a login link. Open it on this device to finish logging in.";
+        msg.className = "notice"; msg.innerHTML = "📧 Check your inbox: we've sent you a login link. Open it on this device to finish logging in. Can't see it? Check <b>Spam</b> or <b>Promotions</b> and mark it “Not spam”.";
       } catch (err) { msg.className = "notice"; msg.textContent = err.message || "Something went wrong. Please try again."; btn.disabled = false; }
     });
   }
