@@ -14,7 +14,7 @@
     card.innerHTML = `<h2 style="margin-top:0">Your profile</h2>
       <p class="muted" style="margin-top:0">Details to track your progress. <a href="privacy.html#account-data">Privacy</a></p>
       <form id="prof-form" class="form" novalidate>
-        <label>Name <span class="req" title="Required">*</span><input id="prof-name" type="text" maxlength="30" autocomplete="nickname" required value="${esc(p.display_name && p.display_name !== "Aspirant" ? p.display_name : "")}" placeholder="Shown on the leaderboard"></label>
+        <label>Name <span class="req" title="Required">*</span><input id="prof-name" type="text" maxlength="30" autocomplete="nickname" required value="${esc(p.display_name && p.display_name !== "Aspirant" ? p.display_name : "")}" placeholder="e.g. Riya S"></label>
         <label>Email <span class="req" title="Required">*</span><input id="prof-email" type="email" value="${esc((u && u.email) || "")}" readonly aria-readonly="true"></label>
         <label>City<input id="prof-city" type="text" maxlength="60" autocomplete="address-level2" value="${esc(p.city || "")}"></label>
         <label>State<select id="prof-state">${opt(STATES, p.state)}</select></label>

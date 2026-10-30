@@ -169,7 +169,7 @@ def _ld_site():
 # ---------- LANDING ----------
 exec(open("tools/facts.py").read())
 import json as _omj, datetime as _omdt
-_omh=_omj.load(open("data/open-mock.json",encoding="utf8"))["mocks"][0]; _omh_d=_omdt.date.fromisoformat(_omh["date"]); _omh_date=f"Sunday {_omh_d.day} {_omh_d.strftime('%B %Y')}"; _wa=dict(SOCIAL)["WhatsApp Channel"]
+_omh=_omj.load(open("data/open-mock.json",encoding="utf8"))["mocks"][0]; _omh_d=_omdt.date.fromisoformat(_omh["date"]); _omh_date=f"Sunday {_omh_d.day} {_omh_d.strftime('%B %Y')}"; _omh_label=_omh.get("label") or ("Ranked" if _omh.get("ranked") else "Unranked practice"); _wa=dict(SOCIAL)["WhatsApp Channel"]
 page("index.html","", f"""
 <div class="cd-strip" id="cd" role="region" aria-label="CAT 2026 countdown" data-date="2026-11-29">
  <div class="cd-track"><span class="cd-item"><b>CAT 2026 exam</b> - 29 Nov 2026 : <span class="cd-left">counting down</span></span><span class="cd-item" aria-hidden="true"><b>CAT 2026 exam</b> - 29 Nov 2026 : <span class="cd-left">counting down</span></span></div>
@@ -219,7 +219,7 @@ page("index.html","", f"""
 
 <section><div class="container"><div class="om-alert" role="region" aria-labelledby="om-h">
  <div><span class="tc-tag">Open Mock</span><h2 id="om-h">One free CAT-pattern mock, the same day for everyone</h2>
- <p>First Sunday of every month, 10:00 am to 10:00 pm IST. Next: <b>{_omh_date}</b>. Log in on the day to be ranked on the leaderboard.</p></div>
+ <p>First Sunday of every month, 10:00 am to 10:00 pm IST. Next: <b>{_omh_date}</b>. {_omh_label}: no leaderboard. Log in to save your scores.</p></div>
  <div class="om-act"><a class="btn btn-ghost" href="open-mock.html">See the Open Mock</a><a class="goal-link" href="{_wa}" rel="noopener" target="_blank">Get reminders on the WhatsApp channel →</a></div>
 </div></div></section>
 
@@ -640,7 +640,7 @@ page("login.html", "Login", f"""
  <form id="login-form" class="form" novalidate><label>Email<input id="login-email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
  <button id="login-send" class="btn" type="submit" style="margin-top:12px">Email me a login link</button></form>
  <p id="login-msg" class="muted" aria-live="polite" style="margin-top:12px"></p>
- <p class="muted" style="font-size:.85rem">We store your email address and your practice-set results to save your progress. See the <a href="privacy.html">privacy policy</a>.</p>
+ <p class="muted" style="font-size:.85rem">We store your email address, your practice-set results, your saved test history, your Open Mock scores and any optional profile details you add (name, city, state, exam). See the <a href="privacy.html">privacy policy</a>.</p>
 </div></div></section>
 <section style="padding-top:0"><div class="container"><div class="card login-box backup" id="backup">
  <h2 style="font-size:1.2rem;margin-top:0">Move your progress to another device</h2>
@@ -913,12 +913,12 @@ _M,_S,_PR=_pack_cards()
 page("mock-tests.html","Mock Tests","""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Mock Tests</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CAT mock tests</h1><p class="muted">Full CAT-pattern mocks: VARC 24, DILR 22 and QA 22 questions, 40 minutes per section, +3 / −1 for a wrong MCQ and 0 for a wrong TITA. Take the sections in order (VARC, DILR, QA) for the real exam experience.</p></div></div>
 <section style="padding-top:16px"><div class="container">
-<div class="notice" style="margin-bottom:16px">📅 <b>AptiSetu Open Mock</b>: one free mock for everyone on the first Sunday of every month, with a leaderboard. <a href="open-mock.html">Details and next date →</a></div>
+<div class="notice" style="margin-bottom:16px">📅 <b>AptiSetu Open Mock</b>: one free mock for everyone on the first Sunday of every month. Next edition: %OML%, with no leaderboard. <a href="open-mock.html">Details and next date →</a></div>
 <h2>Full mocks</h2><div class="grid g3">%M%</div>
 <h2 style="margin-top:24px">Sectional tests</h2><div class="grid g3">%S%</div>
 <h2 style="margin-top:24px">Practice packs</h2><div class="grid g3">%P%</div>
 <div class="notice" style="margin-top:20px">Random CAT sectionals and topic practice are on the <a href="cat-practice.html">CAT practice page</a>. Bank, SSC and GMAT mocks are coming soon.</div></div></section>
-""".replace("%M%",_M).replace("%S%",_S).replace("%P%",_PR), desc="Free full-length CAT mocks, VARC and DILR sectionals and practice packs, with CAT marking and worked solutions.")
+""".replace("%OML%",_omh_label).replace("%M%",_M).replace("%S%",_S).replace("%P%",_PR), desc="Free full-length CAT mocks, VARC and DILR sectionals and practice packs, with CAT marking and worked solutions.")
 
 page("placements.html","Placement Prep","""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Placement Prep</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Campus placement prep</h1><p class="muted">Aptitude practice for the written round of IT-services and campus hiring tests: Quant, Reasoning and data-interpretation questions with worked solutions.</p></div></div>

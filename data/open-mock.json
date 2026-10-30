@@ -12,7 +12,9 @@
     "dilr": 22,
     "qa": 22
    },
-   "reused_public_mock": true
+   "reused_public_mock": true,
+   "ranked": false,
+   "label": "Unranked practice, Mock 5 questions"
   }
  ]
 }

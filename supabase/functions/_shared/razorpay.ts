@@ -1,5 +1,6 @@
 // Shared helpers for the AptiSetu Pass Edge Functions. Secrets come only from Deno.env (set with `supabase secrets set`);
-// nothing here logs or returns a secret.
+// nothing here logs or returns a secret. Our secret names start with APTISETU_ because the Supabase project is shared
+// with another app (SUPABASE_URL / SUPABASE_ANON_KEY / SUPABASE_SERVICE_ROLE_KEY are Supabase built-ins and keep their names).
 import { createClient, type SupabaseClient } from "npm:@supabase/supabase-js@2.118.0";
 
 const enc = new TextEncoder();
@@ -37,16 +38,16 @@ export function env(name: string, fallback?: string): string {
 
 export function plan() {
   return {
-    id: Deno.env.get("PASS_PLAN_ID") || "pass-cat-2027",
-    amount: parseInt(env("PASS_PRICE_PAISE"), 10),           // e.g. 29900 for Rs 299 (price test: Rs 199-499)
-    days: parseInt(Deno.env.get("PASS_VALID_DAYS") || "365", 10),
+    id: Deno.env.get("APTISETU_PASS_PLAN_ID") || "pass-cat-2027",
+    amount: parseInt(env("APTISETU_PASS_PRICE_PAISE"), 10),           // e.g. 29900 for Rs 299 (price test: Rs 199-499)
+    days: parseInt(Deno.env.get("APTISETU_PASS_VALID_DAYS") || "365", 10),
   };
 }
 
 export function razorpayKeys() {
-  const keyId = env("RAZORPAY_KEY_ID"), keySecret = env("RAZORPAY_KEY_SECRET");
+  const keyId = env("APTISETU_RAZORPAY_KEY_ID"), keySecret = env("APTISETU_RAZORPAY_KEY_SECRET");
   const live = keyId.startsWith("rzp_live_");
-  if (live && Deno.env.get("ALLOW_LIVE_PAYMENTS") !== "true") throw new Error("live Razorpay keys are blocked until ALLOW_LIVE_PAYMENTS=true");
+  if (live && Deno.env.get("APTISETU_ALLOW_LIVE_PAYMENTS") !== "true") throw new Error("live Razorpay keys are blocked until APTISETU_ALLOW_LIVE_PAYMENTS=true");
   return { keyId, keySecret, live };
 }
 
@@ -62,7 +63,7 @@ export async function currentUser(req: Request) {
   return error ? null : data.user;
 }
 
-const ORIGINS = () => (Deno.env.get("SITE_ORIGINS") || "https://aptisetu.com,https://www.aptisetu.com").split(",").map(s => s.trim());
+const ORIGINS = () => (Deno.env.get("APTISETU_SITE_ORIGINS") || "https://aptisetu.com,https://www.aptisetu.com").split(",").map(s => s.trim());
 export function cors(req: Request): Record<string, string> {
   const o = req.headers.get("Origin") || "";
   return {
@@ -75,7 +76,7 @@ export function cors(req: Request): Record<string, string> {
 export function json(req: Request, body: unknown, status = 200) {
   return new Response(JSON.stringify(body), { status, headers: { ...cors(req), "Content-Type": "application/json" } });
 }
-export const paymentsEnabled = () => Deno.env.get("PAYMENTS_ENABLED") === "true";
+export const paymentsEnabled = () => Deno.env.get("APTISETU_PAYMENTS_ENABLED") === "true";
 
 // Mark a pass paid exactly once (used by verify-payment and the webhook; safe to call twice).
 export async function markPaid(db: SupabaseClient, orderId: string, paymentId: string) {

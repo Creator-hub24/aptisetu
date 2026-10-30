@@ -23,11 +23,11 @@ for f in pages:
         if not os.path.exists(u): errors.append(f"{f}: broken link/asset -> {u}")
 for t, fs in titles.items():
     if len(fs) > 1: errors.append(f"duplicate title '{t}': {', '.join(fs)}")
-secret = re.compile(r"service_role|sk_live_|BEGIN (RSA |EC )?PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}")
-for root in (".", "assets/js", "tools"):
+secret = re.compile(r"service_role|sk_live_|BEGIN (RSA |EC )?PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}|sb_secret_[A-Za-z0-9_-]{8,}")
+for root in (".", "assets/js", "tools", "data") + tuple(os.path.join("supabase/functions", d) for d in sorted(os.listdir("supabase/functions"))):
     for f in os.listdir(root):
         p = os.path.join(root, f)
-        if os.path.isfile(p) and p.endswith((".js", ".html", ".py", ".json")) and "vendor" not in p and f != "check_site.py":
+        if os.path.isfile(p) and p.endswith((".js", ".html", ".py", ".json", ".ts", ".sh")) and "vendor" not in p and f != "check_site.py":
             if secret.search(open(p, encoding="utf-8", errors="ignore").read()): errors.append(f"{p}: secret-looking string")
 print(f"{len(pages)} pages checked")
 if errors:

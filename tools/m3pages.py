@@ -6,25 +6,26 @@ _omd = _dt.date.fromisoformat(_om["date"])
 _omsecs = [("varc", "VARC", _om["questions"]["varc"]), ("dilr", "DILR", _om["questions"]["dilr"]), ("qa", "QA", _om["questions"]["qa"])]
 _ombtn = "".join(f'<a class="btn{"" if i == 0 else " btn-ghost"} btn-sm" style="margin:4px 6px 0 0" href="cat-practice.html?mode=sectional&amp;section={s}&amp;pack={_om["pack"]}&amp;open={_om["id"]}">{i+1}. {n} · {q} Qs</a>' for i, (s, n, q) in enumerate(_omsecs))
 _pack_name = _om["pack"].replace("mock-", "CAT Mock ")
+_omlabel = _om.get("label") or f"Unranked practice, {_pack_name} questions"
+_omlabel_short = _omlabel.replace("CAT Mock ", "Mock ")
 page("open-mock.html", "AptiSetu Open Mock", f"""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="mock-tests.html">Mock Tests</a> / Open Mock</div>
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">AptiSetu Open Mock</h1>
-<p class="muted" style="max-width:720px">One free CAT-pattern mock that everyone takes on the same day, with an all-India leaderboard. It runs on the <b>first Sunday of every month, 10:00 am to 10:00 pm IST</b>.</p></div></div>
+<p class="om-label" style="margin:4px 0 8px"><span class="sbadge soon" style="font-size:.9rem">{_esc.escape(_omlabel_short)}</span></p>
+<p class="muted" style="max-width:720px">One free CAT-pattern mock that everyone can take on the same day. It runs on the <b>first Sunday of every month, 10:00 am to 10:00 pm IST</b>. This edition is <b>unranked practice</b>: there is no leaderboard and no rank.</p></div></div>
 <section style="padding-top:16px"><div class="container" style="max-width:860px">
  <div class="card" id="om-card" data-mock="{_om['id']}" data-start="{_om['starts_at']}" data-end="{_om['ends_at']}">
   <h2 style="margin-top:0">{_esc.escape(_om['title'])}</h2>
+  <div class="notice" style="margin:0 0 12px"><b>{_esc.escape(_omlabel_short)}.</b> This edition uses the questions of <b>{_pack_name}</b>, which is already free on the <a href="mock-tests.html">mock tests page</a>, so some people may have seen it. That is why there is <b>no leaderboard and no rank</b> this time. Take it as timed practice under CAT conditions. From the next edition we plan to release a fresh, unpublished mock.</div>
   <p><b>Sunday {_omd.day} {_omd.strftime('%B %Y')}</b> · 10:00 am to 10:00 pm IST · VARC, DILR and QA, 40 minutes each · +3 / −1 for a wrong MCQ, 0 for a wrong TITA.</p>
   <p id="om-status" class="muted" role="status">Checking the time…</p>
   <div id="om-start">{_ombtn}</div>
-  <p class="muted" style="font-size:.88rem;margin-top:12px">Take the sections in order. Only your <b>first attempt of each section</b> during the window counts for rank, and you need to <a href="login.html?next=open-mock.html">log in</a> first. Your answers are scored on our server.</p>
-  <div class="notice" style="margin-top:12px"><b>Honest note:</b> this month's Open Mock uses <b>{_pack_name}</b>, which is already free on the <a href="mock-tests.html">mock tests page</a>, so some people may have seen it. From the next edition we plan to release a fresh, unpublished mock on Open Mock day.</div>
+  <p class="muted" style="font-size:.88rem;margin-top:12px">Take the sections in order. If you <a href="login.html?next=open-mock.html">log in</a>, your <b>first attempt of each section</b> during the window is scored on our server and saved to your account, so you can see it on any device. Without login you still get your score on screen.</p>
  </div>
- <div class="card" style="margin-top:18px"><h2 style="margin-top:0">Leaderboard</h2><div id="om-board" aria-live="polite"><p class="muted">The leaderboard appears here once login is switched on.</p></div>
-  <div id="om-me"></div>
-  <form id="om-name" class="form hidden" style="margin-top:12px"><label>Name on the leaderboard<input id="om-name-in" maxlength="30" minlength="2" autocomplete="nickname" placeholder="e.g. Riya S"></label><button class="btn btn-ghost btn-sm" type="submit" style="margin-top:8px">Save name</button> <span id="om-name-msg" class="muted"></span></form>
-  <p class="muted" style="font-size:.85rem">The leaderboard shows only the name you choose and your total. Emails are never shown.</p></div>
+ <div class="card" style="margin-top:18px"><h2 style="margin-top:0">Your Open Mock scores</h2><div id="om-mine" aria-live="polite"><p class="muted">Log in to see the scores saved to your account.</p></div>
+  <p class="muted" style="font-size:.85rem">Only you can see these. Nothing is shown to other people.</p></div>
 </div></section>
-""", desc="AptiSetu Open Mock: a free CAT-pattern mock on the first Sunday of every month, 10 am to 10 pm IST, with an all-India leaderboard.",
+""", desc=f"AptiSetu Open Mock: a free CAT-pattern mock on the first Sunday of every month, 10 am to 10 pm IST. This edition: {_esc.escape(_omlabel_short)}, no leaderboard and no rank.",
      extra='<script src="assets/js/open-mock.js"></script>')
 
 page("account.html", "My account", f"""
@@ -43,13 +44,12 @@ page("pass.html", "AptiSetu Pass", f"""
 <section style="padding-top:12px"><div class="container" style="max-width:860px">
  <div class="card"><h2 style="margin-top:0">What the Pass adds</h2><ul>
   <li><b>Detailed report</b> after every test: weak topics, time per question and your progress graph.</li>
-  <li><b>Your Open Mock rank</b> and how many people took it.</li>
   <li><b>Saved history</b> across devices on <a href="account.html">My account</a>.</li>
   <li><b>Full-length CAT mocks</b> (all three sections with CAT marking).</li></ul>
   <div id="pass-buy"><div class="notice"><b>Not on sale yet.</b> Everything above is free while we finish testing. We'll announce the price here first.</div></div>
   <p class="muted" style="font-size:.85rem;margin-top:12px">See the <a href="refund.html">refund policy (draft)</a> and <a href="terms.html">terms</a>.</p></div>
 </div></section>
-""", desc="AptiSetu Pass: detailed reports, Open Mock rank, saved history and full CAT mocks. Free practice stays free.", noindex=True, extra='<script src="assets/js/pass-page.js"></script>')
+""", desc="AptiSetu Pass: detailed reports, saved history and full CAT mocks. Free practice stays free.", noindex=True, extra='<script src="assets/js/pass-page.js"></script>')
 
 page("refund.html", "Refund policy (draft)", info_head("Refund policy", "Refund policy (draft)", "Draft: this applies only once AptiSetu Pass goes on sale. Nothing is sold today.")+prose(f"""
 <div class="notice"><b>Draft.</b> AptiSetu Pass is not on sale yet. This policy will be finalised and dated before the first sale.</div>

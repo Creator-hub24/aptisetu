@@ -297,13 +297,13 @@
     const box = document.createElement("div"); box.className = "notice open-mock-result"; box.setAttribute("role", "status");
     $("#c-res-head").appendChild(box);
     const A = window.Auth, ACC = window.Account;
-    if (!ACC || !A || !A.configured) { box.innerHTML = `Open Mock ranks need login, which isn't switched on yet. Your score is shown above and saved in this browser. <a href="open-mock.html">Open Mock page →</a>`; return; }
-    if (!(await A.ready)) { box.innerHTML = `<a href="login.html?next=open-mock.html">Log in</a> before you start to be ranked. This attempt is practice only.`; return; }
+    if (!ACC || !A || !A.configured) { box.innerHTML = `Saving Open Mock scores needs login, which isn't switched on yet. This is unranked practice; your score is shown above and saved in this browser. <a href="open-mock.html">Open Mock page →</a>`; return; }
+    if (!(await A.ready)) { box.innerHTML = `Unranked practice: your score is shown above. <a href="login.html?next=open-mock.html">Log in</a> before you start to save your Open Mock scores to your account.`; return; }
     const responses = {}; qs.forEach((q, i) => { if (answered(i)) responses[q.id] = resp[i]; });
     if (A.mock) responses.__score = localScore;
-    box.textContent = "Submitting to the Open Mock leaderboard…";
-    try { const r = await ACC.submitOpenMock(OPEN, sec, responses); box.innerHTML = r && r.first_attempt ? `✓ Submitted to the Open Mock: ${esc(bank.sections[sec].name)} score ${r.score}. <a href="open-mock.html">See the leaderboard →</a>` : `Only your first attempt of each section counts for rank; this one is practice. <a href="open-mock.html">Leaderboard →</a>`; }
-    catch (e) { box.textContent = `Not submitted: ${e.message}`; }
+    box.textContent = "Saving your Open Mock score…";
+    try { const r = await ACC.submitOpenMock(OPEN, sec, responses); box.innerHTML = !r ? `Not saved. Please try again.` : r.first_attempt ? `✓ Saved to your account: Open Mock ${esc(bank.sections[sec].name)} score ${r.score}. Unranked practice, no leaderboard. <a href="open-mock.html">Your Open Mock scores →</a>` : `Only your first attempt of each section is saved. Your saved ${esc(bank.sections[sec].name)} score is ${r.score}; this attempt was extra practice. <a href="open-mock.html">Your Open Mock scores →</a>`; }
+    catch (e) { box.textContent = `Not saved: ${e.message}`; }
   }
   // ---------- post-test report: weak topics, time per question, progress over attempts ----------
   const HKEY = "aptisetu.history";

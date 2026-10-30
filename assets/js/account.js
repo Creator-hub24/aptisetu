@@ -1,4 +1,4 @@
-// Account features on top of auth.js: saved test history, display name, AptiSetu Pass, Open Mock submit + leaderboard.
+// Account features on top of auth.js: saved test history, display name, AptiSetu Pass, Open Mock submit + your own saved Open Mock scores (unranked: no leaderboard).
 // Everything is a no-op for guests and while Supabase is not configured (the site then keeps using localStorage only).
 // ?mock=1 (test only, see auth.js) keeps the same data in sessionStorage so the flows can be tested without a backend.
 (function () {
@@ -68,7 +68,7 @@
       const row = { display_name: clean(f.display_name), city: clean(f.city), state: clean(f.state), target_exam: clean(f.target_exam) };
       if (row.display_name && (row.display_name.length < 2 || row.display_name.length > 30)) throw new Error("Name: use 2 to 30 characters.");
       if (row.city && (row.city.length < 2 || row.city.length > 60)) throw new Error("City: use 2 to 60 characters.");
-      if (!row.display_name) delete row.display_name;   // never blank the leaderboard name
+      if (!row.display_name) delete row.display_name;   // never blank a saved name
       if (A.mock) { ss.set("aptisetu.mock.profile", { ...ss.get("aptisetu.mock.profile", {}), ...row }); if (row.display_name) ss.set(MN, row.display_name); return row; }
       const { error } = await db().from("aptisetu_profiles").upsert({ user_id: u.id, ...row, updated_at: new Date().toISOString() }); if (error) throw error; return row;
     },
@@ -78,15 +78,11 @@
       const { data, error } = await db().rpc("submit_open_mock", { p_mock: mock, p_section: section, p_responses: responses });
       if (error) throw error; return data && data[0];
     },
-    async leaderboard(mock) {
-      if (A.mock) { const all = ss.get(MO, {}); const t = Object.entries(all).filter(([k]) => k.startsWith(mock + ":")).reduce((a, [, v]) => a + v.score, 0); return Object.keys(all).length ? [{ rank: 1, display_name: ss.get(MN, "") || "Aspirant", total: t, sections: Object.keys(all).length }] : []; }
-      await A.ready; const c = db(); if (!c) return null;
-      const { data, error } = await c.rpc("open_mock_leaderboard", { p_mock: mock, p_limit: 50 }); if (error) throw error; return data || [];
-    },
-    async myRank(mock) {
+    // Your own Open Mock section scores (RLS: each user reads only their own rows). Unranked: there is no leaderboard.
+    async myOpenMock(mock) {
       const u = await A.ready; if (!u) return null;
-      if (A.mock) return { rank: 1, candidates: 1 };
-      const { data, error } = await db().rpc("my_open_mock_rank", { p_mock: mock }); if (error) return null; return data && data[0];
+      if (A.mock) { const all = ss.get(MO, {}); return Object.entries(all).filter(([k]) => k.startsWith(mock + ":")).map(([k, v]) => ({ section: k.split(":")[1], score: v.score })); }
+      const { data, error } = await db().from("open_mock_attempts").select("section,score,correct,wrong,submitted_at").eq("mock_id", mock); if (error) throw error; return data || [];
     },
     // Razorpay checkout. Only runs when PAYMENTS_ENABLED is "on" in config.js.
     async buyPass() {

@@ -7,7 +7,7 @@ Deno.serve(async req => {
   if (req.method !== "POST") return new Response("method not allowed", { status: 405 });
   const raw = await req.text();
   try {
-    if (!(await verifyWebhookSignature(raw, req.headers.get("X-Razorpay-Signature"), env("RAZORPAY_WEBHOOK_SECRET"))))
+    if (!(await verifyWebhookSignature(raw, req.headers.get("X-Razorpay-Signature"), env("APTISETU_RAZORPAY_WEBHOOK_SECRET"))))
       return new Response("bad signature", { status: 401 });
     const ev = JSON.parse(raw), db = admin();
     const pay = ev?.payload?.payment?.entity, ref = ev?.payload?.refund?.entity;
