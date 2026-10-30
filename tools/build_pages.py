@@ -171,6 +171,10 @@ exec(open("tools/facts.py").read())
 import json as _omj, datetime as _omdt
 _omh=_omj.load(open("data/open-mock.json",encoding="utf8"))["mocks"][0]; _omh_d=_omdt.date.fromisoformat(_omh["date"]); _omh_date=f"Sunday {_omh_d.day} {_omh_d.strftime('%B %Y')}"; _wa=dict(SOCIAL)["WhatsApp Channel"]
 page("index.html","", f"""
+<div class="cd-strip" id="cd" role="region" aria-label="CAT 2026 countdown" data-date="2026-11-29">
+ <div class="cd-track"><span class="cd-item"><b>CAT 2026 exam</b> - 29 Nov 2026 : <span class="cd-left">counting down</span></span><span class="cd-item" aria-hidden="true"><b>CAT 2026 exam</b> - 29 Nov 2026 : <span class="cd-left">counting down</span></span></div>
+ <button type="button" class="cd-pause" id="cd-pause" aria-pressed="false">Pause</button>
+</div>
 <section class="hero hero-v2"><div class="container hero-grid">
  <div>
   <span class="pill">Free practice · CAT · CUET · Bank · SSC · Placements</span>
@@ -279,7 +283,7 @@ bs.forEach(function(b){{b.onclick=function(){{var ok=b.dataset.ok==='1';bs.forEa
 fb.innerHTML=(ok?'<b>✅ Correct!</b> ':'<b>❌ Not quite.</b> The answer is B. ')+'Together they finish 1/12 + 1/18 = 5/36 of the job a day, so they need 36/5 = 7.2 days.'+
 '<div class="cta-row" style="margin:.8em 0 0"><a class="btn btn-sm" href="practice.html?quick=10">Try a 10-question quick quiz →</a><button type="button" class="btn btn-ghost btn-sm" id="sample-again">Try again</button></div>';
 fb.classList.remove('hidden');document.getElementById('sample-again').onclick=function(){{bs.forEach(function(x){{x.disabled=false;x.classList.remove('right','wrong')}});fb.classList.add('hidden')}};}}}});}})();</script>
-""", desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and placements: Quant, Reasoning, DILR and VARC timed quizzes with worked solutions and formula sheets.", head_extra=_ld_site(), extra='<script src="assets/js/home-goal.js"></script>\n<script src="assets/js/home-lab.js"></script>')
+""", desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and placements: Quant, Reasoning, DILR and VARC timed quizzes with worked solutions and formula sheets.", head_extra=_ld_site(), extra='<script src="assets/js/home-goal.js"></script>\n<script src="assets/js/home-countdown.js"></script>\n<script src="assets/js/home-lab.js"></script>')
 
 # ---------- SECTION PAGES ----------
 def fs_section(formulas, color, heading="Formula &amp; rules sheet", unit="formulas and rules", prose=False):

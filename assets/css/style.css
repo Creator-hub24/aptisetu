@@ -740,3 +740,11 @@ html[data-theme="dark"] .om-alert a.goal-link{color:#fcd34d}
 .mk-empty[hidden],.mk-tools[hidden]{display:none}
 .fc-all h2.fc-lh{font-size:1.1rem;margin:1em 0 .4em}
 .req{color:var(--bad);font-weight:700}
+/* Home: CAT countdown strip */
+.cd-strip{display:flex;align-items:center;gap:10px;background:#312e81;color:#fff;overflow:hidden;font-size:.92rem;line-height:38px}
+.cd-track{flex:1;min-width:0;display:flex;white-space:nowrap;overflow:hidden}
+.cd-item{flex:0 0 auto;padding:0 40px;animation:cdMove 28s linear infinite}
+.cd-strip.cd-paused .cd-item,.cd-strip:hover .cd-item{animation-play-state:paused}
+.cd-pause{flex:0 0 auto;margin-right:10px;background:transparent;color:inherit;border:1px solid currentColor;border-radius:999px;font:inherit;font-size:.78rem;line-height:1;padding:5px 10px;cursor:pointer}
+@keyframes cdMove{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){.cd-item{animation:none!important}.cd-item[aria-hidden]{display:none}.cd-track{justify-content:center}.cd-pause{display:none}}
