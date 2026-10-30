@@ -739,3 +739,4 @@ html[data-theme="dark"] .om-alert a.goal-link{color:#fcd34d}
 .mk-q{margin:.5em 0;overflow-wrap:anywhere}.mk-act{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-weight:600}
 .mk-empty[hidden],.mk-tools[hidden]{display:none}
 .fc-all h2.fc-lh{font-size:1.1rem;margin:1em 0 .4em}
+.req{color:var(--bad);font-weight:700}

@@ -8,24 +8,28 @@
   async function profileCard(ACC, esc) {
     const card = $("#acct-profile"); if (!card) return;
     let p = {}; try { p = await ACC.getProfile() || {}; } catch (e) {}
-    const opt = (list, cur) => `<option value="">Prefer not to say</option>` + list.map(x => `<option${x === cur ? " selected" : ""}>${esc(x)}</option>`).join("");
+    const u = window.Auth && window.Auth.user && window.Auth.user();
+    const opt = (list, cur) => `<option value="">Select</option>` + list.map(x => `<option${x === cur ? " selected" : ""}>${esc(x)}</option>`).join("");
     card.hidden = false;
-    card.innerHTML = `<h2 style="margin-top:0">Your profile <span class="muted" style="font-size:.85rem;font-weight:400">(optional)</span></h2>
-      <p class="muted" style="margin-top:0">This helps us see which exams and regions students prepare from, so we know what to build next. You can leave any field empty. Your city, state and exam are never shown to other students; the leaderboard shows only your name. <a href="privacy.html#account-data">How we use this</a>.</p>
+    card.innerHTML = `<h2 style="margin-top:0">Your profile</h2>
+      <p class="muted" style="margin-top:0">A few details so we know who's practising. <span class="req">*</span> = needed. City, state and exam are optional and stay private. <a href="privacy.html#account-data">Privacy</a></p>
       <form id="prof-form" class="form" novalidate>
-        <label>Name on the leaderboard<input id="prof-name" type="text" maxlength="30" autocomplete="nickname" value="${esc(p.display_name || "")}" placeholder="e.g. Rahul S."></label>
+        <label>Name <span class="req" title="Required">*</span><input id="prof-name" type="text" maxlength="30" autocomplete="nickname" required value="${esc(p.display_name && p.display_name !== "Aspirant" ? p.display_name : "")}" placeholder="Shown on the leaderboard"></label>
+        <label>Email <span class="req" title="Required">*</span><input id="prof-email" type="email" value="${esc((u && u.email) || "")}" readonly aria-readonly="true"></label>
         <label>City<input id="prof-city" type="text" maxlength="60" autocomplete="address-level2" value="${esc(p.city || "")}" placeholder="e.g. Prayagraj"></label>
         <label>State<select id="prof-state">${opt(STATES, p.state)}</select></label>
-        <label>Exam you are preparing for<select id="prof-exam">${opt(EXAMS, p.target_exam)}</select></label>
-        <div class="cta-row" style="margin-top:12px"><button class="btn" type="submit">Save profile</button></div>
+        <label>Exam<select id="prof-exam">${opt(EXAMS, p.target_exam)}</select></label>
+        <div class="cta-row" style="margin-top:12px"><button class="btn" type="submit">Save</button></div>
         <p id="prof-msg" class="muted" role="status" aria-live="polite" style="margin:8px 0 0"></p>
       </form>`;
     $("#prof-form").addEventListener("submit", async e => {
-      e.preventDefault(); const m = $("#prof-msg"); m.textContent = "Saving…";
+      e.preventDefault(); const m = $("#prof-msg"), n = $("#prof-name").value.trim();
+      if (n.length < 2) { m.textContent = "Please add your name (2 to 30 letters)."; $("#prof-name").focus(); return; }
+      m.textContent = "Saving…";
       try {
-        await ACC.saveProfile({ display_name: $("#prof-name").value, city: $("#prof-city").value, state: $("#prof-state").value, target_exam: $("#prof-exam").value });
-        m.textContent = "Saved. Thank you.";
-      } catch (err) { m.textContent = err.message || "Could not save. Please try again."; }
+        await ACC.saveProfile({ display_name: n, city: $("#prof-city").value, state: $("#prof-state").value, target_exam: $("#prof-exam").value });
+        m.textContent = "Saved ✓";
+      } catch (err) { m.textContent = err.message || "Could not save. Try again."; }
     });
   }
   async function init() {
