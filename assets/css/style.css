@@ -741,7 +741,7 @@ html[data-theme="dark"] .om-alert a.goal-link{color:#fcd34d}
 .fc-all h2.fc-lh{font-size:1.1rem;margin:1em 0 .4em}
 .req{color:var(--bad);font-weight:700}
 /* Home: CAT countdown strip */
-.cd-strip{display:flex;align-items:center;gap:10px;background:#312e81;color:#fff;overflow:hidden;font-size:.92rem;line-height:38px}
+.cd-strip{display:flex;align-items:center;gap:10px;background:#312e81;color:#fff;overflow:hidden;font-size:.85rem;line-height:28px}
 .cd-track{flex:1;min-width:0;display:flex;white-space:nowrap;overflow:hidden}
 .cd-item{flex:0 0 auto;padding:0 40px;animation:cdMove 28s linear infinite}
 .cd-strip.cd-paused .cd-item,.cd-strip:hover .cd-item{animation-play-state:paused}
