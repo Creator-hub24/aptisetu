@@ -11,8 +11,8 @@ window.SITE = {
   GOATCOUNTER: "aptisetu",                                              // GoatCounter site code only (e.g. "aptisetu"); "" = no analytics script                                          // optional feedback form link; "" hides the button
   // Login (Supabase email magic link). Paste your project's values from Supabase > Project Settings > API.
   // While these are placeholders, login shows "Login not configured yet". The anon key is public by design; RLS protects data.
-  SUPABASE_URL: "YOUR_SUPABASE_URL",                            // e.g. https://abcdefgh.supabase.co
-  SUPABASE_ANON_KEY: "YOUR_SUPABASE_ANON_KEY",
+  SUPABASE_URL: "https://vicrsndyxrvbdfuotmqi.supabase.co",                            // e.g. https://abcdefgh.supabase.co
+  SUPABASE_ANON_KEY: "sb_publishable_iGFBgu4rLg1cr80-e9aVGw_ThxWux3Z",
   // Google login button on login.html: "on" only after enabling Google in Supabase > Authentication > Providers.
   GOOGLE_LOGIN: "off",
   // AptiSetu Pass (Razorpay). Keep "off" until the price is confirmed. While off, no payment UI or Razorpay script

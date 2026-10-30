@@ -21,7 +21,7 @@ let fails=0;const ok=(c,m)=>{console.log((c?'PASS ':'FAIL ')+m);if(!c)fails++;};
  await p.click('#rp-form button[type=submit]');ok(/email app/.test(await p.textContent('#rp-msg')),'submit says email app opens');
  await p.screenshot({path:OUT+'/8-contact-report.png',fullPage:false});
  // backup
- await p.goto(B+'login.html');ok(/backup code/.test(await p.textContent('#login-box')),'login notice points to backup');
+ await p.goto(B+'login.html');ok(/backup code/i.test(await p.textContent('body')),'login page points to the backup option');
  await p.evaluate(()=>{localStorage.clear();localStorage.setItem('aptisetu.history','[{"s":5}]');localStorage.setItem('fc:reasoning','["x"]');localStorage.setItem('sb-abc-auth-token','SECRET');localStorage.setItem('aptisetu.mock.user','u');});
  await p.click('#bk-make');const code=await p.inputValue('#bk-code');ok(code.startsWith('APTI1.'),'backup code made');
  const dec=JSON.parse(Buffer.from(code.slice(6),'base64').toString('utf8'));ok(dec.data['aptisetu.history']&&dec.data['fc:reasoning'],'code carries progress keys');ok(!dec.data['sb-abc-auth-token']&&!dec.data['aptisetu.mock.user'],'code excludes login token and test keys');
