@@ -19,6 +19,22 @@ BANK_ONLY = {"Syllogisms","Blood Relations","Coding-Decoding","Direction Sense",
 def exam_tag(topic): return ("Bank-SSC","tag-bank") if topic in BANK_ONLY else ("CAT + Bank-SSC","tag-both")
 NT = len({(k, q["topic"]) for k, s in QB.items() for q in s["questions"]}) + NT_CAT + len({(k, q["part"], q["topic"]) for k, v in UQ.items() for q in v})
 import re as _re, html as _esc, datetime as _dt
+# Public question counts, same rule as tools/qpages.py (which writes data/qindex.json): drop mock/sectional pack
+# questions and CUET questions reused from the Bank/SSC bank. tests/features.js checks the total equals data/qindex.json.
+def _public_counts():
+    import glob as _g
+    out = {}
+    for trk, ddir in (("cat", "data/cat/"), ("cuet", "data/cuet/"), ("bank-ssc", "data/general/")):
+        for f in sorted(_g.glob(ddir + "*.json")):
+            d = json.load(open(f))
+            if "questions" not in d: continue
+            n = sum(1 for q in d["questions"] if not (q.get("pack") and not q["pack"].startswith("practice-")) and q.get("source") != "general")
+            out[(trk, f.rsplit("/", 1)[1][:-5])] = n
+    return out
+PUB = _public_counts(); PUB_TOTAL = sum(PUB.values())
+import glob as _glob
+N_MOCKS = len({f.replace("\\", "/").rsplit("/", 1)[1].split(".")[0] for f in _glob.glob("tools/cat/packs/mock-*.json")})
+def _n(x): return f"{x:,}"
 def _cfg():
     t=open("assets/js/config.js").read()
     return {k:v for k,v in _re.findall(r'^\s*([A-Z_]+):\s*"((?:[^"\\]|\\.)*)"', t, _re.M)}
@@ -177,7 +193,7 @@ page("index.html","", f"""
 </div>
 <section class="hero hero-v2"><div class="container hero-grid">
  <div>
-  <span class="pill">Free practice · CAT · CUET · Bank · SSC · Placements</span>
+  <span class="pill">{_n(PUB_TOTAL)} free questions · CAT · CUET · Bank · SSC · Placements</span>
   <h1>See the maths <span class="hl">before you solve it</span></h1>
   <p class="lead">Timed practice with a worked solution for every question, a visual Quant Lab for concepts, and honest guidance on your options after 12th and graduation.</p>
   <div class="goal" id="goal"><p class="goal-q" id="goal-q"><span class="step-n">Step 1</span> What are you preparing for?</p><div class="goal-chips" role="group" aria-labelledby="goal-q"><button type="button" class="goal-chip" data-goal="cat" aria-pressed="true"><span class="gc-ic" aria-hidden="true">🎯</span><span class="gc-t">CAT &amp; OMETs</span><span class="gc-s">VARC · DILR · QA</span></button><button type="button" class="goal-chip" data-goal="cuet" aria-pressed="false"><span class="gc-ic" aria-hidden="true">🎓</span><span class="gc-t">CUET (UG)</span><span class="gc-s">GAT · English · Maths</span></button><button type="button" class="goal-chip" data-goal="bank" aria-pressed="false"><span class="gc-ic" aria-hidden="true">🏦</span><span class="gc-t">Bank &amp; SSC</span><span class="gc-s">Quant · Reasoning · Hindi</span></button><button type="button" class="goal-chip" data-goal="placements" aria-pressed="false"><span class="gc-ic" aria-hidden="true">💼</span><span class="gc-t">Placements</span><span class="gc-s">Campus aptitude</span></button></div><div class="goal-pane" data-goal-pane="cat"><p class="goal-desc">VARC, DILR and QA sets and 40-minute sectionals with CAT marking (+3 / −1, TITA).</p><div class="cta-row hero-cta"><a href="cat.html" class="btn">Launch CAT track →</a><a href="quant-lab.html" class="btn btn-ghost">Open Quant Lab</a><a href="cat-practice.html?daily=1" class="goal-link">Today's 10 →</a></div></div><div class="goal-pane" data-goal-pane="cuet" hidden><p class="goal-desc">General Aptitude, English and Maths with +5 / −1 marking and 60-minute sectionals.</p><div class="cta-row hero-cta"><a href="cuet.html" class="btn">Launch CUET track →</a><a href="quant-lab.html" class="btn btn-ghost">Open Quant Lab</a><a href="cuet-practice.html?daily=1" class="goal-link">Today's 10 →</a></div></div><div class="goal-pane" data-goal-pane="bank" hidden><p class="goal-desc">Quant, Reasoning and DI for IBPS, SBI and SSC exams, with a Hindi solution for every question.</p><div class="cta-row hero-cta"><a href="bank-ssc.html" class="btn">Launch Bank &amp; SSC track →</a><a href="quant-lab.html" class="btn btn-ghost">Open Quant Lab</a><a href="practice.html?daily=1" class="goal-link">Today's 10 →</a></div></div><div class="goal-pane" data-goal-pane="placements" hidden><p class="goal-desc">Aptitude for campus hiring tests: Quant, Reasoning and data interpretation.</p><div class="cta-row hero-cta"><a href="placements.html" class="btn">Launch placement prep →</a><a href="quant-lab.html" class="btn btn-ghost">Open Quant Lab</a><a href="practice.html?exam=general" class="goal-link">Start a timed quiz →</a></div></div></div>
@@ -275,7 +291,7 @@ page("index.html","", f"""
 </div></section>
 
 <section><div class="container"><div class="cta-band">
- <h2>Start practising in under 10 seconds</h2><p style="opacity:.9">Login only to save progress and unlock levels. Pick a section and beat the clock.</p>
+ <h2>Start practising in under 10 seconds</h2><p style="opacity:.9">No login needed to practise. Log in (optional) to save your scores across devices. Pick a section and beat the clock.</p>
  <div class="cta-row" style="justify-content:center;margin-bottom:0"><a href="practice.html" class="btn">Start a free quiz →</a></div>
 </div></div></section>
 <script>(function(){{var box=document.getElementById('sample'),fb=document.getElementById('sample-fb'),bs=[].slice.call(box.querySelectorAll('.mini-opt'));
@@ -490,7 +506,7 @@ page("cat.html","CAT Track: VARC, DILR & QA",f"""
 <h3 class="cat-sub">VARC</h3><div class="topic-list">{cat_topic_cards('varc')}</div>
 <h3 class="cat-sub">DILR</h3><div class="topic-list">{cat_topic_cards('dilr')}</div>
 <h3 class="cat-sub">QA</h3><div class="topic-list">{cat_topic_cards('qa')}</div>
-<div class="notice" style="margin-top:22px">The question bank is still small. Sectionals pick from the questions above, so you'll see repeats if you take several. Full-length 3-section mocks are not available yet. For more basic practice on Quant and DILR, see the <a href="practice.html?exam=general">Bank / SSC / Placements track</a>.</div>
+<div class="notice" style="margin-top:22px"><b>What's here now:</b> {_n(PUB[("cat","varc")]+PUB[("cat","dilr")]+PUB[("cat","qa")])} original CAT questions with worked solutions ({_n(PUB[("cat","varc")])} VARC, {_n(PUB[("cat","dilr")])} DILR, {_n(PUB[("cat","qa")])} QA) for topic practice and random sectionals, plus {N_MOCKS} free full-length 3-section mocks on the <a href="mock-tests.html">Mock Tests page</a>. Random sectionals draw from the same bank, so after many attempts you may see some questions again. Browse every question in the <a href="q/index.html">question bank</a>. For more basic practice on Quant and DILR, see the <a href="practice.html?exam=general">Bank / SSC / Placements track</a>.</div>
 </div></section>
 """, desc="CAT-style VARC, DILR and QA practice with 40-minute sectionals, TITA questions, CAT marking and worked solutions. Original questions.")
 
@@ -635,7 +651,7 @@ page("set.html", "CAT Practice Set", f"""
 page("login.html", "Login", f"""
 <div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Login</div>
 <h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">Login</h1>
-<p class="muted" style="max-width:640px">Login only to save progress and unlock levels. We email you a one-time login link: no password.</p></div></div>
+<p class="muted" style="max-width:640px">Optional: log in to save your test history, CAT set results and Open Mock scores across devices, and to unlock the next CAT set levels. We email you a one-time login link: no password.</p></div></div>
 <section style="padding-top:12px"><div class="container"><div id="login-box" class="card login-box">
  <form id="login-form" class="form" novalidate><label>Email<input id="login-email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
  <button id="login-send" class="btn" type="submit" style="margin-top:12px">Email me a login link</button></form>
@@ -670,6 +686,19 @@ def cuet_cards(sec):
                       f"<h4>{_hh.escape(tp)} <span class='badge hidden' data-topic-count></span></h4><p>{diffs}" + (" · includes Bank/SSC questions" if sh else "") + "</p><span class='exam-tag tag-cuet'>CUET</span></a>")
         out += f"<h3 class='cat-sub'>{_hh.escape(part)}</h3><div class='topic-list'>{cards}</div>"
     return out
+def cuet_coverage():
+    # Coverage/status table built from data/cuet.json, so it never goes stale. Sectionals use the whole bank of a paper.
+    rows = ""
+    for sec, nm in (("gat", "General Aptitude Test"), ("english", "English"), ("maths", "Mathematics")):
+        qq = UQ[sec]; n = len(qq); sh = sum(1 for q in qq if q.get("source") == "general")
+        parts = list(dict.fromkeys(q["part"] for q in qq)); tops = len({(q["part"], q["topic"]) for q in qq})
+        st = "<span class='status st-live'>Available now</span><br><span class='muted' style='font-size:.85rem'>full 50-question sectional</span>" if n >= 50 else f"<span class='status st-pilot'>Partial</span><br><span class='muted' style='font-size:.85rem'>{n}-question sectional (same 72 s pace)</span>"
+        rows += (f"<tr><td style='text-align:left'><b>{nm}</b><br><span class='muted' style='font-size:.85rem'>{_hh.escape(', '.join(parts))}</span></td>"
+                 f"<td>{_n(n)}<br><span class='muted' style='font-size:.8rem'>{tops} topics" + (f", incl. {sh} shared with Bank/SSC" if sh else "") + f"</span></td><td style='text-align:left'>{st}</td></tr>")
+    rows += ("<tr><td style='text-align:left'><b>Applied Mathematics</b> (Section B2)</td><td>–</td><td style='text-align:left'><span class='status st-soon'>Coming soon</span></td></tr>"
+             "<tr><td style='text-align:left'><b>Other languages, domain subjects, current affairs</b></td><td>–</td><td style='text-align:left'><span class='status st-soon'>Not covered</span></td></tr>")
+    return ("<h2 style='font-size:1.25rem;margin-top:1.8em'>What we cover now</h2><div class='table-wrap'><table class='data'>"
+            "<tr><th style='text-align:left'>Paper</th><th>Questions</th><th style='text-align:left'>Status</th></tr>" + rows + "</table></div>")
 gat_parts = {p: sum(1 for q in UQ["gat"] if q["part"] == p) for p in dict.fromkeys(q["part"] for q in UQ["gat"])}
 csec = ""
 for sec, ic, col, blurb in [
@@ -708,7 +737,7 @@ page("cuet.html", "CUET (UG) Track: General Aptitude Test, English & Maths", f""
 <h2 style="font-size:1.25rem;margin-top:1.2em">General Aptitude Test</h2>{cuet_cards('gat')}
 <h2 style="font-size:1.25rem;margin-top:1.6em">English</h2>{cuet_cards('english')}
 <h2 style="font-size:1.25rem;margin-top:1.6em">Mathematics</h2>{cuet_cards('maths')}
-<div class="notice" style="margin-top:22px">Still to come: Section B2 (Applied Mathematics) questions, other languages and domain subjects, and full-length 50-question English and Maths papers (our bank is smaller than 50 for these, so their sectionals are shorter but keep the real pace of 72 seconds per question).</div>
+{cuet_coverage()}
 </div></section>
 """, desc="CUET (UG) practice: General Aptitude Test, English and Mathematics with CUET marking (+5/−1), timed sectionals and topic practice. Original questions with worked solutions.")
 

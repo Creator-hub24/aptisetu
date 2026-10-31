@@ -7,7 +7,13 @@ const sm=fs.readFileSync('sitemap.xml','utf8');const qfiles=['cat','cuet','bank-
 ok('every q/ page is in sitemap.xml',qfiles.every(f=>sm.includes('https://aptisetu.com/'+f))&&sm.includes('q/index.html'),qfiles.length+' files');
 const mockIds=new Set(['cat/qa','cat/dilr','cat/varc'].flatMap(f=>JSON.parse(fs.readFileSync(`data/${f}.json`)).questions.filter(q=>q.pack&&!q.pack.startsWith('practice-')).map(q=>q.id.toLowerCase())));
 ok('no mock/sectional pack question has a page',!fs.readdirSync('q/cat').some(f=>mockIds.has(f.split('-')[0])));
-ok('no page uses the personal address',!qfiles.some(f=>fs.readFileSync(f,'utf8').includes('vaibhavgupta2424')));
+{const top=fs.readdirSync('.').filter(f=>f.endsWith('.html'));const bad=[...qfiles,...top].filter(f=>(fs.readFileSync(f,'utf8').match(/[a-z0-9._%+-]+@gmail\.com/gi)||[]).some(a=>a.toLowerCase()!=='edumaths360@gmail.com'));
+ ok('only edumaths360@gmail.com appears as a gmail address',bad.length===0,bad.slice(0,3).join(', '));}
+// counts shown on the site come from the data and match data/qindex.json
+{const qi=JSON.parse(fs.readFileSync('data/qindex.json'));const n=qi.length.toLocaleString('en-US');const by=k=>qi.filter(x=>x.k==='cat'&&x.s.startsWith(k)).length.toLocaleString('en-US');
+ ok('home and FAQ show the qindex total',fs.readFileSync('index.html','utf8').includes(n+' free questions')&&fs.readFileSync('faq.html','utf8').includes(n+' original practice questions'),n);
+ const cat=fs.readFileSync('cat.html','utf8');ok('CAT track counts match qindex',cat.includes(by('Verbal')+' VARC')&&cat.includes(by('Data')+' DILR')&&cat.includes(by('Quant')+' QA')&&!cat.includes('still small')&&!cat.includes('not available yet'));
+ const faq=fs.readFileSync('faq.html','utf8');ok('FAQ has no stale local-only / no-account claims',!/only in your own browser|Login only to save/.test(faq)&&faq.includes('Available now')&&faq.includes('Coming soon'));}
 // question page render, answer matches the bank
 {const p=await newP(390);const f=fs.readdirSync('q/cat').find(x=>/^cq1-/.test(x));await p.goto(B+'q/cat/'+f,{waitUntil:'networkidle'});
  const qa=JSON.parse(fs.readFileSync('data/cat/qa.json')).questions.find(q=>q.id==='CQ1');

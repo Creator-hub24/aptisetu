@@ -40,13 +40,13 @@ page("account.html", "My account", f"""
 
 page("pass.html", "AptiSetu Pass", f"""
 <div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / AptiSetu Pass</div>
-<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">AptiSetu Pass</h1><p class="muted" style="max-width:680px">Free practice stays free: every question, solution, quiz, sectional and the Open Mock itself. The Pass adds the extras below.</p></div></div>
+<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">AptiSetu Pass</h1><p class="muted" style="max-width:680px">Free practice stays free: every question, solution, quiz, sectional and the Open Mock itself. When it launches, the Pass will add the extras below.</p></div></div>
 <section style="padding-top:12px"><div class="container" style="max-width:860px">
- <div class="card"><h2 style="margin-top:0">What the Pass adds</h2><ul>
+ <div class="card"><h2 style="margin-top:0"><span class="status st-soon">Coming soon</span> What the Pass is planned to add</h2><ul>
   <li><b>Detailed report</b> after every test: weak topics, time per question and your progress graph.</li>
   <li><b>Saved history</b> across devices on <a href="account.html">My account</a>.</li>
   <li><b>Full-length CAT mocks</b> (all three sections with CAT marking).</li></ul>
-  <div id="pass-buy"><div class="notice"><b>Not on sale yet.</b> Everything above is free while we finish testing. We'll announce the price here first.</div></div>
+  <div id="pass-buy"><div class="notice"><b>Not on sale yet.</b> Everything above is <b>free right now</b>: the report after each test, saved history when you log in, and the full mocks on the <a href="mock-tests.html">Mock Tests page</a>. We'll announce the price here first.</div></div>
   <p class="muted" style="font-size:.85rem;margin-top:12px">See the <a href="refund.html">refund policy (draft)</a> and <a href="terms.html">terms</a>.</p></div>
 </div></section>
 """, desc="AptiSetu Pass: detailed reports, saved history and full CAT mocks. Free practice stays free.", noindex=True, extra='<script src="assets/js/pass-page.js"></script>')

@@ -32,7 +32,7 @@ page("contact.html","Contact",info_head("Contact","Contact us","Questions, feedb
 
 # ---------- ABOUT ----------
 page("about.html","About",info_head("About",f"About {B}","A free practice site for Indian students preparing for aptitude tests.")+prose(f"""
-<p><span data-brand>{B}</span> helps students practise Quantitative Aptitude, Logical Reasoning, DILR and VARC for competitive exams and campus placements. It is free to use. Login only to save progress and unlock levels.</p>
+<p><span data-brand>{B}</span> helps students practise Quantitative Aptitude, Logical Reasoning, DILR and VARC for competitive exams and campus placements. It is free to use, and you can practise without an account. Log in (optional) to save your results across devices.</p>
 <h3>What's on the site</h3><ul>
 <li><b>Bank / SSC / Placements track:</b> <a href="quant.html">Quant</a>, <a href="reasoning.html">Reasoning</a> and <a href="dilr.html">DILR</a> pages with concept notes, formula sheets and <a href="practice.html?exam=general">timed quizzes</a>.</li>
 <li><b>CAT track:</b> <a href="cat.html">VARC, DILR and QA</a> with 40-minute sectionals, MCQ and TITA questions and CAT marking.</li>
@@ -43,21 +43,32 @@ page("about.html","About",info_head("About",f"About {B}","A free practice site f
 """), desc=f"About {BRAND}: a free, independent aptitude practice site with original questions for CAT, CUET (UG), Bank, SSC and placements.")
 
 # ---------- FAQ ----------
+# Feature status: Available now / Pilot / Coming soon. Counts come from the data (same rule as data/qindex.json).
+_L = lambda c, t: f"<span class='status {c}'>{t}</span>"
+STATUS_HTML = ("<ul class='status-list'>"
+ f"<li>{_L('st-live','Available now')} {_n(PUB_TOTAL)} original practice questions, each with a worked solution and its own page in the <a href='q/index.html'>question bank</a>.</li>"
+ f"<li>{_L('st-live','Available now')} CAT practice sets, 40-minute sectionals and {N_MOCKS} free full-length CAT mocks on the <a href='mock-tests.html'>Mock Tests page</a>.</li>"
+ f"<li>{_L('st-live','Available now')} CUET (UG) sectionals and topic practice for the General Aptitude Test, English and Mathematics; Bank / SSC timed quizzes; Daily 10; Quant Lab and Reasoning Lab.</li>"
+ f"<li>{_L('st-live','Available now')} Optional login: saved test history, CAT set results and Open Mock scores across devices, with an optional profile.</li>"
+ f"<li>{_L('st-pilot','Pilot')} <a href='open-mock.html'>Open Mock</a>: one CAT-pattern mock for everyone on the first Sunday of the month. The current edition is unranked practice, with no leaderboard.</li>"
+ f"<li>{_L('st-soon','Coming soon')} <a href='pass.html'>AptiSetu Pass</a> (not on sale), CUET Applied Mathematics (Section B2), and full mocks for Bank, SSC and GMAT.</li>"
+ "</ul>")
 faqs=[("Is it free?","Yes. All notes, formula sheets and practice questions are free."),
-("Do I need to sign up or log in?","Login only to save progress and unlock levels. Notes, quizzes, sectionals and Easy Quant set 1 of the CAT practice sets work without an account. Login uses a one-time link sent to your email; there is no password."),
+("Do I need to sign up or log in?","No. Notes, quizzes, sectionals, the full mocks, the Open Mock and Easy Quant set 1 of the CAT practice sets all work without an account. Log in only if you want your results saved to your account (so you can see them on any device) and to unlock the next levels of the CAT practice sets. Login uses a one-time link sent to your email; there is no password."),
+("What can I use today?", STATUS_HTML),
 ("How do the CAT practice sets work?","Each CAT section has sets of 10 questions in three levels, Easy, then Medium, then Hard (Quant has 18 sets: Easy 1–5, Medium 6–13, Hard 14–18; VARC and DILR have 15), with a 20-minute timer (25 for DILR). A level unlocks when you have finished every ready set in the level before it. Sets we are still writing show <i>Coming soon</i>."),
 ("Which exams does it cover?","Three tracks: CAT (VARC, DILR, QA), CUET (UG) (General Aptitude Test, English, Mathematics), and Bank / SSC / Placements (Quant, Reasoning, DILR)."),
 ("How does timed mode work in the Bank / SSC quizzes?","Choose a section, an optional topic, the number of questions and the time per question (60, 90 or 120 seconds). The total time is shown as a countdown. You can move between questions, mark them for review, and see the score and worked solutions after you submit. CAT-style +3 / −1 marking is optional."),
 ("How do CAT sectionals work?","A CAT sectional is one section with a 40-minute countdown that submits automatically when time runs out. Marking is +3 for a correct answer, −1 for a wrong MCQ, and 0 for a wrong TITA or a blank. RC passages and DILR sets stay together."),
-("How do CUET sectionals work?","Up to 50 questions at the real pace of 72 seconds per question, with +5 for a correct answer and −1 for a wrong one. Where our bank has fewer than 50 questions, the sectional is shorter but keeps the same pace."),
+("How do CUET sectionals work?", ("Each paper (General Aptitude Test, English, Mathematics) gives a full 50-question sectional in 60 minutes" if min(CUETN.values()) >= 50 else "Up to 50 questions at the real pace of 72 seconds per question; where our bank has fewer than 50 questions, the sectional is shorter but keeps the same pace") + ", with +5 for a correct answer and −1 for a wrong one. See <a href=\"cuet.html\">what we cover</a> for each paper."),
 ("What is practice mode?","On the CAT and CUET tracks, practice mode has no countdown. You pick a topic, check each answer and see the full solution straight away."),
 ("Are these real exam questions?","No. All questions were written by our team, in the style of each exam. They are not taken from past papers or any coaching material."),
-("Is my progress saved?","Yes, but only in your own browser. The site remembers an unfinished quiz so you can resume it, your daily practice streak, and your accuracy for each topic. This is stored in your browser's local storage on this device; it is never sent to us, and it won't follow you to another phone or browser. To delete it, use <b>Reset my progress</b> on the <a href=\"practice.html\">Practice page</a>, or clear this site's data in your browser settings."),
+("Is my progress saved?","Yes, in two ways. <b>On this device</b> (always, no login): an unfinished quiz so you can resume it, your daily practice streak and your accuracy for each topic are kept in your browser's local storage. This is not sent to us and won't follow you to another phone or browser; delete it with <b>Reset my progress</b> on the <a href=\"practice.html\">Practice page</a> or by clearing this site's data. <b>In your account</b> (only if you log in): the score of each finished test, your CAT practice-set results and your Open Mock scores are saved so you can see them on <a href=\"account.html\">My account</a> from any device. The <a href=\"privacy.html\">privacy policy</a> lists exactly what is stored."),
 ("What is Quick start?","On the <a href=\"practice.html\">Practice page</a>, Quick start gives you 10 mixed Quant, Reasoning and DILR questions with 60 seconds each, in one tap."),
 ("Are you linked to NTA or the IIMs?","No. This is an independent site, not affiliated with NTA, the IIMs or any exam body. Always check official exam websites for dates and rules."),
 ("I found a mistake. What should I do?","Use the <b>⚑ Report an error</b> link under any question, or <a href=\"contact.html\">contact us</a> with the page and the question text. Fixes are listed on our <a href=\"corrections.html\">corrections page</a>.")]
 page("faq.html","FAQ",info_head("FAQ","Frequently asked questions","Quick answers about how the site works.")+prose("".join(f"<h3>{q}</h3><p>{a}</p>" for q,a in faqs)),
- desc=f"FAQ: how {BRAND} works. Free; login only to save progress and unlock levels. CAT, CUET (UG) and Bank / SSC tracks, timed sectionals, marking and practice mode.")
+ desc=f"FAQ: how {BRAND} works. Free, no login needed; optional login saves your results across devices. CAT, CUET (UG) and Bank / SSC tracks, timed sectionals, marking and practice mode.")
 
 # ---------- CORRECTIONS & EDITORIAL POLICY ----------
 page("corrections.html","Corrections & Editorial Policy",info_head("Corrections","Corrections &amp; editorial policy","How our questions are made, how to report a mistake, and a public record of what we fixed.")+prose(f"""
@@ -113,7 +124,7 @@ page("terms.html","Terms & Disclaimer",info_head("Terms","Terms of use &amp; dis
 <h3>No guarantee of results</h3><p>Practising here does not guarantee any score, rank, admission or job. The difficulty and format of our questions may differ from the real exams.</p>
 <h3>Accuracy</h3><p>We check answers carefully, including automatic checks when the site is built, but mistakes can still happen. The material is provided "as is". Exam patterns, syllabi and marking schemes change, so always confirm details on the official exam website.</p>
 <h3>Not affiliated</h3><p><span data-brand>{B}</span> is independent. It is not affiliated with, endorsed by or connected to the National Testing Agency (NTA), the IIMs, IBPS, SBI, SSC, or any other exam body, university or company. All exam and company names belong to their owners and are used only to describe what the practice is for.</p>
-<h3>AptiSetu Pass (draft: not on sale yet)</h3><p>When AptiSetu Pass goes on sale, it will be a one-time payment for the period shown at checkout, for one person's use. It adds a detailed report, saved history and full-length mocks; free practice stays free. Payments are processed by Razorpay. Refunds follow our <a href="refund.html">refund policy (draft)</a>. Accounts that share or resell access may be closed.</p>
+<h3>AptiSetu Pass (draft: not on sale yet)</h3><p>When AptiSetu Pass goes on sale, it will be a one-time payment for the period shown at checkout, for one person's use. What it includes will be listed on the <a href="pass.html">Pass page</a> before the first sale; free practice stays free. Today the detailed report, saved history and full-length mocks are all free. Payments are processed by Razorpay. Refunds follow our <a href="refund.html">refund policy (draft)</a>. Accounts that share or resell access may be closed.</p>
 <h3>Open Mock</h3><p>The Open Mock is currently <b>unranked practice</b>: there is no leaderboard and no rank. If you are logged in, only your first attempt of each section during the Open Mock window is saved to your account. We may remove results that break these terms.</p>
 <h3>External links</h3><p>Some pages link to official websites. We aren't responsible for their content.</p>
 <h3>Changes</h3><p>We may update the site and these terms at any time. Questions? <a href="contact.html">Contact us</a>.</p>
