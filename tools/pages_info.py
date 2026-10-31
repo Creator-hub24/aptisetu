@@ -157,7 +157,7 @@ def paths_page(fn, title, crumb, h1, lead, chip_label, chips, search_hint, revie
 paths_page("after12.html", "After 12: Courses &amp; Careers", "After 12", "After 12: every path in one table",
  'Pick your Class 12 stream, narrow by field, and compare who can apply, how long each path takes, how you get in and where it leads. Already in college? See <a href="after-graduation.html">After Graduation</a>.',
  "Your Class 12 stream", [("ALL","All streams"),("M","Science (PCM)"),("B","Science (PCB)"),("C","Commerce"),("A","Arts")],
- "Try NEET, CLAT, pilot, design", "30 October 2026, checked daily at 11 am IST",
+ "Try NEET, CLAT, pilot, design", "31 October 2026, checked daily at 11 am IST",
  "UPSC and state civil services start after graduation, so choose any degree you can do well in and begin preparing early.",
  "Every path after Class 12 in one table: engineering, medical, commerce, law, arts, design, defence and more. Filter by your stream and compare entry exams and careers.",
  "after12-data.js")
