@@ -801,3 +801,4 @@ html[data-theme="dark"] .om-strip a.goal-link{color:#fcd34d}
 .htrk-cuet{--tc:#c2410c}.htrk-bank{--tc:#0e7490}.htrk-plc{--tc:#047857}
 html[data-theme="dark"] .htrk-cat{--tc:var(--quant)}html[data-theme="dark"] .htrk-cuet{--tc:var(--cuet)}html[data-theme="dark"] .htrk-bank{--tc:var(--reason)}html[data-theme="dark"] .htrk-plc{--tc:var(--varc)}
 .om-live .om-badge,html[data-theme="dark"] .om-live .om-badge{background:#15803d;color:#fff}
+@media (max-width:720px){.hero-v3 .lab-peek{display:none}}
