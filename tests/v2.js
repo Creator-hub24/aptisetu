@@ -77,6 +77,6 @@ let fails=0,n=0;const ok=(c,m,x)=>{n++;console.log((c?'PASS ':'FAIL ')+m+(c||x==
  // no fabricated claims anywhere we ship
  for(const u of ['index.html','about.html','tracks.html','open-mock.html','q/index.html','careers.html','mistakes.html']){const t=await (await p.request.get(B+u)).text();
   ok(!/1,428|840\+|support@aptisetu\.com|99\.8|Branch Patch|STAGING/i.test(t),u+': no fabricated counts, claims or staging text');}
- await p.goto(B+'about.html');ok(/Vaibhav Gupta/.test(await p.textContent('main'))&&/Career Launcher/.test(await p.textContent('main'))&&/edumaths360@gmail\.com/.test(await p.textContent('main')),'about names the real maker and email');
+ await p.goto(B+'about.html');ok(/Vaibhav Gupta/.test(await p.textContent('main'))&&/six years/.test(await p.textContent('main'))&&!/Career Launcher/i.test(await p.content())&&/edumaths360@gmail\.com/.test(await p.textContent('main')),'about names the real maker and email');
  ok(!errs.length,'no page errors',errs.join('|'));
  await br.close();console.log(`${fails} failed of ${n}`);process.exit(fails?1:0);})();
