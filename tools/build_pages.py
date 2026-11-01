@@ -185,18 +185,20 @@ def _ld_site():
 # ---------- LANDING ----------
 exec(open("tools/facts.py").read())
 import json as _omj, datetime as _omdt
-_omh=_omj.load(open("data/open-mock.json",encoding="utf8"))["mocks"][0]; _omh_d=_omdt.date.fromisoformat(_omh["date"]); _omh_date=f"Sunday {_omh_d.day} {_omh_d.strftime('%B %Y')}"; _omh_label=_omh.get("label") or ("Ranked" if _omh.get("ranked") else "Unranked practice"); _wa=dict(SOCIAL)["WhatsApp Channel"]
+_oml=sorted(_omj.load(open("data/open-mock.json",encoding="utf8"))["mocks"],key=lambda m:m["starts_at"]); _omnow=_omdt.datetime.now(_omdt.timezone.utc); _omh=next((m for m in _oml if _omdt.datetime.fromisoformat(m["ends_at"])>_omnow),_oml[-1]); _omh_q=sum(_omh["questions"].values()); _omh_d=_omdt.date.fromisoformat(_omh["date"]); _omh_date=f"Sunday {_omh_d.day} {_omh_d.strftime('%B %Y')}"; _omh_label=_omh.get("label") or ("Ranked" if _omh.get("ranked") else "Unranked practice"); _wa=dict(SOCIAL)["WhatsApp Channel"]
+_cat_n=PUB[("cat","varc")]+PUB[("cat","dilr")]+PUB[("cat","qa")]; _bank_n=PUB[("bank-ssc","quant")]+PUB[("bank-ssc","reasoning")]+PUB[("bank-ssc","dilr")]
 page("index.html","", f"""
 <div class="cd-strip" id="cd" role="region" aria-label="CAT 2026 countdown" data-date="2026-11-29">
  <div class="cd-track"><span class="cd-item"><b>CAT 2026 exam</b> - 29 Nov 2026 : <span class="cd-left">counting down</span></span><span class="cd-item" aria-hidden="true"><b>CAT 2026 exam</b> - 29 Nov 2026 : <span class="cd-left">counting down</span></span></div>
  <button type="button" class="cd-pause" id="cd-pause" aria-pressed="false">Pause</button>
 </div>
-<section class="hero hero-v2"><div class="container hero-grid">
+<section class="hero hero-v2 hero-v3"><div class="container hero-grid">
  <div>
   <span class="pill">{_n(PUB_TOTAL)} free questions · CAT · CUET · Bank · SSC · Placements</span>
-  <h1>See the maths <span class="hl">before you solve it</span></h1>
-  <p class="lead">Timed practice with a worked solution for every question, a visual Quant Lab for concepts, and honest guidance on your options after 12th and graduation.</p>
-  <div class="goal" id="goal"><p class="goal-q" id="goal-q"><span class="step-n">Step 1</span> What are you preparing for?</p><div class="goal-chips" role="group" aria-labelledby="goal-q"><button type="button" class="goal-chip" data-goal="cat" aria-pressed="true"><span class="gc-ic" aria-hidden="true">🎯</span><span class="gc-t">CAT &amp; OMETs</span><span class="gc-s">VARC · DILR · QA</span></button><button type="button" class="goal-chip" data-goal="cuet" aria-pressed="false"><span class="gc-ic" aria-hidden="true">🎓</span><span class="gc-t">CUET (UG)</span><span class="gc-s">GAT · English · Maths</span></button><button type="button" class="goal-chip" data-goal="bank" aria-pressed="false"><span class="gc-ic" aria-hidden="true">🏦</span><span class="gc-t">Bank &amp; SSC</span><span class="gc-s">Quant · Reasoning · Hindi</span></button><button type="button" class="goal-chip" data-goal="placements" aria-pressed="false"><span class="gc-ic" aria-hidden="true">💼</span><span class="gc-t">Placements</span><span class="gc-s">Campus aptitude</span></button></div><div class="goal-pane" data-goal-pane="cat"><p class="goal-desc">VARC, DILR and QA sets and 40-minute sectionals with CAT marking (+3 / −1, TITA).</p><div class="cta-row hero-cta"><a href="cat.html" class="btn">Launch CAT track →</a><a href="quant-lab.html" class="btn btn-ghost">Open Quant Lab</a><a href="cat-practice.html?daily=1" class="goal-link">Today's 10 →</a></div></div><div class="goal-pane" data-goal-pane="cuet" hidden><p class="goal-desc">General Aptitude, English and Maths with +5 / −1 marking and 60-minute sectionals.</p><div class="cta-row hero-cta"><a href="cuet.html" class="btn">Launch CUET track →</a><a href="quant-lab.html" class="btn btn-ghost">Open Quant Lab</a><a href="cuet-practice.html?daily=1" class="goal-link">Today's 10 →</a></div></div><div class="goal-pane" data-goal-pane="bank" hidden><p class="goal-desc">Quant, Reasoning and DI for IBPS, SBI and SSC exams, with a Hindi solution for every question.</p><div class="cta-row hero-cta"><a href="bank-ssc.html" class="btn">Launch Bank &amp; SSC track →</a><a href="quant-lab.html" class="btn btn-ghost">Open Quant Lab</a><a href="practice.html?daily=1" class="goal-link">Today's 10 →</a></div></div><div class="goal-pane" data-goal-pane="placements" hidden><p class="goal-desc">Aptitude for campus hiring tests: Quant, Reasoning and data interpretation.</p><div class="cta-row hero-cta"><a href="placements.html" class="btn">Launch placement prep →</a><a href="quant-lab.html" class="btn btn-ghost">Open Quant Lab</a><a href="practice.html?exam=general" class="goal-link">Start a timed quiz →</a></div></div></div>
+  <h1>Free CAT, CUET, Bank &amp; SSC prep: <span class="hl">mocks, sectionals, solutions</span></h1>
+  <p class="lead">Timed practice with real exam marking, a worked solution for every question, and no login needed to start.</p>
+  <div class="cta-row hero-cta"><a href="practice.html" class="btn">Start practising →</a><a href="open-mock.html" class="btn btn-ghost">Take the Open Mock</a></div>
+  <p class="hero-note">Log in (optional) to save your scores across devices.</p>
  </div>
  <div class="hero-card lab-peek" id="lab-peek" role="group" aria-labelledby="peek-h">
   <div class="q-meta"><span class="eyebrow">Quant Lab · live preview</span><span class="q-topic">Pipes &amp; cisterns</span></div>
@@ -207,6 +209,48 @@ page("index.html","", f"""
   <p class="pk-out" id="pk-out" aria-live="polite">Together they fill 1/6 + 1/12 = 1/4 of the tank an hour, so <b>4 h</b>.</p>
   <a class="goal-link" id="pk-link" href="quant-lab-concept-lab.html?s=twA:6,twB:12,twC:0">Open this in Concept Lab →</a>
  </div>
+</div></section>
+</div></section>
+
+<section class="om-sec"><div class="container"><div class="om-strip" id="om-strip" role="region" aria-labelledby="om-h" data-start="{_omh['starts_at']}" data-end="{_omh['ends_at']}">
+ <div class="om-when"><span class="om-badge" id="om-badge" hidden>Live now</span><span class="om-date"><b>{_omh_d.day}</b>{_omh_d.strftime('%b')}</span></div>
+ <div class="om-body"><span class="tc-tag">Open Mock</span><span class="om-unr">{"Ranked" if _omh.get("ranked") else "Unranked practice"}</span>
+  <h2 id="om-h">One free CAT-pattern mock, the same day for everyone</h2>
+  <p id="om-line"><b>{_omh_date}</b>, 10 am–10 pm IST. {_omh_q} questions from free Mock {_omh['pack'].split('-')[-1]} (VARC {_omh['questions']['varc']}, DILR {_omh['questions']['dilr']}, QA {_omh['questions']['qa']}). Log in to save your scores.</p>
+  <p class="om-next" id="om-next">Every first Sunday of the month, 10 am–10 pm IST.</p></div>
+ <div class="om-act"><a class="btn btn-ghost" id="om-cta" href="open-mock.html">See the Open Mock</a><a class="goal-link" href="{_wa}" rel="noopener" target="_blank">Get reminders on the WhatsApp channel →</a></div>
+</div></div></section>
+
+<section id="tracks"><div class="container">
+ <div class="section-head"><span class="eyebrow-gold">Tracks</span><h2>What are you preparing for?</h2><p class="muted">Pick your exam. Every count below is the number of free questions on the site today.</p></div>
+ <div class="grid g4 track-grid">
+  <a class="card htrk htrk-cat" href="cat.html"><span class="htrk-ic" aria-hidden="true">🎯</span><h3>CAT &amp; OMETs</h3>
+   <p class="htrk-n"><b>{_n(_cat_n)}</b> questions</p>
+   <ul class="htrk-sub"><li>VARC <b>{_n(PUB[("cat","varc")])}</b></li><li>DILR <b>{_n(PUB[("cat","dilr")])}</b></li><li>QA <b>{_n(PUB[("cat","qa")])}</b></li><li><b>{N_MOCKS}</b> free full mocks</li></ul>
+   <span class="htrk-go">Open CAT track →</span></a>
+  <a class="card htrk htrk-cuet" href="cuet.html"><span class="htrk-ic" aria-hidden="true">🎓</span><h3>CUET (UG)</h3>
+   <p class="htrk-n">3 papers</p>
+   <ul class="htrk-sub"><li>General Aptitude <b>{_n(CUETN["gat"])}</b></li><li>English <b>{_n(CUETN["english"])}</b></li><li>Maths <b>{_n(CUETN["maths"])}</b></li><li>Applied Maths: coming soon</li></ul>
+   <span class="htrk-go">Open CUET track →</span></a>
+  <a class="card htrk htrk-bank" href="bank-ssc.html"><span class="htrk-ic" aria-hidden="true">🏦</span><h3>Bank &amp; SSC</h3>
+   <p class="htrk-n"><b>{_n(_bank_n)}</b> questions · EN + हिंदी solutions</p>
+   <ul class="htrk-sub"><li>Quant <b>{_n(PUB[("bank-ssc","quant")])}</b></li><li>Reasoning <b>{_n(PUB[("bank-ssc","reasoning")])}</b></li><li>Data interpretation <b>{_n(PUB[("bank-ssc","dilr")])}</b></li><li>IBPS PO · IBPS Clerk · SBI PO · SSC CGL · SSC CHSL</li></ul>
+   <span class="htrk-go">Open Bank &amp; SSC track →</span></a>
+  <a class="card htrk htrk-plc" href="placements.html"><span class="htrk-ic" aria-hidden="true">💼</span><h3>Placements</h3>
+   <p class="htrk-n">Campus aptitude round</p>
+   <ul class="htrk-sub"><li>Numerical ability</li><li>Reasoning</li><li>Data interpretation</li><li>Uses the Bank &amp; SSC question bank</li></ul>
+   <span class="htrk-go">Open placement prep →</span></a>
+ </div>
+ <p class="htrk-foot muted">General Aptitude includes {_n(NQ_CUET_SHARED)} questions shared with the Bank &amp; SSC track. Also free: <a href="quant-lab.html">Quant Lab</a>, <a href="reasoning-lab.html">Reasoning Lab</a>, <a href="formula-sheets.html">formula sheets</a> and the <a href="q/index.html">question bank</a>.</p>
+</div></section>
+
+<section class="alt steps-sec"><div class="container">
+ <div class="section-head"><span class="eyebrow-gold">How it works</span><h2>Three steps, no sign-up needed</h2></div>
+ <ol class="steps3">
+  <li><span class="st-n">1</span><h3>Choose your track</h3><p class="muted">CAT, CUET, Bank &amp; SSC or Placements. Each track shows its exam pattern from the official notice.</p><a href="tracks.html">See all tracks →</a></li>
+  <li><span class="st-n">2</span><h3>Take a mock or a sectional</h3><p class="muted">Timed sectionals and full mocks with real marking, or untimed topic practice and Today&rsquo;s 10.</p><a href="mock-tests.html">CAT mock tests →</a></li>
+  <li><span class="st-n">3</span><h3>Read verified solutions</h3><p class="muted">A worked solution after every question. Answers are checked automatically before anything is published.</p><a href="q/index.html">Browse the question bank →</a></li>
+ </ol>
 </div></section>
 
 <section class="target"><div class="container">
@@ -224,29 +268,6 @@ page("index.html","", f"""
  </div>
 </div></section>
 
-<section class="alt"><div class="container">
- <div class="section-head"><h2>Campus placement practice</h2><p class="muted">Topic practice for the aptitude round of IT-services hiring tests. Test patterns change, so check each company&rsquo;s official hiring page for the current format. AptiSetu is not affiliated with any company.</p></div>
- <div class="grid g2">
-  <div class="card pod pod-a"><span class="tc-tag">TCS NQT-type</span><h3>Numerical ability</h3><p class="muted">Percentages, profit and loss, time and work, speed, ratios and data interpretation.</p><a class="btn btn-ghost" href="practice.html?section=quant">Start a Quant quiz</a></div>
-  <div class="card pod pod-b"><span class="tc-tag">Infosys / Accenture-type</span><h3>Reasoning ability</h3><p class="muted">Series, coding-decoding, blood relations, directions, seating and syllogisms.</p><a class="btn btn-ghost" href="practice.html?section=reasoning">Start a Reasoning quiz</a></div>
- </div>
- <p style="margin-top:12px"><a href="placements.html">All placement prep →</a></p>
-</div></section>
-
-<section><div class="container"><div class="om-alert" role="region" aria-labelledby="om-h">
- <div><span class="tc-tag">Open Mock</span><h2 id="om-h">One free CAT-pattern mock, the same day for everyone</h2>
- <p>First Sunday of every month, 10:00 am to 10:00 pm IST. Next: <b>{_omh_date}</b>. {_omh_label}: no leaderboard. Log in to save your scores.</p></div>
- <div class="om-act"><a class="btn btn-ghost" href="open-mock.html">See the Open Mock</a><a class="goal-link" href="{_wa}" rel="noopener" target="_blank">Get reminders on the WhatsApp channel →</a></div>
-</div></div></section>
-
-<section style="padding-top:8px"><div class="container" style="max-width:720px">
- <div class="hero-card" id="sample" role="group" aria-labelledby="sample-q">
-  <div class="q-meta"><span class="eyebrow">Sample question</span><span class="q-topic">Quant · Time &amp; Work</span></div>
-  <h2 id="sample-q" class="sample-q">A finishes a job in 12 days, B in 18 days. Working together, how many days do they need?</h2>
-  <div class="sample-opts" role="group" aria-label="Answer options"><button type="button" class="mini-opt" data-ok="0">A. 6 days</button><button type="button" class="mini-opt" data-ok="1">B. 7.2 days</button><button type="button" class="mini-opt" data-ok="0">C. 7.5 days</button><button type="button" class="mini-opt" data-ok="0">D. 15 days</button></div>
-  <div id="sample-fb" class="sample-fb hidden" aria-live="polite"></div>
- </div>
-</div></section>
 
 <section id="pillars"><div class="container">
  <div class="section-head"><span class="eyebrow-gold">One platform · three ways to prepare</span><h2>Practise. Understand. Choose well.</h2><svg class="bridge" viewBox="0 0 120 26" aria-hidden="true" focusable="false"><path d="M3 22h114M12 22V9M108 22V9M12 9C45-5 75-5 108 9M36 22v-9M60 22V6M84 22v-9"/></svg><p class="muted">Practice builds speed, concepts build confidence, and the right information helps you choose your path.</p></div>
@@ -275,6 +296,16 @@ page("index.html","", f"""
  </div>
 </div></section>
 
+<section class="trust-sec"><div class="container"><div class="trust">
+ <div class="trust-who"><span class="eyebrow-gold">Who makes it</span><h2>Built by a teacher with 6 years of CAT/CLAT teaching</h2>
+  <p class="muted">Every question and passage is written by our team, not taken from past papers or coaching material. <a href="about.html">About us →</a></p></div>
+ <ul class="trust-pts">
+  <li><b>Free</b><span>Practise without an account. Log in only if you want your scores saved.</span></li>
+  <li><b>Open</b><span>All {_n(PUB_TOTAL)} questions are in the public <a href="q/index.html">question bank</a>, each with its solution.</span></li>
+  <li><b>Verified answers</b><span>Answers are recomputed and puzzles brute-forced at build time. Spotted a mistake? <a href="corrections.html">See how we fix it</a>.</span></li>
+ </ul>
+</div></div></section>
+
 <section id="after12"><div class="container">
  <div class="section-head"><span class="eyebrow-gold">Awareness · After 12th</span><h2>After 12th, your options are wide open</h2><p class="muted">Medical, engineering, law, finance, design, defence, aviation, research, teaching and more. Explore courses, entrance routes and where each path leads, by your 12th stream.</p></div>
  <div class="scope">
@@ -294,12 +325,7 @@ page("index.html","", f"""
  <h2>Start practising in under 10 seconds</h2><p style="opacity:.9">No login needed to practise. Log in (optional) to save your scores across devices. Pick a section and beat the clock.</p>
  <div class="cta-row" style="justify-content:center;margin-bottom:0"><a href="practice.html" class="btn">Start a free quiz →</a></div>
 </div></div></section>
-<script>(function(){{var box=document.getElementById('sample'),fb=document.getElementById('sample-fb'),bs=[].slice.call(box.querySelectorAll('.mini-opt'));
-bs.forEach(function(b){{b.onclick=function(){{var ok=b.dataset.ok==='1';bs.forEach(function(x){{x.disabled=true;if(x.dataset.ok==='1')x.classList.add('right')}});if(!ok)b.classList.add('wrong');
-fb.innerHTML=(ok?'<b>✅ Correct!</b> ':'<b>❌ Not quite.</b> The answer is B. ')+'Together they finish 1/12 + 1/18 = 5/36 of the job a day, so they need 36/5 = 7.2 days.'+
-'<div class="cta-row" style="margin:.8em 0 0"><a class="btn btn-sm" href="practice.html?quick=10">Try a 10-question quick quiz →</a><button type="button" class="btn btn-ghost btn-sm" id="sample-again">Try again</button></div>';
-fb.classList.remove('hidden');document.getElementById('sample-again').onclick=function(){{bs.forEach(function(x){{x.disabled=false;x.classList.remove('right','wrong')}});fb.classList.add('hidden')}};}}}});}})();</script>
-""", desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and placements: Quant, Reasoning, DILR and VARC timed quizzes with worked solutions and formula sheets.", head_extra=_ld_site(), extra='<script src="assets/js/home-goal.js"></script>\n<script src="assets/js/home-countdown.js"></script>\n<script src="assets/js/home-lab.js"></script>')
+""", desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and placements: Quant, Reasoning, DILR and VARC timed quizzes with worked solutions and formula sheets.", head_extra=_ld_site(), extra='<script src="assets/js/home-openmock.js"></script>\n<script src="assets/js/home-countdown.js"></script>\n<script src="assets/js/home-lab.js"></script>')
 
 # ---------- SECTION PAGES ----------
 def fs_section(formulas, color, heading="Formula &amp; rules sheet", unit="formulas and rules", prose=False):

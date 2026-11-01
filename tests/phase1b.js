@@ -7,13 +7,9 @@ let fails=0;const ok=(c,m)=>{console.log((c?'PASS ':'FAIL ')+m);if(!c)fails++;};
  const p=await ctx.newPage();const errs=[];p.on('pageerror',e=>errs.push(e.message));
  // home
  await p.goto(B);const ld=await p.$eval('script[type="application/ld+json"]',s=>JSON.parse(s.textContent));ok(ld['@type']==='WebSite'&&/aptisetu/.test(ld.url),'WebSite JSON-LD valid');
- ok(await p.isVisible('[data-goal-pane="cat"]')&&!(await p.isVisible('[data-goal-pane="bank"]')),'CAT pane shown by default');
- await p.click('[data-goal="bank"]');ok(await p.isVisible('[data-goal-pane="bank"]')&&(await p.getAttribute('[data-goal="bank"]','aria-pressed'))==='true','bank chip shows bank pane');
- ok(await p.$eval('[data-goal-pane="bank"] a.btn',a=>a.getAttribute('href'))==='bank-ssc.html','bank primary link');
- await p.reload();ok(await p.isVisible('[data-goal-pane="bank"]'),'choice remembered');
- await p.screenshot({path:OUT+'/7-home-goal.png'});
+ {const hs=await p.$$eval('#tracks .htrk',as=>as.map(a=>a.getAttribute('href')));ok(hs.join()==='cat.html,cuet.html,bank-ssc.html,placements.html','track cards link to track pages',);for(const h of hs){const r=await p.request.get(B+h);ok(r.ok(),`track link ${h} exists`)}}
+ await p.screenshot({path:OUT+'/7-home-tracks.png'});
  ok(!(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1)),'home no overflow at 390');
- for(const k of ['cat','cuet','placements']){await p.click(`[data-goal="${k}"]`);const hs=await p.$$eval(`[data-goal-pane="${k}"] a`,as=>as.map(a=>a.getAttribute('href')));for(const h of hs){const r=await p.request.get(B+h.split('?')[0]);ok(r.ok(),`${k} link ${h} exists`)}}
  // contact
  await p.goto(B+'contact.html?q=Q23');ok((await p.inputValue('#rp-qid'))==='Q23','question ID prefilled from ?q=');
  await p.click('#rp-form button[type=submit]');ok(/Details/.test(await p.textContent('#rp-msg')),'empty details blocked');

@@ -11,15 +11,18 @@ let fails=0,n=0;const ok=(c,m,x)=>{n++;console.log((c?'PASS ':'FAIL ')+m+(c||x==
  ok((await p.textContent('[data-chip=m] b')).trim()==='0','mistakes chip starts at 0');
  ok((await p.textContent('[data-chip=s] b')).trim()==='0','streak chip starts at 0');
  ok(/Login \/ Sync/.test(await p.textContent('[data-chip=a]'))&&(await p.getAttribute('[data-chip=a]','href'))==='login.html','sign-in chip links to login');
- ok(/See the maths/i.test(await p.textContent('.hero-v2 h1')),'v2 hero headline');
- ok((await p.$$('.hero-v2 .goal-chip')).length===4,'four track cards');
+ ok(/Free CAT, CUET, Bank &? ?(&amp;)?\s*SSC prep/i.test(await p.textContent('.hero-v2 h1')),'v3 hero headline');
+ ok((await p.$$('#tracks .htrk')).length===4,'four track cards');
+ ok((await p.getAttribute('.hero-v2 .hero-cta a.btn:not(.btn-ghost)','href'))==='practice.html'&&(await p.getAttribute('.hero-v2 .hero-cta a.btn-ghost','href'))==='open-mock.html','hero: start practice + Open Mock buttons');
+ {const t=await p.textContent('#om-strip');ok(/Unranked practice/.test(t)&&/10 am–10 pm IST/.test(t)&&!/leaderboard|rank\b|ranks|ranking/i.test(t.replace(/Unranked/g,'')),'Open Mock strip: unranked, hours, no leaderboard wording',t);}
+ {const st=await p.$eval('#om-strip',e=>[Date.parse(e.dataset.start),Date.parse(e.dataset.end)]);const live=Date.now()>=st[0]&&Date.now()<=st[1];ok(live===(await p.isVisible('#om-badge')&&/Live now/.test(await p.textContent('#om-badge'))),'Live now badge matches the schedule');}
  ok(/1\/6 \+ 1\/12 = 1\/4/.test(await p.textContent('#pk-out'))&&/4 h/.test(await p.textContent('#pk-out')),'lab preview default 6 h + 12 h = 4 h');
  await p.$eval('#pk-a',e=>{e.value=10;e.dispatchEvent(new Event('input',{bubbles:true}))});await p.$eval('#pk-b',e=>{e.value=15;e.dispatchEvent(new Event('input',{bubbles:true}))});
  ok(/\b6 h\b/.test(await p.textContent('#pk-out')),'lab preview 10 h + 15 h = 6 h',await p.textContent('#pk-out'));
  ok((await p.getAttribute('#pk-link','href'))==='quant-lab-concept-lab.html?s=twA:10,twB:15,twC:0','lab preview links to Concept Lab with values');
  ok((await p.$$eval('.tcard',a=>a.map(x=>x.getAttribute('href')))).join()==='cat-practice.html?daily=1&part=qa,cat-practice.html?daily=1&part=dilr,cat-practice.html?daily=1&part=varc','target cards link to Daily 10 parts');
- ok((await p.$$('.pod a[href^="practice.html?section="]')).length===2,'placement pods link to real quizzes');
- ok(/whatsapp\.com\/channel/.test(await p.getAttribute('.om-alert a[href*="whatsapp"]','href')),'Open Mock alert uses WhatsApp channel');
+ ok((await p.getAttribute('.htrk-plc','href'))==='placements.html','placements card links to placement prep');
+ ok(/whatsapp\.com\/channel/.test(await p.getAttribute('.om-strip a[href*="whatsapp"]','href')),'Open Mock alert uses WhatsApp channel');
  ok(await p.evaluate(()=>[...document.querySelectorAll('main .btn:not(.btn-ghost)')].filter(b=>{const r=b.getBoundingClientRect();return b.offsetParent&&r.top<innerHeight*1.5}).length)===1,'one primary button in the home hero screen');
  // nav groups
  const nav=await p.evaluate(()=>[...document.querySelectorAll('#site-header nav > ul > li, #site-header .nav > li, #site-header nav li.has-sub, #site-header nav > a')].map(x=>x.textContent.replace(/\s+/g,' ').trim().slice(0,40)));
