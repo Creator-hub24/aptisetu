@@ -22,6 +22,23 @@ let fails=0,n=0;const ok=(c,m,x)=>{n++;console.log((c?'PASS ':'FAIL ')+m+(c||x==
  ok((await p.getAttribute('#pk-link','href'))==='quant-lab-concept-lab.html?s=twA:10,twB:15,twC:0','lab preview links to Concept Lab with values');
  ok((await p.$$eval('.tcard',a=>a.map(x=>x.getAttribute('href')))).join()==='cat-practice.html?daily=1&part=qa,cat-practice.html?daily=1&part=dilr,cat-practice.html?daily=1&part=varc','target cards link to Daily 10 parts');
  ok((await p.getAttribute('.htrk-plc','href'))==='placements.html','placements card links to placement prep');
+ // Labs section: after the tracks, before the 3-step block; 4 cards; counts match what each lab itself reports
+ {const order=await p.evaluate(()=>{const t=document.querySelector('#tracks'),l=document.querySelector('#labs'),s=document.querySelector('.steps-sec');return !!(t&&l&&s)&&!!(t.compareDocumentPosition(l)&Node.DOCUMENT_POSITION_FOLLOWING)&&!!(l.compareDocumentPosition(s)&Node.DOCUMENT_POSITION_FOLLOWING)});ok(order,'labs section sits between tracks and the 3-step block');}
+ {const cards=await p.$$eval('#labs .hlab',as=>as.map(a=>({h:a.getAttribute('href'),n:a.querySelector('.hlab-n b').textContent.trim(),t:a.querySelector('.hlab-n').textContent,go:a.querySelector('.hlab-go').textContent,vis:!!a.querySelector('.hlab-vis svg'),shown:a.getBoundingClientRect().width>0})));
+  ok(cards.map(c=>c.h).join()==='quant-lab.html,quant-lab-concept-lab.html,reasoning-lab.html,reasoning-lab-lab.html','four lab cards link to the lab pages',JSON.stringify(cards.map(c=>c.h)));
+  ok(cards.every(c=>/Open lab →/.test(c.go)&&c.vis&&c.shown),'each lab card has a visual, an Open lab link and is shown at 390');
+  for(const c of cards){const r=await p.request.get(B+c.h);ok(r.ok(),'lab link '+c.h+' exists');}
+  const q=await ctx.newPage();
+  await q.goto(B+'quant-lab.html');await q.waitForFunction(()=>/question types/.test(document.querySelector('#qlStats').textContent));const qs=await q.textContent('#qlStats');
+  ok(qs.includes(cards[0].n+' question types')&&qs.includes((cards[0].t.match(/(\d+) topics/)||[])[1]+' topics'),'Quant Lab card counts match the lab',qs+' vs '+cards[0].t);
+  await q.goto(B+'quant-lab-concept-lab.html');const sims=await q.$$eval('.ql-lab-grid > .card > h2',h=>h.length);ok(String(sims)===cards[1].n,'Concept Lab card count matches its simulations',sims+' vs '+cards[1].n);
+  await q.goto(B+'reasoning-lab.html');await q.waitForFunction(()=>{const a=document.querySelector('#rl-app');return /question types/.test((a.shadowRoot||a).textContent)});
+  const rs=await q.evaluate(()=>{const a=document.querySelector('#rl-app');return (a.shadowRoot||a).textContent.replace(/\s+/g,'')});
+  ok(rs.includes(cards[2].n+'questiontypes')&&rs.includes((cards[2].t.match(/(\d+) topics/)||[])[1]+'topics'),'Reasoning Lab card counts match the lab',cards[2].t);
+  await q.goto(B+'reasoning-lab-lab.html');await q.waitForFunction(()=>{const a=document.querySelector('#rl-app');return /Family tree/.test((a.shadowRoot||a).textContent)});
+  const nb=await q.evaluate(()=>{const a=document.querySelector('#rl-app'),r=a.shadowRoot||a;return [...r.querySelectorAll('button,a,[role=tab]')].filter(b=>/^\W*\s*(Cube|Dice|Family tree|Seating)$/.test(b.textContent.trim())).length});
+  ok(String(nb)===cards[3].n,'Lab sandbox card count matches its builders',nb+' vs '+cards[3].n);await q.close();}
+ ok((await p.getAttribute('.hero-labs','href'))==='#labs','hero links to the Labs section');
  ok(/whatsapp\.com\/channel/.test(await p.getAttribute('.om-strip a[href*="whatsapp"]','href')),'Open Mock alert uses WhatsApp channel');
  ok(await p.evaluate(()=>[...document.querySelectorAll('main .btn:not(.btn-ghost)')].filter(b=>{const r=b.getBoundingClientRect();return b.offsetParent&&r.top<innerHeight*1.5}).length)===1,'one primary button in the home hero screen');
  // nav groups

@@ -802,3 +802,20 @@ html[data-theme="dark"] .om-strip a.goal-link{color:#fcd34d}
 html[data-theme="dark"] .htrk-cat{--tc:var(--quant)}html[data-theme="dark"] .htrk-cuet{--tc:var(--cuet)}html[data-theme="dark"] .htrk-bank{--tc:var(--reason)}html[data-theme="dark"] .htrk-plc{--tc:var(--varc)}
 .om-live .om-badge,html[data-theme="dark"] .om-live .om-badge{background:#15803d;color:#fff}
 @media (max-width:720px){.hero-v3 .lab-peek{display:none}}
+/* home labs */
+.hero-labs{font-weight:700;color:inherit;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.hlab-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.hlab{display:flex;flex-direction:column;gap:12px;color:var(--ink);border-top:4px solid var(--tc);transition:transform .15s,box-shadow .15s;min-width:0}
+.hlab:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(15,23,42,.1)}
+.hlab-q{--tc:#4338ca}.hlab-c{--tc:#b45309}.hlab-r{--tc:#0e7490}.hlab-s{--tc:#047857}
+html[data-theme="dark"] .hlab-q{--tc:#a5b4fc}html[data-theme="dark"] .hlab-c{--tc:#fbbf24}html[data-theme="dark"] .hlab-r{--tc:#67e8f9}html[data-theme="dark"] .hlab-s{--tc:#6ee7b7}
+.hlab-vis{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:14px;background:color-mix(in srgb,var(--tc) 12%,transparent);flex:none}
+.hlab-vis svg{width:44px;height:44px;fill:var(--tc);stroke:var(--tc)}
+.hlab-txt{display:flex;flex-direction:column;flex:1;min-width:0}
+.hlab h3{margin:0 0 .3em;font-size:1.15rem}.hlab h3 small{display:block;font-size:.75rem;font-weight:600;color:var(--muted);margin-top:2px}
+.hlab-d{margin:0 0 .6em;color:var(--muted);font-size:.92rem;flex:1}
+.hlab-n{margin:0 0 .6em;color:var(--muted);font-size:.9rem}.hlab-n b{color:var(--tc);font-size:1.3rem}
+.hlab-go{font-weight:700;color:var(--tc)}
+@media (max-width:980px){.hlab-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.hlab-grid{grid-template-columns:1fr;gap:12px}.hlab{flex-direction:row;align-items:flex-start;padding:14px}.hlab-vis{width:52px;height:52px}.hlab-vis svg{width:36px;height:36px}.hlab-d{font-size:.88rem;margin-bottom:.4em}.hlab-n{margin-bottom:.3em}}
+@media (prefers-reduced-motion:reduce){.hlab{transition:none}.hlab:hover{transform:none}}

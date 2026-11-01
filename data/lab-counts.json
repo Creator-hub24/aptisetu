@@ -1,0 +1,31 @@
+{
+ "quant": {
+  "topics": 23,
+  "sections": 5,
+  "types": 207
+ },
+ "reasoning": {
+  "topics": 15,
+  "types": 135
+ },
+ "concept": {
+  "sims": 6,
+  "names": [
+   "Time, speed and distance: two trains",
+   "Percentages and profit/loss",
+   "Ratio and averages",
+   "Time and work: pipes and cisterns",
+   "Simple vs compound interest",
+   "Functions and modulus transforms"
+  ]
+ },
+ "sandbox": {
+  "builders": 4,
+  "names": [
+   "Cube",
+   "Dice",
+   "Family tree",
+   "Seating"
+  ]
+ }
+}
