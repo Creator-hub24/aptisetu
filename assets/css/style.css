@@ -804,6 +804,7 @@ html[data-theme="dark"] .htrk-cat{--tc:var(--quant)}html[data-theme="dark"] .htr
 @media (max-width:720px){.hero-v3 .lab-peek{display:none}}
 /* home labs */
 .hero-labs{font-weight:700;color:inherit;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+#labs{scroll-margin-top:110px}
 .hlab-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
 .hlab{display:flex;flex-direction:column;gap:12px;color:var(--ink);border-top:4px solid var(--tc);transition:transform .15s,box-shadow .15s;min-width:0}
 .hlab:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(15,23,42,.1)}
