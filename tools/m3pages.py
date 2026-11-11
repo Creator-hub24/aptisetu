@@ -8,15 +8,16 @@ _ombtn = "".join(f'<a class="btn{"" if i == 0 else " btn-ghost"} btn-sm" style="
 _pack_name = _om["pack"].replace("mock-", "CAT Mock ")
 _omlabel = _om.get("label") or f"Unranked practice, {_pack_name} questions"
 _omlabel_short = _omlabel.replace("CAT Mock ", "Mock ")
+_omsp = f" This is an extra <b>{_esc.escape(_om['special'][0].lower() + _om['special'][1:])}</b> on Sunday {_omd.day} {_omd.strftime('%B')}, two weeks before CAT." if _om.get("special") else ""
 page("open-mock.html", "AptiSetu Open Mock", f"""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="mock-tests.html">Mock Tests</a> / Open Mock</div>
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">AptiSetu Open Mock</h1>
 <p class="om-label" style="margin:4px 0 8px"><span class="sbadge soon" style="font-size:.9rem">{_esc.escape(_omlabel_short)}</span></p>
-<p class="muted" style="max-width:720px">One free CAT-pattern mock that everyone can take on the same day. It runs on the <b>first Sunday of every month, 10:00 am to 10:00 pm IST</b>. This edition is <b>unranked practice</b>: there is no leaderboard and no rank.</p></div></div>
+<p class="muted" style="max-width:720px">One free CAT-pattern mock that everyone can take on the same day. It usually runs on the <b>first Sunday of every month, 10:00 am to 10:00 pm IST</b>.{_omsp} This edition is <b>unranked practice</b>: there is no leaderboard and no rank.</p></div></div>
 <section style="padding-top:16px"><div class="container" style="max-width:860px">
  <div class="card" id="om-card" data-mock="{_om['id']}" data-start="{_om['starts_at']}" data-end="{_om['ends_at']}">
   <h2 style="margin-top:0">{_esc.escape(_om['title'])}</h2>
-  <div class="notice" style="margin:0 0 12px"><b>{_esc.escape(_omlabel_short)}.</b> This edition uses the questions of <b>{_pack_name}</b>, which is already free on the <a href="mock-tests.html">mock tests page</a>, so some people may have seen it. That is why there is <b>no leaderboard and no rank</b> this time. Take it as timed practice under CAT conditions. From the next edition we plan to release a fresh, unpublished mock.</div>
+  <div class="notice" style="margin:0 0 12px"><b>{_esc.escape(_omlabel_short)}.</b> This edition uses the questions of <b>{_pack_name}</b>, which is already free on the <a href="mock-tests.html">mock tests page</a>, so some people may have seen it. That is why there is <b>no leaderboard and no rank</b> this time. Take it as timed practice under CAT conditions. A fresh, unpublished mock is planned for a later edition.</div>
   <p><b>Sunday {_omd.day} {_omd.strftime('%B %Y')}</b> · 10:00 am to 10:00 pm IST · VARC, DILR and QA, 40 minutes each · +3 / −1 for a wrong MCQ, 0 for a wrong TITA.</p>
   <p id="om-status" class="muted" role="status">Checking the time…</p>
   <div id="om-start">{_ombtn}</div>
@@ -25,7 +26,7 @@ page("open-mock.html", "AptiSetu Open Mock", f"""
  <div class="card" style="margin-top:18px"><h2 style="margin-top:0">Your Open Mock scores</h2><div id="om-mine" aria-live="polite"><p class="muted">Log in to see the scores saved to your account.</p></div>
   <p class="muted" style="font-size:.85rem">Only you can see these. Nothing is shown to other people.</p></div>
 </div></section>
-""", desc=f"AptiSetu Open Mock: a free CAT-pattern mock on the first Sunday of every month, 10 am to 10 pm IST. This edition: {_esc.escape(_omlabel_short)}, no leaderboard and no rank.",
+""", desc=f"AptiSetu Open Mock: a free CAT-pattern mock, usually on the first Sunday of every month, 10 am to 10 pm IST. This edition: {_esc.escape(_omlabel_short)}, no leaderboard and no rank.",
      extra='<script src="assets/js/open-mock.js"></script>')
 
 page("account.html", "My account", f"""

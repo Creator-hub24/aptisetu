@@ -24,3 +24,10 @@
     btn.setAttribute("aria-pressed", String(on)); btn.textContent = on ? "Play" : "Pause";
   });
 })();
+/* Hero "Take the Open Mock" button: once that edition's window is over, point to the full CAT mocks instead
+   (the page is static, so it cannot change by itself between builds). */
+(function () {
+  var a = document.getElementById("hero-om"); if (!a) return;
+  var end = Date.parse(a.getAttribute("data-end") || "");
+  if (end && Date.now() > end) { a.href = a.getAttribute("data-alt-href"); a.textContent = a.getAttribute("data-alt-text"); }
+})();

@@ -187,8 +187,8 @@ exec(open("tools/facts.py").read())
 import json as _omj, datetime as _omdt
 _oml=sorted(_omj.load(open("data/open-mock.json",encoding="utf8"))["mocks"],key=lambda m:m["starts_at"]); _omnow=_omdt.datetime.now(_omdt.timezone.utc); _omh=next((m for m in _oml if _omdt.datetime.fromisoformat(m["ends_at"])>_omnow),_oml[-1]); _omh_q=sum(_omh["questions"].values()); _omh_d=_omdt.date.fromisoformat(_omh["date"]); _omh_date=f"Sunday {_omh_d.day} {_omh_d.strftime('%B %Y')}"; _omh_label=_omh.get("label") or ("Ranked" if _omh.get("ranked") else "Unranked practice"); _wa=dict(SOCIAL)["WhatsApp Channel"]
 _om_live=_omdt.datetime.fromisoformat(_omh["ends_at"])>_omnow  # False once the last scheduled Open Mock has ended
-_hero2=('<a href="open-mock.html" class="btn btn-ghost">Take the Open Mock</a>' if _om_live else '<a href="mock-tests.html" class="btn btn-ghost">Take a full CAT mock</a>')
-_om_note=(f"Next edition: {_omh_label}, with no leaderboard." if _om_live else f"The {_omh_d.strftime('%B %Y')} edition has ended; you can still take its sections as practice. The next date will be announced here and on the WhatsApp channel.")
+_hero2=(f'<a href="open-mock.html" class="btn btn-ghost" id="hero-om" data-end="{_omh["ends_at"]}" data-alt-href="mock-tests.html" data-alt-text="Take a full CAT mock">Take the Open Mock</a>' if _om_live else '<a href="mock-tests.html" class="btn btn-ghost">Take a full CAT mock</a>')
+_om_note=(f"Next edition: <b>{_omh_date}</b>, 10 am to 10 pm IST. {_omh_label}, with no leaderboard." if _om_live else f"The {_omh_d.strftime('%B %Y')} edition has ended; you can still take its sections as practice. The next date will be announced here and on the WhatsApp channel.")
 # Countdown strip: exams in date order, each date from the official site (CAT: iimcat.ac.in, XAT: xatonline.in). home-countdown.js shows the first one not yet over and hides the strip when none is left.
 _CD=[("CAT 2026 exam","2026-11-29"),("XAT 2027 exam","2027-01-03")]
 _cd_up=[e for e in _CD if _omdt.date.fromisoformat(e[1])>=_omnow.astimezone(_omdt.timezone(_omdt.timedelta(hours=5,minutes=30))).date()] or _CD[-1:]

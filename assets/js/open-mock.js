@@ -10,7 +10,7 @@
     const status = $("#om-status");
     if (now < st) { status.innerHTML = `⏳ Opens <b>${fmt(st)} IST</b>. You can look at the sections now; attempts before the window are not saved as Open Mock scores.`; }
     else if (now <= en) { status.innerHTML = `🟢 <b>Live now</b> until ${fmt(en)} IST. Unranked practice: no leaderboard.`; }
-    else { status.innerHTML = `This edition has ended. The next Open Mock is on the first Sunday of next month. You can still take the sections as practice.`; }
+    else { status.innerHTML = `This edition has ended. The next date will be announced on this page. You can still take the sections as practice.`; }
     const A = window.Auth, ACC = window.Account, mine = $("#om-mine");
     if (!A || !A.configured || !ACC || !mine) return;
     (async () => {
