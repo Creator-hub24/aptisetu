@@ -13,9 +13,8 @@ let fails=0,n=0;const ok=(c,m,x)=>{n++;console.log((c?'PASS ':'FAIL ')+m+(c||x==
  ok(/Login \/ Sync/.test(await p.textContent('[data-chip=a]'))&&(await p.getAttribute('[data-chip=a]','href'))==='login.html','sign-in chip links to login');
  ok(/Free CAT, CUET, Bank &? ?(&amp;)?\s*SSC prep/i.test(await p.textContent('.hero-v2 h1')),'v3 hero headline');
  ok((await p.$$('#tracks .htrk')).length===4,'four track cards');
- ok((await p.getAttribute('.hero-v2 .hero-cta a.btn:not(.btn-ghost)','href'))==='practice.html'&&(await p.getAttribute('.hero-v2 .hero-cta a.btn-ghost','href'))==='open-mock.html','hero: start practice + Open Mock buttons');
- {const t=await p.textContent('#om-strip');ok(/Unranked practice/.test(t)&&/10 am–10 pm IST/.test(t)&&!/leaderboard|rank\b|ranks|ranking/i.test(t.replace(/Unranked/g,'')),'Open Mock strip: unranked, hours, no leaderboard wording',t);}
- {const st=await p.$eval('#om-strip',e=>[Date.parse(e.dataset.start),Date.parse(e.dataset.end)]);const live=Date.now()>=st[0]&&Date.now()<=st[1];ok(live===(await p.isVisible('#om-badge')&&/Live now/.test(await p.textContent('#om-badge'))),'Live now badge matches the schedule');}
+ ok((await p.getAttribute('.hero-v2 .hero-cta a.btn:not(.btn-ghost)','href'))==='practice.html'&&['open-mock.html','mock-tests.html'].includes(await p.getAttribute('.hero-v2 .hero-cta a.btn-ghost','href')),'hero: start practice + Open Mock buttons');
+ ok(!(await p.$('#om-strip')),'home has no Open Mock strip (removed 2 Nov 2026)');
  ok(/1\/6 \+ 1\/12 = 1\/4/.test(await p.textContent('#pk-out'))&&/4 h/.test(await p.textContent('#pk-out')),'lab preview default 6 h + 12 h = 4 h');
  await p.$eval('#pk-a',e=>{e.value=10;e.dispatchEvent(new Event('input',{bubbles:true}))});await p.$eval('#pk-b',e=>{e.value=15;e.dispatchEvent(new Event('input',{bubbles:true}))});
  ok(/\b6 h\b/.test(await p.textContent('#pk-out')),'lab preview 10 h + 15 h = 6 h',await p.textContent('#pk-out'));
@@ -23,7 +22,7 @@ let fails=0,n=0;const ok=(c,m,x)=>{n++;console.log((c?'PASS ':'FAIL ')+m+(c||x==
  ok((await p.$$eval('.tcard',a=>a.map(x=>x.getAttribute('href')))).join()==='cat-practice.html?daily=1&part=qa,cat-practice.html?daily=1&part=dilr,cat-practice.html?daily=1&part=varc','target cards link to Daily 10 parts');
  ok((await p.getAttribute('.htrk-plc','href'))==='placements.html','placements card links to placement prep');
  // Labs section: after the tracks, before the 3-step block; 4 cards; counts match what each lab itself reports
- {const order=await p.evaluate(()=>{const t=document.querySelector('#tracks'),l=document.querySelector('#labs'),s=document.querySelector('.steps-sec');const o=document.querySelector('#om-strip');return !!(o&&t&&l)&&!!(o.compareDocumentPosition(l)&Node.DOCUMENT_POSITION_FOLLOWING)&&!!(l.compareDocumentPosition(t)&Node.DOCUMENT_POSITION_FOLLOWING)});ok(order,'labs section sits between the Open Mock strip and the tracks');}
+ {const order=await p.evaluate(()=>{const t=document.querySelector('#tracks'),l=document.querySelector('#labs'),h=document.querySelector('.hero');return !!(h&&t&&l)&&!!(h.compareDocumentPosition(l)&Node.DOCUMENT_POSITION_FOLLOWING)&&!!(l.compareDocumentPosition(t)&Node.DOCUMENT_POSITION_FOLLOWING)});ok(order,'labs section sits between the hero and the tracks');}
  {const cards=await p.$$eval('#labs .hlab',as=>as.map(a=>({h:a.getAttribute('href'),n:a.querySelector('.hlab-n b').textContent.trim(),t:a.querySelector('.hlab-n').textContent,go:a.querySelector('.hlab-go').textContent,vis:!!a.querySelector('.hlab-vis svg'),shown:a.getBoundingClientRect().width>0})));
   ok(cards.map(c=>c.h).join()==='quant-lab.html,quant-lab-concept-lab.html,reasoning-lab.html,reasoning-lab-lab.html','four lab cards link to the lab pages',JSON.stringify(cards.map(c=>c.h)));
   ok(cards.every(c=>/Open lab →/.test(c.go)&&c.vis&&c.shown),'each lab card has a visual, an Open lab link and is shown at 390');
@@ -39,7 +38,7 @@ let fails=0,n=0;const ok=(c,m,x)=>{n++;console.log((c?'PASS ':'FAIL ')+m+(c||x==
   const nb=await q.evaluate(()=>{const a=document.querySelector('#rl-app'),r=a.shadowRoot||a;return [...r.querySelectorAll('button,a,[role=tab]')].filter(b=>/^\W*\s*(Cube|Dice|Family tree|Seating)$/.test(b.textContent.trim())).length});
   ok(String(nb)===cards[3].n,'Lab sandbox card count matches its builders',nb+' vs '+cards[3].n);await q.close();}
  ok((await p.getAttribute('.hero-labs','href'))==='#labs','hero links to the Labs section');
- ok(/whatsapp\.com\/channel/.test(await p.getAttribute('.om-strip a[href*="whatsapp"]','href')),'Open Mock alert uses WhatsApp channel');
+ {const st=await p.evaluate(()=>({m:getComputedStyle(document.querySelector('[data-chip=m]')).display,s:getComputedStyle(document.querySelector('[data-chip=s]')).display}));ok(st.m==='none'&&st.s==='none','Mistakes and streak chips stay hidden for a first-time visitor');}
  ok(await p.evaluate(()=>[...document.querySelectorAll('main .btn:not(.btn-ghost)')].filter(b=>{const r=b.getBoundingClientRect();return b.offsetParent&&r.top<innerHeight*1.5}).length)===1,'one primary button in the home hero screen');
  // nav groups
  const nav=await p.evaluate(()=>[...document.querySelectorAll('#site-header nav > ul > li, #site-header .nav > li, #site-header nav li.has-sub, #site-header nav > a')].map(x=>x.textContent.replace(/\s+/g,' ').trim().slice(0,40)));

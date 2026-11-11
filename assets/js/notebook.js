@@ -43,6 +43,8 @@
       row.querySelector("[data-chip=m]").setAttribute("aria-label", `Mistakes notebook: ${n} question${n === 1 ? "" : "s"}`);
       row.querySelector("[data-chip=s] b").textContent = st;
       row.querySelector("[data-chip=s]").setAttribute("aria-label", `Practice streak: ${st} day${st === 1 ? "" : "s"}`);
+      // A first-time visitor has nothing to show yet: keep "Mistakes 0" and "0-day streak" out of the header until they mean something.
+      row.querySelector("[data-chip=m]").hidden = !n; row.querySelector("[data-chip=s]").hidden = !st;
     }
   };
   function chips() {

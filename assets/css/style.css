@@ -648,6 +648,7 @@ a.card-link{display:block;color:inherit;text-decoration:none}a.card-link:hover h
 
 /* ===== v2 design: chips row, indigo hero, track cards, lab preview, targets, pods, Open Mock alert ===== */
 .chips-row{display:flex;gap:8px;flex-wrap:wrap;padding:6px clamp(20px,3vw,40px) 10px;max-width:1400px;margin:0 auto}
+.chip[hidden],.cd-strip[hidden]{display:none}
 .chip{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 12px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:.86rem;font-weight:600;white-space:nowrap}
 .chip b{color:var(--brand)}.chip:hover{border-color:var(--brand)}
 .chip[data-chip=a]{margin-left:auto;background:#eef2ff;color:#3730a3;border-color:#c7d2fe}

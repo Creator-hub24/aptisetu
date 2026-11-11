@@ -186,11 +186,19 @@ def _ld_site():
 exec(open("tools/facts.py").read())
 import json as _omj, datetime as _omdt
 _oml=sorted(_omj.load(open("data/open-mock.json",encoding="utf8"))["mocks"],key=lambda m:m["starts_at"]); _omnow=_omdt.datetime.now(_omdt.timezone.utc); _omh=next((m for m in _oml if _omdt.datetime.fromisoformat(m["ends_at"])>_omnow),_oml[-1]); _omh_q=sum(_omh["questions"].values()); _omh_d=_omdt.date.fromisoformat(_omh["date"]); _omh_date=f"Sunday {_omh_d.day} {_omh_d.strftime('%B %Y')}"; _omh_label=_omh.get("label") or ("Ranked" if _omh.get("ranked") else "Unranked practice"); _wa=dict(SOCIAL)["WhatsApp Channel"]
+_om_live=_omdt.datetime.fromisoformat(_omh["ends_at"])>_omnow  # False once the last scheduled Open Mock has ended
+_hero2=('<a href="open-mock.html" class="btn btn-ghost">Take the Open Mock</a>' if _om_live else '<a href="mock-tests.html" class="btn btn-ghost">Take a full CAT mock</a>')
+_om_note=(f"Next edition: {_omh_label}, with no leaderboard." if _om_live else f"The {_omh_d.strftime('%B %Y')} edition has ended; you can still take its sections as practice. The next date will be announced here and on the WhatsApp channel.")
+# Countdown strip: exams in date order, each date from the official site (CAT: iimcat.ac.in, XAT: xatonline.in). home-countdown.js shows the first one not yet over and hides the strip when none is left.
+_CD=[("CAT 2026 exam","2026-11-29"),("XAT 2027 exam","2027-01-03")]
+_cd_up=[e for e in _CD if _omdt.date.fromisoformat(e[1])>=_omnow.astimezone(_omdt.timezone(_omdt.timedelta(hours=5,minutes=30))).date()] or _CD[-1:]
+_cd_n,_cd_dt=_cd_up[0]; _cd_d=_omdt.date.fromisoformat(_cd_dt); _cd_txt=f"{_cd_d.day} {_cd_d.strftime('%b %Y')}"
+_cd_json=_omj.dumps([[n,d,f"{_omdt.date.fromisoformat(d).day} {_omdt.date.fromisoformat(d).strftime('%b %Y')}"] for n,d in _CD]).replace('"',"&quot;")
 _LC=json.load(open("data/lab-counts.json"))  # written by tools/lab_counts.js from the lab code
 _cat_n=PUB[("cat","varc")]+PUB[("cat","dilr")]+PUB[("cat","qa")]; _bank_n=PUB[("bank-ssc","quant")]+PUB[("bank-ssc","reasoning")]+PUB[("bank-ssc","dilr")]
 page("index.html","", f"""
-<div class="cd-strip" id="cd" role="region" aria-label="CAT 2026 countdown" data-date="2026-11-29">
- <div class="cd-track"><span class="cd-item"><b>CAT 2026 exam</b> - 29 Nov 2026 : <span class="cd-left">counting down</span></span><span class="cd-item" aria-hidden="true"><b>CAT 2026 exam</b> - 29 Nov 2026 : <span class="cd-left">counting down</span></span></div>
+<div class="cd-strip" id="cd" role="region" aria-label="Exam countdown" data-date="{_cd_dt}" data-exams="{_cd_json}">
+ <div class="cd-track"><span class="cd-item"><b class="cd-name">{_cd_n}</b> - <span class="cd-date">{_cd_txt}</span> : <span class="cd-left">counting down</span></span><span class="cd-item" aria-hidden="true"><b class="cd-name">{_cd_n}</b> - <span class="cd-date">{_cd_txt}</span> : <span class="cd-left">counting down</span></span></div>
  <button type="button" class="cd-pause" id="cd-pause" aria-pressed="false">Pause</button>
 </div>
 <section class="hero hero-v2 hero-v3"><div class="container hero-grid">
@@ -198,7 +206,7 @@ page("index.html","", f"""
   <span class="pill">{_n(PUB_TOTAL)} free questions · CAT · CUET · Bank · SSC · Placements</span>
   <h1>Free CAT, CUET, Bank &amp; SSC prep: <span class="hl">mocks, sectionals, solutions</span></h1>
   <p class="lead">Timed practice with real exam marking, a worked solution for every question, and no login needed to start.</p>
-  <div class="cta-row hero-cta"><a href="practice.html" class="btn">Start practising →</a><a href="open-mock.html" class="btn btn-ghost">Take the Open Mock</a></div>
+  <div class="cta-row hero-cta"><a href="practice.html" class="btn">Start practising →</a>{_hero2}</div>
   <p class="hero-note">Log in (optional) to save your scores across devices. <a class="hero-labs" href="#labs">🧪 Or explore the Labs ↓</a></p>
  </div>
  <div class="hero-card lab-peek" id="lab-peek" role="group" aria-labelledby="peek-h">
@@ -978,12 +986,12 @@ _M,_S,_PR=_pack_cards()
 page("mock-tests.html","Mock Tests","""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Mock Tests</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CAT mock tests</h1><p class="muted">Full CAT-pattern mocks: VARC 24, DILR 22 and QA 22 questions, 40 minutes per section, +3 / −1 for a wrong MCQ and 0 for a wrong TITA. Take the sections in order (VARC, DILR, QA) for the real exam experience.</p></div></div>
 <section style="padding-top:16px"><div class="container">
-<div class="notice" style="margin-bottom:16px">📅 <b>AptiSetu Open Mock</b>: one free mock for everyone on the first Sunday of every month. Next edition: %OML%, with no leaderboard. <a href="open-mock.html">Details and next date →</a></div>
+<div class="notice" style="margin-bottom:16px">📅 <b>AptiSetu Open Mock</b>: one free mock for everyone on the first Sunday of every month. %OML% <a href="open-mock.html">Details and next date →</a></div>
 <h2>Full mocks</h2><div class="grid g3">%M%</div>
 <h2 style="margin-top:24px">Sectional tests</h2><div class="grid g3">%S%</div>
 <h2 style="margin-top:24px">Practice packs</h2><div class="grid g3">%P%</div>
 <div class="notice" style="margin-top:20px">Random CAT sectionals and topic practice are on the <a href="cat-practice.html">CAT practice page</a>. Bank, SSC and GMAT mocks are coming soon.</div></div></section>
-""".replace("%OML%",_omh_label).replace("%M%",_M).replace("%S%",_S).replace("%P%",_PR), desc="Free full-length CAT mocks, VARC and DILR sectionals and practice packs, with CAT marking and worked solutions.")
+""".replace("%OML%",_om_note).replace("%M%",_M).replace("%S%",_S).replace("%P%",_PR), desc="Free full-length CAT mocks, VARC and DILR sectionals and practice packs, with CAT marking and worked solutions.")
 
 page("placements.html","Placement Prep","""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Placement Prep</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Campus placement prep</h1><p class="muted">Aptitude practice for the written round of IT-services and campus hiring tests: Quant, Reasoning and data-interpretation questions with worked solutions.</p></div></div>

@@ -74,6 +74,9 @@ for trk, tlabel, ddir, secs, purl in QTRACKS:
                 sol = _optfix(qq["solution"]); ptxt = _plain(qq["question"])
                 ctx = f"{tlabel} · {sname} · {topic}"
                 title = f"{tlabel} {sname}: {_esc.unescape(topic)} question {qq['id']}"
+                # <title>: lead with the question itself (what people search for), cut at a word, then track + ID (keeps it unique and ~65 chars with the brand).
+                _h = ptxt if len(ptxt) <= 40 else ptxt[:41].rsplit(" ", 1)[0].rstrip(" ,;:.(") + "…"
+                ptitle = f"{_h} | {tlabel} {qq['id']}"
                 desc = f"{tlabel} {_plain(topic)} practice question {qq['id']} with answer and worked solution: {ptxt[:110]}".rstrip() + ("…" if len(ptxt) > 110 else "")
                 ld = {"@context": "https://schema.org", "@type": "Quiz", "name": title, "educationalLevel": qq.get("difficulty", ""), "about": {"@type": "Thing", "name": _plain(topic)},
                       "hasPart": [{"@type": "Question", "eduQuestionType": "Multiple choice" if qtype == "MCQ" else "Short answer", "text": ptxt,
@@ -92,7 +95,7 @@ for trk, tlabel, ddir, secs, purl in QTRACKS:
 <div class="cta-row" style="margin:18px 0"><a class="btn" href="{purl(s, topic)}">Start practice: {topic} →</a><a class="btn btn-ghost" href="{hub}">All {topic} questions</a></div>
 {f'<h2 style="font-size:1.2rem">Similar questions</h2><ul class="qp-sim">{simh}</ul>' if simh else ''}
 </div></section>"""
-                page(fn, _esc.escape(title), body, desc=desc, base=True, head_extra=f'<script type="application/ld+json">{ldj}</script>\n')
+                page(fn, _esc.escape(ptitle), body, desc=desc, base=True, head_extra=f'<script type="application/ld+json">{ldj}</script>\n')
                 QSTATS["pages"] += 1
             items = "".join(f'<li data-d="{x.get("difficulty", "")}"><a href="{fn_of[x["id"]]}">{_esc.escape(_plain(x["question"])[:110])}{"…" if len(_plain(x["question"])) > 110 else ""}</a> <span class="muted">· {x["id"]} · {x.get("difficulty", "")}</span></li>' for x in tq)
             page(hub, f"{tlabel} {sname}: {topic} questions with solutions", f"""<div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="q/index.html">Question bank</a> / {tlabel} {sname}</div>
