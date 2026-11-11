@@ -178,9 +178,15 @@ def fix_headings(html):
     return _re.sub(r"<h([1-6])(\s[^>]*)?>(.*?)</h\1>", lambda m: rep(type("M",(),{"group":lambda self,i: (m.group(i) or "") if i==2 else m.group(i)})()), html, flags=_re.S)
 
 def _ld_site():
+    # Brand signals for search engines: the name is easy to mistake for "API Setu" (a government site), so say plainly who we are,
+    # what the alternate spellings are, and which profiles belong to us. sameAs must list only profiles we actually run.
     import json as _j
-    d={"@context":"https://schema.org","@type":"WebSite","name":BRAND,"url":SITE_URL,"inLanguage":"en-IN",
-       "description":"Free aptitude practice for CAT, CUET (UG), Bank, SSC and campus placements, with worked solutions."}
+    desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and campus placements, with worked solutions."
+    org={"@type":"Organization","@id":SITE_URL+"#org","name":BRAND,"alternateName":["Apti Setu","aptisetu.com"],"url":SITE_URL,
+         "logo":SITE_URL+"assets/img/aptisetu-logo-1024.png","description":desc,"sameAs":[u for _,u in SOCIAL]}
+    web={"@type":"WebSite","@id":SITE_URL+"#site","name":BRAND,"alternateName":["Apti Setu","aptisetu.com"],"url":SITE_URL,"inLanguage":"en-IN",
+         "description":desc,"publisher":{"@id":SITE_URL+"#org"}}
+    d={"@context":"https://schema.org","@graph":[org,web]}
     return '<script type="application/ld+json">'+_j.dumps(d,ensure_ascii=False).replace("</","<\\/")+'</script>\n'
 # ---------- LANDING ----------
 exec(open("tools/facts.py").read())
@@ -343,7 +349,7 @@ page("index.html","", f"""
  <h2>Start practising in under 10 seconds</h2><p style="opacity:.9">No login needed to practise. Log in (optional) to save your scores across devices. Pick a section and beat the clock.</p>
  <div class="cta-row" style="justify-content:center;margin-bottom:0"><a href="practice.html" class="btn">Start a free quiz →</a></div>
 </div></div></section>
-""", desc="Free aptitude practice for CAT, CUET (UG), Bank, SSC and placements: Quant, Reasoning, DILR and VARC timed quizzes with worked solutions and formula sheets.", head_extra=_ld_site(), extra='<script src="assets/js/home-countdown.js"></script>\n<script src="assets/js/home-lab.js"></script>')
+""", desc="AptiSetu (aptisetu.com): free aptitude practice for CAT, CUET, Bank, SSC and placements. Timed Quant, Reasoning, DILR and VARC quizzes with worked solutions.", head_extra=_ld_site(), extra='<script src="assets/js/home-countdown.js"></script>\n<script src="assets/js/home-lab.js"></script>')
 
 # ---------- SECTION PAGES ----------
 def fs_section(formulas, color, heading="Formula &amp; rules sheet", unit="formulas and rules", prose=False):

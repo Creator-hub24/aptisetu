@@ -33,6 +33,7 @@ page("contact.html","Contact",info_head("Contact","Contact us","Questions, feedb
 # ---------- ABOUT ----------
 page("about.html","About",info_head("About",f"About {B}","A free practice site for Indian students preparing for aptitude tests.")+prose(f"""
 <p><span data-brand>{B}</span> helps students practise Quantitative Aptitude, Logical Reasoning, DILR and VARC for competitive exams and campus placements. It is free to use, and you can practise without an account. Log in (optional) to save your results across devices.</p>
+<p><b>About the name:</b> <span data-brand>{B}</span> (<a href="index.html">aptisetu.com</a>) is spelled A-P-T-I, for <i>aptitude</i>, and <i>setu</i> means bridge: the bridge from aptitude to selection. We are an independent practice site and have no connection with API Setu, the Government of India's API platform.</p>
 <h3>What's on the site</h3><ul>
 <li><b>Bank / SSC / Placements track:</b> <a href="quant.html">Quant</a>, <a href="reasoning.html">Reasoning</a> and <a href="dilr.html">DILR</a> pages with concept notes, formula sheets and <a href="practice.html?exam=general">timed quizzes</a>.</li>
 <li><b>CAT track:</b> <a href="cat.html">VARC, DILR and QA</a> with 40-minute sectionals, MCQ and TITA questions and CAT marking.</li>
@@ -53,7 +54,7 @@ STATUS_HTML = ("<ul class='status-list'>"
  f"<li>{_L('st-pilot','Pilot')} <a href='open-mock.html'>Open Mock</a>: one CAT-pattern mock for everyone on the first Sunday of the month. The current edition is unranked practice, with no leaderboard.</li>"
  f"<li>{_L('st-soon','Coming soon')} <a href='pass.html'>AptiSetu Pass</a> (not on sale), CUET Applied Mathematics (Section B2), and full mocks for Bank, SSC and GMAT.</li>"
  "</ul>")
-faqs=[("Is it free?","Yes. All notes, formula sheets and practice questions are free."),
+faqs=[("How do I find AptiSetu? Search shows \"API Setu\"","Type <b>aptisetu.com</b> straight into your browser's address bar, or search for <b>AptiSetu aptitude practice</b>. The name is spelled A-P-T-I (from aptitude), not A-P-I. API Setu is a different, government website and is not connected to us."),("Is it free?","Yes. All notes, formula sheets and practice questions are free."),
 ("Do I need to sign up or log in?","No. Notes, quizzes, sectionals, the full mocks, the Open Mock and Easy Quant set 1 of the CAT practice sets all work without an account. Log in only if you want your results saved to your account (so you can see them on any device) and to unlock the next levels of the CAT practice sets. Login uses a one-time link sent to your email; there is no password."),
 ("What can I use today?", STATUS_HTML),
 ("How do the CAT practice sets work?","Each CAT section has sets of 10 questions in three levels, Easy, then Medium, then Hard (Quant has 18 sets: Easy 1–5, Medium 6–13, Hard 14–18; VARC and DILR have 15), with a 20-minute timer (25 for DILR). A level unlocks when you have finished every ready set in the level before it. Sets we are still writing show <i>Coming soon</i>."),
