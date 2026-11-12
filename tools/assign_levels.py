@@ -5,7 +5,7 @@ Rules
 - A passage (VARC) or data set (DILR) takes the majority level of its questions; a tie goes to the harder level.
   Groups are never split.
 - A practice set has exactly 10 questions. The number of set slots per level is set per section in SLOTS;
-  set numbers run consecutively Easy, then Medium, then Hard (e.g. Quant: Easy 1-5, Medium 6-13, Hard 14-18).
+  set numbers run consecutively Easy, then Medium, then Hard (e.g. Quant: Easy 1-8, Medium 9-20, Hard 21-28).
 - QA and VARC: groups are packed in bank order; a group that does not fit the current set waits for the next one.
   A set is "ready" only when it reaches exactly 10 questions; leftovers stay out of the set system (practice only).
 - MIX_AFTER: questions added after the given id are packed in topic round-robin order (so each new set mixes
@@ -17,9 +17,9 @@ Writes data/cat/sets.json: per section, the level ranges, the total slot count a
 import json, os
 LEVELS = ("Easy", "Medium", "Hard"); SIZE = 10
 RANK = {l: i for i, l in enumerate(LEVELS)}
-SLOTS = {"qa": {"Easy": 5, "Medium": 8, "Hard": 5},
-         "varc": {"Easy": 5, "Medium": 5, "Hard": 5},
-         "dilr": {"Easy": 5, "Medium": 5, "Hard": 5}}
+SLOTS = {"qa": {"Easy": 8, "Medium": 12, "Hard": 8},      # 12 Nov 2026: +10 sets per section (VARC +9: was 5/8/5, 5/5/5, 5/5/5)
+         "varc": {"Easy": 8, "Medium": 7, "Hard": 9},
+         "dilr": {"Easy": 8, "Medium": 8, "Hard": 9}}
 MIX_AFTER = {"qa": 120}            # CQ121 onwards (user's Medium sets M1/M2 extras)
 NEAR_DUPLICATES = {"CQ124", "CQ129", "CQ135", "CQ142", "CQ155"}   # close to an existing question: placed last
 
@@ -63,6 +63,7 @@ def pack(gs, limit):
         ready.append(cur); rest = keep
     return ready, rest
 
+LATE = {"practice-z1"}   # 12 Nov 2026 batch: packed only after all earlier content (and kept out of the MIX_AFTER round-robin)
 FILL = {"varc", "dilr"}   # fill every empty slot (see fill())
 # Former relative-easy fill of VARC/DILR sets 1-5, replaced by genuine Easy packs (practice-easy). Held in reserve
 # (never re-used by fill()), so the filled Medium/Hard sets 6-15 keep exactly the same content.
@@ -118,11 +119,15 @@ def assign(cat_out, path):
                 excluded += [g[0]["set"] for g in pool if len(g) != 5]
                 pool = [g for g in pool if len(g) == 5]
             cut = MIX_AFTER.get(sec)
-            old = [g for g in pool if cut is None or num(g[0]["id"]) <= cut]
-            new = [g for g in pool if cut is not None and num(g[0]["id"]) > cut]
+            old = [g for g in pool if (cut is None or num(g[0]["id"]) <= cut) and g[0].get("pack") not in LATE]
+            new = [g for g in pool if cut is not None and num(g[0]["id"]) > cut and g[0].get("pack") not in LATE]
+            late = [g for g in pool if g[0].get("pack") in LATE]   # packed after everything else, so earlier sets keep their content
             ready, left = pack(old, slots[lv])
             if new:
                 more, left2 = pack(left + mixed(new), slots[lv] - len(ready))
+                ready += more; left = left2
+            if late:
+                more, left2 = pack(left + (mixed(late) if cut is not None else late), slots[lv] - len(ready))
                 ready += more; left = left2
             sets = []
             for i, st in enumerate(ready):
