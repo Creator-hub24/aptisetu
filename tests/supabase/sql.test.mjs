@@ -1,5 +1,5 @@
 import { PGlite } from "@electric-sql/pglite"; import fs from "fs";
-const db = new PGlite(); const D = "/workspace/aptisetu/supabase/migrations/";
+const db = new PGlite(); const D = new URL("../../supabase/migrations/", import.meta.url).pathname;   // this checkout's migrations
 await db.exec(`create role anon; create role authenticated; create role service_role bypassrls; create schema auth; create table auth.users(id uuid primary key, email text, created_at timestamptz not null default now(), last_sign_in_at timestamptz);
 create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('t.uid', true),'')::uuid $$;
 grant usage on schema auth to anon, authenticated; grant execute on function auth.uid() to anon, authenticated; grant usage on schema public to anon, authenticated;`);

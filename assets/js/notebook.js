@@ -54,7 +54,7 @@
       <a class="chip chip-s" data-chip="s" href="practice.html?daily=1"><span aria-hidden="true">🔥</span><span><b>0</b>-day streak</span></a>
       <a class="chip chip-sync" data-chip="a" href="login.html">Login / Sync</a></div>`);
     N.paint();
-    const A = window.Auth; if (A && A.ready) A.ready.then(u => { if (u) { const a = h.querySelector("[data-chip=a]"); a.textContent = "✓ Synced"; a.href = "account.html"; } }).catch(() => {});
+    const A = window.Auth; if (A && A.ready) A.ready.then(u => { if (u) { const a = h.querySelector("[data-chip=a]"); a.textContent = "Logged in"; a.href = "account.html"; } }).catch(() => {});
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", chips); else chips();
   addEventListener("storage", e => { if (e.key === MK || e.key === PK) N.paint(); });
