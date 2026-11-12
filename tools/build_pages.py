@@ -1037,7 +1037,7 @@ _M,_S,_PR=_pack_cards()
 page("mock-tests.html","Mock Tests","""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Mock Tests</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CAT mock tests</h1><p class="muted">Full CAT-pattern mocks: VARC 24, DILR 22 and QA 22 questions, 40 minutes per section, +3 / −1 for a wrong MCQ and 0 for a wrong TITA. Take the sections in order (VARC, DILR, QA) for the real exam experience.</p></div></div>
 <section style="padding-top:16px"><div class="container">
-<div class="notice" style="margin-bottom:16px">📅 <b>AptiSetu Open Mock</b>: one free mock for everyone on the first Sunday of every month. %OML% <a href="open-mock.html">Details and next date →</a></div>
+<div class="notice" style="margin-bottom:16px">📅 <b>AptiSetu Open Mock</b>: one free mock for everyone every Sunday. %OML% <a href="open-mock.html">Details and next date →</a></div>
 <h2>Full mocks</h2><div class="grid g3">%M%</div>
 <h2 style="margin-top:24px">Sectional tests</h2><div class="grid g3">%S%</div>
 <h2 style="margin-top:24px">Practice packs</h2><div class="grid g3">%P%</div>
