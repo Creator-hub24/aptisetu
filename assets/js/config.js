@@ -20,5 +20,11 @@ window.SITE = {
   // PASS_PRICE here is only the label shown on the button and must match it.
   PAYMENTS_ENABLED: "off",
   PASS_PRICE: "",
+  // Public social profiles (footer icons, homepage / results join CTAs, JSON-LD sameAs). Leave "" to hide that link.
+  TELEGRAM: "https://t.me/aptisetu",
+  WHATSAPP: "https://whatsapp.com/channel/0029VbDp9l12ER6pnIeDNn2m",
+  YOUTUBE: "https://www.youtube.com/@AptiSetu",
+  INSTAGRAM: "https://www.instagram.com/edumaths360/",
+  FACEBOOK: "https://www.facebook.com/profile.php?id=61595058503614",
   YEAR: new Date().getFullYear()
 };

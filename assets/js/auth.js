@@ -85,11 +85,15 @@
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   function paint() {
     const slot = document.getElementById("auth-slot"); if (!slot) return;
-    const here = location.pathname.split("/").pop() + location.search;
+    const here = (location.pathname.split("/").pop() || "index.html") + location.search;
     if (user) {
       slot.innerHTML = `<a class="who" href="account.html" title="My account: ${esc(user.email || "")}">${esc(user.email || "My account")}</a><button type="button" class="link" id="auth-logout">Logout</button>`;
       document.getElementById("auth-logout").addEventListener("click", async () => { await Auth.logout(); location.reload(); });
-    } else slot.innerHTML = "";   // logged out: the "Login / Sync" chip under the header is the only login entry
+    } else if ((here.split("?")[0] || "") === "login.html") {
+      slot.innerHTML = "";
+    } else {
+      slot.innerHTML = `<a class="auth-login" href="login.html?next=${encodeURIComponent(here)}">Log in</a>`;
+    }
   }
   Auth.onChange(paint);
   const go = () => ready.then(paint);

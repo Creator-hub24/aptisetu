@@ -151,7 +151,8 @@
       <h2 style="text-align:center">${auto ? "Time's up! " : ""}Score: ${score} / ${max}</h2>
       <p class="muted" style="text-align:center">✅ ${c} correct · ❌ ${w} wrong · ⏭ ${qs.length - c - w} skipped ${cfg.neg ? "· Marking: +3 / −1" : ""}</p>
       ${st ? `<p style="text-align:center;margin:.2em 0 0">🔥 <b>${st.count}-day streak</b> · ${st.quizzes} quiz${st.quizzes === 1 ? "" : "zes"} finished</p>` : ""}
-      ${P ? `<div class="cta-row share-row" style="justify-content:center;margin:14px 0 0">${P.shareButton(`I scored ${score}/${max} (${pct}%) in a ${cfg.name} aptitude quiz on ${brand}! Can you beat it?`, "practice.html")}</div>` : ""}`;
+      ${P ? `<div class="cta-row share-row" style="justify-content:center;margin:14px 0 0">${P.shareButton(`I scored ${score}/${max} (${pct}%) in a ${cfg.name} aptitude quiz on ${brand}! Can you beat it?`, "practice.html")}</div>` : ""}
+      ${window.joinCta ? window.joinCta() : ""}`;
     $("#res-summary").insertAdjacentHTML("beforeend", extraReport(score, max, pct));
     let lastSet = null;
     $("#review").innerHTML = qs.map((q, i) => {

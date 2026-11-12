@@ -80,7 +80,14 @@ A=lambda s: _esc.escape(s, quote=True)
 PAGES=[]   # (fn, indexed)
 TITLES={}
 GC_TAG=(f'<script data-goatcounter="https://{GC}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>\n    ' if GC else "")
-SOCIAL=[("WhatsApp Channel","https://whatsapp.com/channel/0029VbDp9l12ER6pnIeDNn2m"),("YouTube","https://www.youtube.com/@AptiSetu"),("Telegram","https://t.me/aptisetu"),("Instagram","https://www.instagram.com/edumaths360/"),("Facebook","https://www.facebook.com/share/1Y8cTsvtvb/")]
+SOCIAL=[(n,u) for n,u in (("WhatsApp Channel",CFG.get("WHATSAPP","").strip()),("YouTube",CFG.get("YOUTUBE","").strip()),("Telegram",CFG.get("TELEGRAM","").strip()),("Instagram",CFG.get("INSTAGRAM","").strip()),("Facebook",CFG.get("FACEBOOK","").strip())) if u]
+def join_cta_html(extra_class=""):
+    """Labelled Telegram / WhatsApp join buttons. Empty if those URLs are unset."""
+    btns=[]
+    tg,wa=CFG.get("TELEGRAM","").strip(),CFG.get("WHATSAPP","").strip()
+    if tg: btns.append(f'<a class="btn btn-ghost btn-join btn-telegram" href="{A(tg)}" target="_blank" rel="noopener">Join Telegram</a>')
+    if wa: btns.append(f'<a class="btn btn-ghost btn-join btn-whatsapp" href="{A(wa)}" target="_blank" rel="noopener">Join WhatsApp Channel</a>')
+    return f'<div class="cta-row join-row {extra_class}">{"".join(btns)}</div>' if btns else ""
 SOCIAL_ICONS={
 "Facebook":'<path d="M14 21v-8h3l.5-3.5H14V7.7c0-1 .4-1.7 1.8-1.7h1.8V3.1A22 22 0 0 0 15.3 3C12.8 3 11 4.6 11 7.4v2.1H8V13h3v8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
 "WhatsApp Channel":'<path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c-.4 1-.2 2.2.9 3.7s2.5 2.3 3.7 2.6c.8.2 1.5-.4 1.7-1l-1.7-1-.8.7c-.9-.3-2-1.4-2.4-2.4l.7-.8-.9-1.9c-.4 0-1 .1-1.2.1z" fill="currentColor"/>',
@@ -96,7 +103,7 @@ def footer_html():
         <div class="social" aria-label="Follow AptiSetu">{social}</div></div>
       <div><h2 class="fh">Learn</h2><a href="quant.html">Quantitative Aptitude</a><a href="quant-lab.html">Quant Lab</a><a href="reasoning-lab.html">Reasoning Lab</a><a href="reasoning.html">Logical Reasoning</a><a href="dilr.html">DILR</a><a href="cat.html">CAT track</a><a href="cuet.html">CUET (UG) track</a><a href="bank-ssc.html">Bank &amp; SSC track</a><a href="varc.html">VARC</a><a href="after12.html">After 12</a><a href="after-graduation.html">After Graduation</a></div>
       <div><h2 class="fh">Practice</h2><a href="cat-practice.html">CAT sectionals</a><a href="cuet-practice.html">CUET sectionals</a><a href="practice.html?exam=general">Bank / SSC quizzes</a><a href="practice.html?section=mixed">Mixed practice</a><a href="q/index.html">Question bank</a></div>
-      <div><h2 class="fh">About</h2><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="corrections.html">Corrections</a>{contact}<a href="privacy.html">Privacy</a><a href="terms.html">Terms &amp; disclaimer</a></div>
+      <div><h2 class="fh">About</h2><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="corrections.html">Corrections</a>{contact}<a href="login.html">Log in</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms &amp; disclaimer</a></div>
     </div>
     {GC_TAG}<div class="container copyright">© {YEAR} <span data-brand>{_esc.escape(BRAND)}</span>. All rights reserved.</div>"""
 import hashlib as _hl, base64 as _b64
@@ -136,7 +143,7 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 <meta name="description" content="{A(desc)}">
 {robots}{canon}<meta name="theme-color" content="#FBF6EA"><meta name="color-scheme" content="light dark">
 <script src="assets/js/theme.js"></script>
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.ico" sizes="32x32"><link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <meta property="og:type" content="website"><meta property="og:site_name" content="{A(BRAND)}"><meta property="og:title" content="{A(full)}"><meta property="og:description" content="{A(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{img}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{A(full)}"><meta name="twitter:description" content="{A(desc)}"><meta name="twitter:image" content="{img}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800{{MONO}}&display=swap" rel="stylesheet">
@@ -191,10 +198,11 @@ def _ld_site():
 # ---------- LANDING ----------
 exec(open("tools/facts.py").read())
 import json as _omj, datetime as _omdt
-_oml=sorted(_omj.load(open("data/open-mock.json",encoding="utf8"))["mocks"],key=lambda m:m["starts_at"]); _omnow=_omdt.datetime.now(_omdt.timezone.utc); _omh=next((m for m in _oml if _omdt.datetime.fromisoformat(m["ends_at"])>_omnow),_oml[-1]); _omh_q=sum(_omh["questions"].values()); _omh_d=_omdt.date.fromisoformat(_omh["date"]); _omh_date=f"Sunday {_omh_d.day} {_omh_d.strftime('%B %Y')}"; _omh_label=_omh.get("label") or ("Ranked" if _omh.get("ranked") else "Unranked practice"); _wa=dict(SOCIAL)["WhatsApp Channel"]
+_oml=sorted(_omj.load(open("data/open-mock.json",encoding="utf8"))["mocks"],key=lambda m:m["starts_at"]); _omnow=_omdt.datetime.now(_omdt.timezone.utc); _omh=next((m for m in _oml if _omdt.datetime.fromisoformat(m["ends_at"])>_omnow),_oml[-1]); _omh_q=sum(_omh["questions"].values()); _omh_d=_omdt.date.fromisoformat(_omh["date"]); _omh_date=f"Sunday {_omh_d.day} {_omh_d.strftime('%B %Y')}"; _omh_label=_omh.get("label") or ("Ranked" if _omh.get("ranked") else "Unranked practice"); _wa=(CFG.get("WHATSAPP") or dict(SOCIAL).get("WhatsApp Channel") or "").strip()
+_wa_link=(f'<a href="{A(_wa)}" target="_blank" rel="noopener">WhatsApp channel</a>' if _wa else "WhatsApp channel")
 _om_live=_omdt.datetime.fromisoformat(_omh["ends_at"])>_omnow  # False once the last scheduled Open Mock has ended
 _hero2=(f'<a href="open-mock.html" class="btn btn-ghost" id="hero-om" data-end="{_omh["ends_at"]}" data-alt-href="mock-tests.html" data-alt-text="Take a full CAT mock">Take the Open Mock</a>' if _om_live else '<a href="mock-tests.html" class="btn btn-ghost">Take a full CAT mock</a>')
-_om_note=(f"Next edition: <b>{_omh_date}</b>, 10 am to 10 pm IST. {_omh_label}, with no leaderboard." if _om_live else f"The {_omh_d.strftime('%B %Y')} edition has ended; you can still take its sections as practice. The next date will be announced here and on the WhatsApp channel.")
+_om_note=(f"Next edition: <b>{_omh_date}</b>, 10 am to 10 pm IST. {_omh_label}, with no leaderboard. Reminders on the {_wa_link}." if _om_live else f"The {_omh_d.strftime('%B %Y')} edition has ended; you can still take its sections as practice. The next date will be announced here and on the {_wa_link}.")
 # Countdown strip: exams in date order, each date from the official site (CAT: iimcat.ac.in, XAT: xatonline.in). home-countdown.js shows the first one not yet over and hides the strip when none is left.
 _CD=[("CAT 2026 exam","2026-11-29"),("XAT 2027 exam","2027-01-03")]
 _cd_up=[e for e in _CD if _omdt.date.fromisoformat(e[1])>=_omnow.astimezone(_omdt.timezone(_omdt.timedelta(hours=5,minutes=30))).date()] or _CD[-1:]
@@ -213,7 +221,8 @@ page("index.html","", f"""
   <h1>Free CAT, CUET, Bank &amp; SSC prep: <span class="hl">mocks, sectionals, solutions</span></h1>
   <p class="lead">Timed practice with real exam marking, a worked solution for every question, and no login needed to start.</p>
   <div class="cta-row hero-cta"><a href="practice.html" class="btn">Start practising →</a>{_hero2}</div>
-  <p class="hero-note">Log in (optional) to save your scores across devices. <a class="hero-labs" href="#labs">🧪 Or explore the Labs ↓</a></p>
+  {join_cta_html("hero-join")}
+  <p class="hero-note"><a href="login.html">Log in (optional)</a> to save your scores across devices. <a class="hero-labs" href="#labs">🧪 Or explore the Labs ↓</a></p>
  </div>
  <div class="hero-card lab-peek" id="lab-peek" role="group" aria-labelledby="peek-h">
   <div class="q-meta"><span class="eyebrow">Quant Lab · live preview</span><span class="q-topic">Pipes &amp; cisterns</span></div>
@@ -346,7 +355,7 @@ page("index.html","", f"""
 </div></section>
 
 <section><div class="container"><div class="cta-band">
- <h2>Start practising in under 10 seconds</h2><p style="opacity:.9">No login needed to practise. Log in (optional) to save your scores across devices. Pick a section and beat the clock.</p>
+ <h2>Start practising in under 10 seconds</h2><p style="opacity:.9">No login needed to practise. <a href="login.html">Log in (optional)</a> to save your scores across devices. Pick a section and beat the clock.</p>
  <div class="cta-row" style="justify-content:center;margin-bottom:0"><a href="practice.html" class="btn">Start a free quiz →</a></div>
 </div></div></section>
 """, desc="AptiSetu (aptisetu.com): free aptitude practice for CAT, CUET, Bank, SSC and placements. Timed Quant, Reasoning, DILR and VARC quizzes with worked solutions.", head_extra=_ld_site(), extra='<script src="assets/js/home-countdown.js"></script>\n<script src="assets/js/home-lab.js"></script>')

@@ -269,6 +269,7 @@
       </div>
       ${P ? (st => `<p style="margin:.8em 0 0">🔥 <b>${st.count}-day streak</b> · ${st.quizzes} quiz${st.quizzes === 1 ? "" : "zes"} finished</p>`)(P.streak()) : ""}
       ${P ? `<div class="cta-row share-row" style="margin:12px 0 0">${P.shareButton(`I scored ${score}/${maxScore} in a ${title} on ${(window.SITE || {}).BRAND || ""} (${acc}% accuracy)! Can you beat it?`, ENG + "-practice.html")}</div>` : ""}
+      ${window.joinCta ? window.joinCta() : ""}
       <p class="muted" style="font-size:.88rem;margin:.6em 0 0">Marking: ${window.EXAM === "cuet" ? "+5 correct, −1 wrong, 0 unanswered (CUET UG)" : "+3 correct, −1 wrong MCQ, 0 wrong TITA, 0 unanswered"}.${lost ? ` You lost ${lost} mark(s) to negative marking.` : ""}</p>`;
     const showPart = new Set(rows.map(r => r.q.part).filter(Boolean)).size > 1;
     const tr = Object.entries(topics).sort((a, b) => (showPart ? a[1].part.localeCompare(b[1].part) : 0) || (b[1].att ? b[1].ok / b[1].att : -1) - (a[1].att ? a[1].ok / a[1].att : -1));
