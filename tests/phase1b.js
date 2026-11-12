@@ -6,7 +6,12 @@ let fails=0;const ok=(c,m)=>{console.log((c?'PASS ':'FAIL ')+m);if(!c)fails++;};
  await ctx.route(/fonts\.(googleapis|gstatic)\.com|gc\.zgo\.at|supabase/,r=>r.abort());
  const p=await ctx.newPage();const errs=[];p.on('pageerror',e=>errs.push(e.message));
  // home
- await p.goto(B);const ld=await p.$eval('script[type="application/ld+json"]',s=>JSON.parse(s.textContent));ok(ld['@type']==='WebSite'&&/aptisetu/.test(ld.url),'WebSite JSON-LD valid');
+ await p.goto(B);
+ // the home page has one combined JSON-LD block: {"@graph":[Organization, WebSite]} (see _ld_site in tools/build_pages.py)
+ {const lds=await p.$$eval('script[type="application/ld+json"]',ss=>ss.map(s=>JSON.parse(s.textContent)));
+  const nodes=lds.flatMap(d=>d['@graph']||[d]);const web=nodes.find(x=>x['@type']==='WebSite'),org=nodes.find(x=>x['@type']==='Organization');
+  ok(web&&/aptisetu/.test(web.url)&&web.name==='AptiSetu','WebSite JSON-LD valid');
+  ok(org&&web&&web.publisher&&web.publisher['@id']===org['@id']&&/aptisetu/.test(org.url),'Organization JSON-LD valid and linked as the WebSite publisher');}
  {const hs=await p.$$eval('#tracks .htrk',as=>as.map(a=>a.getAttribute('href')));ok(hs.join()==='cat.html,cuet.html,bank-ssc.html,placements.html','track cards link to track pages',);for(const h of hs){const r=await p.request.get(B+h);ok(r.ok(),`track link ${h} exists`)}}
  await p.screenshot({path:OUT+'/7-home-tracks.png'});
  {const r=await p.$eval('#labs .hlab-grid',g=>{const b=g.getBoundingClientRect();return b.right<=innerWidth+1&&b.left>=-1});ok(r,'labs grid fits the 390 viewport');}
