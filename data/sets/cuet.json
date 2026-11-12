@@ -1,0 +1,596 @@
+{
+ "exam": "cuet",
+ "label": "CUET (UG)",
+ "levels": [
+  "Easy",
+  "Medium",
+  "Hard"
+ ],
+ "marks": {
+  "correct": 5,
+  "wrong": -1,
+  "blank": 0
+ },
+ "source": "NTA CUET (UG) 2026 Information Bulletin, 2.3 and 12.1: 50 compulsory questions per paper in 60 minutes; +5 correct, -1 wrong, 0 unanswered (https://cuet.nta.nic.in/information-bulletin/)",
+ "sections": {
+  "gat": {
+   "name": "General Aptitude Test",
+   "src": "data/cuet/gat.json",
+   "size": 25,
+   "timer": 30,
+   "Easy": {
+    "range": [
+     1,
+     3
+    ],
+    "ready": [
+     {
+      "set": 1,
+      "ids": [
+       "UG1",
+       "UG4",
+       "UG7",
+       "UG9",
+       "UG12",
+       "UG14",
+       "UG17",
+       "UG31",
+       "UG33",
+       "UG37",
+       "UG40",
+       "UG44",
+       "UG50",
+       "UG61",
+       "UG63",
+       "UG64",
+       "UG65",
+       "UG66",
+       "UG67",
+       "UG76",
+       "UG80",
+       "UG82",
+       "UG83",
+       "UG84",
+       "UG86"
+      ]
+     },
+     {
+      "set": 2,
+      "ids": [
+       "UG92",
+       "UG19",
+       "UG22",
+       "UG25",
+       "UG27",
+       "UG29",
+       "UG109",
+       "UG52",
+       "UG56",
+       "UG119",
+       "UG112",
+       "UG115",
+       "UG117",
+       "UG123",
+       "UG124",
+       "UG68",
+       "UG71",
+       "UG75",
+       "UG128",
+       "UG132",
+       "UG133",
+       "UG134",
+       "UG136",
+       "UG87",
+       "UG88"
+      ]
+     },
+     {
+      "set": 3,
+      "ids": [
+       "UG156",
+       "UG157",
+       "UG149",
+       "UG95",
+       "UG96",
+       "UG102",
+       "UG103",
+       "UG104",
+       "UG173",
+       "UG121",
+       "UG150",
+       "UG151",
+       "UG153",
+       "UG176",
+       "UG178",
+       "UG154",
+       "UG147",
+       "UG130",
+       "UG165",
+       "UG137",
+       "UG139",
+       "UG140",
+       "UG141",
+       "UG143",
+       "UG145"
+      ]
+     }
+    ],
+    "leftoverQuestions": 14
+   },
+   "Medium": {
+    "range": [
+     4,
+     7
+    ],
+    "ready": [
+     {
+      "set": 4,
+      "ids": [
+       "UG2",
+       "UG3",
+       "UG5",
+       "UG6",
+       "UG8",
+       "UG10",
+       "UG13",
+       "UG32",
+       "UG34",
+       "UG35",
+       "UG36",
+       "UG38",
+       "UG39",
+       "UG62",
+       "UG69",
+       "UG70",
+       "UG72",
+       "UG73",
+       "UG74",
+       "UG77",
+       "UG78",
+       "UG79",
+       "UG81",
+       "UG85",
+       "UG89"
+      ]
+     },
+     {
+      "set": 5,
+      "ids": [
+       "UG15",
+       "UG16",
+       "UG18",
+       "UG20",
+       "UG21",
+       "UG41",
+       "UG42",
+       "UG45",
+       "UG46",
+       "UG47",
+       "UG48",
+       "UG49",
+       "UG51",
+       "UG53",
+       "UG152",
+       "UG127",
+       "UG129",
+       "UG125",
+       "UG126",
+       "UG148",
+       "UG135",
+       "UG138",
+       "UG90",
+       "UG144",
+       "UG142"
+      ]
+     },
+     {
+      "set": 6,
+      "ids": [
+       "UG91",
+       "UG93",
+       "UG94",
+       "UG23",
+       "UG24",
+       "UG26",
+       "UG28",
+       "UG30",
+       "UG110",
+       "UG107",
+       "UG108",
+       "UG54",
+       "UG57",
+       "UG58",
+       "UG59",
+       "UG60",
+       "UG161",
+       "UG175",
+       "UG177",
+       "UG155",
+       "UG180",
+       "UG166",
+       "UG168",
+       "UG169",
+       "UG146"
+      ]
+     },
+     {
+      "set": 7,
+      "ids": [
+       "UG159",
+       "UG167",
+       "UG163",
+       "UG97",
+       "UG98",
+       "UG99",
+       "UG100",
+       "UG101",
+       "UG105",
+       "UG111",
+       "UG116",
+       "UG118",
+       "UG160",
+       "UG120",
+       "UG122",
+       "UG113",
+       "UG114",
+       "UG183",
+       "UG205",
+       "UG217",
+       "UG216",
+       "UG212",
+       "UG215",
+       "UG185",
+       "UG207"
+      ]
+     }
+    ],
+    "leftoverQuestions": 17
+   },
+   "Hard": {
+    "range": [
+     8,
+     10
+    ],
+    "ready": [],
+    "leftoverQuestions": 11
+   },
+   "count": 10
+  },
+  "english": {
+   "name": "English",
+   "src": "data/cuet/english.json",
+   "size": 25,
+   "timer": 30,
+   "Easy": {
+    "range": [
+     1,
+     3
+    ],
+    "ready": [
+     {
+      "set": 1,
+      "ids": [
+       "UE13",
+       "UE14",
+       "UE15",
+       "UE16",
+       "UE17",
+       "UE48",
+       "UE18",
+       "UE53",
+       "UE54",
+       "UE79",
+       "UE83",
+       "UE60",
+       "UE61",
+       "UE67",
+       "UE68",
+       "UE111",
+       "UE62",
+       "UE103",
+       "UE104",
+       "UE72",
+       "UE94",
+       "UE95",
+       "UE101",
+       "UE86",
+       "UE92"
+      ]
+     }
+    ],
+    "leftoverQuestions": 6
+   },
+   "Medium": {
+    "range": [
+     4,
+     6
+    ],
+    "ready": [
+     {
+      "set": 4,
+      "ids": [
+       "UE1",
+       "UE2",
+       "UE3",
+       "UE4",
+       "UE5",
+       "UE6",
+       "UE7",
+       "UE8",
+       "UE9",
+       "UE10",
+       "UE11",
+       "UE12",
+       "UE19",
+       "UE20",
+       "UE55",
+       "UE21",
+       "UE22",
+       "UE24",
+       "UE25",
+       "UE27",
+       "UE63",
+       "UE50",
+       "UE74",
+       "UE69",
+       "UE70"
+      ]
+     },
+     {
+      "set": 5,
+      "ids": [
+       "UE28",
+       "UE29",
+       "UE30",
+       "UE31",
+       "UE32",
+       "UE33",
+       "UE34",
+       "UE35",
+       "UE36",
+       "UE37",
+       "UE56",
+       "UE80",
+       "UE57",
+       "UE58",
+       "UE71",
+       "UE26",
+       "UE59",
+       "UE73",
+       "UE64",
+       "UE65",
+       "UE102",
+       "UE75",
+       "UE109",
+       "UE110",
+       "UE112"
+      ]
+     },
+     {
+      "set": 6,
+      "ids": [
+       "UE38",
+       "UE39",
+       "UE40",
+       "UE41",
+       "UE42",
+       "UE43",
+       "UE44",
+       "UE45",
+       "UE46",
+       "UE47",
+       "UE117",
+       "UE118",
+       "UE119",
+       "UE120",
+       "UE82",
+       "UE84",
+       "UE85",
+       "UE88",
+       "UE89",
+       "UE91",
+       "UE97",
+       "UE98",
+       "UE100",
+       "UE105",
+       "UE107"
+      ]
+     }
+    ],
+    "leftoverQuestions": 9
+   },
+   "Hard": {
+    "range": [
+     7,
+     9
+    ],
+    "ready": [],
+    "leftoverQuestions": 13
+   },
+   "count": 9
+  },
+  "maths": {
+   "name": "Mathematics",
+   "src": "data/cuet/maths.json",
+   "size": 25,
+   "timer": 30,
+   "Easy": {
+    "range": [
+     1,
+     3
+    ],
+    "ready": [
+     {
+      "set": 1,
+      "ids": [
+       "UM1",
+       "UM2",
+       "UM6",
+       "UM8",
+       "UM34",
+       "UM10",
+       "UM36",
+       "UM12",
+       "UM60",
+       "UM15",
+       "UM114",
+       "UM41",
+       "UM104",
+       "UM67",
+       "UM87",
+       "UM75",
+       "UM20",
+       "UM18",
+       "UM44",
+       "UM19",
+       "UM48",
+       "UM53",
+       "UM73",
+       "UM56",
+       "UM68"
+      ]
+     },
+     {
+      "set": 2,
+      "ids": [
+       "UM27",
+       "UM90",
+       "UM105",
+       "UM108",
+       "UM111",
+       "UM167",
+       "UM38",
+       "UM97",
+       "UM81",
+       "UM84",
+       "UM115",
+       "UM149",
+       "UM150",
+       "UM94",
+       "UM136",
+       "UM137",
+       "UM118",
+       "UM45",
+       "UM119",
+       "UM124",
+       "UM125",
+       "UM129",
+       "UM130",
+       "UM133",
+       "UM135"
+      ]
+     }
+    ],
+    "leftoverQuestions": 15
+   },
+   "Medium": {
+    "range": [
+     4,
+     6
+    ],
+    "ready": [
+     {
+      "set": 4,
+      "ids": [
+       "UM3",
+       "UM28",
+       "UM4",
+       "UM5",
+       "UM7",
+       "UM9",
+       "UM11",
+       "UM13",
+       "UM14",
+       "UM16",
+       "UM59",
+       "UM32",
+       "UM42",
+       "UM39",
+       "UM61",
+       "UM22",
+       "UM17",
+       "UM43",
+       "UM21",
+       "UM23",
+       "UM54",
+       "UM24",
+       "UM55",
+       "UM25",
+       "UM47"
+      ]
+     },
+     {
+      "set": 5,
+      "ids": [
+       "UM29",
+       "UM89",
+       "UM30",
+       "UM31",
+       "UM35",
+       "UM37",
+       "UM96",
+       "UM40",
+       "UM77",
+       "UM64",
+       "UM65",
+       "UM33",
+       "UM63",
+       "UM51",
+       "UM120",
+       "UM122",
+       "UM49",
+       "UM71",
+       "UM72",
+       "UM69",
+       "UM131",
+       "UM57",
+       "UM58",
+       "UM78",
+       "UM123"
+      ]
+     },
+     {
+      "set": 6,
+      "ids": [
+       "UM92",
+       "UM140",
+       "UM74",
+       "UM95",
+       "UM110",
+       "UM98",
+       "UM100",
+       "UM101",
+       "UM102",
+       "UM85",
+       "UM116",
+       "UM82",
+       "UM144",
+       "UM145",
+       "UM52",
+       "UM156",
+       "UM157",
+       "UM50",
+       "UM106",
+       "UM128",
+       "UM159",
+       "UM132",
+       "UM134",
+       "UM117",
+       "UM153"
+      ]
+     }
+    ],
+    "leftoverQuestions": 14
+   },
+   "Hard": {
+    "range": [
+     7,
+     9
+    ],
+    "ready": [],
+    "leftoverQuestions": 15
+   },
+   "count": 9
+  }
+ }
+}

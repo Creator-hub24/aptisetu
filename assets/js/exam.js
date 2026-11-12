@@ -1,5 +1,6 @@
 // AptiSetu exam engine (CAT and CUET UG): timed sectional tests with exam marking, and untimed topic practice.
 // The page sets window.EXAM ("cat" | "cuet") before loading this file; default is "cat".
+// The set page (set.html) also runs CUET, Bank and SSC practice sets: set.html?exam=cuet|bank|ssc&sec=&set= (no exam = CAT).
 (function () {
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
   const L = "ABCD";
@@ -10,16 +11,26 @@
     // fewer than 50 questions for a paper we keep the official pace of 72 seconds per question.
     cuet: { label: "CUET", dir: "data/cuet/", secs: ["gat", "english", "maths"], marks: { mcq: [5, -1] },
             target: { gat: 50, english: 50, maths: 50 }, time: n => Math.min(50, n) * 72,
-            gatMix: { "Quantitative Reasoning": 15, "Logical & Analytical Reasoning": 15, "General Mental Ability": 10, "General Knowledge": 10 } }
+            gatMix: { "Quantitative Reasoning": 15, "Logical & Analytical Reasoning": 15, "General Mental Ability": 10, "General Knowledge": 10 },
+            markText: "+5 correct, −1 wrong, 0 unanswered (CUET UG)" },
+    // practice sets only (set.html): IBPS prelims (−¼ of the marks of a question) and SSC CGL/CHSL Tier I (+2 / −0.50).
+    // Their questions are the Bank/SSC bank (data/general/); progress and the mistakes notebook file them under "general".
+    bank: { label: "Bank", dir: "data/general/", src: { quant: "quant", reasoning: "reasoning", di: "dilr" }, secs: ["quant", "reasoning", "di"], eng: "general",
+            marks: { mcq: [1, -0.25] }, markText: "+1 correct, −0.25 wrong (one fourth of the marks), 0 unanswered (Bank prelims)" },
+    ssc: { label: "SSC", dir: "data/general/", src: { maths: "quant", reasoning: "reasoning" }, secs: ["maths", "reasoning"], eng: "general",
+           marks: { mcq: [2, -0.5] }, markText: "+2 correct, −0.5 wrong, 0 unanswered (SSC Tier I)" }
   };
-  const EX = EXAMS[window.EXAM] || EXAMS.cat, TARGET = EX.target;
+  EXAMS.cat.markText = "+3 correct, −1 wrong MCQ, 0 wrong TITA, 0 unanswered";
+  // set page (set.html?[exam=]&sec=&set=): one fixed practice set, own save key, result saved to the account
+  const SET = document.getElementById("set-info") ? (() => { const p = new URLSearchParams(location.search), e = p.get("exam") || "cat";
+    return { exam: ["cat", "cuet", "bank", "ssc"].includes(e) ? e : null, sec: p.get("sec"), n: parseInt(p.get("set"), 10) }; })() : null;
+  const EX = (SET && SET.exam && SET.exam !== "cat" ? EXAMS[SET.exam] : EXAMS[window.EXAM]) || EXAMS.cat, TARGET = EX.target;
   const mk = q => EX.marks[q.type] || EX.marks.mcq, sgn = v => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v);
   const marksTxt = q => `${sgn(mk(q)[0])} / ${mk(q)[1] ? sgn(mk(q)[1]) : "0"}`;
   let sectionTime = 0;
-  const P = window.Progress, ENG = window.EXAM || "cat";
+  const P = window.Progress, ENG = EX.eng || (SET && SET.exam && SET.exam !== "cat" ? SET.exam : window.EXAM || "cat");
+  const PRAC = ENG === "general" ? "practice.html" : ENG + "-practice.html";
   let saveKey = "exam-" + ENG;
-  // set page (set.html?sec=&set=): one fixed CAT practice set of 10, own save key, result saved to the account
-  const SET = document.getElementById("set-info") ? (() => { const p = new URLSearchParams(location.search); return { sec: p.get("sec"), n: parseInt(p.get("set"), 10) }; })() : null;
   // fixed pack (cat-practice.html?pack=mock-1&section=qa&mode=sectional): mocks, sectionals and practice packs from tools/cat/packs
   // Daily 10 (cat-practice.html?daily=1): the same 10 questions for everyone on a given date, picked with a date-seeded
   // shuffle from the open bank's standalone questions (no mocks, no packs, no passage/data-set questions), across all sections.
@@ -40,8 +51,15 @@
   const loading = {};
   function ensure(s) {
     if (bank.sections[s]) return Promise.resolve();
-    return loading[s] = loading[s] || fetch(EX.dir + s + ".json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(d => { d.questions.forEach(q => q._sec = s); bank.sections[s] = { name: d.name, questions: d.questions }; Object.assign(bank.sets, d.sets || {}); });
+    return loading[s] = loading[s] || fetch(EX.dir + ((EX.src && EX.src[s]) || s) + ".json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(d => {
+        d.questions.forEach(q => {
+          q._sec = s;
+          if (!q.type) q.type = "mcq";   // Bank/SSC bank: every item is an MCQ
+          // Bank/SSC data sets carry their table/chart on each question: show it in the side pane like a CAT data set
+          if (q.data && !(d.sets || {})[q.set]) { if (!q.set) q.set = "_" + q.id; if (!bank.sets[q.set]) bank.sets[q.set] = { kind: "dilr", title: q.topic, html: q.data }; }
+        });
+        bank.sections[s] = { name: d.name, questions: d.questions }; Object.assign(bank.sets, d.sets || {}); });
   }
   const fail = () => { $("#c-setup").innerHTML = "<div class='notice'>Could not load " + EX.label + " questions. Please check your connection, or open the site through a web server.</div>"; };
 
@@ -245,9 +263,9 @@
       if (!confirm(mode === "sectional" ? `Submit this section?${un ? ` ${un} question(s) unanswered.` : ""}` : "Finish this practice session?")) return;
     }
     leave(); clearInterval(timerId);
-    if (P) { P.clearRun(saveKey); P.record(ENG, qs.map((q, i) => ({ topic: q.topic, section: q._sec || sec, attempted: answered(i), correct: isCorrect(q, resp[i]) }))); }
+    if (P) { P.clearRun(saveKey); P.record(ENG, qs.map((q, i) => ({ topic: q.topic, section: (EX.src && EX.src[q._sec || sec]) || q._sec || sec, attempted: answered(i), correct: isCorrect(q, resp[i]) }))); }
     if (window.Notebook) { Notebook.seen(qs.map(q => q.id)); Notebook.record(qs.map((q, i) => ({ q, exam: ENG, attempted: answered(i), correct: isCorrect(q, resp[i]) }))); }
-    if (window.track) { const ev = `${window.EXAM || "cat"}-${sec}`; window.track(`${mode}-finish-${ev}`); if (auto) window.track(`${mode}-autosubmit-${ev}`); }
+    if (window.track) { const ev = `${SET && SET.exam && SET.exam !== "cat" ? SET.exam : window.EXAM || "cat"}-${sec}`; window.track(`${mode}-finish-${ev}`); if (auto) window.track(`${mode}-autosubmit-${ev}`); }
     const rows = qs.map((q, i) => ({ q, i, att: answered(i), ok: isCorrect(q, resp[i]), t: tspent[i] }));
     const att = rows.filter(r => r.att), ok = att.filter(r => r.ok), wrong = att.filter(r => !r.ok);
     const score = ok.reduce((a, r) => a + mk(r.q)[0], 0) + wrong.reduce((a, r) => a + mk(r.q)[1], 0);
@@ -268,9 +286,9 @@
         <div class="kpi"><b>${Math.round(tSum / qs.length)} s</b><span>Avg time per question</span></div>
       </div>
       ${P ? (st => `<p style="margin:.8em 0 0">🔥 <b>${st.count}-day streak</b> · ${st.quizzes} quiz${st.quizzes === 1 ? "" : "zes"} finished</p>`)(P.streak()) : ""}
-      ${P ? `<div class="cta-row share-row" style="margin:12px 0 0">${P.shareButton(`I scored ${score}/${maxScore} in a ${title} on ${(window.SITE || {}).BRAND || ""} (${acc}% accuracy)! Can you beat it?`, ENG + "-practice.html")}</div>` : ""}
+      ${P ? `<div class="cta-row share-row" style="margin:12px 0 0">${P.shareButton(`I scored ${score}/${maxScore} in a ${title} on ${(window.SITE || {}).BRAND || ""} (${acc}% accuracy)! Can you beat it?`, PRAC)}</div>` : ""}
       ${window.joinCta ? window.joinCta() : ""}
-      <p class="muted" style="font-size:.88rem;margin:.6em 0 0">Marking: ${window.EXAM === "cuet" ? "+5 correct, −1 wrong, 0 unanswered (CUET UG)" : "+3 correct, −1 wrong MCQ, 0 wrong TITA, 0 unanswered"}.${lost ? ` You lost ${lost} mark(s) to negative marking.` : ""}</p>`;
+      <p class="muted" style="font-size:.88rem;margin:.6em 0 0">Marking: ${EX.markText}.${lost ? ` You lost ${lost} mark(s) to negative marking.` : ""}</p>`;
     const showPart = new Set(rows.map(r => r.q.part).filter(Boolean)).size > 1;
     const tr = Object.entries(topics).sort((a, b) => (showPart ? a[1].part.localeCompare(b[1].part) : 0) || (b[1].att ? b[1].ok / b[1].att : -1) - (a[1].att ? a[1].ok / a[1].att : -1));
     $("#c-topics").innerHTML = `<h3>Topic-wise breakdown</h3><div class="table-wrap"><table class="data topic-table"><tr>${showPart ? '<th style="text-align:left">Part</th>' : ""}<th style="text-align:left">Topic</th><th>Qs</th><th>Attempted</th><th>Correct</th><th>Accuracy</th><th>Avg time</th><th>Verdict</th></tr>` +
@@ -314,17 +332,17 @@
     return h;
   }
   function extraReport(rows, topics, score, maxScore, acc) {
-    const prac = ENG + "-practice.html";
+    const prac = ENG === "general" ? "practice.html?exam=general&" : PRAC + "?";
     const weak = Object.entries(topics).filter(([, v]) => !v.att || v.ok / v.att < 0.5)
       .sort((a, b) => (a[1].att ? a[1].ok / a[1].att : -1) - (b[1].att ? b[1].ok / b[1].att : -1));
     const secOf = t => (rows.find(r => r.q.topic === t) || {}).q;
     let h = `<div class="report-extra"><h3>Weak topics</h3>` + (weak.length
-      ? `<ul class="weak-list">${weak.map(([t, v]) => { const q = secOf(t); return `<li><b>${esc(t)}</b> · ${v.att ? Math.round(v.ok / v.att * 100) + "% of " + v.att + " attempted" : "not attempted"} · <a href="${prac}?mode=practice&section=${encodeURIComponent(q._sec || sec)}&topic=${encodeURIComponent(t)}">Practise this topic →</a></li>`; }).join("")}</ul>`
+      ? `<ul class="weak-list">${weak.map(([t, v]) => { const q = secOf(t); return `<li><b>${esc(t)}</b> · ${v.att ? Math.round(v.ok / v.att * 100) + "% of " + v.att + " attempted" : "not attempted"} · <a href="${prac}mode=practice&section=${encodeURIComponent((EX.src && EX.src[q._sec || sec]) || q._sec || sec)}&topic=${encodeURIComponent(t)}">Practise this topic →</a></li>`; }).join("")}</ul>`
       : `<p class="muted">No weak topics in this session: every topic you attempted was 50% or better.</p>`);
     const mx = Math.max(1, ...rows.map(r => r.t));
     h += `<h3>Time per question</h3><div class="tpq" role="img" aria-label="Seconds spent on each question">${rows.map(r => `<div class="tpq-col" title="Q${r.i + 1}: ${Math.round(r.t)} s · ${!r.att ? "skipped" : r.ok ? "correct" : "wrong"}"><span class="tpq-bar ${!r.att ? "skip" : r.ok ? "ok" : "bad"}" style="height:${Math.max(4, Math.round(r.t / mx * 100))}%"></span><small>${r.i + 1}</small></div>`).join("")}</div>
       <p class="muted" style="font-size:.85rem">Bar height = seconds spent (longest ${Math.round(mx)} s) · green correct · red wrong · grey skipped.</p>`;
-    const key = ENG + "-" + (DAILY ? "daily" : SET ? "set-" + SET.sec + "-" + SET.n : (PACK || sec) + "-" + mode);
+    const key = (SET && SET.exam && SET.exam !== "cat" ? SET.exam : ENG) + "-" + (DAILY ? "daily" : SET ? "set-" + SET.sec + "-" + SET.n : (PACK || sec) + "-" + mode);
     const hist = history(key, { t: Date.now(), score, max: maxScore, acc });
     if (window.Account) { Account.saveAttempt({ key, title, score, max: maxScore, acc, questions: rows.length, time_s: rows.reduce((a, r) => a + r.t, 0) }); setTimeout(() => Account.gate(document.querySelector(".report-extra"), "The detailed report"), 0); }
     if (hist.length >= 2) {
@@ -375,50 +393,58 @@
   async function setSaved(score, total) {
     const el = $("#set-save"); if (!el) return;
     const A = window.Auth, u = A && await A.ready;
-    if (!u) { el.innerHTML = `Not saved: you're not logged in. <a href="login.html?next=${encodeURIComponent("cat-" + { qa: "quant", varc: "varc", dilr: "dilr" }[SET.sec] + "-sets.html")}">Login</a> to save results and unlock levels.`; return; }
-    try { await A.saveResult(SET.sec, SET.n, score, total); el.innerHTML = `✓ Saved to your account: Set ${SET.n} completed with ${score}/${total}.`; if (window.track) window.track(`set-finish-${SET.sec}-${SET.n}`); }
+    const CS = window.CatSets;
+    if (!u) { el.innerHTML = `Not saved: you're not logged in. <a href="login.html?next=${encodeURIComponent(CS.hubFile(SET.exam, SET.sec))}">Login</a> to save results and unlock levels.`; return; }
+    try { await A.saveResult(CS.key(SET.exam, SET.sec), SET.n, score, total); el.innerHTML = `✓ Saved to your account: Set ${SET.n} completed with ${score}/${total}.`; if (window.track) window.track(`set-finish-${SET.exam === "cat" ? "" : SET.exam + "-"}${SET.sec}-${SET.n}`); }
     catch (e) { el.textContent = "Could not save your result (" + (e.message || e) + "). Please try again later."; }
   }
 
   // ---------- set page ----------
   async function initSet() {
-    const info0 = $("#set-info"), NAME = { qa: "Quant", varc: "VARC", dilr: "DILR" };
+    const info0 = $("#set-info"), CS = window.CatSets, exam = SET.exam, LV = ["Easy", "Medium", "Hard"];
+    const TRACK = { cat: ["cat.html", "CAT"], cuet: ["cuet.html", "CUET (UG)"], bank: ["bank-ssc.html", "Bank & SSC"], ssc: ["bank-ssc.html", "Bank & SSC"] };
     // the Start button is in the page (disabled) to keep the layout still; hide it when the set can't be started
     const info = { set innerHTML(h) { info0.innerHTML = h; if (/class="notice"/.test(h)) $("#c-start").classList.add("hidden"); } };
-    if (!NAME[SET.sec] || !(SET.n >= 1)) { info.innerHTML = `<div class="notice">This set doesn't exist. <a href="cat.html">Back to CAT</a></div>`; return; }
-    const hubUrl = `cat-${{ qa: "quant", varc: "varc", dilr: "dilr" }[SET.sec]}-sets.html`;
+    if (exam && exam !== "cat") $$("[data-track]").forEach(a => { a.href = TRACK[exam][0]; a.textContent = TRACK[exam][1]; });
+    const back = `<a href="${exam ? TRACK[exam][0] : "cat.html"}">Back to ${exam ? TRACK[exam][1] : "CAT"}</a>`;
+    if (!exam || !(SET.n >= 1)) { info.innerHTML = `<div class="notice">This set doesn't exist. ${back}</div>`; return; }
+    let meta;
+    try { meta = await CS.getMeta(exam); } catch (e) { info.innerHTML = `<div class="notice">Could not load this set. Please check your connection.</div>`; return; }
+    if (exam === "cat" ? !CS.NAME[SET.sec] : !Object.prototype.hasOwnProperty.call(meta.sections, SET.sec)) { info.innerHTML = `<div class="notice">This set doesn't exist. ${back}</div>`; return; }
+    const NM = exam === "cat" ? CS.NAME[SET.sec] : meta.sections[SET.sec].name, hubUrl = CS.hubFile(exam, SET.sec);
     $$("[data-hub]").forEach(a => a.href = hubUrl);
     let st;
-    try { st = await window.CatSets.status(SET.sec); } catch (e) { info.innerHTML = `<div class="notice">Could not load this set. Please check your connection.</div>`; return; }
+    try { st = await CS.status(SET.sec, exam); } catch (e) { info.innerHTML = `<div class="notice">Could not load this set. Please check your connection.</div>`; return; }
     const s = st.sets[SET.n - 1];
-    if (!s) { info.innerHTML = `<div class="notice">This set doesn't exist. <a href="${hubUrl}">See all ${NAME[SET.sec]} sets</a></div>`; return; }
-    const L = s.level;
-    document.title = `CAT ${NAME[SET.sec]} · Set ${SET.n} (${L}) | ${(window.SITE || {}).BRAND || ""}`;
-    $("#set-h1").textContent = `${NAME[SET.sec]} · Set ${SET.n}`;
+    if (!s) { info.innerHTML = `<div class="notice">This set doesn't exist. <a href="${hubUrl}">See all ${esc(NM)} sets</a></div>`; return; }
+    const L = s.level, lbl = exam === "cat" ? "CAT" : EX.label;
+    document.title = `${lbl} ${NM} · Set ${SET.n} (${L}) | ${(window.SITE || {}).BRAND || ""}`;
+    $("#set-h1").textContent = exam === "cat" ? `${NM} · Set ${SET.n}` : `${lbl} ${NM} · Set ${SET.n}`;
     const msg = {
       soon: `This set is <b>coming soon</b>. We're still writing the questions for it.`,
       login: `🔒 Please <a href="login.html?next=${encodeURIComponent(location.pathname.split("/").pop() + location.search)}">login</a> to open this set. Guests can try the first set of each section.`,
-      locked: `🔒 This set is locked. Finish all ${["Easy", "Medium", "Hard"][["Easy", "Medium", "Hard"].indexOf(L) - 1]} sets first.`
+      locked: `🔒 This set is locked. Finish all ${LV[LV.indexOf(L) - 1]} sets first.`
     }[s.state];
-    if (msg) { info.innerHTML = `<div class="notice">${msg} <a href="${hubUrl}">See all ${NAME[SET.sec]} sets</a></div>`; return; }
+    if (msg) { info.innerHTML = `<div class="notice">${msg} <a href="${hubUrl}">See all ${esc(NM)} sets</a></div>`; return; }
     try { await ensure(SET.sec); } catch (e) { fail(); return; }
-    const picked = groups(bank.sections[SET.sec].questions.filter(q => q.practiceSet === SET.n)).flat();
-    if (!picked.length) { info.innerHTML = `<div class="notice">This set is empty.</div>`; return; }
+    const all = bank.sections[SET.sec].questions, byId = new Map(all.map(q => [q.id, q]));
+    const picked = exam === "cat" ? groups(all.filter(q => q.practiceSet === SET.n)).flat() : s.ids.map(i => byId.get(i)).filter(Boolean);
+    if (!picked.length || (exam !== "cat" && picked.length !== s.ids.length)) { info.innerHTML = `<div class="notice">This set is empty.</div>`; return; }
     const mins = st.timer;
     info.innerHTML = `<span class="sbadge ${s.state === "done" ? "done" : "open"}">${s.state === "done" ? "✓ Done · best saved " + s.row.score + "/" + s.row.total : L}</span>
-      <p class="set-info-p"><b>${picked.length} questions · ${mins}-minute timer.</b> Marking: +3 correct, −1 wrong MCQ, 0 wrong TITA, 0 blank. Submits automatically when time runs out; solutions after you submit.</p>`;
-    saveKey = `exam-cat-set-${SET.sec}-${SET.n}`;
+      <p class="set-info-p"><b>${mins}-minute timer.</b> Marking: ${exam === "cat" ? "+3 correct, −1 wrong MCQ, 0 wrong TITA, 0 blank" : EX.markText}. Submits automatically when time runs out; solutions after you submit.</p>`;
+    saveKey = exam === "cat" ? `exam-cat-set-${SET.sec}-${SET.n}` : `exam-${exam}-set-${SET.sec}-${SET.n}`;
     $("#c-start").classList.remove("hidden"); $("#c-start").disabled = false;
-    $("#c-start").onclick = () => startSet(picked, mins, L);
+    $("#c-start").onclick = () => startSet(picked, mins, L, lbl + " " + NM);
     offerResume();
   }
-  function startSet(picked, mins, L) {
+  function startSet(picked, mins, L, name) {
     mode = "sectional"; sec = SET.sec;
     qs = prep(picked);
     const n = qs.length; resp = Array(n).fill(null); marked = Array(n).fill(false); visited = Array(n).fill(false); tspent = Array(n).fill(0); checked = Array(n).fill(false);
     sectionTime = mins * 60; cur = 0; elapsed = 0; timeLeft = sectionTime;
-    title = `CAT ${{ qa: "Quant", varc: "VARC", dilr: "DILR" }[sec]} · Set ${SET.n} (${L})`;
-    if (window.track) window.track(`set-start-${sec}-${SET.n}`);
+    title = `${name} · Set ${SET.n} (${L})`;
+    if (window.track) window.track(`set-start-${SET.exam === "cat" ? "" : SET.exam + "-"}${sec}-${SET.n}`);
     begin();
   }
 

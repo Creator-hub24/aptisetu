@@ -27,12 +27,23 @@ GT={g["slug"]:g for g in GUIDES}
 def glink(s): return f'<a href="guide-{s}.html">{GT[s]["h1"]}</a>'
 
 # ---- Bank & SSC hub ----
+# practice sets (built in build_pages.py from tools/exam_sets.py): Bank prelims-style and SSC Tier I-style
+def _xcard(exam, sec):
+    r=XMETA[exam]["sections"][sec]; n=sum(len(r[L]["ready"]) for L in ("Easy","Medium","Hard"))
+    return f'<a class="card card-link" href="{exam}-{sec}-sets.html"><h3>{XMETA[exam]["label"]} {_hh.escape(r["name"])} sets</h3><p class="muted">{n} of {r["count"]} sets ready · {r["timer"]} min per set</p></a>'
+XCARDS_BANK="".join(_xcard("bank",k) for k in XMETA["bank"]["sections"]); XCARDS_SSC="".join(_xcard("ssc",k) for k in XMETA["ssc"]["sections"])
+def _xcta(exam):
+    first=next(iter(XMETA[exam]["sections"]))
+    return f'<a class="btn btn-ghost" href="{exam}-{first}-sets.html">{XMETA[exam]["label"]} practice sets</a>'
+
 rows="".join(f'<tr><th scope="row"><a href="{k}.html">{n}</a></th><td>{FACTS[k]["rows"][1][1]}</td><td>{FACTS[k]["rows"][-1][1]}</td><td>{srcl(FACTS[k]["src"][0])}</td></tr>' for k,n,*_ in EXAMS)
 cards="".join(f'<a class="card card-link" href="{k}.html"><h3>{n}</h3><p class="muted">{FACTS[k]["rows"][0][1]}</p></a>' for k,n,*_ in EXAMS)
-page("bank-ssc.html","Bank &amp; SSC Exams: IBPS, SBI, SSC Patterns",ehead([(None,"Bank &amp; SSC")],"Bank &amp; SSC exams","Official patterns for IBPS PO, IBPS Clerk, SBI PO, SSC CGL and SSC CHSL, with free Quant, Reasoning and DI practice.",'<div class="cta-row"><a class="btn" href="practice.html?exam=general">Start a timed quiz →</a></div>')+f"""
+page("bank-ssc.html","Bank &amp; SSC Exams: IBPS, SBI, SSC Patterns",ehead([(None,"Bank &amp; SSC")],"Bank &amp; SSC exams","Official patterns for IBPS PO, IBPS Clerk, SBI PO, SSC CGL and SSC CHSL, with free Quant, Reasoning and DI practice.",'<div class="cta-row"><a class="btn" href="practice.html?exam=general">Start a timed quiz →</a>'+_xcta("bank")+_xcta("ssc")+'</div>')+f"""
 <section style="padding-top:16px"><div class="container"><aside class="facts" aria-label="Bank and SSC key facts"><h2 class="facts-h">Key facts: first stage of each exam</h2>
 <div class="table-wrap"><table class="data"><thead><tr><th>Exam</th><th>First stage (prelims / Tier I)</th><th>Negative marking</th><th>Official source</th></tr></thead><tbody>{rows}</tbody></table></div>
 <p class="facts-src">From the official notices, checked {CHECKED}. Exam dates are not shown because the notices give only tentative months or say “to be notified”. Always confirm on <a href="https://www.ibps.in/" rel="noopener" target="_blank">ibps.in</a>, <a href="https://sbi.bank.in/web/careers/current-openings" rel="noopener" target="_blank">sbi.bank.in</a> or <a href="https://ssc.gov.in/" rel="noopener" target="_blank">ssc.gov.in</a>.</p></aside></div></section>
+<section><div class="container"><h2>Practice sets</h2><p class="muted" style="margin-top:-.4em">Easy, then Medium, then Hard, with the real marking and sectional timers. Bank: prelims-style (−0.25 per wrong answer). SSC: Tier I-style (+2 / −0.50).</p>
+<h3>Bank (IBPS / SBI prelims style)</h3><div class="grid g3">{XCARDS_BANK}</div><h3 style="margin-top:1em">SSC (CGL / CHSL Tier I style)</h3><div class="grid g3">{XCARDS_SSC}</div></div></section>
 <section><div class="container"><h2>Exam pages</h2><div class="grid g3">{cards}</div></div></section>
 <section class="alt"><div class="container"><h2>Study material</h2><div class="grid g3">
 <a class="card card-link" href="formula-bank-ssc-quant.html"><h3>Quant formula sheet</h3><p class="muted">One printable page, with a PDF.</p></a>
@@ -46,7 +57,7 @@ for k,n,title,desc,secs in EXAMS:
         body=("Practise: "+qlinks(topics)+".") if topics else "Not covered on this site yet. Use the official notice and standard resources for this section."
         syl+=f'<div class="card"><h3>{sname}</h3><p>{body}</p></div>'
     others=" · ".join(f'<a href="{kk}.html">{nn}</a>' for kk,nn,*_ in EXAMS if kk!=k)
-    page(f"{k}.html",title,ehead([("bank-ssc.html","Bank &amp; SSC"),(None,n)],f"{n}: exam pattern and practice",f"The pattern below is taken from the official notice. The practice links go to free, original questions with worked solutions.",'<div class="cta-row"><a class="btn" href="practice.html?exam=general">Start a timed quiz →</a></div>')+f"""
+    page(f"{k}.html",title,ehead([("bank-ssc.html","Bank &amp; SSC"),(None,n)],f"{n}: exam pattern and practice",f"The pattern below is taken from the official notice. The practice links go to free, original questions with worked solutions.",'<div class="cta-row"><a class="btn" href="practice.html?exam=general">Start a timed quiz →</a>'+_xcta("ssc" if k.startswith("ssc") else "bank")+'</div>')+f"""
 <section style="padding-top:16px"><div class="container">{facts_box(k)}</div></section>
 <section><div class="container"><h2>Syllabus summary and practice</h2><p class="muted" style="margin-top:-.4em">Sections as named in the official notice. The topic lists are what we cover on this site, not an official syllabus.</p><div class="grid g2">{syl}</div></div></section>
 <section class="alt"><div class="container"><h2>Read next</h2><ul class="clean">{"".join(f"<li>{glink(s)}</li>" for s in GUIDE_FOR[k])}<li><a href="formula-bank-ssc-quant.html">Bank &amp; SSC Quant formula sheet</a> and <a href="formula-reasoning.html">reasoning shortcuts</a></li></ul>
