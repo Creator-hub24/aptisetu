@@ -32,7 +32,7 @@ page("contact.html","Contact",info_head("Contact","Contact us","Questions, feedb
 
 # ---------- ABOUT ----------
 page("about.html","About",info_head("About",f"About {B}","A free practice site for Indian students preparing for aptitude tests.")+prose(f"""
-<p><span data-brand>{B}</span> helps students practise Quantitative Aptitude, Logical Reasoning, DILR and VARC for competitive exams and campus placements. It is free to use, and you can practise without an account. Log in (optional) to save your results across devices.</p>
+<p><span data-brand>{B}</span> helps students practise Quantitative Aptitude, Logical Reasoning, DILR and VARC for competitive exams and campus placements. It is free to use, and you can practise without an account. <a href="login.html">Log in (optional)</a> to save your results across devices.</p>
 <p><b>About the name:</b> <span data-brand>{B}</span> (<a href="index.html">aptisetu.com</a>) is spelled A-P-T-I, for <i>aptitude</i>, and <i>setu</i> means bridge: the bridge from aptitude to selection. We are an independent practice site and have no connection with API Setu, the Government of India's API platform.</p>
 <h3>What's on the site</h3><ul>
 <li><b>Bank / SSC / Placements track:</b> <a href="quant.html">Quant</a>, <a href="reasoning.html">Reasoning</a> and <a href="dilr.html">DILR</a> pages with concept notes, formula sheets and <a href="practice.html?exam=general">timed quizzes</a>.</li>

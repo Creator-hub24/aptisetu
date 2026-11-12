@@ -49,6 +49,16 @@
   }
   // footer is written into each page by tools/build_pages.py
 
+  // Labelled Telegram / WhatsApp join CTAs for quiz/exam results (URLs from config.js).
+  window.joinCta = function () {
+    const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+    const tg = (S.TELEGRAM || "").trim(), wa = (S.WHATSAPP || "").trim(), btns = [];
+    if (tg) btns.push(`<a class="btn btn-ghost btn-join btn-telegram" href="${esc(tg)}" target="_blank" rel="noopener">Join Telegram</a>`);
+    if (wa) btns.push(`<a class="btn btn-ghost btn-join btn-whatsapp" href="${esc(wa)}" target="_blank" rel="noopener">Join WhatsApp Channel</a>`);
+    if (!btns.length) return "";
+    return `<p class="join-note muted">Get the daily quiz and Open Mock reminders.</p><div class="cta-row join-row">${btns.join("")}</div>`;
+  };
+
   // Analytics events: no-op unless GoatCounter loaded (GOATCOUNTER in config.js). No personal data is sent.
   window.track = function (name) {
     try { if (window.goatcounter && typeof window.goatcounter.count === "function") window.goatcounter.count({ path: name, title: name, event: true }); } catch (e) {}

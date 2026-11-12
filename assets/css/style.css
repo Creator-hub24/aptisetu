@@ -758,6 +758,21 @@ html[data-theme="dark"] .st-live{background:#14532d;color:#bbf7d0}html[data-them
 .hero-v3 h1{font-size:clamp(1.9rem,4.4vw,3rem)}.hero-v3 .hero-cta{margin-top:1.4em}
 .hero-v3 .hero-cta .btn-ghost{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.45)}
 .hero-note{margin:.9em 0 0;font-size:.9rem;color:#c7cbef}
+.auth-slot .auth-login{color:var(--brand);font-weight:600;min-height:44px;display:inline-flex;align-items:center}
+.join-row{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 0}
+.join-note{margin:.8em 0 0;font-size:.88rem}
+.btn-telegram{border-color:#229ED9;color:#0a7aa8}
+.btn-whatsapp{border-color:#25D366;color:#128C4A}
+.hero-v2 .join-row{margin-top:12px}
+.hero-v2 .join-row .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.hero-v2 .join-row .btn-telegram{border-color:#3DB3F2;color:#9bd8f8}
+.hero-v2 .join-row .btn-whatsapp{border-color:#25D366;color:#7dffa8}
+html[data-theme="dark"] .btn-telegram{color:#7ec8ea;border-color:#3DB3F2}
+html[data-theme="dark"] .btn-whatsapp{color:#6fef9e;border-color:#25D366}
+@media(max-width:360px){
+  .join-row{flex-direction:column;align-items:stretch}
+  .join-row .btn{width:100%;text-align:center;justify-content:center}
+}
 .om-sec{padding:28px 0 8px}
 .om-strip{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;padding:20px 22px;border-radius:var(--r);background:#fffbeb;border:1px solid #fcd34d;color:#422006}
 .om-strip h2{font-size:1.2rem;margin:.35em 0 .25em}.om-strip p{margin:0;color:#57350b}.om-strip .om-next{font-size:.88rem;margin-top:.3em;opacity:.85}

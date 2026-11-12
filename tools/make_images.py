@@ -39,6 +39,8 @@ def icon(n):
     g.arc([n * .2, n * .06, n * .8, n * .5], start=205, end=335, fill=GOLD, width=w)
     return s
 icon(32).save("assets/img/favicon-32.png"); (lambda a: (lambda bg: (bg.paste(a, (0, 0), a), bg.save("assets/img/apple-touch-icon.png")))(Image.new("RGB", (180, 180), "#FFFFFF")))(icon(180))
+# Root /favicon.ico (16/32/48) so browsers that still request it do not 404.
+icon(48).save("favicon.ico", format="ICO", sizes=[(16, 16), (32, 32), (48, 48)])
 open("assets/img/favicon.svg", "w").write(f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><rect x="1" y="1" width="38" height="38" rx="10" fill="#fff" stroke="{NAVY}" stroke-width="2"/>
 <text x="20" y="27.5" text-anchor="middle" font-size="19" font-weight="800" fill="{NAVY}" font-family="Inter,system-ui,Arial,sans-serif" letter-spacing="-1">AS</text>
 <path d="M9 11Q20 3 31 11" fill="none" stroke="{GOLD}" stroke-width="2.6" stroke-linecap="round"/></svg>

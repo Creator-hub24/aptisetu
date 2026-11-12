@@ -54,6 +54,16 @@ Static site (plain HTML/CSS/JS, no build step needed to serve). Works as-is on G
   `{sectional,practice}-{start,finish}-cuet-{gat,english,maths}`, `sectional-autosubmit-cuet-{gat,english,maths}`.
   `utm_*` parameters in the URL are carried over to same-site links (`assets/js/layout.js`).
 
+  **UTM scheme for links from social posts to this site** (so GoatCounter can attribute the visit). Do not add these to the site's outbound footer icons.
+  `https://aptisetu.com/<path>?utm_source=<platform>&utm_medium=<format>&utm_campaign=<campaign>&utm_content=<optional>`
+  - `utm_source`: `instagram`, `youtube`, `telegram`, `whatsapp`, `facebook`
+  - `utm_medium`: `social` (default), `bio`, `story`, `reel`, `video`, `channel-post`, or `share` (already used on the score-share button)
+  - `utm_campaign`: e.g. `daily-q`, `open-mock-15nov`, `growth-30d`, `topic-<slug>`
+  - `utm_content` (optional): question id (`cq1`) or a hook variant (`hook-a`)
+  Examples: bio `https://aptisetu.com/?utm_source=instagram&utm_medium=bio&utm_campaign=growth-30d`; a Reel to a question page `https://aptisetu.com/q/cat/cq1-percentages-profit.html?utm_source=instagram&utm_medium=reel&utm_campaign=daily-q&utm_content=cq1`.
+  In the GoatCounter dashboard, filter or group `utm_*` query parameters so campaign variants do not fragment the main page totals.
+
+
 ## CAT practice sets, login and CSP (branch `cat-sets`)
 - **Sets:** `tools/assign_levels.py` (run by `build_questions.py`, deterministic) gives every CAT question a `level` and, if it is in a ready set, a `practiceSet` (numbered Easy, then Medium, then Hard; slots per level set per section in `SLOTS`, e.g. Quant Easy 1–5, Medium 6–13, Hard 14–18, VARC/DILR 1–5/6–10/11–15; 10 questions each; passages/data sets never split, majority level with ties to the harder; a DILR set = 2 data sets of 5). It writes `data/cat/sets.json`. Pages: `cat-quant-sets.html`, `cat-varc-sets.html`, `cat-dilr-sets.html`, `set.html?sec=qa|varc|dilr&set=N` (reuses `exam.js`).
 - **Unlock rule** (`assets/js/sets.js`): Easy is open (guests: Easy set 1 only). A level unlocks once every ready set of the previous level is completed; a previous level with 0 ready sets counts as complete. Completion comes only from Supabase `set_progress` rows. This is a UI gate only: the question JSON is public.
