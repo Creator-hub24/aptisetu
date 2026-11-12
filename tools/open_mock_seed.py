@@ -1,12 +1,13 @@
 """Generate the Open Mock schedule (data/open-mock.json) and the Supabase seed migration with the hidden answer key.
-Open Mock = first Sunday of each month, 10:00-22:00 IST. Edit SCHEDULE, then run: python3 tools/open_mock_seed.py
+Open Mock = every Sunday, 10:00-22:00 IST. Edit SCHEDULE, then run: python3 tools/open_mock_seed.py
 """
 import json, datetime as dt
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 def first_sunday(y, m):
     d = dt.date(y, m, 1); return d + dt.timedelta(days=(6 - d.weekday()) % 7)
 # (id, pack, ranked, date or None, migration file, special label or None). Only packs that exist in data/cat/*.json.
-# date None = first Sunday of the month in the id. Each edition gets its OWN migration file: `supabase db push` never
+# date None = first Sunday of the month in a YYYY-MM id (legacy monthly editions). New weekly editions must pass an explicit Sunday date.
+# Each edition gets its OWN migration file: `supabase db push` never
 # re-runs a file it has already applied, so a new edition added to an old file would not reach the database.
 # 2026-11 reused CAT Mock 5 and 2026-11-15 (extra pre-CAT edition) reuses CAT Mock 4; both are already public on
 # mock-tests.html, so they are UNRANKED practice (no leaderboard; migration 20261030000006 closes the leaderboard RPCs).

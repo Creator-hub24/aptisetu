@@ -51,7 +51,7 @@ STATUS_HTML = ("<ul class='status-list'>"
  f"<li>{_L('st-live','Available now')} Practice sets for CAT, CUET (UG), Bank and SSC; CAT 40-minute sectionals and {N_MOCKS} free full-length CAT mocks on the <a href='mock-tests.html'>Mock Tests page</a>.</li>"
  f"<li>{_L('st-live','Available now')} CUET (UG) sectionals and topic practice for the General Aptitude Test, English and Mathematics; Bank / SSC timed quizzes; Daily 10; Quant Lab and Reasoning Lab.</li>"
  f"<li>{_L('st-live','Available now')} Optional login: saved test history, CAT set results and Open Mock scores across devices, with an optional profile.</li>"
- f"<li>{_L('st-pilot','Pilot')} <a href='open-mock.html'>Open Mock</a>: one CAT-pattern mock for everyone on the first Sunday of the month. The current edition is unranked practice, with no leaderboard.</li>"
+ f"<li>{_L('st-pilot','Pilot')} <a href='open-mock.html'>Open Mock</a>: one CAT-pattern mock for everyone every Sunday. The current edition is unranked practice, with no leaderboard.</li>"
  f"<li>{_L('st-soon','Coming soon')} <a href='pass.html'>AptiSetu Pass</a> (not on sale), CUET Applied Mathematics (Section B2), and full mocks for Bank, SSC and GMAT.</li>"
  "</ul>")
 faqs=[("How do I find AptiSetu? Search shows \"API Setu\"","Type <b>aptisetu.com</b> straight into your browser's address bar, or search for <b>AptiSetu aptitude practice</b>. The name is spelled A-P-T-I (from aptitude), not A-P-I. API Setu is a different, government website and is not connected to us."),("Is it free?","Yes. All notes, formula sheets and practice questions are free."),

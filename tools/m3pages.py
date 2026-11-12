@@ -13,7 +13,7 @@ page("open-mock.html", "AptiSetu Open Mock", f"""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="mock-tests.html">Mock Tests</a> / Open Mock</div>
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">AptiSetu Open Mock</h1>
 <p class="om-label" style="margin:4px 0 8px"><span class="sbadge soon" style="font-size:.9rem">{_esc.escape(_omlabel_short)}</span></p>
-<p class="muted" style="max-width:720px">One free CAT-pattern mock that everyone can take on the same day. It usually runs on the <b>first Sunday of every month, 10:00 am to 10:00 pm IST</b>.{_omsp} This edition is <b>unranked practice</b>: there is no leaderboard and no rank.</p></div></div>
+<p class="muted" style="max-width:720px">One free CAT-pattern mock that everyone can take on the same day. It runs every <b>Sunday, 10:00 am to 10:00 pm IST</b>.{_omsp} This edition is <b>unranked practice</b>: there is no leaderboard and no rank.</p></div></div>
 <section style="padding-top:16px"><div class="container" style="max-width:860px">
  <div class="card" id="om-card" data-mock="{_om['id']}" data-start="{_om['starts_at']}" data-end="{_om['ends_at']}">
   <h2 style="margin-top:0">{_esc.escape(_om['title'])}</h2>
@@ -26,7 +26,7 @@ page("open-mock.html", "AptiSetu Open Mock", f"""
  <div class="card" style="margin-top:18px"><h2 style="margin-top:0">Your Open Mock scores</h2><div id="om-mine" aria-live="polite"><p class="muted">Log in to see the scores saved to your account.</p></div>
   <p class="muted" style="font-size:.85rem">Only you can see these. Nothing is shown to other people.</p></div>
 </div></section>
-""", desc=f"AptiSetu Open Mock: a free CAT-pattern mock, usually on the first Sunday of every month, 10 am to 10 pm IST. This edition: {_esc.escape(_omlabel_short)}, no leaderboard and no rank.",
+""", desc=f"AptiSetu Open Mock: a free CAT-pattern mock, every Sunday, 10 am to 10 pm IST. This edition: {_esc.escape(_omlabel_short)}, no leaderboard and no rank.",
      extra='<script src="assets/js/open-mock.js"></script>')
 
 page("account.html", "My account", f"""
