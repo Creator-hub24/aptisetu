@@ -284,10 +284,10 @@
    "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Film studios are often accused of a failure of imagination when they release yet another sequel. The accusation overlooks how the decision looks from inside. A film costs most of its budget before anyone knows whether audiences will come, and the best available predictor of whether they will is whether they came last time. A sequel is thus less an artistic choice than a way of buying information that an original story cannot offer at any price. The same executives who approve it may privately prefer the original script; what they cannot do is put a number on their preference.</p>",
    "type": "mcq",
    "options": [
-    "Studio executives prefer original scripts, but audiences force them to make sequels.",
-    "Studios favour sequels less from lack of imagination than because an earlier film's audience is the best evidence of demand available when costs must be met in advance.",
-    "Studios show a lack of imagination because they rely on numbers and not on artistic judgement.",
-    "Sequels are more profitable than original films because they cost less to produce."
+    "Studio executives would rather make original films, but audiences keep demanding familiar stories, so studios are forced into sequels.",
+    "Studios pick sequels not from lack of imagination but because, with costs paid in advance, a past audience best predicts demand.",
+    "Studios show a lack of imagination because they let box-office numbers, rather than artistic judgement, decide which films get made.",
+    "Sequels earn more than original films mainly because they are cheaper to produce and need less money for marketing."
    ],
    "pack": "mock-6"
   },
@@ -300,10 +300,10 @@
    "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>It is commonly supposed that an expert differs from a novice by knowing more rules. Studies of chess players, physicians and firefighters suggest something nearly opposite. The novice applies rules because he has nothing else; the expert has seen so many cases that he recognises the present one as a variant of some earlier one and responds to it directly. Asked to justify the response, he can usually produce a rule, but the rule is a reconstruction after the fact and not the route he took. This is why expertise is hard to teach by instruction alone, and why experts' explanations of their own judgement are often less reliable than the judgement itself.</p>",
    "type": "mcq",
    "options": [
-    "Experts' judgements are unreliable because they rest on the recognition of earlier cases and not on rules.",
-    "Novices should learn from cases and not from rules, as chess players, physicians and firefighters do.",
-    "Experts know fewer rules than novices and are therefore unable to explain or teach what they do.",
-    "Expertise lies less in applying rules than in recognising cases from experience; the rules that experts cite are later reconstructions, which limits both teaching by instruction and the reliability of their own explanations."
+    "Experts' judgements cannot be trusted, because they rest on recognising earlier cases rather than on any explicit set of rules that others could check.",
+    "Novices should learn from worked cases rather than from rules, just as chess players, physicians and firefighters do when they train their juniors.",
+    "Experts actually know fewer rules than novices do, and that is why they are unable to explain their decisions or teach what they do to others.",
+    "Expertise is case recognition, not rule use; the rules experts cite are reconstructed later, which limits teaching and their own explanations."
    ],
    "pack": "mock-6"
   },

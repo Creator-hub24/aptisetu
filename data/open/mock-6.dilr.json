@@ -115,23 +115,6 @@
    "section": "dilr",
    "topic": "Tournaments",
    "difficulty": "Medium",
-   "question": "Which match produced the most goals?",
-   "set": "m6-league",
-   "type": "mcq",
-   "options": [
-    "Ajmer v Dhule",
-    "Bokaro v Cuttack",
-    "Bokaro v Dhule",
-    "Ajmer v Bokaro"
-   ],
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-LEAGUE-10",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Tournaments",
-   "difficulty": "Medium",
    "question": "In how many matches did the winning team win by a margin of exactly one goal?",
    "set": "m6-league",
    "type": "tita",
@@ -139,7 +122,7 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-LEAGUE-11",
+   "id": "M6-LEAGUE-10",
    "exam": "cat",
    "section": "dilr",
    "topic": "Tournaments",
@@ -151,11 +134,11 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-CONF-12",
+   "id": "M6-CONF-11",
    "exam": "cat",
    "section": "dilr",
    "topic": "Scheduling",
-   "difficulty": "Medium",
+   "difficulty": "Easy",
    "question": "Who speaks in Hall 1 in Slot 3?",
    "set": "m6-conf",
    "type": "mcq",
@@ -168,11 +151,11 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-CONF-13",
+   "id": "M6-CONF-12",
    "exam": "cat",
    "section": "dilr",
    "topic": "Scheduling",
-   "difficulty": "Medium",
+   "difficulty": "Easy",
    "question": "Which of these pairs of speakers present in the same slot?",
    "set": "m6-conf",
    "type": "mcq",
@@ -185,11 +168,11 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-CONF-14",
+   "id": "M6-CONF-13",
    "exam": "cat",
    "section": "dilr",
    "topic": "Scheduling",
-   "difficulty": "Medium",
+   "difficulty": "Easy",
    "question": "On which track is Bina's talk?",
    "set": "m6-conf",
    "type": "mcq",
@@ -202,11 +185,11 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-CONF-15",
+   "id": "M6-CONF-14",
    "exam": "cat",
    "section": "dilr",
    "topic": "Scheduling",
-   "difficulty": "Medium",
+   "difficulty": "Easy",
    "question": "What is the sum of the slot numbers of the two talks on Data?",
    "set": "m6-conf",
    "type": "tita",
@@ -214,11 +197,11 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-CONF-16",
+   "id": "M6-CONF-15",
    "exam": "cat",
    "section": "dilr",
    "topic": "Scheduling",
-   "difficulty": "Hard",
+   "difficulty": "Medium",
    "question": "Suppose the condition that Divya does not speak in Slot 1 is removed, and all the other conditions stay. How many different complete schedules (speaker, slot, hall and track for all six talks) are then possible?",
    "set": "m6-conf",
    "type": "tita",
@@ -226,7 +209,7 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-RATINGS-17",
+   "id": "M6-RATINGS-16",
    "exam": "cat",
    "section": "dilr",
    "topic": "Rankings & scoring",
@@ -243,7 +226,7 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-RATINGS-18",
+   "id": "M6-RATINGS-17",
    "exam": "cat",
    "section": "dilr",
    "topic": "Rankings & scoring",
@@ -260,7 +243,7 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-RATINGS-19",
+   "id": "M6-RATINGS-18",
    "exam": "cat",
    "section": "dilr",
    "topic": "Rankings & scoring",
@@ -272,7 +255,7 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-RATINGS-20",
+   "id": "M6-RATINGS-19",
    "exam": "cat",
    "section": "dilr",
    "topic": "Rankings & scoring",
@@ -284,19 +267,7 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-RATINGS-21",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Rankings & scoring",
-   "difficulty": "Medium",
-   "question": "How many of the five films received the same score from at least two critics?",
-   "set": "m6-ratings",
-   "type": "tita",
-   "kind": "number",
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-RATINGS-22",
+   "id": "M6-RATINGS-20",
    "exam": "cat",
    "section": "dilr",
    "topic": "Rankings & scoring",
@@ -321,7 +292,7 @@
   },
   "m6-conf": {
    "kind": "dilr",
-   "title": "Conference schedule (Medium)",
+   "title": "Conference schedule (Easy)",
    "html": "<b>Conference schedule</b><p>A one-day conference has two halls, Hall 1 and Hall 2, and three time slots, Slot 1, Slot 2 and Slot 3, in that order. Six speakers — Anand, Bina, Chen, Divya, Elan and Farah — give one talk each, so that each hall has exactly one talk in each slot. Each talk belongs to one of three tracks — Data, Policy or Health — and there are exactly two talks in each track.</p><p>The following is known:</p><ul class='clues'><li>In each hall, the three talks are on three different tracks.</li><li>Anand speaks in the slot immediately after Bina's, and not in the hall in which Bina speaks.</li><li>Chen and Divya speak on the same track; Anand and Bina also speak on the same track.</li><li>Elan speaks in an earlier slot than Farah, and Divya in an earlier slot than Chen.</li><li>Elan's talk is on Data and is in Hall 2.</li><li>Neither talk in Slot 1 is on Policy, and Divya does not speak in Slot 1.</li></ul>"
   },
   "m6-ratings": {

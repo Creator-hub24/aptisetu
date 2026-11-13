@@ -42,7 +42,7 @@
    "ends_at": "2026-11-22T22:00:00+05:30",
    "questions": {
     "varc": 24,
-    "dilr": 22,
+    "dilr": 20,
     "qa": 22
    },
    "reused_public_mock": false,
