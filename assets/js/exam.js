@@ -59,8 +59,46 @@
           // Bank/SSC data sets carry their table/chart on each question: show it in the side pane like a CAT data set
           if (q.data && !(d.sets || {})[q.set]) { if (!q.set) q.set = "_" + q.id; if (!bank.sets[q.set]) bank.sets[q.set] = { kind: "dilr", title: q.topic, html: q.data }; }
         });
-        bank.sections[s] = { name: d.name, questions: d.questions }; Object.assign(bank.sets, d.sets || {}); });
+        bank.sections[s] = { name: d.name, questions: d.questions }; Object.assign(bank.sets, d.sets || {}); })
+      .then(() => sealedLoad(s));
   }
+  // ---------- sealed Open Mock pack ----------
+  // A fresh Open Mock is not in the public bank. Its questions are in data/open/<pack>.<section>.json, a file with
+  // no answers and no solutions. Scoring is done on the server (submit_open_mock). Answers and solutions come from
+  // the open_mock_review RPC, which returns nothing until the edition has ended.
+  let OM = null;   // this edition's entry from data/open-mock.json
+  const omEnded = () => !!OM && Date.now() > Date.parse(OM.ends_at), omEarly = () => !!OM && Date.now() < Date.parse(OM.starts_at);
+  const omWhen = iso => new Date(iso).toLocaleString("en-IN", { timeZone: "Asia/Kolkata", weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }) + " IST";
+  const PEND = "aptisetu.openmock.pending";
+  const pendGet = () => { try { return JSON.parse(localStorage.getItem(PEND)) || {}; } catch (e) { return {}; } };
+  const pendSet = o => { try { localStorage.setItem(PEND, JSON.stringify(o)); } catch (e) {} };
+  async function sealedLoad(s) {
+    if (!PACK || !OPEN || ENG !== "cat" || bank.sections[s].questions.some(q => q.pack === PACK)) return;
+    try {
+      const all = await fetch("data/open-mock.json").then(r => r.json());
+      OM = (all.mocks || []).find(m => m.id === OPEN && m.pack === PACK && m.sealed) || null;
+      if (!OM) return;
+      const d = await fetch("data/open/" + PACK + "." + s + ".json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+      d.questions.forEach(q => { q._sec = s; q._sealed = true; q.pack = PACK; });
+      bank.sections[s].questions.push(...d.questions); Object.assign(bank.sets, d.sets || {});
+      if (omEnded()) await unseal(s);
+    } catch (e) { console.warn("Open Mock questions unavailable:", e.message); }
+  }
+  // after the edition ends: fetch the key and solutions and turn the sealed questions into ordinary ones
+  async function unseal(s) {
+    const A = window.Auth; if (!A || !A.configured || A.mock) return false;
+    try {
+      await A.ready; const c = A.client(); if (!c) return false;
+      const { data, error } = await c.rpc("open_mock_review", { p_mock: OPEN, p_section: s });
+      if (error || !data || !data.length) return false;
+      const by = Object.fromEntries(data.map(k => [k.qid, k]));
+      const qsS = bank.sections[s].questions.filter(q => q._sealed);
+      if (!qsS.every(q => by[q.id])) return false;
+      qsS.forEach(q => { const k = by[q.id]; q.answer = q.type === "mcq" ? +k.answer : k.answer; q.solution = k.solution || ""; delete q._sealed; });
+      return true;
+    } catch (e) { return false; }
+  }
+  const isSealed = s => !!PACK && !!bank.sections[s] && bank.sections[s].questions.some(q => q.pack === PACK && q._sealed);
   const fail = () => { $("#c-setup").innerHTML = "<div class='notice'>Could not load " + EX.label + " questions. Please check your connection, or open the site through a web server.</div>"; };
 
   // ---------- question selection ----------
@@ -134,7 +172,13 @@
     if (keep && (tc[keep] || [...sel.options].some(o => o.value === keep))) sel.value = keep;
     let info;
     const np = PACK ? bank.sections[sec].questions.filter(q => q.pack === PACK).length : 0;
-    if (np) { $("#c-topic-wrap").classList.add("hidden"); info = `<b>${esc(PACK)}:</b> ${np} fixed questions · ` + (mode === "sectional" ? "40-minute timer · +3 / −1 for a wrong MCQ / 0 for a wrong TITA." : "practice: no countdown, solution after each answer."); }
+    if (np && isSealed(sec)) {   // fresh Open Mock: timed only, answers and solutions open after the edition ends
+      $("#c-topic-wrap").classList.add("hidden"); mode = "sectional"; const sm = $$("input[name=cmode]").find(x => x.value === "sectional"); if (sm) sm.checked = true;
+      info = `<b>AptiSetu Open Mock:</b> a fixed set of new questions · 40-minute timer · +3 / −1 for a wrong MCQ / 0 for a wrong TITA. ` +
+        (omEarly() ? `This section opens ${esc(omWhen(OM.starts_at))}.` : omEnded() ? `This edition has ended; its answers and solutions could not be loaded just now, so only your responses will be shown. Please try again later.` : `Answers and solutions open after the edition ends (${esc(omWhen(OM.ends_at))}). Log in before you start to get your score when you submit.`);
+      $("#c-start").disabled = omEarly();
+    }
+    else if (np) { $("#c-topic-wrap").classList.add("hidden"); info = `<b>${esc(PACK.replace(/-/g, " ").replace(/^./, c => c.toUpperCase()))}:</b> a fixed set of questions · ` + (mode === "sectional" ? "40-minute timer · +3 / −1 for a wrong MCQ / 0 for a wrong TITA." : "practice: no countdown, solution after each answer."); }
     else if (PACK) info = `<b>${esc(PACK)}</b> has no ${esc(bank.sections[sec].name)} questions; this will start a normal session.`;
     else if (mode === "practice") { info = `<b>Practice:</b> no countdown · the solution appears right after you check each answer.`; }
     else if (window.EXAM === "cuet") {
@@ -153,6 +197,7 @@
   function start() {
     mode = val("cmode"); sec = val("csec");
     const pq = PACK ? bank.sections[sec].questions.filter(q => q.pack === PACK) : [];
+    if (isSealed(sec)) { if (omEarly()) return; mode = "sectional"; }
     const picked = pq.length ? groups(pq).flat() : mode === "sectional" ? pickSectional(sec) : pickPractice(sec, $("#c-topic").value);
     qs = prep(picked);
     const n = qs.length; resp = Array(n).fill(null); marked = Array(n).fill(false); visited = Array(n).fill(false); tspent = Array(n).fill(0); checked = Array(n).fill(false);
@@ -167,11 +212,11 @@
       const idx = q.fixed ? [0, 1, 2, 3] : shuffle([0, 1, 2, 3]);
       // solutions refer to options as "Option 1" … "Option 4" (bank order); rewrite them as the letters actually shown
       const letter = d => L[idx.indexOf(+d - 1)];
-      const solution = q.solution.replace(/\b([Oo]ptions?) ([1-4](?:(?:, | and | or )[1-4])*)\b/g, (m, w, list) => {
+      const solution = (q.solution || "").replace(/\b([Oo]ptions?) ([1-4](?:(?:, | and | or )[1-4])*)\b/g, (m, w, list) => {
         const ds = list.match(/[1-4]/g), seps = list.split(/[1-4]/).slice(1, -1), ls = ds.map(letter).sort();
         return w + " " + ls.map((x, i) => x + (i < seps.length ? seps[i] : "")).join("");
       });
-      return { ...q, options: idx.map(i => q.options[i]), answer: idx.indexOf(q.answer), solution, _idx: idx };
+      return { ...q, options: idx.map(i => q.options[i]), answer: q._sealed ? null : idx.indexOf(q.answer), solution, _idx: idx };
     });
   }
   let title = "";
@@ -263,6 +308,7 @@
       if (!confirm(mode === "sectional" ? `Submit this section?${un ? ` ${un} question(s) unanswered.` : ""}` : "Finish this practice session?")) return;
     }
     leave(); clearInterval(timerId);
+    if (qs.some(q => q._sealed)) return sealedResults(auto);
     if (P) { P.clearRun(saveKey); P.record(ENG, qs.map((q, i) => ({ topic: q.topic, section: (EX.src && EX.src[q._sec || sec]) || q._sec || sec, attempted: answered(i), correct: isCorrect(q, resp[i]) }))); }
     if (window.Notebook) { Notebook.seen(qs.map(q => q.id)); Notebook.record(qs.map((q, i) => ({ q, exam: ENG, attempted: answered(i), correct: isCorrect(q, resp[i]) }))); }
     if (window.track) { const ev = `${SET && SET.exam && SET.exam !== "cat" ? SET.exam : window.EXAM || "cat"}-${sec}`; window.track(`${mode}-finish-${ev}`); if (auto) window.track(`${mode}-autosubmit-${ev}`); }
@@ -276,7 +322,7 @@
     const topics = {}; rows.forEach(r => { const t = topics[r.q.topic] = topics[r.q.topic] || { n: 0, att: 0, ok: 0, time: 0, part: r.q.part || "" }; t.n++; t.time += r.t; if (r.att) t.att++; if (r.ok) t.ok++; });
     const label = t => !t.att ? `<span class="tag-na">Not attempted</span>` : (t.ok / t.att >= 0.7 ? `<span class="tag-strong">Strong</span>` : t.ok / t.att < 0.5 ? `<span class="tag-weak">Weak</span>` : `<span class="tag-mid">Average</span>`);
     $("#c-quiz").classList.add("hidden"); $("#c-results").classList.remove("hidden");
-    $("#c-res-head").innerHTML = `<h2>${auto ? "Time's up! " : ""}${esc($("#c-title").textContent)}: results</h2>
+    $("#c-res-head").innerHTML = `<h2>${replay ? "Your Open Mock attempt · " : auto ? "Time's up! " : ""}${esc($("#c-title").textContent)}: results</h2>
       <div class="kpis">
         <div class="kpi main"><b>${score}</b><span>Score (out of ${maxScore})</span></div>
         <div class="kpi"><b>${att.length}/${qs.length}</b><span>Attempted</span></div>
@@ -306,8 +352,56 @@
     }).join("");
     $$("[data-progress]").forEach(x => P && P.panel(x, x.dataset.progress));
     if (SET) setSaved(score, maxScore);
-    if (OPEN) openMockSubmit(score);
+    if (OPEN && !replay) openMockSubmit(score);
+    replay = false;
     scrollTo({ top: 0, behavior: "instant" });
+  }
+  // bank-order responses for the server: an MCQ response is the option's position in the ORIGINAL order, not the
+  // shuffled position on screen (the key in open_mock_keys is in the original order)
+  const bankResp = (q, r) => q.type === "mcq" && q._idx ? q._idx[r] : r;
+  let replay = false;
+  // Sealed Open Mock section submitted while the edition is still open: there is no key in the browser, so no score
+  // is worked out here. Logged-in users get the server's score; everyone's responses are kept in this browser and
+  // scored with solutions once the edition has ended.
+  function sealedResults(auto) {
+    if (P) P.clearRun(saveKey);
+    if (window.track) { window.track(`${mode}-finish-cat-${sec}`); if (auto) window.track(`${mode}-autosubmit-cat-${sec}`); }
+    const att = qs.filter((_, i) => answered(i)).length, used = sectionTime - Math.max(timeLeft, 0);
+    const all = pendGet(), k = OPEN + ":" + sec;
+    if (!all[k]) { all[k] = { t: Date.now(), title, ids: qs.map(q => q.id), idx: qs.map(q => q._idx || null), resp, tspent, used, sectionTime }; pendSet(all); }
+    $("#c-quiz").classList.add("hidden"); $("#c-results").classList.remove("hidden");
+    $("#c-res-head").innerHTML = `<h2>${auto ? "Time's up! " : ""}${esc($("#c-title").textContent)}: submitted</h2>
+      <div class="kpis">
+        <div class="kpi main"><b id="om-score">–</b><span>Score (out of ${qs.reduce((a, q) => a + mk(q)[0], 0)})</span></div>
+        <div class="kpi"><b>${att}/${qs.length}</b><span>Attempted</span></div>
+        <div class="kpi"><b>${fmt(used)}</b><span>Time used of ${fmt(sectionTime)}</span></div>
+      </div>
+      <p class="muted" style="font-size:.9rem;margin:.6em 0 0">${omEnded() ? "The answers and solutions for this edition could not be loaded just now." : `This is a new mock, so its answers and solutions stay closed until the edition ends (${esc(omWhen(OM.ends_at))}).`} Your responses are saved in this browser: come back to the <a href="open-mock.html">Open Mock page</a> later to see every answer, the worked solutions and your full report. Marking: ${EX.markText}.</p>`;
+    $("#c-topics").innerHTML = "";
+    let last = null;
+    $("#c-review").innerHTML = qs.map((q, i) => {
+      let pane = ""; if (q.set && q.set !== last) { const s = bank.sets[q.set]; pane = `<details class="rv-pane"><summary>Show ${s.kind === "passage" ? "passage" : "data set"}: ${esc(s.title)}</summary><div class="q-data">${s.html}</div></details>`; } last = q.set || null;
+      const yours = !answered(i) ? "Not answered" : q.type === "mcq" ? `${L[resp[i]]}. ${q.options[resp[i]]}` : esc(resp[i]);
+      return `${pane}<div class="card review-item"><div class="muted" style="font-size:.85rem">Q${i + 1} · ${q.type.toUpperCase()} · ${esc(q.topic)} · ${q.difficulty}</div><div class="q-text">${q.question}</div><p>Your answer: <b>${yours}</b></p></div>`;
+    }).join("");
+    openMockSubmit(null);
+    scrollTo({ top: 0, behavior: "instant" });
+  }
+  // After a sealed edition has ended: show the saved attempt with the score, answers and solutions.
+  function replaySaved(s) {
+    const sv = pendGet()[OPEN + ":" + s]; if (!sv) return false;
+    const by = Object.fromEntries(bank.sections[s].questions.filter(q => q.pack === PACK).map(q => [q.id, q]));
+    if (!sv.ids.every(id => by[id] && !by[id]._sealed)) return false;
+    mode = "sectional"; sec = s; title = sv.title;
+    qs = sv.ids.map((id, i) => { const q = by[id], idx = sv.idx[i]; if (q.type !== "mcq" || !idx) return { ...q };
+      const letter = d => L[idx.indexOf(+d - 1)];
+      const solution = (q.solution || "").replace(/\b([Oo]ptions?) ([1-4](?:(?:, | and | or )[1-4])*)\b/g, (m, w, list) => { const ds = list.match(/[1-4]/g), seps = list.split(/[1-4]/).slice(1, -1), ls = ds.map(letter).sort(); return w + " " + ls.map((x, j) => x + (j < seps.length ? seps[j] : "")).join(""); });
+      return { ...q, options: idx.map(j => q.options[j]), answer: idx.indexOf(q.answer), solution, _idx: idx }; });
+    resp = sv.resp; tspent = sv.tspent || qs.map(() => 0); marked = qs.map(() => false); visited = qs.map(() => true); checked = qs.map(() => false);
+    sectionTime = sv.sectionTime || EX.time(qs.length); timeLeft = sectionTime - (sv.used || 0); cur = 0;
+    $("#c-title").textContent = title; $("#c-setup").classList.add("hidden"); $("#c-progress").classList.add("hidden");
+    replay = true; submit(true);
+    return true;
   }
   // ---------- AptiSetu Open Mock: send responses (not the score) to the server, which scores them from its hidden key ----------
   // full mocks are a Pass feature once payments are on (Open Mock day stays free for everyone)
@@ -316,14 +410,14 @@
     const box = document.createElement("div"); box.className = "notice open-mock-result"; box.setAttribute("role", "status");
     $("#c-res-head").appendChild(box);
     const A = window.Auth, ACC = window.Account;
-    if (!ACC || !A || !A.configured) { box.innerHTML = `Saving Open Mock scores needs login, which isn't switched on yet. This is unranked practice; your score is shown above and saved in this browser. <a href="open-mock.html">Open Mock page →</a>`; return; }
-    if (!(await A.ready)) { box.innerHTML = `Unranked practice: your score is shown above. <a href="login.html?next=open-mock.html">Log in</a> before you start to save your Open Mock scores to your account.`; return; }
-    // the key in open_mock_keys is in the ORIGINAL option order, so send the original position of the chosen option, not its shuffled position on screen
-    const responses = {}; qs.forEach((q, i) => { if (answered(i)) responses[q.id] = q.type === "mcq" && q._idx ? q._idx[resp[i]] : resp[i]; });
+    const sealed = localScore === null, show = v => { const e = $("#om-score"); if (e) e.textContent = v; };
+    if (!ACC || !A || !A.configured) { box.innerHTML = sealed ? `Scoring during the edition needs login, which isn't switched on yet. Your responses are saved in this browser and will be scored when the answers open. <a href="open-mock.html">Open Mock page →</a>` : `Saving Open Mock scores needs login, which isn't switched on yet. This is unranked practice; your score is shown above and saved in this browser. <a href="open-mock.html">Open Mock page →</a>`; return; }
+    if (!(await A.ready)) { box.innerHTML = sealed ? `You were not logged in, so there is no score yet. Your responses are saved in this browser and will be scored when the answers open. Next time, <a href="login.html?next=open-mock.html">log in</a> before you start to get your score as soon as you submit.` : `Unranked practice: your score is shown above. <a href="login.html?next=open-mock.html">Log in</a> before you start to save your Open Mock scores to your account.`; return; }
+    const responses = {}; qs.forEach((q, i) => { if (answered(i)) responses[q.id] = bankResp(q, resp[i]); });
     if (A.mock) responses.__score = localScore;
     box.textContent = "Saving your Open Mock score…";
-    try { const r = await ACC.submitOpenMock(OPEN, sec, responses); box.innerHTML = !r ? `Not saved. Please try again.` : r.first_attempt ? `✓ Saved to your account: Open Mock ${esc(bank.sections[sec].name)} score ${r.score}. Unranked practice, no leaderboard. <a href="open-mock.html">Your Open Mock scores →</a>` : `Only your first attempt of each section is saved. Your saved ${esc(bank.sections[sec].name)} score is ${r.score}; this attempt was extra practice. <a href="open-mock.html">Your Open Mock scores →</a>`; }
-    catch (e) { box.textContent = `Not saved: ${e.message}`; }
+    try { const r = await ACC.submitOpenMock(OPEN, sec, responses); if (r && sealed) show(r.score); box.innerHTML = !r ? `Not saved. Please try again.` : r.first_attempt ? `✓ Saved to your account: Open Mock ${esc(bank.sections[sec].name)} score ${r.score}. Unranked practice, no leaderboard. <a href="open-mock.html">Your Open Mock scores →</a>` : `Only your first attempt of each section is saved. Your saved ${esc(bank.sections[sec].name)} score is ${r.score}; this attempt was extra practice. <a href="open-mock.html">Your Open Mock scores →</a>`; }
+    catch (e) { box.textContent = sealed ? `No score yet: ${e.message}. Your responses are saved in this browser and will be scored when the answers open.` : `Not saved: ${e.message}`; }
   }
   // ---------- post-test report: weak topics, time per question, progress over attempts ----------
   const HKEY = "aptisetu.history";
@@ -488,7 +582,13 @@
     $$("input[name=cmode],input[name=csec]").forEach(r => r.onchange = refreshSetup);
     $("#c-topic").onchange = refreshSetup;
     collapseChooser(p);
-    counts(); refreshSetup();
+    counts(); await refreshSetup();
+    if (PACK && OPEN && OM && omEnded() && !isSealed(val("csec")) && pendGet()[OPEN + ":" + val("csec")]) {
+      const s0 = val("csec"), bar = document.createElement("div"); bar.className = "notice resume-bar";
+      bar.innerHTML = `<b>Your Open Mock attempt is saved in this browser.</b> The answers are open now. <span class="resume-actions"><button type="button" class="btn btn-sm" id="om-replay">See my score and solutions</button></span>`;
+      $("#c-setup").parentNode.insertBefore(bar, $("#c-setup"));
+      $("#om-replay").onclick = () => { if (replaySaved(s0)) bar.remove(); };
+    }
     $("#c-start").onclick = async () => { try { await ensure(val("csec")); } catch (e) { fail(); return; } start(); };
   }
   document.addEventListener("DOMContentLoaded", () => {

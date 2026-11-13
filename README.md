@@ -107,3 +107,12 @@ Tests (dev-only; Playwright and axe-core are not shipped):
 - **Career tables:** SSC CHSL, SSC CGL, IBPS PO and IBPS Clerk rows link to their exam pages; placement rows link to `placements.html`.
 - **Tests:** `tests/phase1.js` (same setup as `tests/flow.js`).
 - **Phase 1b:** home goal selector (`assets/js/home-goal.js`, choice kept in `aptisetu.goal`); contact report builder that opens a pre-filled email or copies the text (`assets/js/contact.js`, `contact.html?q=<id>` pre-fills the ID); backup code on `login.html#backup` to move local progress between devices without an account (`assets/js/backup.js`, only progress keys, never login tokens); WebSite JSON-LD on the home page. Tests: `tests/phase1b.js`.
+
+## Open Mock: sealed editions (fresh, unpublished mocks)
+The repository is public and GitHub Pages serves every file in it, so a fresh Open Mock must never have an answer or a solution in a committed file before its edition ends.
+- The full pack (answers, solutions, generator and verification code) lives in the git-ignored `private/` folder, e.g. `private/mock6/` (`python3 private/mock6/build.py` re-checks every QA/DILR answer in code and proves each DILR set has exactly one solution).
+- `python3 tools/open_mock_seed.py` writes `data/open/<pack>.<section>.json` (questions only, served to the browser), the edition's schedule-only migration, and `private/sql/<migration>_KEY_PRIVATE.sql` (key and solutions; run it by hand in the Supabase SQL Editor, never commit it).
+- `supabase/migrations/20261113000009_open_mock_sealed_review.sql` adds `open_mock_keys.solution` and `open_mock_review()`, which returns the key and solutions only after the edition ends.
+- `assets/js/exam.js`: a sealed section can start only during the window, is timed only, and is scored on the server (logged-in users see the score on submit). Responses are kept in `localStorage["aptisetu.openmock.pending"]`; after the edition ends the same page loads the key via `open_mock_review` and shows the full report with solutions.
+- A sealed pack is not in `data/cat/*.json`, `tools/cat/packs/`, `mock-tests.html` or any practice listing. After the edition, it can be moved into `tools/cat/packs/` to become a normal public mock.
+- Tests: `tests/openmock.js`, `tests/supabase/open_mock_sealed.test.mjs`.

@@ -1,0 +1,409 @@
+{
+ "name": "Mock 6 — VARC",
+ "pack": "mock-6",
+ "sealed": true,
+ "questions": [
+  {
+   "id": "M6-01",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "question": "The primary purpose of the passage is to:",
+   "set": "m6-rc1",
+   "type": "mcq",
+   "options": [
+    "trace how advances in optical theory improved the design of early telescopes",
+    "use the reception of the telescope to show that what is accepted as observation rests on accumulated reasons for trusting instruments",
+    "argue that scientific observation is ultimately arbitrary because it depends on theory",
+    "defend Galileo's critics by showing that they were right to reject his claims about Jupiter"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-02",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "question": "According to the passage, why did the telescope's success in viewing distant objects on the ground not settle whether it could be trusted in the sky?",
+   "set": "m6-rc1",
+   "type": "mcq",
+   "options": [
+    "The telescope enlarged objects on the ground far less than it enlarged objects in the sky",
+    "Observers using differently made telescopes disagreed about what they saw on the ground",
+    "Coloured fringes and doubled images appeared only when the telescope was pointed at the sky",
+    "On the ground its reports could be checked independently, while in the sky no such check was available"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-03",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "question": "Which of the following, if true, would most weaken the support that the author draws from the \"regular timetable\" kept by the specks beside Jupiter?",
+   "set": "m6-rc1",
+   "type": "mcq",
+   "options": [
+    "The four companions of Jupiter move around it with four different periods",
+    "Observers in different countries, using telescopes they had built themselves, recorded the same positions for the specks",
+    "Later optical theory accounted fully for the magnification produced by a pair of lenses",
+    "Certain flaws in a lens produce specks whose positions change in a regular cycle as an observer follows a planet across the sky over successive nights"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-04",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "question": "With which of the following statements about modern experimental results would the author most probably agree?",
+   "set": "m6-rc1",
+   "type": "mcq",
+   "options": [
+    "Results obtained from detectors should not be described as observations, because nobody sees the thing detected",
+    "Scientists should establish the theory of an instrument completely before using it to make discoveries",
+    "Modern instruments deserve less trust than Galileo's telescope, because they depend on more theory",
+    "Calling a result \"observed\" is acceptable shorthand, but the claim stands only as long as the chain of steps behind it is reliable"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-05",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "According to the passage, the economist of the 1930s explained the existence of firms by pointing out that:",
+   "set": "m6-rc2",
+   "type": "mcq",
+   "options": [
+    "managers are better than prices at telling people what to do",
+    "firms can turn inputs into outputs more cheaply than individuals can",
+    "arranging transactions through the market has costs, which are sometimes higher than the cost of organising the work internally",
+    "contracts between independent parties are rarely honoured"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-06",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "question": "The author notes that software also allows a company to \"coordinate teams of thousands across continents\" mainly in order to:",
+   "set": "m6-rc2",
+   "type": "mcq",
+   "options": [
+    "show that large firms use technology more effectively than small ones",
+    "explain why cheaper dealings with outsiders have not, on the whole, made firms smaller",
+    "suggest that platform companies ought to treat their contractors as employees",
+    "argue that the theory of the 1930s has been refuted by recent experience"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-07",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "question": "Which of the following can be inferred from the author's discussion of platforms?",
+   "set": "m6-rc2",
+   "type": "mcq",
+   "options": [
+    "The original theory predicted that changes in tax and labour law would shift work outside the firm",
+    "A company may keep much of the direction of work that a manager exercises while placing the workers outside its legal responsibilities",
+    "Platforms show that firms are finally dissolving into webs of independent contracts",
+    "Platforms face higher costs of coordination than traditional employers do"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-08",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "question": "Which of the following, if true, would lend most support to the distinction drawn in the final paragraph?",
+   "set": "m6-rc2",
+   "type": "mcq",
+   "options": [
+    "Platform companies in every region report that the cost of finding and monitoring drivers has fallen over the past decade",
+    "Drivers who work through platforms say that they value being able to choose their own hours",
+    "In a region where contractors were given the same tax treatment and legal protections as employees, platforms' use of contractors fell sharply, although the way they assigned and monitored work did not change",
+    "Several large manufacturers have recently brought back in-house the work they had earlier contracted out"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-09",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "question": "On the account presented in the third paragraph, nostalgia ceased to be treated as a disease chiefly because:",
+   "set": "m6-rc3",
+   "type": "mcq",
+   "options": [
+    "advertisers gave the word a new and more agreeable meaning",
+    "armies stopped sending soldiers to serve far from their homes",
+    "new means of travel and communication made longing for a distant home easier to relieve, and so less serious",
+    "physicians discovered that its symptoms had been caused by other illnesses"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-10",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "question": "The author's attitude to the \"stronger claim\" made by historians of the emotions is best described as:",
+   "set": "m6-rc3",
+   "type": "mcq",
+   "options": [
+    "interested but unpersuaded, because the available evidence cannot separate past feelings from the words used for them",
+    "indifferent, because the question has no bearing on the history of medicine",
+    "dismissive, because soldiers today suffer exactly as conscripts did in the seventeenth century",
+    "fully convinced, because the change in the word's meaning shows that the feeling itself changed"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-11",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "question": "The remark that \"one cannot take a train to one's childhood\" serves mainly to:",
+   "set": "m6-rc3",
+   "type": "mcq",
+   "options": [
+    "suggest that longing for one's childhood is a more painful experience than homesickness",
+    "show that railways did more than any other invention to cure homesickness",
+    "mark the contrast between a longing for a place, which can be remedied, and a longing for a time, which cannot",
+    "explain why seventeenth-century physicians could not treat their patients"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-12",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "question": "Which of the following situations best illustrates the principle stated in the final paragraph?",
+   "set": "m6-rc3",
+   "type": "mcq",
+   "options": [
+    "A disease is renamed after researchers identify the micro-organism that causes it",
+    "Once a cheap treatment for a common form of childhood deafness becomes available, leaving a child untreated comes to be seen as neglect and no longer as misfortune",
+    "A song from an earlier decade becomes popular again after it is used in an advertisement",
+    "A hospital treats more patients each year after it moves to a larger building"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-13",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Easy",
+   "question": "According to the passage, a cadet who was praised for an unusually smooth landing generally did worse on the next attempt because:",
+   "set": "m6-rc4",
+   "type": "mcq",
+   "options": [
+    "the instructor judged the landing that followed more strictly",
+    "praise made the cadet careless on the following attempt",
+    "cadets who land smoothly are usually less able than they appear",
+    "the smooth landing owed something to favourable chance, which was unlikely to be repeated"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-14",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Medium",
+   "question": "The author says that the comparison \"works not because the untreated group stays the same but precisely because it does not\" in order to make the point that:",
+   "set": "m6-rc4",
+   "type": "mcq",
+   "options": [
+    "dividing patients at random is unfair to those who are left untreated",
+    "a comparison group is useful only when the condition being studied does not fluctuate",
+    "the change in the untreated group measures how much improvement would have taken place without the treatment",
+    "untreated patients usually recover more slowly than treated ones"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-15",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "question": "Which of the following claims is most open to the error that the passage describes?",
+   "set": "m6-rc4",
+   "type": "mcq",
+   "options": [
+    "A school gives extra coaching to the ten pupils with the lowest marks in one test and cites their higher marks in the next test as proof that the coaching works",
+    "A school finds that pupils who were coached for a full year scored higher than similar pupils chosen at random who were coached for a term",
+    "A school gives extra coaching to all its pupils and finds that the average mark is unchanged",
+    "A school chooses half its pupils by lottery for extra coaching and finds that they later do better than the other half"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-16",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Reading Comprehension",
+   "difficulty": "Hard",
+   "question": "The final sentence of the passage implies that:",
+   "set": "m6-rc4",
+   "type": "mcq",
+   "options": [
+    "instructors would do best neither to praise nor to criticise their trainees",
+    "punishment improves performance more reliably than reward does, at least in the short run",
+    "because performance drifts back towards the ordinary by itself, punishment will tend to look effective and reward counter-productive to those who use them",
+    "people who reward others are, sooner or later, treated badly by those whom they have rewarded"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-17",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Easy",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>Film studios are often accused of a failure of imagination when they release yet another sequel. The accusation overlooks how the decision looks from inside. A film costs most of its budget before anyone knows whether audiences will come, and the best available predictor of whether they will is whether they came last time. A sequel is thus less an artistic choice than a way of buying information that an original story cannot offer at any price. The same executives who approve it may privately prefer the original script; what they cannot do is put a number on their preference.</p>",
+   "type": "mcq",
+   "options": [
+    "Studio executives prefer original scripts, but audiences force them to make sequels.",
+    "Studios favour sequels less from lack of imagination than because an earlier film's audience is the best evidence of demand available when costs must be met in advance.",
+    "Studios show a lack of imagination because they rely on numbers and not on artistic judgement.",
+    "Sequels are more profitable than original films because they cost less to produce."
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-18",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-summary",
+   "difficulty": "Hard",
+   "question": "<p>The passage given below is followed by four summaries. Choose the option that best captures the essence of the passage.</p><p>It is commonly supposed that an expert differs from a novice by knowing more rules. Studies of chess players, physicians and firefighters suggest something nearly opposite. The novice applies rules because he has nothing else; the expert has seen so many cases that he recognises the present one as a variant of some earlier one and responds to it directly. Asked to justify the response, he can usually produce a rule, but the rule is a reconstruction after the fact and not the route he took. This is why expertise is hard to teach by instruction alone, and why experts' explanations of their own judgement are often less reliable than the judgement itself.</p>",
+   "type": "mcq",
+   "options": [
+    "Experts' judgements are unreliable because they rest on the recognition of earlier cases and not on rules.",
+    "Novices should learn from cases and not from rules, as chess players, physicians and firefighters do.",
+    "Experts know fewer rules than novices and are therefore unable to explain or teach what they do.",
+    "Expertise lies less in applying rules than in recognising cases from experience; the rules that experts cite are later reconstructions, which limits both teaching by instruction and the reliability of their own explanations."
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-19",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Medium",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>A price does two jobs at once. It tells buyers and sellers how scarce something is, and it decides who gets it. ____ A cap on rents during a housing shortage keeps existing tenants in their homes, which is the second job done differently; but it also tells builders and owners that housing is less scarce than it is, which is the first job done badly. Arguments about such controls are often conducted as if only one of the two jobs existed.</p>",
+   "type": "mcq",
+   "options": [
+    "Economists therefore agree that prices should never be controlled.",
+    "In most markets, however, prices change too slowly to do either job well.",
+    "A policy that interferes with a price in order to change the second usually disturbs the first as well.",
+    "Of the two, the first job is by far the more important."
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-20",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-completion",
+   "difficulty": "Hard",
+   "question": "<p>There is a sentence that is missing in the paragraph below. Read the paragraph and choose the option that best completes it.</p><p>Museums label a painting with its maker's name as though attribution were a fact about the object, like its dimensions. In practice it is a judgement, and one that has moved in both directions: works confidently given to a master are reassigned to his workshop, and anonymous pieces are promoted. ____ The paint on the canvas is not altered by the committee's vote, yet visitors who had queued to see it pass without stopping, and its insured value may fall by nine-tenths. Whatever we are admiring when we admire a famous painting, it seems, is not wholly on the canvas.</p>",
+   "type": "mcq",
+   "options": [
+    "Such reattributions are rare, however, and seldom affect well-known works.",
+    "What is striking is how much else changes when the name on the label does.",
+    "A workshop piece is, of course, usually less accomplished than the master's own.",
+    "Scientific analysis of pigments has made these judgements far more secure than they once were."
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-21",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Medium",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>A ship that has not paid cannot be prevented from seeing the light, so no private owner, it was argued, could collect a fee.</li><li>Modern satellite navigation has since made many lighthouses redundant for commercial shipping.</li><li>They were paid through dues collected at nearby ports, where a ship's use of the coast could not be concealed.</li><li>Lighthouses were long the economist's standard example of a service that markets could not supply.</li><li>Archival research later showed that many early lighthouses were in fact built and run by private individuals.</li></ol>",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-22",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Odd sentence out",
+   "difficulty": "Hard",
+   "question": "<p>Five jumbled sentences related to a topic are given below. Four of them can be put together to form a coherent paragraph. Identify the odd one out and key in its number.</p><ol class='pj'><li>By overlapping the sequence in a living tree with that in an older beam, and that with one older still, a continuous record can be carried back for thousands of years.</li><li>A tree in a seasonal climate lays down one ring of wood each year, wide in good years and narrow in poor ones.</li><li>Ring width is also affected by a tree's age, since young trees tend to grow faster than old ones.</li><li>A timber of unknown age is then dated by finding where its own pattern fits the record.</li><li>Because neighbouring trees share the same weather, they share the same sequence of wide and narrow rings.</li></ol>",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-23",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Medium",
+   "question": "<p>The four sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the four numbers (e.g. 2143).</p><ol class='pj'><li>Its effect, however, depended less on the box than on agreement about its size, which took a further decade of negotiation.</li><li>Before the 1950s, cargo was loaded piece by piece, and a ship could spend more days in port than at sea.</li><li>Only when ports, ships and lorries everywhere were built to the same dimensions did the cost of moving goods fall far enough to redraw the map of manufacturing.</li><li>The steel container changed this by letting goods be packed once, at the factory, and moved by crane between lorry, train and ship.</li></ol>",
+   "type": "tita",
+   "kind": "sequence",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-24",
+   "exam": "cat",
+   "section": "varc",
+   "topic": "Para-jumbles",
+   "difficulty": "Hard",
+   "question": "<p>The five sentences below, when properly sequenced, form a coherent paragraph. Enter the sequence of the five numbers (e.g. 21435).</p><ol class='pj'><li>Under that questioning, a confident opinion resting on a misremembered piece of evidence tends to collapse.</li><li>A vote only adds up opinions that each member has formed alone.</li><li>The verdict that emerges is therefore not the average of twelve first impressions but something that has survived their mutual scrutiny.</li><li>A jury is asked not merely to vote but to deliberate, and the difference matters more than it might seem.</li><li>Deliberation, by contrast, obliges each member to give reasons that the others can question.</li></ol>",
+   "type": "tita",
+   "kind": "sequence",
+   "pack": "mock-6"
+  }
+ ],
+ "sets": {
+  "m6-rc1": {
+   "kind": "passage",
+   "title": "Passage: What the telescope showed",
+   "html": "<b>Passage: What the telescope showed</b><p>When Galileo turned a telescope to the night sky and reported mountains on the Moon and small bodies circling Jupiter, some of his learned contemporaries declined to accept what he said he had seen. The episode is usually retold as a parable of dogma refusing to look. The parable is tidy, but it is unfair to the doubters, and it hides a more interesting problem than the one it celebrates.</p><p>The doubters had reasons. Nobody could yet explain how the instrument worked; the optics of the day did not show why two pieces of glass should enlarge a distant object without also deforming it. Early telescopes produced coloured fringes, doubled images and specks that shifted when the tube was turned. On the ground the instrument could be checked: one looked at a distant tower through the glass and then walked to the tower. In the heavens there was nowhere to walk. To accept the companions of Jupiter was to trust the instrument exactly where its trustworthiness could not be tested, on the strength of its performance where the test was unnecessary.</p><p>How was the doubt overcome? Not by a proof. It was overcome partly by agreement among observers using instruments made by different hands, since a flaw in one lens should not reappear in another ground differently. It was overcome partly by the behaviour of the objects themselves: the specks beside Jupiter kept a regular timetable, which no defect in glass could be expected to keep. And in time optical theory caught up and explained what the lenses had been doing. Confidence was assembled out of several considerations, none of which would have been decisive alone.</p><p>This is uncomfortable for the simple picture in which observation sits as a neutral judge over rival theories. What counts as an observation depends on accepting claims about the instrument, and those claims are themselves theories, which may be mistaken. It does not follow that observation is arbitrary. The doubters were eventually answered, and answered with reasons. But the reasons were of the kind that accumulate rather than compel, and there was an interval, short in this case and much longer in others, during which a careful person could have withheld assent without being a fool.</p><p>Modern instruments sharpen the point. A particle detector does not show anyone a particle. It yields electrical signals, which are turned into a result by a long chain of theory, calibration and software. When physicists say that something has been observed, they compress that chain into a single word. The compression is harmless so long as the chain holds, and a great deal of scientific labour goes into testing its links. Still, it is worth remembering that the word reports the end of an argument and not the beginning of one.</p>"
+  },
+  "m6-rc2": {
+   "kind": "passage",
+   "title": "Passage: Where the firm ends",
+   "html": "<b>Passage: Where the firm ends</b><p>For a long time economists treated the firm as a box that turned inputs into outputs, and did not ask why there should be firms at all. Yet the question is a real one. In an economy supposedly coordinated by prices, a large share of activity is coordinated instead by managers who simply tell people what to do. The answer given in the 1930s by a young economist was that using the market is not free. Finding a supplier, agreeing a price, writing a contract and making sure that it is honoured all cost something. Where these costs exceed the cost of organising the same task internally, the task is brought inside the firm, and the firm's boundary settles where the two costs are equal.</p><p>The argument carries an implication: the boundary should move when the costs move. If technology makes it cheaper to find, contract with and monitor outsiders, firms should shrink, buying what they once made. Much of the experience of recent decades seemed to fit. Manufacturing, payroll and customer support were contracted out, and the platforms through which drivers, couriers and freelancers are engaged one task at a time were widely read as the logical end of the process: the firm dissolved into a web of contracts.</p><p>Yet the largest firms have not shrunk, and several platform companies are themselves among the largest organisations there are. The puzzle fades once it is noticed that technology lowers both sets of costs. Software that lets a company monitor a contractor also lets it monitor an employee, coordinate teams of thousands across continents, and run internal operations on a scale that would once have collapsed under its own paperwork. Which cost falls faster is an empirical matter that differs from one activity to another. No general prediction that firms must shrink follows.</p><p>The platform case is instructive for a second reason. A platform that sets the price of a ride, decides which driver is offered it, rates his performance and can remove him from the system is doing most of what a manager does. What it has shed is not control but the obligations that the law attaches to employment. The boundary that has moved is the legal one, and it has moved for reasons, such as differences in tax, liability and labour protection, that the original theory, concerned as it was with the cost of coordination, did not contemplate.</p><p>None of this refutes the theory. It suggests, rather, that \"the boundary of the firm\" names at least two things: the line at which coordination by instruction gives way to coordination by price, and the line at which one legal entity's responsibilities end. For most of the twentieth century the two ran close enough together to be treated as one. Much of the present argument over how such work should be classified and regulated arises because they no longer do.</p>"
+  },
+  "m6-rc3": {
+   "kind": "passage",
+   "title": "Passage: The career of nostalgia",
+   "html": "<b>Passage: The career of nostalgia</b><p>The word nostalgia was coined in 1688 by a Swiss physician as the name of a disease. Its victims were soldiers and servants living far from home, who wept, wasted and in some recorded cases died. For nearly two centuries it remained a diagnosis. Army doctors logged outbreaks, disputed its causes and prescribed leave or, failing that, threats. By the end of the nineteenth century it had disappeared from the medical books, and in the twentieth the word came to mean something else: a mild and bittersweet longing, more likely to be exploited by advertisers than treated by doctors.</p><p>It is tempting to say that the doctors had simply been wrong, and had mistaken an emotion for an illness. But this assumes that the emotion was there all along, waiting for its correct label, and historians of the emotions doubt it. The suffering of a seventeenth-century conscript was not the wistfulness of a modern adult for the music of his youth under a mistaken name. It had a different object, a place and not a time. It had a remedy, since he could in principle be sent home. It was felt in the body, taken seriously by institutions, and had consequences, among them discharge from the army.</p><p>What changed, on this account, was less medical knowledge than the world. Railways, postal services and eventually telephones made distance less absolute; a homesick person could write, visit or return. As the longing for a place became easier to cure, it became less grave. What could not be cured was the passage of time, and the word migrated to the loss that remained: one cannot take a train to one's childhood. A longing for the irrecoverable, having no remedy, could not be a disease awaiting treatment. It became instead a mood, a taste, even a pleasure.</p><p>The argument can be overdone. That a word changed its meaning does not show that feelings changed. People may have been wistful about their youth in 1700 without having a name for the feeling, and soldiers still suffer from separation. The historians' stronger claim, that the emotions themselves and not merely our vocabularies have histories, is hard to establish, because almost all our evidence about past feeling consists of the words in which it was reported.</p><p>The weaker claim is interesting enough. Which sufferings a society treats as conditions calling for a response, and which as moods to be borne or even enjoyed, is not settled by the sufferings alone. It depends in part on what can be done about them. A longing that has a remedy raises the question of why the remedy is being withheld; a longing that has none invites only reflection. The career of nostalgia is, among other things, a record of that difference.</p>"
+  },
+  "m6-rc4": {
+   "kind": "passage",
+   "title": "Passage: The credit that chance earns",
+   "html": "<b>Passage: The credit that chance earns</b><p>A flight instructor once observed that praise seemed to harm his trainees. A cadet praised for an unusually smooth landing generally did worse on the next attempt, while one reprimanded for a poor landing generally improved. He concluded, reasonably as it seemed, that criticism works and praise does not. His observations were accurate. His conclusion did not follow from them.</p><p>Performance in any skilled task is partly ability and partly chance: a gust of wind, a moment's inattention, a fortunate guess. An unusually good performance is likely to be one in which chance ran in the performer's favour, and since chance does not repeat itself to order, the next performance will probably be nearer the performer's ordinary level, which is to say worse. By the same reasoning an exceptionally bad performance is likely to be followed by a better one. This drift back towards the ordinary, which statisticians call regression to the mean, would have occurred if the instructor had said nothing at all.</p><p>The phenomenon is easy to state and remarkably hard to keep in mind, because it imitates the effect of whatever was done in between. People consult a doctor when their symptoms are at their worst; a condition that fluctuates will on average be better some weeks later, whether the treatment was effective, useless or mildly harmful. Authorities install cameras at the road junctions that had the most accidents last year; accidents at those junctions will tend to fall next year, in part because last year's figure was what singled them out. In each case an intervention is applied at an extreme, the extreme is followed by something less extreme, and the intervention is given the credit.</p><p>The standard protection is a comparison group. If patients with equally severe symptoms are divided at random, and those left untreated improve as much as those treated, the treatment has done nothing. The comparison works not because the untreated group stays the same but precisely because it does not: it shows how much change would have happened anyway. Where no such group exists, which is the usual situation in management, in schooling and in a person's own life, the improvement that follows an intervention is weak evidence for it, and weaker the more extreme the starting point at which the intervention was chosen.</p><p>This should not be mistaken for a claim that interventions at extremes are ineffective. Some treatments work, and some cameras prevent collisions. The point is that their apparent effect is their real effect plus a drift that would have occurred regardless, and that the second component is largest exactly where we are most inclined to act. The instructor's error has a further, melancholy consequence, which he did not notice: because of the same drift, we tend to be rewarded, in the short run, for punishing others and punished for rewarding them.</p>"
+  }
+ }
+}

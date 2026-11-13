@@ -1,32 +1,47 @@
 # Month 3 pages: Open Mock, account (saved history), AptiSetu Pass, refund policy (draft). exec'd by build_pages.py.
 import json as _json
-_OM = _json.load(open("data/open-mock.json", encoding="utf8"))["mocks"]
-_om = _OM[-1]
-_omd = _dt.date.fromisoformat(_om["date"])
-_omsecs = [("varc", "VARC", _om["questions"]["varc"]), ("dilr", "DILR", _om["questions"]["dilr"]), ("qa", "QA", _om["questions"]["qa"])]
-_ombtn = "".join(f'<a class="btn{"" if i == 0 else " btn-ghost"} btn-sm" style="margin:4px 6px 0 0" href="cat-practice.html?mode=sectional&amp;section={s}&amp;pack={_om["pack"]}&amp;open={_om["id"]}">{i+1}. {n} · {q} Qs</a>' for i, (s, n, q) in enumerate(_omsecs))
-_pack_name = _om["pack"].replace("mock-", "CAT Mock ")
-_omlabel = _om.get("label") or f"Unranked practice, {_pack_name} questions"
-_omlabel_short = _omlabel.replace("CAT Mock ", "Mock ")
-_omsp = f" This is an extra <b>{_esc.escape(_om['special'][0].lower() + _om['special'][1:])}</b> on Sunday {_omd.day} {_omd.strftime('%B')}, two weeks before CAT." if _om.get("special") else ""
+_OM = sorted(_json.load(open("data/open-mock.json", encoding="utf8"))["mocks"], key=lambda m: m["starts_at"])
+# Editions shown: every edition that has not ended when the pages are built (the next one first). If all have ended,
+# the last one. open-mock.js hides a card once its edition is over and a later card is on the page, so the page stays
+# right between rebuilds. No question counts are shown anywhere (site rule).
+_omnow3 = _dt.datetime.now(_dt.timezone.utc)
+_oms = [m for m in _OM if _dt.datetime.fromisoformat(m["ends_at"]) > _omnow3] or _OM[-1:]
+def _om_label(m): return (m.get("label") or "Unranked practice").replace("CAT Mock ", "Mock ")
+def _om_card(m, first):
+    d = _dt.date.fromisoformat(m["date"]); lab = _esc.escape(_om_label(m))
+    btn = "".join(f'<a class="btn{"" if i == 0 else " btn-ghost"} btn-sm" style="margin:4px 6px 0 0" href="cat-practice.html?mode=sectional&amp;section={s}&amp;pack={m["pack"]}&amp;open={m["id"]}">{i+1}. {n}</a>' for i, (s, n) in enumerate([("varc", "VARC"), ("dilr", "DILR"), ("qa", "QA")]))
+    if m.get("sealed"):
+        note = (f'<b>{lab}.</b> This edition uses a <b>new mock</b> written for the Open Mock. It is not on the <a href="mock-tests.html">mock tests page</a> or in any practice set. '
+                'It is still <b>unranked</b>: there is <b>no leaderboard and no rank</b>. The sections open at 10:00 am. Answers and worked solutions open after the edition ends at 10:00 pm.')
+        how = ('Take the sections in order. <a href="login.html?next=open-mock.html">Log in</a> before you start: your <b>first attempt of each section</b> during the window is scored on our server and the score is shown as soon as you submit, and saved to your account. '
+               'Without login your responses are saved in your browser and scored on this device after 10:00 pm, when the answers open.')
+    else:
+        pk = m["pack"].replace("mock-", "CAT Mock ")
+        note = (f'<b>{lab}.</b> This edition uses the questions of <b>{pk}</b>, which is already free on the <a href="mock-tests.html">mock tests page</a>, so some people may have seen it. '
+                'That is why there is <b>no leaderboard and no rank</b> this time. Take it as timed practice under CAT conditions.')
+        how = ('Take the sections in order. If you <a href="login.html?next=open-mock.html">log in</a>, your <b>first attempt of each section</b> during the window is scored on our server and saved to your account, so you can see it on any device. Without login you still get your score on screen.')
+    return f"""
+ <div class="card om-ed"{' id="om-card"' if first else ''} style="margin-bottom:18px" data-mock="{m['id']}" data-start="{m['starts_at']}" data-end="{m['ends_at']}"{' data-sealed="1"' if m.get('sealed') else ''}>
+  <h2 style="margin-top:0">{_esc.escape(m['title'])}</h2>
+  <div class="notice" style="margin:0 0 12px">{note}</div>
+  <p><b>Sunday {d.day} {d.strftime('%B %Y')}</b> · 10:00 am to 10:00 pm IST · VARC, DILR and QA, 40 minutes each · +3 / −1 for a wrong MCQ, 0 for a wrong TITA.</p>
+  <p class="om-status muted" role="status">Checking the time…</p>
+  <div class="om-start">{btn}</div>
+  <p class="muted" style="font-size:.88rem;margin-top:12px">{how}</p>
+  <div class="om-mine-wrap" style="margin-top:14px"><h3 style="margin:0 0 6px;font-size:1rem">Your scores for this edition</h3><div class="om-mine" aria-live="polite"><p class="muted">Log in to see the scores saved to your account.</p></div></div>
+ </div>"""
+_om = _oms[0]
+_omlabel_short = _om_label(_om)
 page("open-mock.html", "AptiSetu Open Mock", f"""
 <div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="mock-tests.html">Mock Tests</a> / Open Mock</div>
 <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">AptiSetu Open Mock</h1>
-<p class="om-label" style="margin:4px 0 8px"><span class="sbadge soon" style="font-size:.9rem">{_esc.escape(_omlabel_short)}</span></p>
-<p class="muted" style="max-width:720px">One free CAT-pattern mock that everyone can take on the same day. It runs every <b>Sunday, 10:00 am to 10:00 pm IST</b>.{_omsp} This edition is <b>unranked practice</b>: there is no leaderboard and no rank.</p></div></div>
+<p class="om-label" style="margin:4px 0 8px"><span class="sbadge soon" style="font-size:.9rem">Unranked practice</span></p>
+<p class="muted" style="max-width:720px">One free CAT-pattern mock that everyone can take on the same day. It runs every <b>Sunday, 10:00 am to 10:00 pm IST</b>. Every edition is <b>unranked practice</b>: there is no leaderboard and no rank.</p></div></div>
 <section style="padding-top:16px"><div class="container" style="max-width:860px">
- <div class="card" id="om-card" data-mock="{_om['id']}" data-start="{_om['starts_at']}" data-end="{_om['ends_at']}">
-  <h2 style="margin-top:0">{_esc.escape(_om['title'])}</h2>
-  <div class="notice" style="margin:0 0 12px"><b>{_esc.escape(_omlabel_short)}.</b> This edition uses the questions of <b>{_pack_name}</b>, which is already free on the <a href="mock-tests.html">mock tests page</a>, so some people may have seen it. That is why there is <b>no leaderboard and no rank</b> this time. Take it as timed practice under CAT conditions. A fresh, unpublished mock is planned for a later edition.</div>
-  <p><b>Sunday {_omd.day} {_omd.strftime('%B %Y')}</b> · 10:00 am to 10:00 pm IST · VARC, DILR and QA, 40 minutes each · +3 / −1 for a wrong MCQ, 0 for a wrong TITA.</p>
-  <p id="om-status" class="muted" role="status">Checking the time…</p>
-  <div id="om-start">{_ombtn}</div>
-  <p class="muted" style="font-size:.88rem;margin-top:12px">Take the sections in order. If you <a href="login.html?next=open-mock.html">log in</a>, your <b>first attempt of each section</b> during the window is scored on our server and saved to your account, so you can see it on any device. Without login you still get your score on screen.</p>
- </div>
- <div class="card" style="margin-top:18px"><h2 style="margin-top:0">Your Open Mock scores</h2><div id="om-mine" aria-live="polite"><p class="muted">Log in to see the scores saved to your account.</p></div>
-  <p class="muted" style="font-size:.85rem">Only you can see these. Nothing is shown to other people.</p></div>
+{"".join(_om_card(m, i == 0) for i, m in enumerate(_oms))}
+ <p class="muted" style="font-size:.85rem">Only you can see your scores. Nothing is shown to other people.</p>
 </div></section>
-""", desc=f"AptiSetu Open Mock: a free CAT-pattern mock, every Sunday, 10 am to 10 pm IST. This edition: {_esc.escape(_omlabel_short)}, no leaderboard and no rank.",
+""", desc="AptiSetu Open Mock: a free CAT-pattern mock, every Sunday, 10 am to 10 pm IST. Unranked practice, with no leaderboard and no rank.",
      extra='<script src="assets/js/open-mock.js"></script>')
 
 page("account.html", "My account", f"""

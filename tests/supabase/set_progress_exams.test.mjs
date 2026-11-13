@@ -10,7 +10,7 @@ const U1 = "11111111-1111-1111-1111-111111111111", U2 = "22222222-2222-2222-2222
 let fail = 0; const ok = (c, m, v) => { console.log((c ? "PASS " : "FAIL ") + m, v === undefined ? "" : JSON.stringify(v)); if (!c) fail++; };
 const as = async (uid, sql) => { await db.exec(`set role authenticated; select set_config('t.uid','${uid}',false);`); try { return (await db.query(sql)).rows; } catch (e) { return "ERR " + e.message; } finally { await db.exec("reset role"); } };
 const files = fs.readdirSync(D).sort(), last = files.indexOf("20261112000008_exam_set_progress.sql");
-ok(last === files.length - 1, "exam set-progress migration is the newest file");
+ok(last >= 0 && files.slice(last + 1).every(f => !/set_progress/.test(fs.readFileSync(D + f, "utf8"))), "no later migration touches set_progress");
 for (const f of files.slice(0, last)) await db.exec(fs.readFileSync(D + f, "utf8"));
 await db.exec(`insert into auth.users values ('${U1}'),('${U2}')`);
 // a CAT row written before the migration must survive it unchanged

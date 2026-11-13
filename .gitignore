@@ -1,2 +1,5 @@
 screenshots/
 __pycache__/
+
+# Unpublished Open Mock content (answers, solutions, key SQL). Never commit before the mock ends.
+private/

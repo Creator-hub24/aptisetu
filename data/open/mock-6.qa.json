@@ -1,0 +1,320 @@
+{
+ "name": "mock-6 — QA",
+ "pack": "mock-6",
+ "sealed": true,
+ "questions": [
+  {
+   "id": "M6-QA-01",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Percentages & Profit",
+   "difficulty": "Easy",
+   "question": "In June, the number of visitors to a store was 20% lower than in May. However, the share of visitors who bought something rose from 15% to 24%, while the average bill per buyer fell by 10%. By what percentage did the store's revenue in June differ from that in May?",
+   "type": "mcq",
+   "options": [
+    "44% higher",
+    "28% higher",
+    "15.2% higher",
+    "21.5% lower"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-02",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time & Work",
+   "difficulty": "Easy",
+   "question": "A contractor planned to finish a road in 30 days with 20 workers of equal efficiency. After 10 days, 6 workers left. After 8 more days, he hired k new workers, each twice as efficient as an original worker, and the road was finished exactly on schedule. What is k?",
+   "type": "mcq",
+   "options": [
+    "4",
+    "6",
+    "10",
+    "5"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-03",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time, Speed & Distance",
+   "difficulty": "Medium",
+   "question": "Buses leave town X for town Y every 15 minutes, all travelling at the same constant speed. A cyclist riding from Y towards X at 15 km/h meets a bus coming from X every 9 minutes. What is the speed of the buses, in km/h?",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-04",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Time, Speed & Distance",
+   "difficulty": "Hard",
+   "question": "A and B start at the same time from towns P and Q, 90 km apart, and drive towards each other at constant speeds. They meet after 1 hour 30 minutes. Immediately after the meeting, A reduces speed to two-thirds of A's original speed and B increases speed by 50%. They reach Q and P respectively at the same moment. What was A's original speed, in km/h?",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-05",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mixtures & Alligation",
+   "difficulty": "Medium",
+   "question": "Three acid solutions have concentrations of 20%, 50% and 80%. They are mixed so that the volume taken of the 80% solution is twice the volume taken of the 20% solution, and the mixture is 59% acid. In what ratio are the 20%, 50% and 80% solutions mixed?",
+   "type": "mcq",
+   "options": [
+    "2 : 1 : 4",
+    "3 : 2 : 6",
+    "3 : 1 : 6",
+    "1 : 3 : 2"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-06",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Simple & Compound Interest",
+   "difficulty": "Medium",
+   "question": "Ravi divides ₹82,000 into two parts. He lends the first part at 10% per annum simple interest and the second at 10% per annum compound interest, compounded annually. At the end of two years, the interest earned on the two parts is the same. What is the first part, in ₹?",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-07",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Ratio & Proportion",
+   "difficulty": "Easy",
+   "question": "Three gear wheels with 24, 36 and 60 teeth are arranged in a line, so that the first meshes with the second and the second with the third. While the first wheel makes 15 complete turns, how many complete turns does the third wheel make?",
+   "type": "mcq",
+   "options": [
+    "10",
+    "9",
+    "37.5",
+    "6"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-08",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Averages",
+   "difficulty": "Medium",
+   "question": "A firm has employees in three grades, whose average monthly salaries are ₹30,000, ₹50,000 and ₹90,000. The lowest grade has twice as many employees as the middle grade, and the average salary of all 80 employees is ₹48,000. How many employees are in the highest grade?",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-09",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Medium",
+   "question": "The equations x² − 10x + k = 0 and x² − 14x + 2k = 0 have exactly one root in common, where k is a non-zero real number. What is the sum of the two roots that are not common?",
+   "type": "mcq",
+   "options": [
+    "14",
+    "10",
+    "12",
+    "18"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-10",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Equations & Quadratics",
+   "difficulty": "Hard",
+   "question": "A purse contains exactly 40 coins, all of denominations ₹1, ₹2 and ₹5, worth ₹100 in total. There is at least one coin of each denomination. How many different combinations of coins (numbers of ₹1, ₹2 and ₹5 coins) are possible?",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-11",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Functions",
+   "difficulty": "Medium",
+   "question": "For every real x, f(x) is defined as the smallest of the three numbers 2x + 3, 15 − x and x + 6. What is the largest value that f(x) can take?",
+   "type": "mcq",
+   "options": [
+    "12",
+    "10.5",
+    "11",
+    "10"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-12",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Logarithms",
+   "difficulty": "Medium",
+   "question": "How many integers x satisfy log₂(x − 3) + log₂(23 − x) > 6?",
+   "type": "mcq",
+   "options": [
+    "13",
+    "11",
+    "19",
+    "12"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-13",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Progressions",
+   "difficulty": "Medium",
+   "question": "An arithmetic progression has 21 terms. The sum of its three middle terms is 129 and the sum of its last three terms is 237. What is its first term?",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-14",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Hard",
+   "question": "N is a positive integer of the form 2ᵃ × 3ᵇ, where a and b are positive integers. N has exactly 24 positive divisors and N < 2000. How many such values of N are there?",
+   "type": "mcq",
+   "options": [
+    "3",
+    "2",
+    "5",
+    "4"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-15",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Number System",
+   "difficulty": "Hard",
+   "question": "For how many integers x with 1 ≤ x ≤ 200 is ⌊x/3⌋ = ⌊x/4⌋ + ⌊x/12⌋? (⌊y⌋ denotes the greatest integer less than or equal to y.)",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-16",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Medium",
+   "question": "In triangle ABC, D is the point on BC with BD : DC = 2 : 3, and E is the point on AD with AE : ED = 3 : 1. The line BE, extended, meets AC at F. What is AF : FC?",
+   "type": "mcq",
+   "options": [
+    "5 : 4",
+    "9 : 5",
+    "6 : 5",
+    "3 : 2"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-17",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Hard",
+   "question": "Two circles of radii 36 cm and 9 cm touch each other externally, and both touch a straight line L. A third circle, lying in the region bounded by the two circles and L, touches both circles and L. What is the radius of the third circle, in cm?",
+   "type": "mcq",
+   "options": [
+    "3",
+    "4.5",
+    "6",
+    "4"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-18",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Medium",
+   "question": "A is the point (1, 2) and B is the point (7, 10). P is a point on the x-axis. What is the smallest possible value of PA + PB?",
+   "type": "mcq",
+   "options": [
+    "12",
+    "6√5",
+    "10",
+    "4√10"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-19",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Mensuration",
+   "difficulty": "Easy",
+   "question": "A solid wooden cube of side 12 cm is sawn into four identical slabs by three cuts parallel to one of its faces. By what percentage does the total surface area of the four slabs exceed that of the original cube?",
+   "type": "mcq",
+   "options": [
+    "300%",
+    "50%",
+    "75%",
+    "100%"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-20",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Geometry",
+   "difficulty": "Hard",
+   "question": "ABCDEF is a regular hexagon with side 4 cm, and M is the midpoint of side CD. What is the area of quadrilateral ABMF, in cm²?",
+   "type": "mcq",
+   "options": [
+    "16√3",
+    "14√3",
+    "12√3",
+    "15√3"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-21",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Permutations & Combinations",
+   "difficulty": "Hard",
+   "question": "Three distinct vertices of a regular 12-sided polygon are chosen to form a triangle. How many of the triangles so formed are obtuse-angled?",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-QA-22",
+   "exam": "cat",
+   "section": "qa",
+   "topic": "Probability",
+   "difficulty": "Hard",
+   "question": "Five guests leave their umbrellas at a counter. At the end of the evening, the umbrellas are handed back at random, one to each guest. What is the probability that exactly two guests get their own umbrellas?",
+   "type": "mcq",
+   "options": [
+    "1/6",
+    "1/10",
+    "1/3",
+    "1/12"
+   ],
+   "pack": "mock-6"
+  }
+ ],
+ "sets": {}
+}
