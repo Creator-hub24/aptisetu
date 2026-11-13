@@ -171,7 +171,7 @@
         const ds = list.match(/[1-4]/g), seps = list.split(/[1-4]/).slice(1, -1), ls = ds.map(letter).sort();
         return w + " " + ls.map((x, i) => x + (i < seps.length ? seps[i] : "")).join("");
       });
-      return { ...q, options: idx.map(i => q.options[i]), answer: idx.indexOf(q.answer), solution };
+      return { ...q, options: idx.map(i => q.options[i]), answer: idx.indexOf(q.answer), solution, _idx: idx };
     });
   }
   let title = "";
@@ -318,7 +318,8 @@
     const A = window.Auth, ACC = window.Account;
     if (!ACC || !A || !A.configured) { box.innerHTML = `Saving Open Mock scores needs login, which isn't switched on yet. This is unranked practice; your score is shown above and saved in this browser. <a href="open-mock.html">Open Mock page →</a>`; return; }
     if (!(await A.ready)) { box.innerHTML = `Unranked practice: your score is shown above. <a href="login.html?next=open-mock.html">Log in</a> before you start to save your Open Mock scores to your account.`; return; }
-    const responses = {}; qs.forEach((q, i) => { if (answered(i)) responses[q.id] = resp[i]; });
+    // the key in open_mock_keys is in the ORIGINAL option order, so send the original position of the chosen option, not its shuffled position on screen
+    const responses = {}; qs.forEach((q, i) => { if (answered(i)) responses[q.id] = q.type === "mcq" && q._idx ? q._idx[resp[i]] : resp[i]; });
     if (A.mock) responses.__score = localScore;
     box.textContent = "Saving your Open Mock score…";
     try { const r = await ACC.submitOpenMock(OPEN, sec, responses); box.innerHTML = !r ? `Not saved. Please try again.` : r.first_attempt ? `✓ Saved to your account: Open Mock ${esc(bank.sections[sec].name)} score ${r.score}. Unranked practice, no leaderboard. <a href="open-mock.html">Your Open Mock scores →</a>` : `Only your first attempt of each section is saved. Your saved ${esc(bank.sections[sec].name)} score is ${r.score}; this attempt was extra practice. <a href="open-mock.html">Your Open Mock scores →</a>`; }
