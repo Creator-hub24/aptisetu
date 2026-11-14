@@ -4,137 +4,7 @@
  "sealed": true,
  "questions": [
   {
-   "id": "M6-SHUTTLE-01",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Tables with missing data",
-   "difficulty": "Medium",
-   "question": "How many passengers boarded at Stop 3?",
-   "set": "m6-shuttle",
-   "type": "tita",
-   "kind": "number",
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-SHUTTLE-02",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Tables with missing data",
-   "difficulty": "Medium",
-   "question": "How many passengers got off at Stop 4?",
-   "set": "m6-shuttle",
-   "type": "tita",
-   "kind": "number",
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-SHUTTLE-03",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Tables with missing data",
-   "difficulty": "Hard",
-   "question": "What was the average fare paid per passenger, in ₹?",
-   "set": "m6-shuttle",
-   "type": "tita",
-   "kind": "number",
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-SHUTTLE-04",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Tables with missing data",
-   "difficulty": "Hard",
-   "question": "What is the maximum possible number of passengers who travelled all the way from Stop 1 to Stop 6?",
-   "set": "m6-shuttle",
-   "type": "tita",
-   "kind": "number",
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-SHUTTLE-05",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Tables with missing data",
-   "difficulty": "Hard",
-   "question": "What is the minimum possible number of passengers who travelled from Stop 3 to Stop 6?",
-   "set": "m6-shuttle",
-   "type": "mcq",
-   "options": [
-    "9",
-    "4",
-    "0",
-    "1"
-   ],
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-LEAGUE-06",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Tournaments",
-   "difficulty": "Hard",
-   "question": "What was the result of the match between Ajmer and Dhule?",
-   "set": "m6-league",
-   "type": "mcq",
-   "options": [
-    "Dhule won 3–1",
-    "Ajmer won 1–0",
-    "Dhule won 2–0",
-    "Drawn 1–1"
-   ],
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-LEAGUE-07",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Tournaments",
-   "difficulty": "Hard",
-   "question": "How many goals were scored in the league in all?",
-   "set": "m6-league",
-   "type": "tita",
-   "kind": "number",
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-LEAGUE-08",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Tournaments",
-   "difficulty": "Hard",
-   "question": "How many goals did Cuttack concede?",
-   "set": "m6-league",
-   "type": "tita",
-   "kind": "number",
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-LEAGUE-09",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Tournaments",
-   "difficulty": "Medium",
-   "question": "In how many matches did the winning team win by a margin of exactly one goal?",
-   "set": "m6-league",
-   "type": "tita",
-   "kind": "number",
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-LEAGUE-10",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Tournaments",
-   "difficulty": "Medium",
-   "question": "Suppose Cuttack had scored one more goal in its match against Ajmer, with every other score unchanged. How many teams would then have finished with more points than Ajmer?",
-   "set": "m6-league",
-   "type": "tita",
-   "kind": "number",
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-CONF-11",
+   "id": "M6-CONF-01",
    "exam": "cat",
    "section": "dilr",
    "topic": "Scheduling",
@@ -151,24 +21,7 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-CONF-12",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Scheduling",
-   "difficulty": "Easy",
-   "question": "Which of these pairs of speakers present in the same slot?",
-   "set": "m6-conf",
-   "type": "mcq",
-   "options": [
-    "Anand and Chen",
-    "Anand and Divya",
-    "Chen and Elan",
-    "Bina and Farah"
-   ],
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-CONF-13",
+   "id": "M6-CONF-02",
    "exam": "cat",
    "section": "dilr",
    "topic": "Scheduling",
@@ -185,7 +38,7 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-CONF-14",
+   "id": "M6-CONF-03",
    "exam": "cat",
    "section": "dilr",
    "topic": "Scheduling",
@@ -197,7 +50,7 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-CONF-15",
+   "id": "M6-CONF-04",
    "exam": "cat",
    "section": "dilr",
    "topic": "Scheduling",
@@ -209,7 +62,195 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-RATINGS-16",
+   "id": "M6-BUS-05",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Networks & routes",
+   "difficulty": "Medium",
+   "question": "How many minutes does the Jhansi – Latur road take?",
+   "set": "m6-bus",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-BUS-06",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Networks & routes",
+   "difficulty": "Easy",
+   "question": "Which of these roads is NOT the quickest way between its own two towns?",
+   "set": "m6-bus",
+   "type": "mcq",
+   "options": [
+    "Hosur – Jhansi",
+    "Itarsi – Kolar",
+    "Jhansi – Latur",
+    "Jhansi – Kolar"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-BUS-07",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Networks & routes",
+   "difficulty": "Medium",
+   "question": "Suppose the Hosur – Itarsi road is closed, with every other road unchanged. What is then the quickest time, in minutes, between Hosur and Latur?",
+   "set": "m6-bus",
+   "type": "mcq",
+   "options": [
+    "55",
+    "60",
+    "65",
+    "70"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-BUS-08",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Networks & routes",
+   "difficulty": "Medium",
+   "question": "An inspector starts at Hosur and must visit each of the other four towns at least once, travelling only along the roads; she may finish at any town. What is the least possible total travel time, in minutes?",
+   "set": "m6-bus",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-SHUTTLE-09",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Medium",
+   "question": "How many passengers boarded at Stop 3?",
+   "set": "m6-shuttle",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-SHUTTLE-10",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Medium",
+   "question": "How many passengers got off at Stop 4?",
+   "set": "m6-shuttle",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-SHUTTLE-11",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What was the average fare paid per passenger, in ₹?",
+   "set": "m6-shuttle",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-SHUTTLE-12",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What is the maximum possible number of passengers who travelled all the way from Stop 1 to Stop 6?",
+   "set": "m6-shuttle",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-SHUTTLE-13",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tables with missing data",
+   "difficulty": "Hard",
+   "question": "What is the minimum possible number of passengers who travelled from Stop 3 to Stop 6?",
+   "set": "m6-shuttle",
+   "type": "mcq",
+   "options": [
+    "9",
+    "4",
+    "0",
+    "1"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-LEAGUE-14",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "What was the result of the match between Ajmer and Dhule?",
+   "set": "m6-league",
+   "type": "mcq",
+   "options": [
+    "Dhule won 3–1",
+    "Ajmer won 1–0",
+    "Dhule won 2–0",
+    "Drawn 1–1"
+   ],
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-LEAGUE-15",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "How many goals were scored in the league in all?",
+   "set": "m6-league",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-LEAGUE-16",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Hard",
+   "question": "How many goals did Cuttack concede?",
+   "set": "m6-league",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-LEAGUE-17",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Medium",
+   "question": "In how many matches did the winning team win by a margin of exactly one goal?",
+   "set": "m6-league",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-LEAGUE-18",
+   "exam": "cat",
+   "section": "dilr",
+   "topic": "Tournaments",
+   "difficulty": "Medium",
+   "question": "Suppose Cuttack had scored one more goal in its match against Ajmer, with every other score unchanged. How many teams would then have finished with more points than Ajmer?",
+   "set": "m6-league",
+   "type": "tita",
+   "kind": "number",
+   "pack": "mock-6"
+  },
+  {
+   "id": "M6-RATINGS-19",
    "exam": "cat",
    "section": "dilr",
    "topic": "Rankings & scoring",
@@ -226,7 +267,7 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-RATINGS-17",
+   "id": "M6-RATINGS-20",
    "exam": "cat",
    "section": "dilr",
    "topic": "Rankings & scoring",
@@ -243,19 +284,7 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-RATINGS-18",
-   "exam": "cat",
-   "section": "dilr",
-   "topic": "Rankings & scoring",
-   "difficulty": "Hard",
-   "question": "How many critics gave Bhor a score of 4 or more?",
-   "set": "m6-ratings",
-   "type": "tita",
-   "kind": "number",
-   "pack": "mock-6"
-  },
-  {
-   "id": "M6-RATINGS-19",
+   "id": "M6-RATINGS-21",
    "exam": "cat",
    "section": "dilr",
    "topic": "Rankings & scoring",
@@ -267,7 +296,7 @@
    "pack": "mock-6"
   },
   {
-   "id": "M6-RATINGS-20",
+   "id": "M6-RATINGS-22",
    "exam": "cat",
    "section": "dilr",
    "topic": "Rankings & scoring",
@@ -280,6 +309,16 @@
   }
  ],
  "sets": {
+  "m6-conf": {
+   "kind": "dilr",
+   "title": "Conference schedule (Easy)",
+   "html": "<b>Conference schedule</b><p>A one-day conference has two halls, Hall 1 and Hall 2, and three time slots, Slot 1, Slot 2 and Slot 3, in that order. Six speakers — Anand, Bina, Chen, Divya, Elan and Farah — give one talk each, so that each hall has exactly one talk in each slot. Each talk belongs to one of three tracks — Data, Policy or Health — and there are exactly two talks in each track.</p><p>The following is known:</p><ul class='clues'><li>In each hall, the three talks are on three different tracks.</li><li>Anand speaks in the slot immediately after Bina's, and not in the hall in which Bina speaks.</li><li>Chen and Divya speak on the same track; Anand and Bina also speak on the same track.</li><li>Elan speaks in an earlier slot than Farah, and Divya in an earlier slot than Chen.</li><li>Elan's talk is on Data and is in Hall 2.</li><li>Neither talk in Slot 1 is on Policy, and Divya does not speak in Slot 1.</li></ul>"
+  },
+  "m6-bus": {
+   "kind": "dilr",
+   "title": "Bus roads (Medium)",
+   "html": "<b>Bus roads</b><p>A bus company runs services between five towns: Hosur, Itarsi, Jhansi, Kolar and Latur. There are exactly seven roads between them, listed below; each road can be used in either direction, and each takes a whole number of minutes. Some road times are hidden.</p><table class='data'><tr><th>Road</th><th>Time (minutes)</th></tr><tr><td>Hosur – Itarsi</td><td>15</td></tr><tr><td>Hosur – Jhansi</td><td class='miss'>?</td></tr><tr><td>Itarsi – Jhansi</td><td>10</td></tr><tr><td>Itarsi – Kolar</td><td class='miss'>?</td></tr><tr><td>Jhansi – Kolar</td><td class='miss'>?</td></tr><tr><td>Jhansi – Latur</td><td class='miss'>?</td></tr><tr><td>Kolar – Latur</td><td>15</td></tr></table><p>The <i>quickest time</i> between two towns is the least total time over any sequence of roads joining them (no waiting). Some quickest times are given below.</p><table class='data'><tr><th>Between</th><th>Quickest time (minutes)</th></tr><tr><td>Hosur and Jhansi</td><td>20</td></tr><tr><td>Hosur and Kolar</td><td>40</td></tr><tr><td>Hosur and Latur</td><td>55</td></tr><tr><td>Itarsi and Latur</td><td>40</td></tr><tr><td>Jhansi and Latur</td><td>40</td></tr></table><p>The following is also known:</p><ul class='clues'><li>The seven road times add up to 155 minutes.</li><li>The Itarsi – Kolar road and the Jhansi – Kolar road take the same time.</li></ul>"
+  },
   "m6-shuttle": {
    "kind": "dilr",
    "title": "Airport shuttle (Medium)",
@@ -289,11 +328,6 @@
    "kind": "dilr",
    "title": "Four-team hockey league (Hard)",
    "html": "<b>Four-team hockey league</b><p>Four hockey teams — Ajmer, Bokaro, Cuttack and Dhule — played a league in which each pair of teams met exactly once. A win earned 3 points, a draw 1 point and a loss 0. The table shows the goals each team scored and conceded over its three matches; two entries are hidden.</p><table class='data'><tr><th></th><th>Goals scored</th><th>Goals conceded</th></tr><tr><td>Ajmer</td><td>3</td><td>4</td></tr><tr><td>Bokaro</td><td>6</td><td>4</td></tr><tr><td>Cuttack</td><td>2</td><td class='miss'>?</td></tr><tr><td>Dhule</td><td class='miss'>?</td><td>3</td></tr></table><p>The following is known:</p><ul class='clues'><li>All four teams finished with the same number of points.</li><li>No match ended 0–0.</li><li>Ajmer won exactly one match, and won it by a margin of exactly one goal.</li></ul>"
-  },
-  "m6-conf": {
-   "kind": "dilr",
-   "title": "Conference schedule (Easy)",
-   "html": "<b>Conference schedule</b><p>A one-day conference has two halls, Hall 1 and Hall 2, and three time slots, Slot 1, Slot 2 and Slot 3, in that order. Six speakers — Anand, Bina, Chen, Divya, Elan and Farah — give one talk each, so that each hall has exactly one talk in each slot. Each talk belongs to one of three tracks — Data, Policy or Health — and there are exactly two talks in each track.</p><p>The following is known:</p><ul class='clues'><li>In each hall, the three talks are on three different tracks.</li><li>Anand speaks in the slot immediately after Bina's, and not in the hall in which Bina speaks.</li><li>Chen and Divya speak on the same track; Anand and Bina also speak on the same track.</li><li>Elan speaks in an earlier slot than Farah, and Divya in an earlier slot than Chen.</li><li>Elan's talk is on Data and is in Hall 2.</li><li>Neither talk in Slot 1 is on Policy, and Divya does not speak in Slot 1.</li></ul>"
   },
   "m6-ratings": {
    "kind": "dilr",
