@@ -31,14 +31,14 @@ ok('no mock/sectional pack question has a page',!fs.readdirSync('q/cat').some(f=
  await p.click('.qp-hubs a');ok('hub lists questions',(await p.locator('.qp-list a').count())>=1);ok('hub/index: no console errors',!p.errs.length,p.errs.join('|'));await p.close()}
 // Daily 10
 {const p=await newP();await p.goto(B);const hs=await p.$$eval('.daily-card a',a=>a.map(x=>x.textContent+'|'+x.getAttribute('href')));
- ok('home has Start today\'s 10 per track',hs.length===3&&hs.every(h=>h.startsWith("Start today's 10|")),hs.join(' '));
+ ok('home has Start today\'s set per track',hs.length===3&&hs.every(h=>h.startsWith("Start today's set|")),hs.join(' '));
  const ids=[];for(let k=0;k<2;k++){const c=await b.newContext();const q=await c.newPage();await q.goto(B+'cat-practice.html?daily=1',{waitUntil:'networkidle'});await q.waitForSelector('#c-quiz:not(.hidden)');ids.push(await q.getAttribute('#c-setup','data-daily'));
   if(k===0){ok('CAT Daily 10 has QA + one DILR set + one RC set (11)',(await q.textContent('#c-qnum')).includes('of 11'));ok('exam view has report link',/mailto:edumaths360/.test(await q.getAttribute('#c-report .report-link','href')))}await c.close()}
  ok('Daily 10 deterministic for the same date',ids[0]&&ids[0]===ids[1]&&ids[0].split(',').length===11);
  {const q=await b.newPage();await q.goto(B+'cat-practice.html?daily=1',{waitUntil:'networkidle'});await q.waitForSelector('#c-quiz:not(.hidden)');const ids=(await q.getAttribute('#c-setup','data-daily')).split(',');ok('CAT daily mixes QA, DILR and VARC',ids.filter(x=>/^CQ/.test(x)).length===3&&ids.length===11,ids.join());await q.close()}
  {const q=await b.newPage();await q.goto(B+'cuet-practice.html?daily=1',{waitUntil:'networkidle'});await q.waitForSelector('#c-quiz:not(.hidden)');const ids=(await q.getAttribute('#c-setup','data-daily')).split(',');ok('CUET daily uses CUET-specific items',!ids.some(x=>/^G-/.test(x)),ids.join());await q.close()}
  for(const u of ['cuet-practice.html?daily=1']){await p.goto(B+u,{waitUntil:'networkidle'});await p.waitForSelector('#c-quiz:not(.hidden)');ok(u+' starts 10',(await p.textContent('#c-qnum')).includes('of 10'))}
- await p.goto(B+'practice.html?daily=1',{waitUntil:'networkidle'});await p.waitForSelector('#quiz:not(.hidden)');ok('Bank/SSC daily starts 10',(await p.textContent('#q-num')).includes('of 10')&&/Daily 10/.test(await p.textContent('#quiz-title')));
+ await p.goto(B+'practice.html?daily=1',{waitUntil:'networkidle'});await p.waitForSelector('#quiz:not(.hidden)');ok('Bank/SSC daily starts 10',(await p.textContent('#q-num')).includes('of 10')&&/Daily set/.test(await p.textContent('#quiz-title')));
  ok('daily pages: no console errors',!p.errs.length,p.errs.join('|'));await p.close()}
 // post-test report + progress graph after 2 attempts
 {const c=await b.newContext();const p=await c.newPage();p.on('dialog',d=>d.accept());const errs=[];p.on('pageerror',e=>errs.push(e.message));

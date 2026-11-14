@@ -64,7 +64,7 @@
   // one tap: n mixed questions, 60 s each, simple marking
   async function quick(n) {
     try { await ensure("mixed"); } catch (e) { fail(); return; }
-    start({ s: "mixed", topic: "", n, per: 60, neg: false, name: `Quick start · ${n} mixed questions` });
+    start({ s: "mixed", topic: "", n, per: 60, neg: false, name: `Quick start · mixed questions` });
   }
 
   // Daily 10 (practice.html?daily=1): the same 10 standalone questions for everyone on a date (date-seeded shuffle), 60 s each
@@ -75,7 +75,7 @@
     const rnd = () => { x = (x + 0x6D2B79F5) | 0; let u = Math.imul(x ^ (x >>> 15), 1 | x); u = (u + Math.imul(u ^ (u >>> 7), 61 | u)) ^ u; return ((u ^ (u >>> 14)) >>> 0) / 4294967296; };
     const pool = poolFor("mixed").filter(q => !q.set).sort((a, b) => a.id < b.id ? -1 : 1);
     for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
-    start({ s: "mixed", topic: "", n: 10, per: 60, neg: false, name: `Bank / SSC Daily 10 · ${d}`, pick: pool.slice(0, 10) });
+    start({ s: "mixed", topic: "", n: 10, per: 60, neg: false, name: `Bank / SSC Daily set · ${d}`, pick: pool.slice(0, 10) });
   }
 
   function start(o) {
@@ -197,7 +197,7 @@
     const mx = Math.max(1, ...rows.map(r => r.t));
     h += `<h3>Time per question</h3><div class="tpq" role="img" aria-label="Seconds spent on each question">${rows.map(r => `<div class="tpq-col" title="Q${r.i + 1}: ${Math.round(r.t)} s · ${!r.att ? "skipped" : r.ok ? "correct" : "wrong"}"><span class="tpq-bar ${!r.att ? "skip" : r.ok ? "ok" : "bad"}" style="height:${Math.max(4, Math.round(r.t / mx * 100))}%"></span><small>${r.i + 1}</small></div>`).join("")}</div><p class="muted" style="font-size:.85rem">Bar height = seconds spent (longest ${Math.round(mx)} s) · green correct · red wrong · grey skipped.</p>`;
     let all = {}; try { all = JSON.parse(localStorage.getItem("aptisetu.history")) || {}; } catch (e) {}
-    const key = "general-" + (/Daily 10/.test(cfg.name) ? "daily" : cfg.ev), hist = (all[key] = all[key] || []);
+    const key = "general-" + (/Daily (?:10|set)/.test(cfg.name) ? "daily" : cfg.ev), hist = (all[key] = all[key] || []);
     hist.push({ t: Date.now(), score, max, acc: pct }); if (hist.length > 30) hist.splice(0, hist.length - 30); try { localStorage.setItem("aptisetu.history", JSON.stringify(all)); } catch (e) {}
     if (window.Account) { Account.saveAttempt({ key, title: cfg.name, score, max, acc: pct, questions: qs.length, time_s: tsp.reduce((a, b) => a + (b || 0), 0) }); setTimeout(() => Account.gate(document.querySelector(".report-extra"), "The detailed report"), 0); }
     if (hist.length >= 2) {

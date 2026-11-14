@@ -287,17 +287,17 @@ page("index.html","", f"""
 </div></section>
 
 <section class="target"><div class="container">
- <div class="section-head"><h2>Today&rsquo;s 15-minute target</h2><p class="muted">Pick one card. Each is one part of today&rsquo;s CAT Daily 10: the same questions for everyone today, untimed, with the solution straight after each answer. Aim to finish in 15 minutes or less.</p></div>
+ <div class="section-head"><h2>Today&rsquo;s 15-minute target</h2><p class="muted">Pick one card. Each is one part of today&rsquo;s CAT Daily set: the same questions for everyone today, untimed, with the solution straight after each answer. Aim to finish in 15 minutes or less.</p></div>
  <div class="grid g3">
   <a class="card tcard tc-qa" href="cat-practice.html?daily=1&amp;part=qa"><span class="tc-tag">Quant mini-set</span><h3>A short QA round</h3><p>Arithmetic, algebra, geometry or numbers, with CAT marking.</p><span class="tc-go">Start →</span></a>
   <a class="card tcard tc-dilr" href="cat-practice.html?daily=1&amp;part=dilr"><span class="tc-tag">DILR puzzle</span><h3>One DILR set</h3><p>One data or logic set. Read it once, then answer its questions.</p><span class="tc-go">Start →</span></a>
   <a class="card tcard tc-varc" href="cat-practice.html?daily=1&amp;part=varc"><span class="tc-tag">VARC RC</span><h3>One RC passage</h3><p>One reading comprehension passage and its questions.</p><span class="tc-go">Start →</span></a>
  </div>
- <h3 class="sub-h">Or take a full Daily 10</h3>
+ <h3 class="sub-h">Or take a full Daily set</h3>
  <div class="grid g3">
-  <div class="card daily-card"><h3>🎯 CAT</h3><p class="muted" style="flex:1">QA, one DILR set and one RC passage.</p><a class="btn btn-ghost" href="cat-practice.html?daily=1">Start today's 10</a></div>
-  <div class="card daily-card"><h3>🎓 CUET (UG)</h3><p class="muted" style="flex:1">General Aptitude, English and Maths.</p><a class="btn btn-ghost" href="cuet-practice.html?daily=1">Start today's 10</a></div>
-  <div class="card daily-card"><h3>🏦 Bank / SSC</h3><p class="muted" style="flex:1">Quant, reasoning and data, 60 s each.</p><a class="btn btn-ghost" href="practice.html?daily=1">Start today's 10</a></div>
+  <div class="card daily-card"><h3>🎯 CAT</h3><p class="muted" style="flex:1">QA, one DILR set and one RC passage.</p><a class="btn btn-ghost" href="cat-practice.html?daily=1">Start today's set</a></div>
+  <div class="card daily-card"><h3>🎓 CUET (UG)</h3><p class="muted" style="flex:1">General Aptitude, English and Maths.</p><a class="btn btn-ghost" href="cuet-practice.html?daily=1">Start today's set</a></div>
+  <div class="card daily-card"><h3>🏦 Bank / SSC</h3><p class="muted" style="flex:1">Quant, reasoning and data, 60 s each.</p><a class="btn btn-ghost" href="practice.html?daily=1">Start today's set</a></div>
  </div>
 </div></section>
 
@@ -549,7 +549,7 @@ page("cat.html","CAT Track: VARC, DILR & QA",f"""
 <section class="alt"><div class="container"><div class="grid g2">
  <div class="card"><h3>⏱ Sectional mode</h3><ul class="clean">
   <li>One section, <b>40 minutes</b>, submits automatically when time runs out.</li>
-  <li>About 24 VARC, 22 DILR or 22 QA questions, picked from the bank (DILR and RC sets stay together).</li>
+  <li>A full section of questions, picked from the bank (DILR and RC sets stay together).</li>
   <li>A CAT-style palette: not visited, not answered, answered, marked, and answered &amp; marked.</li>
   <li>RC passages and DILR sets open in a side panel on desktop and above the question on mobile.</li>
   <li>Results: score, attempts, accuracy, time per question and a topic-wise strong/weak breakdown.</li></ul></div>
@@ -689,14 +689,14 @@ for sec,slug,name,color in (("qa","quant","Quant","var(--quant)"),("varc","varc"
               "dilr":"Each set is 2 whole data sets."}[sec]
     page(f"cat-{slug}-sets.html", f"CAT {name} Practice Sets", f"""
 <div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="cat.html">CAT</a> / {name} sets</div>
-<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">CAT {name}: {rep["count"]} practice sets</h1>
-<p class="muted" style="max-width:760px">{rng(rep)}. {fmt_note} {SETS_META["timers"][sec]}-minute timer, CAT marking (+3, −1 for a wrong MCQ, 0 for a wrong TITA), solutions after you submit. <b>{nready}</b> of {rep["count"]} sets are ready; the rest are coming soon.</p></div></div>
+<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">CAT {name}: practice sets</h1>
+<p class="muted" style="max-width:760px">{rng(rep)}. {fmt_note} {SETS_META["timers"][sec]}-minute timer, CAT marking (+3, −1 for a wrong MCQ, 0 for a wrong TITA), solutions after you submit.</p></div></div>
 <section style="padding-top:12px"><div class="container">
 <div id="set-hub" data-sec="{sec}">{hub_html(sec, slug)}</div>
 <noscript><div class="notice">The practice sets need JavaScript.</div></noscript>
 {GATE_NOTE}
 </div></section>
-""", desc=f"CAT {name} practice in {rep["count"]} sets at Easy, Medium and Hard level, with a timer, CAT marking and worked solutions.",
+""", desc=f"CAT {name} practice at Easy, Medium and Hard level, with a timer, CAT marking and worked solutions.",
          extra='<script src="assets/js/sets.js"></script>')
 
 # CUET / Bank / SSC hubs. Marking and timers come from the official notices (tools/exam_sets.py SOURCES).
@@ -720,15 +720,15 @@ for exam in ("cuet","bank","ssc"):
         pace=XPACE[exam]+(" A Data Interpretation set keeps the prelims pace." if (exam,sec)==("bank","di") else "")
         page(fn, f"{lab} {rep['name']} Practice Sets", f"""
 <div class="page-head compact-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="{tr[0]}">{tr[1]}</a> / {nm} sets</div>
-<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">{_hh.escape(lab)} {nm}: {rep["count"]} practice sets</h1>
-<p class="muted" style="max-width:760px">{rng(rep)}. {XFMT[(exam,sec)]} {rep["timer"]}-minute timer, {XMARK[exam]}, solutions after you submit. {pace} <b>{nready}</b> of {rep["count"]} sets are ready; the rest are coming soon.</p></div></div>
+<h1 style="font-size:clamp(1.6rem,3.6vw,2.3rem)">{_hh.escape(lab)} {nm}: practice sets</h1>
+<p class="muted" style="max-width:760px">{rng(rep)}. {XFMT[(exam,sec)]} {rep["timer"]}-minute timer, {XMARK[exam]}, solutions after you submit. {pace}</p></div></div>
 <section style="padding-top:12px"><div class="container">
 <div id="set-hub" data-exam="{exam}" data-sec="{sec}">{hub_html(sec, exam=exam)}</div>
 <noscript><div class="notice">The practice sets need JavaScript.</div></noscript>
 {GATE_NOTE}
 <p class="muted gate-note">Sets use only questions already on the site, each in one set only. Levels come from each question's difficulty tag; a level without enough questions shows <i>Coming soon</i>. Pattern source: {_hh.escape(XSRC[exam].split(" (http")[0])}.</p>
 </div></section>
-""", desc=f"{lab} {rep['name']} practice in {rep['count']} sets at Easy, Medium and Hard level, with a {rep['timer']}-minute timer, exam marking and worked solutions.",
+""", desc=f"{lab} {rep['name']} practice at Easy, Medium and Hard level, with a {rep['timer']}-minute timer, exam marking and worked solutions.",
              extra='<script src="assets/js/sets.js"></script>')
 
 page("set.html", "Practice Set", f"""
@@ -1035,7 +1035,7 @@ def _pack_cards():
     return mocks,secs,prac
 _M,_S,_PR=_pack_cards()
 page("mock-tests.html","Mock Tests","""
-<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Mock Tests</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CAT mock tests</h1><p class="muted">Full CAT-pattern mocks: VARC 24, DILR 22 and QA 22 questions, 40 minutes per section, +3 / −1 for a wrong MCQ and 0 for a wrong TITA. Take the sections in order (VARC, DILR, QA) for the real exam experience.</p></div></div>
+<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Mock Tests</div><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">CAT mock tests</h1><p class="muted">Full CAT-pattern mocks: VARC, DILR and QA, 40 minutes per section, +3 / −1 for a wrong MCQ and 0 for a wrong TITA. Take the sections in order (VARC, DILR, QA) for the real exam experience.</p></div></div>
 <section style="padding-top:16px"><div class="container">
 <div class="notice" style="margin-bottom:16px">📅 <b>AptiSetu Open Mock</b>: one free mock for everyone every Sunday. %OML% <a href="open-mock.html">Details and next date →</a></div>
 <h2>Full mocks</h2><div class="grid g3">%M%</div>

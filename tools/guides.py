@@ -136,7 +136,7 @@ GUIDES = [
  ],
  "faq":[("Is the GAT compulsory?","No. It is one of the subjects you may choose, up to five in total. Check whether your target course requires it."),("Is there negative marking?","Yes, −1 for a wrong answer and +5 for a correct one, according to the 2026 bulletin.")],
  "src":["cuet_bulletin","cuet_site"],"ext":[],
- "links":[("cuet.html","CUET (UG) track"),("cuet-practice.html","CUET sectional"),("cuet-practice.html?daily=1","CUET Daily 10")]},
+ "links":[("cuet.html","CUET (UG) track"),("cuet-practice.html","CUET sectional"),("cuet-practice.html?daily=1","CUET Daily set")]},
 
 {"slug":"bank-prelims-reasoning-puzzles","tags":["bank"],"title":"Bank Prelims Reasoning: Puzzles and Seating Under Time",
  "h1":"Bank prelims reasoning: puzzles and seating under time pressure",

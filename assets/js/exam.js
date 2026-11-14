@@ -134,14 +134,14 @@
     if (keep && (tc[keep] || [...sel.options].some(o => o.value === keep))) sel.value = keep;
     let info;
     const np = PACK ? bank.sections[sec].questions.filter(q => q.pack === PACK).length : 0;
-    if (np) { $("#c-topic-wrap").classList.add("hidden"); info = `<b>${esc(PACK)}:</b> ${np} fixed questions · ` + (mode === "sectional" ? "40-minute timer · +3 / −1 for a wrong MCQ / 0 for a wrong TITA." : "practice: no countdown, solution after each answer."); }
+    if (np) { $("#c-topic-wrap").classList.add("hidden"); info = `<b>${esc(PACK)}:</b> a fixed set of questions · ` + (mode === "sectional" ? "40-minute timer · +3 / −1 for a wrong MCQ / 0 for a wrong TITA." : "practice: no countdown, solution after each answer."); }
     else if (PACK) info = `<b>${esc(PACK)}</b> has no ${esc(bank.sections[sec].name)} questions; this will start a normal session.`;
     else if (mode === "practice") { info = `<b>Practice:</b> no countdown · the solution appears right after you check each answer.`; }
     else if (window.EXAM === "cuet") {
       const n = Math.min(TARGET[sec], qq.length), T = EX.time(n);
       info = `<b>Sectional:</b> ${fmt(T)} timer · +5 for a correct answer, −1 for a wrong one, 0 if unanswered. ` +
         (n >= 50 ? "Same size and time as the real paper (50 questions, 60 minutes)." : `The real paper has 50 questions in 60 minutes; our sectional for this subject is shorter, so the timer keeps the same pace (72 s per question).`) +
-        (sec === "gat" ? " Mix: 15 quantitative, 15 logical &amp; analytical, 10 mental ability, 10 GK (our choice; NTA does not publish a fixed split)." : "") + " Submits automatically when time runs out.";
+        (sec === "gat" ? " Mix: quantitative, logical &amp; analytical, mental ability and GK (our choice; NTA does not publish a fixed split)." : "") + " Submits automatically when time runs out.";
     } else info = `<b>Sectional:</b> 40-minute timer · +3 for correct, −1 for a wrong MCQ, 0 for a wrong TITA. Submits automatically when time runs out.`;
     $("#c-info").innerHTML = info;
   }
@@ -383,7 +383,7 @@
     if (PART) picked = picked.filter(q => q._sec === PART);
     mode = "practice"; sec = picked[0]._sec; qs = prep(picked); saveKey = "daily-" + ENG + "-" + d + (PART ? "-" + PART : "");
     const n = qs.length; resp = Array(n).fill(null); marked = Array(n).fill(false); visited = Array(n).fill(false); tspent = Array(n).fill(0); checked = Array(n).fill(false);
-    sectionTime = 0; cur = 0; elapsed = 0; timeLeft = 0; title = `${EX.label} Daily 10 · ${d}` + (PART ? ` · ${{ qa: "Quant mini-set", dilr: "DILR set", varc: "VARC RC" }[PART]}` : "");
+    sectionTime = 0; cur = 0; elapsed = 0; timeLeft = 0; title = `${EX.label} Daily set · ${d}` + (PART ? ` · ${{ qa: "Quant mini-set", dilr: "DILR set", varc: "VARC RC" }[PART]}` : "");
     const r = P && P.loadRun(saveKey);
     if (r && r.qs && r.qs.length) ({ mode, sec, qs, cur, resp, marked, visited, tspent, checked, timeLeft, elapsed, sectionTime, title } = r);
     if (window.track) window.track(`daily-start-${ENG}`);

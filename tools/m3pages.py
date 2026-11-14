@@ -4,7 +4,7 @@ _OM = _json.load(open("data/open-mock.json", encoding="utf8"))["mocks"]
 _om = _OM[-1]
 _omd = _dt.date.fromisoformat(_om["date"])
 _omsecs = [("varc", "VARC", _om["questions"]["varc"]), ("dilr", "DILR", _om["questions"]["dilr"]), ("qa", "QA", _om["questions"]["qa"])]
-_ombtn = "".join(f'<a class="btn{"" if i == 0 else " btn-ghost"} btn-sm" style="margin:4px 6px 0 0" href="cat-practice.html?mode=sectional&amp;section={s}&amp;pack={_om["pack"]}&amp;open={_om["id"]}">{i+1}. {n} · {q} Qs</a>' for i, (s, n, q) in enumerate(_omsecs))
+_ombtn = "".join(f'<a class="btn{"" if i == 0 else " btn-ghost"} btn-sm" style="margin:4px 6px 0 0" href="cat-practice.html?mode=sectional&amp;section={s}&amp;pack={_om["pack"]}&amp;open={_om["id"]}">{i+1}. {n}</a>' for i, (s, n, q) in enumerate(_omsecs))
 _pack_name = _om["pack"].replace("mock-", "CAT Mock ")
 _omlabel = _om.get("label") or f"Unranked practice, {_pack_name} questions"
 _omlabel_short = _omlabel.replace("CAT Mock ", "Mock ")

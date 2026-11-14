@@ -49,7 +49,7 @@ _L = lambda c, t: f"<span class='status {c}'>{t}</span>"
 STATUS_HTML = ("<ul class='status-list'>"
  f"<li>{_L('st-live','Available now')} Original practice questions, each with a worked solution and its own page in the <a href='q/index.html'>question bank</a>.</li>"
  f"<li>{_L('st-live','Available now')} Practice sets for CAT, CUET (UG), Bank and SSC; CAT 40-minute sectionals and {N_MOCKS} free full-length CAT mocks on the <a href='mock-tests.html'>Mock Tests page</a>.</li>"
- f"<li>{_L('st-live','Available now')} CUET (UG) sectionals and topic practice for the General Aptitude Test, English and Mathematics; Bank / SSC timed quizzes; Daily 10; Quant Lab and Reasoning Lab.</li>"
+ f"<li>{_L('st-live','Available now')} CUET (UG) sectionals and topic practice for the General Aptitude Test, English and Mathematics; Bank / SSC timed quizzes; Daily set; Quant Lab and Reasoning Lab.</li>"
  f"<li>{_L('st-live','Available now')} Optional login: saved test history, CAT set results and Open Mock scores across devices, with an optional profile.</li>"
  f"<li>{_L('st-pilot','Pilot')} <a href='open-mock.html'>Open Mock</a>: one CAT-pattern mock for everyone every Sunday. The current edition is unranked practice, with no leaderboard.</li>"
  f"<li>{_L('st-soon','Coming soon')} <a href='pass.html'>AptiSetu Pass</a> (not on sale), CUET Applied Mathematics (Section B2), and full mocks for Bank, SSC and GMAT.</li>"
@@ -65,7 +65,7 @@ faqs=[("How do I find AptiSetu? Search shows \"API Setu\"","Type <b>aptisetu.com
 ("What is practice mode?","On the CAT and CUET tracks, practice mode has no countdown. You pick a topic, check each answer and see the full solution straight away."),
 ("Are these real exam questions?","No. All questions were written by our team, in the style of each exam. They are not taken from past papers or any coaching material."),
 ("Is my progress saved?","Yes, in two ways. <b>On this device</b> (always, no login): an unfinished quiz so you can resume it, your daily practice streak and your accuracy for each topic are kept in your browser's local storage. This is not sent to us and won't follow you to another phone or browser; delete it with <b>Reset my progress</b> on the <a href=\"practice.html\">Practice page</a> or by clearing this site's data. <b>In your account</b> (only if you log in): the score of each finished test, your CAT practice-set results and your Open Mock scores are saved so you can see them on <a href=\"account.html\">My account</a> from any device. The <a href=\"privacy.html\">privacy policy</a> lists exactly what is stored."),
-("What is Quick start?","On the <a href=\"practice.html\">Practice page</a>, Quick start gives you 10 mixed Quant, Reasoning and DILR questions with 60 seconds each, in one tap."),
+("What is Quick start?","On the <a href=\"practice.html\">Practice page</a>, Quick start gives you a mixed set of Quant, Reasoning and DILR questions with 60 seconds each, in one tap."),
 ("Are you linked to NTA or the IIMs?","No. This is an independent site, not affiliated with NTA, the IIMs or any exam body. Always check official exam websites for dates and rules."),
 ("I found a mistake. What should I do?","Use the <b>⚑ Report an error</b> link under any question, or <a href=\"contact.html\">contact us</a> with the page and the question text. Fixes are listed on our <a href=\"corrections.html\">corrections page</a>.")]
 page("faq.html","FAQ",info_head("FAQ","Frequently asked questions","Quick answers about how the site works.")+prose("".join(f"<h3>{q}</h3><p>{a}</p>" for q,a in faqs)),

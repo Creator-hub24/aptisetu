@@ -30,7 +30,8 @@ def glink(s): return f'<a href="guide-{s}.html">{GT[s]["h1"]}</a>'
 # practice sets (built in build_pages.py from tools/exam_sets.py): Bank prelims-style and SSC Tier I-style
 def _xcard(exam, sec):
     r=XMETA[exam]["sections"][sec]; n=sum(len(r[L]["ready"]) for L in ("Easy","Medium","Hard"))
-    return f'<a class="card card-link" href="{exam}-{sec}-sets.html"><h3>{XMETA[exam]["label"]} {_hh.escape(r["name"])} sets</h3><p class="muted">{n} of {r["count"]} sets ready · {r["timer"]} min per set</p></a>'
+    status = "Coming soon" if n == 0 else f'{r["timer"]} min per set'
+    return f'<a class="card card-link" href="{exam}-{sec}-sets.html"><h3>{XMETA[exam]["label"]} {_hh.escape(r["name"])} sets</h3><p class="muted">{status}</p></a>'
 XCARDS_BANK="".join(_xcard("bank",k) for k in XMETA["bank"]["sections"]); XCARDS_SSC="".join(_xcard("ssc",k) for k in XMETA["ssc"]["sections"])
 def _xcta(exam):
     first=next(iter(XMETA[exam]["sections"]))
