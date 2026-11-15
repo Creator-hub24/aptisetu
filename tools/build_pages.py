@@ -168,6 +168,8 @@ def page(fn, title, body, desc="Quantitative Aptitude, Logical Reasoning and DIL
 """
     html=html.replace("{MONO}", "&family=JetBrains+Mono:wght@400;700" if _re.search(r"""class=["'][^"']*\bfx\b|quant-lab\.css""", html) else "")
     html=fix_headings(html)
+    if base:  # some crawlers ignore <base>; root-absolute links keep subfolder pages from resolving to /q/x/q/... 404s
+        html=_re.sub(r'(\s(?:href|src)=")(?![/#?]|[a-z][a-z0-9+.-]*:)([^"]+)"', r'\1'+BASE_PATH+r'\2"', html)
     open(fn,"w").write(externalize(fn, html))
     if fn!="404.html": PAGES.append((fn, not noindex))
 DESCS={}

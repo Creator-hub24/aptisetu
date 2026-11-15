@@ -20,7 +20,8 @@ for f in pages:
     for m in re.finditer(r'(?:href|src)="([^"#?]+)', s):
         u = m.group(1)
         if re.match(r"(https?:|mailto:|tel:|data:|//|javascript:)", u): continue
-        if not os.path.exists(u): errors.append(f"{f}: broken link/asset -> {u}")
+        u = u[1:] if u.startswith("/") else u  # root-absolute links (404.html and q/ pages) resolve from the site root
+        if u and not os.path.exists(u): errors.append(f"{f}: broken link/asset -> {u}")
 for t, fs in titles.items():
     if len(fs) > 1: errors.append(f"duplicate title '{t}': {', '.join(fs)}")
 secret = re.compile(r"service_role|sk_live_|BEGIN (RSA |EC )?PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}|sb_secret_[A-Za-z0-9_-]{8,}")
