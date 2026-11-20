@@ -184,6 +184,7 @@ paths_page("after-graduation.html", "After Graduation: Courses, Exams &amp; Jobs
 
 exec(open("tools/m3pages.py").read())   # Month 3 pages (before the sitemap)
 exec(open("tools/v2pages.py").read())   # v2 pages: tracks, mistakes notebook (before the sitemap)
+PAGES.append(("relative-speed.html", True))   # hand-written interactive explainer (not generated here)
 # ---------- cleanup, sitemap, robots ----------
 for old in ("signup.html",):
     if os.path.exists(old): os.remove(old)

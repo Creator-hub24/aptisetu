@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://gc.zgo.at; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://aptisetu.goatcounter.com; connect-src 'self' https://aptisetu.goatcounter.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Relative Speed: Interactive Trains Explainer | AptiSetu</title>
+<meta name="description" content="See relative speed with moving trains: add speeds when objects move towards each other, subtract when they move the same way. Predict, watch, then take a quiz.">
+<link rel="canonical" href="https://aptisetu.com/relative-speed.html">
+<meta name="theme-color" content="#071526">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.ico" sizes="32x32"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="AptiSetu"><meta property="og:title" content="Relative Speed: Interactive Trains Explainer | AptiSetu"><meta property="og:description" content="See relative speed with moving trains: add speeds when objects move towards each other, subtract when they move the same way. Predict, watch, then take a quiz."><meta property="og:url" content="https://aptisetu.com/relative-speed.html"><meta property="og:image" content="https://aptisetu.com/assets/img/og-image.png"><meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Relative Speed: Interactive Trains Explainer | AptiSetu"><meta name="twitter:description" content="See relative speed with moving trains: add speeds when objects move towards each other, subtract when they move the same way. Predict, watch, then take a quiz."><meta name="twitter:image" content="https://aptisetu.com/assets/img/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1F3A;--navy2:#132d52;--line:#234068;--gold:#C9A227;--blue:#5BC0EB;--mute:#9FB3CC;--green:#3ecf8e;--red:#ff7b7b}
+*{box-sizing:border-box}
+html,body{margin:0;background:#071526;color:#fff;font-family:Poppins,system-ui,-apple-system,sans-serif;-webkit-tap-highlight-color:transparent}
+.wrap{max-width:560px;margin:0 auto;padding:12px 14px 96px}
+.brand{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--gold);border:1px solid var(--gold);border-radius:20px;padding:2px 9px}
+header h1{font-size:24px;margin:6px 0 0;line-height:1.2}
+header h1 span{color:var(--gold)}
+.sub{color:var(--mute);font-size:13px;margin-top:2px}
+.bar{height:5px;background:#1b3556;border-radius:4px;margin:12px 0 10px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--gold);transition:width .4s}
+.stage{position:sticky;top:0;z-index:5;background:#071526;padding-top:6px}
+.stage .box{background:var(--navy);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+canvas{width:100%;display:block;aspect-ratio:720/400}
+.card{background:var(--navy);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-top:12px}
+.tag{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;font-size:12px;padding:3px 10px;border-radius:20px}
+h2{font-size:20px;margin:8px 0 6px;line-height:1.3}
+p{margin:7px 0;line-height:1.6;font-size:15px}
+.def{border-left:4px solid var(--gold);background:rgba(201,162,39,.12);padding:10px 12px;border-radius:8px;margin:12px 0;font-weight:600;line-height:1.5}
+.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}
+.opts.two{grid-template-columns:repeat(3,1fr)}
+button{font-family:inherit;cursor:pointer}
+.opt{background:var(--navy2);border:2px solid #2b4a75;color:#fff;border-radius:12px;padding:12px 4px;font-size:15px;font-weight:700;transition:transform .1s}
+.opt:active{transform:scale(.96)}
+.opt.ok{border-color:var(--green);background:rgba(62,207,142,.16)}
+.opt.no{border-color:var(--red);background:rgba(255,123,123,.12)}
+.opt[disabled]{cursor:default}
+.btn{background:var(--gold);color:var(--navy);border:0;border-radius:12px;padding:11px 16px;font-weight:700;font-size:15px}
+.btn.ghost{background:transparent;color:#fff;border:2px solid #2b4a75}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0;align-items:center}
+.seg{display:flex;background:var(--navy2);border-radius:12px;padding:4px;gap:4px;margin:8px 0}
+.seg button{flex:1;background:transparent;color:var(--mute);border:0;padding:9px 6px;border-radius:9px;font-weight:600;font-size:14px}
+.seg button.on{background:var(--gold);color:var(--navy)}
+.reveal{display:none;margin-top:6px}
+.reveal.show{display:block;animation:fade .45s}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.math{font-size:22px;font-weight:700;text-align:center;margin:12px 0;letter-spacing:.01em}
+.math b{color:var(--gold)}
+.fb{font-weight:600;margin-top:4px;line-height:1.5;font-size:15px}
+.fb.ok{color:var(--green)} .fb.no{color:var(--red)}
+.ro{background:var(--navy2);border-radius:12px;padding:10px 12px;margin:10px 0;line-height:1.55;font-size:15px}
+.ro b{color:var(--gold)}
+.blue{color:var(--blue);font-weight:600}.gold{color:var(--gold);font-weight:600}.mute{color:var(--mute)}
+.small{font-size:13px;color:var(--mute);line-height:1.5}
+.mini{background:var(--navy2);border-radius:12px;padding:12px;margin:10px 0}
+.mini h3{margin:0 0 4px;font-size:15px}
+.mini .math{font-size:18px;margin:8px 0}
+.rule{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.rule div{background:var(--navy2);border-radius:12px;padding:10px;text-align:center}
+.rule b{display:block;font-size:22px;color:var(--gold)}
+.rule span{font-size:13px;color:var(--mute)}
+label.sl{display:flex;justify-content:space-between;margin:12px 0 2px;font-size:14px;font-weight:600}
+input[type=range]{width:100%;accent-color:var(--gold)}
+.q{border-top:1px solid var(--line);padding-top:12px;margin-top:12px}
+.q:first-of-type{border-top:0;margin-top:4px;padding-top:0}
+.q p.qt{font-weight:600}
+.score{font-size:18px;font-weight:700;text-align:center;margin:12px 0 4px}
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:9;background:rgba(7,21,38,.97);border-top:1px solid #1b3556;padding:10px 14px calc(10px + env(safe-area-inset-bottom))}
+.nav .in{max-width:560px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.nav .count{color:var(--mute);font-size:13px}
+.nav .btn[disabled]{opacity:.35}
+
+.asbar{max-width:560px;margin:0 auto;padding:10px 14px 0;display:flex;justify-content:space-between;align-items:center;font-size:13px}
+.asbar a{color:#C9A227;text-decoration:none;font-weight:600}
+.asbar .home{display:flex;align-items:center;gap:8px;color:#fff}
+.asbar img{width:26px;height:26px;border-radius:6px}
+.asfoot{max-width:560px;margin:14px auto 100px;padding:0 14px;color:#9FB3CC;font-size:13px;line-height:1.6;text-align:center}
+.asfoot a{color:#C9A227;font-weight:600;text-decoration:none}
+</style>
+<script data-goatcounter="https://aptisetu.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="asbar"><a class="home" href="index.html"><img src="assets/img/favicon.svg" alt="" width="26" height="26">AptiSetu</a><a href="quant-lab.html">Quant Lab →</a></div>
+<div class="wrap">
+  <header>
+    <span class="brand">@EDUMATHS360</span>
+    <h1>Relative Speed <span>— dekho, socho, samjho</span></h1>
+    <div class="sub">Formula ratne ki zarurat nahi. Trains chalao aur khud samjho.</div>
+  </header>
+  <div class="bar"><i id="prog"></i></div>
+  <div class="stage"><div class="box"><canvas id="cv" width="720" height="400"></canvas></div></div>
+  <div class="card" id="panel"></div>
+</div>
+<p class="asfoot">Next: practise <a href="cat-quant-sets.html">CAT Quant sets</a>, read the <a href="guide-time-speed-distance.html">Time, Speed &amp; Distance guide</a>, or try the <a href="mock-tests.html">mock tests</a>.</p>
+<div class="nav"><div class="in">
+  <button class="btn ghost" id="prev">◀ Peeche</button>
+  <span class="count" id="count"></span>
+  <button class="btn" id="next">Aage ▶</button>
+</div></div>
+
+<script src="assets/js/relative-speed.js"></script>
+</body>
+</html>
