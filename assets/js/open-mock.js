@@ -16,8 +16,7 @@
       const s = $("#om-start"); if (s && s.nextElementSibling) s.nextElementSibling.hidden = true;
       const h = card.querySelector("h2"); if (h) h.textContent = "AptiSetu Open Mock · Sunday 22 November 2026";
       const info = status.previousElementSibling; if (info) info.innerHTML = "<b>Sunday 22 November 2026</b> · 10:00 am to 10:00 pm IST · VARC, DILR and QA, 40 minutes each · +3 / −1 for a wrong MCQ, 0 for a wrong TITA.";
-      const ist = now.toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
-      status.innerHTML = ist === "2026-11-21" ? "The mock will open <b>tomorrow at 10:00 am IST</b>." : "The mock will open on <b>Sunday 22 November at 10:00 am IST</b>.";
+      status.innerHTML = "The mock will open on <b>Sunday 22 November 2026 at 10:00 am IST</b>.";
     }
     else { status.innerHTML = `This edition has ended. The next date will be announced on this page. You can still take the sections as practice.`; }
     const A = window.Auth, ACC = window.Account, mine = $("#om-mine");
