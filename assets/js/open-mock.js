@@ -10,7 +10,16 @@
     const status = $("#om-status");
     if (now < st) { status.innerHTML = `⏳ Opens <b>${fmt(st)} IST</b>. You can look at the sections now; attempts before the window are not saved as Open Mock scores.`; }
     else if (now <= en) { status.innerHTML = `🟢 <b>Live now</b> until ${fmt(en)} IST. Unranked practice: no leaderboard.`; }
-    else { status.innerHTML = now < new Date("2026-11-22T22:00:00+05:30") ? (() => { const s = $("#om-start"); if (s) { s.hidden = true; if (s.nextElementSibling) s.nextElementSibling.hidden = true; } return `This edition has ended. <b>Next Open Mock: Sunday 22 Nov, 10 AM–10 PM IST.</b>`; })() : `This edition has ended. The next date will be announced on this page. You can still take the sections as practice.`; }
+    else if (now < new Date("2026-11-22T22:00:00+05:30")) {
+      // Until the 22 Nov edition is published: show only the next date, hide the ended 15 Nov edition's details.
+      ["#om-start", ".notice"].forEach(q => { const el = card.querySelector(q); if (el) el.hidden = true; });
+      const s = $("#om-start"); if (s && s.nextElementSibling) s.nextElementSibling.hidden = true;
+      const h = card.querySelector("h2"); if (h) h.textContent = "AptiSetu Open Mock · Sunday 22 November 2026";
+      const info = status.previousElementSibling; if (info) info.innerHTML = "<b>Sunday 22 November 2026</b> · 10:00 am to 10:00 pm IST · VARC, DILR and QA, 40 minutes each · +3 / −1 for a wrong MCQ, 0 for a wrong TITA.";
+      const ist = now.toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+      status.innerHTML = ist === "2026-11-21" ? "The mock will open <b>tomorrow at 10:00 am IST</b>." : "The mock will open on <b>Sunday 22 November at 10:00 am IST</b>.";
+    }
+    else { status.innerHTML = `This edition has ended. The next date will be announced on this page. You can still take the sections as practice.`; }
     const A = window.Auth, ACC = window.Account, mine = $("#om-mine");
     if (!A || !A.configured || !ACC || !mine) return;
     (async () => {
