@@ -32,6 +32,23 @@
    "ranked": false,
    "special": "Pre-CAT edition",
    "label": "Unranked practice, Mock 4 questions"
+  },
+  {
+   "id": "2026-11-22",
+   "title": "AptiSetu Open Mock · 22 November 2026",
+   "pack": "mock-6",
+   "date": "2026-11-22",
+   "starts_at": "2026-11-22T10:00:00+05:30",
+   "ends_at": "2026-11-22T22:00:00+05:30",
+   "questions": {
+    "varc": 24,
+    "dilr": 22,
+    "qa": 22
+   },
+   "reused_public_mock": false,
+   "sealed": true,
+   "ranked": false,
+   "label": "Unranked practice, new questions"
   }
  ]
 }
