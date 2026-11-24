@@ -30,7 +30,7 @@
 
     { n: "B.Com / B.Com (Hons)", c: CATS[3], s: ["C"], d: "3 years (4 with honours)", y: 3, e: "CUET (UG) or merit", o: "Accounts, banking, taxation, finance; base for CA, CS, CMA and MBA", x: "Many universities also accept other streams", u: "cuet" },
     { n: "BBA / BMS / BBM", c: CATS[3], s: ALL, d: "3 years", y: 3, e: "CUET (UG), NPAT (NMIMS), SET (Symbiosis) and other university tests", o: "Management trainee, sales and marketing, operations; MBA", u: "cuet" },
-    { n: "Integrated MBA (IPM)", c: CATS[3], s: ALL, d: "5 years", y: 5, e: "IPMAT (IIM Indore, IIM Rohtak) and JIPMAT (IIM Bodh Gaya, IIM Jammu)", o: "BBA and MBA in one programme; management careers", x: "Aptitude-based entrance with Quant and verbal sections" },
+    { n: "Integrated MBA (IPM)", c: CATS[3], s: ALL, d: "5 years", y: 5, e: "IPMAT (IIM Indore, also accepted by IIM Ranchi, Shillong and Amritsar), IPM Aptitude Test (IIM Rohtak) and JIPMAT (IIM Bodh Gaya, IIM Jammu)", o: "BBA and MBA in one programme; management careers", x: "Aptitude-based entrance with Quant and verbal sections" },
     { n: "Chartered Accountant (CA)", c: CATS[3], s: ALL, d: "4.5 to 5 years", y: 5, e: "ICAI exams: Foundation, Intermediate, practical training, Final", o: "Audit, tax and finance roles; CFO; own practice", x: "Open to every stream" },
     { n: "Company Secretary (CS)", c: CATS[3], s: ALL, d: "3.5 to 4 years", y: 4, e: "ICSI: CSEET, Executive, Professional", o: "Compliance, corporate law and governance roles" },
     { n: "Cost & Management Accountant (CMA)", c: CATS[3], s: ALL, d: "About 4 years", y: 4, e: "ICMAI: Foundation, Intermediate, Final, with practical training", o: "Costing, management accounting, finance and PSU roles" },
